@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "문서를 완전히 저장하지 못했습니다."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "이 HTML 문서는 %PRODUCTNAME Basic 매크로를 포함하고 있습니다.\n이 매크로들이 현재 내보내기 설정으로 저장되지 않았습니다."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "빈 페이지"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "클립보드에 대용량의 데이터가 저장되어 있습니다.\n클립보드의 내용을 다른 응용 프로그램에서 사용할 수 있도록 남겨두시겠습니까?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "HTML 서식으로 변환하면 \n정보가 손실될 수 있습니다. \n문서를 저장하시겠습니까?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "원본 코드는 HTML 형식으로 문서를 저장한 경우에만 표시됩니다.\n문서를 HTML 형식으로 저장하시겠습니까?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "문서에 데이터베이스 주소 필드가 있습니다. 편지 양식을 인쇄하시겠습니까?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -1365,7 +1365,7 @@ msgstr "최적 높이(~O)"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_BALANCE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
-msgstr "일정하게 분할 (~E)"
+msgstr "일정하게 분할(~E)"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_SELECT_ROW.MenuItem.Text
 msgid  "~Select"
@@ -1433,7 +1433,7 @@ msgstr "뒤로 이동(~W)"
 
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "배열(~A)"
+msgstr "배치(~A)"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
@@ -2217,7 +2217,7 @@ msgstr "페이지 배경(~C)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 msgid  "Print text in blac~k"
-msgstr "검정색으로 텍스트 인쇄(~K)"
+msgstr "텍스트를 검정색으로 인쇄(~K)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
 msgid  "Hidden te~xt"
@@ -2645,7 +2645,7 @@ msgstr "삽입"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_ATTR.FixedText.Text
 msgid  "Attributes"
-msgstr "속성"
+msgstr "속성(~A)"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 msgid  "[None]"
@@ -2693,7 +2693,7 @@ msgstr "배경색"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_COL.FixedText.Text
 msgid  "Color"
-msgstr "색"
+msgstr "색상"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.WIN_INS.Window.Text
 msgid  "Insert"
@@ -2705,7 +2705,7 @@ msgstr "삭제"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_ATTR.FixedText.Text
 msgid  "Attributes"
-msgstr "속성(~A)"
+msgstr "속성"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_COL.FixedText.Text
 msgid  "Color"
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<사용자 설정>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "기본 서식 파일의 호환성 옵션을 변경하시겠습니까?\n변경 사항은 기본 서식 파일을 기반으로 하는 모든 새 문서에 적용됩니다."
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2896,8 +2896,8 @@ msgid  "Caption"
 msgstr "캡션"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "다음을 삽입할 때\n자동으로 캡션 추가:"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "첨부 파일에 새 이름을 지정하지 않았습니다. 새 이름을 지정하려면 지금 입력하십시오."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "편지 병합 문서를 전자 메일로 보내려면 %PRODUCTNAME에서 사용할 전자 메일 계정에 대한 정보가 필요합니다.\n\n 전자 메일 계정 정보를 지금 입력하시겠습니까?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "숨은 참조(~B)"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "참고:\n전자 메일 주소를 세미콜론(;)으로 구분하십시오."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "보내기 실패(잘못된 주소)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "%PRODUCTNAME 보낼 편지함에 전자 메일 메시지가 있습니다.\n종료하시겠습니까?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "문서 편집"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "아직 문서를 쓰거나 편집하지 않은 경우 지금 문서를 쓰거나 편집하십시오. 이러한 변경 사항은 모든 병합 문서에 적용됩니다.\n\n[문서 편집...]을 클릭하면 마법사가 잠시 작은 창으로 축소되므로 편지 병합 문서를 편집할 수 있습니다. 문서를 편집한 후 작은 창에서 [편지 병합 마법사로 돌아가기]를 클릭하면 마법사로 돌아갑니다."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "요청된 클립보드 서식은 가능하지 않습니다."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "구역 서식은 오래된 것입니다.\n 이것을 변환하여야 변경 사항을\n저장할 수 있습니다.\n 지금 변환 하겠습니까?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "각주: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "읽기 전용 내용은 변경할 수 없습니다.\n어떠한 수정도 허용되지 않습니다."
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5405,7 +5405,7 @@ msgstr "받는 사람"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_POS.FixedText.Text
 msgid  "Position"
-msgstr "위치"
+msgstr "직위"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_LEFT.FixedText.Text
 msgid  "from left"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "옵션"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "%1 / %2 레이블이 이미 존재합니다.\n덮어쓰시겠습니까?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6061,7 +6061,7 @@ msgstr "필드 편집"
 
 #: source/ui/fldui/fldui.src#STR_DATEFLD.String.Text
 msgid  "Date"
-msgstr "날짜"
+msgstr "일자"
 
 #: source/ui/fldui/fldui.src#STR_TIMEFLD.String.Text
 msgid  "Time"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "찾아보기..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "이 대화 상자에서는 문서에서 데이터베이스 필드를 통해 액세스한 데이터베이스를 다른 데이터베이스로 바꿀 수 있습니다. 한번에 하나만 변경할 수 있습니다. 왼쪽에 있는 목록에서 여러 항목을 선택할 수 있습니다.\n[찾아보기] 버튼을 사용하여 데이터베이스 파일을 선택합니다."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -8149,7 +8149,7 @@ msgstr "항목"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TAB_STOP.String.Text
 msgid  "Tab stop"
-msgstr "탭 간격"
+msgstr "탭"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TEXT.String.Text
 msgid  "Text"
@@ -9437,7 +9437,7 @@ msgstr "번호 매기기(~B)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_OFFSET.FixedText.Text
 msgid  "~Start at"
-msgstr "시작(~S)"
+msgstr "시작 번호(~S)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_NUMCOUNT.FixedText.Text
 msgid  "~Counting"
@@ -9841,7 +9841,7 @@ msgstr "잘못된 표 수식"
 
 #: source/ui/ribbar/workctrl.src#RID_SCROLL_NAVIGATION_WIN.String.Text
 msgid  "Navigation"
-msgstr "탐색"
+msgstr "네비게이션"
 
 #: source/ui/ribbar/workctrl.src#STR_IMGBTN_TBL_DOWN.String.Text
 msgid  "Next table"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "자동 고침"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "자동 고침이 완료되었습니다.\n지금 변경 사항을 모두 적용하거나 취소할 수 있으며\n혹은 개별적으로 적용하거나 취소할 수 있습니다."
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "합계"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "유효하지 않은 이름을 입력하였으므로\n자동 서식이 만들어지지 않습니다. \n다른 이름으로 다시 시도해 보십시오."
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "첫번째 열을 캡션으로(~C)"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "선택한 셀에 원하는 데이터가 없는 경우 데이터 범위를 선택하십시오.\n\n열 및 행 레이블을 차트에 포함하려면 열 및 행 레이블을 가진 셀을 포함시켜야 합니다."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10613,7 +10613,7 @@ msgstr "오른쪽에서 왼쪽으로"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
 msgid  "Use superordinate object settings"
-msgstr "현재 문자 방향의 설정 적용"
+msgstr "상위 개체 설정 사용"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 msgid  "Adapt table ~width"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "주 텍스트를 검사하겠습니까?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "필드 명령 표시 옵션이 활성화되어 있습니다.\n필드 이름과 함께 문서를 인쇄하시겠습니까?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "모든 문장을 대문자로 시작"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "\"표준\" 따옴표를 %1 \\bcustom%2 따옴표로 바꾸기"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -10953,7 +10953,7 @@ msgstr "스타일 \"본문\" 설정"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 msgid  "Set \"Text body indent\" Style"
-msgstr "스타일 \"첫 줄 들여쓰기\" 설정"
+msgstr "스타일 \"본문 들여쓰기\" 설정"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 msgid  "Set \"Hanging indent\" Style"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[시스템]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "대화형 맞춤법 검사가 다른 문서에서 이미\n활성화되었습니다."
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "대화형 하이픈 넣기가 다른 문서에서 이미\n활성화되었습니다."
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"

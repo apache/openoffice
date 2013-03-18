@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Mal opprettet via <wizard_name> den <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Veiviseren kunne ikke starte fordi noen viktige filer mangler.\nUnder «Verktøy – Innstillinger – %PRODUCTNAME – Stier», kan du trykke på «Standard»-knappen for å tilbakestille innstillingene for stiene.\nStart deretter veiviseren på nytt."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Felter i ~skjemaet"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Binære felter blir alltid listet opp, og er valgbare i lista til venstre.\nOm mulig, blir disse tolket som bilder."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Et underskjema er et skjema som er satt inn i et annet skjema.\nBruk underskjemaer til å vise data fra tabeller eller spørringer med en «en til mange»-relasjon."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Skjemafelter"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "Sammenføyningen «<FIELDNAME1>» og «<FIELDNAME2>» er valgt to ganger.\nSammenføyninger kan bare gjøres en gang."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "Angi navnet på skjemaet"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Skjemaet «%FORMNAME» finnes fra før.\nSkriv inn et annet navn."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Feltet kan ikke settes inn. Det ikke er mulig å sette inn flere enn %COUNT felt i databasetabellen."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Navnet «%TABLENAME» finnes allerede i databasen.\nSkriv inn et annet navn."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Nettsideveiviser"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Denne nettsideveiviseren hjelper deg med å få publisert dokumenter på Internett.\n\nDokumentene du vil bruke, blir gjort om slik at de kan vises i en nettleser. I tillegg vil det bli laget en innholdsfortegnelse med lenker for å lette navigering mellom dokumentene. Veiviseren lar deg også tilpasse utseendet til nettsiden.\n\nDu vil enkelt kunne holde dokumentene oppdatert etter at du har lagt dem ut på Internett, og det er lett å legge til eller fjerne dokumenter."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "Forhåndsvisning"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "De valgte innstillingene vil bli slettet.\n\nEr du sikker på at du vil slette disse innstillingene? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "FTP-mappa «%FILENAME» kunne ikke opprettes."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP-mappa «%FILENAME» finnes ikke. \nVil du opprette mappa nå?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Zip-fila «%FILENAME» kan ikke opprettes: En mappe med det samme navnet eksisterer allerede."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Den lokale mappa «%FILENAME» kan ikke opprettes. \nKontroller at du har skriverettigheter på det aktuelle området."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Den lokale mappa «%FILENAME» finnes ikke. \nVil du opprette mappa nå?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

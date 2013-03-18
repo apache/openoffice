@@ -84,8 +84,9 @@ msgid  "Relative sizes"
 msgstr "සාපේක්‍ෂ ප්‍රමාණය"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.1.PushButton.Text
+#, fuzzy
 msgid  "~Default"
-msgstr "පෙරනිමිය (~D)"
+msgstr "පෙරනිමි (~D)"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.ModalDialog.Text
 msgid  "Fonts"
@@ -128,8 +129,9 @@ msgid  "F~ixed"
 msgstr "ස්ථිර (~i)"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.1.MenuButton.Text
+#, fuzzy
 msgid  "~Modify"
-msgstr "වෙනස් කළ (~M)"
+msgstr "වෙනස් කරන්න (~M)"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.2.PushButton.Text
 msgid  "~Default"
@@ -309,18 +311,22 @@ msgid  "Alignment"
 msgstr "ගැලපීම"
 
 #: source/smres.src#RID_ALIGNDIALOG.1.RadioButton.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "වම (~L)"
 
 #: source/smres.src#RID_ALIGNDIALOG.2.RadioButton.Text
+#, fuzzy
 msgid  "~Centered"
 msgstr "මැද (~C)"
 
 #: source/smres.src#RID_ALIGNDIALOG.3.RadioButton.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "දකුණ (~R)"
 
 #: source/smres.src#RID_ALIGNDIALOG.1.FixedLine.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "හරස්"
 
@@ -474,14 +480,12 @@ msgid  "~Delete"
 msgstr "මකන්න (~D)"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-#, fuzzy
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr "\"StarMath\" අකුරු ස්ථාපනය කර නැත.\nමෙම අකුරු රටාව නොමැතිව %PRODUCTNAME Math නිසියාකාරව ක්‍රියා නොකරයි.\nකරුණාකර මෙම අකුරු රටාව ස්ථාපනය කර %PRODUCTNAME Math යළි අරඹන්න."
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-#, fuzzy
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "වෙනස්කම් පෙරනිමිය ලෙසට සුරකිය යුතුද?\n\nමෙම වෙනස්කම් සියලු නව සූත්‍ර සඳහා යෙදෙණු ඇත."
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -791,50 +795,62 @@ msgid  "~Scaling"
 msgstr "තුලනය (~S)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "ඒකීය/ද්විමය යෙදෙන්නා (~U)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Relations"
 msgstr "සබඳකම (~R)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Set Operations"
 msgstr "කුලක කර්ම (~S)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Functions"
 msgstr "ශ්‍රිත (~F)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
 msgid  "More"
 msgstr "බොහෝ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "O~perators"
 msgstr "මෙභෙයුම් සංකේත (~p)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Attributes"
 msgstr "උපලක්‍ෂණ (~A)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Brackets"
 msgstr "වරහන් (~B)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
+#, fuzzy
 msgid  "For~mats"
 msgstr "සංයුති (~m)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
+#, fuzzy
 msgid  "New Line"
 msgstr "නව පෙළ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
+#, fuzzy
 msgid  "Small Gap"
 msgstr "කුඩා පරතරය"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
+#, fuzzy
 msgid  "Gap"
 msgstr "පරතරය"
 
@@ -843,6 +859,7 @@ msgid  "nospace {...}"
 msgstr ""
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Others"
 msgstr "වෙනත් (~O)"
 

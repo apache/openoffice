@@ -581,6 +581,7 @@ msgid  "Cannot change to directory"
 msgstr ""
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OPEN.String.Text
+#, fuzzy
 msgid  "Open"
 msgstr "Feeri"
 
@@ -605,7 +606,7 @@ msgid  "Can't open directory"
 msgstr ""
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
-msgid  "This file already exists. \nOverwrite ?"
+msgid  "This file already exists. \\nOverwrite ?"
 msgstr ""
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
@@ -613,6 +614,7 @@ msgid  "Up One Level"
 msgstr ""
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SAVE.String.Text
+#, fuzzy
 msgid  "Save"
 msgstr " Gaabu"
 
@@ -649,6 +651,7 @@ msgid  "~Address Data Source..."
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FixedText.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Taabal / Daarumi"
 
@@ -657,6 +660,7 @@ msgid  "Field assignment"
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.String.Text
+#, fuzzy
 msgid  "<none>"
 msgstr " Haya kul si"
 
@@ -669,10 +673,12 @@ msgid  "Department"
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.String.Text
+#, fuzzy
 msgid  "First name"
 msgstr " Maa jinaa"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.String.Text
+#, fuzzy
 msgid  "Last name"
 msgstr " Zamu"
 
@@ -681,6 +687,7 @@ msgid  "Street"
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.String.Text
+#, fuzzy
 msgid  "Country"
 msgstr " Koyraa laamaa"
 
@@ -689,6 +696,7 @@ msgid  "ZIP Code"
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.String.Text
+#, fuzzy
 msgid  "City"
 msgstr " Galloo"
 
@@ -697,6 +705,7 @@ msgid  "Title"
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.String.Text
+#, fuzzy
 msgid  "Position"
 msgstr " Kayandi doo"
 
@@ -725,6 +734,7 @@ msgid  "FAX"
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.String.Text
+#, fuzzy
 msgid  "E-mail"
 msgstr " Email adreesoo "
 
@@ -769,6 +779,7 @@ msgid  "Pager"
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.String.Text
+#, fuzzy
 msgid  "Mobile"
 msgstr " Telefoon bila šiširi"
 
@@ -777,6 +788,7 @@ msgid  "Tel: Other"
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "Hantiira"
 
@@ -1510,7 +1522,7 @@ msgid  "The picture needs about %1 KB of memory."
 msgstr ""
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.String.Text
-msgid  "The picture needs about %1 KB of memory,\n the file size is %2 KB."
+msgid  "The picture needs about %1 KB of memory,\\n the file size is %2 KB."
 msgstr ""
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.String.Text
@@ -1570,6 +1582,7 @@ msgid  "~Repeat: "
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.String.Text
+#, fuzzy
 msgid  "Source code"
 msgstr "Porogaramu-harfey / Linji harfu"
 
@@ -1586,6 +1599,7 @@ msgid  "Configuration file"
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.String.Text
+#, fuzzy
 msgid  "Application"
 msgstr "Programu"
 
@@ -1594,6 +1608,7 @@ msgid  "Database table"
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.String.Text
+#, fuzzy
 msgid  "System file"
 msgstr "Sistemu tiira / Dabariɲnaa tiira"
 
@@ -1654,6 +1669,7 @@ msgid  "Batch file"
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FILE.String.Text
+#, fuzzy
 msgid  "File"
 msgstr "Tiira"
 
@@ -1666,6 +1682,7 @@ msgid  "Text Document"
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.String.Text
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Kabuwalha"
 
@@ -1690,6 +1707,7 @@ msgid  "Formula"
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.String.Text
+#, fuzzy
 msgid  "Database"
 msgstr "Tiira-hugu"
 
@@ -1826,6 +1844,7 @@ msgid  "Unknown"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PairedList.item
+#, fuzzy
 msgid  "Default"
 msgstr "Tilasu / Tilasu ra / Tilasu mate"
 
@@ -1838,6 +1857,7 @@ msgid  "Albanian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PairedList.item
+#, fuzzy
 msgid  "Arabic"
 msgstr " Laaraw senni"
 
@@ -1942,6 +1962,7 @@ msgid  "Arabic (Yemen)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PairedList.item
+#, fuzzy
 msgid  "Armenian"
 msgstr " Armeeni senni"
 
@@ -2138,14 +2159,17 @@ msgid  "German (Liechtenstein)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PairedList.item
+#, fuzzy
 msgid  "Greek"
 msgstr " Grek"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PairedList.item
+#, fuzzy
 msgid  "Gujarati"
 msgstr "Gujarati"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PairedList.item
+#, fuzzy
 msgid  "Hebrew"
 msgstr " Ebere"
 
@@ -2174,10 +2198,12 @@ msgid  "Italian (Switzerland)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PairedList.item
+#, fuzzy
 msgid  "Japanese"
 msgstr " Japonee"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PairedList.item
+#, fuzzy
 msgid  "Kannada"
 msgstr "Kannada"
 
@@ -2222,6 +2248,7 @@ msgid  "Malay (Brunei Darussalam)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PairedList.item
+#, fuzzy
 msgid  "Malayalam"
 msgstr "Malayalam"
 
@@ -2250,6 +2277,7 @@ msgid  "Norwegian, Nynorsk"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PairedList.item
+#, fuzzy
 msgid  "Oriya"
 msgstr "Oriya"
 
@@ -2414,6 +2442,7 @@ msgid  "Tajik"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PairedList.item
+#, fuzzy
 msgid  "Tamil"
 msgstr "Tamil"
 
@@ -2422,14 +2451,17 @@ msgid  "Tatar"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PairedList.item
+#, fuzzy
 msgid  "Telugu"
 msgstr "Telugu"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PairedList.item
+#, fuzzy
 msgid  "Thai"
 msgstr "Tay"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PairedList.item
+#, fuzzy
 msgid  "Turkish"
 msgstr " Turk senni"
 
@@ -2522,6 +2554,7 @@ msgid  "Gaelic (Scotland)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PairedList.item
+#, fuzzy
 msgid  "Mongolian"
 msgstr " Mongoli"
 
@@ -2542,6 +2575,7 @@ msgid  "Occitan"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PairedList.item
+#, fuzzy
 msgid  "Khmer"
 msgstr "Khmer"
 
@@ -2574,6 +2608,7 @@ msgid  "Swahili (Tanzania)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PairedList.item
+#, fuzzy
 msgid  "Lao"
 msgstr " Laawo"
 
@@ -2586,6 +2621,7 @@ msgid  "Tibetan (PR China)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PairedList.item
+#, fuzzy
 msgid  "Georgian"
 msgstr " Zeorzi"
 
@@ -2602,6 +2638,7 @@ msgid  "Zulu"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PairedList.item
+#, fuzzy
 msgid  "Vietnamese"
 msgstr " Vietnam senni"
 
@@ -2642,6 +2679,7 @@ msgid  "Xhosa"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PairedList.item
+#, fuzzy
 msgid  "Sinhala"
 msgstr "Sinhala"
 
@@ -3022,6 +3060,7 @@ msgid  "Original Text"
 msgstr ""
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "  Filla"
 
@@ -3091,5 +3130,6 @@ msgid  "Setup"
 msgstr ""
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.String.Text
+#, fuzzy
 msgid  "Finish"
 msgstr " Benandi"

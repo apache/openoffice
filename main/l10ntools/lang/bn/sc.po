@@ -153,9 +153,8 @@ msgid  "Column Fields"
 msgstr "স্তম্ভ ক্ষেত্রসমূহ"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-#, fuzzy
-msgid  "Row\nFields"
-msgstr "সারি\nক্ষেত্রসমূহ"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 #, fuzzy
@@ -581,7 +580,7 @@ msgstr "শেষ"
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOEND.RadioButton.Text
 #, fuzzy
 msgid  "A~utomatically"
-msgstr "স্বয়ংক্রিয়ভাবে (~A)"
+msgstr "স্বয়ংক্রিয়ভাবে (~u)"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANEND.RadioButton.Text
 #, fuzzy
@@ -661,7 +660,7 @@ msgstr "ইনপুটের সহায়তা"
 #: source/ui/dbgui/validate.src#TAB_DLG_VALIDATION.1.TP_VALIDATION_ERROR.PageItem.Text
 #, fuzzy
 msgid  "Error Alert"
-msgstr "ত্রুটির সতর্কবানী"
+msgstr "ত্রুটি সতর্কতা"
 
 #: source/ui/dbgui/validate.src#TAB_DLG_VALIDATION.PageItem.Text
 #, fuzzy
@@ -1174,10 +1173,12 @@ msgid  "Text Import"
 msgstr "পাঠ আমদানি করুন"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_FIELDOPT.FixedLine.Text
+#, fuzzy
 msgid  "Import"
 msgstr "আমদানি করুন"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CHARSET.FixedText.Text
+#, fuzzy
 msgid  "Ch~aracter set"
 msgstr "বর্ণচিহ্নের সমষ্টি (~a)"
 
@@ -1186,46 +1187,57 @@ msgid  "Language"
 msgstr ""
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_AT_ROW.FixedText.Text
+#, fuzzy
 msgid  "From ro~w"
 msgstr "সারি হতে (~w)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_SEPOPT.FixedLine.Text
+#, fuzzy
 msgid  "Separator options"
 msgstr "বিভাজক পছন্দ"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_FIXED.RadioButton.Text
+#, fuzzy
 msgid  "~Fixed width"
 msgstr "অপরিবর্তিত প্রস্থ (~F)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_SEPARATED.RadioButton.Text
+#, fuzzy
 msgid  "~Separated by"
 msgstr "এর দ্বারা বিভাজিত (~S)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_TAB.CheckBox.Text
+#, fuzzy
 msgid  "~Tab"
 msgstr "ট্যাব (~T) "
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_COMMA.CheckBox.Text
+#, fuzzy
 msgid  "~Comma"
 msgstr "কমা (~C)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_OTHER.CheckBox.Text
+#, fuzzy
 msgid  "~Other"
 msgstr "অন্যান্য (~O)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SEMICOLON.CheckBox.Text
+#, fuzzy
 msgid  "S~emicolon"
 msgstr "সেমিকোলন (~e)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SPACE.CheckBox.Text
+#, fuzzy
 msgid  "S~pace"
 msgstr "ফাঁকা (~p)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_ASONCE.CheckBox.Text
+#, fuzzy
 msgid  "Merge ~delimiters"
 msgstr "সীমা নির্দেশক একত্রিত করুন (~d)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TEXTSEP.FixedText.Text
+#, fuzzy
 msgid  "Te~xt delimiter"
 msgstr "পাঠ সীমা নির্দেশক (~x)"
 
@@ -1332,390 +1344,486 @@ msgid  "Settings"
 msgstr "বিন্যাসনসমূহ"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_TABLES_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of sheets:"
 msgstr "শীটসমূহের সংখ্যা:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_CELLS_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of cells:"
 msgstr "কক্ষসমূহের সংখ্যা:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_PAGES_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of pages:"
 msgstr "পৃষ্ঠা সংখ্যা:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Document: "
 msgstr "নথি:"
 
 #: source/ui/drawfunc/objdraw.src#MN_RESET.SID_TEXT_STANDARD.MenuItem.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "পূর্বনির্ধারিত  (~D)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.MenuItem.Text
+#, fuzzy
 msgid  "~Style"
 msgstr "শৈলী (~S)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUPER_SCRIPT.MenuItem.Text
+#, fuzzy
 msgid  "~Superscript"
 msgstr "ঊর্ধ্বলিপি (~S)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUB_SCRIPT.MenuItem.Text
+#, fuzzy
 msgid  "S~ubscript"
 msgstr "নিম্নলিপি (~u)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.MenuItem.Text
+#, fuzzy
 msgid  "~Alignment"
 msgstr "প্রান্তিককরণ (~A)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNLEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "বাম (~L)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNRIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "ডান (~R)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNCENTERHOR.MenuItem.Text
+#, fuzzy
 msgid  "~Centered"
 msgstr "কেন্দ্রীয় (~C)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNBLOCK.MenuItem.Text
+#, fuzzy
 msgid  "~Justified"
 msgstr "প্রান্তিক (~J)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_LINESPACE.MenuItem.Text
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "লাইন ফাঁকাকরণ (~L)"
 
 #: source/ui/drawfunc/objdraw.src#MN_EDITLNK.SID_DRAW_HLINK_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Hyperlink..."
 msgstr "হাইপারলিঙ্ক... (~H)"
 
 #: source/ui/drawfunc/objdraw.src#MN_DELLNK.SID_DRAW_HLINK_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove Hyperlink"
 msgstr "হাইপারলিঙ্ক অপসারণ করুন (~R)"
 
 #: source/ui/drawfunc/objdraw.src#MN_DRWTXTATTR.SID_DRAWTEXT_ATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Te~xt..."
 msgstr "পাঠ... (~x)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ASSIGNMACRO.SID_ASSIGNMACRO.MenuItem.Text
+#, fuzzy
 msgid  "Assig~n Macro..."
 msgstr "ম্যাক্রো বরাদ্দ করুন... (~n)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ORIGINALSIZE.SID_ORIGINALSIZE.MenuItem.Text
+#, fuzzy
 msgid  "~Original Size"
 msgstr "মূল আকার (~O)"
 
 #: source/ui/drawfunc/objdraw.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "নাম..."
 
 #: source/ui/drawfunc/objdraw.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "বর্ণনা..."
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.MenuItem.Text
+#, fuzzy
 msgid  "~Flip"
 msgstr "উল্টান (~F)"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "উলম্বভাবে (~V)"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "~Horizontal"
 msgstr "অনুভূমিক (~H)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "আয়োজন করুন (~A)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "সামনে নিয়ে আসুন (~F)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "পিছনে পাঠিয়ে দিন (~w)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
+#, fuzzy
 msgid  "An~chor"
 msgstr "অ্যাঙ্কর (~c)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "To P~age"
 msgstr "পৃষ্ঠায় (~a)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
+#, fuzzy
 msgid  "To ~Cell"
 msgstr "কক্ষে (~C)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "প্রান্তিককরণ (~l)"
 
 #: source/ui/drawfunc/objdraw.src#RID_DRAW_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Drawing Object Bar"
 msgstr "চিত্র অবজেক্ট বার"
 
 #: source/ui/drawfunc/objdraw.src#RID_TEXT_TOOLBOX.String.Text
+#, fuzzy
 msgid  "Text Object Bar"
 msgstr "পাঠ অবজেক্ট বার"
 
 #: source/ui/drawfunc/objdraw.src#RID_GRAPHIC_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Graphics Object Bar"
 msgstr "গ্রাফিক্স অবজেক্ট বার"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAW.String.Text
+#, fuzzy
 msgid  "Pop-up menu for drawing objects"
 msgstr "চিত্র অবজেক্টের জন্য পপআপ তালিকা"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAWTEXT.String.Text
+#, fuzzy
 msgid  "Pop-up menu for text objects"
 msgstr "পাঠ অবজেক্টের জন্য পপআপ তালিকা"
 
 #: source/ui/drawfunc/drformsh.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "নাম..."
 
 #: source/ui/drawfunc/drformsh.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "বর্ণনা..."
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "আয়োজন করুন (~A)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "সামনে নিয়ে আসুন (~F)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "পেছনে পাঠান (~w)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
+#, fuzzy
 msgid  "An~chor"
 msgstr "অ্যাঙ্কর (~c)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "To P~age"
 msgstr "পৃষ্ঠায় (~a)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
+#, fuzzy
 msgid  "To ~Cell"
 msgstr "কক্ষে (~C)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "প্রান্তিককরণ (~l)"
 
 #: source/ui/drawfunc/drformsh.src#RID_POPUP_DRAWFORM.String.Text
+#, fuzzy
 msgid  "Popup menu for form objects"
 msgstr "ফর্ম অবজেক্টের জন্য পপআপ তালিকা"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Last Used"
 msgstr "শেষ ব্যবহ্রত"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "All"
 msgstr "স"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Database"
 msgstr "উপাত্ত ভান্ডার "
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Date&Time"
 msgstr "তারিখ&সময়"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Financial"
 msgstr "আর্থিক"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Information"
 msgstr "তথ্য"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Logical"
 msgstr "যৌক্তিক"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Mathematical"
 msgstr "গানিতিক"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Array"
 msgstr "অ্যারে"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Statistical"
 msgstr "পরিসংখ্যান"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "স্প্রেডশীট"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Text"
 msgstr "পাঠ্য"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Add-in"
 msgstr "অন্ত্যর্ভুক্ত করা"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.IMB_INSERT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Insert Function into calculation sheet"
 msgstr "ক্যালকুলেশন শীটে ফাংশন প্রবেশ করান"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.ButtonImage.Text
+#, fuzzy
 msgid  "Functions"
 msgstr "ফাংশনসমূহ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.FT_ASSIGN.FixedText.Text
+#, fuzzy
 msgid  "Range"
 msgstr "সীমা"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "নূন্যতম/সর্বোচ্চ করুন"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_COLS.String.Text
+#, fuzzy
 msgid  "Column inserted"
 msgstr "স্তম্ভ প্রবেশ করা হয়েছে"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_ROWS.String.Text
+#, fuzzy
 msgid  "Row inserted "
 msgstr "সারি প্রবেশ করা হয়েছে"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_TABS.String.Text
+#, fuzzy
 msgid  "Sheet inserted "
 msgstr "শীট প্রবেশ করা হয়েছে"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_COLS.String.Text
+#, fuzzy
 msgid  "Column deleted"
 msgstr "স্তম্ভ মুছে ফেলা হয়েছে"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_ROWS.String.Text
+#, fuzzy
 msgid  "Row deleted"
 msgstr "সারি মুছে ফেলা হয়েছে"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_TABS.String.Text
+#, fuzzy
 msgid  "Sheet deleted"
 msgstr "শীট মুছে ফেলা হয়েছে"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_MOVE.String.Text
+#, fuzzy
 msgid  "Range moved"
 msgstr "সীমা সরানো হয়েছে"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT.String.Text
 msgid  "Changed contents"
-msgstr "পরিবর্তিত বিষয়বস্তুসমূহ"
+msgstr "পরিবর্তিত বিষয়বস্তুসমূহ "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT_WITH_CHILD.String.Text
+#, fuzzy
 msgid  "Changed contents"
 msgstr "পরিবর্তিত বিষয়বস্তুসমূহ "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_CONTENT.String.Text
+#, fuzzy
 msgid  "Changed to "
 msgstr "পরিবর্তন করা হয়েছে"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_ORGCONTENT.String.Text
+#, fuzzy
 msgid  "Original"
 msgstr "মূল"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECT.String.Text
+#, fuzzy
 msgid  "Changes rejected"
 msgstr "পরিবর্তন বাতিল করা হয়েছে"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_ACCEPTED.String.Text
+#, fuzzy
 msgid  "Accepted"
 msgstr "গ্রহণ করা হয়েছে"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECTED.String.Text
+#, fuzzy
 msgid  "Rejected"
 msgstr "বাতিল করা হয়েছে"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_NO_ENTRY.String.Text
+#, fuzzy
 msgid  "No Entry"
 msgstr "প্রবেশ নিষেধ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_EMPTY.String.Text
+#, fuzzy
 msgid  "<empty>"
 msgstr "<ফাঁকা>"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.Bitmap.Text
+#, fuzzy
 msgid  "Accept or Reject Changes"
 msgstr "পরিবর্তন গ্রহণ অথবা বাতিল করুন"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_CHANGES_COMMENT.MenuItem.Text
+#, fuzzy
 msgid  "Edit Comment..."
 msgstr "মন্তব্য সম্পাদনা করুন.."
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_ACTION.MenuItem.Text
+#, fuzzy
 msgid  "Action"
 msgstr "কার্য"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr "অবস্থান"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_AUTHOR.MenuItem.Text
+#, fuzzy
 msgid  "Author"
 msgstr "লেখক"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_DATE.MenuItem.Text
+#, fuzzy
 msgid  "Date"
 msgstr "তারিখ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_COMMENT.MenuItem.Text
+#, fuzzy
 msgid  "Description"
 msgstr "বিবরণ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.MenuItem.Text
+#, fuzzy
 msgid  "Sorting"
 msgstr "ক্রমসজ্জিতকরণ"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.ModalDialog.Text
+#, fuzzy
 msgid  "Resolve Conflicts"
 msgstr "দ্বন্দ্ব সমাধান করুন"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.FT_CONFLICTS.FixedText.Text
+#, fuzzy
 msgid  "There are conflicting changes in this shared spreadsheet. Conflicts must be resolved before saving the spreadsheet. Keep either own or other changes."
 msgstr "এই শেয়ারকৃত স্প্রেডশীটে দ্বন্দ্ব সৃষ্টিকারী পরিবর্তন আছে। স্প্রেডশীটটি সংরক্ষণের পূর্বে অবশ্যই দ্বন্দ্ব সমাধান করতে হবে। হয় নিজের বা অন্যের পরিবর্তনসমূহ রাখুন।"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPMINE.PushButton.Text
+#, fuzzy
 msgid  "Keep ~Mine"
 msgstr "আমারটি রাখুন (~M)"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPOTHER.PushButton.Text
+#, fuzzy
 msgid  "Keep ~Other"
 msgstr "অন্যদেরটি রাখুন (~O)"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLMINE.PushButton.Text
+#, fuzzy
 msgid  "~Keep All Mine"
 msgstr "সব আমার রাখুন (~K)"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLOTHERS.PushButton.Text
+#, fuzzy
 msgid  "Keep ~All Others"
 msgstr "অন্য সকলের রাখুন (~A)"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_CONFLICT.String.Text
+#, fuzzy
 msgid  "Conflict"
 msgstr "দ্বন্দ্ব"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_AUTHOR.String.Text
+#, fuzzy
 msgid  "Author"
 msgstr "লেখক"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_DATE.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "তারিখ"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_UNKNOWN_USER.String.Text
+#, fuzzy
 msgid  "Unknown User"
 msgstr "অজানা ব্যবহারকারী"
 
@@ -1884,70 +1992,87 @@ msgid  "(exclusive access)"
 msgstr "অন্যন্য প্রবেশ"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.ModalDialog.Text
+#, fuzzy
 msgid  "Insert Sheet"
 msgstr "শীট সংযোজন করুন"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_POSITION.FixedLine.Text
+#, fuzzy
 msgid  "Position"
 msgstr "অবস্থান"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEFORE.RadioButton.Text
+#, fuzzy
 msgid  "B~efore current sheet"
 msgstr "বর্তমান শীটের পূর্বে (~e)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEHIND.RadioButton.Text
+#, fuzzy
 msgid  "~After current sheet"
 msgstr "বর্তমান শীটের পরে (~A)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_TABLE.FixedLine.Text
+#, fuzzy
 msgid  "Sheet"
 msgstr "শীট"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_NEW.RadioButton.Text
+#, fuzzy
 msgid  "~New sheet"
 msgstr "নতুন শীট (~N)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "N~o. of sheets"
 msgstr "শীট সংখ্যা (~o)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Na~me"
 msgstr "নাম (~m)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_FROMFILE.RadioButton.Text
+#, fuzzy
 msgid  "~From file"
 msgstr "ফাইল হতে (~F)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.BTN_BROWSE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "ব্রাউজ করুন... (~B)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.CB_LINK.CheckBox.Text
+#, fuzzy
 msgid  "Lin~k"
 msgstr "সংযোগ (~k)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT.CheckBox.Text
+#, fuzzy
 msgid  "~Show changes in spreadsheet"
 msgstr "স্প্রেডশীটের পরিবর্তনসমূহ প্রদর্শন করুন (~S)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.FL_FILTER.FixedLine.Text
+#, fuzzy
 msgid  "Filter settings"
 msgstr "পরিশ্রুতক বিন্যাসনসমূহ "
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_ACCEPT.CheckBox.Text
+#, fuzzy
 msgid  "Show ~accepted changes"
 msgstr "গ্রীহীত পরিবর্তনসমূহ প্রদর্শন করুন (~a)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_REJECT.CheckBox.Text
+#, fuzzy
 msgid  "Show ~rejected changes"
 msgstr "বাতিলকৃত পরিবর্তনসমূহ প্রদর্শন করুন (~r)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "নূন্যতম/সর্বোচ্চ করুন"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.ImageButton.Text
+#, fuzzy
 msgid  "Show Changes"
 msgstr "পরিবর্তনসমূহ প্রদর্শন করুন"
 
@@ -1984,134 +2109,167 @@ msgid  "Select unlocked cells"
 msgstr ""
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FL_LOCATION.FixedLine.Text
+#, fuzzy
 msgid  "URL of ~external data source"
 msgstr "বহিঃস্থ উপাত্ত উৎসের‍ ইউআরএল (~e)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_HINT.FixedText.Text
+#, fuzzy
 msgid  "(Enter the URL of the source document in the local file system or Internet here.)"
 msgstr "(এখানে স্থানীয় ফাইল সিস্টেমে বা ইন্টারনেটে উৎস নথির URL প্রবেশ করান।)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_RANGES.FixedText.Text
+#, fuzzy
 msgid  "~Available tables/ranges"
 msgstr "সহজলভ্য সারণী/সীমাসমূহ (~A)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.BTN_RELOAD.CheckBox.Text
+#, fuzzy
 msgid  "~Update every"
 msgstr "প্রতিটি হালনাগাদ করুন (~U)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_SECONDS.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "সেকেন্ড"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FixedText.Text
+#, fuzzy
 msgid  "External Data"
 msgstr "বহিঃস্থ উপাত্ত"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.Window.Text
+#, fuzzy
 msgid  "Navigator"
 msgstr "পরিক্রমক"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
+#, fuzzy
 msgid  "Row"
 msgstr "সারি"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
+#, fuzzy
 msgid  "Row"
 msgstr "সারি"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
+#, fuzzy
 msgid  "Column"
 msgstr "স্তম্ভ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
+#, fuzzy
 msgid  "Column"
 msgstr "স্তম্ভ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.LB_DOCUMENTS.ListBox.QuickHelpText
+#, fuzzy
 msgid  "Document"
 msgstr "নথি"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DATA.ToolBoxItem.Text
+#, fuzzy
 msgid  "Data Range"
 msgstr "উপাত্ত সীমা"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_UP.ToolBoxItem.Text
+#, fuzzy
 msgid  "Start"
 msgstr "শুরু করুন"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DOWN.ToolBoxItem.Text
+#, fuzzy
 msgid  "End"
 msgstr "শেষ করুন"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "বিষয়বস্তুসমূহ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_CHANGEROOT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Toggle"
 msgstr "টগল করুন"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_SCENARIOS.ToolBoxItem.Text
+#, fuzzy
 msgid  "Scenarios"
 msgstr "দৃশ্যাবলী"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Drag Mode"
 msgstr "টানার কর্মপদ্ধতি"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
+#, fuzzy
 msgid  "Drag Mode"
 msgstr "টানার কর্মপদ্ধতি"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DISPLAY.String.Text
+#, fuzzy
 msgid  "Display"
 msgstr "প্রদর্শন করুন"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVE.String.Text
+#, fuzzy
 msgid  "active"
 msgstr "সক্রিয়"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_NOTACTIVE.String.Text
+#, fuzzy
 msgid  "inactive"
 msgstr "নিস্ক্রিয়"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_HIDDEN.String.Text
+#, fuzzy
 msgid  "hidden"
 msgstr "লুকায়িত"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVEWIN.String.Text
+#, fuzzy
 msgid  "Active Window"
 msgstr "সক্রিয় উইন্ডো"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_LISTBOX.String.Text
+#, fuzzy
 msgid  "Scenario Name"
 msgstr "দৃশ্যের নাম"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_COMMENT.String.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "মন্তব্য"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_ROOT.String.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "বিষয়বস্তুসমূহ"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_TABLE.String.Text
+#, fuzzy
 msgid  "Sheets"
 msgstr "শীটসমূহ"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_RANGENAME.String.Text
+#, fuzzy
 msgid  "Range names"
 msgstr "সীমার নাম"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DBAREA.String.Text
+#, fuzzy
 msgid  "Database Ranges"
 msgstr "উপাত্তধার সীমাসমূহ"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_GRAPHIC.String.Text
+#, fuzzy
 msgid  "Graphics"
 msgstr "গ্রাফিক্স"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_OLEOBJECT.String.Text
+#, fuzzy
 msgid  "OLE objects"
 msgstr "OLE অবজেক্ট"
 
@@ -2156,70 +2314,87 @@ msgid  "Properties..."
 msgstr "বৈশিষ্ট্য..."
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.ModelessDialog.Text
+#, fuzzy
 msgid  "Edit Print Ranges"
 msgstr "মুদ্রণ সীমা সম্পাদনা করুন"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_PRINTAREA.FixedLine.Text
+#, fuzzy
 msgid  "Print range"
 msgstr "মুদ্রণ সীমা"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "- একটিও না -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- entire sheet -"
 msgstr "- সম্পূর্ণ শীট -\t"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- user defined -"
 msgstr "- ব্যবহারকারী সুনির্দিষ্ট -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- selection -"
 msgstr "- নির্বাচন -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "সংকোচন করুন"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
+#, fuzzy
 msgid  "Rows to repeat"
 msgstr "পুনরাবৃত্তির জন্য সারি"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "- একটিও না -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
+#, fuzzy
 msgid  "- user defined -"
 msgstr "- ব্যবহারকারী সুনির্দিষ্ট -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "সংকোচন করুন"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATCOL.FixedLine.Text
+#, fuzzy
 msgid  "Columns to repeat"
 msgstr "পুনরাবৃত্তির জন্য স্তম্ভসমূহ"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "- একটিও না -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
+#, fuzzy
 msgid  "- user defined -"
 msgstr "- ব্যবহারকারী সুনির্দিষ্ট -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATCOL.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "সংকোচন করুন"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_HEADER.CheckBox.Text
+#, fuzzy
 msgid  "~Column and row headers"
 msgstr "স্তম্ভ এবং সারি শিরোনামসমূহ (~C)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_GRID.CheckBox.Text
+#, fuzzy
 msgid  "~Grid"
 msgstr "গরাদ (~G)"
 
@@ -2228,186 +2403,232 @@ msgid  "~Comments"
 msgstr ""
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_OBJECTS.CheckBox.Text
+#, fuzzy
 msgid  "~Objects/graphics"
 msgstr "অবজেক্টসমূহ/গ্রাফিক্স (~O)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_CHARTS.CheckBox.Text
+#, fuzzy
 msgid  "Ch~arts"
 msgstr "ছক (~a)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_DRAWINGS.CheckBox.Text
+#, fuzzy
 msgid  "~Drawing objects"
 msgstr "চিত্র অবজেক্টসমূহ (~D)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_FORMULAS.CheckBox.Text
+#, fuzzy
 msgid  "~Formulas"
 msgstr "সূত্রসমূহ (~F)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NULLVALS.CheckBox.Text
+#, fuzzy
 msgid  "Zero ~values"
 msgstr "শূন্য মানসমূহ (~v)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PRINT.FixedLine.Text
+#, fuzzy
 msgid  "Print"
 msgstr "মুদ্রণ করুন"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_TOPDOWN.RadioButton.Text
+#, fuzzy
 msgid  "~Top to bottom, then right"
 msgstr "উপর থেকে নীচে, তারপর ডানে (~T)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_LEFTRIGHT.RadioButton.Text
+#, fuzzy
 msgid  "~Left to right, then down"
 msgstr "বাম থেকে ডানে, তারপর নিচে (~L)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_PAGENO.CheckBox.Text
+#, fuzzy
 msgid  "First ~page number"
 msgstr "প্রথমে পৃষ্ঠা নম্বর (~p)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PAGEDIR.FixedLine.Text
+#, fuzzy
 msgid  "Page order"
 msgstr "পৃষ্ঠার ক্রম"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEMODE.FixedText.Text
+#, fuzzy
 msgid  "Scaling ~mode"
 msgstr "পরিমাপকরণ পরিমন্ডল (~m)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_PERCENT.StringList.item
+#, fuzzy
 msgid  "Reduce/enlarge printout"
 msgstr "মুদ্রণপত্র হ্রাস/বৃদ্ধি করুন"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO.StringList.item
+#, fuzzy
 msgid  "Fit print range(s) to width/height"
 msgstr "মুদ্রণ সীমা(সমূহ) প্রস্থ/উচ্চতা সাথে মানানসই করুন"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO_PAGES.StringList.item
+#, fuzzy
 msgid  "Fit print range(s) on number of pages"
 msgstr "মুদ্রণ সীমা(সমূহ) পৃষ্ঠা সংখ্যার উপর মানানসই করুন"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEFACTOR.FixedText.Text
+#, fuzzy
 msgid  "~Scaling factor"
 msgstr "পরিমাপকরণ মাত্রা (~S)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEWIDTH.FixedText.Text
+#, fuzzy
 msgid  "~Width in pages"
 msgstr "পৃষ্ঠার প্রস্থ (~W)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEHEIGHT.FixedText.Text
+#, fuzzy
 msgid  "H~eight in pages"
 msgstr "পৃষ্ঠার উচ্চতা (~e)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGENUM.FixedText.Text
+#, fuzzy
 msgid  "N~umber of pages"
 msgstr "পৃষ্ঠা সংখ্যা (~u)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_SCALE.FixedLine.Text
+#, fuzzy
 msgid  "Scale"
 msgstr "স্কেল"
 
 #: source/ui/pagedlg/hfedtdlg.src#HFEDIT_DLGTITLE.#define.Text
+#, fuzzy
 msgid  "Headers/Footers"
 msgstr "প্রান্তটিকা/পাদটিকাসমূহ"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER.#define.Text
+#, fuzzy
 msgid  "Header"
 msgstr "প্রান্তটিকা"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER.#define.Text
+#, fuzzy
 msgid  "Footer"
 msgstr "পাদটিকা"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_RIGHT.#define.Text
+#, fuzzy
 msgid  "Header (right)"
 msgstr "প্রান্তটিকা (ডান)"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_LEFT.#define.Text
+#, fuzzy
 msgid  "Header (left)"
 msgstr "প্রান্তটিকা (বাম)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_RIGHT.#define.Text
+#, fuzzy
 msgid  "Footer (right)"
 msgstr "পাদটিকা (ডান)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_LEFT.#define.Text
+#, fuzzy
 msgid  "Footer (left)"
 msgstr "পাদটিকা (বাম)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_HEADER.TabDialog.Text
+#, fuzzy
 msgid  "Headers"
 msgstr "প্রান্তটিকাসমূহ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_FOOTER.TabDialog.Text
+#, fuzzy
 msgid  "Footers"
 msgstr "পাদটিকাসমূহ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_LEFT.FixedText.Text
+#, fuzzy
 msgid  "~Left area"
 msgstr "বাম এলাকা (~L)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_CENTER.FixedText.Text
+#, fuzzy
 msgid  "~Center area"
 msgstr "কেন্দ্র এলাকা (~C)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_RIGHT.FixedText.Text
+#, fuzzy
 msgid  "R~ight area"
 msgstr "ডান এলাকা (~i)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_DEFINED.FixedText.Text
+#, fuzzy
 msgid  "Hea~der"
 msgstr "প্রান্তটিকা (~d)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_CUSTOM.FixedText.Text
+#, fuzzy
 msgid  "Custom header"
 msgstr "পছন্দসই প্রান্তটিকা"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TEXT.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Text Attributes"
 msgstr "পাঠ বৈশিষ্ট্য"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Title"
 msgstr "শিরোনাম"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
+#, fuzzy
 msgid  "Title"
 msgstr "শিরোনাম"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_FILENAME.MenuItem.Text
+#, fuzzy
 msgid  "File Name"
 msgstr "ফাইল নাম"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_PATH.MenuItem.Text
+#, fuzzy
 msgid  "Path/File Name"
 msgstr "পথ/ফাইল নাম"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TABLE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Sheet Name"
 msgstr "শীটের নাম"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Page"
 msgstr "পৃষ্ঠা"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGES.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Pages"
 msgstr "পৃষ্ঠাগুলো"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_DATE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Date"
 msgstr "তারিখ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TIME.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Time"
 msgstr "সময়"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "Use the buttons to change the font or insert field commands such as date, time, etc."
 msgstr "ফন্ট পরিবর্তন করতে বোতামসমূহ ব্যবহার করুন বা তারিখ, সময় ইত্যাদির মতো ক্ষেত্র নির্দেশ প্রবেশ করান।"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Note"
 msgstr "নোট"
 
 #: source/ui/pagedlg/tphf.src#RID_SCBTN_HFEDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "সম্পাদনা করুন... (~E)"
 
@@ -2541,9 +2762,8 @@ msgid  "~Discard"
 msgstr "বাতিল করুন (~D)"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-#, fuzzy
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "# এন্ট্রিটি\nকি\nমুছে ফেলা হবে?"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -3035,70 +3255,86 @@ msgid  "~Delete"
 msgstr "মুছে ফেলুন (~D)"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
+#, fuzzy
 msgid  "Format Cells"
 msgstr "বিন্যাস কক্ষসমূহ"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
+#, fuzzy
 msgid  "Numbers"
 msgstr "সংখ্যাসমূহ"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "ফন্ট"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "ফন্টের প্রভাব"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "প্রান্তিককরণ"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
+#, fuzzy
 msgid  "Asian Typography"
 msgstr "এশিয় মুদ্রণ শৈলী"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "সীমানা"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "প্রেক্ষাপট"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
+#, fuzzy
 msgid  "Cell Protection"
 msgstr "কক্ষ সংরক্ষণ"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
+#, fuzzy
 msgid  "~Protected"
 msgstr "সংরক্ষিত (~P)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~formula"
 msgstr "সূত্র লুকান (~f)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~all"
 msgstr "সব লুকান (~a)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "বর্তমান শীট সংরক্ষিত হওয়ার পর কক্ষ সংরক্ষণ কার্যকরী হয়। \n\n'টুলসমূহ' এর তালিকা হতে 'নথি সংরক্ষণ করুন' নির্বাচন করুন এবং 'শীট' উল্লেখ করুন।"
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
+#, fuzzy
 msgid  "Protection"
 msgstr "সংরক্ষণ করুন"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "মুদ্রণ করার সময় লুকিয়ে রাখুন (~w)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
+#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "মুদ্রণের সময় নির্বাচিত কক্ষসমূহ মুছে ফেলা হবে।"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
+#, fuzzy
 msgid  "Print"
 msgstr "মুদ্রণ করুন"
 
@@ -3315,7 +3551,7 @@ msgstr "মুছে ফেলুন"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SELATTR.String.Text
 #, fuzzy
 msgid  "Attributes"
-msgstr "বৈশিষ্ট্য"
+msgstr "বৈশিষ্ট্যসমূহ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SELATTRLINES.String.Text
 #, fuzzy
@@ -3718,9 +3954,8 @@ msgid  "No operations to execute"
 msgstr "কার্যকর করার কোনো অপারেশন নাই"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-#, fuzzy
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "সীমাটি স্তম্ভ শিরোনাম ধারণ করে না। \nআপনি কি প্রথম লাইনটিকে স্তম্ভ শিরোনাম হিসেবে ব্যবহার করতে চান?"
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -3798,9 +4033,8 @@ msgid  "Search key not found."
 msgstr "অনুসন্ধান কী খুঁজে পাওয়া যায়নি।"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-#, fuzzy
-msgid  "Goal Seek successful.\n"
-msgstr "লক্ষ্য অন্বেষন সফল।\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 #, fuzzy
@@ -3813,14 +4047,12 @@ msgid  ") into current cell?"
 msgstr " ) বর্তমান কক্ষে?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-#, fuzzy
-msgid  "Goal Seek not successful.\n"
-msgstr "লক্ষ্য অন্বেষন সফল নয়।\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-#, fuzzy
-msgid  "No exact value found. \n"
-msgstr "কোনো নির্ভুল মান পাওয়া যায়নি।\n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -4182,38 +4414,1357 @@ msgid  "Text Attributes"
 msgstr "পাঠ বৈশিষ্ট্য"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+msgid  "\\"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+#, fuzzy
+msgid  "PAGE"
+msgstr "PAGE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+#, fuzzy
+msgid  "PAGES"
+msgstr "PAGES"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+#, fuzzy
+msgid  "DATE"
+msgstr "DATE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+#, fuzzy
+msgid  "TIME"
+msgstr "TIME"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+#, fuzzy
+msgid  "FILE"
+msgstr "FILE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+#, fuzzy
+msgid  "SHEET"
+msgstr "SHEET"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+#, fuzzy
+msgid  "Protected cells can not be modified."
+msgstr "সংরক্ষিত কক্ষসমূহ পরিবর্তন করা যায় না।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+#, fuzzy
+msgid  "Document opened in read-only mode."
+msgstr "নথি শুধুমাত্র- পাঠযোগ্য পরিমন্ডলে খোলা হয়েছে।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+#, fuzzy
+msgid  "You cannot change only part of an array."
+msgstr "আপনি শুধুমাত্র অ্যারের কোনো অংশ পরিবর্তন করতে পারেন না।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+#, fuzzy
+msgid  "Header"
+msgstr "প্রান্তটিকা"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+#, fuzzy
+msgid  "Footer"
+msgstr "পাদটিকা"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+#, fuzzy
+msgid  "Err:"
+msgstr "ত্রুটি:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+#, fuzzy
+msgid  "Error: Ranges do not intersect"
+msgstr "ত্রুটি: সীমাসমূহ ছেদ করে না"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+#, fuzzy
+msgid  "Error: Division by zero"
+msgstr "ত্রুটি: শূন্য দ্বারা ভাগ করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+#, fuzzy
+msgid  "Error: Wrong data type"
+msgstr "ত্রুটি: ভূল উপাত্তের ধরন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+#, fuzzy
+msgid  "Error: Not a valid reference"
+msgstr "ত্রুটি: বৈধ তথ্যসম্পর্ক নয়"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+#, fuzzy
+msgid  "Error: Invalid name"
+msgstr "ত্রুটি: অবৈধ নাম"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+#, fuzzy
+msgid  "Error: Invalid numeric value"
+msgstr "ত্রুটি: অবৈধ স্যাংখিক মান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+#, fuzzy
+msgid  "Error: Value not available"
+msgstr "ত্রুটি: মান সহজলভ্য নয়"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "#ADDIN?"
+msgstr "#ADDIN?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "Error: Add-in not found"
+msgstr "ত্রুটি: অ্যাড-ইন খুঁজে পাওয়া যায়নি"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "#MACRO?"
+msgstr "#MACRO?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "Error: Macro not found"
+msgstr "ত্রুটি: ম্যাক্রো খুঁজে পাওয়া যায়নি"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+#, fuzzy
+msgid  "Internal syntactical error"
+msgstr "অন্তর্গত ব্যকরণগত ত্রুটি"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+#, fuzzy
+msgid  "Error: Invalid argument"
+msgstr "ত্রুটি:অবৈধ যুক্তি"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+#, fuzzy
+msgid  "Error in parameter list"
+msgstr "প্যারামিটার তালিকায় ত্রুটি"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+#, fuzzy
+msgid  "Error: Invalid character"
+msgstr "ত্রুটি: অবৈধ বর্ণচিহ্ন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+#, fuzzy
+msgid  "Error: Invalid semicolon"
+msgstr "ত্রুটি: অবৈধ সেমিকোলন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+#, fuzzy
+msgid  "Error: in bracketing"
+msgstr "ত্রুটি: শ্রেণীভুক্তিকরণে"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+#, fuzzy
+msgid  "Error: Operator missing"
+msgstr "ত্রুটি: অপারেটর নিখোঁজ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+#, fuzzy
+msgid  "Error: Variable missing"
+msgstr "ত্রুটি: ভেরিয়েবল নিখোঁজ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+#, fuzzy
+msgid  "Error: Formula overflow"
+msgstr "ত্রুটি: সূত্র অতিরিক্ত"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+#, fuzzy
+msgid  "Error: String overflow"
+msgstr "ত্রুটি: স্ট্রিং অতিরিক্ত"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+#, fuzzy
+msgid  "Error: Internal overflow"
+msgstr "ত্রুটি: অন্তর্গত অতিরিক্ত"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+#, fuzzy
+msgid  "Error: Circular reference"
+msgstr "ত্রুটি: বৃত্তাকার তথ্যসম্পর্ক"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+#, fuzzy
+msgid  "Error: Calculation does not converge"
+msgstr "ত্রুটি: হিসাব মিলছে না"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+#, fuzzy
+msgid  "Grid color"
+msgstr "গরাদ রং"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+#, fuzzy
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "লুকায়িত কক্ষসমূহের বিষয়বস্তুসমূহ কি প্রথম কক্ষে সরানো হবে?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "পরিশ্রুতক"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+#, fuzzy
+msgid  "The target database range does not exist."
+msgstr "উদ্দিষ্ট উপাত্তধার সীমা বিদ্যমান নয়।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+#, fuzzy
+msgid  "Invalid increment"
+msgstr "অবৈধ বৃদ্ধি"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+#, fuzzy
+msgid  "MULTIPLE.OPERATIONS"
+msgstr "MULTIPLE.OPERATIONS"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+#, fuzzy
+msgid  "Multiple operations"
+msgstr "বহুবিধ অপারেশন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+#, fuzzy
+msgid  "Range"
+msgstr "সীমা"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "হ্যাঁ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "না"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+#, fuzzy
+msgid  "Protection"
+msgstr "সংরক্ষণ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "সূত্রসমূহ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "লুকান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+#, fuzzy
+msgid  "Print"
+msgstr "মুদ্রণ করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+#, fuzzy
+msgid  "(nested)"
+msgstr "(নেষ্টেড)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+#, fuzzy
+msgid  "(optional)"
+msgstr "(ঐচ্ছিক)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+#, fuzzy
+msgid  "(required)"
+msgstr "(প্রয়োজনীয়)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+#, fuzzy
+msgid  "invalid"
+msgstr "অবৈধ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+#, fuzzy
+msgid  "Edit Function"
+msgstr "ফাংশন সম্পাদনা করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "মন্তব্য"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "আপনি  কি নিশ্চিত আপনি নির্বাচিত দৃশ্য মুছে ফেলতে চান?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "আপনি  কি নিশ্চিত আপনি নির্বাচিত দৃশ্য মুছে ফেলতে চান?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+#, fuzzy
+msgid  "Thesaurus is not available"
+msgstr "অভিধান সহজলভ্য নয়"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+#, fuzzy
+msgid  "Spellcheck not available"
+msgstr "বানান-পরীক্ষণ সহজলভ্য নয়"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+#, fuzzy
+msgid  "Import text files"
+msgstr "পাঠ ফাইলসমূহ আমদানি করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+msgid  "Export Text File"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+#, fuzzy
+msgid  "Import Lotus files"
+msgstr "লোটাস ফাইলসমূহ আমদানি করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+#, fuzzy
+msgid  "Import DBase files"
+msgstr "উপাত্তধার ফাইলসমূহ আমদানি করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+#, fuzzy
+msgid  "DBase export"
+msgstr "উপাত্তধার রপ্তানি করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Export"
+msgstr "বিবিধ রপ্তানি"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Import"
+msgstr "বিবিধ আমদানি"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+#, fuzzy
+msgid  "Default"
+msgstr "পূর্বনির্ধারিত"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+#, fuzzy
+msgid  "Result"
+msgstr "ফলাফল"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+#, fuzzy
+msgid  "Result2"
+msgstr "ফলাফল২"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+#, fuzzy
+msgid  "Heading"
+msgstr "শিরোনাম"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+#, fuzzy
+msgid  "Heading1"
+msgstr "শিরোনাম১"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "প্রতিবেদন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+#, fuzzy
+msgid  "Report1"
+msgstr "প্রতিবেদন১"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+#, fuzzy
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "অভিধান শুধুমাত্র পাঠ কক্ষে ব্যবহার করা যায়!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+#, fuzzy
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "বর্তমান শীটের শুরু থেকে কি বানান-পরীক্ষণ অব্যাহত রাখা হবে?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+#, fuzzy
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "এই শীটের বানান-পরীক্ষণ সম্পূর্ন হয়েছে।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+#, fuzzy
+msgid  "No language set"
+msgstr "কোনো ভাষা নির্ধারণ করা হয়নি"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+#, fuzzy
+msgid  "Insert Sheet"
+msgstr "শীট প্রবেশ করান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+#, fuzzy
+msgid  "Delete Sheets"
+msgstr "শীট মুছে ফেলুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+#, fuzzy
+msgid  "Rename Sheet"
+msgstr "শীট পুনঃ নামকরণ করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+msgid  "Color Tab"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+msgid  "Color Tabs"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+#, fuzzy
+msgid  "Move Sheets"
+msgstr "শীট সরান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+#, fuzzy
+msgid  "Copy Sheet"
+msgstr "শীট অনুলিপি করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+#, fuzzy
+msgid  "Append sheet"
+msgstr "শীট সংযুক্ত করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+#, fuzzy
+msgid  "Show Sheet"
+msgstr "শীট দেখান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+#, fuzzy
+msgid  "Hide sheet"
+msgstr "শীট লুকিয়ে রাখুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+#, fuzzy
+msgid  "Flip sheet"
+msgstr "শীট উল্টান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+#, fuzzy
+msgid  "Toggle the use of R1C1 notation"
+msgstr "R1C1 সংকেতের ব্যবহার টগল করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+#, fuzzy
+msgid  "Main Title"
+msgstr "প্রধান শিরোনাম"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+#, fuzzy
+msgid  "Subtitle"
+msgstr "উপশিরোনাম"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+#, fuzzy
+msgid  "X axis title"
+msgstr "X অক্ষরেখার শিরোনাম"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+#, fuzzy
+msgid  "Y axis title"
+msgstr "Y অক্ষরেখার শিরোনাম"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+#, fuzzy
+msgid  "Z axis title"
+msgstr "Z অক্ষরেখার শিরোনাম"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+#, fuzzy
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "নতুন সারণীটি অন্যান্য সারণীর এমন সম্পূর্ণ তথ্যসম্পর্ক ধারণ করে যা ভূল হতে পারে!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+#, fuzzy
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr "অভিন্ন নামসমূহের ক্ষেত্রে, উদ্দিষ্ট নথির একটি বিদ্যমান সীমার নাম পরিবর্তিত হয়েছে!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+#, fuzzy
+msgid  "AutoFilter not possible"
+msgstr "AutoFilter সম্ভব নয়"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME এর ক্যাল শীটের শুরুতে খুঁজেছে। আপনি কি শেষ পর্যন্ত অব্যাহত রাখতে চান?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME এর ক্যাল শীটের শেষে খুঁজেছে। আপনি কি  শুরু পর্যন্ত অব্যাহত রাখতে চান?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+#, fuzzy
+msgid  "Find & Replace"
+msgstr "খুঁজুন ও প্রতিস্থাপন করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME এর ক্যাল নথির শুরুতে খুঁজেছে। আপনি কি শেষ পর্যন্ত অব্যাহত রাখতে চান?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME এর ক্যাল নথির শেষে খুঁজেছে। আপনি কি  শুরু পর্যন্ত অব্যাহত রাখতে চান?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+#, fuzzy
+msgid  "Replace existing definition of #?"
+msgstr "# এর বিদ্যমান সংজ্ঞা কি প্রতিস্থাপন করবেন?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+#, fuzzy
+msgid  "Invalid selection for range names"
+msgstr "সীমার নামসমূহের জন্য অবৈধ নির্বাচন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+#, fuzzy
+msgid  "References can not be inserted above the source data."
+msgstr "উপরের উৎস উপাত্তে তথ্যসম্পর্ক প্রবেশ করানো যায় না।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+#, fuzzy
+msgid  "Scenario not found"
+msgstr "দৃশ্য খুঁজে পাওয়া যায়নি"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+#, fuzzy
+msgid  "Do you really want to delete the entry #?"
+msgstr "আপনি কি সত্যিই # এন্ট্রিটি মুছে ফেলতে চান?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+#, fuzzy
+msgid  "Objects/graphics"
+msgstr "অবজেক্ট/গ্রাফিক্সসমূহ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+#, fuzzy
+msgid  "Charts"
+msgstr "ছকসমূহ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+#, fuzzy
+msgid  "Drawing Objects"
+msgstr "অংকন অবজেক্টসমূহ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+#, fuzzy
+msgid  "Show"
+msgstr "দেখান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "লুকান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+#, fuzzy
+msgid  "Top to bottom"
+msgstr "শীর্ষবিন্দু হতে নিম্নবিন্দু"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+#, fuzzy
+msgid  "Left-to-right"
+msgstr "বাম-থেকে-ডানে"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "মন্তব্য"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+#, fuzzy
+msgid  "Grid"
+msgstr "গরাদ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+#, fuzzy
+msgid  "Row & Column Headers"
+msgstr "সারি ও স্তম্ভের শিরোনামসমূহ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "সূত্রসমূহ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+#, fuzzy
+msgid  "Zero Values"
+msgstr "শূন্য মানসমূহ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+#, fuzzy
+msgid  "Print direction"
+msgstr "মুদ্রন নির্দেশনা"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+#, fuzzy
+msgid  "First page number"
+msgstr "প্রথম পৃষ্ঠা নম্বর"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+#, fuzzy
+msgid  "Reduce/enlarge printout"
+msgstr "মুদ্রণপত্র হ্রাস/বৃদ্ধি করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+#, fuzzy
+msgid  "Fit print range(s) on number of pages"
+msgstr "পৃষ্ঠা সংখ্যায় মুদ্রণ সীমা(সমূহ) উপযুক্ত করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+#, fuzzy
+msgid  "Fit print range(s) to width/height"
+msgstr "প্রস্থ/উচ্চতার সাথে মুদ্রণ সীমা(সমূহ) উপযুক্ত করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+#, fuzzy
+msgid  "Width"
+msgstr "প্রস্থ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height"
+msgstr "উচ্চতা, উন্নতি, উত্তুঙ্গতা"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+#, fuzzy
+msgid  "%1 page(s)"
+msgstr "%১ পৃষ্ঠা(সমূহ)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+#, fuzzy
+msgid  "automatic"
+msgstr "স্বয়ংক্রিয়"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+#, fuzzy
+msgid  "Statistics"
+msgstr "পরিসংখ্যান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+#, fuzzy
+msgid  "The link could not be updated."
+msgstr "লিংকটি হালনাগাদ করা যাবে না।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+#, fuzzy
+msgid  "File:"
+msgstr "ফাইল:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+#, fuzzy
+msgid  "Sheet:"
+msgstr "শীট:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+#, fuzzy
+msgid  "Overview"
+msgstr "সারসংক্ষেপ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+#, fuzzy
+msgid  "Doc.Information"
+msgstr "নথির তথ্য"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+#, fuzzy
+msgid  "Created"
+msgstr "তৈরীকৃত"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+#, fuzzy
+msgid  "Modified"
+msgstr "পরিবর্তিত"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+#, fuzzy
+msgid  "Printed"
+msgstr "মুদ্রিত"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "বিষয়"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+#, fuzzy
+msgid  "Key words"
+msgstr "মূল শব্দসমূহ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "মন্তব্য"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+#, fuzzy
+msgid  "by"
+msgstr "দ্বারা"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+#, fuzzy
+msgid  "on"
+msgstr "তে"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+#, fuzzy
+msgid  "Too many conditions"
+msgstr "অনেক বেশি শর্ত"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+#, fuzzy
+msgid  "The table could not be inserted."
+msgstr "সারণীটি প্রবেশ করানো যাবে না।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+#, fuzzy
+msgid  "The sheets could not be deleted."
+msgstr "শীটগুলো মুছে ফেলা যাবে না।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+#, fuzzy
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "ক্লিপবোর্ডের বিষয়বস্তুসমূহ প্রতিলেপন করা যাবে না।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+#, fuzzy
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "শীটের এখানে প্রবেশ করার মতো যথেষ্ট ফাঁকা স্থান নেই।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+#, fuzzy
+msgid  "No references found."
+msgstr "কোনো তথ্যসম্পর্ক খুঁজে পাওয়া যায়নি।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+#, fuzzy
+msgid  "Source and destination must not overlap."
+msgstr "উৎস এবং গন্তব্য অবশ্যই মিলবে না।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+#, fuzzy
+msgid  "Graphics"
+msgstr "গ্রাফিক্স"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+#, fuzzy
+msgid  "Invalid name."
+msgstr "অবৈধ নাম।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+#, fuzzy
+msgid  "Selected macro not found."
+msgstr "নির্বাচিত ম্যাক্রো খুঁজে পাওয়া যায়নি।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+#, fuzzy
+msgid  "Invalid value."
+msgstr "অবৈধ মান।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+#, fuzzy
+msgid  "calculating"
+msgstr "গণনা করছে"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+#, fuzzy
+msgid  "sorting"
+msgstr "ক্রমসজ্জিতকরণ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+#, fuzzy
+msgid  "Adapt row height"
+msgstr "সারির উচ্চতা সঙ্গতিপূর্ণ করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+#, fuzzy
+msgid  "Compare #"
+msgstr "# তুলনা করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+#, fuzzy
+msgid  "Delete contents"
+msgstr "বিষয়বস্তুসমূহ মুছে ফেলুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+#, fuzzy
+msgid  "%1 R  x %2 C"
+msgstr "%1 R  x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+#, fuzzy
+msgid  "More..."
+msgstr "আরও..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+#, fuzzy
+msgid  "Invalid range"
+msgstr "অবৈধ সীমা"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "পরিশ্রুতক"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+#, fuzzy
+msgid  "Sort"
+msgstr "সাজান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+#, fuzzy
+msgid  "Subtotals"
+msgstr "উপমোট"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "কোনটি না"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+#, fuzzy
+msgid  "Do you want to replace the contents of #?"
+msgstr "আপনি কি # এর বিষয়বস্তুসমূহ প্রতিস্থাপন করতে চান?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+#, fuzzy
+msgid  "Width:"
+msgstr "প্রস্থ:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height:"
+msgstr "উচ্চতা:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "লুকান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+#, fuzzy
+msgid  "The object could not be inserted."
+msgstr "অবজেক্ট প্রবেশ করানো যাবে না।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+#, fuzzy
+msgid  "<empty>"
+msgstr "<empty>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+#, fuzzy
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "#১ কক্ষ '#২' হতে '#৩' পর্যন্ত পরিবর্তিত হয়েছে"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+#, fuzzy
+msgid  "#1 inserted"
+msgstr "#১ প্রবেশ করানো হয়েছে"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+#, fuzzy
+msgid  "#1deleted"
+msgstr "#১ মুছে ফেলা হয়েছে"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+#, fuzzy
+msgid  "Range moved from #1 to #2"
+msgstr "সীমা #১ হতে #২ পর্যন্ত সরানো হয়েছে"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+#, fuzzy
+msgid  "Exit Recording"
+msgstr "রেকর্ডিং ত্যাগ করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+#, fuzzy
+msgid  "The document can not be closed while a link is being updated."
+msgstr "একটি লিংক হালনাগাদ করার সময় নথিটি বন্ধ করা যায় না।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Adapt array area"
+msgstr "অ্যারে এলাকা সঙ্গতিপূর্ণ করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Array formula  %1 R x %2 C"
+msgstr "অ্যারে সূত্র %1 R x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+#, fuzzy
+msgid  "Hangul/Hanja Conversion"
+msgstr "হাঞ্জল/হানজা কথোপকথন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+#, fuzzy
+msgid  "Select Cell"
+msgstr "কক্ষ নির্বাচন করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+#, fuzzy
+msgid  "Select Range"
+msgstr "সীমা নির্বাচন করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+#, fuzzy
+msgid  "Select Database Range"
+msgstr "উপাত্তধার সীমা নির্বাচন করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+#, fuzzy
+msgid  "Go To Row"
+msgstr "সারি তে যান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+#, fuzzy
+msgid  "Go To Sheet"
+msgstr "শীটে যান"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+#, fuzzy
+msgid  "Define Name for Range"
+msgstr "সীমার জন্য নাম উল্লেখ করুন"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+#, fuzzy
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "নির্বাচনটি নাম দিতে এটি আয়তক্ষেত্রাকার হতে হবে।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+#, fuzzy
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "নির্বাচিত সীমার জন্য আপনাকে অবশ্যই একটি বৈধ তথ্যসম্পর্ক প্রবেশ করাতে হবে বা বৈধ নাম টাইপ করতে হবে।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "সতর্কতা: এই কার্যটির কারণে সূত্রের কক্ষ তথ্যসম্পর্কে অনৈচ্ছিক পরিবর্তন ঘটতে পারে।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr "সতর্কতা: এই কার্যটি ফলাফল মুছে ফেলা এলাকার তথ্যসম্পর্ক হতে পারে যা পুনরুদ্ধার করা যাবে না।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+#, fuzzy
+msgid  "(none)"
+msgstr "(একটিও না)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+#, fuzzy
+msgid  "of"
+msgstr "এ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+#, fuzzy
+msgid  "of ?"
+msgstr "এ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+#, fuzzy
+msgid  "Created by"
+msgstr "এর দ্বারা তৈরী"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+#, fuzzy
+msgid  "Confidential"
+msgstr "গোপনীয়"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+#, fuzzy
+msgid  "Customized"
+msgstr "পছন্দসই বিন্যাসিত"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+#, fuzzy
+msgid  "Custom footer"
+msgstr "পছন্দসই পাদটিকা"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+msgid  "Chinese conversion"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+#, fuzzy
+msgid  "You cannot change this part of the pivot table."
+msgstr "আপনি DataPilot সারণীর এই অংশটি পরিবর্তন করতে পারেন না।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+#, fuzzy
+msgid  "Manual"
+msgstr "হস্তচালিত"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "স্বয়ংক্রিয়"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+#, fuzzy
+msgid  "Nested arrays are not supported."
+msgstr "নেস্টেড অ্যারেসমূহ সমর্থিত নয়।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+#, fuzzy
+msgid  "Text to Columns"
+msgstr "পাঠ হতে স্তম্ভে"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+#, fuzzy
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr "আপনার স্প্রেডশীট অন্যান্য ব্যবহারকারী দ্বারা সংরক্ষিত পরিবর্তন সহ হালনাগাদ করা হয়েছে।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+#, fuzzy
+msgid  "Unknown User"
+msgstr "অজানা ব্যবহারকারী"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+#, fuzzy
+msgid  "Cell Styles"
+msgstr "কক্ষ শৈলীসমূহ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+#, fuzzy
+msgid  "Page Styles"
+msgstr "পৃষ্ঠা শৈলীসমূহ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+#, fuzzy
+msgid  "Character"
+msgstr "বর্ণচিহ্ন"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
+msgid  "Font"
+msgstr "ফন্ট"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
+msgid  "Font Effects"
+msgstr "ফন্টের প্রভাব"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#, fuzzy
+msgid  "Font Position"
+msgstr "ফন্টের অবস্থান"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "পিছনে"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+#, fuzzy
+msgid  "Paragraph"
+msgstr "অনুচ্ছেদ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Indents & Spacing"
+msgstr "ইনডেন্ট ও ফাঁকাকরণ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "প্রান্তিককরণ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+#, fuzzy
+msgid  "Asian Typography"
+msgstr "এশিয় মুদ্রণ শৈলী"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+#, fuzzy
+msgid  "Tab"
+msgstr "ট্যাব"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "পিছনে"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+#, fuzzy
+msgid  "AutoFormat"
+msgstr "AutoFormat"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "F~ormat"
+msgstr "বিন্য়াস করুন (~o)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+#, fuzzy
+msgid  "A~utoFit width and height"
+msgstr "স্বয়ংক্রিয়-মানানসই প্রস্থ এবং উচ্চতা (~u)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+#, fuzzy
+msgid  "~Borders"
+msgstr "সীমানাসমূহ (~B)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+#, fuzzy
+msgid  "F~ont"
+msgstr "ফন্ট (~o)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+#, fuzzy
+msgid  "~Pattern"
+msgstr "নমুনা (~P)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+#, fuzzy
+msgid  "Alignmen~t"
+msgstr "প্রান্তিককরণ (~t)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+#, fuzzy
+msgid  "~Number format"
+msgstr "নম্বর বিন্যাস (~N)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+#, fuzzy
+msgid  "Formatting"
+msgstr "বিন্যাসকরণ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add..."
+msgstr "যুক্ত করুন... (~A)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "মুছে ফেলুন (~D)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+#, fuzzy
+msgid  "~Rename"
+msgstr "পুনঃ নামকরণ করুন (~R)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+#, fuzzy
+msgid  "Add AutoFormat"
+msgstr "AutoFormat যুক্ত করুন"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+#, fuzzy
+msgid  "Rename AutoFormat"
+msgstr "AutoFormat পুনঃ নামকরণ করুন"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "নাম"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+#, fuzzy
+msgid  "Delete AutoFormat"
+msgstr "AutoFormat মুছে ফেলুন"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "বন্ধ করুন (~C)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_JAN.String.Text
+#, fuzzy
 msgid  "Jan"
 msgstr "জানুয়ারী"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_FEB.String.Text
+#, fuzzy
 msgid  "Feb"
 msgstr "ফেব্রু"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MAR.String.Text
+#, fuzzy
 msgid  "Mar"
 msgstr "মার্চ"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_NORTH.String.Text
+#, fuzzy
 msgid  "North"
 msgstr "উত্তর"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MID.String.Text
+#, fuzzy
 msgid  "Mid"
 msgstr "মধ্য"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SOUTH.String.Text
+#, fuzzy
 msgid  "South"
 msgstr "দক্ষিণ"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SUM.String.Text
+#, fuzzy
 msgid  "Total"
 msgstr "মোট"
 
@@ -4330,7 +5881,7 @@ msgstr "সর্বাপেক্ষা বড় %"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest %"
-msgstr "সর্বাপেক্ষা ছেট %"
+msgstr "সর্বাপেক্ষা ছোট%"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Contains"
@@ -4404,7 +5955,7 @@ msgstr "সর্বাপেক্ষা বড় %"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest %"
-msgstr "সর্বাপেক্ষা ছোট%"
+msgstr "সর্বাপেক্ষা ছোট %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 msgid  "Contains"
@@ -4581,7 +6132,7 @@ msgstr ""
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FL_CRITERIA.FixedLine.Text
 #, fuzzy
 msgid  "Filter criteria"
-msgstr "পরিশ্রুতক শ্রেণী"
+msgstr "পরিশ্রূতক বৈশিষ্ট্য"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_CASE.CheckBox.Text
 #, fuzzy
@@ -4601,7 +6152,7 @@ msgstr "সীমা স্তম্ভ লেবেলসমূহ ধারণ
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_UNIQUE.CheckBox.Text
 #, fuzzy
 msgid  "~No duplication"
-msgstr "কোনো প্রতিরুপণ নেই (~N)"
+msgstr "প্রতিরুপণ নেই (~N)"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_COPY_RESULT.CheckBox.Text
 #, fuzzy
@@ -4611,7 +6162,7 @@ msgstr "ফলাফল অনুলিপি করুন... (~r)"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_DEST_PERS.CheckBox.Text
 #, fuzzy
 msgid  "~Keep filter criteria"
-msgstr "পরিশ্রুতক শ্রেণী অব্যাহত রাখুন (~K)"
+msgstr "পরিশ্রুতক বৈশিষ্ট্য অব্যাহত রাখুন (~K)"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.RB_COPY_AREA.ImageButton.QuickHelpText
 #, fuzzy
@@ -4896,7 +6447,7 @@ msgstr "উপাত্ত সীমার কক্ষসমূহ গণনা
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.2.String.Text
 #, fuzzy
 msgid  "Database"
-msgstr "উপাত্তদার"
+msgstr "উপাত্তধার"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 #, fuzzy
@@ -4911,7 +6462,7 @@ msgstr "উপাত্তধার ক্ষেত্র"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "সন্ধানের বৈশিষ্ট্যের জন্য কোন উপাত্তধার ক্ষেত্র (স্তম্ভ) ব্যবহার করা হবে তা নির্দেশ করে।"
+msgstr "সন্ধানের বৈশিষ্ট্যের জন্য কোন উপাত্তধার ক্ষেত্র (স্তম্ভ) ব্যবহার করা হবে তা নির্দেশ করে। "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.6.String.Text
 #, fuzzy
@@ -4921,7 +6472,7 @@ msgstr "সন্ধান বৈশিষ্ট্য"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "সন্ধান বৈশিষ্ট্য ধারণকারী কক্ষ সীমা উল্লেখ করে।"
+msgstr "সন্ধান বৈশিষ্ট্য ধারণকারী কক্ষ সীমা উল্লেখ করে।।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 #, fuzzy
@@ -5366,12 +6917,12 @@ msgstr "তারিখ মানের সাথে সম্পর্ক র�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "নম্বর"
+msgstr "সংখ্যা"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
 msgid  "The internal number for the date."
-msgstr "তারিখের জন্য অভ্যন্তরীন নম্বর।"
+msgstr "তারিখের জন্য অভ্যন্তরীণ নম্বর।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.1.String.Text
 #, fuzzy
@@ -5386,7 +6937,7 @@ msgstr "তারিখ_১"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 #, fuzzy
 msgid  "The start date for calculating the difference in days."
-msgstr "দিনের ব্যবধান গণনা করার জন্য প্রারম্ভিক তারিখ।"
+msgstr "দিনের পার্থক্য গণনা করার জন্য প্রথম তারিখ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 #, fuzzy
@@ -5396,7 +6947,7 @@ msgstr "তারিখ_২"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.5.String.Text
 #, fuzzy
 msgid  "The end date for calculating the difference in days."
-msgstr "দিনের ব্যবধান গণনা করার জন্য শেষ তারিখ।"
+msgstr "দিনের পার্থক্য গণনা করার জন্য শেষের তারিখ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 #, fuzzy
@@ -5416,7 +6967,7 @@ msgstr "সময়ের মানের জন্য দিনের (০-২
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "নম্বর"
+msgstr "সংখ্যা"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.3.String.Text
 #, fuzzy
@@ -5431,7 +6982,7 @@ msgstr "সময়ের মানের জন্য ঘন্টার (০-
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "নম্বর"
+msgstr "সংখ্যা"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.3.String.Text
 #, fuzzy
@@ -5451,7 +7002,7 @@ msgstr "নম্বর"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 #, fuzzy
 msgid  "The internal number of the date."
-msgstr "তারিখের অভ্যন্তরীন সংখ্যা।"
+msgstr "তারিখের অভ্যন্তরীণ সংখ্যা।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_ACT_TIME.1.String.Text
 #, fuzzy
@@ -5686,7 +7237,7 @@ msgstr "ধরন"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "ধরন = ১ অর্থ পর্যায়কালের শুরুতে বাকির পরিমান, = ০ অর্থ শেষের পরিমান।"
+msgstr "ধরন = ১ অর্থ পর্যায়কালের শুরুতে বাকির পরিমাণ, = ০ অর্থ শেষের পরিমাণ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 #, fuzzy
@@ -5701,7 +7252,7 @@ msgstr "হার"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "প্রতি পর্যায়কালে সুদের হার।"
+msgstr "প্রতি পর্যায়কালের সুদের হার।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 #, fuzzy
@@ -5711,7 +7262,7 @@ msgstr "NPER"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "অর্থপ্রদান পর্যায়কাল। বার্ষিক প্রদেয় (অবসরভাতা) যে কয়টি কিস্তিতে পরিশোধ করা হবে।"
+msgstr "অর্থপ্রদান পর্যায়কাল। বার্ষিক প্রদেয় (অবসরভাতা) যে কয়টি কিস্তিতে পরিশোধ করতে হবে তার সংখ্যা।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 #, fuzzy
@@ -5731,7 +7282,7 @@ msgstr "PV"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "বর্তমান মান। অর্থপ্রদান ধারা বর্তমান মান"
+msgstr "বর্তমান মান। অর্থপ্রদান ধারার বর্তমান মান"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 #, fuzzy
@@ -5741,7 +7292,7 @@ msgstr "ধরন"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "ধরন = ১ অর্থ পর্যায়কালের শুরুতে বাকির পরিমাণ, = ০ অর্থ শেষের পরিমাণ।"
+msgstr "ধরন = ১ অর্থ পর্যায়কালের শুরুতে বাকির পরিমাণ, = ০ অর্থ পর্যায়কালের শেষের পরিমান।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 #, fuzzy
@@ -5756,7 +7307,7 @@ msgstr "হার"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "প্রতি পর্যায়কালের সুদের হার।"
+msgstr "প্রতিটি পর্যায়কালে সুদের হার।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 #, fuzzy
@@ -5776,7 +7327,7 @@ msgstr "PV"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.7.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "বর্তমান মান। অর্থপ্রদান ধারার বর্তমান মান"
+msgstr "বর্তমান মান। ধারাবাহিক অর্থপ্রদানের বর্তমান মান"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.8.String.Text
 #, fuzzy
@@ -5786,7 +7337,7 @@ msgstr "FV"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 #, fuzzy
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "ভবিষ্যৎ মান। সর্বশেষ অর্থপ্রদানের পরে উপনীত মান (চূড়ান্ত মান)।"
+msgstr "ভবিষৎ মান। সর্বশেষ অর্থপ্রদানের পরে উপনীত মান (চূড়ান্ত মান)।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 #, fuzzy
@@ -5796,7 +7347,7 @@ msgstr "ধরন"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "ধরন = ১ অর্থ পর্যায়কালের শুরুতে বাকির পরিমাণ, = ০ অর্থ পর্যায়কালের শেষের পরিমান।"
+msgstr "ধরন = ১ অর্থ পর্যায়কালের শুরুতে বাকির পরিমাণ, = ০ অর্থ পর্যায়কালের শেষের পরিমাণ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 #, fuzzy
@@ -5811,7 +7362,7 @@ msgstr "হার"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "প্রতি পর্যায়কালের সুদের হার।"
+msgstr "প্রতিটি পর্যায়কালের সুদের হার।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.4.String.Text
 #, fuzzy
@@ -5821,7 +7372,7 @@ msgstr "NPER"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.5.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "অর্থপ্রদান পর্যায়কাল। বার্ষিক প্রদেয় (অবসরভাতা) যে কয়টি কিস্তিতে পরিশোধ করতে হবে তার সংখ্যা।"
+msgstr "অর্থপ্রদান পর্যায়কাল। বার্ষিক প্রদেয় (অবসরভাতা) যে কয়টি কিস্তিতে পরিশোধ করা হবে সেই সংখ্যা।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.6.String.Text
 #, fuzzy
@@ -5831,7 +7382,7 @@ msgstr "PV"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.7.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "বর্তমান মান। অর্থপ্রদান ধারার বর্তমান মান"
+msgstr "বর্তমান মান। একটি ধারাবাহিক অর্থপ্রদানের বর্তমান মান"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.8.String.Text
 #, fuzzy
@@ -5851,7 +7402,7 @@ msgstr "ধরন"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "ধরন = ১ অর্থ পর্যায়কালের শুরুতে বাকির পরিমাণ, = ০ অর্থ পর্যায়কালের শেষের পরিমাণ।"
+msgstr "ধরন = ১ অর্থ পর্যায়কালের শুরুতে বাকির পরিমাণ, = ০ অর্থ পর্যায়কালের শেষে বাকির পরিমাণ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 #, fuzzy
@@ -5931,7 +7482,7 @@ msgstr "হার"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "প্রতিটি পর্যায়কালে সুদের হার।"
+msgstr "প্রতিটি কিস্তির সুদের হার।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 #, fuzzy
@@ -6186,7 +7737,7 @@ msgstr "একটি উল্লিখিত পর্যায়কালে�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.2.String.Text
 #, fuzzy
 msgid  "Cost"
-msgstr "দান"
+msgstr "মূল্য"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.3.String.Text
 #, fuzzy
@@ -6201,7 +7752,7 @@ msgstr "স্যালভেজ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.5.String.Text
 #, fuzzy
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "স্যালভেজ: সম্পদের জীবন শেষে তার অবশিষ্ট মূল্য।"
+msgstr "স্যালভেজ: সম্পদের জীবন শেষে তার অবশিষ্ট্য মূল্য।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 #, fuzzy
@@ -6211,7 +7762,7 @@ msgstr "জীবন"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "কার্যকর জীবন। সম্পদের কার্যকর জীবনের মোট পর্যায়কালের সংখ্যা।"
+msgstr "কার্যকর জীবন। সম্পদের কার্যকর জীবনে মোট পর্যায়কালের সংখ্যা।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 #, fuzzy
@@ -6246,7 +7797,7 @@ msgstr "স্যালভেজ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.5.String.Text
 #, fuzzy
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "স্যালভেজ: সম্পদের জীবন শেষে তার অবশিষ্ট মূল্য।"
+msgstr "স্যালভেজ: সম্পদের জীবন শেষে তার অবশিষ্ট্য মূল্য।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.6.String.Text
 #, fuzzy
@@ -6256,7 +7807,7 @@ msgstr "জীবন"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "কার্যকর জীবন। সম্পদের কার্যকর জীবনে মোট পর্যায়কালের সংখ্যা।"
+msgstr "কার্যকর জীবন। সম্পদের কার্যকর জীবনের মোট পর্যায়কালের সংখ্যা।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.1.String.Text
 #, fuzzy
@@ -6706,7 +8257,7 @@ msgstr "মান"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "মানটি পরীক্ষা করতে হবে।"
+msgstr "যে মানটি পরীক্ষা করতে হবে।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.1.String.Text
 #, fuzzy
@@ -6721,7 +8272,7 @@ msgstr "মান"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "মানটি পরীক্ষা করতে হবে।"
+msgstr "যেই মানটি পরীক্ষা করতে হবে।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.1.String.Text
 #, fuzzy
@@ -6836,7 +8387,7 @@ msgstr "কক্ষটি যদি সূত্র কক্ষ হয় তব�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.2.String.Text
 #, fuzzy
 msgid  "reference"
-msgstr "তথ্যসম্পর্ক"
+msgstr "প্রসঙ্গতি"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.3.String.Text
 #, fuzzy
@@ -7089,7 +8640,7 @@ msgstr "সকল যুক্তির যোগফল ফেরত পাঠ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "নম্বর"
+msgstr "নম্বর "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 #, fuzzy
@@ -7104,7 +8655,7 @@ msgstr "যুক্তির বর্গের যোগফল ফেরত �
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "নম্বর"
+msgstr "নম্বর "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 #, fuzzy
@@ -7355,7 +8906,7 @@ msgstr "নম্বর ১ (_1)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.3.String.Text
 #, fuzzy
 msgid  "The total number of elements."
-msgstr "সর্বমোট উপাদান সংখ্যা।"
+msgstr "সর্বমোট উপাদানের সংখ্যা।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.4.String.Text
 #, fuzzy
@@ -7380,7 +8931,7 @@ msgstr "নম্বর ১ (_1)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.3.String.Text
 #, fuzzy
 msgid  "The total number of elements."
-msgstr "সর্বমোট উপাদান সংখ্যা।"
+msgstr "সর্বমোট উপাদানের সংখ্যা।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.4.String.Text
 #, fuzzy
@@ -7897,7 +9448,7 @@ msgstr "নম্বর"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded down."
-msgstr "নম্বরটিকে নিম্নের পুর্ণ সংখ্যায় রুপান্তর করতে হবে।"
+msgstr "যে নম্বরকে নিম্নে রুপান্তর করা হবে।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.1.String.Text
 #, fuzzy
@@ -7962,7 +9513,7 @@ msgstr "নম্বর"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "যে নম্বরকে ঊর্ধ্বে রুপান্তর করা হবে।"
+msgstr "নম্বরটিকে ঊর্ধ্ব পূর্ণ সংখ্যায় রুপান্তর করতে হবে।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 #, fuzzy
@@ -7987,7 +9538,7 @@ msgstr "নম্বর"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded down."
-msgstr "যে নম্বরকে নিম্নে রুপান্তর করা হবে।"
+msgstr "নম্বরটিকে নিম্নে রুপান্তর করতে হবে।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.4.String.Text
 #, fuzzy
@@ -8057,7 +9608,7 @@ msgstr "যে নম্বরটিকে মানের দ্বিগুন
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.6.String.Text
 #, fuzzy
 msgid  "Mode"
-msgstr "পরিমন্ডল"
+msgstr "ধরন"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.7.String.Text
 #, fuzzy
@@ -8107,7 +9658,7 @@ msgstr "গরিষ্ট সাধারণ গুণিতক"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GGT.2.String.Text
 #, fuzzy
 msgid  "Integer "
-msgstr "ইন্টিজার "
+msgstr "ইন্টিজার"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GGT.3.String.Text
 #, fuzzy
@@ -8337,17 +9888,17 @@ msgstr "রৈখিক প্রত্যাবৃত্তির প্যা�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "উপাত্ত Y (_Y)"
+msgstr "উপাত্তY (_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "Y উপাত্ত অ্যারে।"
+msgstr "Y উপাত্ত অ্যারে:"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "উপাত্ত X (_X)"
+msgstr "উপাত্তX (_X) "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
@@ -8362,7 +9913,7 @@ msgstr "রৈখিক ধরণ (_t)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.7.String.Text
 #, fuzzy
 msgid  "If type = 0 the linears will be calculated through the zero point, or else moved linears."
-msgstr "যদি টাইপ=০ রৈখিকসমূহ শূন্য বিন্দু অনুযায়ী গণনা করা হবে, বা রৈখিকসমূহ সরানো হয়।"
+msgstr "যদি ধরন = ০ হয় রৈখিকসমূহ শূন্য বিন্দু অনুযায়ী গণনা করা হবে, বা রৈখিকসমূহ সরানো হয়।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.8.String.Text
 #, fuzzy
@@ -8382,7 +9933,7 @@ msgstr "সূচকিয় প্রত্যাবৃত্তি কার্�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "উপাত্ত Y (_Y)"
+msgstr "উপাত্তY (_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 #, fuzzy
@@ -8392,7 +9943,7 @@ msgstr "Y উপাত্ত অ্যারে।"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "উপাত্ত X (_X)"
+msgstr "উপাত্তX (_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 #, fuzzy
@@ -8402,7 +9953,7 @@ msgstr "X উপাত্ত অ্যারে।"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.6.String.Text
 #, fuzzy
 msgid  "Function_type"
-msgstr "ফাংশনের ধরণ (_t)"
+msgstr "ফাংশনের ধরন (_t)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.7.String.Text
 #, fuzzy
@@ -8427,7 +9978,7 @@ msgstr "প্রত্যাবৃত্তি রেখা বরাবর ব
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "উপাত্ত Y (_Y)"
+msgstr "উপাত্তY (_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.3.String.Text
 #, fuzzy
@@ -8437,7 +9988,7 @@ msgstr "Y উপাত্ত অ্যারে।"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "উপাত্ত X (_X)"
+msgstr "উপাত্তX (_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 #, fuzzy
@@ -8472,7 +10023,7 @@ msgstr "সূচকীয় প্রত্যাবৃত্তি ফাংশ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "উপাত্ত Y (_Y)"
+msgstr "উপাত্তY (_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.3.String.Text
 #, fuzzy
@@ -8482,7 +10033,7 @@ msgstr "Y উপাত্ত অ্যারে।"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "উপাত্ত X (_X)"
+msgstr "উপাত্তX (_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.5.String.Text
 #, fuzzy
@@ -8547,7 +10098,7 @@ msgstr "যুক্তির তালিকায় সর্বোচ্চ ম
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "নম্বর "
+msgstr "নম্বর"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.3.String.Text
 #, fuzzy
@@ -9740,7 +11291,7 @@ msgstr "শেষ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.11.String.Text
 #, fuzzy
 msgid  "The final value for the value interval of the distribution."
-msgstr "বিতরণের মানের বিরতির জন্য চূড়ান্ত মান।"
+msgstr "বিতরণের মানের বিরতির জন্য চূড়ান্ত  মান।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.12.String.Text
 #, fuzzy
@@ -10050,7 +11601,7 @@ msgstr "ডিগ্রীর স্বাধীনতা (_f)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "চি বর্গাকার বিতরণের ডিগ্রীর স্বাধীনতা। "
+msgstr "চি-বর্গ বিতরণের স্বাধীনতার মাত্রা।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 #, fuzzy
@@ -10390,7 +11941,7 @@ msgstr "পিয়ারসন প্রোডাক্ট মোমেন্�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "উপাত্তY (_Y)"
+msgstr "উপাত্ত Y (_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.3.String.Text
 #, fuzzy
@@ -10400,7 +11951,7 @@ msgstr "Y উপাত্ত অ্যারে।"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "উপাত্তX (_X) "
+msgstr "উপাত্ত X (_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.5.String.Text
 #, fuzzy
@@ -10490,7 +12041,7 @@ msgstr "পিয়ারসন প্রোডাক্ট মোমেন্�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.2.String.Text
 #, fuzzy
 msgid  "Data_1"
-msgstr "উপাত্ত১ (_1)"
+msgstr "উপাত্ত ১ (_1)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.3.String.Text
 #, fuzzy
@@ -10500,7 +12051,7 @@ msgstr "প্রথম রেকর্ড অ্যারে।"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.4.String.Text
 #, fuzzy
 msgid  "Data_2"
-msgstr "উপাত্ত২ (_2)"
+msgstr "উপাত্ত ২ (_2) "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.5.String.Text
 #, fuzzy
@@ -10525,7 +12076,7 @@ msgstr "প্রথম রেকর্ড অ্যারে।"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.4.String.Text
 #, fuzzy
 msgid  "Data_2"
-msgstr "উপাত্ত ২ (_2) "
+msgstr "উপাত্ত ২ (_2)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.5.String.Text
 #, fuzzy
@@ -10635,7 +12186,7 @@ msgstr "A1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.9.String.Text
 #, fuzzy
 msgid  "The reference style: 0 or FALSE means R1C1 style, any other value or omitted means A1 style."
-msgstr "প্রসঙ্গতি শৈলী: ০ অথবা FALSE অর্থ R1C1 শৈলী, অন্য কোনো মান অথবা বাদ দেওয়া অর্থ A1 শৈলী।"
+msgstr "প্রসঙ্গতি শৈলী: ০ বা FALSE অর্থ R1C1 শৈলী, অন্য কোনো মান অথবা বাদ দেওয়া অর্থ A1 শৈলী।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.10.String.Text
 #, fuzzy
@@ -10655,12 +12206,12 @@ msgstr "একটি (বহুবিধ) সীমার অধীনস্থ 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.2.String.Text
 #, fuzzy
 msgid  "reference"
-msgstr "প্রসঙ্গতি"
+msgstr "তথ্যসম্পর্ক"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 #, fuzzy
 msgid  "The reference to a (multiple) range."
-msgstr "একটি (বহুবিধ) সীমার প্রসঙ্গতি।"
+msgstr "একটি (বহুবিধ) সীমার প্রসঙ্গতি। "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 #, fuzzy
@@ -10700,7 +12251,7 @@ msgstr "প্রসঙ্গতি"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 #, fuzzy
 msgid  "The reference to a cell or a range."
-msgstr "একটি কক্ষ বা সীমার প্রসঙ্গতি।"
+msgstr "একটি কক্ষ বা  সীমার প্রসঙ্গতি।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 #, fuzzy
@@ -11273,7 +12824,7 @@ msgstr "পাঠ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.3.String.Text
 #, fuzzy
 msgid  "This is the text for which the code of the first character is to be found."
-msgstr "এটি সেই পাঠ যার জন্য প্রথম বর্ণচিহ্নের কোড খুঁজে পাওয়া যাবে।"
+msgstr "এটি এমন পাঠ যার জন্য প্রথম বর্ণচিহ্নের কোড খুঁজে পাওয়া গেছে।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CURRENCY.1.String.Text
 #, fuzzy
@@ -11383,7 +12934,7 @@ msgstr "পাঠ খুঁজুন (_t)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.3.String.Text
 #, fuzzy
 msgid  "The text to be found."
-msgstr "যে পাঠটি খুঁজতে হবে।"
+msgstr "যে পাঠ খুঁজতে হবে।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.4.String.Text
 #, fuzzy
@@ -11513,7 +13064,7 @@ msgstr "পাঠ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VALUE.3.String.Text
 #, fuzzy
 msgid  "The text to be converted to a number."
-msgstr "যে পাঠ্যকে সংখ্যায় রুপান্তর করা হবে।"
+msgstr "পাঠ্যকে সংখ্যায় রুপান্তর করতে হবে।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TEXT.1.String.Text
 #, fuzzy
@@ -11826,7 +13377,7 @@ msgstr "সংখ্যা পদ্ধতির পরিচায়ক"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 #, fuzzy
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "রুপান্তরের জন্য ভিত্তি সংখ্যা অবশ্যই ২-৩৬ সীমার মধ্যে হবে।"
+msgstr "রুপান্তরের জন্য ভিত্তি সংখ্যা অবশ্যই ২-৩৬ সীমার মধ্যে হতে হবে।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 #, fuzzy
@@ -12582,9 +14133,8 @@ msgid  "Font Attributes"
 msgstr "ফন্ট বৈশিষ্ট্য"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-#, fuzzy
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "আপনার ক্লিপবোর্ডে বহু সংখ্যক উপাত্ত সংরক্ষিত আছে।\nআপনি কি  ক্লিপবোর্ডের বিষয়বস্তুসমূহ অন্যান্য প্রয়োগনে সহজলভ্য করতে চান? "
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -12665,9 +14215,8 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-#, fuzzy
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
-msgstr "প্রবেশকৃত সুত্রে %PRODUCTNAME এর ক্যাল একটি ত্রুটি খুঁজে পেয়েছে।\nআপনি কি নিম্নে সুপারিশকৃত সংশোধন গ্রহণ করতে চান?\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -12720,9 +14269,8 @@ msgid  "~Selected sheets"
 msgstr "নির্বাচিত শীটসমূহ (~S) "
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-#, fuzzy
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "আপনি এমন একটি কক্ষে উপাত্ত প্রতিলেপন করছেন যা ইতিমধ্যে উপাত্ত ধারণ করছে।\nআপনি কি আসলেই বিদ্যমান উপাত্ত উপরিলিখন করতে চান?"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 #, fuzzy
@@ -12762,7 +14310,7 @@ msgstr "শীট  %১"
 #: source/ui/src/scstring.src#STR_ACC_CELL_NAME.String.Text
 #, fuzzy
 msgid  "Cell %1"
-msgstr "কক্ষ %১"
+msgstr "%১ কক্ষ"
 
 #: source/ui/src/scstring.src#STR_ACC_PREVIEWDOC_NAME.String.Text
 #, fuzzy
@@ -14004,7 +15552,7 @@ msgstr "নিচে (~w)"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.BTN_MV_RIGHT.RadioButton.Text
 #, fuzzy
 msgid  "~Right"
-msgstr "ডান (‍~R)"
+msgstr "ডান (~R)"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.FL_MOVE.FixedLine.Text
 #, fuzzy
@@ -14387,62 +15935,73 @@ msgid  "Shrink"
 msgstr "সংকোচন করুন"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND1.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~1"
 msgstr "শর্ত ১ (~1)"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
 msgid  "Cell value is"
-msgstr "কক্ষ মান"
+msgstr "কক্ষ মান হলো"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "সূত্র"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "এর সমান"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "less than"
-msgstr "অপেক্ষাকৃত কম"
+msgstr "অপেক্ষাকৃত ছোট"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "অপেক্ষাকৃত বড়"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "less than or equal to"
-msgstr "অপেক্ষাকৃত কম বা সমান "
+msgstr "অপেক্ষাকৃত ছোট বা সমান"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "অপেক্ষাকৃত বড় বা সমান"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "এর সমান নয়"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "মধ্যবর্তী"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "not between"
-msgstr "মধ্যবর্তী নয়"
+msgstr "মধ্যবর্তী নয়"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "সংকোচন করুন"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr "এবং"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "সংকোচন করুন"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "~Cell Style"
 msgstr "কক্ষ শৈলী (~C)"
 
@@ -14451,62 +16010,77 @@ msgid  "~New Style..."
 msgstr ""
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND2.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~2"
 msgstr "শর্ত ২ (~2)"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "কক্ষ মান হলো"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "সূত্র"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "এর সমান"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "অপেক্ষাকৃত ছোট"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "অপেক্ষাকৃত বড়"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "অপেক্ষাকৃত ছোট বা সমান"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "অপেক্ষাকৃত বড় বা সমান"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "এর সমান নয়"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "মধ্যবর্তী"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "মধ্যবর্তী নয়"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "সংকোচন করুন"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr "এবং"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "সংকোচন করুন"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "C~ell Style"
 msgstr "কক্ষ শৈলী (~e)"
 
@@ -14515,62 +16089,77 @@ msgid  "Ne~w Style..."
 msgstr ""
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND3.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~3"
 msgstr "শর্ত ৩ (~3)"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "কক্ষ মান হলো"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "সূত্র"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "এর সমান"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "অপেক্ষাকৃত ছোট"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "অপেক্ষাকৃত বড়"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "অপেক্ষাকৃত ছোট বা সমান"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "অপেক্ষাকৃত বড় বা সমান"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "এর সমান নয়"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "মধ্যবর্তী"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "মধ্যবর্তী নয়"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "সংকোচন করুন"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr "এবং"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "সংকোচন করুন"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "Ce~ll Style"
 msgstr "কক্ষ শৈলী (~l)"
 
@@ -14579,6 +16168,7 @@ msgid  "New ~Style..."
 msgstr ""
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.HelpButton.Text
+#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "শর্তানুযায়ী বিন্যাসকরণ"
 
@@ -14713,7 +16303,7 @@ msgstr "ফাইলটি ৮১৯২ সারির পরের উপা�
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 #, fuzzy
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "বিন্যাস ত্রুটি ফাইলের $(ARG1) উপ-নথির $(ARG2)(row,col) এ পাওয়া গেছে।"
+msgstr "বিন্যাস ত্রুটি ফাইলের $(ARG1) উপনথির $(ARG2)(row,col) এ পাওয়া গেছে।"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FORMAT_ROWCOL & ERRCODE_RES_MASK.String.Text
 #, fuzzy
@@ -14786,14 +16376,12 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "নথি স্বয়ংক্রিয় গণনার জন্য অত্যন্ত জটিল। পুনরায় গণনা করার জন্য F9 চাপুন।"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "নথিটি নির্বাচিত বিন্যাসে সমর্থিত সারির চেয়ে বেশি সারি ধারণ করে।\nঅতিরিক্ত সারি সংরক্ষণ করা হয়নি।"
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "নথিটি এমন তথ্য ধারণ করে যা এই প্রোগ্রাম সংস্করণ দ্বারা শনাক্ত করা হয়নি।\nনথিটি পুনরায় সংরক্ষণ করলে এই তথ্যগুলো মুছে যাবে!"
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 #, fuzzy
@@ -14801,9 +16389,8 @@ msgid  "Not all cell contents could be saved in the specified format."
 msgstr "উল্লেখিত বিন্যাসে সকল কক্ষের বিষয়বস্তু সংরক্ষণ করা যাবে না।"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
-msgstr "নিম্নলিখিত বর্ণচিহ্নসমূহ নির্বাচিত বর্ণচিহ্নের সেটে রুপান্তরিত করা যায়নি\nএবং &#1234 হিসেবে লেখা হয়েছে; প্রতিনিধি:\n\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 #, fuzzy

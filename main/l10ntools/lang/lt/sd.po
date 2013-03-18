@@ -53,7 +53,7 @@ msgstr "Matmenų linijos"
 
 #: source/core/glob.src#STR_PAGE.String.Text
 msgid  "Slide"
-msgstr "Lapas"
+msgstr "Skaidrė"
 
 #: source/core/glob.src#STR_PAGE_NAME.String.Text
 msgid  "Page"
@@ -238,9 +238,8 @@ msgid  "Move slides"
 msgstr "Perkelti lapus"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-#, fuzzy
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "Nepakanka atminties!\nVeiksmas bus nutrauktas."
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 #, fuzzy
@@ -437,298 +436,372 @@ msgid  "Last column"
 msgstr "Paskutinis stulpelis"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.ModalDialog.Text
+#, fuzzy
 msgid  "HTML Export"
 msgstr "HTML eksportas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_TITEL.FixedLine.Text
+#, fuzzy
 msgid  "Assign design"
 msgstr "Projekto priskyrimas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_NEW_DESIGN.RadioButton.Text
+#, fuzzy
 msgid  "New design"
 msgstr "Naujas projektas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_OLD_DESIGN.RadioButton.Text
+#, fuzzy
 msgid  "Existing design"
 msgstr "Esamas projektas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_DEL_DESIGN.PushButton.Text
+#, fuzzy
 msgid  "Delete Selected Design"
 msgstr "Šalinti pasirinktą projektą"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_DESC.FixedText.Text
+#, fuzzy
 msgid  "Select an existing design or create a new one"
 msgstr "Parenkamas esamas projektas arba sukuriamas naujas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL.FixedLine.Text
+#, fuzzy
 msgid  "Publication type"
 msgstr "Eksportuojamo dokumento tipas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_STANDARD.RadioButton.Text
+#, fuzzy
 msgid  "Standard H~TML format"
 msgstr "Įprastas H~TML formatas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_FRAMES.RadioButton.Text
+#, fuzzy
 msgid  "Standard HTML with ~frames"
 msgstr "Įprastas HTML su ~kadrais"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "~Automatinis"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RadioButton.Text
+#, fuzzy
 msgid  "~WebCast"
 msgstr "„~WebCast“"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_HTML.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Parinktys"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CONTENT.CheckBox.Text
+#, fuzzy
 msgid  "Create title page"
 msgstr "Sukurti antraštinį puslapį"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_NOTES.CheckBox.Text
+#, fuzzy
 msgid  "Show notes"
 msgstr "Rodyti pastabas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_KIOSK.FixedLine.Text
+#, fuzzy
 msgid  "Advance slides"
 msgstr "Skaidrių keitimas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_DEFAULT.RadioButton.Text
+#, fuzzy
 msgid  "~As stated in document"
 msgstr "~Kaip nurodyta dokumente"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_AUTO.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "~Automatinis"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TXT.FixedText.Text
+#, fuzzy
 msgid  "~Slide view time:"
 msgstr "~Trukmė:"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TMF.TimeField.QuickHelpText
+#, fuzzy
 msgid  "~Duration of page"
 msgstr "~Puslapio tąsa"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ENDLESS.CheckBox.Text
+#, fuzzy
 msgid  "~Endless"
 msgstr "~Ciklas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_WEBCAST.FixedLine.Text
+#, fuzzy
 msgid  "WebCast"
 msgstr "„WebCast“"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ASP.RadioButton.Text
+#, fuzzy
 msgid  "~Active Server Pages (ASP)"
 msgstr "~„Active Server Pages“ (ASP)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_PERL.RadioButton.Text
+#, fuzzy
 msgid  "Perl"
 msgstr "„Perl“"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_INDEX_TXT.FixedText.Text
+#, fuzzy
 msgid  "~URL for listeners"
 msgstr "~URL klausytojams"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_URL_TXT.FixedText.Text
+#, fuzzy
 msgid  "URL for ~presentation:"
 msgstr "URL ~demonstravimui:"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CGI_TXT.FixedText.Text
+#, fuzzy
 msgid  "URL for ~Perl scripts:"
 msgstr "„~Perl“ skriptų URL:"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_1.FixedLine.Text
+#, fuzzy
 msgid  "Save graphics as"
 msgstr "Paveikslus įrašyti šiuo formatu:"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_PNG.RadioButton.Text
+#, fuzzy
 msgid  "~PNG"
 msgstr "~PNG"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_GIF.RadioButton.Text
+#, fuzzy
 msgid  "~GIF"
 msgstr "~GIF"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_JPG.RadioButton.Text
+#, fuzzy
 msgid  "~JPG"
 msgstr "~JPG"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_QUALITY_TXT.FixedText.Text
+#, fuzzy
 msgid  "Quality"
 msgstr "Kokybė"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_2.FixedLine.Text
+#, fuzzy
 msgid  "Monitor resolution"
 msgstr "Ekrano skiriamoji geba"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_1.RadioButton.Text
+#, fuzzy
 msgid  "Low resolution (~640x480 pixels)"
 msgstr "Žema (~640x480 taškų)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_2.RadioButton.Text
+#, fuzzy
 msgid  "Medium resolution (~800x600 pixels)"
 msgstr "Vidutinė (~800x600 taškų)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_3.RadioButton.Text
+#, fuzzy
 msgid  "High resolution (~1024x768 pixels)"
 msgstr "Aukšta (~1024x768 taškų)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_3.FixedLine.Text
+#, fuzzy
 msgid  "Effects"
 msgstr "Efektai"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_SLD_SOUND.CheckBox.Text
+#, fuzzy
 msgid  "~Export sounds when slide advances"
 msgstr "~Eksportuoti garsus"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_HIDDEN_SLIDES.CheckBox.Text
+#, fuzzy
 msgid  "Export ~hidden slides"
 msgstr "E~ksportuoti paslėptus lapus"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_1.FixedLine.Text
+#, fuzzy
 msgid  "Information for the title page"
 msgstr "Informacija antraštiniam puslapiui"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_AUTHOR_TXT.FixedText.Text
+#, fuzzy
 msgid  "~Author"
 msgstr "~Autorius"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_EMAIL_TXT.FixedText.Text
+#, fuzzy
 msgid  "E-~mail address"
 msgstr "El. ~pašto adresas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_WWW_TXT.FixedText.Text
+#, fuzzy
 msgid  "Your hom~epage"
 msgstr "~Žiniatinklio svetainė"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_2.FixedText.Text
+#, fuzzy
 msgid  "Additional ~information"
 msgstr "Papildoma ~informacija"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_DOWNLOAD.CheckBox.Text
+#, fuzzy
 msgid  "Link to a copy of the ~original presentation"
 msgstr "Susieti su ~originalios pateikties kopija"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_CREATED.CheckBox.Text
+#, fuzzy
 msgid  "Note: 'Created with %PRODUCTNAME'"
 msgstr "Pastaba: sukurtas naudojantis „%PRODUCTNAME“"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TITEL.FixedLine.Text
+#, fuzzy
 msgid  "Select button style"
 msgstr "Parinkite mygtukų stilių"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TEXTONLY.CheckBox.Text
+#, fuzzy
 msgid  "~Text only"
 msgstr "~Tik tekstas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TITEL.FixedLine.Text
+#, fuzzy
 msgid  "Select color scheme"
 msgstr "Parinkite spalvų schemą"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DOCCOLORS.RadioButton.Text
+#, fuzzy
 msgid  "~Apply color scheme from document"
 msgstr "~Dokumento spalvos"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DEFAULT.RadioButton.Text
+#, fuzzy
 msgid  "Use ~browser colors"
 msgstr "~Naršyklės spalvos"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_USER.RadioButton.Text
+#, fuzzy
 msgid  "~Use custom color scheme"
 msgstr "~Žemiau pasirinktos:"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TEXT.PushButton.Text
+#, fuzzy
 msgid  "Text"
 msgstr "Tekstas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_LINK.PushButton.Text
+#, fuzzy
 msgid  "Hyper~link"
 msgstr "Hiper~saitas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_ALINK.PushButton.Text
+#, fuzzy
 msgid  "Active Li~nk"
 msgstr "Aktyvusis sai~tas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_VLINK.PushButton.Text
+#, fuzzy
 msgid  "~Visited Link"
 msgstr "~Aplankytas saitas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_BACK.PushButton.Text
+#, fuzzy
 msgid  "Bac~kground"
 msgstr "~Fonas"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.BUT_LAST.PushButton.Text
+#, fuzzy
 msgid  "<< Back"
 msgstr "<< Atgal"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.BUT_NEXT.PushButton.Text
+#, fuzzy
 msgid  "Next >>"
 msgstr "Toliau >>"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.BUT_FINISH.OKButton.Text
+#, fuzzy
 msgid  "~Create"
 msgstr "~Kurti"
 
 #: source/filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_SAVE.OKButton.Text
+#, fuzzy
 msgid  "~Save"
 msgstr "~Įrašyti"
 
 #: source/filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_NOSAVE.CancelButton.Text
+#, fuzzy
 msgid  "Do Not Save"
 msgstr "Neįrašyti"
 
 #: source/filter/html/pubdlg.src#DLG_DESIGNNAME.CancelButton.Text
+#, fuzzy
 msgid  "Name HTML Design"
 msgstr "Pavadinti HTML projektą"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.String.Text
+#, fuzzy
 msgid  "Drawing View"
 msgstr "Lapo eskizas"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you create and edit drawings."
 msgstr "Čia galima kurti ir taisyti brėžinius."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_N.String.Text
+#, fuzzy
 msgid  "Drawing View"
 msgstr "Lapo eskizas"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you create and edit slides."
 msgstr "Čia kuriamos ir taisomos skaidrės."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_N.String.Text
+#, fuzzy
 msgid  "Outline View"
 msgstr "Pateikties struktūra"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you enter or edit text in list form."
 msgstr "Čia galima įvesti ir taisyti tekstą, pateiktą sąrašo forma."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_N.String.Text
+#, fuzzy
 msgid  "Slides View"
 msgstr "Skaidrių rodymas"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you sort slides."
 msgstr "Čia rikiuojamos skaidrės."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_N.String.Text
+#, fuzzy
 msgid  "Notes View"
 msgstr "Pastabos"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you enter and view notes."
 msgstr "Čia įvedamos ir rodomos pastabos."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_N.String.Text
+#, fuzzy
 msgid  "Handout View"
 msgstr "Dalijamoji medžiaga"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you decide on the layout for handouts."
 msgstr "Šiame lange galima parinkti dalijamosios medžiagos maketą."
 
@@ -1113,102 +1186,127 @@ msgid  "In reverse order"
 msgstr "Atvirkščia tvarka"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_CLICK.MenuItem.Text
+#, fuzzy
 msgid  "Start On ~Click"
 msgstr "Pradėti ~spustelėjus"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_PREVIOUS.MenuItem.Text
+#, fuzzy
 msgid  "Start ~With Previous"
 msgstr "Pradėti ~nuo ankstesnio"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_AFTER_PREVIOUS.MenuItem.Text
+#, fuzzy
 msgid  "Start ~After Previous"
 msgstr "Pradėti po ~ankstesnio"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_OPTIONS.MenuItem.Text
+#, fuzzy
 msgid  "~Effect Options..."
 msgstr "~Efekto parinktys..."
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_DURATION.MenuItem.Text
+#, fuzzy
 msgid  "~Timing..."
 msgstr "~Laikas..."
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "~Šalinti"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_25.MenuItem.Text
+#, fuzzy
 msgid  "Tiny"
 msgstr "Labai mažas"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_50.MenuItem.Text
+#, fuzzy
 msgid  "Smaller"
 msgstr "Mažas"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MenuItem.Text
+#, fuzzy
 msgid  "Larger"
 msgstr "Didelis"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MenuItem.Text
+#, fuzzy
 msgid  "Extra large"
 msgstr "Labai didelis"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_25.MenuItem.Text
+#, fuzzy
 msgid  "Tiny"
 msgstr "Labai mažas"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_50.MenuItem.Text
+#, fuzzy
 msgid  "Smaller"
 msgstr "Mažas"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_150.MenuItem.Text
+#, fuzzy
 msgid  "Larger"
 msgstr "Didelis"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_400.MenuItem.Text
+#, fuzzy
 msgid  "Extra large"
 msgstr "Labai didelis"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "Horizontaliai"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "Vertikaliai"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_BOTH.MenuItem.Text
+#, fuzzy
 msgid  "Both"
 msgstr "Abu"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_QUARTER_SPIN.MenuItem.Text
+#, fuzzy
 msgid  "Quarter spin"
 msgstr "Ketvirtadalis apsisukimo"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_HALF_SPIN.MenuItem.Text
+#, fuzzy
 msgid  "Half spin"
 msgstr "Pusė apsisukimo"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_FULL_SPIN.MenuItem.Text
+#, fuzzy
 msgid  "Full spin"
 msgstr "Visas apsisukimas"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_TWO_SPINS.MenuItem.Text
+#, fuzzy
 msgid  "Two spins"
 msgstr "Du apsisukimai"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_CLOCKWISE.MenuItem.Text
+#, fuzzy
 msgid  "Clockwise"
 msgstr "Pagal laikrodžio rodyklę"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_COUNTERCLOCKWISE.MenuItem.Text
+#, fuzzy
 msgid  "Counter-clockwise"
 msgstr "Prieš laikrodžio rodyklę"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_BOLD.MenuItem.Text
+#, fuzzy
 msgid  "Bold"
 msgstr "Pusjuodis"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_ITALIC.MenuItem.Text
+#, fuzzy
 msgid  "Italic"
 msgstr "Kursyvas"
 
@@ -1616,6 +1714,7 @@ msgid  "Reply to %1"
 msgstr ""
 
 #: source/ui/app/menuids4_tmpl.src#MNSUB_GRAPHIC_PORTAL.MN_SUB_GRAPHIC.MenuItem.Text
+#, fuzzy
 msgid  "~Graphics"
 msgstr "~Paveikslai"
 
@@ -1994,9 +2093,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Įveskite naujo rodyklės galo pavadinimą:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-#, fuzzy
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "Pasirinktas vardas jau yra. \nĮveskite kitą."
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -2084,9 +2182,8 @@ msgid  "Insert slides"
 msgstr "Įterpti lapus"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-#, fuzzy
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "Ar tikrai pašalinti sluoksnį „$“?\nĮspėjimas: visi šio sluoksnio objektai bus pašalinti!"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -2144,9 +2241,8 @@ msgid  "Insert text frame"
 msgstr "Įterpti teksto kadrą"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-#, fuzzy
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "Ši funkcija negali būti vykdoma \nsu pasirinktais objektais."
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -2159,9 +2255,8 @@ msgid  "The file could not be loaded!"
 msgstr "Failo įkelti nepavyko!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-#, fuzzy
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "Bus pritaikytas naujo puslapio formatas.\nAr pritaikyti ir objektus?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -2184,9 +2279,8 @@ msgid  "~Edit"
 msgstr "~Taisa"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-#, fuzzy
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "Šis veiksmas pašalina visų veiksmų, kuriuos galima \natšaukti, sąrašą. Ankstesni dokumento pakeitimai išliks,\ntik jų nebus galima atšaukti. Ar norite tęsti ir\npriskirti naują lapo projektą?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2209,9 +2303,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "Negalima spausdintuvui nustatyti šio dokumento formato."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-#, fuzzy
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "Šis paveikslas susietas su dokumentu. \nAr atsieti, kad galėtumėte taisyti paveikslą?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2349,9 +2442,8 @@ msgid  " (Outline)"
 msgstr " (Struktūra)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-#, fuzzy
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "Įvestas mastelis neteisingas.\nAr norite įvesti kitą?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2703,9 +2795,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Neįmanoma išgrupuoti visų grafikos objektų."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-#, fuzzy
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "Projektas tokiu pavadinimu jau yra.\nAr jį pakeisti?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2848,9 +2939,8 @@ msgid  "Graphics filter"
 msgstr "Grafikos filtras"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-#, fuzzy
-msgid  "The file %\nis not a valid sound file !"
-msgstr "Failas %\nnėra garso failas!"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -3135,658 +3225,821 @@ msgid  "All Styles"
 msgstr "Langelio stiliai"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Distribution..."
 msgstr "~Išdėstyti vienodais atstumais..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Drawing View"
 msgstr "~Skaidrės eskizas"
 
 #: source/ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Outline View"
 msgstr "~Pateikties struktūra"
 
 #: source/ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Sorter"
 msgstr "Skaidrių ~rikiavimas"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MenuItem.Text
+#, fuzzy
 msgid  "Slide Sho~w"
 msgstr "~Pateikties demonstravimas"
 
 #: source/ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MenuItem.Text
+#, fuzzy
 msgid  "~Insert Snap Point/Line..."
 msgstr "Į~terpti traukos tašką arba liniją..."
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Taisyti..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Šalinti"
 
 #: source/ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slide ~Layout"
 msgstr "Lapo ~maketas"
 
 #: source/ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MenuItem.Text
+#, fuzzy
 msgid  "~Page Setup..."
 msgstr "~Lapo parametrai..."
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~New Slide"
 msgstr "~Naujas lapas"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~New Master"
 msgstr "~Naujas pagrindas"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~New Page"
 msgstr "~Naujas lapas"
 
 #: source/ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MenuItem.Text
+#, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "Nustatyti lapo fono paveikslą..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MenuItem.Text
+#, fuzzy
 msgid  "Display Background of Master"
 msgstr "Rodyti pagrindo foną"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "Display Objects from Master"
 msgstr "Rodyti pagrindo objektus"
 
 #: source/ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "Pag~e"
 msgstr "~Lapas"
 
 #: source/ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "Slid~e"
 msgstr "~Lapas"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Layer..."
 msgstr "~Pervadinti sluoksnį..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~elete Slide"
 msgstr "~Šalinti lapą"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~elete Master"
 msgstr "~Šalinti pagrindą"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~elete Page"
 msgstr "~Šalinti lapą"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Slide"
 msgstr "~Pervadinti lapą"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Master"
 msgstr "Per~vadinti pagrindą"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Page"
 msgstr "~Pervadinti lapą"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MenuItem.Text
+#, fuzzy
 msgid  "L~ine..."
 msgstr "~Linija..."
 
 #: source/ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MenuItem.Text
+#, fuzzy
 msgid  "~Area..."
 msgstr "~Sritis..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Text..."
 msgstr "~Tekstas..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Connector..."
 msgstr "~Jungiamoji linija..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MenuItem.Text
+#, fuzzy
 msgid  "Reset ~Routing"
 msgstr "Atstatyti ~maršrutą"
 
 #: source/ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "~Matmenys..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MenuItem.Text
+#, fuzzy
 msgid  "Position and Si~ze..."
 msgstr "~Padėtis ir dydis..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit ~Points"
 msgstr "~Taisyti taškus"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "Arra~nge"
 msgstr "Iš~dėstymas"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MenuItem.Text
+#, fuzzy
 msgid  "~Bring to Front"
 msgstr "~Perkelti į priekį"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~Perkelti priekio link"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Perkelti p~agrindo link"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MenuItem.Text
+#, fuzzy
 msgid  "~Send to Back"
 msgstr "~Perkelti į pagrindą"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "Prieš ~objektą"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "Be~hind Object"
 msgstr "~Už objekto"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MenuItem.Text
+#, fuzzy
 msgid  "~Reverse"
 msgstr "~Sukeisti vietomis"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "C~haracter..."
 msgstr "~Rašmenys..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MenuItem.Text
+#, fuzzy
 msgid  "P~aragraph..."
 msgstr "~Pastraipa..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MenuItem.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "~Šriftas"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Size"
 msgstr "~Dydis"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "St~yle"
 msgstr "St~ilius"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Bold"
 msgstr "Pusjuodis"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MenuItem.Text
+#, fuzzy
 msgid  "Italic"
 msgstr "Kursyvas"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_OVERLINE.MenuItem.Text
+#, fuzzy
 msgid  "Overline"
 msgstr "Linija viršuje"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
+#, fuzzy
 msgid  "Underline"
 msgstr "Pabrauktas"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "Perbrauktas"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MenuItem.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Šešėlis"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MenuItem.Text
+#, fuzzy
 msgid  "~Contour"
 msgstr "~Kontūras"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~Eilučių intervalas"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MenuItem.Text
+#, fuzzy
 msgid  "Single Line Spacing"
 msgstr "Vienos eilutės intervalas"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MenuItem.Text
+#, fuzzy
 msgid  "1.5 Lines"
 msgstr "1,5 eilutės"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MenuItem.Text
+#, fuzzy
 msgid  "~Double"
 msgstr "~Dvigubas"
 
 #: source/ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MenuItem.Text
+#, fuzzy
 msgid  "S~pecial Character..."
 msgstr "~Specialieji rašmenys..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "~Lygiuotė"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "~Kairinė"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "~Dešininė"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
 msgid  "~Centered"
-msgstr "~Centrinė"
+msgstr "Horizontalioji ~centrinė"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
+#, fuzzy
 msgid  "Justified"
 msgstr "Abipusė"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "Al~ignment"
 msgstr "~Lygiuotė"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_LEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "~Kairinė"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_CENTER.MenuItem.Text
+#, fuzzy
 msgid  "~Centered"
 msgstr "Horizontalioji ~centrinė"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "~Dešininė"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
+#, fuzzy
 msgid  "~Top"
 msgstr "~Viršutinė"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
+#, fuzzy
 msgid  "C~enter"
 msgstr "Vertikalioji c~entrinė"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "~Bottom"
 msgstr "~Apatinė"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
+#, fuzzy
 msgid  "Close ~Object"
 msgstr "Užverti ~objektą"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit ~Points"
 msgstr "~Taisyti taškus"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Move Points"
 msgstr "~Perkelti taškus"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MenuItem.Text
+#, fuzzy
 msgid  "Insert ~Points"
 msgstr "Įterpti ~taškus"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete Points"
 msgstr "~Šalinti taškus"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CLOSE.MenuItem.Text
+#, fuzzy
 msgid  "Close ~Object"
 msgstr "Užverti ~objektą"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MenuItem.Text
+#, fuzzy
 msgid  "~Split Curve"
 msgstr "~Skaidyti kreivę"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MenuItem.Text
+#, fuzzy
 msgid  "Con~vert to Curve"
 msgstr "Kon~vertuoti į kreivę"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MenuItem.Text
+#, fuzzy
 msgid  "~Corner"
 msgstr "~Kampas"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MenuItem.Text
+#, fuzzy
 msgid  "Smoot~h"
 msgstr "~Glotnus"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MenuItem.Text
+#, fuzzy
 msgid  "S~ymmetric"
 msgstr "S~imetrinis"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MenuItem.Text
+#, fuzzy
 msgid  "~Reduce Points"
 msgstr "~Sumažinti taškus"
 
 #: source/ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Group"
 msgstr "~Grupuoti"
 
 #: source/ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Ungroup"
 msgstr "~Išgrupuoti"
 
 #: source/ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MenuItem.Text
+#, fuzzy
 msgid  "Comb~ine"
 msgstr "Be persi~dengimų"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MenuItem.Text
+#, fuzzy
 msgid  "~Split"
 msgstr "~Skaidyti"
 
 #: source/ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Enter Group"
 msgstr "~Taisyti grupės objektus"
 
 #: source/ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "E~xit Group"
 msgstr "~Baigti grupės objektų taisymą"
 
 #: source/ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "Pavadinimas..."
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "Aprašas..."
 
 #: source/ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MenuItem.Text
+#, fuzzy
 msgid  "~Rehearse Timings"
 msgstr "~Rodyti laiką"
 
 #: source/ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MenuItem.Text
+#, fuzzy
 msgid  "Custom Animation..."
 msgstr "Naudotojo aprašyta animacija..."
 
 #: source/ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MenuItem.Text
+#, fuzzy
 msgid  "Int~eraction..."
 msgstr "Są~veika..."
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Presentation ~Object..."
 msgstr "Pateikties ~objektas..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE.SID_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Šalinti"
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MenuItem.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "~Numatyta"
 
 #: source/ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MenuItem.Text
+#, fuzzy
 msgid  "F~ontwork"
 msgstr "~Dekoratyvusis tekstas"
 
 #: source/ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MenuItem.Text
+#, fuzzy
 msgid  "~Original Size"
 msgstr "O~riginalus dydis"
 
 #: source/ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MenuItem.Text
+#, fuzzy
 msgid  "Save as Picture..."
 msgstr "Įrašyti kaip paveikslą..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CROP.SID_ATTR_GRAF_CROP.MenuItem.Text
+#, fuzzy
 msgid  "Crop Picture..."
 msgstr "Apkirpti paveikslą..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MenuItem.Text
+#, fuzzy
 msgid  "Na~vigator"
 msgstr "~Žvalgiklis"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MenuItem.Text
+#, fuzzy
 msgid  "Insert ~Point"
 msgstr "Įterpti ~tašką"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_LEFT.SID_GLUE_ESCDIR_LEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "~Kairinė"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_TOP.SID_GLUE_ESCDIR_TOP.MenuItem.Text
+#, fuzzy
 msgid  "~Top"
 msgstr "~Viršutinė"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_RIGHT.SID_GLUE_ESCDIR_RIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "~Dešininė"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_BOTTOM.SID_GLUE_ESCDIR_BOTTOM.MenuItem.Text
+#, fuzzy
 msgid  "~Bottom"
 msgstr "~Apatinė"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_PERCENT.SID_GLUE_PERCENT.MenuItem.Text
+#, fuzzy
 msgid  "~Adapt Position to Object"
 msgstr "~Parinkti objektui vietą"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_LEFT.SID_GLUE_HORZALIGN_LEFT.MenuItem.Text
+#, fuzzy
 msgid  "Fixed ~Horizontal Left"
 msgstr "Fiksuotas ~horizontaliai kairėje"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_CENTER.SID_GLUE_HORZALIGN_CENTER.MenuItem.Text
+#, fuzzy
 msgid  "Fixed Horizontal ~Center"
 msgstr "Fiksuotas horizontaliai ~centre"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_RIGHT.SID_GLUE_HORZALIGN_RIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Fixed Hori~zontal Right"
 msgstr "Fiksuotas hori~zontaliai dešinėje"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_TOP.SID_GLUE_VERTALIGN_TOP.MenuItem.Text
+#, fuzzy
 msgid  "Fixed ~Vertical Top"
 msgstr "Fiksuotas ~vertikaliai viršuje"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_CENTER.SID_GLUE_VERTALIGN_CENTER.MenuItem.Text
+#, fuzzy
 msgid  "Fixed V~ertical Center"
 msgstr "Fiksuotas v~ertikaliai centre"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_BOTTOM.SID_GLUE_VERTALIGN_BOTTOM.MenuItem.Text
+#, fuzzy
 msgid  "Fixed Ver~tical Bottom"
 msgstr "Fiksuotas ver~tikaliai apačioje"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MenuItem.Text
+#, fuzzy
 msgid  "~Visible Grid"
 msgstr "~Rodyti tinklelį"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_USE.SID_GRID_USE.MenuItem.Text
+#, fuzzy
 msgid  "Snap to Grid"
 msgstr "Pritraukti prie tinklelio"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MenuItem.Text
+#, fuzzy
 msgid  "Grid to ~Front"
 msgstr "~Tinklelis priešakyje"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "~Grid"
 msgstr "~Tinklelis"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MenuItem.Text
+#, fuzzy
 msgid  "~Snap Lines Visible"
 msgstr "~Rodyti traukos linijas"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MenuItem.Text
+#, fuzzy
 msgid  "Snap to Snap Lines"
 msgstr "Pritraukti prie traukos linijų"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_FRONT.SID_HELPLINES_FRONT.MenuItem.Text
+#, fuzzy
 msgid  "Snap Lines to Front"
 msgstr "Traukos linijos priešakyje"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "~Snap Lines"
 msgstr "~Traukos linijos"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MenuItem.Text
+#, fuzzy
 msgid  "Propert~ies..."
 msgstr "Savy~bės..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_THRESHOLD.SID_CONVERT_TO_1BIT_THRESHOLD.MenuItem.Text
+#, fuzzy
 msgid  "1Bit ~Threshold"
 msgstr "1 bito ~ribinės reikšmės"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MenuItem.Text
+#, fuzzy
 msgid  "1 Bit ~Dithering"
 msgstr "1 bito ~pseudopustonis"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MenuItem.Text
+#, fuzzy
 msgid  "4 Bit G~rayscales"
 msgstr "4 bitų pi~lkos spalvos atspalviai"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MenuItem.Text
+#, fuzzy
 msgid  "4 Bit ~Color Palette"
 msgstr "4 bitų ~spalvų paletė"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MenuItem.Text
+#, fuzzy
 msgid  "8 Bit Gr~ayscales"
 msgstr "8 bitų pil~kos spalvos atspalviai"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MenuItem.Text
+#, fuzzy
 msgid  "8 Bit C~olor Palette"
 msgstr "8 bitų s~palvų paletė"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MenuItem.Text
+#, fuzzy
 msgid  "24 Bit ~True Colors"
 msgstr "24 bitų ~spalvos"
 
 #: source/ui/app/menuids_tmpl.src#MN_COLORRESOLUTION.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "~Color Resolution"
 msgstr "~Spalvų skiriamoji geba"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_CONVERT.SID_CONVERT.MenuItem.Text
+#, fuzzy
 msgid  "Con~vert"
 msgstr "~Konvertuoti"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MenuItem.Text
+#, fuzzy
 msgid  "~Flip"
 msgstr "~Apversti"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MenuItem.Text
+#, fuzzy
 msgid  "~Rotate"
 msgstr "~Pasukti"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MenuItem.Text
+#, fuzzy
 msgid  "C~onnect"
 msgstr "S~ujungti linijas"
 
 #: source/ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MenuItem.Text
+#, fuzzy
 msgid  "~Break"
 msgstr "~Skaidyti linijas"
 
 #: source/ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit Style..."
 msgstr "Taisyti stilių..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MenuItem.Text
+#, fuzzy
 msgid  "H~yperlink..."
 msgstr "H~ipersaitas..."
 
 #: source/ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Poi~nts"
 msgstr "Ta~škai"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Glue Points"
 msgstr "~Jungimo taškai"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "La~yer"
 msgstr "S~luoksnis"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "~Įterpti"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Modify"
 msgstr "~Keisti"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_DELETE_LAYER.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Šalinti"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Rename"
 msgstr "~Pervadinti"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MenuItem.Text
+#, fuzzy
 msgid  "To ~Curve"
 msgstr "Į ~kreivę"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MenuItem.Text
+#, fuzzy
 msgid  "To ~Polygon"
 msgstr "Į ~laužtę"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MenuItem.Text
+#, fuzzy
 msgid  "To C~ontour"
 msgstr "Į k~ontūrą"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MenuItem.Text
+#, fuzzy
 msgid  "To 3~D"
 msgstr "Į t~rimatį"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MenuItem.Text
+#, fuzzy
 msgid  "To ~Bitmap"
 msgstr "Į ~paveikslą"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MenuItem.Text
+#, fuzzy
 msgid  "To ~Metafile"
 msgstr "Į ~metafailą"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MenuItem.Text
+#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "Į ~sukinį"
 
 #: source/ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "~Vertikaliai"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "~Horizontally"
 msgstr "~Horizontaliai"
 
 #: source/ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MenuItem.Text
+#, fuzzy
 msgid  "~3D Effects"
 msgstr "~Trimačiai efektai"
 
 #: source/ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Design"
 msgstr "~Lapo projektas"
 
 #: source/ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MenuItem.Text
+#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "~Skaidrių keitimas"
 
 #: source/ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Show Slide"
 msgstr "~Rodyti lapą"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Hide Slide"
 msgstr "~Slėpti lapą"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Group"
 msgstr "~Grupuoti"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Ungroup"
 msgstr "~Išgrupuoti"
 
 #: source/ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Edit Group"
 msgstr "~Taisyti grupės objektus"
 
 #: source/ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "E~xit group"
 msgstr "~Baigti grupės objektų taisymą"
 
 #: source/ui/app/menuids3_tmpl.src#MNSUB_GROUP.MN_SUB_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Group"
 msgstr "~Grupuoti"
 
 #: source/ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MenuItem.Text
+#, fuzzy
 msgid  "~Toolbars"
 msgstr "~Mygtukų juostos"
 
@@ -3988,358 +4241,447 @@ msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you 
 msgstr "„%PRODUCTNAME“ grafikos rengyklė atliko paiešką iki dokumento pradžios. Ar tęsti paiešką nuo pabaigos?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
+#, fuzzy
 msgid  "~New"
 msgstr "~Naujas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MenuItem.Text
+#, fuzzy
 msgid  "~Export..."
 msgstr "~Eksportuoti..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MenuItem.Text
+#, fuzzy
 msgid  "Export as PDF..."
 msgstr "Eksportuoti PDF formatu..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MenuItem.Text
+#, fuzzy
 msgid  "Sen~d"
 msgstr "Siųs~ti"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
+#, fuzzy
 msgid  "~Page..."
 msgstr "P~uslapis..."
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~Taisa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
+#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "Įdė~ti kitaip..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "Duplicat~e..."
 msgstr "K~opija..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MenuItem.Text
+#, fuzzy
 msgid  "Cross-fading..."
 msgstr "Figūrų virsmas..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MenuItem.Text
+#, fuzzy
 msgid  "F~ields..."
 msgstr "L~aukai..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MenuItem.Text
+#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "Šalinti ~sluoksnį..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
+#, fuzzy
 msgid  "Lin~ks..."
 msgstr "~Saitai..."
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
+#, fuzzy
 msgid  "~View"
 msgstr "~Rodymas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
+#, fuzzy
 msgid  "Main ~Toolbar"
 msgstr "Pagrindinių ~mygtukų juosta"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MenuItem.Text
+#, fuzzy
 msgid  "Optio~n Bar"
 msgstr "P~arinkčių juosta"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MenuItem.Text
+#, fuzzy
 msgid  "~Presentation"
 msgstr "Pa~teikties meniu"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MenuItem.Text
+#, fuzzy
 msgid  "Customi~ze..."
 msgstr "~Parinkti..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MenuItem.Text
+#, fuzzy
 msgid  "~Rulers"
 msgstr "~Liniuotės"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Notes View"
 msgstr "Pasta~bos"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Handout View"
 msgstr "~Dalijamoji medžiaga"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MenuItem.Text
+#, fuzzy
 msgid  "~Preview"
 msgstr "~Peržiūra"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MenuItem.Text
+#, fuzzy
 msgid  "S~lide"
 msgstr "~Lapas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Master"
 msgstr "~Skaidrės pagrindas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "~Antraštė"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Notes"
 msgstr "~Pastabos"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Handout"
 msgstr "~Dalijamoji medžiaga"
 
 #: source/ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MenuItem.Text
+#, fuzzy
 msgid  "La~yer"
 msgstr "S~luoksnis"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MenuItem.Text
+#, fuzzy
 msgid  "Wor~kspace"
 msgstr "~Darbinė veiksena"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Master"
 msgstr "Pag~rindas"
 
 #: source/ui/app/menuids2_tmpl.src#21.#define.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "~Įterpti"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slid~e..."
 msgstr "~Lapas..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slid~e"
 msgstr "~Lapas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~uplicate Slide"
 msgstr "Lapo ~kopija"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "E~xpand Slide"
 msgstr "~Išplėstas lapas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "Api~bendrinantis lapas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Layer..."
 msgstr "~Sluoksnis..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
+#, fuzzy
 msgid  "~Date (fixed)"
 msgstr "~Data (fiksuota)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MenuItem.Text
+#, fuzzy
 msgid  "Dat~e (variable)"
 msgstr "D~ata (kintama)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MenuItem.Text
+#, fuzzy
 msgid  "~Time (fixed)"
 msgstr "~Laikas (fiksuotas)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MenuItem.Text
+#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "La~ikas (kintamas)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Page Number"
 msgstr "~Lapo numeris"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MenuItem.Text
+#, fuzzy
 msgid  "~File Name"
 msgstr "~Failo vardas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MenuItem.Text
+#, fuzzy
 msgid  "~Author"
 msgstr "~Autorius"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MenuItem.Text
+#, fuzzy
 msgid  "~Select Source..."
 msgstr "~Parinkti šaltinį..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MenuItem.Text
+#, fuzzy
 msgid  "~Request..."
 msgstr "~Užklausti..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MenuItem.Text
+#, fuzzy
 msgid  "Sp~readsheet"
 msgstr "Sk~aičiuoklės dokumentas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MenuItem.Text
+#, fuzzy
 msgid  "From ~File..."
 msgstr "Iš ~failo..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MenuItem.Text
+#, fuzzy
 msgid  "Chart"
 msgstr "Diagrama"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MenuItem.Text
+#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "Slankusis ~kadras..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MenuItem.Text
+#, fuzzy
 msgid  "~File..."
 msgstr "~Failas..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MenuItem.Text
+#, fuzzy
 msgid  "Fiel~ds"
 msgstr "~Laukai"
 
 #: source/ui/app/menuids2_tmpl.src#22.#define.Text
+#, fuzzy
 msgid  "F~ormat"
 msgstr "~Formatas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Te~xt..."
 msgstr "~Tekstas..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "~Matmenys..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Connector..."
 msgstr "~Jungiamoji linija..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Layer..."
 msgstr "~Sluoksnis..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Modify ~Layout..."
 msgstr "Lapo ma~ketas..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
+#, fuzzy
 msgid  "Styl~es"
 msgstr "Sti~liai"
 
 #: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+#, fuzzy
 msgid  "~Tools"
 msgstr "~Priemonės"
 
 #: source/ui/app/menuids2_tmpl.src#26.#define.Text
+#, fuzzy
 msgid  "~Slide Show"
 msgstr "~Demonstravimas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
+#, fuzzy
 msgid  "~Check..."
 msgstr "~Tikrinti..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MenuItem.Text
+#, fuzzy
 msgid  "~AutoSpellcheck"
 msgstr "~Automatinis rašybos tikrinimas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MenuItem.Text
+#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "~Tezauras..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MenuItem.Text
+#, fuzzy
 msgid  "~Hyphenation"
 msgstr "~Skiemenavimas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~AutoCorrect..."
 msgstr "A~utomatinis rašybos taisymas..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Show Settings..."
 msgstr "Pateikties ~demonstravimo nuostatos..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Custom Slide Show..."
 msgstr "~Aprašyti pateikčių demonstravimai..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "~Animation"
 msgstr "~Animacija"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MenuItem.Text
+#, fuzzy
 msgid  "~Interaction..."
 msgstr "~Sąveika..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
+#, fuzzy
 msgid  "~Spellcheck"
 msgstr "~Rašybos tikrinimas"
 
 #: source/ui/app/menuids2_tmpl.src#24.#define.Text
+#, fuzzy
 msgid  "~Modify"
 msgstr "~Keisti"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~Perkelti priekio link"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Perkelti p~agrindo link"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "Prieš ~objektą"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "Be~hind Object"
 msgstr "~Už objekto"
 
 #: source/ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MenuItem.Text
+#, fuzzy
 msgid  "~Reverse"
 msgstr "~Sukeisti vietomis"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MenuItem.Text
+#, fuzzy
 msgid  "~Eyedropper"
 msgstr "~Pipetė"
 
 #: source/ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MenuItem.Text
+#, fuzzy
 msgid  "~Gallery"
 msgstr "~Galerija"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "~Spalva"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
+#, fuzzy
 msgid  "~Grayscale"
 msgstr "~Pilkos spalvos atspalviai"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
+#, fuzzy
 msgid  "~Black and White"
 msgstr "~Nespalvota"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
+#, fuzzy
 msgid  "~High Contrast"
 msgstr "~Didelis kontrastas"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "~Spalva"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MenuItem.Text
+#, fuzzy
 msgid  "~Grayscale"
 msgstr "~Pilkos spalvos atspalviai"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MenuItem.Text
+#, fuzzy
 msgid  "~Black and White"
 msgstr "~Nespalvota"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MenuItem.Text
+#, fuzzy
 msgid  "~High Contrast"
 msgstr "~Didelis kontrastas"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "~Išdėstyti"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ItemList.Text
+#, fuzzy
 msgid  "~Display Quality"
 msgstr "~Rodymo kokybė"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
+#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "P~eržiūros kokybė"
 
@@ -5700,30 +6042,37 @@ msgid  "Animation"
 msgstr "Animacija"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "First Image"
 msgstr "Pirmas paveikslas"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Backwards"
 msgstr "Atgal"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Stop"
 msgstr "Sustoti"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Play"
 msgstr "Rodyti animaciją"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Last Image"
 msgstr "Paskutinis paveikslas"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
+#, fuzzy
 msgid  "Image Number"
 msgstr "Paveikslo numeris"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
+#, fuzzy
 msgid  "Duration"
 msgstr "Rodymo trukmė"
 
@@ -5823,6 +6172,7 @@ msgid  "Max."
 msgstr "Maks."
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
+#, fuzzy
 msgid  "Loop Count"
 msgstr "Ciklų skaičius"
 
@@ -6047,26 +6397,32 @@ msgid  "Paper tray from printer s~ettings"
 msgstr "Lapo padavimas pagal ~spausdintuvo nuostatas"
 
 #: source/ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DockingWindow.Text
+#, fuzzy
 msgid  "Notes Window"
 msgstr "Pastabų langas"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Next"
 msgstr "~Toliau"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Previous"
 msgstr "A~tgal"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MenuItem.Text
+#, fuzzy
 msgid  "~Go to Slide"
 msgstr "~Eiti į skaidrę"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~First Slide"
 msgstr "~Pirmoji skaidrė"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Last Slide"
 msgstr "Pa~skutinė skaidrė"
 
@@ -6107,18 +6463,22 @@ msgid  "~Erase all ink on Slide"
 msgstr ""
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MenuItem.Text
+#, fuzzy
 msgid  "~Screen"
 msgstr "E~kranas"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MenuItem.Text
+#, fuzzy
 msgid  "~Black"
 msgstr "~Juodas"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MenuItem.Text
+#, fuzzy
 msgid  "~White"
 msgstr "~Baltas"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MenuItem.Text
+#, fuzzy
 msgid  "~End Show"
 msgstr "~Baigti demonstravimą"
 
@@ -6147,42 +6507,52 @@ msgid  "Duplicate Slide"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
+#, fuzzy
 msgid  "Table Design"
 msgstr "Lentelės projektas"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
+#, fuzzy
 msgid  "Show"
 msgstr "Rodyti"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW+1.CheckBox.Text
+#, fuzzy
 msgid  "Header Row"
 msgstr "Antraštės eilutė"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW+1.CheckBox.Text
+#, fuzzy
 msgid  "Total Row"
 msgstr "Visa eilutė"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS+1.CheckBox.Text
+#, fuzzy
 msgid  "Banded Rows"
 msgstr "Sujungtos eilutės"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
+#, fuzzy
 msgid  "First Column"
 msgstr "Pirmas stulpelis"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
+#, fuzzy
 msgid  "Last Column"
 msgstr "Paskutinis stulpelis"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS+1.CheckBox.Text
+#, fuzzy
 msgid  "Banded Columns"
 msgstr "Sujungti stulpeliai"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
+#, fuzzy
 msgid  "Styles"
 msgstr "Stiliai"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.ModalDialog.Text
+#, fuzzy
 msgid  "Table Design"
 msgstr "Lentelės projektas"
 

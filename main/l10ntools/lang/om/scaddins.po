@@ -529,181 +529,224 @@ msgid  "FACTDOUBLE"
 msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
+#, fuzzy
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
 msgstr "Lakkoofsa eenyummaa guyyaa guyyoota hojii ifta'an dura yk booda jiru deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Guyyaa calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.3.String.Text
+#, fuzzy
 msgid  "The start date"
 msgstr "Guyyaa itti eegale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.4.String.Text
+#, fuzzy
 msgid  "Days"
 msgstr "Guyyoota"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.5.String.Text
+#, fuzzy
 msgid  "The number of workdays before or after the start date"
 msgstr "Baayyi'ina guyyoota hojii erga guyyaa calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
+#, fuzzy
 msgid  "Holidays"
 msgstr "Guyyoota ayyaanaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
+#, fuzzy
 msgid  "List of date values of days off (vacation, holidays, etc.)"
 msgstr "Tartiiba gatii guyyoota ayyaanaa (boqonnaa ayyaana waggaa fi kkf.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
+#, fuzzy
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
 msgstr "Guyyoota lamqooddii 'guyyaa calqabaa' fi 'guyyaa dhumaa' gidduu jiran akka entaa waggaatti deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Guyyaa calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.3.String.Text
+#, fuzzy
 msgid  "The start date"
 msgstr "Guyyaa itti eegale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.4.String.Text
+#, fuzzy
 msgid  "End date"
 msgstr "Guyyaa dhumaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.5.String.Text
+#, fuzzy
 msgid  "The end date"
 msgstr "Guyyaa itti xumurame"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
+#, fuzzy
 msgid  "Basis"
 msgstr "Bu'uura"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
+#, fuzzy
 msgid  "Basis for determining the interest days"
 msgstr "Bu'uura guyyoota dhala murteessuf oolu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
+#, fuzzy
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
 msgstr "Lakkoofsa eenyummaa guyyaa calqabaa irraa ji'oota ifa'aniin duraa yk booda jiru deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Guyyaa calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.3.String.Text
+#, fuzzy
 msgid  "The start date"
 msgstr "Guyyaa itti eegale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.4.String.Text
+#, fuzzy
 msgid  "Months"
 msgstr "Ji'oota"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
+#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Baay'na ji'ootaa guyyaa calqabaa duura ykn booda jiran"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
+#, fuzzy
 msgid  "Returns the number of the calendar week in which the specified date occurs."
 msgstr "Baay'ina torban dhahaa guyyaan ifta'e keessatti argamu deebisa."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "Guyyaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.3.String.Text
+#, fuzzy
 msgid  "The date"
 msgstr "Guyyicha"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.4.String.Text
+#, fuzzy
 msgid  "Return type"
 msgstr "Akaakuu deebisii"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.5.String.Text
+#, fuzzy
 msgid  "A number from 1 to 3 that specifies the day with which a week begins"
 msgstr "Lakkoofsa 1 hanga 3 guyyaa torban ittiin calqabu kan ifteessu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
+#, fuzzy
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
 msgstr "Lakkoofsa eenyummaa guyyaa dhumaa ji'a guyyaa calqabaa irraa ji'oota murtaa'aniin dura ykn booda dhufu deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Guyyaa calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.3.String.Text
+#, fuzzy
 msgid  "The start date"
 msgstr "Guyyaa itti eegale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.4.String.Text
+#, fuzzy
 msgid  "Months"
 msgstr "Ji'oota"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.5.String.Text
+#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Baay'na ji'ootaa guyyaa calqabaa duura ykn booda jiran"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.1.String.Text
+#, fuzzy
 msgid  "Returns the number of workdays between two dates"
 msgstr "Baay'ina guyyoota hojii guyyoota lama gidduu jiran deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Guyyaa calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.3.String.Text
+#, fuzzy
 msgid  "The start date"
 msgstr "Guyyaa itti eegale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.4.String.Text
+#, fuzzy
 msgid  "End date"
 msgstr "Guyyaa dhumaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.5.String.Text
+#, fuzzy
 msgid  "The end date"
 msgstr "Guyyaa itti xumurame"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.6.String.Text
+#, fuzzy
 msgid  "Holidays"
 msgstr "Guyyoota ayyaanaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
+#, fuzzy
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
 msgstr "Tartiiba gatii guyyoota ayyaanaa (boqonnaa ayyaana waggaa fi kkf.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
+#, fuzzy
 msgid  "Returns the value 'true' if the number is even"
 msgstr "Yoo gatiin lakkoofsaa guutuu ta'e 'dhugaa' deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
+#, fuzzy
 msgid  "Number"
-msgstr "Lakkoofsa"
+msgstr "Lakkofsa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
+#, fuzzy
 msgid  "The number"
-msgstr "Lakoofsi"
+msgstr "Lakkoofsi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
+#, fuzzy
 msgid  "Returns the value 'true' if the number is odd"
 msgstr "Yoo gatiin lakkoofsa  hir'uu ta'e 'dhugaa' deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Lakkoofsa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
+#, fuzzy
 msgid  "The number"
-msgstr "Lakoofsi"
+msgstr "Lakkoofsi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
+#, fuzzy
 msgid  "Returns the multinomial coefficient of a set of numbers"
 msgstr "Lakkoofsa bu'aa-fidaa dhugee tuuta lakkoofsotaa deebisa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.2.String.Text
 #, fuzzy
 msgid  "Number(s)"
-msgstr "Lakkofsa (ota)"
+msgstr "Lakkofsa (lakkoofsota)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 #, fuzzy
@@ -778,7 +821,7 @@ msgstr "Hirmataa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
 #, fuzzy
 msgid  "The divisor"
-msgstr "Hiraa"
+msgstr "Hiiraan"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
 #, fuzzy
@@ -898,7 +941,7 @@ msgstr "N"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.5.String.Text
 #, fuzzy
 msgid  "The order of the Bessel function"
-msgstr "Tartiiba dalaga Bassali"
+msgstr "Tartiiba dalagaa Bassali"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.1.String.Text
 #, fuzzy
@@ -998,7 +1041,7 @@ msgstr "Iddoowwan"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "Lakkoofsa Iddoowwan fayyadamanii"
+msgstr "Baay'ina iddoowwan fayyadamanii"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.1.String.Text
 #, fuzzy
@@ -1053,7 +1096,7 @@ msgstr "Lakkoofsa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.3.String.Text
 #, fuzzy
 msgid  "The octal number to be converted (as text)"
-msgstr "Lakkoofsa saddeettaa jijjiiramu (akka barrruutti)"
+msgstr "Lakkoofsa saddeettaa jijjiiramu (akka barruutti)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.4.String.Text
 #, fuzzy
@@ -1063,7 +1106,7 @@ msgstr "Iddoowwan"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "Lakkoofsa Iddoowwan fayyadamanii"
+msgstr "Baay'ina iddoowwan fayyadamanii"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
 #, fuzzy
@@ -1168,7 +1211,7 @@ msgstr "Lakkoofsa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
 #, fuzzy
 msgid  "The decimal number"
-msgstr "Lakkoofsa lakkurnyee"
+msgstr "Lakkurnyeen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.4.String.Text
 #, fuzzy
@@ -1358,12 +1401,12 @@ msgstr "Gatii of danda'aa (muraa)kan lakkoofsa xaxaaa deebisa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.2.String.Text
 #, fuzzy
 msgid  "Complex number"
-msgstr "Lakkoofsa xaxaa"
+msgstr "Lakkoofsa Xaxaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.3.String.Text
 #, fuzzy
 msgid  "The complex number"
-msgstr "Lakkoofsi Xaxaan"
+msgstr "Lakkoofsi Xaxaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.1.String.Text
 #, fuzzy
@@ -1378,7 +1421,7 @@ msgstr "Lakkoofsa xaxaa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.3.String.Text
 #, fuzzy
 msgid  "The complex number"
-msgstr "Lakkoofsi Xaxaan"
+msgstr "Lakkoofsi xaxaan"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.1.String.Text
 #, fuzzy
@@ -1393,7 +1436,7 @@ msgstr "Lakkoofsa Xaxaa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.3.String.Text
 #, fuzzy
 msgid  "The complex number"
-msgstr "Lakkoofsi Xaxaa"
+msgstr "Lakkoofsi xaxaan"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.4.String.Text
 #, fuzzy
@@ -1458,7 +1501,7 @@ msgstr "Hirmataa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.5.String.Text
 #, fuzzy
 msgid  "The divisor"
-msgstr "Hiraa"
+msgstr "Hiiraan"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.1.String.Text
 #, fuzzy
@@ -1473,7 +1516,7 @@ msgstr "Lakkoofsa xaxaa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.3.String.Text
 #, fuzzy
 msgid  "The complex number"
-msgstr "Lakkoofsi xaxaan"
+msgstr "Lakkoofsa xaxaa kun"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.1.String.Text
 #, fuzzy
@@ -1488,7 +1531,7 @@ msgstr "Lakkoofsa xaxaa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.3.String.Text
 #, fuzzy
 msgid  "The complex number"
-msgstr "Lakkoofsi xaxaan"
+msgstr "Lakkoofsa xaxaa kun"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.1.String.Text
 #, fuzzy
@@ -1503,7 +1546,7 @@ msgstr "Lakkoofsa xaxaa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.3.String.Text
 #, fuzzy
 msgid  "The complex number"
-msgstr "Lakkoofsi xaxaan"
+msgstr "Lakkoofsa xaxaa kun"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog10.1.String.Text
 #, fuzzy
@@ -1839,7 +1882,7 @@ msgstr "Guyyaa bittaa qabeenyaa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.6.String.Text
 #, fuzzy
 msgid  "First period"
-msgstr "Yeroo duraa"
+msgstr "Guyyaa bittaa qabeenyaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.7.String.Text
 #, fuzzy
@@ -1869,7 +1912,7 @@ msgstr "Yeroon"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.12.String.Text
 #, fuzzy
 msgid  "Rate"
-msgstr "Saffisa"
+msgstr "Saffisi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.13.String.Text
 #, fuzzy
@@ -1884,7 +1927,7 @@ msgstr "Bu'uura"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.15.String.Text
 #, fuzzy
 msgid  "The year basis to be used"
-msgstr "Bu'uurri"
+msgstr "Waggaa bu'uuraa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 #, fuzzy
@@ -1994,7 +2037,7 @@ msgstr "Waliigaltee"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
 #, fuzzy
 msgid  "The settlement"
-msgstr "Waliigalteen"
+msgstr "Waliigaltee kun"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
 #, fuzzy
@@ -2034,7 +2077,7 @@ msgstr "Bu'uura"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.15.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "Bu'uurrri"
+msgstr "Bu'uurri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 #, fuzzy
@@ -2089,7 +2132,7 @@ msgstr "Bu'uura"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "Bu'uurrri"
+msgstr "Bu'uurri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 #, fuzzy
@@ -2109,12 +2152,12 @@ msgstr "Waliigalteen"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 #, fuzzy
 msgid  "Maturity"
-msgstr "Bilchiina"
+msgstr "Bilchiinaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Bilchiina"
+msgstr "Bilchiini"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
 #, fuzzy
@@ -2134,7 +2177,7 @@ msgstr "Gadcabsa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.9.String.Text
 #, fuzzy
 msgid  "The discount"
-msgstr "Gadcabsi"
+msgstr "Gadcabsa kun"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.10.String.Text
 #, fuzzy
@@ -2144,7 +2187,7 @@ msgstr "Bu'uura"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "Bu'uurri"
+msgstr "Bu'uuri kun"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.1.String.Text
 #, fuzzy
@@ -2169,7 +2212,7 @@ msgstr "Bilchiina"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Bilchiina"
+msgstr "Bilchiinni"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.6.String.Text
 #, fuzzy
@@ -2199,7 +2242,7 @@ msgstr "Bu'uura"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "Bu'uurri"
+msgstr "Bu'uuri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 #, fuzzy
@@ -2224,7 +2267,7 @@ msgstr "Bilchiina"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Bilchiini"
+msgstr "Bilchiinii kun"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.6.String.Text
 #, fuzzy
@@ -2234,17 +2277,17 @@ msgstr "Kuuphooni"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.7.String.Text
 #, fuzzy
 msgid  "The coupon rate"
-msgstr "Saffiisa kuuphooni"
+msgstr "Kuuphooni"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.8.String.Text
 #, fuzzy
 msgid  "Yield"
-msgstr "Kennuu"
+msgstr "Mirgisuu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.9.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "Kenni"
+msgstr "Mirgisuun"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.10.String.Text
 #, fuzzy
@@ -2289,7 +2332,7 @@ msgstr "Nipharii"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.5.String.Text
 #, fuzzy
 msgid  "The periods"
-msgstr "Yeroon"
+msgstr "Yeroowwan"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 #, fuzzy
@@ -2324,7 +2367,7 @@ msgstr "Pv"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.7.String.Text
 #, fuzzy
 msgid  "The present value"
-msgstr "Gatii yeroo ammaa"
+msgstr "Gatii ammaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.8.String.Text
 #, fuzzy
@@ -2334,7 +2377,7 @@ msgstr "Yeroo eegalaa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.9.String.Text
 #, fuzzy
 msgid  "The start period"
-msgstr "Yeroon eegalaa"
+msgstr "Yeroon eegala"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.10.String.Text
 #, fuzzy
@@ -2444,7 +2487,7 @@ msgstr "Bilchiina"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Bilchiinni"
+msgstr "Bilchiina"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.6.String.Text
 #, fuzzy
@@ -2464,7 +2507,7 @@ msgstr "Kennuu"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.9.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "Kenni"
+msgstr "Kenna"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.10.String.Text
 #, fuzzy
@@ -2519,7 +2562,7 @@ msgstr "Bilchiinaa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Bilchiinii kun"
+msgstr "Bilchiinni"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.6.String.Text
 #, fuzzy
@@ -2574,7 +2617,7 @@ msgstr "Bilchiina"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Bilchiinni"
+msgstr "Bilchiina"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.6.String.Text
 #, fuzzy
@@ -2604,7 +2647,7 @@ msgstr "Kennuu"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.11.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "Kenni"
+msgstr "Kenna"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.12.String.Text
 #, fuzzy
@@ -2639,7 +2682,7 @@ msgstr "Bilchiina"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Bilchiinni"
+msgstr "Bilchiina"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.6.String.Text
 #, fuzzy
@@ -2779,7 +2822,7 @@ msgstr "Bilchiina"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Bilchiinni"
+msgstr "Bilchiinaan"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.6.String.Text
 #, fuzzy
@@ -2854,7 +2897,7 @@ msgstr "Bilchiina"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Bilchiinni"
+msgstr "Bilchiinaan"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.6.String.Text
 #, fuzzy
@@ -2909,7 +2952,7 @@ msgstr "Bilchiina"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Bilchiinni"
+msgstr "Bilchiina"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.6.String.Text
 #, fuzzy
@@ -2984,7 +3027,7 @@ msgstr "Gadcabsa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.7.String.Text
 #, fuzzy
 msgid  "The discount rate"
-msgstr "Saffisa gadcabsa"
+msgstr "Saffisi gadcabsa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.1.String.Text
 #, fuzzy
@@ -3094,12 +3137,12 @@ msgstr "Guyyaa hiraa"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.8.String.Text
 #, fuzzy
 msgid  "First coupon"
-msgstr "kuuphooni calqaabaa"
+msgstr "Kuupooni calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.9.String.Text
 #, fuzzy
 msgid  "The first coupon date"
-msgstr "Guyyaa kuuphooni calqaabaa"
+msgstr "Guyyaa kuuphooni calqabaa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.10.String.Text
 #, fuzzy
@@ -3429,7 +3472,7 @@ msgstr "Gatiiwwan"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.3.String.Text
 #, fuzzy
 msgid  "The values"
-msgstr "Gatiiwwan"
+msgstr "Gatiin"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.4.String.Text
 #, fuzzy
@@ -3837,14 +3880,17 @@ msgid  "The schedule"
 msgstr "Sagantaan"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.1.String.Text
+#, fuzzy
 msgid  "Calculates the number of weeks in a specific period"
 msgstr "Baay'ina torbanii tibban iftaa'e keessa jiran herrega"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Guyyaa calqabaa"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.3.String.Text
+#, fuzzy
 msgid  "First day of the period"
 msgstr "Guyyaa calqaba tibbaa"
 

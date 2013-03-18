@@ -56,24 +56,20 @@ msgid  "Reset"
 msgstr "بازگرداندن به حالت اولیه"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
-#, fuzzy
-msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr "~بسیار بالا..\nفقط ماکروها از تمامی نقاط پرونده مطمئن اجازه برای اجرا دارند. تمام ماکروهای دیگر، بدون در نظر گرفتن اینکه آیا امضا شده اند یا نه، غیرفعال هستند."
+msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
-#, fuzzy
-msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr "ب~الا.\nفقط ماکروهای ثبت شده از منابع مورد اعتماد اجازه اجرا دارند. ماکروهای ثبت نشده غیرفعالند."
+msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
-#, fuzzy
-msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr "~متوسط.\nتایید قبل از اجرای ماکروها را از منابع بدون اعتبار مورد نیاز است."
+msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
-#, fuzzy
-msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr "~پایین (پیشنهاد نمی شود).\nتمام ماکروها اجرا بدون تایید اجرا می‌شوند. با استفاده از این ویژگی فقط اگر شما مطمئن هستید که تمام اسناد بازشده ایمن هستند. "
+msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 #, fuzzy
@@ -81,9 +77,8 @@ msgid  "Trusted certificates"
 msgstr "گواهی‌های مورد اعتماد"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "Issued to\tIssued by\tExpiration date"
-msgstr "ارائه شده برای\t ارائه شده توسط\t تاریخ انقضا"
+msgid  "Issued to\\tIssued by\\tExpiration date"
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 #, fuzzy
@@ -186,9 +181,8 @@ msgid  "The following have signed this package:"
 msgstr "این اسامی این بسته را امضا کرده‌اند:"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "\tSigned by\tDigital ID issued by\tDate"
-msgstr "\t صاحب امضا\t شناسهٔ دیجیتال صادر شده توسط\t تاریخ"
+msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
+msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 #, fuzzy
@@ -241,67 +235,79 @@ msgid  "Close"
 msgstr "بستن"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ErrorBox.Message
-msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\\n\\nSave document in ODF 1.2 format and add all desired signatures again."
 msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
-#, fuzzy
-msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr "اضافه یا حذف کردن یک امضا ماکرو باعث حذف همه امضاهای سند خواهد شد.\nآیا شما واقعاً می خواهید ادامه دهید؟"
+msgid  "Adding or removing a macro signature will remove all document signatures.\\nDo you really want to continue?"
+msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
+#, fuzzy
 msgid  "View Certificate"
 msgstr "نمایش گواهی"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.PageItem.Text
+#, fuzzy
 msgid  "General"
 msgstr "عمومی"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.PageItem.Text
+#, fuzzy
 msgid  "Details"
 msgstr "جزئیات"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.PageItem.Text
+#, fuzzy
 msgid  "Certification Path"
 msgstr "مسیر گواهی"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.FixedText.Text
+#, fuzzy
 msgid  " Certificate Information"
 msgstr " اطلاعات گواهی"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.FixedText.Text
+#, fuzzy
 msgid  "This certificate is intended for the following purpose(s):"
 msgstr "این گواهی برای شخص (یا اشخاص) زیر در نظر گرفته شده است:"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.FixedText.Text
+#, fuzzy
 msgid  "Issued to:"
 msgstr "صادر شده برای:"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.FixedText.Text
+#, fuzzy
 msgid  "Issued by:"
 msgstr "صادر شده توسط:"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.FixedText.Text
+#, fuzzy
 msgid  "Valid from %SDATE% to %EDATE%"
 msgstr "معتبر از %SDATE% تا %EDATE%"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FixedText.Text
+#, fuzzy
 msgid  "You have a private key that corresponds to this certificate."
 msgstr "شما کلید خصوصی مربوط به این گواهی را دارید."
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.String.Text
+#, fuzzy
 msgid  "The certificate could not be validated."
 msgstr "سنجش اعتبار گواهی ممکن نیست."
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
-msgid  "Field\tValue"
-msgstr "فیلد\tمقدار"
+msgid  "Field\\tValue"
+msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
+#, fuzzy
 msgid  "Version"
 msgstr "نسخه"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.String.Text
+#, fuzzy
 msgid  "Serial Number"
 msgstr "شمارهٔ سریال"
 
@@ -391,17 +397,20 @@ msgid  "The certificate could not be validated."
 msgstr "سنجش اعتبار گواهی ممکن نیست."
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.ModalDialog.Text
+#, fuzzy
 msgid  "Select Certificate"
 msgstr "انتخاب گواهی"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FixedText.Text
+#, fuzzy
 msgid  "Select the certificate you want to use for signing"
 msgstr "گواهی‌ای که می‌خواهید برای امضا استفاده کنید را انتخاب کنید"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
-msgid  "Issued to\tIssued by\tExpiration date"
-msgstr "صادرشده برای\t صادرشده توسط\t تاریخ انتقضا"
+msgid  "Issued to\\tIssued by\\tExpiration date"
+msgstr ""
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
+#, fuzzy
 msgid  "View Certificate..."
 msgstr "نمایش گواهی..."

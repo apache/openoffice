@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Şablon bi <wizard_name> ve roja <current_date> hatiye afirandin."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Sêrbaz destpênake, ji ber ku pelên girîng nayên dîtin.\nLi bin 'Amûr - Vebijêrk - %PRODUCTNAME - Rêç' de pêl bişkoka 'Standard' bikin ku vegerin mîhengên standard.\nPaşê sêrbazê nûve bidin destpêkirin."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Qadên di ~formê de"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Qadên dumend herdem tên lîstekirin û ji lîsteya çepê tên hilbijartin.\nHeke gengaz be, ew wek wêne tên şîrovekirin."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Bineform formekî di nava formekî din de ye.\nJi bo nîşandana dane ji tablo an lêpirsînan bi yek-û-zêdetir têkîliyan re bineforman bikar bînin."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Qadên di forman de ye"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "Yekbûyiya '<FIELDNAME1>' û '<FIELDNAME2>' du caran hatiye hilbijartin.\nLê yekbûyî tenê carekî tê bikaranîn."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,12 +804,12 @@ msgid  "Set the name of the form"
 msgstr "Navê formê diyar bike"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Formekî bi navê '%FORMNAME' jixwe heye.\nNavekî din hilbijêre."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
-msgstr "Sêrbaza Lêpirsînan"
+msgstr "Sêhrbaza Lêpirsînan"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 1.String.Text
 msgid  "Query"
@@ -1169,7 +1169,7 @@ msgstr "Niştecih hilbijêre"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 14.String.Text
 msgid  "Create report"
-msgstr "Raporê tomar bike"
+msgstr "Rapor biafirîne"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 15.String.Text
 msgid  "Layout of data"
@@ -1408,8 +1408,9 @@ msgid  "Author:"
 msgstr "Nivîskar:"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 88.String.Text
+#, fuzzy
 msgid  "Date:"
-msgstr "~Dîrok"
+msgstr "Dîrok:"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 89.String.Text
 msgid  "Page #page# of #count#"
@@ -1548,8 +1549,9 @@ msgid  "Congratulations. You have entered all the information needed to create y
 msgstr "Pîroz be. Hun hemû agahiyên pêwist ji bo afirandina tabloyê têketin."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
+#, fuzzy
 msgid  "What do you want to do next?"
-msgstr "Vêga tu dixwazî çi bike?"
+msgstr "Dûre hûn dixwazin çi bikin?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
 msgid  "Modify the table design"
@@ -1596,8 +1598,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Tablo nayê lêzêdekirin ji ber ku hejmara piranî %COUNT ya qadên gengaz yên di tabloya danegeh de tê borîn"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Navê '%TABLENAME' jixwe heye.\nJi kerema xwe navekî din têkevin."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1685,7 +1687,7 @@ msgstr "Agahiya jêr"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
 msgid  "~Use user data for return address"
-msgstr "Ji bo navnîşana paşde vegerînê daneyên bikarhêner bi ~kar bîne"
+msgstr "Ji bo navnîşana paşde vegerînê daneyê bikarhêner bi ~kar bîne"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
 msgid  "~New sender address:"
@@ -1697,7 +1699,7 @@ msgstr "Ji bo navnîşana ~girtiyar cîgir bi kar bîne"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
 msgid  "Use address database for ~mail merge"
-msgstr "Ji bo yakkirina ~peyaman danegeha navnîşanan bi kar bîne"
+msgstr "Ji bo yekkirina ~peyaman danegeha navnîşanan bi kar bîne"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 msgid  "Include ~only on second and following pages"
@@ -1933,7 +1935,7 @@ msgstr "Ji bo navnîşana paşde vegerînê daneyê bikarhêner bi ~kar bîne"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 11.String.Text
 msgid  "~New return address"
-msgstr "Navnîşana paşde vegerînê ya ~nû"
+msgstr "Navnîşana şandkar ya ~nû"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 12.String.Text
 msgid  "My Fax Template"
@@ -2120,8 +2122,8 @@ msgid  "Web Wizard"
 msgstr "Sêrbaza Torê"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Ev sêrbaz alîkariya di Înternetê de weşana belgeyan dike.\n\nEv belgeyan ku aliyê geroka torê ve baş bên xuyakirin vediguherîne. Him jî, ev rûpela Tabloya Naverokê bi girêdanan ve ji bo gihîştina hêsan diafirîne. Sêrbaza Torê dihêle ku hun sêwir û nişteciha malpera xwe taybet bikin.\n\nHun dikarin herdem belgeyên xwe yên weşandî rojane bigirin û lê zêde bikin an jê bibin."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2542,8 @@ msgid  "Preview"
 msgstr "Pêşdîtin"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Mîhengên hilbijartî dê bên jêbirin.\n\nHun rastî dixwazin wan mîhengan jê bibin?"
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2610,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "Peldanka FTP '%FILENAME' nayê afirandin."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Peldanka FTP '%FILENAME' tuneye. \nBila peldankê niha biafirîne?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Pela ZIP '%FILENAME' nayê afirandin: peldakek bi eynî navê jixwe heye."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Peldanka herêmî '%FILENAME' nayê afirandin. \nJi kerema xwe destûra-nivîsînê kontrol bikin."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Peldanka herêmî '%FILENAME' tuneye. \nBila peldankê niha biafirîne?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2865,12 +2867,12 @@ msgstr "Cureyê civînê"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +33.String.Text
 #, fuzzy
 msgid  "Please read"
-msgstr "Ji kerema bixwînin"
+msgstr "Ji kerema xwe bixwînin"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +34.String.Text
 #, fuzzy
 msgid  "Please bring"
-msgstr "Ji kerema bînin"
+msgstr "Ji kerema xwe bînin"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +35.String.Text
 #, fuzzy
@@ -3048,729 +3050,910 @@ msgid  "Move down"
 msgstr "Bikişîne jêr"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~Alîkarî"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~Betal"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
+#, fuzzy
 msgid  "<< ~Back"
 msgstr "<< ~Paş ve"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
+#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "P~êş >>"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
+#, fuzzy
 msgid  "~Convert"
 msgstr "~Veguherîne"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Bigire"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
+#, fuzzy
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
 msgstr "Ev sêrbaz belgeyên bi teşeya %PRODUCTNAME û belgeyên Microsoft Office vediguherîne teşeya OpenDocument."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
+#, fuzzy
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
 msgstr "Ji kerema xwe bîr nekin ku dema belgeyên Microsoft tên veguherîn, makroyên VBA yên pêvekirî kêrdariyên xwe winda dikin."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
+#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "Ji bo veguherînê teşeya belge hilbijêre:"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Word templates"
 msgstr "Şablonên Word"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Excel templates"
 msgstr "Şablonên Excel"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
+#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "Şablonên PowerPointê"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Word documents"
 msgstr "Belgeyên wordê"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Excel documents"
 msgstr "Belgeyên Excel"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
+#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "Belgeyên PowerPoint"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
+#, fuzzy
 msgid  "Including subdirectories"
 msgstr "Peldankên bin dihundirîne"
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
+#, fuzzy
 msgid  "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
+#, fuzzy
 msgid  "Summary:"
 msgstr "Kurte:"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
+#, fuzzy
 msgid  "Import from:"
 msgstr "Bihundirîne ji:"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
+#, fuzzy
 msgid  "Save to:"
 msgstr "Cihê tomarkirinê:"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
+#, fuzzy
 msgid  "Imported_Templates"
 msgstr "Şablonên_Hatine_Hundirandin"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
+#, fuzzy
 msgid  "Progress: "
 msgstr "Pêşketin: "
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "Belge"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
+#, fuzzy
 msgid  "Documents"
 msgstr "Belge"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "Şablon"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
+#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr "Pêrista '%1' nayê afirandin: "
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
+#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr "Pêrista '%1' ne mevcûd e."
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
+#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "Tu dixwazî vêga pêk bîne?"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
+#, fuzzy
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "Pela '<1>' jixwe heye.<CR>Bila li ser vê were nivîsîn?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
+#, fuzzy
 msgid  "Directories do not exist"
 msgstr "Peldank tune"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
+#, fuzzy
 msgid  "Do you want to overwrite documents without being asked?"
 msgstr "Hun dixwazin ku bila li ser belgeyan bê pirsîn were nivîsîn?"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
+#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "Makroyên belgê divê bên sererastbûn."
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
+#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "Belgeya '<1>' nayê tomarkirin."
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
+#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr "Belgeya '<1>' venabe."
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
+#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "Tu bawer î ku kar li xalê bibirî?"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
+#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "Sêrbazê Betal Bike"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
+#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "Di sêrbazê de çewtiyekî ne li bendê çêbû."
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
+#, fuzzy
 msgid  "Error"
 msgstr "Çewtî"
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
+#, fuzzy
 msgid  "Select a directory"
 msgstr "Peldankekê hilbijêre"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
+#, fuzzy
 msgid  "Document Converter"
 msgstr "Veguherînerê Belge"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
+#, fuzzy
 msgid  "Progress"
 msgstr "Pêşveçûn"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
+#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "Belgeyên pêwist têne stendin:"
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
+#, fuzzy
 msgid  "Converting the documents"
 msgstr "Belge tên veguherîn"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
+#, fuzzy
 msgid  "Found:"
 msgstr "Ya hate dîtin:"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
+#, fuzzy
 msgid  "%1 found"
 msgstr "%1 hate dîtin"
 
 #: source/importwizard/importwi.src#sReady.String.Text
+#, fuzzy
 msgid  "Finished"
 msgstr "Qediya"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Text templates"
 msgstr "Şablonên nivîsan"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "Şablonên tabloyên hesaban"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
+#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "Şablonên xêzkirin/pêşkêşî"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
 msgid  "Master documents"
-msgstr "Belgeyên bingeh"
+msgstr "Belgeyên mak"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Text documents"
 msgstr "Belgeyên nivîsan"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Spreadsheets"
 msgstr "Tabloya Hesêb"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
+#, fuzzy
 msgid  "Drawing/presentation documents"
 msgstr "Belgeyên xêzkirin/pêşkêşî"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
+#, fuzzy
 msgid  "Master documents/formulas"
 msgstr "Belge/formulên mak"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
+#, fuzzy
 msgid  "Master documents"
 msgstr "Belgeyên mak"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
+#, fuzzy
 msgid  "Formulas"
 msgstr "Formul"
 
 #: source/importwizard/importwi.src#sSourceDocuments.String.Text
+#, fuzzy
 msgid  "Source documents"
 msgstr "Belgeyên çavkanî"
 
 #: source/importwizard/importwi.src#sTargetDocuments.String.Text
+#, fuzzy
 msgid  "Target documents"
 msgstr "Belgeyên hedef"
 
 #: source/importwizard/importwi.src#sCreateLogfile.String.Text
+#, fuzzy
 msgid  "Create log file"
 msgstr "Pela rojnivîskê biafirîne"
 
 #: source/importwizard/importwi.src#sLogfileSummary.String.Text
+#, fuzzy
 msgid  "<COUNT> documents converted"
 msgstr "<COUNT> belge veguherîn"
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
+#, fuzzy
 msgid  "A log file will be created in your work directory"
 msgstr "Pelekî rojnivîsk wê di peldanka we ya xebatê de bê afirandin"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
+#, fuzzy
 msgid  "Show log file"
 msgstr "Pela rojnivîskê nîşan bide"
 
 #: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
+#, fuzzy
 msgid  "All subdirectories will be taken into account"
 msgstr "Dê hemû peldankên bin bên hesab kirin"
 
 #: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
+#, fuzzy
 msgid  "These will be exported to the following directory:"
 msgstr "Ew dê ji peldanka jêr re bên şandin:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
 msgstr "Hemû belgeyên nivîsê yên %PRODUCTNAME yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
 msgstr "Hemû tabloyên hesêb yên %PRODUCTNAME yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
 msgstr "Hemû belgeyên xêzkirin û pêşkêşî yên %PRODUCTNAME yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
 msgstr "Hemû belgeyên formulê yên %PRODUCTNAME yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
 msgstr "Hemû şablonên nivîsê yên %PRODUCTNAME yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
 msgstr "Hemû şablonên tabloyê yên %PRODUCTNAME yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
 msgstr "Hemû şablonên xêzkirin û pêşkêşî yên %PRODUCTNAME yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
 msgstr "Hemû belgeyên mak yên %PRODUCTNAME yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
+#, fuzzy
 msgid  "All Word documents contained in the following directory will be imported:"
 msgstr "Hemû belgeyên Word yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
+#, fuzzy
 msgid  "All Excel documents contained in the following directory will be imported:"
 msgstr "Hemû belgeyên Excel yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
+#, fuzzy
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
 msgstr "Hemû belgeyên PowerPoint yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
+#, fuzzy
 msgid  "All Word templates contained in the following directory will be imported:"
 msgstr "Hemû şablonên Word yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
+#, fuzzy
 msgid  "All Excel templates contained in the following directory will be imported:"
 msgstr "Hemû şablonên Excel yên di peldanka jêr de dê bên anîn:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
+#, fuzzy
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
 msgstr "Hemû şablonên PowerPoint yên di peldanka jêr de dê bên anîn:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Calendar"
 msgstr "Salnameya %PRODUCTNAME"
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
+#, fuzzy
 msgid  "Back"
 msgstr "Paş"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "Daneyên Şexsî"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
+#, fuzzy
 msgid  "Add Holidays to Calendar"
 msgstr "Rojên Betlane û Cejnan Têxe Salnameyê"
 
 #: source/schedule/schedule.src#dlgOK.String.Text
+#, fuzzy
 msgid  "Create"
 msgstr "Biafirîne"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "Betal"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "Salname"
 
 #: source/schedule/schedule.src#dlgCalOptionYear.String.Text
+#, fuzzy
 msgid  "~Year Overview"
 msgstr "Pêşdîtina ~Salê"
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
+#, fuzzy
 msgid  "~Month"
 msgstr "~Meh"
 
 #: source/schedule/schedule.src#dlgSchdlDescription.String.Text
+#, fuzzy
 msgid  "Add holidays for"
 msgstr "Rojên betlane lê zêde bike ji bo"
 
 #: source/schedule/schedule.src#dlgSchdlCountry.String.Text
+#, fuzzy
 msgid  "USA"
 msgstr "DYE"
 
 #: source/schedule/schedule.src#dlgTime.String.Text
+#, fuzzy
 msgid  "Time Frame"
 msgstr "Navberên Demê"
 
 #: source/schedule/schedule.src#dlgYear.String.Text
+#, fuzzy
 msgid  "Year"
 msgstr "Sal"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "Meh"
 
 #: source/schedule/schedule.src#dlgCalOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "Daneyên Şexsî"
 
 #: source/schedule/schedule.src#dlgCalInsert.String.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "~Lêzêdekirin"
 
 #: source/schedule/schedule.src#dlgCalDelete.String.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Jê bibe"
 
 #: source/schedule/schedule.src#dlgCalNewEvent.String.Text
+#, fuzzy
 msgid  "New Event"
 msgstr "Bûyera Nû"
 
 #: source/schedule/schedule.src#dlgCalEvent.String.Text
+#, fuzzy
 msgid  "Event"
 msgstr "Bûyer"
 
 #: source/schedule/schedule.src#dlgCalEventOnce.String.Text
+#, fuzzy
 msgid  "One-Time"
 msgstr "Yek-Car"
 
 #: source/schedule/schedule.src#dlgCalEventDay.String.Text
+#, fuzzy
 msgid  "Day"
 msgstr "Roj"
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "Meh"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
+#, fuzzy
 msgid  "Year"
 msgstr "Sal"
 
 #: source/schedule/schedule.src#dlgBitmapFile.String.Text
+#, fuzzy
 msgid  "usa.bmp"
 msgstr "dye.bmp"
 
 #: source/schedule/schedule.src#dlgState.String.Text
+#, fuzzy
 msgid  "Public holidays"
 msgstr "Rojên betlaneyê yên giştî"
 
 #: source/schedule/schedule.src#dlgMonth.String.Text
+#, fuzzy
 msgid  "January"
 msgstr "Rebendan"
 
 #: source/schedule/schedule.src#dlgMonth+1.String.Text
+#, fuzzy
 msgid  "February"
 msgstr "Reşemî"
 
 #: source/schedule/schedule.src#dlgMonth+2.String.Text
+#, fuzzy
 msgid  "March"
 msgstr "Adar"
 
 #: source/schedule/schedule.src#dlgMonth+3.String.Text
+#, fuzzy
 msgid  "April"
 msgstr "Avrêl"
 
 #: source/schedule/schedule.src#dlgMonth+4.String.Text
+#, fuzzy
 msgid  "May"
 msgstr "Gulan"
 
 #: source/schedule/schedule.src#dlgMonth+5.String.Text
+#, fuzzy
 msgid  "June"
 msgstr "Hezîran"
 
 #: source/schedule/schedule.src#dlgMonth+6.String.Text
+#, fuzzy
 msgid  "July"
 msgstr "Tîrmeh"
 
 #: source/schedule/schedule.src#dlgMonth+7.String.Text
+#, fuzzy
 msgid  "August"
 msgstr "Tebax"
 
 #: source/schedule/schedule.src#dlgMonth+8.String.Text
+#, fuzzy
 msgid  "September"
 msgstr "îlon"
 
 #: source/schedule/schedule.src#dlgMonth+9.String.Text
+#, fuzzy
 msgid  "October"
 msgstr "Cotmeh"
 
 #: source/schedule/schedule.src#dlgMonth+10.String.Text
+#, fuzzy
 msgid  "November"
 msgstr "Sermawez"
 
 #: source/schedule/schedule.src#dlgMonth+11.String.Text
+#, fuzzy
 msgid  "December"
 msgstr "Kanûn"
 
 #: source/schedule/schedule.src#msgCalErrorTitle.String.Text
+#, fuzzy
 msgid  "Yearly / Monthly Calendar"
 msgstr "Salnameya Saldar / Mehane"
 
 #: source/schedule/schedule.src#msgCalError.String.Text
+#, fuzzy
 msgid  "An error occurred while creating the calendar."
 msgstr "Dema salname dihate amadekirin çewtî çêbû."
 
 #: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
+#, fuzzy
 msgid  "Delete event entries"
 msgstr "Ketanên bûyeran jê bibe"
 
 #: source/schedule/schedule.src#msgCalRemove.String.Text
+#, fuzzy
 msgid  "Delete the selected entries?"
 msgstr "Ketanên hatine hilbijartin bila jê werine birin?"
 
 #: source/schedule/schedule.src#stlWorkday.String.Text
+#, fuzzy
 msgid  "Workweek"
 msgstr "Hefteya Xebatê"
 
 #: source/schedule/schedule.src#stlWeekend.String.Text
+#, fuzzy
 msgid  "Weekend"
 msgstr "Dawiya Hefteyê"
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "Salname"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "Meh"
 
 #: source/schedule/schedule.src#sProgress.String.Text
+#, fuzzy
 msgid  "Progress:"
 msgstr "Pêşketin:"
 
 #: source/template/template.src#SAMPLES.String.Text
+#, fuzzy
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
 msgstr "Ji bo bikaranîna tam bi kêrhatî ya vê mînakê, belgeyekî bibingeha vê şablonê biafirînin."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
+#, fuzzy
 msgid  "Remarks"
 msgstr "Şîrove"
 
 #: source/template/template.src#STYLES.String.Text
+#, fuzzy
 msgid  "Theme Selection"
 msgstr "Hilbijartina Dirb"
 
 #: source/template/template.src#STYLES + 1.String.Text
+#, fuzzy
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
 msgstr "Dema tomarkirina belgeyê di panoyê de çewtî çêbû! Çalakiya jêr nayê betal kirin."
 
 #: source/template/template.src#STYLES + 2.String.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~Betal"
 
 #: source/template/template.src#STYLES + 3.String.Text
+#, fuzzy
 msgid  "~OK"
 msgstr "Temam"
 
 #: source/template/template.src#AgendaDlgName.String.Text
+#, fuzzy
 msgid  "Minutes Template"
 msgstr "Dirba Xulekan"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
+#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "Divê vebijêrkek bê erêkirin."
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
+#, fuzzy
 msgid  "Minutes Type"
 msgstr "Cureya Xulekan"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
+#, fuzzy
 msgid  "Results Minutes"
 msgstr "Xulekên Encamê"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
+#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "Xulekên Nirxandinê"
 
 #: source/template/template.src#CorrespondenceNoTextmark.String.Text
+#, fuzzy
 msgid  "The bookmark 'Recipient' is missing."
 msgstr "Bijareya 'Girtiyar' winda ye."
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
+#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "Qadên nameya formê nayên hundirandin."
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
+#, fuzzy
 msgid  "An error has occurred."
 msgstr "Çewtiyek çêbû."
 
 #: source/template/template.src#CorrespondenceDialog.String.Text
+#, fuzzy
 msgid  "Addressee"
 msgstr "Navnîşan"
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
+#, fuzzy
 msgid  "One recipient"
 msgstr "Yek girtiyar"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
+#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "Pir girtiyar (danegeha navnîşanan)"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
+#, fuzzy
 msgid  "Use of This Template"
 msgstr "Vê Şablonê Bikar Bîne"
 
 #: source/template/template.src#CorrespondenceFields.String.Text
+#, fuzzy
 msgid  "Click placeholder and overwrite"
 msgstr "Yê ku tê biguhere bitikîne û li ser binivîse"
 
 #: source/template/template.src#CorrespondenceFields+1.String.Text
+#, fuzzy
 msgid  "Company"
 msgstr "Şîrket"
 
 #: source/template/template.src#CorrespondenceFields+2.String.Text
+#, fuzzy
 msgid  "Department"
 msgstr "Beş"
 
 #: source/template/template.src#CorrespondenceFields+3.String.Text
+#, fuzzy
 msgid  "First Name"
 msgstr "Nav"
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
+#, fuzzy
 msgid  "Last Name"
 msgstr "Paşnav"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
+#, fuzzy
 msgid  "Street"
 msgstr "Kuçe"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
+#, fuzzy
 msgid  "Country"
 msgstr "Welat"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
+#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "ZIP/Koda Postê"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
+#, fuzzy
 msgid  "City"
 msgstr "Bajar"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
+#, fuzzy
 msgid  "Title"
 msgstr "Sernav"
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Cih"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
+#, fuzzy
 msgid  "Form of Address"
 msgstr "Forma Navnîşanan"
 
 #: source/template/template.src#CorrespondenceFields+12.String.Text
+#, fuzzy
 msgid  "Initials"
 msgstr "Tîpên serî"
 
 #: source/template/template.src#CorrespondenceFields+13.String.Text
+#, fuzzy
 msgid  "Salutation"
 msgstr "Slavkirin"
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
+#, fuzzy
 msgid  "Home Phone"
 msgstr "Telefona Malê"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
+#, fuzzy
 msgid  "Work Phone"
 msgstr "Telefona Kargehê"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
+#, fuzzy
 msgid  "Fax"
 msgstr "Faks"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
+#, fuzzy
 msgid  "E-Mail"
 msgstr "E-Peyam"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
+#, fuzzy
 msgid  "Notes"
 msgstr "Nîşe"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
+#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "Qada Vebijark 1"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
+#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "Qada Vebijark 2"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
+#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "Qada Vebijark 3"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
+#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "Qada Vebijark 4"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
+#, fuzzy
 msgid  "ID"
 msgstr "ID"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
+#, fuzzy
 msgid  "State"
 msgstr "Eyalet"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
+#, fuzzy
 msgid  "Office Phone"
 msgstr "Telefona Karxanê"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
+#, fuzzy
 msgid  "Pager"
 msgstr "Amûra Bangker"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
+#, fuzzy
 msgid  "Mobile Phone"
 msgstr "Telefona Destan"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
+#, fuzzy
 msgid  "Other Phone"
 msgstr "Telefona Din"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
+#, fuzzy
 msgid  "Calendar URL"
 msgstr "URL ya Salnameyê"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
+#, fuzzy
 msgid  "Invite"
 msgstr "Vexwîne"
 
 #: source/template/template.src#TextField.String.Text
+#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "Qada daneya bikarhêner nehatiye diyarkirin!"
 
 #: source/template/template.src#Newsletter.String.Text
+#, fuzzy
 msgid  "General layout"
 msgstr "Nişteciha giştî"
 
 #: source/template/template.src#Newsletter + 1.String.Text
+#, fuzzy
 msgid  "Default layout"
 msgstr "Nişteciha standard"
 
 #: source/template/template.src#Newsletter + 2.String.Text
+#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "Nişteciha weşana bîrewerî"
 
 #: source/template/template.src#Newsletter + 3.String.Text
+#, fuzzy
 msgid  "Brochure layout"
 msgstr "Nişteciha broşur"
 
 #: source/template/template.src#Newsletter + 10.String.Text
+#, fuzzy
 msgid  "Format"
 msgstr "Teşe"
 
 #: source/template/template.src#Newsletter + 11.String.Text
+#, fuzzy
 msgid  "Single-sided"
 msgstr "Yek-kêlek"
 
 #: source/template/template.src#Newsletter + 12.String.Text
+#, fuzzy
 msgid  "Double-sided"
 msgstr "Cot-Kêlek"

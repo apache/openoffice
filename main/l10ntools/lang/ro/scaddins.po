@@ -441,11 +441,11 @@ msgstr "Întoarce numărul serial al datei dinainte sau după un număr specific
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
-msgstr "Data de start"
+msgstr "Dată de start"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.3.String.Text
 msgid  "The start date"
-msgstr "Data de start"
+msgstr "Dată de start"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.4.String.Text
 msgid  "Days"
@@ -757,7 +757,7 @@ msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.3.String.Text
 msgid  "The value at which the function is to be evaluated"
-msgstr "Valoarea pentru care trebuie calculată funția"
+msgstr "Valoarea la care se va evalua funcția"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.4.String.Text
 msgid  "N"
@@ -837,7 +837,7 @@ msgstr "Număr"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
 msgid  "The binary number to be converted (as text)"
-msgstr "Numărul binar care va fi convertit (ca text)"
+msgstr "Numărul binar de convertit (ca text)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
 msgid  "Places"
@@ -845,7 +845,7 @@ msgstr "Poziții zecimale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
 msgid  "Number of places used"
-msgstr "Numărul de poziții utilizate"
+msgstr "Memorie utilizată curent"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.1.String.Text
 msgid  "Converts a binary number to a decimal number"
@@ -889,7 +889,7 @@ msgstr "Număr"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.3.String.Text
 msgid  "The octal number to be converted (as text)"
-msgstr "Numărul octal de convertit (ca text)"
+msgstr "Numărul octal care va fi convertit (ca text)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.4.String.Text
 msgid  "Places"
@@ -897,7 +897,7 @@ msgstr "Poziții zecimale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.5.String.Text
 msgid  "Number of places used"
-msgstr "Memorie utilizată curent"
+msgstr "Număr de poziții folosite"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
 msgid  "Converts an octal number to a decimal number"
@@ -929,7 +929,7 @@ msgstr "Poziții zecimale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.5.String.Text
 msgid  "Number of places used"
-msgstr "Memorie utilizată curent"
+msgstr "Număr de poziții folosite"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.1.String.Text
 msgid  "Converts a decimal number to a binary number"
@@ -941,7 +941,7 @@ msgstr "Număr"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.3.String.Text
 msgid  "The decimal integer to be converted"
-msgstr "Întregul zecimal de convertit"
+msgstr "Numărul zecimal care va fi convertit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.4.String.Text
 msgid  "Places"
@@ -949,7 +949,7 @@ msgstr "Poziții zecimale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.5.String.Text
 msgid  "Number of places used"
-msgstr "Număr de poziții folosite"
+msgstr "Memorie utilizată curent"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.1.String.Text
 msgid  "Converts a decimal number to a hexadecimal number"
@@ -969,7 +969,7 @@ msgstr "Poziții zecimale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.5.String.Text
 msgid  "Number of places used"
-msgstr "Număr de poziții folosite"
+msgstr "Memorie utilizată curent"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.1.String.Text
 msgid  "Converts a decimal number into an octal number"
@@ -1001,7 +1001,7 @@ msgstr "Număr"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.3.String.Text
 msgid  "The hexadecimal number to be converted (as text)"
-msgstr "Numărul hexazecimal de convertit (ca text)"
+msgstr "Numărul hexa zecimal care va fi convertit (ca text)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.4.String.Text
 msgid  "Places"
@@ -1021,7 +1021,7 @@ msgstr "Număr"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.3.String.Text
 msgid  "The hexadecimal number to be converted (as text)"
-msgstr "Numărul hexa zecimal care va fi convertit (ca text)"
+msgstr "Numărul hexazecimal care va fi convertit (ca text) "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.1.String.Text
 msgid  "Converts a hexadecimal number to an octal number"
@@ -1073,7 +1073,7 @@ msgstr "Limită inferioară"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.3.String.Text
 msgid  "The lower limit for integration"
-msgstr "Limita inferioară pentru integrare"
+msgstr "Limita inferioră a integrării"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.4.String.Text
 msgid  "Upper limit"
@@ -1133,7 +1133,7 @@ msgstr "Întoarce valoarea absolută (modulul) unui număr complex "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.2.String.Text
 msgid  "Complex number"
-msgstr "Număr complex"
+msgstr "Numărul complex"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.3.String.Text
 msgid  "The complex number"
@@ -1145,7 +1145,7 @@ msgstr "Întoarce coeficientul imaginar al unui număr complex"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.2.String.Text
 msgid  "Complex number"
-msgstr "Număr complex"
+msgstr "Număr complexi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.3.String.Text
 msgid  "The complex number"
@@ -1517,7 +1517,7 @@ msgstr "Unitatea de măsură a rezultatului"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr "Întoarce deprecierea liniară prevăzută pentru un activ pentru fiecare perioadă contabilă"
+msgstr "Întoarce rata liniară prevăzută de depreciere a unui activ pentru fiecare perioadă contabilă"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1533,7 +1533,7 @@ msgstr "Data achiziției"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.5.String.Text
 msgid  "Purchase date of the asset"
-msgstr "Data achiziționării activului"
+msgstr "Data achiziției activului"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.6.String.Text
 msgid  "First period"
@@ -1553,7 +1553,7 @@ msgstr "Valoarea reziduală a unui activ la capătul vieții sale"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.10.String.Text
 msgid  "Period"
-msgstr "Perioada"
+msgstr "Perioadă"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.11.String.Text
 msgid  "The period"
@@ -1573,7 +1573,7 @@ msgstr "Bază"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.15.String.Text
 msgid  "The year basis to be used"
-msgstr "sae"
+msgstr "Anul de bază utilizat"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
@@ -1661,7 +1661,7 @@ msgstr "Scadență"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
 msgid  "The settlement"
-msgstr "Scadență"
+msgstr "Scadența"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
 msgid  "Rate"
@@ -1669,7 +1669,7 @@ msgstr "Rată"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.9.String.Text
 msgid  "The rate"
-msgstr "Rata"
+msgstr "Rată"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 msgid  "Par"
@@ -1677,7 +1677,7 @@ msgstr "Al pari"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.11.String.Text
 msgid  "The par value"
-msgstr "Valoarea la paritate"
+msgstr "Valoare la paritate"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.12.String.Text
 msgid  "Frequency"
@@ -1761,7 +1761,7 @@ msgstr "Termenul"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
 msgid  "Investment"
-msgstr "Investiția"
+msgstr "Investiție"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.7.String.Text
 msgid  "The investment"
@@ -1817,7 +1817,7 @@ msgstr "Recuperare"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
 msgid  "The redemption value"
-msgstr "Valoarea de recuperare"
+msgstr "Valoarea reziduală"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 msgid  "Basis"
@@ -1917,7 +1917,7 @@ msgstr "Nper"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.5.String.Text
 msgid  "Number of payment periods"
-msgstr "Număr de perioade de plată"
+msgstr "Număr perioade de plată"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.6.String.Text
 msgid  "Pv"
@@ -1925,19 +1925,19 @@ msgstr "Pv"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.7.String.Text
 msgid  "The present value"
-msgstr "Valoarea actuală"
+msgstr "Valoare actuală"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.8.String.Text
 msgid  "Start period"
-msgstr "Perioadă de început"
+msgstr "Perioada de start"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.9.String.Text
 msgid  "The start period"
-msgstr "Perioada de început"
+msgstr "Perioada de start"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.10.String.Text
 msgid  "End period"
-msgstr "Perioadă de sfârșit"
+msgstr "Perioada de sfârșit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.11.String.Text
 msgid  "The end period"
@@ -2045,7 +2045,7 @@ msgstr "Recuperare"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.11.String.Text
 msgid  "The redemption value"
-msgstr "Valoarea reziduală"
+msgstr "Valoare de referință"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.12.String.Text
 msgid  "Frequency"
@@ -3229,7 +3229,7 @@ msgstr "Dată"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.3.String.Text
 msgid  "Any day in the desired year"
-msgstr "Orice zi din anul dorit"
+msgstr "Orice dată din anul dorit"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
@@ -3253,7 +3253,7 @@ msgstr "Dată"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.3.String.Text
 msgid  "Any day in the desired year"
-msgstr "Orice dată din anul dorit"
+msgstr "Orice zi din anul dorit"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"

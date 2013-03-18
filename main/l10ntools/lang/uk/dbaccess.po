@@ -72,8 +72,8 @@ msgid  "The data source was not saved. Please use the interface XStorable to sav
 msgstr "Джерело даних не було збережено. Будь-ласка, використовуйте інтерфейс  XStorable для збереження джерела даних."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
-msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr "Запит не є запитом типу SELECT.\nДозволено лише запити, що не змінюють дані."
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -188,8 +188,8 @@ msgid  "There are tables in the database whose names conflict with the names of 
 msgstr "Деякі назви таблиць у цій базі даних конфліктують з назвами існуючих запитів. Для можливості використання всіх запитів та таблиць використовуйте унікальні назви."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
-msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr "SQL-запит призвів до помилки:\n\n$command$"
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -220,11 +220,11 @@ msgid  "Unable to find the document '$name$'."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
-msgid  "Could not save the document to $location$:\n$message$"
+msgid  "Could not save the document to $location$:\\n$message$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
-msgid  "Error accessing data source '$name$':\n$error$"
+msgid  "Error accessing data source '$name$':\\n$error$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
@@ -408,8 +408,8 @@ msgid  "The backup file entered does not exist."
 msgstr "Введений файл резервної копії не існує."
 
 #: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
-msgid  "The fully qualified file cannot be longer than \'#\' characters."
-msgstr ""
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "Повна назва файл не можу бути довша за \\'#\\' символів."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
 msgid  "The administrator and the control user cannot have the same name!"
@@ -428,8 +428,8 @@ msgid  "The specified file name or directory does not exist."
 msgstr "Вказана назва файлу чи каталогу не існує."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr "Не вдається створити нову базу даних.\nПеревірте встановлення Adabas D, особливо значення змінних \"DBROOT\" та \"DBWORK\"."
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -492,8 +492,8 @@ msgid  "Welcome to the Database Macro Migration Wizard"
 msgstr "Ласкаво просимо до помічника перетворення макросів бази даних"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
-msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr "Цей помічник допоможе виконати міграцію ваших макросів та сценаріїв.\n\nПісля завершення його роботи, усі макроси та сценарії, що були раніше вбудовані у ваші форми та звіти будуть переміщені у документ бази даних. При цьому, відповідним чином будуть перейменовані бібліотеки.\n\nЯкщо форми та звіти містять посилання на ці макроси та сценарії, такі посилання будуть виправлені, де це можливо.\n\nПерш ніж почати міграцію, слід закрити усі форми, звіти запити та таблиці. Для цього натисніть 'Далі'."
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
@@ -886,14 +886,12 @@ msgid  "Disable Preview"
 msgstr "Деактивувати попередній перегляд"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
-#, fuzzy
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr "Базу даних було змінено. \nЗберегти зміни?"
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
-#, fuzzy
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr "Змінився тип з'єднання.\nЩоб зміни набрали сили, треба закрити всі форми, звіти, запити та таблиці.\n\nЗакрити всі документи зараз?"
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -940,9 +938,8 @@ msgid  "The document contains forms or reports with embedded macros."
 msgstr ""
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
-#, fuzzy
-msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr "Тепер сценарії та макроси мають бути вбудовані у документ бази даних.\n\nВи можете використовувати документ як і раніше, проте, ми радимо мігрувати ваші сценарії та макроси. Для цього слугує пункт меню 'Сервіс / Мігрувати сценарії та макроси ...'.\n\nЗверніть увагу, ви не зможете вбудовувати макроси чи сценарії у документ бази даних доки міграція не завершиться."
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr ""
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 msgid  "Embedded database"
@@ -957,230 +954,286 @@ msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr "Поточний запис був змінений.\nЗберегти зміни?"
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "Видалити обрані дані?"
 
 #: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+#, fuzzy
 msgid  "(filtered)"
 msgstr "(профільтровано)"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "Помилка при встановленні умов сортування"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "Помилка при встановленні умов фільтрації"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+#, fuzzy
 msgid  "Connection lost"
 msgstr "Розрив зв'язку"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Queries"
 msgstr "Запити"
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "Таблиці"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+#, fuzzy
 msgid  "Edit ~Database File..."
 msgstr "~Редагування бази даних..."
 
 #: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+#, fuzzy
 msgid  "Registered databases ..."
 msgstr "Зареєстровані бази даних..."
 
 #: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+#, fuzzy
 msgid  "Disco~nnect"
 msgstr "~Відключити"
 
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "Підтвердження видалення"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "Видалити таблицю '%1'?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
 msgstr "Запит вже існує. Видалити його?"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "З'єднання з базою даних втрачено. Відновити?"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+#, fuzzy
 msgid  "Warnings encountered"
 msgstr "Попередження"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
 msgstr "При отриманні таблиці із з'єднання з базою даних виявлено попередження."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
 msgstr "З'єднання з \"$name$\" ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "Завантаження запиту $name$ ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "Відкриття таблиці $name$ ..."
 
 #: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+#, fuzzy
 msgid  "No table format could be found."
 msgstr "Неможливо знайти формат таблиці."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "Неможливо встановити з'єднання з джерелом даних \"$name$\"."
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+#, fuzzy
 msgid  "Rebuild"
 msgstr "Перечитати"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+#, fuzzy
 msgid  "Column ~Format..."
 msgstr "~Формат стовпчика..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "Копіювати ~опис стовпчика"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+#, fuzzy
 msgid  "Table Format..."
 msgstr "Формат таблиці..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Row Height..."
 msgstr "Висота рядків..."
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "Скасувати: ввід даних"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+#, fuzzy
 msgid  "Save current record"
 msgstr "Зберегти поточний запис"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+#, fuzzy
 msgid  "Query #"
 msgstr "Запит #"
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "Таблиця #"
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+#, fuzzy
 msgid  "View #"
 msgstr "Представлення #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+#, fuzzy
 msgid  "The name \"#\" already exists."
 msgstr "Назва \"#\" вже існує."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+#, fuzzy
 msgid  "No matching column names were found."
 msgstr "Не знайдені відповідні назви стовпчиків."
 
 #: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
 msgstr "Помилка. Продовжити копіювання?"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+#, fuzzy
 msgid  "Data source table view"
 msgstr "Вигляд таблиці джерела даних"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+#, fuzzy
 msgid  "Shows the selected table or query."
 msgstr "Покаже вибрану таблицю або запит."
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "Таблиця #"
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "Змінити інструкції SQL"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+#, fuzzy
 msgid  "Table name"
 msgstr "Назва таблиці"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+#, fuzzy
 msgid  "Insert data"
 msgstr "Додавання"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+#, fuzzy
 msgid  "Delete data"
 msgstr "Видалення"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+#, fuzzy
 msgid  "Modify data"
 msgstr "Редагування"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+#, fuzzy
 msgid  "Alter structure"
 msgstr "Змінити структуру"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+#, fuzzy
 msgid  "Read data"
 msgstr "Читання"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+#, fuzzy
 msgid  "Modify references"
 msgstr "Змінити посилання"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+#, fuzzy
 msgid  "Drop structure"
 msgstr "Ігнорувати структуру"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Ascending"
 msgstr "Сортування за зростанням"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Descending"
 msgstr "Сортування за спаданням"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
 msgstr "Неможливо з'єднатися з менеджером драйвера SDBC (#servicename#)."
 
 #: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "Драйвер не зареєстрований для URL #connurl#."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
 msgstr "Неможливо з'єднатися з URL #connurl#."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
 msgstr "Перевірте поточні параметри, наприклад ім'я користувача та пароль."
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+#, fuzzy
 msgid  "Successfully connected, but information about database tables is not available."
 msgstr "З'єднання встановлено, але інформація про таблиці бази даних недоступна."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+#, fuzzy
 msgid  "All tables"
 msgstr "Усі таблиці"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+#, fuzzy
 msgid  "All views"
 msgstr "Усі представлення таблиць"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+#, fuzzy
 msgid  "All tables and views"
 msgstr "Усі таблиці та їх представлення"
 
@@ -1575,58 +1628,72 @@ msgid  "<none>"
 msgstr "<немає>"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Параметри"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
+#, fuzzy
 msgid  "Use SQL92 naming constraints"
 msgstr "Використовувати стандарт SQL92"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
+#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
 msgstr "Оновити псевдонім таблиці для запиту SELECT"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
+#, fuzzy
 msgid  "Use keyword AS before table alias names"
 msgstr "Використовувати ключове слово AS перед псевдонімом таблиці"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
+#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
 msgstr "Використовуйте синтаксис зовнішнього з'єднання '{OJ }'"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
+#, fuzzy
 msgid  "Ignore the privileges from the database driver"
 msgstr "Ігнорувати привілеї з драйвера бази даних"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
+#, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "Замінити іменовані параметри на '?'"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
+#, fuzzy
 msgid  "Display version columns (when available)"
 msgstr "Відображати стовпчики версії (якщо доступні)"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
+#, fuzzy
 msgid  "Use catalog name in SELECT statements"
 msgstr "Використовувати назву каталогу у виразі SELECT"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
+#, fuzzy
 msgid  "Use schema name in SELECT statements"
 msgstr "Використовувати назву схеми у виразі SELECT"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
+#, fuzzy
 msgid  "Create index with ASC or DESC statement"
 msgstr "Створити індекс з умовами ASC та DESC"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
+#, fuzzy
 msgid  "End text lines with CR+LF"
 msgstr "Завершувати рядки CR+LF"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
+#, fuzzy
 msgid  "Ignore currency field information"
 msgstr "Ігнорувати інформацію валютних полів"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
+#, fuzzy
 msgid  "Form data input checks for required fields"
 msgstr "Форма перевіряє необхідні поля"
 
@@ -1643,22 +1710,27 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "Default"
 msgstr "Типово"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "Mixed"
 msgstr "Змішане"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "MS Access"
 msgstr "MS Access"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
+#, fuzzy
 msgid  "Comparison of Boolean values"
 msgstr "Порівняння булевих значень"
 
@@ -1667,26 +1739,32 @@ msgid  "Rows to scan column types"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Параметри"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
+#, fuzzy
 msgid  "Re~trieve generated values"
 msgstr "~Отримати згенеровані значення"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
+#, fuzzy
 msgid  "~Auto-increment statement"
 msgstr "~Автоінкрементна інструкція"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
+#, fuzzy
 msgid  "~Query of generated values"
 msgstr "~Запит згенерованих значень"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
+#, fuzzy
 msgid  "Generated Values"
 msgstr "Згенеровані значення"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
+#, fuzzy
 msgid  "Special Settings"
 msgstr "Спеціальні параметри"
 
@@ -1740,9 +1818,8 @@ msgid  "A password is needed to connect to the data source \"$name$\"."
 msgstr "Необхідно ввести пароль для підключення до джерело даних \"$name$\"."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
-#, fuzzy
-msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr "Каталог\n\n$path$\n\nне існує. Створити?"
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr ""
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 #, fuzzy
@@ -1791,6 +1868,7 @@ msgid  "~Port"
 msgstr ""
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
+#, fuzzy
 msgid  "Default: 3306"
 msgstr "Типовий порт: 3306"
 
@@ -1813,26 +1891,32 @@ msgid  "User administration"
 msgstr "Адміністрування користувачів"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "Таблиці"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
+#, fuzzy
 msgid  "Queries"
 msgstr "Запити"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "~Додати"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Закрити"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
+#, fuzzy
 msgid  "Add Tables"
 msgstr "Додати таблиці"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
+#, fuzzy
 msgid  "Add Table or Query"
 msgstr "Додати таблицю чи запит"
 
@@ -1874,7 +1958,7 @@ msgstr "Використовувати каталог для файлових б
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
 #, fuzzy
 msgid  "Connection Settings"
-msgstr "Параметри з'єднання"
+msgstr "Властивості з'єднання"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
 #, fuzzy
@@ -1962,9 +2046,8 @@ msgid  "Database"
 msgstr "База даних"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
-#, fuzzy
-msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr "Далі ви зможете встановити додаткові параметри з'єднання. \n\nНові параметри, які ви встановите перезапишуть існуючі параметри."
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 #, fuzzy
@@ -1982,9 +2065,8 @@ msgid  "Could not load the program library #lib# or it is corrupted. The ODBC da
 msgstr "Неможливо завантажити програмну бібліотеку ##lib# або вона зіпсована. Вибір ODBC джерела даних недоступний."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
-#, fuzzy
-msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr "Такий тип джерела даних не підтримується на цій платформі.\nВи можете змінити параметри, але ви напевно не зможете підключитися до бази даних."
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 #, fuzzy
@@ -2024,7 +2106,7 @@ msgstr "~Параметри ODBC"
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FixedLine.Text
 #, fuzzy
 msgid  "Connection Settings"
-msgstr "Властивості з'єднання"
+msgstr "Параметри з'єднання"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FixedText.Text
 #, fuzzy
@@ -2191,42 +2273,52 @@ msgid  "Insert as"
 msgstr "Вставити як"
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "Шлях до файлів dBASE"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the text files"
 msgstr "Шлях до текстових файлів"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "Шлях до електронних таблиць"
 
 #: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
+#, fuzzy
 msgid  "Name of the ODBC data source on your system"
 msgstr "Назва джерела даних ODBC у вашій системі"
 
 #: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
+#, fuzzy
 msgid  "Name of the MySQL database"
 msgstr "Назва бази даних MySQL"
 
 #: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
+#, fuzzy
 msgid  "Name of the Oracle database"
 msgstr "Назва бази даних Oracle"
 
 #: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
+#, fuzzy
 msgid  "Name of the Adabas D database"
 msgstr "Назва бази даних Adabas D"
 
 #: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
+#, fuzzy
 msgid  "Microsoft Access database file"
 msgstr "Файл бази даних Microsoft Access"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
+#, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
 msgstr "Більше жодних параметрів не вимагається. Для перевірки з'єднання натисніть кнопку '%test' "
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
+#, fuzzy
 msgid  "Datasource URL"
 msgstr "URL джерела даних"
 
@@ -2361,66 +2453,82 @@ msgid  "MS Access 2007 file"
 msgstr "Файл MS Access 2007"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+#, fuzzy
 msgid  "Database files"
 msgstr "Файли бази даних"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
+#, fuzzy
 msgid  "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+#, fuzzy
 msgid  "Database sizes"
 msgstr "Розміри бази даних"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "~Розмір (МБ):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "~Вільно пам'яті (МБ):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "~Зайнято пам'яті (у %):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+#, fuzzy
 msgid  "Database Statistics"
 msgstr "Статистика бази даних"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+#, fuzzy
 msgid  "Contains the system tables"
 msgstr "Містить системні таблиці"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+#, fuzzy
 msgid  "Contains information about transaction"
 msgstr "Містить інформацію про транзакцію"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+#, fuzzy
 msgid  "Contains all data files"
 msgstr "Містить усі файли даних"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+#, fuzzy
 msgid  "Total size of the database files"
 msgstr "Загальний розмір файлів бази даних"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Доступно пам'яті перед створенням нового файлу datadev."
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+#, fuzzy
 msgid  "Currently used memory"
 msgstr "Поточне використання пам'яті"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
 msgstr "Неможливо відобразити інформацію, оскільки немає прав доступу до потрібних системних таблиць."
 
@@ -2567,7 +2675,7 @@ msgstr "Паролі не збігаються. Введіть пароль зн
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
 #, fuzzy
 msgid  "Database Wizard"
-msgstr "Помічник створення бази даних"
+msgstr "Помічник бази даних"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
 #, fuzzy
@@ -2587,7 +2695,7 @@ msgstr "Встановлення з'єднання з dBASE"
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
 #, fuzzy
 msgid  "Set up a connection to text files"
-msgstr "Встановити з'єднання до текстових файлів"
+msgstr "Встановлення підключення до текстових файлів"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
 #, fuzzy
@@ -2659,9 +2767,8 @@ msgid  "Set up a connection to a MySQL database"
 msgstr "Встановлення з'єднання з базою даних MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
-#, fuzzy
-msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Ви можете з'єднатися з базою даних MySQL використовуючи ODBC чи JDBC.\nзв'яжіться з вашим системним адміністратором, якщо ви не впевнені у наступних параметрах."
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 #, fuzzy
@@ -2753,9 +2860,8 @@ msgid  "Set up connection to a MySQL database using JDBC"
 msgstr "Налаштовування з'єднання з базою MySQL, з використанням JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Введіть інформацію для підключення до бази даних MySQL за допомогою JDBC-драйвера. Пам'ятайте, що клас JDBC -драйвера має бути встановлено на вашу систему та зареєстровано %PRODUCTNAME.\nЗв'яжіться з системним адміністратором, якщо ви невпевнені, щодо  значень наступних параметрів."
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 #, fuzzy
@@ -2818,9 +2924,8 @@ msgid  "Set up a connection to an LDAP directory"
 msgstr "Налаштувати підключення до сервера LDAP"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Введіть інформацію, необхідну для доступу до сервера LDAP.\nЗв'яжіться з вашим системним адміністратором якщо ви невпевнені в цих параметрах"
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 #, fuzzy
@@ -2838,9 +2943,8 @@ msgid  "Set up a connection to an Adabas D database"
 msgstr "Налаштовування з'єднання з СУБД Adabas D"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr "Введіть назву бази даних Adabas D, з якою треба з'єднатися.\nНатисніть \"Огляд...\" для вибору бази даних Adabas D з зареєстрованих у %PRODUCTNAME."
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 #, fuzzy
@@ -2848,9 +2952,8 @@ msgid  "Set up a connection to an ADO database"
 msgstr "Налаштовування з'єднання з ADO"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Будь-ласка, введіть адресу джерела даних ADO, з яким треба з'єднатися.\nНатисніть 'Перегляд' для налаштовування специфічних для провайдера параметрів.\nЗв'яжіться з вашим системним адміністратором, якщо ви невпевнені, щодо значень цих параметрів."
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2858,9 +2961,8 @@ msgid  "Set up a connection to an ODBC database"
 msgstr "Налаштовування з'єднання через ODBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Введіть назву бази даних ODBC, з якою треба з'єднатися.\nНатисніть 'Перегляд..' для вибору зареєстрованої бази даних ODBC з %PRODUCTNAME у Вашій системі.\nЗв'яжіться з системним адміністратором, якщо ви невпевнені, щодо  значень наступних параметрів."
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2868,9 +2970,8 @@ msgid  "Set up a connection to a JDBC database"
 msgstr "Параметри з'єднання через JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Введіть необхідну інформацію для підключення до драйвера баз даних JDBC.\nЗв'яжіться з системним адміністратором, якщо ви невпевнені, щодо  значень наступних параметрів."
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 #, fuzzy
@@ -2888,9 +2989,8 @@ msgid  "Oracle JDBC ~driver class"
 msgstr "Клас ~драйвера Oracle JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Введіть інформацію для з'єднання з базою даних Oracle. Зауважте, що клас драйвера JDBC має бути встановлений у вашій системі та зареєстрований у %PRODUCTNAME.\nЯкщо ви невпевнені, щодо значень параметрів, зверніться до системного адміністратора."
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 #, fuzzy
@@ -2898,9 +2998,8 @@ msgid  "Set up a connection to spreadsheets"
 msgstr "Налаштовування з'єднання з електронною таблицею"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr "Натисніть «Огляд...» для виберу таблиці %PRODUCTNAME чи Microsoft Excel.\n%PRODUCTNAME відкриє цей файл у режимі лише для читання."
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 #, fuzzy
@@ -3041,9 +3140,8 @@ msgid  "{None}"
 msgstr "{Немає}"
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
-#, fuzzy
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ";\t59\t,\t44\t:\t58\t{Таб}\t9\t{Пробіл}\t32"
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
 #, fuzzy
@@ -3075,198 +3173,242 @@ msgid  "Socket"
 msgstr ""
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+#, fuzzy
 msgid  "Refresh"
 msgstr "Оновити"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~View Design"
 msgstr "Створити ~представлення (режим дизайну)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Table Design"
 msgstr "Створити ~таблицю (режим дизайну)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "Помічник запитів..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "Створити ~запит (режим дизайну)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "~Edit Query"
 msgstr "~Редагування запиту"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "Створити запит (режим ~SQL)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "Редагування..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+#, fuzzy
 msgid  "Column ~Width..."
 msgstr "Ширина ~стовпчика..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+#, fuzzy
 msgid  "Report Wizard..."
 msgstr "Помічник звітів..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "Помічник форм..."
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+#, fuzzy
 msgid  "System"
 msgstr "Системний"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+#, fuzzy
 msgid  "Error during creation"
 msgstr "Помилка при створенні"
 
 #: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "Виникла несподівана помилка. Неможливо виконати операцію."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
 msgstr "Документ \"$file$\" не може бути відкритий."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
 msgstr "Неможливо видалити таблицю, оскільки це не підтримується підключенням до бази даних."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+#, fuzzy
 msgid  "~All"
 msgstr "~Усі"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+#, fuzzy
 msgid  "Undo:"
 msgstr "Скасувати:"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+#, fuzzy
 msgid  "Redo:"
 msgstr "Повторити:"
 
 #: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
 msgstr "Не знайдено відповідний тип стовпчика для стовпчика '#1'."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+#, fuzzy
 msgid  "The file \"$file$\" does not exist."
 msgstr "Файл \"$file$\" не існує."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr "При спробі з'єднання з джерелом даних виникли попередження. Натисніть на \"$buttontext$\" для їх перегляду."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
-msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr "Назва \"$#$\" уже существует.\nВиберіть іншу назву."
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
+#, fuzzy
 msgid  "Apply columns"
 msgstr "Вибір полів"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
+#, fuzzy
 msgid  "Type formatting"
 msgstr "Типи полів"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
-msgid  "The following fields have already been set as primary keys:\n"
-msgstr "Наступні поля вже встановлені як первинні ключі:\n"
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
+#, fuzzy
 msgid  "Assign columns"
 msgstr "Відповідність полів"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
+#, fuzzy
 msgid  "Copy RTF Table"
 msgstr "Копіювати таблицю RTF"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~Довідка"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~Скасувати"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
+#, fuzzy
 msgid  "< ~Back"
 msgstr "< ~Назад"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
+#, fuzzy
 msgid  "~Next>"
 msgstr "Д~алі>"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
+#, fuzzy
 msgid  "C~reate"
 msgstr "С~творити"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
+#, fuzzy
 msgid  "Existing columns"
 msgstr "Поля"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
+#, fuzzy
 msgid  "Column information"
 msgstr "Інформація про поле"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
+#, fuzzy
 msgid  "Automatic type recognition"
 msgstr "Автоматичне розпізнавання типу"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
+#, fuzzy
 msgid  "Lines (ma~x)"
 msgstr "Рядків (~макс)"
 
 #: source/ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+#, fuzzy
 msgid  "Primary Key"
 msgstr "Первинний ключ"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
-msgid  "Source table: \n"
-msgstr "Первинна таблиця: \n"
+msgid  "Source table: \\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
-msgid  "Destination table: \n"
-msgstr "Цільова таблиця: \n"
+msgid  "Destination table: \\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
+#, fuzzy
 msgid  "~All"
 msgstr "~Усі"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
+#, fuzzy
 msgid  "Non~e"
 msgstr "О~чистити"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
+#, fuzzy
 msgid  "Ta~ble name"
 msgstr "Назва ~таблиці"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Параметри"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
+#, fuzzy
 msgid  "De~finition and data"
 msgstr "Ст~руктура та дані"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RadioButton.Text
+#, fuzzy
 msgid  "Def~inition"
 msgstr "Стр~уктура"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
+#, fuzzy
 msgid  "A~s table view"
 msgstr "~Представлення"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
+#, fuzzy
 msgid  "Append ~data"
 msgstr "Додати ~дані"
 
@@ -3275,296 +3417,367 @@ msgid  "Use first ~line as column names"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CheckBox.Text
+#, fuzzy
 msgid  "Crea~te primary key"
 msgstr "С~творити первинний ключ"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Назва"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
 msgid  "Copy table"
-msgstr "Копіювати таблицю"
+msgstr "Копіювання"
 
 #: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
+#, fuzzy
 msgid  "Copy table"
 msgstr "Копіювання"
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.String.Text
+#, fuzzy
 msgid  "This table name is not valid in the current database."
 msgstr "Неправильна назва таблиці у поточній базі даних"
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
+#, fuzzy
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
 msgstr "Виберіть \"Додати дані\" на першій сторінці для додавання даних до відповідної таблиці."
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
+#, fuzzy
 msgid  "Please change the table name. It is too long."
 msgstr "Будь-ласка, поміняйте назву таблиці. Вона надто довга."
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Параметри з'єднання"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "~Тип"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
+#, fuzzy
 msgid  "Inner join"
 msgstr "Внутрішнє об'єднання"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
+#, fuzzy
 msgid  "Left join"
 msgstr "Ліве об'єднання"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
+#, fuzzy
 msgid  "Right join"
 msgstr "Праве об'єднання"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
+#, fuzzy
 msgid  "Full (outer) join"
 msgstr "Зовнішнє об'єднання"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
+#, fuzzy
 msgid  "Cross join"
 msgstr "Перехресне об'єднання"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
+#, fuzzy
 msgid  "Natural"
 msgstr "Природній"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+#, fuzzy
 msgid  "Tables involved"
 msgstr "Включені таблиці"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+#, fuzzy
 msgid  "Fields involved"
 msgstr "Включені поля"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
+#, fuzzy
 msgid  "Join Properties"
 msgstr "Властивості зв'язку"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
+#, fuzzy
 msgid  "Please note that some databases may not support this join type."
 msgstr "Пам'ятайте, що деякі бази даних можуть не підтримувати цей тип з'єднання."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
+#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
 msgstr "Включає лише записи, для яких вміст відповідних полів кожної таблиці є ідентичним."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
+#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
 msgstr "Містить УСІ записи з таблиці '%1' але тільки записи з таблиці '%2', в яких зміст зв'язаних полів обох таблиць є однаковим."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
+#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
 msgstr "Містить УСІ записи з '%1' та з '%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
+#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "Містить декартовий добуток всіх записів з '%1' та '%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
+#, fuzzy
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
 msgstr "Містить лише один стовпчик для кожної пари однаково названих стовпчиків з '%1' та '%2'."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+#, fuzzy
 msgid  "Add Table Window"
 msgstr "Додати вікно таблиці"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+#, fuzzy
 msgid  "Move table window"
 msgstr "Перемістити вікно таблиці"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+#, fuzzy
 msgid  "Insert Join"
 msgstr "Вставити зв'язок"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+#, fuzzy
 msgid  "Delete Join"
 msgstr "Видалити зв'язок"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+#, fuzzy
 msgid  "Resize table window"
 msgstr "Змінити розмір вікна таблиці"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+#, fuzzy
 msgid  "Delete Column"
 msgstr "Видалити стовпчик"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+#, fuzzy
 msgid  "Move column"
 msgstr "Перемістити стовпчик"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+#, fuzzy
 msgid  "Add Column"
 msgstr "Додати стовпчик"
 
 #: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "Неправильний вираз, таблиця '$name' не існує."
 
 #: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
 msgstr "Неправильний вираз. Поле '$name$' не існує."
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "Запит охоплює #num# таблиць. Обрана база даних може обробляти не більше #maxnum# таблиць за команду."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+#, fuzzy
 msgid  "Delete Table Window"
 msgstr "Видалити вікно таблиці"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+#, fuzzy
 msgid  "Edit Column Description"
 msgstr "Змінити опис стовпчика"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+#, fuzzy
 msgid  "Adjust column width"
 msgstr "Змінити ширину стовпчика"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
+#, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "(без сортування);за зростанням;за спаданням"
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+#, fuzzy
 msgid  "(no function);Group"
 msgstr "(без функції);Group"
 
 #: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
+#, fuzzy
 msgid  "(no table)"
 msgstr "(немає таблиці)"
 
 #: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+#, fuzzy
 msgid  "The database only supports sorting for visible fields."
 msgstr "База даних підтримує сортування лише для видимих полів."
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+#, fuzzy
 msgid  "Functions"
 msgstr "Функції"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+#, fuzzy
 msgid  "Table Name"
 msgstr "Назва таблиці"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+#, fuzzy
 msgid  "Alias"
 msgstr "Псевдонім"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+#, fuzzy
 msgid  "Distinct Values"
 msgstr "Однозначні значення"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Поле;Псевдонім;Таблиця;Сортувати;Видимий;Функція;Критерій;Або;Або"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+#, fuzzy
 msgid  "There are too many columns."
 msgstr "Надто багато колонок."
 
 #: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "Неможливо застосувати дані умови до поля [*]"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+#, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "Створений вираз SQL є занадто довгим."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+#, fuzzy
 msgid  "Query is too complex"
 msgstr "Запит є занадто складним"
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "Нічого не виділено."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+#, fuzzy
 msgid  "Too many search criteria"
 msgstr "Надто багато критеріїв пошуку"
 
 #: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
+#, fuzzy
 msgid  "SQL syntax error"
 msgstr "Помилка у синтаксисі SQL"
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "Неможливо використовувати [*] у якості критерію."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+#, fuzzy
 msgid  "There are too many tables."
 msgstr "Надто багато таблиць."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "При запиті у діалекті бази даних SQL інструкцію не буде застосовано."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "Назва поля не знайдена або неоднозначна"
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+#, fuzzy
 msgid  "Join could not be processed"
 msgstr "Не вдається здійснити зв'язок"
 
 #: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
+#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Синтаксична помилка у виразі SQL"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+#, fuzzy
 msgid  "This database does not support table views."
 msgstr "Ця база даних не підтримує представлень у вигляді таблиць."
 
 #: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+#, fuzzy
 msgid  "This database does not support altering of existing table views."
 msgstr "Ця база даних не підтримує зміну структури існуючих представлень таблиць."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "Натомість створити запит?"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+#, fuzzy
 msgid  "No query could be created."
 msgstr "неможливо створити запит."
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+#, fuzzy
 msgid  "No query could be created because no fields were selected."
 msgstr "Неможливо створити запит, оскільки не вибрано жодного поля."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
 msgstr "Відповідне джерело даних було видалено. Неможливо зберегти дані, що відносяться до цього джерела."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "Стовпчик '$name$' не знайдено."
 
 #: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+#, fuzzy
 msgid  "Columns can only be compared using '='."
 msgstr "Колонки можуть бути порівняні тільки за допомогою '='."
 
 #: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
 msgstr "Слід вживати назву колонки перед 'LIKE'."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
 msgstr "Неможливо знайти стовпчик. Можливо ця база даних розрізняє назви з великих та малих літер."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
 msgstr " - Дизайнер запитів %PRODUCTNAME Base"
 
 #: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
 msgstr " - View Design %PRODUCTNAME Base"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
-msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr "Об'єкт $object$ був змінений.\nЗберегти зміни?"
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
@@ -3583,98 +3796,119 @@ msgid  "The query"
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
+#, fuzzy
 msgid  "The SQL statement"
 msgstr "Вираз SQL"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
 msgstr "Запит не створює множину результату, тому не зможе використовуватись як частина іншого запиту."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
+#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "Параметри ActiveConnection та DataSourceName не вказані або некоректні, неможливо ініціалізувати дизайнер запитів."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "Цей зв'язок вже існує. Редагувати чи створити новий?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "Редагування..."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+#, fuzzy
 msgid  "Create..."
 msgstr "Створити..."
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " - Проектування зв'язків %PRODUCTNAME Base"
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+#, fuzzy
 msgid  "The database does not support relations."
 msgstr "База даних не підтримує зв'язки."
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr "Зв'зки було змінено.\nЗберегти зміни?"
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "Видалення цієї таблиці призведе до видалення усіх зв'язків, що відносіться до неї. Продовжити?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
-msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
+#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 msgstr "Невідомо;Текст;Число;Дата/Час;Дата;Час;Логічне;Валюта;Пам'ятка;Лічильник;Зображення;Текст (фікс.);Десяткове;Двійкове (фікс.);Двійкове;Довге ціле;З подвійною точністю;З плаваючою комою;Дійсне;Ціле;Коротке ціле;Tiny Integer;SQL Нуль;Об'єкт;Distinct;Структура;Поле;BLOB;CLOB;REF;OTHER"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
-msgstr "Вставити/вилучити первинний ключ"
+msgstr "Вставити / вилучити первинний ключ"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "Так"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "Ні"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+#, fuzzy
 msgid  "Ascending"
 msgstr "За зростанням"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+#, fuzzy
 msgid  "Descending"
 msgstr "За спаданням"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+#, fuzzy
 msgid  "<none>"
 msgstr "<немає>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+#, fuzzy
 msgid  "Field name"
 msgstr "Назва поля"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "Field Name"
 msgstr "Назва поля"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
+#, fuzzy
 msgid  "Field ~type"
 msgstr "Тип поля"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
+#, fuzzy
 msgid  "Field Type"
 msgstr "Тип поля"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
+#, fuzzy
 msgid  "Field length"
 msgstr "Довжина поля"
 
 #: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
+#, fuzzy
 msgid  "Description"
 msgstr "Опис"
 
@@ -3683,274 +3917,332 @@ msgid  "Column Description"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
+#, fuzzy
 msgid  "Input required"
 msgstr "Потрібен ввід"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
+#, fuzzy
 msgid  "~AutoValue"
 msgstr "~Автозначення"
 
 #: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Field Properties"
 msgstr "Властивості поля"
 
 #: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
+#, fuzzy
 msgid  "General"
 msgstr "Загальні"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "Description:"
 msgstr "Опис:"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Table properties"
 msgstr "Властивості таблиці"
 
 #: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
+#, fuzzy
 msgid  "The text you entered is not a list element. "
 msgstr "Введений текст не є елементом списку"
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
+#, fuzzy
 msgid  "Insert Rows"
 msgstr "Вставити рядки"
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+#, fuzzy
 msgid  "Primary Key"
 msgstr "Первинний ключ"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
+#, fuzzy
 msgid  "Modify cell"
 msgstr "Змінити комірку"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
+#, fuzzy
 msgid  "Delete row"
 msgstr "Видалити рядок"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
+#, fuzzy
 msgid  "Modify field type"
 msgstr "Змінити тип поля"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
+#, fuzzy
 msgid  "Insert row"
 msgstr "Вставити рядок"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
+#, fuzzy
 msgid  "Insert new row"
 msgstr "Вставити новий рядок"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
+#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Вставити / вилучити первинний ключ"
 
 #: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
+#, fuzzy
 msgid  "~Default value"
 msgstr "~Типове значення"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
+#, fuzzy
 msgid  "~Entry required"
 msgstr "~Обов'язковий"
 
 #: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+#, fuzzy
 msgid  "~Length"
 msgstr "~Довжина"
 
 #: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "~Тип"
 
 #: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
+#, fuzzy
 msgid  "~Length"
 msgstr "~Довжина"
 
 #: source/ui/tabledesign/table.src#STR_SCALE.String.Text
+#, fuzzy
 msgid  "Decimal ~places"
 msgstr "~Знаків після коми"
 
 #: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
+#, fuzzy
 msgid  "Format example"
 msgstr "Приклад формату"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
-msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr "Виберіть значення, що буде призначатися цьому полю для кожного нового запису.\nЯкщо поле не повинно мати таке значення, лишить рядок порожнім."
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
-msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr "Введіть типове значення для цього поля.\n\nКоли пізніше ви введете дані у таблицю, це значення буде використано в кожному новому запису. Типове значення має відповідати формату комірки, що вказується нижче."
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
+#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
 msgstr "Виберіть \"Так\", якщо значення цього поля не повинно дорівнювати NULL (це означає, що у полі обв'язково мають бути введені дані)."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
+#, fuzzy
 msgid  "Enter the maximum text length permitted."
 msgstr "Введіть максимально дозволену довжину тексту."
 
 #: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
+#, fuzzy
 msgid  "Enter the number format."
 msgstr "Введіть формат числа."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
-msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr "Вкажіть довжину даних для цього поля.\n\nДля десяткових полів - це максимальна довжина введеного числа, для бінарних полів - це довжина блоку даних.\nЯкщо вказане значення буде довше максимально допустимого для цієї бази даних, тоді воно буде автоматично відкорковане."
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
+#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
 msgstr "Вкажіть число знаків, що стоять після десяткової коми."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
+#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
 msgstr "Тут можна побачити, як відображаються дані відповідно до обраного формату (за допомогою кнопки, що розташована праворуч, можна змінити формат)."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
+#, fuzzy
 msgid  "This is where you determine the output format of the data."
 msgstr "Тут можна визначити формат виводу даних."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
-msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr "Виберіть це значення, якщо поле буде містити автоінкрементне значення.\n\nВи не зможете безпосередньо вводити дані в полі цього типу, оскільки для кожного нового запису цьому полю буде автоматично призначено унікальне значення (яке утворюється завдяки збільшенню на одиницю значення з попереднього запису)."
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
+#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "Неможливо зберегти таблицю тому що назву стовпчика \"$column$\" було призначено двічі."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
+#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "Стовпчик \"$column$\" відноситься до первинного ключа. При його видаленні буде видалено первинний ключ. Ви дійсно хочете видалити цей стовпчик?"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
+#, fuzzy
 msgid  "Primary Key Affected"
 msgstr "Відноситься до первинного ключа"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "Column"
 msgstr "Стовпчик"
 
 #: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
+#, fuzzy
 msgid  "Continue anyway?"
 msgstr "Продовжити попри все?"
 
 #: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+#, fuzzy
 msgid  "Warning!"
 msgstr "Попередження!"
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr "Таблицю було змінено.\nЗберегти зміни?"
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr "Зв'язок з базою даних було втрачено! Проектування таблиці можливе лише з обмеженнями функціональності.\nВідновити зв'язок?"
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
+#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
 msgstr "Неможливо зберегти таблицю, поки не відноситься зв'язок з базою даних."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
+#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
 msgstr "Неможливо застосувати фільтр, оскільки джерело даних видалено."
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr "Перш ніж змінити індекси таблиці, хх потрібно зберегти.\nЗберегти зміни?"
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
+#, fuzzy
 msgid  "No primary key"
 msgstr "Без первинного ключа"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
-msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr "Для ідентифікації запису у цій базі даних потрібен унікальний індекс або первинний ключ.\nВи можете ввести дані дані у таблицю лише після виконання однієї з цих умов.\n\nСтворити первинний ключ?"
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " - Проектування таблиці %PRODUCTNAME Base"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
+#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr "Неможливо змінити стовпчик \"$column$\". Його можна вилучити та застосувати. Продовжити?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
+#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "Помилка при спробі збереження дизайну таблиці"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
+#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "Стовпчик $column$ неможливо видалити."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
+#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
 msgstr "Ви намагаєтеся видалити всі стовпчики у таблиці. Таблиця не може існувати без стовпчиків. Видалити таблицю з бази даних? Якщо ні, таблиця лишитися незміненою."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
+#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "~Автоінкрементна інструкція"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
-msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr "Введіть SQL-інструкцію для автоінкрементного поля.\n\nЦя інструкція буде безпосередньо передана до бази даних при створенні таблиці."
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
-msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr "Інформацію про тип не можна отримана з бази даних.\nРежим проектування таблиці недоступний для цього джерела даних."
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "change field name"
 msgstr "змінити назву поля"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
+#, fuzzy
 msgid  "change field type"
 msgstr "змінити тип поля"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "change field description"
 msgstr "змінити опис поля"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "change field attribute"
 msgstr "змінити атрибут поля"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~Запам'ятати пароль до кінця сеансу"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+#, fuzzy
 msgid  "~Remember password"
 msgstr "~Запам'ятати пароль"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "Цільова база даних не підтримує представлення."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "Цільова база даних не підтримує первинні ключі."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
+#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "не знайдено дескриптор доступу до бази даних або не один з дескрипторів не може представити всю необхідну інформацію"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "Наразі підтримуються лише таблиці та запити."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "Набір результату має підтримувати закладки."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "Непідтримуваний тип первинного стовпчика ($type$) у позиції $pos$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "Неприпустима кількість параметрів ініціалізації."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "Помилка при ініціалізації."
 

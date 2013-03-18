@@ -696,16 +696,16 @@ msgid  "Delete..."
 msgstr "తొలగించు..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
-msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr "గమనిక:\nఉత్తమ నాణ్యతను పొందుటకు ప్రతిమ 16x16 పిగ్జెల్ పరిమాణంలో వుండాలి. వేరే పరిమాణపు ప్రతిమలు స్వయంచాలనంగా సర్దుబాటు చేయబడతాయి."
+msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
+msgstr ""
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
-msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
-msgstr "కిందన జాబితా చేయబడిన ఫైళ్ళు దిగుమతి కాబడలేవు.\nఫైల్ విధానము యింటర్‌ప్రీట్ కాలేదు."
+msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
+msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -716,8 +716,8 @@ msgid  "Are you sure to delete the image?"
 msgstr "మీరు ఖచ్చితముగా ప్రతిబింబమును తొగించుదామని అనుకొనుచున్నారా?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
-msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
-msgstr "ప్రతిమ %ICONNAME యిప్పటికే ప్రతిబింబపు జాబితానందు కలిగవుంది.\nమీరు వున్న ప్రతిమను పునఃస్థాపించుదామని అనుకొనుచున్నారా?"
+msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
+msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -757,7 +757,7 @@ msgstr "అక్కడ పనిముట్టుపట్టీపై యే 
 
 #: source/customize/cfg.src#QBX_CONFIRM_RESET.QueryBox.Message
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr "%SAVE IN SELECTION% కొరకు మెనూ ఆకృతీకరణ ఫాక్టరీ అమరికలకు తిరిగివుంచబడును. మీరు కొనసాగించాలని అనుకొనుచున్నారా?"
+msgstr "%SAVE IN SELECTION% కొరకు మెనూ అమరిక ఫాక్టరీ అమరికలకు తిరిగివుంచబడును. మీరు కొనసాగించుదామని అనుకొనుచున్నారా?"
 
 #: source/customize/cfg.src#RID_SVXSTR_CONFIRM_MENU_RESET.String.Text
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
@@ -1056,86 +1056,107 @@ msgid  "Mark Tree"
 msgstr ""
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.TabDialog.Text
+#, fuzzy
 msgid  "Properties of "
 msgstr "లక్షణాలు "
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
+#, fuzzy
 msgid  "General"
 msgstr "సాధారణ"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.TabDialog.Text
+#, fuzzy
 msgid  "Properties of "
 msgstr "లక్షణాలు "
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
+#, fuzzy
 msgid  "General"
 msgstr "సాధారణ"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.1.RID_SVXTABPAGE_GALLERYTHEME_FILES.PageItem.Text
+#, fuzzy
 msgid  "Files"
 msgstr "దస్ర్తాలు"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Type:"
 msgstr "రకము:"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FixedText.Text
+#, fuzzy
 msgid  "Location:"
 msgstr "స్ఠానము:"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FixedText.Text
+#, fuzzy
 msgid  "Contents:"
 msgstr "సారం:"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FixedText.Text
+#, fuzzy
 msgid  "Modified:"
 msgstr "మార్చబడినది:"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FixedText.Text
+#, fuzzy
 msgid  "~File type"
 msgstr "దస్త్రపు రకము  (~F)"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_SEARCH.PushButton.Text
+#, fuzzy
 msgid  "~Find Files..."
 msgstr "దస్ర్తాలనుకనిపెట్టు... (~F)"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_TAKE.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "కలుపు (~A)"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_TAKEALL.PushButton.Text
+#, fuzzy
 msgid  "A~dd All"
 msgstr " అన్నింటిని కూడుట (~d)"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.CBX_PREVIEW.CheckBox.Text
+#, fuzzy
 msgid  "Pr~eview"
 msgstr "ఉపదర్శనము (~e)"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PushButton.Text
+#, fuzzy
 msgid  "Maddin1"
 msgstr "మేడిన్1"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PushButton.Text
+#, fuzzy
 msgid  "Maddin2"
 msgstr "మేడిన్౨2"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.ModalDialog.Text
+#, fuzzy
 msgid  "Enter Title"
 msgstr "శీర్షికను ప్రవేశింపుము"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.FL_TITLE.FixedLine.Text
+#, fuzzy
 msgid  "Title"
 msgstr "శీర్షిక"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.ModalDialog.Text
+#, fuzzy
 msgid  "Find"
 msgstr "కనిపెట్టు"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FixedLine.Text
+#, fuzzy
 msgid  "Directory"
 msgstr "వివరం"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FixedLine.Text
+#, fuzzy
 msgid  "File type"
 msgstr "దస్త్రపు రకము"
 
@@ -1145,6 +1166,7 @@ msgid  "Apply"
 msgstr "ఆపాదించు"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FixedLine.Text
+#, fuzzy
 msgid  "File"
 msgstr "దస్త్రం"
 
@@ -2063,22 +2085,27 @@ msgid  "Close"
 msgstr "మూయుము"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.ModalDialog.Text
+#, fuzzy
 msgid  "Special Characters"
 msgstr "ప్రత్యేకమైన అక్షరములు"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_FONT.FixedText.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "అక్షరశైలి (~F)"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SUBSET.FixedText.Text
+#, fuzzy
 msgid  "~Subset"
 msgstr "ఉప సమితి (~S)"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SYMBOLE.FixedText.Text
+#, fuzzy
 msgid  "Characters:"
 msgstr " అక్షరములు"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "(~D) తొలగించుము"
 
@@ -2091,7 +2118,7 @@ msgid  "License..."
 msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT.String.Text
-msgid  "Copyright © 2012 Apache Software Foundation.\nAll rights reserved.\n\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\nApache OpenOffice acknowledges all community members, especially those mentioned at"
+msgid  "Copyright © 2012 Apache Software Foundation.\\nAll rights reserved.\\n\\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\\nApache OpenOffice acknowledges all community members, especially those mentioned at"
 msgstr ""
 
 #: source/dialogs/about.src#RID_CUI_README_DLG.ModalDialog.Text
@@ -2111,9 +2138,8 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
-#, fuzzy
-msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr "అక్షరములు తనిఖీకి అవసరం లేదు\nదయచేసి నీ యొక్క వివరణను ప్రతిష్ఠించు\n"
+msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
+msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 #, fuzzy
@@ -2801,50 +2827,62 @@ msgid  " Columns"
 msgstr "నిలువు పట్టి"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "నామము"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "నామము"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "నామము (~N)"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.ModalDialog.Text
+#, fuzzy
 msgid  "Description"
 msgstr "వివరణ"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_TITLE.FixedText.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "శీర్షిక (~T)"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "వివరణ (~D)"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.ModalDialog.Text
+#, fuzzy
 msgid  "Properties"
 msgstr "లక్షణములు"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URL1.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_TARGET.FixedText.Text
+#, fuzzy
 msgid  "F~rame"
 msgstr "చట్రము (~r)"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "నామము (~N)"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URLDESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "Alternative ~text"
 msgstr "ప్రత్యామ్నాయ పాఠము (~t)"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_DESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "వివరణ (~D)"
 
@@ -2983,154 +3021,192 @@ msgid  "Show columns"
 msgstr "నిలువు పట్టిలను కనబర్చు"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.ModalDialog.Text
+#, fuzzy
 msgid  "Record Search"
 msgstr "రికార్డును వెతుకు"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FixedLine.Text
+#, fuzzy
 msgid  "Search for"
 msgstr "సహాయంను"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORTEXT.RadioButton.Text
+#, fuzzy
 msgid  "~Text"
 msgstr "పాఠం (~T)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is ~NULL"
 msgstr "క్షేత్రము సారములు శూన్యం  (~N)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNOTNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is not NU~LL"
 msgstr "క్షేత్రము సారములు శూన్యం కాదు (~L)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_WHERE.FixedLine.Text
+#, fuzzy
 msgid  "Where to search"
 msgstr "ఎక్కడకు వెతకాలి"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_FORM.FixedText.Text
+#, fuzzy
 msgid  "Form"
 msgstr " ఫారమ్"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_ALLFIELDS.RadioButton.Text
+#, fuzzy
 msgid  "All Fields"
 msgstr "అన్ని క్షేత్రములు"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SINGLEFIELD.RadioButton.Text
+#, fuzzy
 msgid  "Single field"
 msgstr "ఒక్క క్షేత్రము "
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "అమరికలు"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_POSITION.FixedText.Text
+#, fuzzy
 msgid  "Position"
 msgstr "స్థానము"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_USEFORMATTER.CheckBox.Text
+#, fuzzy
 msgid  "Apply field format"
 msgstr "క్షేత్రంరూపకం అనుసంధించు"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_CASE.CheckBox.Text
+#, fuzzy
 msgid  "Match case"
 msgstr "సందర్భమును జతపరచు"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_BACKWARD.CheckBox.Text
+#, fuzzy
 msgid  "Search backwards"
 msgstr "వెనక్కివెతకుటను"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_STARTOVER.CheckBox.Text
+#, fuzzy
 msgid  "From Beginning"
 msgstr "మొదలు నుండి"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_WILDCARD.CheckBox.Text
+#, fuzzy
 msgid  "Wildcard expression"
 msgstr "వైల్డ్కార్డ్ వ్యక్తీకరణ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_REGULAR.CheckBox.Text
+#, fuzzy
 msgid  "Regular expression"
 msgstr "క్రమబద్ద వ్యక్తీకరణ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CheckBox.Text
+#, fuzzy
 msgid  "Similarity Search"
 msgstr "పోలిక వెతుకు"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_HALFFULLFORMS.CheckBox.Text
+#, fuzzy
 msgid  "Match character width"
 msgstr "అక్షరము వెడెల్పు పోల్చడం"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_SOUNDSLIKECJK.CheckBox.Text
+#, fuzzy
 msgid  "Sounds like (Japanese)"
 msgstr "ధ్వనుల లాగ (జపనీయులు)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SOUNDSLIKESETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FixedLine.Text
+#, fuzzy
 msgid  "State"
 msgstr "రాష్ఠ్రము"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FixedText.Text
+#, fuzzy
 msgid  "Record :"
 msgstr "రికార్డు :"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PushButton.Text
+#, fuzzy
 msgid  "Search"
 msgstr "వెతుకు"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "మూయుము (~C)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.HelpButton.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "సహాయము (~H)"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_ANYWHERE.String.Text
+#, fuzzy
 msgid  "anywhere in the field"
 msgstr "క్షేత్రమునందు యెచటికైనా"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_BEGINNING.String.Text
+#, fuzzy
 msgid  "beginning of field"
 msgstr "క్షేత్రముయొక్క ప్రారంభము"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_END.String.Text
+#, fuzzy
 msgid  "end of field"
 msgstr "క్షేత్రము యొక్క ముగింపు"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_WHOLE.String.Text
+#, fuzzy
 msgid  "entire field"
 msgstr "క్షేత్రము మొత్తము"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_TOP.String.Text
+#, fuzzy
 msgid  "From top"
 msgstr "పై నుండి"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_BOTTOM.String.Text
+#, fuzzy
 msgid  "From bottom"
 msgstr "క్రింద నుండి"
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_NORECORD.ErrorBox.Message
+#, fuzzy
 msgid  "No records corresponding to your data found."
 msgstr "మీ దాత్తశసంభంధి"
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_GENERAL_ERROR.ErrorBox.Message
+#, fuzzy
 msgid  "An unknown error occurred. The search could not be finished."
 msgstr "అపరిచిత దోషం సంభవించినది. వెతుకులాట పూర్తికాలేదు"
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_FORWARD.String.Text
+#, fuzzy
 msgid  "Overflow, search continued at the beginning"
 msgstr "అధికమైంది, శోధన ప్రారంభమువద్ద కొనసాగించబడుతుంది"
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_BACKWARD.String.Text
+#, fuzzy
 msgid  "Overflow, search continued at the end"
 msgstr "అధికమైంది, శోధన ముగింపువద్దు కొనసాగించబడుతుంది"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_COUNTING.String.Text
+#, fuzzy
 msgid  "counting records"
 msgstr "రికార్డులను లెక్కంచుట"
 
@@ -3509,19 +3585,16 @@ msgid  "Macro Security..."
 msgstr "మ్యాక్రో రక్షణ"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
-#, fuzzy
-msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr "ఖచ్చితంగా సంకేతపదములను నిల్వవుంచే ప్రమేయాన్ని అచేతనముచేస్తే నిల్వ వుంచిన సంకేతపదముల జాబితాను తొలగిస్తుంది మరియు ముఖ్య సంకేతపదమును తిరిగివుంచుతుంది.\n\nమీరు సంకేతపదము జాబితాను తొలగించి ముఖ్య సంకేతపదమును తిరిగివుంచుదామని అనుకొనుచున్నారా?"
+msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
-#, fuzzy
-msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr "విలువ గుర్తించడంలేదు!\n\n  అత్యధిక విలువ కొరకు సంఖ్య 65535 "
+msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
-#, fuzzy
-msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr "జావాతో నోట్ \n జావాలిపి వలె ఉపయోగించు"
+msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -3624,7 +3697,7 @@ msgid  "Note that street, Zip code and city are used to generate the registratio
 msgstr "వీధిని గుర్తించి ,జిప్ కోడ్ మరియు సిటి  మీటను నమోదు చేయి. "
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
-msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgid  "The User Data have been changed.\\nDo you really want to change your User Data?"
 msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
@@ -4203,19 +4276,16 @@ msgid  "Create Database Link"
 msgstr "దత్తాంశస్థాన జోడిలను నిర్మించుట"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
-#, fuzzy
-msgid  "The file\n$file$\ndoes not exist."
-msgstr "దత్తము\n$దత్తము$\nఉండవు"
+msgid  "The file\\n$file$\\ndoes not exist."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
-#, fuzzy
-msgid  "The file\n$file$\ndoes not exist in the local file system."
-msgstr "ఫైలు\n$file$\nస్థానిక ఫైలు సిస్టమ్ నందు లేదు."
+msgid  "The file\\n$file$\\ndoes not exist in the local file system."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
-#, fuzzy
-msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
-msgstr "దత్తమను నామము వేరే దత్తాంశస్థానమునకు ఉపయోగించెను.\nదయచేసి వేరే నామము ఎన్నుకొనుము"
+msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
+msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 #, fuzzy
@@ -4440,7 +4510,7 @@ msgstr "దర్శనం"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTSHDWCRSR.ItemList.item
 #, fuzzy
 msgid  "Formatting Aids"
-msgstr "Aids ఫార్మాట్ చేయుట"
+msgstr "Aids ఫార్మాట్‌చేయుట"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SVXPAGE_GRID.ItemList.item
 #, fuzzy
@@ -4848,8 +4918,9 @@ msgid  "Assig~ned start parameters"
 msgstr "మొదలు పరామితులను అమర్చు (~n)"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FixedText.Text
-msgid  "For example: -Dmyprop=c:\program files\java"
-msgstr ""
+#, fuzzy
+msgid  "For example: -Dmyprop=c:\\program files\\java"
+msgstr "ఉదాహరణకు: -డిఎమ్ వైప్రాప్=సి:\\కార్యక్రము దస్ర్తాలు\\జావా "
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
 #, fuzzy
@@ -4882,66 +4953,73 @@ msgid  "~Remove"
 msgstr "తీసివేయు (~R)"
 
 #: source/options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ErrorBox.Message
-#, fuzzy
-msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr "నీవు ఎంచిన పత్రము జావా నడును సమయ ఆవరణలో ఉంటుంది .\nదయచేసి వేరె పత్రము ఎంచుకో."
+msgid  "The folder you selected does not contain a Java runtime environment.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ErrorBox.Message
-#, fuzzy
-msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr "జావా నడుపు సమయ ఆవరణలో నీవు ఎంచిన వివరణ కాదు.\nదయచేసి వేరేది ఎంచుకో."
+msgid  "The Java runtime environment you selected is not the required version.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WarningBox.Message
-#, fuzzy
-msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr "నీవు ఎంచిన జావా నడును సమయ ఆవరణలు సరిగ్గా పనిచేయాలంటే %PRODUCTNAMEమళ్ళీప్రారంభించ వలెను.\nదయచేసి %PRODUCTNAMEమళ్ళీప్రారంభించు."
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WarningBox.Message
-#, fuzzy
-msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
-msgstr "నీవు %PRODUCTNAMEమళ్ళీప్రారంభించినచో క్రొత్త లేద మార్చిన విలువలను ఏమైన పర్యవసానాలు.\n దయచేసి మరల ప్రారంభించు."
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
+#, fuzzy
 msgid  "Connection pool"
 msgstr "అనుసంధానము పూల్"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
+#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "అనుసంధానము పూలింగ్ చేతనము చేయబడెను"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
+#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "%PRODUCTNAME నందు తెలిసిన డ్రైవర్లు"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
+#, fuzzy
 msgid  "Current driver:"
 msgstr "ప్రస్తుత డ్రైవర్:"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
+#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "ఈ డ్రైవర్ కొరకు పూలింగ్ చేతనము చేయుము"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
+#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "సమయముగింపు (సెకనులు)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
+#, fuzzy
 msgid  "Driver name"
 msgstr "డ్రైవర్ నామము"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
+#, fuzzy
 msgid  "Pool"
 msgstr "పూల్"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
+#, fuzzy
 msgid  "Timeout"
 msgstr "సమయముగింపు"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "అవును"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "కాదు"
 
@@ -5086,9 +5164,8 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "పొడిగించిన ODF 1.2 వుపయోగించకపోవుట సమాచారము కోల్పోవుటకు కారణము కావచ్చు."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-#, fuzzy
-msgid  "Using \"%1\" as default file format may cause information loss.\n"
-msgstr "ఉపయోగించు  \n"
+msgid  "Using \"%1\" as default file format may cause information loss.\\n"
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 #, fuzzy
@@ -5101,9 +5178,8 @@ msgid  "Improvement Program"
 msgstr "పురోగతి ప్రోగ్రామ్"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
-#, fuzzy
-msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr "కార్యక్రమము కు డాటా కార్యక్రమము డాటా లేదా."
+msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 #, fuzzy
@@ -5246,9 +5322,8 @@ msgid  "Edit Paths: %1"
 msgstr "దారులను సరికూర్చుము: %1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
-#, fuzzy
-msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr "రూపశిల్పం మరియు తపాలా వివరములను ఖచ్చితం గా నిర్దేశిత వలె విడిగా వివరములను "
+msgid  "The configuration and mail directories must be specified as separate directories.\\nPlease choose a new path."
+msgstr ""
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 #, fuzzy
@@ -5538,7 +5613,7 @@ msgstr "ప్రతిమ పరిమాణం"
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item1.StringList.item
 #, fuzzy
 msgid  "Automatic"
-msgstr "స్వయం చాలక"
+msgstr "స్వయంచాలక"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item2.StringList.item
 #, fuzzy
@@ -5964,9 +6039,8 @@ msgid  "~Close"
 msgstr "మూయుము (~C)"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
-#, fuzzy
-msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr "ప్రత్యేకమైన నామము   అప్పటికే ఉన్నది.\n దయచేసి మీ నామమును ప్రవేశపెట్టుము."
+msgid  "The specified name already exists.\\nPlease enter a new name."
+msgstr ""
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy
@@ -6006,7 +6080,7 @@ msgstr "వెనుకకు (~B)"
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_NEWDICTSLINK.FixedText.Text
 #, fuzzy
 msgid  "~Get more dictionaries online..."
-msgstr "ఎక్కువ పదకోశములను ఆన్‌లైనునందు పొందుము..."
+msgstr "ఎక్కువ పదకోశములను ఆన్‌లైనునందు పొందుము... (~G)"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_OK.OKButton.Text
 #, fuzzy
@@ -6188,18 +6262,22 @@ msgid  "Registered databases"
 msgstr "నమోదైన డాటాబేస్‌లు"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Registered name"
 msgstr "నమోదైన నామము"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "Database file"
 msgstr "డాటాబేస్ ఫైల్"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "కొత్త... (~N)"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "సరిచేయు... (~E)"
 
@@ -7467,9 +7545,8 @@ msgid  "O~uter"
 msgstr "పైభాగం (~u)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
-#, fuzzy
-msgid  "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
-msgstr "అంచు అమరికల ముద్రణ మార్గంలో లేవు.\n\nపీవు ఇంక అమరికలకు అనుమతించాలనుకుంటున్నావ?"
+msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
+msgstr ""
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -8520,9 +8597,8 @@ msgid  "Assigned macro"
 msgstr "స్థూలము ఇవ్వబడినది"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
-#, fuzzy
-msgid  "~Existing macros\n"
-msgstr "కలిగియున్న స్థూలములు (~E):\n"
+msgid  "~Existing macros\\n"
+msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
 #, fuzzy
@@ -8990,9 +9066,8 @@ msgid  "Do you want to delete the gradient?"
 msgstr "నీవు గ్రేడియంట్ ను తొలగించాలనుకుంటున్నావ"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
-#, fuzzy
-msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr "గ్రేడియంట్ దాచకుండ దాచబడును.\nమార్పు ఎంపిక గ్రేడియంట్ లేదా క్రొత్త గ్రేడియంట్ ను కలుపుము."
+msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 #, fuzzy
@@ -9010,9 +9085,8 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "నీవు ఖచ్ఛితముగా బిట్ ముప్ ను తొలగించాలనుకుంటున్నావ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
-#, fuzzy
-msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr "బిట్ మాప్ దాచకుండ మార్చబడింది.\nఎంపిక చేసిన బిట్ మాప్ లేదా క్రొత్త బిట్ మాప్ మార్చండి."
+msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -9025,9 +9099,8 @@ msgid  "Do you want to delete the line style?"
 msgstr "నీవు వరుస శైలిని తొలగించాలనుకుంటున్నావ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
-#, fuzzy
-msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr "వరుస శైలి దాచకుండ మార్చబడింది.\nఎంపిక చేసిన వరుస శైలి లేదా క్రొత్త వరుస శైలి మార్చండి."
+msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -9040,9 +9113,8 @@ msgid  "Do you want to delete the hatching?"
 msgstr "నీవు హ్యాట్చింగ్ ను తొలగించాలనుకుంటున్నావ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
-#, fuzzy
-msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr "హ్యాట్చింగ్ రకం దాచకుండ మార్చబడింది.\nఎంపిక చేసిన హ్యాట్చింగ్ రకం లేదా హ్యాట్చింగ్ రకం  మార్చండి."
+msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 #, fuzzy
@@ -9065,9 +9137,8 @@ msgid  "Do you want to delete the color?"
 msgstr "నీవు రంగును తొలగించులనుకుంటున్నావ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
-#, fuzzy
-msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr "వర్ణము దాచకుండ మార్చబడింది.\nఎంపిక చేసిన వర్ణము లేదా వర్ణము  మార్చండి."
+msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 #, fuzzy
@@ -9090,9 +9161,8 @@ msgid  "The list was modified without saving. Would you like to save the list no
 msgstr "జాబితా దాచకుండ మార్చబడింది.మీరు ఇప్పుడు దీనిని దాచాలనుకుంటున్నార?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
-#, fuzzy
-msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr "నీవు ప్రవేశపెట్ట బడిన నామము అప్పటికే ఉన్నది.\nదయచేసి వేరొక నామమును ఎన్నుకొనుము."
+msgid  "The name you have entered already exists. \\nPlease choose another name."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -9105,9 +9175,8 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "నీవు  బాణముముందును తొలగించాలనుకుంటున్నావ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
-#, fuzzy
-msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr " బాణముముందు  దాచకుండా మార్చబడింది.\nనీవు ఇప్పుడు బాణముముందు  దాచాలనుకుంటున్నావ"
+msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
+msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 #, fuzzy
@@ -9217,7 +9286,7 @@ msgstr "ఒక వరుసలో వుంచుట"
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_ALIGN.FixedLine.Text
 #, fuzzy
 msgid  "Options"
-msgstr "ఐచ్చికములు"
+msgstr "ఇచ్ఛికములు"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_LEFTALIGN.RadioButton.Text
 #, fuzzy
@@ -10174,6 +10243,7 @@ msgid  "Alignment"
 msgstr "ఒక వరుసలో వుంచుట"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FixedLine.Text
+#, fuzzy
 msgid  "Text alignment"
 msgstr "పాఠమును ఒక వరుసలో వుంచుట"
 
@@ -10710,12 +10780,12 @@ msgstr "(లేకుండా)"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_SINGLE.StringList.item
 #, fuzzy
 msgid  "Single"
-msgstr "ఒంటరి"
+msgstr "ఒక్కటి"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLE.StringList.item
 #, fuzzy
 msgid  "Double"
-msgstr "జంట"
+msgstr "రెండు"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLD.StringList.item
 #, fuzzy
@@ -11790,7 +11860,7 @@ msgstr "సవరించు... (~M)"
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_DELETE.PushButton.Text
 #, fuzzy
 msgid  "~Delete..."
-msgstr "తొలగించు... (~D)"
+msgstr "తొలగించు (~D)"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_LOAD.ImageButton.QuickHelpText
 #, fuzzy

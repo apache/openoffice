@@ -421,7 +421,7 @@ msgstr "На~пред >"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 15.String.Text
 msgid  "~Help"
-msgstr "Помо~щ"
+msgstr "~Помощ"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 16.String.Text
 msgid  "Steps"
@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Шаблон, създаден чрез <wizard_name> на <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Помощникът не може да бъде стартиран, защото необходимите файлове не могат да бъдат намерени.\nВ \"Инструменти - Настройки - %PRODUCTNAME - Пътища\" натиснете бутона \"По подразбиране\", за да върнете оригиналните подразбирани стойности.\nСлед това стартирайте помощника отново."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Полета във ~формуляра"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Двоичните полета винаги са показани за избиране в левия списък.\nАко е възможно, те се интерпретират като графики."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Подформуляр е формуляр, вмъкнат в друг формуляр.\nЧрез подформулярите можете да показвате данни от таблици или заявки, свързани с релация \"едно към много\""
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Полета във формуляра"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "Съединението между \"<FIELDNAME1>\" и \"<FIELDNAME2>\" е избрано два пъти. \nСъединенията могат да се използват само по веднъж."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "Задайте името на формуляра"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Формуляр с името \"%FORMNAME\" вече съществува.\nИзберете друго име."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -865,7 +865,7 @@ msgstr "Обобщаващи функции"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 17.String.Text
 msgid  "Fields"
-msgstr "Поле"
+msgstr "Полета"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 18.String.Text
 msgid  "~Group by"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Полето не може да бъде вмъкнато, защото ще се превиши позволеният брой от %COUNT полета в таблицата от БД"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Името \"%TABLENAME\" вече съществува.\n Моля, въведете друго име."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1677,7 +1677,7 @@ msgstr "Място за ~сгъване"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
 msgid  "~Complimentary close"
-msgstr "~Завършек на писмо"
+msgstr "~Завършек на факс"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
 msgid  "~Footer"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Помощник за Уеб"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Целта на помощника за Уеб е да ви улесни при публикуване на документи в Интернет.\n\nПомощникът ще преобразува документите така, че да могат да се разглеждат с браузър, и ще създаде страница с таблица на съдържанието, съдържаща връзки за лесен достъп до документите. Освен това той ще ви позволи да зададете оформлението на уебсайта.\n\nЩе имате възможност да поддържате публикуваните документи актуални, както и да премахвате или добавяте документи по всяко време."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "Мостра"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Избраните настройки ще бъдат изтрити.\n\nНаистина ли желаете да изтриете тези настройки? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "FTP директорията \"%FILENAME\" не може да бъде създадена."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP директорията \"%FILENAME\" не съществува. \nДа бъде ли създадена сега?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Zip файлът \"%FILENAME\" не може да бъде създаден: съществува директория със същото име."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Локалната директория \"%FILENAME\" не може да бъде създадена. \nПроверете правата си за писане."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Локалната директория \"%FILENAME\" не съществува. \nДа бъде ли създадена сега?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2817,7 +2817,7 @@ msgstr "Ръководител"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +28.String.Text
 msgid  "Attendees"
-msgstr "Присъстващи"
+msgstr "Участници"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +29.String.Text
 msgid  "Observers"

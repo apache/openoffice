@@ -60,8 +60,8 @@ msgid  "Add fonts"
 msgstr "फ़ॉन्ट जोड़ें"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr "क्या आप वास्तव में इस फ़ॉन्ट फ़ाइल के ऊपर लिखना चाहते हैं?\n   %s"
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -72,16 +72,16 @@ msgid  "None"
 msgstr "कोई नहीं"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "एक प्रारूप फ़ाइल (एक .afm विस्तार के साथ) फ़ॉन्ट के लिए नहीं मिला है\n%s\nइसलिये, फ़ॉन्ट को संस्थापित नहीं किया जा सकता. ghostscript से फ़ॉन्ट फ़ाइल नहीं बनाई जा सकती है, उदाहरण के लिये, समान निर्देशिका में अवस्थित फ़ॉन्ट फ़ाइल की तरह या इसके afm उपनिर्देशिका की तरह."
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "फ़ॉन्ट फ़ाइल के लिए मेट्रिक फ़ाइल\n   %s\nकॉपी नहीं किया जा सका. फ़ॉन्ट संस्थापित नहीं किया जायेगा."
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "फ़ॉन्ट फ़ाइल\n   %s\nकॉपी नहीं किया जा सका. फ़ॉन्ट संस्थापित नहीं होगा."
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -176,7 +176,7 @@ msgid  "The test page was printed succesfully. Please check the result."
 msgstr "जाँच पृष्ठ सफलता से छापा है. कृपया नतीजे की जाँच कीजिए."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
 msgstr ""
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
@@ -288,8 +288,8 @@ msgid  "The file does not contain a metric."
 msgstr "फ़ाइल में मेट्रिक नहीं हैं."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr "मेट्रिक\n\n%s\n\nनिम्न कारण से बदला नहीं जा सकता है:\n\n"
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr ""
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -352,8 +352,8 @@ msgid  "The driver \"%s\" is always needed and can therefore not be removed."
 msgstr "ड्राइवर \"%s\" की हमेशा जरूरत है और इसलिये नहीं हटाया जा रहा है."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr "ड्राइवर \"%s1\" हटाया नहीं जा सका. फ़ाइल को हटाना संभव नहीं था\n\n%s2."
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr ""
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

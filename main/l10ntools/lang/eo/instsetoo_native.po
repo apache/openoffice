@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Ni dankas vin ke vi elŝutis je %PRODUCTNAME %PRODUCTVERSION."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "Malpaku"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "La instaldosieroj de %PRODUCTNAME %PRODUCTVERSION estos malpakataj kaj konservataj en la dosierujo montrata malsupre. Se vi dezirus konservi %PRODUCTNAME al alia dosierujo, alklaku 'Foliumi' por elekti iun alian."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "Rezigni"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}Priklienta informo"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1697,7 +1697,7 @@ msgstr "Ŝanĝi..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr "Click Next to install to this folder, or click Change to install to a different folder.Alklaku Sekvan por instali al ĉi tiu dosierujo, aŭ alklaku Ŝanĝi por instali al alia dosierujo."
+msgstr "Alklaku Sekvan por instali al ĉi tiu dosierujo, aŭ alklaku Ŝanĝi por instali al alia dosierujo."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1753,7 +1753,7 @@ msgstr "La diskospaco bezonata por instali la elektitajn eblojn."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives.La emfazitaj datumportiloj ne havas sufiĉan diskspacon por la aktuale elektitaj ebloj. Vi povas forigi dosierojn de la emfazitaj datumportiloj, elekti instali malpli da ebloj sur lokajn diskojn, aŭ elekti aliajn celajn diskojn."
+msgstr "La emfazitaj datumportiloj ne havas sufiĉan diskspacon por la aktuale elektitaj ebloj. Vi povas forigi dosierojn de la emfazitaj datumportiloj, elekti instali malpli da ebloj sur lokajn diskojn, aŭ elekti aliajn celajn diskojn."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -2041,7 +2041,7 @@ msgstr "Alklaku fini por eliri el la asistanto."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation.Vi povas ĉu reteni iujn ekzistantajn instalitajn elementojn sur via sistemo por daŭrigi ĉi tiun instalon je pli malfrua momento, ĉu restarigi vian sistemon al ĝia origina stato antaŭe de la instalo."
+msgstr "Vi povas ĉu reteni iujn ekzistantajn instalitajn elementojn sur via sistemo por daŭrigi ĉi tiun instalon je pli malfrua momento, ĉu restarigi vian sistemon al ĝia origina stato antaŭe de la instalo."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."

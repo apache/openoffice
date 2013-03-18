@@ -696,16 +696,16 @@ msgid  "Delete..."
 msgstr "Usuń..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
-msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr "Uwaga:\nW celu uzyskania najlepszej jakości, rozmiar ikony powinien wynosić 16x16 pikseli. Ikony o innych rozmiarach będą automatycznie skalowane."
+msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
+msgstr ""
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
-msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
-msgstr "Wskazanych poniżej plików nie można zaimportować.\nNie powiodło się zinterpretowanie formatu plików."
+msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
+msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -716,8 +716,8 @@ msgid  "Are you sure to delete the image?"
 msgstr "Czy na pewno chcesz usunąć obraz?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
-msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
-msgstr "Ikona %ICONNAME znajduje się już na liście obrazów.\nCzy chcesz zamienić istniejącą ikonę?"
+msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
+msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -1864,7 +1864,7 @@ msgid  "License..."
 msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT.String.Text
-msgid  "Copyright © 2012 Apache Software Foundation.\nAll rights reserved.\n\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\nApache OpenOffice acknowledges all community members, especially those mentioned at"
+msgid  "Copyright © 2012 Apache Software Foundation.\\nAll rights reserved.\\n\\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\\nApache OpenOffice acknowledges all community members, especially those mentioned at"
 msgstr ""
 
 #: source/dialogs/about.src#RID_CUI_README_DLG.ModalDialog.Text
@@ -1884,8 +1884,8 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
-msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr "jest niedostępny do sprawdzania pisowni. \nNależy sprawdzić instalację i, jeśli trzeba, zainstalować potrzebny język.\n"
+msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
+msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 msgid  "Hyphenation"
@@ -3056,16 +3056,16 @@ msgid  "Macro Security..."
 msgstr "Bezpieczeństwo makr..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
-msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr "Wyłączenie funkcji trwałego przechowywania haseł usuwa listę zapisanych haseł i kasuje hasło główne.\n\nCzy chcesz usunąć listę haseł i skasować hasło główne?"
+msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
-msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr "Nieprawidłowa wartość!\n\nMaksymalny numer portu to 65535."
+msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
-msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr "Należy wziąć pod uwagę, że po wyłączeniu Java \nzostanie również wyłączony JavaScript. \n\nCzy mimo to wyłączyć Javę?"
+msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 msgid  "~Don't show warning again"
@@ -3148,8 +3148,8 @@ msgid  "Note that street, Zip code and city are used to generate the registratio
 msgstr "Nazwa ulicy, kod pocztowy i miejscowość są używane do wygenerowania klucza rejestracyjnego. Danych tych nie będzie można zmienić aż do chwili rejestracji. Czy chcesz je zmienić teraz?"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
-msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
-msgstr "Dane użytkownika zostały zmienione.\nAkceptujesz tę zmienę?"
+msgid  "The User Data have been changed.\\nDo you really want to change your User Data?"
+msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
 msgid  "Treat as equal"
@@ -3612,16 +3612,16 @@ msgid  "Create Database Link"
 msgstr "Utwórz połączenie bazy danych"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
-msgid  "The file\n$file$\ndoes not exist."
-msgstr "Plik\n$file$\nnie istnieje."
+msgid  "The file\\n$file$\\ndoes not exist."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
-msgid  "The file\n$file$\ndoes not exist in the local file system."
-msgstr "Plik\n$file$\nnie istnieje w lokalnym systemie plików."
+msgid  "The file\\n$file$\\ndoes not exist in the local file system."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
-msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
-msgstr "Nazwa $file$ jest już używana dla innej bazy danych.\nWybierz inną nazwę."
+msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
+msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 msgid  "Do you want to delete the entry?"
@@ -4128,8 +4128,8 @@ msgid  "Assig~ned start parameters"
 msgstr "Prz~ypisane parametry startowe"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FixedText.Text
-msgid  "For example: -Dmyprop=c:\program files\java"
-msgstr ""
+msgid  "For example: -Dmyprop=c:\\program files\\java"
+msgstr "Na przykład: -Dmyprop=c:\\program files\\java"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
 msgid  "~Remove"
@@ -4156,20 +4156,20 @@ msgid  "~Remove"
 msgstr "U~suń"
 
 #: source/options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ErrorBox.Message
-msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr "Wybrany folder nie zawiera środowiska Java.\nWybierz inny folder."
+msgid  "The folder you selected does not contain a Java runtime environment.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ErrorBox.Message
-msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr "Wybrane środowisko Java nie jest w odpowiedniej wersji.\nWybierz inny folder."
+msgid  "The Java runtime environment you selected is not the required version.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WarningBox.Message
-msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr "Prawidłowe działanie wybranego środowiska Java wymaga ponownego uruchomienia programu %PRODUCTNAME.\nNależy ponownie uruchomić program %PRODUCTNAME."
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WarningBox.Message
-msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
-msgstr "Aby nowe lub zmodyfikowane wartości zostały zastosowane, należy ponownie uruchomić program %PRODUCTNAME.\nNależy ponownie uruchomić program %PRODUCTNAME."
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
 msgid  "Connection pool"
@@ -4328,8 +4328,8 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "Użycie innego formatu niż OpenDocument 1.2 może powodować, że niektóre informacje zawarte w dokumencie zostaną utracone."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-msgid  "Using \"%1\" as default file format may cause information loss.\n"
-msgstr "Użycie \"%1\" jako domyślnego formatu plików może skutkować utratą informacji.\n"
+msgid  "Using \"%1\" as default file format may cause information loss.\\n"
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 msgid  "%PRODUCTNAME Improvement Program"
@@ -4340,8 +4340,8 @@ msgid  "Improvement Program"
 msgstr "Program doskonalenia"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
-msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr "Zapraszamy do udziału w programie doskonalenia %PRODUCTNAME, mającym na celu optymalizację jakości %PRODUCTNAME.\n\nJeśli zdecydujesz się na wzięcie udziału, będziemy pobierać anonimowe dane statystyczne dotyczące sposobu korzystania przez Ciebie z %PRODUCTNAME. Dane wykorzystywane są później do identyfikowania schematów wykorzystania.\n\nProgram doskonalenia %PRODUCTNAME nie pobiera danych osobistych ani treści dokumentów."
+msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
@@ -4456,8 +4456,8 @@ msgid  "Edit Paths: %1"
 msgstr "Edytuj ścieżki: %1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
-msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr "Katalogi konfiguracyjny i pocztowy \nmuszą być katalogami osobnymi.\nWybierz nową ścieżkę."
+msgid  "The configuration and mail directories must be specified as separate directories.\\nPlease choose a new path."
+msgstr ""
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 msgid  "Configuration"
@@ -5032,8 +5032,8 @@ msgid  "~Close"
 msgstr "~Zamknij"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
-msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr "Podana nazwa już istnieje.\nWpisz nową nazwę."
+msgid  "The specified name already exists.\\nPlease enter a new name."
+msgstr ""
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 msgid  "Do you want to change the '%1' dictionary language?"
@@ -6240,8 +6240,8 @@ msgid  "O~uter"
 msgstr "Na zewnątrz"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
-msgid  "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
-msgstr "Ustawienia marginesów znajdują się poza obszarem wydruku.\n\nCzy mimo to zastosować te ustawienia?"
+msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
+msgstr ""
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -7084,8 +7084,8 @@ msgid  "Assigned macro"
 msgstr "Przypisane makro"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
-msgid  "~Existing macros\n"
-msgstr "I~stniejące makra w:\n"
+msgid  "~Existing macros\\n"
+msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
 msgid  "~Assign"
@@ -7468,8 +7468,8 @@ msgid  "Do you want to delete the gradient?"
 msgstr "Czy chcesz usunąć gradient?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
-msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr "Gradient został zmieniony, lecz nie zapisany. \nMożesz zmienić zaznaczony gradient \nlub dodać nowy."
+msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 msgid  "Please enter a name for the bitmap:"
@@ -7484,8 +7484,8 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "Czy na pewno chcesz usunąć mapę bitową?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
-msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr "Mapa bitowa została zmieniona, lecz nie zapisana. \nMożesz zmienić zaznaczoną mapę bitową \nlub dodać nową."
+msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 msgid  "Please enter a name for the line style:"
@@ -7496,8 +7496,8 @@ msgid  "Do you want to delete the line style?"
 msgstr "Czy chcesz usunąć styl linii?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
-msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr "Styl linii został zmieniony, lecz nie zapisany. \nMożesz zmienić zaznaczony styl linii \nlub dodać nowy."
+msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 msgid  "Please enter a name for the hatching:"
@@ -7508,8 +7508,8 @@ msgid  "Do you want to delete the hatching?"
 msgstr "Czy chcesz usunąć kreskowanie?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
-msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr "Kreskowanie zostało zmienione, lecz nie zapisane. \nMożesz zmienić zaznaczone kreskowanie \nlub dodać nowe."
+msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 msgid  "Modify"
@@ -7528,8 +7528,8 @@ msgid  "Do you want to delete the color?"
 msgstr "Czy chcesz usunąć kolor?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
-msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr "Kolor został zmieniony, lecz nie zapisany. \nMożesz zmienić zaznaczony kolor \nlub dodać nowy."
+msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 msgid  "Table"
@@ -7548,8 +7548,8 @@ msgid  "The list was modified without saving. Would you like to save the list no
 msgstr "Lista została zmieniona, lecz nie jest zapisana. \nCzy ją zapisać teraz?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr "Podana nazwa już istnieje.\nWybierz inną nazwę."
+msgid  "The name you have entered already exists. \\nPlease choose another name."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 msgid  "Please enter a name for the new arrowhead:"
@@ -7560,8 +7560,8 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "Czy chcesz usunąć grot strzałki?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
-msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr "Groty zostały zmienione, lecz nie zapisane. \nCzy zapisać je teraz?"
+msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
+msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 msgid  "Indents and Spacing"
@@ -8081,11 +8081,11 @@ msgstr "Pozycja"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FixedText.Text
 msgid  "Position ~X"
-msgstr "Pozycja na osi ~X"
+msgstr "Pozycja ~X"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_Y.FixedText.Text
 msgid  "Position ~Y"
-msgstr "Pozycja na osi ~Y"
+msgstr "Pozycja ~Y"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FixedText.Text
 msgid  "Base point"
@@ -8765,7 +8765,7 @@ msgstr "Kolor"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FixedText.Text
 msgid  "Font ~color"
-msgstr "Kolor ~czcionki"
+msgstr "Kolor czcionki"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_NOSTYLE.String.Text
 msgid  "No %1"
@@ -8861,7 +8861,7 @@ msgstr "Kropki"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
 msgid  "Dotted (Bold)"
-msgstr "Kropki pogrubione"
+msgstr "Kropki (pogrubione)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
 msgid  "Dash"
@@ -8869,7 +8869,7 @@ msgstr "Kreski"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
 msgid  "Dash (Bold)"
-msgstr "Kreski pogrubione"
+msgstr "Kreski (pogrubione)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_LONGDASH.StringList.item
 msgid  "Long Dash"
@@ -8877,7 +8877,7 @@ msgstr "Długie kreski"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
 msgid  "Long Dash (Bold)"
-msgstr "Długie pogrubione kreski"
+msgstr "Długie kreski (pogrubione)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
 msgid  "Dot Dash"
@@ -8885,7 +8885,7 @@ msgstr "Kropka-kreska"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
 msgid  "Dot Dash (Bold)"
-msgstr "Pogrubiona kropka-kreska"
+msgstr "Kropka-kreska (pogrubiona)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
 msgid  "Dot Dot Dash"
@@ -8893,15 +8893,15 @@ msgstr "Kropka-kropka-kreska"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
 msgid  "Dot Dot Dash (Bold)"
-msgstr "Pogrubiona kropka-kropka-kreska"
+msgstr "Kropka-kropka-kreska (pogrubiona)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_WAVE.StringList.item
 msgid  "Wave"
-msgstr "Faliste"
+msgstr "Linia falista"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDWAVE.StringList.item
 msgid  "Wave (Bold)"
-msgstr "Pogrubiona linia falista"
+msgstr "Linia falista (pogrubiona)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.StringList.item
 msgid  "Double Wave"

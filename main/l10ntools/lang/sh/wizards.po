@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Šablon napravljen putem <wizard_name> u <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Ne mogu da pokrenem pomoćnika jer važne datoteke nisu pronađene.\nPod „Alatke - Podešavanja - %PRODUCTNAME - Putanje“ kliknite na dugme „Podrazumevano“ za vraćanje podešavanja putanja na podrazumevana.\nNakon toga ponovo pokrenite pomoćnika."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Polja u ~obrascu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Binarna polja su uvek navedena i uvek ih je moguće izabrati iz liste levo.\nAko je to moguće, predstavljena su kao slike."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Podobrazac je obrazac koji je unet u drugi obrazac.\nKoristi podobrasce za prikaz podataka iz tabela ili upita sa relacijom „jedan prema više“."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Polja u obrascu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "Spajanje „<FIELDNAME1>“ i „<FIELDNAME2>“ je izabrano dva puta.\nMožete koristiti spajanje samo jednom."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "Postavi ime obrasca"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Obrazac „%FORMNAME“ već postoji.\nIzaberite drugi naziv."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Ne mogu da umetnem polje jer bi to premašilo dozvoljeni broj polja u tabeli baze (dozvoljeno: %COUNT)"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Naziv „%TABLENAME“ već postoji.\nUnesite drugi naziv."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1701,7 +1701,7 @@ msgstr "Koristi bazu sa adresama za ~cirkularnu poštu"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 msgid  "Include ~only on second and following pages"
-msgstr "Uključi samo na dru~gu i naredne stranice"
+msgstr "Uključi samo na dru~goj i narednim stranicama"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
 msgid  "~Include page number"
@@ -1789,7 +1789,7 @@ msgstr "Ulica:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
 msgid  "ZIP code/State/City:"
-msgstr "Poštanski broj/ Država/ Grad:"
+msgstr "Poštanski broj/Država/Grad:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 46.String.Text
 msgid  "Recipient's address"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Pomoćnik za veb"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Pomoćnik za veb pomaže u objavljivanju dokumenata na Internet.\n\nPretvoriće dokumente tako da se mogu videti iz veb preglednika. Dodatno će napraviti stranicu sa sadržajem i vezama za jednostavan pristup dokumentima. Pomoćnik za veb će takođe dozvoliti prilagođavanje dizajna i izgleda veb lokacije. \n\nMoći ćete da održavate dokumente objavljena na vebu ažurnim i da u svakom trenutku dodate ili uklonite dokumente."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "Pregled"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Izabrana podešavanja će biti obrisana.\n\nŽelite li da obrišete ova podešavanja? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "Ne mogu da napravim FTP direktorijum „%FILENAME“."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP direktorijum „%FILENAME“ ne postoji. \nDa napravim ovaj direktorijum?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Ne mogu da napravim ZIP arhivsku datoteku „%FILENAME“: već postoji direktorijum sa istim imenom."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Ne mogu da napravim lokalni direktorijum „%FILENAME“. \nProverite ovlašćenja za upis."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Ne postoji lokalni direktorijum „%FILENAME“. \nDa napravim ovaj direktorijum?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

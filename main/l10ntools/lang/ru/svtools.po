@@ -361,7 +361,7 @@ msgstr "Штрихи"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_RADICAL.String.Text
 msgid  "Radical"
-msgstr "Радикал"
+msgstr "Корень"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_UNICODE.String.Text
 msgid  "Unicode"
@@ -600,8 +600,8 @@ msgid  "Can't open directory"
 msgstr "Невозможно открыть каталог"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
-msgid  "This file already exists. \nOverwrite ?"
-msgstr "Файл уже существует. \nПереписать?"
+msgid  "This file already exists. \\nOverwrite ?"
+msgstr ""
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
 msgid  "Up One Level"
@@ -1309,11 +1309,11 @@ msgstr "дюймов"
 
 #: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.Default.StringList.item
 msgid  "cm"
-msgstr "cm"
+msgstr "см"
 
 #: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item3.StringList.item
 msgid  "mm"
-msgstr "mm"
+msgstr "мм"
 
 #: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item4.StringList.item
 msgid  "points"
@@ -1504,8 +1504,8 @@ msgid  "The picture needs about %1 KB of memory."
 msgstr "Изображение требует примерно %1 Кб памяти."
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.String.Text
-msgid  "The picture needs about %1 KB of memory,\n the file size is %2 KB."
-msgstr "Изображение требует примерно %1 KB памяти,\n размер файла %2 Кб."
+msgid  "The picture needs about %1 KB of memory,\\n the file size is %2 KB."
+msgstr ""
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.String.Text
 msgid  "The file size is %1 KB."

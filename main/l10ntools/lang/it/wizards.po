@@ -421,7 +421,7 @@ msgstr "~Avanti >"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 15.String.Text
 msgid  "~Help"
-msgstr "~Guida"
+msgstr "~?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 16.String.Text
 msgid  "Steps"
@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Modello creato con <wizard_name> il <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Non è stato possibile eseguire la procedura guidata perché alcuni file importanti non sono stati trovati.\nIn 'Strumenti - Opzioni - %PRODUCTNAME - Percorsi', fate clic sul pulsante 'Predefinito' per ripristinare i percorsi alle impostazioni predefinite originali.\nEseguite quindi nuovamente la procedura guidata."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Campi nel ~formulario"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "I campi binari sono sempre presentati e disponibili per la selezione nell'elenco di sinistra.\nOve possibile, vengono interpretati come immagini."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Un formulario secondario è un formulario inserito all'interno di un altro.\nGrazie ai formulari secondari potete visualizzare i dati di tabelle e interrogazioni con una relazione uno-a-molti."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Campi nel ~formulario"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "La relazione '<FIELDNAME1>' e '<FIELDNAME2>' è stata selezionata due volte.\nOgni relazione può essere utilizzata una sola volta."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "Impostate il nome del formulario"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "È già presente un formulario chiamato '%FORMNAME'.\nScegliete un nome differente."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Impossibile inserire il campo. Superato il limite massimo di %COUNT campi nella tabella del database"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Il nome '%TABLENAME' esiste già.\nSceglietene un altro."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Creazione guidata sito web"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Questa procedura guidata è utile per la pubblicazione di documenti su Internet.\n\nConverte i documenti in modo da consentirne la visualizzazione in un browser web. Inoltre, genera una pagina di sommario con i collegamenti appropriati per l'accesso ai documenti. Con questa procedura guidata potrete inoltre personalizzare la struttura e il layout del vostro sito web.\n\nPotrete tenere aggiornati i documenti pubblicati sul Web e aggiungere o rimuovere uno o più documenti in qualunque momento."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "Anteprima"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Le impostazioni selezionate verranno eliminate.\n\nVolete confermare l'eliminazione di queste impostazioni? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "Impossibile creare la directory FTP '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "La directory FTP '%FILENAME' non esiste. \nVolete crearla ora?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Impossibile creare il file ZIP '%FILENAME': esiste già una directory con questo nome."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Impossibile creare la directory locale '%FILENAME': \nControllate le vostre autorizzazioni in scrittura."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "La directory locale '%FILENAME' non esiste. \nVolete crearla ora?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

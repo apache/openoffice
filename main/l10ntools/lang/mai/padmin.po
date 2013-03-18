@@ -53,15 +53,15 @@ msgstr "केवल सॉफ्ट लिंक्स बनाबू (~s)"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
-msgstr "सभकेँ चुनु (~S)"
+msgstr "सभकेँ चुनू (~S)"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
 msgid  "Add fonts"
 msgstr "फाँट जोड़ू"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr "की अहाँ वास्तवमे ई फाँट फाइलक उप्पर लिखनाइ चाहैछ?\n   %s"
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -72,16 +72,16 @@ msgid  "None"
 msgstr "केओ नहि"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "एकटा प्रारूप फाइल (एकटा .afm विस्तारक सँग) फाँट क'लेल नहि भेटल अछि\n%s\nएहिलेल, फाँट केँ सँस्थापित नहि कएल जाए सकत. ghostscript सँ फँट फाइल नहि बनाएल जाए सकैछ, उदाहरण क'लेल, समान निर्देशिकामे अवस्थित फाँट फाइलक तरह अथवा एकटा afm उपनिर्देशिका क' तरह."
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "फाँट फाइल क'लेल मेट्रिक फाइल\n   %s\nकॉपी नहि कएल जाए सकल. फाँट सँस्थापित नहि कएल जएताह."
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "फाँट फाइल\n   %s\nकॉपी नहि कएल जाए सकल. फाँट सँस्थापित नहि होएत."
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -176,7 +176,7 @@ msgid  "The test page was printed succesfully. Please check the result."
 msgstr "जाँच पृष्ठ सफलता सँ छापल अछि. कृपया नतीजे क' जाँच करू."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
 msgstr ""
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
@@ -288,8 +288,8 @@ msgid  "The file does not contain a metric."
 msgstr "फाइलमे मेट्रिक नहि अछि."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr "मेट्रिक\n\n%s\n\nनिम्न कारणसँ बदलल नहि जाए सकैत अछि:\n\n"
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr ""
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -352,8 +352,8 @@ msgid  "The driver \"%s\" is always needed and can therefore not be removed."
 msgstr "ड्राइवर \"%s\" क' हरदम जरूरत अछि आओर एहिलेल नहि हटाएल जाए रहल अछि."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr "चालक \"%s1\" हटाएल नहि जाए सकल. फाइलकेँ हटाएनाइ संभव नहि छला\n\n%s2."
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr ""
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

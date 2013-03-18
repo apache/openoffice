@@ -52,28 +52,28 @@ msgid  "Reset"
 msgstr "Ponastavi"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
-msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr "Zelo ~visoka.\nDovoljen je samo zagon makrov iz zaupanja vrednih lokacij. Vsi ostali makri, podpisani ali ne, so onemogočeni."
+msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
-msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr "V~isoka.\nDovoljeno je le zaganjanje podpisanih makrov iz zaupanja vrednih virov. Nepodpisani makri so onemogočeni."
+msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
-msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr "~Srednja.\nPred izvedbo makra iz vira, ki ni zaupanja vreden, je potrebna potrditev."
+msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
-msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr "~Nizka (odsvetujemo).\nVsi makri se bodo zagnali brez potrditve. To nastavitev uporabite le, če popolnoma zaupate, da so vsi dokumenti, ki jih odprete, varni."
+msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
 msgstr "Zaupanja vredna potrdila"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
-msgid  "Issued to\tIssued by\tExpiration date"
-msgstr "Izdan za\tIzdajatelj\tVeljaven do"
+msgid  "Issued to\\tIssued by\\tExpiration date"
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -156,8 +156,8 @@ msgid  "The following have signed this package:"
 msgstr "Ta paket so podpisali:"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
-msgid  "\tSigned by\tDigital ID issued by\tDate"
-msgstr "\tPodpisani\tDigitalni ID izdal\tDatum"
+msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
+msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -200,12 +200,12 @@ msgid  "Close"
 msgstr "Zapri"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ErrorBox.Message
-msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\\n\\nSave document in ODF 1.2 format and add all desired signatures again."
 msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
-msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr "Z dodajanjem ali odstranjevanjem podpisa makra boste odstanili vse podpise dokumenta.\nResnično želite nadaljevati?"
+msgid  "Adding or removing a macro signature will remove all document signatures.\\nDo you really want to continue?"
+msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 msgid  "View Certificate"
@@ -252,8 +252,8 @@ msgid  "The certificate could not be validated."
 msgstr "Potrdila ni mogoče overiti."
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
-msgid  "Field\tValue"
-msgstr "Polje\tVrednost"
+msgid  "Field\\tValue"
+msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -340,8 +340,8 @@ msgid  "Select the certificate you want to use for signing"
 msgstr "Izberite digitalno potrdilo, ki ga želite uporabiti za podpisovanje"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
-msgid  "Issued to\tIssued by\tExpiration date"
-msgstr "Izdan za\tIzdajatelj\tVeljaven do"
+msgid  "Issued to\\tIssued by\\tExpiration date"
+msgstr ""
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

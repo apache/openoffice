@@ -941,7 +941,7 @@ msgstr "Membuat salinan berkas"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_20
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "Berkas: [1],  Directory: [9],  Ukuran: [6]"
+msgstr "Berkas: [1],  Direktori: [9],  Ukuran: [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_21
 msgid  "Computing space requirements"
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Terima kasih untuk men-download %PRODUCTNAME %PRODUCTVERSION."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "&Bongkar"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "Berkas-berkas pemasangan %PRODUCTNAME %PRODUCTVERSION akan dibongkar dan disimpan dalam folder yang ditampilkan di bawah ini. Jika Anda ingin menyimpan %PRODUCTNAME pada folder yang berbeda, klik \\'Telusur\\' untuk memilih folder yang lain."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1505,7 +1505,7 @@ msgstr "{&MSSansBold8}Lokasi Jaringan"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_22
 msgid  "&Install"
-msgstr "P&asang"
+msgstr "&Pasang"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_23
 msgid  "&Network location:"
@@ -1525,7 +1525,7 @@ msgstr "La&njut >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Selamat Datang ke Wahana Pandu Pemasangan untuk [ProductName]"
+msgstr "{&TahomaBold10}Selamat Datang di Wahana Pandu Pemasangan untuk [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
@@ -1533,7 +1533,7 @@ msgstr "Wahana Pandu Pemasangan akan membuat image server dari [ProductName] pad
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 msgid  "&No"
-msgstr "T&idak"
+msgstr "&Tidak"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_30
 msgid  "Are you sure you want to cancel [ProductName] installation?"
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "Batal"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}Informasi Pelanggan"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1697,7 +1697,7 @@ msgstr "&Ubah..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr "Klik Lanjut untuk memasang di folder ini, atau klik Ubah untuk memasang di folder lainnya."
+msgstr "Klik Lanjut untuk memasang folder ini, atau klik Ubah untuk memasang di folder lainnya."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1753,7 +1753,7 @@ msgstr "Ruang disk diperlukan untuk memasang fitur yang dipilih."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "Volume yang disorot tidak memiliki ruang yang cukup untuk fitur yang saat ini dipilih. Anda bisa membuang berkas-berkas dari volume yang disorot tersebut, memilih sedikit fitur pada drive lokal, atau pilih drive tujuan lainnya."
+msgstr "Volume yang disorot tidak memiliki ruang yang cukup untuk fitur yang dipilih. Anda bisa membuang berkas-berkas dari volume yang disorot tersebut, memilih sedikit fitur pada drive lokal, atau pilih drive tujuan lainnya."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -1785,7 +1785,7 @@ msgstr "Aba&ikan"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_108
 msgid  "&Retry"
-msgstr "Coba &Ulang"
+msgstr "&Ulang"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_111
 msgid  "Cancel"
@@ -2041,7 +2041,7 @@ msgstr "Klik Selesai untuk keluar dari wahana."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "Anda bisa memilih apakah menyimpan elemen-elemen yang telah dipasang pada sistem Anda untuk melanjutkan pemasangan ini di lain waktu, atau memilih mengembalikan kondisi sistem Anda sebelum pemasangan."
+msgstr "Anda bisa memilih apakah ingin mempertahankan elemen-elemen yang telah disimpan di sistem Anda untuk lanjut di kemudian hari, atau mengembalikan kondisi sistem sebelum pemasangan."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."

@@ -141,11 +141,11 @@ msgstr "Group Header"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Present"
-msgstr "_: GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.1.stringlist.text\nPresent"
+msgstr "_: GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.1.stringlist.text\nPresent"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
-msgstr "_: GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.2.stringlist.text\nNot present"
+msgstr "_: GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.2.stringlist.text\nNot present"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
@@ -333,15 +333,15 @@ msgstr "Page Setup"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
 msgid  "Page"
-msgstr "_: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.pageitem.text\nPage"
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_PAGE.1.string.text\nPage"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
 msgid  "Background"
-msgstr "_: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.pageitem.text\nBackground"
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.pageitem.text\nBackground"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
 msgid  "Return"
-msgstr "_: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.pushbutton.text\nReturn"
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_CHAR.1.pushbutton.text\nReturn"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
 msgid  "Page"
@@ -349,7 +349,7 @@ msgstr "_: dlgpage.src#RID_PAGEDIALOG_PAGE.1.string.text\nPage"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
 msgid  "Background"
-msgstr "_: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.pageitem.text\nBackground"
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.string.text\nBackground"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
 msgid  "Section Setup"
@@ -357,11 +357,11 @@ msgstr "Section Setup"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
 msgid  "Return"
-msgstr "_: dlgpage.src#RID_PAGEDIALOG_CHAR.1.pushbutton.text\nReturn"
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_LINE.1.pushbutton.text\nReturn"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
 msgid  "Background"
-msgstr "_: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.string.text\nBackground"
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_PAGE.2.string.text\nBackground"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
 msgid  "Character Settings"
@@ -393,7 +393,7 @@ msgstr "Alignment"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
 msgid  "Return"
-msgstr "_: dlgpage.src#RID_PAGEDIALOG_LINE.1.pushbutton.text\nReturn"
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_PAGE.1.pushbutton.text\nReturn"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
 msgid  "Character"
@@ -401,11 +401,11 @@ msgstr "Character"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
 msgid  "Line"
-msgstr "_: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.pageitem.text\nLine"
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_LINE.1.string.text\nLine"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
 msgid  "Line"
-msgstr "_: dlgpage.src#RID_PAGEDIALOG_LINE.1.string.text\nLine"
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_LINE.tabdialog.text\nLine"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
 msgid  "Line Styles"
@@ -565,7 +565,7 @@ msgstr "Include Date"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
 msgid  "Format"
-msgstr "_: DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.fixedtext.text\nFormat"
+msgstr "_: DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.fixedtext.text\nFormat"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
 msgid  "Include Time"
@@ -777,7 +777,7 @@ msgstr "Background color"
 
 #: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
 msgid  "Background Transparent"
-msgstr "_: inspection.src#RID_STR_BACKTRANSPARENT.string.text\nBackground Transparent"
+msgstr "_: inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.string.text\nBackground Transparent"
 
 #: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
 msgid  "Background Transparent"
@@ -949,7 +949,7 @@ msgstr "Section"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
 msgid  "Function"
-msgstr "_: report.src#RID_STR_FUNCTION.string.text\nFunction"
+msgstr "_: report.src#RID_STR_PROPTITLE_FUNCTION.string.text\nFunction"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
 msgid  "Group"
@@ -1037,7 +1037,7 @@ msgstr "~Report name"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
 msgid  "Delete Group"
-msgstr "_: report.src#RID_STR_UNDO_REMOVE_GROUP.string.text\nDelete Group"
+msgstr "_: report.src#RID_STR_UNDO_UNGROUP.string.text\nDelete Group"
 
 #: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
 msgid  "Add Group"

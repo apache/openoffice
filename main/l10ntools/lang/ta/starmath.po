@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/smres.src#RID_FONTDIALOG.ModalDialog.Text
 msgid  "Fonts"
-msgstr "எழுத்துருகள்"
+msgstr "எழுத்துருக்கள்"
 
 #: source/smres.src#RID_FONTDIALOG.1.FixedText.Text
 msgid  "~Font"
@@ -137,7 +137,7 @@ msgstr "முன்னிருப்பு"
 
 #: source/smres.src#RID_DISTANCEDIALOG.ModalDialog.Text
 msgid  "Spacing"
-msgstr "இடைவெளி"
+msgstr "மேல்"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.MetricField.CustomUnitText
 msgid  "%"
@@ -168,8 +168,9 @@ msgid  "Category"
 msgstr "வகை"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.1.String.Text
+#, fuzzy
 msgid  "Spacing"
-msgstr "மேல்"
+msgstr "இடைவெளி"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.2.String.Text
 msgid  "~Spacing"
@@ -196,8 +197,9 @@ msgid  "S~ubscript"
 msgstr "கீ~ழெழுத்து"
 
 #: source/smres.src#RID_DISTANCEDIALOG.3.1.String.Text
+#, fuzzy
 msgid  "Fractions"
-msgstr "பின்னங்கள்"
+msgstr "பின்னம்"
 
 #: source/smres.src#RID_DISTANCEDIALOG.3.2.String.Text
 msgid  "~Numerator"
@@ -220,8 +222,9 @@ msgid  "~Weight"
 msgstr "~எடை"
 
 #: source/smres.src#RID_DISTANCEDIALOG.5.1.String.Text
+#, fuzzy
 msgid  "Limits"
-msgstr "~எல்லைகள்"
+msgstr "வரம்புகள்"
 
 #: source/smres.src#RID_DISTANCEDIALOG.5.2.String.Text
 msgid  "~Upper limit"
@@ -272,8 +275,9 @@ msgid  "~Minimum spacing"
 msgstr "~குறைந்தபட்ச இடைவெளி"
 
 #: source/smres.src#RID_DISTANCEDIALOG.9.1.String.Text
+#, fuzzy
 msgid  "Operators"
-msgstr "குறியீடுகள்"
+msgstr "இயக்கிகள்"
 
 #: source/smres.src#RID_DISTANCEDIALOG.9.2.String.Text
 msgid  "~Excess size"
@@ -444,12 +448,12 @@ msgid  "~Delete"
 msgstr "நீக்கு"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr "\"StarMath\" எழுத்துரு நிறுவப்பட்டது.\nஇந்த எழுத்துரு இல்லாமல்  %PRODUCTNAME Mathஐ சரியாக இயக்க முடியாது.\nஇந்த எழுத்துருவை நிறுவி %PRODUCTNAME Mathஐ திரும்ப தொடங்கவும்."
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "மாற்றங்கள் நிலையாக சேமிக்க வேண்டுமா\n\nஇந்த மாற்றங்கள் எல்லா புதிய சமன்பாடுகளுக்கும் பொருந்தும்."
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -749,50 +753,62 @@ msgid  "~Scaling"
 msgstr "~அளவீடு"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "ஒரும/இரும இயக்கிகள் "
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Relations"
 msgstr "~தொடர்புகள்"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Set Operations"
 msgstr "~கணச் செயல்கள்"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Functions"
 msgstr "செயல்பாடுகள்"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
 msgid  "More"
 msgstr "மேலும்"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "O~perators"
 msgstr "~இயக்கிகள்"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Attributes"
 msgstr "~கூறுகள்"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Brackets"
 msgstr "~அடைப்புக் குறிகள்"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
+#, fuzzy
 msgid  "For~mats"
 msgstr "வடி~வங்கள்"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
+#, fuzzy
 msgid  "New Line"
 msgstr "புதிய வரி"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
+#, fuzzy
 msgid  "Small Gap"
 msgstr "சிறிய இடைவெளி"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
+#, fuzzy
 msgid  "Gap"
 msgstr "இடைவெளி"
 
@@ -801,6 +817,7 @@ msgid  "nospace {...}"
 msgstr ""
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Others"
 msgstr "~மற்றையது"
 

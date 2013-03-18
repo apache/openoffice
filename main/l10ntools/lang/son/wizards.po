@@ -396,6 +396,7 @@ msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr " Ayyo"
 
@@ -404,10 +405,12 @@ msgid  "Yes to All"
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 10.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "Kala"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 11.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -432,10 +435,12 @@ msgid  "Steps"
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 17.String.Text
+#, fuzzy
 msgid  "Close"
 msgstr "Daabu"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 18.String.Text
+#, fuzzy
 msgid  "OK"
 msgstr "Ay yadda"
 
@@ -448,7 +453,7 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
@@ -557,11 +562,11 @@ msgid  "Fields in ~the form"
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
@@ -597,7 +602,7 @@ msgid  "Fields in form"
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
@@ -810,7 +815,7 @@ msgid  "Set the name of the form"
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
@@ -1613,7 +1618,7 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
@@ -2148,7 +2153,7 @@ msgid  "Web Wizard"
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
@@ -2576,7 +2581,7 @@ msgid  "Preview"
 msgstr " Alhaaloo guna"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
@@ -2646,7 +2651,7 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
@@ -2654,11 +2659,11 @@ msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
@@ -3106,6 +3111,7 @@ msgid  "Microsoft Office"
 msgstr ""
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
+#, fuzzy
 msgid  "Summary:"
 msgstr " Alahabarey tamaasawey"
 
@@ -3357,6 +3363,7 @@ msgid  "%PRODUCTNAME Calendar"
 msgstr ""
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
+#, fuzzy
 msgid  "Back"
 msgstr " Banda"
 
@@ -3373,10 +3380,12 @@ msgid  "Create"
 msgstr ""
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "Hantiira"
 
@@ -3652,6 +3661,7 @@ msgid  "Street"
 msgstr ""
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
+#, fuzzy
 msgid  "Country"
 msgstr " Koyraa laamaa"
 
@@ -3660,6 +3670,7 @@ msgid  "ZIP/Postal Code"
 msgstr ""
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
+#, fuzzy
 msgid  "City"
 msgstr " Galloo"
 
@@ -3668,6 +3679,7 @@ msgid  "Title"
 msgstr ""
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
+#, fuzzy
 msgid  "Position"
 msgstr " Kayandi doo"
 
@@ -3692,6 +3704,7 @@ msgid  "Work Phone"
 msgstr ""
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
+#, fuzzy
 msgid  "Fax"
 msgstr "  Fax"
 
@@ -3704,6 +3717,7 @@ msgid  "URL"
 msgstr ""
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
+#, fuzzy
 msgid  "Notes"
 msgstr " Hantum kaddasey"
 
@@ -3776,6 +3790,7 @@ msgid  "Brochure layout"
 msgstr ""
 
 #: source/template/template.src#Newsletter + 10.String.Text
+#, fuzzy
 msgid  "Format"
 msgstr "Kaddasu fasalyan"
 

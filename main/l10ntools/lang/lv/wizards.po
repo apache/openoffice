@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Sagatave izveidota <current_date> ar <wizard_name>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Vedni neizdevās palaist, jo netika atrasti svarīgi faili.\nPie 'Rīki - Opcijas - %PRODUCTNAME - Ceļi' spiediet pogu 'Noklusētais', lai iestatīt ceļus uz sākotnējajiem noklusētajiem iestatījumiem.\nTad palaidiet vedni vēlreiz."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Lauki ~formā"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Binārie lauki vienmēr tiek uzrādīti un ir atzīmējami no saraksta pa kreisi.\nJa iespējams, tie tiek interpretēti kā attēli."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Apakšforma ir forma, kas ievietota citā formā.\nLietojiet apakšformas, lai uzrādītu datus no tabulām vai vaicājumiem ar \"viens pret vairākiem\" (one-to-many) relāciju."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Lauki formā"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "Savienojums  '<FIELDNAME1>' ar '<FIELDNAME2>' ir izvēlēts divreiz.\nBet savienojumu var lietot tikai vienu reizi."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "Iestatīt formas nosaukumu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Forma ar nosaukumu '%FORMNAME' jau eksistē.\nLūdzu, izvēlieties citu nosaukumu."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Lauku nevar ievietot, jo tad tiktu pārsniegts maksimālais %COUNT pieļaujamo datubāzes lauku skaits."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Nosaukums '%TABLENAME' jau eksistē.\nLūdzu, izvēlieties citu nosaukumu."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1693,7 +1693,7 @@ msgstr "Jau~na sūtītāja adrese:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
 msgid  "Use placeholders for ~recipient's address"
-msgstr "Lietot viettu~rus saņēmēja adresei"
+msgstr "Lietot vietturus ~saņēmēja adresei"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
 msgid  "Use address database for ~mail merge"
@@ -1701,7 +1701,7 @@ msgstr "Lietot adrešu datubāzi ~vēstuļu sapludināšanai"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 msgid  "Include ~only on second and following pages"
-msgstr "Iekļaut ~tikai otrajā un turpmākās lapās"
+msgstr "Iekļaut tikai ~otrajā un turpmākās lapās"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
 msgid  "~Include page number"
@@ -1781,7 +1781,7 @@ msgstr "Sūtītāja adrese"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 43.String.Text
 msgid  "Name:"
-msgstr "Vārds:"
+msgstr "Nosaukums:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 44.String.Text
 msgid  "Street:"
@@ -1889,7 +1889,7 @@ msgstr "Pēda"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 6.String.Text
 msgid  "Name and location"
-msgstr "Nosaukums un atrašanās vieta"
+msgstr "Vārds un atrašanās vieta"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 1.String.Text
 msgid  "Fax Wizard"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Tīmekļa vednis"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Šis tīmekļa vednis palīdzēs jums publicēt dokumentus Internet tīklā.\n\nTas konvertēs dokumentus tā, lai tos varētu apskatīt ar tīmekļa pārlūku. Papildus tas ģenerēs satura lapu ar saitēm ātrākai piekļuvei dokumentiem. Tīmekļa vednis ļaus jums arī izmainīt jūsu tīmekļa vietnes dizainu un izkārtojumu.\n\nJūs varēsiet atjaunināt jūsu publicētos dokumentus, kā arī pievienot vai izņemt dokumentus jebkurā laikā."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "Priekšskatījums"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Izvēlētie iestatījumi tiks dzēsti.\n\nVai tiešām vēlaties dzēst šos iestatījumus? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "Nevar izveidot FTP direktoriju '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP direktorija '%FILENAME' neeksistē.\nVai izveidot?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Zip failu '%FILENAME' nevar izveidot: direktorija ar šādu nosaukumu jau eksistē."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Lokālo direktoriju '%FILENAME' nevar izveidot.\nLūdzu, pārbaudiet jūsu rakstīšanas tiesības."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Lokālā mape '%FILENAME' neeksistē.\nVai izveidot?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

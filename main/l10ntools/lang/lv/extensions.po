@@ -56,8 +56,8 @@ msgid  "Data Source Title"
 msgstr "Datu avota nosaukums"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "%PRODUCTNAME ļauj piekļūt datus par adresēm, kuras jau atrodas jūsu sistēmā. Lai to darītu, %PRODUCTNAME tiks izveidots datu avots, kurā jūsu adreses būs pieejamas tabulas formā.\n\nŠis vednis palīdz jums izveidot datu avotu."
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -108,32 +108,32 @@ msgid  "Other external data source"
 msgstr "Cits ārējs datu avots"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "Lai iestatītu jauno datu avotu, ir nepieciešama papildus informācija.\n\nSpiediet uz sekojošās pogas, lai atvērtu citu dialogu, kurā jūs varēsiet ievadīt nepieciešamo informāciju."
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
 msgstr "Iestatījumi"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "Savienojums ar datu avotu nevarēja tikt izveidots.\nPirms turpināšanas, lūdzu, pārbaudiet jūsu veiktos iestatījumus, vai iepriekšējā lapā izvēlieties citu adrešu datu avotu tipu."
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr "Izvēlētais ārējais datu avots satur vairāk vairāk kā vienu adrešu grāmatu.\nLūdzu, izvēlieties vienu ar kuru jūs pārsvarā strādājat:"
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "Lai iekļautu adrešu datus jūsu veidnē, %PRODUCTNAME jāzina, kuri lauki satur kurus datus.\n\nPiemēram, jūs varētu būt glabājis epasta adreses laukos ar nosaukumiem \"epasts\", \"e-pasts\" vai \"email\" - vai kaut ko pilnīgi atšķirīgu.\n\nSpiediet uz zemāk novietoto pogu, lai atvērtu citu dialogu, kur jūs varēsiet ievadīt jūsu datu avota iestatījumus."
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
 msgstr "Lauka piesaiste"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "Tā bija visa nepieciešamā informācija, lai integrētu jūsu adrešu datus %PRODUCTNAME.\n\nTagad ievadiet tikai nosaukumu, zem kura jūs vēlaties reģistrēt šo datu avotu %PRODUCTNAME."
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -160,8 +160,8 @@ msgid  "Please select a type of address book."
 msgstr "Lūdzu, izvēlieties adrešu grāmatas tipu."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr "Datu avots nesatur nevienu tabulu.\nVai tomēr vēlaties to iestatīt kā adrešu datu avotu?"
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Adrešu dati - lauka piesaiste"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "Šoreiz netika piesaistīts neviens lauks.\nJūs varat vai nu nozīmēt piesaistīt tagad, vai darīt to vēlāk, izvēloties:\n\"Fails - Sagataves - Adrešu grāmatas avots...\""
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr ""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -216,8 +216,8 @@ msgid  "Data Source"
 msgstr "Datu avots"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\n"
-msgstr "Sekojošie kolonnu nosaukumi nevarēja tikt piešķirti:\n"
+msgid  "The following column names could not be assigned:\\n"
+msgstr ""
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -492,8 +492,8 @@ msgid  "Control"
 msgstr "Vadīkla"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "Labajā pusē ir redzamas visas formas datu avota tabulas.\n\n\nIzvēlieties tabulu, no kuras dati vajadzētu izmantot kā saraksta saturu:"
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -588,8 +588,8 @@ msgid  "Data"
 msgstr "Dati"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "Pašreiz, forma, kurai pieder kontrole, nav (vai nav pilnībā) piesaistīta datu avotam.\n\nLūdzu, izvēlieties datu avotu un tabulu.\n\n\nLūdzu, ņemiet vērā, ka veiktās iestatījumu izmaiņas šajā lapā stāsies spēkā uzreiz pēc lapas atstāšanas."
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -736,8 +736,8 @@ msgid  "Welcome"
 msgstr "Laipni lūdzam"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr "Laipni lūdzam %PRODUCTNAME %PRODUCTVERSION OEM\n\nLai palaistu %PRODUCTNAME %PRODUCTVERSION OEM, lūdzu ievadiet savus personas datus nākamajā logā aiz licences teksta. Svarīgākā informācija ir atrodama lasimani failos, kas atrodas %PRODUCTNAME produkta mapē. Lūdzu uzmanīgi izlasiet šos failus. Vairāk informācijas varēsiet atrast Oracle tīmekļa lapā http://www.oracle.com/us/products/applications/open-office."
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr ""
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -816,8 +816,8 @@ msgid  "Forms"
 msgstr "Formas"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "Vai vēlaties dzēst datu tipu '#type#' no modeļa?\nIevērojiet, ka tas ietekmēs visas vadīklas, kas ir piesaistītas šim datu tipam."
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -1585,7 +1585,7 @@ msgstr "Aktīvā lapa"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
 msgid  "No"
-msgstr "Nē"
+msgstr "Nav"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
 msgid  "Yes"
@@ -2237,7 +2237,7 @@ msgstr "Kā rakstzīme"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
 msgid  "To Page"
-msgstr "Pie lapas"
+msgstr "Pei lapas"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.String.Text
 msgid  "To Frame"
@@ -2296,12 +2296,12 @@ msgid  "Type a name for the new data type:"
 msgstr "Ievadiet nosaukumu jaunajam datu tipam:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\n Dev~ice"
-msgstr "Par\n ~Iekārtu"
+msgid  "About\\n Dev~ice"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\nPreview"
-msgstr "Izveidot\nPriekšskatījumu"
+msgid  "Create\\nPreview"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2356,8 +2356,8 @@ msgid  "Scanner"
 msgstr "Skeneris"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "Iekārta: %s\nRažotājs: %s\nModelis: %s\nTips: %s"
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2404,8 +2404,8 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION ir visjaunākā versija."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr "Ir pieejams %PRODUCTNAME %NEXTVERSION.\n\nUzinstalēta versija ir %PRODUCTNAME %PRODUCTVERSION.\n\nPiezīme: Pirms atjauninājuma lejupielādēšanas, pārliecinieties, ka jums ir pietiekamas piekļuves tiesības, lai to uzinstalētu.\nVarētu būt nepieciešams ievadīt administratora vai root paroli."
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2420,16 +2420,16 @@ msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "%PRODUCTNAME %NEXTVERSION lejupielādēšanas apstājās pie"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "Lejupielādes vieta ir: %DOWNLOAD_PATH.\n\nJūs varat mainīt lejupielādes vietu zem Rīki – Opcijas... - %PRODUCTNAME – Tiešsaistes atjauninājumi."
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME ir lejupielādēts uz %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "Atjauninājuma automātiskā lejupielāde pašlaik nav pieejama.\n\nSpiediet 'Lejupielādēt...', lai no Interneta pašrocīgi lejupielādētu %PRODUCTNAME %NEXTVERSION."
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2575,6 +2575,6 @@ msgstr "Ir pieejami paplašinājuma atjauninājumi"
 msgid  "Click here for more information."
 msgstr "Spiediet šeit, lai saņemtu papildus informāciju."
 
-#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
 msgid  "Check for ~Updates..."
 msgstr "Pārbaudīt atjauninājumus..."

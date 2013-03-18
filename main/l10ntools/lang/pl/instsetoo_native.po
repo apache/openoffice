@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Dziękujemy za pobranie %PRODUCTNAME %PRODUCTVERSION"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "&Rozpakuj"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "Pliki instalacyjne %PRODUCTNAME %PRODUCTVERSION będą rozpakowane i zapisane w poniższym katalogu. Aby zapisać %PRODUCTNAME w innym katalogu, kliknij przycisk 'Przeglądaj' i wybierz inny katalog."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1525,7 +1525,7 @@ msgstr "&Dalej >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Witamy w kreatorze instalacji programu [ProductName]"
+msgstr "{&TahomaBold10}Witaj w kreatorze instalacji [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "Anuluj"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}Informacje użytkownika"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1837,7 +1837,7 @@ msgstr "&Dalej >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Witaj w kreatorze instalacji [ProductName]"
+msgstr "{&TahomaBold10}Witamy w kreatorze instalacji programu [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
@@ -2049,7 +2049,7 @@ msgstr "Kliknij przycisk Przywróć lub Kontynuuj później, aby zakończyć pra
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}Kreator instalacji zakończył pracę."
+msgstr "{&TahomaBold10}Kreator instalacji zakończył pracę"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
@@ -2081,7 +2081,7 @@ msgstr "&Zakończ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_198
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}Kreator instalacji zakończył pracę"
+msgstr "{&TahomaBold10}Kreator instalacji zakończył pracę."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."

@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Modelu creáu con <wizard_name> el <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "L'asistente nun pudo executase, porque falten dellos ficheros importantes.\nPa reaniciar los caminos hacia la configuración predeterminada orixinal, escueyi \"Ferramientes - Opciones - %PRODUCTNAME - Caminos\" y calca nel botón \"Predetermináu\".\nReanicia darréu l'asistente."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Campos del ~formulariu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Los campos binarios siempre se ponen na llista izquierda, onde se pueden escoyer.\nSi se puede, interprétense como imáxenes."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Un subformulariu ye un formulariu inxertáu n'otru formulariu.\nUsa los subformularios p'amosar los datos de les tables o consultes con una rellación d'unu o dellos."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Campos del ~formulariu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "La combinación '<FIELDNAME1>' y '<FIELDNAME2>' esbilléstela dos vegaes.\nPor embargu, les combinaciones sólamente se pueden usar una vegada."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,12 +804,12 @@ msgid  "Set the name of the form"
 msgstr "Denomar el formulariu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Yá existe un formulariu denomáu %FORMNAME.\nEscueyi otru nome."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
-msgstr "Asistente pa consultes"
+msgstr "Asistente de Consulta"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 1.String.Text
 msgid  "Query"
@@ -825,7 +825,7 @@ msgstr "Tables"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
 msgid  "A~vailable fields"
-msgstr "Campos disp~onibles"
+msgstr "~Campos disponibles"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
 msgid  "Name ~of the query"
@@ -1081,7 +1081,7 @@ msgstr "Detalle o resume"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 84.String.Text
 msgid  "Grouping"
-msgstr "Agrupación"
+msgstr "Agrupando"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 85.String.Text
 msgid  "Grouping conditions"
@@ -1169,7 +1169,7 @@ msgstr "Composición"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 14.String.Text
 msgid  "Create report"
-msgstr "Facer informe"
+msgstr "Crear un informe"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 15.String.Text
 msgid  "Layout of data"
@@ -1289,7 +1289,7 @@ msgstr "Ascenden~te"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 56.String.Text
 msgid  "De~scending"
-msgstr "~Descendente"
+msgstr "De~scendente"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 57.String.Text
 msgid  "Des~cending"
@@ -1441,11 +1441,11 @@ msgstr "Definir les tribes y los formatos"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 4.String.Text
 msgid  "Set primary key"
-msgstr "Afitar clave principal"
+msgstr "Establecer clave principal"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 5.String.Text
 msgid  "Create table"
-msgstr "Facer tabla"
+msgstr "Crear tabla"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 8.String.Text
 msgid  "Select fields for your table"
@@ -1549,7 +1549,7 @@ msgstr "Norabona. Apurriste tola información que facía falta pa crear la tabla
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
-msgstr "¿Qué quies facer a continuación?"
+msgstr "¿Que quies facer darréu?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
 msgid  "Modify the table design"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "El campu nun se pudo inxertar porque supera el máximu de %COUNT campos permitíos na tabla de la base datos"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "El nome '%TABLENAME' yá existe.\nEspecifica otru nome."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1677,7 +1677,7 @@ msgstr "~Marques de pliegues"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
 msgid  "~Complimentary close"
-msgstr "~Fras de despedida"
+msgstr "~Frase de despidida"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
 msgid  "~Footer"
@@ -1685,7 +1685,7 @@ msgstr "~Pie de páxina"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
 msgid  "~Use user data for return address"
-msgstr "~Usar datos del usuariu pa remite"
+msgstr "~Usar datos del usuariu pal remite"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
 msgid  "~New sender address:"
@@ -1997,7 +1997,7 @@ msgstr "Allugamientu y nome del ficheru:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
 msgid  "What do you want to do next?"
-msgstr "¿Que quies facer darréu?"
+msgstr "¿Que quies facer agora?"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
 msgid  "Choose the type of fax and a page design"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Asistente pa Web"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Esti Asistente pa Web va ayudate a asoleyar documentos n'Internet.\n\nConvierte documentos pa que se puedan ver n'un restolador Web. Amás, xenera una páxina d'índiz de conteníu con enllaces que permiten acceder fácilmente a los documentos. L'Asistente pa Web tamién permite personalizar el diseñu de la páxina Web.\n\nVas poder caltener anovaos los documentos que publiques na Web, y amestar o desaniciar documentos cuando quieras."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "Vista Previa"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Desaniciaránse les opciones de configuración escoyíes.\n\n¿Confirmes que quies desaniciales? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "Nun se pudo crear el direutoriu FTP '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "El direutoriu FTP '%FILENAME' nun existe. \n¿Quies crealu agora?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "El ficheru Zip '%FILENAME' nun se puede crear: yá existe un direutoriu col mesmu nome."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "El direutoriu llocal '%FILENAME' nun se puede crear. \nComprueba que tienes permisu d'escritura."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "El direutoriu llocal '%FILENAME' nun existe.\n¿Quies crealu agora?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -3305,7 +3305,7 @@ msgstr "Tornar"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
 msgid  "Personal Data"
-msgstr "Los mios datos"
+msgstr "Datos Personales"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
 msgid  "Add Holidays to Calendar"

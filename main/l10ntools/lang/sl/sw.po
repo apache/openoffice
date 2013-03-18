@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "Dokumenta ni bilo mogoče v celoti shraniti."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "Ta dokument HTML vsebuje mekre %PRODUCTNAME Basic.\nS trenutno nastavitvijo izvoza ti makri niso bili shranjeni."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "prazna stran"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "V odložišču imate veliko količino podatkov.\nNaj ta vsebina ostane na voljo drugim programom?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "Pretvorba v obliko HTML \nlahko povzroči izgubo informacij. \nŽelite shraniti dokument?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "Izvorna koda se lahko prikaže le, če se dokument shrani v obliko HTML.\nŽelite shraniti dokument v obliko HTML?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "Dokument vsebuje polja iz adresarja. Ali želite natisniti tipsko pismo?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<nastavitve uporabnika>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "Želite spremeniti združljivostne možnosti privzete predloge?\nTo bo vplivalo na vse nove dokumente, ki so osnovani na privzeti predlogi."
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2896,8 +2896,8 @@ msgid  "Caption"
 msgstr "Napis"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "Samodejno dodaj naslov\nmed vstavljanjem:"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "Niste navedli novega imena za priponko. Če želite vnesti novega, ga vtipkajte zdaj."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "Za pošiljanje spojenih dokumentov po elektronski pošti, %PRODUCTNAME zahteva informacijo o poštnem računu, ki bo uporabljen.\n\nŽelite vnesti informacije o poštnem računu zdaj?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "~Skp"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "Opomba:\nPoštne naslove ločite s podpičjem (;)."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "Pošiljanje ni uspelo (neveljaven naslov)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "V vašem predalu %PRODUCTNAME Outbox so še sporočila.\nŽelite vseeno zapustiti program?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "Uredi dokument"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "Če še niste, lahko zdaj napišete ali uredite vaš dokument. Spremembe bodo vplivale na vse spojene dokumente.\n\nS klikom na 'Uredi dokument ...' boste začasno zmanjšali čarovnika v majhno okno, da boste lahko uredili vaš dokument. Ko dokument uredite, se v čarovnika vrnete s klikom na 'Vrni se v čarovnika za spajanje dokumentov' v majhnem oknu."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "Zahtevana oblika odložišča ni na voljo."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "Ta oblika odseka je zastarela.\nČe želite shraniti spremembe,\njo je potrebno pretvoriti.\nJo želite zdaj pretvoriti?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "Sprotna opomba: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "Vsebine, ki je namenjena samo za branje, ni mogoče spremeniti.\nSpremembe ne bodo sprejete."
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "Možnosti"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "Nalepka \"%1 / %2\" že ibstaja.\nJo želite prepisati?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "Prebrskaj ..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "To pogovorno okno uporabite, če želite zamenjati podatkovno zbirko, do katere v svojem dokumentu dostopate preko polj te podatkovne zbirke. Naenkrat lahko naredite samo eno spremembo. V seznamu na levi strani je mogoča večkratna izbira.\nZa izbor podatkovne zbirke uporabite gumb za brskanje."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "Samopopravki"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "Samopopravljanje zaključeno.\nSprejmete ali zavržete lahko vse\nali pa le posamezne spremembe."
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "Vsota"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "Vnesli ste napačno ime.\nŽeleno samooblikovanje ne more biti ustvarjeno.\nPoskusite ponovno z drugim imenom."
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "Prvi ~stolpec kot napis"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "Če izbrane celice ne vsebujejo želenih podatkov, izberite nov obseg podatkov.\n\nČe želite v grafikon vključiti oznake vrstic in stolpcev, jih vključite v izbor."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "Ali želite preveriti glavno besedilo?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "Možnost Prikaži ukaze polja je potrjena.\nŽelite natisniti dokument z imeni polj?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Prva črka povedi z veliko začetnico"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "Zamenjaj \"navadne\" narekovaje z narekovaji %1 \\bpo meri%2"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[Sistem]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "Interaktivni črkovalnik je že aktiven\nv drugem dokumentu."
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "Interaktivno deljenje besed je že aktivno\nv drugem dokumentu."
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"

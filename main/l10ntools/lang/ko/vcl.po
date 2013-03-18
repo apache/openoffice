@@ -192,8 +192,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
-msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr "구성요소 (%s)을(를) 로드하지 못했습니다.\n설치를 시작한 다음 복구하십시오."
+msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
+msgstr ""
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -472,8 +472,8 @@ msgid  "Page %p of %n"
 msgstr "페이지 %p / %n"
 
 #: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "기본 프린터를 찾을 수 없습니다.\n프린터를 선택하고 다시 시도하시기 바랍니다."
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr ""
 
 #: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
 msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."

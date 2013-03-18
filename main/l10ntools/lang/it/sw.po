@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "Impossibile salvare il file completamente."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "Il documento HTML contiene macro %PRODUCTNAME Basic che\nnon sono state salvate con le impostazioni attuali di esportazione."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "Pagina vuota"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "Negli appunti ci sono molti dati.\nRendere il contenuto degli appunti disponibile per altre applicazioni?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "La conversione nel formato HTML \npuò causare perdita di informazioni \nSalvare il documento?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "La sorgente testo è visibile solo se il documento è stato salvato nel formato HTML.\nVolete salvare il documento nel formato HTML?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "Il vostro documento contiene un database Rubrica. Volete eseguire una stampa in serie?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -1365,7 +1365,7 @@ msgstr "Altezza ~ottimale"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_BALANCE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
-msgstr "~Distribuisci con regolarità"
+msgstr "~Distribuisci le colonne con regolarità"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_SELECT_ROW.MenuItem.Text
 msgid  "~Select"
@@ -1509,7 +1509,7 @@ msgstr "~Primo paragrafo"
 
 #: source/ui/app/mn.src#MN_DRAW_POPUPMENU.String.Text
 msgid  "Graphic"
-msgstr "Grafico"
+msgstr "Immagine"
 
 #: source/ui/app/mn.src#MN_WRAP_DRAW.MN_WRAP.FN_FRAME_NOWRAP.MenuItem.Text
 msgid  "~No Wrap"
@@ -1573,7 +1573,7 @@ msgstr "Campo di controllo"
 
 #: source/ui/app/mn.src#MN_DRWTXT_POPUPMENU.String.Text
 msgid  "Draw Object text"
-msgstr "Oggetto di disegno testo"
+msgstr "Oggetto di diesegno testo"
 
 #: source/ui/app/mn.src#MN_REDCOMMENT.FN_DELETE_COMMENT.MenuItem.Text
 msgid  "Delete ~Changes Note"
@@ -1897,7 +1897,7 @@ msgstr "Paragrafo"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_STD.PageItem.Text
 msgid  "Indents & Spacing"
-msgstr "Paragrafo"
+msgstr "Rientri e spaziature"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_ALIGN.PageItem.Text
 msgid  "Alignment"
@@ -2273,7 +2273,7 @@ msgstr "Altro"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PRINTEMPTYPAGES.CheckBox.Text
 msgid  "Print ~automatically inserted blank pages"
-msgstr "Stampa ~pagine vuote inserite automaticamente"
+msgstr "Stampa automaticamente le ~pagine vuote inserite"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PAPERFROMSETUP.CheckBox.Text
 msgid  "~Paper tray from printer settings"
@@ -2649,7 +2649,7 @@ msgstr "Attributi"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 msgid  "[None]"
-msgstr "[nessuno]"
+msgstr "[Nessuno]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item2.StringList.item
 msgid  "Bold"
@@ -2741,7 +2741,7 @@ msgstr "Contrassegno"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_MARKPOS.item1.StringList.item
 msgid  "[None]"
-msgstr "[Nessuno]"
+msgstr "[nessuno]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_MARKPOS.item2.StringList.item
 msgid  "Left margin"
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<Impostazioni utente>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "Volete cambiare le opzioni di compatibilità del modello di documento predefinito?\nQuesta operazione avrà effetto su tutti i nuovi documenti basati sul modello predefinito."
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2896,8 +2896,8 @@ msgid  "Caption"
 msgstr "Didascalia"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "Aggiungi didascalie automaticamente\ndurante l'inserimento di:"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "Non avete specificato un nuovo nome per l'allegato. Se volete, potete inserirlo ora."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "Per poter inviare i documenti di stampa in serie via posta elettronica, %PRODUCTNAME richiede informazioni sull'account e-mail da utilizzare.\n\n Volete inserire le informazioni sull'account ora?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "~Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "Nota:\nSeparate gli indirizzi e-mail con un punto e virgola (;)."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "Invio non riuscito (indirizzo non valido)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "La posta in uscita di %PRODUCTNAME contiene ancora messaggi.\nVolete uscire ugualmente?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "Modifica documento"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "Potete scrivere o modificare il contenuto del vostro documento. Le modifiche avranno effetto su tutti i documenti combinati.\n\nFacendo clic su 'Modifica documento...', la finestra della procedura guidata verrà ridotta temporaneamente per consentire la modifica del documento. Terminate le modifiche, potete tornare alla procedura guidata facendo clic su 'Torna alla Stampa guidata in serie' nella finestra ridotta."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4713,7 +4713,7 @@ msgstr "Formato proprio"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_PREFIX.FixedText.Text
 msgid  "Be~fore"
-msgstr "Davanti"
+msgstr "Da~vanti"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_SUFFIX.FixedText.Text
 msgid  "Aft~er"
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "Il formato appunti richiesto non è disponibile."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "Il formato dell'area è vecchio.\nÈ necessario convertirlo per\nsalvare le modifiche apportate.\nVolete convertirlo?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "Nota a piè pagina: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "La selezione si trova in una posizione protetta. \nPertanto non è possibile accettare alcuna modifica."
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5473,7 +5473,7 @@ msgstr "~Paragrafo..."
 
 #: source/ui/envelp/label.src#LABEL_STRING.#define.Text
 msgid  "Labels"
-msgstr "Etichette"
+msgstr "Busta"
 
 #: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
 msgid  "Business Cards"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "Opzioni"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "L'etichetta \"%1 / %2\" esiste già.\nVolete sovrascriverla?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6185,7 +6185,7 @@ msgstr "Qualsiasi record di dati"
 
 #: source/ui/fldui/fldui.src#STR_DBSETNUMBERFLD.String.Text
 msgid  "Record number"
-msgstr "Numero record dati"
+msgstr "Numero di record"
 
 #: source/ui/fldui/fldui.src#STR_PREVPAGEFLD.String.Text
 msgid  "Previous page"
@@ -6257,7 +6257,7 @@ msgstr "Paragrafi"
 
 #: source/ui/fldui/fldui.src#FLD_STAT_GRF.String.Text
 msgid  "Graphics"
-msgstr "Immagini"
+msgstr "Immagine"
 
 #: source/ui/fldui/fldui.src#FLD_STAT_OBJ.String.Text
 msgid  "Objects"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "Sfoglia..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "Questa finestra di dialogo vi permette di sostituire i database a cui si accede attraverso i campi database del documento con altri database. Potete effettuare un solo cambiamento alla volta. L'elenco di sinistra accetta le selezioni multiple.\nUsate il pulsante Sfoglia per selezionare un file di database."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -6673,7 +6673,7 @@ msgstr "F~ormato"
 
 #: source/ui/fldui/fldfunc.src#TP_FLD_FUNC.FT_FUNCNAME.FixedText.Text
 msgid  "Na~me"
-msgstr "No~me"
+msgstr "Nome"
 
 #: source/ui/fldui/fldfunc.src#TP_FLD_FUNC.FT_FUNCVALUE.FixedText.Text
 msgid  "~Value"
@@ -6853,7 +6853,7 @@ msgstr "Tipo"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_ADD.PageItem.Text
 msgid  "Options"
-msgstr "Extra"
+msgstr "Opzioni"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_WRAP.PageItem.Text
 msgid  "Wrap"
@@ -6881,7 +6881,7 @@ msgstr "Punti"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
 msgid  "Numbering Style"
-msgstr "Tipo numerazione"
+msgstr "Stile di numerazione"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
 msgid  "Outline"
@@ -6905,7 +6905,7 @@ msgstr "Stile di numerazione"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.TabDialog.Text
 msgid  "Frame"
-msgstr "Cornice"
+msgstr "~Frame"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_STD.PageItem.Text
 msgid  "Type"
@@ -7117,7 +7117,7 @@ msgstr "Posizione"
 
 #: source/ui/frmdlg/frmpage.src#TP_GRF_EXT.FL_CONNECT.FixedLine.Text
 msgid  "Link"
-msgstr "Collegamento"
+msgstr "Collega"
 
 #: source/ui/frmdlg/frmpage.src#TP_GRF_EXT.FT_CONNECT.FixedText.Text
 msgid  "~File name"
@@ -7589,11 +7589,11 @@ msgstr "Posizione"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_BEGINNING.String.Text
 msgid  "Above"
-msgstr "All'inizio"
+msgstr "Al di sopra"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_END.String.Text
 msgid  "Below"
-msgstr "Alla fine"
+msgstr "Al di sotto"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_ABOVE.String.Text
 msgid  "Above"
@@ -7937,7 +7937,7 @@ msgstr "Altri stili"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.ST_USER_ADDSTYLE.String.Text
 msgid  "Styl~es"
-msgstr "Stili"
+msgstr "~Stili"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.CB_TOXMARKS.CheckBox.Text
 msgid  "Inde~x marks"
@@ -8149,7 +8149,7 @@ msgstr "Voce"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TAB_STOP.String.Text
 msgid  "Tab stop"
-msgstr "Tabulazione"
+msgstr "~Tabulazione"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TEXT.String.Text
 msgid  "Text"
@@ -8333,7 +8333,7 @@ msgstr "Criteri"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.STR_NOSORTKEY.String.Text
 msgid  "<None>"
-msgstr "<nessuno>"
+msgstr "<Nessuno>"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.STR_NO_CHAR_STYLE.String.Text
 msgid  "<None>"
@@ -9437,7 +9437,7 @@ msgstr "Numerazione"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_OFFSET.FixedText.Text
 msgid  "~Start at"
-msgstr "Ini~zia con"
+msgstr "Inizia con"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_NUMCOUNT.FixedText.Text
 msgid  "~Counting"
@@ -9461,7 +9461,7 @@ msgstr "Davanti"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_SUFFIX.FixedText.Text
 msgid  "~After"
-msgstr "Die~tro"
+msgstr "Dietro"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_POS.FixedText.Text
 msgid  "Position"
@@ -9477,15 +9477,15 @@ msgstr "Fine documento"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_TEMPL.FixedLine.Text
 msgid  "Styles"
-msgstr "Stili"
+msgstr "Stili di formato"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PARA_TEMPL.FixedText.Text
 msgid  "Pa~ragraph"
-msgstr "Paragrafo"
+msgstr "Pa~ragrafo"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PAGE_TEMPL.FixedText.Text
 msgid  "~Page"
-msgstr "Pagina"
+msgstr "~Pagina"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CHAR_TEMPL.FixedLine.Text
 msgid  "Character Styles"
@@ -9493,7 +9493,7 @@ msgstr "Stili di carattere"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 msgid  "Te~xt area"
-msgstr "Area del testo"
+msgstr "Area di te~sto"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_TEXT_CHARFMT.FixedText.Text
 msgid  "~Footnote area"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "Correzione automatica"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "La correzione automatica è terminata.\nPotete accettare o rifiutare tutte le modifiche oppure\naccettare o rifiutare singolarmente le modifiche."
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "somma"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "Nome specificato non valido.\nImpossibile creare la Formattazione automatica desiderata.\nScegliete un altro nome."
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "Prima colonna come didascalia"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "Se le celle selezionate non contengono i dati desiderati, selezionate l'area dati.\n\nIncludete le celle contenenti le intestazioni di righe o colonne se si desidera includerle nel grafico."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10605,7 +10605,7 @@ msgstr "Testo"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 msgid  "Left-to-right"
-msgstr "Da sinistra a destra"
+msgstr "Sinistra-destra"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.1.StringList.item
 msgid  "Right-to-left"
@@ -10613,7 +10613,7 @@ msgstr "Da destra a sinistra"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
 msgid  "Use superordinate object settings"
-msgstr "Usa le impostazioni dell'oggetto superiore"
+msgstr "Usa impostazioni degli oggetti di livello superiore"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 msgid  "Adapt table ~width"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "Controllare il testo principale?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "L'opzione Mostra nome campo è attivata.\nDesiderate stampare il documento con i nomi dei campi?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Inizia ogni frase con la maiuscola"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "Sostituisci virgolette \"standard\" con virgolette %1 \\btipografiche%2"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[Sistema]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "Il controllo ortografico interattivo è già attivo\nin un altro documento"
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "La sillabazione interattiva è già attiva\nin un altro documento"
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"

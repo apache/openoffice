@@ -72,7 +72,7 @@ msgid  "The data source was not saved. Please use the interface XStorable to sav
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
-msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
@@ -192,7 +192,7 @@ msgid  "There are tables in the database whose names conflict with the names of 
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
-msgid  "The SQL command leading to this error is:\n\n$command$"
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
@@ -224,11 +224,11 @@ msgid  "Unable to find the document '$name$'."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
-msgid  "Could not save the document to $location$:\n$message$"
+msgid  "Could not save the document to $location$:\\n$message$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
-msgid  "Error accessing data source '$name$':\n$error$"
+msgid  "Error accessing data source '$name$':\\n$error$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
@@ -412,7 +412,7 @@ msgid  "The backup file entered does not exist."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
-msgid  "The fully qualified file cannot be longer than \'#\' characters."
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
@@ -432,7 +432,7 @@ msgid  "The specified file name or directory does not exist."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
@@ -496,7 +496,7 @@ msgid  "Welcome to the Database Macro Migration Wizard"
 msgstr ""
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
-msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
 msgstr ""
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
@@ -716,10 +716,12 @@ msgid  "Create View..."
 msgstr ""
 
 #: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
+#, fuzzy
 msgid  "Forms"
 msgstr "فرم‌ها"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
+#, fuzzy
 msgid  "Reports"
 msgstr "گزارش‌ها"
 
@@ -780,6 +782,7 @@ msgid  "Select All"
 msgstr ""
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.MN_PROPS.MenuItem.Text
+#, fuzzy
 msgid  "~Database"
 msgstr "~پایگاه‌داده"
 
@@ -848,6 +851,7 @@ msgid  "Opens the view wizard"
 msgstr ""
 
 #: source/ui/app/app.src#STR_DATABASE.String.Text
+#, fuzzy
 msgid  "Database"
 msgstr "پایگاه داده‌"
 
@@ -856,23 +860,26 @@ msgid  "Tasks"
 msgstr ""
 
 #: source/ui/app/app.src#STR_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "Description"
 msgstr "شرح"
 
 #: source/ui/app/app.src#STR_PREVIEW.String.Text
+#, fuzzy
 msgid  "Preview"
 msgstr "پیش‌نمایش"
 
 #: source/ui/app/app.src#STR_DISABLEPREVIEW.String.Text
+#, fuzzy
 msgid  "Disable Preview"
 msgstr "از کار انداختن پیش‌نمایش"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
-msgid  "The database has been modified.\nDo you want to save the changes?"
+msgid  "The database has been modified.\\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
 msgstr ""
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
@@ -888,22 +895,27 @@ msgid  "Document"
 msgstr ""
 
 #: source/ui/app/app.src#RID_STR_FORM.String.Text
+#, fuzzy
 msgid  "Form"
 msgstr "فرم"
 
 #: source/ui/app/app.src#RID_STR_REPORT.String.Text
+#, fuzzy
 msgid  "Report"
 msgstr "گزارش"
 
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
+#, fuzzy
 msgid  "F~orm name"
 msgstr "نام ف~رم"
 
 #: source/ui/app/app.src#STR_RPT_LABEL.String.Text
+#, fuzzy
 msgid  "~Report name"
 msgstr "نام ~گزارش"
 
 #: source/ui/app/app.src#STR_FOLDER_LABEL.String.Text
+#, fuzzy
 msgid  "F~older name"
 msgstr "نام ~پوشه"
 
@@ -912,7 +924,7 @@ msgid  "The document contains forms or reports with embedded macros."
 msgstr ""
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
-msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
 msgstr ""
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
@@ -928,90 +940,111 @@ msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
-msgid  "The current record has been changed.\nDo you want to save the changes?"
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "آیا می‌خواهید داده‌های انتخاب شده را حذف کنید؟"
 
 #: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+#, fuzzy
 msgid  "(filtered)"
 msgstr "(صافی شده)"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "خطا در تنظیم معیار برای مرتب‌سازی"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "خطا در تنظیم معیار برای صافی"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+#, fuzzy
 msgid  "Connection lost"
 msgstr "اتصال قطع شد"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Queries"
 msgstr "پرس‌وجو‌ها"
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "جدول‌ها"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+#, fuzzy
 msgid  "Edit ~Database File..."
 msgstr "ویرایش ‍~پروندهٔ پایگاه‌داده!"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+#, fuzzy
 msgid  "Registered databases ..."
 msgstr "ویرایش ‍~پروندهٔ پایگاه‌داده"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+#, fuzzy
 msgid  "Disco~nnect"
 msgstr "~قطع اتصال"
 
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "تصدیق حذف"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "آیا می‌خواهید جدول «%1» را حذف کنید؟"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
 msgstr "پرس و جو از قبل وجود دارد. آیا می‌خواهید آن را حذف کنید؟"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "اتصال با پایگاه‌داده قطع شد. آیا می‌خواهید دوباره متصل شوید؟"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+#, fuzzy
 msgid  "Warnings encountered"
 msgstr "اخطار دریافت شد"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
 msgstr "در حال بازیابی جدول‌ها، اخطارهایی از اتصال پایگاه‌داده دریافت شدند."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
 msgstr "در حال اتصال به «$name$» ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "در حال بار کردن پرس و جوی $name$ ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "در حال بار کردن جدول $name$ ..."
 
 #: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+#, fuzzy
 msgid  "No table format could be found."
 msgstr "قالب جدولی پیدا نشد."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "برقراری اتصال با منبع دادهٔ «$name$» ممکن نیست."
 
@@ -1020,82 +1053,102 @@ msgid  "Rebuild"
 msgstr ""
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+#, fuzzy
 msgid  "Column ~Format..."
 msgstr "~قالب ستون..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "نسخه‌برداری از شر~ح ستون"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+#, fuzzy
 msgid  "Table Format..."
 msgstr "قالب جدول..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Row Height..."
 msgstr "ارتفاع ردیف..."
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "برگرداندن: ورود داده"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+#, fuzzy
 msgid  "Save current record"
 msgstr "ذخیرهٔ این رکورد"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+#, fuzzy
 msgid  "Query #"
 msgstr "پرس و جوی شمارهٔ "
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "جدول شماره‌ی "
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+#, fuzzy
 msgid  "View #"
 msgstr "نمای شمارهٔ "
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+#, fuzzy
 msgid  "The name \"#\" already exists."
 msgstr "نام «#» از قبل وجود دارد.!"
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+#, fuzzy
 msgid  "No matching column names were found."
 msgstr "ستونی به این نام پیدا نشد."
 
 #: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
 msgstr "خطایی رخ داد. آیا می‌خواهید نسخه‌برداری را ادامه دهید؟"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+#, fuzzy
 msgid  "Data source table view"
 msgstr "نمای جدولی منبع داده"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+#, fuzzy
 msgid  "Shows the selected table or query."
 msgstr "جدول یا پرس و جویی انتخاب شده را نشان می‌دهد."
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "جدول شماره‌ی "
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "تغییر جمله‌(ها)ی SQL"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+#, fuzzy
 msgid  "Table name"
 msgstr "نام جدول"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+#, fuzzy
 msgid  "Insert data"
 msgstr "درج داده‌ها"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+#, fuzzy
 msgid  "Delete data"
 msgstr "حذف داده‌ها"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+#, fuzzy
 msgid  "Modify data"
 msgstr "تغییر داده‌ها"
 
@@ -1104,6 +1157,7 @@ msgid  "Alter structure"
 msgstr ""
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+#, fuzzy
 msgid  "Read data"
 msgstr "خواندن داده‌ها"
 
@@ -1116,10 +1170,12 @@ msgid  "Drop structure"
 msgstr ""
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Ascending"
 msgstr "مرتب‌سازی صعودی"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Descending"
 msgstr "مرتب‌سازی نزولی"
 
@@ -1144,14 +1200,17 @@ msgid  "Successfully connected, but information about database tables is not ava
 msgstr ""
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+#, fuzzy
 msgid  "All tables"
 msgstr "همهٔ جدول‌ها"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+#, fuzzy
 msgid  "All views"
 msgstr "همهٔ نماها"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+#, fuzzy
 msgid  "All tables and views"
 msgstr "همهٔ جدول‌ها و نما‌ها"
 
@@ -1625,7 +1684,7 @@ msgid  "A password is needed to connect to the data source \"$name$\"."
 msgstr ""
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
-msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
 msgstr ""
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
@@ -1697,14 +1756,17 @@ msgid  "Queries"
 msgstr ""
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "ا~ضافه کردن"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~بستن"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
+#, fuzzy
 msgid  "Add Tables"
 msgstr "همهٔ جدول‌ها!"
 
@@ -1814,7 +1876,7 @@ msgid  "Database"
 msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
-msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
 msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
@@ -1830,7 +1892,7 @@ msgid  "Could not load the program library #lib# or it is corrupted. The ODBC da
 msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
-msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
 msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
@@ -2001,14 +2063,17 @@ msgid  "Insert as"
 msgstr ""
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "مسیر پرونده‌های dBASE"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the text files"
 msgstr "مسیر پرونده‌های متنی"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "مسیر نوشتار صفحه‌گسترده"
 
@@ -2017,10 +2082,12 @@ msgid  "Name of the ODBC data source on your system"
 msgstr ""
 
 #: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
+#, fuzzy
 msgid  "Name of the MySQL database"
 msgstr "نام پایگاه‌دادهٔ MySQL"
 
 #: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
+#, fuzzy
 msgid  "Name of the Oracle database"
 msgstr "نام پایگاه‌دادهٔ اوراکل"
 
@@ -2168,10 +2235,12 @@ msgid  "Database sizes"
 msgstr ""
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "ا~ندازه (مگابایت):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "فضای حافظهٔ خالی (مگابایت):"
 
@@ -2410,7 +2479,7 @@ msgid  "Set up a connection to a MySQL database"
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
-msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
@@ -2486,7 +2555,7 @@ msgid  "Set up connection to a MySQL database using JDBC"
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
-msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
@@ -2539,7 +2608,7 @@ msgid  "Set up a connection to an LDAP directory"
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
-msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
@@ -2555,7 +2624,7 @@ msgid  "Set up a connection to an Adabas D database"
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
-msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
@@ -2563,7 +2632,7 @@ msgid  "Set up a connection to an ADO database"
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
-msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
@@ -2571,7 +2640,7 @@ msgid  "Set up a connection to an ODBC database"
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
-msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
@@ -2579,7 +2648,7 @@ msgid  "Set up a connection to a JDBC database"
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
-msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
@@ -2595,7 +2664,7 @@ msgid  "Oracle JDBC ~driver class"
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
-msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
@@ -2603,7 +2672,7 @@ msgid  "Set up a connection to spreadsheets"
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
-msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
 msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
@@ -2719,7 +2788,7 @@ msgid  "{None}"
 msgstr ""
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
 msgstr ""
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
@@ -2747,38 +2816,47 @@ msgid  "Socket"
 msgstr ""
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+#, fuzzy
 msgid  "Refresh"
 msgstr "نوسازی"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~View Design"
 msgstr "طرح ~نمای جدید"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Table Design"
 msgstr "طرح ~جدول جدید"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "نگارش خودکار پرس و جو..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "~پرس و جوی جدید (نمای طراحی)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "~Edit Query"
 msgstr "~ویرایش پرس و جو"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "پر~س و جوی جدید (نمای SQL)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "ویرایش..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+#, fuzzy
 msgid  "Column ~Width..."
 msgstr "~عرض ستون..."
 
@@ -2787,10 +2865,12 @@ msgid  "Report Wizard..."
 msgstr ""
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "از نگارش خودکار"
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+#, fuzzy
 msgid  "System"
 msgstr "سیستم"
 
@@ -2811,6 +2891,7 @@ msgid  "The table cannot be deleted because the database connection does not sup
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+#, fuzzy
 msgid  "~All"
 msgstr "~همه"
 
@@ -2835,7 +2916,7 @@ msgid  "Warnings were encountered while connecting to the data source. Press \"$
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
-msgid  "The name '$#$' already exists.\nPlease enter another name."
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
@@ -2851,7 +2932,7 @@ msgid  "Type formatting"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
-msgid  "The following fields have already been set as primary keys:\n"
+msgid  "The following fields have already been set as primary keys:\\n"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
@@ -2863,10 +2944,12 @@ msgid  "Copy RTF Table"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~راهنما"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "ان~صراف"
 
@@ -2879,6 +2962,7 @@ msgid  "~Next>"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
+#, fuzzy
 msgid  "C~reate"
 msgstr "ا~یجاد"
 
@@ -2903,26 +2987,30 @@ msgid  "Primary Key"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
-msgid  "Source table: \n"
+msgid  "Source table: \\n"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
-msgid  "Destination table: \n"
+msgid  "Destination table: \\n"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
+#, fuzzy
 msgid  "~All"
 msgstr "~همه"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
+#, fuzzy
 msgid  "Non~e"
 msgstr "هی~چ‌کدام"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
+#, fuzzy
 msgid  "Ta~ble name"
 msgstr "نام ج~دول"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "گزینه‌ها"
 
@@ -2951,6 +3039,7 @@ msgid  "Crea~te primary key"
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
+#, fuzzy
 msgid  "Name"
 msgstr "نام"
 
@@ -3063,14 +3152,17 @@ msgid  "Resize table window"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+#, fuzzy
 msgid  "Delete Column"
 msgstr "حذف ستون"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+#, fuzzy
 msgid  "Move column"
 msgstr "جابه‌جا کردن ستون"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+#, fuzzy
 msgid  "Add Column"
 msgstr "اضافه کردن ستون"
 
@@ -3091,10 +3183,12 @@ msgid  "Delete Table Window"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+#, fuzzy
 msgid  "Edit Column Description"
 msgstr "ویرایش شرح ستون"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+#, fuzzy
 msgid  "Adjust column width"
 msgstr "تنظیم عرض ستون"
 
@@ -3235,7 +3329,7 @@ msgid  " - %PRODUCTNAME Base: View Design"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
-msgid  "$object$ has been changed.\nDo you want to save the changes?"
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
@@ -3267,6 +3361,7 @@ msgid  "Both the ActiveConnection and the DataSourceName parameter are missing o
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "این رابطه از قبل وجود دارد. می‌خواهید آن را ویرایش کنید؟"
 
@@ -3283,11 +3378,12 @@ msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+#, fuzzy
 msgid  "The database does not support relations."
 msgstr "پایگاه‌داده رابطه‌ها را پشتیبانی نمی‌کند."
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
@@ -3295,7 +3391,7 @@ msgid  "When you delete this table all corresponding relations will be deleted a
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
-msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
@@ -3303,30 +3399,37 @@ msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Ima
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "درج/حذف کلید اصلی"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "بله"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "نه"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+#, fuzzy
 msgid  "Ascending"
 msgstr "صعودی"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+#, fuzzy
 msgid  "Descending"
 msgstr "نزولی"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+#, fuzzy
 msgid  "<none>"
 msgstr "<هیچ‌کدام>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+#, fuzzy
 msgid  "Field name"
 msgstr "نام فیلد"
 
@@ -3469,11 +3572,11 @@ msgid  "Format example"
 msgstr "مثال قالب"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
-msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
-msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
@@ -3491,7 +3594,7 @@ msgid  "Enter the number format."
 msgstr "قالب عدد را وارد کنید."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
-msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
@@ -3510,7 +3613,7 @@ msgid  "This is where you determine the output format of the data."
 msgstr "اینجا جایی است که قالب خروجی داده‌ها تعیین می‌شود."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
-msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
@@ -3549,11 +3652,11 @@ msgid  "Warning!"
 msgstr "اخطار!"
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The table has been changed.\nDo you want to save the changes?"
+msgid  "The table has been changed.\\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
@@ -3567,7 +3670,7 @@ msgid  "The table filter could not be adjusted because the data source has been 
 msgstr "نمی‌توان صافی جدول را تنظیم کرد چون منبع داده حذف شده است."
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
@@ -3576,7 +3679,7 @@ msgid  "No primary key"
 msgstr "بدون کلید اصلی"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
-msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
@@ -3606,11 +3709,11 @@ msgid  "A~uto-increment statement"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
-msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
-msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
@@ -3634,10 +3737,12 @@ msgid  "change field attribute"
 msgstr "تغییر مشخصهٔ فیلد"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~به خاطر سپردن گذرواژه تا نشست بعدی"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+#, fuzzy
 msgid  "~Remember password"
 msgstr "~به خاطر سپردن گذرواژه"
 

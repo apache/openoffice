@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "<current_date> वरील <wizard_name> द्वारा प्रपत्र निर्माण केले."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "विझार्ड चालू करता आले नाही कारण महत्त्वपूर्ण फाइल सापडल्या नाहीत.\nमूळच्या मूळस्थिती नियंत्रणाकडील मार्गाची पुन्हा मांडणी करण्यासाठी 'साधने - पर्याय - %PRODUCTNAME - मार्ग' मधील 'मूळस्थिती' कीवर क्लिक करा.\nनंतर पुन्हा विझार्ड चालू करा."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "नमुन्यातील क्षेत्रं (~t)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "बायनरी प्रक्षेत्रं नहेमीच सूचीबद्ध केलेले असतात व राहिलेल्या यादीतून निवडली जातात.\nशक्य असल्यास, त्यांना प्रतिमा म्हणून ओळखले जाते."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "उपनमुना ते नमुना असते जे दुसऱ्या नमुन्यात अंतर्भुत केले जाते.\nकोष्टक किंवा शंकेतील डाटा एकास-अनेक संबंध रूपात दाखविण्यासाठी उपनमुन्याचा उपयोग करा."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "नमुन्यातील  क्षेत्रं"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "'<FIELDNAME1>' व '<FIELDNAME2>' जोडाची दोनदा निवड झाली.\nपण जोडांचा उपयोग फक्त एकदाच करता येतो."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -732,8 +732,9 @@ msgid  "~Page Styles"
 msgstr "पान शैली (~P)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 80.String.Text
+#, fuzzy
 msgid  "Field selection"
-msgstr "क्षेत्राची निवड"
+msgstr " क्षेत्राची निवड"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 81.String.Text
 msgid  "Set up a subform"
@@ -804,8 +805,8 @@ msgid  "Set the name of the form"
 msgstr "नमुना नावाची मांडणी करा"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "'%FORMNAME' नावाचा नमुना  आधीपासूनच अस्तित्वात आहे.\nदूसरे नाव निवडा."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -864,8 +865,9 @@ msgid  "Aggregate functions"
 msgstr "एकूण कार्ये"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 17.String.Text
+#, fuzzy
 msgid  "Fields"
-msgstr "क्षेत्र"
+msgstr " क्षेत्र"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 18.String.Text
 msgid  "~Group by"
@@ -874,7 +876,7 @@ msgstr "गट नुरूप (~G)"
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 19.String.Text
 #, fuzzy
 msgid  "Field"
-msgstr "क्षेत्र"
+msgstr " क्षेत्र"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 20.String.Text
 #, fuzzy
@@ -1464,7 +1466,7 @@ msgstr "नामनिर्देशक पट्टी"
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 71.String.Text
 #, fuzzy
 msgid  "Field"
-msgstr " क्षेत्र"
+msgstr "क्षेत्र"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 #, fuzzy
@@ -1584,7 +1586,7 @@ msgstr "प्रकार व स्वरूपणाची मांडणी
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 4.String.Text
 #, fuzzy
 msgid  "Set primary key"
-msgstr "प्राथमिक की ची मांडणी करा"
+msgstr "प्राथमिक की ची मांडणी  करा"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 5.String.Text
 #, fuzzy
@@ -1719,7 +1721,7 @@ msgstr "अभिनंदन. कोष्टक निर्माण कर�
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 #, fuzzy
 msgid  "What do you want to do next?"
-msgstr "आपणास आता पुढे काय करायचे आहे?"
+msgstr "आपणास आत्ता पुढे काय करायचे आहे?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
 #, fuzzy
@@ -1777,9 +1779,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "क्षेत्र अंतर्भूत करता आले नाही कारण ह्याने माहितीकोश कोष्टकातील %COUNT संभवत क्षेत्रांच्या कमाल संख्येपेक्षा अधिक झाले"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-#, fuzzy
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "'%TABLENAME' नाव आधीपासूनच अस्तित्वात आहे.\nकृपया दूसरे नाव एन्टर करा."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 #, fuzzy
@@ -1804,7 +1805,7 @@ msgstr "पत्र विझार्ड"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 2.String.Text
 #, fuzzy
 msgid  "Label9"
-msgstr "लेबल9"
+msgstr "नामनिर्देशक पट्टी9"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 3.String.Text
 #, fuzzy
@@ -1934,12 +1935,12 @@ msgstr "ह्या पत्र नमुन्यांत मॅन्यु
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 28.String.Text
 #, fuzzy
 msgid  "Page design"
-msgstr "पान रचना"
+msgstr "पान  नक्षी"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 29.String.Text
 #, fuzzy
 msgid  "Page design"
-msgstr "पान रचना"
+msgstr "पानाची रचना"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 30.String.Text
 #, fuzzy
@@ -2304,7 +2305,7 @@ msgstr "पायथासमास मजकूरासाठी मजकू�
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
 #, fuzzy
 msgid  "Choose a name and save the template"
-msgstr "नाव निवडा व नमुना जतन करा"
+msgstr "नाव निवडा व प्रारूप जतन करा"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
 #, fuzzy
@@ -2432,9 +2433,8 @@ msgid  "Web Wizard"
 msgstr "वेब विझार्ड"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-#, fuzzy
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "ह्या वेब विझार्डचा उपयोग इंटरनेटवरील कागदपत्र प्रकाशित करण्यात आपली मदत करण्यासाठी केला जातो.\n\nते कागदपत्र रूपांतरित करेल जेणेकरून ते वेब ब्राऊजर वर पहाता येईल. ह्याच्या व्यतिरिक्त, कागदपत्रात सहज प्रवेश मिळविण्यासाठी हे लिंक सह विषयांची कोष्टक पृष्ठ निर्माण करेल. वेब विझार्ड आपणासाठी आपल्या वेब साईटची नक्षी व मांडणी पूर्वनियत करणे देखील शक्य करेल.\n\nआपण वेब वर प्रकाशित केले कागदपत्र अद्ययावत ठेऊ शकता व कागदपत्र केव्हाही समाविष्ट करू किवां काढून टाकू शकता."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 #, fuzzy
@@ -2957,9 +2957,8 @@ msgid  "Preview"
 msgstr "पूर्वदृश्य"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-#, fuzzy
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "निवडलेली नियंत्रणे काढून टाकली जातील.\n\nआपणास खरोखरीच ही नियंत्रणे काढून टाकायची आहेत का? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 #, fuzzy
@@ -3042,9 +3041,8 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "FTP डिरेक्टरी '%FILENAME' निर्माण करता आली नाही."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-#, fuzzy
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP डिरेक्टरी '%FILENAME' अस्तित्वात नाही. \nआता डिरेक्टरी निर्माण करायची का?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 #, fuzzy
@@ -3052,14 +3050,12 @@ msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name
 msgstr "Zip फाइल '%FILENAME' निर्माण करता आली नाही: त्याच नावाची डिरेक्टरी आधीपासूनच अस्तित्वात आहे."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-#, fuzzy
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "स्थानिक डिरेक्टरी '%FILENAME' निर्माण करता आली नाही. \nकृपया आपला लेखन-प्रवेश तपासा."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-#, fuzzy
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "स्थानिक डिरेक्टरी '%FILENAME' अस्तित्वात नाही. \nडिरेक्टरी आत्ता निर्माण करायची का?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 #, fuzzy
@@ -3512,729 +3508,911 @@ msgid  "Move down"
 msgstr "खाली हलवा"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "मदत (~H)"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "रद्द करा (~C)"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
+#, fuzzy
 msgid  "<< ~Back"
 msgstr "<< मागे (~B)"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
+#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "पुढचा >> (~x)"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
+#, fuzzy
 msgid  "~Convert"
 msgstr "रूपांतरीत करा (~C)"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "बंद करा (~C)"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
+#, fuzzy
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
 msgstr "हे विझार्ड %PRODUCTNAME स्वरूपणातील  दस्तऐवजे आणि मायक्रोसॉफ्ट ऑफीस दस्तऐवजे नवीन उघडे दस्तऐवजे स्वरूपणांत रूपांतरित करते."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
+#, fuzzy
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
 msgstr "कृपया नोंद घ्या की मायक्रोसॉफ्ट दस्तऐवजे रूपांतरित करतांना जोडलेल्या कोणत्याही VBA मॅक्रोजची कार्यशीलता गहाळ होते."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
+#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "रूपांतरणासाठी दस्तऐवज प्रकार निवडा:"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Word templates"
 msgstr "वर्ड नमुने"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Excel templates"
 msgstr "एक्सेल नमुने"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
+#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "पॉवरपॉईंट नमुने"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Word documents"
 msgstr "वर्ड दस्तऐवजे"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Excel documents"
 msgstr "एक्सेल दस्तऐवजे"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
+#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "पॉवरपॉईंट दस्तऐवजे"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
+#, fuzzy
 msgid  "Including subdirectories"
 msgstr "उपडिरेक्टरी समाविष्ट करणे"
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
+#, fuzzy
 msgid  "Microsoft Office"
 msgstr "मायक्रोसॉफ्ट ऑफीस"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
+#, fuzzy
 msgid  "Summary:"
 msgstr "सारांश:"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
+#, fuzzy
 msgid  "Import from:"
 msgstr "कडून आणा:"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
+#, fuzzy
 msgid  "Save to:"
 msgstr "मध्ये जतन करा:"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
+#, fuzzy
 msgid  "Imported_Templates"
 msgstr "Imported_Templates"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
+#, fuzzy
 msgid  "Progress: "
 msgstr "प्रगती: "
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "दस्तऐवज"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
+#, fuzzy
 msgid  "Documents"
 msgstr "दस्तऐवजे"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "साचे"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
+#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr "'%1' डिरेक्टरी निर्माण करता येत नाही: "
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
+#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr " '%1'  डिरेक्टरी आस्तित्वात नाही."
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
+#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "आपणास आता ते निर्माण करायचे आहे का ?"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
+#, fuzzy
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "'<1>' फाइल आधीपासूनच अस्तित्वात आहे. आपणास <CR> त्यावर दुसरी फाइल घालायची आहे का ?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
+#, fuzzy
 msgid  "Directories do not exist"
 msgstr "डिरेक्टरीज अस्तित्वात नाहीत."
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
+#, fuzzy
 msgid  "Do you want to overwrite documents without being asked?"
 msgstr "आपणास विचारल्याशिवाय दस्तऐवजांना खोडून पुनः लिहायचे?"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
+#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "दस्तऐवज मॅक्रोची परत उजळणी आवश्यक आहे."
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
+#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "दस्तऐवज '<1>' साठवणे शक्य नाही."
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
+#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr "दस्तऐवज '<1>'  उघडणे शक्य नाही."
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
+#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "आपणास या ठिकाणी रूपांतरण थांबवायचे आहे का ?"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
+#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "रद्द करण्याचे विझार्ड"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
+#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "विझार्डमध्ये अनपेक्षित दोष आला आहे. "
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
+#, fuzzy
 msgid  "Error"
 msgstr "दोष"
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
+#, fuzzy
 msgid  "Select a directory"
 msgstr "डिरेक्टरी निवडा"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
+#, fuzzy
 msgid  "Document Converter"
 msgstr "दस्तऐवज रूपांतरकार"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
+#, fuzzy
 msgid  "Progress"
 msgstr "प्रगती"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
+#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "संबंधित दस्तऐवजे पुनःप्राप्त करत आहे:"
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
+#, fuzzy
 msgid  "Converting the documents"
 msgstr "दस्तऐवजे रूपांतरित करत आहे"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
+#, fuzzy
 msgid  "Found:"
 msgstr "सापडले:"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
+#, fuzzy
 msgid  "%1 found"
 msgstr "%1 सापडले"
 
 #: source/importwizard/importwi.src#sReady.String.Text
+#, fuzzy
 msgid  "Finished"
 msgstr "समाप्त झाले"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Text templates"
 msgstr "मजकूर साचे"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "स्प्रेडशीट साचे"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
+#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "रेखांकन/सादरीकरण साचे"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
+#, fuzzy
 msgid  "Master documents"
 msgstr "प्रधान दस्तऐवजे"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Text documents"
 msgstr "मजकूर दस्तऐवजे"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Spreadsheets"
 msgstr "स्प्रेडशीट्स"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
+#, fuzzy
 msgid  "Drawing/presentation documents"
 msgstr "रेखांकन/सादरीकरण दस्तऐवजे"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
+#, fuzzy
 msgid  "Master documents/formulas"
 msgstr "प्रधान दस्तऐवजे/सूत्रं"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
+#, fuzzy
 msgid  "Master documents"
 msgstr "प्रधान दस्तऐवजे"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
+#, fuzzy
 msgid  "Formulas"
 msgstr "सूत्रे"
 
 #: source/importwizard/importwi.src#sSourceDocuments.String.Text
+#, fuzzy
 msgid  "Source documents"
 msgstr "दस्तऐवजांचे स्रोत"
 
 #: source/importwizard/importwi.src#sTargetDocuments.String.Text
+#, fuzzy
 msgid  "Target documents"
 msgstr "लक्ष्य दस्तऐवजे"
 
 #: source/importwizard/importwi.src#sCreateLogfile.String.Text
+#, fuzzy
 msgid  "Create log file"
 msgstr "लॉग फाइल निर्माण करा"
 
 #: source/importwizard/importwi.src#sLogfileSummary.String.Text
+#, fuzzy
 msgid  "<COUNT> documents converted"
 msgstr " <COUNT> दस्तऐवजे रूपांतरित केले"
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
+#, fuzzy
 msgid  "A log file will be created in your work directory"
 msgstr "आपल्या कामाच्या डिरेक्टरीमध्ये लॉग फाइल तयार केली जाईल"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
+#, fuzzy
 msgid  "Show log file"
 msgstr "लॉग फाइल दाखवा"
 
 #: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
+#, fuzzy
 msgid  "All subdirectories will be taken into account"
 msgstr "सर्व उपडिरेक्टरीज गृहीत धरले जातील"
 
 #: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
+#, fuzzy
 msgid  "These will be exported to the following directory:"
 msgstr "खालील डिरेक्टरीत हे पाठवले जातील:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व %PRODUCTNAME मजकूर दस्तऐवजे आयात केले जातील:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीत समाविष्ट असलेल्या सर्व %PRODUCTNAME स्प्रेडशीट्स आणल्या जातील:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व %PRODUCTNAME रेखांकन आणि सादरीकरण दस्तऐवजे आयात केले जालीत:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व %PRODUCTNAME सूत्र दस्तऐवजे आयात केले जालीत:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व %PRODUCTNAME मजकूर साचे आणला जातील:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व %PRODUCTNAME कोष्टक साचे आणले जातील:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व %PRODUCTNAME रेखांकन आणि सादरीकरणाचे साचे आयात केले जालीत:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व %PRODUCTNAME प्रधान दस्तऐवजे आयात केले जालीत:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
+#, fuzzy
 msgid  "All Word documents contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व वर्ड दस्तऐवजे आयात केले जालीत:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
+#, fuzzy
 msgid  "All Excel documents contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व एक्सेल दस्तऐवजे आयात केले जालीत:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
+#, fuzzy
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व पॉवरपॉइंट दस्तऐवजेतील:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
+#, fuzzy
 msgid  "All Word templates contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व वर्ड साचे आयात केले जातील:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
+#, fuzzy
 msgid  "All Excel templates contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व एक्सेल नमुन्यास आणले  जाईल:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
+#, fuzzy
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
 msgstr "खालील डिरेक्टरीमध्ये समाविष्टीत सर्व पॉवरपॉइंट नमुन्यास आणले  जाईल:  "
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Calendar"
 msgstr "%PRODUCTNAME दिनदर्शिका"
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
+#, fuzzy
 msgid  "Back"
 msgstr "मागे"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "वैयक्तिक डाटा"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
+#, fuzzy
 msgid  "Add Holidays to Calendar"
 msgstr "दिनदर्शिकेत सुट्ट्या जोडा."
 
 #: source/schedule/schedule.src#dlgOK.String.Text
+#, fuzzy
 msgid  "Create"
 msgstr "तयार करा"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "रद्द करा"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "दिनदर्शिका"
 
 #: source/schedule/schedule.src#dlgCalOptionYear.String.Text
+#, fuzzy
 msgid  "~Year Overview"
 msgstr "वर्षाचा आढावा (~Y)"
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
+#, fuzzy
 msgid  "~Month"
 msgstr "महिना (~M)"
 
 #: source/schedule/schedule.src#dlgSchdlDescription.String.Text
+#, fuzzy
 msgid  "Add holidays for"
 msgstr "साठी सुट्ट्या जोडा."
 
 #: source/schedule/schedule.src#dlgSchdlCountry.String.Text
+#, fuzzy
 msgid  "USA"
 msgstr "USA"
 
 #: source/schedule/schedule.src#dlgTime.String.Text
+#, fuzzy
 msgid  "Time Frame"
 msgstr "काल मर्यादा"
 
 #: source/schedule/schedule.src#dlgYear.String.Text
+#, fuzzy
 msgid  "Year"
 msgstr "वर्ष"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "महिना"
 
 #: source/schedule/schedule.src#dlgCalOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "वैयक्तिक डाटा"
 
 #: source/schedule/schedule.src#dlgCalInsert.String.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "अंतर्भूत करा (~I)"
 
 #: source/schedule/schedule.src#dlgCalDelete.String.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "नष्ट करा (~D)"
 
 #: source/schedule/schedule.src#dlgCalNewEvent.String.Text
+#, fuzzy
 msgid  "New Event"
 msgstr "नवी घटना"
 
 #: source/schedule/schedule.src#dlgCalEvent.String.Text
+#, fuzzy
 msgid  "Event"
 msgstr "घटना"
 
 #: source/schedule/schedule.src#dlgCalEventOnce.String.Text
+#, fuzzy
 msgid  "One-Time"
 msgstr "एका-वेळी"
 
 #: source/schedule/schedule.src#dlgCalEventDay.String.Text
+#, fuzzy
 msgid  "Day"
 msgstr "दिवस"
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "महिना"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
+#, fuzzy
 msgid  "Year"
 msgstr "वर्ष"
 
 #: source/schedule/schedule.src#dlgBitmapFile.String.Text
+#, fuzzy
 msgid  "usa.bmp"
 msgstr "usa.bmp"
 
 #: source/schedule/schedule.src#dlgState.String.Text
+#, fuzzy
 msgid  "Public holidays"
 msgstr "सार्वजनिक सुट्ट्या"
 
 #: source/schedule/schedule.src#dlgMonth.String.Text
+#, fuzzy
 msgid  "January"
 msgstr "जानेवारी"
 
 #: source/schedule/schedule.src#dlgMonth+1.String.Text
+#, fuzzy
 msgid  "February"
 msgstr "फेब्रुवारी"
 
 #: source/schedule/schedule.src#dlgMonth+2.String.Text
+#, fuzzy
 msgid  "March"
 msgstr "मार्च"
 
 #: source/schedule/schedule.src#dlgMonth+3.String.Text
+#, fuzzy
 msgid  "April"
 msgstr "एप्रील"
 
 #: source/schedule/schedule.src#dlgMonth+4.String.Text
+#, fuzzy
 msgid  "May"
 msgstr "मे"
 
 #: source/schedule/schedule.src#dlgMonth+5.String.Text
+#, fuzzy
 msgid  "June"
 msgstr "जून"
 
 #: source/schedule/schedule.src#dlgMonth+6.String.Text
+#, fuzzy
 msgid  "July"
 msgstr "जुलै"
 
 #: source/schedule/schedule.src#dlgMonth+7.String.Text
+#, fuzzy
 msgid  "August"
 msgstr "ऑगस्ट"
 
 #: source/schedule/schedule.src#dlgMonth+8.String.Text
+#, fuzzy
 msgid  "September"
 msgstr "सप्टेंबर"
 
 #: source/schedule/schedule.src#dlgMonth+9.String.Text
+#, fuzzy
 msgid  "October"
 msgstr "ऑक्टोबर"
 
 #: source/schedule/schedule.src#dlgMonth+10.String.Text
+#, fuzzy
 msgid  "November"
 msgstr "नोव्हेंबर"
 
 #: source/schedule/schedule.src#dlgMonth+11.String.Text
+#, fuzzy
 msgid  "December"
 msgstr "डिसेंबर"
 
 #: source/schedule/schedule.src#msgCalErrorTitle.String.Text
+#, fuzzy
 msgid  "Yearly / Monthly Calendar"
 msgstr "वार्षिक / मासिक दिनदर्शिका"
 
 #: source/schedule/schedule.src#msgCalError.String.Text
+#, fuzzy
 msgid  "An error occurred while creating the calendar."
 msgstr "दिनदर्शिका तयार करताना दोष आला."
 
 #: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
+#, fuzzy
 msgid  "Delete event entries"
 msgstr "घटना नोंदीना नष्ट करा"
 
 #: source/schedule/schedule.src#msgCalRemove.String.Text
+#, fuzzy
 msgid  "Delete the selected entries?"
 msgstr "निवडलेल्या नोंदी नष्ट करायच्या आहेत का?"
 
 #: source/schedule/schedule.src#stlWorkday.String.Text
+#, fuzzy
 msgid  "Workweek"
 msgstr "कामाचा आठवडा"
 
 #: source/schedule/schedule.src#stlWeekend.String.Text
+#, fuzzy
 msgid  "Weekend"
 msgstr "आठवड्याच्या अखेरीस"
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "दिनदर्शिका"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "महिना"
 
 #: source/schedule/schedule.src#sProgress.String.Text
+#, fuzzy
 msgid  "Progress:"
 msgstr "प्रगती:"
 
 #: source/template/template.src#SAMPLES.String.Text
+#, fuzzy
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
 msgstr "या नमून्याच्या पूर्ण कार्यप्रणालीचा उपयोग करून घेण्यासाठी,  ह्या नमुन्यावर आधारित कागदपत्र निर्माण करा."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
+#, fuzzy
 msgid  "Remarks"
 msgstr "शेरा"
 
 #: source/template/template.src#STYLES.String.Text
+#, fuzzy
 msgid  "Theme Selection"
 msgstr "विषय  निवड"
 
 #: source/template/template.src#STYLES + 1.String.Text
+#, fuzzy
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
 msgstr "क्लिपबोर्डावर कागदपत्र जतन करताना दोष! खालील कृतीची अनावृत्ति करता येत नाही."
 
 #: source/template/template.src#STYLES + 2.String.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~रद्द करा"
 
 #: source/template/template.src#STYLES + 3.String.Text
+#, fuzzy
 msgid  "~OK"
 msgstr "~ठीक"
 
 #: source/template/template.src#AgendaDlgName.String.Text
+#, fuzzy
 msgid  "Minutes Template"
 msgstr "मिनिट नमुना"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
+#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "पर्याय निश्चित केलाच पाहिजे."
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
+#, fuzzy
 msgid  "Minutes Type"
 msgstr "मिनिट प्रकार"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
+#, fuzzy
 msgid  "Results Minutes"
 msgstr "निकालाची मिनिटे"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
+#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "परीक्षण मिनिटे"
 
 #: source/template/template.src#CorrespondenceNoTextmark.String.Text
+#, fuzzy
 msgid  "The bookmark 'Recipient' is missing."
 msgstr "पृष्ठखुण 'प्राप्तकर्ता' गहाळ झाला आहे."
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
+#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "नमुन्याची पत्र  क्षेत्रे समाविष्ट करता आली नाहीत."
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
+#, fuzzy
 msgid  "An error has occurred."
 msgstr "दोष आढळला आहे."
 
 #: source/template/template.src#CorrespondenceDialog.String.Text
+#, fuzzy
 msgid  "Addressee"
 msgstr "प्रेषक"
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
+#, fuzzy
 msgid  "One recipient"
 msgstr "एक प्राप्तकर्ता"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
+#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "अनेक प्राप्तकर्ते (पत्ता माहितीकोश)"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
+#, fuzzy
 msgid  "Use of This Template"
 msgstr "ह्या नमुन्याचा उपयोग"
 
 #: source/template/template.src#CorrespondenceFields.String.Text
+#, fuzzy
 msgid  "Click placeholder and overwrite"
 msgstr "स्थानधारकावर क्लिक करा आणि त्यावर दुसरे घाला"
 
 #: source/template/template.src#CorrespondenceFields+1.String.Text
+#, fuzzy
 msgid  "Company"
 msgstr "संस्था"
 
 #: source/template/template.src#CorrespondenceFields+2.String.Text
+#, fuzzy
 msgid  "Department"
 msgstr "विभाग"
 
 #: source/template/template.src#CorrespondenceFields+3.String.Text
+#, fuzzy
 msgid  "First Name"
 msgstr "पहिले नाव"
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
+#, fuzzy
 msgid  "Last Name"
 msgstr "अंतिम नाव"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
+#, fuzzy
 msgid  "Street"
 msgstr "रस्ता"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
+#, fuzzy
 msgid  "Country"
 msgstr "देश"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
+#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "Zip/ पोस्टाचा कोड"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
+#, fuzzy
 msgid  "City"
 msgstr "शहर"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
+#, fuzzy
 msgid  "Title"
 msgstr "शीर्षक"
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
+#, fuzzy
 msgid  "Position"
 msgstr "स्थिती"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
+#, fuzzy
 msgid  "Form of Address"
 msgstr "पत्त्याचा नमुना"
 
 #: source/template/template.src#CorrespondenceFields+12.String.Text
+#, fuzzy
 msgid  "Initials"
 msgstr "आद्याक्षरे"
 
 #: source/template/template.src#CorrespondenceFields+13.String.Text
+#, fuzzy
 msgid  "Salutation"
 msgstr "अभिनंदन "
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
+#, fuzzy
 msgid  "Home Phone"
 msgstr "घरचा दूरध्वनी"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
+#, fuzzy
 msgid  "Work Phone"
 msgstr "कचेरीचा दूरध्वनी"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
+#, fuzzy
 msgid  "Fax"
 msgstr "फॅक्स"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
+#, fuzzy
 msgid  "E-Mail"
 msgstr "ई-मेल"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
+#, fuzzy
 msgid  "Notes"
 msgstr "टीपा"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
+#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "Alt.  क्षेत्र 1"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
+#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "Alt. क्षेत्र 2"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
+#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "Alt. क्षेत्र 3"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
+#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "Alt.  क्षेत्र 4"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
+#, fuzzy
 msgid  "ID"
 msgstr "ID"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
+#, fuzzy
 msgid  "State"
 msgstr "राज्य"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
+#, fuzzy
 msgid  "Office Phone"
 msgstr "कचेरीचा दूरध्वनी"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
+#, fuzzy
 msgid  "Pager"
 msgstr "पेजर"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
+#, fuzzy
 msgid  "Mobile Phone"
 msgstr "मोबाईल ध्वनी"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
+#, fuzzy
 msgid  "Other Phone"
 msgstr "इतर दूरध्वनी"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
+#, fuzzy
 msgid  "Calendar URL"
 msgstr "दिनदर्शिका URL"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
+#, fuzzy
 msgid  "Invite"
 msgstr "आमंत्रित करा"
 
 #: source/template/template.src#TextField.String.Text
+#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "वापरकर्ता माहिती क्षेत्र परिभाषित नाही!"
 
 #: source/template/template.src#Newsletter.String.Text
+#, fuzzy
 msgid  "General layout"
 msgstr "सामान्य मांडणी"
 
 #: source/template/template.src#Newsletter + 1.String.Text
+#, fuzzy
 msgid  "Default layout"
 msgstr "मूळस्थिती मांडणी"
 
 #: source/template/template.src#Newsletter + 2.String.Text
+#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "स्मरणार्थ नियतकालिकाची मांडणी"
 
 #: source/template/template.src#Newsletter + 3.String.Text
+#, fuzzy
 msgid  "Brochure layout"
 msgstr "पुस्तिका मांडणी"
 
 #: source/template/template.src#Newsletter + 10.String.Text
+#, fuzzy
 msgid  "Format"
 msgstr "स्वरूपण"
 
 #: source/template/template.src#Newsletter + 11.String.Text
+#, fuzzy
 msgid  "Single-sided"
 msgstr "एकल- बाजूचे"
 
 #: source/template/template.src#Newsletter + 12.String.Text
+#, fuzzy
 msgid  "Double-sided"
 msgstr "दोन्ही-बाजूनी"

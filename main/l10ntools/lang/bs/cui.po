@@ -99,14 +99,17 @@ msgid  "Description"
 msgstr ""
 
 #: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
+#, fuzzy
 msgid  "~Save..."
 msgstr "~Snimi..."
 
 #: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
+#, fuzzy
 msgid  "R~eset"
 msgstr "P~oništi"
 
 #: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
+#, fuzzy
 msgid  "~Load..."
 msgstr "~Učitaj..."
 
@@ -748,7 +751,7 @@ msgid  "Delete..."
 msgstr ""
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
-msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
+msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
 msgstr ""
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
@@ -756,7 +759,7 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
-msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
+msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
 msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
@@ -768,7 +771,7 @@ msgid  "Are you sure to delete the image?"
 msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
-msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
+msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
 msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
@@ -853,38 +856,47 @@ msgid  "Down"
 msgstr ""
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FixedText.Text
+#, fuzzy
 msgid  "Origi~nal"
 msgstr "Origi~nalno"
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_NEWWORD.FixedText.Text
+#, fuzzy
 msgid  "~Word"
 msgstr "~Riječ"
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_SUGGESTION.FixedText.Text
+#, fuzzy
 msgid  "~Suggestions"
 msgstr "~Prijedlozi"
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_IGNORE.PushButton.Text
+#, fuzzy
 msgid  "~Ignore"
 msgstr "~Ignoriši"
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_IGNOREALL.PushButton.Text
+#, fuzzy
 msgid  "Always I~gnore"
 msgstr "Uvijek i~gnoriši"
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_CHANGE.PushButton.Text
+#, fuzzy
 msgid  "~Replace"
 msgstr "~Zamijeni"
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_CHANGEALL.PushButton.Text
+#, fuzzy
 msgid  "Always R~eplace"
 msgstr "Uvijek ~zamijeni"
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_OPTIONS.PushButton.Text
+#, fuzzy
 msgid  "Options..."
 msgstr "Opcije..."
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.BTN_SPL_CANCEL.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Zatvori"
 
@@ -1093,134 +1105,167 @@ msgid  "Mark Tree"
 msgstr ""
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.TabDialog.Text
+#, fuzzy
 msgid  "Properties of "
 msgstr "Osobine"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
+#, fuzzy
 msgid  "General"
 msgstr "Općenito"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.TabDialog.Text
+#, fuzzy
 msgid  "Properties of "
 msgstr "Osobine"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
+#, fuzzy
 msgid  "General"
 msgstr "Općenito"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.1.RID_SVXTABPAGE_GALLERYTHEME_FILES.PageItem.Text
+#, fuzzy
 msgid  "Files"
 msgstr "Datoteke"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Type:"
 msgstr "Vrsta:"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FixedText.Text
+#, fuzzy
 msgid  "Location:"
 msgstr "Lokacija:"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FixedText.Text
+#, fuzzy
 msgid  "Contents:"
 msgstr "Sadržaj:"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FixedText.Text
+#, fuzzy
 msgid  "Modified:"
 msgstr "Izmijenjeno:"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FixedText.Text
+#, fuzzy
 msgid  "~File type"
 msgstr "~Vrsta datoteke"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_SEARCH.PushButton.Text
+#, fuzzy
 msgid  "~Find Files..."
 msgstr "~Pronadi datoteke..."
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_TAKE.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "~Dodaj"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_TAKEALL.PushButton.Text
+#, fuzzy
 msgid  "A~dd All"
 msgstr "Do~daj sve"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.CBX_PREVIEW.CheckBox.Text
+#, fuzzy
 msgid  "Pr~eview"
 msgstr "Pr~egled"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PushButton.Text
+#, fuzzy
 msgid  "Maddin1"
 msgstr "Maddin1"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PushButton.Text
+#, fuzzy
 msgid  "Maddin2"
 msgstr "Maddin2"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.ModalDialog.Text
+#, fuzzy
 msgid  "Enter Title"
 msgstr "Unesi naslov"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.FL_TITLE.FixedLine.Text
+#, fuzzy
 msgid  "Title"
 msgstr "Naslov"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.ModalDialog.Text
+#, fuzzy
 msgid  "Find"
 msgstr "Nađi"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FixedLine.Text
+#, fuzzy
 msgid  "Directory"
 msgstr "Direktorij"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FixedLine.Text
+#, fuzzy
 msgid  "File type"
 msgstr "Vrsta datoteke"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.ModalDialog.Text
+#, fuzzy
 msgid  "Apply"
 msgstr "Primijeni"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FixedLine.Text
+#, fuzzy
 msgid  "File"
 msgstr "Datoteka"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_ACTUALIZE_PROGRESS.ModalDialog.Text
+#, fuzzy
 msgid  "Update"
 msgstr "Ažuriraj"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_ACTUALIZE_PROGRESS.FL_ACTUALIZE_PROGRESS.FixedLine.Text
+#, fuzzy
 msgid  "File"
 msgstr "Datoteka"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_THEMEID.ModalDialog.Text
+#, fuzzy
 msgid  "Theme ID"
 msgstr "ID teme"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_THEMEID.FL_ID.FixedLine.Text
+#, fuzzy
 msgid  "ID"
 msgstr "Identifikacija"
 
 #: source/dialogs/gallery.src#RID_SVXSTR_GALLERY_NOFILES.String.Text
+#, fuzzy
 msgid  "<No Files>"
 msgstr "<Bez datoteka>"
 
 #: source/dialogs/gallery.src#RID_SVXSTR_GALLERY_SEARCH.String.Text
+#, fuzzy
 msgid  "Do you want to update the file list?"
 msgstr "Da li zaista želite ažurirati listu datoteka?"
 
 #: source/dialogs/gallery.src#RID_SVXSTR_GALLERYPROPS_OBJECT.String.Text
+#, fuzzy
 msgid  "Object;Objects"
 msgstr "Predmet;Predmeti"
 
 #: source/dialogs/gallery.src#RID_SVXSTR_GALLERY_READONLY.String.Text
+#, fuzzy
 msgid  " (read-only)"
 msgstr " (samo za čitanje)"
 
 #: source/dialogs/gallery.src#RID_SVXSTR_GALLERY_ALLFILES.String.Text
+#, fuzzy
 msgid  "<All Files>"
 msgstr "<Sve datoteke>"
 
 #: source/dialogs/gallery.src#RID_SVXSTR_GALLERY_ID_EXISTS.String.Text
+#, fuzzy
 msgid  "This ID already exists..."
 msgstr "Ovaj ID već postoji..."
 
@@ -1808,18 +1853,22 @@ msgid  "Please enter a password to open or to modify, or check the open read-onl
 msgstr ""
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.ModalDialog.Text
+#, fuzzy
 msgid  "Mosaic"
 msgstr "Mozaik"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.FL_PARAMETER.FixedLine.Text
+#, fuzzy
 msgid  "Parameters"
 msgstr "Parametri"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.DLG_FILTERMOSAIC_FT_WIDTH.FixedText.Text
+#, fuzzy
 msgid  "~Width"
 msgstr "Š~irina"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.DLG_FILTERMOSAIC_FT_HEIGHT.FixedText.Text
+#, fuzzy
 msgid  "H~eight"
 msgstr "~Visina"
 
@@ -1828,26 +1877,32 @@ msgid  "E~nhance edges"
 msgstr ""
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.ModalDialog.Text
+#, fuzzy
 msgid  "Solarization"
 msgstr "Sunčanje"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.FL_PARAMETER.FixedLine.Text
+#, fuzzy
 msgid  "Parameters"
 msgstr "Parametri"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.DLG_FILTERSOLARIZE_FT_THRESHOLD.FixedText.Text
+#, fuzzy
 msgid  "Threshold ~value"
 msgstr "~Vrijednost praga"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.DLG_FILTERSOLARIZE_CBX_INVERT.CheckBox.Text
+#, fuzzy
 msgid  "~Invert"
 msgstr "~Obrni"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SEPIA.ModalDialog.Text
+#, fuzzy
 msgid  "Aging"
 msgstr "Starenje"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SEPIA.FL_PARAMETER.FixedLine.Text
+#, fuzzy
 msgid  "Parameters"
 msgstr "Parametri"
 
@@ -1856,10 +1911,12 @@ msgid  "Aging degree"
 msgstr ""
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.ModalDialog.Text
+#, fuzzy
 msgid  "Posterize"
 msgstr "Posterizuj"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.FL_PARAMETER.FixedLine.Text
+#, fuzzy
 msgid  "Parameters"
 msgstr "Parametri"
 
@@ -1868,14 +1925,17 @@ msgid  "Poster colors"
 msgstr ""
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.ModalDialog.Text
+#, fuzzy
 msgid  "Relief"
 msgstr "Reljef"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.FL_PARAMETER.FixedLine.Text
+#, fuzzy
 msgid  "Parameters"
 msgstr "Parametri"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.DLG_FILTEREMBOSS_FT_LIGHT.FixedText.Text
+#, fuzzy
 msgid  "Light source"
 msgstr "Svjetlosni izvor"
 
@@ -1885,14 +1945,17 @@ msgid  "Hangul/Hanja Conversion"
 msgstr "Hangul/Hanja konverzija"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.PB_FIND.PushButton.Text
+#, fuzzy
 msgid  "~Find"
 msgstr "~Nađi"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_FORMAT.FixedText.Text
+#, fuzzy
 msgid  "Format"
 msgstr "Format"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.RB_SIMPLE_CONVERSION.RadioButton.Text
+#, fuzzy
 msgid  "~Hangul/Hanja"
 msgstr "~Hangul/Hanja"
 
@@ -1901,14 +1964,17 @@ msgid  "Hanja (Han~gul)"
 msgstr ""
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.RB_HANGUL_HANJA_BRACKETED.RadioButton.Text
+#, fuzzy
 msgid  "Hang~ul (Hanja)"
 msgstr "Hang~ul (Hanja)"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.RB_HANGUL_HANJA_ABOVE.RadioButton.Text
+#, fuzzy
 msgid  "Hangu~l"
 msgstr "Hangu~l"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.RB_HANGUL_HANJA_BELOW.RadioButton.Text
+#, fuzzy
 msgid  "Hang~ul"
 msgstr "Hang~ul"
 
@@ -2052,18 +2118,22 @@ msgid  "Special Characters"
 msgstr ""
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_FONT.FixedText.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "~Font"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SUBSET.FixedText.Text
+#, fuzzy
 msgid  "~Subset"
 msgstr "~Podskup"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SYMBOLE.FixedText.Text
+#, fuzzy
 msgid  "Characters:"
 msgstr "Znakovi:"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Obriši"
 
@@ -2076,7 +2146,7 @@ msgid  "License..."
 msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT.String.Text
-msgid  "Copyright © 2012 Apache Software Foundation.\nAll rights reserved.\n\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\nApache OpenOffice acknowledges all community members, especially those mentioned at"
+msgid  "Copyright © 2012 Apache Software Foundation.\\nAll rights reserved.\\n\\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\\nApache OpenOffice acknowledges all community members, especially those mentioned at"
 msgstr ""
 
 #: source/dialogs/about.src#RID_CUI_README_DLG.ModalDialog.Text
@@ -2096,9 +2166,8 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
-#, fuzzy
-msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr "nije dostupan za provjeru pravopisa.\nMolimo provjerite Vašu instalaciju i instalirajte željeni jezik\n"
+msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
+msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 #, fuzzy
@@ -2766,50 +2835,62 @@ msgid  " Columns"
 msgstr "Kolone"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Ime"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Ime"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Naziv"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.ModalDialog.Text
+#, fuzzy
 msgid  "Description"
 msgstr "Opis"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_TITLE.FixedText.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "~Naslov"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "~Opis"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.ModalDialog.Text
+#, fuzzy
 msgid  "Properties"
 msgstr "Osobine"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URL1.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_TARGET.FixedText.Text
+#, fuzzy
 msgid  "F~rame"
 msgstr "O~kvir"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Naziv"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URLDESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "Alternative ~text"
 msgstr "Alternativni ~tekst"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_DESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "~Opis"
 
@@ -2944,22 +3025,27 @@ msgid  "Show columns"
 msgstr "Prikaži kolone"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.ModalDialog.Text
+#, fuzzy
 msgid  "Record Search"
 msgstr "Traženje zapisa"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FixedLine.Text
+#, fuzzy
 msgid  "Search for"
 msgstr "Traži"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORTEXT.RadioButton.Text
+#, fuzzy
 msgid  "~Text"
 msgstr "~Tekst"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is ~NULL"
 msgstr "Polje je ~prazno"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNOTNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is not NU~LL"
 msgstr "Polje ~nije prazno"
 
@@ -2968,10 +3054,12 @@ msgid  "Where to search"
 msgstr ""
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_FORM.FixedText.Text
+#, fuzzy
 msgid  "Form"
 msgstr "Formular"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_ALLFIELDS.RadioButton.Text
+#, fuzzy
 msgid  "All Fields"
 msgstr "Sva polja"
 
@@ -2980,26 +3068,32 @@ msgid  "Single field"
 msgstr ""
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Postavke"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_POSITION.FixedText.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Položaj"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_USEFORMATTER.CheckBox.Text
+#, fuzzy
 msgid  "Apply field format"
 msgstr "Primijeni format polja"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_CASE.CheckBox.Text
+#, fuzzy
 msgid  "Match case"
 msgstr "Razlikuj velika i mala slova"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_BACKWARD.CheckBox.Text
+#, fuzzy
 msgid  "Search backwards"
 msgstr "Traži unazad"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_STARTOVER.CheckBox.Text
+#, fuzzy
 msgid  "From Beginning"
 msgstr "Od početka"
 
@@ -3008,14 +3102,17 @@ msgid  "Wildcard expression"
 msgstr ""
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_REGULAR.CheckBox.Text
+#, fuzzy
 msgid  "Regular expression"
 msgstr "Regularni izraz"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CheckBox.Text
+#, fuzzy
 msgid  "Similarity Search"
 msgstr "Pretra~ga sličnosti"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
@@ -3028,14 +3125,17 @@ msgid  "Sounds like (Japanese)"
 msgstr ""
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SOUNDSLIKESETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FixedLine.Text
+#, fuzzy
 msgid  "State"
 msgstr "Kanton"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FixedText.Text
+#, fuzzy
 msgid  "Record :"
 msgstr "Zapis:"
 
@@ -3044,54 +3144,67 @@ msgid  "Search"
 msgstr ""
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Zatvori"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.HelpButton.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~Pomoć"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_ANYWHERE.String.Text
+#, fuzzy
 msgid  "anywhere in the field"
 msgstr "Bilo gdje u polju"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_BEGINNING.String.Text
+#, fuzzy
 msgid  "beginning of field"
 msgstr "Početak polja"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_END.String.Text
+#, fuzzy
 msgid  "end of field"
 msgstr "Kraj polja"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_WHOLE.String.Text
+#, fuzzy
 msgid  "entire field"
 msgstr "Čitavo polje"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_TOP.String.Text
+#, fuzzy
 msgid  "From top"
 msgstr "Sa vrha"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_BOTTOM.String.Text
+#, fuzzy
 msgid  "From bottom"
 msgstr "S dna"
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_NORECORD.ErrorBox.Message
+#, fuzzy
 msgid  "No records corresponding to your data found."
 msgstr "Nijedan zapis koji odgovara vašim podacima nije nađen!"
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_GENERAL_ERROR.ErrorBox.Message
+#, fuzzy
 msgid  "An unknown error occurred. The search could not be finished."
 msgstr "Došlo je do nepoznate greške. Pretraga nije mogla biti prekinuta."
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_FORWARD.String.Text
+#, fuzzy
 msgid  "Overflow, search continued at the beginning"
 msgstr "Prekoračenje kapaciteta, potraga nastavljena na početku"
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_BACKWARD.String.Text
+#, fuzzy
 msgid  "Overflow, search continued at the end"
 msgstr "Prekoračenje kapaciteta, potraga nastavljena na kraju"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_COUNTING.String.Text
+#, fuzzy
 msgid  "counting records"
 msgstr "brojim zapise"
 
@@ -3469,19 +3582,16 @@ msgid  "Macro Security..."
 msgstr "Makro sigurnost..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
-#, fuzzy
-msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr "Ukidanje funkcije da se stalno pohranjuju lozinke briše listu pohranjenih lozinki i resetuje master lozinku.\n\nDa li želite da obrišete listu lozinki i resetujete master lozinku?"
+msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
-#, fuzzy
-msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr "Neispravna vrijednost!\n\nNajveća vrijednost za broj porta je 65535."
+msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
-#, fuzzy
-msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr "Uzmite u obzir da će s Java-om\n također biti onemogućen Javascript.\n\nŽelite li još uvijek onemogućiti Java-u?"
+msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -3584,7 +3694,7 @@ msgid  "Note that street, Zip code and city are used to generate the registratio
 msgstr "Primijetite da se ulica, poštanski broj i grad koriste za generisanje registracijskog ključa. Nećete moći naknadno promijeniti korisničke podatke dok je registracija u toku. Da li želite da promijenite korisničke podatke sada?"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
-msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgid  "The User Data have been changed.\\nDo you really want to change your User Data?"
 msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
@@ -4138,14 +4248,17 @@ msgid  "Name of color scheme"
 msgstr "Naziv šeme boja"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Database file"
 msgstr "~Datoteka baze podataka"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.PB_BROWSEFILE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "Po~traži..."
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Registered ~name"
 msgstr "Prijavljeno ~ime"
 
@@ -4158,15 +4271,15 @@ msgid  "Create Database Link"
 msgstr ""
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
-msgid  "The file\n$file$\ndoes not exist."
+msgid  "The file\\n$file$\\ndoes not exist."
 msgstr ""
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
-msgid  "The file\n$file$\ndoes not exist in the local file system."
+msgid  "The file\\n$file$\\ndoes not exist in the local file system."
 msgstr ""
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
-msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
+msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
 msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
@@ -4778,8 +4891,9 @@ msgid  "Assig~ned start parameters"
 msgstr "Pri~druženi parametri za pokretanje"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FixedText.Text
-msgid  "For example: -Dmyprop=c:\program files\java"
-msgstr ""
+#, fuzzy
+msgid  "For example: -Dmyprop=c:\\program files\\java"
+msgstr "Na primjer: -Dmyprop=c:\\program files\\java"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
 #, fuzzy
@@ -4812,35 +4926,38 @@ msgid  "~Remove"
 msgstr "~Ukloni"
 
 #: source/options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ErrorBox.Message
-msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+msgid  "The folder you selected does not contain a Java runtime environment.\\nPlease select a different folder."
 msgstr ""
 
 #: source/options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ErrorBox.Message
-msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
+msgid  "The Java runtime environment you selected is not the required version.\\nPlease select a different folder."
 msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WarningBox.Message
-#, fuzzy
-msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr "Da bi izabrani Java runtime environment radio ispravno, potrebno je restartovati %PRODUCTNAME.\nMolimo restartujte %PRODUCTNAME odmah"
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WarningBox.Message
-msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\\nPlease restart %PRODUCTNAME now."
 msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
+#, fuzzy
 msgid  "Connection pool"
 msgstr "Sastavljanje konekcije"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
+#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "Sastavljanje konekcije omogućeno"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
+#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "Drajveri poznati u %PRODUCTNAME"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
+#, fuzzy
 msgid  "Current driver:"
 msgstr "Trenutni drajver: "
 
@@ -4849,26 +4966,32 @@ msgid  "Enable pooling for this driver"
 msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
+#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "Limit vremena (sekunde)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
+#, fuzzy
 msgid  "Driver name"
 msgstr "Naziv drajvera"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
+#, fuzzy
 msgid  "Pool"
 msgstr "Sastavljena"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
+#, fuzzy
 msgid  "Timeout"
 msgstr "Timeout"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "Da"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "Ne"
 
@@ -5013,9 +5136,8 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "Nekorištenje ODF 1.2 Extended formata može uzrokovati gubitak sadržaja."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-#, fuzzy
-msgid  "Using \"%1\" as default file format may cause information loss.\n"
-msgstr "Korištenje \"%1\" kao uobičajni format datoteka može izazvati gubitak podataka.\n"
+msgid  "Using \"%1\" as default file format may cause information loss.\\n"
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 #, fuzzy
@@ -5028,9 +5150,8 @@ msgid  "Improvement Program"
 msgstr "Program poboljšanja"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
-#, fuzzy
-msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr "Pozivamo Vas da se priključite našem %PRODUCTNAME programu poboljšanja da pomognete optimizirati kvalitet %PRODUCTNAME.\n\nUkoliko želite da ucestvujete, mi cemo prikupiti anonimnu statistiku o tome kako koristite %PRODUCTNAME. Podaci se koriste o upotrebi.\n\nProgram za poboljšanje %PRODUCTNAME neće sakupljati lične podatke niti sadržaj dokumenata."
+msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 #, fuzzy
@@ -5171,9 +5292,8 @@ msgid  "Edit Paths: %1"
 msgstr "Izmijeni staze: %1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
-#, fuzzy
-msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr "Direktoriji za konfiguraciju i mail moraju biti navedeni kao odvojeni direktoriji.\n Molimo, odaberite novi put."
+msgid  "The configuration and mail directories must be specified as separate directories.\\nPlease choose a new path."
+msgstr ""
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 #, fuzzy
@@ -5876,9 +5996,8 @@ msgid  "~Close"
 msgstr "~Zatvori"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
-#, fuzzy
-msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr "Navedeno ime već postoji.\nMolimo, unesite novo ime."
+msgid  "The specified name already exists.\\nPlease enter a new name."
+msgstr ""
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy
@@ -6095,30 +6214,37 @@ msgid  "Do you want to delete the dictionary?"
 msgstr "Želite li izbrisati rječnik?"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.TabPage.Text
+#, fuzzy
 msgid  "Registered databases"
 msgstr "Registrovane baze podataka"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Registered name"
 msgstr "Prijavljeno ime"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "Database file"
 msgstr "Datoteka baze podataka"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "~Novi..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Izmijeni..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Obriši"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.GB_STD.FixedLine.Text
+#, fuzzy
 msgid  "Registered databases"
 msgstr "Registrovane baze podataka"
 
@@ -7255,7 +7381,7 @@ msgid  "O~uter"
 msgstr "V~anjski"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
-msgid  "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
+msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
 msgstr ""
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
@@ -8181,7 +8307,7 @@ msgid  "Assigned macro"
 msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
-msgid  "~Existing macros\n"
+msgid  "~Existing macros\\n"
 msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
@@ -8601,9 +8727,8 @@ msgid  "Do you want to delete the gradient?"
 msgstr "Da li želite izbrisati preliv?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
-#, fuzzy
-msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr "Stupnjevanje je promijenjeno bez spremanja.\nPromijenite označeno stupnjevanje ili dodajte novo stupnjevanje."
+msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 #, fuzzy
@@ -8621,9 +8746,8 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "Da li ste sigurni da želite izbrisati bitmapu?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
-#, fuzzy
-msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr "Bitmapa je promijenjena bez spremanja.\nPromijenite označenu bitmapu ili dodajte novu bitmapu."
+msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -8636,9 +8760,8 @@ msgid  "Do you want to delete the line style?"
 msgstr "Da li želite izbrisati stil linije?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
-#, fuzzy
-msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr "Stil linija je mijenjan bez spremanja.\nPromijenite označeni stil linija ili dodajte novi stil linija."
+msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -8651,9 +8774,8 @@ msgid  "Do you want to delete the hatching?"
 msgstr "Da li želite izbrisati šrafuru?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
-#, fuzzy
-msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr "Vrsta pripreme je promijenjena bez spremanja.\n Promijenite označeni vrstu promjene ili dodajte novu vrstu pripreme."
+msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 #, fuzzy
@@ -8675,9 +8797,8 @@ msgid  "Do you want to delete the color?"
 msgstr "Da li želite izbrisati boju?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
-#, fuzzy
-msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr "Boja je mijenjana bez spremanja.\nIzmijenite označenu boju ili dodajte novu boju."
+msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 msgid  "Table"
@@ -8699,9 +8820,8 @@ msgid  "The list was modified without saving. Would you like to save the list no
 msgstr "Lista je izmijenjena ali nije snimljena. Da li želite snimiti listu?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
-#, fuzzy
-msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr "Ime koje ste unijeli već postoji.\nMolimo, izaberite drugo ime."
+msgid  "The name you have entered already exists. \\nPlease choose another name."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -8714,9 +8834,8 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "Da li želite izbrisati vrhove strelica?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
-#, fuzzy
-msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr "Glava strelica je promijenjena bez spremanja.\nŽelite li sada spremiti glavu strelica?"
+msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
+msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 msgid  "Indents and Spacing"
@@ -9651,6 +9770,7 @@ msgid  "Alignment"
 msgstr ""
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FixedLine.Text
+#, fuzzy
 msgid  "Text alignment"
 msgstr "Poravnanje teksta"
 

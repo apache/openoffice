@@ -181,6 +181,7 @@ msgid  "The charset of the transformation result is fixed to UTF-8. Depending on
 msgstr "ক্যারেক্টারসেট রুপান্তরকরনের ফলাফল UTF-8 এ নির্দিষ্ট। আপনার সিস্টেমের উপর নির্ভর করে এটি পূর্বনির্ধারিত ক্যারসেট নাও হতে পারে। এতে পূর্বনির্ধারিত বিন্যাস দিয়ে প্রদর্শনকালে \"বিশেষ বর্নচিহ্নগুলো\" ভাঙ্গা অবস্থায় দেখা যেতে পারে। যদিও, আপনি এটি ঠিক করতে আপনার এডিটরকে UTF-8 এনকোডিং-এ পরিবর্তন করতে পারেন। যদি আপনার এডিটর এনকোডিং পরিবর্তন সমর্থন না করে, তাহলে আপনি রুপান্তরকরনের ফলাফল ফায়ারফক্স ব্রাউজারে দেখতে পারেন এবং সেখানে এনকোডিংটি UTF-8 এ পরিবর্তন করতে পারেন। এখন, আপনি আপনার পছন্দের প্রোগ্রামে রুপান্তরকরনের ফলাফল কাটতে এবং প্রতিলেপন করতে পারেন।"
 
 #: mediawiki/help/wiki.xhp#tit
+#, fuzzy
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
@@ -189,18 +190,20 @@ msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bo
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#hd_id5993530
+#, fuzzy
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
 #: mediawiki/help/wiki.xhp#par_id9647511
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id6468703
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#hd_id4554582
+#, fuzzy
 msgid  "System Requirements"
 msgstr "সিস্টেমের প্রয়োজনীয়তা"
 
@@ -219,7 +222,7 @@ msgid  "Java Runtime Environment 1.4"
 msgstr "জাভা রানটাইল এনভায়রনমেন্ট ১.৪"
 
 #: mediawiki/help/wiki.xhp#par_id7387615
-msgid  "A Wiki account on a supported \<link href=\\"
+msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#hd_id8047120
@@ -228,7 +231,7 @@ msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@ সংস্থাপন করা হচ্ছে"
 
 #: mediawiki/help/wiki.xhp#par_id4277169
-msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\\"
+msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that \"Use a Java runtime environment\" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#hd_id567339
@@ -237,7 +240,7 @@ msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@ সংস্থাপন করতে"
 
 #: mediawiki/help/wiki.xhp#par_id1732230
-msgid  "In a Writer window, choose \<item type=\\"
+msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id4338511
@@ -255,7 +258,7 @@ msgid  "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id265511
-msgid  "Restart the software, open a text document, then choose \<item type=\\"
+msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See \"To Connect To a Wiki\" below."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#hd_id3569444
@@ -264,7 +267,7 @@ msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@ মুছে ফেলতে"
 
 #: mediawiki/help/wiki.xhp#par_id2655110
-msgid  "In a Writer window, choose \<item type=\\"
+msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id9504379
@@ -283,23 +286,23 @@ msgid  "To Connect to a Wiki"
 msgstr "একটি উইকিতে সংযোগ করতে"
 
 #: mediawiki/help/wiki.xhp#par_id2381969
-msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\\"
+msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id3751640
-msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\\"
+msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id9533677
-msgid  "Open a Writer document, and choose \<item type=\\"
+msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id368968
-msgid  "In the \<link href=\\"
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id6962187
-msgid  "In the \<link href=\\"
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id5328836
@@ -328,7 +331,7 @@ msgid  "In the Password box, enter the password for your Wiki account, then clic
 msgstr "গুপ্তসংকেত বক্সে, আপনার উইকি অ্যাকাউন্টের গুপ্তসংকেতে দিন, তারপর \"ঠিক আছে\" ক্লিক করুন।"
 
 #: mediawiki/help/wiki.xhp#par_id292062
-msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\\"
+msgid  "Optionally enable \"Save password\" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. \"Save password\" is unavailable when the master password is not enabled."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#hd_id7044892
@@ -342,15 +345,15 @@ msgid  "Open a Writer document."
 msgstr "একটি রাইটার নথি খুলুন।"
 
 #: mediawiki/help/wiki.xhp#par_id944853
-msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\\"
+msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id4566484
-msgid  "Choose \<item type=\\"
+msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id228278
-msgid  "In the \<link href=\\"
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
 msgstr ""
 
 #: mediawiki/help/wiki.xhp#par_id2564165
@@ -389,27 +392,27 @@ msgid  "MediaWiki Options"
 msgstr "মিডিয়াউইকি পছন্দ"
 
 #: mediawiki/help/wikisettings.xhp#par_id1188390
-msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\\"
+msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
 msgstr ""
 
 #: mediawiki/help/wikisettings.xhp#par_id300607
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wikisettings.xhp#par_id9786065
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wikisettings.xhp#par_id3386333
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wikisettings.xhp#par_id7285073
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wikisettings.xhp#par_id1029084
-msgid  "When you click Add or Edit, the \<link href=\\"
+msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
 msgstr ""
 
 #: mediawiki/help/wikiaccount.xhp#tit
@@ -428,19 +431,19 @@ msgid  "Use the MediaWiki dialog to add or edit your MediaWiki account settings.
 msgstr "মিডিয়াউইকি সংলাপ ব্যবহার করে আপনার মিডিয়াউইকি অ্যাকাউন্টের বিন্যাস যোগ বা সম্পাদনা করতে পারেন।"
 
 #: mediawiki/help/wikiaccount.xhp#par_id7631458
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wikiaccount.xhp#par_id7862483
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wikiaccount.xhp#par_id1113010
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wikiaccount.xhp#par_id656758
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wikiaccount.xhp#par_id3112582
@@ -474,184 +477,190 @@ msgid  "In the Send to MediaWiki dialog, specify the settings for your current W
 msgstr "মিডিয়াউইকিতে 'প্রেরণ করুন' সংলাপে, আপনার বর্তমান উইকি আপলোডের বিন্যাস উল্লেখ করুন।"
 
 #: mediawiki/help/wikisend.xhp#par_id664082
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wikisend.xhp#par_id2794885
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wikisend.xhp#par_id2486342
-msgid  "\<ahelp hid=\\"
+msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
 msgstr ""
 
 #: mediawiki/help/wikisend.xhp#par_id823999
-msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\\"
+msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
 msgstr ""
 
 #: mediawiki/help/wikisend.xhp#par_id6592913
-msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\\"
+msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
 msgstr ""
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
+#: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
+#, fuzzy
 msgid  "To Media~Wiki..."
 msgstr "মিডিয়াউইকি তে (~W)..."
 
-#: mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label
+#: mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu#OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label
+#, fuzzy
 msgid  "MediaWiki"
 msgstr "MediaWiki"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.GeneralSendError
+#, fuzzy
 msgid  "The operation 'Send to MediaWiki' could not be completed successfully."
 msgstr "'MediaWiki প্রেরণ করুন' এই ক্রিয়াপদ্ধতি সফলভাবে সম্পাদিত করা যাবেনা।"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoWikiFilter
+#, fuzzy
 msgid  "The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter Settings' to install the filter, or use the setup to install the component."
 msgstr "MediaWiki পরিশ্রুতক রপ্তানি করুন খুঁজে পাওয়া যায়নি। পরিশ্রুতকটি অধিষ্ঠত করতে 'Tools-XML পরিশ্রুতক বিন্যাসন' পছন্দ করুন, অথবা উপাদানটি  অধিষ্ঠত করতে সংস্থাপন ব্যাবহার করুন।"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoConnectionToURL
+#, fuzzy
 msgid  "A connection to the MediaWiki system at '$ARG1' could not be created."
 msgstr "'$ARG1' এর MediaWiki পদ্ধতিতে একটি সংযোগ খুঁজে পাওয়া যায়নি।"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.WrongLogin
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.WrongLogin
+#, fuzzy
 msgid  "User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection."
 msgstr "ব্যবহারকারীর নাম অথবা গুপ্তসংকেতটি সঠিক নয়। অনুগ্রহ করে আবার চেষ্টা করুন, অথবা একটি নামহীন সংযোগের জন্য ক্ষেত্রটি ফাঁকা রাখুন।"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.InvalidURL
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.InvalidURL
 #, fuzzy
 msgid  "A connection could not be created because the URL is invalid."
 msgstr "একটি সংযোগ তৈরি করা যাবেনা,কারণ URL টি অবৈধ।"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.NoURL
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.NoURL
 #, fuzzy
 msgid  "Specify a MediaWiki server by providing a URL."
 msgstr "একটি URL প্রদান করে একটি MediaWiki সার্ভার সুনির্দিষ্ট ভাবে উল্লেখ করুন।"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.CancelSending
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.CancelSending
 #, fuzzy
 msgid  "The transfer has been interrupted. Please check the integrity of the wiki article."
 msgstr "স্থানান্তর করা বাধাগ্রস্ত হয়েছে। অনুগ্রহ করে wiki আর্টিকলে পরীক্ষা করে দেখুন।"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_UrlLabel
 #, fuzzy
 msgid  "U~RL"
 msgstr "URL (~R)"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_UsernameLabel
 #, fuzzy
 msgid  "~Username"
 msgstr "ব্যবহারকারীর নাম (~U)"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_PasswordLabel
 #, fuzzy
 msgid  "~Password"
 msgstr "গুপ্তসংকেত (~P)"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendTitle
 #, fuzzy
 msgid  "Send to MediaWiki"
 msgstr "MediaWiki তে  প্রেরন করুন"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_WikiArticle
 #, fuzzy
 msgid  "Wiki article"
 msgstr "উইকি আর্টিকলে"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_No
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_No
 #, fuzzy
 msgid  "No"
 msgstr "না"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_OK
 #, fuzzy
 msgid  "OK"
 msgstr "ঠিক আছে"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_Yes
 #, fuzzy
 msgid  "Yes"
 msgstr "হ্যা"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_AddButton
 #, fuzzy
 msgid  "~Add..."
 msgstr "যোগ করুন(~A)..."
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditButton
 #, fuzzy
 msgid  "~Edit..."
 msgstr "সম্পাদনা করুন(~E)..."
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendButton
 #, fuzzy
 msgid  "~Send"
 msgstr "প্রেরন করুন(~S)"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_RemoveButton
 #, fuzzy
 msgid  "~Remove"
 msgstr "অপসারণ করুন(~R)"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_NewWikiPage_Label1
 #, fuzzy
 msgid  "A wiki article with the title '$ARG1' does not exist yet. Do you want to create a new article with that name?"
 msgstr "'$ARG1' শিরোনামের একটি উইকি আর্টিকলে এখন বিদ্যমান নেই। আপনি কি  এই নামের একটি নতুন প্রবন্ধ তৈরি করতে চান?"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label1
 #, fuzzy
 msgid  "Media~Wiki Server"
 msgstr "মিডিয়া ~Wiki  সার্ভার (~Wi)"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label2
 #, fuzzy
 msgid  "~Title"
 msgstr "শিরোনাম (~T)"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_Label3
 #, fuzzy
 msgid  "S~ummary"
 msgstr "সারসংক্ষেপ (~u)"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck
 #, fuzzy
 msgid  "This is a ~minor edit"
 msgstr "এটি একটি ক্ষুদ্র সম্পাদনা (~m)"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck
 #, fuzzy
 msgid  "Show in web ~browser"
 msgstr "ওয়েব ব্রাউজার (~b) এ দেখান"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.UnknownCert
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.UnknownCert
 #, fuzzy
 msgid  "The certificate of the selected site is unknown."
 msgstr "নির্বাচিত সাইটের প্রত্যায়ন পত্র অজানা।"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_MediaWiki_Title
 #, fuzzy
 msgid  "MediaWiki"
 msgstr "MediaWiki"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_AccountLine
 #, fuzzy
 msgid  "Account"
 msgstr "হিসাব"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_WikiLine
 #, fuzzy
 msgid  "MediaWiki Server"
 msgstr "MediaWiki  সার্ভার"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_EditSetting_SaveBox
 #, fuzzy
 msgid  "~Save password"
 msgstr "গুপ্তসংকেত সংরক্ষন করুন (~S)"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_MediaWiki_Extension_String
 #, fuzzy
 msgid  "@WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
-#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#WikiExtension.Strings.Dlg_WikiPageExists_Label1
 msgid  "A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want to replace the current article with your article?&#13;&#13;"
 msgstr ""

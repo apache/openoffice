@@ -128,10 +128,12 @@ msgid  "~Save"
 msgstr "~pol"
 
 #: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
+#, fuzzy
 msgid  "<All>"
 msgstr "<Hoch>"
 
 #: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
+#, fuzzy
 msgid  "< No Module >"
 msgstr "< pagh bobcho' >"
 
@@ -144,11 +146,12 @@ msgid  "Load"
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
+#, fuzzy
 msgid  "Save"
 msgstr "pol"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
+msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
@@ -215,7 +218,7 @@ msgid  "The 'XX' file already exists"
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
+msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
@@ -404,9 +407,8 @@ msgid  "A name must be entered."
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
-#, fuzzy
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "choHpu' ghIq ghun 'e' DataghnISqa'.\nbItaH'a'?"
+msgid  "You will have to restart the program after this edit.\\nContinue?"
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -549,7 +551,7 @@ msgid  "Dialog Import - Name already used"
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
+msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
@@ -565,7 +567,7 @@ msgid  "Dialog Import - Language Mismatch"
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
+msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
 msgstr ""
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
@@ -808,18 +810,22 @@ msgid  "Manage User Interface Languages [$1]"
 msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Present Languages"
 msgstr "DaH Hol'e' lo'taHbogh"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
+#, fuzzy
 msgid  "Add..."
 msgstr "...boq"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "lel"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
+#, fuzzy
 msgid  "Default"
 msgstr "cherlu'pu'ghach"
 
@@ -828,14 +834,17 @@ msgid  "The default language is used if no localization for a user interface loc
 msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~SoQmoH"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
+#, fuzzy
 msgid  "[Default Language]"
 msgstr "[Hol cherlu'pu'bogh]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~lel"
 
@@ -850,7 +859,7 @@ msgid  "Delete Language Resources"
 msgstr "Hol jo lel"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
 msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text

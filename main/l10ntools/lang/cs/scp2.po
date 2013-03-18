@@ -701,42 +701,52 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr "Komponenta umožňující použití %PRODUCTNAME bez grafického prostředí"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
+#, fuzzy
 msgid  "Information"
 msgstr "Informace"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
+#, fuzzy
 msgid  "Internet"
 msgstr "Internet"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
+#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
+#, fuzzy
 msgid  "Fun&More"
 msgstr "Zábava a více"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
+#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME API"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
+#, fuzzy
 msgid  "Travel"
 msgstr "Cestovat"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
+#, fuzzy
 msgid  "Chapters"
 msgstr "Kapitoly"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
+#, fuzzy
 msgid  "Files"
 msgstr "Soubory"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
+#, fuzzy
 msgid  "From Template"
 msgstr "Ze šablony"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
+#, fuzzy
 msgid  "Open Document"
 msgstr "Otevřít dokument"
 
@@ -1368,7 +1378,7 @@ msgstr "Instalovat do %PRODUCTNAME %PRODUCTVERSION podporu albánštiny"
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR
 #, fuzzy
 msgid  "Urdu"
-msgstr "Urdu"
+msgstr "Urdština"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UR
 #, fuzzy
@@ -1902,145 +1912,181 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
+#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "Hromadná korespondence elektronickou poštou"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
+#, fuzzy
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
 msgstr "Modul hromadné korespondence elektronickou poštou %PRODUCTNAME "
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
+#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "Python-UNO Bridge"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
+#, fuzzy
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
 msgstr "Doplňuje možnost automatizace %PRODUCTNAME pomocí skriptového jazyka Python. Kompletní dokumentaci naleznete na http://udk.openoffice.org/python/python-bridge.html"
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
+#, fuzzy
 msgid  "Quickstarter"
 msgstr "Rychlé spuštění"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
+#, fuzzy
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Načte základní komponenty při startu systému pro zkrácení času při spuštění %PRODUCTNAME %PRODUCTVERSION."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
+#, fuzzy
 msgid  "Software Development Kit (SDK)"
 msgstr "Software Development Kit (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
+#, fuzzy
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
 msgstr "SDK poskytuje všechny potřebné nástroje, příklady a dokumentaci pro programování kancelářského balíku."
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "Rozšíření Průzkumníka Windows"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+#, fuzzy
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
 msgstr "Umožní Průzkumníku Microsoft Windows zobrazit informace o dokumentech %PRODUCTNAME, jako náhledy apod."
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
+#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML dokument"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
+#, fuzzy
 msgid  "Text Document"
 msgstr "Textový dokument"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
 msgstr "Vytvářejte a upravujte text a obrázky v dopisech, sestavách, dokumentech a webových stránkách pomocí Writer."
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+#, fuzzy
 msgid  "&New"
 msgstr "Nový"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
+#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "Textový dokument %SXWFORMATNAME %SXWFORMATVERSION "
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
+#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "Hlavní dokument %SXWFORMATNAME %SXWFORMATVERSION "
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
+#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "Šablona textového dokumentu %SXWFORMATNAME %SXWFORMATVERSION "
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
+#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "Textový dokument OpenDocument"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
+#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "Šablona textového dokumentu OpenDocument"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
+#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "Hlavní dokument OpenDocument"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
+#, fuzzy
 msgid  "HTML Document Template"
 msgstr "Šablona HTML stránky"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
+#, fuzzy
 msgid  "Microsoft Word 97-2003 Document"
 msgstr "Dokument Microsoft Word 97-2003"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
+#, fuzzy
 msgid  "Microsoft Word Document"
 msgstr "Dokument Microsoft Word"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
+#, fuzzy
 msgid  "Microsoft Word 97-2003 Template"
 msgstr "Šablona Microsoft Word 97-2003"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
+#, fuzzy
 msgid  "Microsoft Word Template"
 msgstr "Šablona Microsoft Word"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
+#, fuzzy
 msgid  "Rich Text Document"
 msgstr "Dokument RTF"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
+#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
 msgstr "Vytvářejte a upravujte text a obrázky v dopisech, sestavách, dokumentech a webových stránkách pomocí %PRODUCTNAME Writer."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
+#, fuzzy
 msgid  "Program Module"
 msgstr "Programový modul"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
+#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "Aplikace %PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
+#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "Nápověda k %PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
+#, fuzzy
 msgid  "Help about %PRODUCTNAME Writer"
 msgstr "Nápověda: Writer"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
+#, fuzzy
 msgid  "LaTeX Export"
 msgstr "LaTeX Export"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
+#, fuzzy
 msgid  "LaTeX export filter for Writer documents."
 msgstr "Exportní filtr z dokumentů Writer do LaTeX."
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
+#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "Příklady XSLT filtrů"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
+#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "Příklady XSLT filtrů"

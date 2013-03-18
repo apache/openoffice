@@ -137,302 +137,374 @@ msgid  "~Save"
 msgstr "~Sábháil"
 
 #: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
+#, fuzzy
 msgid  "<All>"
 msgstr "<Uile>"
 
 #: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
+#, fuzzy
 msgid  "< No Module >"
 msgstr "< Gan Modúl >"
 
 #: source/basicide/basidesh.src#RID_STR_WRONGPASSWORD.String.Text
+#, fuzzy
 msgid  "Incorrect Password"
 msgstr "Focal Faire Mícheart"
 
 #: source/basicide/basidesh.src#RID_STR_OPEN.String.Text
+#, fuzzy
 msgid  "Load"
 msgstr "Luchtaigh"
 
 #: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
+#, fuzzy
 msgid  "Save"
 msgstr "Sábháil"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "Tá an téacs foinseach rómhór agus ní féidir é a thiomsú nó a shábháil.\nScrios cuid de na nótaí tráchta nó bog roinnt mhodhanna go modúl eile."
+msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
+#, fuzzy
 msgid  "Error opening file"
 msgstr "Earráid agus comhad á oscailt"
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENLIB.String.Text
+#, fuzzy
 msgid  "Error loading library"
 msgstr "Earráid agus leabharlann á luchtú"
 
 #: source/basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.String.Text
+#, fuzzy
 msgid  "The file does not contain any BASIC libraries"
 msgstr "Níl aon leabharlann BASIC sa chomhad"
 
 #: source/basicide/basidesh.src#RID_STR_BADSBXNAME.String.Text
+#, fuzzy
 msgid  "Invalid Name"
 msgstr "Ainm Neamhbhailí"
 
 #: source/basicide/basidesh.src#RID_STR_LIBNAMETOLONG.String.Text
+#, fuzzy
 msgid  "A library name can have up to 30 characters."
 msgstr "Is féidir suas le 30 carachtar a bheith in ainm leabharlainne."
 
 #: source/basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.String.Text
+#, fuzzy
 msgid  "Macros from other documents are not accessible."
 msgstr "Ní féidir macraí as cáipéisí eile a rochtain."
 
 #: source/basicide/basidesh.src#RID_STR_LIBISREADONLY.String.Text
+#, fuzzy
 msgid  "This library is read-only."
 msgstr "Tá an leabharlann seo inléite amháin."
 
 #: source/basicide/basidesh.src#RID_STR_REPLACELIB.String.Text
+#, fuzzy
 msgid  "'XX' cannot be replaced."
 msgstr "Ní féidir 'XX' a ionadú."
 
 #: source/basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "'XX' cannot be added."
 msgstr "Ní féidir 'XX' a chur leis."
 
 #: source/basicide/basidesh.src#RID_STR_NOIMPORT.String.Text
+#, fuzzy
 msgid  "'XX' was not added."
 msgstr "Níor cuireadh 'XX' leis."
 
 #: source/basicide/basidesh.src#RID_STR_ENTERPASSWORD.String.Text
+#, fuzzy
 msgid  "Enter password for 'XX'"
 msgstr "Iontráil focal faire do 'XX'"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.String.Text
+#, fuzzy
 msgid  "Name already exists"
 msgstr "Tá an t-ainm ann cheana"
 
 #: source/basicide/basidesh.src#RID_STR_SIGNED.String.Text
+#, fuzzy
 msgid  "(Signed)"
 msgstr "(Sínithe)"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.String.Text
+#, fuzzy
 msgid  "Object with same name already exists"
 msgstr "Tá réad leis an ainm seo ann cheana"
 
 #: source/basicide/basidesh.src#RID_STR_FILEEXISTS.String.Text
+#, fuzzy
 msgid  "The 'XX' file already exists"
 msgstr "Tá comhad 'XX' ann cheana"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "De bharr cúiseanna slándála, ní féidir leat an macra seo a rith.\n\nLe haghaidh tuilleadh eolais, féach ar na socruithe slándála."
+msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
+#, fuzzy
 msgid  "Compile Error: "
 msgstr "Earráid Thiomsaithe: "
 
 #: source/basicide/basidesh.src#RID_STR_RUNTIMEERROR.String.Text
+#, fuzzy
 msgid  "Runtime Error: #"
 msgstr "Earráid le linn rite: #"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.String.Text
+#, fuzzy
 msgid  "Search key not found"
 msgstr "Eochair chuardaigh gan aimsiú"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
+#, fuzzy
 msgid  "Search to last module complete. Continue at first module?"
 msgstr "Tá an cuardach go dtí an modúl deireanach críochnaithe. Lean ar aghaidh ag an gcéad mhodúl?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
+#, fuzzy
 msgid  "Search key replaced XX times"
 msgstr "Ionadaíodh an eochair chuardaigh XX uair"
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTREAD.String.Text
+#, fuzzy
 msgid  "The file could not be read"
 msgstr "Níorbh fhéidir an comhad a léamh"
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTWRITE.String.Text
+#, fuzzy
 msgid  "The file could not be saved"
 msgstr "Níorbh fhéidir an comhad a shábháil"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.String.Text
+#, fuzzy
 msgid  "The name of the default library cannot be changed."
 msgstr "Ní féidir ainm na leabharlainne réamhshocraithe a athrú."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
+#, fuzzy
 msgid  "The name of a referenced library cannot be changed."
 msgstr "Ní féidir an t-ainm ar leabharlann thagartha a athrú."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
+#, fuzzy
 msgid  "The default library cannot be deactivated"
 msgstr "Ní féidir an leabharlann réamhshocraithe a dhíghníomhachtú"
 
 #: source/basicide/basidesh.src#RID_STR_GENERATESOURCE.String.Text
+#, fuzzy
 msgid  "Generating source"
 msgstr "Foinse á cruthú"
 
 #: source/basicide/basidesh.src#RID_STR_FILENAME.String.Text
+#, fuzzy
 msgid  "File name:"
 msgstr "Ainm comhaid:"
 
 #: source/basicide/basidesh.src#RID_STR_APPENDLIBS.String.Text
+#, fuzzy
 msgid  "Import Libraries"
 msgstr "Iompórtáil Leabharlanna"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELMACRO.String.Text
+#, fuzzy
 msgid  "Do you want to delete the macro XX?"
 msgstr "An bhfuil fonn ort macra XX a scriosadh?"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELDIALOG.String.Text
+#, fuzzy
 msgid  "Do you want to delete the XX dialog?"
 msgstr "An bhfuil fonn ort dialóg XX a scriosadh?"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELLIB.String.Text
+#, fuzzy
 msgid  "Do you want to delete the XX library?"
 msgstr "An bhfuil fonn ort leabharlann XX a scriosadh?"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELLIBREF.String.Text
+#, fuzzy
 msgid  "Do you want to delete the reference to the XX library?"
 msgstr "An bhfuil fonn ort an tagairt do leabharlann XX a scriosadh?"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELMODULE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the XX module?"
 msgstr "An bhfuil fonn ort modúl XX a scriosadh?"
 
 #: source/basicide/basidesh.src#RID_STR_OBJNOTFOUND.String.Text
+#, fuzzy
 msgid  "Object or method not found"
 msgstr "Réad nó modh gan aimsiú"
 
 #: source/basicide/basidesh.src#RID_STR_BASIC.String.Text
+#, fuzzy
 msgid  "BASIC"
 msgstr "BASIC"
 
 #: source/basicide/basidesh.src#RID_STR_LINE.String.Text
+#, fuzzy
 msgid  "Ln"
 msgstr "Ln"
 
 #: source/basicide/basidesh.src#RID_STR_COLUMN.String.Text
+#, fuzzy
 msgid  "Col"
 msgstr "Col"
 
 #: source/basicide/basidesh.src#RID_STR_DOC.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "Cáipéis"
 
 #: source/basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Macro Bar"
 msgstr "Barra Macra"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
+#, fuzzy
 msgid  "The window cannot be closed while BASIC is running."
 msgstr "Ní féidir an fhuinneog a dhúnadh agus BASIC á rith."
 
 #: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
+#, fuzzy
 msgid  "The default library cannot be replaced."
 msgstr "Ní féidir an leabharlann réamhshocraithe a ionadú."
 
 #: source/basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "Reference to 'XX' not possible."
 msgstr "Ní féidir tagairt a dhéanamh do 'XX'."
 
 #: source/basicide/basidesh.src#RID_STR_WATCHNAME.String.Text
+#, fuzzy
 msgid  "Watch"
 msgstr "Faire"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHVARIABLE.String.Text
+#, fuzzy
 msgid  "Variable"
 msgstr "Luaineach"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHVALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "Luach"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHTYPE.String.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Cineál"
 
 #: source/basicide/basidesh.src#RID_STR_STACKNAME.String.Text
+#, fuzzy
 msgid  "Call Stack"
 msgstr "Cruach Glao"
 
 #: source/basicide/basidesh.src#RID_STR_INITIDE.String.Text
+#, fuzzy
 msgid  "BASIC Initialization"
 msgstr "Túsú BASIC"
 
 #: source/basicide/basidesh.src#RID_STR_STDMODULENAME.String.Text
+#, fuzzy
 msgid  "Module"
 msgstr "Modúl"
 
 #: source/basicide/basidesh.src#RID_STR_STDDIALOGNAME.String.Text
+#, fuzzy
 msgid  "Dialog"
 msgstr "Dialóg"
 
 #: source/basicide/basidesh.src#RID_STR_STDLIBNAME.String.Text
+#, fuzzy
 msgid  "Library"
 msgstr "Leabharlann"
 
 #: source/basicide/basidesh.src#RID_STR_NEWLIB.String.Text
+#, fuzzy
 msgid  "New Library"
 msgstr "Leabharlann Nua"
 
 #: source/basicide/basidesh.src#RID_STR_NEWMOD.String.Text
+#, fuzzy
 msgid  "New Module"
 msgstr "Modúl Nua"
 
 #: source/basicide/basidesh.src#RID_STR_NEWDLG.String.Text
+#, fuzzy
 msgid  "New Dialog"
 msgstr "Dialóg Nua"
 
 #: source/basicide/basidesh.src#RID_STR_ALL.String.Text
+#, fuzzy
 msgid  "All"
 msgstr "Uile"
 
 #: source/basicide/basidesh.src#RID_STR_PAGE.String.Text
+#, fuzzy
 msgid  "Page"
 msgstr "Leathanach"
 
 #: source/basicide/basidesh.src#RID_STR_MACRONAMEREQ.String.Text
+#, fuzzy
 msgid  "A name must be entered."
 msgstr "Caithfidh tú ainm a iontráil."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "Beidh ort an clár a atosú tar éis an athrú seo.\nLean ar aghaidh mar sin féin?"
+msgid  "You will have to restart the program after this edit.\\nContinue?"
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
+#, fuzzy
 msgid  "Do you want to replace the text in all active modules?"
 msgstr "An bhfuil fonn ort an téacs a ionadú i ngach modúl gníomhach?"
 
 #: source/basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Remove Watch"
 msgstr "Bain Faire"
 
 #: source/basicide/basidesh.src#RID_STR_REMOVEWATCH.String.Text
+#, fuzzy
 msgid  "Watch:"
 msgstr "Faire:"
 
 #: source/basicide/basidesh.src#RID_STR_STACK.String.Text
+#, fuzzy
 msgid  "Calls: "
 msgstr "Glaonna: "
 
 #: source/basicide/basidesh.src#RID_STR_USERMACROS.String.Text
+#, fuzzy
 msgid  "My Macros"
 msgstr "Mo Chuid Macraí"
 
 #: source/basicide/basidesh.src#RID_STR_USERDIALOGS.String.Text
+#, fuzzy
 msgid  "My Dialogs"
 msgstr "Mo Chuid Dialóga"
 
 #: source/basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.String.Text
+#, fuzzy
 msgid  "My Macros & Dialogs"
 msgstr "Mo Chuid Macraí agus Dialóga"
 
 #: source/basicide/basidesh.src#RID_STR_SHAREMACROS.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Macros"
 msgstr "Macraí %PRODUCTNAME"
 
 #: source/basicide/basidesh.src#RID_STR_SHAREDIALOGS.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Dialogs"
 msgstr "Dialóga %PRODUCTNAME"
 
 #: source/basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Macros & Dialogs"
 msgstr "Macraí agus Dialóga %PRODUCTNAME"
 
@@ -442,10 +514,12 @@ msgid  "Properties"
 msgstr "Airíonna"
 
 #: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MenuItem.Text
+#, fuzzy
 msgid  "Active"
 msgstr "Gníomhach"
 
 #: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MenuItem.Text
+#, fuzzy
 msgid  "Properties..."
 msgstr "Airíonna..."
 
@@ -550,9 +624,8 @@ msgid  "Dialog Import - Name already used"
 msgstr "Iompórtáil Dialóige - Ainm in úsáid cheana"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
-#, fuzzy
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr "Tá dialóg sa leabharlann leis an ainm seo cheana:\n\n$(ARG1)\n\nCuir ainm nua air chun an dialóg reatha a choinneáil, nó cuir é in ionad an chinn atá ann.\n "
+msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 #, fuzzy
@@ -570,19 +643,21 @@ msgid  "Dialog Import - Language Mismatch"
 msgstr "Iompórtáil Dialóige - Teanga Mhí-Oiriúnach"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
-#, fuzzy
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr "An dialóg le hiompórtáil, tacaíonn sí le teangacha seachas an sprioc-leabharlann.\n\nCuir na teangacha seo leis an leabharlann chun na hacmhainní teanga a sholáthraíonn an dialóg a choinneáil, nó lig ar lár iad chun teangacha na leabharlainne a choinneáil mar atá siad.\n\nNóta: Le haghaidh teangacha nach dtacaíonn an dialóg leo, úsáidfear acmhainní theanga réamhshocraithe na dialóige.\n "
+msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
+msgstr ""
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
+#, fuzzy
 msgid  "Print range"
 msgstr "Raon priontála"
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item2.ItemList.item
+#, fuzzy
 msgid  "All ~Pages"
 msgstr "Gach ~Leathanach"
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item3.ItemList.item
+#, fuzzy
 msgid  "Pa~ges"
 msgstr "Leathanai~gh"
 
@@ -831,38 +906,47 @@ msgid  "Extension"
 msgstr "Eisínteacht"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.ModalDialog.Text
+#, fuzzy
 msgid  "Manage User Interface Languages [$1]"
 msgstr "Bainistigh na Teangacha don Chomhéadan Úsáideora [$1]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Present Languages"
 msgstr "Teangacha atá ann"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
+#, fuzzy
 msgid  "Add..."
 msgstr "Cuir Leis..."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Scrios"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
+#, fuzzy
 msgid  "Default"
 msgstr "Réamhshocrú"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
 msgstr "Úsáidtear an teanga réamhshocraithe mura bhfuil logánú do chomhéadain úsáideora i láthair. Mar bharr ar sin, cóipeálfar gach teaghrán ón teanga réamhshocraithe go dtí acmhainní na dteangacha nua-bhailithe."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Dún"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
+#, fuzzy
 msgid  "[Default Language]"
 msgstr "[Teanga Réamhshocraithe]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Scrios"
 
@@ -871,45 +955,55 @@ msgid  "<Press 'Add' to create language resources>"
 msgstr ""
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Title
+#, fuzzy
 msgid  "Delete Language Resources"
 msgstr "Scrios Acmhainní Teanga"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr "Tá tú ar tí na hacmhainní do (na) teanga(cha) roghnaithe a scriosadh. Scriosfar gach teaghrán comhéadain úsáideora don(a) teanga(cha) seo.\n\nAn bhfuil fonn ort i ndáiríre na hacmhainní seo a scriosadh?"
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
+#, fuzzy
 msgid  "Set Default User Interface Language"
 msgstr "Socraigh an Teanga Réamhshocraithe don Chomhéadan Úsáideora."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Default language"
 msgstr "Teanga réamhshocraithe"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
+#, fuzzy
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
 msgstr "Roghnaigh teanga chun an comhéadan teangacha don chomhéadan úsáideora a mhíniú. Sannfar gach teaghrán atá ann cheana féin do na hacmhainní a cruthaíodh don teanga roghnaithe."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
+#, fuzzy
 msgid  "Add User Interface Languages"
 msgstr "Cuir Teangacha Comhéadain Leis"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.String.Text
+#, fuzzy
 msgid  "Available Languages"
 msgstr "Teangacha atá le fáil"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
+#, fuzzy
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
 msgstr "Togh na teangacha atá uait. Cruthófar acmhainní do na teangacha seo sa leabharlann. Cóipeálfar go huathoibríoch teaghráin na teanga reatha den chomhéadan úsáideora réamhshocraithe go dtí na hacmhainní nua seo."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Properties: "
 msgstr "Airíonna: "
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+#, fuzzy
 msgid  "No Control marked"
 msgstr "Níl Rialtán marcáilte"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+#, fuzzy
 msgid  "Multiselection"
 msgstr "Ilroghnú"

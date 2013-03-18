@@ -40,15 +40,15 @@ msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% ದೋಷ ವರದಿಗೆ ಸ್ವಾಗತ"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY1%
-msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\\n\\n"
 msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
-msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr "ಇದು ಸುಲಭದ ಕೆಲಸ - ನಿಮ್ಮ ಕಡೆಯಿಂದ ಹೆಚ್ಚಿನದೇನನ್ನೂ ಮಾಡದೆ ಮುಂದಿನ ಸಂವಾದದಲ್ಲಿನ 'ಕಳುಹಿಸು' ಗುಂಡಿಯನ್ನು ಒತ್ತಿ, ಅಥವ ಹೇಗೆ ದೋಷವು ಸಂಭವಿಸಿತು ಎಂದು ಸಂಕ್ಷಿಪ್ತವಾಗಿ ವಿವರಿಸಿ ನಂತರ 'ಕಳುಹಿಸು' ಅನ್ನು ಒತ್ತಿ. ನೀವು ವರದಿಯನ್ನು ನೋಡಲು ಬಯಸಿದಲ್ಲಿ, 'ವರದಿಯನ್ನು ತೋರಿಸು' ಗುಂಡಿಯನ್ನು ಒತ್ತಿ. 'ಕಳುಹಿಸಬೇಡ' ಅನ್ನು ಒತ್ತಿದಲ್ಲಿ ಯಾವುದೆ ಮಾಹಿತಿಯನ್ನು ಕಳುಹಿಸಲಾಗುವುದಿಲ್ಲ.\n\n"
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\n"
+msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
-msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgid  "Customer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\n"
 msgstr ""
 
 #: source/all/crashrep.ulf#%PRIVACY_URL%
@@ -76,7 +76,7 @@ msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% ಅನ್ನು ಚಲಾಯಿಸುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ"
 
 #: source/all/crashrep.ulf#%REPORT_BODY%
-msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\\n"
 msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
@@ -120,16 +120,16 @@ msgid  "Save Report to"
 msgstr "ವರದಿಯನ್ನು ಇಲ್ಲಿಗೆ ಉಳಿಸು"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
-msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr "ದೋಷ ವರದಿಯನ್ನು ಕಳುಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಏಕೆಂದರೆ MAPIಯನ್ನು ಪೂರ್ವನಿಯೋಜಿತ ಇ-ಮೈಲ್ ಪ್ರೋಗ್ರಾ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.\n ದಯವಿಟ್ಟು ಒಂದು MAPIಗೆ ಹೊಂದಿಕೆಯಾಗುವಂತಹ ಇ-ಮೈಲ್ ಪ್ರೋಗ್ರಾಂ ಅನ್ನು ಬಳಸಿ."
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\\n Please use a MAPI-compatible e-mail program."
+msgstr ""
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr "ದೋಷ ವರದಿಯನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಆದ್ದರಿಂದ ಕಳುಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
-msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr "ದೋಷ ವರದಿಯನ್ನು ಕಳುಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಏಕೆಂದರೆ 'sendmail' ಅನ್ನು ಆರಂಭಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.\nದಯವಿಟ್ಟು 'sendmail' ಸಿದ್ಧತೆಗಳನ್ನು ಪರಿಶೀಲಿಸಿ."
+msgid  "The error report could not be sent because 'sendmail' could not be started.\\nPlease check the 'sendmail' settings."
+msgstr ""
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
@@ -172,8 +172,8 @@ msgid  "~Port"
 msgstr "ಸಂಪರ್ಕಸ್ಥಾನ(~P)"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
-msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "ದೋಷವರದಿಗಳನ್ನು ಕಳುಹಿಸಲು %PRODUCTNAME% ದೋಷ ವರದಿ ಉಪಕರಣವು ಅಂತರ್ಜಾಲದೊಂದಿಗೆ ಸಂಪರ್ಕ ಹೊಂದಿರಬೇಕಾಗುತ್ತದೆ.\n\nಕಂಪನಿಗಳು ಸಾಮಾನ್ಯವಾಗಿ ಜಾಲಬಂಧವನ್ನು ರಕ್ಷಿಸಲು ಫೈರ್ವಾಲ್‌ನ ಜೊತೆಗೆ ಪ್ರಾಕ್ಸಿ ಪರಿಚಾರಕಗಳನ್ನು ಬಳಸುತ್ತವೆ.\n\nನಿಮ್ಮಲ್ಲಿ ಇಂತಹ ಒಂದು ಸನ್ನಿವೇಶವಿದ್ದಲ್ಲಿ, ನೀವು ಪರಿಚಾರಕದ ವಿಳಾಸ ಹಾಗು ಸಂಪರ್ಕಸ್ಥಾನದ ಸಂಖ್ಯೆಯನ್ನು ಸೂಚಿಸಬೇಕಾಗುತ್ತದೆ."
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\\n\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\n\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -188,7 +188,7 @@ msgid  "Status: The error report has been sent successfully."
 msgstr "ಸ್ಥಿತಿ: ದೋಷ ವರದಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಕಳುಹಿಸಲಾಗಿದೆ."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOEMAILADDRESS%
-msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\\nPlease enter your e-mail address."
 msgstr ""
 
 #: source/all/crashrep.ulf#%MSG_CMDLINE_USAGE%
@@ -204,5 +204,5 @@ msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "ದೋಷ ವರದಿ ಉಪಕರಣಕ್ಕೆ %PRODUCTNAME% ಪ್ರಕ್ರಿಯೆ ID (PID) ಅನ್ನು ನಿಯೋಜಿಸಿ"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
-msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr "ಈ ನೆರವು ಪಠ್ಯವನ್ನು ತೋರಿಸುತ್ತದೆ.\nವಿವರವಾದ ಮಾಹಿತಿಯನ್ನು ಸಿದ್ಧತಾ ಮಾರ್ಗದರ್ಶಿಯಲ್ಲಿ ಕಾಣಬಹುದು."
+msgid  "Shows this help text.\\nDetailed information can be found in the Setup Guide."
+msgstr ""

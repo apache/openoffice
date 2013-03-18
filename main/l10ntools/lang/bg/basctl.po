@@ -136,8 +136,8 @@ msgid  "Save"
 msgstr "Съхраняване"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "Изходният код е твърде голям и не може да бъде нито компилиран, нито записан.\nИзтрийте някои от коментарите или прехвърлете някои методи в друг модул."
+msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -200,8 +200,8 @@ msgid  "The 'XX' file already exists"
 msgstr "Файлът \"XX\" вече съществува"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "Не можете да стартирате този макрос поради мерките за сигурност.\n\nЗа повече информация, проверете настройките за сигурност."
+msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -372,8 +372,8 @@ msgid  "A name must be entered."
 msgstr "Трябва да бъде въведено име."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "Програмата трябва да бъде рестартирана след тази редакция.\nПродължение?"
+msgid  "You will have to restart the program after this edit.\\nContinue?"
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -508,8 +508,8 @@ msgid  "Dialog Import - Name already used"
 msgstr "Импорт на диалогов прозорец – името вече се използва"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr "Библиотеката вече съдържа диалог с име:\n\n$(ARG1)\n\nПреименувайте диалога за да запазите текущия диалог или заменете съществуващия.\n "
+msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -524,8 +524,8 @@ msgid  "Dialog Import - Language Mismatch"
 msgstr "Импорт на диалогов прозорец – несъответствие на езика"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr "Импортираният диалогов прозорец поддържа различни езици от библиотеката – цел.\n\nДобавете тези езици в библиотеката, за да не изгубите допълнителните езикови ресурси на диалога, или укажете пропускането им, за да запазите сегашните езици на библиотеката.\n\nБележка: за езици, неподдържани от диалоговия прозорец, ще бъдет използвани ресурсите за неговия подразбиран език.\n"
+msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
+msgstr ""
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -625,7 +625,7 @@ msgstr "Затваряне"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
 msgid  "~New..."
-msgstr "~Нов..."
+msgstr "~Нова..."
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
 msgid  "~New..."
@@ -780,8 +780,8 @@ msgid  "Delete Language Resources"
 msgstr "Изтриване на ресурси за езици"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr "Ще изтриете ресурсите за избрания език или езици. Всички низове на потребителския интерфейс за този език или езици ще бъдат изтрити.\n\nНаистина ли желаете да изтриете ресурсите за избрания език или езици?"
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"

@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "Cha do ghabh an sgrìobhainn a shàbhaladh gu h-iomlan."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "Tha macrothan %PRODUCTNAME Basic san sgrìobhainn HTML seo.\nCha deach a shàbhaladh leis na roghainnean às-phortaidh làithreach."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -865,7 +865,7 @@ msgstr "Stoidhlean caibidil"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SWSTYLEBIT_LIST.FilterList.item
 msgid  "List Styles"
-msgstr "Stoidhle liosta"
+msgstr "Stoidhlean liosta"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SWSTYLEBIT_IDX.FilterList.item
 msgid  "Index Styles"
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "duilleag bhàn"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "Tha torr mòr dàta agad air an stòr-bhòrd.\nA bheil thu am beachd an dàta air a' bhòrd a chleachdadh ann an aplacaidean eile?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "Faodaidh gun caill thu dàta ma \ndh'iompaicheas tu e 'na HTML. A bheil \nthu airson an sgrìobhainn a shàbhaladh?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "Chan urrainn dhut an còd tùsail a shealltainn ach ma chaidh a shàbhaladh an cruth HTML.\nA bheil thu airson an sgrìobhainn a shàbhaladh mar HTML?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "Tha raointean stòr-dàta sheòlaidhean san sgrìobhainn agad. A bheil thu airson litir foirme a chlò-bhualadh?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -1365,7 +1365,7 @@ msgstr "Àirde ~as fhearr"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_BALANCE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
-msgstr "~Beàrnaich gu cothromach"
+msgstr "B~eàrnaich gu cothromach"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_SELECT_ROW.MenuItem.Text
 msgid  "~Select"
@@ -2273,7 +2273,7 @@ msgstr "Eile"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PRINTEMPTYPAGES.CheckBox.Text
 msgid  "Print ~automatically inserted blank pages"
-msgstr "Clò-bhu~ail duilleagan bàna a chaidh a chur a-steach gu fèin-obrachail"
+msgstr "Clò-bh~uail duilleagan bàna a chaidh a chur a-steach gu fèin-obrachail"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PAPERFROMSETUP.CheckBox.Text
 msgid  "~Paper tray from printer settings"
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<Roghainnean a' chleachdaiche>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "A bheil thu airson na roghainnean co-chòrdalachd airson na teamplaid bhunaiteach atharrachadh?\nBidh buaidh aige seo air gach sgrìobhainn ùr a tha stèidhichte air an teamplaid bhunaiteach."
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2896,8 +2896,8 @@ msgid  "Caption"
 msgstr "Caipsean"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "Cuir ris caipseanan gu fèin-\nobrachail nuair a chuirear a-steach:"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "Cha do thagh thu ainm ùr a' cheanglachain seo. Ma tha thu ag iarraidh fear a bhith ann, cuir fear a-steach an-dràsta."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "Mus urrainn dhut post co-aonaichte a chur ann am post-d, feumaidh %PRODUCTNAME fiosrachadh mun chunntas phuist-dhealain a thèid a chleachdadh.\n\n A bheil thu airson fiosrachadh mun chunntas phuist-dhealain a chur a-steach an-dràsta?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "~Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "An aire:\nCuir leth-chòilean (;) eadar na diofar puist-dhealain."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "Dh'fhàillig a chur (seòladh mì-dhligheach)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "Tha teachdaireachdan puist-dhealain agad sa bhogsa a-mach %PRODUCTNAME fhathast.\nA bheil thu airson fàgail co-dhiù?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "Deasaich an sgrìobhainn"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "Sgrìobh no deasaich an sgrìobhainn agad an-dràsta, mur eil thu air seo a dhèanamh mu thràth. Bidh buaidh aig na dh'atharraicheas tu air gach sgrìobhainn cho-aontaichte.\n\nMa bhriogas tu air \"Deasaich an sgrìobhainn...\", thèid an draoidh a lughdachadh 'na uinneag bheag gus an urrainn dhut post co-aonaichte a dheasachadh. Till dhan draoidh, as dèidh dhut an sgrìobhainn a dheasachadh, 's tu a' briogadh air \"Till gu draoidh a' phuist cho-aonaichte\" san uinneag bheag."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "Chan eil fòrmat an stòr-bhùird a dh'iarr thu ri fhaighinn."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "Tha fòrmat na h-earrainn ro aosta.\nFeumaidh tu iompachadh mus gabh na\nh-atharraichean a shàbhaladh.\nA bheil thu airson iompachadh an-dràsta?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "Bun-nòta: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "Cha ghabh susbaint a tha ri leughadh a-mhàin\natharrachadh. Cha ghabhar ri atharrachadh sam bith."
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "Roghainnean"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "Tha an leubail \"%1 / %2\" ann mu thràth.\nA bheil thu airson sgrìobhadh thairis air?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "Brabhsaich..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "Cleachd an còmhradh seo gus stòir-dhàta ùra a chur an àite na feadhainn a chleachdas tu san sgrìobhainn agad slighe nan raointean stòir-dhàta. Chan urrainn dhut ach aonan dhiubh atharrachadh aig an aon àm. Chan urrainn dhut barrachd air aonan dhiubh a thaghadh san liosta air do làimh chlì.\nCleachd am putan brabhsaidh gus faidhle stòir-dhàta a lorg."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -8513,7 +8513,7 @@ msgstr "Ai~nm"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.FT_SHORTNAME.FixedText.Text
 msgid  "~Shortcut"
-msgstr "A~th-ghoirid"
+msgstr "Ath-g~hoirid"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.LB_BIB.ST_READONLY.String.Text
 msgid  "read-only"
@@ -9489,7 +9489,7 @@ msgstr "Duille~ag"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CHAR_TEMPL.FixedLine.Text
 msgid  "Character Styles"
-msgstr "Stoidhlean caractair"
+msgstr "Stoidhlean nan caractairean"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 msgid  "Te~xt area"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "Fèin-cheartaich"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "Tha am fèin-cheartachadh deiseil. 'S urrainn\ndhut na h-atharraichean a dhiùltadh no gabhail\nriutha uile gu lèir no aon seach aon dhiubh."
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "Suim"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "Chuir thu a-steach ainm mì-dhligheach.\nCha deach am fèin-fhòrmat a dh'iarr thu a chruthachadh. \nFeuch ris a-rithist le ainm eile."
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "A' ~chiad choblh mar chaipsean"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "Mur an do thagh thu na ceallan sa bheil an dàta iomchaidh fhathast, tagh iad a-nis.\n\nGabh a-steach na ceallan sa bheil leubailean nan colbh 's nan ràghan ma tha thu airson 's gum bi iad 'gan gabhail a-steach sa chairt agad."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "A bheil thu airson am prìomh-theacsa a sgrùdadh?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "Tha cromag ris an roghainn a sheallas àitheantan an raoin.\nA bheil thu airson an sgrìobhainn a chlò-bhualadh le ainmean nan raointean?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Cuir litir mhòr air a' chiad litir aig toiseach seantans"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "Cuir comharran-labhair %1 \\bgnàthaichte%2 an àite na feadhainn \"bunaiteach\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[Siostam]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "Tha an dearbhadh-litreachaidh eadar-ghnìomhach beò\nann an sgrìobhainn eile mu thràth"
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "Tha an tàthanachadh eadar-ghnìomhach beò\nann an sgrìobhainn eile mu thràth"
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -11357,7 +11357,7 @@ msgstr "Leabhrain-fhiosrachaidh"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CONFERENCE.String.Text
 msgid  "Conference proceedings"
-msgstr "Imeachdan na co-labhairt"
+msgstr "Imeachdan co-labhairt"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INBOOK.String.Text
 msgid  "Book excerpt"

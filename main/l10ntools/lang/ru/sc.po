@@ -144,8 +144,8 @@ msgid  "Column Fields"
 msgstr "Поля столбцов"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-msgid  "Row\nFields"
-msgstr "Поля\nстрок"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -489,7 +489,7 @@ msgstr "Конец"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOEND.RadioButton.Text
 msgid  "A~utomatically"
-msgstr "Автоматический перенос"
+msgstr "Автоматически"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANEND.RadioButton.Text
 msgid  "Ma~nually at"
@@ -773,7 +773,7 @@ msgstr "Функция"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.FT_NAMELABEL.FixedText.Text
 msgid  "Name:"
-msgstr "Поле:"
+msgstr "Название:"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.FL_DISPLAY.FixedLine.Text
 msgid  "Displayed value"
@@ -2117,7 +2117,7 @@ msgstr "Атрибуты текста"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "Имя файла"
+msgstr "Заголовок"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -2268,8 +2268,8 @@ msgid  "~Discard"
 msgstr "Отклонить"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "Удалить элемент\n#\n?"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 msgid  "Copy List"
@@ -2712,8 +2712,8 @@ msgid  "Hide ~all"
 msgstr "Скрыть всё"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "Защита ячейки действует только после установки защиты текущего листа.\n\nДля защиты листа выберите в меню «Сервис» команду «Защитить документ», а затем команду «Лист»."
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
 msgid  "Protection"
@@ -3013,7 +3013,7 @@ msgstr "Промежуточные итоги"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 msgid  "Sort"
-msgstr "Сортировать"
+msgstr "Сортировка"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 msgid  "Filter"
@@ -3232,8 +3232,8 @@ msgid  "No operations to execute"
 msgstr "Нет операций для выполнения"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "Диапазон не содержит заголовков столбцов.\nИспользовать первую строку в качестве заголовка столбца?"
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 msgid  "Error while importing data!"
@@ -3296,8 +3296,8 @@ msgid  "Search key not found."
 msgstr "Искомое понятие не найдено."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-msgid  "Goal Seek successful.\n"
-msgstr "Успешный поиск.\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 msgid  "Insert result ("
@@ -3308,12 +3308,12 @@ msgid  ") into current cell?"
 msgstr ") в текущую ячейку?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-msgid  "Goal Seek not successful.\n"
-msgstr "Неуспешный поиск.\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-msgid  "No exact value found. \n"
-msgstr "Не найдено точное значение. \n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 msgid  "Insert closest value ("
@@ -3597,14 +3597,1094 @@ msgstr "Верхний колонтитул"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FOOTER.String.Text
 msgid  "Footer"
-msgstr "Нижний ~колонтитул"
+msgstr "Нижний колонтитул"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TEXTATTRS.String.Text
 msgid  "Text Attributes"
 msgstr "Атрибуты текста"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+msgid  "\\"
+msgstr "\\"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+msgid  "PAGE"
+msgstr "СТРАНИЦА"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+msgid  "PAGES"
+msgstr "СТРАНИЦЫ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+msgid  "DATE"
+msgstr "DATE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+msgid  "TIME"
+msgstr "TIME"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+msgid  "FILE"
+msgstr "FILE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+msgid  "SHEET"
+msgstr "SHEET"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+msgid  "Protected cells can not be modified."
+msgstr "Невозможно изменить защищённые ячейки."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+msgid  "Document opened in read-only mode."
+msgstr "Документ открыт только для чтения."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+msgid  "You cannot change only part of an array."
+msgstr "Невозможно изменить часть массива."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+msgid  "Header"
+msgstr "Верхний колонтитул"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+msgid  "Footer"
+msgstr "Нижний колонтитул"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+msgid  "Err:"
+msgstr "Ошибка:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+msgid  "Error: Ranges do not intersect"
+msgstr "Ошибка: регионы не пересекаются"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+msgid  "Error: Division by zero"
+msgstr "Ошибка: деление на ноль"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+msgid  "Error: Wrong data type"
+msgstr "Ошибка: Неправильный тип данных"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+msgid  "Error: Not a valid reference"
+msgstr "Ошибка: недопустимая ссылка"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+msgid  "Error: Invalid name"
+msgstr "Ошибка: недопустимое имя"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+msgid  "Error: Invalid numeric value"
+msgstr "Ошибка: Недопустимое числовое значение"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+msgid  "Error: Value not available"
+msgstr "Ошибка: значение недоступно"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+msgid  "#ADDIN?"
+msgstr "#ADDIN?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+msgid  "Error: Add-in not found"
+msgstr "Ошибка: не найдены подключаемые модули"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+msgid  "#MACRO?"
+msgstr "#МАКРОС?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+msgid  "Error: Macro not found"
+msgstr "Ошибка: макрос не найден"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+msgid  "Internal syntactical error"
+msgstr "Внутренняя синтаксическая ошибка"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+msgid  "Error: Invalid argument"
+msgstr "Ошибка: недопустимый аргумент"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+msgid  "Error in parameter list"
+msgstr "Ошибка в списке параметров"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+msgid  "Error: Invalid character"
+msgstr "Ошибка: недопустимый символ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+msgid  "Error: Invalid semicolon"
+msgstr "Ошибка: недопустимая точка с запятой"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+msgid  "Error: in bracketing"
+msgstr "Ошибка использования скобок"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+msgid  "Error: Operator missing"
+msgstr "Ошибка: оператор отсутствует"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+msgid  "Error: Variable missing"
+msgstr "Ошибка: переменная отсутствует"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+msgid  "Error: Formula overflow"
+msgstr "Ошибка: слишком длинная формула"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+msgid  "Error: String overflow"
+msgstr "Ошибка: строка символов слишком длинная"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+msgid  "Error: Internal overflow"
+msgstr "Ошибка: внутреннее переполнение"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+msgid  "Error: Circular reference"
+msgstr "Ошибка: итерационная ссылка"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+msgid  "Error: Calculation does not converge"
+msgstr "Ошибка: вычисления не сходятся"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+msgid  "Grid color"
+msgstr "Цвет сетки"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "Переместить содержимое спрятанных ячеек в первую ячейку?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+msgid  "Filter"
+msgstr "Фильтр"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+msgid  "The target database range does not exist."
+msgstr "Не существует диапазона базы данных назначения."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+msgid  "Invalid increment"
+msgstr "Неправильный шаг"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+msgid  "MULTIPLE.OPERATIONS"
+msgstr "MULTIPLE.OPERATIONS"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+msgid  "Multiple operations"
+msgstr "Совмещённые операции"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+msgid  "Range"
+msgstr "Диапазон"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+msgid  "Yes"
+msgstr "Да"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+msgid  "No"
+msgstr "Нет"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+msgid  "Protection"
+msgstr "Защита"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+msgid  "Formulas"
+msgstr "Формулы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+msgid  "Hide"
+msgstr "Скрыть"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+msgid  "Print"
+msgstr "Печать"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+msgid  "(nested)"
+msgstr "(вложенный)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+msgid  "(optional)"
+msgstr "(необязательный)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+msgid  "(required)"
+msgstr "(обязательный)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+msgid  "invalid"
+msgstr "недействительный"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+msgid  "Edit Function"
+msgstr "Изменить функцию"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+msgid  "Comments"
+msgstr "Примечания"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "Вы действительно хотите удалить выбранные листы?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "Вы действительно хотите удалить выбранный сценарий?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+msgid  "Thesaurus is not available"
+msgstr "Тезаурус недоступен"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+msgid  "Spellcheck not available"
+msgstr "Проверка орфографии недоступна"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+msgid  "Import text files"
+msgstr "Импорт текстовых файлов"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+msgid  "Export Text File"
+msgstr "Экспорт в текстовый файл"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+msgid  "Import Lotus files"
+msgstr "Импорт файлов Lotus"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+msgid  "Import DBase files"
+msgstr "Импорт файлов DBase"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+msgid  "DBase export"
+msgstr "Экспорт DBase"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+msgid  "Dif Export"
+msgstr "Экспорт Dif"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+msgid  "Dif Import"
+msgstr "Импорт Dif"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+msgid  "Default"
+msgstr "Базовый"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+msgid  "Result"
+msgstr "Результат"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+msgid  "Result2"
+msgstr "Результат2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+msgid  "Heading"
+msgstr "Заголовок"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+msgid  "Heading1"
+msgstr "Заголовок1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+msgid  "Report"
+msgstr "Отчёт"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+msgid  "Report1"
+msgstr "Отчёт1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "Использование тезауруса возможно только в текстовых ячейках!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "Продолжить проверку орфографии с начала текущего листа?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "Завершена проверка орфографии этого листа."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+msgid  "No language set"
+msgstr "Язык не установлен"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+msgid  "Insert Sheet"
+msgstr "Вставить лист"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+msgid  "Delete Sheets"
+msgstr "Удалить листы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+msgid  "Rename Sheet"
+msgstr "Переименовать лист"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+msgid  "Color Tab"
+msgstr "Цветной ярлык"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+msgid  "Color Tabs"
+msgstr "Цветные ярлыки"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+msgid  "Move Sheets"
+msgstr "Переместить листы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+msgid  "Copy Sheet"
+msgstr "Копировать лист"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+msgid  "Append sheet"
+msgstr "Добавить лист"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+msgid  "Show Sheet"
+msgstr "Показать лист"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+msgid  "Hide sheet"
+msgstr "Скрыть лист"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+msgid  "Flip sheet"
+msgstr "Отразить лист"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+msgid  "Toggle the use of R1C1 notation"
+msgstr "Вкл./выкл. нотации R1C1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+msgid  "Main Title"
+msgstr "Главный заголовок"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+msgid  "Subtitle"
+msgstr "Подзаголовок"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+msgid  "X axis title"
+msgstr "Заголовок оси X"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+msgid  "Y axis title"
+msgstr "Заголовок оси Y"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+msgid  "Z axis title"
+msgstr "Заголовок оси Z"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "Новая таблица содержит абсолютные ссылки на другие таблицы, которые, возможно, неправильны!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr "Из-за идентичности имен изменено название диапазона в документе назначения!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+msgid  "AutoFilter not possible"
+msgstr "Автофильтрация невозможна"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME Calc достиг начала листа. Продолжить поиск с конца листа?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME Calc достиг конца листа. Продолжить поиск с начала листа?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+msgid  "Find & Replace"
+msgstr "Найти и заменить"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME Calc достиг начала документа. Продолжить поиск с конца документа?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME Calc достиг конца документа. Продолжить поиск с начала документа?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+msgid  "Replace existing definition of #?"
+msgstr "Заменить существующее определение #?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+msgid  "Invalid selection for range names"
+msgstr "Неправильное выделение для имен области"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+msgid  "References can not be inserted above the source data."
+msgstr "Невозможно вставить связь над исходными данными."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+msgid  "Scenario not found"
+msgstr "Сценарий не найден"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+msgid  "Do you really want to delete the entry #?"
+msgstr "Вы действительно хотите удалить элемент #?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+msgid  "Objects/graphics"
+msgstr "Объекты/Рисунки"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+msgid  "Charts"
+msgstr "Диаграммы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+msgid  "Drawing Objects"
+msgstr "Объекты рисунков"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+msgid  "Show"
+msgstr "Показать"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+msgid  "Hide"
+msgstr "Скрыть"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+msgid  "Top to bottom"
+msgstr "Сверху вниз"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+msgid  "Left-to-right"
+msgstr "Слева направо"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+msgid  "Comments"
+msgstr "Примечания"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+msgid  "Grid"
+msgstr "Сетка"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+msgid  "Row & Column Headers"
+msgstr "Заголовки строк и столбцов"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+msgid  "Formulas"
+msgstr "Формулы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+msgid  "Zero Values"
+msgstr "Нулевые значения"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+msgid  "Print direction"
+msgstr "Направление печати"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+msgid  "First page number"
+msgstr "Номер первой страницы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+msgid  "Reduce/enlarge printout"
+msgstr "Уменьшить/увеличить распечатку"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+msgid  "Fit print range(s) on number of pages"
+msgstr "Подогнать диапазон печати к числу страниц"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+msgid  "Fit print range(s) to width/height"
+msgstr "Подогнать диапазон печати к ширине/высоте"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+msgid  "Width"
+msgstr "Ширина"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+msgid  "Height"
+msgstr "Высота"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+msgid  "%1 page(s)"
+msgstr "%1 страница(ы)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+msgid  "automatic"
+msgstr "автоматически"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+msgid  "Statistics"
+msgstr "Статистика"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+msgid  "The link could not be updated."
+msgstr "Невозможно обновить ссылку."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+msgid  "File:"
+msgstr "Файл:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+msgid  "Sheet:"
+msgstr "Лист:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+msgid  "Overview"
+msgstr "Обзор"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+msgid  "Doc.Information"
+msgstr "Сведения о документе"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+msgid  "Created"
+msgstr "Создан"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+msgid  "Modified"
+msgstr "Изменён"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+msgid  "Printed"
+msgstr "Напечатан"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+msgid  "Subject"
+msgstr "Тема"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+msgid  "Key words"
+msgstr "Ключевые слова"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+msgid  "Comments"
+msgstr "Примечания"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+msgid  "by"
+msgstr "от"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+msgid  "on"
+msgstr "в"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+msgid  "Too many conditions"
+msgstr "Слишком много условий"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+msgid  "The table could not be inserted."
+msgstr "Невозможно вставить таблицу."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+msgid  "The sheets could not be deleted."
+msgstr "Невозможно удалить листы."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "Невозможно вставить содержимое буфера обмена."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "Для вставки недостаточно места на листе."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+msgid  "No references found."
+msgstr "Ссылки не найдены."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+msgid  "Source and destination must not overlap."
+msgstr "Исходная область и область назначения не должны пересекаться."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+msgid  "Graphics"
+msgstr "Изображения"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+msgid  "Invalid name."
+msgstr "Недопустимое имя."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+msgid  "Selected macro not found."
+msgstr "Не найден выбранный макрос."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+msgid  "Invalid value."
+msgstr "Недопустимое значение."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+msgid  "calculating"
+msgstr "вычисление"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+msgid  "sorting"
+msgstr "сортировка"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+msgid  "Adapt row height"
+msgstr "Подбор высоты строки"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+msgid  "Compare #"
+msgstr "Сравнить #"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+msgid  "Delete contents"
+msgstr "Удалить содержимое"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+msgid  "%1 R  x %2 C"
+msgstr "%1 R  x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+msgid  "More..."
+msgstr "Е~щё..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+msgid  "Invalid range"
+msgstr "Недопустимый диапазон"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr "Значение сводной таблицы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr "Результат сводной таблицы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr "Категория сводной таблицы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr "Заголовок сводной таблицы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr "Поле сводной таблицы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr "Угол сводной таблицы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+msgid  "Filter"
+msgstr "Фильтр"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+msgid  "Sort"
+msgstr "Сортировка"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+msgid  "Subtotals"
+msgstr "Промежуточные итоги"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+msgid  "None"
+msgstr "Нет"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+msgid  "Do you want to replace the contents of #?"
+msgstr "Заменить содержимое #?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+msgid  "Width:"
+msgstr "Ширина:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+msgid  "Height:"
+msgstr "Высота:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+msgid  "Hide"
+msgstr "Скрыть"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+msgid  "The object could not be inserted."
+msgstr "Невозможно вставить объект."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+msgid  "<empty>"
+msgstr "<пусто>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "Ячейка #1 изменена с «#2» на «#3»"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+msgid  "#1 inserted"
+msgstr "#1 вставлена"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+msgid  "#1deleted"
+msgstr "#1 удалена"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+msgid  "Range moved from #1 to #2"
+msgstr "Область перемещена из #1 в #2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+msgid  "Exit Recording"
+msgstr "Выйти из режима записи"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+msgid  "The document can not be closed while a link is being updated."
+msgstr "Закрыть документ во время обновления ссылки невозможно."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+msgid  "Adapt array area"
+msgstr "Подбор области массива"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+msgid  "Array formula  %1 R x %2 C"
+msgstr "Формула матрицы %1 R x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+msgid  "Hangul/Hanja Conversion"
+msgstr "Преобразование Хангыль/Ханджа"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+msgid  "Select Cell"
+msgstr "Выделить ячейку"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+msgid  "Select Range"
+msgstr "Выделить диапазон"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+msgid  "Select Database Range"
+msgstr "Выбрать диапазон данных"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+msgid  "Go To Row"
+msgstr "Перейти к строке"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+msgid  "Go To Sheet"
+msgstr "Перейти к листу"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+msgid  "Define Name for Range"
+msgstr "Задать имя диапазона"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "Выделение должно быть прямоугольным для того, чтобы задать ему имя."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "Необходимо ввести допустимую ссылку или имя выделенной области."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "ПРЕДУПРЕЖДЕНИЕ: это действие может привести к нежелаемым изменениям в ссылках внутри формул."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr "ПРЕДУПРЕЖДЕНИЕ: это действие может привести к утере ссылок на удаляемую область."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+msgid  "(none)"
+msgstr "(нет)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+msgid  "of"
+msgstr "из"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+msgid  "of ?"
+msgstr "из ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+msgid  "Created by"
+msgstr "Создан"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+msgid  "Confidential"
+msgstr "Секретно"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+msgid  "Customized"
+msgstr "Выборочно"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+msgid  "Custom footer"
+msgstr "~Настроить колонтитул"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+msgid  "Chinese conversion"
+msgstr "Преобразование китайского языка..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+msgid  "You cannot change this part of the pivot table."
+msgstr "Вы не можете изменить эту часть сводной таблицы."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+msgid  "Manual"
+msgstr "Вручную"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+msgid  "Automatic"
+msgstr "Автоматически"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+msgid  "Nested arrays are not supported."
+msgstr "Вложенные массивы не поддерживаются."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+msgid  "Text to Columns"
+msgstr "Текст по столбцам"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr "Электронная таблица была обновлена с учётом изменений, сохранённых другими пользователями."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+msgid  "Unknown User"
+msgstr "Неизвестный пользователь"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+msgid  "Cell Styles"
+msgstr "Стили ячейки"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+msgid  "Page Styles"
+msgstr "Стили страницы"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr "Некорректные исходные данные для сводной таблицы."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr "Имя поля не может быть пустым. Проверьте первую строку исходных данных на отсутствие в ней пустых ячеек."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr "Для создания или обновления сводной таблицы требуется не менее двух строк данных."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+msgid  "Character"
+msgstr "Символы"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+msgid  "Font"
+msgstr "Шрифт"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr "Эффекты шрифта"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+msgid  "Font Position"
+msgstr "Положение"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+msgid  "Back"
+msgstr "Назад"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+msgid  "Paragraph"
+msgstr "Абзац"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+msgid  "Indents & Spacing"
+msgstr "Отступы и интервалы"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+msgid  "Alignment"
+msgstr "Выравнивание"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+msgid  "Asian Typography"
+msgstr "Восточно-азиатские правила набора"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+msgid  "Tab"
+msgstr "Табуляция"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+msgid  "Back"
+msgstr "Назад"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+msgid  "AutoFormat"
+msgstr "Автоформат"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+msgid  "F~ormat"
+msgstr "Формат"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+msgid  "A~utoFit width and height"
+msgstr "Автоподбор шир. и выс."
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+msgid  "~Borders"
+msgstr "Обрамление"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+msgid  "F~ont"
+msgstr "Шрифт"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+msgid  "~Pattern"
+msgstr "Заливка"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+msgid  "Alignmen~t"
+msgstr "Выравнивание"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+msgid  "~Number format"
+msgstr "Числовой формат"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+msgid  "Formatting"
+msgstr "Форматирование"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+msgid  "~Add..."
+msgstr "Добавить..."
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "Удалить"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+msgid  "~Rename"
+msgstr "Переименовать"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+msgid  "Add AutoFormat"
+msgstr "Добавить автоформат"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+msgid  "Rename AutoFormat"
+msgstr "Переименовать автоформат"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+msgid  "Name"
+msgstr "Название"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+msgid  "Delete AutoFormat"
+msgstr "Удалить автоформат"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
@@ -4565,7 +5645,7 @@ msgstr "Преобразует дату из текстового формата
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.2.String.Text
 msgid  "text"
-msgstr "текст"
+msgstr "Текст"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a date in a %PRODUCTNAME date format."
@@ -4697,7 +5777,7 @@ msgstr "Преобразует время из текстового формат
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.2.String.Text
 msgid  "text"
-msgstr "текст"
+msgstr "Текст"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a time in a %PRODUCTNAME time format."
@@ -4773,7 +5853,7 @@ msgstr "Внутреннее числовое представление дат�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.4.String.Text
 msgid  "mode"
-msgstr "режим"
+msgstr "способ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.5.String.Text
 msgid  "Indicates the first day of the week (1 = Sunday, other values = Monday)."
@@ -4797,7 +5877,7 @@ msgstr "Вычисляет текущую стоимость инвестици�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.2.String.Text
 msgid  "Rate"
-msgstr "Ставка"
+msgstr "Процент"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.3.String.Text
 msgid  "The rate of interest for the period given."
@@ -4813,7 +5893,7 @@ msgstr "Общее число периодов платежей."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.6.String.Text
 msgid  "PMT"
-msgstr "Платёж"
+msgstr "Выплата"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.7.String.Text
 msgid  "Regular payments. The constant amount of annuity that is paid in each period."
@@ -4821,7 +5901,7 @@ msgstr "Фиксированная сумма платежа за каждый �
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.8.String.Text
 msgid  "FV"
-msgstr "Остаток"
+msgstr "КС"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.9.String.Text
 msgid  "Future value. The value (final value) to be attained after the last payment."
@@ -4833,7 +5913,7 @@ msgstr "Тип"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Срок платежа. Значение 1 указывает на то, что плата производится в начале периода, 0 - в конце периода."
+msgstr "Тип = 1 означает, что плата производится в начале периода, = 0 - в конце периода."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 msgid  "Future value. Returns the future value of an investment based on regular payments and a constant interest rate."
@@ -4841,11 +5921,11 @@ msgstr "Вычисляет будущее значение вклада с по�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.2.String.Text
 msgid  "Rate"
-msgstr "Процент"
+msgstr "Ставка"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Процент прибыли за период."
+msgstr "Фиксированная процентная ставка за период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 msgid  "NPER"
@@ -4853,23 +5933,23 @@ msgstr "КПЕР"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Общее число периодов выплат годовой ренты."
+msgstr "Общее количество периодов выплат."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 msgid  "PMT"
-msgstr "Выплата"
+msgstr "Платеж"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "Выплата, производимая в каждый период и не меняющаяся за все время выплаты ренты."
+msgstr "Сумма выплат, выполняемая каждый период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 msgid  "PV"
-msgstr "ТЗ"
+msgstr "НС"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "Текущее значение или общая сумма всех будущих платежей с настоящего момента"
+msgstr "Единовременная сумма платежа в начале срока"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 msgid  "Type"
@@ -4877,7 +5957,7 @@ msgstr "Тип"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Тип = 1 означает, что плата производится в начале периода, = 0 - в конце периода."
+msgstr "Срок выплат. Значение 1 указывает на то, что плата производится в начале периода, 0 - в конце периода."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 msgid  "Payment period. Calculates the number of payment periods for an investment based on regular payments and a constant interest rate."
@@ -4885,11 +5965,11 @@ msgstr "Вычисляет общее количество периодов вы
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.2.String.Text
 msgid  "Rate"
-msgstr "Процент"
+msgstr "Ставка"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Фиксированная процентная ставка за период."
+msgstr "Процент прибыли за период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 msgid  "PMT"
@@ -4897,23 +5977,23 @@ msgstr "Выплата"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.5.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "Сумма выплат, выполняемая каждый период."
+msgstr "Сумма платежа за каждый период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.6.String.Text
 msgid  "PV"
-msgstr "НС"
+msgstr "Сумма"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "Единовременная сумма платежа в начале срока"
+msgstr "Основная сумма кредита"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.8.String.Text
 msgid  "FV"
-msgstr "КС"
+msgstr "Остаток"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "Остаток средств, выплачиваемый в конце срока."
+msgstr "Остаток средств на конец выплат."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 msgid  "Type"
@@ -4921,7 +6001,7 @@ msgstr "Тип"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Срок выплат. Значение 1 указывает на то, что плата производится в начале периода, 0 - в конце периода."
+msgstr "Срок выплат. Значение 1 указывает на то, что плата производится в начале периода,  0 - в конце периода."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 msgid  "Regular payments. Returns the periodic payment of an annuity, based on regular payments and a fixed periodic interest rate."
@@ -4929,11 +6009,11 @@ msgstr "Возвращает величину периодических вып�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.2.String.Text
 msgid  "Rate"
-msgstr "Ставка"
+msgstr "Процент"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Фиксированная процентная ставка за период."
+msgstr "Процентная ставка за один период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.4.String.Text
 msgid  "NPER"
@@ -4941,23 +6021,23 @@ msgstr "КПЕР"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Общее количество периодов выплат."
+msgstr "Общее количество платежей."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.6.String.Text
 msgid  "PV"
-msgstr "Сумма"
+msgstr "Начало"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "Основная сумма кредита"
+msgstr "Величина единовременной выплаты в начале срока"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.8.String.Text
 msgid  "FV"
-msgstr "Остаток"
+msgstr "БЗ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.9.String.Text
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "Остаток средств на конец выплат."
+msgstr "Остаток средств в конце выплат."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.10.String.Text
 msgid  "Type"
@@ -4965,7 +6045,7 @@ msgstr "Тип"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Срок выплат. Значение 1 указывает на то, что плата производится в начале периода,  0 - в конце периода."
+msgstr "Срок выплат. Значение 1 указывает на то, что плата производится в начале периода, 0 - в конце периода."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 msgid  "Calculates the constant interest rate of an investment with regular payments."
@@ -4977,7 +6057,7 @@ msgstr "КПЕР"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.3.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Общее количество платежей."
+msgstr "Общее число периодов выплат годовой ренты."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.4.String.Text
 msgid  "PMT"
@@ -4989,19 +6069,19 @@ msgstr "Сумма платежа за каждый период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.6.String.Text
 msgid  "PV"
-msgstr "Начало"
+msgstr "Сумма"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "Величина единовременной выплаты в начале срока"
+msgstr "Текущее значение ряда платежей"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.8.String.Text
 msgid  "FV"
-msgstr "Остаток"
+msgstr "БЗ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.9.String.Text
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "Остаток средств в конце выплат."
+msgstr "Будущая значение, который нужно достичь после последней выплаты."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.10.String.Text
 msgid  "Type"
@@ -5009,7 +6089,7 @@ msgstr "Тип"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Срок выплат. Значение 1 указывает на то, что плата производится в начале периода,  0 - в конце периода."
+msgstr "Срок платежей. Значение 1 указывает на то, что плата производится в начале периода, 0 - в конце периода."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.12.String.Text
 msgid  "Guess"
@@ -5029,7 +6109,7 @@ msgstr "Процент"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Процент прибыли за период."
+msgstr "Процентная ставка за период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 msgid  "Period"
@@ -5101,11 +6181,11 @@ msgstr "Общее число периодов платежей."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.8.String.Text
 msgid  "PV"
-msgstr "Сумма"
+msgstr "ТЗ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.9.String.Text
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "Основная сумма кредита."
+msgstr "Текущая стоимость или общая сумма всех будущих платежей с настоящего момента."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.10.String.Text
 msgid  "FV"
@@ -5149,15 +6229,15 @@ msgstr "ТЗ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.7.String.Text
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "Текущая стоимость или общая сумма всех будущих платежей с настоящего момента."
+msgstr "Текущее значение инвестиции."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.8.String.Text
 msgid  "S"
-msgstr "Н"
+msgstr "Нач_период"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.9.String.Text
 msgid  "The start period. The first period to be taken into account. A = 1 denotes the very first period."
-msgstr "Номер первого периода, учитываемого в вычислениях. Если Н = 1, то это самый первый период."
+msgstr "Номер первого периода, учитываемого в вычислениях. Если нач_период равен 1, то это означает самый первый период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.10.String.Text
 msgid  "E"
@@ -5485,7 +6565,7 @@ msgstr "Вычисляет чистую приведённую стоимост�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.2.String.Text
 msgid  "RATE"
-msgstr "Процент"
+msgstr "ПРОЦЕНТ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.3.String.Text
 msgid  "The rate of discount for one period."
@@ -5609,7 +6689,7 @@ msgstr "БЗ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LAUFZ.7.String.Text
 msgid  "The future value of the investment."
-msgstr "Будущее значение инвестиции."
+msgstr "Будущее значение вложения."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZGZ.1.String.Text
 msgid  "Interest. Calculates the interest rate which represents the rate of return from an investment."
@@ -5645,7 +6725,7 @@ msgstr "Возвращает TRUE, если значение является с
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.2.String.Text
 msgid  "value"
-msgstr "Значение"
+msgstr "Аргумент"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 msgid  "The value to be tested."
@@ -5657,7 +6737,7 @@ msgstr "Возвращает TRUE, если значение является л
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.2.String.Text
 msgid  "value"
-msgstr "Значение"
+msgstr "значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.3.String.Text
 msgid  "The value to be tested."
@@ -5669,7 +6749,7 @@ msgstr "Возвращает TRUE, если значение является л
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.2.String.Text
 msgid  "value"
-msgstr "Значение"
+msgstr "значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.3.String.Text
 msgid  "The value to be tested."
@@ -5681,7 +6761,7 @@ msgstr "Возвращает TRUE, если значение является с
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.2.String.Text
 msgid  "value"
-msgstr "Значение"
+msgstr "значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.3.String.Text
 msgid  "The value to be tested."
@@ -5693,7 +6773,7 @@ msgstr "Возвращает TRUE, если значение является л
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.2.String.Text
 msgid  "value"
-msgstr "Значение"
+msgstr "значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.3.String.Text
 msgid  "The value to be tested."
@@ -5705,7 +6785,7 @@ msgstr "Возвращает TRUE, если значением является 
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NV.2.String.Text
 msgid  "value"
-msgstr "Значение"
+msgstr "значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NV.3.String.Text
 msgid  "The value to be tested."
@@ -5717,7 +6797,7 @@ msgstr "Возвращает TRUE, если значение не являетс
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NON_STRING.2.String.Text
 msgid  "value"
-msgstr "Значение"
+msgstr "значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NON_STRING.3.String.Text
 msgid  "The value to be tested."
@@ -5729,7 +6809,7 @@ msgstr "Возвращает TRUE, если значение является т
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_STRING.2.String.Text
 msgid  "value"
-msgstr "Значение"
+msgstr "значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_STRING.3.String.Text
 msgid  "The value to be tested."
@@ -5741,7 +6821,7 @@ msgstr "Возвращает TRUE, если значение является ч
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_VALUE.2.String.Text
 msgid  "value"
-msgstr "Значение"
+msgstr "значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_VALUE.3.String.Text
 msgid  "The value to be tested."
@@ -5753,7 +6833,7 @@ msgstr "Возвращает TRUE, если ячейка является яче
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.2.String.Text
 msgid  "reference"
-msgstr "ссылка"
+msgstr "Ссылка"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.3.String.Text
 msgid  "The cell to be checked."
@@ -5777,7 +6857,7 @@ msgstr "Преобразует аргумент в число."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_N.2.String.Text
 msgid  "value"
-msgstr "Аргумент"
+msgstr "Значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_N.3.String.Text
 msgid  "The value to be interpreted as a number."
@@ -6149,7 +7229,7 @@ msgstr "Вычисляет квадратный корень числа."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "число"
+msgstr "Число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -6201,7 +7281,7 @@ msgstr "число 2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.5.String.Text
 msgid  "The number of elements selected."
-msgstr "Выбранное число объектов из каждой комбинации."
+msgstr "Выбранное число элементов."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.1.String.Text
 msgid  "Calculates the number of combinations of elements including repetition."
@@ -6337,7 +7417,7 @@ msgstr "Вычисляет синус данного числа."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 msgid  "number"
-msgstr "число"
+msgstr "Число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 msgid  "The angle in radians for which the sine is to be calculated."
@@ -6361,7 +7441,7 @@ msgstr "Вычисляет тангенс числа."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 msgid  "number"
-msgstr "число"
+msgstr "количество"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 msgid  "The angle in radians for which the tangent is to be calculated."
@@ -6385,7 +7465,7 @@ msgstr "Вычисляет гиперболический синус числа.
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 msgid  "number"
-msgstr "число"
+msgstr "Количество"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic sine is to be calculated."
@@ -6409,7 +7489,7 @@ msgstr "Возвращает гиперболический тангенс чи�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 msgid  "number"
-msgstr "число"
+msgstr "количество"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic tangent is to be calculated."
@@ -6645,7 +7725,7 @@ msgstr "Отбрасывает дробную часть числа."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.2.String.Text
 msgid  "number"
-msgstr "число"
+msgstr "количество"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.3.String.Text
 msgid  "The number to be truncated."
@@ -6677,7 +7757,7 @@ msgstr "количество"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 msgid  "The number of places to which a number is to be rounded."
-msgstr "Количество десятичных разрядов, до которого нужно округлить число."
+msgstr "Количество цифр, до которого округляется число."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 msgid  "Rounds a number up to the predefined accuracy."
@@ -6765,7 +7845,7 @@ msgstr "Кратное, до которого требуется округли�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.6.String.Text
 msgid  "Mode"
-msgstr "Способ"
+msgstr "Режим"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.7.String.Text
 msgid  "If given and not equal to zero then rounded up according to amount when a negative number and significance."
@@ -6829,7 +7909,7 @@ msgstr "Транспонирование матрицы."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.2.String.Text
 msgid  "array"
-msgstr "матрица"
+msgstr "массив"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.3.String.Text
 msgid  "The array in which the rows and columns have been transposed."
@@ -6841,7 +7921,7 @@ msgstr "Вычисляет произведение двух матриц."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.2.String.Text
 msgid  "array"
-msgstr "матрица"
+msgstr "массив"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.3.String.Text
 msgid  "The first array for the array product."
@@ -6849,7 +7929,7 @@ msgstr "Первая матрица для вычисления произвед
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.4.String.Text
 msgid  "array"
-msgstr "матрица"
+msgstr "массив"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.5.String.Text
 msgid  "The second array having the same number of rows as the first array has columns."
@@ -6861,7 +7941,7 @@ msgstr "Вычисляет определитель матрицы."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.2.String.Text
 msgid  "array"
-msgstr "матрица"
+msgstr "Массив"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.3.String.Text
 msgid  "The array for which the determinant is to be determined."
@@ -6909,7 +7989,7 @@ msgstr "Вычисляет сумму разностей квадратов эл
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.2.String.Text
 msgid  "array_x"
-msgstr "Массив X"
+msgstr "массив X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.3.String.Text
 msgid  "First array where the square of the arguments are totalled."
@@ -6917,7 +7997,7 @@ msgstr "Первый массив, аргументы которого возв�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.4.String.Text
 msgid  "array_y"
-msgstr "Массив Y"
+msgstr "массив Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.5.String.Text
 msgid  "Second array where the square of the arguments is to be subtracted."
@@ -6969,7 +8049,7 @@ msgstr "Возвращает частотное распределение в в
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.2.String.Text
 msgid  "data"
-msgstr "данные"
+msgstr "Данные"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.3.String.Text
 msgid  "The array of the data."
@@ -6989,19 +8069,19 @@ msgstr "Вычисляет параметры линейной регресси�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.2.String.Text
 msgid  "data_Y"
-msgstr "данные Y"
+msgstr "Данные Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 msgid  "The Y data array."
-msgstr "Массив данных Y."
+msgstr "Массив данных y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 msgid  "data_X"
-msgstr "данные Х"
+msgstr "данные X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 msgid  "The X data array."
-msgstr "Массив данных X."
+msgstr "Массив данных Х."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 msgid  "Linear_type"
@@ -7033,7 +8113,7 @@ msgstr "Массив данных Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 msgid  "data_X"
-msgstr "данные Х"
+msgstr "данные X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 msgid  "The X data array."
@@ -7069,7 +8149,7 @@ msgstr "Массив данных Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.4.String.Text
 msgid  "data_X"
-msgstr "данные Х"
+msgstr "данные X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 msgid  "The X data array as the basis for the regression."
@@ -7105,7 +8185,7 @@ msgstr "Массив данных y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.4.String.Text
 msgid  "data_X"
-msgstr "данные Х"
+msgstr "данные X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.5.String.Text
 msgid  "The X data array as the basis for the regression."
@@ -7209,7 +8289,7 @@ msgstr "число "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Число 1, число 2, ... от 1 до 30 числовых аргументов, соответствующих выборке из совокупности."
+msgstr "Число1, число2, ... от 1 до 30 числовых аргументов, соответствующих выборке."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 msgid  "Returns the variance based on a sample. Text is evaluated as zero."
@@ -7257,7 +8337,7 @@ msgstr "число "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Число1, число2, ... от 1 до 30 числовых аргументов, соответствующих выборке."
+msgstr "Число1, число2, ... от 1 до 30 числовых аргументов, соответствующих совокупности."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_A.1.String.Text
 msgid  "Returns the standard deviation based on a sample. Text is evaluated as zero."
@@ -7469,7 +8549,7 @@ msgstr "Массив данных в выборке."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.4.String.Text
 msgid  "Rank_c"
-msgstr "K"
+msgstr "К"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.5.String.Text
 msgid  "The ranking of the value."
@@ -7585,7 +8665,7 @@ msgstr "Массив (диапазон) вероятностей значени�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.6.String.Text
 msgid  "Start"
-msgstr "A"
+msgstr "А"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.7.String.Text
 msgid  "The start of the value interval whose probabilities is to be totalled."
@@ -7593,7 +8673,7 @@ msgstr "Нижняя граница интервала."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.8.String.Text
 msgid  "End"
-msgstr "B"
+msgstr "В"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.9.String.Text
 msgid  "The end of the value interval where the probabilities are to be totalled."
@@ -7645,7 +8725,7 @@ msgstr "число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "Значение, для которого вычисляется стандартное нормальное распределение."
+msgstr "Значение, для которого вычисляется вероятность."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 msgid  "Returns the integral values of the standard normal cumulative distribution."
@@ -7769,7 +8849,7 @@ msgstr "Вероятность успеха каждого испытания."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_KRIT_BINOM.6.String.Text
 msgid  "alpha"
-msgstr "Альфа"
+msgstr "альфа"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_KRIT_BINOM.7.String.Text
 msgid  "The border probability that is attained or exceeded."
@@ -7789,7 +8869,7 @@ msgstr "Значение, для которого вычисляется пуа�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 msgid  "mean"
-msgstr "Среднее"
+msgstr "среднее"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 msgid  "Mean. The mean value of the Poisson distribution."
@@ -7825,7 +8905,7 @@ msgstr "Среднее значение. Среднее арифметическ
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 msgid  "STDEV"
-msgstr "СТАНДОТКЛ"
+msgstr "STDEV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.7.String.Text
 msgid  "Standard deviation. The standard deviation of the normal distribution."
@@ -7853,7 +8933,7 @@ msgstr "Значение, для которого вычисляется рас�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.4.String.Text
 msgid  "mean"
-msgstr "Среднее"
+msgstr "среднее"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.5.String.Text
 msgid  "The mean value. The mean value of the normal distribution."
@@ -7997,7 +9077,7 @@ msgstr "Значение, для которого требуется вычис�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.4.String.Text
 msgid  "alpha"
-msgstr "Альфа"
+msgstr "альфа"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.5.String.Text
 msgid  "The Alpha parameter of the Gamma distribution."
@@ -8005,7 +9085,7 @@ msgstr "Параметр Альфа гамма-распределения."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.6.String.Text
 msgid  "beta"
-msgstr "Бета"
+msgstr "бета"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.7.String.Text
 msgid  "The Beta parameter of the Gamma distribution."
@@ -8033,7 +9113,7 @@ msgstr "Значение вероятности, для которого выч�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_INV.4.String.Text
 msgid  "alpha"
-msgstr "Альфа"
+msgstr "альфа"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_INV.5.String.Text
 msgid  "The Alpha (shape) parameter of the Gamma distribution."
@@ -8041,7 +9121,7 @@ msgstr "Параметр Альфа (shape) гамма-распределени�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_INV.6.String.Text
 msgid  "beta"
-msgstr "Бета"
+msgstr "бета"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_INV.7.String.Text
 msgid  "The Beta (scale) parameter of the Gamma distribution."
@@ -8105,11 +9185,11 @@ msgstr "A"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.9.String.Text
 msgid  "The starting value for the value interval of the distribution."
-msgstr "Верхняя граница интервала распределения."
+msgstr "Нижняя граница интервала распределения."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.10.String.Text
 msgid  "End"
-msgstr "В"
+msgstr "B"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.11.String.Text
 msgid  "The final value for the value interval of the distribution."
@@ -8257,7 +9337,7 @@ msgstr "степени свободы"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.5.String.Text
 msgid  "The degrees of freedom of the T distribution."
-msgstr "Количество степеней свободы распределения T."
+msgstr "Число степеней свободы распределения T."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.6.String.Text
 msgid  "mode"
@@ -8645,7 +9725,7 @@ msgstr "Массив данных Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.4.String.Text
 msgid  "data_X"
-msgstr "данные X"
+msgstr "данные Х"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.5.String.Text
 msgid  "The X data array."
@@ -8833,7 +9913,7 @@ msgstr "A1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.9.String.Text
 msgid  "The reference style: 0 or FALSE means R1C1 style, any other value or omitted means A1 style."
-msgstr "Стиль ссылки: 0 или FALSE означает стиль R1C1, любое другое значение или отсутствие значения - стиль A1."
+msgstr "Стиль ссылок: 0 или FALSE означает стиль R1C1, остальные значения или пропущенное значение означает стиль A1."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.10.String.Text
 msgid  "sheet"
@@ -9433,7 +10513,7 @@ msgstr "найти_текст"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.3.String.Text
 msgid  "The text to be found."
-msgstr "Текст, который следует найти."
+msgstr "Текст, который необходимо найти."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.4.String.Text
 msgid  "text"
@@ -9441,7 +10521,7 @@ msgstr "текст"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.5.String.Text
 msgid  "The text in which a search is to be made."
-msgstr "Текст, в котором следует искать."
+msgstr "Текст, в котором ведётся поиск."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.6.String.Text
 msgid  "position"
@@ -10412,8 +11492,8 @@ msgid  "Font Attributes"
 msgstr "Атрибуты шрифта"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "Большой объем данных в буфере обмена.\nСделать доступным содержимое буфера обмена для других приложений?"
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 msgid  "System Options"
@@ -10480,8 +11560,8 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
-msgstr "%PRODUCTNAME Calc нашел ошибку во введённой формуле.\nПринять исправление, предложенное ниже?\n\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file can not be opened"
@@ -10524,8 +11604,8 @@ msgid  "~Selected sheets"
 msgstr "Выбранные листы"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "Вы вставляете данные в ячейки, которые уже содержат данные.\nПерезаписать содержимое ячеек?"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"
@@ -11453,7 +12533,7 @@ msgstr "Числа"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELDATETIME.CheckBox.Text
 msgid  "~Date & time"
-msgstr "Дату и время"
+msgstr "Дата и время"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELFORMULAS.CheckBox.Text
 msgid  "~Formulas"
@@ -11565,7 +12645,7 @@ msgstr "Вниз"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.BTN_MV_RIGHT.RadioButton.Text
 msgid  "~Right"
-msgstr "Вправо"
+msgstr "В~право"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.FL_MOVE.FixedLine.Text
 msgid  "Shift cells"
@@ -12232,20 +13312,20 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "Документ слишком сложен для автоматических вычислений. Для пересчёта используйте F9."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "Документ содержит больше строк, чем поддерживается выбранным форматом.\nЛишние строки не сохранены."
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "Документ содержит сведения, не распознанные этой версии программы.\nПри повторном сохранении эта информация будет утеряна!"
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 msgid  "Not all cell contents could be saved in the specified format."
 msgstr "Невозможно сохранить все содержимое ячейки в заданном формате."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
-msgstr "Невозможно преобразовать следующие символы в выбранную кодировку.\nОни представлены как &#1234:\n\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."

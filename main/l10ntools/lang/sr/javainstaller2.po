@@ -152,12 +152,12 @@ msgid  "Create New Directory"
 msgstr "Направи нови директоријум"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "Директоријум „${DIR}“ не постоји.\nДа ли желите да га направите?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "Директоријум „${DIR}“ не постоји.\nЖелите ли да га направите или да изаберите други директоријум?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -260,8 +260,8 @@ msgid  "To continue, click 'Next'."
 msgstr "Принисните „Напред“ за наставак"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "Напомена: Ова инсталација ће бити завршена без администраторских овлашћења, због чега ће недостајати део функција (Није могуће инсталирати Јава извршно окружење (JRE), интеграција са системом није могућа).\nКликните „Обустави“ и преузмите администраторска овлашћења, уколико желите пуну функционалност програма."
+msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -432,8 +432,8 @@ msgid  "Analyzing ..."
 msgstr "Анализирам..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "Анализирам базу података\nСачекајте тренутак..."
+msgid  "Analyzing database\\nPlease wait a moment ..."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"

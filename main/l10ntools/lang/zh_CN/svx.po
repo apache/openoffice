@@ -873,7 +873,7 @@ msgstr "恢复撤消命令 "
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_ACTIVE.ToolBoxItem.Text
 msgid  "Active"
-msgstr "使用"
+msgstr "使用中"
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_MACRO.ToolBoxItem.Text
 msgid  "Macro..."
@@ -940,12 +940,12 @@ msgid  "~Delete"
 msgstr "删除(~D)"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "图像映射已经被修改。\n是否要保存这些修改？"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "图像映射已经被修改。\n是否要保存这些修改？"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1028,8 +1028,8 @@ msgid  "~More..."
 msgstr "其他(~M)..."
 
 #: source/dialog/hdft.src#RID_SVXQBX_DELETE_HEADFOOT.QueryBox.Message
-msgid  "Removing headers or footers deletes the contents.\nDo you want to delete this text?"
-msgstr "不用页眉和页脚功能就会删除现存的文字。\n要删除这些文字？"
+msgid  "Removing headers or footers deletes the contents.\\nDo you want to delete this text?"
+msgstr ""
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_LEFT.String.Text
 msgid  "Left"
@@ -1049,7 +1049,7 @@ msgstr "外侧"
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_CENTER_VERT.String.Text
 msgid  "Center"
-msgstr "垂直居中"
+msgstr "居中"
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_FROMLEFT.String.Text
 msgid  "From left"
@@ -1276,8 +1276,8 @@ msgid  "%PRODUCTNAME Document Recovery"
 msgstr "%PRODUCTNAME 文档恢复"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
-msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\n\nThe 'Status' column shows whether the document could be recovered."
-msgstr "单击“开始恢复”开始执行下列文档的恢复进程。“状态”列显示哪些文档被恢复。"
+msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1288,8 +1288,8 @@ msgid  "Status of recovered documents:"
 msgstr "已恢复文档的状态:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
-msgid  "Document Name\tStatus"
-msgstr "文档名称\t状态"
+msgid  "Document Name\\tStatus"
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1328,8 +1328,8 @@ msgid  "A report of the crash was created to help us identify the reason why %PR
 msgstr "已创建崩溃报告，来帮助确定 %PRODUCTNAME 崩溃的原因。单击“下一步”进入错误报告工具，或按“取消”跳过此步骤。"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
-msgid  "Recovery of your documents was finished.\nClick 'Finish' to see your documents."
-msgstr "已完成文档恢复。\n单击“完成”以查看文档。"
+msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 msgid  "~Finish"
@@ -1340,8 +1340,8 @@ msgid  "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 msgstr "是否确定要取消恢复 %PRODUCTNAME 文档？"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
-msgid  "The automatic recovery process was interrupted.\n\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr "自动恢复进程中断。\n\n如果单击“保存”，下列文档将保存在下面注明的文件夹中。单击“取消”关闭“向导”而不保存文档。"
+msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1364,7 +1364,7 @@ msgid  "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 msgstr "欢迎使用“%PRODUCTNAME %PRODUCTVERSION 错误报告”"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
-msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\n\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\nCustomer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\nwww.oracle.com/html/services-privacy-policy.html"
+msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
 msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
@@ -1448,8 +1448,8 @@ msgid  "~Port"
 msgstr "端口(~P)"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
-msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "“%PRODUCTNAME 错误报告”工具需要与 Internet 相连才能发送错误报告。\n公司经常使用代理服务器和防火墙来保护网络。\n如果您是使用这种方法，则必须指定服务器的地址和端口。"
+msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -2680,8 +2680,8 @@ msgid  "As Button"
 msgstr "作为按钮"
 
 #: source/dialog/hyprlink.src#RID_SVXQB_DONTEXIST.QueryBox.Message
-msgid  "This URL does not exist.\nInsert anyway?"
-msgstr "此 URL 不存在。\n是否仍要插入？"
+msgid  "This URL does not exist.\\nInsert anyway?"
+msgstr ""
 
 #: source/dialog/sdstring.src#RID_SVXSTR_SOLID.String.Text
 msgid  "Continuous"
@@ -2733,7 +2733,7 @@ msgstr "绿色"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CYAN.String.Text
 msgid  "Turquoise"
-msgstr "蓝绿色"
+msgstr "蓝玉色"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_RED.String.Text
 msgid  "Red"
@@ -3392,16 +3392,16 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
-msgid  "The contour has been modified.\nDo you want to save the changes?"
-msgstr "这个轮廓已经被修改。\n是否要接受这些修改？"
+msgid  "The contour has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
 msgstr "您要建立一个新的轮廓吗？"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
-msgid  "Setting a new workspace will\ncause the contour to be deleted.\nAre you sure you want to continue?"
-msgstr "定义一个新的编辑区域会删除掉轮廓。\\您真要继续？"
+msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -3993,7 +3993,7 @@ msgstr "特殊对象"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
 msgid  "Flat"
-msgstr "平坦"
+msgstr "平形"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
 msgid  "Spherical"
@@ -4097,7 +4097,7 @@ msgstr "光源 8"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "借助颜色对话栏选择颜色"
+msgstr "颜色对话栏"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
 msgid  "~Ambient light"
@@ -4105,7 +4105,7 @@ msgstr "周围光线(~A)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "借助颜色对话栏选择颜色"
+msgstr "颜色对话栏"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
 msgid  "Illumination"
@@ -4217,7 +4217,7 @@ msgstr "对象颜色(~O)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "颜色对话栏"
+msgstr "借助颜色对话栏选择颜色"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
 msgid  "~Illumination color"
@@ -4376,8 +4376,8 @@ msgid  "Input required in field '#'. Please enter a value."
 msgstr "必须为这个字段 '#' 输入一个数值！"
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
-msgid  "Entry already exists.\nPlease choose another name."
-msgstr "条目已经存在。\n请您选择另外一个名称。"
+msgid  "Entry already exists.\\nPlease choose another name."
+msgstr ""
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4456,8 +4456,8 @@ msgid  "# records will be deleted."
 msgstr "您要删除数据条目 # 。"
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
-msgid  "If you click Yes, you won't be able to undo this operation.\nDo you want to continue anyway?"
-msgstr "如果点击“是”，这个操作就不能被撤回！\n您还是要继续吗？"
+msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -4636,8 +4636,8 @@ msgid  "<AutoField>"
 msgstr "<自动字段>"
 
 #: source/form/fmstring.src#RID_QRY_SAVEMODIFIED.QueryBox.Message
-msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr "表单的内容已经被修改。\n是否要保存这些修改？"
+msgid  "The content of the current form has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.1.String.Text
 msgid  "LIKE"
@@ -5064,32 +5064,32 @@ msgid  "~Show Details"
 msgstr "显示细节(~S)"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_MODEL.QueryBox.Message
-msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\nDo you really want to delete this model?"
-msgstr "删除模型 $MODELNAME 会影响当前绑定到此模型的所有控件。\n是否确定要删除此模型？"
+msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\\nDo you really want to delete this model?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_INSTANCE.QueryBox.Message
-msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\nDo you really want to delete this instance?"
-msgstr "删除实例 $INSTANCENAME 会影响当前绑定到此实例的所有控件。\n是否确定要删除此实例？"
+msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\\nDo you really want to delete this instance?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ELEMENT.QueryBox.Message
-msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\nDo you really want to delete this element?"
-msgstr "删除元素 $ELEMENTNAME 会影响当前绑定到此元素的所有控件。\n是否确定要删除此元素？"
+msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\\nDo you really want to delete this element?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ATTRIBUTE.QueryBox.Message
 msgid  "Do you really want to delete the attribute '$ATTRIBUTENAME'?"
 msgstr "是否确定要删除属性 $ATTRIBUTENAME？"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_SUBMISSION.QueryBox.Message
-msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\n\nDo you really want to delete this submission?"
-msgstr "删除提交 $SUBMISSIONNAME 会影响当前绑定到此提交的所有控件。\n\n是否确定要删除此提交？"
+msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\\n\\nDo you really want to delete this submission?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_BINDING.QueryBox.Message
-msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\n\nDo you really want to delete this binding?"
-msgstr "删除绑定 $BINDINGNAME 会影响当前绑定到此绑定的所有控件。\n\n是否确定要删除此绑定？"
+msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\\n\\nDo you really want to delete this binding?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_LINK_WARNING.MessBox.Message
-msgid  "This instance is linked with the form.\n\nThe changes you make to this instance will be lost when the form is reloaded.\n\nHow do you want to proceed?"
-msgstr "此实例链接到表单。\n\n对此实例所做的修改将在重新加载表单后丢失。\n\n您想要如何进行？"
+msgid  "This instance is linked with the form.\\n\\nThe changes you make to this instance will be lost when the form is reloaded.\\n\\nHow do you want to proceed?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLNAME.ErrorBox.Message
 msgid  "The name '%1' is not valid in XML. Please enter a different name."
@@ -5464,12 +5464,12 @@ msgid  "Invalid Theme Name!"
 msgstr "这个主题名称无效！"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
-msgid  "Do you really want to\ndelete this object?"
-msgstr "您真的要删除这个对象吗？"
+msgid  "Do you really want to\\ndelete this object?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
-msgid  "Do you really want to\ndelete this theme?"
-msgstr "您真的要删除这个主题？"
+msgid  "Do you really want to\\ndelete this theme?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5500,8 +5500,8 @@ msgid  "Do you want to delete the linked file?"
 msgstr "您要删除链接的文件吗？"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
-msgid  "This file cannot be opened.\nDo you want to enter a different search path? "
-msgstr "无法打开这个文件。\n您要指定另一个路径？ "
+msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5512,8 +5512,8 @@ msgid  "~Organizer..."
 msgstr "管理(~O)..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
-msgid  "This theme name already exists.\nPlease choose a different one."
-msgstr "这个主题名称已经存在。\n请您选择一个其他的名称。"
+msgid  "This theme name already exists.\\nPlease choose a different one."
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -5565,7 +5565,7 @@ msgstr "属性(~I)..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
 msgid  "~Insert"
-msgstr "加入(~I)"
+msgstr "插入(~I)"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
 msgid  "~Copy"
@@ -5776,12 +5776,12 @@ msgid  "$(ERR) loading the graphics."
 msgstr "$(ERR) 发生在装入一个图形时。"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_THESAURUSNOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "No thesaurus available for the current language.\nPlease check your installation and install the desired language."
-msgstr "当前语言没有可用的同义词库。\n请检查安装过程，并安装所需的语言。"
+msgid  "No thesaurus available for the current language.\\nPlease check your installation and install the desired language."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LANGUAGENOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\nPlease check your installation and, if necessary, install the required language module\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
-msgstr "$(ARG1)不支持拼写检查功能或者目前未启用该功能。\n请您检查安装，如有必要请安装所需的语言模块\n或者借助菜单命令“工具 - 选项 - 语言设置 - 语言规则”启用相应的语言模块。"
+msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\\nPlease check your installation and, if necessary, install the required language module\\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
 msgid  "Spellcheck is not available."
@@ -5852,8 +5852,8 @@ msgid  "The loading of password-encrypted Microsoft PowerPoint presentations is 
 msgstr "不支持加载密码加密的 Microsoft PowerPoint 演示文稿。"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_EXPORT_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
-msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\nDo you want to save the document without password protection?"
-msgstr "以 Microsoft Office 格式保存文档时不支持密码保护。\n是否要保存文档而不使用密码保护？"
+msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\\nDo you want to save the document without password protection?"
+msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
 msgid  "Scale"
@@ -6520,8 +6520,8 @@ msgid  "The specified device is invalid."
 msgstr "指定的设备无效。"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
-msgid  "The object cannot be accessed\ndue to insufficient user rights."
-msgstr "由于没有足够的用户权限\n对象不能被访问。"
+msgid  "The object cannot be accessed\\ndue to insufficient user rights."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
 msgid  "Sharing violation while accessing the object."
@@ -6532,8 +6532,8 @@ msgid  "No more space on device."
 msgstr "设备上已经没有可用空间。"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ISWILDCARD.String.Text
-msgid  "This operation cannot be run on\nfiles containing wildcards."
-msgstr "此操作无法运行于\n含有通配符的文件。"
+msgid  "This operation cannot be run on\\nfiles containing wildcards."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSUPPORTED.String.Text
 msgid  "This operation is not supported on this operating system."
@@ -6616,8 +6616,8 @@ msgid  "The file cannot be used as template."
 msgstr "这个文件无法用作模板。"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTREADDOCINFO.String.Text
-msgid  "Document information could not be read from the file because\nthe document information format is unknown or because document information does not\nexist."
-msgstr "文件信息无法从该文件中读取，因为\n信息的格式未知或不\n存在。"
+msgid  "Document information could not be read from the file because\\nthe document information format is unknown or because document information does not\\nexist."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_ALREADYOPEN.String.Text
 msgid  "This document has already been opened for editing."
@@ -6648,12 +6648,12 @@ msgid  "Could not establish Internet connection to $(ARG1)."
 msgstr "无法和 $(ARG1) 建立 Internet 连接。"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_READ.String.Text
-msgid  "Error reading data from the Internet.\nServer error message: $(ARG1)."
-msgstr "读取网络数据时出错。服务器错误消息：$（ARG1）。"
+msgid  "Error reading data from the Internet.\\nServer error message: $(ARG1)."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_WRITE.String.Text
-msgid  "Error transferring data to the Internet.\nServer error message: $(ARG1)."
-msgstr "传输数据到互联网发生错误。服务器错误消息：$（ARG1）。"
+msgid  "Error transferring data to the Internet.\\nServer error message: $(ARG1)."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_GENERAL.String.Text
 msgid  "General Internet error has occurred."
@@ -6764,8 +6764,8 @@ msgid  "A subscription folder is required to install a Channel."
 msgstr "如果要安装频道，您需要先创建一个订阅文件夹。"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSTORABLEINBINARYFORMAT.String.Text
-msgid  "This document contains attributes that cannot be saved in the selected format.\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
-msgstr "本文件包含以选定的格式保存时无法保存的属性。请以%PRODUCTNAME %PRODUCTVERSION 的文件格式保存这篇文档。"
+msgid  "This document contains attributes that cannot be saved in the selected format.\\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_TARGETFILECORRUPTED.String.Text
 msgid  "The file $(FILENAME) cannot be saved. Please check your system settings. You can find an automatically generated backup copy of this file in folder $(PATH) named $(BACKUPNAME)."
@@ -6780,20 +6780,20 @@ msgid  "Could not create backup copy."
 msgstr "无法创建备份副本。"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_MACROS_SUPPORT_DISABLED.String.Text
-msgid  "An attempt was made to execute a macro.\nFor security reasons, macro support is disabled."
-msgstr "试图执行宏。出于安全原因，宏支持被禁用。"
+msgid  "An attempt was made to execute a macro.\\nFor security reasons, macro support is disabled."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_DOCUMENT_MACRO_DISABLED.String.Text
-msgid  "This document contains macros.\n\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\n\nTherefore, some functionality may not be available."
-msgstr "此文档包含宏。宏可能包含病毒。由于在“工具”-“ 选项”- “%PRODUCTNAME”- “安全”中对当前宏的安全设置，这些宏的执行被禁用。因此，一些功能可能不可用。"
+msgid  "This document contains macros.\\n\\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\\n\\nTherefore, some functionality may not be available."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_BROKENSIGNATURE.String.Text
-msgid  "The digitally signed document content and/or macros do not match the current document signature.\n\nThis could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
-msgstr "数字签名过的文档内容和/或宏，与当前文档的签名不匹配。这可能是由于文档被篡改或者由于数据传输导致文档结构损坏的结果。我们建议您不信任当前文档的内容。对于该文件已禁用宏的执行。\n "
+msgid  "The digitally signed document content and/or macros do not match the current document signature.\\n\\nThis could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_INCOMPLETE_ENCRYPTION.String.Text
-msgid  "The encrypted document contains unexpected non-encrypted streams.\n\nThis could be the result of document manipulation.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
-msgstr "加密的文件包含意外的非加密的数据流。这可能是文档被篡改的结果。我们建议您不信任当前文档的内容。对于该文件已禁用宏的执行。\n "
+msgid  "The encrypted document contains unexpected non-encrypted streams.\\n\\nThis could be the result of document manipulation.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_INVALIDLENGTH.String.Text
 msgid  "Invalid data length."
@@ -6820,8 +6820,8 @@ msgid  "Function not possible: write protected."
 msgstr "无法执行函数：已写保护。"
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_SHARED_NOPASSWORDCHANGE.String.Text
-msgid  "The password of a shared spreadsheet cannot be set or changed.\nDeactivate sharing mode first."
-msgstr "共享电子表格的密码不能设置或更改。 首先关闭共享模式。"
+msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactivate sharing mode first."
+msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
 msgid  "INSRT"
@@ -7045,7 +7045,7 @@ msgstr "圆弧"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
 msgid  "Circle segment"
-msgstr "圆弧段"
+msgstr "扇形"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
 msgid  "Circle segments"
@@ -7125,11 +7125,11 @@ msgstr "贝赛尔曲线"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREELINE.String.Text
 msgid  "Freeform Line"
-msgstr "填色自由形线条"
+msgstr "自由形线条"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREELINE.String.Text
 msgid  "Freeform Lines"
-msgstr "填色自由形线条"
+msgstr "自由形线条"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREEFILL.String.Text
 msgid  "Freeform Line"
@@ -7525,7 +7525,7 @@ msgstr "旋转 %1"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
 msgid  "Flip %1 horizontal"
-msgstr "水平翻转 %1"
+msgstr "水平翻转 %1 "
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
 msgid  "Flip %1 vertical"
@@ -8017,7 +8017,7 @@ msgstr "向上"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJCENTER.String.Text
 msgid  "Center"
-msgstr "中"
+msgstr "居中"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBOTTOM.String.Text
 msgid  "Bottom"

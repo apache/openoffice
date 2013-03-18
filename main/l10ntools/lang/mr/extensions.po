@@ -56,8 +56,8 @@ msgid  "Data Source Title"
 msgstr "डाटा स्त्रोत शीर्षक"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "%PRODUCTNAME  द्वारा आपण आपल्या पद्धतीमध्ये पहिल्यापासूनच उपलब्ध असलेल्या डाटा पत्त्या मध्ये प्रवेश करू शकता. ह्याकरिता, %PRODUCTNAME  डाटा स्त्रोत निर्माण होईल ज्याच्यात आपला डाटा पत्ता कोष्टक स्वरूपात उपलब्ध असेल.\n \nहे विझार्ड डाटा स्त्रोत निर्माण करण्यास आपली मदत करेल."
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -108,32 +108,32 @@ msgid  "Other external data source"
 msgstr "इतर बाह्य डाटा स्त्रोत"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "नवीन डाटा स्त्रोताची पूर्वतयारी  करण्यासाठी अधिक माहितीची आवश्यकता आहे.\n\nखाली दिलेल्या कळ वर क्लिक करून दूसरा संवाद उघडा ज्याच्यात आपण नंतर आवश्यक माहिती घालू शकतो."
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
 msgstr "नियंत्रणे"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "डाटा स्त्रोताची जुळणी प्रस्थापित होऊ शकली नाही.\nपुढे जाण्याआधी, कृपया केलेल्या नियंत्रणाना तपासा किंवा(मागच्या पानावरील) दुसरा पत्ता डाटा स्त्रोत प्रकार निवडा."
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr "आपण निवडलेल्या बाह्य माहिती स्त्रोतात एकापेक्षा जास्त पत्ता पुस्तके आहेत.\nआपणांस प्रामुख्याने ज्याचा उपयोग करायचा असेल ते निवडा:"
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "आपल्या नमुन्यामध्ये पत्ता डाटा समाविष्ट करण्यासाठी, %PRODUCTNAME ला कोणत्या क्षेत्रात कोणता डाटा समाविष्ट आहे हे माहिती असायला हवे.\nउदाहरणार्थ, आपण क्षेत्र नावात ई-मेल पत्ते \"email\", किंवा \"E-mail\" किंवा \"EM\" किंवा काहीतरी भिन्न असे जतन करू शकता.\n\nखाली दिलेल्या कळ वर क्लिक करून दुसरा संवाद उघडा ज्याच्यात आपण आपल्या डाटा स्त्रोताच्या नियंत्रणाना घालू शकता."
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
 msgstr " क्षेत्र नेमणूक"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "%PRODUCTNAME मध्ये आपला डाटा पत्ता समाविष्ट करण्यासाठीची आवश्यक सर्व माहिती आहे. \n\n %PRODUCTNAME मध्ये आता फक्त त्या डाटा स्त्रोताचे नाव घाला ज्याच्यात आपणांस नोंदणी करायची आहे. "
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -160,8 +160,8 @@ msgid  "Please select a type of address book."
 msgstr "पत्ता पुस्तकाचा प्रकार निवडा."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr "डाटा स्त्रोत मध्ये कोणतेही कोष्टक समाविष्ट नाहीत.\nतरी ही आपणांस हेच पत्ता डाटा स्त्रोत  स्थापित करायचे आहे का?"
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "पत्ता डाटा-क्षेत्र नेमणूक"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "या वेळी कोणत्याही क्षेत्राची नेमणूक केलेली नाही.\nआपण पहिले धारिकेंची नेमणूक करू शकता किंवा :\n\"धारिका - नमुना - पत्ता पुस्तक स्त्रोता...\" ची निवड पहिली करून ते नंतर पण करू शकता. "
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr ""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -216,8 +216,8 @@ msgid  "Data Source"
 msgstr "डाटा स्रोत"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\n"
-msgstr "खालील स्तंभ नावांची नेमणूक करता येत नाही :\n"
+msgid  "The following column names could not be assigned:\\n"
+msgstr ""
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -492,8 +492,8 @@ msgid  "Control"
 msgstr "कंट्रोल"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "उजवी कडे,आपणांस नमुन्याच्या डाटा स्त्रोतातील सर्व कोष्टक दिसतील.\n\n\nसूची विषयासाठी ज्या कोष्टकातील डाटाचा पाया म्हणून उपयोग करायचा आहे ती निवडा. "
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -588,8 +588,8 @@ msgid  "Data"
 msgstr "डाटा"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "सध्या, ज्याच्या मालकीचे नमुना व नियंत्रक आहेत ते डाटा स्त्रोताशी मर्यादित नाहीत (किंवा पूर्णतया नाहीत). \n\nकृपया डाटा स्त्रोत आणि तालिका निवडा.\n\n\nकृपया नोंद करा की ह्या पानावर केलेली नियंत्रणे पान सोडल्यावर लगेचच अमलात आणली जातील. "
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -657,7 +657,7 @@ msgstr "आपणांस पर्याय क्षेत्रांना 
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
 msgid  "~Option fields"
-msgstr "पर्याय  क्षेत्रे (~O)"
+msgstr "पर्याय क्षेत्रे (~O)"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
 msgid  "Default Field Selection"
@@ -736,8 +736,8 @@ msgid  "Welcome"
 msgstr "सुस्वागतम्"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr ""
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -816,8 +816,8 @@ msgid  "Forms"
 msgstr "नमुना"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "आपणांस नमुन्यामधील डाटा प्रकार'#type#' काढून टाकायचे आहे का?\nकृपया लक्ष्यात ठेवा की ह्या कृतीमुळे डाटा प्रकारला मर्यादित ठेवणारया सर्व नियंत्रणांवर याचा परिणाम होईल."
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2296,12 +2296,12 @@ msgid  "Type a name for the new data type:"
 msgstr "नवीन डाटा प्रकारासाठी नाव टंकलिखित करा:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\n Dev~ice"
-msgstr " \n साधन संदर्भात (~i)"
+msgid  "About\\n Dev~ice"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\nPreview"
-msgstr " \n पूर्वदृश्य तयार करा"
+msgid  "Create\\nPreview"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2356,8 +2356,8 @@ msgid  "Scanner"
 msgstr "स्कॅनर"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "साधन: %s\nविक्रेता: %s\nनमुना: %s\nप्रकार: %s"
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2404,8 +2404,8 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION अद्ययावत आहे."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr "%PRODUCTNAME %NEXTVERSION उपलब्ध आहे.\n\nस्थापित केलेली आवृत्ती %PRODUCTNAME %PRODUCTVERSION आहे.\n\nटिप: अद्ययावत करण्याआधी, आपणाकडे प्रवेशाचे पुरेसे हक्क आहेत का याची  खात्री करून घ्या.\nपरवलीचा शब्द, नेंहमीच प्रशासकाचा किंवा मूळ पासवर्डची आवश्यकता असेल. प्रशासक किंवा रूट पासवर्डची आवश्यकता असू शकते."
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2420,16 +2420,16 @@ msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "%PRODUCTNAME %NEXTVERSION डाऊनलोड करतेवेळी येथे थांबले"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "उतरवून घेण्याचे स्थान: %DOWNLOAD_PATH आहे.\n\nसाधन – पर्यायांच्या खाली- %PRODUCTNAME –चालू असतानाच्या अद्ययावतसाठी, आपण उतरवून घेण्याचे स्थान बदलू शकता."
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME हे %DOWNLOAD_PATH कडे डाऊनलोड केले आहे."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "अद्ययावतला स्वयंचलित उतरवणे आता उपलब्ध नाही.\n\nसंकेतस्थळाकडून %PRODUCTNAME %NEXTVERSION ला मॅन्युएली उतरवून घेण्यासाठी 'उतरवून घ्या...' वर क्लिक करा."
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2517,7 +2517,7 @@ msgstr "रद्द करा"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
 msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAMEचे अद्ययावत उपलब्ध आहे"
+msgstr "%PRODUCTNAME चे अद्ययावत उपलब्ध आहे"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
 msgid  "Click here to start the download."
@@ -2525,7 +2525,7 @@ msgstr "डाऊनलोड सुरू करण्यासाठी इथ
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
 msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME चे अद्ययावत उपलब्ध आहे"
+msgstr "%PRODUCTNAMEचे अद्ययावत उपलब्ध आहे"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
 msgid  "Click here for more information."
@@ -2575,6 +2575,6 @@ msgstr "एक्सटेन्शनसाठी अद्ययावत क�
 msgid  "Click here for more information."
 msgstr "अधिक माहितीसाठी इथे क्लिक करा."
 
-#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
 msgid  "Check for ~Updates..."
 msgstr "सुधारणांकरीता तपासा (~U)..."

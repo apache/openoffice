@@ -60,8 +60,8 @@ msgid  "Add fonts"
 msgstr "Προσθήκη γραμματοσειρών"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr "Θέλετε σίγουρα να αντικατασταθεί η γραμματοσειρά;\n   %s ;"
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -72,16 +72,16 @@ msgid  "None"
 msgstr "Κανένα"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "Δεν είναι δυνατή η εγκατάσταση του αρχείου γραμματοσειράς\n%s\n επειδή δεν βρέθηκε το κατάλληλο αρχείο μορφής ( με την προέκταση .afm ). Τα αρχεία μορφής μπορούν να δημιουργηθούν π.χ. με το ghostscript και πρέπει να υπάρχουν στον ίδιο κατάλογο με τα αρχεία γραμματοσειρών ή στον υποκατάλογο αυτών με την ονομασία 'afm'."
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "Δεν ήταν δυνατόν να γίνει η αντιγραφή του αρχείου μετρικής του αρχείου της γραμματοσειράς\n   %s\nΗ γραμματοσειρά δεν θα εγκατασταθεί."
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "Δεν ήταν δυνατόν να γίνει η αντιγραφή του αρχείου γραμματοσειράς\n   %s\nΗ γραμματοσειρά δεν θα εγκατασταθεί."
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -176,7 +176,7 @@ msgid  "The test page was printed succesfully. Please check the result."
 msgstr "Η εκτύπωση της σελίδας δοκιμής ολοκληρώθηκε επιτυχώς. Παρακαλώ ελέγξτε το αποτέλεσμα της εκτύπωσης."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
 msgstr ""
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
@@ -288,8 +288,8 @@ msgid  "The file does not contain a metric."
 msgstr "Το αρχείο δεν περιέχει μετρική."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr "Δεν ήταν δυνατόν να γίνει η μετατροπή της μετρικής\n\n%s\n\n για τον εξής λόγο:\n\n"
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr ""
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -352,8 +352,8 @@ msgid  "The driver \"%s\" is always needed and can therefore not be removed."
 msgstr "The driver \"%s\" is always needed and can therefore not be removed."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr "Ο οδηγός \"%s1\" δεν μπορεί να απομακρυθεί.Δεν ήταν δυνατή η απομάκρυνση του αρχείου\n\n%s2."
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr ""
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

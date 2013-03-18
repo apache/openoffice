@@ -60,8 +60,8 @@ msgid  "Add fonts"
 msgstr "Betűkészletek hozzáadása"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr "Valóban felül akarja írni a következő betűkészletfájlt?\n   %s"
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -72,16 +72,16 @@ msgid  "None"
 msgstr "Egyiket sem"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "A formátumfájl (az .afm kiterjesztésű fájl) nem található a következő betűkészlethez:\n%s\nEmiatt nem lehet telepíteni a betűkészletet. Formátumfájlokat például a Ghostscript segítségével lehet létrehozni, és a betűkészlettel azonos könyvtárban vagy a betűkészlet „afm” alkönyvtárában kell elhelyezni."
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "A(z) %s betűkészlethez tartozó metrikafájlt nem sikerült átmásolni. A betűkészlet telepítése nem lehetséges."
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "A(z) %s betűkészletfájlt nem sikerült átmásolni. A betűkészlet telepítése nem lehetséges."
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -176,8 +176,8 @@ msgid  "The test page was printed succesfully. Please check the result."
 msgstr "A tesztoldal nyomtatása sikeresen befejeződött. Ellenőrizze az eredményt."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
-msgstr "A nyomtatókat nem lehet telepíteni, mert a fájl rendszer csak olvasható.\nVegye fel a kapcsolatot a rendszer adminisztrátorával."
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
+msgstr ""
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
 msgid  "~New printer name"
@@ -288,8 +288,8 @@ msgid  "The file does not contain a metric."
 msgstr "Az állomány nem tartalmaz metrikát."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr "A(z) %s metrika nem konvertálható az alábbiak miatt:\n\n"
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr ""
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -352,8 +352,8 @@ msgid  "The driver \"%s\" is always needed and can therefore not be removed."
 msgstr "A(z) „%s” illesztőprogramra állandóan szükség van, ezért nem távolítható el."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr "A(z) „%s1” illesztőprogram eltávolítása nem sikerült. Az alábbi fájlt nem sikerült törölni:\n\n%s2."
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr ""
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

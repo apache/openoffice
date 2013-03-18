@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "Seiten verschieben"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "Nicht genug Speicher!\nDie Aktion wird abgebrochen."
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1137,7 +1137,7 @@ msgstr "Füllfarbe"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STYLE_PROPERTY.String.Text
 msgid  "Style"
-msgstr "Art"
+msgstr "Formatvorlage"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_PROPERTY.String.Text
 msgid  "Font"
@@ -1732,8 +1732,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Geben Sie hier bitte den Namen für das neue Linienende ein:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "Der von Ihnen eingegebene Name ist schon vorhanden. \nGeben Sie bitte einen anderen Namen ein."
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "Seiten einfügen"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "Wollen Sie die Ebene '$' wirklich löschen?\nHinweis: Alle Objekte auf dieser Ebene werden ebenfalls gelöscht!"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1852,8 +1852,8 @@ msgid  "Insert text frame"
 msgstr "Textrahmen einfügen"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "Die Funktion kann mit den selektierten \nObjekten nicht ausgeführt werden"
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1864,8 +1864,8 @@ msgid  "The file could not be loaded!"
 msgstr "Die Datei konnte nicht geladen werden!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "Das Format der neuen Seiten wird angepasst.\nWollen Sie die Objekte auch anpassen?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1884,8 +1884,8 @@ msgid  "~Edit"
 msgstr "~Bearbeiten"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "Diese Aktion löscht die Liste der Arbeitsschritte, die\nrückgängig gemacht werden können. Bisher gemachte\nÄnderungen am Dokument bleiben erhalten, können jedoch nicht\nmehr rückgängig gemacht werden. Wollen Sie fortfahren\nund die neue Seitenvorlage zuweisen?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1904,8 +1904,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "Das Dokumentformat konnte am Drucker nicht eingestellt werden."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "Diese Grafik ist mit dem Dokument verknüpft. \nMöchten Sie die Verknüpfung aufheben, um die Grafik zu bearbeiten?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2016,8 +2016,8 @@ msgid  " (Outline)"
 msgstr " (Gliederung)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "Der eingegebene Maßstab ist ungültig.\nWollen Sie einen neuen eingeben?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2300,8 +2300,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Es konnten nicht alle Zeichenobjekte aufgebrochen werden!"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "Es existiert bereits ein Design mit diesem Namen\nSoll es überschrieben werden?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2416,8 +2416,8 @@ msgid  "Graphics filter"
 msgstr "Grafikfilter"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-msgid  "The file %\nis not a valid sound file !"
-msgstr "Die Datei %\nist keine gültige Klangdatei !"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2681,7 +2681,7 @@ msgstr "~Bearbeiten..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MenuItem.Text
 msgid  "~Delete"
-msgstr "L~öschen"
+msgstr "~Löschen"
 
 #: source/ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MenuItem.Text
 msgid  "Slide ~Layout"
@@ -2933,7 +2933,7 @@ msgstr "~Unten"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
 msgid  "Close ~Object"
-msgstr "~Objekt schließen"
+msgstr "Obje~kt schließen"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
 msgid  "Edit ~Points"
@@ -3285,7 +3285,7 @@ msgstr "Folie ~ausblenden"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
 msgid  "~Group"
-msgstr "~Gruppe"
+msgstr "~Gruppieren"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
 msgid  "~Ungroup"
@@ -3609,7 +3609,7 @@ msgstr "~Übersichtsseite"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
 msgid  "~Layer..."
-msgstr "E~bene..."
+msgstr "~Ebene..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
 msgid  "~Date (fixed)"
@@ -5133,7 +5133,7 @@ msgstr "Ausgabequalität"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RadioButton.Text
 msgid  "Default"
-msgstr "Standa~rd"
+msgstr "St~andard"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RadioButton.Text
 msgid  "Gra~yscale"

@@ -125,7 +125,7 @@ msgstr "निम्न लाइसेंस मसौदे को ध्य�
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr "यदि आपने पूरे साफ्टवेयर की लाइसेंस शर्त को पढ़ा है और स्वीकार किया है, 'लाइसेंस स्वीकारू' को संस्थापन के साथ जारी रखने के लिए क्लिक करें."
+msgstr "दि आप पूरे साफ्टवेयर के लाइसेंस शर्त को पढा है और स्वीकार किया है, 'लाइसेंस स्वीकारें' को संस्थापन के साथ जारी रखने के लिए क्लिक करें."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -152,12 +152,12 @@ msgid  "Create New Directory"
 msgstr "नयी निर्देशिका बनाएँ"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "निर्देशिका '${DIR}' मौजूद नहीं है.\nक्या आप इसे बनाना चाहते हैं?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "निर्देशिका '${DIR}' मौजूद नहीं है.\nक्या अब आप इसे बनाना चाहते हैं अथवा दूसरी निर्देशिका को चुनें?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -197,7 +197,7 @@ msgstr "आकार (kB):"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1
 msgid  "Select the Type of Installation"
-msgstr "संस्थापन के प्रकार को चुनें"
+msgstr "संस्थापनक प्रकार को चुनें"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2
 msgid  "Select the type of installation that best suits your needs:"
@@ -260,8 +260,8 @@ msgid  "To continue, click 'Next'."
 msgstr "जारी रखने के लिए, 'आगे' को क्लिक करू."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "नोट: यह संस्थापन बिना रूट अधिकार का किया जाएगा. इसलिए आप एक कमतर प्रकार्यात्मकता (जावा रनटाइम वातावरण (JRE)  रखता है जो संस्थापन योग्य नहीं है, तंत्रक एकीकरण संभव नहीं है).\n'रद्द' करें को क्लिक करें और रूट अधिकार में अपने अधिकार को बदलें, यदि आप पूर्ण प्रकार्यात्मकता को प्रयोग करना चाहते हैं."
+msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -432,8 +432,8 @@ msgid  "Analyzing ..."
 msgstr "विश्लेषण कर रहा है ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "डेटाबेस विश्लेषण कर रहा है\nकृपया कुछ क्षणों के लिए प्रतीक्षा करें ..."
+msgid  "Analyzing database\\nPlease wait a moment ..."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"

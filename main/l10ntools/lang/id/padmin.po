@@ -60,8 +60,8 @@ msgid  "Add fonts"
 msgstr "Tambah fonta"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr "Anda yakin hendak menimpa berkas fonta ini?\n   %s"
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -72,16 +72,16 @@ msgid  "None"
 msgstr "Tidak ada"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "Berkas format (dengan ekstensi .afm) tidak ditemukan untuk fonta\n%s\noleh sebab itu, fonta ini tidak dapat dipasang. Berkas format ini dapat dibuat dengan ghostscript, sebagai contoh, dan harus ditempatkan pada direktori yang sama dengan berkas fonta atau subdirekori afm-nya."
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "Berkas metrik untuk berkas fonta\n  %s\ntidak dapat disalin. Fonta ini tidak akan dipasang."
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "Berkas fonta\n  %s\ntidak dapat disalin. Fonta ini tidak akan dipasang."
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -176,8 +176,8 @@ msgid  "The test page was printed succesfully. Please check the result."
 msgstr "Halaman uji berhasil dicetak. Silakan periksa hasilnya."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
-msgstr "Tidak ada pencetak yang dapat dipasang, karena sistem berkas hanya dapat dibaca.\nHubungilah administrator sistem Anda."
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
+msgstr ""
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
 msgid  "~New printer name"
@@ -288,8 +288,8 @@ msgid  "The file does not contain a metric."
 msgstr "Berkas ini tidak mengandung metrik."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr "Metrik\n\n%s\n\ntidak dapat dikonversi karena kesalahan berikut:\n\n"
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr ""
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -352,8 +352,8 @@ msgid  "The driver \"%s\" is always needed and can therefore not be removed."
 msgstr "Pengandar \"%s\" selalu diperlukan, oleh sebab itu tidak dapat dibuang."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr "Pengandar \"%s1\" tidak dapat dibuang. Tidak mungkin membuang berkas\n\n%s2."
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr ""
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
@@ -517,7 +517,7 @@ msgstr "Gunakan pengandar ini untuk koneksi faks"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
 msgid  "T~he default driver"
-msgstr "Penggera~k utama"
+msgstr "Pengg~erak utama"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
 msgid  "A speci~fic driver, to adapt the format to another printer"
@@ -725,7 +725,7 @@ msgstr "T~ambah"
 
 #: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
 msgid  "~Remove"
-msgstr "~Buang"
+msgstr "B~uang"
 
 #: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
 msgid  "Repla~ce font"

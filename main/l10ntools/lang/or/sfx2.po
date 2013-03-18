@@ -61,14 +61,17 @@ msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: source/appl/app.src#STR_NONAME.String.Text
+#, fuzzy
 msgid  "Untitled"
 msgstr "ଶୀର୍ଷକ- ରହିତ"
 
 #: source/appl/app.src#STR_CLOSE.String.Text
+#, fuzzy
 msgid  "Close"
 msgstr "ବନ୍ଦକରନ୍ତୁ"
 
 #: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "ସ୍ବୟଂଚାଳିତ"
 
@@ -243,9 +246,8 @@ msgid  "Controls"
 msgstr "ନିଯନ୍ତ୍ରଣଗୁଡିକ"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
-#, fuzzy
-msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr "ଏହି ମୂହୁର୍ତ୍ତରେ ପ୍ରଯୋଗଟିକୁ ସମାପ୍ତକରାୟାଇ ପରିବ ନାହିଁ୤ \nଦଯାକରି ସମସ୍ତ ମୁଦ୍ରଣ କାର୍ୟ୍ଯ ପର୍ୟ୍ଯନ୍ତ ଅପେକ୍ଷାକର ଏବଂ/କିମ୍ବା\nOLE କାର୍ୟ୍ଯଗୁଡିକ ଶେଷହୋଇଅଛି ଏବଂ ସମସ୍ତ ଡାଇଲଗଗୁଡିକୁ ବନ୍ଦକର୤ "
+msgid  "The application cannot be terminated at the moment.\\nPlease wait until all print jobs and/or\\nOLE actions have finished and close all dialogs."
+msgstr ""
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 #, fuzzy
@@ -283,9 +285,8 @@ msgid  "Function Bar"
 msgstr "କାର୍ୟ୍ଯ ବାର"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
-#, fuzzy
-msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr "ବିଶେଷ ବହିରାକୃତିରେ ଗୋଟିଏ ତଟି ଘଟିଲା\nଦଯାକରି ତୁମର ପ୍ରଶାସକ ସହିତ ୟୋଗାୟୋଗ କର୤"
+msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
+msgstr ""
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 #, fuzzy
@@ -352,9 +353,8 @@ msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "ଏହି ହାଇପରଲିଙ୍କ ଖୋଲାହେବାକୁ ୟାଉଛି \"%s\"୤ ତୁମେ ଅଗ୍ରସର କରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
-#, fuzzy
-msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr "ସୁରକ୍ଷା ଦୃଷ୍ଟିକୋଣରୁ, ହାଇପରଲିଙ୍କକୁ ନିଷ୍ପାଦନ କରାଯାଇପାରେ ନାହିଁ।\nଦିଆଯାଇଥିବା ଠିକଣା ଖୋଲିବ ନାହିଁ।"
+msgid  "For security reasons, the hyperlink cannot be executed.\\nThe stated address will not be opened."
+msgstr ""
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
 #, fuzzy
@@ -362,14 +362,12 @@ msgid  "Security Warning"
 msgstr "ସୁରକ୍ଷା ଚେତାବନୀ"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
-#, fuzzy
-msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr "ସଂରକ୍ଷଣ କରିବା ଦ୍ୱାରା ସମସ୍ତ ସ୍ଥିତବାନ ହସ୍ତାକ୍ଷରଗୁଡ଼ିକୁ କଢ଼ାଯାଇଥାଏ।\nଆପଣ ଦଲିଲକୁ ସଂରକ୍ଷଣ କରି ଅଗ୍ରସର ହେବାପାଇଁ ଚାହିଁଛନ୍ତି କି?"
+msgid  "Saving will remove all existing signatures.\\nDo you want to continue saving the document?"
+msgstr ""
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
-#, fuzzy
-msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr "ଏହା ହସ୍ତାକ୍ଷରହେବା ପୂର୍ବରୁ ଏହି ଦଲିଲ ନିଶ୍ଚଯ ସଞ୍ଚଯହେବା ଦରକାର \nତୁମେ ଏହି ଦଲିଲକୁ ସଞ୍ଚଯ କରିବାକୁ ଚାହୁଁଛ କି?"
+msgid  "The document has to be saved before it can be signed.\\nDo you want to save the document?"
+msgstr ""
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
 #, fuzzy
@@ -412,9 +410,8 @@ msgid  "Link graphics"
 msgstr "ଲେଖାଚିତ୍ରଗୁଡିକ ଲିଙ୍କ କର"
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
-#, fuzzy
-msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr "ଗୋଟିଏ ସଠିକ ଉପାଦାନ ପଦ୍ଧତି %1\nମିଳୁନାହିଁ।\n\nପଦ୍ଧତି ନାମର ବନାନ ଯାଞ୍ଚକରନ୍ତୁ।"
+msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
+msgstr ""
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -474,7 +471,7 @@ msgstr "ଶବ୍ଦ ତଦନ୍ତ କର"
 #: source/appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PushButton.Text
 #, fuzzy
 msgid  "~Display"
-msgstr "ପ୍ରଦର୍ଶନ କର"
+msgstr "ପ୍ରଦର୍ଶନ କରନ୍ତୁ (~D)"
 
 #: source/appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FixedText.Text
 #, fuzzy
@@ -622,12 +619,12 @@ msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
 msgstr " %PRODUCTNAME %MODULENAME ସାହାୟ୍ଯ ସ୍ଟାର୍ଟଅପରେ ପ୍ରଦର୍ଶନ କର"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "ମନୋନୀତ ଫିଲ୍ଟର $(FILTER) ପ୍ରତିଷ୍ଠାପିତ ହୋଇନାହିଁ୤\nତୁମେ ଏହାକୁ ବର୍ତ୍ତମାନ କରିବାକୁ ଚାହୁଁଛ କି?"
+msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
+msgstr ""
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "ତୁମ ସଂସ୍କରଣରେ ଏହି ମନୋନୀତ ଫିଲ୍ଟର $(FILTER) ମିଶାହୋଇନାହିଁ \nଆମର ମୂଖ୍ଯପୃଷ୍ଠାରେ କ୍ରମଗୁଡିକ ବିଷଯରେ ତୁମେ ସୂଚନା ଖୋଜିପାରିବ୤"
+msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
+msgstr ""
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 #, fuzzy
@@ -765,9 +762,8 @@ msgid  "Warning"
 msgstr "ଚେତାବନୀ"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
-#, fuzzy
-msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr "ତୁମ ଦଲିଲରେ ସ୍ବଚ୍ଛତା ବସ୍ତୁଗୁଡିକ ଅଛି୤\nକେତେକ ପ୍ରିଣ୍ଟରଗୁଡିକରେ ଏହା ମୁଦ୍ରଣହେବା ପାଇଁ ବେଶୀ ସମଯ ଲାଗିପାରେ \n୤ ସ୍ବଚ୍ଛତାର ଆକାର ହ୍ରାସକରିବା ଉଚିତ କି \n?"
+msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
+msgstr ""
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 #, fuzzy
@@ -899,9 +895,8 @@ msgid  "~Unprotect..."
 msgstr "ଅସୁରକ୍ଷିତ (~U)..."
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
-#, fuzzy
-msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
-msgstr "ଏହି କାର୍ଯ୍ୟଟି ପରିବର୍ତ୍ତନ ଲିପିବଦ୍ଧ ଧାରାରୁ ପ୍ରସ୍ଥାନ କରିବ।\nପରିବର୍ତ୍ତନ ବିଷୟରେ ଯେକୌଣସି ସୂଚନା ନଷ୍ଟହୋଇଯିବ।\n\nପ୍ରସ୍ଥାନ କରିବା ଫଳରେ ପରିବର୍ତ୍ତନ ଲିପିବଦ୍ଧ ଧାରା ପ୍ରସ୍ଥାନ ହୋଇଥାଏ?\n\n"
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
 #, fuzzy
@@ -1009,102 +1004,127 @@ msgid  "Version comment"
 msgstr "ଭାଷାନ୍ତର ମନ୍ତବ୍ଯ"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "ନାମ"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
+#, fuzzy
 msgid  "~AutoUpdate"
 msgstr "ସ୍ବଯଂଚାଳିତ ଅପଡେଟ"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FixedText.Text
+#, fuzzy
 msgid  "Ne~xt Style"
 msgstr "ପରବର୍ତ୍ତି ଶୈଳୀ"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FixedText.Text
+#, fuzzy
 msgid  "Linked with"
 msgstr "ସହିତ ଲିଙ୍କହୋଇଥିବା "
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
+#, fuzzy
 msgid  "~Category"
 msgstr "ଶ୍ରେଣୀବିଭାଗ (~C)"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FixedLine.Text
+#, fuzzy
 msgid  "Contains"
 msgstr "ରେ ରହିଅଛି"
 
 #: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
+#, fuzzy
 msgid  "Current version"
 msgstr "ଚଳିତ ଭାଷାନ୍ତର"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
+#, fuzzy
 msgid  "Export"
 msgstr "ରତ୍ପାନୀ କର"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
+#, fuzzy
 msgid  "Insert"
 msgstr "ଭର୍ତ୍ତି କର"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "ଭର୍ତ୍ତି କର"
 
 #: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
+#, fuzzy
 msgid  "<All formats>"
 msgstr "<ସମସ୍ତ ଫର୍ମାଟ>"
 
 #: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
+#, fuzzy
 msgid  "~Automatic file name extension"
 msgstr "ସ୍ବଯଂଚାଳିତ ଫାଇଲ ନାମ ବୃଦ୍ଧି"
 
 #: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
+#, fuzzy
 msgid  "~Selection"
 msgstr "ମନୋନଯନ"
 
 #: source/dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.String.Text
+#, fuzzy
 msgid  "~Link"
 msgstr "ଲିଙ୍କ୍"
 
 #: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
+#, fuzzy
 msgid  "Pr~eview"
 msgstr "ପୂର୍ବଦୃଶ୍ଯ"
 
 #: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
+#, fuzzy
 msgid  "~Read-only"
 msgstr "କେବଳ-ପଢ"
 
 #: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
+#, fuzzy
 msgid  "Save with ~password"
 msgstr "ଗୁପ୍ତଶବ୍ଦ ସହିତ  ସଞ୍ଚଯ କର"
 
 #: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
+#, fuzzy
 msgid  "Edit ~filter settings"
 msgstr "ଫିଲ୍ଟର ସେଟିଙ୍ଗଗୁଡିକର ସଂପାଦନକର"
 
 #: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
+#, fuzzy
 msgid  "~Play"
 msgstr "ବଜାଅ"
 
 #: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
+#, fuzzy
 msgid  "Sto~p"
 msgstr "ବନ୍ଦ କର"
 
 #: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
+#, fuzzy
 msgid  "~Open"
 msgstr "ଖୋଲ"
 
 #: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
+#, fuzzy
 msgid  "~Save"
 msgstr "ସଞ୍ଚଯ କର"
 
 #: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Style:"
 msgstr "ଶୈଳୀ:"
 
 #: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
+#, fuzzy
 msgid  "~Templates:"
 msgstr "ନମୁନାଗୁଡିକ:"
 
 #: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
+#, fuzzy
 msgid  "~Version:"
 msgstr "ଭାଷାନ୍ତର"
 
@@ -1159,14 +1179,17 @@ msgid  "Enter Password"
 msgstr "ଗୁପ୍ତଶବ୍ଦ ପ୍ରବେଶ କର"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FixedText.Text
+#, fuzzy
 msgid  "~User"
 msgstr "ଉପୟୋଗକର୍ତ୍ତା"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FixedText.Text
+#, fuzzy
 msgid  "~Password"
 msgstr "ପ୍ରବେଶ ସଂକେତ (~P)"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FixedText.Text
+#, fuzzy
 msgid  "~Confirm"
 msgstr "ନିଶ୍ଚିତ କର"
 
@@ -1191,86 +1214,107 @@ msgid  "Password"
 msgstr "ଗୁପ୍ତଶବ୍ଦ"
 
 #: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME ଦଲିଲ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "ଶୀର୍ଷକ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
+#, fuzzy
 msgid  "~Subject"
 msgstr "ବିଷଯ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
+#, fuzzy
 msgid  "~Keywords"
 msgstr "ପ୍ରଧାନ ଶବ୍ଦଗୁଡିକ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
+#, fuzzy
 msgid  "~Comments"
 msgstr "ମନ୍ତବ୍ଯଗୁଡିକ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
+#, fuzzy
 msgid  "Type:"
 msgstr "ପ୍ରକାର:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
+#, fuzzy
 msgid  "~Read-only"
 msgstr "କେବଳ-ପଢ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
+#, fuzzy
 msgid  "Location:"
 msgstr "ସ୍ଥାନ:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
+#, fuzzy
 msgid  "Size:"
 msgstr "ଆକାର:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
+#, fuzzy
 msgid  "Created:"
 msgstr "ସୃଷ୍ଟି କରାହୋଇଥିବା:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
+#, fuzzy
 msgid  "Modified:"
 msgstr "ପରିବର୍ତ୍ତନ କରାହୋଇଥିବା:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
+#, fuzzy
 msgid  "Digitally signed:"
 msgstr "ଡିଜିଟାଲି ହସ୍ତାକ୍ଷରହୋଇଥିବା:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
+#, fuzzy
 msgid  "Digital Signature..."
 msgstr "ଡିଜିଟାଲି ହସ୍ତାକ୍ଷର..."
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
+#, fuzzy
 msgid  "Multiply signed document"
 msgstr "ହସ୍ତାକ୍ଷରହୋଇଥିବା ଦଲିଲ ଗୁଣନକର"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
+#, fuzzy
 msgid  "Last printed:"
 msgstr "ଶେଷ  ମୁଦ୍ରିତ:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
+#, fuzzy
 msgid  "Total editing time:"
 msgstr "ସମୁଦାଯ ସମ୍ପାଦନକରିବା ସମଯ:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
+#, fuzzy
 msgid  "Revision number:"
 msgstr "ପୁନର୍ଲୋଚନା ନମ୍ବର:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "Reset"
 msgstr "ପୁନଃସ୍ଥାପନ କରନ୍ତୁ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
+#, fuzzy
 msgid  "~Apply user data"
 msgstr "ଉପୟୋଗକର୍ତ୍ତା  ତଥ୍ଯ ପ୍ରଯୋଗକର"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
+#, fuzzy
 msgid  "Template:"
 msgstr "ନମୁନା:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
+#, fuzzy
 msgid  "unknown"
 msgstr "ଅଜ୍ଞାତ"
 
@@ -1279,318 +1323,396 @@ msgid  "File Name"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
+#, fuzzy
 msgid  "~Info fields..."
 msgstr "ସୂଚନା କ୍ଷେତ୍ରଗୁଡିକ..."
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
+#, fuzzy
 msgid  "Do not refresh automatically"
 msgstr "ସ୍ବଯଂଚାଳିତଭାବରେ ରିଫ୍ରେସ କର ନାହିଁ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
+#, fuzzy
 msgid  "Refresh this document"
 msgstr "ଏହି ଦଲିଲ  ରିଫ୍ରେସ କର"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
+#, fuzzy
 msgid  "every"
 msgstr "ପ୍ରତ୍ଯେକ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "ସେକେଣ୍ଡଗୁଡିକ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
+#, fuzzy
 msgid  "Redirect from this document"
 msgstr "ଏହି ଦଲିଲରୁ ପୁନଃନିର୍ଦ୍ଦେଶ କର"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
+#, fuzzy
 msgid  "after"
 msgstr " ପରେ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "ସେକେଣ୍ଡଗୁଡିକ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "to URL"
 msgstr "URL କୁ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
+#, fuzzy
 msgid  "to frame"
 msgstr "ଫ୍ରେମକୁ"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
+#, fuzzy
 msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
 msgstr "ୟଦି ତୁମେ ବିକଳ୍ପକୁ ମନୋନୀତକର \"%PLACEHOLDER%\", ତୁମେ ଗୋଟିଏ URL କୁ ନିଶ୍ଚଯ ପ୍ରବେଶ କର୤"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
+#, fuzzy
 msgid  "~Properties"
 msgstr "ଗୁଣଧର୍ମ (~P)"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
+#, fuzzy
 msgid  "Name"
 msgstr "ନାମ"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
+#, fuzzy
 msgid  "Type"
 msgstr "ପ୍ରକାର"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "ମୂଲ୍ୟ"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "ଯୋଗକରନ୍ତୁ (~A)"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
+#, fuzzy
 msgid  "Property Name"
 msgstr "ଗୁଣଧର୍ମ ନାମ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
+#, fuzzy
 msgid  "Checked by"
 msgstr "ଦ୍ୱାରା ଯ।ଞ୍ଚକରାଯାଇଛି"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
+#, fuzzy
 msgid  "Client"
 msgstr "ଗ୍ରାହକ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
+#, fuzzy
 msgid  "Date completed"
 msgstr "ତଥ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
+#, fuzzy
 msgid  "Department"
 msgstr "ବିଭାଗ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
+#, fuzzy
 msgid  "Destinations"
 msgstr "ଲକ୍ଷ୍ୟ ସ୍ଥଳ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
+#, fuzzy
 msgid  "Disposition"
 msgstr "ରଚନା"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
+#, fuzzy
 msgid  "Division"
 msgstr "ବିଭାଜନ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
+#, fuzzy
 msgid  "Document number"
 msgstr "ଦଲିଲ ସଂଖ୍ୟା"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
+#, fuzzy
 msgid  "Editor"
 msgstr "ସମ୍ପାଦକ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
+#, fuzzy
 msgid  "E-Mail"
 msgstr "ଇ-ମେଲ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
+#, fuzzy
 msgid  "Forward to"
 msgstr "କୁ ଆଗାନ୍ତୁ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
+#, fuzzy
 msgid  "Group"
 msgstr "ସମୁହ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
+#, fuzzy
 msgid  "Info"
 msgstr "ସୂଚନା"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
+#, fuzzy
 msgid  "Language"
 msgstr "ଭାଷା"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
+#, fuzzy
 msgid  "Mailstop"
 msgstr "ମେଲଷ୍ଟୋପ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
+#, fuzzy
 msgid  "Matter"
 msgstr "ବିଷୟବସ୍ତୁ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
+#, fuzzy
 msgid  "Office"
 msgstr "କାର୍ଯ୍ୟାଳୟ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
+#, fuzzy
 msgid  "Owner"
 msgstr "ମାଲିକ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
+#, fuzzy
 msgid  "Project"
 msgstr "ପ୍ରକଳ୍ପ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
+#, fuzzy
 msgid  "Publisher"
 msgstr "ପ୍ରକାଶକ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
+#, fuzzy
 msgid  "Purpose"
 msgstr "ଉଦ୍ଦେଶ୍ୟ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
+#, fuzzy
 msgid  "Received from"
 msgstr "ପାଖରୁ ଗ୍ରହଣ କରିଅଛି"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item23.StringList.item
+#, fuzzy
 msgid  "Recorded by"
 msgstr "ଦ୍ୱାରା ଲିଖିତ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item24.StringList.item
+#, fuzzy
 msgid  "Recorded date"
 msgstr "ଲିଖିତ ତାରିଖ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
+#, fuzzy
 msgid  "Reference"
 msgstr "ସନ୍ଦର୍ଭ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
+#, fuzzy
 msgid  "Source"
 msgstr "ମୂଳ"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
+#, fuzzy
 msgid  "Status"
 msgstr "ସ୍ଥିତି"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
+#, fuzzy
 msgid  "Telephone number"
 msgstr "ଦୂରସଞ୍ଚାର କ୍ରମସଂଖ୍ୟା"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item29.StringList.item
+#, fuzzy
 msgid  "Typist"
 msgstr "ଟାଇପ କର୍ତ୍ତା"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
+#, fuzzy
 msgid  "Text"
 msgstr "ଟେକ୍ସଟ"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.StringList.item
+#, fuzzy
 msgid  "DateTime"
 msgstr "ତାରିଖ ସମୟ"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
+#, fuzzy
 msgid  "Date"
 msgstr "ତାରିଖ"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.StringList.item
+#, fuzzy
 msgid  "Duration"
 msgstr "ସ୍ଥିତିକାଳ"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
+#, fuzzy
 msgid  "Number"
 msgstr "ନମ୍ବର"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
+#, fuzzy
 msgid  "Yes or no"
 msgstr "ହଁ କିମ୍ବା ନାଁ"
 
 #: source/dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.String.Text
+#, fuzzy
 msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "ହଁ"
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
+#, fuzzy
 msgid  "No"
 msgstr "ନାହିଁ"
 
 #: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Remove Property"
 msgstr "ଗୁଣଧର୍ମ କାଢ଼ନ୍ତୁ"
 
 #: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
-msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
-msgstr "ଭରଣ କରାଯାଇଥିବା ମୂଲ୍ୟ ନିର୍ଦ୍ଦିଷ୍ଟିତ ପ୍ରକାର ସହିତ ମେଳ ଖାଉନାହିଁ।\nମୂଲ୍ୟଟି ପାଠ୍ୟ ଆକାରରେ ରଖାଯାଇଥାଏ।"
+msgid  "The value entered does not match the specified type.\\nThe value will be stored as text."
+msgstr ""
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
+#, fuzzy
 msgid  "Properties of "
 msgstr "ର ବିଶେଷତାଗୁଡିକ"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
+#, fuzzy
 msgid  "General"
 msgstr "ସାଧାରଣ"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
+#, fuzzy
 msgid  "Description"
 msgstr "ବର୍ଣ୍ଣନା"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
+#, fuzzy
 msgid  "Custom Properties"
 msgstr "ଗୁଣଧର୍ମକୁ ଇଚ୍ଛାମୁତାବକ କରନ୍ତୁ"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
+#, fuzzy
 msgid  "Internet"
 msgstr "ଇଣ୍ଟରନେଟ"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PageItem.Text
+#, fuzzy
 msgid  "Security"
 msgstr "ସୁରକ୍ଷା"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Duration"
 msgstr "ଅବଧି ସମ୍ପାଦନ କରନ୍ତୁ"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FixedLine.Text
+#, fuzzy
 msgid  "Duration"
 msgstr "ସ୍ଥିତିକାଳ"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CheckBox.Text
+#, fuzzy
 msgid  "~Negative"
 msgstr "ଋଣାତ୍ମକ (~N)"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FixedText.Text
+#, fuzzy
 msgid  "~Years"
 msgstr "ବର୍ଷ (~Y)"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FixedText.Text
+#, fuzzy
 msgid  "~Months"
 msgstr "ମାସ (~M)"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FixedText.Text
+#, fuzzy
 msgid  "~Days"
 msgstr "ଦିବସ (~D)"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FixedText.Text
+#, fuzzy
 msgid  "H~ours"
 msgstr "ଘଣ୍ଟା (~o)"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FixedText.Text
+#, fuzzy
 msgid  "Min~utes"
 msgstr "ମିନଟ (~u)"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
+#, fuzzy
 msgid  "~Seconds"
 msgstr "ସେକେଣ୍ଡ (~S)"
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FixedText.Text
+#, fuzzy
 msgid  "Millise~conds"
 msgstr "ମିଲିସେକଣ୍ଡ (~c)"
 
 #: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Field Names"
 msgstr "କ୍ଷେତ୍ର ନାମଗୁଡିକ ସଂପାଦନକର"
 
 #: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Names"
 msgstr "ନାମଗୁଡିକ"
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.ModalDialog.Text
+#, fuzzy
 msgid  "Create Style"
 msgstr "ଶୈଳୀ ସୃଷ୍ଟି କର"
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FixedLine.Text
+#, fuzzy
 msgid  "Style name"
 msgstr "ଶୈଳୀ ନାମ"
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
+#, fuzzy
 msgid  "Style already exists. Overwrite?"
 msgstr "ଶୈଳୀ ପୂର୍ବରୁ ବିଦ୍ଯମାନ ଅଛି। ପୁନଃଲିଖନ କରିବେକି?"
 
@@ -1610,70 +1732,84 @@ msgid  "Cancel Recording"
 msgstr "ଅଭିଲେଖକରିବା ରଦ୍ଦ କର "
 
 #: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
+#, fuzzy
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
 msgstr "ଗୋଟିଏ କାର୍ୟ୍ଯକରୁଥିବା ଇ-ମେଲ କନଫିଗରେସନକୁ ଖୋଜିବା ପାଇଁ %PRODUCTNAME ଅକ୍ଷମ ଅଟେ୤ଦଯାକରି ସ୍ଥାନୀଯଭାବରେ ଏହି ଦଲିଲ ସଞ୍ଚଯକର ଏବଂ  ତୁମ ଇ-ମେଲ ଗ୍ରାହକ ସହିତ ଏହାକୁ ସଂୟୁକ୍ତକର୤ "
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
+#, fuzzy
 msgid  "~Reset"
 msgstr "ରିସେଟ କର"
 
 #: source/dialog/dialog.src#STR_APPLY.String.Text
+#, fuzzy
 msgid  "Apply"
 msgstr "ପ୍ରଯୋଗକର"
 
 #: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
+#, fuzzy
 msgid  "Organizer"
 msgstr "ସଂଗଠନକ"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
+#, fuzzy
 msgid  "This name is already in use."
 msgstr "ଏହି ନାମ ପୂର୍ବରୁ ଉପୟୋଗ ହୋଇଅଛି୤"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
+#, fuzzy
 msgid  "This Style does not exist."
 msgstr "ଏହି ଶୈଳୀ ରହି ନାହିଁ୤"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
-msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr "ଆଧାର ଶୈଳୀ ପରି ଏହି ଶୈଳୀ ଉପୟୋଗ ହୋଇପାରିବ ନାହିଁ,\nକାରଣ ଏହା ଗୋଟିଏ ରିକରସିଭ ପ୍ରସଙ୍ଗରେ ବାହାରିବ୤ "
+msgid  "This Style cannot be used as a base Style,\\nbecause it would result in a recursive reference."
+msgstr ""
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
-msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr "ଗୋଟିଏ ତୃଟି ଶୈଳୀ ପରି ନାମ ପୂର୍ବରୁ ରହି ଅଛି୤\nଦଯାକରି ଅନ୍ଯ ନାମ ବାଛ୤"
+msgid  "Name already exists as a default Style.\\nPlease choose another name."
+msgstr ""
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
+#, fuzzy
 msgid  "Do you really want to delete Style $1?"
 msgstr "$1 ତୁମେ ନିଶ୍ଚଯ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
-msgid  "You are deleting an applied Style!\n"
-msgstr "ତୁମେ ଗୋଟିଏ ପ୍ରଯୋଗହୋଇଥିବା ଶୈଳୀକୁ ବିଲୋପ କର!\n"
+msgid  "You are deleting an applied Style!\\n"
+msgstr ""
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
+#, fuzzy
 msgid  "New..."
 msgstr "ନୂଆ..."
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Modify..."
 msgstr "ପରିବର୍ତ୍ତନ କର..."
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "Delete..."
 msgstr "ବିଲୋପ କର..."
 
 #: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
+#, fuzzy
 msgid  "Navigator"
 msgstr "ନାଭିଗେଟର"
 
 #: source/dialog/dialog.src#SID_TASKPANE.String.Text
+#, fuzzy
 msgid  "Task Pane"
 msgstr "ଟାସ୍କ"
 
 #: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
+#, fuzzy
 msgid  "Faulty password confirmation"
 msgstr "ତୃଟିପୂର୍ଣ୍ଣ ଗୁପ୍ତଶବ୍ଦ ନିଶ୍ଚିତକରଣ"
 
 #: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
+#, fuzzy
 msgid  "Send"
 msgstr "ପଠାନ୍ତୁ"
 
@@ -1698,761 +1834,931 @@ msgid  "Tasks"
 msgstr "କାର୍ୟ୍ଯଗୁଡିକ"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
-msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr "ଏହି ଦଲିଲଟି ସଜ୍ଜିକରଣ ଶୈଳୀ ଧାରଣ କରିଥାଇପାରେ କିମ୍ବା %FORMATNAME ଫାଇଲ ସଜ୍ଜିକରଣ ଶୈଳୀରେ ସଂରକ୍ଷିତ ହୋଇପାରୁନଥିବା ବିଷୟବସ୍ତୁଗୁଡ଼ିକୁ ଧାରଣ କରିଥାଏ। ଆପଣ ସେହି ଦଲିଲକୁ ଏହି ସଜ୍ଜିକରଣ ଶୈଳୀରେ ଯେକୌଣସି ଉପାୟରେ ସଂରକ୍ଷଣ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?\n\nନୂତନ ODF ଫାଇଲ ସଜ୍ଜିକରଣ ଶୈଳୀକୁ ବ୍ୟବହାର କରନ୍ତୁ ଏବଂ ନିଶ୍ଚିତ ହୁଅନ୍ତୁ ଯେ ବିଷୟ ବସ୍ତୁଗୁଡ଼ିକ ସଠିକ ଭାବରେ ସଂରକ୍ଷିତ ହୋଇଛି।"
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
+#, fuzzy
 msgid  "~Keep Current Format"
 msgstr "ପ୍ରଚଳିତ ସଜ୍ଜିକରଣ ଶୈଳୀକୁ ରଖନ୍ତୁ (~K)"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
+#, fuzzy
 msgid  "~Save in ODF Format"
 msgstr "ODF ସଜ୍ଜିକରଣ ଶୈଳୀରେ ସଂରକ୍ଷଣ କରନ୍ତୁ (~S)"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
+#, fuzzy
 msgid  "~More Information..."
 msgstr "ଅଧିକ ସୂଚନା..."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
+#, fuzzy
 msgid  "~Ask when not saving in ODF format"
 msgstr "ODF ସଜ୍ଜିକରଣ ଶୈଳୀରେ ସଂରକ୍ଷଣ ହୋଇନଥିଲେ ପଚାରନ୍ତୁ (~A)"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
+#, fuzzy
 msgid  "My Templates"
 msgstr "ମୋର ନମୁନାଗୁଡିକ"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item2.ItemList.item
+#, fuzzy
 msgid  "Business Correspondence"
 msgstr "ବ୍ଯବସାଯିକ ୟୋଗାୟୋଗ"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
+#, fuzzy
 msgid  "Other Business Documents"
 msgstr "ଅନ୍ଯ ବ୍ଯବସାଯ ଦଲିଲଗୁଡକ"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item4.ItemList.item
+#, fuzzy
 msgid  "Personal Correspondence and Documents"
 msgstr "ବ୍ଯକ୍ତିଗତ ୟୋଗାୟୋଗ ଏବଂ ଦଲିଲଗୁଡିକ"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
+#, fuzzy
 msgid  "Forms and Contracts"
 msgstr "ଫର୍ମଗୁଡିକ ଏବଂ ୟୋଗାୟୋଗଗୁଡିକ"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
+#, fuzzy
 msgid  "Finances"
 msgstr "ଅର୍ଥ"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
+#, fuzzy
 msgid  "Education"
 msgstr "ଶିକ୍ଷା"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
+#, fuzzy
 msgid  "Presentation Backgrounds"
 msgstr "ଉପସ୍ଥାପନା ପୃଷ୍ଠଭାଗଗୁଡିକ"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
+#, fuzzy
 msgid  "Presentations"
 msgstr "ଉପସ୍ଥାପନାଗୁଡିକ"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
+#, fuzzy
 msgid  "Miscellaneous"
 msgstr "ବିବିଧ"
 
 #: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
+#, fuzzy
 msgid  "The templates are being initialized for first-time usage."
 msgstr "ପ୍ରଥମ-ଥର ବ୍ଯବହାର ପାଇଁ ନମୁନାଗୁଡିକ ଆରମ୍ଭ କରାୟାଇ ପାରିବ୤"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "ନମୁନାଗୁଡିକ"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
+#, fuzzy
 msgid  "New template"
 msgstr "ନୂଆ  ନମୁନା"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "ନମୁନାଗୁଡିକ"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
+#, fuzzy
 msgid  "~Categories"
 msgstr "ଶ୍ରେଣୀଗୁଡିକ"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
+#, fuzzy
 msgid  "~Templates"
 msgstr "ନମୁନାଗୁଡିକ"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "ସମ୍ପାଦନ କର"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
+#, fuzzy
 msgid  "~Organizer..."
 msgstr "ସଂଗଠକ..."
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
-msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr "ବାହ୍ଯ ଫର୍ମାଟଗୁଡିକରେ ସଞ୍ଚଯକଲେ ସୂଚନା ନଷ୍ଟ ହୋଇପାରେ\n ତୁମେ ତଥାପି ମଧ୍ଯ ବନ୍ଦ କରିବାକୁ ଚାହୁଁଛ କି?"
+msgid  "Saving in external formats may have caused\\n information loss. Do you still want to close?"
+msgstr ""
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
-msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr "ନାମ ପୂର୍ବରୁ ଉପୟୋଗ ହୋଇଅଛି୤\nତୁମେ ଦଲିଲ ନମୁନାକୁ ପୁନଃଲିଖନ କରିବାକୁ ଚାହୁଁଛ କି?"
+msgid  "Name already in use.\\nDo you want to overwrite document template?"
+msgstr ""
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the region \"$1\"?"
 msgstr "ତୁମେ ନିଶ୍ଚିତ \"$1\"ଅଞ୍ଚଳକୁ ବିଲୋପକରିବାକୁ ଚାହୁଁଛ କି ?"
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "ତୁମେ ନିଶ୍ଚିତ  \"$1\"ପ୍ରବେଶକୁ ବିଲୋପକରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
-msgid  "The category is not empty.\nDelete anyway?"
-msgstr "ଶ୍ରେଣୀ ଶୂନ୍ଯ ନାହିଁ\nକୌଣସି ପ୍ରକାରରେ ବିଲୋପ କର?"
+msgid  "The category is not empty.\\nDelete anyway?"
+msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr " ଦଲିଲ \"$(DOC)\" ପରିବର୍ତ୍ତନ ହୋଇନାହିଁ୤\nତୁମେ ତୁମର ପରିବର୍ତ୍ତନଗୁଡିକୁ ସଞ୍ଚଯକରିବାକୁ ଚାହୁଁଛ କି?"
+msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/doc/doc.src#STR_STYLES.String.Text
+#, fuzzy
 msgid  "Styles"
 msgstr "ଶୈଳୀଗୁଡିକ"
 
 #: source/doc/doc.src#STR_MACROS.String.Text
+#, fuzzy
 msgid  "Macros"
 msgstr "ମାକ୍ରୋସ୍"
 
 #: source/doc/doc.src#STR_CONFIG.String.Text
+#, fuzzy
 msgid  "Configuration"
 msgstr "କନଫିଗରେସନ"
 
 #: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
+#, fuzzy
 msgid  "Styles in "
 msgstr "ରେ ଶୈଳୀଗୁଡିକ"
 
 #: source/doc/doc.src#STR_PRINT_STYLES.String.Text
+#, fuzzy
 msgid  "Printing Styles"
 msgstr "ମୁଦ୍ରଣକରିବା ଶୈଳୀଗୁଡିକ"
 
 #: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
+#, fuzzy
 msgid  "The print job could not be started."
 msgstr "ଏହି ମୁଦ୍ରଣ କାର୍ୟ୍ଯ ଆରମ୍ଭ ହୋଇ ପାରିବ ନାହିଁ୤"
 
 #: source/doc/doc.src#STR_BACKUP_COPY.String.Text
+#, fuzzy
 msgid  "Copy"
 msgstr "ନକଲ କର"
 
 #: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
+#, fuzzy
 msgid  "The template could not be opened."
 msgstr "ନମୁନା ଖୋଲା ହୋଇପାରିବ ନାହିଁ୤"
 
 #: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
+#, fuzzy
 msgid  "Document already open for editing."
 msgstr "ସମ୍ପାଦନ ପାଇଁ ପୂର୍ବରୁ ଦଲିଲ ଖୋଲାଅଛି୤"
 
 #: source/doc/doc.src#STR_ERROR_SAVE.String.Text
+#, fuzzy
 msgid  "Error recording document "
 msgstr " ଦଲିଲ ଅଭିଳେଖ ତୃଟି"
 
 #: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "ନମୁନାଗୁଡିକ"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr " \"$1\" ନମୁନା ନକଲକରିବା ତୃଟି ୤ \nଏହି ନାମର ଗୋଟିଏ ନମୁନା ପୂର୍ବରୁ ଉପସ୍ଥିତ ଥାଇପାରେ୤"
+msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
+msgstr ""
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "The template \"$1\" can not be deleted."
 msgstr " \"$1\" ନମୁନା  ବିଲୋପହୋଇପାରିବ ନାହିଁ୤"
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Error moving template \"$1\"."
 msgstr "\"$1\" ନମୁନା ଘୁଞ୍ଚାଇବା ତୃଟି୤"
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
+#, fuzzy
 msgid  "The update could not be saved."
 msgstr "ଅପଡେଟ ସଞ୍ଚଯ ହୋଇପାରିବ ନାହିଁ୤"
 
 #: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Error saving template "
 msgstr "ତୃଟି ସଞ୍ଚଯହୋଇଥିବା ନମୁନା "
 
 #: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
+#, fuzzy
 msgid  "Error renaming template."
 msgstr "ନମୁନା ପୁନଃନାମଦେବା ତୃଟି"
 
 #: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
+#, fuzzy
 msgid  "Error renaming template category."
 msgstr "ନମୁନା ଶ୍ରେଣୀ ପୁନଃନାମଦେବା"
 
 #: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
+#, fuzzy
 msgid  "Please specify a name."
 msgstr "ଦଯାକରି ଗୋଟିଏ ନାମ ନିର୍ଦ୍ଦିଷ୍ଟକର୤"
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
-msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr "ଦଯାକରି ଗୋଟିଏ ଅନନ୍ଯ ନାମ ନିର୍ଦ୍ଦିଷ୍ଟକର\nପ୍ରବେଶଗୁଡିକ କେସ୍ ନିର୍ଦ୍ଦିଷ୍ଟହେବା ଉଚିତ ନୁହେଁ୤"
+msgid  "Please specify a unique name.\\nEntries must not be case specific."
+msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr " ନମୁନା  \"$(TEXT)\" ଡିଫଲଟ ନମୁନା ହେବା ଉଚିତ କି?"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to reset the default template?"
 msgstr "ତୁମେ ଏହି ଡିଫଲଟ ନମୁନାକୁ ରିସେଟକରିବାକୁ ଚାହୁଁଛ କି ?"
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
-msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr "ନମୁନା ବିବରଣୀପଞ୍ଜିକା\n$(DIR)\nରହି ନାହିଁ୤"
+msgid  "Template directory\\n$(DIR)\\ndoes not exist."
+msgstr ""
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
+#, fuzzy
 msgid  "Document info cannot be read."
 msgstr "ଦଲିଲ ସୂଚନା ପଢି ହୋଇପାରିବ ନାହିଁ୤"
 
 #: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
+#, fuzzy
 msgid  "The selected file has an incorrect format."
 msgstr "ମନୋନୀତ ଫାଇଲର ଏକ ଭୂଲ୍ ଫର୍ମାଟ ଅଛି୤"
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
-msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr " $(FORMAT) ଏହି ଫର୍ମାଟରେ ଦଲିଲଗୁଡିକ ସଞ୍ଚଯ ହୋଇପାରିବ ନାହିଁ୤ ତୁମେ\nଏହି ଫରମାଟକୁ ଉପୟୋଗକରି ତୁମର ପରିବର୍ତ୍ତନଗୁଡିକୁ $(OWNFORMAT) ସଞ୍ଚଯକରିବାକୁ ଚାହୁଁଛ କି?"
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
+#, fuzzy
 msgid  "~Save"
 msgstr "ସଞ୍ଚଯ କର"
 
 #: source/doc/doc.src#STR_UPDATEDOC.String.Text
+#, fuzzy
 msgid  "~Update"
 msgstr "ଅପଡେଟ କର"
 
 #: source/doc/doc.src#STR_SAVEASDOC.String.Text
+#, fuzzy
 msgid  "Save ~As..."
 msgstr "ପରି ସଞ୍ଚଯ କର"
 
 #: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
+#, fuzzy
 msgid  "Save Copy ~as..."
 msgstr "ପରି ପ୍ରତିଳିପିକୁ ସଞ୍ଚଯ କର"
 
 #: source/doc/doc.src#STR_CLOSEDOC.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "ବନ୍ଦ କର"
 
 #: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
+#, fuzzy
 msgid  "~Close & Return to "
 msgstr "କୁ ବନ୍ଦକରିବା ଏବଂ ଫେରିବା"
 
 #: source/doc/doc.src#STR_WIZARD.String.Text
+#, fuzzy
 msgid  " AutoPilot"
 msgstr " ସ୍ବଯଂଚାଳିତପାଇଲ୍ଟ"
 
 #: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
+#, fuzzy
 msgid  "Configurations"
 msgstr "କନଫିଗରେସନଗୁଡିକ"
 
 #: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Basic libraries"
 msgstr "%PRODUCTNAME ମୂଖ୍ଯ ଗ୍ରାନ୍ଥାଳଯଗୁଡିକ"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
+#, fuzzy
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "\"$(ARG1)\" ଶୈଳୀ ସ୍ଥାନାନ୍ତରହେବା ଉଚିତ କି?"
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
+#, fuzzy
 msgid  "Loading Document"
 msgstr "ଦଲିଲ ଲୋଡକରୁଛି"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
+#, fuzzy
 msgid  "Connection to: $(HOST). Waiting for response..."
 msgstr "$(HOST)କୁ ସଂୟୋଗ: ୤ ଉତ୍ତର ପାଇଁ ଅପେକ୍ଷାକରିଛି...."
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
+#, fuzzy
 msgid  "Opening $(TARGET) at $(HOST)"
 msgstr " $(HOST) ରେ $(TARGET)ଖୋଲାହେବା"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
+#, fuzzy
 msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
 msgstr "ଲୋଡକରିବା: $(TARGET) ରୁ $(HOST)୤ ଲୋଡହୋଇଥିବା: $(BYTE)"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
+#, fuzzy
 msgid  "Disconnected"
 msgstr "ବିଛିନ୍ନହୋଇଥିବା"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
-msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr "ସଂସ୍କରଣ ପାଇଁ ଦଲିଲ ଖୋଲା ହୋଇପାରିବ ନାହିଁ\nକେବଳ-ପଢିବା ପରି ତୁମେ ଏହାକୁ ଖୋଲିବାକୁ ଇଚ୍ଛାକରୁଛ କି?"
+msgid  "Document cannot be opened for editing.\\nDo you want to open it as read-only?"
+msgstr ""
 
 #: source/doc/doc.src#STR_EDIT.String.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "ସଂପାଦନ କର"
 
 #: source/doc/doc.src#RID_OFFICEFILTER.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Documents"
 msgstr "%PRODNAME ଦଲିଲଗୁଡିକ"
 
 #: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Propert~ies..."
 msgstr "ବିଶେଷତାଗୁଡିକ..."
 
 #: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
+#, fuzzy
 msgid  "HTML (FrameSet)"
 msgstr "HTML (ଫ୍ରେମ ସେଟ)"
 
 #: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME ଫ୍ରେମ ଦଲିଲ"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
 msgstr "ନମୁନା\"$(TEMPLATE)\" ମୂଳ ସ୍ଥାନରେ ମିଳିଲା ନାହିଁ ୤ ସମାନ ନାମର ଏକ ନମୁନା  \"$(FOUND)\"ରେ ରହିଅଛି ୤ ତୁଳନାକରିବା ସମଯରେ ଭବିଷ୍ଯତରେ ଏହି ନମୁନା ଉପୟୋଗହେବା ଉଚିତ କି?"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "ଏହି\"$(TEMPLATE)\" ନମୁନା ମିଳୁନାହିଁ୤ଏହି ଖୋଲାୟାଇଥିବା ଦଲିଲର ପରବର୍ତ୍ତୀ ସମଯରେ ଏହି ନମୁନା ଖୋଲାହେବା ଉଚିତ କି?"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
+#, fuzzy
 msgid  "Automatically saved version"
 msgstr " ସ୍ବଯଂଚାଳିତଭାବରେ ସଂଚିତ ଭାଷାନ୍ତର"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
+#, fuzzy
 msgid  "Text Document"
 msgstr "ଟେକ୍ସଟ  ଦଲିଲ"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
+#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML ଦଲିଲ"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
+#, fuzzy
 msgid  "Master Document"
 msgstr "ମାଷ୍ଟର ଦଲିଲ"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Spreadsheet"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
+#, fuzzy
 msgid  "Presentation"
 msgstr "ଉପସ୍ଥାପନା"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
+#, fuzzy
 msgid  "Drawing"
 msgstr "ଚିତ୍ରାଙ୍କନ"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
+#, fuzzy
 msgid  "Message"
 msgstr "ସଂଦେଶ"
 
 #: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
+#, fuzzy
 msgid  "~Discard"
 msgstr "ଅସ୍ବୀକାର କର"
 
 #: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
+#, fuzzy
 msgid  "Access to the current data medium not possible."
 msgstr "ଚଳିତ ତଥ୍ଯ ମାଧ୍ଯମ ପ୍ରବେଶ ସମ୍ଭବ ନୁହେଁ୤"
 
 #: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
+#, fuzzy
 msgid  "Insert the next data carrier and click OK."
 msgstr "ପରବର୍ତ୍ତୀ ତଥ୍ଯ କୁ ଭର୍ତ୍ତିକର ଏବଂ OK କ୍ଲିକ କର୤"
 
 #: source/doc/doc.src#STR_OBJECT.String.Text
+#, fuzzy
 msgid  "Object"
 msgstr "ବସ୍ତୁ"
 
 #: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
+#, fuzzy
 msgid  "Run Macro"
 msgstr "ମାକ୍ରୋ ଚଳାଅ"
 
 #: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
+#, fuzzy
 msgid  "This document contains macros. $(TEXT)"
 msgstr "ଏହି ଦଲିଲରେ $(TEXT) ମାକ୍ରୋମ ଅଛି୤"
 
 #: source/doc/doc.src#BTN_OK.String.Text
+#, fuzzy
 msgid  "Run"
 msgstr "ଚଳାଅ"
 
 #: source/doc/doc.src#BTN_CANCEL.String.Text
+#, fuzzy
 msgid  "Do Not Run"
 msgstr "ଚାଲୁ କରନାହିଁ"
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
+#, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "ସୁରକ୍ଷା ସେଟିଙ୍ଗଗୁଡିକ ଅନୁସାରେ, ଏହି ଦଲିଲରେଥିବା ମାକ୍ରୋସ୍ ଚାଲୁକରିବା ଉଚିତ ନୁହେଁ୤ୟେକୌଣସି ପ୍ରକାରରେ ତୁମେ ସେମାନଙ୍କୁ ଚାଲୁକରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/doc/doc.src#FT_OK.String.Text
+#, fuzzy
 msgid  "Do you want to allow these macros to be run?"
 msgstr "ତୁମେ ଏହି ମାକ୍ରୋସ୍ ଚାଲୁକରିବା ପାଇଁ ସ୍ବୀକୃତଦେବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
+#, fuzzy
 msgid  "Export as PDF"
 msgstr "PDF ପରି ରତ୍ପାନୀ କର"
 
 #: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
+#, fuzzy
 msgid  "Export..."
 msgstr "ରତ୍ପାନୀ କର..."
 
 #: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
+#, fuzzy
 msgid  "Export"
 msgstr "ରତ୍ପାନୀ କର"
 
 #: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
+#, fuzzy
 msgid  "Add this directory to the list of secure paths: "
 msgstr "ନିରାପଦ ପଥଗୁଡିକକୁ ଏହି ବିବରଣୀପଞ୍ଜିକାରେ ମିଶାଅ: "
 
 #: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
+#, fuzzy
 msgid  "File format:"
 msgstr "ଫାଇଲ ଫର୍ମାଟ:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
-msgid  "This document contains:\n\n"
-msgstr "ଏହି ଦଲିଲରେ ରହିଛି:\n\n"
+msgid  "This document contains:\\n\\n"
+msgstr ""
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
+#, fuzzy
 msgid  "Recorded changes"
 msgstr "ଅଭିଲେଖ ହୋଇଥିବା ପରିବର୍ତ୍ତନଗୁଡିକ"
 
 #: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
+#, fuzzy
 msgid  "Notes"
 msgstr "ଟିପପ୍ଣୀଗୁଡିକ"
 
 #: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
+#, fuzzy
 msgid  "Document versions"
 msgstr "ଦଲିଲ ଭାଷାନ୍ତରଗୁଡିକ"
 
 #: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
+#, fuzzy
 msgid  "Fields"
 msgstr "କ୍ଷେତ୍ରଗୁଡିକ"
 
 #: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
+#, fuzzy
 msgid  "Linked data..."
 msgstr "ଲିଙ୍କହୋଇଥିବା ତଥ୍ଯ..."
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
+#, fuzzy
 msgid  "Do you want to continue saving the document?"
 msgstr "ତୁମେ ଦଲିଲକୁ ସଞ୍ଚଯକରିବା  ଚାଲୁରଖିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
+#, fuzzy
 msgid  "Do you want to continue printing the document?"
 msgstr "ତୁମେ ଦଲିଲକୁ ମୁଦ୍ରଣକରିବା ଚାଲୁରଖିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
+#, fuzzy
 msgid  "Do you want to continue signing the document?"
 msgstr "ତୁମେ ଦଲିଲକୁ ହସ୍ତାକ୍ଷରକରିବା ଚାଲୁରଖିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
+#, fuzzy
 msgid  "Do you want to continue creating a PDF file?"
 msgstr "ତୁମେ ଏକ  PDF ଫାଇଲକୁ ସୃଷ୍ଟିକରିବାକୁ ଚାଲୁରଖିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
+#, fuzzy
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
 msgstr "ଯଦି ଆପଣ ପ୍ରକୃତ ଦଲିଲକୁ ନବଲିଖନ କରିବାକୁ ଚାହୁଁନାହାନ୍ତି, ତେବେ ଆପଣଙ୍କୁ ନୂତନ ଫାଇଲ ନାମରେ ଆପଣଙ୍କ କାର୍ଯ୍ୟକୁ ସଂରକ୍ଷଣ କରିବା ଉଚିତ।"
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
+#, fuzzy
 msgid  "Some template files are protected and can not be deleted."
 msgstr "କିଛି ଢ଼ାଞ୍ଚା ଫାଇଲଗୁଡ଼ିକ ସୁରକ୍ଷିତ ହୋଇଥାଆନ୍ତି ଏବଂ ସେଗୁଡ଼ିକୁ ଅପସାରଣ କରିହୁଏନାହିଁ।"
 
 #: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
+#, fuzzy
 msgid  "Info %1"
 msgstr "ସୂଚନା %1"
 
 #: source/doc/doc.src#STR_SHARED.String.Text
+#, fuzzy
 msgid  " (shared)"
 msgstr " (ସହଭାଗ)"
 
 #: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
+#, fuzzy
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
 msgstr "ଦଲିଲ ଶୈଳୀ ସଂସ୍କରଣକୁ ODF 1.1 (OpenOffice.org 2.x) ର ଉପକରଣ-ବିକଳ୍ପ-ଧାରଣ/ସଂରକ୍ଷଣ କରନ୍ତୁ-ସାଧାରଣ ରେ ସେଟକରାଯାଇଥାଏ। ଦଲିଲରେ ହସ୍ତାକ୍ଷର କରିବା ପାଇଁ ODF 1.2 (OpenOffice.org 3.x) ଆବଶ୍ୟକ।"
 
 #: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
-msgstr "ହସ୍ତାକ୍ଷର ହେବା ପୂର୍ବରୁ ଦଲିଲଗୁଡ଼ିକୁ ସଂରକ୍ଷଣ କରାଯିବା ଉଚିତ। ଦଲିଲଗୁଡ଼ିକୁ ସଂରକ୍ଷଣ କରିବା ଦ୍ୱାରା ସମସ୍ତ ଉପସ୍ଥିତ ହସ୍ତାକ୍ଷରଗୁଡ଼ିକୁ କଢାଯାଇଥାଏ।\nଆପଣ ଦଲିଲଟିକୁ ସଂରକ୍ଷଣ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?"
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\\nDo you want to save the document?"
+msgstr ""
 
 #: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
+#, fuzzy
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
 msgstr "ଛାଞ୍ଚ '$(ARG1)' ଯାହାଉପରେ ଏହି ଦଲିଲଟି ଆଧାରିତ, ତାହାକୁ ପରିବର୍ତ୍ତନ କରାଯାଇଛି। ଆପଣ ଶୈଳୀ ବିଶିଷ୍ଟ ଫର୍ମାଟିଙ୍ଗକୁ ପରିବର୍ତ୍ତିତ ଢ଼ାଞ୍ଚା ଅନୁସାରେ ଅଦ୍ୟତନ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?"
 
 #: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
+#, fuzzy
 msgid  "~Update Styles"
 msgstr "ଶୈଳୀଗୁଡ଼ିକୁ ଅଦ୍ୟତନ କରନ୍ତୁ (~U)"
 
 #: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
+#, fuzzy
 msgid  "~Keep Old Styles"
 msgstr "ପୁରୁଣା ଶୈଳୀକୁ ରଖନ୍ତୁ (~K)"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
+#, fuzzy
 msgid  "Template Management"
 msgstr "ନମୁନା ପରିଚାଳନା"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
+#, fuzzy
 msgid  "Close"
 msgstr "ବନ୍ଦକରନ୍ତୁ"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
+#, fuzzy
 msgid  "~File..."
 msgstr "ଫାଇଲ..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
+#, fuzzy
 msgid  "~Address Book..."
 msgstr "ଠିକଣା ପୁସ୍ତକ"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
 msgid  "Templates"
 msgstr "ନମୁନାଗୁଡିକ"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
 msgid  "Documents"
 msgstr "ଦଲିଲଗୁଡିକ"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
 msgid  "Templates"
 msgstr "ନମୁନାଗୁଡିକ"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
 msgid  "Documents"
 msgstr "ଦଲିଲଗୁଡିକ"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
+#, fuzzy
 msgid  "Commands"
 msgstr "ଆଦେଶଗୁଡିକ"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
+#, fuzzy
 msgid  "~New"
 msgstr "ନୂଆ"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "ବିଲୋପ କର"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "ସମ୍ପାଦନ କର"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
+#, fuzzy
 msgid  "Import Template..."
 msgstr "ନମୁନାକୁ   ଆମଦାନୀ କର..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
+#, fuzzy
 msgid  "Export Template..."
 msgstr "ନମୁନାକୁ ରତ୍ପାନୀ କର..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
+#, fuzzy
 msgid  "~Print"
 msgstr "ମୁଦ୍ରଣ କର"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
+#, fuzzy
 msgid  "Printer Settings..."
 msgstr "ପ୍ରିଣ୍ଟର ସେଟିଙ୍ଗଗୁଡିକ..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
+#, fuzzy
 msgid  "Update"
 msgstr "ଅପଡେଟଡ କର"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
 msgid  "Set As Default Template"
 msgstr "ସେଟ ପରି  ଡିଫଲଟ ନମୁନା"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
 msgid  "Reset Default Template"
 msgstr "ରିସେଟ ଡିଫଲଟ ନମୁନା"
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
+#, fuzzy
 msgid  "New"
 msgstr "ନୂଆ"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
+#, fuzzy
 msgid  "~Categories"
 msgstr "ଶ୍ରେଣୀଗୁଡିକ"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "T~emplates"
 msgstr "ନମୁନାଗୁଡିକ"
 
 #: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
+#, fuzzy
 msgid  "~More"
 msgstr "ଅଧିକ"
 
 #: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
+#, fuzzy
 msgid  "Pre~view"
 msgstr "ପୂର୍ବଦୃଶ୍ଯ"
 
 #: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
+#, fuzzy
 msgid  "Description"
 msgstr "ବର୍ଣ୍ଣନା"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
+#, fuzzy
 msgid  "Te~xt"
 msgstr "ଟେକ୍ସଟ"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
+#, fuzzy
 msgid  "~Frame"
 msgstr "ଫ୍ରେମ"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
+#, fuzzy
 msgid  "~Pages"
 msgstr "ପୃଷ୍ଠାଗୁଡିକ"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
+#, fuzzy
 msgid  "N~umbering"
 msgstr "ସଂଖ୍ଯାଦେବା"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
+#, fuzzy
 msgid  "~Overwrite"
 msgstr "ପୁନଃଲିଖନ"
 
 #: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
+#, fuzzy
 msgid  "From File..."
 msgstr " ଫାଇଲରୁ... "
 
 #: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Load Styles"
 msgstr "ଲୋଡ ଶୈଳୀଗୁଡିକ"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "ଶୀର୍ଷକ"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
+#, fuzzy
 msgid  "Subject"
 msgstr "ବିଷଯ"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
+#, fuzzy
 msgid  "~Key words"
 msgstr "ପ୍ରଧାନ ଶବ୍ଦଗୁଡିକ"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "ବର୍ଣ୍ଣନା"
 
 #: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
+#, fuzzy
 msgid  "Configuration Menu"
 msgstr "କନଫିଗରେସନ ମେନୁ"
 
 #: source/menu/menu.src#STR_MENU_ADDONS.String.Text
+#, fuzzy
 msgid  "~Add-Ons"
 msgstr "ଆଡ୍-ଅନସ୍"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
+#, fuzzy
 msgid  "Cu~t"
 msgstr "କାଟ"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
 msgstr "ନକଲ କର"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
+#, fuzzy
 msgid  "~Paste"
 msgstr "ଲଗାଅ"
 
 #: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
+#, fuzzy
 msgid  "Leave Full-Screen Mode"
 msgstr "ସପୂର୍ଣ୍ଣ -ସ୍କ୍ରିନ ମୋଡ ଛାଡ"
 
 #: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
+#, fuzzy
 msgid  "Add-~On Help"
 msgstr "ଆଡ୍-ଅନ୍ ସାହାୟ୍ଯ"
 
 #: source/menu/menu.src#STR_MENU_SYNONYMS.String.Text
+#, fuzzy
 msgid  "Synonyms"
 msgstr "ସମାନାର୍ଥ ଶବ୍ଦ"
 
 #: source/menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.String.Text
+#, fuzzy
 msgid  "(none)"
 msgstr "(କିଛି ନାହିଁ)"
 
 #: source/menu/menu.src#STR_MENU_THESAURUS.String.Text
+#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "ଶବ୍ଦକୋଷ..."
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "କୌଣସି ଡିଫଲଡ ପ୍ରିଣ୍ଟର ମିଳୁନାହିଁ।\nଦଯାକରି ଗୋଟିଏ ପ୍ରିଣ୍ଟର ବାଛ ଏବଂ ଆଉଥରେ ଚେଷ୍ଟା କରନ୍ତୁ।"
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr ""
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "ପ୍ରିଣ୍ଟର ଆରମ୍ଭହୋଇପାରୁ ନାହିଁ୤\nଦଯାକରି ତୁମର ପ୍ରିଣ୍ଟର କନଫିଗୁରେସନ ୟାଞ୍ଚକର୤"
+msgid  "Could not start printer.\\nPlease check your printer configuration."
+msgstr ""
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
-msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr "ଏହି ପ୍ରିଣ୍ଟର $1 ପାଇଁ ଏହି ଦଲିଲ ରଚନାହୋଇଛି୤ ନିର୍ଦ୍ଦିଷ୍ଟହୋଇଥିବା ପ୍ରିଣ୍ଟର ଉପଲବ୍ଧ ନାହିଁ୤ \n$1 ତୁମେ ସ୍ଟାଣ୍ଡାଡ ପ୍ରିଣ୍ଟରକୁ ଉପୟୋଗକରିବାକୁ ଚାହୁଁଛ କି  ?"
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
+msgstr ""
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
+#, fuzzy
 msgid  "Options..."
 msgstr "ବିକଳ୍ପଗୁଡିକ..."
 
 #: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
+#, fuzzy
 msgid  "Printer Options"
 msgstr "ପ୍ରିଣ୍ଟର ବିକଳ୍ପଗୁଡିକ"
 
 #: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
+#, fuzzy
 msgid  "Printer busy"
 msgstr "ପ୍ରିଣ୍ଟର ବ୍ଯସ୍ତ"
 
 #: source/view/view.src#STR_ERROR_PRINT.String.Text
+#, fuzzy
 msgid  "Error while printing"
 msgstr "ମୁଦ୍ରଣକରିବା ସମଯରେ ତୃଟି "
 
 #: source/view/view.src#STR_PRINTING.String.Text
+#, fuzzy
 msgid  "Printing"
 msgstr "ମୁଦ୍ରଣକରିବା "
 
 #: source/view/view.src#STR_PAGE.String.Text
+#, fuzzy
 msgid  "Page "
 msgstr "ପୃଷ୍ଠା"
 
 #: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Error saving template "
 msgstr "ତୃଟି ସଞ୍ଚଯହୋଇଥିବା ନମୁନା "
 
 #: source/view/view.src#STR_READONLY.String.Text
+#, fuzzy
 msgid  " (read-only)"
 msgstr " (କେବଳ-ପଠନୀୟ)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr "ପୃଷ୍ଠାର ଆକର ଏବଂ ଓରିଏନଟେସନ ପରିବର୍ତ୍ତିନହୋଇଛି୤\nତୁମେ ସକ୍ରିଯ ଦଲିଲରେ ନୂଆ ସେଟିଙ୍ଗଗୁଡିକରେ  \nସଞ୍ଚଯକରିବାକୁ ଚାହୁଁଛ କି?"
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgstr ""
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
-msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr "ପୃଷ୍ଠା ଆକାର ପରିବର୍ତ୍ତିନହୋଇଛି୤\nଏହି ସକ୍ରିଯ ଦଲିଲରେ \n ନୂଆ ସେଟିଙ୍ଗଗୁଡିକ ସଞ୍ଚଯହୋଇପାରିବ କି?"
+msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
+msgstr ""
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr "ପୃଷ୍ଠାର ଆକର ଏବଂ ଓରିଏନଟେସନ ପରିବର୍ତ୍ତିନହୋଇଛି୤\nତୁମେ ସକ୍ରିଯ ଦଲିଲରେ ନୂଆ ସେଟିଙ୍ଗଗୁଡିକରେ  \nସଞ୍ଚଯକରିବାକୁ ଚାହୁଁଛ କି?"
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgstr ""
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
+#, fuzzy
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><ଫଣ୍ଟ FACE=\"ଏରିଏଲ\"><dl><dt><b>ଶୀର୍ଷକ:</b><dd>$(TITEL)<dt><b>ବିଷଯ:</b><dd>$(THEME)<dt><b>କିଶବ୍ଦଗୁଡିକ:</b><dd>$(KEYWORDS)<dt><b>ବର୍ଣ୍ଣନା:</b><dd>$(TEXT)</dl></ଫଣ୍ଟ></ଭାଗ></html>"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
+#, fuzzy
 msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
 msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"ଏରିଏଲ\"><B>କୌଣସି ଦଲିଲ ବିଶେଷତାଗୁଡିକ ମିଳୁନାହିଁ.</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
-msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr "ଦଲିଲ ବନ୍ଦହୋଇପାରିବ ନାହିଁ କାରଣ a\nମୁଦ୍ରଣ କାର୍ୟ୍ଯ ଚାଲୁରହିଛି୤"
+msgid  "The document cannot be closed because a\\n print job is being carried out."
+msgstr ""
 
 #: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+#, fuzzy
 msgid  "Print Monitor"
 msgstr "ମୁଦ୍ରଣ ମୋନିଟର "
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
+#, fuzzy
 msgid  "is being printed on"
 msgstr "ରେ ମୁଦ୍ରଣହୋଇଛି"
 
 #: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
+#, fuzzy
 msgid  "is being prepared for printing"
 msgstr "ମୁଦ୍ରଣ ପାଇଁ ପ୍ରସ୍ତୁତ ହେଉଅଛି"
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr "ପଠାହୋଇଥିବା ସଂଦେଶରେ ଏକ ତୃଟି ଘଟିଲା୤ଏକ ଅଦୃଷ୍ଟ ଉପୟୋଗକର୍ତ୍ତା ଆକାଉଣ୍ଟରେ ସମ୍ଭବତଃ ତୃଟିଗୁଡିକ ହୋଇପାରେ କିମ୍ବା ତ୍ରୁଟିପୂର୍ଣ୍ଣ ସେଟଅପ୤\n ଦଯାକରି%PRODUCTNAME ସେଟିଙ୍ଗଗୁଡିକୁ କିମ୍ବା ତୁମର ଇ-ମେଲ ପୋଗ୍ରାମ ସେଟିଙ୍ଗଗୁଡିକୁ ୟାଞ୍ଚକର ୤"
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
+#, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "ଏହି ଦଲିଲ ସମ୍ପାଦନ ହୋଇପରିବ ନାହିଁ, ସମ୍ଭବତଃ ଅଦୃଷ୍ଟ ପ୍ରବେଶ ଅଧିକାରଗୁଡିକ ୟୋଗୁଁ୤ତୁମେ ଏହି ଦଲିଲ ପ୍ରତିଲିପିକୁ ସମ୍ପାଦନ କରିବାକୁ ଚାହୁଁଛ କି ?"
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
+#, fuzzy
 msgid  " (repaired document)"
 msgstr " (ମରାମତିହୋଇଥିବା ଦଲିଲ)"
 
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME ତୁମ ସିସ୍ଟମରେ ଗୋଟିଏ ଉଏବ ବ୍ରାଉସର ମିଳିପାରିଲା ନାହିଁ୤ ଦଯାକରି ତୁମର ଡେକ୍ସଟପ ପ୍ରାଧାନ୍ଯଗୁଡିକୁ ୟାଞ୍ଚ କର କିମ୍ବା ବ୍ରଉସର ପ୍ରତିଷ୍ଠାପନ ସମଯରେ ଅନୁରୋଧହୋଇଥିବା ଡିଫଲଟ ସ୍ଥାନରେ ଗୋଟିଏ ଉଏବ ବ୍ରାଉସର(ଉଦାହରଣବଶହଃ, ମୋଜିଲା)ପ୍ରତିଷ୍ଠାପିତ କର୤ "

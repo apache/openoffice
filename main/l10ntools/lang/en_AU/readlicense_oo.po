@@ -110,7 +110,7 @@ msgstr "512 MB RAM"
 #: docs/readme/readme.xrm#macxHardDiksSpace.macxHardDiksSpace
 #, fuzzy
 msgid  "Up to 1.5 GB available hard disk space"
-msgstr "Up to 1.5 GB available hard disc space"
+msgstr "Up to 1.5 GB available hard diskcspace"
 
 #: docs/readme/readme.xrm#macxivideo.macxivideo
 #, fuzzy
@@ -338,8 +338,9 @@ msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} 
 msgstr "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
 
 #: docs/readme/readme.xrm#naso6.naso6
-msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\Program Files\Synaptics\SynTP\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr ""
+#, fuzzy
+msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
+msgstr "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
 
 #: docs/readme/readme.xrm#naso8.naso8
 #, fuzzy

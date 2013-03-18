@@ -125,7 +125,7 @@ msgstr "Ве молиме прочитајте го внимателно сле�
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr "Ако ги прочитавте и прифативте сите услови на целиот договор за софтверска лиценца, кликнете на „Прифати лиценца“ за да продолжите со инсталацијата."
+msgstr "Ако ги прочитавте и прифативте сите услови на целиот Договор за софтверска лиценца, кликнете на „Прифати лиценца“ за да продолжите со инсталацијата."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -152,12 +152,12 @@ msgid  "Create New Directory"
 msgstr "Создади нов директориум"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "Директориумот '${DIR}' не постои.\nДали сакате да го создадете сега?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "Директориумот '${DIR}' не постои.\nДали сакате да го создадете сега или ќе изберете друг?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -260,8 +260,8 @@ msgid  "To continue, click 'Next'."
 msgstr "За да продолжиме, кликнете на „Следно“."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "Забелешка: Оваа инсталација ќе биде направена без администраторски привилегии. Затоа ќе имате редуцирана функционалност (Java Runtime Environment (JRE) нема да се инсталира, не е можна системска интеграција).\nКликнете на „Откажи“ и сменете ги вашите привилегии во администраторски ако сакате да ја имате комплетната функционалност."
+msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -432,8 +432,8 @@ msgid  "Analyzing ..."
 msgstr "Анализирам ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "Анализирам база на податоци\nВе молиме почекајте еден момент ..."
+msgid  "Analyzing database\\nPlease wait a moment ..."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
@@ -445,7 +445,7 @@ msgstr "„Назад“ ве враќа на претходната стран�
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
 msgid  "'Next' takes you to the next page. "
-msgstr "„Следно“ ве носи на следната страна. "
+msgstr "„Следно“ ве носи на следна страна."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 msgid  "'Cancel' ends the Installation Wizard without installing this software."
@@ -453,7 +453,7 @@ msgstr "„Откажи“ го завршува волшебникот за и�
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr "„Помош“ ја прикажува помошта со понатамошни информации за страна која тековно е прикажана."
+msgstr "„Помош“ ја прикажува помошта со понатамошни информации за страната која тековно е прикажана."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."

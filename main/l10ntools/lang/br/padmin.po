@@ -60,8 +60,8 @@ msgid  "Add fonts"
 msgstr "Ouzhpennañ an nodrezhioù"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr "Fellout a ra deoc'h flastrañ\nar restrad nodrezhioù\n %s ?"
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -72,16 +72,16 @@ msgid  "None"
 msgstr "Tra ebet"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "N'eus restr ventrezh ebet (hec'h askouezhadenn .afm) dinoet evit ar restr nodrezh\n%s\n ; an nodrezh n'hall ket bezañ staliet neuze. Ar restroù mentrezh a c'hall bezañ krouet gant ghostscript da skouer ha ret eo dezho bezañ lec'hiet en hevelep kavlec'hiad ha hini ar restroù nodrezh pe en iskavlec'hiad afm."
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "Eilañ ar restr vetrek evit ar restr\n  %s\ndic'hallus, neuze n'haller ket staliañ an nodrezh "
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "Eilañ ar restr nodrezh\n  %s\n dic'hallus, neuze dic'hallusted staliañ an nodrezh "
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -176,7 +176,7 @@ msgid  "The test page was printed succesfully. Please check the result."
 msgstr "Echu eo moulladur ar bajenn brouadiñ, Gwiriit an disoc'h, mar plij."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
 msgstr ""
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
@@ -288,8 +288,8 @@ msgid  "The file does not contain a metric."
 msgstr "N'eus menterezh ebet endalc'het gant ar restr."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr "N'haller ket amdreiñ ar menterezh\n\n%s\n\nevit an abeg da-heul :\n\n"
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr ""
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -352,8 +352,8 @@ msgid  "The driver \"%s\" is always needed and can therefore not be removed."
 msgstr "Ar stur \"%s\" a vez arveret ent reizhiadel : n'hall ket bezañ dilamet."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr "N'haller ket dilemel ar stur \"%s1\" : C'hwitet en deus dilamadur ar restr\n\n%s2\n\n."
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr ""
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

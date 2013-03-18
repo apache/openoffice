@@ -61,7 +61,7 @@ msgstr "ا~جراء‍"
 
 #: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CancelButton.Text
 msgid  "Close"
-msgstr "تړل"
+msgstr "بندول"
 
 #: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PushButton.Text
 msgid  "~Assign..."
@@ -136,8 +136,8 @@ msgid  "Save"
 msgstr "ذخیره"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "دشروع متن ډیر لوی دی او د ژباړلواو ذخیره کولو وړ ندی.\nځینې توضیحات ړنګ کړی یا له ځینې نورو لارو څخه په بله طریقه کارواخلی."
+msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -200,8 +200,8 @@ msgid  "The 'XX' file already exists"
 msgstr "د <<XX>> دوتنه له مخکښي نه شتون لري"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "د امنیتي دلیلونو له وجهی، تاسي نشی کولای دا میکروترسره کړي\n\nد زیاتو مالوماتولپاره، امنیتي ترتیباتو ته مخه کړی."
+msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -372,8 +372,8 @@ msgid  "A name must be entered."
 msgstr "یو نوم باید داخل شي."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "تاسی باید ددې تغیرڅخه وروسته پروګرام له بیا پیل کړئ.\nآیا ادامه ورکوی؟"
+msgid  "You will have to restart the program after this edit.\\nContinue?"
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -453,7 +453,7 @@ msgstr "ړنګول"
 
 #: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MenuItem.Text
 msgid  "Rename"
-msgstr "بیا نومول"
+msgstr "بیانومول"
 
 #: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MenuItem.Text
 msgid  "Hide"
@@ -508,8 +508,8 @@ msgid  "Dialog Import - Name already used"
 msgstr "دډایلاګ واردول - نوم له مخکښی نه استعمال شوی دی"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr "کتابتون له مخکښی نه د یو ډایلاګ درلودونکی دی له همغه نوم سره: \n\n$(ARG1)\n\nډایلاګ بیا ونوموئ چې موجوده ډایلاګ خوندي وساتی یا موجوده ډایلاګ ځای پرځای کړئ. \n"
+msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -524,8 +524,8 @@ msgid  "Dialog Import - Language Mismatch"
 msgstr "د ډایلاګ واردول - د ژبي ناورته والی"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr "هغه  واریدیدونکی ډایلاګ  له مطلوبه ژبي څخه نوري ژبي قبلوي. \n\nدا ژبي کتابتون ته علاوه کړی چې د نورو اضافي ژبو سرچیني وساتي کوم چې د ډایلاګ په واسطه جوړي شویدي او یا هغوی له منځه یوسی چی د کتابتون له موجوده  ژبو سره پاتي شی.\n\nپاملرنه: هغه ژبې چې د ډایلاګ په واسطه نه قبلیږي د افتراضی ډایلاګ موجوده سرچینوڅخه کاراخیستل کیږي.\n"
+msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
+msgstr ""
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -617,15 +617,15 @@ msgstr "~پیمانه"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PushButton.Text
 msgid  "~Edit"
-msgstr "~ تغیرول"
+msgstr "~تغیر"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CancelButton.Text
 msgid  "Close"
-msgstr "تړل"
+msgstr "بندول"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
 msgid  "~New..."
-msgstr "~ نوی ..."
+msgstr "~نوی..."
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
 msgid  "~New..."
@@ -641,7 +641,7 @@ msgstr "ډایلاګ"
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PushButton.Text
 msgid  "~Edit"
-msgstr "~تغیر"
+msgstr "~تغیرول"
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CancelButton.Text
 msgid  "Close"
@@ -780,8 +780,8 @@ msgid  "Delete Language Resources"
 msgstr "د ژبي سرچیني له منځه یوسئ"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr "تاسو د په نخښه شویو ژبي/(و) د سرچینو د ړنګولو په حالت کی یاستی ټولی د کارن د مخیال سلسلي د همدي ژبی (و) لپاره به له منځه لاړي شي.\n\nآیا تاسو غواړی چې د نخښه شویو ژبی/(و) سرچیني له منځه یوسی؟"
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"

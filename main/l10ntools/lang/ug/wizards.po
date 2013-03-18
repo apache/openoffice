@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "<wizard_name> ئارقىلىق <current_date> قۇرۇلغان قېلىپ."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "مۇھىم ھۆججەتنى تاپالمىغانلىقتىن يېتەكچىنى ئىجرا قىلالمىدى.\n«قورال - تاللانما - %PRODUCTNAME - يول»دىكى «كۆڭۈلدىكى» كۇنۇپكىنى چېكىپ، يولنى ئەسلىدىكى تەڭشەككە قايتۇرۇڭ. \nئاندىن يېتەكچىنى ئىجرا قىلىڭ."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "كۆزنەكتىكى سۆز بۆلىكى(~T)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "ئىككىلىك سىستېمىدىكى سۆز بۆلىكى ئىزچىل سول تەرەپتىكى تىزىملىكتە كۆرسىتىلىپ تاللاشقا تەمىنلىنىدۇ.\nئەگەر مۇمكىن بولسا بۇ سۆز بۆلەكلىرى سۈرەت سۈپىتىدە كۆرسىتىلىدۇ."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "تارماق كۆزنەك باشقا كۆزنەككە قىستۇرىدىغان كۆزنەكتۇر.\nتارماق كۆزنەك ئىشلىتىپ بىرسى كۆپكە باغلىنىش مۇناسىۋىتىدىكى جەدۋەل ياكى سۈرۈشتۈرۈشتىكى سانلىق مەلۇماتلارنى كۆرسىتەلەيدۇ.relationship."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "جەدۋەلدىكى سۆز بۆلىكى"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "'<FIELDNAME1>' ۋە '<FIELDNAME2>' نىڭ بېرىكمىسى ئىككى قېتىم تاللاندى.\nئەمما بېرىكمىنى بىرلا قېتىم ئىشلەتكىلى بولىدۇ."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "كۆزنەك ئاتىنى تەڭشە"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "'%FORMNAME' ئاتلىق كۆزنەك مەۋجۇد.\nباشقا ئاتىنى تاللاڭ."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "سۆز بۆلەكنى قىستۇرالمىدى، چۈنكى ساندان جەدۋىلىدە يول قويىدىغان ئەڭ كۆپ سۆز بۆلەك سانى %COUNT دىن ئېشىپ كەتتى."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "'%TABLENAME' ئات مەۋجۇد.\nباشقا ئات كىرگۈزۈڭ."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Web يېتەكچىسى"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Web يېتەكچىسى سىزگە ياردەملىشىپ ئىنتېرنېتقا پۈتۈك يوللايدۇ. \n\nئۇ پۈتۈكنى ئايلاندۇرۇش ئارقىلىق توركۆرگۈدە كۆرگىلى بولىدىغان قىلىدۇ. ئۇنىڭدىن سىرت، ئۇ جەدۋەل بېتى ھاسىل قىلىدۇ، ئۇنىڭدا مۇناسىپ ھۆججەتنى زىيارەت قىلىدىغان ئۇلانما بار. Web يېتەكچىسى سىزنىڭ ئىختىيارىڭىزچە تور بېكەت لايىھىسى ۋە جايلاشتۇرۇشىڭىزغا يول قويىدۇ.\n\nسىز ھەر ۋاقىت تور بېكەتكە يوللىغان پۈتۈكلىرىڭىزنى يېڭىلاپ، خالىغان ۋاقىتتا پۈتۈك قوشۇپ ياكى ئۆچۈرەلەيسىز."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "ئالدىن كۆزەت"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "تاللانغان تەڭشەك ئۆچۈرۈلىدۇ.\n\nبۇ تەڭشەكلەرنى راستىنلا ئۆچۈرەمسىز؟ "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "FTP مۇندەرىجىسى '%FILENAME' قۇرالمىدى."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP مۇندەرىجە '%FILENAME' مەۋجۇد ئەمەس.\nمۇندەرىجە قۇرامسىز؟"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Zip ھۆججىتى '%FILENAME' نى قۇرالمىدى: ئوخشاش ئاتلىق مۇندەرىجە مەۋجۇد."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "يەرلىك مۇندەرىجە '%FILENAME' نى قۇرالمىدى.\nيېزىش ھوقۇقىڭىزنى تەكشۈرۈڭ."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "يەرلىك مۇندەرىجە '%FILENAME' مەۋجۇد ئەمەس.\nمۇندەرىجە قۇرامسىز؟"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

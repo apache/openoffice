@@ -152,12 +152,12 @@ msgid  "Create New Directory"
 msgstr "નવી ડિરેક્ટરીને બનાવો"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "ડિરેક્ટરી '${DIR}' અસ્તિત્વ ધરાવતી નથી.\nશું તમે તેને હવે બનાવવા માંગો છો?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "ડિરેક્ટરી '${DIR}' અસ્તિત્વ ધરાવતુ નથી.\nશું તમે તેને હવે બનાવવા માંગો છો અથવા બીજી ડિરેક્ટરી પસંદ કરવા માંગો છો?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -197,7 +197,7 @@ msgstr "માપ (kB):"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1
 msgid  "Select the Type of Installation"
-msgstr "સ્થાપનનાં પ્રકાર ને પસંદ કરો"
+msgstr "સ્થાપનનાં પ્રકારને પસંદ કરો"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2
 msgid  "Select the type of installation that best suits your needs:"
@@ -260,8 +260,8 @@ msgid  "To continue, click 'Next'."
 msgstr "ચલાવવા માટે. 'Next' પર ક્લિક કરો."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "નોંધ: આ સ્થાપન એ રુટ અધિકારો વગર પૂરા થઇ જશે. માટે તમારે કાર્યત્મકતા ને ઘટાડવી પડશે (Java Runtime Environment (JRE) એ સ્થાપિત થઇ શકે તેવુ નથી, સિસ્ટમ એકત્રિકરણ એ શક્ય નથી).\n'રદ કરો' પર ક્લિક કરો અને તમારા અધિકારો ને રુટ અધિકારો સાથે બદલો. જો તમે સંપૂર્ણ કાર્યત્મકતા ને વાપરવા ઇચ્છો તો."
+msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -432,8 +432,8 @@ msgid  "Analyzing ..."
 msgstr "પૃથ્થકરણ કરી રહ્યા છે ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "ડેટાબેઝનું પૃથ્થકરણ કરી રહ્યા છે\nમહેરબાની કરીને ક્ષણ માટે થોભો ..."
+msgid  "Analyzing database\\nPlease wait a moment ..."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
@@ -441,11 +441,11 @@ msgstr "સ્થાપન વિઝાર્ડ નું સ્વાગત �
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
-msgstr "'પાછળ' એ તમને પહેલાનાં પાનાં પર લઇ જશે."
+msgstr "'પાછળ' એ તમને પહેલાનાં પાનાં પર લાવે છે."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
 msgid  "'Next' takes you to the next page. "
-msgstr "'પછી' એ તમને પછીનાં પાનાં પર લઇ જશે. "
+msgstr "'પછી' એ તમને પછીનાં પાનાં પર પાછુ લઇ જાય છે. "
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 msgid  "'Cancel' ends the Installation Wizard without installing this software."

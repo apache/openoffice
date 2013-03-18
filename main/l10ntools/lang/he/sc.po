@@ -144,8 +144,8 @@ msgid  "Column Fields"
 msgstr "שדות עמודה"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-msgid  "Row\nFields"
-msgstr "שדות\nשורה"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -185,7 +185,7 @@ msgstr "אזור בחירה"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.RB_INAREA.ImageButton.QuickHelpText
 msgid  "Shrink"
-msgstr "כיווץ"
+msgstr "Shrink"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_OUTAREA.FixedText.Text
 msgid  "Results to"
@@ -501,7 +501,7 @@ msgstr "קבץ לפי"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.HelpButton.Text
 msgid  "Grouping"
-msgstr "קבוצות"
+msgstr "קיבוץ"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_START.FixedLine.Text
 msgid  "Start"
@@ -2293,9 +2293,8 @@ msgid  "~Discard"
 msgstr "התעלמות"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-#, fuzzy
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "האם למחוק את הערך\n#\n?‏"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -2788,70 +2787,86 @@ msgid  "~Delete"
 msgstr "מחיקה"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
+#, fuzzy
 msgid  "Format Cells"
 msgstr "עיצוב תאים"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
+#, fuzzy
 msgid  "Numbers"
 msgstr "מספרים"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "גופן"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "אפקטים לגופנים"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "יישור"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
+#, fuzzy
 msgid  "Asian Typography"
 msgstr "טיפוגרפיית מזרח הרחוק"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "גבולות"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "רקע"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
+#, fuzzy
 msgid  "Cell Protection"
 msgstr "הגנת תא"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
+#, fuzzy
 msgid  "~Protected"
 msgstr "מוגן"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~formula"
 msgstr "הסתרת נוסחה"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~all"
 msgstr "הסתרת הכל"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "הגנת תאים תיושם רק אחרי יישום הגנה על הגיליון הנוכחי.\nיש לבחור 'הגנת מסמך' מתפריט ה'כלים' ולציין 'גיליון'.‏"
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
+#, fuzzy
 msgid  "Protection"
 msgstr "הגנה"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "הסתרה בעת הדפסה"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
+#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "התאים שנבחרו לא יודפסו.‏"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
+#, fuzzy
 msgid  "Print"
 msgstr "הדפסה"
 
@@ -3031,170 +3046,212 @@ msgid  "Current selection"
 msgstr "בחירה נוכחית"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERTCELLS.String.Text
+#, fuzzy
 msgid  "Insert"
 msgstr "הוספה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETECELLS.String.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "מחיקה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CUT.String.Text
+#, fuzzy
 msgid  "Cut"
 msgstr "גזירה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_PASTE.String.Text
+#, fuzzy
 msgid  "Insert"
 msgstr "הוספה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DRAGDROP.String.Text
+#, fuzzy
 msgid  "Drag and Drop"
 msgstr "גרירה ושחרור"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE.String.Text
+#, fuzzy
 msgid  "Move"
 msgstr "העברה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY.String.Text
+#, fuzzy
 msgid  "Copy"
 msgstr "העתקה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETECONTENTS.String.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "מחיקה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SELATTR.String.Text
+#, fuzzy
 msgid  "Attributes"
 msgstr "מאפיינים"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SELATTRLINES.String.Text
+#, fuzzy
 msgid  "Attributes/Lines"
 msgstr "מאפיינים/קווים"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COLWIDTH.String.Text
+#, fuzzy
 msgid  "Column Width"
 msgstr "רוחב עמודה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_OPTCOLWIDTH.String.Text
+#, fuzzy
 msgid  "Optimal Column Width"
 msgstr "רוחב עמודה מיטבי"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_ROWHEIGHT.String.Text
+#, fuzzy
 msgid  "Row height"
 msgstr "גובה שורה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_OPTROWHEIGHT.String.Text
+#, fuzzy
 msgid  "Optimal Row Height"
 msgstr "גובה שורה מיטבי"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_AUTOFILL.String.Text
+#, fuzzy
 msgid  "Fill"
 msgstr "מילוי"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MERGE.String.Text
+#, fuzzy
 msgid  "Merge"
 msgstr "מיזוג"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_REMERGE.String.Text
+#, fuzzy
 msgid  "Split"
 msgstr "פיצול"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_AUTOFORMAT.String.Text
+#, fuzzy
 msgid  "AutoFormat"
 msgstr "עיצוב אוטומטי"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_REPLACE.String.Text
+#, fuzzy
 msgid  "Replace"
 msgstr "החלפה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CURSORATTR.String.Text
+#, fuzzy
 msgid  "Attributes"
 msgstr "מאפיינים"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_ENTERDATA.String.Text
+#, fuzzy
 msgid  "Input"
 msgstr "קלט"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSCOLBREAK.String.Text
+#, fuzzy
 msgid  "Insert Column Break"
 msgstr "הכנסת מעבר עמודה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELCOLBREAK.String.Text
+#, fuzzy
 msgid  "Delete column break"
 msgstr "מחיקת מעבר עמודה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSROWBREAK.String.Text
+#, fuzzy
 msgid  "Insert Row Break"
 msgstr "הוספת מעבר שורה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELROWBREAK.String.Text
+#, fuzzy
 msgid  "Delete row break"
 msgstr "מחיקת מעבר שורה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DOOUTLINE.String.Text
+#, fuzzy
 msgid  "View Details"
 msgstr "הצגת פרטים"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_REDOOUTLINE.String.Text
+#, fuzzy
 msgid  "Hide details"
 msgstr "הסתרת פרטים"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MAKEOUTLINE.String.Text
+#, fuzzy
 msgid  "Group"
 msgstr "יצירה קבוצה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_REMAKEOUTLINE.String.Text
+#, fuzzy
 msgid  "Ungroup"
 msgstr "שבירת קבוצה"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_OUTLINELEVEL.String.Text
+#, fuzzy
 msgid  "Select outline level"
 msgstr "בחירת רמת מתאר"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DOOUTLINEBLK.String.Text
+#, fuzzy
 msgid  "View Details"
 msgstr "הצגת פרטים"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_REDOOUTLINEBLK.String.Text
+#, fuzzy
 msgid  "Hide details"
 msgstr "הסתרת פרטים"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_REMOVEALLOTLNS.String.Text
+#, fuzzy
 msgid  "Clear Outline"
 msgstr "מחיקת מתאר"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_AUTOOUTLINE.String.Text
+#, fuzzy
 msgid  "AutoOutline"
 msgstr "יצירה אוטומטית של מתאר"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SUBTOTALS.String.Text
+#, fuzzy
 msgid  "Subtotals"
 msgstr "סכומי ביניים"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
+#, fuzzy
 msgid  "Sort"
 msgstr "מיון"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
+#, fuzzy
 msgid  "Filter"
 msgstr "סינון"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DBDATA.String.Text
+#, fuzzy
 msgid  "Change Database Range"
 msgstr "החלפת טווח מסד הנתונים"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_IMPORTDATA.String.Text
+#, fuzzy
 msgid  "Importing"
 msgstr "ייבוא"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_REPEATDB.String.Text
+#, fuzzy
 msgid  "Refresh range"
 msgstr "רענון טווח"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_GRAFEDIT.String.Text
+#, fuzzy
 msgid  "Edit graphics"
 msgstr "עריכת גרפיקות"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_LISTNAMES.String.Text
+#, fuzzy
 msgid  "List names"
 msgstr "רישום שמות"
 
@@ -3438,9 +3495,8 @@ msgid  "No operations to execute"
 msgstr "אין פעולות לביצוע"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-#, fuzzy
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "הטווח אינו מכיל כותרות עמודות.\nהאם להשתמש בערכים של השורה הראשונה בתור כותרות לעמודות?‏"
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -3518,9 +3574,8 @@ msgid  "Search key not found."
 msgstr "מפתח החיפוש לא נמצא.‏"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-#, fuzzy
-msgid  "Goal Seek successful.\n"
-msgstr "חיפוש מטרה הצליח.‏\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 #, fuzzy
@@ -3533,14 +3588,12 @@ msgid  ") into current cell?"
 msgstr "( לתוך התא הנוכחי?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-#, fuzzy
-msgid  "Goal Seek not successful.\n"
-msgstr "חיפוש מטרה נכשל.‏\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-#, fuzzy
-msgid  "No exact value found. \n"
-msgstr "ערך מדוייק לא אותר.‏\n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -3902,594 +3955,2047 @@ msgid  "Text Attributes"
 msgstr "מאפייני טקסט"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+#, fuzzy
+msgid  "\\"
+msgstr "\\"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+#, fuzzy
+msgid  "PAGE"
+msgstr "PAGE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+#, fuzzy
+msgid  "PAGES"
+msgstr "PAGES"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+#, fuzzy
+msgid  "DATE"
+msgstr "DATE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+#, fuzzy
+msgid  "TIME"
+msgstr "TIME"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+#, fuzzy
+msgid  "FILE"
+msgstr "FILE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+#, fuzzy
+msgid  "SHEET"
+msgstr "SHEET"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+#, fuzzy
+msgid  "Protected cells can not be modified."
+msgstr "לא ניתן לשנות תאים מוגנים.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+#, fuzzy
+msgid  "Document opened in read-only mode."
+msgstr "המסמך נפתח במצב של קריאה-בלבד.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+#, fuzzy
+msgid  "You cannot change only part of an array."
+msgstr "לא ניתן לשנות רק חלק ממערך.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+#, fuzzy
+msgid  "Header"
+msgstr "כותרת עליונה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+#, fuzzy
+msgid  "Footer"
+msgstr "כותרת תחתונה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+#, fuzzy
+msgid  "Err:"
+msgstr "שגיאה:‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+#, fuzzy
+msgid  "Error: Ranges do not intersect"
+msgstr "שגיאה: אין צומת בין הטווחים"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+#, fuzzy
+msgid  "Error: Division by zero"
+msgstr "שגיאה: חלוקה באפס"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+#, fuzzy
+msgid  "Error: Wrong data type"
+msgstr "שגיאה: אין תוצאה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+#, fuzzy
+msgid  "Error: Not a valid reference"
+msgstr "שגיאה: ההפניה אינה חוקית"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+#, fuzzy
+msgid  "Error: Invalid name"
+msgstr "שגיאה: שם בלתי חוקי"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+#, fuzzy
+msgid  "Error: Invalid numeric value"
+msgstr "שגיאה: פעולה בלתי חוקית עם נקודה צפה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+#, fuzzy
+msgid  "Error: Value not available"
+msgstr "שגיאה: ערך לא זמין"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "#ADDIN?"
+msgstr "#ADDIN?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "Error: Add-in not found"
+msgstr "שגיאה: ההוספה לא נמצאה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "#MACRO?"
+msgstr "#MACRO?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "Error: Macro not found"
+msgstr "שגיאה: פקודת המאקרו לא נמצאה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+#, fuzzy
+msgid  "Internal syntactical error"
+msgstr "שגיאה תחבירית פנימית"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+#, fuzzy
+msgid  "Error: Invalid argument"
+msgstr "שגיאה: ארגומנט לא חוקי"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+#, fuzzy
+msgid  "Error in parameter list"
+msgstr "שגיאה ברשימת הפרמטרים"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+#, fuzzy
+msgid  "Error: Invalid character"
+msgstr "שגיאה: תו בלתי חוקי"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+#, fuzzy
+msgid  "Error: Invalid semicolon"
+msgstr "שגיאה: נקודה ופסיק בלתי חוקיים"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+#, fuzzy
+msgid  "Error: in bracketing"
+msgstr "שגיאה במיסגור"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+#, fuzzy
+msgid  "Error: Operator missing"
+msgstr "שגיאה: חסר אופרטור"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+#, fuzzy
+msgid  "Error: Variable missing"
+msgstr "שגיאה: חסר משתנה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+#, fuzzy
+msgid  "Error: Formula overflow"
+msgstr "שגיאה גלישת נוסחה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+#, fuzzy
+msgid  "Error: String overflow"
+msgstr "שגיאה: גלישת מחרוזת"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+#, fuzzy
+msgid  "Error: Internal overflow"
+msgstr "שגיאה: גלישה פנימית"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+#, fuzzy
+msgid  "Error: Circular reference"
+msgstr "שגיאה: הפניה מעגלית"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+#, fuzzy
+msgid  "Error: Calculation does not converge"
+msgstr "שגיאה: החישוב אינו מתלכד"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+#, fuzzy
+msgid  "Grid color"
+msgstr "צבע רשת"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+#, fuzzy
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "האם להעביר את תכולת התאים הנסתרים לתוך התא הראשון?‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "סינון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+#, fuzzy
+msgid  "The target database range does not exist."
+msgstr "טווח מסד הנתונים שצויין כמטרה אינו קיים.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+#, fuzzy
+msgid  "Invalid increment"
+msgstr "תוספת בלתי חוקית"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+#, fuzzy
+msgid  "MULTIPLE.OPERATIONS"
+msgstr "פעולות מרובות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+#, fuzzy
+msgid  "Multiple operations"
+msgstr "רב פעולות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+#, fuzzy
+msgid  "Range"
+msgstr "טווח"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "כן"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "לא"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+#, fuzzy
+msgid  "Protection"
+msgstr "הגנה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "נוסחאות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "הסתרה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+#, fuzzy
+msgid  "Print"
+msgstr "הדפסה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+#, fuzzy
+msgid  "(nested)"
+msgstr " (מקוננת)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+#, fuzzy
+msgid  "(optional)"
+msgstr " (אופציונאלית)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+#, fuzzy
+msgid  "(required)"
+msgstr " (נדרשת)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+#, fuzzy
+msgid  "invalid"
+msgstr "בלתי חוקית"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+#, fuzzy
+msgid  "Edit Function"
+msgstr "פונקציית עריכה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "הערות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "האם למחוק את הגיליון(ות) הנבחר(ים)?‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "האם אכן למחוק את התרחיש הנבחר?‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+#, fuzzy
+msgid  "Thesaurus is not available"
+msgstr "מילון המילים הנרדפות אינו זמין"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+#, fuzzy
+msgid  "Spellcheck not available"
+msgstr "בודק האיות אינו זמין"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+#, fuzzy
+msgid  "Import text files"
+msgstr "יבוא קבצי טקסט"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+#, fuzzy
+msgid  "Export Text File"
+msgstr "ייצוא קובץ טקסט"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+#, fuzzy
+msgid  "Import Lotus files"
+msgstr "יבוא קבצי לוטוס"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+#, fuzzy
+msgid  "Import DBase files"
+msgstr "יבוא קבצי‫ DBase‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+#, fuzzy
+msgid  "DBase export"
+msgstr "יצוא קבצי‫ DBase‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Export"
+msgstr "‫Dif-יבוא"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Import"
+msgstr "‫Dif-יצוא"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+#, fuzzy
+msgid  "Default"
+msgstr "ברירת מחדל"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+#, fuzzy
+msgid  "Result"
+msgstr "תוצאה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+#, fuzzy
+msgid  "Result2"
+msgstr "תוצאה2‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+#, fuzzy
+msgid  "Heading"
+msgstr "כותרת"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+#, fuzzy
+msgid  "Heading1"
+msgstr "כותרת1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "דו\"ח"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+#, fuzzy
+msgid  "Report1"
+msgstr "דו\"ח1‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+#, fuzzy
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "ניתן להפעיל את מילון המילים הנרדפות רק בתאי טקסט!‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+#, fuzzy
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "האם להמשיך את בדיקת האיות בתחילת הגיליון הנוכחי?‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+#, fuzzy
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "בדיקת האיות של גיליון זה הושלמה.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+#, fuzzy
+msgid  "No language set"
+msgstr "לא הוגדרה שפה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+#, fuzzy
+msgid  "Insert Sheet"
+msgstr "הוספת גיליון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+#, fuzzy
+msgid  "Delete Sheets"
+msgstr "מחיקת גיליונות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+#, fuzzy
+msgid  "Rename Sheet"
+msgstr "שינוי שם הגיליון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+#, fuzzy
+msgid  "Color Tab"
+msgstr "צבע לשונית"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+#, fuzzy
+msgid  "Color Tabs"
+msgstr "צבע הלשוניות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+#, fuzzy
+msgid  "Move Sheets"
+msgstr "הזזת גיליונות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+#, fuzzy
+msgid  "Copy Sheet"
+msgstr "העתקת גיליון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+#, fuzzy
+msgid  "Append sheet"
+msgstr "צרוף גיליון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+#, fuzzy
+msgid  "Show Sheet"
+msgstr "הצגת גיליון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+#, fuzzy
+msgid  "Hide sheet"
+msgstr "הסתרת גיליון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+#, fuzzy
+msgid  "Flip sheet"
+msgstr "הפיכת גיליון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+#, fuzzy
+msgid  "Toggle the use of R1C1 notation"
+msgstr "מיתוג השימוש ברישום ‏‪R1C1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+#, fuzzy
+msgid  "Main Title"
+msgstr "כותרת ראשית"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+#, fuzzy
+msgid  "Subtitle"
+msgstr "כותרת משנית"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+#, fuzzy
+msgid  "X axis title"
+msgstr "כותרת ציר‫ ה-X‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+#, fuzzy
+msgid  "Y axis title"
+msgstr "כותרת ציר‫ ה-Y‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+#, fuzzy
+msgid  "Z axis title"
+msgstr "כותרת ציר‫ ה-Z‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+#, fuzzy
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "הטבלה החדשה מכילה התייחסויות לטבלאות אחרות. יתכן שההתייחסויות אינן נכונות!‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+#, fuzzy
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr "מכיוון שהשמות זהים, שונה שם הטווח הקיים במסמך היעד!‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+#, fuzzy
+msgid  "AutoFilter not possible"
+msgstr "לא ניתן להפעיל את המסנן האוטומטי"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr "החיפוש‫ של %PRODUCTNAME Calc לתחילת הגיליון הסתיים. האם להמשיך את החיפוש מהסוף?‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr "החיפוש‫ של %PRODUCTNAME Calc לסוף הגיליון הסתיים. האם להמשיך את החיפוש מההתחלה?‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+#, fuzzy
+msgid  "Find & Replace"
+msgstr "חיפוש והחלפה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "החיפוש‫ של %PRODUCTNAME Calc לתחילת המסמך הסתיים. האם להמשיך את החיפוש מהסוף?‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr "החיפוש‫ של %PRODUCTNAME Calc לסוף המסמך הסתיים. האם להמשיך את החיפוש מההתחלה?‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+#, fuzzy
+msgid  "Replace existing definition of #?"
+msgstr "האם להחליף את ההגדרה הקיימת של #?‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+#, fuzzy
+msgid  "Invalid selection for range names"
+msgstr "בחירה לא חוקית של שמות טווח"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+#, fuzzy
+msgid  "References can not be inserted above the source data."
+msgstr "לא ניתן להכניס הפניות מעל לנתוני המקור.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+#, fuzzy
+msgid  "Scenario not found"
+msgstr "תרחיש לא נמצא"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+#, fuzzy
+msgid  "Do you really want to delete the entry #?"
+msgstr "האם אכן למחוק את הרשומה #?‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+#, fuzzy
+msgid  "Objects/graphics"
+msgstr "עצמים/ציורים"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+#, fuzzy
+msgid  "Charts"
+msgstr "תרשימים"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+#, fuzzy
+msgid  "Drawing Objects"
+msgstr "עצמי ציור"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+#, fuzzy
+msgid  "Show"
+msgstr "הצגה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "הסתרה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+#, fuzzy
+msgid  "Top to bottom"
+msgstr "מלמעלה למטה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+#, fuzzy
+msgid  "Left-to-right"
+msgstr "משמאל-לימין"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "הערות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+#, fuzzy
+msgid  "Grid"
+msgstr "רשת"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+#, fuzzy
+msgid  "Row & Column Headers"
+msgstr "כותרות שורות ועמודות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "נוסחאות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+#, fuzzy
+msgid  "Zero Values"
+msgstr "ערכי אפס"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+#, fuzzy
+msgid  "Print direction"
+msgstr "כיוון הדפסה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+#, fuzzy
+msgid  "First page number"
+msgstr "מספר של העמוד הראשון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+#, fuzzy
+msgid  "Reduce/enlarge printout"
+msgstr "הקטנה/הגדלה של התדפיס"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+#, fuzzy
+msgid  "Fit print range(s) on number of pages"
+msgstr "התאמת טווחי ההדפסה למספר הדפים"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+#, fuzzy
+msgid  "Fit print range(s) to width/height"
+msgstr "התאמת טווחי ההדפסה לרוחב/גובה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+#, fuzzy
+msgid  "Width"
+msgstr "רוחב"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height"
+msgstr "גובה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+#, fuzzy
+msgid  "%1 page(s)"
+msgstr "%1 דפים"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+#, fuzzy
+msgid  "automatic"
+msgstr "אוטומטי"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+#, fuzzy
+msgid  "Statistics"
+msgstr "סטטיסטיקות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+#, fuzzy
+msgid  "The link could not be updated."
+msgstr "לא ניתן היה לעדכן את הקישור.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+#, fuzzy
+msgid  "File:"
+msgstr "קובץ:‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+#, fuzzy
+msgid  "Sheet:"
+msgstr "גיליון:‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+#, fuzzy
+msgid  "Overview"
+msgstr "סקירת על"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+#, fuzzy
+msgid  "Doc.Information"
+msgstr "מידע על המסמך"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+#, fuzzy
+msgid  "Created"
+msgstr "נוצר"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+#, fuzzy
+msgid  "Modified"
+msgstr "עודכן"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+#, fuzzy
+msgid  "Printed"
+msgstr "הודפס"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "נושא"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+#, fuzzy
+msgid  "Key words"
+msgstr "מילות מפתח"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "הערות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+#, fuzzy
+msgid  "by"
+msgstr "ע/‏\"י"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+#, fuzzy
+msgid  "on"
+msgstr "בתאריך"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+#, fuzzy
+msgid  "Too many conditions"
+msgstr "יותר מדי תנאים"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+#, fuzzy
+msgid  "The table could not be inserted."
+msgstr "לא ניתן היה להכניס את הטבלה.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+#, fuzzy
+msgid  "The sheets could not be deleted."
+msgstr "לא ניתן היה למחוק את הגיליונות.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+#, fuzzy
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "לא ניתן היה להדביק את תכולת לוח הטיוטה.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+#, fuzzy
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "אין די מקום בגיליון כדי להכניס כאן.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+#, fuzzy
+msgid  "No references found."
+msgstr "לא נמצאו הפניות.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+#, fuzzy
+msgid  "Source and destination must not overlap."
+msgstr "אסור שתהיה חפיפה בין המקור לבין היעד.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+#, fuzzy
+msgid  "Graphics"
+msgstr "גרפיקה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+#, fuzzy
+msgid  "Invalid name."
+msgstr "שם לא חוקי"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+#, fuzzy
+msgid  "Selected macro not found."
+msgstr "המאקרו הנבחר לא נמצא.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+#, fuzzy
+msgid  "Invalid value."
+msgstr "ערך לא חוקי.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+#, fuzzy
+msgid  "calculating"
+msgstr "חישוב"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+#, fuzzy
+msgid  "sorting"
+msgstr "מיון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+#, fuzzy
+msgid  "Adapt row height"
+msgstr "התאם את גובה השורה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+#, fuzzy
+msgid  "Compare #"
+msgstr "השוואה #‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+#, fuzzy
+msgid  "Delete contents"
+msgstr "מחק את התוכן"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+#, fuzzy
+msgid  "%1 R  x %2 C"
+msgstr "%1 Z x %2 S"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+#, fuzzy
+msgid  "More..."
+msgstr "עוד...‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+#, fuzzy
+msgid  "Invalid range"
+msgstr "טווח לא חוקי"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "סינון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+#, fuzzy
+msgid  "Sort"
+msgstr "מיון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+#, fuzzy
+msgid  "Subtotals"
+msgstr "סכומי ביניים"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "ללא"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+#, fuzzy
+msgid  "Do you want to replace the contents of #?"
+msgstr "האם ברצונכם להחליף את התכולה של #?‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+#, fuzzy
+msgid  "Width:"
+msgstr "רוחב:‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height:"
+msgstr "גובה:‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "הסתרה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+#, fuzzy
+msgid  "The object could not be inserted."
+msgstr "לא ניתן היה להכניס את העצם.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+#, fuzzy
+msgid  "<empty>"
+msgstr "<ריק>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+#, fuzzy
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "תא #1 השתנה מ '#2' ל'#3'‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+#, fuzzy
+msgid  "#1 inserted"
+msgstr "#1 הוכנס"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+#, fuzzy
+msgid  "#1deleted"
+msgstr "#1 נמחק"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+#, fuzzy
+msgid  "Range moved from #1 to #2"
+msgstr "הטווח זז מ#1 ל#2‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+#, fuzzy
+msgid  "Exit Recording"
+msgstr "יצאה מהקלטה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+#, fuzzy
+msgid  "The document can not be closed while a link is being updated."
+msgstr "לא ניתן לסגור מסמך זה בזמן עדכונו של קישור.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Adapt array area"
+msgstr "התאמת שטח המערך"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Array formula  %1 R x %2 C"
+msgstr "נוסחת מערך %1 ש‫ x %2 ע"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+#, fuzzy
+msgid  "Hangul/Hanja Conversion"
+msgstr "הסבת האנגול/האנג'ה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+#, fuzzy
+msgid  "Select Cell"
+msgstr "בחירת תא"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+#, fuzzy
+msgid  "Select Range"
+msgstr "בחירת טווח"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+#, fuzzy
+msgid  "Select Database Range"
+msgstr "בחירת טווח מסד הנתונים"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+#, fuzzy
+msgid  "Go To Row"
+msgstr "קפוץ לשורה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+#, fuzzy
+msgid  "Go To Sheet"
+msgstr "קפוץ לגיליון"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+#, fuzzy
+msgid  "Define Name for Range"
+msgstr "הגדרת שם חדש לטווח"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+#, fuzzy
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "כדי לתת שם לבחירה, הבחירה חייבת להיות מלבנית.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+#, fuzzy
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "יש להכניס הפניה חוקית או שם חוקי לטווח הנבחר.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "אזהרה: סביר להניח שפעולה זו גרמה לשינויים בלתי רצויים בהפניות לתאים שנמצאות בנוסחאות.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr "אזהרה: סביר להניח שפעולה זו גרמה לאי השיחזור של הפניות לשטחים שנמחקו.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+#, fuzzy
+msgid  "(none)"
+msgstr "(אין)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+#, fuzzy
+msgid  "of"
+msgstr "מתוך"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+#, fuzzy
+msgid  "of ?"
+msgstr "של ?‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+#, fuzzy
+msgid  "Created by"
+msgstr "נוצר על ידי"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+#, fuzzy
+msgid  "Confidential"
+msgstr "חסוי"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+#, fuzzy
+msgid  "Customized"
+msgstr "מותאם"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+#, fuzzy
+msgid  "Custom footer"
+msgstr "כותרת תחתונה מותאמת"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+msgid  "Chinese conversion"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+#, fuzzy
+msgid  "You cannot change this part of the pivot table."
+msgstr "אין אפשרות לשנות חלק זה של טבלאת האשף הנתונים.‏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+#, fuzzy
+msgid  "Manual"
+msgstr "ידני"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "אוטומטי"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+#, fuzzy
+msgid  "Nested arrays are not supported."
+msgstr "מערכים מקוננים לא נתמכים."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+#, fuzzy
+msgid  "Text to Columns"
+msgstr "פיצול טקסט לעמודות"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+#, fuzzy
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr "הגליון עודכן אם השינויים של השותפים האחרים למסמך."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+#, fuzzy
+msgid  "Unknown User"
+msgstr "משתמש לא מזוהה"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+#, fuzzy
+msgid  "Cell Styles"
+msgstr "סגנון תא"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+#, fuzzy
+msgid  "Page Styles"
+msgstr "סגנון עמוד"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+#, fuzzy
+msgid  "Character"
+msgstr "תו"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
+msgid  "Font"
+msgstr "גופן"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
+msgid  "Font Effects"
+msgstr "אפקטים לגופנים"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#, fuzzy
+msgid  "Font Position"
+msgstr "מיקום גופן"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "קודם"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+#, fuzzy
+msgid  "Paragraph"
+msgstr "פסקה"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Indents & Spacing"
+msgstr "כניסות וריווח"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "יישור"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+#, fuzzy
+msgid  "Asian Typography"
+msgstr "טיפוגרפיית מזרח הרחוק"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+#, fuzzy
+msgid  "Tab"
+msgstr "טאב"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "קודם"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+#, fuzzy
+msgid  "AutoFormat"
+msgstr "עיצוב אוטומטי"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "F~ormat"
+msgstr "עיצוב"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+#, fuzzy
+msgid  "A~utoFit width and height"
+msgstr "התאמת רוחב וגובה אוטומטית"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+#, fuzzy
+msgid  "~Borders"
+msgstr "גבולות"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+#, fuzzy
+msgid  "F~ont"
+msgstr "גופן"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+#, fuzzy
+msgid  "~Pattern"
+msgstr "דוגמה"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+#, fuzzy
+msgid  "Alignmen~t"
+msgstr "יישור"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+#, fuzzy
+msgid  "~Number format"
+msgstr "תבנית מספר"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+#, fuzzy
+msgid  "Formatting"
+msgstr "עיצוב"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add..."
+msgstr "הוספה...‏"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "מחיקה"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+#, fuzzy
+msgid  "~Rename"
+msgstr "מתן שם אחר"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+#, fuzzy
+msgid  "Add AutoFormat"
+msgstr "הוספת עיצוב אוטומטי"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+#, fuzzy
+msgid  "Rename AutoFormat"
+msgstr "מתן שם אחר לעיצוב אוטומטי"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "שם"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+#, fuzzy
+msgid  "Delete AutoFormat"
+msgstr "מחיקת עיצוב אוטומטי"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~סגירה"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_JAN.String.Text
+#, fuzzy
 msgid  "Jan"
 msgstr "ינואר"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_FEB.String.Text
+#, fuzzy
 msgid  "Feb"
 msgstr "פברואר"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MAR.String.Text
+#, fuzzy
 msgid  "Mar"
 msgstr "מרץ"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_NORTH.String.Text
+#, fuzzy
 msgid  "North"
 msgstr "צפון"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MID.String.Text
+#, fuzzy
 msgid  "Mid"
 msgstr "אמצע"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SOUTH.String.Text
+#, fuzzy
 msgid  "South"
 msgstr "דרום"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SUM.String.Text
+#, fuzzy
 msgid  "Total"
 msgstr "סך הכל"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.ModelessDialog.Text
+#, fuzzy
 msgid  "Standard Filter"
 msgstr "מסנן ברירת המחדל"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_OP.FixedText.Text
+#, fuzzy
 msgid  "Operator"
 msgstr "אופרטור"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_FIELD.FixedText.Text
+#, fuzzy
 msgid  "Field name"
 msgstr "שם שדה"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_COND.FixedText.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "תנאי"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_VAL.FixedText.Text
+#, fuzzy
 msgid  "Value"
 msgstr "ערך"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP1.Default.StringList.item
 msgid  "AND"
-msgstr "ו"
+msgstr "AND"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP1.Default.StringList.item
 msgid  "OR"
-msgstr "או"
+msgstr "OR"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP2.Default.StringList.item
 msgid  "AND"
-msgstr "ו"
+msgstr "AND"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP2.Default.StringList.item
 msgid  "OR"
-msgstr "או"
+msgstr "OR"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP3.Default.StringList.item
+#, fuzzy
 msgid  "AND"
 msgstr "ו"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP3.Default.StringList.item
+#, fuzzy
 msgid  "OR"
 msgstr "או"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP4.Default.StringList.item
+#, fuzzy
 msgid  "AND"
 msgstr "ו"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP4.Default.StringList.item
+#, fuzzy
 msgid  "OR"
 msgstr "או"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "="
 msgstr "="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "<"
 msgstr "<"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  ">"
 msgstr ">"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "<="
 msgstr "<="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  ">="
 msgstr ">="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "<>"
 msgstr "<>"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Largest"
-msgstr "הגדול ביותר"
+msgstr "הכי גדול"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Smallest"
-msgstr "הקטן ביותר"
+msgstr "הכי קטן"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Largest %"
-msgstr "הגדול ביותר %‏"
+msgstr "הכי גדול %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Smallest %"
-msgstr "הקטן ביותר %‏"
+msgstr "הכי קטן %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Contains"
 msgstr "מכיל"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Does not contain"
 msgstr "לא מכיל"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Begins with"
 msgstr "מתחיל עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Does not begin with"
 msgstr "לא מתחיל עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Ends with"
 msgstr "מסתיים עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Does not end with"
 msgstr "לא מסתיים עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "="
 msgstr "="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "<"
 msgstr "<"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  ">"
 msgstr ">"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "<="
 msgstr "<="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  ">="
 msgstr ">="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "<>"
 msgstr "<>"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "Largest"
 msgstr "הגדול ביותר"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "Smallest"
 msgstr "הקטן ביותר"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "Largest %"
 msgstr "הגדול ביותר %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 msgid  "Smallest %"
-msgstr "הקטן ביותר %‏"
+msgstr "הקטן ביותרן %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "Contains"
 msgstr "מכיל"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "Does not contain"
 msgstr "לא מכיל"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "Begins with"
 msgstr "מתחיל עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "Does not begin with"
 msgstr "לא מתחיל עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "Ends with"
 msgstr "מסתיים עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "Does not end with"
 msgstr "לא מסתיים עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "="
 msgstr "="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "<"
 msgstr "<"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  ">"
 msgstr ">"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "<="
 msgstr "<="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  ">="
 msgstr ">="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "<>"
 msgstr "<>"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Largest"
 msgstr "הכי גדול"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Smallest"
 msgstr "הכי קטן"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Largest %"
 msgstr "הכי גדול %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Smallest %"
 msgstr "הכי קטן %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Contains"
 msgstr "מכיל"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Does not contain"
 msgstr "לא מכיל"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Begins with"
 msgstr "מתחיל עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Does not begin with"
 msgstr "לא מתחיל עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Ends with"
 msgstr "מסתיים עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Does not end with"
 msgstr "לא מסתיים עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "="
 msgstr "="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "<"
 msgstr "<"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  ">"
 msgstr ">"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "<="
 msgstr "<="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  ">="
 msgstr ">="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "<>"
 msgstr "<>"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "Largest"
 msgstr "הגדול ביותר"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "Smallest"
 msgstr "הקטן ביותר"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "Largest %"
 msgstr "הגדול ביותר %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "Smallest %"
 msgstr "הקטן ביותרן %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "Contains"
 msgstr "מכיל"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "Does not contain"
 msgstr "לא מכיל"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "Begins with"
 msgstr "מתחיל עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "Does not begin with"
 msgstr "לא מתחיל עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "Ends with"
 msgstr "מסתיים עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND4.Default.stringlist.item
+#, fuzzy
 msgid  "Does not end with"
 msgstr "לא מסתיים עם"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FL_CRITERIA.FixedLine.Text
+#, fuzzy
 msgid  "Filter criteria"
 msgstr "תנאי סינון"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_CASE.CheckBox.Text
+#, fuzzy
 msgid  "Case ~sensitive"
 msgstr "רגישות לאותיות גדולות וקטנות"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_REGEXP.CheckBox.Text
+#, fuzzy
 msgid  "Regular ~expression"
 msgstr "ביטויים רגולריים"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_HEADER.CheckBox.Text
+#, fuzzy
 msgid  "Range contains ~column labels"
 msgstr "הטווח מכיל תוויות עמודה"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_UNIQUE.CheckBox.Text
+#, fuzzy
 msgid  "~No duplication"
 msgstr "ללא כפילויות"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_COPY_RESULT.CheckBox.Text
+#, fuzzy
 msgid  "Copy ~results to..."
 msgstr "העתקת תוצאות ל...‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_DEST_PERS.CheckBox.Text
+#, fuzzy
 msgid  "~Keep filter criteria"
 msgstr "שמירת תנאי מסנן"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.RB_COPY_AREA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA.FixedText.Text
+#, fuzzy
 msgid  "dummy"
 msgstr "דמה"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Data range:"
 msgstr "טווח נתונים:‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.ModelessDialog.Text
+#, fuzzy
 msgid  "Advanced Filter"
 msgstr "מסנן מתקדם"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.FT_CRITERIA_AREA.FixedText.Text
+#, fuzzy
 msgid  "Read ~filter criteria from"
 msgstr "קריאת תנאי מסנן מ"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.RB_CRITERIA_AREA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_CASE.CheckBox.Text
+#, fuzzy
 msgid  "~Case sensitive"
 msgstr "רגישות לאותיות גדולות/קטנות"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_REGEXP.CheckBox.Text
+#, fuzzy
 msgid  "Regular ~expressions"
 msgstr "ביטויים רגילים"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_HEADER.CheckBox.Text
+#, fuzzy
 msgid  "Range c~ontains column labels"
 msgstr "הטווח מכיל תוויות עמודות"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_UNIQUE.CheckBox.Text
+#, fuzzy
 msgid  "~No duplication"
 msgstr "ללא כפילויות"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_COPY_RESULT.CheckBox.Text
+#, fuzzy
 msgid  "Co~py results to"
 msgstr "העתקת תוצאות ל...‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_DEST_PERS.CheckBox.Text
+#, fuzzy
 msgid  "~Keep filter criteria"
 msgstr "שמירת תנאי מסנן"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.RB_COPY_AREA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "אפשרויות"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.FT_DBAREA.FixedText.Text
+#, fuzzy
 msgid  "dummy"
 msgstr "דמה"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.FT_DBAREA_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Data range:"
 msgstr "טווח נתונים:‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.ModalDialog.Text
+#, fuzzy
 msgid  "Filter"
 msgstr "סינון"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FT_OP.FixedText.Text
+#, fuzzy
 msgid  "Operator"
 msgstr "אופרטור"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FT_FIELD.FixedText.Text
+#, fuzzy
 msgid  "Field name"
 msgstr "שם שדה"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FT_COND.FixedText.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "תנאי"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FT_VAL.FixedText.Text
+#, fuzzy
 msgid  "Value"
 msgstr "ערך"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_OP1.Default.StringList.item
+#, fuzzy
 msgid  "AND"
 msgstr "AND"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_OP1.Default.StringList.item
+#, fuzzy
 msgid  "OR"
 msgstr "OR"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_OP2.Default.StringList.item
+#, fuzzy
 msgid  "AND"
 msgstr "AND"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_OP2.Default.StringList.item
+#, fuzzy
 msgid  "OR"
 msgstr "OR"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND1.Default.StringList.item
+#, fuzzy
 msgid  "="
 msgstr "="
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND1.Default.StringList.item
+#, fuzzy
 msgid  "<"
 msgstr "<"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND1.Default.StringList.item
+#, fuzzy
 msgid  ">"
 msgstr ">"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND1.Default.StringList.item
+#, fuzzy
 msgid  "<="
 msgstr "<="
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND1.Default.StringList.item
+#, fuzzy
 msgid  ">="
 msgstr ">="
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND1.Default.StringList.item
+#, fuzzy
 msgid  "<>"
 msgstr "<>"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND2.Default.StringList.item
+#, fuzzy
 msgid  "="
 msgstr "="
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND2.Default.StringList.item
+#, fuzzy
 msgid  "<"
 msgstr "<"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND2.Default.StringList.item
+#, fuzzy
 msgid  ">"
 msgstr ">"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND2.Default.StringList.item
+#, fuzzy
 msgid  "<="
 msgstr "<="
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND2.Default.StringList.item
+#, fuzzy
 msgid  ">="
 msgstr ">="
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND2.Default.StringList.item
+#, fuzzy
 msgid  "<>"
 msgstr "<>"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND3.Default.StringList.item
+#, fuzzy
 msgid  "="
 msgstr "="
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND3.Default.StringList.item
+#, fuzzy
 msgid  "<"
 msgstr "<"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND3.Default.StringList.item
+#, fuzzy
 msgid  ">"
 msgstr ">"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND3.Default.StringList.item
+#, fuzzy
 msgid  "<="
 msgstr "<="
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND3.Default.StringList.item
+#, fuzzy
 msgid  ">="
 msgstr ">="
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.LB_COND3.Default.StringList.item
+#, fuzzy
 msgid  "<>"
 msgstr "<>"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FL_CRITERIA.FixedLine.Text
+#, fuzzy
 msgid  "Filter criteria"
 msgstr "תנאי סינון"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.BTN_CASE.CheckBox.Text
+#, fuzzy
 msgid  "~Case sensitive"
 msgstr "רגישות לאותיות גדולות/קטנות"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.BTN_REGEXP.CheckBox.Text
+#, fuzzy
 msgid  "~Regular expression"
 msgstr "ביטויים רגילים"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.BTN_UNIQUE.CheckBox.Text
+#, fuzzy
 msgid  "~No duplication"
 msgstr "ללא כפילויות"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "אפשרויות"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FT_DBAREA.FixedText.Text
+#, fuzzy
 msgid  "dummy"
 msgstr "דמה"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FT_DBAREA_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Data range:"
 msgstr "טווח נתונים:‏"
 
 #: source/ui/src/filter.src#STR_COPY_AREA_TO.String.Text
+#, fuzzy
 msgid  "Copy results to"
 msgstr "העתקת תוצאות ל־"
 
 #: source/ui/src/filter.src#RID_FILTER_OPERATOR.String.Text
+#, fuzzy
 msgid  "Operator"
 msgstr "אופרטור"
 
 #: source/ui/src/filter.src#RID_FILTER_FIELDNAME.String.Text
+#, fuzzy
 msgid  "Field Name"
 msgstr "שם שדה"
 
 #: source/ui/src/filter.src#RID_FILTER_CONDITION.String.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "תנאי"
 
 #: source/ui/src/filter.src#RID_FILTER_VALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "ערך"
 
@@ -4971,7 +6477,7 @@ msgstr "מחזירה את היום של החודש (1-31) של התאריך הנ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "מספר"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
@@ -6908,7 +8414,7 @@ msgstr "מחזירה את השורש של מספר נתון.‏"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "מספר"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 #, fuzzy
@@ -7143,7 +8649,7 @@ msgstr "מחזירה את סינוס של מספר נתון.‏"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "number"
+msgstr "מספר"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 #, fuzzy
@@ -7173,7 +8679,7 @@ msgstr "מחזירה את הטאנג'נט של מספר נתון.‏"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "number"
+msgstr "מספר"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 #, fuzzy
@@ -7203,7 +8709,7 @@ msgstr "מחזירה את הסינוס ההיפרבולי של מספר נתון
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "number"
+msgstr "מספר"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 #, fuzzy
@@ -7233,7 +8739,7 @@ msgstr "מחזירה את הטאנג'נט ההיפרבולי של מספר נת�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "number"
+msgstr "מספר"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 #, fuzzy
@@ -10984,7 +12490,7 @@ msgstr "מחפשת מחזורת טקסט בתוך מחרוזת אחרת‫ (הב
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.2.String.Text
 #, fuzzy
 msgid  "find_text"
-msgstr "מצא_טקסט"
+msgstr "find_text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.3.String.Text
 #, fuzzy
@@ -12190,9 +13696,8 @@ msgid  "Font Attributes"
 msgstr "מאפייני גופן"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-#, fuzzy
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "יש כמות גדולה של תוכן בלוח הטיוטה.\nהאם לאפשר גישה לתוכן זה מיישומים אחרים?‏"
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -12273,9 +13778,8 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-#, fuzzy
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
-msgstr "שגיאה אפשרית נתגלתה בנוסחה.‏\nהאם לקבל את הצעת התיקון של‪ %PRODUCTNAME Calc ‬המוצעת למטה?‏\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -12328,9 +13832,8 @@ msgid  "~Selected sheets"
 msgstr "גיליונות ~נבחרים"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-#, fuzzy
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "ההדבקה נעשתה בתוך תאים שכבר מכילים נתונים.\nהאם אכן לדרוס את הנתונים הקיימים?‏"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 #, fuzzy
@@ -12701,66 +14204,82 @@ msgid  "Invalid expression"
 msgstr "ביטוי לא חוקי"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.ModelessDialog.Text
+#, fuzzy
 msgid  "Define Database Range"
 msgstr "הגדרת טווח מסד נתונים"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.FL_NAME.FixedLine.Text
+#, fuzzy
 msgid  "Na~me"
 msgstr "שם"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.FL_ASSIGN.FixedLine.Text
+#, fuzzy
 msgid  "~Range"
 msgstr "טווח"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.RB_DBAREA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "אפשרויות"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.BTN_HEADER.CheckBox.Text
+#, fuzzy
 msgid  "Co~ntains column labels"
 msgstr "מכיל תוויות עמודות"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.BTN_SIZE.CheckBox.Text
+#, fuzzy
 msgid  "Insert or delete ~cells"
 msgstr "הכנסת או מחיקת תאים"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.BTN_FORMAT.CheckBox.Text
+#, fuzzy
 msgid  "Keep ~formatting"
 msgstr "שמירת עיצוב"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.BTN_STRIPDATA.CheckBox.Text
+#, fuzzy
 msgid  "Don't save ~imported data"
 msgstr "אי שמירת הנתונים המיובאים"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.FT_SOURCE.FixedText.Text
+#, fuzzy
 msgid  "Source:"
 msgstr "מקור:‏"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.FT_OPERATIONS.FixedText.Text
+#, fuzzy
 msgid  "Operations:"
 msgstr "פעולות:‏"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.BTN_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "הוספה"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.BTN_REMOVE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "מחיקה"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.STR_ADD.String.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "הוספה"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.STR_MODIFY.String.Text
+#, fuzzy
 msgid  "M~odify"
 msgstr "שינוי"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.STR_DB_INVALID.String.Text
+#, fuzzy
 msgid  "Invalid range"
 msgstr "טווח לא חוקי"
 
@@ -13938,38 +15457,47 @@ msgid  "By author"
 msgstr "בידי המחבר"
 
 #: source/ui/src/crnrdlg.src#RID_SCDLG_COLROWNAMERANGES.FL_ASSIGN.FixedLine.Text
+#, fuzzy
 msgid  "Range"
 msgstr "טווח"
 
 #: source/ui/src/crnrdlg.src#RID_SCDLG_COLROWNAMERANGES.RB_AREA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/crnrdlg.src#RID_SCDLG_COLROWNAMERANGES.BTN_COLHEAD.RadioButton.Text
+#, fuzzy
 msgid  "Contains ~column labels"
 msgstr "מכיל תוויות עמודות"
 
 #: source/ui/src/crnrdlg.src#RID_SCDLG_COLROWNAMERANGES.BTN_ROWHEAD.RadioButton.Text
+#, fuzzy
 msgid  "Contains ~row labels"
 msgstr "מכיל תווית שורות"
 
 #: source/ui/src/crnrdlg.src#RID_SCDLG_COLROWNAMERANGES.FT_DATA_LABEL.FixedText.Text
+#, fuzzy
 msgid  "For ~data range"
 msgstr "לטווח נתונים"
 
 #: source/ui/src/crnrdlg.src#RID_SCDLG_COLROWNAMERANGES.RB_DATA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/crnrdlg.src#RID_SCDLG_COLROWNAMERANGES.BTN_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "הוספה"
 
 #: source/ui/src/crnrdlg.src#RID_SCDLG_COLROWNAMERANGES.BTN_REMOVE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "מחיקה"
 
 #: source/ui/src/crnrdlg.src#RID_SCDLG_COLROWNAMERANGES.HelpButton.Text
+#, fuzzy
 msgid  "Define Label Range"
 msgstr "הגדרת טווח תווית"
 
@@ -13984,210 +15512,262 @@ msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND1.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~1"
 msgstr "תנאי 1‏"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "ערך התא"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "הנוסחה היא"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "שווה ל"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "קטן מ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "גדול מ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "קטן או שווה ל"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "גדול או שווה ל"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "לא שווה ל"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "בין"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "לא בין"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr " ו"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "~Cell Style"
 msgstr "סגנון תא"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND1_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New Style..."
 msgstr "סגנון ~חדש..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND2.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~2"
 msgstr "תנאי 2‏"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "ערך התא"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "הנוסחה היא"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "שווה ל"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "קטן מ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "גדול מ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "קטן או שווה ל"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "גדול או שווה ל"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "לא שווה ל"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "בין"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "לא בין"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr " ו"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "C~ell Style"
 msgstr "סגנון תא"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND2_NEW.PushButton.Text
+#, fuzzy
 msgid  "Ne~w Style..."
 msgstr "סגנון ח~דש..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND3.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~3"
 msgstr "תנאי 3‏"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "ערך התא"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "הנוסחה היא"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "שווה ל"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "קטן מ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "גדול מ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "קטן או שווה ל"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "גדול או שווה ל"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "לא שווה ל"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "בין"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "לא בין"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr " ו"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Shrink"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "Ce~ll Style"
 msgstr "סגנון תא"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND3_NEW.PushButton.Text
+#, fuzzy
 msgid  "New ~Style..."
 msgstr "סגנון ~חדש..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.HelpButton.Text
+#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "עיצוב מותנה"
 
 #: source/ui/src/condfrmt.src#LABEL_FORMARTTING_CONDITIONS.String.Text
+#, fuzzy
 msgid  "Formatting Conditions"
 msgstr "תנאי עיצוב"
 
 #: source/ui/src/condfrmt.src#LABEL_CONDITIONS.String.Text
+#, fuzzy
 msgid  "Conditions"
 msgstr "תנאים"
 
 #: source/ui/src/condfrmt.src#LABEL_CONDITION_VALUE.String.Text
+#, fuzzy
 msgid  "Condition Value"
 msgstr "ערך תנאי"
 
@@ -14382,14 +15962,12 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "המסמך מסובך מדי לחישוב אוטומטי. לחישוב ידני יש ללחוץ מקש‫ F9.‏"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "מספר השורות במסמך עולה על מספר השורות הנתמך בתוכנה זו.\nשורות נוספות מעבר למספר הנתמך לא נשמרו.‏"
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "המסמך מכיל מידע בעל צורה לא מוכרת לגרסה הנוכחית של התוכנה.\nמידע זה לא ישמר עם שמירת המסמך בגרסה הנוכחית של התוכנה!‏"
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 #, fuzzy
@@ -14397,9 +15975,8 @@ msgid  "Not all cell contents could be saved in the specified format."
 msgstr "לא ניתן היה לשמור את כל תכולת התא בצורה שצויינה.‏"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
-msgstr "לא ניתן להסב את התווים הבאים לקידוד המבוקש ולכן הם נכתבו בצורה &#1234:\n\nn$(ARG1)‏"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 #, fuzzy

@@ -153,9 +153,8 @@ msgid  "Column Fields"
 msgstr "Campos de coluna"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-#, fuzzy
-msgid  "Row\nFields"
-msgstr "Linha\nCampos"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 #, fuzzy
@@ -1178,70 +1177,87 @@ msgid  "Text Import"
 msgstr "Importação de texto"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_FIELDOPT.FixedLine.Text
+#, fuzzy
 msgid  "Import"
 msgstr "Importar"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CHARSET.FixedText.Text
+#, fuzzy
 msgid  "Ch~aracter set"
 msgstr "~Conjunto de caracteres"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CUSTOMLANG.FixedText.Text
+#, fuzzy
 msgid  "Language"
 msgstr "Idioma"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_AT_ROW.FixedText.Text
+#, fuzzy
 msgid  "From ro~w"
 msgstr "Da ~linha"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_SEPOPT.FixedLine.Text
+#, fuzzy
 msgid  "Separator options"
 msgstr "Opções de separador"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_FIXED.RadioButton.Text
+#, fuzzy
 msgid  "~Fixed width"
 msgstr "Largura ~fixa"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_SEPARATED.RadioButton.Text
+#, fuzzy
 msgid  "~Separated by"
 msgstr "~Separado por"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_TAB.CheckBox.Text
+#, fuzzy
 msgid  "~Tab"
 msgstr "~Tabulação"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_COMMA.CheckBox.Text
+#, fuzzy
 msgid  "~Comma"
 msgstr "~Vírgula"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_OTHER.CheckBox.Text
+#, fuzzy
 msgid  "~Other"
 msgstr "~Outros"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SEMICOLON.CheckBox.Text
+#, fuzzy
 msgid  "S~emicolon"
 msgstr "~Ponto e vírgula"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SPACE.CheckBox.Text
+#, fuzzy
 msgid  "S~pace"
 msgstr "E~spaço"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_ASONCE.CheckBox.Text
+#, fuzzy
 msgid  "Merge ~delimiters"
 msgstr "Unir ~delimitadores"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TEXTSEP.FixedText.Text
+#, fuzzy
 msgid  "Te~xt delimiter"
 msgstr "Delimitador de te~xto"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_OTHER_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Other options"
 msgstr "Outras opções"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_QUOTED_AS_TEXT.CheckBox.Text
+#, fuzzy
 msgid  "~Quoted field as text"
 msgstr "~Campo acentuado como texto"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_DETECT_SPECIAL_NUMBER.CheckBox.Text
+#, fuzzy
 msgid  "Detect special numbers"
 msgstr "Detectar números especiais"
 
@@ -1336,806 +1352,1007 @@ msgid  "Settings"
 msgstr "Definições"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_TABLES_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of sheets:"
 msgstr "Número de folhas:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_CELLS_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of cells:"
 msgstr "Número de células:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_PAGES_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of pages:"
 msgstr "Número de páginas:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Document: "
 msgstr "Documento: "
 
 #: source/ui/drawfunc/objdraw.src#MN_RESET.SID_TEXT_STANDARD.MenuItem.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "Pre~definição"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.MenuItem.Text
+#, fuzzy
 msgid  "~Style"
 msgstr "E~stilo"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUPER_SCRIPT.MenuItem.Text
+#, fuzzy
 msgid  "~Superscript"
 msgstr "~Superior à linha"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUB_SCRIPT.MenuItem.Text
+#, fuzzy
 msgid  "S~ubscript"
 msgstr "~Inferior à linha"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.MenuItem.Text
+#, fuzzy
 msgid  "~Alignment"
 msgstr "~Alinhamento"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNLEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "Es~querda"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNRIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "Di~reita"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNCENTERHOR.MenuItem.Text
+#, fuzzy
 msgid  "~Centered"
 msgstr "~Centrado"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNBLOCK.MenuItem.Text
+#, fuzzy
 msgid  "~Justified"
 msgstr "~Justificado"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_LINESPACE.MenuItem.Text
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~Espaçamento de linhas"
 
 #: source/ui/drawfunc/objdraw.src#MN_EDITLNK.SID_DRAW_HLINK_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Hyperlink..."
 msgstr "~Hiperligação..."
 
 #: source/ui/drawfunc/objdraw.src#MN_DELLNK.SID_DRAW_HLINK_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove Hyperlink"
 msgstr "~Remover hiperligação"
 
 #: source/ui/drawfunc/objdraw.src#MN_DRWTXTATTR.SID_DRAWTEXT_ATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Te~xt..."
 msgstr "Te~xto..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ASSIGNMACRO.SID_ASSIGNMACRO.MenuItem.Text
+#, fuzzy
 msgid  "Assig~n Macro..."
 msgstr "Atribui~r macro..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ORIGINALSIZE.SID_ORIGINALSIZE.MenuItem.Text
+#, fuzzy
 msgid  "~Original Size"
 msgstr "Tamanho ~original"
 
 #: source/ui/drawfunc/objdraw.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "209272($$)res($$)1($$)int($$)Name..."
 
 #: source/ui/drawfunc/objdraw.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "Descrição..."
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.MenuItem.Text
+#, fuzzy
 msgid  "~Flip"
 msgstr "~Virar"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "~Verticalmente"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "~Horizontal"
 msgstr "~Horizontal"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "~Dispor"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Tra~zer para primeiro plano"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "En~viar para segundo plano"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
+#, fuzzy
 msgid  "An~chor"
 msgstr "Ânco~ra"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "To P~age"
 msgstr "Para a ~página"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
+#, fuzzy
 msgid  "To ~Cell"
 msgstr "Para a ~célula"
 
 #: source/ui/drawfunc/objdraw.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "Alin~hamento"
 
 #: source/ui/drawfunc/objdraw.src#RID_DRAW_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Drawing Object Bar"
 msgstr "Barra de objectos de desenho"
 
 #: source/ui/drawfunc/objdraw.src#RID_TEXT_TOOLBOX.String.Text
+#, fuzzy
 msgid  "Text Object Bar"
 msgstr "Barra de objectos de texto"
 
 #: source/ui/drawfunc/objdraw.src#RID_GRAPHIC_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Graphics Object Bar"
 msgstr "Barra de objectos gráficos"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAW.String.Text
+#, fuzzy
 msgid  "Pop-up menu for drawing objects"
 msgstr "Menu emergente para objectos de desenho"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAWTEXT.String.Text
+#, fuzzy
 msgid  "Pop-up menu for text objects"
 msgstr "Menu emergente para objectos de texto"
 
 #: source/ui/drawfunc/drformsh.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "Nome..."
 
 #: source/ui/drawfunc/drformsh.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "Descrição..."
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "~Dispor"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Tra~zer para primeiro plano"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "En~viar para segundo plano"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
+#, fuzzy
 msgid  "An~chor"
 msgstr "Ânco~ra"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "To P~age"
 msgstr "Par~ página"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
+#, fuzzy
 msgid  "To ~Cell"
 msgstr "Para a ~célula"
 
 #: source/ui/drawfunc/drformsh.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "A~linhamento"
 
 #: source/ui/drawfunc/drformsh.src#RID_POPUP_DRAWFORM.String.Text
+#, fuzzy
 msgid  "Popup menu for form objects"
 msgstr "Menu emergente para objectos de formulário"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Last Used"
 msgstr "Data da última utilização"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "All"
 msgstr "Todas"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Database"
 msgstr "Base de dados"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Date&Time"
 msgstr "Data e hora"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Financial"
 msgstr "Financeiras"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Information"
 msgstr "Informação"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Logical"
 msgstr "Lógica"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Mathematical"
 msgstr "Matemática"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Array"
 msgstr "Matriz"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Statistical"
 msgstr "Estatística"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Folha de cálculo"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Text"
 msgstr "Texto"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Add-in"
 msgstr "Adicionais"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.IMB_INSERT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Insert Function into calculation sheet"
 msgstr "Inserir função na folha de cálculo"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.ButtonImage.Text
+#, fuzzy
 msgid  "Functions"
 msgstr "Funções"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.FT_ASSIGN.FixedText.Text
+#, fuzzy
 msgid  "Range"
 msgstr "Intervalo"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "Minimizar/Maximizar"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_COLS.String.Text
+#, fuzzy
 msgid  "Column inserted"
 msgstr "Coluna inserida"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_ROWS.String.Text
+#, fuzzy
 msgid  "Row inserted "
 msgstr "Linha inserida "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_TABS.String.Text
+#, fuzzy
 msgid  "Sheet inserted "
 msgstr "Folha inserida "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_COLS.String.Text
+#, fuzzy
 msgid  "Column deleted"
 msgstr "Coluna eliminada"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_ROWS.String.Text
+#, fuzzy
 msgid  "Row deleted"
 msgstr "Linha eliminada"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_TABS.String.Text
+#, fuzzy
 msgid  "Sheet deleted"
 msgstr "Folha eliminada"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_MOVE.String.Text
+#, fuzzy
 msgid  "Range moved"
 msgstr "Intervalo movido"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT.String.Text
+#, fuzzy
 msgid  "Changed contents"
 msgstr "Conteúdo alterado"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT_WITH_CHILD.String.Text
+#, fuzzy
 msgid  "Changed contents"
 msgstr "Conteúdo alterado"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_CONTENT.String.Text
+#, fuzzy
 msgid  "Changed to "
 msgstr "Alterado(a) para "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_ORGCONTENT.String.Text
+#, fuzzy
 msgid  "Original"
 msgstr "Original"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECT.String.Text
+#, fuzzy
 msgid  "Changes rejected"
 msgstr "Alterações rejeitadas"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_ACCEPTED.String.Text
+#, fuzzy
 msgid  "Accepted"
 msgstr "Aceites"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECTED.String.Text
+#, fuzzy
 msgid  "Rejected"
 msgstr "Rejeitado(a)s"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_NO_ENTRY.String.Text
+#, fuzzy
 msgid  "No Entry"
 msgstr "Sem entrada"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_EMPTY.String.Text
+#, fuzzy
 msgid  "<empty>"
 msgstr "<vazio>"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.Bitmap.Text
+#, fuzzy
 msgid  "Accept or Reject Changes"
 msgstr "Aceitar ou rejeitar alterações"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_CHANGES_COMMENT.MenuItem.Text
+#, fuzzy
 msgid  "Edit Comment..."
 msgstr "Editar comentário..."
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_ACTION.MenuItem.Text
+#, fuzzy
 msgid  "Action"
 msgstr "Acção"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Posição"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_AUTHOR.MenuItem.Text
+#, fuzzy
 msgid  "Author"
 msgstr "Autor"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_DATE.MenuItem.Text
+#, fuzzy
 msgid  "Date"
 msgstr "Data"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_COMMENT.MenuItem.Text
+#, fuzzy
 msgid  "Description"
 msgstr "Descrição"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.MenuItem.Text
+#, fuzzy
 msgid  "Sorting"
 msgstr "Ordenação"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.ModalDialog.Text
+#, fuzzy
 msgid  "Resolve Conflicts"
 msgstr "Resolver conflitos"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.FT_CONFLICTS.FixedText.Text
+#, fuzzy
 msgid  "There are conflicting changes in this shared spreadsheet. Conflicts must be resolved before saving the spreadsheet. Keep either own or other changes."
 msgstr "Existem conflitos de alterações nesta folha de cálculo partilhada. Tem de resolver os conflitos antes de guardar a folha de cálculo. Mantenha as suas próprias alterações ou outras."
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPMINE.PushButton.Text
+#, fuzzy
 msgid  "Keep ~Mine"
 msgstr "Manter ~minha"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPOTHER.PushButton.Text
+#, fuzzy
 msgid  "Keep ~Other"
 msgstr "Manter ~outra"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLMINE.PushButton.Text
+#, fuzzy
 msgid  "~Keep All Mine"
 msgstr "~Manter todas as minhas"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLOTHERS.PushButton.Text
+#, fuzzy
 msgid  "Keep ~All Others"
 msgstr "Manter tod~as as dos outros"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_CONFLICT.String.Text
+#, fuzzy
 msgid  "Conflict"
 msgstr "Conflito"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_AUTHOR.String.Text
+#, fuzzy
 msgid  "Author"
 msgstr "Autor"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_DATE.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "Data"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_UNKNOWN_USER.String.Text
+#, fuzzy
 msgid  "Unknown User"
 msgstr "Utilizador desconhecido"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.ModalDialog.Text
+#, fuzzy
 msgid  "Re-type Password"
 msgstr "Escrever a palavra-passe novamente"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DESC.FixedText.Text
+#, fuzzy
 msgid  "The document you are about to export has one or more protected items with password that cannot be exported.  Please re-type your password to be able to export your document."
 msgstr "O documento que vai exportar tem um ou mais itens protegidos com palavra-passe que não podem ser exportados. Volte a escrever a palavra-passe para que seja possível exportar o documento."
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_DOCUMENT.FixedLine.Text
+#, fuzzy
 msgid  "Document protection"
 msgstr "Protecção do documento"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DOCSTATUS.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "Estado desconhecido"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_DOC.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "Escrever novamente"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_SHEET.FixedLine.Text
+#, fuzzy
 msgid  "Sheet protection"
 msgstr "Protecção da folha"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME1.FixedText.Text
+#, fuzzy
 msgid  "Sheet1 has a really long name"
 msgstr "A Folha1 tem um nome muito longo"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS1.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "Estado desconhecido"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET1.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "Escrever novamente"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME2.FixedText.Text
+#, fuzzy
 msgid  "Sheet2"
 msgstr "Folha2"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS2.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "Estado desconhecido"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET2.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "Escrever novamente"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME3.FixedText.Text
+#, fuzzy
 msgid  "Sheet3"
 msgstr "Folha3"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS3.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "Estado desconhecido"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET3.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "Escrever novamente"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME4.FixedText.Text
+#, fuzzy
 msgid  "Sheet4"
 msgstr "Folha4"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS4.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "Estado desconhecido"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET4.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "Escrever novamente"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_NOT_PROTECTED.String.Text
+#, fuzzy
 msgid  "Not protected"
 msgstr "Desprotegido"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_NOT_PASS_PROTECTED.String.Text
+#, fuzzy
 msgid  "Not password-protected"
 msgstr "Não protegido por palavra-passe"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_BAD.String.Text
+#, fuzzy
 msgid  "Hash incompatible"
 msgstr "Incompatível com cardinal"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_GOOD.String.Text
+#, fuzzy
 msgid  "Hash compatible"
 msgstr "Compatível com cardinal"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_REGENERATED.String.Text
+#, fuzzy
 msgid  "Hash re-generated"
 msgstr "Cardinal recriado"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.ModalDialog.Text
+#, fuzzy
 msgid  "Re-type Password"
 msgstr "Escrever a palavra-passe novamente"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_RETYPE_PASSWORD.RadioButton.Text
+#, fuzzy
 msgid  "Re-type password"
 msgstr "Escrever a palavra-passe novamente"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.FT_PASSWORD1.FixedText.Text
+#, fuzzy
 msgid  "~Password"
 msgstr "~Palavra-passe"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.FT_PASSWORD2.FixedText.Text
+#, fuzzy
 msgid  "~Confirm"
 msgstr "~Confirmar"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_MATCH_OLD_PASSWORD.CheckBox.Text
+#, fuzzy
 msgid  "New password must match the original password."
 msgstr "A nova palavra-passe tem de corresponder à palavra-passe original."
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_REMOVE_PASSWORD.RadioButton.Text
+#, fuzzy
 msgid  "Remove password from this protected item."
 msgstr "Remova a palavra-passe deste item protegido."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.ModalDialog.Text
+#, fuzzy
 msgid  "Share Document"
 msgstr "Partilhar documento"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.CB_SHARE.CheckBox.Text
+#, fuzzy
 msgid  "Share this spreadsheet with other users"
 msgstr "Partilhar esta folha de cálculo com outros utilizadores"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Note: Changes to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
 msgstr "Nota: As alterações efectuadas aos atributos de formatação, tais como tipos de letra, cores e formatos numéricos, não serão guardadas e algumas funcionalidades, tais como a edição de gráficos e o desenho de objectos, não estão disponíveis no modo partilhado. Desactive o modo partilhado para obter o acesso exclusivo necessário para essas alterações e funcionalidades."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_USERS.FixedText.Text
+#, fuzzy
 msgid  "Users currently accessing this spreadsheet"
 msgstr "Utilizadores a aceder actualmente a esta folha de cálculo"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_NAME.String.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Nome"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_ACCESSED.String.Text
+#, fuzzy
 msgid  "Accessed"
 msgstr "Acedido(a)"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_NO_USER_DATA.String.Text
+#, fuzzy
 msgid  "No user data available."
 msgstr "Não estão disponíveis dados do utilizador."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_UNKNOWN_USER.String.Text
+#, fuzzy
 msgid  "Unknown User"
 msgstr "Utilizador desconhecido"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_EXCLUSIVE_ACCESS.String.Text
+#, fuzzy
 msgid  "(exclusive access)"
 msgstr "(acesso exclusivo)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.ModalDialog.Text
+#, fuzzy
 msgid  "Insert Sheet"
 msgstr "Inserir folha"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_POSITION.FixedLine.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Posição"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEFORE.RadioButton.Text
+#, fuzzy
 msgid  "B~efore current sheet"
 msgstr "~Antes da folha actual"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEHIND.RadioButton.Text
+#, fuzzy
 msgid  "~After current sheet"
 msgstr "A ~seguir à folha actual"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_TABLE.FixedLine.Text
+#, fuzzy
 msgid  "Sheet"
 msgstr "Folha"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_NEW.RadioButton.Text
+#, fuzzy
 msgid  "~New sheet"
 msgstr "~Nova folha"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "N~o. of sheets"
 msgstr "Nº de ~folhas"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Na~me"
 msgstr "No~me"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_FROMFILE.RadioButton.Text
+#, fuzzy
 msgid  "~From file"
 msgstr "Do fic~heiro"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.BTN_BROWSE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "~Procurar..."
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.CB_LINK.CheckBox.Text
+#, fuzzy
 msgid  "Lin~k"
 msgstr "Li~gação"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT.CheckBox.Text
+#, fuzzy
 msgid  "~Show changes in spreadsheet"
 msgstr "Mostrar alterações na folha de cálculo"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.FL_FILTER.FixedLine.Text
+#, fuzzy
 msgid  "Filter settings"
 msgstr "Definições de filtro"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_ACCEPT.CheckBox.Text
+#, fuzzy
 msgid  "Show ~accepted changes"
 msgstr "Mostrar alterações a~ceites"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_REJECT.CheckBox.Text
+#, fuzzy
 msgid  "Show ~rejected changes"
 msgstr "Mostrar alterações ~rejeitadas"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "Minimizar/Maximizar"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.ImageButton.Text
+#, fuzzy
 msgid  "Show Changes"
 msgstr "Mostrar alterações"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ModalDialog.Text
+#, fuzzy
 msgid  "Protect Sheet"
 msgstr "Proteger folha"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.BTN_PROTECT.CheckBox.Text
+#, fuzzy
 msgid  "P~rotect this sheet and the contents of locked cells"
 msgstr "P~roteger esta folha e os conteúdos das células bloqueadas"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD1.FixedText.Text
+#, fuzzy
 msgid  "~Password"
 msgstr "~Palavra-passe"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD2.FixedText.Text
+#, fuzzy
 msgid  "~Confirm"
 msgstr "~Confirmar"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Opções"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_OPTIONS.FixedText.Text
+#, fuzzy
 msgid  "Allow all users of this sheet to:"
 msgstr "Permitir que todos os utilizadores desta folha:"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_LOCKED_CELLS.String.Text
+#, fuzzy
 msgid  "Select locked cells"
 msgstr "Seleccionar células bloqueadas"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_UNLOCKED_CELLS.String.Text
+#, fuzzy
 msgid  "Select unlocked cells"
 msgstr "Seleccionar células desbloqueadas"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FL_LOCATION.FixedLine.Text
+#, fuzzy
 msgid  "URL of ~external data source"
 msgstr "URL da origem de dados ~externos"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_HINT.FixedText.Text
+#, fuzzy
 msgid  "(Enter the URL of the source document in the local file system or Internet here.)"
 msgstr "(Introduza aqui o URL do documento origem no sistema de ficheiros local ou Internet)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_RANGES.FixedText.Text
+#, fuzzy
 msgid  "~Available tables/ranges"
 msgstr "~Tabelas/intervalos disponíveis"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.BTN_RELOAD.CheckBox.Text
+#, fuzzy
 msgid  "~Update every"
 msgstr "A~ctualizar cada"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_SECONDS.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "segundos"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FixedText.Text
+#, fuzzy
 msgid  "External Data"
 msgstr "Dados externos"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.Window.Text
+#, fuzzy
 msgid  "Navigator"
 msgstr "Navegador"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
+#, fuzzy
 msgid  "Row"
 msgstr "Linha"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
+#, fuzzy
 msgid  "Row"
 msgstr "Linha"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
+#, fuzzy
 msgid  "Column"
 msgstr "Coluna"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
+#, fuzzy
 msgid  "Column"
 msgstr "Coluna"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.LB_DOCUMENTS.ListBox.QuickHelpText
+#, fuzzy
 msgid  "Document"
 msgstr "Documento"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DATA.ToolBoxItem.Text
+#, fuzzy
 msgid  "Data Range"
 msgstr "Intervalo de dados"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_UP.ToolBoxItem.Text
+#, fuzzy
 msgid  "Start"
 msgstr "Início"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DOWN.ToolBoxItem.Text
+#, fuzzy
 msgid  "End"
 msgstr "Fim"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "Conteúdo"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_CHANGEROOT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Toggle"
 msgstr "Alternar"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_SCENARIOS.ToolBoxItem.Text
+#, fuzzy
 msgid  "Scenarios"
 msgstr "Cenários"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Drag Mode"
 msgstr "Modo de arrastamento"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
+#, fuzzy
 msgid  "Drag Mode"
 msgstr "Modo de arrastamento"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DISPLAY.String.Text
+#, fuzzy
 msgid  "Display"
 msgstr "Apresentar"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVE.String.Text
+#, fuzzy
 msgid  "active"
 msgstr "activo"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_NOTACTIVE.String.Text
+#, fuzzy
 msgid  "inactive"
 msgstr "inactivo"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_HIDDEN.String.Text
+#, fuzzy
 msgid  "hidden"
 msgstr "oculto"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVEWIN.String.Text
+#, fuzzy
 msgid  "Active Window"
 msgstr "Janela activa"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_LISTBOX.String.Text
+#, fuzzy
 msgid  "Scenario Name"
 msgstr "Nome do cenário"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_COMMENT.String.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "Comentário"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_ROOT.String.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "Conteúdo"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_TABLE.String.Text
+#, fuzzy
 msgid  "Sheets"
 msgstr "Folhas"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_RANGENAME.String.Text
+#, fuzzy
 msgid  "Range names"
 msgstr "Nomes de intervalo"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DBAREA.String.Text
+#, fuzzy
 msgid  "Database Ranges"
 msgstr "Intervalos de base de dados"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_GRAPHIC.String.Text
+#, fuzzy
 msgid  "Graphics"
 msgstr "Objectos gráficos"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_OLEOBJECT.String.Text
+#, fuzzy
 msgid  "OLE objects"
 msgstr "Objectos OLE"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_NOTE.String.Text
+#, fuzzy
 msgid  "Comments"
 msgstr "Comentários"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_AREALINK.String.Text
+#, fuzzy
 msgid  "Linked areas"
 msgstr "Áreas ligadas"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DRAWING.String.Text
+#, fuzzy
 msgid  "Drawing objects"
 msgstr "Objectos de desenho"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_URL.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Hyperlink"
 msgstr "Inserir como hiperligação"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_LINK.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Link"
 msgstr "Inserir como ligação"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_COPY.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Copy"
 msgstr "Inserir como cópia"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Eliminar"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Properties..."
 msgstr "Propriedades..."
 
@@ -2145,13 +2362,14 @@ msgid  "Edit Print Ranges"
 msgstr "Editar intervalos de impressão"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_PRINTAREA.FixedLine.Text
+#, fuzzy
 msgid  "Print range"
 msgstr "Intervalo de impressão"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
 msgid  "- none -"
-msgstr "- nenhum -"
+msgstr "- nenhuma -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
@@ -2324,106 +2542,131 @@ msgid  "Scale"
 msgstr "Escala"
 
 #: source/ui/pagedlg/hfedtdlg.src#HFEDIT_DLGTITLE.#define.Text
+#, fuzzy
 msgid  "Headers/Footers"
 msgstr "Cabeçalhos/Rodapés"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER.#define.Text
+#, fuzzy
 msgid  "Header"
 msgstr "Cabeçalho"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER.#define.Text
+#, fuzzy
 msgid  "Footer"
 msgstr "Rodapé"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_RIGHT.#define.Text
+#, fuzzy
 msgid  "Header (right)"
 msgstr "Cabeçalho (à direita)"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_LEFT.#define.Text
+#, fuzzy
 msgid  "Header (left)"
 msgstr "Cabeçalho (à esquerda)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_RIGHT.#define.Text
+#, fuzzy
 msgid  "Footer (right)"
 msgstr "Rodapé (à direita)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_LEFT.#define.Text
+#, fuzzy
 msgid  "Footer (left)"
 msgstr "Rodapé (à esquerda)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_HEADER.TabDialog.Text
+#, fuzzy
 msgid  "Headers"
 msgstr "Cabeçalhos"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_FOOTER.TabDialog.Text
+#, fuzzy
 msgid  "Footers"
 msgstr "Rodapés"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_LEFT.FixedText.Text
+#, fuzzy
 msgid  "~Left area"
 msgstr "Área ~esquerda"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_CENTER.FixedText.Text
+#, fuzzy
 msgid  "~Center area"
 msgstr "Área ~central"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_RIGHT.FixedText.Text
+#, fuzzy
 msgid  "R~ight area"
 msgstr "Área ~direita"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_DEFINED.FixedText.Text
+#, fuzzy
 msgid  "Hea~der"
 msgstr "Ca~beçalho"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_CUSTOM.FixedText.Text
+#, fuzzy
 msgid  "Custom header"
 msgstr "Personalizar cabeçalho"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TEXT.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Text Attributes"
 msgstr "Atributos de texto"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "Nome do ficheiro"
+msgstr "Título"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
+#, fuzzy
 msgid  "Title"
 msgstr "Título"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_FILENAME.MenuItem.Text
+#, fuzzy
 msgid  "File Name"
 msgstr "Nome do ficheiro"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_PATH.MenuItem.Text
+#, fuzzy
 msgid  "Path/File Name"
 msgstr "Caminho/Nome do ficheiro"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TABLE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Sheet Name"
 msgstr "Nome da folha"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Page"
 msgstr "Página"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGES.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Pages"
 msgstr "Páginas"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_DATE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Date"
 msgstr "Data"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TIME.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Time"
 msgstr "Hora"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "Use the buttons to change the font or insert field commands such as date, time, etc."
 msgstr "Utilize os botões para mudar o tipo de letra ou introduzir opções de campos como, por exemplo, data, hora, etc."
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Note"
 msgstr "Nota"
 
@@ -2563,9 +2806,8 @@ msgid  "~Discard"
 msgstr "Re~jeitar"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-#, fuzzy
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "Pretende que a entrada\n#\nseja eliminada?"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -3058,70 +3300,86 @@ msgid  "~Delete"
 msgstr "~Eliminar"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
+#, fuzzy
 msgid  "Format Cells"
 msgstr "Formatar células"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
+#, fuzzy
 msgid  "Numbers"
 msgstr "Números"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "Tipo de letra"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "Efeitos de tipo de letra"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "Alinhamento"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
+#, fuzzy
 msgid  "Asian Typography"
 msgstr "Tipografia asiática"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "Contornos"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "Fundo"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
+#, fuzzy
 msgid  "Cell Protection"
 msgstr "Protecção de células"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
+#, fuzzy
 msgid  "~Protected"
 msgstr "~Protegido"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~formula"
 msgstr "Ocultar ~fórmula"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~all"
 msgstr "Ocultar ~tudo"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "A protecção de células só é activada depois da folha actual ter sido protegida. \n\nSeleccione 'Proteger documento' no menu 'Ferramentas' e 'Folha'."
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
+#, fuzzy
 msgid  "Protection"
 msgstr "Protecção"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "Ocultar na ~impressão"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
+#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "As células seleccionadas serão omitidas na impressão."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
+#, fuzzy
 msgid  "Print"
 msgstr "Imprimir"
 
@@ -3483,7 +3741,7 @@ msgstr "Ordenar"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 #, fuzzy
 msgid  "Filter"
-msgstr "Filtro"
+msgstr "Filtrar"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DBDATA.String.Text
 #, fuzzy
@@ -3750,9 +4008,8 @@ msgid  "No operations to execute"
 msgstr "Não existem operações para executar"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-#, fuzzy
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "O intervalo não contém cabeçalhos de coluna.\nPretende que a primeira linha seja utilizada como cabeçalho de coluna?"
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -3830,9 +4087,8 @@ msgid  "Search key not found."
 msgstr "Chave de procura não encontrada."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-#, fuzzy
-msgid  "Goal Seek successful.\n"
-msgstr "Pesquisa do valor destino bem sucedida.\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 #, fuzzy
@@ -3845,14 +4101,12 @@ msgid  ") into current cell?"
 msgstr ") na célula actual?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-#, fuzzy
-msgid  "Goal Seek not successful.\n"
-msgstr "Pesquisa do valor destino sem êxito.\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-#, fuzzy
-msgid  "No exact value found. \n"
-msgstr "Não foi encontrado um valor exacto. \n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -4214,38 +4468,1363 @@ msgid  "Text Attributes"
 msgstr "Atributos de texto"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+#, fuzzy
+msgid  "\\"
+msgstr "\\"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+#, fuzzy
+msgid  "PAGE"
+msgstr "PÁGINA"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+#, fuzzy
+msgid  "PAGES"
+msgstr "PÁGINAS"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+#, fuzzy
+msgid  "DATE"
+msgstr "DATA"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+#, fuzzy
+msgid  "TIME"
+msgstr "HORA"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+#, fuzzy
+msgid  "FILE"
+msgstr "FICHEIRO"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+#, fuzzy
+msgid  "SHEET"
+msgstr "FOLHA"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+#, fuzzy
+msgid  "Protected cells can not be modified."
+msgstr "Não é possível modificar células protegidas."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+#, fuzzy
+msgid  "Document opened in read-only mode."
+msgstr "Documento aberto no modo só leitura"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+#, fuzzy
+msgid  "You cannot change only part of an array."
+msgstr "Não é possível alterar apenas uma parte de uma matriz."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+#, fuzzy
+msgid  "Header"
+msgstr "Cabeçalho"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+#, fuzzy
+msgid  "Footer"
+msgstr "Rodapé"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+#, fuzzy
+msgid  "Err:"
+msgstr "Err:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+#, fuzzy
+msgid  "Error: Ranges do not intersect"
+msgstr "Erro: Intervalos não intersectados"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+#, fuzzy
+msgid  "Error: Division by zero"
+msgstr "Erro: Divisão por zero"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+#, fuzzy
+msgid  "Error: Wrong data type"
+msgstr "Erro: Tipo de dados incorrecto"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+#, fuzzy
+msgid  "Error: Not a valid reference"
+msgstr "Erro: referência não válida"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+#, fuzzy
+msgid  "Error: Invalid name"
+msgstr "Erro: nome inválido"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+#, fuzzy
+msgid  "Error: Invalid numeric value"
+msgstr "Erro: Valor numérico inválido"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+#, fuzzy
+msgid  "Error: Value not available"
+msgstr "Erro: valor não disponível"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "#ADDIN?"
+msgstr "#SUPLEMENTO?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "Error: Add-in not found"
+msgstr "Erro: suplemento não encontrado"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "#MACRO?"
+msgstr "#MACRO?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "Error: Macro not found"
+msgstr "Erro: macro não encontrada"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+#, fuzzy
+msgid  "Internal syntactical error"
+msgstr "Erro de sintaxe interno"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+#, fuzzy
+msgid  "Error: Invalid argument"
+msgstr "Erro: argumento inválido"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+#, fuzzy
+msgid  "Error in parameter list"
+msgstr "Erro na lista de parâmetros"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+#, fuzzy
+msgid  "Error: Invalid character"
+msgstr "Erro: carácter inválido"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+#, fuzzy
+msgid  "Error: Invalid semicolon"
+msgstr "Erro: ponto e vírgula inválido"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+#, fuzzy
+msgid  "Error: in bracketing"
+msgstr "Erro: parênteses incorrectos"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+#, fuzzy
+msgid  "Error: Operator missing"
+msgstr "Erro: operador em falta"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+#, fuzzy
+msgid  "Error: Variable missing"
+msgstr "Erro: variável em falta"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+#, fuzzy
+msgid  "Error: Formula overflow"
+msgstr "Erro: fórmula demasiado extensa"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+#, fuzzy
+msgid  "Error: String overflow"
+msgstr "Erro: cadeia demasiado extensa"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+#, fuzzy
+msgid  "Error: Internal overflow"
+msgstr "Erro: foi excedida a capacidade interna"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+#, fuzzy
+msgid  "Error: Circular reference"
+msgstr "Erro: referência circular"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+#, fuzzy
+msgid  "Error: Calculation does not converge"
+msgstr "Erro: o cálculo não é convergente"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+#, fuzzy
+msgid  "Grid color"
+msgstr "Cor da grelha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+#, fuzzy
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "Pretende que o conteúdo das células ocultas seja movido para a primeira célula?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "Filtro"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+#, fuzzy
+msgid  "The target database range does not exist."
+msgstr "O intervalo de base de dados destino não existe."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+#, fuzzy
+msgid  "Invalid increment"
+msgstr "Incremento inválido"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+#, fuzzy
+msgid  "MULTIPLE.OPERATIONS"
+msgstr "OPERAÇÕES.MÚLTIPLAS"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+#, fuzzy
+msgid  "Multiple operations"
+msgstr "Operações múltiplas"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+#, fuzzy
+msgid  "Range"
+msgstr "Intervalo"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "Sim"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "Não"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+#, fuzzy
+msgid  "Protection"
+msgstr "Protecção"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "Fórmulas"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "Ocultar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+#, fuzzy
+msgid  "Print"
+msgstr "Imprimir"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+#, fuzzy
+msgid  "(nested)"
+msgstr " (imbricado)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+#, fuzzy
+msgid  "(optional)"
+msgstr " (opcional)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+#, fuzzy
+msgid  "(required)"
+msgstr " (requerido)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+#, fuzzy
+msgid  "invalid"
+msgstr "inválido(a)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+#, fuzzy
+msgid  "Edit Function"
+msgstr "Editar função"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "Comentários"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "Tem a certeza de que deseja eliminar a(s) folha(s) seleccionada(s)?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "Tem a certeza de que pretende eliminar o cenário seleccionado?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+#, fuzzy
+msgid  "Thesaurus is not available"
+msgstr "O dicionário de sinónimos não está disponível"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+#, fuzzy
+msgid  "Spellcheck not available"
+msgstr "A verificação ortográfica não está disponível"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+#, fuzzy
+msgid  "Import text files"
+msgstr "Importar ficheiros de texto"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+msgid  "Export Text File"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+#, fuzzy
+msgid  "Import Lotus files"
+msgstr "Importar ficheiros do Lotus"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+#, fuzzy
+msgid  "Import DBase files"
+msgstr "Importar ficheiros de base de dados"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+#, fuzzy
+msgid  "DBase export"
+msgstr "Exportação de base de dados"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Export"
+msgstr "Exportação de Dif"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Import"
+msgstr "Importação de Dif"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+#, fuzzy
+msgid  "Default"
+msgstr "Predefinição"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+#, fuzzy
+msgid  "Result"
+msgstr "Resultado"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+#, fuzzy
+msgid  "Result2"
+msgstr "Resultado2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+#, fuzzy
+msgid  "Heading"
+msgstr "Cabeçalho"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+#, fuzzy
+msgid  "Heading1"
+msgstr "Cabeçalho1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "Relatório"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+#, fuzzy
+msgid  "Report1"
+msgstr "Relatório1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+#, fuzzy
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "A procura de sinónimos só é possível em células de texto!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+#, fuzzy
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "Pretende continuar a verificação ortográfica no início da folha actual?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+#, fuzzy
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "Está concluída a verificação ortográfica desta folha."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+#, fuzzy
+msgid  "No language set"
+msgstr "Não foi definido qualquer idioma"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+#, fuzzy
+msgid  "Insert Sheet"
+msgstr "Inserir folha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+#, fuzzy
+msgid  "Delete Sheets"
+msgstr "Eliminar folhas"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+#, fuzzy
+msgid  "Rename Sheet"
+msgstr "Mudar o nome da folha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+#, fuzzy
+msgid  "Color Tab"
+msgstr "Cor do separador"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+#, fuzzy
+msgid  "Color Tabs"
+msgstr "Cores do separador"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+#, fuzzy
+msgid  "Move Sheets"
+msgstr "Mover folhas"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+#, fuzzy
+msgid  "Copy Sheet"
+msgstr "Copiar folha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+#, fuzzy
+msgid  "Append sheet"
+msgstr "Anexar folha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+#, fuzzy
+msgid  "Show Sheet"
+msgstr "Mostrar folha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+#, fuzzy
+msgid  "Hide sheet"
+msgstr "Ocultar folha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+#, fuzzy
+msgid  "Flip sheet"
+msgstr "Virar folha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+#, fuzzy
+msgid  "Toggle the use of R1C1 notation"
+msgstr "Alternar a utilização da notação R1C1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+#, fuzzy
+msgid  "Main Title"
+msgstr "Título principal"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+#, fuzzy
+msgid  "Subtitle"
+msgstr "Subtítulo"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+#, fuzzy
+msgid  "X axis title"
+msgstr "Título do eixo X"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+#, fuzzy
+msgid  "Y axis title"
+msgstr "Título do eixo Y"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+#, fuzzy
+msgid  "Z axis title"
+msgstr "Título do eixo Z"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+#, fuzzy
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "A nova tabela contém referências absolutas a outras tabelas que poderão estar incorrectas!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+#, fuzzy
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr "Devido a nomes idênticos foi modificado o nome de um intervalo no documento destino!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+#, fuzzy
+msgid  "AutoFilter not possible"
+msgstr "Não é possível aplicar o filtro automático"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr "O %PRODUCTNAME Calc efectuou a procura até ao início da folha. Pretende continuar a partir do final?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr "O %PRODUCTNAME Calc efectuou a procura até ao fim da folha. Pretende continuar a partir do início?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+#, fuzzy
+msgid  "Find & Replace"
+msgstr "Localizar e substituir"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "O %PRODUCTNAME Calc efectuou a procura até ao início do documento. Pretende continuar a partir do final?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr "O %PRODUCTNAME Calc efectuou a procurar até ao fim do documento. Pretende continuar a partir do início?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+#, fuzzy
+msgid  "Replace existing definition of #?"
+msgstr "Substituir definição existente de #?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+#, fuzzy
+msgid  "Invalid selection for range names"
+msgstr "Selecção inválida para nomes de intervalo."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+#, fuzzy
+msgid  "References can not be inserted above the source data."
+msgstr "Não é possível introduzir referências acima dos dados de origem."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+#, fuzzy
+msgid  "Scenario not found"
+msgstr "Cenário não encontrado"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+#, fuzzy
+msgid  "Do you really want to delete the entry #?"
+msgstr "Tem a certeza de que pretende eliminar a entrada #?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+#, fuzzy
+msgid  "Objects/graphics"
+msgstr "Objectos/objectos gráficos"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+#, fuzzy
+msgid  "Charts"
+msgstr "Gráficos"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+#, fuzzy
+msgid  "Drawing Objects"
+msgstr "Objectos de desenho"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+#, fuzzy
+msgid  "Show"
+msgstr "Mostrar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "Ocultar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+#, fuzzy
+msgid  "Top to bottom"
+msgstr "De cima para baixo"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+#, fuzzy
+msgid  "Left-to-right"
+msgstr "Esquerda para a direita"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "Comentários"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+#, fuzzy
+msgid  "Grid"
+msgstr "Grelha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+#, fuzzy
+msgid  "Row & Column Headers"
+msgstr "Cabeçalhos de linha e de coluna"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "Fórmulas"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+#, fuzzy
+msgid  "Zero Values"
+msgstr "Valores zero"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+#, fuzzy
+msgid  "Print direction"
+msgstr "Orientação da impressão"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+#, fuzzy
+msgid  "First page number"
+msgstr "Número da primeira página"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+#, fuzzy
+msgid  "Reduce/enlarge printout"
+msgstr "Reduzir/ampliar impressão"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+#, fuzzy
+msgid  "Fit print range(s) on number of pages"
+msgstr "Ajustar intervalo(s) de impressão ao número de páginas"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+#, fuzzy
+msgid  "Fit print range(s) to width/height"
+msgstr "Ajustar intervalo(s) de impressão a largura/altura"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+#, fuzzy
+msgid  "Width"
+msgstr "Largura"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height"
+msgstr "Altura"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+#, fuzzy
+msgid  "%1 page(s)"
+msgstr "%1 página(s)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+#, fuzzy
+msgid  "automatic"
+msgstr "automático(a)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+#, fuzzy
+msgid  "Statistics"
+msgstr "Estatísticas"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+#, fuzzy
+msgid  "The link could not be updated."
+msgstr "Não foi possível actualizar a ligação."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+#, fuzzy
+msgid  "File:"
+msgstr "Ficheiro:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+#, fuzzy
+msgid  "Sheet:"
+msgstr "Folha:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+#, fuzzy
+msgid  "Overview"
+msgstr "Descrição geral"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+#, fuzzy
+msgid  "Doc.Information"
+msgstr "Informações sobre o documento"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+#, fuzzy
+msgid  "Created"
+msgstr "Data de criação"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+#, fuzzy
+msgid  "Modified"
+msgstr "Data de modificação"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+#, fuzzy
+msgid  "Printed"
+msgstr "Data de impressão"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "Assunto"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+#, fuzzy
+msgid  "Key words"
+msgstr "Palavras-chave"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "Comentários"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+#, fuzzy
+msgid  "by"
+msgstr "por"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+#, fuzzy
+msgid  "on"
+msgstr "a"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+#, fuzzy
+msgid  "Too many conditions"
+msgstr "Demasiadas condições"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+#, fuzzy
+msgid  "The table could not be inserted."
+msgstr "Não foi possível inserir a tabela."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+#, fuzzy
+msgid  "The sheets could not be deleted."
+msgstr "Não foi possível eliminar as folhas."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+#, fuzzy
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "Não foi possível colar o conteúdo da área de transferência."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+#, fuzzy
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "Não existe espaço suficiente na folha para a inserção pretendida."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+#, fuzzy
+msgid  "No references found."
+msgstr "Não foram encontradas referências."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+#, fuzzy
+msgid  "Source and destination must not overlap."
+msgstr "Não pode existir sobreposição da origem e do destino."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+#, fuzzy
+msgid  "Graphics"
+msgstr "Objectos gráficos"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+#, fuzzy
+msgid  "Invalid name."
+msgstr "Nome inválido."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+#, fuzzy
+msgid  "Selected macro not found."
+msgstr "A macro seleccionada não foi encontrada."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+#, fuzzy
+msgid  "Invalid value."
+msgstr "Valor inválido."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+#, fuzzy
+msgid  "calculating"
+msgstr "a calcular"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+#, fuzzy
+msgid  "sorting"
+msgstr "a ordenar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+#, fuzzy
+msgid  "Adapt row height"
+msgstr "Ajustar altura da linha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+#, fuzzy
+msgid  "Compare #"
+msgstr "Comparar #"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+#, fuzzy
+msgid  "Delete contents"
+msgstr "Eliminar conteúdo"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+#, fuzzy
+msgid  "%1 R  x %2 C"
+msgstr "%1 Z x %2 S"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+#, fuzzy
+msgid  "More..."
+msgstr "Mais..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+#, fuzzy
+msgid  "Invalid range"
+msgstr "Intervalo inválido"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "Filtrar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+#, fuzzy
+msgid  "Sort"
+msgstr "Ordenar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+#, fuzzy
+msgid  "Subtotals"
+msgstr "Subtotais"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "Nenhum(a)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+#, fuzzy
+msgid  "Do you want to replace the contents of #?"
+msgstr "Pretende substituir o conteúdo de #?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+#, fuzzy
+msgid  "Width:"
+msgstr "Largura:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height:"
+msgstr "Altura:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "Ocultar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+#, fuzzy
+msgid  "The object could not be inserted."
+msgstr "Não foi possível inserir o objecto."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+#, fuzzy
+msgid  "<empty>"
+msgstr "<vazio>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+#, fuzzy
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "Célula #1 alterada de '#2' para '#3'"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+#, fuzzy
+msgid  "#1 inserted"
+msgstr "#1 inserido"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+#, fuzzy
+msgid  "#1deleted"
+msgstr "#1 eliminado"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+#, fuzzy
+msgid  "Range moved from #1 to #2"
+msgstr "Intervalo movido de #1 para #2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+#, fuzzy
+msgid  "Exit Recording"
+msgstr "Cancelar gravação"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+#, fuzzy
+msgid  "The document can not be closed while a link is being updated."
+msgstr "Não é possível fechar o documento durante a actualização da ligação."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Adapt array area"
+msgstr "Adaptar área da matriz"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Array formula  %1 R x %2 C"
+msgstr "Fórmula de matriz %1 Z x %2 S"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+#, fuzzy
+msgid  "Hangul/Hanja Conversion"
+msgstr "Conversão Hangul/Hanja"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+#, fuzzy
+msgid  "Select Cell"
+msgstr "Seleccionar célula"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+#, fuzzy
+msgid  "Select Range"
+msgstr "Seleccionar intervalo"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+#, fuzzy
+msgid  "Select Database Range"
+msgstr "Seleccionar intervalo de base de dados"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+#, fuzzy
+msgid  "Go To Row"
+msgstr "Ir para linha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+#, fuzzy
+msgid  "Go To Sheet"
+msgstr "Ir para folha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+#, fuzzy
+msgid  "Define Name for Range"
+msgstr "Definir nome para intervalo"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+#, fuzzy
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "A selecção tem de ser rectangular para que lhe possa ser atribuído um nome."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+#, fuzzy
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "Tem de introduzir uma referência válida ou escreva um nome válido para o intervalo seleccionado."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "AVISO: Esta acção pode ter resultado em alterações inadvertidas às referências da célula em fórmulas."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr "AVISO: Esta acção pode ter resultado em que as referências à área eliminada não tenham sido restauradas."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+#, fuzzy
+msgid  "(none)"
+msgstr "(nenhum)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+#, fuzzy
+msgid  "of"
+msgstr "de"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+#, fuzzy
+msgid  "of ?"
+msgstr "de ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+#, fuzzy
+msgid  "Created by"
+msgstr "Criado por"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+#, fuzzy
+msgid  "Confidential"
+msgstr "Confidencial"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+#, fuzzy
+msgid  "Customized"
+msgstr "Personalizado"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+#, fuzzy
+msgid  "Custom footer"
+msgstr "Personalizar rodapé"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+#, fuzzy
+msgid  "Chinese conversion"
+msgstr "Conversão para chinês"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+#, fuzzy
+msgid  "You cannot change this part of the pivot table."
+msgstr "Não pode alterar esta parte da tabela do Assistente de dados."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+#, fuzzy
+msgid  "Manual"
+msgstr "Manual"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "Automático"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+#, fuzzy
+msgid  "Nested arrays are not supported."
+msgstr "Não são suportadas matrizes imbricadas."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+#, fuzzy
+msgid  "Text to Columns"
+msgstr "Texto em colunas"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+#, fuzzy
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr "A folha de cálculo foi actualizada com as alterações guardadas por outros utilizadores."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+#, fuzzy
+msgid  "Unknown User"
+msgstr "Utilizador desconhecido"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+#, fuzzy
+msgid  "Cell Styles"
+msgstr "Estilos de célula"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+#, fuzzy
+msgid  "Page Styles"
+msgstr "Estilos de página"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+#, fuzzy
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr "O nome do campo não pode estar vazio. Verifique a primeira linha da origem dos dados para certificar-se de que não existem células vazias."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+#, fuzzy
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr "A tabela DataPilot necessita de pelo menos duas linhas de dados para criar ou actualizar."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+#, fuzzy
+msgid  "Character"
+msgstr "Caracteres"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
+msgid  "Font"
+msgstr "Tipo de letra"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
+msgid  "Font Effects"
+msgstr "Efeitos do tipo de letra"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#, fuzzy
+msgid  "Font Position"
+msgstr "Posição"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "Anterior"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+#, fuzzy
+msgid  "Paragraph"
+msgstr "Parágrafo"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Indents & Spacing"
+msgstr "Avanços e espaçamento"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "Alinhamento"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+#, fuzzy
+msgid  "Asian Typography"
+msgstr "Tipografia asiática"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+#, fuzzy
+msgid  "Tab"
+msgstr "Tabulação"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "Anterior"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+#, fuzzy
+msgid  "AutoFormat"
+msgstr "Formatação automática"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "F~ormat"
+msgstr "F~ormatar"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+#, fuzzy
+msgid  "A~utoFit width and height"
+msgstr "Aj~ustar automaticamente largura e altura"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+#, fuzzy
+msgid  "~Borders"
+msgstr "~Contornos"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+#, fuzzy
+msgid  "F~ont"
+msgstr "~Tipo de letra"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+#, fuzzy
+msgid  "~Pattern"
+msgstr "~Padrão"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+#, fuzzy
+msgid  "Alignmen~t"
+msgstr "A~linhamento"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+#, fuzzy
+msgid  "~Number format"
+msgstr "~Formato numérico"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+#, fuzzy
+msgid  "Formatting"
+msgstr "Formatação"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add..."
+msgstr "~Adicionar..."
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "E~liminar"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+#, fuzzy
+msgid  "~Rename"
+msgstr "~Mudar o nome"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+#, fuzzy
+msgid  "Add AutoFormat"
+msgstr "Adicionar formatação automática"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+#, fuzzy
+msgid  "Rename AutoFormat"
+msgstr "Mudar o nome da formatação automática"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "Nome"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+#, fuzzy
+msgid  "Delete AutoFormat"
+msgstr "Eliminar formatação automática"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "Fec~har"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_JAN.String.Text
+#, fuzzy
 msgid  "Jan"
 msgstr "Jan"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_FEB.String.Text
+#, fuzzy
 msgid  "Feb"
 msgstr "Fev"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MAR.String.Text
+#, fuzzy
 msgid  "Mar"
 msgstr "Mar"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_NORTH.String.Text
+#, fuzzy
 msgid  "North"
 msgstr "Norte"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MID.String.Text
+#, fuzzy
 msgid  "Mid"
 msgstr "Centro"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SOUTH.String.Text
+#, fuzzy
 msgid  "South"
 msgstr "Sul"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SUM.String.Text
+#, fuzzy
 msgid  "Total"
 msgstr "Total"
 
@@ -4957,7 +6536,7 @@ msgstr "Base de dados"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "O intervalo de células que contém dados."
+msgstr "O intervalo de células que contêm dados."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 #, fuzzy
@@ -4992,7 +6571,7 @@ msgstr "Base de dados"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "O intervalo de células que contém dados."
+msgstr "O intervalo de células que contêm dados."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 #, fuzzy
@@ -5382,7 +6961,7 @@ msgstr "Número inteiro entre 1583 e 9956 ou 0 e 99 (19xx ou 20xx dependendo da 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.4.String.Text
 #, fuzzy
 msgid  "month"
-msgstr "Mês"
+msgstr "mês"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.5.String.Text
 #, fuzzy
@@ -5407,7 +6986,7 @@ msgstr "Devolve um número interno para um texto que contenha um formato de data
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "Texto"
+msgstr "texto"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.3.String.Text
 #, fuzzy
@@ -5442,7 +7021,7 @@ msgstr "Data_1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 #, fuzzy
 msgid  "The start date for calculating the difference in days."
-msgstr "A data inicial para o cálculo da diferença em dias."
+msgstr "A data inicial para o cálculo da diferença de dias."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 #, fuzzy
@@ -5572,7 +7151,7 @@ msgstr "Devolve um número sequencial para um texto apresentado numa possível e
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "Texto"
+msgstr "texto"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.3.String.Text
 #, fuzzy
@@ -5727,7 +7306,7 @@ msgstr "Pagamentos regulares. O montante constante da anuidade que é pago em ca
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.8.String.Text
 #, fuzzy
 msgid  "FV"
-msgstr "FV"
+msgstr "Vf"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.9.String.Text
 #, fuzzy
@@ -5837,7 +7416,7 @@ msgstr "Valor actual. O valor actual de um fluxo de pagamentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.8.String.Text
 #, fuzzy
 msgid  "FV"
-msgstr "FV"
+msgstr "VF"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 #, fuzzy
@@ -6012,7 +7591,7 @@ msgstr "Período de pagamento. O número total de períodos em que é paga a anu
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.8.String.Text
 #, fuzzy
 msgid  "pv"
-msgstr "pv"
+msgstr "VA"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.9.String.Text
 #, fuzzy
@@ -6197,7 +7776,7 @@ msgstr "Período de pagamento. O número total de períodos em que é paga a anu
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_ZINS_Z.6.String.Text
 #, fuzzy
 msgid  "pv"
-msgstr "pv"
+msgstr "VA"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_ZINS_Z.7.String.Text
 #, fuzzy
@@ -6557,7 +8136,7 @@ msgstr "Valor actual líquido. Calcula o valor actual líquido de um investiment
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.2.String.Text
 #, fuzzy
 msgid  "RATE"
-msgstr "TAXA"
+msgstr "Taxa"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.3.String.Text
 #, fuzzy
@@ -6567,7 +8146,7 @@ msgstr "A taxa de desconto durante um período."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.4.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "valor "
+msgstr "Valor"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.5.String.Text
 #, fuzzy
@@ -6712,7 +8291,7 @@ msgstr "Vf"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LAUFZ.7.String.Text
 #, fuzzy
 msgid  "The future value of the investment."
-msgstr "O valor futuro do investimento."
+msgstr "Representa o valor futuro de um investimento."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZGZ.1.String.Text
 #, fuzzy
@@ -6757,7 +8336,7 @@ msgstr "Devolve VERDADEIRO, se o valor é uma referência."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.2.String.Text
 #, fuzzy
 msgid  "value"
-msgstr "Valor"
+msgstr "valor"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 #, fuzzy
@@ -7149,7 +8728,7 @@ msgstr "Devolve a soma de todos os argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "Número "
+msgstr "Número"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 #, fuzzy
@@ -7164,7 +8743,7 @@ msgstr "Devolve a soma dos quadrados dos argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "Número"
+msgstr "Número "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 #, fuzzy
@@ -7360,7 +8939,7 @@ msgstr "Devolve a raiz quadrada de um número."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "Número"
+msgstr "Probabilidade"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 #, fuzzy
@@ -7425,7 +9004,7 @@ msgstr "Número_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.5.String.Text
 #, fuzzy
 msgid  "The number of elements selected."
-msgstr "O número de elementos seleccionado."
+msgstr "É o número de elementos seleccionados."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.1.String.Text
 #, fuzzy
@@ -7595,7 +9174,7 @@ msgstr "Devolve o seno de um número."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "Número"
+msgstr "Núm_caracteres"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 #, fuzzy
@@ -7625,7 +9204,7 @@ msgstr "Devolve a tangente de um número."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "Número"
+msgstr "Núm_de_caracteres"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 #, fuzzy
@@ -7655,7 +9234,7 @@ msgstr "Devolve o seno hiperbólico de um número."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "Número"
+msgstr "Núm_caracteres"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 #, fuzzy
@@ -7685,7 +9264,7 @@ msgstr "Devolve a tangente hiperbólica de um número."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "Número"
+msgstr "Núm_vezes"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 #, fuzzy
@@ -7967,7 +9546,7 @@ msgstr "Trunca um número para um inteiro, suprimindo-lhe a casa decimal."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "Número"
+msgstr "número"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.3.String.Text
 #, fuzzy
@@ -7992,7 +9571,7 @@ msgstr "Arredonda um número para uma quantidade de dígitos predefinida."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "Número"
+msgstr "número"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.3.String.Text
 #, fuzzy
@@ -8007,7 +9586,7 @@ msgstr "Núm_dígitos"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 #, fuzzy
 msgid  "The number of places to which a number is to be rounded."
-msgstr "Determina a quantidade de casas decimais para a qual se deseja arredondar."
+msgstr "Determina a quantidade de dígitos para a qual se deseja arredondar."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 #, fuzzy
@@ -8022,7 +9601,7 @@ msgstr "Número"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "O número que pretende arredondar."
+msgstr "O número que pretende arredondar por excesso."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 #, fuzzy
@@ -8197,7 +9776,7 @@ msgstr "Transposição de matriz. Substitui as linhas e colunas de uma matriz."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "Matriz"
+msgstr "Matriz 1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.3.String.Text
 #, fuzzy
@@ -8212,7 +9791,7 @@ msgstr "Multiplicação de matrizes. Devolve o produto matricial de duas matrize
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "Matriz 1"
+msgstr "Matriz 2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.3.String.Text
 #, fuzzy
@@ -8222,7 +9801,7 @@ msgstr "A primeira matriz para obter o produto matricial."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.4.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "Matriz 2"
+msgstr "Matriz"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.5.String.Text
 #, fuzzy
@@ -8237,7 +9816,7 @@ msgstr "Devolve o determinante de uma matriz."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "Matriz"
+msgstr "matriz"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.3.String.Text
 #, fuzzy
@@ -8252,7 +9831,7 @@ msgstr "Devolve a matriz inversa da matriz especificada."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_INV.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "Matriz"
+msgstr "Matriz_tabela"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_INV.3.String.Text
 #, fuzzy
@@ -8302,12 +9881,12 @@ msgstr "Matriz_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.3.String.Text
 #, fuzzy
 msgid  "First array where the square of the arguments are totalled."
-msgstr "Primeira matriz onde o quadrado dos argumentos será totalizado."
+msgstr "Primeira matriz na qual o quadrado dos argumentos será totalizado."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.4.String.Text
 #, fuzzy
 msgid  "array_y"
-msgstr "Matriz_Y"
+msgstr "Matriz _Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.5.String.Text
 #, fuzzy
@@ -8332,7 +9911,7 @@ msgstr "Primeira matriz na qual o quadrado dos argumentos será totalizado."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2DY2.4.String.Text
 #, fuzzy
 msgid  "array_y"
-msgstr "Matriz _Y"
+msgstr "Matriz_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2DY2.5.String.Text
 #, fuzzy
@@ -8372,7 +9951,7 @@ msgstr "Devolve uma distribuição de frequência como matriz vertical."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.2.String.Text
 #, fuzzy
 msgid  "data"
-msgstr "Matriz_dados"
+msgstr "Dados"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.3.String.Text
 #, fuzzy
@@ -8402,7 +9981,7 @@ msgstr "Dados_Y"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "A matriz dos dados Y."
+msgstr "A matriz de dados Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 #, fuzzy
@@ -8412,7 +9991,7 @@ msgstr "Dados_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "A matriz dos dados X."
+msgstr "A matriz de dados X."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 #, fuzzy
@@ -8422,7 +10001,7 @@ msgstr "Tipo_de_rectas"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.7.String.Text
 #, fuzzy
 msgid  "If type = 0 the linears will be calculated through the zero point, or else moved linears."
-msgstr "É um valor lógico que determina se a constante b deve ser igual a 0."
+msgstr "É um valor lógico que determina se a constante b deve ser igual a 0 ou não."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.8.String.Text
 #, fuzzy
@@ -8447,7 +10026,7 @@ msgstr "Dados_Y"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "A matriz de dados Y."
+msgstr "A matriz dos dados y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 #, fuzzy
@@ -8457,7 +10036,7 @@ msgstr "Dados_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "A matriz de dados X."
+msgstr "A matriz dos dados x."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.6.String.Text
 #, fuzzy
@@ -8467,7 +10046,7 @@ msgstr "Tipo_de_função"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.7.String.Text
 #, fuzzy
 msgid  "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x."
-msgstr "É um valor lógico que determina se a constante b deve ser igual a 0."
+msgstr "É um valor lógico que especifica se a constante b deve ser igual a 1."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.8.String.Text
 #, fuzzy
@@ -8492,7 +10071,7 @@ msgstr "Dados_Y"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "A matriz de dados Y."
+msgstr "A matriz dos dados Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.4.String.Text
 #, fuzzy
@@ -8502,7 +10081,7 @@ msgstr "Dados_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 #, fuzzy
 msgid  "The X data array as the basis for the regression."
-msgstr "A matriz de dados como base para a regressão."
+msgstr "A matriz de dados X como base para a regressão."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.6.String.Text
 #, fuzzy
@@ -8537,7 +10116,7 @@ msgstr "Dados_Y"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "A matriz de dados Y."
+msgstr "A matriz dos dados Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.4.String.Text
 #, fuzzy
@@ -8577,7 +10156,7 @@ msgstr "Conta quantos números existem numa lista de argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "Valor"
+msgstr "Valor "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.3.String.Text
 #, fuzzy
@@ -8592,7 +10171,7 @@ msgstr "Conta quantos valores existem na lista de argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "Valor "
+msgstr "Valor"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.3.String.Text
 #, fuzzy
@@ -8607,7 +10186,7 @@ msgstr "Devolve o valor máximo numa lista de argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "Número "
+msgstr "Núm1; núm2;... "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.3.String.Text
 #, fuzzy
@@ -8622,7 +10201,7 @@ msgstr "Devolve o valor máximo numa lista de argumentos. Ao texto é atribuído
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "Valor"
+msgstr "Valor "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.3.String.Text
 #, fuzzy
@@ -8637,7 +10216,7 @@ msgstr "Devolve o valor mínimo de uma lista de argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "Núm1; núm2;... "
+msgstr "Número "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.3.String.Text
 #, fuzzy
@@ -8652,7 +10231,7 @@ msgstr "Devolve o valor mínimo numa lista de argumentos. Ao texto é atribuído
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN_A.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "Valor "
+msgstr "valor "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN_A.3.String.Text
 #, fuzzy
@@ -8672,7 +10251,7 @@ msgstr "Número "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Número 1, número 2,... são argumentos numéricos de 1 a 30 correspondentes a uma amostra de população."
+msgstr "Número 1, número 2, ... são argumentos numéricos de 1 a 30 correspondentes a uma parte da população."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 #, fuzzy
@@ -8732,7 +10311,7 @@ msgstr "Número "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Número 1, número 2, ... são argumentos numéricos de 1 a 30 correspondentes a uma parte da população."
+msgstr "Número 1, número 2, ... são argumentos numéricos de 1 a 30 representando uma população."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_A.1.String.Text
 #, fuzzy
@@ -8822,7 +10401,7 @@ msgstr "Número "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_DEV_SQ.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Número 1, número 2;... são argumentos numéricos de 1 a 30 que representam uma amostra."
+msgstr "Número 1, número 2, ... são argumentos numéricos de 1 a 30 que representam uma amostra."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVE_DEV.1.String.Text
 #, fuzzy
@@ -8882,7 +10461,7 @@ msgstr "Número "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GEO_MEAN.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Número 1, número 2, ... são argumentos numéricos de 1 a 30 que representam uma amostra."
+msgstr "Número 1; número 2;... são argumentos numéricos de 1 a 30 que representam uma amostra."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.1.String.Text
 #, fuzzy
@@ -8897,7 +10476,7 @@ msgstr "Número "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Número 1, número 2, ... são argumentos numéricos de 1 a 30 que representam uma amostra."
+msgstr "Número 1; número 2;... são argumentos numéricos de 1 a 30 que representam uma amostra."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MODAL_VALUE.1.String.Text
 #, fuzzy
@@ -8937,12 +10516,12 @@ msgstr "Devolve o quantil alfa de uma amostra."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.2.String.Text
 #, fuzzy
 msgid  "data"
-msgstr "Dados"
+msgstr "dados"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "A matriz de dados na amostra."
+msgstr "A matriz dos dados na amostra."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 #, fuzzy
@@ -8962,12 +10541,12 @@ msgstr "Devolve um quartil de um conjunto de dados."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.2.String.Text
 #, fuzzy
 msgid  "data"
-msgstr "Dados"
+msgstr "dados"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "A matriz de dados na amostra."
+msgstr "A matriz dos dados na amostra."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.4.String.Text
 #, fuzzy
@@ -8987,7 +10566,7 @@ msgstr "Devolve o maior valor k-ésimo de uma série de dados."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.2.String.Text
 #, fuzzy
 msgid  "data"
-msgstr "Dados"
+msgstr "dados"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.3.String.Text
 #, fuzzy
@@ -8997,12 +10576,12 @@ msgstr "A matriz de dados na amostra."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.4.String.Text
 #, fuzzy
 msgid  "Rank_c"
-msgstr "MAIOR"
+msgstr "MENOR"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.5.String.Text
 #, fuzzy
 msgid  "The ranking of the value."
-msgstr "Representa a posição do valor."
+msgstr "A posição do valor."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.1.String.Text
 #, fuzzy
@@ -9142,7 +10721,7 @@ msgstr "A matriz das probabilidades associadas."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.6.String.Text
 #, fuzzy
 msgid  "Start"
-msgstr "Inicial"
+msgstr "Início"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.7.String.Text
 #, fuzzy
@@ -9167,7 +10746,7 @@ msgstr "Devolve a probabilidade de um resultado de teste utilizando a distribui�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.2.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "Tentativas"
+msgstr "Tentativa_s"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.3.String.Text
 #, fuzzy
@@ -9177,7 +10756,7 @@ msgstr "O número de tentativas."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.4.String.Text
 #, fuzzy
 msgid  "SP"
-msgstr "Probabilidade_s"
+msgstr "Probabilidades_s"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.5.String.Text
 #, fuzzy
@@ -9272,7 +10851,7 @@ msgstr "Calcula a distribuição binomial."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.2.String.Text
 #, fuzzy
 msgid  "X"
-msgstr "Núm_s"
+msgstr "Núm_insucessos"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.3.String.Text
 #, fuzzy
@@ -9282,7 +10861,7 @@ msgstr "O número de sucessos numa série de tentativas."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.4.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "Tentativa_s"
+msgstr "Tentativas"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 #, fuzzy
@@ -9292,7 +10871,7 @@ msgstr "O número total de tentativas."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 #, fuzzy
 msgid  "SP"
-msgstr "Probabilidades_s"
+msgstr "Probabilidade_s"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.7.String.Text
 #, fuzzy
@@ -9317,7 +10896,7 @@ msgstr "Devolve a distribuição binomial negativa."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.2.String.Text
 #, fuzzy
 msgid  "X"
-msgstr "Núm_insucessos"
+msgstr "Exemplo_s"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.3.String.Text
 #, fuzzy
@@ -9442,12 +11021,12 @@ msgstr "O valor médio. O valor médio da distribuição normal."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 #, fuzzy
 msgid  "STDEV"
-msgstr "DESVPAD"
+msgstr "Desvio_padrão"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.7.String.Text
 #, fuzzy
 msgid  "Standard deviation. The standard deviation of the normal distribution."
-msgstr "é o desvio padrão da distribuição."
+msgstr "Desvio padrão. O desvio padrão da distribuição normal."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.8.String.Text
 #, fuzzy
@@ -9637,7 +11216,7 @@ msgstr "Cumulativo"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.7.String.Text
 #, fuzzy
 msgid  "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr "Cumulativo. C=0 calcula a função de densidade, C=1 calcula a distribuição."
+msgstr "Cumulativa. C=0 calcula a função de densidade, C=1 calcula a distribuição."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.1.String.Text
 #, fuzzy
@@ -9772,7 +11351,7 @@ msgstr "Alfa"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.5.String.Text
 #, fuzzy
 msgid  "The Alpha parameter of the Beta distribution."
-msgstr "O parâmetro alfa da distribuição-beta."
+msgstr "é o parâmetro alfa da distribuição-beta."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.6.String.Text
 #, fuzzy
@@ -10112,7 +11691,7 @@ msgstr "Graus_liberdade"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "O número de graus de liberdade da distribuição do Qui-quadrado."
+msgstr "O número de graus de liberdade do Qui-quadrado."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 #, fuzzy
@@ -10172,7 +11751,7 @@ msgstr "Graus_liberdade"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_INV.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "O número de graus de liberdade do Qui-quadrado."
+msgstr "Os graus de liberdade da distribuição Qui-quadrado."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_INV.1.String.Text
 #, fuzzy
@@ -10392,7 +11971,7 @@ msgstr "Dados_1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "A primeira matriz de dados."
+msgstr "O primeiro conjunto de dados."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 #, fuzzy
@@ -10402,7 +11981,7 @@ msgstr "Dados_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "A segunda matriz de dados."
+msgstr "O segundo conjunto de dados."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 #, fuzzy
@@ -10417,7 +11996,7 @@ msgstr "Dados_1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "O primeiro conjunto de dados."
+msgstr "A primeira matriz de registos."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.4.String.Text
 #, fuzzy
@@ -10427,7 +12006,7 @@ msgstr "Dados_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "O segundo conjunto de dados."
+msgstr "A segunda matriz de registos."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.6.String.Text
 #, fuzzy
@@ -10472,7 +12051,7 @@ msgstr "Dados_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "A matriz dos dados x."
+msgstr "A matriz dos dados X."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_INTERCEPT.1.String.Text
 #, fuzzy
@@ -10497,7 +12076,7 @@ msgstr "Dados_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_INTERCEPT.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "A matriz dos dados X."
+msgstr "A matriz de dados X."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SLOPE.1.String.Text
 #, fuzzy
@@ -10522,7 +12101,7 @@ msgstr "Dados_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SLOPE.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "A matriz de dados X."
+msgstr "A matriz dos dados X."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_STEYX.1.String.Text
 #, fuzzy
@@ -10572,7 +12151,7 @@ msgstr "Dados_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "A segunda matriz de registos."
+msgstr "A segunnda matriz de registos."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.1.String.Text
 #, fuzzy
@@ -10597,7 +12176,7 @@ msgstr "Dados_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "A segunnda matriz de registos."
+msgstr "A segunda matriz de registos."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COVAR.1.String.Text
 #, fuzzy
@@ -10727,7 +12306,7 @@ msgstr "Referência"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 #, fuzzy
 msgid  "The reference to a (multiple) range."
-msgstr "É uma referência a um intervalo (múltiplo)."
+msgstr "A referência a um ou vários intervalos de células."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 #, fuzzy
@@ -10737,7 +12316,7 @@ msgstr "Selecciona um valor de uma lista com um máximo de 30 argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.2.String.Text
 #, fuzzy
 msgid  "Index"
-msgstr "Núm_índice"
+msgstr "Índice remissivo"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.3.String.Text
 #, fuzzy
@@ -10767,7 +12346,7 @@ msgstr "Referência"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 #, fuzzy
 msgid  "The reference to a cell or a range."
-msgstr "A referência a células ou intervalos."
+msgstr "A referência a uma célula ou a um intervalo."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 #, fuzzy
@@ -10782,7 +12361,7 @@ msgstr "Referência"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.3.String.Text
 #, fuzzy
 msgid  "The reference to a cell or a range."
-msgstr "A referência a uma célula ou a um intervalo."
+msgstr "A referência de uma célula ou de um intervalo de células"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TABLE.1.String.Text
 #, fuzzy
@@ -10897,7 +12476,7 @@ msgstr "Procura vertical e referência a células indicadas."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_V_LOOKUP.2.String.Text
 #, fuzzy
 msgid  "Search criterion"
-msgstr "Critério de procura"
+msgstr "Valor_procurado"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_V_LOOKUP.3.String.Text
 #, fuzzy
@@ -11017,7 +12596,7 @@ msgstr "Valor_procurado"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.3.String.Text
 #, fuzzy
 msgid  "The value to be used for comparison."
-msgstr "O valor a ser utilizado para comparação."
+msgstr "O valor a ser usado para comparação."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.4.String.Text
 #, fuzzy
@@ -11305,7 +12884,7 @@ msgstr "Converte caracteres ASCII e katakana de meia-largura para largura comple
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "texto"
+msgstr "Texto"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.3.String.Text
 #, fuzzy
@@ -11320,7 +12899,7 @@ msgstr "Converte caracteres ASCII e katakana de largura completa para meia-largu
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "texto"
+msgstr "Texto"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.3.String.Text
 #, fuzzy
@@ -11335,12 +12914,12 @@ msgstr "Devolve o código numérico do primeiro carácter de uma cadeia de texto
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "Texto"
+msgstr "texto"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.3.String.Text
 #, fuzzy
 msgid  "This is the text for which the code of the first character is to be found."
-msgstr "É o texto para o qual deseja encontrar o código do primeiro carácter."
+msgstr "Corresponde ao texto para o qual pretende encontrar o código do primeiro carácter."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CURRENCY.1.String.Text
 #, fuzzy
@@ -11390,7 +12969,7 @@ msgstr "Elimina do texto todos os caracteres não imprimíveis."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "Texto"
+msgstr "texto"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.3.String.Text
 #, fuzzy
@@ -11460,12 +13039,12 @@ msgstr "Texto"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.5.String.Text
 #, fuzzy
 msgid  "The text in which a search is to be made."
-msgstr "O texto que contém o texto que pretende localizar."
+msgstr "O texto que contém o texto que deseja localizar."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.6.String.Text
 #, fuzzy
 msgid  "position"
-msgstr "Posição_inicial"
+msgstr "Núm_inicial"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.7.String.Text
 #, fuzzy
@@ -11580,7 +13159,7 @@ msgstr "Texto"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VALUE.3.String.Text
 #, fuzzy
 msgid  "The text to be converted to a number."
-msgstr "O texto a converter em número."
+msgstr "O texto a converter num número."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TEXT.1.String.Text
 #, fuzzy
@@ -11895,7 +13474,7 @@ msgstr "Raíz"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 #, fuzzy
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "A base numérica para a conversão terá que estar compreendida entre 2 e 36."
+msgstr "A base numérica, a partir da qual será efectuada a conversão, terá que estar compreendida entre 2 e 36."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 #, fuzzy
@@ -11945,7 +13524,7 @@ msgstr "Valor"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 #, fuzzy
 msgid  "The value to be converted."
-msgstr "O valor a converter."
+msgstr "O valor a ser convertido."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 #, fuzzy
@@ -12652,9 +14231,8 @@ msgid  "Font Attributes"
 msgstr "Atributos de caracteres"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-#, fuzzy
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "Na área de transferência encontram-se grandes quantidades de dados.\nColocar o conteúdo da área de transferência à disposição de outras aplicações?"
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -12735,9 +14313,8 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-#, fuzzy
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
-msgstr "O %PRODUCTNAME Calc encontrou um erro na fórmula indicada. \nAceitar a correcção proposta em baixo?\n\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -12790,9 +14367,8 @@ msgid  "~Selected sheets"
 msgstr "~Folhas seleccionadas"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-#, fuzzy
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "Quer substituir o conteúdo das celúlas de destino?"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 #, fuzzy
@@ -14470,198 +16046,247 @@ msgid  "Shrink"
 msgstr "Afastar"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND1.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~1"
 msgstr "Condição ~1"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "Valor da célula é"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "Fórmula é"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "igual a"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "menor do que"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "maior do que"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "menor ou igual a"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "maior ou igual a"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "não igual a"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "entre"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "não entre"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Reduzir"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr "e"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Reduzir"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "~Cell Style"
 msgstr "~Estilo da célula"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND1_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New Style..."
 msgstr "~Novo estilo..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND2.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~2"
 msgstr "Condição ~2"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "Valor da célula é"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "Fórmula é"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "igual a"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "menor do que"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "maior do que"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "menor ou igual a"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "maior ou igual a"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "não igual a"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "entre"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "não entre"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Reduzir"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr "e"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Reduzir"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "C~ell Style"
 msgstr "Es~tilo da célula"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND2_NEW.PushButton.Text
+#, fuzzy
 msgid  "Ne~w Style..."
 msgstr "No~vo estilo..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND3.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~3"
 msgstr "Condição ~3"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "Valor da célula é"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "Fórmula é"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "igual a"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "menor do que"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "maior do que"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "menor ou igual a"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "maior ou igual a"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "não igual a"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "entre"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "não entre"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Reduzir"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr "e"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Reduzir"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "Ce~ll Style"
 msgstr "E~stilo da célula"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND3_NEW.PushButton.Text
+#, fuzzy
 msgid  "New ~Style..."
 msgstr "Novo e~stilo..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.HelpButton.Text
+#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "Formatação condicional"
 
@@ -14869,14 +16494,12 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "O documento é demasiado complexo para cálculo automático. Prima F9 para recalcular."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "O documento contém mais linhas do que o suportado no formato seleccionado.\nAs linhas adicionais não foram guardadas."
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "O documento contém informação não reconhecida por esta versão do programa.\nSe guardar novamente o documento irá eliminar essa informação!"
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 #, fuzzy
@@ -14884,9 +16507,8 @@ msgid  "Not all cell contents could be saved in the specified format."
 msgstr "Não foi possível guardar todos os conteúdos das células no formato especificado."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
-msgstr "Não foi possível converter os seguintes caracteres no conjunto de caracteres seleccionado\ne foram escritos como substitutos de &#1234;:\n\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 #, fuzzy

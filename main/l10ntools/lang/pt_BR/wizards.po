@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Modelo criado usando o <wizard_name> em <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Não foi possível executar o Assistente porque arquivos importantes não foram encontrados.\nEm 'Ferramentas - Opções - %PRODUCTNAME - Caminhos', clique no botão 'Padrão' para redefinir as configurações padrão originais dos caminhos.\nEm seguida, execute novamente o Assistente."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Campos no fo~rmulário"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Os campos binários são sempre listados e selecionáveis na lista à esquerda.\nQuando possível, serão interpretados como imagens."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Um sub-formulário é um formulário inserido em outro formulário.\nUse sub formulários para mostrar dados de tabelas ou consultas com uma relação de um para muitos."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Campos no formulário"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "A associação '<FIELDNAME1>' e '<FIELDNAME2>' foi selecionada duas vezes.\nEntretanto, associações só podem ser utilizados uma única vez."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -733,7 +733,7 @@ msgstr "~Estilos de páginas"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 80.String.Text
 msgid  "Field selection"
-msgstr "Seleção de campos"
+msgstr "Seleção de campo"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 81.String.Text
 msgid  "Set up a subform"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "Defina o nome do formulário"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Já existe um formulário com o nome '%FORMNAME'.\nEscolha outro nome."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "O campo não pode ser inserido porque excede o número máximo de %COUNT campos possíveis na tabela de banco de dados"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "O nome '%TABLENAME' já existe.\nInsira outro nome."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1677,7 +1677,7 @@ msgstr "~Marcas de dobra"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
 msgid  "~Complimentary close"
-msgstr "Encerramento ~cordial"
+msgstr "Encerramento ~cortês"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
 msgid  "~Footer"
@@ -1685,7 +1685,7 @@ msgstr "~Rodapé"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
 msgid  "~Use user data for return address"
-msgstr "~Utilizar os dados do usuário como remetente"
+msgstr "~Utilizar dados do usuário como remetente"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
 msgid  "~New sender address:"
@@ -1693,11 +1693,11 @@ msgstr "~Novo endereço de remetente:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
 msgid  "Use placeholders for ~recipient's address"
-msgstr "Utilizar espaços reservados para o endereço do destina~tário"
+msgstr "Utilizar espaços ~reservados para o endereço do destinatário"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
 msgid  "Use address database for ~mail merge"
-msgstr "Utilizar um banco de dados de endereços para ~mala direta"
+msgstr "Utilizar banco de dados de endereços para ~mala direta"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 msgid  "Include ~only on second and following pages"
@@ -1745,11 +1745,11 @@ msgstr "~Largura:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 34.String.Text
 msgid  "S~pacing to left margin:"
-msgstr "Distância da ma~rgem esq.:"
+msgstr "Distância da margem ~esq.:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 35.String.Text
 msgid  "Spacing ~to top margin:"
-msgstr "Dis~tância da margem sup.:"
+msgstr "Distância da margem ~sup.:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 36.String.Text
 msgid  "Height:"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Assistente da Web"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Esse Assistente da Web destina-se a ajudá-lo a publicar documentos na Internet.\n\nEle converterá os documentos de modo que eles possam ser visualizados por um navegador da web. Além disso, ele irá gerar uma página de índice geral com vínculos para o acesso fácil aos documentos. O Assistente da Web também permitirá que você personalize o design e o layout de seu site.\n\nVocê poderá guardar os documentos que publicou na web e adicionar ou remover documentos a qualquer momento."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "Visualizar"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "As configurações selecionadas serão excluídas.\n\nDeseja realmente excluí-las? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "Não foi possível criar o diretório de FTP '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "O diretório de FTP '%FILENAME' não existe. \nDeseja criá-lo agora?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Não é possível criar o arquivo Zip '%FILENAME': já existe um diretório com o mesmo nome."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Não é possível criar o diretório local '%FILENAME'. \nVerifique se você possui acesso de gravação."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "O diretório de FTP local '%FILENAME' não existe. \nDeseja criá-lo agora?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

@@ -56,8 +56,8 @@ msgid  "Data Source Title"
 msgstr "データソースタイトル"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "%PRODUCTNAME により、システムにすでに存在するアドレスデータにアクセスできます。これを行うために、表形式でアドレスデータを利用できる %PRODUCTNAME データソースが作成されます。\n\nこのウィザードは、データソースの作成に役立ちます。"
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -108,32 +108,32 @@ msgid  "Other external data source"
 msgstr "その他の外部データソース"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "新しいデータソースの設定には、まだいくつかの項目を指定する必要があります。\n\n下にあるボタンをクリックして次のダイアログを開き、そこでまだ指定されてない項目の設定を行います。"
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
 msgstr "設定"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "データベースへは接続できませんでした。\n続行する前に、もう一度選択した設定を確認するか、あるいは前ページに戻って、アドレス帳データソースに別の種類を選択します。"
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr "選択した外部データソースには複数のアドレス帳データが含まれています。\n主に作業に必要なものをその中から選択してください。"
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "テンプレートにアドレス帳データを入力するには、どのフィールドにどのデータが入るかを %PRODUCTNAME が読み取れるようにしておく必要があります。\n\nたとえば、E-mail アドレスは、「email」、「E-mail」、「EM」、あるいはまったく異なった名前のフィールドに保存されている可能性があります。\n\n下にあるボタンをクリックすると、データソース設定用のダイアログが開きます。"
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
 msgstr "フィールドの割り当て"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "これでお使いのアドレス帳データを %PRODUCTNAME に統合する準備が整いました。\n\n最後に %PRODUCTNAME のデータソースに登録する名前を入力します。"
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -160,8 +160,8 @@ msgid  "Please select a type of address book."
 msgstr "アドレス帳の種類をひとつ選択してください"
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr "このデータソースにテーブルはひとつもありません。\nそれでもアドレス帳データソースとして設定しますか。"
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "アドレス帳データとフィールドの割り当て"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "現在、フィールドの割り当てはされていません。\n今すぐに割り当てが決められなければ、あとからでも割り当てできます。\nそのときはメニューの ファイル → ドキュメントテンプレート → アドレス帳ソース... コマンドで実行します。"
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr ""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -216,8 +216,8 @@ msgid  "Data Source"
 msgstr "データソース"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\n"
-msgstr "以下の列名は分類できませんでした。\n"
+msgid  "The following column names could not be assigned:\\n"
+msgstr ""
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -492,8 +492,8 @@ msgid  "Control"
 msgstr "コントロール"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "左側にフォームのデータソースからのすべてのテーブルが表示されています。\n\n\nこの中からリスト内容のベースとなるテーブルを選択してください。"
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -588,8 +588,8 @@ msgid  "Data"
 msgstr "配列"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "このコントロールが属するフォームは、まだデータベースへのリンクが完了していません。\n\nデータソースとテーブルを選択してください。\n\n\nまた、このページでフォームの設定を行うと、ページを閉じるとすぐ有効になりますので、ご注意ください。"
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -736,8 +736,8 @@ msgid  "Welcome"
 msgstr "ようこそ"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr "%PRODUCTNAME %PRODUCTVERSION OEM へようこそ\n\n%PRODUCTNAME %PRODUCTVERSION OEM を始めるにあたり、ライセンス文書に続くダイアログにあなたの個人データを入力してください。%PRODUCTNAME プロダクトディレクトリにある各 readme ファイルには、重要な情報が含まれています。注意してその readme をお読みください。詳しい情報は次の Oracle のウェブサイトでも見ることができます\n\nhttp://www.oracle.com/us/products/applications/open-office"
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr ""
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -816,8 +816,8 @@ msgid  "Forms"
 msgstr "フォーム"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "モデルからデータ型 '#type#' を削除しますか。\n削除すると、このデータ型にバインドされたすべてのコントロールがその影響を受けます。"
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -1393,7 +1393,7 @@ msgstr "値リスト"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
 msgid  "Table"
-msgstr "表"
+msgstr "テーブル"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
 msgid  "Query"
@@ -2296,12 +2296,12 @@ msgid  "Type a name for the new data type:"
 msgstr "新しいデータタイプの名前を入力:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\n Dev~ice"
-msgstr "デバイス\n情報(~I)"
+msgid  "About\\n Dev~ice"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\nPreview"
-msgstr "プレビュー\n作成"
+msgid  "Create\\nPreview"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2356,8 +2356,8 @@ msgid  "Scanner"
 msgstr "スキャナー"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "デバイス: %s\n製造元: %s\nモデル: %s\nタイプ: %s"
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2404,8 +2404,8 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION は最新です。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr "%PRODUCTNAME %NEXTVERSION が使用可能です。\n\nインストールされたバージョンは %PRODUCTNAME %PRODUCTVERSION です。\n\n注: 更新をダウンロードする前に、その更新をインストールするのに十分なアクセス権があることを確認してください。\nパスワード (通常は管理者のパスワードまたはルートパスワード) が必要な場合があります。"
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2420,16 +2420,16 @@ msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "%PRODUCTNAME %NEXTVERSION のダウンロードが次の場所で遅延しました"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "ダウンロードの場所: %DOWNLOAD_PATH\n\n「ツール」→「オプション...」→「%PRODUCTNAME」→「オンライン更新」で、ダウンロード場所を変更できます。"
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME が %DOWNLOAD_PATH にダウンロードされました。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "更新の自動ダウンロードは現在使用できません。\n\n「ダウンロード...」をクリックして、Web サイトから %PRODUCTNAME %NEXTVERSION を手動でダウンロードしてください。"
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2517,7 +2517,7 @@ msgstr "キャンセル"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
 msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME の更新が入手できます"
+msgstr "%PRODUCTNAME の更新ができます"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
 msgid  "Click here to start the download."
@@ -2525,7 +2525,7 @@ msgstr "ダウンロードを開始するには、ここをクリックします
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
 msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME の更新ができます"
+msgstr "%PRODUCTNAME の更新が入手できます"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
 msgid  "Click here for more information."
@@ -2575,6 +2575,6 @@ msgstr "使用可能な拡張機能の更新"
 msgid  "Click here for more information."
 msgstr "詳細は、ここをクリックします。"
 
-#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
 msgid  "Check for ~Updates..."
 msgstr "更新のチェック(~U)..."

@@ -41,7 +41,7 @@ msgstr "$1 ਹਟਾਓ"
 
 #: source/core/undo/undo.src#STR_INSERT_UNDO.String.Text
 msgid  "Insert $1"
-msgstr "$1 ਸ਼ਾਮਿਲ"
+msgstr "$1 ਸ਼ਾਮਲ"
 
 #: source/core/undo/undo.src#STR_OVR_UNDO.String.Text
 msgid  "Overwrite: $1"
@@ -261,7 +261,7 @@ msgstr "ਗੁਣ ਰੋਕੋ"
 
 #: source/core/undo/undo.src#STR_AUTOCORRECT.String.Text
 msgid  "AutoCorrect"
-msgstr "ਆਟੋ-ਠੀਕ"
+msgstr "ਸਵੈ-ਠੀਕ"
 
 #: source/core/undo/undo.src#STR_MERGE_TABLE.String.Text
 msgid  "Merge table"
@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "ਡੌਕੂਮੈਂਟ ਨੂੰ ਮੁਕੰਮਲ ਤੌਰ ਤੇ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "ਇਸ HTML ਡੌਕੂਮੈਂਟ ਵਿੱਚ %PRODUCTNAME ਮੂਲ ਮਾਇਕਰੋ ਹਨ।\n ਇਹਨਾਂ ਨੂੰ ਮੌਜੂਦਾ ਐਕਸਪੋਰਟ ਸੈਟਿੰਗ ਵਿੱਚ ਸੰਭਾਲਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -845,7 +845,7 @@ msgstr "ਸਭ ਸਟਾਈਲ"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_USED.FilterList.item
 msgid  "Applied Styles"
-msgstr "ਲਾਗੂ ਕੀਤੇ ਸਟਾਈਲ"
+msgstr "ਲਾਗੂ ਸਟਾਈਲ"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_USERDEF.FilterList.item
 msgid  "Custom Styles"
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "ਖਾਲੀ ਪੇਜ਼"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "ਤੁਸੀਂ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਵੱਡੀ ਮਾਤਰਾ ਵਿੱਚ ਡਾਟਾ ਸੰਭਾਲਣ ਲਈ ਹੈ।\n ਕੀ ਕਲਿੱਪਬੋਰਡ ਦੇ ਅੰਸ਼ ਹੋਰ ਕਾਰਜਾਂ ਲਈ ਵੀ ਉਪਲੱਬਧ ਰਹਿਣਾ?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "HTML ਫਾਰਮੈਟ 'ਚ ਬਦਲਣ ਨਾਲ\nਜਾਣਕਾਰੀ ਖਤਮ ਹੋ ਸਕਦੀ ਹੈ।\nਕੀ ਤੁਸੀਂ ਡੌਕੂਮੈਂਟ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "ਸਰੋਤ ਤਾਂ ਹੀ ਵੇਖਾਇਆ ਜਾਵੇਗਾ, ਜੇਕਰ ਤੁਸੀਂ ਡੌਕੂਮੈਂਟ ਨੂੰ HTML ਫਾਰਮੈਟ ਵਿੱਚ ਸੰਭਾਲਿਆ\nਕੀ ਤੁਸੀਂ ਡੌਕੂਮੈਂਟ ਨੂੰ HTML ਵਾਂਗ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "ਤੁਹਾਡੇ ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਐਡਰੈੱਸ ਡਾਟਾਬੇਸ ਖੇਤਰ ਹੈ। ਕੀ ਤੁਸੀਂ ਫਾਰਮ ਪੱਤਰ ਛਾਪਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -1573,7 +1573,7 @@ msgstr "ਕੰਟਰੋਲ"
 
 #: source/ui/app/mn.src#MN_DRWTXT_POPUPMENU.String.Text
 msgid  "Draw Object text"
-msgstr "ਆਬਜੈਕਟ ਟੈਕਸਟ ਡਰਾਅ"
+msgstr "ਆਬਜੈਕਟ ਪਾਠ ਬਣਾਓ"
 
 #: source/ui/app/mn.src#MN_REDCOMMENT.FN_DELETE_COMMENT.MenuItem.Text
 msgid  "Delete ~Changes Note"
@@ -2201,7 +2201,7 @@ msgstr "ਮਾਪ ਇਕਾਈ"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.FL_1.FixedLine.Text
 msgid  "Contents"
-msgstr "ਸਮਗੱਰੀ"
+msgstr "ਸਮੱਗਰੀ"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PGRF.CheckBox.Text
 msgid  "~Pictures and objects"
@@ -2209,7 +2209,7 @@ msgstr "ਤਸਵੀਰਾਂ ਤੇ ਆਬਜੈਕਟ(~P)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_CTRLFLD.CheckBox.Text
 msgid  "Form control~s"
-msgstr "ਕੰਟਰੋਲ ਫਾਰਮੈਟ(~s)"
+msgstr "ਲੁਕਵਾਂ ਟੈਕਸਟ(~x)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
 msgid  "Page ba~ckground"
@@ -2217,11 +2217,11 @@ msgstr "ਪੇਜ਼ ਬੈਕਗਰਾਊਂਡ(~c)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 msgid  "Print text in blac~k"
-msgstr "ਟੈਕਸਟ ਕਾਲੇ ਰੰਗ 'ਚ ਪਰਿੰਟ ਕਰੋ(~k)"
+msgstr "ਟੈਕਸਟ ਥਾਂ(~T)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
 msgid  "Hidden te~xt"
-msgstr "ਲੁਕਵਾਂ ਟੈਕਸਟ(~x)"
+msgstr "ਤਸਵੀਰਾਂ ਤੇ ਹੋਰ ਗਰਾਫਿਕਸ ਆਬਜੈਕਟ(~i)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_TEXT_PLACEHOLDER.CheckBox.Text
 msgid  "Text ~placeholder"
@@ -2229,7 +2229,7 @@ msgstr "ਟੈਕਸਟ ਪਲੇਸ-ਹੋਲਡਰ(~p)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.FL_2.FixedLine.Text
 msgid  "Pages"
-msgstr "ਪੇਜ਼"
+msgstr "ਟੈਕਸਟ ਥਾਂ ਹੋਲਡਰ ਪਰਿੰਟ ਕਰਨ ਲਈ ਇਹ ਚੋਣ ਕਰੋ। ਇਹ ਚੋਣ ਬੰਦ ਕਰੋ, ਜੇ ਤੁਸੀਂ ਪਰਿੰਟ-ਆਉਟ 'ਚ ਟੈਕਸਟ ਥਾਂ-ਹੋਲਡਰ ਨਹੀਂ ਚਾਹੁੰਦੇ।"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_LEFTP.CheckBox.Text
 msgid  "~Left pages"
@@ -2241,7 +2241,7 @@ msgstr "ਸੱਜੇ ਸਫ਼ੇ(~R)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT.CheckBox.Text
 msgid  "Broch~ure"
-msgstr "ਪੈਂਫਲਟ(~u)"
+msgstr "ਡੌਕੂਮੈਂਟ ਦੇ ਅੰਤ ਉੱਤੇ ਰੱਖੋ"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT_RTL.CheckBox.Text
 msgid  "Right to Left"
@@ -2273,7 +2273,7 @@ msgstr "ਹੋਰ"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PRINTEMPTYPAGES.CheckBox.Text
 msgid  "Print ~automatically inserted blank pages"
-msgstr "ਦਿੱਤੇ ਖਾਲੀ ਪੇਜ਼ ਆਟੋਮੈਟਿਕ ਹੀ ਪਰਿੰਟ ਕਰੋ(~a)"
+msgstr "ਫਾਰਮ ਕੰਟਰੋਲ(~s)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PAPERFROMSETUP.CheckBox.Text
 msgid  "~Paper tray from printer settings"
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<ਯੂਜ਼ਰ ਸੈਟਿੰਗ>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "ਕੀ ਤੁਸੀਂ ਡਿਫਾਲਟ ਟੈਪਲੇਟ ਦੀ ਅਨੁਕੂਲਤਾ ਚੋਣ ਵਿੱਚ ਤਬਦੀਲੀ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ?\nਇਸ ਨਾਲ ਡਿਫਾਲਟ ਟੈਪਲੇਟ ਦੇ ਅਧਾਰ ਤੇ ਬਣਨ ਵਾਲੇ ਸਭ ਨਵੇਂ ਦਸਤਾਵੇਜ਼ ਪ੍ਰਭਾਵਿਤ ਹੋਣਗੇ।"
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2896,8 +2896,8 @@ msgid  "Caption"
 msgstr "ਸੁਰਖੀ"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "ਸ਼ਾਮਿਲ ਕਰਨ ਸਮੇਂ ਖੁਦ ਹੀ\n ਸੁਰਖੀ ਦਿਓ:"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "ਤੁਸੀਂ ਨੱਥੀ ਕਰਨ ਲਈ ਨਵਾਂ ਨਾਂ ਦਿੱਤਾ ਹੈ। ਜੇ ਤੁਸੀਂ ਕੋਈ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ, ਹੁਣੇ ਲਿਖੋ ਜੀ।"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "ਈ-ਮੇਲ ਰਾਹੀਂ ਪੱਤਰ ਭੇਜਣ ਲਈ %PRODUCTNAME ਨੂੰ ਈ-ਮੇਲ ਖਾਤੇ ਬਾਰੇ ਜਾਣਕਾਰੀ ਚਾਹੀਦੀ ਹੈ, ਜਿਸ ਨੂੰ ਵਰਤਿਆ ਜਾ ਸਕੇ।\n\nਕੀ ਤੁਸੀਂ ਹੁਣ ਈ-ਮੇਲ ਬਾਰੇ ਜਾਣਕਾਰੀ ਹੁਣ ਦੇਣੀ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "~Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "ਸੂਚਨਾ:\n ਸੈਮੀਕਾਲਮ (;) ਨਾਲ ਵੱਖ ਕੀਤੇ ਈ-ਮੇਲ ਐਡਰੈੱਸ ਦਿਓ।"
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "ਭੇਜਣਾ ਅਸਫਲ (ਗਲਤ ਐਡਰੈੱਸ)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "ਤੁਹਾਡੇ %PRODUCTNAME ਬਾਹਰੀ ਬਕਸੇ ਵਿੱਚ ਹਾਲੇ ਵੀ ਈ-ਮੇਲ ਸੁਨੇਹੇ ਮੌਜੂਦ ਹਨ।\n ਕੀ ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਤਰਾਂ ਬੰਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "ਦਸਤਾਵੇਜ਼ ਸੋਧ"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਦਸਤਾਵੇਜ਼ ਲਿਖਿਆ ਜਾਂ ਸੋਧਿਆ ਨਹੀਂ ਤਾਂ ਹੁਣ ਕਰੋ। ਤਬਦੀਲੀਆਂ ਸਭ ਮਿਲਾਨ ਦਸਤਾਵੇਜ਼ਾਂ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਨਗੀਆਂ।\n\n 'ਦਸਤਾਵੇਜ਼ ਸੋਧ...' ਨੂੰ ਦਬਾਉਣ ਨਾਲ ਸਹਾਇਕ ਝਰੋਖੇ ਦੇ ਅਕਾਰ ਆਰਜ਼ੀ ਤੌਰ ਤੇ ਛੋਟਾ ਹੋ ਜਾਵੇਗਾ ਤਾਂ ਕਿ ਤੁਸੀਂ ਪੱਤਰ ਮਿਲਾਨ ਦਸਤਾਵੇਜ਼ ਨੂੰ ਸੋਧ ਸਕੋ। ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਸੋਧ ਕਰਨ ਉਪਰੰਤ ਛੋਟੇ ਝਰੋਖੇ ਵਿੱਚ 'ਪੱਤਰ ਮਿਲਾਨ ਸਹਾਇਕ ਤੋਂ ਵਾਪਸ' ਨੂੰ ਦਬਾਉਣ ਨਾਲ ਸਹਾਇਕ ਤੇ ਵਾਪਸ ਆਇਆ ਜਾ ਸਕਦਾ ਹੈ।"
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "ਮੰਗਿਆ ਕਲਿੱਪਬੋਰਡ ਫਾਰਮੈਟ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।"
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "ਭਾਗ ਫਾਰਮੈਟ ਪੁਰਾਣਾ ਹੈ।\nਇਸ ਨੂੰ ਇਸ ਢੰਗ ਨਾਲ ਤਬਦੀਲ ਕਰਨ ਦੀ ਲੋੜ ਹੈ, ਤਾਂ ਕਿ ਇਸ ਨੂੰ ਸੰਭਾਲਿਆ \nਜਾ ਸਕੇ।\nਕੀ ਇਸ ਨੂੰ ਹੁਣੇ ਤਬਦੀਲ ਕੀਤਾ ਜਾਵੇ?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "ਫੁੱਟਨੋਟ: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "ਪੜਨਯੋਗ ਸਮੱਗਰੀ ਤਬਦੀਲ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ।\nਕਈ ਤਬਦੀਲੀ ਸਵੀਕਾਰ ਨਹੀਂ ਕੀਤੀ ਜਾਵੇਗੀ।"
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "ਚੋਣ"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "ਲੇਬਲ \"%1 / %2\" ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦਾ ਹੈ।\nਕੀ ਤੁਸੀਂ ਇਸ ਉਪਰ ਹੀ ਲਿਖਣਾ ਚਾਹੋਗੇ?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "ਝਲਕ..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "ਆਪਣੇ ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਆਪਣੀ ਪਹੁੰਚ ਵਿਚਲੇ ਡਾਟਾਬੇਸ ਨੂੰ ਡਾਟਾਬੇਸ ਖੇਤਰਾਂ ਰਾਹੀਂ ਹੋਰ ਡਾਟਾਬੇਸਾਂ ਨਾਲ ਤਬਦੀਲ ਕਰਨ ਲਈ ਇਹ ਡਾਈਲਾਗ ਵਰਤੋਂ। ਤੁਸੀਂ ਇੱਕ ਸਮੇਂ ਇੱਕ ਹੀ ਤਬਦੀਲੀ ਕਰ ਸਕਦੇ ਹੋ। ਖੱਬੇ ਪਾਸੇ ਲਿਸਟ ਵਿੱਚ ਬਹੁਤੀ ਚੋਣ ਕਰਨੀ ਸੰਭਵ ਹੈ।\nਡਾਟਾਬੇਸ ਫਾਇਲ ਦੀ ਚੋਣ ਕਰਨ ਲਈ ਝਲਕ ਬਟਨ ਦੀ ਚੋਣ ਕਰੋ।"
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -7833,7 +7833,7 @@ msgstr "ਇੰਡੈਕਸ/ਟੇਬਲ"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_ENTRY.PageItem.Text
 msgid  "Entries"
-msgstr "ਇੰਦਰਾਜ਼"
+msgstr "ਐਂਟਰੀਆਂ"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_STYLES.PageItem.Text
 msgid  "Styles"
@@ -7921,7 +7921,7 @@ msgstr "ਕਾਂਡ"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.FT_LEVEL.FixedText.Text
 msgid  "Evaluate up to level"
-msgstr "ਲੈਵਲ ਤੱਕ ਜਾਂਚ"
+msgstr "ਲੈਵਲ ਤੱਕ ਜਾਂਚੋ"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.FL_CREATEFROM.FixedLine.Text
 msgid  "Create from"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "ਆਟੋ-ਸੋਧ"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "ਆਟੋ-ਸੋਧ ਮੁਕੰਮਲ ਹੋਇਆ।\nਤੁਸੀਂ ਸਭ ਤਬਦੀਲੀਆਂ ਨੂੰ ਮਨਜ਼ੂਰ, ਨਾ-ਮਨਜ਼ੂਰ,\nਜਾਂ ਖਾਸ ਤਬਦੀਲੀਆਂ ਮਨਜ਼ੂਰ ਜਾਂ ਰੱਦ ਕਰ ਸਕਦੇ ਹੋ।"
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "ਜੋੜ"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "ਤੁਸੀਂ ਗਲਤ ਨਾਂ ਦਿੱਤਾ ਹੈ।\nਲੋੜੀਂਦਾ ਆਟੋ-ਫਾਰਮੈਟ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ।\nਵੱਖਰੇ ਨਾਂ ਨਾਲ ਮੁੜ ਕੋਸ਼ਿਸ ਕਰੋ।"
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "ਪਹਿਲੇ ਕਾਲਮ ਨੂੰ ਸੁਰਖੀ ਬਣਾਓ(~C)"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "ਜੇਕਰ ਚੁਣੇ ਸੈੱਲਾਂ ਵਿੱਚ ਲੋੜੀਂਦਾ ਡਾਟਾ ਨਹੀਂ ਤਾਂ ਹੁਣ ਡਾਟੇ ਦੀ ਸੀਮਾ ਚੁਣੋ\n\nਜੇਕਰ ਤੁਸੀਂ ਚਾਰਟ ਵਿੱਚ ਸੈੱਲਾਂ ਨੂੰ ਸ਼ਾਮਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਕਾਲਮ ਅਤੇ ਕਤਾਰ ਲੇਬਲ ਨੂੰ ਰੱਖਣ ਵਾਲੇ ਸੈੱਲ ਚੁਣੋ।"
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10601,7 +10601,7 @@ msgstr "ਵਿਸ਼ੇਸ਼ਤਾ"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FT_TEXTDIRECTION.FixedText.Text
 msgid  "Text ~direction"
-msgstr "ਪਾਠ ਦਿਸ਼ਾ(~D)"
+msgstr "ਟੈਕਸਟ ਦਿਸ਼ਾ(~d)"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 msgid  "Left-to-right"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "ਕੀ ਤੁਸੀਂ ਮੁੱਖ ਪਾਠ ਦੀ ਜਾਂਚ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "ਵੇਖਣ ਖੇਤਰ ਕਮਾਂਡ ਚੋਣ ਚੁਣੀ ਗਈ ਹੈ।\nਕੀ ਤੁਸੀਂ ਖੇਤਰ ਨਾਂ ਨਾਲ ਡੌਕੂਮੈਂਟ ਨੂੰ ਛਾਪਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "ਵਾਕ ਦਾ ਪਹਿਲਾਂ ਸ਼ਬਦ ਵੱਡਾ"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "\"ਸਟੈਂਡਰਡ\" ਕਾਮਿਆਂ ਨੂੰ%1 \\bਪਸੰਦੀਦਾ%2 ਕਾਮਿਆਂ ਨਾਲ ਬਦਲੋ"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[ਸਿਸਟਮ]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "ਵੱਖਰੇ ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਆਸਾਨ ਸ਼ਬਦ-ਜੋੜ ਪਹਿਲਾਂ ਹੀ\nਸਰਗਰਮ ਹੈ"
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "ਵੱਖਰੇ ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਆਸਾਨ ਸਮਾਸੀ-ਚਿੰਨੀਕਰਨ ਪਹਿਲਾਂ ਹੀ\nਸਰਗਰਮ ਹੈ"
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -11413,23 +11413,23 @@ msgstr "WWW ਡੌਕੂਮੈਂਟ"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "ਯੂਜ਼ਰ-ਪ੍ਰਭਾਸ਼ਿਤ1"
+msgstr "ਉਪਯੋਗੀ-ਪ੍ਰਭਾਸ਼ਿਤ1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
-msgstr "ਯੂਜ਼ਰ-ਪ੍ਰਭਾਸ਼ਿਤ2"
+msgstr "ਉਪਯੋਗੀ-ਪ੍ਰਭਾਸ਼ਿਤ2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
 msgid  "User-defined3"
-msgstr "ਯੂਜ਼ਰ-ਪ੍ਰਭਾਸ਼ਿਤ3"
+msgstr "ਉਪਯੋਗੀ-ਪ੍ਰਭਾਸ਼ਿਤ3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
 msgid  "User-defined4"
-msgstr "ਯੂਜ਼ਰ-ਪ੍ਰਭਾਸ਼ਿਤ4"
+msgstr "ਉਪਯੋਗੀ-ਪ੍ਰਭਾਸ਼ਿਤ4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
 msgid  "User-defined5"
-msgstr "ਯੂਜ਼ਰ-ਪ੍ਰਭਾਸ਼ਿਤ5"
+msgstr "ਉਪਯੋਗੀ-ਪ੍ਰਭਾਸ਼ਿਤ5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 msgid  "Short name"

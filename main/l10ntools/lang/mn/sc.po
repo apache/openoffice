@@ -144,8 +144,8 @@ msgid  "Column Fields"
 msgstr "Баганын Талбар"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-msgid  "Row\nFields"
-msgstr "Мөр\nТалбарууд"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -1773,7 +1773,7 @@ msgstr "Жолоодлого"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
 msgid  "Row"
-msgstr "Мөр"
+msgstr "Row"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
 msgid  "Row"
@@ -1781,7 +1781,7 @@ msgstr "Row"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
 msgid  "Column"
-msgstr "Багана"
+msgstr "Column"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
 msgid  "Column"
@@ -2117,7 +2117,7 @@ msgstr "Text Attributes"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "Title"
+msgstr "Гарчиг"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -2268,8 +2268,8 @@ msgid  "~Discard"
 msgstr "Ха~ях"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "Элементийг үнэхээр\n#\nустгах уу?"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 msgid  "Copy List"
@@ -2712,8 +2712,8 @@ msgid  "Hide ~all"
 msgstr "~Бүгдийг далдал"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "Нүдний хамгаалалт зөвхөн идэвхтэй хүснэгт хамгаалалт хийгдсэн тохиолдолд л үйлчилнэ.\n\nҮүний тулд та 'Хэрэгсэл' цэснээс 'Баримт хамгаалах' руу ороод 'Хүснэгт' гэсэн тушаалыг сонгоно уу."
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
 msgid  "Protection"
@@ -2905,7 +2905,7 @@ msgstr "Устгах"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SELATTR.String.Text
 msgid  "Attributes"
-msgstr "Атрибутууд"
+msgstr "Атрибут"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SELATTRLINES.String.Text
 msgid  "Attributes/Lines"
@@ -2973,11 +2973,11 @@ msgstr "Мөр таслалтыг устгах"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DOOUTLINE.String.Text
 msgid  "View Details"
-msgstr "Тодруулгыг харах"
+msgstr "Тодруулга харах"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_REDOOUTLINE.String.Text
 msgid  "Hide details"
-msgstr "Тодруулгыг далдлах"
+msgstr "Тодруулга далдлах"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MAKEOUTLINE.String.Text
 msgid  "Group"
@@ -3232,8 +3232,8 @@ msgid  "No operations to execute"
 msgstr "Үйлдэл гүйцэтгэгдэхгүй"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "Муж баганын толгой агуулаагүй байна.\nТа эхний мөрийг баганын толгойгоор хэрэглэхийг хүсэж байна уу?"
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 msgid  "Error while importing data!"
@@ -3296,8 +3296,8 @@ msgid  "Search key not found."
 msgstr "Хайсан ухагдахуун олдсонгүй."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-msgid  "Goal Seek successful.\n"
-msgstr "Товлосон утгын хайлт амжилттай.\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 msgid  "Insert result ("
@@ -3308,12 +3308,12 @@ msgid  ") into current cell?"
 msgstr ") идэвхтэй нүд рүү оруулах уу?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-msgid  "Goal Seek not successful.\n"
-msgstr "Товлосон утгын хайлт амжилтгүй.\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-msgid  "No exact value found. \n"
-msgstr "Нэмэлт утга байхгүй.\n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 msgid  "Insert closest value ("
@@ -3604,7 +3604,1087 @@ msgid  "Text Attributes"
 msgstr "Бичвэрийн атрибут"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+msgid  "\\"
+msgstr "\\"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+msgid  "PAGE"
+msgstr "Хуудас"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+msgid  "PAGES"
+msgstr "Хуудаснууд"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+msgid  "DATE"
+msgstr "Огноо"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+msgid  "TIME"
+msgstr "Хугацаа"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+msgid  "FILE"
+msgstr "Файл"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+msgid  "SHEET"
+msgstr "хүснэгт"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+msgid  "Protected cells can not be modified."
+msgstr "Түгжигдсэн бүх нүд өөрчлөгдөх боломжгүй."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+msgid  "Document opened in read-only mode."
+msgstr "Баримт зөвхөн унших горимд нээгдсэн"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+msgid  "You cannot change only part of an array."
+msgstr "Матрицын зөвхөн хэсгийг өөрчлөх боломжгүй."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+msgid  "Header"
+msgstr "Толгой"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+msgid  "Footer"
+msgstr "Хөл"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+msgid  "Err:"
+msgstr "Алд:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+msgid  "Error: Ranges do not intersect"
+msgstr "Алдаа: Муж давахцахгүй байна"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+msgid  "Error: Division by zero"
+msgstr "Алдаа: Тэгд хуваагдаж байна"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+msgid  "Error: Wrong data type"
+msgstr "Алдаа: Буруу өгөгдлийн төрөл"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+msgid  "Error: Not a valid reference"
+msgstr "Алдаа: Хүчинтэй заалт олдсонгүй"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+msgid  "Error: Invalid name"
+msgstr "Алдаа: Буруу нэр"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+msgid  "Error: Invalid numeric value"
+msgstr "Алдаа: Хүчингүй тоон утга"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+msgid  "Error: Value not available"
+msgstr "Алдаа: Авах утга алга"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+msgid  "#ADDIN?"
+msgstr "#ADDIN?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+msgid  "Error: Add-in not found"
+msgstr "Алдаа: Нэмэлт олдсонгүй"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+msgid  "#MACRO?"
+msgstr "#МАКРО?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+msgid  "Error: Macro not found"
+msgstr "Алдаа: Макро олдсонгүй"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+msgid  "Internal syntactical error"
+msgstr "Дотоод утгын алдаа"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+msgid  "Error: Invalid argument"
+msgstr "Алдаа: Хүчингүй аргумент"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+msgid  "Error in parameter list"
+msgstr "Параметрийн жагсаалт дахь алдаа"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+msgid  "Error: Invalid character"
+msgstr "Алдаа: Хүчингүй тэмдэгт"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+msgid  "Error: Invalid semicolon"
+msgstr "Алдаа: Хүчингүй цэгтэй таслал"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+msgid  "Error: in bracketing"
+msgstr "Алдаа: хаалтад"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+msgid  "Error: Operator missing"
+msgstr "Алдаа: Оператор байхгүй байна  "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+msgid  "Error: Variable missing"
+msgstr "Алдаа: Хувьсагч дутуу"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+msgid  "Error: Formula overflow"
+msgstr "Алдаа: Томьёоны халилт"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+msgid  "Error: String overflow"
+msgstr "Алдаа: Тэмдэгт мөрийн хаалт"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+msgid  "Error: Internal overflow"
+msgstr "Алдаа: Дотоод халилт"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+msgid  "Error: Circular reference"
+msgstr "Алдаа: Эргэсэн лавлагаа"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+msgid  "Error: Calculation does not converge"
+msgstr "Алдаа: Тооцоолол таарсангүй"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+msgid  "Grid color"
+msgstr "Хүснэгтийн өнгө "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "Далдлагдсан мөрийн агуулгыг эхний нүд рүү зөөх үү?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+msgid  "Filter"
+msgstr "Шүүлтүүр"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+msgid  "The target database range does not exist."
+msgstr "Товлосон өгөгдлийн сангийн муж байхгүй байна."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+msgid  "Invalid increment"
+msgstr "Буруу өсөлт"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+msgid  "MULTIPLE.OPERATIONS"
+msgstr "MULTIPLE.OPERATIONS"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+msgid  "Multiple operations"
+msgstr "Олон тооны үйлдлүүд"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+msgid  "Range"
+msgstr "Муж"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+msgid  "Yes"
+msgstr "Тийм"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+msgid  "No"
+msgstr "Үгүй"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+msgid  "Protection"
+msgstr "Хамгаалалт"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+msgid  "Formulas"
+msgstr "Томьёо"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+msgid  "Hide"
+msgstr "Далдал"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+msgid  "Print"
+msgstr "Хэвлэх"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+msgid  "(nested)"
+msgstr "(шаталсан)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+msgid  "(optional)"
+msgstr "(дурын)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+msgid  "(required)"
+msgstr "(шаардлагатай)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+msgid  "invalid"
+msgstr "Хүчингүй"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+msgid  "Edit Function"
+msgstr "Функц засах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+msgid  "Comments"
+msgstr "Тэмдэглэл"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "Та идэвхтэй хүснэгтийг бүрмөсөн устгахдаа итгэлтэй байна уу?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "Сонгогдсон байдлыг үнэнхээр устгах юм уу? "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+msgid  "Thesaurus is not available"
+msgstr "Тайлбар толь алга"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+msgid  "Spellcheck not available"
+msgstr "Зөв бичгийн дүрэм шалгагч алга"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+msgid  "Import text files"
+msgstr "Бичвэр файл импортлох"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+msgid  "Export Text File"
+msgstr "Бичвэр файл экспортлох"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+msgid  "Import Lotus files"
+msgstr "Lotus файл импортлох"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+msgid  "Import DBase files"
+msgstr "DBase файл импортлох"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+msgid  "DBase export"
+msgstr "DBase экспортлох"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+msgid  "Dif Export"
+msgstr "Dif экспорт"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+msgid  "Dif Import"
+msgstr "Dif импорт"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+msgid  "Default"
+msgstr "Өгөгдмөл"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+msgid  "Result"
+msgstr "Үр дүн"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+msgid  "Result2"
+msgstr "Үр дүн2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+msgid  "Heading"
+msgstr "Гарчиг"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+msgid  "Heading1"
+msgstr "Гарчиг1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+msgid  "Report"
+msgstr "Тайлан"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+msgid  "Report1"
+msgstr "Тайлан1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "Тайлбар толийг зөвхөн бичвэрийн нүдэнд хэрэглэнэ!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "Тухайн хуудасны эхнээс зөв бичгийн дүрмийн шалгалт үргэлжилэх үү?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "Энэ хүснэгтийн зөв бичгийн дүрмийг шалгаж дууслаа."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+msgid  "No language set"
+msgstr "Хэл тогтоогдоогүй байна"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+msgid  "Insert Sheet"
+msgstr "Хүснэгт оруулах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+msgid  "Delete Sheets"
+msgstr "Хүснэгт устгах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+msgid  "Rename Sheet"
+msgstr "Хүснэгт сольж нэрлэх"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+msgid  "Color Tab"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+msgid  "Color Tabs"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+msgid  "Move Sheets"
+msgstr "Хүснэгт зөөх"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+msgid  "Copy Sheet"
+msgstr "Хүснэгт хуулах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+msgid  "Append sheet"
+msgstr "Хүснэгт залгах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+msgid  "Show Sheet"
+msgstr "Хүснэгтийг үзүүл"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+msgid  "Hide sheet"
+msgstr "Хүснэгтийг далдлах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+msgid  "Flip sheet"
+msgstr "Хүснэгт урвуулах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+msgid  "Toggle the use of R1C1 notation"
+msgstr "R1C1 тэмдэглэгээний хэрэглээг тээглүүлэх"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+msgid  "Main Title"
+msgstr "Үндсэн гарчиг"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+msgid  "Subtitle"
+msgstr "Дэд гарчиг"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+msgid  "X axis title"
+msgstr "X тэнхлэгийн гарчиг"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+msgid  "Y axis title"
+msgstr "Y тэнхлэгийн гарчиг"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+msgid  "Z axis title"
+msgstr "Z тэнхлэгийн гарчиг"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "Шинэ хүснэгт нь өөр хүснэгтүүдийн абсолют заалтыг агуулах нь буруу байж магад!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr "Ижил нэрсээс болж өмнө байсан мужийн нэр хүрч очих баримтанд өөрчлөгдсөн байна."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+msgid  "AutoFilter not possible"
+msgstr "Автомат Шүүлтүүр боломжгүй"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME-г хуудасны эхнээс Calc хайж эхэлсэн. Та төгсгөл хүртэл үргэлжлүүлэх үү?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME Calc хүснэгтийн төгсгөл хүртэл хайлаа. Та эхлэлээс үргэлжлүүлэхийг хүсэж байна уу?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+msgid  "Find & Replace"
+msgstr "Хайх & орлуулах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME Calc баримтын эхэнд хүртэл хайлаа. Та төгсгөлөөс үргэлжлүүлэхийг хүсэж байна уу?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME Calc баримтын төгсгөл хүртэл хайлаа. Та эхлэлээс үргэлжлүүлэхийг хүсэж байна уу?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+msgid  "Replace existing definition of #?"
+msgstr "#-н тодорхойлолтыг орлуулах уу?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+msgid  "Invalid selection for range names"
+msgstr "Мужийн нэрийн хувьд хүчингүй сонголт"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+msgid  "References can not be inserted above the source data."
+msgstr "Дээрх эх өгөгдөлд заалт оруулах боломжгүй байна. "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+msgid  "Scenario not found"
+msgstr "Байдал олдсонгүй"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+msgid  "Do you really want to delete the entry #?"
+msgstr "Та # элементийг устгахыг үнэхээр хүсэж байна уу?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+msgid  "Objects/graphics"
+msgstr "Объект/График"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+msgid  "Charts"
+msgstr "Диаграмм"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+msgid  "Drawing Objects"
+msgstr "Дүрслэл объектууд"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+msgid  "Show"
+msgstr "Үзүүл"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+msgid  "Hide"
+msgstr "Далдал"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+msgid  "Top to bottom"
+msgstr "Дээрээс доош"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+msgid  "Left-to-right"
+msgstr "Зүүнээс баруун"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+msgid  "Comments"
+msgstr "Зөвлөмж"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+msgid  "Grid"
+msgstr "Тор"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+msgid  "Row & Column Headers"
+msgstr "Мөр & Баганын толгой"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+msgid  "Formulas"
+msgstr "Томьёо"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+msgid  "Zero Values"
+msgstr "Тэг утга"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+msgid  "Print direction"
+msgstr "Хэвлэх чиглэл"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+msgid  "First page number"
+msgstr "Эхний хуудасны дугаар"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+msgid  "Reduce/enlarge printout"
+msgstr "Хэвлэлтийг агшаах/томруулах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+msgid  "Fit print range(s) on number of pages"
+msgstr "Хэвлэх муж(уудыг) хуудасны тоонд багтаах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+msgid  "Fit print range(s) to width/height"
+msgstr "Хэвлэх муж(уудыг) өргөн/өндөрт багтаах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+msgid  "Width"
+msgstr "Өргөн"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+msgid  "Height"
+msgstr "Өндөр"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+msgid  "%1 page(s)"
+msgstr "%1 хуудас"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+msgid  "automatic"
+msgstr "Автомат"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+msgid  "Statistics"
+msgstr "Статистик"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+msgid  "The link could not be updated."
+msgstr "Холбоос шинэчлэгдэх боломжгүй."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+msgid  "File:"
+msgstr "Файл:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+msgid  "Sheet:"
+msgstr "Хүснэгт:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+msgid  "Overview"
+msgstr "Тойм"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+msgid  "Doc.Information"
+msgstr "Баримтын мэдээлэл"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+msgid  "Created"
+msgstr "Үүсгэсэн"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+msgid  "Modified"
+msgstr "Өөрчлөгдсөн"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+msgid  "Printed"
+msgstr "Хэвлэгдсэн"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+msgid  "Subject"
+msgstr "Гарчиг"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+msgid  "Key words"
+msgstr "Түлхүүр үг"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+msgid  "Comments"
+msgstr "Зөвлөмж"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+msgid  "by"
+msgstr "Хэн"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+msgid  "on"
+msgstr "Залгаатай"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+msgid  "Too many conditions"
+msgstr "Хэтэрхий олон нөхцөл"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+msgid  "The table could not be inserted."
+msgstr "Хүснэгтийг оруулах боломжгүй."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+msgid  "The sheets could not be deleted."
+msgstr "Хүснэгтийг устгах боломжгүй."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "Завсрын хадгалагчийн (клипборд) агуулгыг буулгах боломжгүй."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "Хуудасны энд оруулахад энэ хангалтай зай биш байна."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+msgid  "No references found."
+msgstr "Лавлагаа олдсонгүй"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+msgid  "Source and destination must not overlap."
+msgstr "Эх ба товлосон муж давхцах ёсгүй."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+msgid  "Graphics"
+msgstr "График"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+msgid  "Invalid name."
+msgstr "Хүчингүй нэр."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+msgid  "Selected macro not found."
+msgstr "Сонгосон макро олдсонгүй."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+msgid  "Invalid value."
+msgstr "Хүчингүй утга."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+msgid  "calculating"
+msgstr "тооцоолох"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+msgid  "sorting"
+msgstr "эрэмбэлэх"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+msgid  "Adapt row height"
+msgstr "Мөрийн өндөрийн тааруулах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+msgid  "Compare #"
+msgstr "# харьцуул"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+msgid  "Delete contents"
+msgstr "Агуулга устгах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+msgid  "%1 R  x %2 C"
+msgstr "%1 М  x %2 Б"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+msgid  "More..."
+msgstr "Цааш..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+msgid  "Invalid range"
+msgstr "Хүчингүй муж"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr "Залуурт хүснэгтийн утга"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr "Залуурт хүснэгтийн үр дүн"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr "Залуурт хүснэгтийн ангилал"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr "Залуурт хүснэгтийн гарчиг"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr "Залуурт хүснэгтийн талбар"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr "Залуурт хүснэгтийн булан"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+msgid  "Filter"
+msgstr "Шүүлтүүр"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+msgid  "Sort"
+msgstr "Эрэмбэлэх"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+msgid  "Subtotals"
+msgstr "Завсрын үр дүн"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+msgid  "None"
+msgstr "Байхгүй"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+msgid  "Do you want to replace the contents of #?"
+msgstr "Та #-н агуулгыг орлуулахыг хүсэж байна уу?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+msgid  "Width:"
+msgstr "Өргөн:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+msgid  "Height:"
+msgstr "Өндөр:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+msgid  "Hide"
+msgstr "Далдал"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+msgid  "The object could not be inserted."
+msgstr "Объектыг оруулах боломжгүй."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+msgid  "<empty>"
+msgstr "<хоосон>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "#1 нүд '#2' с '#3' руу солигдов"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+msgid  "#1 inserted"
+msgstr "#1 оруулав"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+msgid  "#1deleted"
+msgstr "#1устав"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+msgid  "Range moved from #1 to #2"
+msgstr "Муж #1-с #2-руу зөөгдөв"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+msgid  "Exit Recording"
+msgstr "Бичлэг дуусгах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+msgid  "The document can not be closed while a link is being updated."
+msgstr "Холбоос шинэчлэгдэж байхад баримтыг хаах боломжгүй."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+msgid  "Adapt array area"
+msgstr "Матрицын мужийг тааруулах"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+msgid  "Array formula  %1 R x %2 C"
+msgstr "Матрицын томьёо  %1 М x %2 Б"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+msgid  "Hangul/Hanja Conversion"
+msgstr "Хангул/Ханжа хувиргалт"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+msgid  "Select Cell"
+msgstr "Нүд сонгох"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+msgid  "Select Range"
+msgstr "Муж сонгох"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+msgid  "Select Database Range"
+msgstr "Өгөгдлийн сангийн мужийг сонго"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+msgid  "Go To Row"
+msgstr "Мөр рүү оч"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+msgid  "Go To Sheet"
+msgstr "Хүснэгт рүү оч"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+msgid  "Define Name for Range"
+msgstr "Мужийн нэрийг тодорхойл"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "Нэр өгөх тушаалын сонголт тэгш өнцөгт байхыг шаардана."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "Та зайлшгүй хүчинтэй заалтыг оруулах эсвэл сонгогдсон мужийн хүчинтэй нэрийг бичиж оруулна."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "САНУУЛГА: Энэ үйлдэл нь томьёоны заалтын нүдийг санаандгүй өөрчлөх үр дүнг үзүүлж магад."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr "СЭРЭМЖЛҮҮЛЭГ: Энэ үйлдэл нь арчигдсан заалтууд буцааж сэргээгээгүй байх үр дүнг үзүүлж магад."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+msgid  "(none)"
+msgstr "(байхгүй)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+msgid  "of"
+msgstr "ын"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+msgid  "of ?"
+msgstr "ын ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+msgid  "Created by"
+msgstr "Үүсгэсэн:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+msgid  "Confidential"
+msgstr "Найдвартай"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+msgid  "Customized"
+msgstr "Өөриймсгөсөн"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+msgid  "Custom footer"
+msgstr "Хэрэглэгчийн тод."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+msgid  "Chinese conversion"
+msgstr "Хятад орчуулга"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+msgid  "You cannot change this part of the pivot table."
+msgstr "Та Залуурт хүснэгтийн энэ хэсгийг өөрчилж чадахгүй."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+msgid  "Manual"
+msgstr "Гараар"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+msgid  "Automatic"
+msgstr "Автоматаар"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+msgid  "Nested arrays are not supported."
+msgstr "Шаталсан матриц дэмжигдээгүй."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+msgid  "Text to Columns"
+msgstr "Баганын бичвэр"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr "Таны хүснэгт баримт бусад хэрэглэгчдийн хадгалсан өөрчлөлтийн хүлээн авлаа."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+msgid  "Unknown User"
+msgstr "Тодорхойгүй хэрэглэгч"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+msgid  "Cell Styles"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+msgid  "Page Styles"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+msgid  "Character"
+msgstr "Тэмдэгт"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+msgid  "Font"
+msgstr "Фонт"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr "Фонтын эффект"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+msgid  "Font Position"
+msgstr "Фонтын байрлал"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+msgid  "Back"
+msgstr "Буцах"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+msgid  "Paragraph"
+msgstr "Параграф"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+msgid  "Indents & Spacing"
+msgstr "Догол мөр & Алслалт"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+msgid  "Alignment"
+msgstr "Жигдрүүлэлт"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+msgid  "Asian Typography"
+msgstr "Ази бичвэрийн хэлбэр"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+msgid  "Tab"
+msgstr "Табулатор"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+msgid  "Back"
+msgstr "Буцах"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+msgid  "AutoFormat"
+msgstr "Автомат хэлбэржүүлэлт"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+msgid  "F~ormat"
+msgstr "~Хэлбэржүүлэлт"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+msgid  "A~utoFit width and height"
+msgstr "~Өндөр болон өргөнийг автоматаар тааруулах"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+msgid  "~Borders"
+msgstr "~Хүрээ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+msgid  "F~ont"
+msgstr "~Фонт"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+msgid  "~Pattern"
+msgstr "~Хэв"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+msgid  "Alignmen~t"
+msgstr "~Жигдрүүлэлт"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+msgid  "~Number format"
+msgstr "~Тооны хэлбэр"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+msgid  "Formatting"
+msgstr "Хэлбэржүүлэлт"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+msgid  "~Add..."
+msgstr "~Нэмэх..."
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "~Устгах"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+msgid  "~Rename"
+msgstr "~Сольж нэрлэх"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+msgid  "Add AutoFormat"
+msgstr "Автомат хэлбэржүүлэлт нэмэх"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+msgid  "Rename AutoFormat"
+msgstr "Автомат хэлбэржүүлэлт сольж нэрлэх"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+msgid  "Name"
+msgstr "Нэр"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+msgid  "Delete AutoFormat"
+msgstr "Автомат хэлбэржүүлэлт устгах"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
@@ -3965,7 +5045,7 @@ msgstr "Муж ~баганын тэмдэглээс агуулж байна"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_UNIQUE.CheckBox.Text
 msgid  "~No duplication"
-msgstr "~Давхардалтгүй"
+msgstr "~Давхцалгүй"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_COPY_RESULT.CheckBox.Text
 msgid  "Copy ~results to..."
@@ -3973,7 +5053,7 @@ msgstr "Ү~р дүнг хуулах..."
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_DEST_PERS.CheckBox.Text
 msgid  "~Keep filter criteria"
-msgstr "~Тогтмол"
+msgstr "~Шүүлтүүрийн шалгуурыг хадгал "
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.RB_COPY_AREA.ImageButton.QuickHelpText
 msgid  "Shrink"
@@ -4221,7 +5301,7 @@ msgstr "Хайлтын нөхцөл"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Хайлтын нөхцөл агуулах нүдний мужийг тодорхойлох."
+msgstr "Хайлтын нөхцөл агуулах нүдний мужийг тодорхойл. "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 msgid  "Counts all non-blank cells of a data range where the content corresponds to the search criteria."
@@ -4577,7 +5657,7 @@ msgstr "Огнооны утгатай харьцуулахаар сарын да
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 msgid  "Number"
-msgstr "Тоо"
+msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 msgid  "The internal number for the date."
@@ -4593,7 +5673,7 @@ msgstr "Огноо_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 msgid  "The start date for calculating the difference in days."
-msgstr "Өдрүүдийн зөрөөг тооцоолж эхлэлийн огноог гаргана."
+msgstr "Өдрийн зөрүүн эрт огноо."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 msgid  "Date_2"
@@ -4601,7 +5681,7 @@ msgstr "Огноо_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.5.String.Text
 msgid  "The end date for calculating the difference in days."
-msgstr "Өдрүүдийн зөрөөг тооцоолж төгсгөлийн огноог гаргана."
+msgstr "Өдрийн зөрүүн орой огноо."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
@@ -4773,7 +5853,7 @@ msgstr "Огнооны дотоод тоон утга."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.4.String.Text
 msgid  "mode"
-msgstr "горим"
+msgstr "давтагдсан дундаж"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.5.String.Text
 msgid  "Indicates the first day of the week (1 = Sunday, other values = Monday)."
@@ -4821,7 +5901,7 @@ msgstr "Тогтмол төлбөр. Үе бүрт нь  жил тутмын т�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.8.String.Text
 msgid  "FV"
-msgstr "FV"
+msgstr "ИҮ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.9.String.Text
 msgid  "Future value. The value (final value) to be attained after the last payment."
@@ -4833,7 +5913,7 @@ msgstr "Төрөл"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Төрөл = 1 нь үе эхэлж байна гэдгийг заана, = 0 нь үеийн төгсгөлийг заана."
+msgstr "Төрөл = 1 нь мөчлөг эхэлж байна гэдгийг заана, = 0 нь мөчлөгийн төгсгөлийг заана."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 msgid  "Future value. Returns the future value of an investment based on regular payments and a constant interest rate."
@@ -4845,7 +5925,7 @@ msgstr "Хүү"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Үе тутмын хүүний түвшин."
+msgstr "Мөчлөг тутмын хүүний түвшин."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 msgid  "NPER"
@@ -4853,7 +5933,7 @@ msgstr "NPER"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Төлбөрийн мөчлөг. Жил тутмын төлбөр (тэтгэмж) хийгдэх мөчлөгүүдийн нийт тоо."
+msgstr "Төлбөрийн мөчлөг. Жил тутмын төлбөр (тэтгэмж) хийх мөчлөгийн нийт тоо."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 msgid  "PMT"
@@ -4889,7 +5969,7 @@ msgstr "Хүү"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Үе тутмын хүүний түвшин."
+msgstr "Үе тутмын хүүгийн түвшин."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 msgid  "PMT"
@@ -4913,7 +5993,7 @@ msgstr "FV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "Цаашдын үнэ.Төгсгөлийн төлбөрийн дараагаар сүүлийн үнэ тогтоолт."
+msgstr "Цаашдын үнэ.Төгсгөлийн төлбөрийн дараагаар эцсийн үнэ тогтоолт."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 msgid  "Type"
@@ -5013,7 +6093,7 @@ msgstr "Төрөл = 1 нь үе эхэлж байна гэдгийг заана
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.12.String.Text
 msgid  "Guess"
-msgstr "Таамаг"
+msgstr "Таамаг утга"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.13.String.Text
 msgid  "Guess. The estimate of the interest rate for the iterative calculating method."
@@ -5033,7 +6113,7 @@ msgstr "Мөчлөг тутмын хүүний түвшин."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 msgid  "Period"
-msgstr "Үе"
+msgstr "Мөчлөг"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.5.String.Text
 msgid  "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one."
@@ -5049,7 +6129,7 @@ msgstr "Төлбөрийн мөчлөг. Жил тутмын төлбөр (тэ�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.8.String.Text
 msgid  "pv"
-msgstr "оү"
+msgstr "PV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.9.String.Text
 msgid  "Present value. The current value of a series of payments"
@@ -5085,7 +6165,7 @@ msgstr "Тайлангийн үеийн хүүний түвшин."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.4.String.Text
 msgid  "Period"
-msgstr "Үе"
+msgstr "Мөчлөг"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.5.String.Text
 msgid  "Period. The period for which the repayments are to be calculated. Per = 1 denotes for the first period, P = NPER for the last"
@@ -5233,7 +6313,7 @@ msgstr "Тодорхой нэг мөчлөгт хөрөнгийн (элэгдэ�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.2.String.Text
 msgid  "Cost"
-msgstr "Үнэ"
+msgstr "Өртөг"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.3.String.Text
 msgid  "Acquisition costs. The initial cost of the asset."
@@ -5241,7 +6321,7 @@ msgstr "Худалдан авалтын өртөг. Хөрөнгийн анхн�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.4.String.Text
 msgid  "Salvage"
-msgstr "Үлдэгдэл"
+msgstr "Үлдэх өртөг"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
@@ -5249,7 +6329,7 @@ msgstr "Үлдэх өртөг. Хөрөнгийн ашиглагдах хуга�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 msgid  "Life"
-msgstr "Амьдрах"
+msgstr "Амьдрал"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
@@ -5257,7 +6337,7 @@ msgstr "Ашиглагдах хугацаа. Хөрөнгийн ашиглагд
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 msgid  "Period"
-msgstr "Үе"
+msgstr "Мөчлөг"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.9.String.Text
 msgid  "Period. The depreciation period which must have the same time unit as average useful life."
@@ -5453,7 +6533,7 @@ msgstr "Нэрлэсэн хүү"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EFFEKTIV.4.String.Text
 msgid  "P"
-msgstr "P"
+msgstr "М"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EFFEKTIV.5.String.Text
 msgid  "Periods. The number of interest payments per year."
@@ -5493,7 +6573,7 @@ msgstr "Нэг мөчлөгийн хөнгөлөлтийн түвшин."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.4.String.Text
 msgid  "value "
-msgstr "утга"
+msgstr "утга "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.5.String.Text
 msgid  "Value 1, value 2,... are 1 to 30 arguments representing payments and income."
@@ -5753,7 +6833,7 @@ msgstr "Хэрэв нүд томьёоны нүд бол ҮНЭН буцаана
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.2.String.Text
 msgid  "reference"
-msgstr "заалт"
+msgstr "хамаарал"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.3.String.Text
 msgid  "The cell to be checked."
@@ -5961,7 +7041,7 @@ msgstr "Бүх аргументын нийлбэрийг буцаана."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 msgid  "number "
-msgstr "тоо"
+msgstr "тоо "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 arguments whose total is to be calculated."
@@ -5973,7 +7053,7 @@ msgstr "Аргументуудын квадратуудын нийлбэрийг
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 msgid  "number "
-msgstr "тоо"
+msgstr "тоо "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 msgid  "Number 1, number 2,... are 1 to 30 arguments for which the sum of the squares is to be calculated."
@@ -6193,7 +7273,7 @@ msgstr "тоо_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.3.String.Text
 msgid  "The total number of elements."
-msgstr "Элементүүдийн нийт тоо."
+msgstr "Нийт элементийн тоо."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.4.String.Text
 msgid  "number_2"
@@ -6213,7 +7293,7 @@ msgstr "тоо_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.3.String.Text
 msgid  "The total number of elements."
-msgstr "Элементүүдийн нийт тоо."
+msgstr "Нийт элементийн тоо."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.4.String.Text
 msgid  "number_2"
@@ -6529,7 +7609,7 @@ msgstr "Тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.3.String.Text
 msgid  "A value greater than 0 for which the logarithm is to be calculated."
-msgstr "Бодогдох логарифмын утга 0 -ээс их байна."
+msgstr "Бодогдох логарифмын утга 0 их байна."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.4.String.Text
 msgid  "Base"
@@ -6677,7 +7757,7 @@ msgstr "тоо хэмжээ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 msgid  "The number of places to which a number is to be rounded."
-msgstr "Бүхэлгэх ёстой орны тоо."
+msgstr "Бүхэлтгэх тооны байрлалын дугаар."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 msgid  "Rounds a number up to the predefined accuracy."
@@ -6689,7 +7769,7 @@ msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 msgid  "The number to be rounded up."
-msgstr "Дээш бүхэлтгэх ёстой тоо."
+msgstr "Бүхэлтгэх ёстой тоо."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 msgid  "count"
@@ -7157,7 +8237,7 @@ msgstr "Аргументын жагсаалтын хамгийн их тоог �
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.2.String.Text
 msgid  "number "
-msgstr "тоо"
+msgstr "тоо "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments for which the largest number is to be determined."
@@ -7181,7 +8261,7 @@ msgstr "Аргументын жагсаалтын хамгийн бага тоо
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.2.String.Text
 msgid  "number "
-msgstr "тоо"
+msgstr "тоо "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments for which the smallest number is to be determined."
@@ -7205,7 +8285,7 @@ msgstr "Түүвэр дээр суурилан дундаж квадрат ха�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.2.String.Text
 msgid  "number "
-msgstr "тоо "
+msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
@@ -7229,7 +8309,7 @@ msgstr "Нэлэнхүй дээр суурилан дундаж квадрат �
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.2.String.Text
 msgid  "number "
-msgstr "тоо "
+msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which represent a population."
@@ -7253,7 +8333,7 @@ msgstr "Түүвэр дээр суурилан стандарт хазайлты
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.2.String.Text
 msgid  "number "
-msgstr "тоо "
+msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
@@ -7277,7 +8357,7 @@ msgstr "Нэлэнхүй дээр суурилан стандарт хазайл
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_P.2.String.Text
 msgid  "number "
-msgstr "тоо"
+msgstr "тоо "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_P.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
@@ -7301,7 +8381,7 @@ msgstr "Түүврийн дундажийг буцаана."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVERAGE.2.String.Text
 msgid  "number "
-msgstr "тоо "
+msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVERAGE.3.String.Text
 msgid  "Number 1, number 2;...are 1 to 30 numeric arguments representing a population sample."
@@ -7645,7 +8725,7 @@ msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "Стандарт энгийн тархалт нь бодогдох утга."
+msgstr "Стандарт нормал тархалтыг нь тооцоологдох утга."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 msgid  "Returns the integral values of the standard normal cumulative distribution."
@@ -7713,7 +8793,7 @@ msgstr "Туршилтын Амжилтын  магадлал."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.8.String.Text
 msgid  "C"
-msgstr "C"
+msgstr "K"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.9.String.Text
 msgid  "Cumulated. C=0 calculates the individual probability, C=1 the cumulated probability."
@@ -7789,7 +8869,7 @@ msgstr "Пуоссоны тархалтыг тооцоолох утга."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 msgid  "mean"
-msgstr "дундаж"
+msgstr "дундаж утга"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 msgid  "Mean. The mean value of the Poisson distribution."
@@ -7797,7 +8877,7 @@ msgstr "Дундаж утга. Пуоссоны тархалтын дундаж 
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.6.String.Text
 msgid  "Cumulative"
-msgstr "K"
+msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -7833,7 +8913,7 @@ msgstr "Стандарт хазайлт. Энгийн тархалтын ста�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.8.String.Text
 msgid  "C"
-msgstr "K"
+msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -7853,7 +8933,7 @@ msgstr "Урвуу энгийн тархалтыг тооцоолох магад
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.4.String.Text
 msgid  "mean"
-msgstr "дундаж"
+msgstr "дундаж утга"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.5.String.Text
 msgid  "The mean value. The mean value of the normal distribution."
@@ -8849,11 +9929,11 @@ msgstr "(үржвэр) мужид харъяалагдах нэгж мужууд
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.2.String.Text
 msgid  "reference"
-msgstr "хамаарал"
+msgstr "заалт"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 msgid  "The reference to a (multiple) range."
-msgstr "Үржвэр мужийн холбоо."
+msgstr "(Үржвэр) мужийн заалт."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 msgid  "Selects a value from a list of up to 30 value arguments."
@@ -8861,7 +9941,7 @@ msgstr "30 хүртэлх аргументуудаас нэгэн утга со�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.2.String.Text
 msgid  "Index"
-msgstr "индекс"
+msgstr "Индекс"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.3.String.Text
 msgid  "The index of the value (1..30) selected."
@@ -8885,7 +9965,7 @@ msgstr "заалт"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 msgid  "The reference to a cell or a range."
-msgstr "Нүд эсвэл мужийн заалт"
+msgstr "Нүд эсвэл мужийн заалт."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 msgid  "Defines the internal row number of a reference."
@@ -9321,7 +10401,7 @@ msgstr "бичвэр"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.3.String.Text
 msgid  "The text to convert."
-msgstr "Хөрвүүлэх бичвэр."
+msgstr "Хөрвүүлэх бичвэр"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.1.String.Text
 msgid  "Converts full-width ASCII and katakana characters to half-width."
@@ -9829,7 +10909,7 @@ msgstr "утга"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 msgid  "The value to be converted."
-msgstr "Хөрвүүлэх утга."
+msgstr "Хувиргах утга."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 msgid  "text"
@@ -10412,8 +11492,8 @@ msgid  "Font Attributes"
 msgstr "Фонтын атрибут"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "Та завсрын хадгалагчид их хэмжээний өгөгдөл хадгалсан байна.\nЗавсрын хадгалагчийн агуулгыг бусад програмд бололцоотой болгох уу?"
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 msgid  "System Options"
@@ -10480,8 +11560,8 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
-msgstr "%PRODUCTNAME Calc оруулсан томьёоноос алдаа илрүүллээ.\nТа доор дэвшүүлсэн залруулга саналыг зөвшөөрч байна уу?\n\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file can not be opened"
@@ -10524,8 +11604,8 @@ msgid  "~Selected sheets"
 msgstr "~Сонгосон хүснэгт"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "Та өгөгдөл агуулж буй нүдэнд өгөгдөл буулгах гэж байна.\nТа одоо өгөгдлийг үнэхээр дарахыг хүсэж байна уу?"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"
@@ -11169,7 +12249,7 @@ msgstr "Тэмдэглэл ~устгах"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_NOTE_VISIBLE.MenuItem.Text
 msgid  "Sho~w Comment"
-msgstr "Тэмдэглэл ү~зүүл"
+msgstr "~Тэмдэглэл харуул"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.SID_CUT.MenuItem.Text
 msgid  "Cu~t"
@@ -11461,15 +12541,15 @@ msgstr "~Томьёо"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELATTRS.CheckBox.Text
 msgid  "For~mats"
-msgstr "~Хэлбэр"
+msgstr "Хэ~лбэржүүлэлт"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELNOTES.CheckBox.Text
 msgid  "~Comments"
-msgstr "~Зөвлөмж"
+msgstr "~Тэмдэглэл"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELOBJECTS.CheckBox.Text
 msgid  "~Objects"
-msgstr "~Объект"
+msgstr "~Объектууд"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.FL_FRAME.FixedLine.Text
 msgid  "Selection"
@@ -12232,20 +13312,20 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "Баримт автомат тооцоолол хийхэд маш төвөгтэй байгаа тул F9 товчийг дарж дахин тооцоол."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "Баримтанд дэмжлэг үзүүлэхээр сонгосон форматаас илүү олон мөрүүд байна.\nИлүүдэл мөрүүд хадгалагдаагүй."
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "Баримт нь энэ програмын хувилбараар танигдахгүй мэдээллийг агуулсан байна.\nБаримтыг дахин хадгалахад энэ мэдээлэл устгагдана."
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 msgid  "Not all cell contents could be saved in the specified format."
 msgstr "Тодорхойлсон форматаар зарим нүд агууламжаа хадгалж чадаагүй."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
-msgstr "Сонгосон тэмдэгтийн олонлог руу дараах тэмдэгтүүд хөрвөж чадахгүй байгаа\nба &#1234; гээр орлуулж бичсэн:\n\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."

@@ -129,7 +129,7 @@ msgstr "عنوان جوڈنئ  كرنئ خعترئ كریو كلیك۔"
 
 #: source/core/glob.src#STR_PRESOBJ_OUTLINE.String.Text
 msgid  "Click to add text"
-msgstr "آوٹ لائن جوڈنئ خعترئ كریو كلك  "
+msgstr "مواد جوڈنئ خعترئ كریو كلك"
 
 #: source/core/glob.src#STR_PRESOBJ_TEXT.String.Text
 msgid  "Click to add text"
@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "سلائڈسن ہنز جاے     بد لٲویو۔"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "  میمری چھئنئ كٲفی!\n ایكشن یی مكلٲونئ ۔"
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -341,7 +341,7 @@ msgstr "فایل فورمیٹ غلطی آی یتھ۪ی  $(ARG1) (سطر، كال
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr " فایل فورمیٹ غلطی آی یتھ۪ی فایلئ ہندس زیلی(دستایوز $(ARG1) منز  $( ARG2  پیٹھ (سطر تئ كالم)۔"
+msgstr " فایل فورمیٹ غلطی آی یتھ۪ی زیلی (دستاویز $(ARG1) منز $(ARG2 جاے پیٹھ (سطر، كالم)"
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
@@ -1732,8 +1732,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr " مہربٲنی كریو نئوِس ایروہیڈس  ناو دئخل۔"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "ژارنئ آمُت ناو چھُ گڈئی موجود \n مہربئنی كریتھ كریو نئو ناو دئخل۔۔"
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "سلائیڈس كریو  دئخل  "
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "تہئ چھئوئ پزپئٹھ یژھان لیول خعرج كرُن  \"$\"?\n نوٹ:سئری آبجیكٹس یتھ لیولئ پیٹھ خعرج كرنئ!   "
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1852,8 +1852,8 @@ msgid  "Insert text frame"
 msgstr "مواد  فریم كریو  دئخل"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr " یہ فنکشن ہیك۪ی نئ ژئرمئتس  آبجیکٹس  ستھ جئری   \nروزیتھ۔"
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1864,8 +1864,8 @@ msgid  "The file could not be loaded!"
 msgstr "فائل  ہیچ نئ لوڈ  كریتھ"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "نئوین صفن ہیند فارمیٹ ین اپناونئ ۔\n تہئ چئھوئ یژھان آبجیكٹس  تئ اپناوئن؟ "
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1884,8 +1884,8 @@ msgid  "~Edit"
 msgstr "~ادارت كریو"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "یہ ایکشن ہیك۪ی  ان ڈن ایکشن كس  لسٹس  خئرج کریتھ۔دستاویزك پتم۪ی  تبدیلی چھئ ون۪ی تئ منظور،\n مگر ان ڈن ہیكن نئ گژیتھ۔ تہئ چھئوئ یژھان جئری تھٲوئن تئ نئوئ سلایڈ ڈیزاین دین؟ "
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1904,8 +1904,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "دستاویزی فارمیٹ یی نئ  مختص پرنٹرپرس پ۪یٹھ سیٹ كرنئ۔"
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "یہ ترسیم چھئ  دستاویزس سعتھ لنک  ۔ \n  تہئ چھئوئ ادارت كرنئ گریپھیكس اَن لنك یژھان كرُن؟"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2016,8 +2016,8 @@ msgid  " (Outline)"
 msgstr " (آؤٹ لائن)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "مختص شدہ  سکیل چھئ نا منظور   \nتہئ چھئوئ یژھان نئو دئخل كرُن؟"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2300,8 +2300,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "سئری ڈرائینگ آبجیکٹس  ان گروپ کرُن اوس نئ  ممکن ۔"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "یتھ ناوس سعتھ چھُ دیزاین گڈئی موجود۔\n تہئ چھئوئ یژھان یئ بدلاوُن؟  "
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2416,8 +2416,8 @@ msgid  "Graphics filter"
 msgstr "شکل فلٹر"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-msgid  "The file %\nis not a valid sound file !"
-msgstr "  ! چھنئ منظورساؤنڈفائل   %\nفائل"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"

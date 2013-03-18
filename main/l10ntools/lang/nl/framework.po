@@ -136,24 +136,24 @@ msgid  "Retry"
 msgstr "Opnieuw proberen"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "%PRODUCTNAME kan belangrijke interne informatie niet opslaan vanwege onvoldoende vrije schijfruimte op de volgende locatie:\n%PATH\n\nU kunt pas weer verder werken met %PRODUCTNAME wanneer u meer vrije schijfruimte hebt toegewezen aan die locatie.\n\nKlik op 'Opnieuw proberen' nadat u meer vrije schijfruimte hebt toegewezen, om opnieuw te proberen de gegevens op te slaan.\n\nc"
+msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
+msgstr ""
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
 msgstr "Her~stellen"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "Er is een fout opgetreden bij het laden van de configuratie van de gebruikersinterface. De toepassing wordt nu afgesloten. \nProbeer het probleem te verhelpen door de toepassing opnieuw te installeren."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "Er is een fout opgetreden bij het laden van de configuratie van de gebruikersinterface. De toepassing wordt nu afgesloten.\nProbeer het probleem te verhelpen door uw gebruikersprofiel te verwijderen."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "Er is een fout opgetreden bij het laden van de configuratie van de gebruikersinterface. De toepassing wordt nu afgesloten.\nVerwijder uw gebruikersprofiel van de toepassing of probeer het probleem te verhelpen door de toepassing opnieuw te installeren."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

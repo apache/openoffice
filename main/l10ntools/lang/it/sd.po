@@ -53,7 +53,7 @@ msgstr "Linee di quotatura"
 
 #: source/core/glob.src#STR_PAGE.String.Text
 msgid  "Slide"
-msgstr "Pagina"
+msgstr "Diapositiva"
 
 #: source/core/glob.src#STR_PAGE_NAME.String.Text
 msgid  "Page"
@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "Sposta pagine"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "Memoria insufficiente!\nL'operazione verrà interrotta."
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -413,7 +413,7 @@ msgstr "HTML standard con ~frame"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RadioButton.Text
 msgid  "~Automatic"
-msgstr "~Automatico"
+msgstr "Automatico"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RadioButton.Text
 msgid  "~WebCast"
@@ -1732,8 +1732,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Digitate un nome per la nuova estremità di linea:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "Nome scelto già esistente. \nDigitate un altro nome."
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "Inserisci pagine"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "Volete davvero eliminare il livello $?\nNota: verranno eliminati anche tutti gli oggetti presenti sul livello!"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1852,8 +1852,8 @@ msgid  "Insert text frame"
 msgstr "Inserisci una cornice di testo"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "La funzione non può essere eseguita con gli \noggetti selezionati."
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1864,8 +1864,8 @@ msgid  "The file could not be loaded!"
 msgstr "Impossibile caricare il file."
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "Il formato della nuova pagina viene adattato.\nVolete adattare anche gli oggetti?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1884,8 +1884,8 @@ msgid  "~Edit"
 msgstr "Modifica"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "Questa azione elimina l'elenco delle azioni che possono\n essere annullate. Le modifiche effettuate fino a questo momento rimangono inalterate\nma non si potranno più annullare. Volete proseguire\ne assegnare la nuova struttura di diapositiva?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1904,8 +1904,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "Non è stato possibile impostare nella stampante il formato del documento."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "Questra immagine è collegata con il documento. \nDesiderate scollegare l'immagine per poterla modificare?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2016,8 +2016,8 @@ msgid  " (Outline)"
 msgstr "(Struttura)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "La scala specificata non è valida.\nDigitarne una nuova?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2300,8 +2300,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Impossibile separare tutti gli oggetti del disegno dal gruppo."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "Un design con questo nome esiste già.\nVolete sovrascriverlo?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2416,8 +2416,8 @@ msgid  "Graphics filter"
 msgstr "Filtro grafico"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-msgid  "The file %\nis not a valid sound file !"
-msgstr "Il file %\nnon è un file di suono valido."
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2921,7 +2921,7 @@ msgstr "A destra"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
 msgid  "~Top"
-msgstr "In alto"
+msgstr "In ~alto"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
 msgid  "C~enter"
@@ -3285,7 +3285,7 @@ msgstr "Nascondi ~diapositiva"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
 msgid  "~Group"
-msgstr "Ra~ggruppa"
+msgstr "Raggruppa"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
 msgid  "~Ungroup"
@@ -5297,7 +5297,7 @@ msgstr "Duplica diapositiva"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
 msgid  "Table Design"
-msgstr "Struttura tavole"
+msgstr "Struttura tabella"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
 msgid  "Show"

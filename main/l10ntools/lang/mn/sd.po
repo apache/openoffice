@@ -37,7 +37,7 @@ msgstr "Дэвсгэр"
 
 #: source/core/glob.src#STR_LAYER_BCKGRNDOBJ.String.Text
 msgid  "Background objects"
-msgstr "Дэвсгэрийн объектүүд"
+msgstr "Дэвсгэрийн объектууд"
 
 #: source/core/glob.src#STR_LAYER_LAYOUT.String.Text
 msgid  "Layout"
@@ -129,7 +129,7 @@ msgstr "Гарчиг нэмэх бол товшино уу"
 
 #: source/core/glob.src#STR_PRESOBJ_OUTLINE.String.Text
 msgid  "Click to add text"
-msgstr "Бүдүүвч нэмэх бол товшино уу"
+msgstr "Бичвэр нэмэх бол товшино уу"
 
 #: source/core/glob.src#STR_PRESOBJ_TEXT.String.Text
 msgid  "Click to add text"
@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "Слайдуудыг зөөх"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "Хангалттай сул зай алга!\nҮйлдэл цуцлагдана."
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -789,7 +789,7 @@ msgstr "Эффект"
 
 #: source/ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_DURATION.PageItem.Text
 msgid  "Timing"
-msgstr "Үзүүлэх хугацаа"
+msgstr "Үргэлжлэх хугацаа"
 
 #: source/ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_TEXT.PageItem.Text
 msgid  "Text Animation"
@@ -897,7 +897,7 @@ msgstr "Хүлээлт"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.MF_START_DELAY.MetricField.CustomUnitText
 msgid  "sec"
-msgstr "секунд"
+msgstr "сек"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_DURATION.FT_DURATION.FixedText.Text
 msgid  "Speed"
@@ -1732,8 +1732,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Шинэ сумны толгойны нэрийг оруулна уу:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "Таны сонгосон нэр аль хэдийн байна.\nӨөр нэр оруулна уу."
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "Слайд оруулах"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "Та үнэхээр төвшнийг устгахыг хүсэж байна уу \"$\"?\nСанамж: Төвшин дээрх бүх объект устах болно!"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1852,8 +1852,8 @@ msgid  "Insert text frame"
 msgstr "Бичвэр блок оруулах"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "Функцийг сонгосон объектуудтай \nажиллуулж чадахгүй."
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1864,8 +1864,8 @@ msgid  "The file could not be loaded!"
 msgstr "Файлыг ачаалж чадахгүй!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "Шинэ хуудаснуудын хэлбэржүүлэлтүүдийг тааруулах болно.\nТа объектуудыг мөн тааруулахыг хүсэж байна?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1884,8 +1884,8 @@ msgid  "~Edit"
 msgstr "~Засах"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "Энэ үйлдэл буцааж болох ажлын алхмуудын \nжагсаалтыг устгана. Өнөөг хүртэл баримтад хийгдсэн өөрчлөлт\nхүчинтэй үлдэх боловч буцаах боломжгүй болно.\nТа энэ хэлбэржүүлэлтээр үргэлжлүүлэхийг хүсэж байна уу?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1904,8 +1904,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "Баримтын форматыг сонгосон хэвлэгчид олгох боломжгүй."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "Энэ график өөр баримт руу холбогдсон байна. \nТа графикийг засахын тулд холбоосыг таслахыг хүсэж байна уу?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2016,8 +2016,8 @@ msgid  " (Outline)"
 msgstr " (Бүдүүвч)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "Тодорхойлсон масштаб хүчингүй.\nТа шинийг оруулахыг хүсэж байна уу?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2300,8 +2300,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Бүх зургийн объектуудын бүлэглэлийг задлах нь боломжгүй байсан."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "Ийм нэртэй дизайн аль хэдийн байна. \nДарж бичихийг хүсэж байна уу?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2416,8 +2416,8 @@ msgid  "Graphics filter"
 msgstr "Графикийн шүүлтүүр"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-msgid  "The file %\nis not a valid sound file !"
-msgstr "Файл %\nнь хүчингүй дууны файл байна !"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2781,7 +2781,7 @@ msgstr "~Байрлал ба хэмжээ..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
 msgid  "Edit ~Points"
-msgstr "~Цэгүүдийг засах"
+msgstr "~Цэгүүд засах"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
 msgid  "Arra~nge"
@@ -2933,7 +2933,7 @@ msgstr "~Доод"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
 msgid  "Close ~Object"
-msgstr "~Объектыг хаах"
+msgstr "~Объект хаах"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
 msgid  "Edit ~Points"
@@ -3285,7 +3285,7 @@ msgstr "~Слайд далдлах"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
 msgid  "~Group"
-msgstr "~Бүлэг"
+msgstr "~Бүлэглэх"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
 msgid  "~Ungroup"
@@ -5133,7 +5133,7 @@ msgstr "Чанар"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RadioButton.Text
 msgid  "Default"
-msgstr "Өгөгдмөл"
+msgstr "Өгөгдсөн"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RadioButton.Text
 msgid  "Gra~yscale"

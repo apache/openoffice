@@ -60,8 +60,8 @@ msgid  "Add fonts"
 msgstr " ഫോണ്ട് ചേര്ക്കുക"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr "താങ്കള്ക്ക് ഈ ഫോണ്ട് ഫയല് വീണ്ടും എഴുതണോ  ?%s"
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -72,16 +72,16 @@ msgid  "None"
 msgstr "ഒന്നുമില്ല"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "രൂപരേഖാഫയല് ( .afm എക്സറ്റന്ഷനോടുകൂടിയത്) ഈ ഫോണ്ഡിന‌് കണ്ടെത്താനായില്ല\n%s\nഅതുകൊണ്ട് ഈ ഫോണ്ട് സ്ഥാപിക്കാനാവില്ല. രൂപരേഖ ഫയലുകള് ഗോസ്റ്റ്സക്രിപ്റ്റോടുകൂടി മാത്രമോ സൃഷ്ടിക്കാന് കഴിയു, ഉദാഹരണത്തിന‍്, അതേ ഡയറക്രിയില് തന്നെ ഫോണ്ട് ഫയലായി അഥവാ അതിന്റെ afm ഉപഡയറക്ട്രിയില് ലൊക്കേറ്റ് ചെയ്യാം. ."
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "ഫോണ്ട് ഫയലിന‍് മെട്രിക് ഫയലിന്റെ \n   %s\nപകര്പ്പെടുക്കാന് കഴിയില്ല. ഫോണ്ട്  സ്ഥാപിക്കാന് കഴിയില്ല."
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "ഫോണ്ട് ഫയലിന്റെ  \n   %s\nപകര്പ്പെടുക്കാന് കഴിയില്ല. ഫോണ്ട്  സ്ഥാപിക്കാന് കഴിയില്ല."
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -176,7 +176,7 @@ msgid  "The test page was printed succesfully. Please check the result."
 msgstr "പരീക്ഷണ പേജ് വിജയകരമായി അച്ചടിച്ചു. ദയവായി ഫലം പരിശോധിക്കുക."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
 msgstr ""
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
@@ -288,8 +288,8 @@ msgid  "The file does not contain a metric."
 msgstr "ഫയലില് മെട്രിക് ഇല്ല"
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr "മെട്രിക് \n\n%s\n തന്നിരിക്കുന്ന  കാരണങ്ങളാല് പരിവര്ത്തനം ചെയ്യാനാവില്ല.\n\n"
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr ""
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -352,8 +352,8 @@ msgid  "The driver \"%s\" is always needed and can therefore not be removed."
 msgstr "\"%s\" ഡ്രൈവര് എപ്പോഴും ആവശ്യമാണ‍് അതുകൊണ്ട് അത് നീക്കം ചെയ്യാന് കഴിയില്ല"
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr "\"%s\" ഡ്രൈവര് നീക്കം ചെയ്യാന് കഴിയില്ല. ഫയല് നീക്കം ചെയ്യാനും സാധിക്കില്ല\n\n%s2."
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr ""
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."

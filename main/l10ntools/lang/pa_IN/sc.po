@@ -144,8 +144,8 @@ msgid  "Column Fields"
 msgstr "ਕਾਲਮ ਖੇਤਰ"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-msgid  "Row\nFields"
-msgstr "ਕਤਾਰ\nਖੇਤਰ"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -2117,7 +2117,7 @@ msgstr "ਪਾਠ ਗੁਣ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "ਫਾਇਲ ਨਾਂ"
+msgstr "ਟਾਇਟਲ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -2268,8 +2268,8 @@ msgid  "~Discard"
 msgstr "ਰੱਦ ਕੀਤਾ(~d)"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "ਐਂਟਰੀ \n#\n ਨੂੰ ਹਟਾਉਣਾ ਹੈ?"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 msgid  "Copy List"
@@ -2712,8 +2712,8 @@ msgid  "Hide ~all"
 msgstr "ਸਭ ਓਹਲੇ(~A)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "ਸੈੱਲ ਸੁਰੱਖਿਆ ਤਾਂ ਹੀ ਪ੍ਰਭਾਵੀ ਹੋ ਸਕਦੀ ਹੈ, ਜੇਕਰ ਮੌਜੂਦਾ ਸ਼ੀਟ ਸੁਰੱਖਿਅਤ ਹੋਵੇ।\n\n'ਸੰਦ' ਮੇਨੂ ਵਿੱਚੋਂ 'ਡੌਕੂਮੈਂਟ ਸੁਰੱਖਿਆ' ਚੁਣੋ ਅਤੇ ਤਦ 'ਸ਼ੀਟ' ਦਿਓ।"
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
 msgid  "Protection"
@@ -3232,8 +3232,8 @@ msgid  "No operations to execute"
 msgstr "ਕੋਈ ਕਾਰਵਾਈ ਕਰਨ ਲਈ ਨਹੀਂ ਹੈ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "ਰੇਜ਼ ਵਿੱਚ ਕਾਲਮ ਹੈੱਡਰ ਨਹੀਂ ਹੈ।\n ਕੀ ਤੁਸੀਂ ਪਹਿਲੀ ਸਤਰ ਨੂੰ ਕਾਲਮ ਹੈੱਡਰ ਦੇ ਤੌਰ ਤੇ ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 msgid  "Error while importing data!"
@@ -3296,8 +3296,8 @@ msgid  "Search key not found."
 msgstr "ਖੋਜ ਕੁੰਜੀ ਨਹੀਂ ਲੱਭੀ ਹੈ।"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-msgid  "Goal Seek successful.\n"
-msgstr "ਨਿਸ਼ਾਨਾ ਪ੍ਰਾਪਤੀ ਸਫਲ ਹੈ।\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 msgid  "Insert result ("
@@ -3308,12 +3308,12 @@ msgid  ") into current cell?"
 msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-msgid  "Goal Seek not successful.\n"
-msgstr "ਨਿਸ਼ਾਨਾ ਪ੍ਰਾਪਤੀ ਅਸਫਲ ਹੈ।\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-msgid  "No exact value found. \n"
-msgstr "ਕੋਈ ਸਹੀ ਮੁੱਲ ਨਹੀਂ ਹੈ।\n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 msgid  "Insert closest value ("
@@ -3604,7 +3604,1087 @@ msgid  "Text Attributes"
 msgstr "ਪਾਠ ਗੁਣ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+msgid  "\\"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+msgid  "PAGE"
+msgstr "ਸਫ਼ਾ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+msgid  "PAGES"
+msgstr "ਸਫ਼ੇ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+msgid  "DATE"
+msgstr "ਮਿਤੀ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+msgid  "TIME"
+msgstr "ਸਮਾਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+msgid  "FILE"
+msgstr "ਫਾਇਲ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+msgid  "SHEET"
+msgstr "ਸ਼ੀਟ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+msgid  "Protected cells can not be modified."
+msgstr "ਸੁਰੱਖਿਅਤ ਸੈੱਲਾਂ ਵਿੱਚ ਸੋਧ ਸੰਭਵ ਨਹੀਂ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+msgid  "Document opened in read-only mode."
+msgstr "ਡੌਕੂਮੈਂਟ ਸਿਰਫ਼ ਪੜਨ-ਲਈ ਢੰਗ ਨਾਲ ਖੋਲਿਆ ਗਿਆ ਸੀ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+msgid  "You cannot change only part of an array."
+msgstr "ਤੁਸੀਂ ਲੜੀ ਦੇ ਕਿਸੇ ਭਾਗ ਵਿੱਚ ਸੋਧ ਨਹੀਂ ਕਰ ਸਕਦੇ ਹੋ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+msgid  "Header"
+msgstr "ਹੈਂਡਰ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+msgid  "Footer"
+msgstr "ਫੁੱਟਰ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+msgid  "Err:"
+msgstr "ਗਲਤੀ:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+msgid  "Error: Ranges do not intersect"
+msgstr "ਗਲਤੀ: ਰੇਜ਼ ਕਾਟ ਨਹੀਂ ਹੈ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+msgid  "Error: Division by zero"
+msgstr "ਗਲਤੀ: ਜ਼ੀਰੋ ਨਾਲ ਭਾਗ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+msgid  "Error: Wrong data type"
+msgstr "ਗਲਤੀ: ਕੋਈ ਡਾਟਾ ਟਾਈਪ ਨਹੀਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+msgid  "Error: Not a valid reference"
+msgstr "ਗਲਤੀ: ਜਾਇਜ ਹਵਾਲਾ ਨਹੀਂ ਹੈ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+msgid  "Error: Invalid name"
+msgstr "ਗਲਤੀ: ਗਲਤ ਨਾਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+msgid  "Error: Invalid numeric value"
+msgstr "ਗਲਤੀ: ਗਲਤ ਅੰਕ ਮੁੱਲ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+msgid  "Error: Value not available"
+msgstr "ਗਲਤੀ: ਮੁੱਲ ਉਪਲੱਬਧ ਨਹੀਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+msgid  "#ADDIN?"
+msgstr "#ਐਡ-ਆਨ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+msgid  "Error: Add-in not found"
+msgstr "ਗਲਤੀ: ਐਡ-ਆਨ ਨਹੀਂ ਲੱਭੇ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+msgid  "#MACRO?"
+msgstr "#ਮਾਇਕਰੋ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+msgid  "Error: Macro not found"
+msgstr "ਗਲਤੀ: ਮਾਇਕਰੋ ਨਹੀਂ ਲੱਭੇ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+msgid  "Internal syntactical error"
+msgstr "ਅੰਦਰੂਨੀ ਸਿੰਟੈਕਸ ਗਲਤੀ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+msgid  "Error: Invalid argument"
+msgstr "ਗਲਤੀ: ਗਲਤ ਆਰਗੂਮਿੰਟ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+msgid  "Error in parameter list"
+msgstr "ਪੈਰਾਮੀਟਰੀ ਲਿਸਟ ਵਿੱਚ ਗਲਤੀ ਹੈ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+msgid  "Error: Invalid character"
+msgstr "ਗਲਤੀ: ਗਲਤ ਅੱਖਰ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+msgid  "Error: Invalid semicolon"
+msgstr "ਗਲਤੀ: ਗਲਤ ਅਰਧ-ਵਿਰਾਮ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+msgid  "Error: in bracketing"
+msgstr "ਗਲਤੀ: ਬਰੈਕਟ ਪਾਉਣ ਵਿੱਚ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+msgid  "Error: Operator missing"
+msgstr "ਗਲਤੀ: ਓਪਰੇਟਰ ਗੁੰਮ ਹੈ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+msgid  "Error: Variable missing"
+msgstr "ਗਲਤੀ: ਮੁੱਲ ਨਹੀਂ ਹੈ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+msgid  "Error: Formula overflow"
+msgstr "ਗਲਤੀ: ਫਾਰਮੂਲਾ ਸੀਮਾ ਤੋਂ ਬਾਹਰ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+msgid  "Error: String overflow"
+msgstr "ਗਲਤੀ: ਸਤਰ ਸੀਮਾ ਤੋਂ ਬਾਹਰ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+msgid  "Error: Internal overflow"
+msgstr "ਗਲਤੀ: ਅੰਦਰੂਨੀ ਸੀਮਾ ਤੋਂ ਬਾਹਰ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+msgid  "Error: Circular reference"
+msgstr "ਗਲਤੀ: ਘੁੰਮਾਉਦਾਰ ਹਵਾਲਾ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+msgid  "Error: Calculation does not converge"
+msgstr "ਗਲਤੀ: ਗਣਨਾ ਕੇਂਦਰਿਤ ਨਹੀਂ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+msgid  "Grid color"
+msgstr "ਗਰਿੱਡ ਰੰਗ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "ਕੀ ਲੁਕਵੇਂ ਸੈੱਲਾਂ ਦਾ ਭਾਗਾਂ ਨੂੰ ਪਹਿਲੇ ਸੈੱਲ ਤੇ ਭੇਜਣਾ ਹੈ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+msgid  "Filter"
+msgstr "ਫਿਲਟਰ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+msgid  "The target database range does not exist."
+msgstr "ਮੰਜ਼ਿਲ ਡਾਟਾਬੇਸ ਸੀਮਾ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+msgid  "Invalid increment"
+msgstr "ਗਲਤ ਵਾਧਾ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+msgid  "MULTIPLE.OPERATIONS"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+msgid  "Multiple operations"
+msgstr "ਬਹੁ ਕਾਰਵਾਈਆਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+msgid  "Range"
+msgstr "ਰੇਜ਼"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+msgid  "Yes"
+msgstr "ਹਾਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+msgid  "No"
+msgstr "ਨਹੀਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+msgid  "Protection"
+msgstr "ਸੁਰੱਖਿਆ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+msgid  "Formulas"
+msgstr "ਫਾਰਮੂਲੇ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+msgid  "Hide"
+msgstr "ਓਹਲੇ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+msgid  "Print"
+msgstr "ਛਾਪੋ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+msgid  "(nested)"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+msgid  "(optional)"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+msgid  "(required)"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+msgid  "invalid"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+msgid  "Edit Function"
+msgstr "ਫੰਕਸ਼ਨ ਸੋਧ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+msgid  "Comments"
+msgstr "ਟਿੱਪਣੀਆਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "ਕੀ ਤੁਸੀਂ ਚੁਣੀ(ਆਂ) ਸ਼ੀਟ(ਸੀਟਾਂ) ਨੂੰ ਹਮੇਸ਼ਾ ਲਈ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "ਕੀ ਤੁਸੀਂ ਮੌਜੂਦਾ ਦਰਿਸ਼-ਵੇਰਵੇ ਨੂੰ ਹਮੇਸ਼ਾ ਲਈ ਹਟਾਉਣ ਲਈ ਸਹਿਮਤ ਹੋ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+msgid  "Thesaurus is not available"
+msgstr "ਸਮਅਰਥੀ-ਕੋਸ਼ ਉਪਲੱਬਧ ਨਹੀਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+msgid  "Spellcheck not available"
+msgstr "ਸ਼ਬਦ-ਜੋੜ ਜਾਂਚ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+msgid  "Import text files"
+msgstr "ਪਾਠ ਫਾਇਲਾਂ ਆਯਾਤ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+msgid  "Export Text File"
+msgstr "ਪਾਠ ਫਾਇਲਾਂ ਨਿਰਯਾਤ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+msgid  "Import Lotus files"
+msgstr "ਲੂਟਸ ਫਾਇਲਾਂ ਆਯਾਤ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+msgid  "Import DBase files"
+msgstr "ਡੀਬੇਸ ਫਾਇਲਾਂ ਆਯਾਤ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+msgid  "DBase export"
+msgstr "ਡੀਬੇਸ ਨਿਰਯਾਤ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+msgid  "Dif Export"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+msgid  "Dif Import"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+msgid  "Default"
+msgstr "ਡਿਫਾਲਟ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+msgid  "Result"
+msgstr "ਨਤੀਜਾ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+msgid  "Result2"
+msgstr "ਨਤੀਜਾ2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+msgid  "Heading"
+msgstr "ਸਿਰਲੇਖ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+msgid  "Heading1"
+msgstr "ਸਿਰਲੇਖ1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+msgid  "Report"
+msgstr "ਰਿਪੋਰਟ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+msgid  "Report1"
+msgstr "ਰਿਪੋਰਟ1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "ਸਮ-ਅਰਥੀ ਕੋਸ਼ ਨੂੰ ਪਾਠ ਸੈੱਲਾਂ ਲਈ ਹੀ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "ਕੀ ਸ਼ਬਦ-ਜੋੜ ਜਾਂਚ ਨੂੰ ਮੌਜੂਦਾ ਸ਼ੀਟ ਦੇ ਸਿਰੇ ਤੋਂ ਮੁੜ ਜਾਰੀ ਰਹਿਣਾ ਚਾਹੀਦਾ ਹੈ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "ਇਸ ਸ਼ੀਟ ਲਈ ਸ਼ਬਦ-ਜੋੜ ਜਾਂਚ ਮੁਕੰਮਲ ਹੋ ਗਈ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+msgid  "No language set"
+msgstr "ਕੋਈ ਭਾਸ਼ਾ ਨਹੀਂ ਚੁਣੀ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+msgid  "Insert Sheet"
+msgstr "ਸ਼ੀਟ ਸ਼ਾਮਲ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+msgid  "Delete Sheets"
+msgstr "ਸ਼ੀਟਾਂ ਹਟਾਓ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+msgid  "Rename Sheet"
+msgstr "ਸ਼ੀਟ ਨਾਂ-ਬਦਲੋ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+msgid  "Color Tab"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+msgid  "Color Tabs"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+msgid  "Move Sheets"
+msgstr "ਸ਼ੀਟਾਂ ਏਧਰ-ਓਧਰ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+msgid  "Copy Sheet"
+msgstr "ਸ਼ੀਟ ਨਕਲ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+msgid  "Append sheet"
+msgstr "ਸ਼ੀਟ ਜੋੜੋ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+msgid  "Show Sheet"
+msgstr "ਸ਼ੀਟ ਵੇਖੋ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+msgid  "Hide sheet"
+msgstr "ਸ਼ੀਟ ਓਹਲੇ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+msgid  "Flip sheet"
+msgstr "ਸ਼ੀਟ ਝਟਕੋ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+msgid  "Toggle the use of R1C1 notation"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+msgid  "Main Title"
+msgstr "ਮੁੱਖ ਸਿਰਲੇਖ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+msgid  "Subtitle"
+msgstr "ਅਧੀਨ-ਸਿਰਲੇਖ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+msgid  "X axis title"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+msgid  "Y axis title"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+msgid  "Z axis title"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "ਮੌਜੂਦਾ ਸਾਰਣੀ ਵਿੱਚ ਹੋਰ ਸਾਰਣੀਆਂ ਲਈ ਅਸਲ ਹਵਾਲਾ ਹੈ, ਜੋ ਕਿ ਗਲਤ ਹੈ!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr "ਇੱਕ ਹੀ ਨਾਂ ਹੋਣ ਕਰਕੇ, ਨਿਯਤ ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਨਾਂ ਦੀ ਸੀਮਾ ਨੂੰ ਬਦਲ ਦਿੱਤਾ ਜਾਵੇਗਾ!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+msgid  "AutoFilter not possible"
+msgstr "ਆਟੋ-ਫਿਲਟਰ ਸੰਭਵ ਨਹੀਂ ਹੈ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+msgid  "Find & Replace"
+msgstr "ਖੋਜ ਅਤੇ ਤਬਦੀਲ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME ਸਾਰਣੀ ਨੇ ਡੌਕੂਮੈਂਟ ਦੇ ਸ਼ੁਰੂ ਤੋਂ ਲੱਭਣਾ ਸ਼ੁਰੂ ਕੀਤਾ ਹੈ। ਕੀ ਤੁਸੀਂ ਅੰਤ ਵੱਲ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+msgid  "Replace existing definition of #?"
+msgstr "# ਦੀ ਪ੍ਰੀਭਾਸ਼ਾ ਤਬਦੀਲ ਕਰਨੀ ਹੈ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+msgid  "Invalid selection for range names"
+msgstr "ਸੀਮਾ ਨਾਂ ਲਈ ਗਲਤ ਚੋਣ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+msgid  "References can not be inserted above the source data."
+msgstr "ਸਰੋਤ ਡਾਟੇ ਤੋਂ ਉਪੱਰ ਹਵਾਲੇ ਨੂੰ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+msgid  "Scenario not found"
+msgstr "ਦਰਿਸ਼-ਵੇਰਵਾ ਨਹੀਂ ਲੱਭਿਆ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+msgid  "Do you really want to delete the entry #?"
+msgstr "ਕੀ ਤੁਸੀਂ ਐਂਟਰੀ # ਨੂੰ ਹਟਾਉਣ ਦੀ ਪੁਸ਼ਟੀ ਕਰਦੇ ਹੋ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+msgid  "Objects/graphics"
+msgstr "ਇਕਾਈ/ਗ੍ਰਾਫਿਕਸ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+msgid  "Charts"
+msgstr "ਚਾਰਟ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+msgid  "Drawing Objects"
+msgstr "ਡਰਾਇੰਗ ਇਕਾਈ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+msgid  "Show"
+msgstr "ਵੇਖੋ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+msgid  "Hide"
+msgstr "ਓਹਲੇ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+msgid  "Top to bottom"
+msgstr "ਉੱਤੇ ਤੋਂ ਹੇਠਾਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+msgid  "Left-to-right"
+msgstr "ਖੱਬੇ ਤੋਂ ਸੱਜਾ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+msgid  "Comments"
+msgstr "ਟਿੱਪਣੀਆਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+msgid  "Grid"
+msgstr "ਗਰਿੱਡ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+msgid  "Row & Column Headers"
+msgstr "ਕਤਾਰ ਤੇ ਕਾਲਮ ਸਿਰਲੇਖ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+msgid  "Formulas"
+msgstr "ਫਾਰਮੂਲੇ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+msgid  "Zero Values"
+msgstr "ਸਿਫ਼ਰ ਮੁੱਲ਼"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+msgid  "Print direction"
+msgstr "ਛਾਪਣ ਦਿਸ਼ਾ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+msgid  "First page number"
+msgstr "ਪਹਿਲਾ ਸਫ਼ਾ ਗਿਣਤੀ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+msgid  "Reduce/enlarge printout"
+msgstr "ਛਪਾਈ ਆਕਾਰ ਘਟਾਓ/ਵਧਾਓ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+msgid  "Fit print range(s) on number of pages"
+msgstr "ਛਾਪਣ ਸੀਮਾ ਸਫ਼ਿਆਂ ਦੀ ਗਿਣਤੀ ਦੇ ਅਨੁਕੂਲ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+msgid  "Fit print range(s) to width/height"
+msgstr "ਛਾਪਣ ਸੀਮਾ ਚੌੜਾਈ/ਉਚਾਈ ਦੇ ਅਨੁਕੂਲ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+msgid  "Width"
+msgstr "ਚੌੜਾਈ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+msgid  "Height"
+msgstr "ਉਚਾਈ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+msgid  "%1 page(s)"
+msgstr "%1 ਸਫ਼ੇ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+msgid  "automatic"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+msgid  "Statistics"
+msgstr "ਅੰਕੜੇ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+msgid  "The link could not be updated."
+msgstr "ਸਬੰਧ ਦਾ ਅੱਪਡੇਟ ਸੰਭਵ ਨਹੀਂ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+msgid  "File:"
+msgstr "ਫਾਇਲ:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+msgid  "Sheet:"
+msgstr "ਸ਼ੀਟ:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+msgid  "Overview"
+msgstr "ਸੰਖੇਪ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+msgid  "Doc.Information"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+msgid  "Created"
+msgstr "ਬਣਾਇਆ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+msgid  "Modified"
+msgstr "ਸੋਧਿਆ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+msgid  "Printed"
+msgstr "ਛਾਪਿਆ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+msgid  "Subject"
+msgstr "ਵਿਸ਼ਾ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+msgid  "Key words"
+msgstr "ਸ਼ਬਦ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+msgid  "Comments"
+msgstr "ਟਿੱਪਣੀਆਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+msgid  "by"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+msgid  "on"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+msgid  "Too many conditions"
+msgstr "ਬਹੁਤ ਜਿਆਦਾ ਸ਼ਰਤਾਂ ਹਨ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+msgid  "The table could not be inserted."
+msgstr "ਸਾਰਣੀ ਨੂੰ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+msgid  "The sheets could not be deleted."
+msgstr "ਸ਼ੀਟਾਂ ਨੂੰ ਹਟਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "ਕਲਿੱਪਬੋਰਡ ਦੇ ਭਾਗਾਂ ਨੂੰ ਚਿਪਕਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "ਇੱਥੇ ਸ਼ਾਮਲ ਕਰਨ ਲਈ ਸ਼ੀਟ ਤੇ ਲੋੜੀਂਦੀ ਥਾਂ ਨਹੀਂ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+msgid  "No references found."
+msgstr "ਕੋਈ ਹਵਾਲਾ ਨਹੀਂ ਲੱਭਾ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+msgid  "Source and destination must not overlap."
+msgstr "ਸਰੋਤ ਤੇ ਮੰਜ਼ਿਲ ਇੱਕ ਹੀ ਥਾਂ ਨਹੀਂ ਹੋ ਸਕਦੇ ਹਨ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+msgid  "Graphics"
+msgstr "ਗ੍ਰਾਫਿਕਸ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+msgid  "Invalid name."
+msgstr "ਗਲਤ ਨਾਂ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+msgid  "Selected macro not found."
+msgstr "ਚੁਣਿਆ ਮਾਇਕਰੋ ਲੱਭਿਆ ਨਹੀਂ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+msgid  "Invalid value."
+msgstr "ਗਲਤ ਮੁੱਲ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+msgid  "calculating"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+msgid  "sorting"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+msgid  "Adapt row height"
+msgstr "ਕਤਾਰ ਉਚਾਈ ਪ੍ਰਾਪਤ ਕਰੋ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+msgid  "Compare #"
+msgstr "ਤੁਲਨਾ #"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+msgid  "Delete contents"
+msgstr "ਭਾਗ ਹਟਾਓ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+msgid  "%1 R  x %2 C"
+msgstr "%1 R  x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+msgid  "More..."
+msgstr "ਹੋਰ..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+msgid  "Invalid range"
+msgstr "ਗਲਤ ਰੇਜ਼"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr "ਡਾਟਾਪਾਇਲਟ ਮੁੱਲ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr "ਡਾਟਾਪਾਇਲਟ ਨਤੀਜਾ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr "ਡਾਟਾਪਾਇਲਟ ਵਰਗ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr "ਡਾਟਾਪਾਇਲਟ ਸਿਰਲੇਖ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr "ਡਾਟਾਪਾਇਲਟ ਖੇਤਰ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr "ਡਾਟਾਪਾਇਲਟ ਕੋਨਾ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+msgid  "Filter"
+msgstr "ਫਿਲਟਰ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+msgid  "Sort"
+msgstr "ਕ੍ਰਮਬੱਧ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+msgid  "Subtotals"
+msgstr "ਅਧੀਨ-ਜੋੜ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+msgid  "None"
+msgstr "ਕੋਈ ਨਹੀਂ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+msgid  "Do you want to replace the contents of #?"
+msgstr "ਕੀ ਤੁਸੀਂ # ਦੇ ਭਾਗਾਂ ਨੂੰ ਤਬਦੀਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+msgid  "Width:"
+msgstr "ਚੌੜਾਈ:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+msgid  "Height:"
+msgstr "ਉਚਾਈ:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+msgid  "Hide"
+msgstr "ਓਹਲੇ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+msgid  "The object could not be inserted."
+msgstr "ਇਕਾਈ ਨੂੰ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+msgid  "<empty>"
+msgstr "<empty>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "ਸੈੱਲ #1 ਨੂੰ '#2' ਤੋਂ '#3' ਲਈ ਤਬਦੀਲ ਕੀਤਾ ਗਿਆ ਹੈ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+msgid  "#1 inserted"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+msgid  "#1deleted"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+msgid  "Range moved from #1 to #2"
+msgstr "#1 ਤੋਂ #2 ਵੱਲ ਸੀਮਾ ਤਬਦੀਲ ਕੀਤਾ ਗਿਆ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+msgid  "Exit Recording"
+msgstr "ਰਿਕਾਰਡਿੰਗ ਬੰਦ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+msgid  "The document can not be closed while a link is being updated."
+msgstr "ਸਬੰਧ ਦੇ ਅੱਪਡੇਟ ਦੌਰਾਨ ਡੌਕੂਮੈਂਟ ਨੂੰ ਬੰਦ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+msgid  "Adapt array area"
+msgstr "ਲੜੀ ਖੇਤਰ ਪ੍ਰਾਪਤ ਕਰੋ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+msgid  "Array formula  %1 R x %2 C"
+msgstr "ਲੜੀ ਫਾਰਮੂਲਾ %1 R x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+msgid  "Hangul/Hanja Conversion"
+msgstr "ਹੰਗੁਲ/ਹਾਂਜਾ ਤਬਦੀਲੀ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+msgid  "Select Cell"
+msgstr "ਸੈੱਲ ਚੁਣੋ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+msgid  "Select Range"
+msgstr "ਸੀਮਾ ਚੁਣੋ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+msgid  "Select Database Range"
+msgstr "ਡਾਟਾਬੇਸ ਸੀਮਾ ਚੁਣੋ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+msgid  "Go To Row"
+msgstr "ਕਤਾਰ ਤੇ ਜਾਓ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+msgid  "Go To Sheet"
+msgstr "ਸ਼ੀਟ ਤੇ ਜਾਓ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+msgid  "Define Name for Range"
+msgstr "ਸੀਮਾ ਦਾ ਨਾਂ ਦਿਓ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "ਨਾਂ ਦੇਣ ਲ਼ਈ ਚੋਣ ਚਤੁਰਭੁਜੀ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "ਤੁਹਾਨੂੰ ਚੁਣੀ ਸੀਮਾ ਲਈ ਇੱਕ ਠੀਕ ਹਵਾਲਾ ਜਾਂ ਠੀਕ ਨਾਂ ਕਿਸਮ ਦੇਣੀ ਚਾਹੀਦੀ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "ਚੇਤਾਵਨੀ: ਇਸ ਕਾਰਵਾਈ ਕਰਕੇ ਫਾਰਮੂਲੇ ਵਿੱਚ ਸੈੱਲ ਹਵਾਲੇ ਤੋਂ ਅੰਤਰ ਪੈਦਾ ਹੋ ਸਕਦਾ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr "ਚੇਤਾਵਨੀ: ਇਹ ਕਾਰਵਾਈ ਕਰਕੇ ਹਵਾਲੇ ਹਟਾਏ ਜਾ ਸਕਦੇ ਹਨ, ਜਿਨਾਂ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+msgid  "(none)"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+msgid  "of"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+msgid  "of ?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+msgid  "Created by"
+msgstr "ਬਣਾਇਆ ਗਿਆ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+msgid  "Confidential"
+msgstr "ਗੁਪਤ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+msgid  "Customized"
+msgstr "ਸੋਧ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+msgid  "Custom footer"
+msgstr "ਪਦਲੇਖ ਸੋਧ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+msgid  "Chinese conversion"
+msgstr "ਚੀਨੀ ਅਨੁਵਾਦ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+msgid  "You cannot change this part of the pivot table."
+msgstr "ਤੁਸੀਂ ਡਾਟਾਪਾਇਲਟ ਸਾਰਣੀ ਦੇ ਇਸ ਭਾਗ ਨੂੰ ਤਬਦੀਲ ਨਹੀਂ ਕਰ ਸਕਦੇ ਹੋ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+msgid  "Manual"
+msgstr "ਡੌਕੂਮੈਂਟ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+msgid  "Automatic"
+msgstr "ਆਟੋਮੈਟਿਕ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+msgid  "Nested arrays are not supported."
+msgstr "ਅੰਦਰੂਨੀ ਅਰੇ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+msgid  "Text to Columns"
+msgstr "ਟੈਕਸਟ ਤੋਂ ਕਾਲਮ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr "ਤੁਹਾਡੀ ਸਪਰੈੱਡਸ਼ੀਟ ਨੂੰ ਹੋਰ ਯੂਜ਼ਰਾਂ ਵਲੋਂ ਕੀਤੇ ਬਦਲਾਅਵਾਂ ਲਈ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ ਹੈ।"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+msgid  "Unknown User"
+msgstr "ਅਣਜਾਣ ਯੂਜ਼ਰ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+msgid  "Cell Styles"
+msgstr "ਸੈੱਲ ਸਟਾਈਲ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+msgid  "Page Styles"
+msgstr "ਪੇਜ਼ ਸਟਾਈਲ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+msgid  "Character"
+msgstr "ਅੱਖਰ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+msgid  "Font"
+msgstr "ਫੋਂਟ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr "ਫੋਂਟ ਪ੍ਰਭਾਵ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+msgid  "Font Position"
+msgstr "ਫੋਂਟ ਸਥਿਤੀ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+msgid  "Back"
+msgstr "ਪਿੱਛੇ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+msgid  "Paragraph"
+msgstr "ਪ੍ਹੈਰਾ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+msgid  "Indents & Spacing"
+msgstr "ਹਾਸ਼ੀਆ ਅਤੇ ਸੰਨ੍ਹ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+msgid  "Alignment"
+msgstr "ਇਕਸਾਰ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+msgid  "Asian Typography"
+msgstr "ਏਸ਼ੀਆਈਂ ਫੋਂਟ-ਵਿਗਿਆਨ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+msgid  "Tab"
+msgstr "ਟੈਬ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+msgid  "Back"
+msgstr "ਪਿੱਛੇ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+msgid  "AutoFormat"
+msgstr "ਆਟੋ-ਫਾਰਮੈਟ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+msgid  "F~ormat"
+msgstr "ਫਾਰਮੈਟ(~O)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+msgid  "A~utoFit width and height"
+msgstr "ਆਟੋ-ਫਿੱਟ ਚੌੜਾਈ ਅਤੇ ਉਚਾਈ(~U)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+msgid  "~Borders"
+msgstr "ਹਾਸ਼ੀਆ(~B)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+msgid  "F~ont"
+msgstr "ਫੋਂਟ(~O)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+msgid  "~Pattern"
+msgstr "ਪੈਟਰਨ(~P)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+msgid  "Alignmen~t"
+msgstr "ਇਕਸਾਰਤਾ(~T)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+msgid  "~Number format"
+msgstr "ਅੰਕ ਫਾਰਮੈਟ(~N)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+msgid  "Formatting"
+msgstr "ਫਾਰਮੈਟਿੰਗ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+msgid  "~Add..."
+msgstr "ਸ਼ਾਮਲ(~A)..."
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "ਹਟਾਓ(~D)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+msgid  "~Rename"
+msgstr "ਨਾਂ-ਬਦਲੋ(~R)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+msgid  "Add AutoFormat"
+msgstr "ਆਟੋ-ਫਾਰਮੈਟ ਸ਼ਾਮਲ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+msgid  "Rename AutoFormat"
+msgstr "ਆਟੋ-ਫਾਰਮੈਟ ਨਾਂ-ਬਦਲੋ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+msgid  "Name"
+msgstr "ਨਾਂ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+msgid  "Delete AutoFormat"
+msgstr "ਆਟੋ-ਫਾਰਮੈਟ ਹਟਾਓ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
@@ -4577,7 +5657,7 @@ msgstr "ਮਿਤੀ ਮੁੱਲ ਲਈ ਇੱਕ ਪੂਰਨ ਅੰਕ (1-31)
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 msgid  "Number"
-msgstr "ਨੰਬਰ"
+msgstr "ਅੰਕ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 msgid  "The internal number for the date."
@@ -4605,7 +5685,7 @@ msgstr "ਦਿਨਾਂ ਵਿੱਚ ਅੰਤਰ ਪਤਾ ਕਰਨ ਲਈ ਅ
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
-msgstr "ਟਾਈਪ"
+msgstr "ਕਿਸਮ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.7.String.Text
 msgid  "Method used to form differences: Type = 0 denotes US method (NASD), Type = 1 denotes the European method."
@@ -4617,7 +5697,7 @@ msgstr "ਸਮਾਂ ਮੁੱਲ ਲਈ ਦਿਨ ਦੇ ਘੰਟੇ (0-23) �
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.2.String.Text
 msgid  "Number"
-msgstr "ਨੰਬਰ"
+msgstr "ਅੰਕ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.3.String.Text
 msgid  "Internal time value"
@@ -4721,7 +5801,7 @@ msgstr "ਮਿਤੀ ਲਈ ਅੰਦਰੂਨੀ ਨੰਬਰ ਹੈ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.4.String.Text
 msgid  "Type"
-msgstr "ਟਾਈਪ"
+msgstr "ਕਿਸਮ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.5.String.Text
 msgid  "Fixes the beginning of the week and the type of calculation to be used."
@@ -4829,7 +5909,7 @@ msgstr "ਭਵਿੱਖ ਮੁੱਲ਼ ਹੈ। ਮੁੱਲ (ਅੰਤਿਮ ਮ
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.10.String.Text
 msgid  "Type"
-msgstr "ਟਾਈਪ"
+msgstr "ਕਿਸਮ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
@@ -7797,11 +8877,11 @@ msgstr "ਮੱਧ ਹੈ। ਪੌਇੱਸਨ ਵੰਡ ਲਈ ਮੱਧ ਮੁ
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.6.String.Text
 msgid  "Cumulative"
-msgstr "ਆਵਰਤੀ"
+msgstr "ਸੰਚਾਵੀ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 ਜਾਂ FALSE ਸੰਭਾਵਨਾ ਡਿਨਸਟੀ ਫੰਕਸ਼ਨ ਗਿਣਤੀ ਲਈ ਹੈ। ਕੋਈ ਹੋਰ ਮੁੱਲ ਜਾਂ TRUE ਜਾਂ ਛੱਡਣ ਦਾ ਅਰਥ ਹੈ ਕਿ ਆਵਰਤੀ ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਫੰਕਸ਼ਨ।"
+msgstr "0 ਜਾਂ FALSE ਸੰਭਾਵਨਾ ਡੈਂਸਟੀ ਫੰਕਸ਼ਨ ਗਿਣਤੀ ਲਈ ਹੈ। ਕੋਈ ਹੋਰ ਮੁੱਲ ਜਾਂ TRUE ਜਾਂ ਛੱਡਣ ਦਾ ਅਰਥ ਹੈ ਕਿ ਸੰਚਵੀਂ ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਫੰਕਸ਼ਨ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 msgid  "Values of the normal distribution."
@@ -7921,7 +9001,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.8.String.Text
 msgid  "Cumulative"
-msgstr "ਆਵਰਤੀ"
+msgstr "ਸੰਚਾਵੀ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -8361,7 +9441,7 @@ msgstr "degrees_freedom"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "ਚੀ ਵਰਗ ਵੰਡ ਦੀ ਡਿਗਰੀ ਆਫ ਫਰੀਡਮ"
+msgstr "ਚਾਈ ਵਰਗ ਵੰਡ ਦੀ ਡਿਗਰੀ ਆਫ ਫਰੀਡਮ ਹੈ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 msgid  "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution."
@@ -8853,7 +9933,7 @@ msgstr "ਹਵਾਲਾ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 msgid  "The reference to a (multiple) range."
-msgstr "ਮਲਟੀਪਲ ਰੇਜ਼ ਲਈ ਹਵਾਲਾ ਹੈ।"
+msgstr "ਬਹੁ ਸੀਮਾ ਲਈ ਹਵਾਲਾ ਹੈ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 msgid  "Selects a value from a list of up to 30 value arguments."
@@ -9345,7 +10425,7 @@ msgstr "ਟੈਕਸਟ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.3.String.Text
 msgid  "This is the text for which the code of the first character is to be found."
-msgstr "ਇਹ ਪਾਠ ਹੈ, ਜਿਸ ਵਿੱਚ ਪਹਿਲੇ ਅੱਖਰ ਦਾ ਕੋਡ ਲੱਭਿਆ ਜਾਵੇਗਾ।"
+msgstr "ਇਹ ਟੈਕਸਟ ਹੈ, ਜਿਸ ਵਿੱਚ ਪਹਿਲੇ ਅੱਖਰ ਦਾ ਕੋਡ ਲੱਭਿਆ ਜਾਵੇਗਾ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CURRENCY.1.String.Text
 msgid  "Converts a number to text in currency format."
@@ -9537,7 +10617,7 @@ msgstr "ਟੈਕਸਟ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VALUE.3.String.Text
 msgid  "The text to be converted to a number."
-msgstr "ਇੱਕ ਅੰਕ ਵਿੱਚ ਬਦਲਿਆ ਗਿਆ ਟੈਕਸਟ ਹੈ।"
+msgstr "ਇੱਕ ਅੰਕ ਵਿੱਚ ਤਬਦੀਲ ਕਰਨ ਲਈ ਪਾਠ ਹੈ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TEXT.1.String.Text
 msgid  "Converts a number to text according to a given format."
@@ -9829,7 +10909,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 msgid  "The value to be converted."
-msgstr "ਤਬਦੀਲ ਕਰਨ ਲਈ ਮੁੱਲ ਹੈ।"
+msgstr "ਬਦਲਿਆ ਗਿਆ ਮੁੱਲ ਹੈ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 msgid  "text"
@@ -10412,8 +11492,8 @@ msgid  "Font Attributes"
 msgstr "ਫੋਂਟ ਗੁਣ"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "ਤੁਹਾਡੇ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਫੀ ਡਾਟਾ ਪਿਆ ਹੈ।\nਕੀ ਤੁਸੀਂ ਕਲਿੱਪੋਬਰਡ ਦੇ ਭਾਗਾਂ ਨੂੰ ਹੋਰ ਕਾਰਜਾਂ ਲਈ\nਵੀ ਉਪਲੱਬਧ ਕਰਵਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 msgid  "System Options"
@@ -10480,7 +11560,7 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
@@ -10524,8 +11604,8 @@ msgid  "~Selected sheets"
 msgstr "ਚੁਣੀਆਂ ਸ਼ੀਟਾਂ ਹੀ ਪਰਿੰਟ ਕਰੋ(~o)"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "ਤੁਸੀਂ ਡਾਟੇ ਨੂੰ ਸੈੱਲ ਵਿੱਚ ਰੱਖਣ ਦੀ ਕੋਸ਼ਿਸ ਕਰ ਰਹੇ, ਜਿਸ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਡਾਟਾ ਹੈ।\nਕੀ ਮੌਜੂਦਾ ਡਾਟੇ ਉੱਪਰ ਹੀ ਲਿਖਣਾ ਹੈ?"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"
@@ -11905,7 +12985,7 @@ msgstr "ਵੱਧ ਜਾਂ ਬਰਾਬਰ ਹੈ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "not equal to"
-msgstr "ਬਰਾਬਰ ਨਹੀਂ"
+msgstr "ਨਹੀਂ ਬਰਾਬਰ ਹੈ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "between"
@@ -12173,7 +13253,7 @@ msgstr "ਫਾਇਲ ਵਿੱਚ 8192 ਕਤਾਰ ਬਾਅਦ ਵੀ ਡਾ�
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "ਫਾਇਲ ਵਿੱਚ ਫਾਰਮੈਟ ਗਲਤੀ ਸਬ-ਡੌਕੂਮੈਂਟ $(ARG1) ਵਿੱਚ $(ARG2)(ਕਤਾਰ, ਕਾਲਮ) ਹੈ।"
+msgstr "ਫਾਇਲ ਵਿੱਚ ਫਾਰਮੈਟ ਗਲਤੀ ਸਬ-ਡੌਕੂਮੈਂਟ $(ARG1) ਵਿੱਚ $(ARG2)(ਕਤਾਰ, ਕਾਲਮ) ਹੈ"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FORMAT_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -12232,20 +13312,20 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "ਡੌਕੂਮੈਂਟ ਇੰਨਾ ਗੁੰਝਲਦਾਰ ਹੈ ਕਿ ਸਵੈ-ਗਣਨਾ ਕਰਨੀ ਔਖੀ ਹੈ। F9 ਨਾਲ ਮੁੜ-ਗਣਨਾ ਕਰੋ।"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਚੁਣੇ ਫਾਰਮੈਟ ਵਿੱਚ ਕਤਾਰਾਂ ਦੀ ਗਿਣਤੀ ਵਧੇਰੇ ਹੈ। \nਵਾਧੂ ਕਤਾਰਾਂ ਨੂੰ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾ ਸਕੇਗਾ।"
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਜਾਣਕਾਰੀ ਹੈ, ਜਿਸ ਨੂੰ ਕਾਰਜ ਦੇ ਇਸ ਵਰਜਨ ਰਾਹੀਂ ਜਾਣਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ। \nਡੌਕੂਮੈਂਟ ਨੂੰ ਮੁੜ-ਸੰਭਾਲਣ ਨਾਲ ਜਾਣਕਾਰੀ ਨੂੰ ਹਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ!"
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 msgid  "Not all cell contents could be saved in the specified format."
 msgstr "ਖਾਸ ਫਾਰਮੈਟ ਵਿੱਚ ਸੈੱਲਾਂ ਦੇ ਸਭ ਅੰਸ਼ਾਂ ਨੂੰ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
-msgstr "ਹੇਠਾਂ ਦਿੱਤੇ ਅੱਖਰਾਂ ਨੂੰ ਚੁਣੇ ਅੱਖਰ ਸਮੂਹ ਵਿੱਚ ਤਬਦੀਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ ਅਤੇ &#1234; surrogates ਦੇ ਤੌਰ ਤੇ ਲਿਖਿਆ ਗਿਆ ਹੈ:\n\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."

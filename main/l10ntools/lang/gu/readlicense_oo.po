@@ -125,7 +125,7 @@ msgstr "1024x768 રિઝોલ્યુશન (ઉચ્ચતર રિઝો
 
 #: docs/readme/readme.xrm#edssc3d.edssc3d
 msgid  "Please be aware that administrator rights are needed for the installation process."
-msgstr "મહેરબાની કરીને ધ્યાનમાં રાખો કે સંચાલકના મુદ્દાઓ સ્થાપનની પ્રક્રિયા માટે જરુરી છે."
+msgstr "મહેરબાની કરીને ધ્યાનમાં રાખો કે સંચાલકના હકો સ્થાપનની પ્રક્રિયા માટે જરૂરી છે."
 
 #: docs/readme/readme.xrm#MSOReg1.MSOReg1
 msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
@@ -160,8 +160,9 @@ msgid  "Up to 1.55 GB available hard disk space"
 msgstr "1.55 GB ઉપલબ્ધ હાર્ડ ડિસ્ક જગ્યા સુધી"
 
 #: docs/readme/readme.xrm#s2s43gfe.s2s43gfe
+#, fuzzy
 msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
-msgstr "1024x768 રિઝોલ્યુશન સાથે X સર્વર (ઉચ્ચતર રિઝોલ્યુશન અગ્રહણીય) ની સાથે ઓછામાં ઓછા 256 રંગો છે"
+msgstr "1024x768 રિઝોલ્યુશન સાથે X સર્વર (ઉચ્ચતર રિઝોલ્યુશન અગ્રહણીય), ની સાથે ઓછામાં ઓછા 256 રંગો છે"
 
 #: docs/readme/readme.xrm#n4234rw.n4234rw
 msgid  "Window Manager"
@@ -304,8 +305,9 @@ msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} 
 msgstr "વિન્ડો ડ્રાઇવર સમસ્યા દરમ્યાન, ${PRODUCTNAME} દસ્તાવેજો મારફતે તમે સ્ક્રોલ કરી શકતા નથી જ્યારે ALPS/Synaptics ટચપેડ ની તરફ તમારી આંગળી ને ખસેડો."
 
 #: docs/readme/readme.xrm#naso6.naso6
-msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\Program Files\Synaptics\SynTP\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr ""
+#, fuzzy
+msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
+msgstr "ટચપેડ સરકાવવાનું સક્રિય કરવા માટે, નીચેની લીટીઓ \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" રૂપરેખાંકન ફાઈલમાં લખો, અને તમારું કમ્પ્યૂટર પુનઃશરૂ કરો:"
 
 #: docs/readme/readme.xrm#naso8.naso8
 #, fuzzy

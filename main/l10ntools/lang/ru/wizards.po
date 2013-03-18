@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Шаблон создан мастером <wizard_name> в <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Мастер не может стартовать, т.к. не смог найти некоторых файлов.\nВ меню «Сервис - Параметры - %PRODUCTNAME - Пути» нажмите кнопку «По умолчанию», чтобы сбросить настройки.\nЗатем, запустите Мастер ещё раз."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Поля в форме"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Двоичные поля всегда будут перечислены и могут быть выбраны из списка.\nОни будут отображены как изображения, если это возможно."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Форма является вложенной в другую форму.\nИспользуйте субформу для отображения данных из таблиц или запросов типа «один ко многим»."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Поля в форме"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "Объединение «<FIELDNAME1>» и «<FIELDNAME2>» было выбрано дважды.\nОбъединение допустимо только один раз."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -733,7 +733,7 @@ msgstr "Стили страниц"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 80.String.Text
 msgid  "Field selection"
-msgstr "Выбор поля"
+msgstr "Выбор полей"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 81.String.Text
 msgid  "Set up a subform"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "Укажите имя формы"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Форма с названием «%FORMNAME» уже существует.\nВыберите другое название."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -825,7 +825,7 @@ msgstr "Та~блицы"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
 msgid  "A~vailable fields"
-msgstr "Доступн~ые поля"
+msgstr "Переменные поля"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
 msgid  "Name ~of the query"
@@ -1549,7 +1549,7 @@ msgstr "Поздравляем! Вся необходимая информаци
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
-msgstr "Что дальше?"
+msgstr "Что будем делать дальше?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
 msgid  "Modify the table design"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Поля невозможно вставить из-за превышения максимального значения %COUNT полей в базе данных"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Название «%TABLENAME» уже существует.\nВведите другое название."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1637,7 +1637,7 @@ msgstr "Использование готового фирменного бла�
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 7.String.Text
 msgid  "~Logo"
-msgstr "~Логотип"
+msgstr "Логотип"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 8.String.Text
 msgid  "Return address"
@@ -1653,7 +1653,7 @@ msgstr "Обратный адрес на конверте"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 11.String.Text
 msgid  "~Logo"
-msgstr "Логотип"
+msgstr "~Логотип"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 12.String.Text
 msgid  "~Return address in envelope window"
@@ -1665,7 +1665,7 @@ msgstr "Подпись в письме"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 14.String.Text
 msgid  "S~ubject line"
-msgstr "Тема"
+msgstr "Те~ма"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 15.String.Text
 msgid  "Salu~tation"
@@ -1677,11 +1677,11 @@ msgstr "Указатели сгиба"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
 msgid  "~Complimentary close"
-msgstr "Заключение"
+msgstr "~Завершение"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
 msgid  "~Footer"
-msgstr "Нижний колонтитул"
+msgstr "Ни~жний колонтитул"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
 msgid  "~Use user data for return address"
@@ -1705,7 +1705,7 @@ msgstr "Добавлять со второй страницы"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
 msgid  "~Include page number"
-msgstr "Добавить номер страницы"
+msgstr "Включить номер страницы"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 25.String.Text
 msgid  "Letter Template"
@@ -1781,7 +1781,7 @@ msgstr "Адрес отправителя"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 43.String.Text
 msgid  "Name:"
-msgstr "Имя:"
+msgstr "Название:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 44.String.Text
 msgid  "Street:"
@@ -1789,7 +1789,7 @@ msgstr "Улица:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
 msgid  "ZIP code/State/City:"
-msgstr "Индекс/Область/Город:"
+msgstr "Индекс, область, город:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 46.String.Text
 msgid  "Recipient's address"
@@ -1813,7 +1813,7 @@ msgstr "Имя шаблона:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
 msgid  "Location and file name:"
-msgstr "Размещение шаблона:"
+msgstr "Расположение и название файла:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
 msgid  "How do you want to proceed?"
@@ -1993,11 +1993,11 @@ msgstr "Имя шаблона:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 26.String.Text
 msgid  "Location and file name:"
-msgstr "Расположение и название файла:"
+msgstr "Размещение шаблона:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
 msgid  "What do you want to do next?"
-msgstr "Что будем делать дальше?"
+msgstr "Дальнейшие действия:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
 msgid  "Choose the type of fax and a page design"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Веб-мастер"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Веб-мастер поможет опубликовать документы в Интернете.\n\nОн преобразует документы таким образом, чтобы они могли читаться в обычном браузере. Мастер поможет подобрать дизайн и правильно разместить выбранные документы.\n\nОн поможет поддерживать актуальность опубликованных документов, а также добавлять новые и/или удалять устаревшие документы."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "Просмотр"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Выбранные установки будут удалены.\n\nВы действительно хотите удалить эти установки?"
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "Не удается создать FTP-каталог «%FILENAME»."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP-каталог «%FILENAME» не существует. \nСоздать каталог сейчас?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Невозможно создать ZIP архив «%FILENAME»: существует каталог с тем же именем."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Невозможно создать локальный каталог «%FILENAME». \nПроверьте доступ на запись."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Локальный каталог «%FILENAME» не существует.\n Создать каталог сейчас?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2801,7 +2801,7 @@ msgstr "Длит-сть"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +24.String.Text
 msgid  "Meeting called by"
-msgstr "Организатор"
+msgstr "Собрание созвано"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
 msgid  "Chairperson"
@@ -2817,7 +2817,7 @@ msgstr "Модератор"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +28.String.Text
 msgid  "Attendees"
-msgstr "Участники"
+msgstr "Присутствующие"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +29.String.Text
 msgid  "Observers"

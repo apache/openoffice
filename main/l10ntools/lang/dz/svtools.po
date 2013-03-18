@@ -209,7 +209,7 @@ msgstr "ཇི་བི།"
 
 #: source/contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.MenuItem.Text
 msgid  "~Delete"
-msgstr "གཏོན་གཏང་།(~D)"
+msgstr "བཏོན་རཏང་།(~D)"
 
 #: source/contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.MenuItem.Text
 msgid  "~Rename"
@@ -337,7 +337,7 @@ msgstr "རང་བཞིན་གྱི།"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.String.Text
 msgid  "Alphanumeric"
-msgstr "ཀ་ཁ་ཨང་ཡིག།"
+msgstr "ཀ་ཁའི་ཨང་ཡིག།"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_NORMAL.String.Text
 msgid  "Normal"
@@ -577,74 +577,91 @@ msgid  "~Options..."
 msgstr "གདམ་ཁ།(~O)"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SELECT.String.Text
+#, fuzzy
 msgid  "Select Directory"
 msgstr "སྣོད་ཐོ་ སེལ་འཐུ་འབད།"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.String.Text
+#, fuzzy
 msgid  "Cannot change to directory"
 msgstr "སྣོད་ཐོ་ལུ་ བསྒྱུར་བཅོས་འབད་མ་ཚུགས།"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OPEN.String.Text
+#, fuzzy
 msgid  "Open"
 msgstr "ཁ་ཕྱེ།"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_FILE.String.Text
+#, fuzzy
 msgid  "~File"
 msgstr "ཡིག་་སྣོད།"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DIR.String.Text
+#, fuzzy
 msgid  "~Directory"
 msgstr "སྣོད་ཐོ།(~D)"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_TYPE.String.Text
+#, fuzzy
 msgid  "File ~type"
 msgstr "ཡིག་སྣོད དབྱེ་བ།(~t)"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.String.Text
+#, fuzzy
 msgid  "Can't open file"
 msgstr "ཡིག་སྣོད་ ཁ་ཕྱེ་མ་ཚུགས།"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.String.Text
+#, fuzzy
 msgid  "Can't open directory"
 msgstr "སྣོད་ཁ་ཕྱེ་མ་ཚུགས།"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
-msgid  "This file already exists. \nOverwrite ?"
-msgstr "འ་ནི་ཡིག་སྣོད་འདི་ ཧེ་མ་ལས་རང་ཡོདཔ་ཨིན།\nཚབ་སྲུང་འབད?"
+msgid  "This file already exists. \\nOverwrite ?"
+msgstr ""
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
+#, fuzzy
 msgid  "Up One Level"
 msgstr "གནས་རིམ་གཅིག་ཡར།"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SAVE.String.Text
+#, fuzzy
 msgid  "Save"
 msgstr "སྲུངས།"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DRIVES.String.Text
+#, fuzzy
 msgid  "D~rive"
 msgstr "འདྲེན་འཕྲུལ།(~r)"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_HOME.String.Text
+#, fuzzy
 msgid  "User Directory"
 msgstr "སྣོད་ཐོ་ལག་ལེན་འཐབ།"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.String.Text
+#, fuzzy
 msgid  "Create Directory"
 msgstr "སྣོད་ཐོ་གསར་བསྐྲུན་འབད།"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.String.Text
+#, fuzzy
 msgid  "Do you want the directory %s to be created ?"
 msgstr "ཁྱོད་ཀྱི་ སྣོད་ཐོ་ %s ་གསར་བསྐྲུན་འབད་ནི་ཨིན་ན?"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.ModalDialog.Text
+#, fuzzy
 msgid  "Templates: Address Book Assignment"
 msgstr "ཊེམ་པེལེཊིསི:ཁ་བྱང་ཀི་དེབ་ཀྱི་ འགན་ལས།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FixedLine.Text
+#, fuzzy
 msgid  "Address Book Source"
 msgstr "ཁ་བྱང་ཀི་དེབ་ཀྱི་ འབྱུང་ཁུངས།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FixedText.Text
+#, fuzzy
 msgid  "Data source"
 msgstr "གནད་སྡུད་ཀྱི་ འབྱུང་ཁུངས།"
 
@@ -653,402 +670,501 @@ msgid  "~Address Data Source..."
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FixedText.Text
+#, fuzzy
 msgid  "Table"
 msgstr "ཐིག་ཁྲམ།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FixedText.Text
+#, fuzzy
 msgid  "Field assignment"
 msgstr "ཕྱི་ཁའི་ འགན་ལས།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.String.Text
+#, fuzzy
 msgid  "<none>"
 msgstr "<none>"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.String.Text
+#, fuzzy
 msgid  "Company"
 msgstr "ཚོང་སྡེ།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.String.Text
+#, fuzzy
 msgid  "Department"
 msgstr "ལས་ཁུངས།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.String.Text
+#, fuzzy
 msgid  "First name"
 msgstr "མགོ་མིང་།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.String.Text
+#, fuzzy
 msgid  "Last name"
 msgstr "མཇུག་མིང་།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.String.Text
+#, fuzzy
 msgid  "Street"
 msgstr "ཁྲོམ་ལམ།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.String.Text
+#, fuzzy
 msgid  "Country"
 msgstr "རྒྱལ་ཁབ།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.String.Text
+#, fuzzy
 msgid  "ZIP Code"
 msgstr "གནས་ཨང་།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.String.Text
+#, fuzzy
 msgid  "City"
 msgstr "གྲོང་སྡེ།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.String.Text
+#, fuzzy
 msgid  "Title"
 msgstr "གོ་གནས།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.String.Text
+#, fuzzy
 msgid  "Position"
 msgstr "གནས་ས།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.String.Text
+#, fuzzy
 msgid  "Addr. Form"
 msgstr "ཁ་བྱང་བྲིས་ཤོག།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.String.Text
+#, fuzzy
 msgid  "Initials"
 msgstr "མིང་རྟགས་བསྡུས་པ།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.String.Text
+#, fuzzy
 msgid  "Complimentary close"
 msgstr "བསྟོད་བསྔགས་ མཇུག།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.String.Text
+#, fuzzy
 msgid  "Tel: Home"
 msgstr "བརྒྱུད་འཕྲིན: ཁྱིམ།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.String.Text
+#, fuzzy
 msgid  "Tel: Work"
 msgstr "བརྒྱུད་འཕྲིན:ལཱ་ས།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.String.Text
+#, fuzzy
 msgid  "FAX"
 msgstr "དཔར་འཕྲིན།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.String.Text
+#, fuzzy
 msgid  "E-mail"
 msgstr "གློག་འཕྲིན།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "ཡུ་ཨར་ཨེལ"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.String.Text
+#, fuzzy
 msgid  "Note"
 msgstr "དྲན་འཛིན།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.String.Text
+#, fuzzy
 msgid  "User 1"
 msgstr "ལག་ལེན་པ་ ༡།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.String.Text
+#, fuzzy
 msgid  "User 2"
 msgstr "ལག་ལེན་པ་ ༢།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.String.Text
+#, fuzzy
 msgid  "User 3"
 msgstr "ལག་ལེན་པ་ ༣།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.String.Text
+#, fuzzy
 msgid  "User 4"
 msgstr "ལག་ལེན་པ་ ༤།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.String.Text
+#, fuzzy
 msgid  "ID"
 msgstr "ཨའི་ཌི།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.String.Text
+#, fuzzy
 msgid  "State"
 msgstr "མངའ་སྡེ།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.String.Text
+#, fuzzy
 msgid  "Tel: Office"
 msgstr "བརྒྱུད་འཕྲིན:ཡིག་ཚང་།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.String.Text
+#, fuzzy
 msgid  "Pager"
 msgstr "པེ་ཇར།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.String.Text
+#, fuzzy
 msgid  "Mobile"
 msgstr "འགྲུལ་འཕྲིན།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.String.Text
+#, fuzzy
 msgid  "Tel: Other"
 msgstr "བརྒྱད་འཕྲིན:གཞན།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "ཟླ་ཐོ།"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.String.Text
+#, fuzzy
 msgid  "Invite"
 msgstr "འགྲོན་བརྡ་འབད།"
 
 #: source/dialogs/formats.src#STR_FORMAT_STRING.String.Text
+#, fuzzy
 msgid  "Unformatted text"
 msgstr "རྩ་སྒྲིག་འབད་མ་ཚར་བའི་ ཚིག་ཡིག།"
 
 #: source/dialogs/formats.src#STR_FORMAT_BITMAP.String.Text
+#, fuzzy
 msgid  "Bitmap"
 msgstr "བིཊི་ ས་ཁྲ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_GDIMETAFILE.String.Text
+#, fuzzy
 msgid  "GDI metafile"
 msgstr "ཇི་ཌི་ཨའི་ མེ་ཊ་ཡིག་སྣོད།"
 
 #: source/dialogs/formats.src#STR_FORMAT_RTF.String.Text
+#, fuzzy
 msgid  "Formatted text [RTF]"
 msgstr "རྩ་སྒྲིག་འབད་ཚར་བའི་ ཚིག་ཡིག། [RTF]"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DRAWING.String.Text
+#, fuzzy
 msgid  "Drawing format"
 msgstr "དཔར་རིས་ རྩ་སྒྲིག།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SVXB.String.Text
+#, fuzzy
 msgid  "SVXB (StarView bitmap/animation)"
 msgstr "ཨེསི་ ཝི་ ཨེགསི་ སི་(སིཊར་བཱིའུ་ བིཊི་ས་ཁྲ་/སྒུལ་བཟོ)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.String.Text
+#, fuzzy
 msgid  "Status Info from Svx Internal Link"
 msgstr "ཨེསི་ ཝི ཨེགསི་ ནང་འཁོད་འབྲེལ་ལམ་ལས་ གནས་ཚད་བརྡ་དོན།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SOLK.String.Text
+#, fuzzy
 msgid  "SOLK (%PRODUCTNAME Link)"
 msgstr "ཨེསི་ཨོ་ཨེལ་ཀེ་(%PRODUCTNAME འབྲེལ་ལམ།)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.String.Text
+#, fuzzy
 msgid  "Netscape Bookmark"
 msgstr "ནེཊི་སིཀེཔ་ དེབ་རྟགས།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARSERVER.String.Text
+#, fuzzy
 msgid  "Star server format"
 msgstr "སིཊར་ སར་བར་ རྩ་སྒྲིག།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.String.Text
+#, fuzzy
 msgid  "Star object format"
 msgstr "སིཊར་ དངོས་ཕོ་ རྩ་སྒྲིག།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.String.Text
+#, fuzzy
 msgid  "Applet object"
 msgstr "ཨེཔ་ལེཊི་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.String.Text
+#, fuzzy
 msgid  "Plug-in object"
 msgstr "པ་ལག་ཨིན དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.String.Text
+#, fuzzy
 msgid  "StarWriter 3.0 object"
 msgstr "སིཊར་ རའི་ཊར ༣.༠ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.String.Text
+#, fuzzy
 msgid  "StarWriter 4.0 object"
 msgstr "སིཊར་ རའི་ཊར ༤.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.String.Text
+#, fuzzy
 msgid  "StarWriter 5.0 object"
 msgstr "སིཊར་ རའི་ཊར་ ༥.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.String.Text
+#, fuzzy
 msgid  "StarWriter/Web 4.0 object"
 msgstr "སིཊར་ རའི་ཊར/ཝེབ་ ༤.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.String.Text
+#, fuzzy
 msgid  "StarWriter/Web 5.0 object"
 msgstr "སིཊར་ རའི་ཊར/ཝེབ་ ༥.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.String.Text
+#, fuzzy
 msgid  "StarWriter/Master 4.0 object"
 msgstr "སིཊར་ རའི་ཊར/ཨམ་ ༤.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.String.Text
+#, fuzzy
 msgid  "StarWriter/Master 5.0 object"
 msgstr "སིཊར་ རའི་ཊར་/ཨམ་༥.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW.String.Text
+#, fuzzy
 msgid  "StarDraw object"
 msgstr "སིཊར་ འབྲི་ནའི་ དངོས་"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.String.Text
+#, fuzzy
 msgid  "StarDraw 4.0 object"
 msgstr "སིཊར་ཌཱ་ ༤.༠་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.String.Text
+#, fuzzy
 msgid  "StarImpress 5.0 object"
 msgstr "སིཊར་ཨིམ་པེ་རེསི་ ༥.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.String.Text
+#, fuzzy
 msgid  "StarDraw 5.0 object"
 msgstr "སིཊར་ཌཱ་ ༥.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC.String.Text
+#, fuzzy
 msgid  "StarCalc object"
 msgstr "སིཊར་ཀེལཀི་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.String.Text
+#, fuzzy
 msgid  "StarCalc  4.0 object"
 msgstr "སིཊར་ཀེལཀི་ ༤.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.String.Text
+#, fuzzy
 msgid  "StarCalc 5.0 object"
 msgstr "སིཊར་ཀེལཀི་ ༥.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART.String.Text
+#, fuzzy
 msgid  "StarChart object"
 msgstr "སིཊར་ཅརཊི་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.String.Text
+#, fuzzy
 msgid  "StarChart 4.0 object"
 msgstr "སིཊར་ཅརཊི་ ༤.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.String.Text
 msgid  "StarChart 5.0 object"
-msgstr "སིཊར་ཅརཊི་ ༥.༠་ དངོས་པོ།"
+msgstr "སིཊར་ཅརཊི་ ༥.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.String.Text
+#, fuzzy
 msgid  "StarImage object"
 msgstr "སིཊར་ཨི་མིཇི་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.String.Text
+#, fuzzy
 msgid  "StarImage 4.0 object"
 msgstr "སིཊར་ཨི་མེཇི་ ༤.༠་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.String.Text
+#, fuzzy
 msgid  "StarImage 5.0 object"
 msgstr "སིཊར་ཨི་མེཇི་ ༥.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH.String.Text
+#, fuzzy
 msgid  "StarMath object"
 msgstr "སིཊར་མེཏ་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.String.Text
+#, fuzzy
 msgid  "StarMath 4.0 object"
 msgstr "སིཊར་མེཏ་ ༤.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.String.Text
+#, fuzzy
 msgid  "StarMath 5.0 object"
 msgstr "སིཊར་མིཊ་ ༥.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.String.Text
+#, fuzzy
 msgid  "StarObject Paint object"
 msgstr "སིཊར་ཨོབ་ཇིཀཊི་ ཚོན་གྱི་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML.String.Text
+#, fuzzy
 msgid  "HTML (HyperText Markup Language)"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ (ཚད་བརྒལ་ཡིག་ཚིག་ རྟགས་བཀོད་ སྐད་ཡིག།)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.String.Text
+#, fuzzy
 msgid  "HTML format"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ རྩ་སྒྲིག།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_5.String.Text
+#, fuzzy
 msgid  "Biff5 (Microsoft Excel 5.0/95)"
 msgstr "བིཕིབ་༥་ (མའི་ཀོརོ་སོཕཊི་ ཨེགསི་སེལ་ ༥.༠/༩༥)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_8.String.Text
+#, fuzzy
 msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
 msgstr "བིཕིབ་༨་ (མའི་ཀོརོ་སོཕཊི་ ཨེགསི་སེལ་ ༩༧/༢༠༠༠/ཨེགསི་ པི།)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SYLK.String.Text
+#, fuzzy
 msgid  "Sylk"
 msgstr "སི་ལིཀ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_LINK.String.Text
+#, fuzzy
 msgid  "DDE link"
 msgstr "ཌི་ཌི་ཨི་ འབྲེལ་ལམ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIF.String.Text
+#, fuzzy
 msgid  "DIF"
 msgstr "ཌི་ཨའི་ཨེཕ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.String.Text
+#, fuzzy
 msgid  "Microsoft Word object"
 msgstr "མའི་ཀོརོ་སོཕཊི་ མིང་ཚིག་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.String.Text
+#, fuzzy
 msgid  "StarFrameSet object"
 msgstr "སིཊར་ ཕེརེམ་སིཊི་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.String.Text
+#, fuzzy
 msgid  "Office document object"
 msgstr "ཡིག་ཚང་ ཡིག་ཆ་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.String.Text
+#, fuzzy
 msgid  "Notes document info"
 msgstr "དྲན་འཛིན་ ཡིག་ཆ་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.String.Text
+#, fuzzy
 msgid  "Sfx document"
 msgstr "ཨེས་ཨེཕ་ཨེགསི་ ཡིག་ཆ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.String.Text
+#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "སིཊར་ཅརཊི་ ༥.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.String.Text
+#, fuzzy
 msgid  "Graphic object"
 msgstr "ཚད་རིས་ དངོས་ཕོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION རྩོམ་འབྲི་པའི་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION རྩོམ་འབྲི་པ་/ ཝེབ་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION རྩོམ་འབྲི་པ/ཨམ་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION དངོས་པོ་ བྲིས།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION པར་རྗེས་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION ཀེལ་སི་  དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION དཔེ་རིས་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION མེཏ་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_WMF.String.Text
+#, fuzzy
 msgid  "Windows metafile"
 msgstr "ཝིན་ཌོསི་ མེ་ཊ་ཡིག་སྣོད།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.String.Text
+#, fuzzy
 msgid  "Data source object"
 msgstr "གནད་སྡུད་ འབྱུང་ཁུངས་ དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.String.Text
+#, fuzzy
 msgid  "Data source table"
 msgstr "གནད་སྡུད་ འབྱུང་ཁུངས་ ཐིག་ཁྲམ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.String.Text
+#, fuzzy
 msgid  "SQL query"
 msgstr "ཨེསི་ཀིའུ་ཨེལ འདྲི་དཔྱད།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION ཌའི་ལོག།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.String.Text
+#, fuzzy
 msgid  "Link"
 msgstr "འབྲེལ་ལམ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.String.Text
+#, fuzzy
 msgid  "HTML format without comments"
 msgstr "བསམ་བཀོད་མེད་པའི་ ཨེཆ་ཊི་ཨེམ་ཨེལ་ རྩ་སྒྲིག།"
 
@@ -1574,7 +1690,7 @@ msgid  "The picture needs about %1 KB of memory."
 msgstr ""
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.String.Text
-msgid  "The picture needs about %1 KB of memory,\n the file size is %2 KB."
+msgid  "The picture needs about %1 KB of memory,\\n the file size is %2 KB."
 msgstr ""
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.String.Text
@@ -1644,126 +1760,157 @@ msgid  "~Repeat: "
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.String.Text
+#, fuzzy
 msgid  "Source code"
 msgstr "འབྱུང་ཁུངས་ཀྱི་ཨང་རྟགས།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.String.Text
+#, fuzzy
 msgid  "Bookmark file"
 msgstr "དེབ་རྟགས་ཀྱི་ཡིག་སྣོད།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.String.Text
+#, fuzzy
 msgid  "Graphics"
 msgstr "ཚད་རིས།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.String.Text
+#, fuzzy
 msgid  "Configuration file"
 msgstr "རིམ་སྒྲིག་ཡིག་སྣོད།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.String.Text
+#, fuzzy
 msgid  "Application"
 msgstr "གློག་རིམ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.String.Text
+#, fuzzy
 msgid  "Database table"
 msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ཐིག་ཁྲམ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.String.Text
+#, fuzzy
 msgid  "System file"
 msgstr "རིམ་ལུགས་ཡིག་སྣོད།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.String.Text
+#, fuzzy
 msgid  "MS Word document"
 msgstr "ཨེམ་ཨེསི་མིང་ཚིག་གི་ཡིག་ཆ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.String.Text
+#, fuzzy
 msgid  "Help file"
 msgstr "གྲོག་རམ་ཡིག་སྣོད།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.String.Text
+#, fuzzy
 msgid  "HTML document"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ཡིག་ཆ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.String.Text
+#, fuzzy
 msgid  "Archive file"
 msgstr "ཡིག་མཛོད་ཀྱི་ཡིག་སྣོད།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.String.Text
+#, fuzzy
 msgid  "Log file"
 msgstr "དྲན་དེབ་ཡིག་སྣོད།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.String.Text
+#, fuzzy
 msgid  "%STAROFFICE Database"
 msgstr "%STAROFFICE གནད་སྡུད་གཞི་རྟེན།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.String.Text
+#, fuzzy
 msgid  "StarWriter 4.0 / 5.0 Master Document"
 msgstr "སི་ཊར་རའི་ཊར་ ༤.༠/༥.༠ ཡིག་ཆ་ཨམ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.String.Text
+#, fuzzy
 msgid  "%STAROFFICE Image"
 msgstr "%STAROFFICE གཟུགས་བརྙན།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.String.Text
+#, fuzzy
 msgid  "Text file"
 msgstr "ཚིག་ཡིག་གི་ཡིག་སྣོད།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LINK.String.Text
+#, fuzzy
 msgid  "Link"
 msgstr "འབྲེལ་ལམ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.String.Text
+#, fuzzy
 msgid  "%STAROFFICE 3.0 - 5.0 Template"
 msgstr "%STAROFFICE ༣.༠-༥.༠ ཊེམ་པེལེཊི།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.String.Text
+#, fuzzy
 msgid  "MS Excel document"
 msgstr "ཨེམ་ཨེསི་ ཨེགསི་སེལ་ ཡིག་ཆ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.String.Text
+#, fuzzy
 msgid  "MS Excel template"
 msgstr "ཨེམ་ཨེསི་ ཨེགསི་སེལ་ ཊེམ་པེལེཊི།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.String.Text
+#, fuzzy
 msgid  "Batch file"
 msgstr "རུ་ཚན་གྱི་ཡིག་སྣོད།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FILE.String.Text
+#, fuzzy
 msgid  "File"
 msgstr "ཡིག་སྣོད།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FOLDER.String.Text
+#, fuzzy
 msgid  "Folder"
 msgstr "སྣོད་འཛིན།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.String.Text
+#, fuzzy
 msgid  "Text Document"
 msgstr "ཚིག་ཡིག་གི་ཡིག་ཆ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.String.Text
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "ཤོག་ཁྲམ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.String.Text
+#, fuzzy
 msgid  "Presentation"
 msgstr "གསལ་སྟོན།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.String.Text
+#, fuzzy
 msgid  "Drawing"
 msgstr "པར་རིས།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.String.Text
+#, fuzzy
 msgid  "HTML document"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ཡིག་ཆ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.String.Text
+#, fuzzy
 msgid  "Master document"
 msgstr "ཡིག་ཆ་ཨམ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.String.Text
+#, fuzzy
 msgid  "Formula"
 msgstr "མན་ངག"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.String.Text
+#, fuzzy
 msgid  "Database"
 msgstr "གནས་སྡུད་གཞི་རྟེན།"
 
@@ -1784,30 +1931,37 @@ msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Tem
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
+#, fuzzy
 msgid  "Local drive"
 msgstr "ཉེ་གནས་ཀྱི་འདྲེན་འཕྲུལ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.String.Text
+#, fuzzy
 msgid  "Disk drive"
 msgstr "ཌིསིཀ་གི་འདྲེན་འཕྲུལ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.String.Text
+#, fuzzy
 msgid  "CD-ROM drive"
 msgstr "སི་ཌི་-ཨར་ཨོ་ཨེམ འདྲེན་འཕྲུལ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.String.Text
+#, fuzzy
 msgid  "Network connection"
 msgstr "ཡོངས་འབྲེལ་གྱི་མཐུད་ལམ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.String.Text
+#, fuzzy
 msgid  "MS PowerPoint Document"
 msgstr "ཨེམ་ཨེསི་ པ་ཝར་པོའིནཊི་ ཡིག་ཆ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.String.Text
+#, fuzzy
 msgid  "MS PowerPoint Template"
 msgstr "ཨེམ་ཨེསི་ པ་ཝར་པོའིནཊི་ ཊེམ་པེལེཊི།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.String.Text
+#, fuzzy
 msgid  "MS PowerPoint Show"
 msgstr "ཨེམ་ཨེསི་ པ་ཝར་པོའིནཊི་ སྟོན།"
 
@@ -1840,54 +1994,67 @@ msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
+#, fuzzy
 msgid  "MathML Document"
 msgstr "ཨང་རྩིས་ཨེམ་ཨེལ་ ཡིག་ཆ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Database"
 msgstr "ཨོ་པན་ཌོ་ཀུ་མེནཊི་ གནད་སྡུད་གཞི་རྟེན།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Drawing"
 msgstr "ཨོ་པན་ཌོ་ཀུ་མེནཊི་ པར་རིས།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Formula"
 msgstr "ཨོ་པན་ཌོ་ཀུ་མེནཊི་ མན་ངག"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "ཨོ་པན་ཌོ་ཀུ་མེནཊི་ ཡིག་ཆ་ཨམ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Presentation"
 msgstr "ཨོ་པན་ཌོ་ཀུ་མེནཊི་ གསལ་སྟོན།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Spreadsheet"
 msgstr "ཨོ་པན་ཌོ་ཀུ་མེནཊི་ ཤོག་ཁྲམ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "ཨོ་པན་ཌོ་ཀུ་མེནཊི་ ཚིག་ཡིག"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Spreadsheet Template"
 msgstr "ཨོ་པན་ཌོ་ཀུ་མེནཊི་ ཤོག་ཁྲམ་གྱི་ཊེམ་པེལེཊི།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Drawing Template"
 msgstr "ཨོ་པན་ཌོ་ཀུ་མེནཊི་ པར་རིས་ཀྱི་ཊེམ་པེལེཊི།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Presentation Template"
 msgstr "ཨོ་པན་ཌོ་ཀུ་མེནཊི་ གསལ་སྟོན་གྱི་ཊེམ་པེལེཊི།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "ཨོ་པན་ཌོ་ཀུ་མེནཊི་ ཚིག་ཡིག་གི་ཊེམ་པེལེཊི།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Extension"
 msgstr "%PRODUCTNAME རྒྱ་བསྐྱེད་"
 
@@ -1896,6 +2063,7 @@ msgid  "[None]"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PairedList.item
+#, fuzzy
 msgid  "Unknown"
 msgstr "མ་ཤེསཔ།"
 
@@ -3056,86 +3224,107 @@ msgid  "Haitian"
 msgstr ""
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
+#, fuzzy
 msgid  "Display IDs"
 msgstr "ཨའི་ཌི་ཨེས་ བཀྲམ་སྟོན་འབད།"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
+#, fuzzy
 msgid  "This is the input window"
 msgstr "འ་ནི་འདི་ཨིན་པུཊི་ ཝིན་ཌོ་ཨིན།"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SEND_DATA.ToolBoxItem.Text
+#, fuzzy
 msgid  "Transfer to TestTool"
 msgstr "བརྟག་ཞིབ་ལག་ཆས་ལུ་ གནས་སོར་འབད།"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
+#, fuzzy
 msgid  "Show all windows"
 msgstr "ཝིན་ཌོསི་ ཆ་མཉམ་སྟོན།"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
+#, fuzzy
 msgid  "Show short names (if available)"
 msgstr "མིང་ཐུང་ཀུ་དེ་ཚུ་སྟོན།(འཐོབ་ཚུགས་པ་ཅིན།)"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
+#, fuzzy
 msgid  "Always show long-name"
 msgstr "ཨ་རྟག་རང་ མིང་རིངམ་སྟོན།"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
+#, fuzzy
 msgid  "DisplayHID"
 msgstr "ཨེཆ་ཨའི་ཌི་ བཀྲམ་སྟོན་འབད།"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
+#, fuzzy
 msgid  "Translation"
 msgstr "་སྐད་བསྒྱུར་འབད་ནི།"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "ཞུན་དག།(~E)"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
+#, fuzzy
 msgid  "Original Text"
 msgstr "ཚིག་ཡིག་ངོ་མ།"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "བསམ་བཀོད།"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
+#, fuzzy
 msgid  "~Comment"
 msgstr "བསམ་བཀོད།(~C)"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
+#, fuzzy
 msgid  "~Select"
 msgstr "སེལ་འཐུ་འབད།(~S)"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
+#, fuzzy
 msgid  "~Restore"
 msgstr "སོར་ཆུད།(~R)"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
+#, fuzzy
 msgid  "~Accept"
 msgstr "དང་ལེན།(~A)"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
+#, fuzzy
 msgid  "~Next"
 msgstr "ཤུལ་མམ།(~N)"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
+#, fuzzy
 msgid  "Inplace Translation"
 msgstr "ཨིན་པེལེསི་ སྐད་བསྒྱུར།"
 
 #: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
+#, fuzzy
 msgid  "The Translation will be lost. Proceed anyway?"
 msgstr "སྐད་བསྒྱུར་འདི་ བརླག་སྟོར་ཞུགས་འོང་།གང་རུང་སྦེ་ འཕྲོ་མཐུད་འབད?"
 
 #: source/plugapp/testtool.src#TT_NO_CONTROL.ErrorBox.Message
+#, fuzzy
 msgid  "The Control is no longer valid. The Translation cannot be saved."
 msgstr "ཚད་འཛིན་འདི་ ནུས་ཅན་མེན། སྐད་བསྒྱུར་འདི་ སྲུངས་བཞག་འབད་མི་བཏུབ།"
 
 #: source/plugapp/testtool.src#TT_GPF.String.Text
+#, fuzzy
 msgid  "GPF occurred"
 msgstr "ཇི་པི་ཨེཕ་ བྱུང་ནུག"
 
 #: source/plugapp/testtool.src#TT_ALTERNATE_CAPTION.String.Text
+#, fuzzy
 msgid  "HelpID does not match UniqueID: "
 msgstr "ཧེལཔ་ ཨའི་ཌི་གིས་ ཡུནི་ཀུའེལ་ ཨའི་ཌི་ལུ་ མཐུན་སྒྲིག་འབད་མི་བཏུབ།"
 

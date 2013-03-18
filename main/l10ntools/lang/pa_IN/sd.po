@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "ਸਲਾਈਡਾਂ ਹਲਾਓ"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "ਲੋੜੀਦੀ ਮੈਮੋਰੀ ਨਹੀਂ ਹੈ!\nਕਾਰਵਾਈ ਛੱਡੀ ਜਾਂਦੀ ਹੈ।"
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1617,7 +1617,7 @@ msgstr "ਢਾਂਚਾ"
 
 #: source/ui/app/strings.src#STR_NOTES_MODE.String.Text
 msgid  "Notes"
-msgstr "ਨੋਟ"
+msgstr "ਨੋਟਿਸ"
 
 #: source/ui/app/strings.src#STR_HANDOUT_MODE.String.Text
 msgid  "Handout"
@@ -1717,7 +1717,7 @@ msgstr "ਨੌਂ ਸਲਾਈਡਾਂ"
 
 #: source/ui/app/strings.src#STR_AUTOLAYOUT_NOTES.String.Text
 msgid  "Notes"
-msgstr "ਨੋਟਿਸ"
+msgstr "ਸੂਚਨਾ"
 
 #: source/ui/app/strings.src#STR_TRANSFORM.String.Text
 msgid  "transform"
@@ -1732,8 +1732,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਨਵੇਂ ਤੀਰਮੁੱਖ ਲਈ ਨਾਂ ਦਿਓ:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "ਨਾਂ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ।\nਵੱਖਰਾ ਨਾਂ ਚੁਣੋ ਜੀ।"
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "ਸਲਾਈਡਾਂ ਸ਼ਾਮਿਲ"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "ਕੀ ਤੁਸੀਂ \"$\" ਪੱਧਰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?\nਸੂਚਨਾ:ਇਸ ਲੇਅਰ ਉੱਤੇ ਮੌਜੂਦ ਸਭ ਆਬਜੈਕਟ ਵੀ ਹਟਾਈਆਂ ਜਾਣਗੀਆਂ!"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1852,8 +1852,8 @@ msgid  "Insert text frame"
 msgstr "ਟੈਕਸਟ ਫਰੇਮ ਸ਼ਾਮਿਲ"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "ਇਹ ਫੰਕਸ਼ਨ ਚੁਣੀਆਂ ਆਬਜੈਕਟ ਨਾਲ\n ਨਹੀਂ ਚੱਲ ਸਕਦਾ ਹੈ।"
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1864,8 +1864,8 @@ msgid  "The file could not be loaded!"
 msgstr "ਫਾਇਲ ਨੂੰ ਲੋਡ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "ਨਵੇਂ ਸਫ਼ਿਆਂ ਦਾ ਫਾਰਮੈਟ ਸਵੀਕਾਰ ਕੀਤਾ ਜਾਵੇਗਾ।\nਕੀ ਤੁਸੀਂ ਆਬਜੈਕਟ ਨੂੰ ਵੀ ਪ੍ਰਾਪਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1884,8 +1884,8 @@ msgid  "~Edit"
 msgstr "ਸੋਧ(~E)"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "ਇਹ ਕਾਰਵਾਈ ਨਾਲ ਕਾਰਵਾਈਆਂ ਦੀ ਸੂਚੀ ਹਟਾਈ ਜਾਵੇਗੀ,\nਜੋ ਕਿ ਵਾਪਸ ਕੀਤੀਆਂ ਜਾ ਸਕਦੀਆਂ ਹਨ। ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਪਹਿਲਾਂ ਤਬਦੀਲੀਆਂ ਰਹਿਣਗੀਆਂ, ਪਰ\nਇਹਨਾਂ ਨੂੰ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕੇਗਾ। ਕੀ ਤੁਸੀਂ ਜਾਰੀ ਰਹਿਣਾ ਚਾਹੁੰਦੇ ਹੋ ਅਤੇ\nਨਵਾਂ ਸਲਾਈਡ ਡਿਜ਼ਾਈਨ ਲਾਗੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1904,8 +1904,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "ਡੌਕੂਮੈਂਟ ਫਾਰਮੈਟ ਦਿੱਤੇ ਪਰਿੰਟਰ ਉੱਤੇ ਨਹੀਂ ਭੇਜਿਆ ਜਾ ਸਕਿਆ ਹੈ।"
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "ਇਹ ਗਰਾਫਿਕਸ ਡੌਕੂਮੈਂਟ ਨਾਲ ਸਬੰਧਤ ਹੈ।\nਕੀ ਤੁਸੀਂ ਗਰਾਫਿਕਸ ਨੂੰ ਸੋਧਣ ਲਈ ਇਹ ਸਬੰਧ ਹਟਾਉਣ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2016,8 +2016,8 @@ msgid  " (Outline)"
 msgstr " (ਆਉਟਲਾਈਨ)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "ਦਿੱਤਾ ਸਕੇਲ ਠੀਕ ਨਹੀਂ ਹੈ।\nਕੀ ਤੁਸੀਂ ਨਵਾਂ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2300,8 +2300,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "ਸਭ ਡਰਾਇੰਗ ਆਬਜੈਕਟ ਦਾ ਗਰੁੱਪ-ਵੱਖ ਕਰਨਾ ਸੰਭਵ ਨਹੀਂ ਹੈ।"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "ਇਸ ਨਾਂ ਨਾਲ ਡਿਜ਼ਾਈਨ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ।\nਕੀ ਤੁਸੀਂ ਇਸ ਨੂੰ ਤਬਦੀਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2416,8 +2416,8 @@ msgid  "Graphics filter"
 msgstr "ਗਰਾਫਿਕਸ ਫਿਲਟਰ"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-msgid  "The file %\nis not a valid sound file !"
-msgstr "ਫਾਇਲ %\n ਠੀਕ ਧੁਨੀ ਫਾਇਲ ਨਹੀਂ ਹੈ!"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -3357,7 +3357,7 @@ msgstr "ਕਤਾਰ(~R)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
-msgstr "ਬਰਾਬਰ ਸੰਨ੍ਹ(~E)"
+msgstr "ਬਰਾਬਰ ਥਾਂ(~E)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
 msgid  "~Select"
@@ -3405,19 +3405,19 @@ msgstr "ਲੇਅਰ ਹਟਾਓ(~L)..."
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
 msgid  "~Apply to All Slides"
-msgstr "ਸਭ ਸਲਾਈਡਾਂ ਉੱਤੇ ਲਾਗੂ ਕਰੋ(~A)"
+msgstr "ਸਭ ਸਲਾਈਡਾਂ 'ਤੇ ਲਾਗੂ(~A)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 msgid  "Apply to ~Selected Slides"
-msgstr "ਚੁਣੀਆਂ ਸਲਾਈਡਾਂ ਉੱਤੇ ਲਾਗੂ ਕਰੋ(~S)"
+msgstr "ਚੁਣੀਆਂ ਸਲਾਈਡਾਂ 'ਤੇ ਲਾਗੂ(~S)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
 msgid  "Show ~Large Preview"
-msgstr "ਵੱਡੀ ਝਲਕ ਵੇਖੋ(~L)"
+msgstr "ਵੱਡੀ ਝਲਕ ਵੇਖਾਓ(~L)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
 msgid  "Show S~mall Preview"
-msgstr "ਛੋਟੀ ਝਲਕ ਵੇਖੋ(~m)"
+msgstr "ਛੋਟੀ ਝਲਕ ਵੇਖਾਓ(~M)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
 msgid  "~Apply to All Slides"

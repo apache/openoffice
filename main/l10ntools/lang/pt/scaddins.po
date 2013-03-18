@@ -1565,7 +1565,7 @@ msgstr "Taxa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.13.String.Text
 msgid  "The rate of depreciation"
-msgstr "A taxa de amortização."
+msgstr "A taxa de depreciação."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.14.String.Text
 msgid  "Basis"
@@ -1685,7 +1685,7 @@ msgstr "Frequência"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.13.String.Text
 msgid  "The frequency"
-msgstr "A frequência."
+msgstr "A frequência"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.14.String.Text
 msgid  "Basis"
@@ -1693,7 +1693,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.15.String.Text
 msgid  "The basis"
-msgstr "A base."
+msgstr "A base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
@@ -1737,7 +1737,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.11.String.Text
 msgid  "The basis"
-msgstr "A base."
+msgstr "A base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
@@ -1757,7 +1757,7 @@ msgstr "Vencimento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
 msgid  "The maturity"
-msgstr "O vencimento."
+msgstr "O vencimento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
 msgid  "Investment"
@@ -1781,7 +1781,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.11.String.Text
 msgid  "The basis"
-msgstr "A base."
+msgstr "A base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.1.String.Text
 msgid  "Returns the discount rate for a security"
@@ -1801,7 +1801,7 @@ msgstr "Vencimento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
 msgid  "The maturity"
-msgstr "O vencimento."
+msgstr "O vencimento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.6.String.Text
 msgid  "Price"
@@ -1845,7 +1845,7 @@ msgstr "Vencimento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.5.String.Text
 msgid  "The maturity"
-msgstr "O vencimento."
+msgstr "O vencimento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.6.String.Text
 msgid  "Coupon"
@@ -1869,7 +1869,7 @@ msgstr "Frequência"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.11.String.Text
 msgid  "The frequency"
-msgstr "A frequência."
+msgstr "A frequência"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.12.String.Text
 msgid  "Basis"
@@ -1917,11 +1917,11 @@ msgstr "Nper"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.5.String.Text
 msgid  "Number of payment periods"
-msgstr "Número de períodos de pagamento."
+msgstr "Número de períodos de pagamento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.6.String.Text
 msgid  "Pv"
-msgstr "Pv"
+msgstr "Va"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.7.String.Text
 msgid  "The present value"
@@ -2021,7 +2021,7 @@ msgstr "Vencimento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.5.String.Text
 msgid  "The maturity"
-msgstr "O vencimento."
+msgstr "O vencimento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.6.String.Text
 msgid  "Rate"
@@ -2081,7 +2081,7 @@ msgstr "Vencimento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.5.String.Text
 msgid  "The maturity"
-msgstr "O vencimento."
+msgstr "O vencimento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.6.String.Text
 msgid  "Discount"
@@ -3153,7 +3153,7 @@ msgstr "Data final"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.5.String.Text
 msgid  "Last day of the period"
-msgstr "Último dia do período"
+msgstr "Último dia do período."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.6.String.Text
 msgid  "Type"

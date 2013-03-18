@@ -125,7 +125,7 @@ msgstr "Hãy đọc kỹ thỏa thuận giấy phép dưới đây."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr "Nếu bạn đã đọc và chấp thuận mọi thỏa thuận giấy phép phần mềm này thì nhắp nút « Đồng ý » để tiếp tục tiến trình cài đặt."
+msgstr "Bạn đọc và đồng ý với mọi điều kiện quyền dùng phần mềm này thì nhắp nút « Đồng ý » để tiếp tục lại tiến trình cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -152,12 +152,12 @@ msgid  "Create New Directory"
 msgstr "Tạo thư mục mới"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "Thư mục « ${DIR} » không tồn tại.\nBạn có muốn tạo nó ngay bây giờ không?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "Thư mục « ${DIR} » không tồn tại.\nBạn có muốn tạo nó ngay bây giờ, hoặc chọn thư mục khác?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -260,8 +260,8 @@ msgid  "To continue, click 'Next'."
 msgstr "Để tiếp tục, nhắp 'Tiếp'."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "Ghi chú : Tiến trình cài đặt này không cần quyền root. Do đó, sẽ có một số tính năng bị hạn chế (không thể cài đặt môi trường thực thi Java (JRE), không thể hợp nhất với hệ thống).\nMuốn sử dụng chức năng đầy đủ thì nhắp nút 'Thôi' và thay đổi quyền hạn thành quyền người chủ."
+msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -432,8 +432,8 @@ msgid  "Analyzing ..."
 msgstr "Đang phân tích..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "Đang phân tích cơ sở dữ liệu...\nHãy đợi một chút."
+msgid  "Analyzing database\\nPlease wait a moment ..."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
@@ -441,11 +441,11 @@ msgstr "Chào mừng bạn dùng Trợ thủ Cài đặt.<p>Trợ thủ này gi�
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
-msgstr "Nút \"Lùi\" để trở về trang trước."
+msgstr "Nút \"Lùi\" sẽ đưa bạn trở về trang trước."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
 msgid  "'Next' takes you to the next page. "
-msgstr "Nhấn  \"Tiếp\" để chuyển tới trang sau."
+msgstr "Nút « Tiếp » thì tiếp tới trang sau. "
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 msgid  "'Cancel' ends the Installation Wizard without installing this software."
@@ -453,7 +453,7 @@ msgstr "Nhấn \"Thôi\" sẽ kết thúc Trợ thủ Cài đặt, dừng không
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr "Nhấn \"Trợ giúp\" sẽ hiển thị thêm thông tin về trang bạn đang xem."
+msgstr "Nút « Trợ giúp » thì hiển thị thêm thông tin về trang bạn đang xem."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."

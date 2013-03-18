@@ -56,8 +56,8 @@ msgid  "Data Source Title"
 msgstr "దత్తాంశ వనరు రకం"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "నీ వ్యవస్ధలోని  చిరునామా దత్తాంశపు సాంగత్యమునకు %PRODUCTNAME సహకరించును.దీని కొరకు ,నీ చిరునామా దత్తాంశము పట్టిక రూపములోఉండునో అచట %PRODUCTNAME దత్తాంశ వనరును నెలకొల్పాలి\n\n ఈ విజర్డ్ దత్తాంశ వనరును నెలకొల్పుటలో సహకరించును "
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -108,32 +108,32 @@ msgid  "Other external data source"
 msgstr "ఇతరములు బాహ్య దత్తాంశ వనరు"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "క్రొత్త దత్తాంశ వనరును అమర్చుటకు  అదనపు సమాచారము అవసరము.\n\nఅదనపు సమాచారము ఇవ్వుటకు వస్తున్న బొత్తమును క్లిక్ చేయి"
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
 msgstr "అమరికలు"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "దత్తాంశ వనరు బంధము ఏర్పడలేదు\n ముందుగా, దయచేసి అమరికలను తనిఖీ చేయి లేదా వేరే దత్తాంశ వనరును తీసుకో"
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr " నీవు తీసుకున్న బాహ్య దత్తాంశ వనరు ,ఒకటి కన్నా ఎక్కువ చిరునామాపుస్తకములు కలిగి ఉంది.\nదయచేసి  ముఖ్యమైన దానిని ఎంచుకో "
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "  చిరునామా దత్తాంశం మాదిరిగా,%PRODUCTNAME క్షేత్రంలు  దత్తాంశం.\n\n                  ఇ-మెయిల్ చిరునామా క్షేత్రంలో నామంగా  \"మెయిల్\",లేదా \"ఇ-మెయిల్\" లేదా \"ఇ ఎమ్\"- లేదా"
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
 msgstr "క్షేత్రము అప్పగింత"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "తప్పక సమాచారం చిరునామా దత్తాంశం %PRODUCTNAME.\n\nఇప్పుడు,       నామం                 దత్తాంశ వనరులో %వPRODUCTNAME. "
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -160,8 +160,8 @@ msgid  "Please select a type of address book."
 msgstr "దయచేసి ఎంచుకొను రకం చిరునామా పుస్తక"
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr "దత్తాంశ వనరు పట్టికలను కలిగియుండదు.\n అమరిక  చిరునామా దత్తాంశ వనరు ,ఎక్కడైన?"
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr " దత్తాంశ చిరునామా-క్షేత్ర అభ్యాసము"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr ""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -216,8 +216,8 @@ msgid  "Data Source"
 msgstr "దత్తాంశ వనరు"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\n"
-msgstr " నిలువు పట్టి  నామంలు ఇవ్వబడవు:\n"
+msgid  "The following column names could not be assigned:\\n"
+msgstr ""
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -492,8 +492,8 @@ msgid  "Control"
 msgstr "నియంత్రణ"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "కుడిప్రక్కన ,నీవు ఫారపు  దత్తాంశ వనరు  అన్ని పట్టికలు చూడవచ్చు.\n\n\n దత్తాంశం వినియోగించిన జాబితా సారం నుండి పట్టికను ఎంచుకొ:"
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -588,8 +588,8 @@ msgid  "Data"
 msgstr "దత్తాంశం"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "ప్రస్తుతము,ఫారమ్ నియంత్రణ దత్తాంశం వనరుకు బౌండ్ కాదు.\n\nదయచేసి దత్తాంశ వనరు మరియు పట్టికను ఎంచుకో .\n\n\nదయచేసి పుటలో చేసిన అమరికలు పుటనుండి బయటకు రాగానే పర్యవసానముచేందును ."
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -736,8 +736,8 @@ msgid  "Welcome"
 msgstr "స్వాగతం"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr "%PRODUCTNAME %PRODUCTVERSION OEM కు స్వాగతం\n\n%PRODUCTNAME %PRODUCTVERSION OEM ప్రారంభించుటకు, దయచేసి మీ వ్యక్తిగత డాటాను ఈ డైలాగ్ నందు ఒప్పంద పాఠమును అనుసరించి ప్రవేశపెట్టుము. దిగుమతి సమాచారము రీడ్‌మీ ఫైళ్ళనందు వుంది అవి %PRODUCTNAME ప్రొడక్ట్ డైరెక్టరీనందు వున్నాయి. దయచేసి ఈ ఫైళ్ళను జాగ్రత్తగా చదువుము. మీరు యింకా విశదీకృత సమాచారమును Oracle వెబ్‌సైట్‌నందు కూడా కనుగొనగలరు.\n\nhttp://www.oracle.com/us/products/applications/open-office."
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr ""
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -816,8 +816,8 @@ msgid  "Forms"
 msgstr "ఫారములు"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "మీరు డాటా టైప్ '#type#' ను మోడల్‌నుండి తొలగించుదామని అనుకొనుచున్నారా?\nఈ డాటాటైపునకు బౌండైవున్న అన్ని నియంత్రికలను యిది ప్రభావితం చేస్తుందని గమనించండి."
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2296,12 +2296,12 @@ msgid  "Type a name for the new data type:"
 msgstr " క్రొత్త దత్తాంశ రకము కొరకు నామము ఇవ్వు"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\n Dev~ice"
-msgstr "గురించి౉౉౉౉౉౉౉\n పరికరం"
+msgid  "About\\n Dev~ice"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\nPreview"
-msgstr "సృష్టించు\nఉపదర్శనం"
+msgid  "Create\\nPreview"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2356,8 +2356,8 @@ msgid  "Scanner"
 msgstr "సంశోధన పరికరం"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "పరికరం"
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2404,8 +2404,8 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION సరికొత్తగావుంది."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr "%PRODUCTNAME %NEXTVERSION అందుబాటులోవుంది.\n\nసంస్థాపిత వర్షన్ %PRODUCTNAME %PRODUCTVERSION.\n\nగమనిక: ఒక నవీకరణను డౌన్‌లోడ్ చేయుటకు ముందుగా, దానిని సంస్థాపించుటకు మీకు సరిపోయినన్ని హక్కులు వున్నాయేమో నిర్ధారించుకోండి.\nఒక సంకేతపదము, సాధారణంగా నిర్వహణాధికారిది లేదా root సంకేతపదము, అవసరము కావచ్చు."
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2420,16 +2420,16 @@ msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "దీనివద్ద నిలుపబడిన %PRODUCTNAME %NEXTVERSIONను డౌనులోడుచేస్తున్నది...."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "డౌనులోడు చేసిన స్థానము: %DOWNLOAD_PATH.\n\nపనిముట్లు - ఐచ్చికములు... - %PRODUCTNAME – ఆన్‌లైన్ నవీకరణ క్రిందన మీరు డౌనులోడు స్థానమును మార్చవచ్చు."
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME అనునది %DOWNLOAD_PATHకు డౌనులోడు అయినది."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "నవీకరణయొక్క స్వయంచాలక డౌనులోడు యిప్పుడు అందుబాటులోలేదు.\n\nవెబ్‌సైటునుండి %PRODUCTNAME %NEXTVERSIONను మానవీయంగా డౌనులోడు చేయుటకు 'డౌనులోడును...'ను నొక్కండి."
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2575,6 +2575,6 @@ msgstr "పొడిగింపులకు నవీకరణలు అంద�
 msgid  "Click here for more information."
 msgstr "ఎక్కువ సమాచారము కొరకు యిక్కడనొక్కుము."
 
-#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
 msgid  "Check for ~Updates..."
 msgstr "(~U) నవీకరణల కొరకు పరిశీలించుము..."

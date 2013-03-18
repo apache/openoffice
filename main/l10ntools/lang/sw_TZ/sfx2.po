@@ -204,8 +204,8 @@ msgid  "Controls"
 msgstr "Vidhibiti"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
-msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr "Programu-tumizi haiwezi kukatishwa muda huu.\nTafadhali subiri mpaka kazi zote za kuchapisha na/au\nvitendo OLE vimemaliza na funga dialogi zote."
+msgid  "The application cannot be terminated at the moment.\\nPlease wait until all print jobs and/or\\nOLE actions have finished and close all dialogs."
+msgstr ""
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 msgid  "Do you want to save the changes to %1?"
@@ -236,8 +236,8 @@ msgid  "Function Bar"
 msgstr "Mwambaa Amali"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
-msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr "Hitilafu imetokea katika usanidi maalum.\nTafadhali wasiliana na mtawala wako."
+msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
+msgstr ""
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -292,7 +292,7 @@ msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "Kiungohipa hichi kinaenda kufungua \"\". Unataka kuendelea?"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
-msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgid  "For security reasons, the hyperlink cannot be executed.\\nThe stated address will not be opened."
 msgstr ""
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
@@ -300,12 +300,12 @@ msgid  "Security Warning"
 msgstr "Tahadhari ya Usalama"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
-msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr "Saving will remove all existing signatures.\nDo you want to continue saving the document?\n"
+msgid  "Saving will remove all existing signatures.\\nDo you want to continue saving the document?"
+msgstr ""
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
-msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgid  "The document has to be saved before it can be signed.\\nDo you want to save the document?"
+msgstr ""
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
@@ -340,7 +340,7 @@ msgid  "Link graphics"
 msgstr ""
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
-msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
+msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
 msgstr ""
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
@@ -508,12 +508,12 @@ msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
 msgstr "Zinza %PRODUCTNAME %MODULENAME Msaada wakati wa Kuanza"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
+msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
+msgstr ""
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "Chujio $(FILTER) lililoteuliwa halikujumuishwa katika toleo lako.\nUnaweza kutafuta habari kuhusu oda katika ukurasakaya wako."
+msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
+msgstr ""
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -624,8 +624,8 @@ msgid  "Warning"
 msgstr "Warning"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
-msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr "Andiko lako lina viumbile angavu.\nHii inaweza ikapelekea muda wa uchapishaji kuwa mrefu katika printa\nfulani. Je hali ya uangavu ipunguzwe?"
+msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
+msgstr ""
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -732,7 +732,7 @@ msgid  "~Unprotect..."
 msgstr ""
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
-msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
 msgstr ""
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
@@ -1304,7 +1304,7 @@ msgid  "Remove Property"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
-msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgid  "The value entered does not match the specified type.\\nThe value will be stored as text."
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
@@ -1428,20 +1428,20 @@ msgid  "This Style does not exist."
 msgstr "Mtindo Huu haupo."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
-msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr "Mtindo huu hauwezi kutumika kama Mtindo msingi,\nkwasababu unaweza kusababisha rejeo za mwitano."
+msgid  "This Style cannot be used as a base Style,\\nbecause it would result in a recursive reference."
+msgstr ""
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
-msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr "Jina tayari lipo kama Mtindo chaguo-msingi.\nTafadhali chagua jina jengine."
+msgid  "Name already exists as a default Style.\\nPlease choose another name."
+msgstr ""
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
 msgid  "Do you really want to delete Style $1?"
 msgstr "Kweli unataka kufuta Mtindo $1?"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
-msgid  "You are deleting an applied Style!\n"
-msgstr "Unafuta Staili iliyotekelezwa!\n"
+msgid  "You are deleting an applied Style!\\n"
+msgstr ""
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
 msgid  "New..."
@@ -1488,8 +1488,8 @@ msgid  "Tasks"
 msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
-msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\n- Click 'Yes' to save in %FORMATNAME file format.\n- Click 'No' to use the latest OpenDocument file format and be sure all formatting and content is saved correctly."
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1580,12 +1580,12 @@ msgid  "~Organizer..."
 msgstr "~Organizer..."
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
-msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr "Kuhifadhi katika fomati ya nje inaweza kusababisha\n upotevu wa habari. Je bado unataka kufunga?"
+msgid  "Saving in external formats may have caused\\n information loss. Do you still want to close?"
+msgstr ""
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
-msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr "Jina tayari linatumika.\nUnataka kuandikiza templeti andiko?"
+msgid  "Name already in use.\\nDo you want to overwrite document template?"
+msgstr ""
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
 msgid  "Are you sure you want to delete the region \"$1\"?"
@@ -1596,12 +1596,12 @@ msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "Unauhakika unataka kufuta ingizo \"$1\"?"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
-msgid  "The category is not empty.\nDelete anyway?"
-msgstr "Kategoria haipo tupu.\nHatahivyo futa?"
+msgid  "The category is not empty.\\nDelete anyway?"
+msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "Andiko \"$(DOC)\" limerekebishwa.\nUnataka kuhifadhi mabadiliko yako?"
+msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1648,8 +1648,8 @@ msgid  "Templates"
 msgstr "Templeti"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "Hitilafu wakati wa kunakili templeti \"$1\". \nTempleti yenye jina hili linaweza likawa tayari lipo."
+msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
+msgstr ""
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
 msgid  "The template \"$1\" can not be deleted."
@@ -1680,8 +1680,8 @@ msgid  "Please specify a name."
 msgstr "Tafadhali bainisha jina."
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
-msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr "Tafadhali bainisha jina pekee.\nMaingizo lazima yasiwe kesi maalum."
+msgid  "Please specify a unique name.\\nEntries must not be case specific."
+msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
 msgid  "Should the template \"$(TEXT)\" become the default template?"
@@ -1692,8 +1692,8 @@ msgid  "Do you want to reset the default template?"
 msgstr "Unataka kuseti upya templeti chaguo-msingi?"
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
-msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr "Saraka templeti\n$(DIR)\nhaipo."
+msgid  "Template directory\\n$(DIR)\\ndoes not exist."
+msgstr ""
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
 msgid  "Document info cannot be read."
@@ -1704,8 +1704,8 @@ msgid  "The selected file has an incorrect format."
 msgstr "Faili lililoteuliwa lina fomati isiyo sahihi."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
-msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr "Andiko haliwezi kuhifadhiwa katika fomati $(FORMAT). Je\nunataka kuhifadhi mabadiliko yako kwa kutumia fomati $(OWNFORMAT)?"
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1768,8 +1768,8 @@ msgid  "Disconnected"
 msgstr "Imetenganishwa"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
-msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr "Andiko haliwezi kufunguliwa kwaajili ya kuhariri.\nJe unataka kufungua andiko kama linasomwa-tu?"
+msgid  "Document cannot be opened for editing.\\nDo you want to open it as read-only?"
+msgstr ""
 
 #: source/doc/doc.src#STR_EDIT.String.Text
 msgid  "Edit"
@@ -1892,8 +1892,8 @@ msgid  "File format:"
 msgstr "Fomati ya faili:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
-msgid  "This document contains:\n\n"
-msgstr "This document contains:\n\n"
+msgid  "This document contains:\\n\\n"
+msgstr ""
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -1952,7 +1952,7 @@ msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in To
 msgstr ""
 
 #: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\\nDo you want to save the document?"
 msgstr ""
 
 #: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
@@ -2152,16 +2152,16 @@ msgid  "~Thesaurus..."
 msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "Hakuna printa chaguo-msingi iliyoonekana.\nTafadhali chagua printer na jaribu tena."
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr ""
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "Haikuweza kuanzisha printa.\nTafadhali kagua usanidi wa printa yako."
+msgid  "Could not start printer.\\nPlease check your printer configuration."
+msgstr ""
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
-msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr "Andiko hili limefomatiwa kwaajili ya printa $1. Printa iliyobainishwa haipatikani. \nUnataka kutumia printa sanifu $2 ?"
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
+msgstr ""
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2196,16 +2196,16 @@ msgid  " (read-only)"
 msgstr " (read-only)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgstr ""
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
-msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr "Saizi ya ukurasa imerekebishwa.\nJe vipimo vipya vihifadhiwe\nkatika andiko hai?"
+msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
+msgstr ""
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgstr ""
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
@@ -2216,8 +2216,8 @@ msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No do
 msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Hakuna sifa za andiko zilizoonekana.</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
-msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr "Andiko haliwezi kufungwa kwasababu\n kazi ya kuchapisha inatekelezwa."
+msgid  "The document cannot be closed because a\\n print job is being carried out."
+msgstr ""
 
 #: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
 msgid  "Print Monitor"
@@ -2232,8 +2232,8 @@ msgid  "is being prepared for printing"
 msgstr ""
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"

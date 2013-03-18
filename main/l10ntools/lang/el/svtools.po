@@ -600,8 +600,8 @@ msgid  "Can't open directory"
 msgstr "Δεν είναι δυνατόν να ανοιχθεί ο κατάλογος"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
-msgid  "This file already exists. \nOverwrite ?"
-msgstr "Το αρχείο αυτό υπάρχει ήδη. \nΝα αντικατασταθεί;"
+msgid  "This file already exists. \\nOverwrite ?"
+msgstr ""
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
 msgid  "Up One Level"
@@ -1504,7 +1504,7 @@ msgid  "The picture needs about %1 KB of memory."
 msgstr ""
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.String.Text
-msgid  "The picture needs about %1 KB of memory,\n the file size is %2 KB."
+msgid  "The picture needs about %1 KB of memory,\\n the file size is %2 KB."
 msgstr ""
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.String.Text
@@ -2977,113 +2977,141 @@ msgid  "Haitian"
 msgstr "Tahitian"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
+#, fuzzy
 msgid  "Display IDs"
 msgstr "Προβολή IDs"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
+#, fuzzy
 msgid  "This is the input window"
 msgstr "Αυτό είναι το παράθυρο εισαγωγής"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SEND_DATA.ToolBoxItem.Text
+#, fuzzy
 msgid  "Transfer to TestTool"
 msgstr "Μεταφορά στο TestTool"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
+#, fuzzy
 msgid  "Show all windows"
 msgstr "Εμφάνιση όλων των παραθύρων"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
+#, fuzzy
 msgid  "Show short names (if available)"
 msgstr "Εμφάνιση σύντομων ονομάτων (αν είναι διαθέσιμα)"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
+#, fuzzy
 msgid  "Always show long-name"
 msgstr "Πάντα να εμφανίζεται το μακρό ονόμα"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
+#, fuzzy
 msgid  "DisplayHID"
 msgstr "Εφάνιση HID"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
+#, fuzzy
 msgid  "Translation"
 msgstr "Μετάφραση"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~Επεξεργασία"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
+#, fuzzy
 msgid  "Original Text"
 msgstr "Αρχικό Κείμενο"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "Σχόλιο"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
+#, fuzzy
 msgid  "~Comment"
 msgstr "~Σχόλιο"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
+#, fuzzy
 msgid  "~Select"
 msgstr "~Επιλογή"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
+#, fuzzy
 msgid  "~Restore"
 msgstr "~Επαναφορά"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
+#, fuzzy
 msgid  "~Accept"
 msgstr "~Αποδοχή"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
+#, fuzzy
 msgid  "~Next"
 msgstr "~Επόμενο"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
+#, fuzzy
 msgid  "Inplace Translation"
 msgstr "Επιτόπου Mετάφραση"
 
 #: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
+#, fuzzy
 msgid  "The Translation will be lost. Proceed anyway?"
 msgstr "Η Μετάφραση θα χαθεί. Θέλετε οπωσδήποτε να συνεχίσετε?"
 
 #: source/plugapp/testtool.src#TT_NO_CONTROL.ErrorBox.Message
+#, fuzzy
 msgid  "The Control is no longer valid. The Translation cannot be saved."
 msgstr "To Control δεν είναι πλέον έγκυρο. Η μετάφραση δεν μπόρεσε να αποθηκευθεί."
 
 #: source/plugapp/testtool.src#TT_GPF.String.Text
+#, fuzzy
 msgid  "GPF occurred"
 msgstr "Συνέβη GPF"
 
 #: source/plugapp/testtool.src#TT_ALTERNATE_CAPTION.String.Text
+#, fuzzy
 msgid  "HelpID does not match UniqueID: "
 msgstr "Η HelpID δεν ταιριάζει με την UniqueID:"
 
 #: source/toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_FWD.String.Text
+#, fuzzy
 msgid  "Tab Panel Scroll Button, backward"
 msgstr "Κουμπί κύλισης πίνακα καρτελών, πίσω"
 
 #: source/toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_BACK.String.Text
+#, fuzzy
 msgid  "Tab Panel Scroll Button, forward"
 msgstr "Κουμπί κύλισης πίνακα καρτελών, μπροστά"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.ModalDialog.Text
+#, fuzzy
 msgid  "Roadmap Skeleton Demo"
 msgstr "Roadmap Skeleton Demo"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.String.Text
+#, fuzzy
 msgid  "Welcome"
 msgstr "Καλώς ήλθατε"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.String.Text
+#, fuzzy
 msgid  "Prepare"
 msgstr "Προετοιμασία"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.String.Text
+#, fuzzy
 msgid  "Setup"
 msgstr "Εγκατάσταση"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.String.Text
+#, fuzzy
 msgid  "Finish"
 msgstr "Τέλος"

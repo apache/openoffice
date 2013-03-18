@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Šablonas sukurtas <wizard_name> vedikliu <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Vediklio negalima paleisti, nes nerasti svarbūs failai.\nLange „Priemonės → Parinktys → „%PRODUCTNAME“ → Failų vietos“ spustelėkite mygtuką „Numatyta“, kad atstatytumėte pradines nuostatas.\nTada paleiskite vediklį iš naujo."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Šios antraštės naudoti negalima. Prašome pasirinkti kitą antraštę."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Dvejetainius laukus visada galima pasirinkti iš sąrašo.\nJei įmanoma, jie vaizduojami paveikslais."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Įdėtinė forma – tai forma, esanti kitoje formoje.\nĮdėtinėmis formomis patogu vaizduoti duomenis iš lentelių ir užklausų, kurios turi daug sąryšių."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Laukai formoje"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "„<FIELDNAME1>“ ir „<FIELDNAME2>“ sąjunga pasirinkta dukart.\nSąjungas galima naudoti tik kartą."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "Nustatyti formos pavadinimą"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Forma, pavadinta „%FORMNAME“, jau yra.\nParinkite kitą pavadinimą."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1441,11 +1441,11 @@ msgstr "Tipų ir formatų nustatymas"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 4.String.Text
 msgid  "Set primary key"
-msgstr "Pirminio rakto nustatymas"
+msgstr "Nustatyti pirminį raktą"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 5.String.Text
 msgid  "Create table"
-msgstr "Lentelės kūrimas"
+msgstr "Kurti lentelę"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 8.String.Text
 msgid  "Select fields for your table"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Lauko negalima įterpti, nes būtų viršytas didžiausias galimas laukų skaičius (%COUNT) duomenų bazės lentelėje"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Lentelė pavadinimu „%TABLENAME“ jau yra.\nĮveskite kitą pavadinimą."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Tinklalapio vediklis"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Šis vediklis palengvina dokumentų publikavimą internete.\n\nVediklis konvertuoja dokumentus į interneto naršyklėms suprantamą formatą. Be to, sukuriamas turinys, iš kurio dokumentai lengvai atveriami saitais. Naudojantis vedikliu taip pat galima pakeisti tinklalapio projektą ir maketą.\n\nPublikuotus dokumentus lengva nuolat atnaujinti, bet kada galima pridėti naujus ar pašalinti esamus dokumentus."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2558,9 +2558,8 @@ msgid  "Preview"
 msgstr "Peržiūra"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-#, fuzzy
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Pasirinktos nuostatos bus pašalintos.\n\nAr tikrai pašalinti šias nuostatas?"
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 #, fuzzy
@@ -2643,9 +2642,8 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "FTP aplanko „%FILENAME“ nepavyko sukurti."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-#, fuzzy
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP aplanko „%FILENAME“ nėra.\nAr sukurti jį dabar?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 #, fuzzy
@@ -2653,14 +2651,12 @@ msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name
 msgstr "Zip failo „%FILENAME“ nepavyko sukurti: aplankas tokiu vardu jau yra."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-#, fuzzy
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Vietinio aplanko „%FILENAME“ nepavyko sukurti. \nPatikrinkite prieigos teises."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-#, fuzzy
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Vietinio aplanko „%FILENAME“ nėra. \nAr sukurti jį dabar?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 #, fuzzy
@@ -3113,729 +3109,911 @@ msgid  "Move down"
 msgstr "Nuleisti"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~Žinynas"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~Atsisakyti"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
+#, fuzzy
 msgid  "<< ~Back"
 msgstr "<< ~Atgal"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
+#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "~Toliau >>"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
+#, fuzzy
 msgid  "~Convert"
 msgstr "~Konvertuoti"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Užverti"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
+#, fuzzy
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
 msgstr "Šiuo vedikliu senojo „%PRODUCTNAME“ bei „Microsoft Office“ formatų dokumentai konvertuojami į naująjį „OpenDocument“ formatą."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
+#, fuzzy
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
 msgstr "Pastaba: konvertuojant „Microsoft“ formato dokumentus, juose esančios VBA makrokomandos nustoja veikusios."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
+#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "Parinkite konvertuojamų dokumentų tipą:"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Word templates"
 msgstr "„Word“ šablonai"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Excel templates"
 msgstr "„Excel“ šablonai"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
+#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "„PowerPoint“ šablonai"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Word documents"
 msgstr "„Word“ dokumentai"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Excel documents"
 msgstr "„Excel“ dokumentai"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
+#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "„PowerPoint“ dokumentai"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
+#, fuzzy
 msgid  "Including subdirectories"
 msgstr "Drauge su poaplankiais"
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
+#, fuzzy
 msgid  "Microsoft Office"
 msgstr "„Microsoft Office“"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
+#, fuzzy
 msgid  "Summary:"
 msgstr "Santrauka:"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
+#, fuzzy
 msgid  "Import from:"
 msgstr "Importuoti iš:"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
+#, fuzzy
 msgid  "Save to:"
 msgstr "Įrašyti į:"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
+#, fuzzy
 msgid  "Imported_Templates"
 msgstr "Importuoti_šablonai"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
+#, fuzzy
 msgid  "Progress: "
 msgstr "Eiga: "
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "Dokumentas"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
+#, fuzzy
 msgid  "Documents"
 msgstr "Dokumentai"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "Šablonai"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
+#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr "Aplanko „%1“ negalima sukurti: "
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
+#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr "Aplanko „%1“ nėra."
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
+#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "Ar sukurti jį dabar?"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
+#, fuzzy
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "Failas „<1>“ jau yra.<CR>Ar jį pakeisti?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
+#, fuzzy
 msgid  "Directories do not exist"
 msgstr "Aplankų nėra"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
+#, fuzzy
 msgid  "Do you want to overwrite documents without being asked?"
 msgstr "Ar perrašyti dokumentus be įspėjimo?"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
+#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "Dokumento makrokomanda turi būti peržiūrėta."
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
+#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "Dokumento „<1>“ nepavyko įrašyti."
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
+#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr "Dokumento „<1>“ nepavyko atverti."
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
+#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "Ar tikrai dabar norite nutraukti konvertavimą?"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
+#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "Atšaukti vediklį"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
+#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "Netikėta vediklio klaida."
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
+#, fuzzy
 msgid  "Error"
 msgstr "Klaida"
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
+#, fuzzy
 msgid  "Select a directory"
 msgstr "Parinkti aplanką"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
+#, fuzzy
 msgid  "Document Converter"
 msgstr "Dokumentų konvertavimas"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
+#, fuzzy
 msgid  "Progress"
 msgstr "Eiga"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
+#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "Ieškoma dokumentų:"
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
+#, fuzzy
 msgid  "Converting the documents"
 msgstr "Konvertuojami dokumentai"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
+#, fuzzy
 msgid  "Found:"
 msgstr "Rasta:"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
+#, fuzzy
 msgid  "%1 found"
 msgstr "Rasta: %1"
 
 #: source/importwizard/importwi.src#sReady.String.Text
+#, fuzzy
 msgid  "Finished"
 msgstr "Baigta"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Text templates"
 msgstr "Teksto šablonai"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "Skaičiuoklės dokumentų šablonai"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
+#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "Grafikos dokumentų ir pateikčių šablonai"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
+#, fuzzy
 msgid  "Master documents"
 msgstr "Pagrindiniai dokumentai"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Text documents"
 msgstr "Teksto dokumentai"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Spreadsheets"
 msgstr "Skaičiuoklės dokumentai"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
+#, fuzzy
 msgid  "Drawing/presentation documents"
 msgstr "Grafikos dokumentai ir pateiktys"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
+#, fuzzy
 msgid  "Master documents/formulas"
 msgstr "Pagrindiniai ir matematiniai dokumentai"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
+#, fuzzy
 msgid  "Master documents"
 msgstr "Pagrindiniai dokumentai"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
+#, fuzzy
 msgid  "Formulas"
 msgstr "Matematiniai dokumentai"
 
 #: source/importwizard/importwi.src#sSourceDocuments.String.Text
+#, fuzzy
 msgid  "Source documents"
 msgstr "Pradiniai dokumentai"
 
 #: source/importwizard/importwi.src#sTargetDocuments.String.Text
+#, fuzzy
 msgid  "Target documents"
 msgstr "Paskirties dokumentai"
 
 #: source/importwizard/importwi.src#sCreateLogfile.String.Text
+#, fuzzy
 msgid  "Create log file"
 msgstr "Sukurti žurnalo failą"
 
 #: source/importwizard/importwi.src#sLogfileSummary.String.Text
+#, fuzzy
 msgid  "<COUNT> documents converted"
 msgstr "Konvertuota <COUNT> dokumentų"
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
+#, fuzzy
 msgid  "A log file will be created in your work directory"
 msgstr "Žurnalo failas bus sukurtas darbiniame aplanke"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
+#, fuzzy
 msgid  "Show log file"
 msgstr "Rodyti žurnalo failą"
 
 #: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
+#, fuzzy
 msgid  "All subdirectories will be taken into account"
 msgstr "Bus konvertuoti dokumentai iš visų poaplankių"
 
 #: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
+#, fuzzy
 msgid  "These will be exported to the following directory:"
 msgstr "Bus eksportuota į šį aplanką:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „%PRODUCTNAME“ teksto dokumentai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „%PRODUCTNAME“ skaičiuoklės dokumentai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „%PRODUCTNAME“ grafikos ir pateikčių dokumentai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „%PRODUCTNAME“ matematiniai dokumentai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „%PRODUCTNAME“ teksto šablonai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „%PRODUCTNAME“ lentelių šablonai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „%PRODUCTNAME“ grafikos ir pateikčių šablonai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „%PRODUCTNAME“ pagrindiniai dokumentai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
+#, fuzzy
 msgid  "All Word documents contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „Word“ dokumentai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
+#, fuzzy
 msgid  "All Excel documents contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „Excel“ dokumentai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
+#, fuzzy
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „PowerPoint“ dokumentai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
+#, fuzzy
 msgid  "All Word templates contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „Word“ šablonai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
+#, fuzzy
 msgid  "All Excel templates contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „Excel“ šablonai, esantys šiame aplanke:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
+#, fuzzy
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
 msgstr "Bus importuoti visi „PowerPoint“ šablonai, esantys šiame aplanke:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Calendar"
 msgstr "„%PRODUCTNAME“ kalendorius"
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
+#, fuzzy
 msgid  "Back"
 msgstr "Atgal"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "Asmeniniai duomenys"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
+#, fuzzy
 msgid  "Add Holidays to Calendar"
 msgstr "Papildyti kalendorių šventėmis"
 
 #: source/schedule/schedule.src#dlgOK.String.Text
+#, fuzzy
 msgid  "Create"
 msgstr "Sukurti"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "Atsisakyti"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "Kalendorius"
 
 #: source/schedule/schedule.src#dlgCalOptionYear.String.Text
+#, fuzzy
 msgid  "~Year Overview"
 msgstr "~Metų peržiūra"
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
+#, fuzzy
 msgid  "~Month"
 msgstr "~Mėnuo"
 
 #: source/schedule/schedule.src#dlgSchdlDescription.String.Text
+#, fuzzy
 msgid  "Add holidays for"
 msgstr "Pridėti šventes"
 
 #: source/schedule/schedule.src#dlgSchdlCountry.String.Text
+#, fuzzy
 msgid  "USA"
 msgstr "JAV"
 
 #: source/schedule/schedule.src#dlgTime.String.Text
+#, fuzzy
 msgid  "Time Frame"
 msgstr "Laiko kadras"
 
 #: source/schedule/schedule.src#dlgYear.String.Text
+#, fuzzy
 msgid  "Year"
 msgstr "Metai"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "Mėnuo"
 
 #: source/schedule/schedule.src#dlgCalOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "Asmeniniai duomenys"
 
 #: source/schedule/schedule.src#dlgCalInsert.String.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "~Įterpti"
 
 #: source/schedule/schedule.src#dlgCalDelete.String.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Šalinti"
 
 #: source/schedule/schedule.src#dlgCalNewEvent.String.Text
+#, fuzzy
 msgid  "New Event"
 msgstr "Naujas įvykis"
 
 #: source/schedule/schedule.src#dlgCalEvent.String.Text
+#, fuzzy
 msgid  "Event"
 msgstr "Įvykis"
 
 #: source/schedule/schedule.src#dlgCalEventOnce.String.Text
+#, fuzzy
 msgid  "One-Time"
 msgstr "Vienu metu"
 
 #: source/schedule/schedule.src#dlgCalEventDay.String.Text
+#, fuzzy
 msgid  "Day"
 msgstr "Diena"
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "Mėnuo"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
+#, fuzzy
 msgid  "Year"
 msgstr "Metai"
 
 #: source/schedule/schedule.src#dlgBitmapFile.String.Text
+#, fuzzy
 msgid  "usa.bmp"
 msgstr "usa.bmp"
 
 #: source/schedule/schedule.src#dlgState.String.Text
+#, fuzzy
 msgid  "Public holidays"
 msgstr "Valstybinės šventės"
 
 #: source/schedule/schedule.src#dlgMonth.String.Text
+#, fuzzy
 msgid  "January"
 msgstr "Sausis"
 
 #: source/schedule/schedule.src#dlgMonth+1.String.Text
+#, fuzzy
 msgid  "February"
 msgstr "Vasaris"
 
 #: source/schedule/schedule.src#dlgMonth+2.String.Text
+#, fuzzy
 msgid  "March"
 msgstr "Kovas"
 
 #: source/schedule/schedule.src#dlgMonth+3.String.Text
+#, fuzzy
 msgid  "April"
 msgstr "Balandis"
 
 #: source/schedule/schedule.src#dlgMonth+4.String.Text
+#, fuzzy
 msgid  "May"
 msgstr "Gegužė"
 
 #: source/schedule/schedule.src#dlgMonth+5.String.Text
+#, fuzzy
 msgid  "June"
 msgstr "Birželis"
 
 #: source/schedule/schedule.src#dlgMonth+6.String.Text
+#, fuzzy
 msgid  "July"
 msgstr "Liepa"
 
 #: source/schedule/schedule.src#dlgMonth+7.String.Text
+#, fuzzy
 msgid  "August"
 msgstr "Rugpjūtis"
 
 #: source/schedule/schedule.src#dlgMonth+8.String.Text
+#, fuzzy
 msgid  "September"
 msgstr "Rugsėjis"
 
 #: source/schedule/schedule.src#dlgMonth+9.String.Text
+#, fuzzy
 msgid  "October"
 msgstr "Spalis"
 
 #: source/schedule/schedule.src#dlgMonth+10.String.Text
+#, fuzzy
 msgid  "November"
 msgstr "Lapkritis"
 
 #: source/schedule/schedule.src#dlgMonth+11.String.Text
+#, fuzzy
 msgid  "December"
 msgstr "Gruodis"
 
 #: source/schedule/schedule.src#msgCalErrorTitle.String.Text
+#, fuzzy
 msgid  "Yearly / Monthly Calendar"
 msgstr "Kasmetinis arba kasmėnesinis kalendorius"
 
 #: source/schedule/schedule.src#msgCalError.String.Text
+#, fuzzy
 msgid  "An error occurred while creating the calendar."
 msgstr "Kuriant kalendorių įvyko klaida."
 
 #: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
+#, fuzzy
 msgid  "Delete event entries"
 msgstr "Šalinti įvykių įrašus"
 
 #: source/schedule/schedule.src#msgCalRemove.String.Text
+#, fuzzy
 msgid  "Delete the selected entries?"
 msgstr "Ar šalinti pasirinktus įrašus?"
 
 #: source/schedule/schedule.src#stlWorkday.String.Text
+#, fuzzy
 msgid  "Workweek"
 msgstr "Darbo savaitė"
 
 #: source/schedule/schedule.src#stlWeekend.String.Text
+#, fuzzy
 msgid  "Weekend"
 msgstr "Savaitgalis"
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "Kalendorius"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "Mėnuo"
 
 #: source/schedule/schedule.src#sProgress.String.Text
+#, fuzzy
 msgid  "Progress:"
 msgstr "Eiga:"
 
 #: source/template/template.src#SAMPLES.String.Text
+#, fuzzy
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
 msgstr "Norėdami naudingai pasinaudoti šiuo pavyzdžiu, sukurkite dokumentą iš šio šablono."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
+#, fuzzy
 msgid  "Remarks"
 msgstr "Pastabos"
 
 #: source/template/template.src#STYLES.String.Text
+#, fuzzy
 msgid  "Theme Selection"
 msgstr "Temos pasirinkimas"
 
 #: source/template/template.src#STYLES + 1.String.Text
+#, fuzzy
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
 msgstr "Įrašant dokumentą į iškarpinę įvyko klaida! Šio veiksmo atšaukti negalima."
 
 #: source/template/template.src#STYLES + 2.String.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~Atsisakyti"
 
 #: source/template/template.src#STYLES + 3.String.Text
+#, fuzzy
 msgid  "~OK"
 msgstr "~Gerai"
 
 #: source/template/template.src#AgendaDlgName.String.Text
+#, fuzzy
 msgid  "Minutes Template"
 msgstr "Minučių šablonas"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
+#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "Parinktį būtina patvirtinti."
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
+#, fuzzy
 msgid  "Minutes Type"
 msgstr "Minučių tipas"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
+#, fuzzy
 msgid  "Results Minutes"
 msgstr "Rodo minutes"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
+#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "Įvertinimo minutės"
 
 #: source/template/template.src#CorrespondenceNoTextmark.String.Text
+#, fuzzy
 msgid  "The bookmark 'Recipient' is missing."
 msgstr "Trūksta žymelės „Gavėjas“."
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
+#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "Laiško blanko laukų įtraukti negalima."
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
+#, fuzzy
 msgid  "An error has occurred."
 msgstr "Klaida"
 
 #: source/template/template.src#CorrespondenceDialog.String.Text
+#, fuzzy
 msgid  "Addressee"
 msgstr "Adresatas"
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
+#, fuzzy
 msgid  "One recipient"
 msgstr "Vienas gavėjas"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
+#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "Keletas gavėjų (adresų duomenų bazė)"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
+#, fuzzy
 msgid  "Use of This Template"
 msgstr "Naudoti šį šabloną"
 
 #: source/template/template.src#CorrespondenceFields.String.Text
+#, fuzzy
 msgid  "Click placeholder and overwrite"
 msgstr "Spustelėkite rezervuotą vietą ir pakeiskite"
 
 #: source/template/template.src#CorrespondenceFields+1.String.Text
+#, fuzzy
 msgid  "Company"
 msgstr "Įstaiga"
 
 #: source/template/template.src#CorrespondenceFields+2.String.Text
+#, fuzzy
 msgid  "Department"
 msgstr "Skyrius"
 
 #: source/template/template.src#CorrespondenceFields+3.String.Text
+#, fuzzy
 msgid  "First Name"
 msgstr "Vardas"
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
+#, fuzzy
 msgid  "Last Name"
 msgstr "Pavardė"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
+#, fuzzy
 msgid  "Street"
 msgstr "Gatvė"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
+#, fuzzy
 msgid  "Country"
 msgstr "Šalis"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
+#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "Pašto kodas"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
+#, fuzzy
 msgid  "City"
 msgstr "Miestas"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
+#, fuzzy
 msgid  "Title"
 msgstr "Antraštė"
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Padėtis"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
+#, fuzzy
 msgid  "Form of Address"
 msgstr "Adreso forma"
 
 #: source/template/template.src#CorrespondenceFields+12.String.Text
+#, fuzzy
 msgid  "Initials"
 msgstr "Inicialai"
 
 #: source/template/template.src#CorrespondenceFields+13.String.Text
+#, fuzzy
 msgid  "Salutation"
 msgstr "Pasveikinimas"
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
+#, fuzzy
 msgid  "Home Phone"
 msgstr "Namų telefonas"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
+#, fuzzy
 msgid  "Work Phone"
 msgstr "Darbo telefonas"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
+#, fuzzy
 msgid  "Fax"
 msgstr "Faksas"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
+#, fuzzy
 msgid  "E-Mail"
 msgstr "El. paštas"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL adresas"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
+#, fuzzy
 msgid  "Notes"
 msgstr "Pastabos"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
+#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "1-as alternatyvus laukas"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
+#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "2-as alternatyvus laukas"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
+#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "3-as alternatyvus laukas"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
+#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "4-as alternatyvus laukas"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
+#, fuzzy
 msgid  "ID"
 msgstr "ID"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
+#, fuzzy
 msgid  "State"
 msgstr "Apskritis, rajonas"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
+#, fuzzy
 msgid  "Office Phone"
 msgstr "Raštinės telefonas"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
+#, fuzzy
 msgid  "Pager"
 msgstr "Pranešimų gaviklis"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
+#, fuzzy
 msgid  "Mobile Phone"
 msgstr "Mobilusis telefonas"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
+#, fuzzy
 msgid  "Other Phone"
 msgstr "Kiti telefonai"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
+#, fuzzy
 msgid  "Calendar URL"
 msgstr "Kalendoriaus URL"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
+#, fuzzy
 msgid  "Invite"
 msgstr "Pakviesti"
 
 #: source/template/template.src#TextField.String.Text
+#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "Neaprašytas naudotojo duomenų laukas!"
 
 #: source/template/template.src#Newsletter.String.Text
+#, fuzzy
 msgid  "General layout"
 msgstr "Įprastas maketas"
 
 #: source/template/template.src#Newsletter + 1.String.Text
+#, fuzzy
 msgid  "Default layout"
 msgstr "Numatytas maketas"
 
 #: source/template/template.src#Newsletter + 2.String.Text
+#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "Memorialinio leidimo maketas"
 
 #: source/template/template.src#Newsletter + 3.String.Text
+#, fuzzy
 msgid  "Brochure layout"
 msgstr "Brošiūros maketas"
 
 #: source/template/template.src#Newsletter + 10.String.Text
+#, fuzzy
 msgid  "Format"
 msgstr "Formatas"
 
 #: source/template/template.src#Newsletter + 11.String.Text
+#, fuzzy
 msgid  "Single-sided"
 msgstr "Vienpusis"
 
 #: source/template/template.src#Newsletter + 12.String.Text
+#, fuzzy
 msgid  "Double-sided"
 msgstr "Dvipusis"

@@ -705,7 +705,7 @@ msgstr "將安裝此功能及所有子功能以便從網絡執行。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
-msgstr "將安裝此功能以便從光碟執行。"
+msgstr "將安裝此功能以便從 CD 執行。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_11
 msgid  "This feature will be installed on local hard drive."
@@ -1077,7 +1077,7 @@ msgstr "正在註冊延伸伺服器"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_54
 msgid  "Extension: [1]"
-msgstr "延伸: [1]"
+msgstr "副檔名：[1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_55
 msgid  "Registering fonts"
@@ -1085,7 +1085,7 @@ msgstr "正在註冊字型"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_56
 msgid  "Font: [1]"
-msgstr "字型: [1]"
+msgstr "字型：[1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_57
 msgid  "Registering MIME info"
@@ -1173,7 +1173,7 @@ msgstr "正在移除 INI 檔案"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_78
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
-msgstr "檔案：[1]，節：[2]，Key：[3]，值：[4]"
+msgstr "檔案：[1]，區段：[2]，機碼：[3]，值：[4]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_79
 msgid  "Removing ODBC components"
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "感謝您下載 %PRODUCTNAME %PRODUCTVERSION。"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "解壓縮(&U)"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "%PRODUCTNAME %PRODUCTVERSION 安裝檔案解壓縮後將存入以下所示的資料夾中。如果您想將 %PRODUCTNAME 存入不同的資料夾，請按 [瀏覽] 選取另一個資料夾。"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1461,7 +1461,7 @@ msgstr "{&Tahoma8}瀏覽目標資料夾。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 msgid  "{&MSSansBold8}Change Current Destination Folder"
-msgstr "{&MSSansBold8}變更目前的目標資料夾"
+msgstr "{&MSSansBold8}變更目前目標資料夾"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_9
 msgid  "Create new folder|"
@@ -1469,7 +1469,7 @@ msgstr "建立新資料夾|"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_10
 msgid  "OK"
-msgstr "確定"
+msgstr "{&Tahoma8}確定"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_12
 msgid  "&Folder name:"
@@ -1505,7 +1505,7 @@ msgstr "{&MSSansBold8}網絡位置"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_22
 msgid  "&Install"
-msgstr "{&Tahoma8}安裝(&I)"
+msgstr "安裝(&I)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_23
 msgid  "&Network location:"
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "取消"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}使用者資訊"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1677,7 +1677,7 @@ msgstr "{&Tahoma8}安裝後將從網絡中執行。(只有在該功能支援此�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_72
 msgid  "OK"
-msgstr "{&Tahoma8}確定"
+msgstr "確定"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_73
 msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
@@ -1741,7 +1741,7 @@ msgstr "[INSTALLDIR]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
-msgstr "{&Tahoma8}將 [ProductName] 安裝到："
+msgstr "將 [ProductName] 安裝到："
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 msgid  "&Next >"
@@ -1753,7 +1753,7 @@ msgstr "{&Tahoma8}安裝所選功能所需的磁碟空間。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "所選磁碟機沒有足夠的磁碟空間以安裝目前所選的功能。您可將檔案自選取的磁碟機移除，選擇安裝較少的功能至本機磁碟，或選取不同的目標磁碟。"
+msgstr "所選磁碟機沒有足夠的磁碟空間可安裝目前所選功能。您可自所選磁碟機移除檔案，安裝較少的功能至本機磁碟，或選取不同的目標磁碟。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -1761,7 +1761,7 @@ msgstr "{&MSSansBold8}磁碟空間需求"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_100
 msgid  "OK"
-msgstr "確定"
+msgstr "{&Tahoma8}確定"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_103
 msgid  "Some files that need to be updated are currently in use."
@@ -1809,7 +1809,7 @@ msgstr "建立新資料夾|"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_118
 msgid  "OK"
-msgstr "{&Tahoma8}確定"
+msgstr "確定"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_120
 msgid  "&Folder name:"
@@ -2049,11 +2049,11 @@ msgstr "{&Tahoma8}按一下「恢復」或「稍後繼續」退出精靈。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}安裝完成"
+msgstr "{&TahomaBold10}完成安裝"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr "{&Tahoma8}在 [ProductName] 完成安裝之前精靈已被中斷。"
+msgstr "{&Tahoma8}在 [ProductName] 完成安裝之前精靈已中斷。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 msgid  "< &Back"

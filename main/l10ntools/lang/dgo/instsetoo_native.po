@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "%PRODUCTNAME %PRODUCTVERSION डाऊनलोड करने लेई थुआढ़ा धन्नवाद. "
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "&अनपैक करो "
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr " %PRODUCTNAME %PRODUCTVERSION प्रस्थापना फाइलां ख’ल्ल दस्से दे फोल्डर च अनपैक ते बचाइयै रक्खियां जाङन. जेकर तुस  %PRODUCTNAME गी कुसै बक्खरे फोल्डर च बचाइयै रक्खना चांह्‌दे ओ तां कोई दूआ फोल्डर चुनने लेई\\' तपाश करो\\' पर क्लिक करो . "
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "रद्द करो "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80} "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}गाह्‌क- जानकारी"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50} "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"

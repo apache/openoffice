@@ -449,7 +449,7 @@ msgstr "개체(~O)"
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_OBJECT.MenuItem.Text
 msgid  "~OLE Object..."
-msgstr "OLE 개체(~O)..."
+msgstr "~OLE 개체..."
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_MATH.MenuItem.Text
 msgid  "~Formula..."
@@ -940,12 +940,12 @@ msgid  "~Delete"
 msgstr "삭제(~D)"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "이미지 맵이 수정되었습니다.\n변경 내용을 저장하시겠습니까?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "이미지 맵이 수정되었습니다.\n변경 내용을 저장하시겠습니까?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1028,8 +1028,8 @@ msgid  "~More..."
 msgstr "옵션(~M)..."
 
 #: source/dialog/hdft.src#RID_SVXQBX_DELETE_HEADFOOT.QueryBox.Message
-msgid  "Removing headers or footers deletes the contents.\nDo you want to delete this text?"
-msgstr "머리글이나 바닥글을 없애면 내용이 삭제됩니다.\n이 텍스트를 삭제하시겠습니까?"
+msgid  "Removing headers or footers deletes the contents.\\nDo you want to delete this text?"
+msgstr ""
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_LEFT.String.Text
 msgid  "Left"
@@ -1276,8 +1276,8 @@ msgid  "%PRODUCTNAME Document Recovery"
 msgstr "%PRODUCTNAME 문서 복구"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
-msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\n\nThe 'Status' column shows whether the document could be recovered."
-msgstr "'복구 시작'을 눌러 아래 나열된 문서의 복구 작업을 시작하십시오.\n\n'상태' 열은 문서가 복구될 수 있는지 여부를 나타냅니다."
+msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1288,8 +1288,8 @@ msgid  "Status of recovered documents:"
 msgstr "복구된 문서 상태:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
-msgid  "Document Name\tStatus"
-msgstr "문서 이름\t상태"
+msgid  "Document Name\\tStatus"
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1328,8 +1328,8 @@ msgid  "A report of the crash was created to help us identify the reason why %PR
 msgstr "%PRODUCTNAME이(가) 중단된 이유를 식별하는 데 도움이 되도록 중단에 대한 보고가 생성되었습니다. 오류 보고 툴을 시작하려면 '다음'을 클릭하고 이 단계를 건너뛰려면 '취소'를 클릭하십시오."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
-msgid  "Recovery of your documents was finished.\nClick 'Finish' to see your documents."
-msgstr "문서 복구가 완료되었습니다.\n문서를 보려면 '마침'을 클릭하십시오."
+msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 msgid  "~Finish"
@@ -1340,8 +1340,8 @@ msgid  "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 msgstr "%PRODUCTNAME 문서 복구를 취소하시겠습니까?"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
-msgid  "The automatic recovery process was interrupted.\n\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr "자동 복구가 중단되었습니다.\n\n[저장]을 클릭하면 아래에 나열된 문서가 지정한 폴더에 저장됩니다. 문서를 저장하지 않고 마법사를 닫으려면 [취소]를 클릭하십시오."
+msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1364,7 +1364,7 @@ msgid  "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 msgstr "%PRODUCTNAME %PRODUCTVERSION 오류 보고를 시작합니다"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
-msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\n\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\nCustomer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\nwww.oracle.com/html/services-privacy-policy.html"
+msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
 msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
@@ -1448,8 +1448,8 @@ msgid  "~Port"
 msgstr "포트(~P)"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
-msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "오류 보고서를 보내려면 %PRODUCTNAME 오류 보고서 툴이 인터넷에 연결되어 있어야 합니다.\n회사에서는 네트워크를 보호하기 위해 방화벽과 함께 프록시 서버를 사용하는 경우가 많습니다.\n귀하의 회사에 방화벽이 설치되어 있는 경우 서버 주소와 포트를 지정해야 합니다."
+msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -1909,7 +1909,7 @@ msgstr "수평 테두리"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.6.ItemList.item
 msgid  "Vertical border line"
-msgstr "수직 테두리"
+msgstr "수직 테두리선"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.7.ItemList.item
 msgid  "Diagonal border line from top left to bottom right"
@@ -2680,8 +2680,8 @@ msgid  "As Button"
 msgstr "버튼으로"
 
 #: source/dialog/hyprlink.src#RID_SVXQB_DONTEXIST.QueryBox.Message
-msgid  "This URL does not exist.\nInsert anyway?"
-msgstr "해당 URL이 존재하지 않습니다.\n 삽입을 계속하시겠습니까?"
+msgid  "This URL does not exist.\\nInsert anyway?"
+msgstr ""
 
 #: source/dialog/sdstring.src#RID_SVXSTR_SOLID.String.Text
 msgid  "Continuous"
@@ -2789,7 +2789,7 @@ msgstr "회청색"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_ORANGE.String.Text
 msgid  "Orange"
-msgstr "주황색"
+msgstr "오렌지"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_ARROW.String.Text
 msgid  "Arrow"
@@ -3392,16 +3392,16 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
-msgid  "The contour has been modified.\nDo you want to save the changes?"
-msgstr "윤곽이 수정되었습니다. \n변경을 저장하겠습니까?"
+msgid  "The contour has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
 msgstr "새로운 윤곽을 만드시겠습니까?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
-msgid  "Setting a new workspace will\ncause the contour to be deleted.\nAre you sure you want to continue?"
-msgstr "새 작업 영역을 설정하면\n윤곽이 삭제됩니다.\n그래도 계속하겠습니까?"
+msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -3925,7 +3925,7 @@ msgstr "질감"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
 msgid  "Material"
-msgstr "재료"
+msgstr "재질"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
 msgid  "Update"
@@ -3989,7 +3989,7 @@ msgstr "기본"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
 msgid  "Object-Specific"
-msgstr "개체 특유"
+msgstr "개체 특유의"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
 msgid  "Flat"
@@ -4376,8 +4376,8 @@ msgid  "Input required in field '#'. Please enter a value."
 msgstr "필드'#'에 입력을 해야 합니다.\n어떤 값을 입력하십시오."
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
-msgid  "Entry already exists.\nPlease choose another name."
-msgstr "항목이 이미 있습니다.\n다른 이름을 선택하십시오."
+msgid  "Entry already exists.\\nPlease choose another name."
+msgstr ""
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4456,8 +4456,8 @@ msgid  "# records will be deleted."
 msgstr "# 레코드가 삭제됩니다."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
-msgid  "If you click Yes, you won't be able to undo this operation.\nDo you want to continue anyway?"
-msgstr "'예'를 클릭하면 이 작업의 실행을 취소할 수 없습니다.\n그래도 계속하겠습니까?"
+msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -4636,8 +4636,8 @@ msgid  "<AutoField>"
 msgstr "<자동 필드>"
 
 #: source/form/fmstring.src#RID_QRY_SAVEMODIFIED.QueryBox.Message
-msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr "현재 양식의 내용이 변경되었습니다.\n변경 사항을 저장하겠습니까?"
+msgid  "The content of the current form has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.1.String.Text
 msgid  "LIKE"
@@ -5064,32 +5064,32 @@ msgid  "~Show Details"
 msgstr "세부 정보 표시(~S)"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_MODEL.QueryBox.Message
-msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\nDo you really want to delete this model?"
-msgstr "'$MODELNAME' 모델을 삭제하면 현재 이 모델에 바인딩된 모든 콘트롤에 영향을 주게 됩니다.\n이 모델을 삭제하시겠습니까?"
+msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\\nDo you really want to delete this model?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_INSTANCE.QueryBox.Message
-msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\nDo you really want to delete this instance?"
-msgstr "'$INSTANCENAME' 인스턴스를 삭제하면 현재 이 인스턴스에 바인딩된 모든 콘트롤에 영향을 주게 됩니다.\n이 인스턴스를 삭제하시겠습니까?"
+msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\\nDo you really want to delete this instance?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ELEMENT.QueryBox.Message
-msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\nDo you really want to delete this element?"
-msgstr "'$ELEMENTNAME' 요소를 삭제하면 현재 이 요소에 바인딩된 모든 콘트롤에 영향을 주게 됩니다.\n이 요소를 삭제하시겠습니까?"
+msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\\nDo you really want to delete this element?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ATTRIBUTE.QueryBox.Message
 msgid  "Do you really want to delete the attribute '$ATTRIBUTENAME'?"
 msgstr "'$ATTRIBUTENAME' 속성을 삭제하시겠습니까?"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_SUBMISSION.QueryBox.Message
-msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\n\nDo you really want to delete this submission?"
-msgstr "'$SUBMISSIONNAME' 전송을 삭제하면 현재 이 전송에 바인딩된 모든 콘트롤에 영향을 주게 됩니다.\n\n이 전송을 삭제하시겠습니까?"
+msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\\n\\nDo you really want to delete this submission?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_BINDING.QueryBox.Message
-msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\n\nDo you really want to delete this binding?"
-msgstr "'$BINDINGNAME' 바인딩을 삭제하면 현재 이 바인딩에 바인딩된 모든 콘트롤에 영향을 주게 됩니다.\n\n이 바인딩을 삭제하시겠습니까?"
+msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\\n\\nDo you really want to delete this binding?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_LINK_WARNING.MessBox.Message
-msgid  "This instance is linked with the form.\n\nThe changes you make to this instance will be lost when the form is reloaded.\n\nHow do you want to proceed?"
-msgstr "이 인스턴스는 양식과 연결되어 있습니다. \n\n이 인스턴스의 수정 사항은 양식을 다시 로드할 때에는 적용되지 않을 것입니다. \n\n진행 방법을 선택하십시오."
+msgid  "This instance is linked with the form.\\n\\nThe changes you make to this instance will be lost when the form is reloaded.\\n\\nHow do you want to proceed?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLNAME.ErrorBox.Message
 msgid  "The name '%1' is not valid in XML. Please enter a different name."
@@ -5464,12 +5464,12 @@ msgid  "Invalid Theme Name!"
 msgstr "잘못된 테마 이름!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
-msgid  "Do you really want to\ndelete this object?"
-msgstr "이 개체를\n정말 삭제하겠습니까?"
+msgid  "Do you really want to\\ndelete this object?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
-msgid  "Do you really want to\ndelete this theme?"
-msgstr "이 테마를 정말\n삭제하겠습니까?"
+msgid  "Do you really want to\\ndelete this theme?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5500,8 +5500,8 @@ msgid  "Do you want to delete the linked file?"
 msgstr "링크된 파일을 삭제하겠습니까?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
-msgid  "This file cannot be opened.\nDo you want to enter a different search path? "
-msgstr "이 파일을 열 수 없습니다. \n다른 검색 경로를 입력하겠습니까? "
+msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5512,8 +5512,8 @@ msgid  "~Organizer..."
 msgstr "관리(~O)..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
-msgid  "This theme name already exists.\nPlease choose a different one."
-msgstr "이 이름의 테마가 이미 존재합니다.\n다른 이름을 선택하십시오."
+msgid  "This theme name already exists.\\nPlease choose a different one."
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -5776,12 +5776,12 @@ msgid  "$(ERR) loading the graphics."
 msgstr "그래픽 로드시 $(ERR)"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_THESAURUSNOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "No thesaurus available for the current language.\nPlease check your installation and install the desired language."
-msgstr "현재 설정된 언어에 대한 동의어 사전이 없습니다.\n설치를 확인한 다음 원하는 언어를 설치하십시오."
+msgid  "No thesaurus available for the current language.\\nPlease check your installation and install the desired language."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LANGUAGENOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\nPlease check your installation and, if necessary, install the required language module\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
-msgstr "$(ARG1)은(는) 맞춤법 검사 기능이 지원되지 않거나 현재 활성화되어 있지 않습니다.\n설치 상태를 확인한 다음 필요하면 사용할 언어를 설치하거나\n'도구 - 옵션 - 언어 설정 - 맞춤법 교정'에 있는 설정을 활성화하십시오."
+msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\\nPlease check your installation and, if necessary, install the required language module\\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
 msgid  "Spellcheck is not available."
@@ -5852,8 +5852,8 @@ msgid  "The loading of password-encrypted Microsoft PowerPoint presentations is 
 msgstr "암호로 암호화된 Microsoft PowerPoint 프레젠테이션은 로드할 수 없습니다."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_EXPORT_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
-msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\nDo you want to save the document without password protection?"
-msgstr "Microsoft Office 형식으로 문서를 저장하는 경우에는 암호 보호가 지원되지 않습니다.\n암호 보호를 사용하지 않고 문서를 저장하시겠습니까?"
+msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\\nDo you want to save the document without password protection?"
+msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
 msgid  "Scale"
@@ -5913,7 +5913,7 @@ msgstr "상대적 글꼴 크기"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
 msgid  "Font color"
-msgstr "글꼴 색"
+msgstr "글꼴 색상"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_KERNING.ItemList.item
 msgid  "Kerning"
@@ -6520,8 +6520,8 @@ msgid  "The specified device is invalid."
 msgstr "지정된 장치가 올바르지 않습니다."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
-msgid  "The object cannot be accessed\ndue to insufficient user rights."
-msgstr "사용자 권한이 부족하여\n개체에 접근할 수 없습니다."
+msgid  "The object cannot be accessed\\ndue to insufficient user rights."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
 msgid  "Sharing violation while accessing the object."
@@ -6532,8 +6532,8 @@ msgid  "No more space on device."
 msgstr "장치에 공간이 남아있지 않습니다."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ISWILDCARD.String.Text
-msgid  "This operation cannot be run on\nfiles containing wildcards."
-msgstr "와일드카드를 포함한 파일에 대해서\n이 작업을 수행할 수 없습니다.."
+msgid  "This operation cannot be run on\\nfiles containing wildcards."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSUPPORTED.String.Text
 msgid  "This operation is not supported on this operating system."
@@ -6616,8 +6616,8 @@ msgid  "The file cannot be used as template."
 msgstr "해당 파일을 서식 파일로 사용할 수 없습니다."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTREADDOCINFO.String.Text
-msgid  "Document information could not be read from the file because\nthe document information format is unknown or because document information does not\nexist."
-msgstr "문서 정보 형식을 알 수 없거나 \n문서 정보가 존재하지 않아서 \n파일에서 문서를 읽을 수 없습니다."
+msgid  "Document information could not be read from the file because\\nthe document information format is unknown or because document information does not\\nexist."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_ALREADYOPEN.String.Text
 msgid  "This document has already been opened for editing."
@@ -6648,12 +6648,12 @@ msgid  "Could not establish Internet connection to $(ARG1)."
 msgstr "$(ARG1) (으)로 인터넷 연결을 설정할 수 없습니다.."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_READ.String.Text
-msgid  "Error reading data from the Internet.\nServer error message: $(ARG1)."
-msgstr "인터넷에서 자료를 읽는 중에 오류가 발생했습니다.\n서버 오류 메시지: $(ARG1)."
+msgid  "Error reading data from the Internet.\\nServer error message: $(ARG1)."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_WRITE.String.Text
-msgid  "Error transferring data to the Internet.\nServer error message: $(ARG1)."
-msgstr "인터넷으로 자료를 전송하는 중에 오류가 발생했습니다.\n서버 오류 메시지: $(ARG1)."
+msgid  "Error transferring data to the Internet.\\nServer error message: $(ARG1)."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_GENERAL.String.Text
 msgid  "General Internet error has occurred."
@@ -6764,8 +6764,8 @@ msgid  "A subscription folder is required to install a Channel."
 msgstr "채널을 설치하기 위해서 구독 폴더가 필요합니다."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSTORABLEINBINARYFORMAT.String.Text
-msgid  "This document contains attributes that cannot be saved in the selected format.\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
-msgstr "이 문서는 선택한 형식으로 저장할 수 없는 속성을 포함하고 있습니다.\n문서를 %PRODUCTNAME %PRODUCTVERSION 파일 형식으로 저장하십시오."
+msgid  "This document contains attributes that cannot be saved in the selected format.\\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_TARGETFILECORRUPTED.String.Text
 msgid  "The file $(FILENAME) cannot be saved. Please check your system settings. You can find an automatically generated backup copy of this file in folder $(PATH) named $(BACKUPNAME)."
@@ -6780,20 +6780,20 @@ msgid  "Could not create backup copy."
 msgstr "백업 사본을 생성할 수 없습니다."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_MACROS_SUPPORT_DISABLED.String.Text
-msgid  "An attempt was made to execute a macro.\nFor security reasons, macro support is disabled."
-msgstr "매크로 실행 시도가 있었습니다.\n보안 상의 이유로 매크로 지원을 사용하지 않습니다."
+msgid  "An attempt was made to execute a macro.\\nFor security reasons, macro support is disabled."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_DOCUMENT_MACRO_DISABLED.String.Text
-msgid  "This document contains macros.\n\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\n\nTherefore, some functionality may not be available."
-msgstr "이 문서는 매크로를 포함하고 있습니다.\n\n매크로는 바이러스를 포함할 수도 있습니다. 도구 - 옵션 - %PRODUCTNAME - 보안에 있는 현재 매크로 보안 설정으로 인하여 매크로 실행을 사용하지 않습니다.\n\nTherefore, some functionality may not be available."
+msgid  "This document contains macros.\\n\\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\\n\\nTherefore, some functionality may not be available."
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_BROKENSIGNATURE.String.Text
-msgid  "The digitally signed document content and/or macros do not match the current document signature.\n\nThis could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
-msgstr "전자적으로 서명한 문서의 내용이나 매크로가 현재 문서 서명과 일치하지 않습니다.\n\n이는 문서 조작이나 자료 전송으로 인한 문서 구조 손상의 결과일 수 있습니다.\n\n현재 문서의 내용을 신뢰하지 않는 것이 좋습니다.\n이 문서에 대해 매크로 실행을 사용하지 않습니다.\n "
+msgid  "The digitally signed document content and/or macros do not match the current document signature.\\n\\nThis could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_INCOMPLETE_ENCRYPTION.String.Text
-msgid  "The encrypted document contains unexpected non-encrypted streams.\n\nThis could be the result of document manipulation.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
-msgstr "암호화된 문서가 예기치 못한 비암호화 스트림을 포함하고 있습니다.\n\n이는 문서 조작의 결과일 수 있습니다.\n\n현재 문서의 내용을 신뢰하지 않는 것이 좋습니다.\n이 문서에 대해 매크로 실행을 사용하지 않습니다.\n "
+msgid  "The encrypted document contains unexpected non-encrypted streams.\\n\\nThis could be the result of document manipulation.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
+msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_INVALIDLENGTH.String.Text
 msgid  "Invalid data length."
@@ -6820,8 +6820,8 @@ msgid  "Function not possible: write protected."
 msgstr "기능 불가: 쓰기 금지되어 있습니다."
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_SHARED_NOPASSWORDCHANGE.String.Text
-msgid  "The password of a shared spreadsheet cannot be set or changed.\nDeactivate sharing mode first."
-msgstr "공유된 스프레드시트의 암호를 설정하거나 변경할 수 없습니다.\n먼저 공유 모드를 비활성화하십시오."
+msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactivate sharing mode first."
+msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
 msgid  "INSRT"
@@ -8185,11 +8185,11 @@ msgstr "투명 그림자"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
 msgid  "3D shadow"
-msgstr "3D 음영"
+msgstr "3Ｄ 그림자"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
 msgid  "Perspective shadow"
-msgstr "원근감있는 그림자"
+msgstr "원근감있는 음영"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
 msgid  "Callout type"
@@ -8313,7 +8313,7 @@ msgstr "감마"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
 msgid  "Transparency"
-msgstr "투명도"
+msgstr "투명"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
 msgid  "Invert"
@@ -8481,7 +8481,7 @@ msgstr "채우기 비트맵"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
 msgid  "Transparency"
-msgstr "투명"
+msgstr "투명도"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
 msgid  "Number of gradient steps"
@@ -9477,7 +9477,7 @@ msgstr "입체면 남동쪽"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.DockingWindow.Text
 msgid  "Extrusion Depth"
-msgstr "입체 면 깊이"
+msgstr "입체면 깊이"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
 msgid  "~Custom..."

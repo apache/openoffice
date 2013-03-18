@@ -40,8 +40,8 @@ msgid  "File Recovery"
 msgstr "กู้คืนแฟ้ม"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
-msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr "เกิดข้อผิดพลาดที่ทำให้ไม่สามารถกู้คืนได้\n\nทุกแฟ้มที่แก้ไขได้ถูกบันทึกไว้ และน่าจะสามารถ\nกู้คืนได้เมื่อโปรแกรมเริ่มต้นการทำงานใหม่"
+msgid  "An unrecoverable error has occurred.\\n\\nAll modified files have been saved and can\\nprobably be recovered at program restart."
+msgstr ""
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
@@ -116,16 +116,16 @@ msgid  "The changes to your personal settings cannot be stored centrally because
 msgstr "การเปลี่ยนแปลงการตั้งค่าส่วนตัวของคุณไม่สามารถเก็บเป็นส่วนกลางเพราะคุณไม่มีสิทธิ์ในการเข้าถึง"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
-msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator.%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
+msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
+msgstr ""
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
 msgstr "เกิดข้อผิดพลาดภายในต่อไปนี้ขึ้น: "
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
-msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
+msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\\n\\nDo you really want to continue?"
+msgstr ""
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -136,7 +136,7 @@ msgid  "Printing is disabled. No documents can be printed."
 msgstr "Printing is disabled. No documents can be printed."
 
 #: source/app/desktop.src#INFOBOX_EXPIRED.InfoBox.Message
-msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
+msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\\nvisit http://www.openoffice.org"
 msgstr ""
 
 #: source/app/desktop.src#STR_TITLE_EXPIRED.String.Text
@@ -144,39 +144,39 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
-msgid  "The path manager is not available.\n"
-msgstr "ตัวจัดการพาธไม่สามารถใช้งานได้\n"
+msgid  "The path manager is not available.\\n"
+msgstr ""
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
-msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
+msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
+msgstr ""
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
-msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
+msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\\n\\n"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThat version is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThat version, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
@@ -184,8 +184,8 @@ msgid  "System dependencies check"
 msgstr "การตรวจสอบการขึ้นต่อกันของระบบ"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
-msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
+msgid  "The extension cannot be installed as the following\\nsystem dependencies are not fulfilled:"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -252,15 +252,15 @@ msgid  "Quit"
 msgstr "ออก"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
-msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr "%PRODUCTNAME มีการปรับปรุงรุ่น ส่วนขยายร่วมของ %PRODUCTNAME บางส่วนอาจเข้ากันไม่ได้กับรุ่นนี้ และต้องอัพเดทก่อน %PRODUCTNAME จะสามารถเริ่มต้นได้\n\nการอัพเดทส่วนขยายร่วมต้องการสิทธิ๋ของผู้ดูแลระบบติดต่อผู้ดูแลระบบเพื่ออัพเดทส่วนขยายร่วมดังนี้:"
+msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\\n\\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
 msgstr "ส่วนขยายไม่สามารถติดตั้งได้เพราะ\nความขึ้นต่อกันของระบบดังต่อไปนี้ไม่เหมาะสม:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
-msgid  "This extension is disabled because you haven't accepted the license yet.\n"
+msgid  "This extension is disabled because you haven't accepted the license yet.\\n"
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
@@ -273,34 +273,42 @@ msgid  "Extension Software License Agreement"
 msgstr "Extension Software License Agreement"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Please follow these steps to proceed with the installation of the extension:"
 msgstr "Please follow these steps to proceed with the installation of the extension:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
+#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-msgid  "Read the complete License Agreement. Use the scroll bar or the \'Scroll Down\' button in this dialog to view the entire license text."
-msgstr ""
+#, fuzzy
+msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
+msgstr "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
+#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-msgid  "Accept the License Agreement for the extension by pressing the \'Accept\' button."
-msgstr ""
+#, fuzzy
+msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
+msgstr "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
+#, fuzzy
 msgid  "~Scroll Down"
 msgstr "~เลื่อนลง"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKButton.Text
+#, fuzzy
 msgid  "Accept"
 msgstr "ยอมรับ"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CancelButton.Text
+#, fuzzy
 msgid  "Decline"
 msgstr "Decline"
 
@@ -315,28 +323,29 @@ msgid  "Close"
 msgstr "ปิด"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WarningBox.Message
-msgid  "You are about to install the extension \'%NAME\'.\nClick \'OK\' to proceed with the installation.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install the extension \\'%NAME\\'.\\nClick \\'OK\\' to proceed with the installation.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WarningBox.Message
-msgid  "You are about to remove the extension \'%NAME\'.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgid  "You are about to remove the extension \\'%NAME\\'.\\nClick \\'OK\\' to remove the extension.\\nClick \\'Cancel\\' to stop removing the extension."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to remove the extension.\\nClick \\'Cancel\\' to stop removing the extension."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to enable the extension.\nClick \'Cancel\' to stop enabling the extension."
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to enable the extension.\\nClick \\'Cancel\\' to stop enabling the extension."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to disable the extension.\nClick \'Cancel\' to stop disabling the extension."
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to disable the extension.\\nClick \\'Cancel\\' to stop disabling the extension."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.String.Text
-msgid  "The extension \'%Name\' does not work on this computer."
-msgstr ""
+#, fuzzy
+msgid  "The extension \\'%Name\\' does not work on this computer."
+msgstr "ส่วนขยาย \\'%Name\\' ทำงานไม่ได้บนเครื่องคอมพิวเตอร์นี้"
 
 #: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.ModalDialog.Text
 #, fuzzy
@@ -518,11 +527,11 @@ msgid  "Enable Updates"
 msgstr ""
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.String.Text
-msgid  "This update will be ignored.\n"
+msgid  "This update will be ignored.\\n"
 msgstr ""
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WarningBox.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to update the extensions.\nClick \'Cancel\' to stop updating the extensions."
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to update the extensions.\\nClick \\'Cancel\\' to stop updating the extensions."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.ModelessDialog.Text
@@ -581,27 +590,31 @@ msgid  "Disable all"
 msgstr "ปิดการทำงานทั้งหมด"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
-#, fuzzy
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr "ให้แน่ใจว่าไม่มีผู้ใช้กำลังทำงาน %PRODUCTNAME เดียวกัน ขณะกำลังติดตั้งส่วนขยายสำหรับผู้ใช้ทุกคนในสภาพแวดล้อมหลายผู้ใช้\n\nใครคือคนที่คุณต้องการติดตั้งส่วนขยาย?"
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\\n\\nFor whom do you want to install the extension?\\n"
+msgstr ""
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
+#, fuzzy
 msgid  "Copying: "
 msgstr "กำลังคัดลอก: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
+#, fuzzy
 msgid  "Error while adding: "
 msgstr "เกิดข้อผิดพลาดขณะเพิ่มแพ็กเกจ: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
+#, fuzzy
 msgid  "Error while removing: "
 msgstr "เกิดข้อผิดพลาดขณะเอาแพ็กเกจออก: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
+#, fuzzy
 msgid  "Extension has already been added: "
 msgstr "เพิ่มแพ็กเกจเรียบร้อยแล้ว:"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.String.Text
+#, fuzzy
 msgid  "There is no such extension deployed: "
 msgstr "ไม่มีแพคเกจนี้ติดตั้งอยู่: "
 
@@ -610,6 +623,7 @@ msgid  "Synchronizing repository for %NAME extensions"
 msgstr ""
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
+#, fuzzy
 msgid  "Unknown"
 msgstr "ไม่รู้จัก"
 
@@ -622,38 +636,47 @@ msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERS
 msgstr ""
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
+#, fuzzy
 msgid  "Enabling: "
 msgstr "กำลังเปิดใช้งานแพ็กเกจ: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
+#, fuzzy
 msgid  "Disabling: "
 msgstr "กำลังปิดใช้งานแพ็กเกจ: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
+#, fuzzy
 msgid  "Cannot detect media-type: "
 msgstr "ไม่สามารถตรวจหาประเภทของสื่อ: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
+#, fuzzy
 msgid  "This media-type is not supported: "
 msgstr "ประเภทสื่อนี้ไม่ได้รับการสนับสนุน: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
+#, fuzzy
 msgid  "An error occurred while enabling: "
 msgstr "เกิดข้อผิดพลาดขึ้นขณะเปิดใช้งานแพ็กเกจ: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
+#, fuzzy
 msgid  "An error occurred while disabling: "
 msgstr "เกิดข้อผิดพลาดขึ้นขณะปิดการใช้งานแพ็กเกจ : "
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.String.Text
+#, fuzzy
 msgid  "UNO Dynamic Library Component"
 msgstr "UNO Dynamic Library Component"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
+#, fuzzy
 msgid  "UNO Java Component"
 msgstr "UNO Java Component"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.String.Text
+#, fuzzy
 msgid  "UNO Python Component"
 msgstr "UNO Python Component"
 
@@ -662,54 +685,65 @@ msgid  "UNO Components"
 msgstr ""
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.String.Text
+#, fuzzy
 msgid  "UNO RDB Type Library"
 msgstr "UNO RDB Type Library"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.String.Text
+#, fuzzy
 msgid  "UNO Java Type Library"
 msgstr "UNO Java Type Library"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
+#, fuzzy
 msgid  "Configuration Schema"
 msgstr "แบบแผนการกำหนดค่า"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
+#, fuzzy
 msgid  "Configuration Data"
 msgstr "ข้อมูลค่ากำหนด"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
+#, fuzzy
 msgid  "Help"
 msgstr "Help"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
-msgid  "The extension cannot be installed because:\n"
-msgstr "The extension cannot be installed because:\n"
+msgid  "The extension cannot be installed because:\\n"
+msgstr ""
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
-msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr "The extension will not be installed because an error occurred in the Help files:\n"
+msgid  "The extension will not be installed because an error occurred in the Help files:\\n"
+msgstr ""
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
+#, fuzzy
 msgid  "Extension"
 msgstr "Extension"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Basic Library"
 msgstr "ไลบรารีพื้นฐาน %PRODUCTNAME"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
+#, fuzzy
 msgid  "Dialog Library"
 msgstr "ไลบรารีกล่องโต้ตอบ"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
+#, fuzzy
 msgid  "The library name could not be determined."
 msgstr "ไม่สามารถกำหนดชื่อไลบรารี"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
+#, fuzzy
 msgid  "This library name already exists. Please choose a different name."
 msgstr "ชื่อไลบรารีมีอยู่แล้ว โปรดเลือกชื่อใหม่"
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
+#, fuzzy
 msgid  "%MACROLANG Library"
 msgstr "ไลบรารี %MACROLANG"
 
@@ -718,354 +752,429 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
+#, fuzzy
 msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
 msgstr "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
+#, fuzzy
 msgid  "[Enter \"yes\" or \"no\"]:"
 msgstr "[Enter \"yes\" or \"no\"]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
+#, fuzzy
 msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr "สิ่งที่คุณป้อนเข้าไปไม่ถูกต้อง กรุณากด \"yes\" หรือ \"no\":"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
+#, fuzzy
 msgid  "YES"
 msgstr "YES"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.String.Text
+#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
+#, fuzzy
 msgid  "NO"
 msgstr "NO"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.String.Text
+#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
+#, fuzzy
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
 msgstr "unopkg ไม่สามารถเริ่มได้ ไฟล์ล็อกถูกกำหนดและกำลังทำงาน ถ้าไม่สามารถทำงานได้ ลบล็อกไฟล์ที่:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
+#, fuzzy
 msgid  "ERROR: "
 msgstr "ข้อผิดพลาด: "
 
 #: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
-msgstr "ยินดีต้อนรับสู่ %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ยินดีต้อนรับสู่  %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
+#, fuzzy
 msgid  "Welcome"
 msgstr "ยินดีต้อนรับ"
 
 #: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
+#, fuzzy
 msgid  "License Agreement"
 msgstr "ข้อตกลงสัญญาอนุญาตสิทธิ์"
 
 #: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "ข้อมูลส่วนบุคคล"
 
 #: source/migration/wizard.src#STR_STATE_USER.String.Text
+#, fuzzy
 msgid  "User name"
 msgstr "ชื่อผู้ใช้"
 
 #: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
+#, fuzzy
 msgid  "Online Update"
 msgstr "Online Update"
 
 #: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
+#, fuzzy
 msgid  "Registration"
 msgstr "การลงทะเบียน"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
-msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "เครื่องมือช่วยสร้างนี้จะนำคุณสู่ ข้อตกลงสัญญาอนุญาตสิทธิ์ การถ่ายโอนข้อมูลผู้ใช้ จาก %OLD_VERSION และการลงทะเบียนของ  %PRODUCTNAME\n\nคลิก 'ถัดไป' เพื่อดำเนินการต่อ"
+msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
+msgstr ""
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
-msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "เครื่องมือช่วยสร้างนี้จะนำคุณสู่การลงทะเบียนของ %PRODUCTNAME\n\nคลิก 'ถัดไป' เพื่อดำเนินการต่อ"
+msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
+msgstr ""
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
+#, fuzzy
 msgid  "~Finish"
 msgstr "~เสร็จสิ้น"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
-msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr "ขณะนี้คุณมีโอกาสที่จะสนับสนุนและร่วมเติบโตอย่างรวดเร็วของชุมชนโอเพ่นซอร์สในโลกนี้\n\nช่วย ให้ เรา พิสูจน์ ว่า %PRODUCTNAME ได้รับส่วนแบ่งการตลาดโดยการลง ทะเบียน\n\nการลงทะเบียนเป็นอาสาสมัครและไม่มีพันธะ"
+msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\\n\\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\\n\\nRegistering is voluntary and without obligation."
+msgstr ""
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
-msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr "เกิดข้อผิดพลาดขึ้นในการเปิดเว็บเบราว์เซอร์\nกรุณาตรวจสอบ %PRODUCTNAME และการตั้งค่าเว็บเบราว์เซอร์ "
+msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr ""
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
+#, fuzzy
 msgid  "Do you really want to decline?"
 msgstr "คุณต้องการปฏิเสธจริงหรือไม่ ?"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "ยินดีต้อนรับสู่  %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
-msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "เครื่องมือช่วยสร้างนี้จะนำคุณสู่ข้อตกลงสัญญาอนุญาตสิทธิ์  และการลงทะเบียนของ %PRODUCTNAME\n\nคลิก 'ถัดไป' เพื่อดำเนินการต่อ"
+msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
+msgstr ""
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Please follow these steps to accept the license"
 msgstr "กรุณาทำตามขั้นตอน เพื่อยอมรับสัญญาอนุญาตสิทธิ์"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
+#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
+#, fuzzy
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr "แสดงข้อตกลงสัญญาอนุญาตสิทธิ์ฉบับสมบูรณ์ กรุณาใช้แถบเลื่อน หรือปุ่ม %PAGEDOWN  ในกล่องข้อความนี้เพื่อแสดงสัญญาอนุญาตสิทธิ์ทั้งหมด"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
+#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
+#, fuzzy
 msgid  "Click 'Accept' to accept the terms of the Agreement."
 msgstr "คลิก 'ยอมรับ' เพื่อยอมรับข้อตกลง"
 
 #: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
+#, fuzzy
 msgid  "Scroll Do~wn"
 msgstr "เลื่อน ~ลง"
 
 #: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
+#, fuzzy
 msgid  "~Accept"
 msgstr "~ยอมรับ"
 
 #: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
+#, fuzzy
 msgid  "~Decline"
 msgstr "~ปฏิเสธ"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Transfer personal data"
 msgstr "ถ่ายโอนข้อมูลส่วนบุคคล"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
-msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr "ข้อมูลส่วนตัวจากการติดตั้ง %OLDPRODUCT สามารถนำไปใช้ใน %PRODUCTNAME %PRODUCTVERSION \n\nยกเลิกการทำเครื่องหมายที่กล่องเลือกด้านล่าง ถ้าคุณไม่ต้องการคัดลอกข้อมูล เช่น แม่แบบ พจนานุกรม ชุดรูปแบบรูปภาพไปยัง %PRODUCTNAME %PRODUCTVERSION\n\nเพื่อโยกย้ายข้อมูลส่วนตัวทั้งหมดจาก %PRODUCTNAME รุ่นก่อนหน้า ทำตามคำแนะนำในแฟ้ม Readme"
+msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
+msgstr ""
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
+#, fuzzy
 msgid  "Transfer personal data"
 msgstr "ถ่ายโอนข้อมูลส่วนบุคคล"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Online Update"
 msgstr "Online Update"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
-msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr "%PRODUCTNAME ค้นหารุ่นใหม่อัตโนมัติในช่วงเวลาปกติ\nการอัพเดทออนไลน์ไม่ถ่ายโอนข้อมูลส่วนตัว\nทันที ที่ มีรุ่น ใหม่ คุณจะได้รับการเตือน\nคุณสามารถกำหนดค่าคุณสมบัตินี้ที่ เครื่องมือ / ตัวเลือก ... / %PRODUCTNAME / อัพเดท ออนไลน์"
+msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\\nIn doing so online update does not transfer personal data.\\nAs soon as a new version is available, you will be notified.\\n\\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
+msgstr ""
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
+#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "~ตรวจสอบเพื่ออัปเดตอัตโนมัติ"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Provide your full name and initials below"
 msgstr "ใส่ชื่อเต็มและชื่อย่อของเจ้าของเอกสารด้านล่าง"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
+#, fuzzy
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
 msgstr "ชื่อผู้ใช้จะใช้ในคุณสมบัติของเอกสาร แม่แบบ และเมื่อคุณบันทึกการเปลี่ยนแปลงที่ทำกับเอกสาร"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
+#, fuzzy
 msgid  "~First name"
 msgstr "ชื่อ"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
+#, fuzzy
 msgid  "~Last name"
 msgstr "นามสกุล"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
+#, fuzzy
 msgid  "~Initials"
 msgstr "ชื่อย่อ"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
+#, fuzzy
 msgid  "~Father's name"
 msgstr "ชื่อบิดา"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Registration"
 msgstr "การลงทะเบียน %PRODUCTNAME"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
-msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr "คุณมีโอกาสลงทะเบียนในฐานะผู้ใช้งาน %PRODUCTNAME การลงทะเบียนเป็นความสมัครใจและปราศจากข้อผูกมัดใดๆ\n\nถ้าคุณลงทะเบียน เราจะสามารถแจ้งให้คุณทราบเกี่ยวกับการพัฒนาใหม่ๆ ที่เกี่ยวข้องกับผลิตภัณฑ์นี้"
+msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
+msgstr ""
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
+#, fuzzy
 msgid  "I want to register ~now"
 msgstr "ฉันต้องการลงทะเบียน ~ตอนนี้"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
+#, fuzzy
 msgid  "I want to register ~later"
 msgstr "ฉันต้องการลงทะเบียน ~ภายหลัง"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
+#, fuzzy
 msgid  "I do not want to ~register"
 msgstr "ฉันไม่ต้องการลงทะเบียน"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
-msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr "เราหวังว่าคุณคงเพลิดเพลินกับการใช้งาน %PRODUCTNAME\n\nออกจากตัวช่วยสร้าง คลิก 'เสร็จสิ้น' "
+msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
+msgstr ""
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
+#, fuzzy
 msgid  "Installation Status"
 msgstr "สถานะการติดตั้ง"
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_CLIENT%
+#, fuzzy
 msgid  "Installation is optimized for clients."
 msgstr "การติดตั้งเพิ่มประสิทธิภาพสำหรับลูกข่าย"
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_SERVER%
+#, fuzzy
 msgid  "Installation is optimized for servers."
 msgstr "การติดตั้งที่เหมาะสำหรับเซิร์ฟเวอร์"
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
+#, fuzzy
 msgid  "Cannot find Office installation."
 msgstr "ไม่พบการติดตั้งออฟฟิส"
 
 #: win32/source/setup/setup.ulf#%APP_TITLE%
+#, fuzzy
 msgid  "Setup"
 msgstr "ติดตั้ง"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
+#, fuzzy
 msgid  "The %PRODUCTNAME Setup"
 msgstr "ติดตั้ง %PRODUCTNAME"
 
 #: win32/source/setup/setup.ulf#%OUTOFMEM%
+#, fuzzy
 msgid  "Out of Memory"
 msgstr "หน่วยความจำไม่เพียงพอ"
 
 #: win32/source/setup/setup.ulf#%NOMSI%
+#, fuzzy
 msgid  "Setup was unable to find the msi package."
 msgstr "ไม่พบแพ็กเกจ msi ขณะติดตั้ง"
 
 #: win32/source/setup/setup.ulf#%USER_CANCELLED%
+#, fuzzy
 msgid  "Setup was cancelled"
 msgstr "การติดตั้งถูกยกเลิก"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
+#, fuzzy
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
 msgstr "ต้องใช้สิทธิผู้ดูแลระบบในการปรับข้อมูลรุ่นตัวติดตั้งวินโดวส์"
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
+#, fuzzy
 msgid  "Setup was unable to find the file '%s'."
 msgstr "ไม่พบแฟ้ม '%s' ขณะติดตั้ง"
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
+#, fuzzy
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "ตัวเลือกบรรทัดคำสั่งไม่ถูกต้อง '%s' กรุณาใช้ '/?' เพื่อช่วยเหลือ"
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
-msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr "แพคเกจนี้ต้องการ Windows Installer '%s' รุ่นต่ำสุด\nคุณมี Windows Installer '%s' บนระบบของคุณ!"
+msgid  "This package requires at least the version '%s' of the Windows Installer. \\nYou have Windows Installer '%s' on your system!"
+msgstr ""
 
 #: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
-msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr "แพคเกจนี้ต้องการ Windows Installer\nคุณต้องการ Windows Installer '%s' ขั้นต่ำในระบบของคุณ!"
+msgid  "This package requires the Windows Installer. \\nYou need at least Windows Installer '%s' on your system!"
+msgstr ""
 
 #: win32/source/setup/setup.ulf#%USAGE%
-msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr "Usage:\n   /? : Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
+msgid  "Usage:\\n   /? :  Shows this dialog.\\n   /a :  Performs an administrative installation.\\n   /j[u|m] :  Performs an advertising installation.\\n   /q[n] : Do not show any user interface (silent mode).\\n"
+msgstr ""
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
+#, fuzzy
 msgid  "There is already a setup process running."
 msgstr "มีอยู่แล้วดำเนินการตั้งค่าการทำงาน"
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
+#, fuzzy
 msgid  "An Unknown Error occured!"
 msgstr "เกิดข้อผิดพลาดที่ไม่รู้จักขึ้น"
 
 #: win32/source/setup/setup.ulf#%INVALID_PROFILE%
+#, fuzzy
 msgid  "Invalid or incomplete profile."
 msgstr "โพรไฟล์ที่ไม่สมบูรณ์หรือไม่ถูกต้อง"
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
+#, fuzzy
 msgid  "Unknown Language: %d"
 msgstr "ภาษาที่ไม่รู้จัก : %d   "
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
+#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "จีนดั้งเดิม"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_CS%
+#, fuzzy
 msgid  "Czech"
 msgstr "เช็ก"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DA%
+#, fuzzy
 msgid  "Danish"
 msgstr "เดนมาร์ก"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
+#, fuzzy
 msgid  "German (Germany)"
 msgstr "เยอรมัน"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EL%
+#, fuzzy
 msgid  "Greek"
 msgstr "กรีก"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
+#, fuzzy
 msgid  "English (USA)"
 msgstr "อังกฤษ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ES%
+#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "สเปน"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FI%
+#, fuzzy
 msgid  "Finnish"
 msgstr "ฟินแลนด์"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
+#, fuzzy
 msgid  "French (France)"
 msgstr "ฝรั่งเศส"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HE%
+#, fuzzy
 msgid  "Hebrew"
 msgstr "ฮิบรู"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HU%
+#, fuzzy
 msgid  "Hungarian"
 msgstr "ฮังการี"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
+#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "อิตาลี"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_JA%
+#, fuzzy
 msgid  "Japanese"
 msgstr "ญี่ปุ่น"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_KO%
+#, fuzzy
 msgid  "Korean"
 msgstr "เกาหลี"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NL_NL%
+#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "ดัตซ์"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
+#, fuzzy
 msgid  "Norwegian (Bokmål)"
 msgstr "นอร์วีเจียน"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PL%
+#, fuzzy
 msgid  "Polish"
 msgstr "โปแลนด์"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
+#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "โปรตุเกส"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_RU%
+#, fuzzy
 msgid  "Russian"
 msgstr "รัสเซีย"
 
@@ -1074,25 +1183,31 @@ msgid  "Slovak"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
+#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "สวีเดน"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TH%
+#, fuzzy
 msgid  "Thai"
 msgstr "ไทย"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TR%
+#, fuzzy
 msgid  "Turkish"
 msgstr "ตุรกี"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ET%
+#, fuzzy
 msgid  "Estonian"
 msgstr "เอสโตเนีย"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
+#, fuzzy
 msgid  "Chinese (Simplified)"
 msgstr "จีนประยุกต์"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
+#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "โปรตุเกส"

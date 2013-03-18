@@ -616,11 +616,11 @@ msgid  "Macromedia Flash (SWF) Options"
 msgstr "Macromedia Flash (SWF) პარამეტრები"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
-msgid  "1: min. quality\n100: max. quality"
-msgstr "1: მინ. ხარისხი\n100: მაქს. ხარისხი"
+msgid  "1: min. quality\\n100: max. quality"
+msgstr ""
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
-msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
+msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\\nas some are at a higher level!"
 msgstr ""
 
 #: source/pdf/pdf.src#PDF_PROGRESS_BAR.String.Text
@@ -629,6 +629,7 @@ msgid  "Export as PDF"
 msgstr "PDF ფორმატში ექსპორტი"
 
 #: source/pdf/impdialog.src#STR_PDF_EXPORT.String.Text
+#, fuzzy
 msgid  "E~xport"
 msgstr "ე~ქსპორტი"
 
@@ -1171,130 +1172,162 @@ msgid  "OK"
 msgstr ""
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.ModalDialog.Text
+#, fuzzy
 msgid  "Test XML Filter: %s"
 msgstr "XML ფილსტრის შემოწმება: %s"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FixedLine.Text
+#, fuzzy
 msgid  "Export"
 msgstr "ექსპორტი"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FixedText.Text
+#, fuzzy
 msgid  "XSLT for export"
 msgstr "XSLT ექსპორტისთვის"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FixedText.Text
+#, fuzzy
 msgid  "Transform document"
 msgstr "დოკუმენტის გარდაქმნა"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "ძი~ება..."
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CURRENT_DOCUMENT.PushButton.Text
+#, fuzzy
 msgid  "~Current Document"
 msgstr "~მიმიდნარე დოკუმენტი"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_IMPORT.FixedLine.Text
+#, fuzzy
 msgid  "Import"
 msgstr "იმპორტი"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FixedText.Text
+#, fuzzy
 msgid  "XSLT for import"
 msgstr "XSLT იმპორტისთვის"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "Template for import"
 msgstr "შაბლონი იმპორტისთვის"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FixedText.Text
+#, fuzzy
 msgid  "Transform file"
 msgstr "ფაილის გარდაქმნა"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.CheckBox.Text
+#, fuzzy
 msgid  "~Display source"
 msgstr "~დისპლეის წყარო"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_IMPORT_BROWSE.PushButton.Text
+#, fuzzy
 msgid  "B~rowse..."
 msgstr "ძი~ება..."
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PushButton.Text
+#, fuzzy
 msgid  "~Recent File"
 msgstr "~ბოლო ფაილი"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.PushButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~დახურვა"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TabPage.Text
+#, fuzzy
 msgid  "Transformation"
 msgstr "გარდაქმნა"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.FixedText.Text
+#, fuzzy
 msgid  "DocType"
 msgstr "დოკუმენტის ტიპი"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DTD_SCHEMA.FixedText.Text
+#, fuzzy
 msgid  "DTD"
 msgstr "DTD"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.ED_XML_DTD_SCHEMA_BROWSE.PushButton.Text
+#, fuzzy
 msgid  "Browse..."
 msgstr "მოძიება..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FixedText.Text
+#, fuzzy
 msgid  "XSLT for export"
 msgstr "XSLT ექსპორტისთვის"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_EXPORT_XSLT_BROWSE.PushButton.Text
+#, fuzzy
 msgid  "Browse..."
 msgstr "მოძიება..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FixedText.Text
+#, fuzzy
 msgid  "XSLT for import"
 msgstr "XSLT იმპორტისთვის"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_XSLT_BROWSE.PushButton.Text
+#, fuzzy
 msgid  "Browse..."
 msgstr "მოძიება..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "Template for import"
 msgstr "შაბლონი იმპორტისთვის"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_TEMPLATE_BROWSE.PushButton.Text
+#, fuzzy
 msgid  "Browse..."
 msgstr "მოძიება..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.WorkWindow.Text
+#, fuzzy
 msgid  "XML Filter Settings"
 msgstr "XML ფილტრის პარამეტრები"
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "~ახალი..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~რედაქტირება..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PushButton.Text
+#, fuzzy
 msgid  "~Test XSLTs..."
 msgstr "XSLT-ს შე~მოწმება..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete..."
 msgstr "~წაშლა..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.PushButton.Text
+#, fuzzy
 msgid  "~Save as Package..."
 msgstr "შეი&ნახე როგორც პაკეტი..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PushButton.Text
+#, fuzzy
 msgid  "~Open Package..."
 msgstr "პაკეტის ~გახსნა..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.PushButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~დახურვა"
 
@@ -1303,137 +1336,170 @@ msgid  "XML Filter List"
 msgstr ""
 
 #: source/xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.TabDialog.Text
+#, fuzzy
 msgid  "XML Filter: %s"
 msgstr "XML ფილტრი: %s"
 
 #: source/xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.PageItem.Text
+#, fuzzy
 msgid  "General"
 msgstr "ზოგადი"
 
 #: source/xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PageItem.Text
+#, fuzzy
 msgid  "Transformation"
 msgstr "გარდაქმნა"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.String.Text
+#, fuzzy
 msgid  "Name"
 msgstr "სახელი"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.String.Text
+#, fuzzy
 msgid  "Type"
 msgstr "ტიპი"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.String.Text
+#, fuzzy
 msgid  "Unknown"
 msgstr "უცნობი"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.String.Text
+#, fuzzy
 msgid  "import filter"
 msgstr "ფილტრის იმპორტი"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_EXPORT.String.Text
+#, fuzzy
 msgid  "import/export filter"
 msgstr "ფილტრის იმპორტი/ექსპორტი"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_EXPORT_ONLY.String.Text
+#, fuzzy
 msgid  "export filter"
 msgstr "ფილტრის ექსპორტი"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.String.Text
+#, fuzzy
 msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
 msgstr "ნამდვილად გსურთ XML '%s' ფილტრის წაშლა? ეს მოქმედება უკან არ დაბრუნდება."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.String.Text
+#, fuzzy
 msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
 msgstr "XML ფილტრი '%s' სახელით უკვე არსებობს. გთხოვთ შეიყვანოთ სხვა სახელი. "
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.String.Text
+#, fuzzy
 msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
 msgstr "მომხმარებლის '%s1' ინტერფეისის სახელი უკვე გამოყენებულია XML '%s2' ფილტრის მიერ. გთხოვთ შეიყვანოთ სხვა სახელი."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The DTD could not be found. Please enter a valid path."
 msgstr "DTD ვერ იქნა ნაპოვნი. გთხოვთ შეიტანოთ სწორი მდებარეობა."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_EXPORT_XSLT_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The XSLT for export cannot be found. Please enter a valid path."
 msgstr "ექსპორტისათვის XSLT ვერ იქნა ნაპოვნი. გთხოვთ შეიტანოთ სწორი მდებარეობა."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_XSLT_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The XSLT for import cannot be found. Please enter a valid path."
 msgstr "იმპორტისათვის XSLT ვერ იქნა ნაპოვნი. გთხოვთ შეიტანოთ სწორი მდებარეობა."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_TEMPLATE_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The given import template cannot be found. Please enter a valid path."
 msgstr "მოცემული იმპორტის შაბლონი ვერ იქნა ნაპოვნი. გთხოვთ შეიტანოთ სწორი მდებარეობა."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.String.Text
+#, fuzzy
 msgid  "Not specified"
 msgstr "განუსაზღვრელი"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.String.Text
+#, fuzzy
 msgid  "New Filter"
 msgstr "ახალი ფილტრი"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.String.Text
+#, fuzzy
 msgid  "Untitled"
 msgstr "უათაურო"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.String.Text
+#, fuzzy
 msgid  "undefined filter"
 msgstr "განუსაზღვრელი ფილტრი"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_HAS_BEEN_SAVED.String.Text
+#, fuzzy
 msgid  "The XML filter '%s' has been saved as package '%s'. "
 msgstr "XML '%s' ფილტრი შეინახა როგორც '%s' პაკეტი."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_HAVE_BEEN_SAVED.String.Text
+#, fuzzy
 msgid  "%s XML filters have been saved in the package '%s'."
 msgstr "%s XML ფილტრები შეინახა '%s' პაკეტში."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_PACKAGE.String.Text
+#, fuzzy
 msgid  "XSLT filter package"
 msgstr "XSLT ფილტრის პაკეტი"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_INSTALLED.String.Text
+#, fuzzy
 msgid  "The XML filter '%s' has been installed successfully."
 msgstr "XML '%s' ფილტრი წარმატებით დაინსტალირდა."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_INSTALLED.String.Text
+#, fuzzy
 msgid  "%s XML filters have been installed successfully."
 msgstr "'%s' XML ფილტრები წარმატებით დაინსტალირდნენ."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.String.Text
+#, fuzzy
 msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
 msgstr "XML ფილტრი ვერ დაინსტალირდა, რადგან პაკეტი '%s' არ შეიცავს არანაირ XML ფილტრს."
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TabPage.Text
+#, fuzzy
 msgid  "General"
 msgstr "ზოგადი"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FixedText.Text
+#, fuzzy
 msgid  "Filter name"
 msgstr "ფილტრის სახელი"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FixedText.Text
+#, fuzzy
 msgid  "Application"
 msgstr "პროგრამა"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
-msgid  "Name of\nfile type"
-msgstr "ფაილის ტიპის\nსახელი"
+msgid  "Name of\\nfile type"
+msgstr ""
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
+#, fuzzy
 msgid  "File extension"
 msgstr "ფაილის გაფართოება"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "Comments"
 msgstr "კომენტარები"
 
 #: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.WorkWindow.Text
+#, fuzzy
 msgid  "XML Filter output"
 msgstr "XML ფილტრის გამოტანა"
 
 #: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PushButton.Text
+#, fuzzy
 msgid  "~Validate"
 msgstr "~მართებულობის შემოწმება"

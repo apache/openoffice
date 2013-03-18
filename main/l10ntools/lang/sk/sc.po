@@ -144,8 +144,8 @@ msgid  "Column Fields"
 msgstr "Stĺpcové polia"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-msgid  "Row\nFields"
-msgstr "Riadkové\npolia"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -2268,8 +2268,8 @@ msgid  "~Discard"
 msgstr "Zaho~diť"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "Má byť položka\n#\nzmazaná?"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 msgid  "Copy List"
@@ -2712,8 +2712,8 @@ msgid  "Hide ~all"
 msgstr "Skryť vš~etko"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "Ochrana bunky je účinná iba v prípade že je chránený celý list. \n\nVyberte 'Zamknúť dokument' z menu 'Nástroje' a zvoľte 'List'."
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
 msgid  "Protection"
@@ -3232,8 +3232,8 @@ msgid  "No operations to execute"
 msgstr "Žiadne operácie na vykonanie"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "Oblasť neobsahuje hlavičky stĺpcov.\nChcete použiť prvý riadok ako hlavičku stĺpcov?"
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 msgid  "Error while importing data!"
@@ -3296,8 +3296,8 @@ msgid  "Search key not found."
 msgstr "Hľadané kľúčové slovo nenájdené"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-msgid  "Goal Seek successful.\n"
-msgstr "Vyhľadanie cieľa úspešné.\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 msgid  "Insert result ("
@@ -3308,12 +3308,12 @@ msgid  ") into current cell?"
 msgstr ") do aktuálnej bunky?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-msgid  "Goal Seek not successful.\n"
-msgstr "Vyhľadanie cieľa neúspešné.\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-msgid  "No exact value found. \n"
-msgstr "Zodpovedajúca hodnota nenájdená. \n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 msgid  "Insert closest value ("
@@ -3604,7 +3604,1087 @@ msgid  "Text Attributes"
 msgstr "Atribúty textu"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+msgid  "\\"
+msgstr "\\"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+msgid  "PAGE"
+msgstr "PAGE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+msgid  "PAGES"
+msgstr "PAGES"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+msgid  "DATE"
+msgstr "DATE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+msgid  "TIME"
+msgstr "TIME"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+msgid  "FILE"
+msgstr "FILE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+msgid  "SHEET"
+msgstr "SHEET"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+msgid  "Protected cells can not be modified."
+msgstr "Uzamknuté bunky nie je možné meniť."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+msgid  "Document opened in read-only mode."
+msgstr "Dokument je iba pre čítanie."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+msgid  "You cannot change only part of an array."
+msgstr "Časť poľa nie je možné modifikovať."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+msgid  "Header"
+msgstr "Hlavička"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+msgid  "Footer"
+msgstr "Päta"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+msgid  "Err:"
+msgstr "Chyba:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+msgid  "Error: Ranges do not intersect"
+msgstr "Chyba: Oblasti sa neprenikajú"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+msgid  "Error: Division by zero"
+msgstr "Chyba: Delenie nulou"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+msgid  "Error: Wrong data type"
+msgstr "Chyba: Chybný dátový typ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+msgid  "Error: Not a valid reference"
+msgstr "Chyba: Toto nie je platný odkaz"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+msgid  "Error: Invalid name"
+msgstr "Chyba: Neplatný názov"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+msgid  "Error: Invalid numeric value"
+msgstr "Chyba: Neplatná číselná hodnoty"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+msgid  "Error: Value not available"
+msgstr "Chyba: Hodnota nie je dostupná"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+msgid  "#ADDIN?"
+msgstr "#ADDIN?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+msgid  "Error: Add-in not found"
+msgstr "Chyba: Add-in nenájdený"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+msgid  "#MACRO?"
+msgstr "#MACRO?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+msgid  "Error: Macro not found"
+msgstr "Chyba Makro nenájdené"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+msgid  "Internal syntactical error"
+msgstr "Vnútorná syntaktická chyba"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+msgid  "Error: Invalid argument"
+msgstr "Chyba: Neplatný argument"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+msgid  "Error in parameter list"
+msgstr "Chyba v zozname parametrov"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+msgid  "Error: Invalid character"
+msgstr "Chyba: Neplatný znak"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+msgid  "Error: Invalid semicolon"
+msgstr "Chyba: Neplatná bodkočiarka"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+msgid  "Error: in bracketing"
+msgstr "Chyba v počte alebo umiestnení­ zátvoriek"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+msgid  "Error: Operator missing"
+msgstr "Chyba: Chýba operátor"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+msgid  "Error: Variable missing"
+msgstr "Chyba: Chýba premenná"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+msgid  "Error: Formula overflow"
+msgstr "Chyba: Pretečenie vzorca"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+msgid  "Error: String overflow"
+msgstr "Chyba: Pretečenie reťazca"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+msgid  "Error: Internal overflow"
+msgstr "Chyba: Vnútorné pretečenie"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+msgid  "Error: Circular reference"
+msgstr "Chyba: Cyklický odkaz"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+msgid  "Error: Calculation does not converge"
+msgstr "Chyba: Výpočet nekonverguje"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+msgid  "Grid color"
+msgstr "Farba mriežky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "Preniesť obsah skrytých buniek do prvej bunky?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+msgid  "Filter"
+msgstr "Filter"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+msgid  "The target database range does not exist."
+msgstr "Oblasť cieľovej databázi neexistuje."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+msgid  "Invalid increment"
+msgstr "Neplatný prírastok"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+msgid  "MULTIPLE.OPERATIONS"
+msgstr "MULTIPLE.OPERATIONS"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+msgid  "Multiple operations"
+msgstr "Viacnásobné operácie"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+msgid  "Range"
+msgstr "Oblasť"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+msgid  "Yes"
+msgstr "Áno"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+msgid  "No"
+msgstr "Nie"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+msgid  "Protection"
+msgstr "Ochrana"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+msgid  "Formulas"
+msgstr "Vzorce"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+msgid  "Hide"
+msgstr "Skryť"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+msgid  "Print"
+msgstr "Tlač"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+msgid  "(nested)"
+msgstr "(vnorené)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+msgid  "(optional)"
+msgstr "(voliteľné)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+msgid  "(required)"
+msgstr "(požadované)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+msgid  "invalid"
+msgstr "neplatné"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+msgid  "Edit Function"
+msgstr "Upraviť funkciu"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+msgid  "Comments"
+msgstr "Poznámky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "Naozaj chcete zmazať vybraný list(y)?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "Ste si naozaj istý že chcete zamazať zvolený scenár?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+msgid  "Thesaurus is not available"
+msgstr "Slovník synoným nie je dostupný"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+msgid  "Spellcheck not available"
+msgstr "Kontrola pravopisu nie je dostupná"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+msgid  "Import text files"
+msgstr "Importovať textový súbor"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+msgid  "Export Text File"
+msgstr "Exportovať textový súbor"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+msgid  "Import Lotus files"
+msgstr "Importovať súbory Lotus"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+msgid  "Import DBase files"
+msgstr "Importovať súbor dBase"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+msgid  "DBase export"
+msgstr "Exportovať súbor dBase"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+msgid  "Dif Export"
+msgstr "Exportovať súbor Dif"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+msgid  "Dif Import"
+msgstr "Importovať súbor Dif"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+msgid  "Default"
+msgstr "Východzie"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+msgid  "Result"
+msgstr "Výsledok"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+msgid  "Result2"
+msgstr "Výsledok2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+msgid  "Heading"
+msgstr "Nadpis"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+msgid  "Heading1"
+msgstr "Nadpis1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+msgid  "Report"
+msgstr "Správa"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+msgid  "Report1"
+msgstr "Správa1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "Slovník synoným možno použiť len na bunky obsahujúce text!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "Má kontrola pravopisu pokračovať od začiatku aktuálneho listu?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "Kontrola pravopisu tohoto listu je hotová."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+msgid  "No language set"
+msgstr "Jazyk nie je nastavený"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+msgid  "Insert Sheet"
+msgstr "Vložiť list"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+msgid  "Delete Sheets"
+msgstr "Zmazať listy"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+msgid  "Rename Sheet"
+msgstr "Premenovať list"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+msgid  "Color Tab"
+msgstr "Záložka farby"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+msgid  "Color Tabs"
+msgstr "Záložky farby"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+msgid  "Move Sheets"
+msgstr "Presunúť listy"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+msgid  "Copy Sheet"
+msgstr "Kopírovať list"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+msgid  "Append sheet"
+msgstr "Pripojiť list"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+msgid  "Show Sheet"
+msgstr "Zobraziť list"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+msgid  "Hide sheet"
+msgstr "Skryť list"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+msgid  "Flip sheet"
+msgstr "Prevrátiť list"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+msgid  "Toggle the use of R1C1 notation"
+msgstr "Prepnúť používanie R1C1 zápisu"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+msgid  "Main Title"
+msgstr "Hlavný nadpis"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+msgid  "Subtitle"
+msgstr "Podnadpis"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+msgid  "X axis title"
+msgstr "Popis osy X"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+msgid  "Y axis title"
+msgstr "Popis osy Y"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+msgid  "Z axis title"
+msgstr "Popis osy Z"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "Nová tabuľka obsahuje absolútne odkazy na iné tabuľky, ktoré môžu byť nesprávne!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr "Kvôli identickým názvom bol zmenený existujúci rozsah názvov v cieľovom dokumente!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+msgid  "AutoFilter not possible"
+msgstr "Nie je možné uskutočniť automatické filtrovanie"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME Calc prehľadal list od začiatku. Chcete pokračovať do konca?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME Calc prehľadal list do konca. Chcete pokračovať od začiatku?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+msgid  "Find & Replace"
+msgstr "Nájsť a Nahradiť"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME Calc prehľadal dokument od začiatku. Chcete pokračovať do konca?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME Calc prehľadal dokument do konca. Chcete pokračovať od začiatku?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+msgid  "Replace existing definition of #?"
+msgstr "Nahradiť existujúcu definíciu #?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+msgid  "Invalid selection for range names"
+msgstr "Neplatný výber pre mená oblasti"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+msgid  "References can not be inserted above the source data."
+msgstr "Odkazy nie je možné vkladať nad zdrojové dáta."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+msgid  "Scenario not found"
+msgstr "Scenár nebol nájdený"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+msgid  "Do you really want to delete the entry #?"
+msgstr "Určite chcete zmazať položku #?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+msgid  "Objects/graphics"
+msgstr "Objekty/obrázky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+msgid  "Charts"
+msgstr "Grafy"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+msgid  "Drawing Objects"
+msgstr "Kresby"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+msgid  "Show"
+msgstr "Zobraziť"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+msgid  "Hide"
+msgstr "Skryť"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+msgid  "Top to bottom"
+msgstr "Zhora dole"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+msgid  "Left-to-right"
+msgstr "Zľava-doprava"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+msgid  "Comments"
+msgstr "Poznámky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+msgid  "Grid"
+msgstr "Mriežka"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+msgid  "Row & Column Headers"
+msgstr "Hlavičky stĺpcov a riadkov"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+msgid  "Formulas"
+msgstr "Vzorce"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+msgid  "Zero Values"
+msgstr "Nulové hodnoty"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+msgid  "Print direction"
+msgstr "Smer tlače"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+msgid  "First page number"
+msgstr "Číslo prvej strany"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+msgid  "Reduce/enlarge printout"
+msgstr "Zväčšiť/zmenšiť tlač"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+msgid  "Fit print range(s) on number of pages"
+msgstr "Prispôsobiť oblasť(ti) tlače počtu strán"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+msgid  "Fit print range(s) to width/height"
+msgstr "Prispôsobiť oblasť(ti) tlače šírke/výške"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+msgid  "Width"
+msgstr "Šírka"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+msgid  "Height"
+msgstr "Výška"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+msgid  "%1 page(s)"
+msgstr "%1 strana(y)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+msgid  "automatic"
+msgstr "automaticky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+msgid  "Statistics"
+msgstr "Štatistika"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+msgid  "The link could not be updated."
+msgstr "Nie je možné aktualizovať odkaz."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+msgid  "File:"
+msgstr "Súbor:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+msgid  "Sheet:"
+msgstr "List:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+msgid  "Overview"
+msgstr "Prehľad"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+msgid  "Doc.Information"
+msgstr "Informácie o dokumente"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+msgid  "Created"
+msgstr "Vytvorené"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+msgid  "Modified"
+msgstr "Zmenené"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+msgid  "Printed"
+msgstr "Vytlačené"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+msgid  "Subject"
+msgstr "Predmet"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+msgid  "Key words"
+msgstr "Kľúčové slová"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+msgid  "Comments"
+msgstr "Poznámky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+msgid  "by"
+msgstr "Autor"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+msgid  "on"
+msgstr "zapnúť"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+msgid  "Too many conditions"
+msgstr "Príliš veľa podmienok"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+msgid  "The table could not be inserted."
+msgstr "Tabuľku nebolo možné vložiť."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+msgid  "The sheets could not be deleted."
+msgstr "Listy nie je možné zmazať."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "Nebolo možné vložiť obsah schránky."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "Na vloženie listu tu nie je dostatok miesta."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+msgid  "No references found."
+msgstr "Odkazy neboli nájdené."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+msgid  "Source and destination must not overlap."
+msgstr "Zdroj a cieľ sa nesmú prekrývať."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+msgid  "Graphics"
+msgstr "Obrázky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+msgid  "Invalid name."
+msgstr "Neplatný názov."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+msgid  "Selected macro not found."
+msgstr "Vybrané makro nebolo nájdené"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+msgid  "Invalid value."
+msgstr "Neplatná hodnota."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+msgid  "calculating"
+msgstr "prebieha výpočet"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+msgid  "sorting"
+msgstr "zoraďovanie"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+msgid  "Adapt row height"
+msgstr "Prispôsobiť výšku riadka"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+msgid  "Compare #"
+msgstr "Porovnanie #"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+msgid  "Delete contents"
+msgstr "Zmazať obsah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+msgid  "%1 R  x %2 C"
+msgstr "%1 S  x %2 R"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+msgid  "More..."
+msgstr "Viac..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+msgid  "Invalid range"
+msgstr "Neplatný rozsah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr "Hodnota kontingenčnej tabuľky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr "Výsledok kontingenčnej tabuľky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr "Kategória kontingenčnej tabuľky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr "Nadpis kontingenčnej tabuľky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr "Pole kontingenčnej tabuľky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr "Roh kontingenčnej tabuľky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+msgid  "Filter"
+msgstr "Filter"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+msgid  "Sort"
+msgstr "Zoradiť"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+msgid  "Subtotals"
+msgstr "Medzisúčty"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+msgid  "None"
+msgstr "Žiadne"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+msgid  "Do you want to replace the contents of #?"
+msgstr "Chcete nahradiť obsah #?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+msgid  "Width:"
+msgstr "Šírka:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+msgid  "Height:"
+msgstr "Výška:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+msgid  "Hide"
+msgstr "Skryť"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+msgid  "The object could not be inserted."
+msgstr "Objekt nebolo možné vložiť."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+msgid  "<empty>"
+msgstr "<prázdne>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "Bunka #1 zmenená z '#2' na '#3'"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+msgid  "#1 inserted"
+msgstr "#1 vložené"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+msgid  "#1deleted"
+msgstr "#1 zmazané"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+msgid  "Range moved from #1 to #2"
+msgstr "Oblasť presunutá z #1 na #2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+msgid  "Exit Recording"
+msgstr "Ukončiť nahrávanie"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+msgid  "The document can not be closed while a link is being updated."
+msgstr "Dokument nie je možné zatvoriť, pokiaľ je aktualizovaný odkaz."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+msgid  "Adapt array area"
+msgstr "Prispôsobiť rozsah poľa"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+msgid  "Array formula  %1 R x %2 C"
+msgstr "Pole vzorca %1 R x %2 S"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+msgid  "Hangul/Hanja Conversion"
+msgstr "Hangul/Hanja Konverzia"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+msgid  "Select Cell"
+msgstr "Vybrať bunku"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+msgid  "Select Range"
+msgstr "Vybrať oblasť"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+msgid  "Select Database Range"
+msgstr "Vybrať databázovú oblasť"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+msgid  "Go To Row"
+msgstr "Ísť na riadok"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+msgid  "Go To Sheet"
+msgstr "Ísť na list"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+msgid  "Define Name for Range"
+msgstr "Definovať názov pre oblasť"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "Tento výber musí byť pravouhlý aby mohol byť nazvaný."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "Musíte zadať platný odkaz alebo napísať platný názov pre vybranú oblasť."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "VAROVANIE: Táto činnosť mohla spôsobiť nepredpokladané zmeny v odkazoch na bunky vo vzorcoch."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr "VAROVANIE: Táto činnosť mohla spôsobiť, že odkazy na bunky v zmazanej oblasti nebudú obnovené."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+msgid  "(none)"
+msgstr "(nič)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+msgid  "of"
+msgstr "z"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+msgid  "of ?"
+msgstr "z ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+msgid  "Created by"
+msgstr "Vytvorené"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+msgid  "Confidential"
+msgstr "Dôverné"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+msgid  "Customized"
+msgstr "Prispôsobené"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+msgid  "Custom footer"
+msgstr "Vlastná päta"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+msgid  "Chinese conversion"
+msgstr "Čínska konverzia"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+msgid  "You cannot change this part of the pivot table."
+msgstr "Túto časť tabuľky kontingenčnej tabuľky nemôžete zmeniť."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+msgid  "Manual"
+msgstr "Ručný"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+msgid  "Automatic"
+msgstr "Automaticky"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+msgid  "Nested arrays are not supported."
+msgstr "Zložené polia nie sú podporované"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+msgid  "Text to Columns"
+msgstr "Previesť text na stĺpce"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr "Váš zošit bol aktualizovaný zmenami uloženými inými používateľmi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+msgid  "Unknown User"
+msgstr "Neznámy používateľ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+msgid  "Cell Styles"
+msgstr "Štýly buniek"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+msgid  "Page Styles"
+msgstr "Štýly strany"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr "Neplatné zdrojové dáta kontingenčnej tabuľky."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr "Názov poľa nemôže byť prázdny. Skontrolujte prvý riadok zdrojových dát či neobsahuje prázdne bunky."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr "Na vytvorenie alebo obnovenie kontingenčnej tabuľky je potrebné mať aspoň dva riadky s dátami."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+msgid  "Character"
+msgstr "Znak"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+msgid  "Font"
+msgstr "Písmo"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr "Efekty pre písmo"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+msgid  "Font Position"
+msgstr "Pozícia písma"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+msgid  "Back"
+msgstr "Späť"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+msgid  "Paragraph"
+msgstr "Odsek"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+msgid  "Indents & Spacing"
+msgstr "Odsadenie a Rozostupy"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+msgid  "Alignment"
+msgstr "Zarovnanie"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+msgid  "Asian Typography"
+msgstr "Ázijská typografia"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+msgid  "Tab"
+msgstr "Tabulátor"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+msgid  "Back"
+msgstr "Späť"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+msgid  "AutoFormat"
+msgstr "Automatický formát"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+msgid  "F~ormat"
+msgstr "F~ormát"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+msgid  "A~utoFit width and height"
+msgstr "A~utomaticky prispôsobiť šírku a výšku"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+msgid  "~Borders"
+msgstr "Orámov~anie"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+msgid  "F~ont"
+msgstr "Písm~o"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+msgid  "~Pattern"
+msgstr "Vzo~rka"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+msgid  "Alignmen~t"
+msgstr "~Zarovnanie"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+msgid  "~Number format"
+msgstr "For~mát čísla"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+msgid  "Formatting"
+msgstr "Formátovanie"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+msgid  "~Add..."
+msgstr "Prid~ať..."
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "~Zmazať"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+msgid  "~Rename"
+msgstr "P~remenovať"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+msgid  "Add AutoFormat"
+msgstr "Pridať automatický formát"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+msgid  "Rename AutoFormat"
+msgstr "Premenovať automatický formát"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+msgid  "Name"
+msgstr "Názov"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+msgid  "Delete AutoFormat"
+msgstr "Zmazať automatický formát"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
@@ -3949,7 +5029,7 @@ msgstr "Nekončí s"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FL_CRITERIA.FixedLine.Text
 msgid  "Filter criteria"
-msgstr "Filter"
+msgstr "Kritériá filtra"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_CASE.CheckBox.Text
 msgid  "Case ~sensitive"
@@ -5925,7 +7005,7 @@ msgstr "Vráti a^b, mocnenec a umocnený exponentom b."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.2.String.Text
 msgid  "Base"
-msgstr "Základ"
+msgstr "Mocnenec"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.3.String.Text
 msgid  "The base a of the power a^b."
@@ -7789,7 +8869,7 @@ msgstr "Hodnota pre ktorú sa počíta Poissonovo rozdelenie."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 msgid  "mean"
-msgstr "stredný"
+msgstr "stredná hodnota"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 msgid  "Mean. The mean value of the Poisson distribution."
@@ -7853,7 +8933,7 @@ msgstr "Hodnota pravdepodobnosti pre ktorú sa počíta inverzné normálne rozd
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.4.String.Text
 msgid  "mean"
-msgstr "stredná hodnota"
+msgstr "stredný"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.5.String.Text
 msgid  "The mean value. The mean value of the normal distribution."
@@ -10412,8 +11492,8 @@ msgid  "Font Attributes"
 msgstr "Atribúty písma"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "V schránke je uložené veľké množstvo dát.\nChcete aby bol obsah schránky prístupný ostatným aplikáciám?"
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 msgid  "System Options"
@@ -10480,8 +11560,8 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
-msgstr "%PRODUCTNAME Calc našiel vo vloženom vzorci chybu.\nChcete použiť opravu podľa návrhu?\n\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file can not be opened"
@@ -10524,8 +11604,8 @@ msgid  "~Selected sheets"
 msgstr "Vybrané li~sty"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "Vkladáte dáta do buniek ktoré už dáta obsahujú.\nŽeláte si prepísať existujúce dáta?"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"
@@ -12232,20 +13312,20 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "Dokument je príliš zložitý pre automatický výpočet. Stlač F9 na prepočet."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "Dokument obsahuje viac riadkov ako podporuje zvolený formát.\nOstatné riadky nebudú uložené."
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "Dokument obsahuje informáciu ktorú táto verzia programu nepodporuje.\nPri uložení dokumentu sa tieto informácie stratia!"
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 msgid  "Not all cell contents could be saved in the specified format."
 msgstr "Obsah všetkých buniek nemohol byť uložený v špecifikovanom formáte."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
-msgstr "Nasledovný znak nemohol byť prevedený do zvolenej znakovej sady.\n a bude zapísaný ako &#1234; náhrada:\n\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."

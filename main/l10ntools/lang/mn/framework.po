@@ -136,24 +136,24 @@ msgid  "Retry"
 msgstr "Дахин оролд"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "PRODUCTNAME чухал дотоод мэдээллийг хадгалж чадсангүй. Учир нь дараах хаягт хангалттай сул зай алга:\n%PATH\n\nТа хангалттай сул зай гаргаж байж %PRODUCTNAME дээр үргэлжлүүлэн ажиллах боломжтой болно.\n\nСул зай гаргасныхаа дараа өгөгдлийн хадгалалтыг давтахын тулд 'Давтах' гэсэн товчин дээр дарна уу."
+msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
+msgstr ""
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
 msgstr "~Буцааж олгох"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "Хэрэглэгчийн гадаргуун тохиргооны өгөгдлийг ачаалж байхад алдаа гарлаа. Програм үргэлжлэх боломжгүй.\nТа програмаа дахин суулгахыг оролдоно уу."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "Хэрэглэгчийн гадаргуун тохиргооны өгөгдлийг ачаалж байхад алдаа гарлаа. Програм үргэлжлэх боломжгүй.\nТа энэ програмын хувьд хэрэглэгчийн профилээ устгахыг оролдоно уу."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "Хэрэглэгчийн гадаргуун тохиргооны өгөгдлийг ачаалж байхад алдаа гарлаа. Програм үргэлжлэх боломжгүй.\nТа энэ програмын хувьд эхлээд хэрэглэгчийн профилээ устгахыг эсвэл програмыг ахин суулгахыг оролдоно уу."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

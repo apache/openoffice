@@ -280,8 +280,8 @@ msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} 
 msgstr "Због познатог проблема са Windows драјвером, није могуће кретати се кроз ${PRODUCTNAME} документе док се прст налази на ALPS/Synaptics прстоподлози."
 
 #: docs/readme/readme.xrm#naso6.naso6
-msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\Program Files\Synaptics\SynTP\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr ""
+msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
+msgstr "Да бисте омогућили прстоподлогу, додајте следеће линије у конфигурациону датотеку <tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt> и поново покрените рачунар:"
 
 #: docs/readme/readme.xrm#naso8.naso8
 msgid  "The location of the configuration file might vary on different versions of Windows."

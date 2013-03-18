@@ -210,9 +210,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
-#, fuzzy
-msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr "تعذر تحميل المُكوّن (%s).\nالرجاء تشغيل العداد واستخدام خيار التصليح."
+msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
+msgstr ""
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 #, fuzzy
@@ -314,26 +313,32 @@ msgid  "Print"
 msgstr "طباعة"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKButton.Text
+#, fuzzy
 msgid  "~Print"
 msgstr "~طباعة"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FixedText.Text
+#, fuzzy
 msgid  "/ %n"
 msgstr "/ %n"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.String.Text
+#, fuzzy
 msgid  "No pages"
 msgstr "لا توجد صفحات"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.String.Text
+#, fuzzy
 msgid  "Print to File..."
 msgstr "طباعة إلى ملف..."
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.String.Text
+#, fuzzy
 msgid  "Default printer"
 msgstr "طابعة افتراضية"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.String.Text
+#, fuzzy
 msgid  "Print preview"
 msgstr "معاينة الطباعة"
 
@@ -343,90 +348,112 @@ msgid  "Page Layout"
 msgstr "تخطيط الصفحة"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FixedLine.Text
+#, fuzzy
 msgid  "Layout"
 msgstr "تخطيط"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RadioButton.Text
+#, fuzzy
 msgid  "Pa~ges per sheet"
 msgstr "عد~د الصفحات لكل ورقة"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.StringList.item
+#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.StringList.item
+#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.StringList.item
+#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.StringList.item
+#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.StringList.item
+#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.StringList.item
+#, fuzzy
 msgid  "16"
 msgstr "16"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0xffff.StringList.item
+#, fuzzy
 msgid  "Custom"
 msgstr "مخصص"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FixedText.Text
+#, fuzzy
 msgid  "P~ages"
 msgstr "صفحا~ت"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FixedText.Text
+#, fuzzy
 msgid  "b~y"
 msgstr "بواس~طة"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FixedText.Text
+#, fuzzy
 msgid  "~Distance"
 msgstr "الم~سافة"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FixedText.Text
+#, fuzzy
 msgid  "between pages"
 msgstr "بين الصفحات"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FixedText.Text
+#, fuzzy
 msgid  "~Margin"
 msgstr "هام~ش"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FixedText.Text
+#, fuzzy
 msgid  "to sheet border"
 msgstr "إلى حد الورقة"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FixedText.Text
+#, fuzzy
 msgid  "~Orientation"
 msgstr "الات~جاه"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.StringList.item
+#, fuzzy
 msgid  "Automatic"
 msgstr "تلقائي"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.StringList.item
+#, fuzzy
 msgid  "Portrait"
 msgstr "عمودي"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.StringList.item
+#, fuzzy
 msgid  "Landscape"
 msgstr "أفقي"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FixedText.Text
+#, fuzzy
 msgid  "Order"
 msgstr "الترتيب"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.StringList.item
+#, fuzzy
 msgid  "left to right, then down"
 msgstr "من اليسار إلى اليمين ثم لأسفل"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.StringList.item
+#, fuzzy
 msgid  "top to bottom, then right"
 msgstr "من أعلى لأسفل ثم إلى اليمين"
 
@@ -530,9 +557,8 @@ msgid  "Page %p of %n"
 msgstr "الصفحة %p من %n"
 
 #: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
-#, fuzzy
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "لم يتم العثور على طابعة افتراضية.\nالرجاء اختيار طابعة والمحاولة مرة أخرى."
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr ""
 
 #: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
 #, fuzzy
@@ -712,93 +738,116 @@ msgid  "B6 (JIS)"
 msgstr ""
 
 #: source/src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.String.Text
+#, fuzzy
 msgid  "<No selection possible>"
 msgstr "<الاختيار غير ممكن>"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MenuItem.Text
+#, fuzzy
 msgid  "~Undo"
 msgstr "~تراجع"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MenuItem.Text
+#, fuzzy
 msgid  "Cu~t"
 msgstr "~قص"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
 msgstr "~نسخ"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MenuItem.Text
+#, fuzzy
 msgid  "~Paste"
 msgstr "~لصق"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "ح~ذف"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MenuItem.Text
+#, fuzzy
 msgid  "Select ~All"
 msgstr "~تحديد الكل"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MenuItem.Text
+#, fuzzy
 msgid  "~Special Character..."
 msgstr "~رموز خاصة..."
 
 #: source/src/menu.src#SV_MENU_MAC_SERVICES.String.Text
+#, fuzzy
 msgid  "Services"
 msgstr "الخدمات"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEAPP.String.Text
+#, fuzzy
 msgid  "Hide %PRODUCTNAME"
 msgstr "إخفاء %PRODUCTNAME"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEALL.String.Text
+#, fuzzy
 msgid  "Hide Others"
 msgstr "إخفاء الخيارات الأخرى"
 
 #: source/src/menu.src#SV_MENU_MAC_SHOWALL.String.Text
+#, fuzzy
 msgid  "Show All"
 msgstr "إظهار الكل"
 
 #: source/src/menu.src#SV_MENU_MAC_QUITAPP.String.Text
+#, fuzzy
 msgid  "Quit %PRODUCTNAME"
 msgstr "إنهاء %PRODUCTNAME"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
+#, fuzzy
 msgid  "OK"
 msgstr "موافق"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "إلغاء الأمر"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
+#, fuzzy
 msgid  "~Yes"
 msgstr "~نعم"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
+#, fuzzy
 msgid  "~No"
 msgstr "~لا"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
+#, fuzzy
 msgid  "~Retry"
 msgstr "~تكرار المحاولة"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~تعليمات"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
+#, fuzzy
 msgid  "~More"
 msgstr "المز~يد"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
+#, fuzzy
 msgid  "~More"
 msgstr "المز~يد"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
+#, fuzzy
 msgid  "~Ignore"
 msgstr "~تجاهل"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
+#, fuzzy
 msgid  "~Abort"
 msgstr "إج~هاض"

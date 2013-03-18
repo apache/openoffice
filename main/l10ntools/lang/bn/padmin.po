@@ -53,15 +53,15 @@ msgstr "শুধুমাত্র স্ফটলিঙ্ক (~s)"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
-msgstr "সব নির্বাচন করুন (~S)"
+msgstr "সমস্ত অংশ নির্বাচন (~S)"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
 msgid  "Add fonts"
 msgstr "ফন্ট যোগ করুন"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
-msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr "আপনি কি সত্যিই ফন্ট ফাইল নতুন করে লিখতে চান? \n%s"
+msgid  "Do you really want to overwrite this font file?\\n   %s"
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -72,16 +72,16 @@ msgid  "None"
 msgstr "একটিও নয়"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
-msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr "ফন্টের জন্য উপযুক্ত ফাইলের বিন্যাস ( এএফএম  বর্ধিতাংশ এর সাহায্যে ) পাওয়া গেল না।\n %s\nতাই, ফন্টটি সংস্থাপন করা  সম্ভব হল না। ফরম্যাট বিন্যাসটি ghostscript এর সাহায্যে তৈরী করা যায় এবং নতুন ফাইলটি একই  নির্দেশিকাতে বা তার এএফএম উপনির্দেশিকার ভেতর থাকতে হবে।"
+msgid  "A format file (with an .afm extension) has not been found for the font\\n%s\\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
-msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr "নির্বাচিত ফন্ট এর মেট্রিক ফাইলটি \n%s\nঅনুলিপি করা সম্ভব  নয়। ফন্ট সংস্থাপন অসম্ভব।"
+msgid  "The metric file for the font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
-msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr " ফন্ট ফাইলটি \n%s\nঅনুলিপি করা সম্ভব নয়। ফন্টটি এখন সংস্থাপন অসম্ভব।"
+msgid  "The font file\\n   %s\\ncould not be copied. The font will not be installed."
+msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -105,7 +105,7 @@ msgstr "CUPS সমর্থন নিষ্ক্রিয় করুন"
 
 #: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
 msgid  "Close"
-msgstr "বন্ধ করুন।"
+msgstr "বন্ধ করুন"
 
 #: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
 msgid  "Installed ~printers"
@@ -176,7 +176,7 @@ msgid  "The test page was printed succesfully. Please check the result."
 msgstr "পরীক্ষণ পাতা সঠিক ভাবে মুদ্রণ হয়েছে। ফলাফল দেখুন।"
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
-msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgid  "No printers can be installed, because the file system is read-only.\\nPlease contact your system administrator."
 msgstr ""
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
@@ -288,8 +288,8 @@ msgid  "The file does not contain a metric."
 msgstr "ফাইলটি কোনো মেট্রিক ধারন করে না।"
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
-msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr "মেট্রিকটি \n%s\n\nনিম্নলিখিত কারনে পরিবর্তন সম্ভব নয়ঃ\n\n"
+msgid  "The metric\\n\\n%s\\n\\ncould not be converted for the following reason:\\n\\n"
+msgstr ""
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -352,8 +352,8 @@ msgid  "The driver \"%s\" is always needed and can therefore not be removed."
 msgstr "ড্রাইভারটি\"%s\" সবসময় দরকার এবং তাই মুছে ফেলা অসম্ভব।"
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr "ড্রাইভার \"%s1\" মুছে ফেলা অসম্ভব।ফাইলটি মুছে ফেলা সম্ভব ছিল না\n\n%s2।"
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\\n\\n%s2."
+msgstr ""
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
 msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
@@ -397,7 +397,7 @@ msgstr "মুদ্রণযন্ত্র সংযুক্তকরণ "
 
 #: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
 msgid  "Choose a driver"
-msgstr "ড্রাইভার পছন্দ করুন"
+msgstr "ড্রাইভার নির্বাচন করুন"
 
 #: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
 msgid  "Please select a s~uitable driver."
@@ -509,7 +509,7 @@ msgstr "সমস্ত অংশ নির্বাচন (~S)"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
 msgid  "Choose a driver"
-msgstr "ড্রাইভার নির্বাচন করুন"
+msgstr "ড্রাইভার পছন্দ করুন"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
 msgid  "Use the following driver for this fax connection"
@@ -517,7 +517,7 @@ msgstr "ফ্যাক্স  সংযোগ এর জন্য নিম্�
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
 msgid  "T~he default driver"
-msgstr "প্রচলিত ড্রাইভার (~T)"
+msgstr "প্রচলিত ড্রাইভার (~h)"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
 msgid  "A speci~fic driver, to adapt the format to another printer"
@@ -734,7 +734,7 @@ msgstr "সংযোগ (~A)"
 #: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
 #, fuzzy
 msgid  "~Remove"
-msgstr "মুছে ফেলুন (~R)"
+msgstr "মুছে ফেলা (~R)"
 
 #: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
 #, fuzzy

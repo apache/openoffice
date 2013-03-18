@@ -53,7 +53,7 @@ msgstr "Розмірні лінії"
 
 #: source/core/glob.src#STR_PAGE.String.Text
 msgid  "Slide"
-msgstr "Слайд"
+msgstr "Сторінка"
 
 #: source/core/glob.src#STR_PAGE_NAME.String.Text
 msgid  "Page"
@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "Перемістити слайди"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "Не достатньо пам'яті!\nДія буде припинена."
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1009,7 +1009,7 @@ msgstr "Маленький"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MenuItem.Text
 msgid  "Larger"
-msgstr "Більший"
+msgstr "Великий"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MenuItem.Text
 msgid  "Extra large"
@@ -1798,9 +1798,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Введіть назву для нової розмірної стрілки:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-#, fuzzy
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "Така назва вже існує. \nВведіть іншу назву."
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -1888,9 +1887,8 @@ msgid  "Insert slides"
 msgstr "Вставити слайд"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-#, fuzzy
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "Ви дійсно хочете видалити рівень \"$\"?\nПримітка: всі об'єкти цього рівня будуть видалені!"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -1948,9 +1946,8 @@ msgid  "Insert text frame"
 msgstr "Вставити кадр"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-#, fuzzy
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "Неможливо виконати дії з виділеними об'єктами."
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -1963,9 +1960,8 @@ msgid  "The file could not be loaded!"
 msgstr "Неможливо завантажити файл!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-#, fuzzy
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "Формат нової сторінки буде узгоджений.\nУзгодити також об'єкти?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -1988,9 +1984,8 @@ msgid  "~Edit"
 msgstr "~Редагувати"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-#, fuzzy
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "Цією дією видаляється список кроків, які можна скасувати.\nВиконані до цих пір зміни у документі будуть збережені,\nале скасувати їх буде вже неможливо. Продовжити, незважаючи на це,\nта призначити новий дизайн сторінки?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2013,9 +2008,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "Неможливо встановити формат документу на вказаному принтері."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-#, fuzzy
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "Цей графічний об'єкт посилається на документ. \nЗняти посилання, щоб виконати редагування?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2153,9 +2147,8 @@ msgid  " (Outline)"
 msgstr " (Структура)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-#, fuzzy
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "Вказаний масштаб є некоректним.\nВвести новий масштаб?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2507,9 +2500,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Неможливо розгрупувати всі об'єкти ресурсів."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-#, fuzzy
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "Елемент з такою назвою вже існує.\nЗамінити?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2652,9 +2644,8 @@ msgid  "Graphics filter"
 msgstr "Графічний фільтр"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-#, fuzzy
-msgid  "The file %\nis not a valid sound file !"
-msgstr "Некоректний звуковий файл % !"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -3101,7 +3092,7 @@ msgstr "Позиція і ~розмір..."
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
 #, fuzzy
 msgid  "Edit ~Points"
-msgstr "~Редагування точок"
+msgstr "Редагування ~точок"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
 #, fuzzy
@@ -3290,7 +3281,7 @@ msgstr "З~низу"
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
 #, fuzzy
 msgid  "Close ~Object"
-msgstr "Закрити ~об'єкт"
+msgstr "Замкнути ~об'єкт"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
 #, fuzzy
@@ -3658,74 +3649,92 @@ msgid  "~Rename"
 msgstr "Перей~менувати"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MenuItem.Text
+#, fuzzy
 msgid  "To ~Curve"
 msgstr "На ~криву"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MenuItem.Text
+#, fuzzy
 msgid  "To ~Polygon"
 msgstr "На ~багатокутник"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MenuItem.Text
+#, fuzzy
 msgid  "To C~ontour"
 msgstr "На ~контур"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MenuItem.Text
+#, fuzzy
 msgid  "To 3~D"
 msgstr "На ~тривимірний об'єкт"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MenuItem.Text
+#, fuzzy
 msgid  "To ~Bitmap"
 msgstr "На ~растрове зображення"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MenuItem.Text
+#, fuzzy
 msgid  "To ~Metafile"
 msgstr "На ~метафайл"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MenuItem.Text
+#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "На тіло ~обертання"
 
 #: source/ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "~Вертикально"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "~Horizontally"
 msgstr "~Горизонтально"
 
 #: source/ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MenuItem.Text
+#, fuzzy
 msgid  "~3D Effects"
 msgstr "~Тривимірні ефекти"
 
 #: source/ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Design"
 msgstr "~Дизайн слайду"
 
 #: source/ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MenuItem.Text
+#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "~Зміна слайдів"
 
 #: source/ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Show Slide"
 msgstr "~Показати слайд"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Hide Slide"
 msgstr "С~ховати слайд"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Group"
-msgstr "~Групувати"
+msgstr "~Згрупувати"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Ungroup"
 msgstr "~Розгрупувати"
 
 #: source/ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Edit Group"
 msgstr "~Змінити групу"
 
 #: source/ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "E~xit group"
 msgstr "Ви~хід з групи"
 
@@ -3937,358 +3946,446 @@ msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you 
 msgstr "%PRODUCTNAME Draw здійснив пошук у напрямку до початку документу. Продовжити пошук до кінця документу?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
+#, fuzzy
 msgid  "~New"
 msgstr "~Створити"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MenuItem.Text
+#, fuzzy
 msgid  "~Export..."
 msgstr "~Експорт..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MenuItem.Text
+#, fuzzy
 msgid  "Export as PDF..."
 msgstr "Експорт у PDF..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MenuItem.Text
+#, fuzzy
 msgid  "Sen~d"
 msgstr "~Надіслати"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
+#, fuzzy
 msgid  "~Page..."
 msgstr "~Сторінка..."
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~Редагування"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
+#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "Вставити ~як..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "Duplicat~e..."
 msgstr "~Дублювати..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MenuItem.Text
+#, fuzzy
 msgid  "Cross-fading..."
 msgstr "Морфінг..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MenuItem.Text
+#, fuzzy
 msgid  "F~ields..."
 msgstr "~Поля..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MenuItem.Text
+#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "Видалити ~шар..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
+#, fuzzy
 msgid  "Lin~ks..."
 msgstr "Зв'~язки..."
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
+#, fuzzy
 msgid  "~View"
 msgstr "~Вигляд"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
+#, fuzzy
 msgid  "Main ~Toolbar"
 msgstr "Головна ~панель інструментів"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MenuItem.Text
+#, fuzzy
 msgid  "Optio~n Bar"
 msgstr "~Панель параметрів"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MenuItem.Text
+#, fuzzy
 msgid  "~Presentation"
 msgstr "~Презентація"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MenuItem.Text
+#, fuzzy
 msgid  "Customi~ze..."
 msgstr "~Модифікація..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MenuItem.Text
+#, fuzzy
 msgid  "~Rulers"
 msgstr "~Лінійки"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Notes View"
 msgstr "Режим ~приміток"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Handout View"
 msgstr "~Режим тез"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MenuItem.Text
+#, fuzzy
 msgid  "~Preview"
 msgstr "~Попередній перегляд"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MenuItem.Text
+#, fuzzy
 msgid  "S~lide"
 msgstr "С~лайд"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Master"
 msgstr "~Майстер слайдів"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "~Заголовок"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Notes"
 msgstr "~Примітки"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Handout"
 msgstr "~Тези"
 
 #: source/ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MenuItem.Text
+#, fuzzy
 msgid  "La~yer"
 msgstr "~Шар"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MenuItem.Text
+#, fuzzy
 msgid  "Wor~kspace"
 msgstr "~Робочий режим"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Master"
 msgstr "~Помічник"
 
 #: source/ui/app/menuids2_tmpl.src#21.#define.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "~Вставити"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slid~e..."
 msgstr "~Слайд..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slid~e"
 msgstr "Сла~йд"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~uplicate Slide"
 msgstr "~Дублювати слайд"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "E~xpand Slide"
 msgstr "~Розширити слайд"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "~Оглядовий слайд"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Layer..."
 msgstr "~Шар..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
+#, fuzzy
 msgid  "~Date (fixed)"
 msgstr "~Дата (фіксована)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MenuItem.Text
+#, fuzzy
 msgid  "Dat~e (variable)"
 msgstr "Д~ата (змінна)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MenuItem.Text
+#, fuzzy
 msgid  "~Time (fixed)"
 msgstr "~Час (фіксований)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MenuItem.Text
+#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "Ча~с (змінний)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Page Number"
 msgstr "~Номер сторінки"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MenuItem.Text
+#, fuzzy
 msgid  "~File Name"
 msgstr "Назва ~файлу"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MenuItem.Text
+#, fuzzy
 msgid  "~Author"
 msgstr "~Автор"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MenuItem.Text
+#, fuzzy
 msgid  "~Select Source..."
 msgstr "~Вибрати джерело..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MenuItem.Text
+#, fuzzy
 msgid  "~Request..."
 msgstr "~Запит..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MenuItem.Text
+#, fuzzy
 msgid  "Sp~readsheet"
 msgstr "~Електронна таблиця"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MenuItem.Text
+#, fuzzy
 msgid  "From ~File..."
 msgstr "З ~файлу..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MenuItem.Text
+#, fuzzy
 msgid  "Chart"
 msgstr "Діаграма"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MenuItem.Text
+#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "~Фрейм..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MenuItem.Text
+#, fuzzy
 msgid  "~File..."
 msgstr "~Файл..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MenuItem.Text
+#, fuzzy
 msgid  "Fiel~ds"
 msgstr "~Поля"
 
 #: source/ui/app/menuids2_tmpl.src#22.#define.Text
+#, fuzzy
 msgid  "F~ormat"
 msgstr "Фор~мат"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Te~xt..."
 msgstr "~Текст..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "~Розміри..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Connector..."
 msgstr "~З'єднувальна лінія..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Layer..."
 msgstr "~Шар..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Modify ~Layout..."
 msgstr "Змінити ~розмітку..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
+#, fuzzy
 msgid  "Styl~es"
 msgstr "~Стилі"
 
 #: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+#, fuzzy
 msgid  "~Tools"
 msgstr "С~ервіс"
 
 #: source/ui/app/menuids2_tmpl.src#26.#define.Text
+#, fuzzy
 msgid  "~Slide Show"
 msgstr "~Демонстрація"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
+#, fuzzy
 msgid  "~Check..."
 msgstr "~Перевірка..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MenuItem.Text
+#, fuzzy
 msgid  "~AutoSpellcheck"
 msgstr "~Автоматична перевірка орфографії"
 
 #: source/ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MenuItem.Text
+#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "~Тезаурус..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MenuItem.Text
+#, fuzzy
 msgid  "~Hyphenation"
 msgstr "~Розстановка переносів"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~AutoCorrect..."
 msgstr "~Автокорекція..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Show Settings..."
 msgstr "~Параметри показу..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Custom Slide Show..."
 msgstr "~Індивідуальна демонстрація..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "~Animation"
 msgstr "~Анімація"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MenuItem.Text
+#, fuzzy
 msgid  "~Interaction..."
 msgstr "~Дія при клацанні мишею..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
+#, fuzzy
 msgid  "~Spellcheck"
 msgstr "Перевірка ~орфографії"
 
 #: source/ui/app/menuids2_tmpl.src#24.#define.Text
+#, fuzzy
 msgid  "~Modify"
 msgstr "~Змінити"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Перемістити на~перед"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Перемістити ~назад"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "Попереду ~об'єкту"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "Be~hind Object"
 msgstr "Поз~аду об'єкту"
 
 #: source/ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MenuItem.Text
+#, fuzzy
 msgid  "~Reverse"
 msgstr "~Попередній перегляд"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MenuItem.Text
+#, fuzzy
 msgid  "~Eyedropper"
 msgstr "~Піпетка"
 
 #: source/ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MenuItem.Text
+#, fuzzy
 msgid  "~Gallery"
 msgstr "~Галерея"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
 msgid  "~Color"
-msgstr "~Кольоровий"
+msgstr "~Колір"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
+#, fuzzy
 msgid  "~Grayscale"
 msgstr "~Відтінки сірого"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
+#, fuzzy
 msgid  "~Black and White"
 msgstr "~Чорно-білий"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
+#, fuzzy
 msgid  "~High Contrast"
 msgstr "~Контраст"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "~Колір"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MenuItem.Text
+#, fuzzy
 msgid  "~Grayscale"
 msgstr "~Відтінки сірого"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MenuItem.Text
+#, fuzzy
 msgid  "~Black and White"
 msgstr "~Чорно-білий"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MenuItem.Text
+#, fuzzy
 msgid  "~High Contrast"
 msgstr "~Контраст"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "~Розташувати"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ItemList.Text
+#, fuzzy
 msgid  "~Display Quality"
 msgstr "~Якість показу"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
+#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "Режим ~попереднього перегляду"
 
@@ -5644,190 +5741,237 @@ msgid  "Animation"
 msgstr "Анімація"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "First Image"
 msgstr "Перше зображення"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Backwards"
 msgstr "Назад"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Stop"
 msgstr "Зупинити"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Play"
 msgstr "Відтворити"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Last Image"
 msgstr "Останнє зображення"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
+#, fuzzy
 msgid  "Image Number"
 msgstr "Номер зображення"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
+#, fuzzy
 msgid  "Duration"
 msgstr "Тривалість показу"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item1.StringList.item
+#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item2.StringList.item
+#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item3.StringList.item
+#, fuzzy
 msgid  "3"
 msgstr "3"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item4.StringList.item
+#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item5.StringList.item
+#, fuzzy
 msgid  "5"
 msgstr "5"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item6.StringList.item
+#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item7.StringList.item
+#, fuzzy
 msgid  "7"
 msgstr "7"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item8.StringList.item
+#, fuzzy
 msgid  "8"
 msgstr "8"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item9.StringList.item
+#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item10.StringList.item
+#, fuzzy
 msgid  "10"
 msgstr "10"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item11.StringList.item
+#, fuzzy
 msgid  "12"
 msgstr "12"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item12.StringList.item
+#, fuzzy
 msgid  "15"
 msgstr "15"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item13.StringList.item
+#, fuzzy
 msgid  "20"
 msgstr "20"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item14.StringList.item
+#, fuzzy
 msgid  "25"
 msgstr "25"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item15.StringList.item
+#, fuzzy
 msgid  "50"
 msgstr "50"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item16.StringList.item
+#, fuzzy
 msgid  "100"
 msgstr "100"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item17.StringList.item
+#, fuzzy
 msgid  "500"
 msgstr "500"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item18.StringList.item
+#, fuzzy
 msgid  "1000"
 msgstr "1000"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item19.StringList.item
+#, fuzzy
 msgid  "Max."
 msgstr "Макс."
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
+#, fuzzy
 msgid  "Loop Count"
 msgstr "Кількість прогнозів"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Apply Object"
 msgstr "Прийняти об'єкт"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Apply Objects Individually"
 msgstr "Застосувати об'єкти по одному"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Delete Current Image"
 msgstr "Видалити поточне зображення"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Delete All Images"
 msgstr "Видалити всі зображення"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Кількість"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FixedLine.Text
+#, fuzzy
 msgid  "Image"
 msgstr "Зображення"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RadioButton.Text
+#, fuzzy
 msgid  "Group object"
 msgstr "Об'єкт групи"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RadioButton.Text
+#, fuzzy
 msgid  "Bitmap object"
 msgstr "Растровий об'єкт"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FixedText.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "Вирівнювання"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Top Left"
 msgstr "Зверху ліворуч"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Left"
 msgstr "Ліворуч"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Bottom Left"
 msgstr "Ліворуч внизу"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Top"
 msgstr "Зверху"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Centered"
 msgstr "У центрі"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Bottom"
 msgstr "Знизу"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Top Right"
 msgstr "Зверху праворуч"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Right"
 msgstr "Праворуч"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Bottom Right"
 msgstr "Праворуч внизу"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+#, fuzzy
 msgid  "Create"
 msgstr "Створити"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+#, fuzzy
 msgid  "Animation group"
 msgstr "Група анімації"
 
@@ -5952,26 +6096,32 @@ msgid  "Paper tray from printer s~ettings"
 msgstr "Подача паперу відповідно до ~параметрів принтера"
 
 #: source/ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DockingWindow.Text
+#, fuzzy
 msgid  "Notes Window"
 msgstr "Вікно приміток"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Next"
 msgstr "~Наступний"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Previous"
 msgstr "~Попередній"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MenuItem.Text
+#, fuzzy
 msgid  "~Go to Slide"
 msgstr "Пере~йти"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~First Slide"
 msgstr "П~ерший слайт"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Last Slide"
 msgstr "~Останній слайд"
 
@@ -6012,18 +6162,22 @@ msgid  "~Erase all ink on Slide"
 msgstr ""
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MenuItem.Text
+#, fuzzy
 msgid  "~Screen"
 msgstr "~Монітор"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MenuItem.Text
+#, fuzzy
 msgid  "~Black"
 msgstr "~Чорний"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MenuItem.Text
+#, fuzzy
 msgid  "~White"
 msgstr "~Білий"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MenuItem.Text
+#, fuzzy
 msgid  "~End Show"
 msgstr "~Завершити"
 
@@ -6052,42 +6206,52 @@ msgid  "Duplicate Slide"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
+#, fuzzy
 msgid  "Table Design"
 msgstr "Дизайн таблиці"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
+#, fuzzy
 msgid  "Show"
 msgstr "Показати"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW+1.CheckBox.Text
+#, fuzzy
 msgid  "Header Row"
 msgstr "Рядок-заголовок"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW+1.CheckBox.Text
+#, fuzzy
 msgid  "Total Row"
 msgstr "Рядок з підсумками"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS+1.CheckBox.Text
+#, fuzzy
 msgid  "Banded Rows"
 msgstr "Рядки з обрамленням"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
+#, fuzzy
 msgid  "First Column"
 msgstr "Перший стовпчик"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
+#, fuzzy
 msgid  "Last Column"
 msgstr "Останній стовпчик"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS+1.CheckBox.Text
+#, fuzzy
 msgid  "Banded Columns"
 msgstr "Стовпчики з обрамленням"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
+#, fuzzy
 msgid  "Styles"
 msgstr "Стилі"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.ModalDialog.Text
+#, fuzzy
 msgid  "Table Design"
 msgstr "Дизайн таблиці"
 

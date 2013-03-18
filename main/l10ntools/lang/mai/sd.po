@@ -33,11 +33,11 @@ msgstr ""
 
 #: source/core/glob.src#STR_LAYER_BCKGRND.String.Text
 msgid  "Background"
-msgstr "पृष्ठभूमि "
+msgstr "पृष्ठभूमि"
 
 #: source/core/glob.src#STR_LAYER_BCKGRNDOBJ.String.Text
 msgid  "Background objects"
-msgstr "वस्तु पृष्ठभूमि "
+msgstr "वस्तु पृष्ठभूमि"
 
 #: source/core/glob.src#STR_LAYER_LAYOUT.String.Text
 msgid  "Layout"
@@ -129,7 +129,7 @@ msgstr "शीर्षक जोड़बाक लेल क्लिक क�
 
 #: source/core/glob.src#STR_PRESOBJ_OUTLINE.String.Text
 msgid  "Click to add text"
-msgstr "बाहरी रूपरेखा जोड़बाक लेल क्लिक करू"
+msgstr "पाठ जोड़बाक लेल क्लिक करू"
 
 #: source/core/glob.src#STR_PRESOBJ_TEXT.String.Text
 msgid  "Click to add text"
@@ -197,7 +197,7 @@ msgstr "ग्लू बिन्दु प्रकार"
 
 #: source/core/glob.src#STR_LAYOUT_DEFAULT_NAME.String.Text
 msgid  "Default"
-msgstr "मूलभूत "
+msgstr "मूलभूत"
 
 #: source/core/glob.src#STR_LAYOUT_DEFAULT_TITLE_NAME.String.Text
 msgid  "Title"
@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "स्लाइडक स्थान परिवर्तन करू"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "पर्याप्त स्मृति नहि! \n क्रिया केँ छाड़ि देल गेल."
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -413,7 +413,7 @@ msgstr "मानक HTML फ्रेमक संग (~f)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RadioButton.Text
 msgid  "~Automatic"
-msgstr "स्वचालित (~A)"
+msgstr "स्वाचालित (~A)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RadioButton.Text
 msgid  "~WebCast"
@@ -1525,7 +1525,7 @@ msgstr "विकल्पसभ पट्टी/आरेख"
 
 #: source/ui/app/strings.src#STR_DRAW_COMMONTASK_TOOLBOX.String.Text
 msgid  "Presentation"
-msgstr "प्रस्तुतिकरण "
+msgstr "प्रस्तुतिकरण"
 
 #: source/ui/app/strings.src#STR_SLIDE_OBJ_TOOLBOX.String.Text
 msgid  "Slide Object Bar"
@@ -1617,7 +1617,7 @@ msgstr "बाहरी रूपरेखा"
 
 #: source/ui/app/strings.src#STR_NOTES_MODE.String.Text
 msgid  "Notes"
-msgstr "टिप्पणी"
+msgstr "टिप्पणी "
 
 #: source/ui/app/strings.src#STR_HANDOUT_MODE.String.Text
 msgid  "Handout"
@@ -1717,7 +1717,7 @@ msgstr ""
 
 #: source/ui/app/strings.src#STR_AUTOLAYOUT_NOTES.String.Text
 msgid  "Notes"
-msgstr "टिप्पणी "
+msgstr "टिप्पणीसभ "
 
 #: source/ui/app/strings.src#STR_TRANSFORM.String.Text
 msgid  "transform"
@@ -1732,8 +1732,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "कृपया नवीन तीरक चोटी कलेल एकटा नामकेँ प्रविष्ट करू:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "चुनल नाम पहिलेसँ मौजूद अछि. \n कृपया आन नाम दिअ'."
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1797,15 +1797,15 @@ msgstr "स्तर"
 
 #: source/ui/app/strings.src#STR_UNDO_DELETEPAGES.String.Text
 msgid  "Delete slides"
-msgstr "स्लाइड मेटाबू"
+msgstr "स्लाइडक मेटाबू "
 
 #: source/ui/app/strings.src#STR_UNDO_INSERTPAGES.String.Text
 msgid  "Insert slides"
 msgstr "स्लाइडसभकेँ घुसाबू"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "की अहाँ ई स्तरकेँ मेटाएब कलेल निश्चित अछि \"$\"? \n नोट: ई स्तर पर सभ वस्तुकेँ मेटाए देल जाएत !"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1852,8 +1852,8 @@ msgid  "Insert text frame"
 msgstr "पाठ फ्रेम जोड़ू"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "ई कार्यकेँ चलाबल नहि जाय सकैत अछि \n चुनल वस्तुक साथ."
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1864,8 +1864,8 @@ msgid  "The file could not be loaded!"
 msgstr "फाइलकेँ लोड नहि कए सकैत अछि!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "नवीन पृष्ठक प्रारूप अनुकूलित कएल जाएत. \n की अहाँ वस्तुकेँ शामिल कएनाइ चाहैत छी?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1884,8 +1884,8 @@ msgid  "~Edit"
 msgstr "संपादन करू (~E)"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "ई काज, क्रियाक सूचीकेँ मेटबैत अछि जकरा \nbe वापस कएल जाय सकैत अछि. दस्तावेजमे बनाएल बदलाव अखनो मान्य अछि,\n मुदा वापस नहि कएल जाय सकैत अछि. की अहाँ जारी रखनाइ चाहैत छी आओर \n ई प्रकार नवीन स्लाइड डिजायन नियत करू?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1904,8 +1904,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "निर्दिष्ट कएल मुद्रकमे दस्तावेज रचनाकेँ सेट्ट नहि कए सकैत अछि."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "आरेख एकटा दस्तावेजसँ लिंक अछि. \n की अहाँ आरेखकेँ संपादित करबाक लेल लिंक हटाएब चाहैत छी?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2016,8 +2016,8 @@ msgid  " (Outline)"
 msgstr " (बाहरी रूपरेखा)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "निर्दिष्ट मापक अवैध अछि.\n की अहाँ एकटा नवीन दिअ' चाहैत छी?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2300,8 +2300,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "सभ रेखाचित्र वस्तुसभकेँ अलगानाइ संभव नहि अछि ."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "ई नामक साथ एकटा डिजायन पहिलेसँ मौजूद अछि \n की अहाँ एकरा प्रतिस्थापित कएनाइ चाहैत छी?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2416,8 +2416,8 @@ msgid  "Graphics filter"
 msgstr "आलेखी फिल्टर"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-msgid  "The file %\nis not a valid sound file !"
-msgstr "फाइल %\n एकटा वैध ध्वनि फाइल नहि अछि!"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2781,7 +2781,7 @@ msgstr "स्थिति आओर आकार (~z)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
 msgid  "Edit ~Points"
-msgstr "बिंदु संपादित करू (~P)"
+msgstr "बिंदुकेँ संपादित करू (~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
 msgid  "Arra~nge"
@@ -3309,7 +3309,7 @@ msgstr "अओजार पट्टी (~T) "
 
 #: source/ui/app/toolbox.src#RID_DRAW_VIEWER_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
-msgstr "कार्य पट्टी (दृश्यक मोड)"
+msgstr "प्रकार्य पट्टी (दृश्यक मोड)"
 
 #: source/ui/app/toolbox.src#RID_GRAPHIC_VIEWER_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
@@ -3609,7 +3609,7 @@ msgstr "सारांश स्लाइड (~m)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
 msgid  "~Layer..."
-msgstr "स्तर(~L)..."
+msgstr "स्तर (~L)..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
 msgid  "~Date (fixed)"

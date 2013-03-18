@@ -153,9 +153,8 @@ msgid  "Column Fields"
 msgstr "Ustun maydonlari"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-#, fuzzy
-msgid  "Row\nFields"
-msgstr "Satr\nmaydonlari"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 #, fuzzy
@@ -1166,10 +1165,12 @@ msgid  "Text Import"
 msgstr "Matnni import qilish"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_FIELDOPT.FixedLine.Text
+#, fuzzy
 msgid  "Import"
 msgstr "Import qilish"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CHARSET.FixedText.Text
+#, fuzzy
 msgid  "Ch~aracter set"
 msgstr "Ko~dlash usuli"
 
@@ -1178,46 +1179,57 @@ msgid  "Language"
 msgstr ""
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_AT_ROW.FixedText.Text
+#, fuzzy
 msgid  "From ro~w"
 msgstr "Sa~trdan"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_SEPOPT.FixedLine.Text
+#, fuzzy
 msgid  "Separator options"
 msgstr "Ajratish xossalari"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_FIXED.RadioButton.Text
+#, fuzzy
 msgid  "~Fixed width"
 msgstr "Eni ~oʻzgarmaydigan"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_SEPARATED.RadioButton.Text
+#, fuzzy
 msgid  "~Separated by"
 msgstr "~Ajratilgan"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_TAB.CheckBox.Text
+#, fuzzy
 msgid  "~Tab"
 msgstr "~Tab"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_COMMA.CheckBox.Text
+#, fuzzy
 msgid  "~Comma"
 msgstr "~Vergul"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_OTHER.CheckBox.Text
+#, fuzzy
 msgid  "~Other"
 msgstr "~Boshqa"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SEMICOLON.CheckBox.Text
+#, fuzzy
 msgid  "S~emicolon"
 msgstr "N~uqta vergul"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SPACE.CheckBox.Text
+#, fuzzy
 msgid  "S~pace"
 msgstr "~Boʻsh joy"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_ASONCE.CheckBox.Text
+#, fuzzy
 msgid  "Merge ~delimiters"
 msgstr "~Ajratuvchilarni birlashtirish"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TEXTSEP.FixedText.Text
+#, fuzzy
 msgid  "Te~xt delimiter"
 msgstr "Ma~tn ajratuvchisi"
 
@@ -1323,354 +1335,442 @@ msgid  "Settings"
 msgstr "Xossalari"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_TABLES_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of sheets:"
 msgstr "Varaqlar soni:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_CELLS_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of cells:"
 msgstr "Kataklar soni:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_PAGES_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of pages:"
 msgstr "Sahifalar soni:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Document: "
 msgstr "Hujjat:"
 
 #: source/ui/drawfunc/objdraw.src#MN_RESET.SID_TEXT_STANDARD.MenuItem.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "And~oza"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.MenuItem.Text
+#, fuzzy
 msgid  "~Style"
 msgstr "U~slub"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUPER_SCRIPT.MenuItem.Text
+#, fuzzy
 msgid  "~Superscript"
 msgstr "~Ustiga chizilgan"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUB_SCRIPT.MenuItem.Text
+#, fuzzy
 msgid  "S~ubscript"
 msgstr "O~stiga chizilgan"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.MenuItem.Text
+#, fuzzy
 msgid  "~Alignment"
 msgstr "~Tekislash"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNLEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "~Chap"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNRIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "Oʻn~g"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNCENTERHOR.MenuItem.Text
+#, fuzzy
 msgid  "~Centered"
 msgstr "~Markaz"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNBLOCK.MenuItem.Text
+#, fuzzy
 msgid  "~Justified"
 msgstr "~Eniga"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_LINESPACE.MenuItem.Text
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~Satr orasidagi oraliq"
 
 #: source/ui/drawfunc/objdraw.src#MN_EDITLNK.SID_DRAW_HLINK_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Hyperlink..."
 msgstr "~Giper-bogʻlama..."
 
 #: source/ui/drawfunc/objdraw.src#MN_DELLNK.SID_DRAW_HLINK_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove Hyperlink"
 msgstr "~Giper-bogʻlamani olib tashlash"
 
 #: source/ui/drawfunc/objdraw.src#MN_DRWTXTATTR.SID_DRAWTEXT_ATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Te~xt..."
 msgstr "Ma~tn"
 
 #: source/ui/drawfunc/objdraw.src#MN_ASSIGNMACRO.SID_ASSIGNMACRO.MenuItem.Text
+#, fuzzy
 msgid  "Assig~n Macro..."
 msgstr "Makrosni ~tayinlash..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ORIGINALSIZE.SID_ORIGINALSIZE.MenuItem.Text
+#, fuzzy
 msgid  "~Original Size"
 msgstr "~Asl oʻlchami"
 
 #: source/ui/drawfunc/objdraw.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "Nomi..."
 
 #: source/ui/drawfunc/objdraw.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "Taʼrifi..."
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.MenuItem.Text
+#, fuzzy
 msgid  "~Flip"
 msgstr "~Aks ettirish"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "Boʻyi~ga"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "~Horizontal"
 msgstr "~Eniga"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "~Joylashtirish"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~Oldingga qoʻyish"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Orqa~ga qoʻyish"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
+#, fuzzy
 msgid  "An~chor"
 msgstr "~Tutashtirish"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "To P~age"
 msgstr "~Sahifaga"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
+#, fuzzy
 msgid  "To ~Cell"
 msgstr "~Katakka"
 
 #: source/ui/drawfunc/objdraw.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "~Tekislash"
 
 #: source/ui/drawfunc/objdraw.src#RID_DRAW_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Drawing Object Bar"
 msgstr "Rasm kontekst paneli"
 
 #: source/ui/drawfunc/objdraw.src#RID_TEXT_TOOLBOX.String.Text
+#, fuzzy
 msgid  "Text Object Bar"
 msgstr "Matn obyekti paneli"
 
 #: source/ui/drawfunc/objdraw.src#RID_GRAPHIC_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Graphics Object Bar"
 msgstr "Grafik obyektlar paneli"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAW.String.Text
+#, fuzzy
 msgid  "Pop-up menu for drawing objects"
 msgstr "Rasmlar uchun popap menyu"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAWTEXT.String.Text
+#, fuzzy
 msgid  "Pop-up menu for text objects"
 msgstr "Matn obyektlari uchun popap menyu"
 
 #: source/ui/drawfunc/drformsh.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "Nomi..."
 
 #: source/ui/drawfunc/drformsh.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "Taʼrifi..."
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "~Joylashtirish"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~Oldingga qoʻyish"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Orqa~ga qoʻyish"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
+#, fuzzy
 msgid  "An~chor"
 msgstr "~Tutashtirish"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "To P~age"
 msgstr "~Sahifaga"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
+#, fuzzy
 msgid  "To ~Cell"
 msgstr "~Katakka"
 
 #: source/ui/drawfunc/drformsh.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "~Tekislash"
 
 #: source/ui/drawfunc/drformsh.src#RID_POPUP_DRAWFORM.String.Text
+#, fuzzy
 msgid  "Popup menu for form objects"
 msgstr "Forma obyektlari uchun popap menyu"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Last Used"
 msgstr "Oxirgi foydalanilgan"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "All"
 msgstr "Hammasi"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Database"
 msgstr "Maʼlumotlar bazasi"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Date&Time"
 msgstr "Sana va Vaqt"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Financial"
 msgstr "Moliyaviy"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Information"
 msgstr "Maʼlumot"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Logical"
 msgstr "Mantiqiy"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Mathematical"
 msgstr "Matematik"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Array"
 msgstr "Massiv"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Statistical"
 msgstr "Statistik"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Elektron jadval"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Text"
 msgstr "Matn"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Add-in"
 msgstr "Qoʻshiladigan modul"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.IMB_INSERT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Insert Function into calculation sheet"
 msgstr "Hisoblash varagʻiga Funksiya qoʻyish"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.ButtonImage.Text
+#, fuzzy
 msgid  "Functions"
 msgstr "Funksiyalar"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.FT_ASSIGN.FixedText.Text
+#, fuzzy
 msgid  "Range"
 msgstr "Oraliq"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "Yigʻish/Yoyish"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_COLS.String.Text
+#, fuzzy
 msgid  "Column inserted"
 msgstr "Ustun qoʻyildi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_ROWS.String.Text
+#, fuzzy
 msgid  "Row inserted "
 msgstr "Satr qoʻyildi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_TABS.String.Text
+#, fuzzy
 msgid  "Sheet inserted "
 msgstr "Varaq qoʻyildi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_COLS.String.Text
+#, fuzzy
 msgid  "Column deleted"
 msgstr "Ustun olib tashlandi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_ROWS.String.Text
+#, fuzzy
 msgid  "Row deleted"
 msgstr "Satr olib tashlandi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_TABS.String.Text
+#, fuzzy
 msgid  "Sheet deleted"
 msgstr "Varaq olib tashlandi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_MOVE.String.Text
+#, fuzzy
 msgid  "Range moved"
 msgstr "Oraliq koʻchirildi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT.String.Text
+#, fuzzy
 msgid  "Changed contents"
 msgstr "Oʻzgartirilgan tarkib"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT_WITH_CHILD.String.Text
+#, fuzzy
 msgid  "Changed contents"
 msgstr "Oʻzgartirilgan tarkib"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_CONTENT.String.Text
+#, fuzzy
 msgid  "Changed to "
 msgstr "Quyidagiga oʻzgartirilgan"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_ORGCONTENT.String.Text
+#, fuzzy
 msgid  "Original"
 msgstr "Original"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECT.String.Text
+#, fuzzy
 msgid  "Changes rejected"
 msgstr "Oʻzgarishlar rad etildi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_ACCEPTED.String.Text
+#, fuzzy
 msgid  "Accepted"
 msgstr "Qabul qilindi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECTED.String.Text
+#, fuzzy
 msgid  "Rejected"
 msgstr "Rad etildi"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_NO_ENTRY.String.Text
+#, fuzzy
 msgid  "No Entry"
 msgstr "Boʻsh"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_EMPTY.String.Text
+#, fuzzy
 msgid  "<empty>"
 msgstr "<boʻsh>"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.Bitmap.Text
+#, fuzzy
 msgid  "Accept or Reject Changes"
 msgstr "Oʻzgarishlarni qabul qilish yoki rad etish"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_CHANGES_COMMENT.MenuItem.Text
+#, fuzzy
 msgid  "Edit Comment..."
 msgstr "Izohni tahrirlash..."
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_ACTION.MenuItem.Text
+#, fuzzy
 msgid  "Action"
 msgstr "Amal"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Oʻrni"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_AUTHOR.MenuItem.Text
+#, fuzzy
 msgid  "Author"
 msgstr "Muallif"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_DATE.MenuItem.Text
+#, fuzzy
 msgid  "Date"
 msgstr "Sana"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_COMMENT.MenuItem.Text
+#, fuzzy
 msgid  "Description"
 msgstr "Taʼrif"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.MenuItem.Text
+#, fuzzy
 msgid  "Sorting"
 msgstr "Saralash"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.ModalDialog.Text
+#, fuzzy
 msgid  "Resolve Conflicts"
 msgstr "Qarama-qarshiliklarni yechish"
 
@@ -1695,18 +1795,22 @@ msgid  "Keep ~All Others"
 msgstr ""
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_CONFLICT.String.Text
+#, fuzzy
 msgid  "Conflict"
 msgstr "Qarama-qarshilik"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_AUTHOR.String.Text
+#, fuzzy
 msgid  "Author"
 msgstr "Muallif"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_DATE.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "Sana"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_UNKNOWN_USER.String.Text
+#, fuzzy
 msgid  "Unknown User"
 msgstr "Nomaʼlum foydalanuvchi"
 
@@ -1747,6 +1851,7 @@ msgid  "Re-type"
 msgstr ""
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME2.FixedText.Text
+#, fuzzy
 msgid  "Sheet2"
 msgstr "Varaq"
 
@@ -1759,6 +1864,7 @@ msgid  "Re-type"
 msgstr ""
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME3.FixedText.Text
+#, fuzzy
 msgid  "Sheet3"
 msgstr "Varaq"
 
@@ -1771,6 +1877,7 @@ msgid  "Re-type"
 msgstr ""
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME4.FixedText.Text
+#, fuzzy
 msgid  "Sheet4"
 msgstr "Varaq"
 
@@ -1827,10 +1934,12 @@ msgid  "Remove password from this protected item."
 msgstr ""
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.ModalDialog.Text
+#, fuzzy
 msgid  "Share Document"
 msgstr "Hujjatni boʻlishish"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.CB_SHARE.CheckBox.Text
+#, fuzzy
 msgid  "Share this spreadsheet with other users"
 msgstr "Ushbu elektron jadvalni boshqa foydalanuvchilar bilan boʻlishish"
 
@@ -1839,94 +1948,117 @@ msgid  "Note: Changes to formatting attributes like fonts, colors, and number fo
 msgstr ""
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_USERS.FixedText.Text
+#, fuzzy
 msgid  "Users currently accessing this spreadsheet"
 msgstr "Hozirda ushbu elektron jadvaldan foydalanayotgan foydalanuvchilar"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_NAME.String.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Nomi"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_ACCESSED.String.Text
+#, fuzzy
 msgid  "Accessed"
 msgstr "Murojaat etilgan"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_NO_USER_DATA.String.Text
+#, fuzzy
 msgid  "No user data available."
 msgstr "Foydalanuvchi haqida maʼlumot yoʻq."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_UNKNOWN_USER.String.Text
+#, fuzzy
 msgid  "Unknown User"
 msgstr "Nomaʼlum foydalanuvchi"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_EXCLUSIVE_ACCESS.String.Text
+#, fuzzy
 msgid  "(exclusive access)"
 msgstr "(monopol murojaat)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.ModalDialog.Text
+#, fuzzy
 msgid  "Insert Sheet"
 msgstr "Varaq qoʻyish"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_POSITION.FixedLine.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Oʻrni"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEFORE.RadioButton.Text
+#, fuzzy
 msgid  "B~efore current sheet"
 msgstr "Joriy varaqdan o~ldin"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEHIND.RadioButton.Text
+#, fuzzy
 msgid  "~After current sheet"
 msgstr "Joriy varaqdan ~keyin"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_TABLE.FixedLine.Text
+#, fuzzy
 msgid  "Sheet"
 msgstr "Varaq"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_NEW.RadioButton.Text
+#, fuzzy
 msgid  "~New sheet"
 msgstr "~Yangi varaq"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "N~o. of sheets"
 msgstr "Varaqlar ~soni"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Na~me"
 msgstr "No~mi"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_FROMFILE.RadioButton.Text
+#, fuzzy
 msgid  "~From file"
 msgstr "~Fayldan"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.BTN_BROWSE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "Ta~nlash..."
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.CB_LINK.CheckBox.Text
+#, fuzzy
 msgid  "Lin~k"
 msgstr "~Bogʻlama"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT.CheckBox.Text
+#, fuzzy
 msgid  "~Show changes in spreadsheet"
 msgstr "Elektron jadvaldagi oʻzgarishlarni ~koʻrsatish"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.FL_FILTER.FixedLine.Text
+#, fuzzy
 msgid  "Filter settings"
 msgstr "Filtrning moslamalari"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_ACCEPT.CheckBox.Text
+#, fuzzy
 msgid  "Show ~accepted changes"
 msgstr "~Qabul qilingan oʻzgarishlarni koʻrsatish"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_REJECT.CheckBox.Text
+#, fuzzy
 msgid  "Show ~rejected changes"
 msgstr "~Rad etilgan oʻzgarishlarni koʻrsatish"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "Yigʻish/Yoyish"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.ImageButton.Text
+#, fuzzy
 msgid  "Show Changes"
 msgstr "Oʻzgarishlarni koʻrsatish"
 
@@ -1963,234 +2095,292 @@ msgid  "Select unlocked cells"
 msgstr ""
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FL_LOCATION.FixedLine.Text
+#, fuzzy
 msgid  "URL of ~external data source"
 msgstr "Tashqi maʼlumot manbasi URL manzili"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_HINT.FixedText.Text
+#, fuzzy
 msgid  "(Enter the URL of the source document in the local file system or Internet here.)"
 msgstr "(Manba hujjatining lokal fayl tizimidagi yoki internetdagi manzilini bu yerga kiriting.)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_RANGES.FixedText.Text
+#, fuzzy
 msgid  "~Available tables/ranges"
 msgstr "~Mavjud jadvallar/oraliqlar"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.BTN_RELOAD.CheckBox.Text
+#, fuzzy
 msgid  "~Update every"
 msgstr "~Yangilash oraligʻi"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_SECONDS.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "soniya"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FixedText.Text
+#, fuzzy
 msgid  "External Data"
 msgstr "Tashqi maʼlumot"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.Window.Text
+#, fuzzy
 msgid  "Navigator"
 msgstr "Yoʻlchi"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
+#, fuzzy
 msgid  "Row"
 msgstr "Satr"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
+#, fuzzy
 msgid  "Row"
 msgstr "Satr"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
+#, fuzzy
 msgid  "Column"
 msgstr "Ustun"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
+#, fuzzy
 msgid  "Column"
 msgstr "Ustun"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.LB_DOCUMENTS.ListBox.QuickHelpText
+#, fuzzy
 msgid  "Document"
 msgstr "Hujjat"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DATA.ToolBoxItem.Text
+#, fuzzy
 msgid  "Data Range"
 msgstr "Maʼlumot oraligʻi"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_UP.ToolBoxItem.Text
+#, fuzzy
 msgid  "Start"
 msgstr "Boshlash"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DOWN.ToolBoxItem.Text
+#, fuzzy
 msgid  "End"
 msgstr "Oxiri"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "Tarkibi"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_CHANGEROOT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Toggle"
 msgstr "Oʻtish"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_SCENARIOS.ToolBoxItem.Text
+#, fuzzy
 msgid  "Scenarios"
 msgstr "Ssenariylar"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Drag Mode"
 msgstr "Ushlab olib qoʻyish usuli"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
+#, fuzzy
 msgid  "Drag Mode"
 msgstr "Ushlab olib qoʻyish usuli"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DISPLAY.String.Text
+#, fuzzy
 msgid  "Display"
 msgstr "Koʻrsatish"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVE.String.Text
+#, fuzzy
 msgid  "active"
 msgstr "aktiv"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_NOTACTIVE.String.Text
+#, fuzzy
 msgid  "inactive"
 msgstr "aktiv emas"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_HIDDEN.String.Text
+#, fuzzy
 msgid  "hidden"
 msgstr "yashirin"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVEWIN.String.Text
+#, fuzzy
 msgid  "Active Window"
 msgstr "Aktiv oyna"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_LISTBOX.String.Text
+#, fuzzy
 msgid  "Scenario Name"
 msgstr "Ssenariy nomi"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_COMMENT.String.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "Izoh"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_ROOT.String.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "Tarkibi"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_TABLE.String.Text
+#, fuzzy
 msgid  "Sheets"
 msgstr "Varaqlar"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_RANGENAME.String.Text
+#, fuzzy
 msgid  "Range names"
 msgstr "Oraliq nomlari"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DBAREA.String.Text
+#, fuzzy
 msgid  "Database Ranges"
 msgstr "Maʼlumot bazasi oraliqlari"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_GRAPHIC.String.Text
+#, fuzzy
 msgid  "Graphics"
 msgstr "Grafika"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_OLEOBJECT.String.Text
+#, fuzzy
 msgid  "OLE objects"
 msgstr "OLE obyektlar"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_NOTE.String.Text
+#, fuzzy
 msgid  "Comments"
 msgstr "Izoh"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_AREALINK.String.Text
+#, fuzzy
 msgid  "Linked areas"
 msgstr "Bogʻliq maydonlar"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DRAWING.String.Text
+#, fuzzy
 msgid  "Drawing objects"
 msgstr "Chizma obyektlar"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_URL.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Hyperlink"
 msgstr "Giper-bogʻlama sifatida qoʻyish"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_LINK.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Link"
 msgstr "Bogʻlama sifatida qoʻyish"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_COPY.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Copy"
 msgstr "Nusxa sifatida qoʻyish"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Olib tashlash"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Properties..."
 msgstr "Xossalari..."
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.ModelessDialog.Text
+#, fuzzy
 msgid  "Edit Print Ranges"
 msgstr "Bosib chiqariladigan hududni oʻzgartirish"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_PRINTAREA.FixedLine.Text
+#, fuzzy
 msgid  "Print range"
 msgstr "Chop etiladigan maydon"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "- yoʻq -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- entire sheet -"
 msgstr "- butun varaq -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- user defined -"
 msgstr "- foydalanuvchi aniqlagan -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- selection -"
 msgstr "- tanlash -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Qisqartirish"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
+#, fuzzy
 msgid  "Rows to repeat"
 msgstr "Satrlarni takrorlash"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "- yoʻq -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
+#, fuzzy
 msgid  "- user defined -"
 msgstr "- foydalanuvchi aniqlagan -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Qisqartirish"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATCOL.FixedLine.Text
+#, fuzzy
 msgid  "Columns to repeat"
 msgstr "Ustunlarni takrorlash"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "- yoʻq -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
+#, fuzzy
 msgid  "- user defined -"
 msgstr "- foydalanuvchi aniqlagan -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATCOL.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Qisqartirish"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_HEADER.CheckBox.Text
+#, fuzzy
 msgid  "~Column and row headers"
 msgstr "Ustun va ~satr sarlavhasi"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_GRID.CheckBox.Text
+#, fuzzy
 msgid  "~Grid"
 msgstr "~Toʻr"
 
@@ -2199,186 +2389,232 @@ msgid  "~Comments"
 msgstr ""
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_OBJECTS.CheckBox.Text
+#, fuzzy
 msgid  "~Objects/graphics"
 msgstr "~Obyektlar/grafiklar"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_CHARTS.CheckBox.Text
+#, fuzzy
 msgid  "Ch~arts"
 msgstr "~Diagrammalar"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_DRAWINGS.CheckBox.Text
+#, fuzzy
 msgid  "~Drawing objects"
 msgstr "Ch~izma obyektlar"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_FORMULAS.CheckBox.Text
+#, fuzzy
 msgid  "~Formulas"
 msgstr "~Formulalar"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NULLVALS.CheckBox.Text
+#, fuzzy
 msgid  "Zero ~values"
 msgstr "Nol ~qiymat"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PRINT.FixedLine.Text
+#, fuzzy
 msgid  "Print"
 msgstr "Chop etish"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_TOPDOWN.RadioButton.Text
+#, fuzzy
 msgid  "~Top to bottom, then right"
 msgstr "~Yuqoridan pastga, keyin oʻngga"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_LEFTRIGHT.RadioButton.Text
+#, fuzzy
 msgid  "~Left to right, then down"
 msgstr "~Chapdan oʻngga, keyin pastga"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_PAGENO.CheckBox.Text
+#, fuzzy
 msgid  "First ~page number"
 msgstr "Birinchi ~sahifaning raqami"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PAGEDIR.FixedLine.Text
+#, fuzzy
 msgid  "Page order"
 msgstr "Sahifalarning tartibi"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEMODE.FixedText.Text
+#, fuzzy
 msgid  "Scaling ~mode"
 msgstr "Masshtablash ~usuli"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_PERCENT.StringList.item
+#, fuzzy
 msgid  "Reduce/enlarge printout"
 msgstr "Chop etishni kamaytirish/koʻpaytirish"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO.StringList.item
+#, fuzzy
 msgid  "Fit print range(s) to width/height"
 msgstr "Chop etish hudud(lar)ini balandligi/kengligiga moslash"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO_PAGES.StringList.item
+#, fuzzy
 msgid  "Fit print range(s) on number of pages"
 msgstr "Chop etish hudud(lar)ini sahifalar soniga moslash"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEFACTOR.FixedText.Text
+#, fuzzy
 msgid  "~Scaling factor"
 msgstr "~Masshtablash faktori"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEWIDTH.FixedText.Text
+#, fuzzy
 msgid  "~Width in pages"
 msgstr "Sahifalardagi ~kenglik"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEHEIGHT.FixedText.Text
+#, fuzzy
 msgid  "H~eight in pages"
 msgstr "Sahifalardagi b~alandlik"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGENUM.FixedText.Text
+#, fuzzy
 msgid  "N~umber of pages"
 msgstr "Sahifalar ~soni"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_SCALE.FixedLine.Text
+#, fuzzy
 msgid  "Scale"
 msgstr "Masshtab"
 
 #: source/ui/pagedlg/hfedtdlg.src#HFEDIT_DLGTITLE.#define.Text
+#, fuzzy
 msgid  "Headers/Footers"
 msgstr "Kolontitullar"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER.#define.Text
+#, fuzzy
 msgid  "Header"
 msgstr "Ustgi kolontitul"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER.#define.Text
+#, fuzzy
 msgid  "Footer"
 msgstr "Ostgi kolontitul"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_RIGHT.#define.Text
+#, fuzzy
 msgid  "Header (right)"
 msgstr "Ustgi kolontitul (oʻngda)"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_LEFT.#define.Text
+#, fuzzy
 msgid  "Header (left)"
 msgstr "Ustgi kolontitul (chapda)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_RIGHT.#define.Text
+#, fuzzy
 msgid  "Footer (right)"
 msgstr "Ostgi kolontitul (oʻngda)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_LEFT.#define.Text
+#, fuzzy
 msgid  "Footer (left)"
 msgstr "Ostgi kolontitul (chapda)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_HEADER.TabDialog.Text
+#, fuzzy
 msgid  "Headers"
 msgstr "Ustgi kolontitullar"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_FOOTER.TabDialog.Text
+#, fuzzy
 msgid  "Footers"
 msgstr "Ostgi kolontitullar"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_LEFT.FixedText.Text
+#, fuzzy
 msgid  "~Left area"
 msgstr "~Chapdagi maydon"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_CENTER.FixedText.Text
+#, fuzzy
 msgid  "~Center area"
 msgstr "~Markaziy maydon"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_RIGHT.FixedText.Text
+#, fuzzy
 msgid  "R~ight area"
 msgstr "Oʻ~ngdagi maydon"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_DEFINED.FixedText.Text
+#, fuzzy
 msgid  "Hea~der"
 msgstr "Yuqorigi ~kolontitul"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_CUSTOM.FixedText.Text
+#, fuzzy
 msgid  "Custom header"
 msgstr "Foydalanuvchi sarlavhasi"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TEXT.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Text Attributes"
 msgstr "Matn atributlari"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Title"
 msgstr "Sarlavhasi"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
+#, fuzzy
 msgid  "Title"
 msgstr "Sarlavhasi"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_FILENAME.MenuItem.Text
+#, fuzzy
 msgid  "File Name"
 msgstr "Fayl nomi"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_PATH.MenuItem.Text
+#, fuzzy
 msgid  "Path/File Name"
 msgstr "Faylning nomi/yoʻli"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TABLE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Sheet Name"
 msgstr "Varaq nomi"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Page"
 msgstr "Sahifa"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGES.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Pages"
 msgstr "Sahifalar"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_DATE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Date"
 msgstr "Sana"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TIME.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Time"
 msgstr "Vaqt"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "Use the buttons to change the font or insert field commands such as date, time, etc."
 msgstr "Yozuv turini oʻzgartirish yoki sana, vaqt kabilarni qoʻyish uchun tugmalardan foydalaning."
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Note"
 msgstr "Izoh"
 
 #: source/ui/pagedlg/tphf.src#RID_SCBTN_HFEDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "Tahrir~lash..."
 
@@ -2511,9 +2747,8 @@ msgid  "~Discard"
 msgstr "~Voz kechish"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-#, fuzzy
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "Element olib\n#\ntashlanishi kerakmi?"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -2998,70 +3233,86 @@ msgid  "~Delete"
 msgstr "~Olib tashlash"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
+#, fuzzy
 msgid  "Format Cells"
 msgstr "Kataklar formati"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
+#, fuzzy
 msgid  "Numbers"
 msgstr "Sonlar"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "Shrift"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "Shrift effektlari"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "Tekislash"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
+#, fuzzy
 msgid  "Asian Typography"
 msgstr "Osiyocha yozish qoidasi"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "Chegaralar"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "Orqa fon"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
+#, fuzzy
 msgid  "Cell Protection"
 msgstr "Katakni himoyalash"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
+#, fuzzy
 msgid  "~Protected"
 msgstr "Himoya~langan"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~formula"
 msgstr "Formulani ~bekitish"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~all"
 msgstr "Hammasini ~bekitish"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "Katakni himoyalash faqat joriy varaq himoya qilingandan keyin amal qiladi.\n\nVaraqni himoya qilish uchun menyudan «Vositalar», «Hujjatni himoyalash» bandidan «Varaq» bandini tanlang."
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
+#, fuzzy
 msgid  "Protection"
 msgstr "Homiya"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "Bosib chiqarilayotganda ~bekitish"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
+#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "Tanlangan kataklar bosib chiqarilmaydi."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
+#, fuzzy
 msgid  "Print"
 msgstr "Chop etish"
 
@@ -3676,9 +3927,8 @@ msgid  "No operations to execute"
 msgstr "Bajarish uchun operatsiya mavjud emas"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-#, fuzzy
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "Oraliqda ustun sarlavhasi mavjud emas.\nBirinchi qator ustun sarlavhasi sifatida ishlatilsinmi?"
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -3756,9 +4006,8 @@ msgid  "Search key not found."
 msgstr "Izlanayotgan narsa topilmadi."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-#, fuzzy
-msgid  "Goal Seek successful.\n"
-msgstr "Mavaffaqiyatli qidirish natijasi.\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 #, fuzzy
@@ -3771,14 +4020,12 @@ msgid  ") into current cell?"
 msgstr ") ushbu katakkami?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-#, fuzzy
-msgid  "Goal Seek not successful.\n"
-msgstr "Qidirish natijasi muvaffaqiyatsiz boʻldi.\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-#, fuzzy
-msgid  "No exact value found. \n"
-msgstr "Aniq qiymat topilmadi. \n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -4139,38 +4386,1343 @@ msgid  "Text Attributes"
 msgstr "Matn atributlari"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+msgid  "\\"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+#, fuzzy
+msgid  "PAGE"
+msgstr "BET"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+#, fuzzy
+msgid  "PAGES"
+msgstr "BETLAR"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+#, fuzzy
+msgid  "DATE"
+msgstr "SANA"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+#, fuzzy
+msgid  "TIME"
+msgstr "VAQT"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+#, fuzzy
+msgid  "FILE"
+msgstr "FAYL"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+#, fuzzy
+msgid  "SHEET"
+msgstr "SHEET"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+#, fuzzy
+msgid  "Protected cells can not be modified."
+msgstr "Himoyalangan varaqqa oʻzgartirish kiritib boʻlmaydi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+#, fuzzy
+msgid  "Document opened in read-only mode."
+msgstr "Hujjat faqat oʻqish uchun usulida ochilgan."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+#, fuzzy
+msgid  "You cannot change only part of an array."
+msgstr "Massiv qismini oʻzgartira olmaysiz."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+#, fuzzy
+msgid  "Header"
+msgstr "Ustgi kolontitul"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+#, fuzzy
+msgid  "Footer"
+msgstr "Ostgi kolontitul"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+#, fuzzy
+msgid  "Err:"
+msgstr "Xato:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+#, fuzzy
+msgid  "Error: Ranges do not intersect"
+msgstr "Xatolik: Oraliqlar kesishmaydi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+#, fuzzy
+msgid  "Error: Division by zero"
+msgstr "Xato: Nolga boʻlish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+#, fuzzy
+msgid  "Error: Wrong data type"
+msgstr "Xatolik: Xato maʻlumot turi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+#, fuzzy
+msgid  "Error: Not a valid reference"
+msgstr "Xato: Ruxsat berilmagan bogʻlama"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+#, fuzzy
+msgid  "Error: Invalid name"
+msgstr "Xato: Notoʻgʻri nom"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+#, fuzzy
+msgid  "Error: Invalid numeric value"
+msgstr "Xatolik: Xato raqamli qiymat"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+#, fuzzy
+msgid  "Error: Value not available"
+msgstr "Xato: Qiymat mavjud emas"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "#ADDIN?"
+msgstr "#ADDIN?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "Error: Add-in not found"
+msgstr "Xato: Qoʻshiladigan modul topilmadi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "#MACRO?"
+msgstr "#MAKROS?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "Error: Macro not found"
+msgstr "Xato: Makros topilmadi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+#, fuzzy
+msgid  "Internal syntactical error"
+msgstr "Ichki sintaktik xatolik"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+#, fuzzy
+msgid  "Error: Invalid argument"
+msgstr "Xato: Notoʻgʻri argument"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+#, fuzzy
+msgid  "Error in parameter list"
+msgstr "Parametr roʻyxatida xatolik"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+#, fuzzy
+msgid  "Error: Invalid character"
+msgstr "Xato: Notoʻgʻri belgi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+#, fuzzy
+msgid  "Error: Invalid semicolon"
+msgstr "Xato: notoʻgʻri nuqtali vergul"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+#, fuzzy
+msgid  "Error: in bracketing"
+msgstr "Qavsni ishlatishda xato"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+#, fuzzy
+msgid  "Error: Operator missing"
+msgstr "Xato: Operator yetishmayapti"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+#, fuzzy
+msgid  "Error: Variable missing"
+msgstr "Xato: Oʻzgaruvchi yetishmayapti"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+#, fuzzy
+msgid  "Error: Formula overflow"
+msgstr "Xato: Formula juda uzun"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+#, fuzzy
+msgid  "Error: String overflow"
+msgstr "Xato: belgilar satri juda uzun"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+#, fuzzy
+msgid  "Error: Internal overflow"
+msgstr "Xato: belgilar satri juda uzun"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+msgid  "Error: Circular reference"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+#, fuzzy
+msgid  "Error: Calculation does not converge"
+msgstr "Xato: Hisoblash sigʻmaydi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+#, fuzzy
+msgid  "Grid color"
+msgstr "Toʻrning rangi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+#, fuzzy
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "Yashirilgan kataklar tarkibi birinchi katakka koʻchirilsinmi:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "Filtr"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+#, fuzzy
+msgid  "The target database range does not exist."
+msgstr "Moʻljal maʼlumot bazasi oraligʻi mavjud emas."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+#, fuzzy
+msgid  "Invalid increment"
+msgstr "Xato qadam"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+#, fuzzy
+msgid  "MULTIPLE.OPERATIONS"
+msgstr "MULTIPLE.OPERATIONS"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+msgid  "Multiple operations"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+#, fuzzy
+msgid  "Range"
+msgstr "Oraliq"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "Ha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "Yoʻq"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+#, fuzzy
+msgid  "Protection"
+msgstr "Himoya"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "Formulalar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "Bekitish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+#, fuzzy
+msgid  "Print"
+msgstr "Chop etish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+msgid  "(nested)"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+#, fuzzy
+msgid  "(optional)"
+msgstr "(Muhim emas)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+#, fuzzy
+msgid  "(required)"
+msgstr "(muhim)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+#, fuzzy
+msgid  "invalid"
+msgstr "xato"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+#, fuzzy
+msgid  "Edit Function"
+msgstr "Funksiyani tahrirlash"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "Izohlar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "Tanlangan ssenariyni olib tashlashga ishonchingiz komilmi?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "Tanlangan ssenariyni olib tashlashga ishonchingiz komilmi?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+#, fuzzy
+msgid  "Thesaurus is not available"
+msgstr "Tezaurus mavjud emas"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+#, fuzzy
+msgid  "Spellcheck not available"
+msgstr "Imloni tekshirish mavjud emas"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+#, fuzzy
+msgid  "Import text files"
+msgstr "Matn fayllarini import qilish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+msgid  "Export Text File"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+#, fuzzy
+msgid  "Import Lotus files"
+msgstr "Lotus fayllarini import qilish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+#, fuzzy
+msgid  "Import DBase files"
+msgstr "DBase fayllarini import qilish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+#, fuzzy
+msgid  "DBase export"
+msgstr "DBase eksporti"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Export"
+msgstr "Dif eksporti"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Import"
+msgstr "Dif importi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+#, fuzzy
+msgid  "Default"
+msgstr "Andoza"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+#, fuzzy
+msgid  "Result"
+msgstr "Natija"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+#, fuzzy
+msgid  "Result2"
+msgstr "Natija2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+#, fuzzy
+msgid  "Heading"
+msgstr "Sarlavha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+#, fuzzy
+msgid  "Heading1"
+msgstr "Sarlavha 1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "Hisobot"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+#, fuzzy
+msgid  "Report1"
+msgstr "Hisobot1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+#, fuzzy
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "Tezaurus faqat matnli kataklarda qoʻllanilishi mumkin!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+#, fuzzy
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "Imloni joriy varaqning boshidan davom ettirilsinmi?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+#, fuzzy
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "ushbu varaq uchun imloni tekshirish tugadi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+#, fuzzy
+msgid  "No language set"
+msgstr "Til koʻrsatilmagan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+#, fuzzy
+msgid  "Insert Sheet"
+msgstr "Varaq qoʻyish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+#, fuzzy
+msgid  "Delete Sheets"
+msgstr "Varaqlarni olib tashlash"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+#, fuzzy
+msgid  "Rename Sheet"
+msgstr "Varaq nomini oʻzgartirish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+msgid  "Color Tab"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+msgid  "Color Tabs"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+#, fuzzy
+msgid  "Move Sheets"
+msgstr "Varaqlarni koʻchirish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+#, fuzzy
+msgid  "Copy Sheet"
+msgstr "Varaqdan nusxa olish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+#, fuzzy
+msgid  "Append sheet"
+msgstr "Varaq qoʻshish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+#, fuzzy
+msgid  "Show Sheet"
+msgstr "Varaqni koʻrsatish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+#, fuzzy
+msgid  "Hide sheet"
+msgstr "Varaqni bekitish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+#, fuzzy
+msgid  "Flip sheet"
+msgstr "Varaqni aks ettirish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+msgid  "Toggle the use of R1C1 notation"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+#, fuzzy
+msgid  "Main Title"
+msgstr "Asosiy sarlavha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+#, fuzzy
+msgid  "Subtitle"
+msgstr "Qoʻshimcha sarlavha"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+#, fuzzy
+msgid  "X axis title"
+msgstr "X-oʻqi sarlavhasi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+#, fuzzy
+msgid  "Y axis title"
+msgstr "Y-oʻqi sarlavhasi..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+#, fuzzy
+msgid  "Z axis title"
+msgstr "Z-oʻqi sarlavhasi..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+#, fuzzy
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "Yangi jadvalda boshqa jadvallar uchun xato boʻlishi mumkin boʻlgan absolyut bogʻlama mavjud!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+#, fuzzy
+msgid  "AutoFilter not possible"
+msgstr "Avto-filtr imkonsiz"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME Calc varaq boshigacha qidirdi. Qidirish varaq oxirigacha davom ettirilsinmi?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME Calc varaq oxirigacha qidirdi. Qidirish varaq boshigacha davom ettirilsinmi?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+#, fuzzy
+msgid  "Find & Replace"
+msgstr "Qidirish va almashtirish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME Calc ʼujjat boshigacha qidirdi. Qidirish hujjat oxirigacha davom ettirilsinmi?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr "PRODUCTNAME Calc hujjat oxirigacha qidirdi. Qidirish hujjat boshigacha davom ettirilsinmi?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+#, fuzzy
+msgid  "Replace existing definition of #?"
+msgstr "Mavjud # aniqlamasi almashtirilsinmi?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+#, fuzzy
+msgid  "Invalid selection for range names"
+msgstr "Nom oraliqlari uchun xato tanlash"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+msgid  "References can not be inserted above the source data."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+#, fuzzy
+msgid  "Scenario not found"
+msgstr "Ssenariy topilmadi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+#, fuzzy
+msgid  "Do you really want to delete the entry #?"
+msgstr "Rostdan ham # yozuvini olib tashlamoqchimisiz?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+#, fuzzy
+msgid  "Objects/graphics"
+msgstr "Obyektlar/Rasmlar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+#, fuzzy
+msgid  "Charts"
+msgstr "Diagrammalar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+#, fuzzy
+msgid  "Drawing Objects"
+msgstr "Chizma obyektlar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+#, fuzzy
+msgid  "Show"
+msgstr "Koʻrsatish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "Bekitish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+#, fuzzy
+msgid  "Top to bottom"
+msgstr "Yuqoridan pastga"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+#, fuzzy
+msgid  "Left-to-right"
+msgstr "Chapdan oʻngga"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "Izohlar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+#, fuzzy
+msgid  "Grid"
+msgstr "Toʻr"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+#, fuzzy
+msgid  "Row & Column Headers"
+msgstr "Satr va ustun sarlavhalari"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "Formulalar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+#, fuzzy
+msgid  "Zero Values"
+msgstr "Nol qiymatlar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+#, fuzzy
+msgid  "Print direction"
+msgstr "Chop etish yoʻnalishi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+#, fuzzy
+msgid  "First page number"
+msgstr "Birinchi sahifaning raqami"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+#, fuzzy
+msgid  "Reduce/enlarge printout"
+msgstr "Chop etishni kamaytirish/koʻpaytirish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+#, fuzzy
+msgid  "Fit print range(s) on number of pages"
+msgstr "Chop etish hudud(lar)ini sahifa soniga moslash"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+#, fuzzy
+msgid  "Fit print range(s) to width/height"
+msgstr "Chop etish hudud(lar)ini balandlik/kenglikka moslash"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+#, fuzzy
+msgid  "Width"
+msgstr "Kengligi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height"
+msgstr "Balandligi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+#, fuzzy
+msgid  "%1 page(s)"
+msgstr "%1 sahifa(lar)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+#, fuzzy
+msgid  "automatic"
+msgstr "avtomatik"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+#, fuzzy
+msgid  "Statistics"
+msgstr "Statistik maʼlumotlar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+#, fuzzy
+msgid  "The link could not be updated."
+msgstr "Bogʻlamani yangilab boʻlmaydi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+#, fuzzy
+msgid  "File:"
+msgstr "Fayl:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+#, fuzzy
+msgid  "Sheet:"
+msgstr "Varaq:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+#, fuzzy
+msgid  "Overview"
+msgstr "Oldindan koʻrib chiqish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+#, fuzzy
+msgid  "Doc.Information"
+msgstr "Hujjat maʼlumoti"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+#, fuzzy
+msgid  "Created"
+msgstr "Yaratilgan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+#, fuzzy
+msgid  "Modified"
+msgstr "Oʻzgartirilgan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+#, fuzzy
+msgid  "Printed"
+msgstr "Bosib chiqarilgan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "Mavzu"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+#, fuzzy
+msgid  "Key words"
+msgstr "Tayanch soʻzlar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "Izohlar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+#, fuzzy
+msgid  "by"
+msgstr "tomonidan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+msgid  "on"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+#, fuzzy
+msgid  "Too many conditions"
+msgstr "Shartlar soni juda koʻp"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+#, fuzzy
+msgid  "The table could not be inserted."
+msgstr "Jadval qoʻyib boʻlmaydi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+#, fuzzy
+msgid  "The sheets could not be deleted."
+msgstr "Varaqlarni olib tashlab boʻlmaydi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+#, fuzzy
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "Klipbord tarkibidagini qoʻyib boʻlmaydi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+#, fuzzy
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "Qoʻyish uchun varaqda yetarli joy mavjud emas."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+#, fuzzy
+msgid  "No references found."
+msgstr "Bogʻlamalar topilmadi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+#, fuzzy
+msgid  "Source and destination must not overlap."
+msgstr "Manba va manzil kesishmasligi kerak."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+msgid  "Graphics"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+#, fuzzy
+msgid  "Invalid name."
+msgstr "Notoʻgʻri nom."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+#, fuzzy
+msgid  "Selected macro not found."
+msgstr "Tanlangan makros topilmadi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+#, fuzzy
+msgid  "Invalid value."
+msgstr "Xato qiymat."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+#, fuzzy
+msgid  "calculating"
+msgstr "hisoblanmoqda"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+#, fuzzy
+msgid  "sorting"
+msgstr "saralanmoqda"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+#, fuzzy
+msgid  "Adapt row height"
+msgstr "Satr balandligini muvofiqlashtirish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+#, fuzzy
+msgid  "Compare #"
+msgstr "Solishtirish #"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+#, fuzzy
+msgid  "Delete contents"
+msgstr "Tarkibini olib tashlash"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+#, fuzzy
+msgid  "%1 R  x %2 C"
+msgstr "%1 R  x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+#, fuzzy
+msgid  "More..."
+msgstr "Koʻproq..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+#, fuzzy
+msgid  "Invalid range"
+msgstr "Xato oraliq"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "Filtr"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+#, fuzzy
+msgid  "Sort"
+msgstr "Saralash"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+#, fuzzy
+msgid  "Subtotals"
+msgstr "Oraliq natija"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "Yoʻq"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+#, fuzzy
+msgid  "Do you want to replace the contents of #?"
+msgstr "# tarkibini almashtirishni istaysizmi?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+#, fuzzy
+msgid  "Width:"
+msgstr "Eni:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height:"
+msgstr "Uzunasi:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "Bekitish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+#, fuzzy
+msgid  "The object could not be inserted."
+msgstr "Obyektni qoʻyib boʻlmaydi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+#, fuzzy
+msgid  "<empty>"
+msgstr "<boʻsh>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+#, fuzzy
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "#1 katak '#2'dan '#3' ga oʻzgardi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+#, fuzzy
+msgid  "#1 inserted"
+msgstr "#1 qoʻyildi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+#, fuzzy
+msgid  "#1deleted"
+msgstr "#1olib tashlandi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+#, fuzzy
+msgid  "Range moved from #1 to #2"
+msgstr "Oraliq #1 'dan #2 'ga koʻchirildi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+#, fuzzy
+msgid  "Exit Recording"
+msgstr "Yozish usulidan chiqish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+#, fuzzy
+msgid  "The document can not be closed while a link is being updated."
+msgstr "Bogʻlama yangilanayotganda hujjatni yopib boʻlmaydi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+msgid  "Adapt array area"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Array formula  %1 R x %2 C"
+msgstr "Matritsa formulasi  %1 R x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+#, fuzzy
+msgid  "Hangul/Hanja Conversion"
+msgstr "Xangul/Xanjaga aylantirish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+#, fuzzy
+msgid  "Select Cell"
+msgstr "Katakni tanlash"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+#, fuzzy
+msgid  "Select Range"
+msgstr "Oraliqni tanlash"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+#, fuzzy
+msgid  "Select Database Range"
+msgstr "Maʼlumot bazasi oraligʻini tanlash"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+#, fuzzy
+msgid  "Go To Row"
+msgstr "Satrga oʻtish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+#, fuzzy
+msgid  "Go To Sheet"
+msgstr "Varaqqa oʻtish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+#, fuzzy
+msgid  "Define Name for Range"
+msgstr "Oraliq nomini kiritish"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+#, fuzzy
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "Tanlanganlarni nomlash uchun, ular toʻgʻri burchakli boʻlishi kerak."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+#, fuzzy
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "Toʻgʻri bogʻlama kiriting yoki belgilangan oraliq uchun toʻgʻri nom kiriting."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "OGOHLANTIRISH: ushbu amal formulalardagi bogʻlamalarga kutilmagan oʻzgarishlarni kiritishi mumkin."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+#, fuzzy
+msgid  "(none)"
+msgstr "(yoʻq)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+#, fuzzy
+msgid  "of"
+msgstr "/"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+msgid  "of ?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+#, fuzzy
+msgid  "Created by"
+msgstr "Yaratilgan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+#, fuzzy
+msgid  "Confidential"
+msgstr "Maxfiy"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+msgid  "Customized"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+#, fuzzy
+msgid  "Custom footer"
+msgstr "Foydalanuvchi ostgi kolontituli"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+msgid  "Chinese conversion"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+#, fuzzy
+msgid  "You cannot change this part of the pivot table."
+msgstr "Jamlama jadvalini ushbu qismini oʻzgartira olmaysiz."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+#, fuzzy
+msgid  "Manual"
+msgstr "Qoʻlbola"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "Avtomatik"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+msgid  "Nested arrays are not supported."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+#, fuzzy
+msgid  "Text to Columns"
+msgstr "Matndan ustunlarga"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+#, fuzzy
+msgid  "Unknown User"
+msgstr "Nomaʼlum foydalanuvchi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+#, fuzzy
+msgid  "Cell Styles"
+msgstr "Katakning uslubi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+#, fuzzy
+msgid  "Page Styles"
+msgstr "Sahifa uslublari"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+#, fuzzy
+msgid  "Character"
+msgstr "Belgi"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
+msgid  "Font"
+msgstr "Shrift"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
+msgid  "Font Effects"
+msgstr "Shrift effektlari"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#, fuzzy
+msgid  "Font Position"
+msgstr "Shriftning joylashishi"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "Orqaga"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+#, fuzzy
+msgid  "Paragraph"
+msgstr "Paragraf"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Indents & Spacing"
+msgstr "Chekinish va oraliq"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "Tekislash"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+#, fuzzy
+msgid  "Asian Typography"
+msgstr "Osiyocha yozish qoidasi"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+#, fuzzy
+msgid  "Tab"
+msgstr "Tabulyasiya"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "Orqaga"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+#, fuzzy
+msgid  "AutoFormat"
+msgstr "Avto-format"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "F~ormat"
+msgstr "F~ormat"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+#, fuzzy
+msgid  "A~utoFit width and height"
+msgstr "Kengligini va balandligini a~vtomatik moslash"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+#, fuzzy
+msgid  "~Borders"
+msgstr "~Chegaralar"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+#, fuzzy
+msgid  "F~ont"
+msgstr "~Shrift"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+#, fuzzy
+msgid  "~Pattern"
+msgstr "~Namuna"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+#, fuzzy
+msgid  "Alignmen~t"
+msgstr "~Tekislash"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+#, fuzzy
+msgid  "~Number format"
+msgstr "~Sonning formati"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+#, fuzzy
+msgid  "Formatting"
+msgstr "Formatlash"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add..."
+msgstr "Qoʻsh~ish"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "~Olib tashlash"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+#, fuzzy
+msgid  "~Rename"
+msgstr "~Nomini oʻzgartirish"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+#, fuzzy
+msgid  "Add AutoFormat"
+msgstr "Avto-format qoʻshish"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+#, fuzzy
+msgid  "Rename AutoFormat"
+msgstr "Avto-format nomini oʻzgartirish"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "Nomi"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+#, fuzzy
+msgid  "Delete AutoFormat"
+msgstr "Avto-formatni olib tashlash"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Yopish"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_JAN.String.Text
+#, fuzzy
 msgid  "Jan"
 msgstr "Yanv"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_FEB.String.Text
+#, fuzzy
 msgid  "Feb"
 msgstr "Fev"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MAR.String.Text
+#, fuzzy
 msgid  "Mar"
 msgstr "Mar"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_NORTH.String.Text
+#, fuzzy
 msgid  "North"
 msgstr "Shimol"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MID.String.Text
+#, fuzzy
 msgid  "Mid"
 msgstr "Markaz"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SOUTH.String.Text
+#, fuzzy
 msgid  "South"
 msgstr "Janub"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SUM.String.Text
+#, fuzzy
 msgid  "Total"
 msgstr "Jami"
 
@@ -11718,9 +13270,8 @@ msgid  "Font Attributes"
 msgstr "Shrift atributlari"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-#, fuzzy
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "Klipbordda juda koʻp miqdorda saqlangan narsalar mavjud.\nKlipbord tarkibi boshqa dasturlar uchun ham qoʻllanilishini istaysizmi?"
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -11801,9 +13352,8 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-#, fuzzy
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
-msgstr "%PRODUCTNAME Calc kiritilgan formulada xatolik topdi.\nQuyida keltirilgan tuzatishni qoʻllashni istaysizmi?\n\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -11856,9 +13406,8 @@ msgid  "~Selected sheets"
 msgstr "~Tanlangan varaqlar"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-#, fuzzy
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "Siz maʼlumotni boʻsh boʻlmagan katakka qoʻymoqchisiz.\nRostdan ham mavjud maʼlumotni almashtirmoqchimisz?"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 #, fuzzy
@@ -13512,62 +15061,77 @@ msgid  "Shrink"
 msgstr "Qisqartirish"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND1.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~1"
 msgstr "Shart ~1"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "Katak qiymati"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "Formula"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "teng"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "kamroq"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "kattaroq"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "kam yoki teng"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "koʻp yoki teng"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "teng emas"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "orasida"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "orasida emas"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Qisqartirish"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr "va"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Qisqartirish"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "~Cell Style"
 msgstr "~Katak uslubi"
 
@@ -13576,62 +15140,77 @@ msgid  "~New Style..."
 msgstr ""
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND2.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~2"
 msgstr "Shart ~2"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "Katak qiymati"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "Formula"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "teng"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "kamroq"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "kattaroq"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "kam yoki teng"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "koʻp yoki teng"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "teng emas"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "orasida"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "orasida emas"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Qisqartirish"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr "va"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Qisqartirish"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "C~ell Style"
 msgstr "K~atak uslubi"
 
@@ -13640,62 +15219,77 @@ msgid  "Ne~w Style..."
 msgstr ""
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND3.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~3"
 msgstr "Shart ~3"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "Katak qiymati"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "Formula"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "teng"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "kamroq"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "kattaroq"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "kam yoki teng"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "koʻp yoki teng"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "teng emas"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "orasida"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "orasida emas"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Qisqartirish"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr "va"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "Qisqartirish"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "Ce~ll Style"
 msgstr "Kat~ak uslubi"
 
@@ -13704,6 +15298,7 @@ msgid  "New ~Style..."
 msgstr ""
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.HelpButton.Text
+#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "Shartli formatlash"
 
@@ -13907,14 +15502,12 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "Avtomatik hisoblash uchun hujjat juda murakkab. Qayta hisoblash uchun F9 tugmasini bosing."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "Hujjatda tanlangan format qoʻllanuviga qaraganda koʻp satrlar mavjud.\nOrtiqcha satrlar saqlanmaydi."
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "Hujjatda ushbu dastur versiyasi aniqlay olmaydigan maʼlumot mavjud.\n Hujjatni qayta saqlash ushbu maʼlumotni olib tashlaydi!"
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 #, fuzzy
@@ -13922,7 +15515,7 @@ msgid  "Not all cell contents could be saved in the specified format."
 msgstr "Hamma kataklarning tarkibini koʻrsatilgan formatda saqlab boʻlmaydi."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
 msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text

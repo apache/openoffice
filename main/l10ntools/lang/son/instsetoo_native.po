@@ -1381,7 +1381,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1397,7 +1397,7 @@ msgid  "&Unpack"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
@@ -1456,6 +1456,7 @@ msgid  "Windows Installer"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_3
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -1476,6 +1477,7 @@ msgid  "Create new folder|"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_10
+#, fuzzy
 msgid  "OK"
 msgstr "Ay yadda"
 
@@ -1496,6 +1498,7 @@ msgid  "&Change..."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_18
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -1524,6 +1527,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_25
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -1556,11 +1560,12 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_35
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
+msgid  "{\\Tahoma8}{80}"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
@@ -1580,7 +1585,7 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
+msgid  "{\\Tahoma8}{50}"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
@@ -1600,6 +1605,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_49
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -1684,6 +1690,7 @@ msgid  "Will be installed to run from the network. (Available only if the featur
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_72
+#, fuzzy
 msgid  "OK"
 msgstr "Ay yadda"
 
@@ -1696,6 +1703,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_77
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -1728,6 +1736,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_87
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -1768,6 +1777,7 @@ msgid  "{&MSSansBold8}Disk Space Requirements"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_100
+#, fuzzy
 msgid  "OK"
 msgstr "Ay yadda"
 
@@ -1796,6 +1806,7 @@ msgid  "&Retry"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_111
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -1816,6 +1827,7 @@ msgid  "Create New Folder|"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_118
+#, fuzzy
 msgid  "OK"
 msgstr "Ay yadda"
 
@@ -1832,6 +1844,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_123
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -1856,6 +1869,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_131
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -1876,6 +1890,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_138
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -1908,6 +1923,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_147
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -1940,6 +1956,7 @@ msgid  "{120}{70}{70}{70}{70}"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_157
+#, fuzzy
 msgid  "OK"
 msgstr "Ay yadda"
 
@@ -1948,6 +1965,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_159
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -1968,6 +1986,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_166
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -2004,6 +2023,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_177
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -2032,6 +2052,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_184
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -2068,6 +2089,7 @@ msgid  "< &Back"
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_193
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 

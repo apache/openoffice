@@ -280,8 +280,8 @@ msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} 
 msgstr "På grund av ett drivrutinsproblem i Windows går det inte bläddra genom ${PRODUCTNAME}-dokument genom att dra fingret över en ALPS-/ Synaptics-pekplatta."
 
 #: docs/readme/readme.xrm#naso6.naso6
-msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\Program Files\Synaptics\SynTP\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr ""
+msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
+msgstr "För att kunna bläddra med pekplatta måste du lägga till raderna nedan i konfigurationsfilen \"<tt>C:\\Program\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" och sedan starta om datorn."
 
 #: docs/readme/readme.xrm#naso8.naso8
 msgid  "The location of the configuration file might vary on different versions of Windows."

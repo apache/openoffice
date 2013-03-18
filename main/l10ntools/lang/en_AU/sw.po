@@ -1012,9 +1012,8 @@ msgid  "Document could not be completely saved."
 msgstr "Document could not be completely saved."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-#, fuzzy
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 #, fuzzy
@@ -1377,19 +1376,16 @@ msgid  "blank page"
 msgstr "blank page"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-#, fuzzy
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-#, fuzzy
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-#, fuzzy
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 #, fuzzy
@@ -1452,7 +1448,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "Your document contains address database fields. Do you want to print a form letter?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -2763,7 +2759,7 @@ msgstr "Page ba~ckground"
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 #, fuzzy
 msgid  "Print text in blac~k"
-msgstr "Print text in blac~k"
+msgstr "~Text placeholders"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
 #, fuzzy
@@ -2833,7 +2829,7 @@ msgstr "Other"
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PRINTEMPTYPAGES.CheckBox.Text
 #, fuzzy
 msgid  "Print ~automatically inserted blank pages"
-msgstr "Print ~automatically inserted blank pages"
+msgstr "Form control~s"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PAPERFROMSETUP.CheckBox.Text
 #, fuzzy
@@ -3486,9 +3482,8 @@ msgid  "<User settings>"
 msgstr "<User settings>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-#, fuzzy
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 #, fuzzy
@@ -3611,9 +3606,8 @@ msgid  "Caption"
 msgstr "Caption"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-#, fuzzy
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "Add captions automatically\nwhen inserting:"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 #, fuzzy
@@ -4883,9 +4877,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "You did not specify a new name for the attachment. If you would like to provide one, please type it now."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-#, fuzzy
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 #, fuzzy
@@ -4908,9 +4901,8 @@ msgid  "~Bcc"
 msgstr "~Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-#, fuzzy
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "Note:\nSeparate e-mail addresses with a semicolon (;)."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 #, fuzzy
@@ -5248,9 +5240,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "Sending failed (invalid address)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-#, fuzzy
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 #, fuzzy
@@ -5368,9 +5359,8 @@ msgid  "Edit Document"
 msgstr "Edit Document"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-#, fuzzy
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "Write or edit your document now if you have not already done so. The changes will affect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 #, fuzzy
@@ -6063,9 +6053,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "Requested clipboard format is not available."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-#, fuzzy
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 #, fuzzy
@@ -6318,9 +6307,8 @@ msgid  "Footnote: "
 msgstr "Footnote: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-#, fuzzy
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "Read-only content cannot be changed.\nNo modifications will be accepted"
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 #, fuzzy
@@ -7143,9 +7131,8 @@ msgid  "Options"
 msgstr "Options"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-#, fuzzy
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 #, fuzzy
@@ -8243,9 +8230,8 @@ msgid  "Browse..."
 msgstr "Browse..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-#, fuzzy
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "Use this dialogue box to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 #, fuzzy
@@ -12563,9 +12549,8 @@ msgid  "AutoCorrect"
 msgstr "AutoCorrect"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-#, fuzzy
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 #, fuzzy
@@ -12868,9 +12853,8 @@ msgid  "Sum"
 msgstr "Sum"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-#, fuzzy
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 #, fuzzy
@@ -13098,9 +13082,8 @@ msgid  "First ~column as caption"
 msgstr "First ~column as caption"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-#, fuzzy
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 #, fuzzy
@@ -13423,9 +13406,8 @@ msgid  "Do you want to check the main text?"
 msgstr "Do you want to check the main text?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-#, fuzzy
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "Show field commands option is marked.\nDo you want to print the document with field names?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 #, fuzzy
@@ -13618,8 +13600,9 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Capitalise first letter of sentences"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+#, fuzzy
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 #, fuzzy
@@ -13902,14 +13885,12 @@ msgid  "[System]"
 msgstr "[System]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-#, fuzzy
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "Interactive spell check is already active\nin a different document"
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-#, fuzzy
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "Interactive hyphenation is already active\nin a different document"
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 #, fuzzy

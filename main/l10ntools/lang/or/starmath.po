@@ -34,7 +34,7 @@ msgstr ""
 #: source/smres.src#RID_FONTDIALOG.ModalDialog.Text
 #, fuzzy
 msgid  "Fonts"
-msgstr "ଅକ୍ଷରରୂପଗୁଡିକ"
+msgstr "ଅକ୍ଷରରୂପ"
 
 #: source/smres.src#RID_FONTDIALOG.1.FixedText.Text
 #, fuzzy
@@ -79,7 +79,7 @@ msgstr "ସୂଚୀଗୁଡିକ"
 #: source/smres.src#RID_FONTSIZEDIALOG.6.FixedText.Text
 #, fuzzy
 msgid  "~Functions"
-msgstr "କାର୍ୟ୍ଯଗୁଡିକ"
+msgstr "କାର୍ୟ୍ଯଗୁଡିକ (~F)"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.7.FixedText.Text
 #, fuzzy
@@ -99,7 +99,7 @@ msgstr "ସମ୍ପର୍କୀଯ ଆକାରଗୁଡିକ"
 #: source/smres.src#RID_FONTSIZEDIALOG.1.PushButton.Text
 #, fuzzy
 msgid  "~Default"
-msgstr "ଡିଫଲଟ"
+msgstr "ପୂର୍ବନିର୍ଦ୍ଧାରିତ (~D)"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.ModalDialog.Text
 #, fuzzy
@@ -159,12 +159,12 @@ msgstr "ପରିବର୍ତ୍ତନ କରନ୍ତୁ (~M)"
 #: source/smres.src#RID_FONTTYPEDIALOG.2.PushButton.Text
 #, fuzzy
 msgid  "~Default"
-msgstr "ପୂର୍ବନିର୍ଦ୍ଧାରିତ (~D)"
+msgstr "ଡିଫଲଟ"
 
 #: source/smres.src#RID_DISTANCEDIALOG.ModalDialog.Text
 #, fuzzy
 msgid  "Spacing"
-msgstr "ଅନ୍ତରଦେବ"
+msgstr "ଅନ୍ତରଦେବା"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.MetricField.CustomUnitText
 #, fuzzy
@@ -189,7 +189,7 @@ msgstr "%"
 #: source/smres.src#RID_DISTANCEDIALOG.1.PushButton.Text
 #, fuzzy
 msgid  "~Default"
-msgstr "ଡିଫଲଟ"
+msgstr "ପୂର୍ବନିର୍ଦ୍ଧାରିତ (~D)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.MenuButton.Text
 #, fuzzy
@@ -209,7 +209,7 @@ msgstr "ଅନ୍ତରଦେବା"
 #: source/smres.src#RID_DISTANCEDIALOG.1.2.String.Text
 #, fuzzy
 msgid  "~Spacing"
-msgstr "ଅନ୍ତରଦେବା (~S)"
+msgstr "ଅନ୍ତରଦେବା"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.3.String.Text
 #, fuzzy
@@ -269,7 +269,7 @@ msgstr "ଓଜନ"
 #: source/smres.src#RID_DISTANCEDIALOG.5.1.String.Text
 #, fuzzy
 msgid  "Limits"
-msgstr "ସୀମାଗୁଡିକ"
+msgstr "ସୀମା"
 
 #: source/smres.src#RID_DISTANCEDIALOG.5.2.String.Text
 #, fuzzy
@@ -294,7 +294,7 @@ msgstr "ଅତ୍ଯଧିକ ଆକାର (ବାମ/ଡାହାଣ)"
 #: source/smres.src#RID_DISTANCEDIALOG.6.3.String.Text
 #, fuzzy
 msgid  "~Spacing"
-msgstr "ଅନ୍ତରଦେବା"
+msgstr "ଅନ୍ତରଦେବା (~S)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.6.5.String.Text
 #, fuzzy
@@ -546,14 +546,12 @@ msgid  "~Delete"
 msgstr "ବିଲୋପ କର"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-#, fuzzy
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr "'StarMath' ଅକ୍ଷରରୂପ ସ୍ଥାପିତ ହୋଇନାହିଁ।\nଏହି ଅକ୍ଷରରୂପ ବ୍ଯତିତ %PRODUCTNAME Math ଭଲଭାବରେ କାର୍ୟ୍ଯ କରିପାରିବ ନାହିଁ।\nଦଯାକରି ଏହି ଅକ୍ଷରରୂପକୁ ସ୍ଥାପନ କରନ୍ତୁ ଏବଂ %PRODUCTNAME Math କୁ ପୁନଃଆରମ୍ଭ କରନ୍ତୁ।"
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-#, fuzzy
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "ତୃଟି ପରି ଏହି ପରିବର୍ତ୍ତନଗୁଡିକ ସଞ୍ଚଯହେବା ଉଚିତ କି?\n\nଏହି ପରିବର୍ତ୍ତନଗୁଡିକ ସବୁ ନୂଆ ସୂତ୍ରଗୁଡିକ ପାଇଁ ପ୍ରଯୋଗ ହେବ୤"
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -866,14 +864,17 @@ msgid  "~Scaling"
 msgstr "ମାପିବା (~S)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "ଅୟୁଗ୍ମ/ୟୁଗ୍ମ ଚାଳକଗୁଡିକ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Relations"
 msgstr "ସମ୍ପର୍କଗୁଡିକ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Set Operations"
 msgstr "କାର୍ୟ୍ଯଗୁଡିକ ସେଟ କର"
 
@@ -883,6 +884,7 @@ msgid  "~Functions"
 msgstr "କାର୍ୟ୍ଯଗୁଡିକ (~F)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
 msgid  "More"
 msgstr "ଅଧିକ"
 

@@ -40,15 +40,15 @@ msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Fàilte gu aithisg mearachd %PRODUCTNAME% %PRODUCTVERSION%"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY1%
-msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\\n\\n"
 msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
-msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr "Tha e furasta - cha leig thu leas ach briogadh air 'Cuir an aithisg' san ath-chòmhradh gus aithisg a chur thuca no 's urrainn dhut tuairisgeul goirid a thoirt air a' mhearachd gu h-ìosal agus briogadh air 'Cuir an aithisg' an uairsin. Ma tha thu airson sùil a thoirt air an aithist, briog air a' phutan 'Seall dhomh an aithisg'. Cha dèid dàta sam bith a chur ma bhriogas tu air 'Na cuir an aithist'.\n\n"
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\n"
+msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
-msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgid  "Customer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\n"
 msgstr ""
 
 #: source/all/crashrep.ulf#%PRIVACY_URL%
@@ -76,7 +76,7 @@ msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "Thachair mearachd fhad 's a bha %PRODUCTNAME% %PRODUCTVERSION% a' ruith"
 
 #: source/all/crashrep.ulf#%REPORT_BODY%
-msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\\n"
 msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
@@ -120,16 +120,16 @@ msgid  "Save Report to"
 msgstr "Sàbhail an aithisg ann an"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
-msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr "Cha deach aithisg na mearachd a chur a chionn 's nach eil am prògram bunaiteach agad airson post-dealan a' cur taic ri MAPI.\n Cleachd prògram a tha co-chòrdail le MAPI."
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\\n Please use a MAPI-compatible e-mail program."
+msgstr ""
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr "Cha do ghabh aithisg na mearachd a shàbhaladh gu sealach agus cha deach a chur air sgàth sin."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
-msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr "Cha deach aithisg na mearachd a chur a chionn 's nach do ghabh 'sendmail' a chur a dhol.\nCuir sùil air na roghainnean 'sendmail' agad."
+msgid  "The error report could not be sent because 'sendmail' could not be started.\\nPlease check the 'sendmail' settings."
+msgstr ""
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
@@ -172,8 +172,8 @@ msgid  "~Port"
 msgstr "~Port"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
-msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "Feumaidh inneal nan aithisgean mearachd aig %PRODUCTNAME% ceangal ris an lìon mus urrainn dha aithisg mearachd a chur.\n\nCleachdaidh companaidhean frithealaichean progsaidh an cois cachaileith-theine gu tric gus an lìonra aca a dhìon.\n\nMas e sin a tha agad ann, bidh agad ri seòladh is port an fhrithealaiche a shònrachadh."
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\\n\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\n\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -188,7 +188,7 @@ msgid  "Status: The error report has been sent successfully."
 msgstr "Cor: Chaidh aithisg na mearachd a chur."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOEMAILADDRESS%
-msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\\nPlease enter your e-mail address."
 msgstr ""
 
 #: source/all/crashrep.ulf#%MSG_CMDLINE_USAGE%
@@ -204,5 +204,5 @@ msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "Cuiridh seo ID a' phròiseis (PID) aig %PRODUCTNAME% ri inneal nan aithisgean mearachd"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
-msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr "Seallaidh seo teacsa na cobharach.\nGheibh thu mion-fhiosrachadh ann an treòir an t-suidheachaidh."
+msgid  "Shows this help text.\\nDetailed information can be found in the Setup Guide."
+msgstr ""

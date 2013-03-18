@@ -144,8 +144,8 @@ msgid  "Column Fields"
 msgstr "حقول العمود"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-msgid  "Row\nFields"
-msgstr "حقول\nالصف"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -378,174 +378,217 @@ msgid  "Detect special numbers (such as dates)."
 msgstr "اكتشاف أرقام خاصة (مثل التواريخ)."
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.ModelessDialog.Text
+#, fuzzy
 msgid  "Consolidate"
 msgstr "دمج"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
+#, fuzzy
 msgid  "Sum"
 msgstr "المجموع"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
+#, fuzzy
 msgid  "Count"
 msgstr "العدد"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
+#, fuzzy
 msgid  "Average"
 msgstr "المتوسط"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
+#, fuzzy
 msgid  "Max"
 msgstr "الحد الأقصى"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
+#, fuzzy
 msgid  "Min"
 msgstr "الحد اﻷدنى"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
+#, fuzzy
 msgid  "Product"
 msgstr "المنتج"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
+#, fuzzy
 msgid  "Count (numbers only)"
 msgstr "العدد (الأرقام فقط)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
+#, fuzzy
 msgid  "StDev (sample)"
 msgstr "الانحراف المعياري (للعينة)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
+#, fuzzy
 msgid  "StDevP (population)"
 msgstr "الانحراف المعياري (للمجتمع)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
+#, fuzzy
 msgid  "Var (sample)"
 msgstr "التباين (للعينة)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.LB_FUNC.Default.StringList.item
+#, fuzzy
 msgid  "VarP (population)"
 msgstr "التباين (للمجتمع)"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.RB_DATA_AREA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "تقلصر"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.RB_DEST_AREA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "تقلصر"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FT_FUNC.FixedText.Text
+#, fuzzy
 msgid  "~Function"
 msgstr "ال~دالة"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FT_CONSAREAS.FixedText.Text
+#, fuzzy
 msgid  "~Consolidation ranges"
 msgstr "نطاقات الد~مج"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FT_DATA_AREA.FixedText.Text
+#, fuzzy
 msgid  "~Source data range"
 msgstr "ن~طاق بيانات المصدر"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FT_DEST_AREA.FixedText.Text
+#, fuzzy
 msgid  "Copy results ~to"
 msgstr "نس~خ النتائج إلى"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_BYROW.CheckBox.Text
+#, fuzzy
 msgid  "~Row labels"
 msgstr "تسميات ال~صفوف"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_BYCOL.CheckBox.Text
+#, fuzzy
 msgid  "C~olumn labels"
 msgstr "تسميات الأ~عمدة"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FL_CONSBY.FixedLine.Text
+#, fuzzy
 msgid  "Consolidate by"
 msgstr "دمج بواسطة"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "خيارات"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_REFS.CheckBox.Text
+#, fuzzy
 msgid  "~Link to source data"
 msgstr "رب~ط بمصدر بيانات"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_REMOVE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "ح~ذف"
 
 #: source/ui/dbgui/consdlg.src#RID_SCDLG_CONSOLIDATE.BTN_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "إضا~فة"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_START.FixedLine.Text
+#, fuzzy
 msgid  "Start"
 msgstr "بدء"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOSTART.RadioButton.Text
+#, fuzzy
 msgid  "~Automatically"
 msgstr "تل~قائيًا"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANSTART.RadioButton.Text
+#, fuzzy
 msgid  "~Manually at"
 msgstr "ي~دويًَا في"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_END.FixedLine.Text
+#, fuzzy
 msgid  "End"
 msgstr "إنهاء"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOEND.RadioButton.Text
+#, fuzzy
 msgid  "A~utomatically"
 msgstr "ت~لقائيًا"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANEND.RadioButton.Text
+#, fuzzy
 msgid  "Ma~nually at"
 msgstr "ي~دويًا في"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_BY.FixedLine.Text
+#, fuzzy
 msgid  "~Group by"
 msgstr "تجميع ~حسب"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.HelpButton.Text
+#, fuzzy
 msgid  "Grouping"
 msgstr "التجميع"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_START.FixedLine.Text
+#, fuzzy
 msgid  "Start"
 msgstr "بدء"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_AUTOSTART.RadioButton.Text
+#, fuzzy
 msgid  "~Automatically"
 msgstr "تل~قائيًا"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_MANSTART.RadioButton.Text
+#, fuzzy
 msgid  "~Manually at"
 msgstr "ي~دويًَا في"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_END.FixedLine.Text
+#, fuzzy
 msgid  "End"
 msgstr "إنهاء"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_AUTOEND.RadioButton.Text
+#, fuzzy
 msgid  "A~utomatically"
 msgstr "ت~لقائيًا"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_MANEND.RadioButton.Text
+#, fuzzy
 msgid  "Ma~nually at"
 msgstr "ي~دويًا في"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_BY.FixedLine.Text
+#, fuzzy
 msgid  "Group by"
 msgstr "تجميع بحسب"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_NUMDAYS.RadioButton.Text
+#, fuzzy
 msgid  "Number of ~days"
 msgstr "عدد الأيا~م"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.RB_UNITS.RadioButton.Text
+#, fuzzy
 msgid  "~Intervals"
 msgstr "ال~فواصل الزمنية"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.HelpButton.Text
+#, fuzzy
 msgid  "Grouping"
 msgstr "التجميع"
 
@@ -775,310 +818,387 @@ msgid  "Error Alert"
 msgstr "إنذار خطأ"
 
 #: source/ui/dbgui/pvfundlg.src#SCSTR_DPFUNCLISTBOX.Default.ItemList.item
+#, fuzzy
 msgid  "Sum"
 msgstr "المجموع"
 
 #: source/ui/dbgui/pvfundlg.src#SCSTR_DPFUNCLISTBOX.Default.ItemList.item
+#, fuzzy
 msgid  "Count"
 msgstr "العدد"
 
 #: source/ui/dbgui/pvfundlg.src#SCSTR_DPFUNCLISTBOX.Default.ItemList.item
+#, fuzzy
 msgid  "Average"
 msgstr "المتوسط"
 
 #: source/ui/dbgui/pvfundlg.src#SCSTR_DPFUNCLISTBOX.Default.ItemList.item
+#, fuzzy
 msgid  "Max"
 msgstr "الحد الأقصى"
 
 #: source/ui/dbgui/pvfundlg.src#SCSTR_DPFUNCLISTBOX.Default.ItemList.item
+#, fuzzy
 msgid  "Min"
 msgstr "الحد اﻷدنى"
 
 #: source/ui/dbgui/pvfundlg.src#SCSTR_DPFUNCLISTBOX.Default.ItemList.item
+#, fuzzy
 msgid  "Product"
 msgstr "المنتج"
 
 #: source/ui/dbgui/pvfundlg.src#SCSTR_DPFUNCLISTBOX.Default.ItemList.item
+#, fuzzy
 msgid  "Count (Numbers only)"
 msgstr "العدد (أرقام فقط)"
 
 #: source/ui/dbgui/pvfundlg.src#SCSTR_DPFUNCLISTBOX.Default.ItemList.item
+#, fuzzy
 msgid  "StDev (Sample)"
 msgstr "الانحراف المعياري (للعينة)"
 
 #: source/ui/dbgui/pvfundlg.src#SCSTR_DPFUNCLISTBOX.Default.ItemList.item
+#, fuzzy
 msgid  "StDevP (Population)"
 msgstr "الانحراف المعياري (للمجتمع)"
 
 #: source/ui/dbgui/pvfundlg.src#SCSTR_DPFUNCLISTBOX.Default.ItemList.item
+#, fuzzy
 msgid  "Var (Sample)"
 msgstr "تباين (العينة)"
 
 #: source/ui/dbgui/pvfundlg.src#SCSTR_DPFUNCLISTBOX.Default.ItemList.item
+#, fuzzy
 msgid  "VarP (Population)"
 msgstr "تباين (المجتمع)"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.FL_FUNC.FixedLine.Text
+#, fuzzy
 msgid  "~Function"
 msgstr "ال~دالة"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.FT_NAMELABEL.FixedText.Text
+#, fuzzy
 msgid  "Name:"
 msgstr "الاسم:"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.FL_DISPLAY.FixedLine.Text
+#, fuzzy
 msgid  "Displayed value"
 msgstr "القيمة المعروضة"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "ال~نوع"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.LB_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "Normal"
 msgstr "عادي"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.LB_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "Difference from"
 msgstr "الفرق عن"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.LB_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "% of"
 msgstr "% من"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.LB_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "% difference from"
 msgstr "فرق % عن"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.LB_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "Running total in"
 msgstr "الإجمالي الجارٍ في"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.LB_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "% of row"
 msgstr "% من الصف"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.LB_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "% of column"
 msgstr "% من العمود"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.LB_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "% of total"
 msgstr "% من المجموع"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.LB_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "Index"
 msgstr "الفهرس"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.FT_BASEFIELD.FixedText.Text
+#, fuzzy
 msgid  "~Base field"
 msgstr "حق~ل أساسي"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.FT_BASEITEM.FixedText.Text
+#, fuzzy
 msgid  "Ba~se item"
 msgstr "عن~صر أساسي"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.LB_BASEITEM.Default.StringList.item
+#, fuzzy
 msgid  "- previous item -"
 msgstr "- العنصر السابق -"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.LB_BASEITEM.Default.StringList.item
+#, fuzzy
 msgid  "- next item -"
 msgstr "- العنصر التالي -"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.MoreButton.Text
+#, fuzzy
 msgid  "Data Field"
 msgstr "حقل بيانات"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_PIVOTSUBT.ModalDialog.Text
+#, fuzzy
 msgid  "Data Field"
 msgstr "حقل بيانات"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_PIVOTSUBT.RB_NONE.RadioButton.Text
+#, fuzzy
 msgid  "~None"
 msgstr "~بدون"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_PIVOTSUBT.RB_AUTO.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "تل~قائي"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_PIVOTSUBT.RB_USER.RadioButton.Text
+#, fuzzy
 msgid  "~User-defined"
 msgstr "~معرف من قبل المستخدم"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_PIVOTSUBT.FL_FUNC.FixedLine.Text
+#, fuzzy
 msgid  "Subtotals"
 msgstr "المجاميع الفرعية"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_PIVOTSUBT.CB_SHOWALL.CheckBox.Text
+#, fuzzy
 msgid  "Show it~ems without data"
 msgstr "إظهار ال~عناصر بدون بيانات"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_PIVOTSUBT.FT_NAMELABEL.FixedText.Text
+#, fuzzy
 msgid  "Name:"
 msgstr "الاسم:"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_PIVOTSUBT.BTN_OPTIONS.PushButton.Text
+#, fuzzy
 msgid  "~Options..."
 msgstr "~خيارات..."
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.FL_SORT_BY.FixedLine.Text
+#, fuzzy
 msgid  "Sort ~by"
 msgstr "~فرز حسب"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.RB_SORT_ASC.RadioButton.Text
+#, fuzzy
 msgid  "~Ascending"
 msgstr "ت~صاعدي"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.RB_SORT_DESC.RadioButton.Text
+#, fuzzy
 msgid  "~Descending"
 msgstr "ت~نازلي"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.RB_SORT_MAN.RadioButton.Text
+#, fuzzy
 msgid  "~Manual"
 msgstr "~يدوي"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.FL_LAYOUT.FixedLine.Text
+#, fuzzy
 msgid  "Display options"
 msgstr "خيارات العرض"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.FT_LAYOUT.FixedText.Text
+#, fuzzy
 msgid  "~Layout"
 msgstr "م~خطط"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.LB_LAYOUT.Default.StringList.item
+#, fuzzy
 msgid  "Tabular layout"
 msgstr "مخطط جدولي"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.LB_LAYOUT.Default.StringList.item
+#, fuzzy
 msgid  "Outline layout with subtotals at the top"
 msgstr "تخطيط التصميم مع المجاميع الفرعية في الأعلى"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.LB_LAYOUT.Default.StringList.item
+#, fuzzy
 msgid  "Outline layout with subtotals at the bottom"
 msgstr "تخطيط التصميم مع المجاميع الفرعية في الأسفل"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.CB_LAYOUT_EMPTY.CheckBox.Text
+#, fuzzy
 msgid  "~Empty line after each item"
 msgstr "س~طر فارغ بعد كل عنصر"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.FL_AUTOSHOW.FixedLine.Text
+#, fuzzy
 msgid  "Show automatically"
 msgstr "إظهار تلقائي"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.CB_SHOW.CheckBox.Text
+#, fuzzy
 msgid  "~Show"
 msgstr "إظ~هار"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.FT_SHOW.FixedText.Text
+#, fuzzy
 msgid  "items"
 msgstr "عناصر"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.FT_SHOW_FROM.FixedText.Text
+#, fuzzy
 msgid  "~From"
 msgstr "~من"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.LB_SHOW_FROM.Default.StringList.item
+#, fuzzy
 msgid  "Top"
 msgstr "أعلى"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.LB_SHOW_FROM.Default.StringList.item
+#, fuzzy
 msgid  "Bottom"
 msgstr "أسفل"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.FT_SHOW_USING.FixedText.Text
+#, fuzzy
 msgid  "~Using field"
 msgstr "اس~تخدام الحقل"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.FL_HIDE.FixedLine.Text
+#, fuzzy
 msgid  "Hide i~tems"
 msgstr "إ~خفاء العناصر"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.FT_HIERARCHY.FixedText.Text
+#, fuzzy
 msgid  "Hierarch~y"
 msgstr "~تسلسل هرمي"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSUBTOTAL_OPT.HelpButton.Text
+#, fuzzy
 msgid  "Data Field Options"
 msgstr "خيارات حقل البيانات"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSHOWDETAIL.FT_DIMS.FixedText.Text
+#, fuzzy
 msgid  "~Choose the field containing the detail you want to show"
 msgstr "ا~ختر الحقل الذي يتضمن التفاصيل التي تريد إظهارها"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPSHOWDETAIL.HelpButton.Text
+#, fuzzy
 msgid  "Show Detail"
 msgstr "عرض التفاصيل"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.ModalDialog.Text
+#, fuzzy
 msgid  "Text Import"
 msgstr "استيراد نص"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_FIELDOPT.FixedLine.Text
+#, fuzzy
 msgid  "Import"
 msgstr "استيراد"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CHARSET.FixedText.Text
+#, fuzzy
 msgid  "Ch~aracter set"
 msgstr "مجموعة الأحر~ف"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CUSTOMLANG.FixedText.Text
+#, fuzzy
 msgid  "Language"
 msgstr "اللغة"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_AT_ROW.FixedText.Text
+#, fuzzy
 msgid  "From ro~w"
 msgstr "م~ن الصف"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_SEPOPT.FixedLine.Text
+#, fuzzy
 msgid  "Separator options"
 msgstr "خيارات الفاصل"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_FIXED.RadioButton.Text
+#, fuzzy
 msgid  "~Fixed width"
 msgstr "عرض ~ثابت"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_SEPARATED.RadioButton.Text
+#, fuzzy
 msgid  "~Separated by"
 msgstr "ي~فصلها"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_TAB.CheckBox.Text
+#, fuzzy
 msgid  "~Tab"
 msgstr "~علامة جدولة"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_COMMA.CheckBox.Text
+#, fuzzy
 msgid  "~Comma"
 msgstr "فا~صلة"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_OTHER.CheckBox.Text
+#, fuzzy
 msgid  "~Other"
 msgstr "~غير ذلك"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SEMICOLON.CheckBox.Text
+#, fuzzy
 msgid  "S~emicolon"
 msgstr "~فاصلة منقوطة"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SPACE.CheckBox.Text
+#, fuzzy
 msgid  "S~pace"
 msgstr "~مسافة"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_ASONCE.CheckBox.Text
+#, fuzzy
 msgid  "Merge ~delimiters"
 msgstr "دمج فوا~صل الحقول"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TEXTSEP.FixedText.Text
+#, fuzzy
 msgid  "Te~xt delimiter"
 msgstr "فاصل ال~نص"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_OTHER_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Other options"
 msgstr "خيارات أخرى"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_QUOTED_AS_TEXT.CheckBox.Text
+#, fuzzy
 msgid  "~Quoted field as text"
 msgstr "ح~قل مقتبس كنص"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_DETECT_SPECIAL_NUMBER.CheckBox.Text
+#, fuzzy
 msgid  "Detect special numbers"
 msgstr "اكتشاف أرقام خاصة"
 
@@ -1087,10 +1207,12 @@ msgid  "Fields"
 msgstr ""
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Column t~ype"
 msgstr "ن~وع الحقل"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.STR_TEXTTOCOLUMNS.String.Text
+#, fuzzy
 msgid  "Text to Columns"
 msgstr "نص إلى أعمدة"
 
@@ -1100,42 +1222,52 @@ msgid  "Create Scenario"
 msgstr "إنشاء سيناريو"
 
 #: source/ui/dbgui/scendlg.src#RID_SCDLG_NEWSCENARIO.CB_SHOWFRAME.CheckBox.Text
+#, fuzzy
 msgid  "~Display border"
 msgstr "إظ~هار الحدود"
 
 #: source/ui/dbgui/scendlg.src#RID_SCDLG_NEWSCENARIO.CB_PRINTFRAME.CheckBox.Text
+#, fuzzy
 msgid  "Print border"
 msgstr "طباعة الحدود"
 
 #: source/ui/dbgui/scendlg.src#RID_SCDLG_NEWSCENARIO.CB_TWOWAY.CheckBox.Text
+#, fuzzy
 msgid  "Copy ~back"
 msgstr "النسخ م~جددًا"
 
 #: source/ui/dbgui/scendlg.src#RID_SCDLG_NEWSCENARIO.CB_ATTRIB.CheckBox.Text
+#, fuzzy
 msgid  "Attributes"
 msgstr "السمات"
 
 #: source/ui/dbgui/scendlg.src#RID_SCDLG_NEWSCENARIO.CB_VALUE.CheckBox.Text
+#, fuzzy
 msgid  "Copy values only"
 msgstr "نسخ القيم فقط"
 
 #: source/ui/dbgui/scendlg.src#RID_SCDLG_NEWSCENARIO.CB_COPYALL.CheckBox.Text
+#, fuzzy
 msgid  "Copy ~entire sheet"
 msgstr "نسخ الور~قة بالكامل"
 
 #: source/ui/dbgui/scendlg.src#RID_SCDLG_NEWSCENARIO.CB_PROTECT.CheckBox.Text
+#, fuzzy
 msgid  "~Prevent changes"
 msgstr "م~نع التغييرات"
 
 #: source/ui/dbgui/scendlg.src#RID_SCDLG_NEWSCENARIO.STR_EDIT.String.Text
+#, fuzzy
 msgid  "Edit Scenario"
 msgstr "تحرير السيناريو"
 
 #: source/ui/dbgui/scendlg.src#RID_SCDLG_NEWSCENARIO.STR_CREATEDBY.String.Text
+#, fuzzy
 msgid  "Created by"
 msgstr "تم الإنشاء بواسطة"
 
 #: source/ui/dbgui/scendlg.src#RID_SCDLG_NEWSCENARIO.STR_ON.String.Text
+#, fuzzy
 msgid  "on"
 msgstr "في"
 
@@ -1160,1062 +1292,1323 @@ msgid  "Settings"
 msgstr "إعدادات"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_TABLES_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of sheets:"
 msgstr "عدد الأوراق:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_CELLS_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of cells:"
 msgstr "عدد الخلايا:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_PAGES_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of pages:"
 msgstr "عدد الصفحات:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Document: "
 msgstr "المستند: "
 
 #: source/ui/drawfunc/objdraw.src#MN_RESET.SID_TEXT_STANDARD.MenuItem.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "الا~فتراضي"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.MenuItem.Text
+#, fuzzy
 msgid  "~Style"
 msgstr "~نمط"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUPER_SCRIPT.MenuItem.Text
+#, fuzzy
 msgid  "~Superscript"
 msgstr "~مرتفع"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUB_SCRIPT.MenuItem.Text
+#, fuzzy
 msgid  "S~ubscript"
 msgstr "م~نخفض"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.MenuItem.Text
+#, fuzzy
 msgid  "~Alignment"
 msgstr "م~حاذاة"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNLEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "~يسار"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNRIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "ي~مين"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNCENTERHOR.MenuItem.Text
+#, fuzzy
 msgid  "~Centered"
 msgstr "~توسيط"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNBLOCK.MenuItem.Text
+#, fuzzy
 msgid  "~Justified"
 msgstr "~ضبط"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_LINESPACE.MenuItem.Text
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~تباعد الأسطر"
 
 #: source/ui/drawfunc/objdraw.src#MN_EDITLNK.SID_DRAW_HLINK_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Hyperlink..."
 msgstr "ارتبا~ط تشعبي..."
 
 #: source/ui/drawfunc/objdraw.src#MN_DELLNK.SID_DRAW_HLINK_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove Hyperlink"
 msgstr "إزا~لة الارتباط التشعبي"
 
 #: source/ui/drawfunc/objdraw.src#MN_DRWTXTATTR.SID_DRAWTEXT_ATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Te~xt..."
 msgstr "~نص..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ASSIGNMACRO.SID_ASSIGNMACRO.MenuItem.Text
+#, fuzzy
 msgid  "Assig~n Macro..."
 msgstr "تعيين ~ماكرو..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ORIGINALSIZE.SID_ORIGINALSIZE.MenuItem.Text
+#, fuzzy
 msgid  "~Original Size"
 msgstr "ال~حجم الأصلي"
 
 #: source/ui/drawfunc/objdraw.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "الاسم..."
 
 #: source/ui/drawfunc/objdraw.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "الوصف..."
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.MenuItem.Text
+#, fuzzy
 msgid  "~Flip"
 msgstr "انعكا~س"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "~رأسي"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "~Horizontal"
 msgstr "أ~فقي"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "~ترتيب"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "إحضار للأ~مام"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "إرسال لل~خلف"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
+#, fuzzy
 msgid  "An~chor"
 msgstr "إر~ساء"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "To P~age"
 msgstr "إلى ال~صفحة"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
+#, fuzzy
 msgid  "To ~Cell"
 msgstr "إلى ا~لخلية"
 
 #: source/ui/drawfunc/objdraw.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "~محاذاة"
 
 #: source/ui/drawfunc/objdraw.src#RID_DRAW_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Drawing Object Bar"
 msgstr "شريط الكائنات الرسومية"
 
 #: source/ui/drawfunc/objdraw.src#RID_TEXT_TOOLBOX.String.Text
+#, fuzzy
 msgid  "Text Object Bar"
 msgstr "شريط كائنات النص"
 
 #: source/ui/drawfunc/objdraw.src#RID_GRAPHIC_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Graphics Object Bar"
 msgstr "شريط كائنات الصور"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAW.String.Text
+#, fuzzy
 msgid  "Pop-up menu for drawing objects"
 msgstr "قائمة منبثقة للكائنات الرسومية"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAWTEXT.String.Text
+#, fuzzy
 msgid  "Pop-up menu for text objects"
 msgstr "قائمة منبثقة للكائنات النصية"
 
 #: source/ui/drawfunc/drformsh.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "الاسم..."
 
 #: source/ui/drawfunc/drformsh.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "الوصف..."
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "~ترتيب"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "إحضار للأ~مام"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "إرسال لل~خلف"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
+#, fuzzy
 msgid  "An~chor"
 msgstr "إر~ساء"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "To P~age"
 msgstr "إلى ال~صفحة"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
+#, fuzzy
 msgid  "To ~Cell"
 msgstr "إلى ا~لخلية"
 
 #: source/ui/drawfunc/drformsh.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "~محاذاة"
 
 #: source/ui/drawfunc/drformsh.src#RID_POPUP_DRAWFORM.String.Text
+#, fuzzy
 msgid  "Popup menu for form objects"
 msgstr "قائمة منبثقة لكائنات النموذج"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Last Used"
 msgstr "العناصر المستخدمة مؤخرًا"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "All"
 msgstr "الكل"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Database"
 msgstr "قاعدة بيانات"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Date&Time"
 msgstr "الوقت والتاريخ"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Financial"
 msgstr "مالي"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Information"
 msgstr "معلومات"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Logical"
 msgstr "منطقي"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Mathematical"
 msgstr "رياضي"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Array"
 msgstr "مصفوفة"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Statistical"
 msgstr "إحصائي"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "جدول بيانات"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Text"
 msgstr "النص"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Add-in"
 msgstr "أداة إضافية"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.IMB_INSERT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Insert Function into calculation sheet"
 msgstr "إدراج الدالة في ورقة الحساباتة"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.ButtonImage.Text
+#, fuzzy
 msgid  "Functions"
 msgstr "الدوال"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.FT_ASSIGN.FixedText.Text
+#, fuzzy
 msgid  "Range"
 msgstr "النطاق"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "الحد الأدنى/الحد الأقصىر"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_COLS.String.Text
+#, fuzzy
 msgid  "Column inserted"
 msgstr "تم إدارج العمود"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_ROWS.String.Text
+#, fuzzy
 msgid  "Row inserted "
 msgstr "تم إدارج السطر "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_TABS.String.Text
+#, fuzzy
 msgid  "Sheet inserted "
 msgstr "تم إدارج الورقة "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_COLS.String.Text
+#, fuzzy
 msgid  "Column deleted"
 msgstr "تم حذف العمود"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_ROWS.String.Text
+#, fuzzy
 msgid  "Row deleted"
 msgstr "تم حذف السطر"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_TABS.String.Text
+#, fuzzy
 msgid  "Sheet deleted"
 msgstr "تم حذف الورقة"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_MOVE.String.Text
+#, fuzzy
 msgid  "Range moved"
 msgstr "تم نقل النطاق"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT.String.Text
+#, fuzzy
 msgid  "Changed contents"
 msgstr "تم تغيير المحتويات"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT_WITH_CHILD.String.Text
+#, fuzzy
 msgid  "Changed contents"
 msgstr "تم تغيير المحتويات"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_CONTENT.String.Text
+#, fuzzy
 msgid  "Changed to "
 msgstr "تم التغيير إلى "
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_ORGCONTENT.String.Text
+#, fuzzy
 msgid  "Original"
 msgstr "الأصل"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECT.String.Text
+#, fuzzy
 msgid  "Changes rejected"
 msgstr "تم رفض التغييرات"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_ACCEPTED.String.Text
+#, fuzzy
 msgid  "Accepted"
 msgstr "مقبول"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECTED.String.Text
+#, fuzzy
 msgid  "Rejected"
 msgstr "مرفوض"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_NO_ENTRY.String.Text
+#, fuzzy
 msgid  "No Entry"
 msgstr "لا يوجد إدخال"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_EMPTY.String.Text
+#, fuzzy
 msgid  "<empty>"
 msgstr "<فارغ>"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.Bitmap.Text
+#, fuzzy
 msgid  "Accept or Reject Changes"
 msgstr "قبول التغييرات أو رفضها"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_CHANGES_COMMENT.MenuItem.Text
+#, fuzzy
 msgid  "Edit Comment..."
 msgstr "تحرير التعليق..."
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_ACTION.MenuItem.Text
+#, fuzzy
 msgid  "Action"
 msgstr "الإجراء"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr "الموضع"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_AUTHOR.MenuItem.Text
+#, fuzzy
 msgid  "Author"
 msgstr "المؤلف"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_DATE.MenuItem.Text
+#, fuzzy
 msgid  "Date"
 msgstr "التاريخ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_COMMENT.MenuItem.Text
+#, fuzzy
 msgid  "Description"
 msgstr "الوصف"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.MenuItem.Text
+#, fuzzy
 msgid  "Sorting"
 msgstr "فرز"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.ModalDialog.Text
+#, fuzzy
 msgid  "Resolve Conflicts"
 msgstr "حل التعارضات"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.FT_CONFLICTS.FixedText.Text
+#, fuzzy
 msgid  "There are conflicting changes in this shared spreadsheet. Conflicts must be resolved before saving the spreadsheet. Keep either own or other changes."
 msgstr "هناك بعض التغييرات المتعارضة في جدول البيانات المشترك هذا. يجب إصلاح التعارضات قبل حفظ جدول البيانات. احتفظ إما بالتغييرات الخاصة بك أو الآخرين."
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPMINE.PushButton.Text
+#, fuzzy
 msgid  "Keep ~Mine"
 msgstr "الاحت~فاظ بتغييراتي"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPOTHER.PushButton.Text
+#, fuzzy
 msgid  "Keep ~Other"
 msgstr "الاحتفا~ظ بتغييرات الآخرين"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLMINE.PushButton.Text
+#, fuzzy
 msgid  "~Keep All Mine"
 msgstr "الا~حتفاظ بكل تغييراتي"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLOTHERS.PushButton.Text
+#, fuzzy
 msgid  "Keep ~All Others"
 msgstr "الاح~تفاظ بكل تغييرات الآخرين"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_CONFLICT.String.Text
+#, fuzzy
 msgid  "Conflict"
 msgstr "تعارض"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_AUTHOR.String.Text
+#, fuzzy
 msgid  "Author"
 msgstr "المؤلف"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_DATE.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "التاريخ"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_UNKNOWN_USER.String.Text
+#, fuzzy
 msgid  "Unknown User"
 msgstr "مستخدم غير معروف"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.ModalDialog.Text
+#, fuzzy
 msgid  "Re-type Password"
 msgstr "إعادة كتابة كلمة المرور"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DESC.FixedText.Text
+#, fuzzy
 msgid  "The document you are about to export has one or more protected items with password that cannot be exported.  Please re-type your password to be able to export your document."
 msgstr "يحتوي المستند الذي أنت على وشك تصديره على عنصر واحد أو أكثر من العناصر المحمية بكلمة مرور لا يمكن تصديرها.  يرجى إعادة كتابة كلمة المرور لتتمكن من تصدير المستند."
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_DOCUMENT.FixedLine.Text
+#, fuzzy
 msgid  "Document protection"
 msgstr "حماية المستند"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DOCSTATUS.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "الحالة غير معروفة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_DOC.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "إعادة كتابة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_SHEET.FixedLine.Text
+#, fuzzy
 msgid  "Sheet protection"
 msgstr "حماية الورقة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME1.FixedText.Text
+#, fuzzy
 msgid  "Sheet1 has a really long name"
 msgstr "الورقة 1 لها اسم طويل بالفعل"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS1.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "الحالة غير معروفة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET1.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "إعادة كتابة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME2.FixedText.Text
+#, fuzzy
 msgid  "Sheet2"
 msgstr "ورقة2"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS2.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "الحالة غير معروفة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET2.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "إعادة كتابة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME3.FixedText.Text
+#, fuzzy
 msgid  "Sheet3"
 msgstr "ورقة3"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS3.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "الحالة غير معروفة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET3.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "إعادة كتابة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME4.FixedText.Text
+#, fuzzy
 msgid  "Sheet4"
 msgstr "ورقة4"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS4.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "الحالة غير معروفة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET4.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "إعادة كتابة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_NOT_PROTECTED.String.Text
+#, fuzzy
 msgid  "Not protected"
 msgstr "غير محمي"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_NOT_PASS_PROTECTED.String.Text
+#, fuzzy
 msgid  "Not password-protected"
 msgstr "لا توجد حماية بكلمة مرور"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_BAD.String.Text
+#, fuzzy
 msgid  "Hash incompatible"
 msgstr "التجزئة غير متوافقة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_GOOD.String.Text
+#, fuzzy
 msgid  "Hash compatible"
 msgstr "التجزئة متوافقة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_REGENERATED.String.Text
+#, fuzzy
 msgid  "Hash re-generated"
 msgstr "تمت إعادة إنشاء التجزئة"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.ModalDialog.Text
+#, fuzzy
 msgid  "Re-type Password"
 msgstr "إعادة كتابة كلمة المرور"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_RETYPE_PASSWORD.RadioButton.Text
+#, fuzzy
 msgid  "Re-type password"
 msgstr "إعادة كتابة كلمة المرور"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.FT_PASSWORD1.FixedText.Text
+#, fuzzy
 msgid  "~Password"
 msgstr "~كلمة المرور"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.FT_PASSWORD2.FixedText.Text
+#, fuzzy
 msgid  "~Confirm"
 msgstr "~تأكيد"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_MATCH_OLD_PASSWORD.CheckBox.Text
+#, fuzzy
 msgid  "New password must match the original password."
 msgstr "يجب أن تطابق كلمة المرور الجديدة كلمة المرور الأصلية."
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_REMOVE_PASSWORD.RadioButton.Text
+#, fuzzy
 msgid  "Remove password from this protected item."
 msgstr "قم بإزالة كلمة المرور من هذا العنصر المحمي."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.ModalDialog.Text
+#, fuzzy
 msgid  "Share Document"
 msgstr "مشاركة مستند"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.CB_SHARE.CheckBox.Text
+#, fuzzy
 msgid  "Share this spreadsheet with other users"
 msgstr "مشاركة جدول البيانات هذا مع مستخدمين آخرين"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Note: Changes to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
 msgstr "ملاحظة: لن يتم حفظ التغييرات التي تتم على سمات التنسيق مثل الخطوط والألوان وتنسيقات الأرقام، ولن تتوفر بعض الوظائف مثل تحرير المخططات والكائنات الرسومية في وضع المشاركة. قم بإيقاف تشغيل وضع المشاركة للحصول على الوصول الحصري اللازم لإجراء هذه التغييرات والوظائف."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_USERS.FixedText.Text
+#, fuzzy
 msgid  "Users currently accessing this spreadsheet"
 msgstr "المستخدمون الذين يمكنهم الوصول حاليًا إلى جدول البيانات هذا"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_NAME.String.Text
+#, fuzzy
 msgid  "Name"
 msgstr "الاسم"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_ACCESSED.String.Text
+#, fuzzy
 msgid  "Accessed"
 msgstr "تم الوصول"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_NO_USER_DATA.String.Text
+#, fuzzy
 msgid  "No user data available."
 msgstr "لا تتوفر بيانات مستخدم."
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_UNKNOWN_USER.String.Text
+#, fuzzy
 msgid  "Unknown User"
 msgstr "مستخدم غير معروف"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_EXCLUSIVE_ACCESS.String.Text
+#, fuzzy
 msgid  "(exclusive access)"
 msgstr "(وصول حصري)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.ModalDialog.Text
+#, fuzzy
 msgid  "Insert Sheet"
 msgstr "إدراج ورقة"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_POSITION.FixedLine.Text
+#, fuzzy
 msgid  "Position"
 msgstr "الموضع"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEFORE.RadioButton.Text
+#, fuzzy
 msgid  "B~efore current sheet"
 msgstr "قبل الور~قة الحالية"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEHIND.RadioButton.Text
+#, fuzzy
 msgid  "~After current sheet"
 msgstr "بعد الورقة ال~حالية"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_TABLE.FixedLine.Text
+#, fuzzy
 msgid  "Sheet"
 msgstr "ورقة"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_NEW.RadioButton.Text
+#, fuzzy
 msgid  "~New sheet"
 msgstr "ور~قة جديدة"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "N~o. of sheets"
 msgstr "~عدد الأوراق"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Na~me"
 msgstr "الاس~م"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_FROMFILE.RadioButton.Text
+#, fuzzy
 msgid  "~From file"
 msgstr "من ~ملف"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.BTN_BROWSE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "ا~ستعراض..."
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.CB_LINK.CheckBox.Text
+#, fuzzy
 msgid  "Lin~k"
 msgstr "ار~تباط"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT.CheckBox.Text
+#, fuzzy
 msgid  "~Show changes in spreadsheet"
 msgstr "إ~ظهار التغييرات في جدول البيانات"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.FL_FILTER.FixedLine.Text
+#, fuzzy
 msgid  "Filter settings"
 msgstr "إعدادات التصفية"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_ACCEPT.CheckBox.Text
+#, fuzzy
 msgid  "Show ~accepted changes"
 msgstr "إظهار ال~تغييرات المقبولة"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_REJECT.CheckBox.Text
+#, fuzzy
 msgid  "Show ~rejected changes"
 msgstr "إظهار التغييرات المرفو~ضة"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "الحد الأدنى/الحد الأقصىر"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.ImageButton.Text
+#, fuzzy
 msgid  "Show Changes"
 msgstr "إظهار التغييرات"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ModalDialog.Text
+#, fuzzy
 msgid  "Protect Sheet"
 msgstr "حماية الورقة"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.BTN_PROTECT.CheckBox.Text
+#, fuzzy
 msgid  "P~rotect this sheet and the contents of locked cells"
 msgstr "ح~ماية هذه الورقة ومحتويات الخلايا المؤمّنة"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD1.FixedText.Text
+#, fuzzy
 msgid  "~Password"
 msgstr "~كلمة المرور"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD2.FixedText.Text
+#, fuzzy
 msgid  "~Confirm"
 msgstr "~تأكيد"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "خيارات"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_OPTIONS.FixedText.Text
+#, fuzzy
 msgid  "Allow all users of this sheet to:"
 msgstr "السماح للمستخدمين لهذه الورقة بـ:"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_LOCKED_CELLS.String.Text
+#, fuzzy
 msgid  "Select locked cells"
 msgstr "تحديد الخلايا المؤمّنة"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_UNLOCKED_CELLS.String.Text
+#, fuzzy
 msgid  "Select unlocked cells"
 msgstr "تحديد الخلايا غير المؤمّنة"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FL_LOCATION.FixedLine.Text
+#, fuzzy
 msgid  "URL of ~external data source"
 msgstr "عنوان URL لم~صدر البيانات الخارجي"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_HINT.FixedText.Text
+#, fuzzy
 msgid  "(Enter the URL of the source document in the local file system or Internet here.)"
 msgstr "(أدخل عنوان URL للمستند المصدر في نظام الملفات المحلي أو الإنترنت هنا.)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_RANGES.FixedText.Text
+#, fuzzy
 msgid  "~Available tables/ranges"
 msgstr "الجداو~ل/النطاقات المتوفرة"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.BTN_RELOAD.CheckBox.Text
+#, fuzzy
 msgid  "~Update every"
 msgstr "تحديث ~كل"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_SECONDS.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "ثوانٍ"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FixedText.Text
+#, fuzzy
 msgid  "External Data"
 msgstr "بيانات خارجية"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.Window.Text
+#, fuzzy
 msgid  "Navigator"
 msgstr "المستكشف"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
 msgid  "Row"
-msgstr "الصف"
+msgstr "صفر"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
+#, fuzzy
 msgid  "Row"
 msgstr "صفر"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
 msgid  "Column"
-msgstr "العمود"
+msgstr "عمودد"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
+#, fuzzy
 msgid  "Column"
 msgstr "عمودد"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.LB_DOCUMENTS.ListBox.QuickHelpText
+#, fuzzy
 msgid  "Document"
 msgstr "مستندد"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DATA.ToolBoxItem.Text
+#, fuzzy
 msgid  "Data Range"
 msgstr "نطاق البيانات"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_UP.ToolBoxItem.Text
+#, fuzzy
 msgid  "Start"
 msgstr "بدء"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DOWN.ToolBoxItem.Text
+#, fuzzy
 msgid  "End"
 msgstr "إنهاء"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "المحتويات"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_CHANGEROOT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Toggle"
 msgstr "تبديل"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_SCENARIOS.ToolBoxItem.Text
+#, fuzzy
 msgid  "Scenarios"
 msgstr "وحدات السيناريو"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Drag Mode"
 msgstr "وضع السحب"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
+#, fuzzy
 msgid  "Drag Mode"
 msgstr "وضع السحب"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DISPLAY.String.Text
+#, fuzzy
 msgid  "Display"
 msgstr "عرض"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVE.String.Text
+#, fuzzy
 msgid  "active"
 msgstr "نشط"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_NOTACTIVE.String.Text
+#, fuzzy
 msgid  "inactive"
 msgstr "غير نشط"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_HIDDEN.String.Text
+#, fuzzy
 msgid  "hidden"
 msgstr "مخفي"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVEWIN.String.Text
+#, fuzzy
 msgid  "Active Window"
 msgstr "الإطار النشط"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_LISTBOX.String.Text
+#, fuzzy
 msgid  "Scenario Name"
 msgstr "اسم السيناريو"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_COMMENT.String.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "تعليق"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_ROOT.String.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "المحتويات"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_TABLE.String.Text
+#, fuzzy
 msgid  "Sheets"
 msgstr "أوراق"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_RANGENAME.String.Text
+#, fuzzy
 msgid  "Range names"
 msgstr "أسماء النطاقات"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DBAREA.String.Text
+#, fuzzy
 msgid  "Database Ranges"
 msgstr "نطاقات قاعدة البيانات"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_GRAPHIC.String.Text
+#, fuzzy
 msgid  "Graphics"
 msgstr "الرسومات"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_OLEOBJECT.String.Text
+#, fuzzy
 msgid  "OLE objects"
 msgstr "كائنات OLE"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_NOTE.String.Text
+#, fuzzy
 msgid  "Comments"
 msgstr "التعليقات"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_AREALINK.String.Text
+#, fuzzy
 msgid  "Linked areas"
 msgstr "مناطق مرتبطة"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DRAWING.String.Text
+#, fuzzy
 msgid  "Drawing objects"
 msgstr "كائنات رسومية"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_URL.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Hyperlink"
 msgstr "إدراج كارتباط تشعبي"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_LINK.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Link"
 msgstr "إدراج كارتباط"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_COPY.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Copy"
 msgstr "إدراج كنسخة"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "حذف"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Properties..."
 msgstr "خصائص..."
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.ModelessDialog.Text
+#, fuzzy
 msgid  "Edit Print Ranges"
 msgstr "تحرير نطاقات الطباعة"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_PRINTAREA.FixedLine.Text
+#, fuzzy
 msgid  "Print range"
 msgstr "نطاق الطباعة"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "- بلا -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- entire sheet -"
 msgstr "- كامل الورقة -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 msgid  "- user defined -"
-msgstr "- معرفة من قبل المستخدم -"
+msgstr "- يحدده المستخدم -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- selection -"
 msgstr "- التحديد -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
 msgid  "Shrink"
-msgstr "تقليص"
+msgstr "تقلصر"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
+#, fuzzy
 msgid  "Rows to repeat"
 msgstr "الصفوف المطلوب تكرارها"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "- بلا -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
+#, fuzzy
 msgid  "- user defined -"
 msgstr "- معرفة من قبل المستخدم -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "تقليص"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATCOL.FixedLine.Text
+#, fuzzy
 msgid  "Columns to repeat"
 msgstr "الأعمدة المطلوب تكرارها"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "- بلا -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
+#, fuzzy
 msgid  "- user defined -"
 msgstr "- يحدده المستخدم -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATCOL.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "تقلصر"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_HEADER.CheckBox.Text
+#, fuzzy
 msgid  "~Column and row headers"
 msgstr "رؤو~س الأعمدة والصفوف"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_GRID.CheckBox.Text
+#, fuzzy
 msgid  "~Grid"
 msgstr "ال~شبكة"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NOTES.CheckBox.Text
+#, fuzzy
 msgid  "~Comments"
 msgstr "~تعليقات"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_OBJECTS.CheckBox.Text
+#, fuzzy
 msgid  "~Objects/graphics"
 msgstr "~كائنات/رسومات"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_CHARTS.CheckBox.Text
+#, fuzzy
 msgid  "Ch~arts"
 msgstr "رس~وم بيانية"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_DRAWINGS.CheckBox.Text
+#, fuzzy
 msgid  "~Drawing objects"
 msgstr "~كائنات رسومية"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_FORMULAS.CheckBox.Text
+#, fuzzy
 msgid  "~Formulas"
 msgstr "ال~صيغ"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NULLVALS.CheckBox.Text
+#, fuzzy
 msgid  "Zero ~values"
 msgstr "قِيم ~صفرية"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PRINT.FixedLine.Text
+#, fuzzy
 msgid  "Print"
 msgstr "طباعة"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_TOPDOWN.RadioButton.Text
+#, fuzzy
 msgid  "~Top to bottom, then right"
 msgstr "من أ~على إلى أسفل، ثم إلى اليمين"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_LEFTRIGHT.RadioButton.Text
+#, fuzzy
 msgid  "~Left to right, then down"
 msgstr "من ال~يسار إلى اليمين، ثم إلى أسفل"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_PAGENO.CheckBox.Text
+#, fuzzy
 msgid  "First ~page number"
 msgstr "~رقم الصفحة الأولى"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PAGEDIR.FixedLine.Text
+#, fuzzy
 msgid  "Page order"
 msgstr "ترتيب الصفحات"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEMODE.FixedText.Text
+#, fuzzy
 msgid  "Scaling ~mode"
 msgstr "و~ضع المقياس"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_PERCENT.StringList.item
+#, fuzzy
 msgid  "Reduce/enlarge printout"
 msgstr "تقليص/تكبير مخرجات الطباعة"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO.StringList.item
+#, fuzzy
 msgid  "Fit print range(s) to width/height"
 msgstr "ملاءمة نطاق (نطاقات) الطباعة بالعرض/الارتفاع"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO_PAGES.StringList.item
+#, fuzzy
 msgid  "Fit print range(s) on number of pages"
 msgstr "ملاءمة نطاق (نطاقات) الطباعة بعدد الصفحات"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEFACTOR.FixedText.Text
+#, fuzzy
 msgid  "~Scaling factor"
 msgstr "~معامل المقياس"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEWIDTH.FixedText.Text
+#, fuzzy
 msgid  "~Width in pages"
 msgstr "ال~عرض بعدد الصفحات"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEHEIGHT.FixedText.Text
+#, fuzzy
 msgid  "H~eight in pages"
 msgstr "الار~تفاع بعدد الصفحات"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGENUM.FixedText.Text
+#, fuzzy
 msgid  "N~umber of pages"
 msgstr "ع~دد الصفحات"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_SCALE.FixedLine.Text
+#, fuzzy
 msgid  "Scale"
 msgstr "المقاس"
 
 #: source/ui/pagedlg/hfedtdlg.src#HFEDIT_DLGTITLE.#define.Text
+#, fuzzy
 msgid  "Headers/Footers"
 msgstr "رؤوس/تذييلات"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER.#define.Text
+#, fuzzy
 msgid  "Header"
 msgstr "رأس"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER.#define.Text
+#, fuzzy
 msgid  "Footer"
 msgstr "تذييل"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_RIGHT.#define.Text
+#, fuzzy
 msgid  "Header (right)"
 msgstr "رأس (يمين)"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_LEFT.#define.Text
+#, fuzzy
 msgid  "Header (left)"
 msgstr "رأس (يسار)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_RIGHT.#define.Text
+#, fuzzy
 msgid  "Footer (right)"
 msgstr "تذييل (يمين)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_LEFT.#define.Text
+#, fuzzy
 msgid  "Footer (left)"
 msgstr "تذييل (يسار)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_HEADER.TabDialog.Text
+#, fuzzy
 msgid  "Headers"
 msgstr "رؤوس"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_FOOTER.TabDialog.Text
+#, fuzzy
 msgid  "Footers"
 msgstr "تذييلات"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_LEFT.FixedText.Text
+#, fuzzy
 msgid  "~Left area"
 msgstr "المن~طقة اليسرى"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_CENTER.FixedText.Text
+#, fuzzy
 msgid  "~Center area"
 msgstr "المنطقة الو~سطى"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_RIGHT.FixedText.Text
+#, fuzzy
 msgid  "R~ight area"
 msgstr "المنطقة الي~منى"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_DEFINED.FixedText.Text
+#, fuzzy
 msgid  "Hea~der"
 msgstr "رأ~س"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_CUSTOM.FixedText.Text
+#, fuzzy
 msgid  "Custom header"
 msgstr "رأس مخصصة"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TEXT.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Text Attributes"
 msgstr "سمة نصيةص"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Title"
 msgstr "العنوان"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
+#, fuzzy
 msgid  "Title"
 msgstr "العنوان"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_FILENAME.MenuItem.Text
+#, fuzzy
 msgid  "File Name"
 msgstr "اسم الملف"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_PATH.MenuItem.Text
+#, fuzzy
 msgid  "Path/File Name"
 msgstr "المسار/اسم الملف"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TABLE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Sheet Name"
 msgstr "اسم الورقةل"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Page"
 msgstr "صفحةة"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGES.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Pages"
 msgstr "الصفحةت"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_DATE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Date"
 msgstr "تاريخخ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TIME.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Time"
 msgstr "وقتت"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "Use the buttons to change the font or insert field commands such as date, time, etc."
 msgstr "استخدم الأزرار لتغيير نوع الخط أو لإضافة أوامر حقول، مثل التاريخ، أو الوقت، ...إلخ."
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Note"
 msgstr "ملاحظة"
 
 #: source/ui/pagedlg/tphf.src#RID_SCBTN_HFEDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "ت~حرير..."
 
@@ -2350,9 +2743,8 @@ msgid  "~Discard"
 msgstr "ر~فض"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-#, fuzzy
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "هل تريد حذف\nالإدخال\n#؟"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -2845,70 +3237,86 @@ msgid  "~Delete"
 msgstr "ح~ذف"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
+#, fuzzy
 msgid  "Format Cells"
 msgstr "تنسيق الخلايا"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
+#, fuzzy
 msgid  "Numbers"
 msgstr "الأرقام"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "الخط"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "تأثيرات الخطوط"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "محاذاة"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
+#, fuzzy
 msgid  "Asian Typography"
 msgstr "أسلوب الطباعة الآسيوية"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "الحدود"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "الخلفية"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
+#, fuzzy
 msgid  "Cell Protection"
 msgstr "حماية الخلية"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
+#, fuzzy
 msgid  "~Protected"
 msgstr "م~حمي"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~formula"
 msgstr "إخفاء ال~صيغة"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~all"
 msgstr "إخفاء ال~كل"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "ميزة حماية الخلايا لا تعمل إلا بعد أن تجعل الورقة الحالية محمية. \n\nحدد \"حماية المستند\" من القائمة \"أدوات\"، ثم حدد \"ورقة\"."
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
+#, fuzzy
 msgid  "Protection"
 msgstr "الحماية"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "إخفاء ~عند الطباعة"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
+#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "سيتم تجاهل الخلايا المحددة عند الطباعة."
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
+#, fuzzy
 msgid  "Print"
 msgstr "طباعة"
 
@@ -3535,9 +3943,8 @@ msgid  "No operations to execute"
 msgstr "لا توجد عمليات لتنفيذها"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-#, fuzzy
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "النطاق لا يحتوي على رؤوس أعمدة.\nهل ترغب في استخدام السطر الأول كرأس عمود؟ "
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -3615,9 +4022,8 @@ msgid  "Search key not found."
 msgstr "تعذر العثور على مفتاح البحث."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-#, fuzzy
-msgid  "Goal Seek successful.\n"
-msgstr "نجح الاستهداف.\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 #, fuzzy
@@ -3630,14 +4036,12 @@ msgid  ") into current cell?"
 msgstr ") في الخلية الحالية؟"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-#, fuzzy
-msgid  "Goal Seek not successful.\n"
-msgstr "لم ينجح الاستهداف.\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-#, fuzzy
-msgid  "No exact value found. \n"
-msgstr "لم يتم العثور على قيمة دقيقة. \n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -3994,38 +4398,1361 @@ msgid  "Text Attributes"
 msgstr "سمات النص"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+#, fuzzy
+msgid  "\\"
+msgstr "\\"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+#, fuzzy
+msgid  "PAGE"
+msgstr "PAGE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+#, fuzzy
+msgid  "PAGES"
+msgstr "PAGES"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+#, fuzzy
+msgid  "DATE"
+msgstr "DATE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+#, fuzzy
+msgid  "TIME"
+msgstr "TIME"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+#, fuzzy
+msgid  "FILE"
+msgstr "FILE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+#, fuzzy
+msgid  "SHEET"
+msgstr "SHEET"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+#, fuzzy
+msgid  "Protected cells can not be modified."
+msgstr "لا يمكن تعديل الخلايا المحمية."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+#, fuzzy
+msgid  "Document opened in read-only mode."
+msgstr "المستند مفتوح للقراءة فقط."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+#, fuzzy
+msgid  "You cannot change only part of an array."
+msgstr "لا يمكن تعديل جزء من صفيف."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+#, fuzzy
+msgid  "Header"
+msgstr "رأس"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+#, fuzzy
+msgid  "Footer"
+msgstr "تذييل"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+#, fuzzy
+msgid  "Err:"
+msgstr "خطأ:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+#, fuzzy
+msgid  "Error: Ranges do not intersect"
+msgstr "خطأ: النطاقات غير متداخلة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+#, fuzzy
+msgid  "Error: Division by zero"
+msgstr "خطأ : القسمة على الصفر"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+#, fuzzy
+msgid  "Error: Wrong data type"
+msgstr "خطأ: نوع بيانات خاطئ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+#, fuzzy
+msgid  "Error: Not a valid reference"
+msgstr "خطأ: مرجع غير صالح"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+#, fuzzy
+msgid  "Error: Invalid name"
+msgstr "خطأ: اسم غير صالح"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+#, fuzzy
+msgid  "Error: Invalid numeric value"
+msgstr "خطأ: قيمة رقمية غير صالحة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+#, fuzzy
+msgid  "Error: Value not available"
+msgstr "خطأ: القيمة غير متوفرة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "#ADDIN?"
+msgstr "#ADDIN?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "Error: Add-in not found"
+msgstr "خطأ: لم يتم العثور على الوظيفة الإضافية"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "#MACRO?"
+msgstr "#MACRO?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "Error: Macro not found"
+msgstr "خطأ: لم يتم العثور على الماكرو"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+#, fuzzy
+msgid  "Internal syntactical error"
+msgstr "خطأ داخلي في بناء الجملة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+#, fuzzy
+msgid  "Error: Invalid argument"
+msgstr "خطأ: وسيطة غير صالحة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+#, fuzzy
+msgid  "Error in parameter list"
+msgstr "خطأ في قائمة الوسائط"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+#, fuzzy
+msgid  "Error: Invalid character"
+msgstr "خطأ: حرف غير صالح"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+#, fuzzy
+msgid  "Error: Invalid semicolon"
+msgstr "خطأ: فاصلة منقوطة غير صالحة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+#, fuzzy
+msgid  "Error: in bracketing"
+msgstr "خطأ: في وضع الأقواس"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+#, fuzzy
+msgid  "Error: Operator missing"
+msgstr "خطأ: المعامل مفقود"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+#, fuzzy
+msgid  "Error: Variable missing"
+msgstr "خطأ: المتغير مفقود"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+#, fuzzy
+msgid  "Error: Formula overflow"
+msgstr "خطأ: تجاوز الصيغة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+#, fuzzy
+msgid  "Error: String overflow"
+msgstr "خطأ: تجاوز السلسلة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+#, fuzzy
+msgid  "Error: Internal overflow"
+msgstr "خطأ: تجاوز داخلي"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+#, fuzzy
+msgid  "Error: Circular reference"
+msgstr "خطأ: مرجع حلقي"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+#, fuzzy
+msgid  "Error: Calculation does not converge"
+msgstr "خطأ: الحساب لا يمكن أن ينتهي"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+#, fuzzy
+msgid  "Grid color"
+msgstr "لون الشبكة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+#, fuzzy
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "هل تريد نقل محتويات الخلايا المخفية إلى الخلية الأولى؟"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "تصفية"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+#, fuzzy
+msgid  "The target database range does not exist."
+msgstr "نطاق قاعدة البيانات الهدف غير موجود."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+#, fuzzy
+msgid  "Invalid increment"
+msgstr "زيادة غير صالحة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+#, fuzzy
+msgid  "MULTIPLE.OPERATIONS"
+msgstr "MULTIPLE.OPERATIONS"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+#, fuzzy
+msgid  "Multiple operations"
+msgstr "عمليات متعددة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+#, fuzzy
+msgid  "Range"
+msgstr "النطاق"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "نعم"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "لا"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+#, fuzzy
+msgid  "Protection"
+msgstr "الحماية"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "الصيغ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "إخفاء"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+#, fuzzy
+msgid  "Print"
+msgstr "طباعة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+#, fuzzy
+msgid  "(nested)"
+msgstr "(تداخل)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+#, fuzzy
+msgid  "(optional)"
+msgstr "(اختياري)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+#, fuzzy
+msgid  "(required)"
+msgstr "(ضروري)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+#, fuzzy
+msgid  "invalid"
+msgstr "غير صالح"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+#, fuzzy
+msgid  "Edit Function"
+msgstr "تحرير الدالة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "التعليقات"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "هل تريد بالتأكيد حذف الورقة (الأوراق) المحددة؟"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "هل تريد حذف السيناريو المحدد؟"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+#, fuzzy
+msgid  "Thesaurus is not available"
+msgstr "المرادفات غير متوفرة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+#, fuzzy
+msgid  "Spellcheck not available"
+msgstr "التدقيق الإملائي غير متوفر"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+#, fuzzy
+msgid  "Import text files"
+msgstr "استيراد ملفات نصية"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+msgid  "Export Text File"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+#, fuzzy
+msgid  "Import Lotus files"
+msgstr "استيراد ملفات Lotus"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+#, fuzzy
+msgid  "Import DBase files"
+msgstr "استيراد ملفات DBase"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+#, fuzzy
+msgid  "DBase export"
+msgstr "تصدير DBase "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Export"
+msgstr "تصدير Dif"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Import"
+msgstr "استيراد Dif"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+#, fuzzy
+msgid  "Default"
+msgstr "افتراضي"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+#, fuzzy
+msgid  "Result"
+msgstr "النتيجة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+#, fuzzy
+msgid  "Result2"
+msgstr "النتيجة2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+#, fuzzy
+msgid  "Heading"
+msgstr "عنوان رئيسي"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+#, fuzzy
+msgid  "Heading1"
+msgstr "رأس1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "التقرير"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+#, fuzzy
+msgid  "Report1"
+msgstr "تقرير1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+#, fuzzy
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "لا يمكن استخدام المرادفات إلا في خلايا نصية!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+#, fuzzy
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "هل تريد متابعة التدقيق الإملائي في بداية الورقة؟"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+#, fuzzy
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "تم الانتهاء من التدقيق الإملائي في هذه الورقة."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+#, fuzzy
+msgid  "No language set"
+msgstr "لم يتم تعيين اللغة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+#, fuzzy
+msgid  "Insert Sheet"
+msgstr "إدراج ورقة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+#, fuzzy
+msgid  "Delete Sheets"
+msgstr "حذف الأوراق"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+#, fuzzy
+msgid  "Rename Sheet"
+msgstr "إعادة تسمية الورقة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+#, fuzzy
+msgid  "Color Tab"
+msgstr "جدولة ملونة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+#, fuzzy
+msgid  "Color Tabs"
+msgstr "علامات جدولة ملونة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+#, fuzzy
+msgid  "Move Sheets"
+msgstr "نقل أوراق"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+#, fuzzy
+msgid  "Copy Sheet"
+msgstr "نسخ الورقة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+#, fuzzy
+msgid  "Append sheet"
+msgstr "إلحاق ورقة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+#, fuzzy
+msgid  "Show Sheet"
+msgstr "إظهار الورقة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+#, fuzzy
+msgid  "Hide sheet"
+msgstr "إخفاء الورقة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+#, fuzzy
+msgid  "Flip sheet"
+msgstr "عكس الورقة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+#, fuzzy
+msgid  "Toggle the use of R1C1 notation"
+msgstr "تبديل استخدام تدوين R1C1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+#, fuzzy
+msgid  "Main Title"
+msgstr "العنوان الرئيسي"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+#, fuzzy
+msgid  "Subtitle"
+msgstr "العنوان الفرعي"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+#, fuzzy
+msgid  "X axis title"
+msgstr "عنوان المحور س"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+#, fuzzy
+msgid  "Y axis title"
+msgstr "عنوان المحور ص"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+#, fuzzy
+msgid  "Z axis title"
+msgstr "عنوان المحور ع"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+#, fuzzy
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "يحتوي الجدول الجديد على إشارات مطلقة إلى جداول أخرى قد تكون غير صحيحة!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+#, fuzzy
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr "نظرًا لتشابه الأسماء، تم تغيير اسم نطاق موجود مسبقًا في المستند الهدف!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+#, fuzzy
+msgid  "AutoFilter not possible"
+msgstr "التصفية التلقائية غير ممكنة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr "قام %PRODUCTNAME Calc بالبحث حتى بداية الورقة. هل تريد متابعة البحث عند نهاية الورقة؟"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr "قام %PRODUCTNAME Calc بالبحث حتى نهاية الورقة. هل تريد متابعة البحث عند بداية الورقة؟"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+#, fuzzy
+msgid  "Find & Replace"
+msgstr "بحث واستبدال"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "قام %PRODUCTNAME Calc بالبحث حتى بداية المستند. هل تريد متابعة البحث عند نهاية المستند؟"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr "قام %PRODUCTNAME Calc بالبحث حتى نهاية المستند. هل تريد متابعة البحث عند بداية المستند؟"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+#, fuzzy
+msgid  "Replace existing definition of #?"
+msgstr "هل تريد استبدال تعريف # الموجود؟"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+#, fuzzy
+msgid  "Invalid selection for range names"
+msgstr "تحديد غير صالح لأسماء النطاقات"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+#, fuzzy
+msgid  "References can not be inserted above the source data."
+msgstr "لا يمكن إدراج المراجع فوق بيانات المصدر."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+#, fuzzy
+msgid  "Scenario not found"
+msgstr "لم يتم العثور على السيناريو"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+#, fuzzy
+msgid  "Do you really want to delete the entry #?"
+msgstr "هل تريد بالفعل حذف الإدخال #؟"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+#, fuzzy
+msgid  "Objects/graphics"
+msgstr "كائنات/رسومات"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+#, fuzzy
+msgid  "Charts"
+msgstr "رسوم بيانية"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+#, fuzzy
+msgid  "Drawing Objects"
+msgstr "كائنات رسومية"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+#, fuzzy
+msgid  "Show"
+msgstr "إظهار"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "إخفاء"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+#, fuzzy
+msgid  "Top to bottom"
+msgstr "من أعلى إلى أسفل"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+#, fuzzy
+msgid  "Left-to-right"
+msgstr "من اليسار إلى اليمين"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "التعليقات"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+#, fuzzy
+msgid  "Grid"
+msgstr "الشبكة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+#, fuzzy
+msgid  "Row & Column Headers"
+msgstr "رؤوس الأسطر والأعمدة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "الصيغ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+#, fuzzy
+msgid  "Zero Values"
+msgstr "قيم الصفر"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+#, fuzzy
+msgid  "Print direction"
+msgstr "اتجاه الطباعة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+#, fuzzy
+msgid  "First page number"
+msgstr "أول رقم صفحة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+#, fuzzy
+msgid  "Reduce/enlarge printout"
+msgstr "تقليص/تكبير مخرجات الطباعة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+#, fuzzy
+msgid  "Fit print range(s) on number of pages"
+msgstr "ملاءمة نطاق (نطاقات) الطباعة بعدد الصفحات"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+#, fuzzy
+msgid  "Fit print range(s) to width/height"
+msgstr "ملاءمة نطاق (نطاقات) الطباعة بالعرض/الارتفاع"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+#, fuzzy
+msgid  "Width"
+msgstr "العرض"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height"
+msgstr "الارتفاع"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+#, fuzzy
+msgid  "%1 page(s)"
+msgstr "%1 صفحة (صفحات)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+#, fuzzy
+msgid  "automatic"
+msgstr "تلقائي"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+#, fuzzy
+msgid  "Statistics"
+msgstr "إحصائيات"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+#, fuzzy
+msgid  "The link could not be updated."
+msgstr "تعذر تحديث الارتباط."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+#, fuzzy
+msgid  "File:"
+msgstr "الملف:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+#, fuzzy
+msgid  "Sheet:"
+msgstr "الورقة:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+#, fuzzy
+msgid  "Overview"
+msgstr "التلخيص"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+#, fuzzy
+msgid  "Doc.Information"
+msgstr "معلومات المستند"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+#, fuzzy
+msgid  "Created"
+msgstr "تم الإنشاء"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+#, fuzzy
+msgid  "Modified"
+msgstr "معدل"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+#, fuzzy
+msgid  "Printed"
+msgstr "تمت الطباعة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "الموضوع"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+#, fuzzy
+msgid  "Key words"
+msgstr "كلمات أساسية"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "التعليقات"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+#, fuzzy
+msgid  "by"
+msgstr "حسب"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+#, fuzzy
+msgid  "on"
+msgstr "في"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+#, fuzzy
+msgid  "Too many conditions"
+msgstr "الشروط كثيرة جدًا"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+#, fuzzy
+msgid  "The table could not be inserted."
+msgstr "تعذر إدراج الجدول."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+#, fuzzy
+msgid  "The sheets could not be deleted."
+msgstr "تعذر حذف الجداول."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+#, fuzzy
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "تعذر إدراج محتويات الحافظة."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+#, fuzzy
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "لا توجد مساحة كافية على الورقة للإدراج هنا."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+#, fuzzy
+msgid  "No references found."
+msgstr "لم يتم العثور على أية مراجع."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+#, fuzzy
+msgid  "Source and destination must not overlap."
+msgstr "يجب ألا يتداخل النطاق المصدر والنطاق الهدف."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+#, fuzzy
+msgid  "Graphics"
+msgstr "الرسومات"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+#, fuzzy
+msgid  "Invalid name."
+msgstr "اسم غير صالح."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+#, fuzzy
+msgid  "Selected macro not found."
+msgstr "تعذر العثور على الماكرو المحدد."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+#, fuzzy
+msgid  "Invalid value."
+msgstr "قيمة غير صالحة."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+#, fuzzy
+msgid  "calculating"
+msgstr "حساب"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+#, fuzzy
+msgid  "sorting"
+msgstr "فرز"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+#, fuzzy
+msgid  "Adapt row height"
+msgstr "ملاءمة ارتفاع الصفوف"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+#, fuzzy
+msgid  "Compare #"
+msgstr "مقارنة #"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+#, fuzzy
+msgid  "Delete contents"
+msgstr "حذف المحتويات"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+#, fuzzy
+msgid  "%1 R  x %2 C"
+msgstr "%1 R  x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+#, fuzzy
+msgid  "More..."
+msgstr "المزيد ..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+#, fuzzy
+msgid  "Invalid range"
+msgstr "نطاق غير صالح"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "تصفية"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+#, fuzzy
+msgid  "Sort"
+msgstr "فرز"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+#, fuzzy
+msgid  "Subtotals"
+msgstr "المجاميع الفرعية"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "بلا"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+#, fuzzy
+msgid  "Do you want to replace the contents of #?"
+msgstr "هل تريد استبدال محتويات #؟"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+#, fuzzy
+msgid  "Width:"
+msgstr "العرض:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height:"
+msgstr "الارتفاع:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "إخفاء"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+#, fuzzy
+msgid  "The object could not be inserted."
+msgstr "تعذر إدراج الكائن."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+#, fuzzy
+msgid  "<empty>"
+msgstr "<فارغ>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+#, fuzzy
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "تم تغيير الخلية #1 من '#2' إلى '#3'"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+#, fuzzy
+msgid  "#1 inserted"
+msgstr "تم إدراج #1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+#, fuzzy
+msgid  "#1deleted"
+msgstr "تم حذف #1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+#, fuzzy
+msgid  "Range moved from #1 to #2"
+msgstr "إزاحة النطاق من #1 إلى #2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+#, fuzzy
+msgid  "Exit Recording"
+msgstr "إنهاء التسجيل"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+#, fuzzy
+msgid  "The document can not be closed while a link is being updated."
+msgstr "لا يمكن إغلاق المستند في الوقت الذي يتم فيه تحديث ارتباط."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Adapt array area"
+msgstr "ملاءمة نطاق المصفوفة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Array formula  %1 R x %2 C"
+msgstr "صيغة المصفوفة %1 R x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+#, fuzzy
+msgid  "Hangul/Hanja Conversion"
+msgstr "تحويل هانغول/هانجا"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+#, fuzzy
+msgid  "Select Cell"
+msgstr "تحديد الخلية"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+#, fuzzy
+msgid  "Select Range"
+msgstr "تحديد النطاق"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+#, fuzzy
+msgid  "Select Database Range"
+msgstr "تحديد نطاق قاعدة البيانات"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+#, fuzzy
+msgid  "Go To Row"
+msgstr "انتقال إلى الصف"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+#, fuzzy
+msgid  "Go To Sheet"
+msgstr "انتقال إلى الورقة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+#, fuzzy
+msgid  "Define Name for Range"
+msgstr "تعريف اسم النطاق"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+#, fuzzy
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "يجب أن يكون التحديد على شكل مستطيل حتى تتمكن من تسميته."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+#, fuzzy
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "يجب إدخال مرجع صحيح أو كتابة اسم صحيح للنطاق المحدد."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "تحذير: هذا الإجراء يمكن أن ينتج تغييرات غير مرغوبة للخلايا المرجعية في المعادلات."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr "تحذير: هذا الإجراء يمكن أن ينتج حذفًا في مناطق لا يمكن استرجاعها من المراجع."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+#, fuzzy
+msgid  "(none)"
+msgstr "(بلا)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+#, fuzzy
+msgid  "of"
+msgstr "من"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+#, fuzzy
+msgid  "of ?"
+msgstr "من؟"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+#, fuzzy
+msgid  "Created by"
+msgstr "تم الإنشاء بواسطة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+#, fuzzy
+msgid  "Confidential"
+msgstr "سري"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+#, fuzzy
+msgid  "Customized"
+msgstr "مخصص"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+#, fuzzy
+msgid  "Custom footer"
+msgstr "تذييل مخصص"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+#, fuzzy
+msgid  "Chinese conversion"
+msgstr "تحويل اللغة الصينية"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+msgid  "You cannot change this part of the pivot table."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+#, fuzzy
+msgid  "Manual"
+msgstr "يدوي"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "تلقائي"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+#, fuzzy
+msgid  "Nested arrays are not supported."
+msgstr "المصفوفات المتداخلة غير مدعومة."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+#, fuzzy
+msgid  "Text to Columns"
+msgstr "نص إلى أعمدة"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+#, fuzzy
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr "تم تحديث جدول البيانات الخاص بك بالتغييرات التي تم حفظها بواسطة مستخدمين آخرين."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+#, fuzzy
+msgid  "Unknown User"
+msgstr "مستخدم غير معروف"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+#, fuzzy
+msgid  "Cell Styles"
+msgstr "أنماط الخلايا"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+#, fuzzy
+msgid  "Page Styles"
+msgstr "أنماط الصفحات"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+#, fuzzy
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr "لا يمكن أن يكون اسم الحقل فارغًا. تحقق من الصف الأول الخاص بمصدر البيانات للتأكد من عدم وجود خلايا فارغة."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+#, fuzzy
+msgid  "Character"
+msgstr "الحرف"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
+msgid  "Font"
+msgstr "الخط"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
+msgid  "Font Effects"
+msgstr "تأثيرات الخطوط"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#, fuzzy
+msgid  "Font Position"
+msgstr "موضع الخط"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "السابق"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+#, fuzzy
+msgid  "Paragraph"
+msgstr "فقرة"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Indents & Spacing"
+msgstr "الإزاحة والتباعد"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "محاذاة"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+#, fuzzy
+msgid  "Asian Typography"
+msgstr "أسلوب الطباعة الآسيوية"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+#, fuzzy
+msgid  "Tab"
+msgstr "علامة جدولة"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "السابق"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+#, fuzzy
+msgid  "AutoFormat"
+msgstr "تنسيق تلقائي"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "F~ormat"
+msgstr "تنس~يق"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+#, fuzzy
+msgid  "A~utoFit width and height"
+msgstr "~ملاءمة العرض والارتفاع"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+#, fuzzy
+msgid  "~Borders"
+msgstr "ال~حدود"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+#, fuzzy
+msgid  "F~ont"
+msgstr "ال~خط"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+#, fuzzy
+msgid  "~Pattern"
+msgstr "النم~ط"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+#, fuzzy
+msgid  "Alignmen~t"
+msgstr "~محاذاة"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+#, fuzzy
+msgid  "~Number format"
+msgstr "تن~سيق الأرقام"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+#, fuzzy
+msgid  "Formatting"
+msgstr "التنسيق"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add..."
+msgstr "إ~ضافة..."
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "ح~ذف"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+#, fuzzy
+msgid  "~Rename"
+msgstr "إ~عادة تسمية"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+#, fuzzy
+msgid  "Add AutoFormat"
+msgstr "إضافة تنسيق تلقائي"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+#, fuzzy
+msgid  "Rename AutoFormat"
+msgstr "إعادة تسمية التنسيق التلقائي"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "الاسم"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+#, fuzzy
+msgid  "Delete AutoFormat"
+msgstr "حذف التنسيق التلقائي"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "إ~غلاق"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_JAN.String.Text
+#, fuzzy
 msgid  "Jan"
 msgstr "ين"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_FEB.String.Text
+#, fuzzy
 msgid  "Feb"
 msgstr "فب"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MAR.String.Text
+#, fuzzy
 msgid  "Mar"
 msgstr "مار"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_NORTH.String.Text
+#, fuzzy
 msgid  "North"
 msgstr "شمال"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MID.String.Text
+#, fuzzy
 msgid  "Mid"
 msgstr "وسط"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SOUTH.String.Text
+#, fuzzy
 msgid  "South"
 msgstr "جنوب"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SUM.String.Text
+#, fuzzy
 msgid  "Total"
 msgstr "المجموع"
 
@@ -9192,7 +10919,7 @@ msgstr "تراكمي"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "تقوم القيمة 0 أو FALSE بحساب دالة الكثافة الاحتمالية. بينما تقوم أية قيمة أخرى أو TRUE أو تم حذفها بحساب دالة التوزيع التراكمي."
+msgstr "تقوم القيمة 0 أو FALSE بحساب دالة الكثافة الاحتمالية. تقوم أي قيمة أخرى أو TRUE أو محذوف بحساب دالة التوزيع التراكمي."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 #, fuzzy
@@ -9237,7 +10964,7 @@ msgstr "C"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "تقوم القيمة 0 أو FALSE بحساب دالة الكثافة الاحتمالية. تقوم أي قيمة أخرى أو TRUE أو محذوف بحساب دالة التوزيع التراكمي."
+msgstr "تقوم القيمة 0 أو FALSE بحساب دالة الكثافة الاحتمالية. بينما تقوم أية قيمة أخرى أو TRUE أو تم حذفها بحساب دالة التوزيع التراكمي."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 #, fuzzy
@@ -9347,7 +11074,7 @@ msgstr "تراكمي"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "تقوم القيمة 0 أو FALSE بحساب دالة الكثافة الاحتمالية. تقوم أي قيمة أخرى أو TRUE أو محذوف بحساب دالة التوزيع التراكمي."
+msgstr "تقوم القيمة 0 أو FALSE بحساب دالة الكثافة الاحتمالية. بينما تقوم أية قيمة أخرى أو TRUE أو تم حذفها بحساب دالة التوزيع التراكمي."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV.1.String.Text
 #, fuzzy
@@ -12429,9 +14156,8 @@ msgid  "Font Attributes"
 msgstr "سمات الخط"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-#, fuzzy
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "توجد كمية كبيرة من البيانات المحفوظة في الحافظة. \nهل ترغب في توفير محتويات الحافظة للتطبيقات الأخرى؟"
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -12512,9 +14238,8 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-#, fuzzy
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
-msgstr "عثر %PRODUCTNAME Calc على خطأ في الصيغة المدخلة. \nهل ترغب في قبول التصحيح المقترح أدناه؟\n\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -12567,9 +14292,8 @@ msgid  "~Selected sheets"
 msgstr "أوراق محد~دة"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-#, fuzzy
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "لقد قمت بلصق بيانات في خلايا تحتوي على بيانات بالفعل.\nهل تريد بالتأكيد استبدال البيانات الموجودة؟"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 #, fuzzy
@@ -13368,7 +15092,7 @@ msgstr "~حذف تعليق"
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_NOTE_VISIBLE.MenuItem.Text
 #, fuzzy
 msgid  "Sho~w Comment"
-msgstr "إ~ظهار تعليق"
+msgstr "~إظهار تعليق"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.SID_CUT.MenuItem.Text
 #, fuzzy
@@ -14244,198 +15968,247 @@ msgid  "Shrink"
 msgstr "تقلصر"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND1.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~1"
 msgstr "الشرط ~1"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "قيمة الخلية هي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "الصيغة هي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "يساوي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "أصغر من"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "أكبر من"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "أصغر من أو يساوي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "أكبر من أو يساوي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "لا يساوي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "بين"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "ليس بين"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "تقلصر"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr "و"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "تقلصر"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "~Cell Style"
 msgstr "~نمط خلية"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND1_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New Style..."
 msgstr "~نمط جديد..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND2.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~2"
 msgstr "الشرط ~2"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "قيمة الخلية هي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "الصيغة هي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "يساوي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "أصغر من"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "أكبر من"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "أصغر من أو يساوي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "أكبر من أو يساوي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "لا يساوي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "بين"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "ليس بين"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "تقلصر"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr "و"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "تقلصر"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "C~ell Style"
 msgstr "نمط ~خلية"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND2_NEW.PushButton.Text
+#, fuzzy
 msgid  "Ne~w Style..."
 msgstr "نم~ط جديد..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND3.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~3"
 msgstr "الشرط ~3"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
+#, fuzzy
 msgid  "Cell value is"
 msgstr "قيمة الخلية هي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_1.Default.StringList.item
+#, fuzzy
 msgid  "Formula is"
 msgstr "الصيغة هي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "يساوي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "less than"
 msgstr "أصغر من"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "أكبر من"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "less than or equal to"
 msgstr "أصغر من أو يساوي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than or equal to"
 msgstr "أكبر من أو يساوي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "لا يساوي"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "between"
 msgstr "بين"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND3_2.Default.StringList.item
+#, fuzzy
 msgid  "not between"
 msgstr "ليس بين"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_1.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "تقلصر"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_AND.FixedText.Text
+#, fuzzy
 msgid  "and"
 msgstr "و"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND3_2.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "تقلصر"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND3_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "Ce~ll Style"
 msgstr "نمط خ~لية"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.BTN_COND3_NEW.PushButton.Text
+#, fuzzy
 msgid  "New ~Style..."
 msgstr "ن~مط جديد..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.HelpButton.Text
+#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "تنسيق شرطي"
 
@@ -14643,14 +16416,12 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "المستند معقد جدًا بحيث لا يمكن إجراء الحساب التلقائي. اضغط على F9 لإعادة الحساب."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "يحتوي المستند على صفوف أكثر مما هو مدعوم في التنسيق المحدد.\nلن يتم حفظ الصفوف الزائدة."
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "يحتوي المستند على معلومات لا يمكن التعرف عليها في هذا الإصدار من البرنامج.\nستؤدي إعادة حفظ المستند إلى حذف هذه المعلومات!"
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 #, fuzzy
@@ -14658,9 +16429,8 @@ msgid  "Not all cell contents could be saved in the specified format."
 msgstr "تعذر حفظ كل محتويات الخلايا بالتنسيق المحدد."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
-msgstr "لا يمكن تحويل الحروف التالية إلى مجموعة الحروف المحددة\nو هي مكتوبة بدلاً من ذلك على شكل &#1234; البدائل:\n\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 #, fuzzy

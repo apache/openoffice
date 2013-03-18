@@ -37,11 +37,11 @@ msgstr "Боломжгүй"
 
 #: source/core/undo/undo.src#STR_DELETE_UNDO.String.Text
 msgid  "Delete $1"
-msgstr "$1-г устгах"
+msgstr "$1-г устга"
 
 #: source/core/undo/undo.src#STR_INSERT_UNDO.String.Text
 msgid  "Insert $1"
-msgstr "$1-г оруулах"
+msgstr "$1-г оруул"
 
 #: source/core/undo/undo.src#STR_OVR_UNDO.String.Text
 msgid  "Overwrite: $1"
@@ -725,7 +725,7 @@ msgstr "Энэ WinWord6 файл биш байна."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr "Энэ файл WinWord-н 'Fast Save' горимд хадгалагдсан байна. Та WinWord тохиргооныхоо 'Allow Fast Saves' -г аваад файлыг дахин хадгална уу."
+msgstr "Энэ файл WinWord програмаар 'Fast Save' горимд хадгалагдсан байна. WinWord-н тохиргооноос 'Allow Fast Saves'-г аваад файлыг дахин хадгалана уу."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -741,7 +741,7 @@ msgstr "Энэ WinWord97 файл биш."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "Файлын $(ARG1) дэд баримт доторх $(ARG2)(мөр,багана) байрлалд форматын алдаа илэрлээ."
+msgstr "Файлын $(ARG1) дэд баримт доторх $(ARG2)(мөр, багана) байрлалд хэлбэржүүлэлтийн алдаа илэрлээ."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -753,7 +753,7 @@ msgstr "Буруу автомат бичвэр баримтын хувилбар
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
-msgstr "$(ARG1) дэд баримтыг бичиж байхад алдаа гарлаа."
+msgstr "$(ARG1) дэд баримтыг бичих үед алдаа гарлаа."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "Баримт бүрэн хадгалагдаж чадахгүй."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "Энэ HTML баримт %PRODUCTNAME Basic макро агуулж байна.\nЭнэ экспорт тохиргоогоор тэд хадгалагдсангүй."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "хоосон хуудас"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "Та их хэмжээний өгөгдөл завсрын хадгалагчид (клипборд) хадгаллаа. \nЗавсрын хадгалагчийн агуулгыг бусад програмд хэрэглэгдэхээр үлдээх үү? "
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "HTML формат руу хөрвүүлэхэд \nмэдээллийн алдагдал гарч болно. \nТа баримтыг хадгалахыг хүсэж байна уу?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "Баримт зөвхөн HTML форматаар хадгалагдсан үед л эх кодыг харуулах боломжтой.\nТа баримтыг HTML -аар хадгалахыг хүсэж байна уу?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "Таны баримт Хаягийн өгөгдлийн сангийн талбар агуулж байна. Та цуврал захиаг хэвлэхийг хүсэж байна уу?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -1481,11 +1481,11 @@ msgstr "~Хаялбар засах..."
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.MenuItem.Text
 msgid  "~Wrap"
-msgstr "~Нугалах"
+msgstr "~Нугалалт"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_NOWRAP.MenuItem.Text
 msgid  "~No Wrap"
-msgstr "~Нугалахгүй"
+msgstr "Бүү ~нугал"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP.MenuItem.Text
 msgid  "~Page Wrap"
@@ -1505,11 +1505,11 @@ msgstr "~Дэвсгэрт"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 msgid  "~First Paragraph"
-msgstr "Эхний ~параграф"
+msgstr "~Эхний параграф"
 
 #: source/ui/app/mn.src#MN_DRAW_POPUPMENU.String.Text
 msgid  "Graphic"
-msgstr "График'"
+msgstr "График"
 
 #: source/ui/app/mn.src#MN_WRAP_DRAW.MN_WRAP.FN_FRAME_NOWRAP.MenuItem.Text
 msgid  "~No Wrap"
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<Хэрэглэгчийн тохиргоо>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "Та өгөгдмөл хэвийн таарамжийн тохиргоог өөрчлөхийг хүсэж байна уу?\nЭнэ өөрчлөлт өгөгдмөл хэв бүхий бүх шинэ баримтуудад нөлөөлнө."
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2893,11 +2893,11 @@ msgstr "Бичвэрийн торонд квадрат хуудасны гори
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TabPage.Text
 msgid  "Caption"
-msgstr "Бичээс"
+msgstr "Тэмдэглээс"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "Дараахыг оруулж байхад\nавтоматаар бичээс оруул:"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "Та хавсралтаны шинэ нэрийг тодорхойлоогүй байна. Хэрвээ та нэгийг бэлдэж өгөхийг хүсвэл одоо бичнэ үү."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "Цуврал захиаг Имэйлээр илгээхийн тулд %PRODUCTNAME-д таны Имэйл илгээхийг хүссэн имэйл дансны мэдээлэл шаардлагатай.\n\nТа одоо дансны мэдээлэл оруулахыг хүсэж байна уу?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "~Далд хуулбар"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "Санамж:\nИмэйл хаягуудаа цэг таслалаар (;) тусгаарлана уу."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "Илгээлт бүтсэнгүй (хүчингүй хаяг)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "Таны %PRODUCTNAME шуудангийн илгээлтэнд имэйл зурвас байна.\nТа тэгсэн ч програмыг дуусгахыг хүсэж байна уу?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "Баримтыг засварлах"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "Та одоо баримт үүсгэх эсвэл засварлах боломжтой. Өөрчлөлтүүд бүх цуврал захианы баримтуудад үйлчилнэ.\n\n'Баримтыг засварлах' дээр товшсоноор залуурчаас түр зуур гарна. Засварлалт дууссаны дараа жижиг цонхонд харагдах 'Цуврал захианы залуурч руу буцах' дээр товшин залуурч руу буцна."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4649,7 +4649,7 @@ msgstr "Багана"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_INDENTS.PageItem.Text
 msgid  "Indents"
-msgstr "Догол мөр"
+msgstr "Догол мөрүүд"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_BACKGROUND.PageItem.Text
 msgid  "Background"
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "Хүссэн клипборд хэлбэржүүлэлт байхгүй байна."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "Хэсгийн хэлбэржүүлэлт хуучирчээ.\nӨөрчлөлтүүдийг хадгалахын тулд\nҮүнийг хувиргах хэрэгтэй.\nОдоо хувиргах уу?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "Зүүлт: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "Зөвхөн уншигдах талбар өөрчлөгдөх боломжгүй.\nЯмар өөрчлөлт зөвшөөрөгдөхгүй"
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5417,7 +5417,7 @@ msgstr "дээрээс"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_FORMAT.FixedText.Text
 msgid  "Format"
-msgstr "формат"
+msgstr "Формат"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.BTN_ADDR_EDIT.MenuButton.Text
 msgid  "Edit"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "Тохиргоо"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "\"%1 / %2\" тэмдэглээс хэдийнэ байна.\nТа дарж бичихийг хүсэж байна уу?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "Гүйлгэн үзэх..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "Энэ диалогт та баримт дотроос өгөгдлийн сангийн талбараар хандаж буй өгөгдлийн сангуудын өөр өгөгдлийн сангаар орлуулж чадна. Та ажилбар тус бүрээр нэг л өөрчлөлтийг хийх боломжтой. Зүүн жагсааланд олон зэрэг сонголт боломжтой.\nТа өгөгдлийн сан сонгохдоо гүйлгэн үзэх товчийг ашиглаж болно."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -6801,7 +6801,7 @@ msgstr "Дэвсгэр"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_BORDER.PageItem.Text
 msgid  "Borders"
-msgstr "Хүрээ"
+msgstr "Хүрээнүүд"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CONDCOLL.PageItem.Text
 msgid  "Condition"
@@ -6821,7 +6821,7 @@ msgstr "Хуудас"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_BORDER.String.Text
 msgid  "Borders"
-msgstr "Хүрээнүүд"
+msgstr "Хүрээ"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_HEADER.String.Text
 msgid  "Header"
@@ -7337,7 +7337,7 @@ msgstr "Алслалт"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.TabPage.Text
 msgid  "Columns"
-msgstr "Багана"
+msgstr "Баганууд"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.FT_NUMBER.FixedText.Text
 msgid  "Columns"
@@ -7833,7 +7833,7 @@ msgstr "Индекс/Хүснэгт"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_ENTRY.PageItem.Text
 msgid  "Entries"
-msgstr "Бичлэг"
+msgstr "Бичлэгүүд"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_STYLES.PageItem.Text
 msgid  "Styles"
@@ -9181,7 +9181,7 @@ msgstr "Гарчиггүй 1"
 
 #: source/ui/misc/outline.src#DLG_NUM_NAMES.LB_FORM.item2.StringList.item
 msgid  "Untitled 2"
-msgstr "Гарчиггүй 2"
+msgstr "Гарчиггүй 1"
 
 #: source/ui/misc/outline.src#DLG_NUM_NAMES.LB_FORM.item3.StringList.item
 msgid  "Untitled 3"
@@ -9477,7 +9477,7 @@ msgstr "~Баримтын төгсгөл"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_TEMPL.FixedLine.Text
 msgid  "Styles"
-msgstr "Загвар"
+msgstr "Загварууд"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PARA_TEMPL.FixedText.Text
 msgid  "Pa~ragraph"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "АвтоматХэлбэржүүлэлт"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "Автомат хэлбэржүүлэлт бүрэн дууслаа. \nТа бүх өөрчлөлтүүдийг зөвшөөрөх эсвэл татгалзаж болно.\nэсвэл тусгай өөрчлөлтүүдийг зөвшөөрөх эсвэл татгалзаж болно."
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "Нийлбэр"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "Та хүчингүй нэр оруулжээ.\nХүссэн АвтоФорматыг үүсгэх боломжгүй. \nӨөр нэг хэрэглээд дахин оролдоно уу."
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "~Эхний баганыг гарчигаар авах"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "Хэрэв сонгосон нүднүүд хүссэн өгөгдлүүдийг тань агуулаагүй бол, одоо мужийг сонгоно уу.\n\nТа графикаар дүрслэхийг хүссэн нүднүүд бүхий багана эсвэл мөрийн тэмдэглээсээ сонгоно уу."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "Та үндсэн бичвэрийг шалгахыг хүсэж байна уу?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "Талбарын тушаал харуулах сонголт идэвхжсэн.\nТа баримтыг талбарын нэрсийн хамт хэвлэхийг хүсэж байна уу?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Бүх өгүүлбэрийн эхний үсгийг том болгох"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "\"standard\" ишлэлүүдийг %1custom%2 ишлэлүүдээр солих"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[Систем]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "Интерактив зөв бичгийн дүрэм шалгагч өөр\nбаримтанд идэвхжсэн байна"
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "Интерактив үг таслагч өөр баримтанд\nидэвхжсэн байна"
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -11569,7 +11569,7 @@ msgstr "Жолооч"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_GLOBAL_SWITCH.ToolBoxItem.Text
 msgid  "Toggle"
-msgstr "Сэлгээ"
+msgstr "Сэлгүүр"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_CREATE_NAVIGATION.ToolBoxItem.Text
 msgid  "Navigation"

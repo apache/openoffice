@@ -97,34 +97,42 @@ msgid  "Cancel all changes?"
 msgstr ""
 
 #: source/appl/app.src#RID_DOCALREADYLOADED_DLG.InfoBox.Message
+#, fuzzy
 msgid  "Document already open."
 msgstr "Dokumentet er alt ope."
 
 #: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME fann ingen nettlesar på systemet. Du bør undersøkja skrivebordsinnstillingane eller installera ein nettlesar (til dømes Mozilla) og velja standardmappa under installasjonen."
 
 #: source/appl/app.src#GID_INTERN.String.Text
+#, fuzzy
 msgid  "Internal"
 msgstr "Intern"
 
 #: source/appl/app.src#GID_APPLICATION.String.Text
+#, fuzzy
 msgid  "Application"
 msgstr "Program"
 
 #: source/appl/app.src#GID_VIEW.String.Text
+#, fuzzy
 msgid  "View"
 msgstr "Vis"
 
 #: source/appl/app.src#GID_DOCUMENT.String.Text
+#, fuzzy
 msgid  "Documents"
 msgstr "Dokument"
 
 #: source/appl/app.src#GID_EDIT.String.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Rediger"
 
 #: source/appl/app.src#GID_MACRO.String.Text
+#, fuzzy
 msgid  "BASIC"
 msgstr "BASIC"
 
@@ -229,9 +237,8 @@ msgid  "Controls"
 msgstr "Kontrollar"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
-#, fuzzy
-msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr "Kan ikkje avslutta programmet nett no.\nVent til alle skrivarjobbar og/eller \nOLE-handlingar er avslutta og lukk alle dialogvindauge."
+msgid  "The application cannot be terminated at the moment.\\nPlease wait until all print jobs and/or\\nOLE actions have finished and close all dialogs."
+msgstr ""
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 #, fuzzy
@@ -269,9 +276,8 @@ msgid  "Function Bar"
 msgstr "Funksjonslinje"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
-#, fuzzy
-msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr "Det oppstod ein feil i spesialoppsettet.\nTa kontakt med administratoren."
+msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
+msgstr ""
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 #, fuzzy
@@ -338,9 +344,8 @@ msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "Denne hyperlenkja er i ferd med å opna «%s». Vil du halda fram?"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
-#, fuzzy
-msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr "Av tryggleiksgrunnar kan ikkje hyperlenkja følgjast.\nAdressa vert ikkje opna."
+msgid  "For security reasons, the hyperlink cannot be executed.\\nThe stated address will not be opened."
+msgstr ""
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
 #, fuzzy
@@ -348,14 +353,12 @@ msgid  "Security Warning"
 msgstr "Tryggleiksåtvaring"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
-#, fuzzy
-msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr "Dersom du lagrar, vert alle signaturane fjerna.\nVil du lagra dokumentet likevel?"
+msgid  "Saving will remove all existing signatures.\\nDo you want to continue saving the document?"
+msgstr ""
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
-#, fuzzy
-msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr "Dette dokumentet må lagrast før det kan signerast.\nVil du lagra dokumentet?"
+msgid  "The document has to be saved before it can be signed.\\nDo you want to save the document?"
+msgstr ""
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
 #, fuzzy
@@ -394,7 +397,7 @@ msgid  "Link graphics"
 msgstr ""
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
-msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
+msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
 msgstr ""
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
@@ -597,12 +600,12 @@ msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
 msgstr "~Vis hjelp om %PRODUCTNAME %MODULENAME ved start"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "Det valde filteret $(FILTER) er ikkje installert.\nVil du installera det no?"
+msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
+msgstr ""
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "Det valde filteret er ikkje med i den utgåva du brukar.\nDu finn informasjon om bestilling på heimesida vår."
+msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
+msgstr ""
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 #, fuzzy
@@ -740,9 +743,8 @@ msgid  "Warning"
 msgstr "Åtvaring"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
-#, fuzzy
-msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr "Dette dokumentet inneheld gjennomsiktige objekt.\nDette kan føra til treigare utskrift på enkelte skrivarar.\nVil du redusera graden av gjennomsikt?"
+msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
+msgstr ""
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 #, fuzzy
@@ -861,7 +863,7 @@ msgid  "~Unprotect..."
 msgstr ""
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
-msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
 msgstr ""
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
@@ -1177,86 +1179,107 @@ msgid  "Password"
 msgstr "Passord"
 
 #: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME-dokument"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "~Tittel"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
+#, fuzzy
 msgid  "~Subject"
 msgstr "~Emne"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
+#, fuzzy
 msgid  "~Keywords"
 msgstr "~Nøkkelord"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
+#, fuzzy
 msgid  "~Comments"
 msgstr "~Kommentar"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
+#, fuzzy
 msgid  "Type:"
 msgstr "Type:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
+#, fuzzy
 msgid  "~Read-only"
 msgstr "S~kriveverna"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
+#, fuzzy
 msgid  "Location:"
 msgstr "Plassering:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
+#, fuzzy
 msgid  "Size:"
 msgstr "Storleik:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
+#, fuzzy
 msgid  "Created:"
 msgstr "Laga:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
+#, fuzzy
 msgid  "Modified:"
 msgstr "Endra:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
+#, fuzzy
 msgid  "Digitally signed:"
 msgstr "Digitalt signert:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
+#, fuzzy
 msgid  "Digital Signature..."
 msgstr "Digital signatur …"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
+#, fuzzy
 msgid  "Multiply signed document"
 msgstr "Dokument med fleire signaturar"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
+#, fuzzy
 msgid  "Last printed:"
 msgstr "Skrive ut:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
+#, fuzzy
 msgid  "Total editing time:"
 msgstr "Total redigeringstid:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
+#, fuzzy
 msgid  "Revision number:"
 msgstr "Revisjonsnummer:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "Reset"
 msgstr "Nullstill"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
+#, fuzzy
 msgid  "~Apply user data"
 msgstr "~Bruk brukardata"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
+#, fuzzy
 msgid  "Template:"
 msgstr "Mal:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
+#, fuzzy
 msgid  "unknown"
 msgstr "ukjend"
 
@@ -1265,206 +1288,257 @@ msgid  "File Name"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
+#, fuzzy
 msgid  "~Info fields..."
 msgstr "~Informasjonsfelt …"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
+#, fuzzy
 msgid  "Do not refresh automatically"
 msgstr "Frisk ikkje opp automatisk"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
+#, fuzzy
 msgid  "Refresh this document"
 msgstr "Frisk opp dette dokumentet"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
+#, fuzzy
 msgid  "every"
 msgstr "kvart"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "sekund"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
+#, fuzzy
 msgid  "Redirect from this document"
 msgstr "Omdiriger frå dette dokumentet"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
+#, fuzzy
 msgid  "after"
 msgstr "etter"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "sekund"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "to URL"
 msgstr "~URL"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
+#, fuzzy
 msgid  "to frame"
 msgstr "til ramme"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
+#, fuzzy
 msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
 msgstr "Dersom du vel «%PLACEHOLDER%», må du skriva inn ein URL."
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
+#, fuzzy
 msgid  "~Properties"
 msgstr "~Eigenskapar"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Namn"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Type"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "Verdi"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "~Legg til"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
+#, fuzzy
 msgid  "Property Name"
 msgstr "Namn på eigenskap"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
+#, fuzzy
 msgid  "Checked by"
 msgstr "Kontrollert av"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
+#, fuzzy
 msgid  "Client"
 msgstr "Klient"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
+#, fuzzy
 msgid  "Date completed"
 msgstr "Dato ferdig"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
+#, fuzzy
 msgid  "Department"
 msgstr "Avdeling"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
+#, fuzzy
 msgid  "Destinations"
 msgstr "Mål"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
+#, fuzzy
 msgid  "Disposition"
 msgstr "Disposisjon"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
+#, fuzzy
 msgid  "Division"
 msgstr "Underavdeling"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
+#, fuzzy
 msgid  "Document number"
 msgstr "Dokumentnummer"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
+#, fuzzy
 msgid  "Editor"
 msgstr "Redaktør"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
+#, fuzzy
 msgid  "E-Mail"
 msgstr "E-post"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
+#, fuzzy
 msgid  "Forward to"
 msgstr "Send vidare til"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
+#, fuzzy
 msgid  "Group"
 msgstr "Gruppe"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
+#, fuzzy
 msgid  "Info"
 msgstr "Informasjon"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
+#, fuzzy
 msgid  "Language"
 msgstr "Språk"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
+#, fuzzy
 msgid  "Mailstop"
 msgstr "Postrutestopp"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
+#, fuzzy
 msgid  "Matter"
 msgstr "Sak"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
+#, fuzzy
 msgid  "Office"
 msgstr "Kontor"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
+#, fuzzy
 msgid  "Owner"
 msgstr "Eigar"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
+#, fuzzy
 msgid  "Project"
 msgstr "Prosjekt"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
+#, fuzzy
 msgid  "Publisher"
 msgstr "Utgjevar"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
+#, fuzzy
 msgid  "Purpose"
 msgstr "Formål"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
+#, fuzzy
 msgid  "Received from"
 msgstr "Sendt av"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item23.StringList.item
+#, fuzzy
 msgid  "Recorded by"
 msgstr "Registrert av"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item24.StringList.item
+#, fuzzy
 msgid  "Recorded date"
 msgstr "Registrert dato"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
+#, fuzzy
 msgid  "Reference"
 msgstr "Referanse"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
+#, fuzzy
 msgid  "Source"
 msgstr "Kjelde"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
+#, fuzzy
 msgid  "Status"
 msgstr "Status"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
+#, fuzzy
 msgid  "Telephone number"
 msgstr "Telefonnummer"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item29.StringList.item
+#, fuzzy
 msgid  "Typist"
 msgstr "Reinskrive av"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
+#, fuzzy
 msgid  "Text"
 msgstr "Tekst"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.StringList.item
+#, fuzzy
 msgid  "DateTime"
 msgstr "Dato"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
+#, fuzzy
 msgid  "Date"
 msgstr "Nummer"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.StringList.item
+#, fuzzy
 msgid  "Duration"
 msgstr "Ja eller nei?"
 
@@ -1481,38 +1555,46 @@ msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "Ja"
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
+#, fuzzy
 msgid  "No"
 msgstr "Nei"
 
 #: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Remove Property"
 msgstr "Fjern eigenskap"
 
 #: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
-msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
-msgstr "Verdien som blei vald stemmer ikkje med den oppgjevne typen.\nVerdien blir lagra som tekst."
+msgid  "The value entered does not match the specified type.\\nThe value will be stored as text."
+msgstr ""
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
+#, fuzzy
 msgid  "Properties of "
 msgstr "Eigenskapar for "
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
+#, fuzzy
 msgid  "General"
 msgstr "Generelt"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
+#, fuzzy
 msgid  "Description"
 msgstr "Skildring"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
+#, fuzzy
 msgid  "Custom Properties"
 msgstr "Tilpassa eigenskapar"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
+#, fuzzy
 msgid  "Internet"
 msgstr "Internett"
 
@@ -1608,54 +1690,64 @@ msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please s
 msgstr "%PRODUCTNAME finn ikkje noko e-postoppsett som fungerer. Du kan i staden lagra dette dokumentet lokalt og ta det med som vedlegg i e-postprogrammet ditt."
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
+#, fuzzy
 msgid  "~Reset"
 msgstr "Nu~llstill"
 
 #: source/dialog/dialog.src#STR_APPLY.String.Text
+#, fuzzy
 msgid  "Apply"
 msgstr "Bruk"
 
 #: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
+#, fuzzy
 msgid  "Organizer"
 msgstr "Handsamar"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
+#, fuzzy
 msgid  "This name is already in use."
 msgstr "Dette namnet er alt i bruk."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
+#, fuzzy
 msgid  "This Style does not exist."
 msgstr "Denne stilen finst ikkje."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
-msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr "Malen kan ikkje brukast som grunnmal,\nfordi han då vil byggja på seg sjølv."
+msgid  "This Style cannot be used as a base Style,\\nbecause it would result in a recursive reference."
+msgstr ""
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
-msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr "Namnet er alt i bruk på ein standardstil.\nVel eit anna namn."
+msgid  "Name already exists as a default Style.\\nPlease choose another name."
+msgstr ""
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
+#, fuzzy
 msgid  "Do you really want to delete Style $1?"
 msgstr "Er du sikker på at du vil sletta stilen $1?"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
-msgid  "You are deleting an applied Style!\n"
-msgstr "Du er i ferd med å sletta ein stil som er i bruk.\n"
+msgid  "You are deleting an applied Style!\\n"
+msgstr ""
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
+#, fuzzy
 msgid  "New..."
 msgstr "Ny …"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Modify..."
 msgstr "Rediger …"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "Delete..."
 msgstr "Slett …"
 
 #: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
+#, fuzzy
 msgid  "Navigator"
 msgstr "Dokumentstruktur"
 
@@ -1664,10 +1756,12 @@ msgid  "Task Pane"
 msgstr ""
 
 #: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
+#, fuzzy
 msgid  "Faulty password confirmation"
 msgstr "Feil ved passordstadfesting"
 
 #: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
+#, fuzzy
 msgid  "Send"
 msgstr "Send"
 
@@ -1688,22 +1782,26 @@ msgid  "Tasks"
 msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
-msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr "Dette dokumentet kan innehalda formatering eller innhald som ikkje kan lagrast i filformatet %FORMATNAME. Vil du lagra dokumentet i dette formatet likevel?\n\nBruk det nyaste ODF-filformatet og sjå til at all formatering og alt innhald blir lagra rett."
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
+#, fuzzy
 msgid  "~Keep Current Format"
 msgstr "~Bruk gjeldande format"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
+#, fuzzy
 msgid  "~Save in ODF Format"
 msgstr "~Lagra i ODF-format"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
+#, fuzzy
 msgid  "~More Information..."
 msgstr "~Meir informasjon …"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
+#, fuzzy
 msgid  "~Ask when not saving in ODF format"
 msgstr "~Spør når det ikkje vert lagra i ODF-format"
 
@@ -1763,10 +1861,12 @@ msgid  "The templates are being initialized for first-time usage."
 msgstr "Desse malane blir klargjorde for første gongs bruk."
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "Malar"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
+#, fuzzy
 msgid  "New template"
 msgstr "Ny mal"
 
@@ -1776,406 +1876,496 @@ msgid  "Templates"
 msgstr "Malar"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
+#, fuzzy
 msgid  "~Categories"
 msgstr "~Kategoriar"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
+#, fuzzy
 msgid  "~Templates"
 msgstr "~Malar"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~Rediger"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
+#, fuzzy
 msgid  "~Organizer..."
 msgstr "Han~dtering …"
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
-msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr "Lagring i eksterne format kan føra til\ntap av informasjon. Vil du likevel lukka dokumentet?"
+msgid  "Saving in external formats may have caused\\n information loss. Do you still want to close?"
+msgstr ""
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
-msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr "Dette namnet er brukt frå før.\nVil du skriva over dokumentmalen?"
+msgid  "Name already in use.\\nDo you want to overwrite document template?"
+msgstr ""
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the region \"$1\"?"
 msgstr "Er sikker på at du vil sletta området «$1»?"
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "Er du sikker på at du vil sletta posten «$1»?"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
-msgid  "The category is not empty.\nDelete anyway?"
-msgstr "Denne kategorien er ikkje tom.\nVil du sletta han likevel?"
+msgid  "The category is not empty.\\nDelete anyway?"
+msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "Dokumentet «$(DOC)» er endra.\nVil du lagra endringane dine?"
+msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/doc/doc.src#STR_STYLES.String.Text
+#, fuzzy
 msgid  "Styles"
 msgstr "Stilar"
 
 #: source/doc/doc.src#STR_MACROS.String.Text
+#, fuzzy
 msgid  "Macros"
 msgstr "Makroar"
 
 #: source/doc/doc.src#STR_CONFIG.String.Text
+#, fuzzy
 msgid  "Configuration"
 msgstr "Oppsett"
 
 #: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
+#, fuzzy
 msgid  "Styles in "
 msgstr "Stilar i "
 
 #: source/doc/doc.src#STR_PRINT_STYLES.String.Text
+#, fuzzy
 msgid  "Printing Styles"
 msgstr "Utskriftsstilar"
 
 #: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
+#, fuzzy
 msgid  "The print job could not be started."
 msgstr "Klarte ikkje starta utskriftsjobben."
 
 #: source/doc/doc.src#STR_BACKUP_COPY.String.Text
+#, fuzzy
 msgid  "Copy"
 msgstr "Kopier"
 
 #: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
+#, fuzzy
 msgid  "The template could not be opened."
 msgstr "Klarte ikkje opna malen."
 
 #: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
+#, fuzzy
 msgid  "Document already open for editing."
 msgstr "Dokumentet er alt ope for redigering."
 
 #: source/doc/doc.src#STR_ERROR_SAVE.String.Text
+#, fuzzy
 msgid  "Error recording document "
 msgstr "Feil ved lagring av dokumentet "
 
 #: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "Malar"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "Feil ved kopiering av malen «$1».\nDet kan henda det finst ein mal med dette namnet frå før."
+msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
+msgstr ""
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "The template \"$1\" can not be deleted."
 msgstr "Malen «$1» kan ikkje slettast."
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Error moving template \"$1\"."
 msgstr "Feil ved flytting av malen «$1»."
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
+#, fuzzy
 msgid  "The update could not be saved."
 msgstr "Oppdateringane kan ikkje lagrast."
 
 #: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Error saving template "
 msgstr "Feil ved lagring av mal "
 
 #: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
+#, fuzzy
 msgid  "Error renaming template."
 msgstr "Det oppstod ein feil då namnet på malen blei endra."
 
 #: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
+#, fuzzy
 msgid  "Error renaming template category."
 msgstr "Det oppstod ein feil då namnet på malkategorien blei endra."
 
 #: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
+#, fuzzy
 msgid  "Please specify a name."
 msgstr "Oppgi eit namn."
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
-msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr "Oppgi eit unikt namn.\nNamna kan ikkje skiljast berre på stor og liten bokstav."
+msgid  "Please specify a unique name.\\nEntries must not be case specific."
+msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr "Vil du bruka malen «$(TEXT)» som standardmal?"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to reset the default template?"
 msgstr "Vil du tilbakestilla til standardmalen?"
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
-msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr "Malmappa\n$(DIR)\nfinst ikkje."
+msgid  "Template directory\\n$(DIR)\\ndoes not exist."
+msgstr ""
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
+#, fuzzy
 msgid  "Document info cannot be read."
 msgstr "Klarte ikkje lesa dokumentinfo."
 
 #: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
+#, fuzzy
 msgid  "The selected file has an incorrect format."
 msgstr "Den valde fila er i feil format."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
-msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr "Dokumenta kan ikkje lagrast i formatet $(FORMAT). Vil du\nlagra endringane i formatet  $(OWNFORMAT)?"
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
+#, fuzzy
 msgid  "~Save"
 msgstr "La~gra"
 
 #: source/doc/doc.src#STR_UPDATEDOC.String.Text
+#, fuzzy
 msgid  "~Update"
 msgstr "~Oppdater"
 
 #: source/doc/doc.src#STR_SAVEASDOC.String.Text
+#, fuzzy
 msgid  "Save ~As..."
 msgstr "Lagra ~som …"
 
 #: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
+#, fuzzy
 msgid  "Save Copy ~as..."
 msgstr "Lagra kopi so~m …"
 
 #: source/doc/doc.src#STR_CLOSEDOC.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Lukk"
 
 #: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
+#, fuzzy
 msgid  "~Close & Return to "
 msgstr "~Lukk og gå tilbake til "
 
 #: source/doc/doc.src#STR_WIZARD.String.Text
+#, fuzzy
 msgid  " AutoPilot"
 msgstr "Vegvisar"
 
 #: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
+#, fuzzy
 msgid  "Configurations"
 msgstr "Oppsett"
 
 #: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Basic libraries"
 msgstr "%PRODUCTNAME Basic-bibliotek"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
+#, fuzzy
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "Vil du byta ut stilen «$(ARG1)»?"
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
+#, fuzzy
 msgid  "Loading Document"
 msgstr "Lastar inn dokument"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
+#, fuzzy
 msgid  "Connection to: $(HOST). Waiting for response..."
 msgstr "Tilkobling til: $(HOST). Ventar på svar …"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
+#, fuzzy
 msgid  "Opening $(TARGET) at $(HOST)"
 msgstr "Opnar $(TARGET) på $(HOST)"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
+#, fuzzy
 msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
 msgstr "Lastar inn: $(TARGET) frå $(HOST). Allereie lastet inn: $(BYTE)"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
+#, fuzzy
 msgid  "Disconnected"
 msgstr "Fråkopla"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
-msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr "Du kan ikkje redigera dette dokumentet.\nVil du opna det utan skrivetilgang?"
+msgid  "Document cannot be opened for editing.\\nDo you want to open it as read-only?"
+msgstr ""
 
 #: source/doc/doc.src#STR_EDIT.String.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Rediger"
 
 #: source/doc/doc.src#RID_OFFICEFILTER.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Documents"
 msgstr "%PRODUCTNAME-dokument"
 
 #: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Propert~ies..."
 msgstr "~Eigenskapar …"
 
 #: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
+#, fuzzy
 msgid  "HTML (FrameSet)"
 msgstr "HTML (rammesett)"
 
 #: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME-rammedokument"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
 msgstr "Fann ikkje malen «$(TEMPLATE)» der han skulle vera. Ein mal med det same namnet finst på «$(FOUND)». Vil du bruka denne malen for samanlikning frå no av?"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "Fann ikkje malen «$(TEMPLATE)». Vil du at malen skal søkjast etter neste gong dokumentet blir opna?"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
+#, fuzzy
 msgid  "Automatically saved version"
 msgstr "Automatisk lagra utgåve"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
+#, fuzzy
 msgid  "Text Document"
 msgstr "Tekstdokument"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
+#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML-dokument"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
+#, fuzzy
 msgid  "Master Document"
 msgstr "Hovuddokument"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Rekneark"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
+#, fuzzy
 msgid  "Presentation"
 msgstr "Presentasjon"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
+#, fuzzy
 msgid  "Drawing"
 msgstr "Teikning"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
+#, fuzzy
 msgid  "Message"
 msgstr "Melding"
 
 #: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
+#, fuzzy
 msgid  "~Discard"
 msgstr "~Forkast"
 
 #: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
+#, fuzzy
 msgid  "Access to the current data medium not possible."
 msgstr "Får ikkje tilgang til datamediet."
 
 #: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
+#, fuzzy
 msgid  "Insert the next data carrier and click OK."
 msgstr "Set inn neste datamedium og trykk på «OK»."
 
 #: source/doc/doc.src#STR_OBJECT.String.Text
+#, fuzzy
 msgid  "Object"
 msgstr "Objekt"
 
 #: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
+#, fuzzy
 msgid  "Run Macro"
 msgstr "Køyr makro"
 
 #: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
+#, fuzzy
 msgid  "This document contains macros. $(TEXT)"
 msgstr "Dette dokumentet inneheld makroar. $(TEXT)"
 
 #: source/doc/doc.src#BTN_OK.String.Text
+#, fuzzy
 msgid  "Run"
 msgstr "Køyr"
 
 #: source/doc/doc.src#BTN_CANCEL.String.Text
+#, fuzzy
 msgid  "Do Not Run"
 msgstr "Ikkje køyr"
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
+#, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
 msgstr "I følge tryggleiksinnstillingane bør ikkje makroane i dette dokumentet køyrast. Vil du køyra dei likevel?"
 
 #: source/doc/doc.src#FT_OK.String.Text
+#, fuzzy
 msgid  "Do you want to allow these macros to be run?"
 msgstr "Vil du la desse makroane kjøre?"
 
 #: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
+#, fuzzy
 msgid  "Export as PDF"
 msgstr "Eksporter som PDF"
 
 #: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
+#, fuzzy
 msgid  "Export..."
 msgstr "Eksporter …"
 
 #: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
+#, fuzzy
 msgid  "Export"
 msgstr "Eksporter"
 
 #: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
+#, fuzzy
 msgid  "Add this directory to the list of secure paths: "
 msgstr "Legg denne mappa til lista over trygge stigar: "
 
 #: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
+#, fuzzy
 msgid  "File format:"
 msgstr "Filformat:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
-msgid  "This document contains:\n\n"
-msgstr "Dette dokumentet inneheld:\n\n"
+msgid  "This document contains:\\n\\n"
+msgstr ""
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
+#, fuzzy
 msgid  "Recorded changes"
 msgstr "Registrerte endringar"
 
 #: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
+#, fuzzy
 msgid  "Notes"
 msgstr "Merknader"
 
 #: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
+#, fuzzy
 msgid  "Document versions"
 msgstr "Dokumentversjonar"
 
 #: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
+#, fuzzy
 msgid  "Fields"
 msgstr "Felt"
 
 #: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
+#, fuzzy
 msgid  "Linked data..."
 msgstr "Lenkja data …"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
+#, fuzzy
 msgid  "Do you want to continue saving the document?"
 msgstr "Vil du halda fram med å lagra dokumentet?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
+#, fuzzy
 msgid  "Do you want to continue printing the document?"
 msgstr "Vil du halda fram med å skriva ut dokumentet?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
+#, fuzzy
 msgid  "Do you want to continue signing the document?"
 msgstr "Vil du halda fram med å signera dokumentet?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
+#, fuzzy
 msgid  "Do you want to continue creating a PDF file?"
 msgstr "Vil du halda fram med å laga ei PDF-fil?"
 
 #: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
+#, fuzzy
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
 msgstr "Dersom du ikkje vil skriva over det opphavlege dokumentet, bør du lagra arbeidet ditt med eit anna filnamn."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
+#, fuzzy
 msgid  "Some template files are protected and can not be deleted."
 msgstr "Nokre malfiler er verna og kan ikkje slettast."
 
 #: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
+#, fuzzy
 msgid  "Info %1"
 msgstr "Info %1"
 
 #: source/doc/doc.src#STR_SHARED.String.Text
+#, fuzzy
 msgid  " (shared)"
 msgstr " (delt)"
 
 #: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
+#, fuzzy
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
 msgstr "Versjonen av dokumentformatet som er valt i Verktøy – Options – Last inn / lagra – Generelt er ODF 1.1 (OpenOffice.org 2.x). Signering av dokument krevjar ODF 1.2 (OpenOffice.org 3.x)."
 
 #: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
-msgstr "Dokumentet må lagrast før det kan signerast. Lagring av dokumentet fjernar alle signaturar som ligg i det no.\nVil du lagra dokumentet?"
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\\nDo you want to save the document?"
+msgstr ""
 
 #: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
+#, fuzzy
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
 msgstr "Malen '$(ARG1)', som dette dokumentet er basert på, har vorte endra. Vil du oppdatera stilbasert formatering i tråd med den endra malen?"
 
 #: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
+#, fuzzy
 msgid  "~Update Styles"
 msgstr "~Oppdater stilar"
 
 #: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
+#, fuzzy
 msgid  "~Keep Old Styles"
 msgstr "~Hald fram med gamle stilar"
 
@@ -2359,10 +2549,12 @@ msgid  "~Description"
 msgstr "~Skildring"
 
 #: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
+#, fuzzy
 msgid  "Configuration Menu"
 msgstr "Oppsettsmeny"
 
 #: source/menu/menu.src#STR_MENU_ADDONS.String.Text
+#, fuzzy
 msgid  "~Add-Ons"
 msgstr "~Tillegg"
 
@@ -2379,10 +2571,12 @@ msgid  "~Paste"
 msgstr ""
 
 #: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
+#, fuzzy
 msgid  "Leave Full-Screen Mode"
 msgstr "Forlat fullskjermsmodus"
 
 #: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
+#, fuzzy
 msgid  "Add-~On Help"
 msgstr "~Tilleggshjelp"
 
@@ -2399,97 +2593,113 @@ msgid  "~Thesaurus..."
 msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "Fann ingen standardskrivar.\nVel ein skrivar og prøv igjen."
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr ""
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "Klarte ikkje starta skrivaren.\nSjekk skrivaroppsettet."
+msgid  "Could not start printer.\\nPlease check your printer configuration."
+msgstr ""
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
-msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr "Dette dokumentet er formatert for skrivaren $1. Denne skrivaren er ikkje tilgjengeleg.\nVil du bruka standardskrivaren $2?"
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
+msgstr ""
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
+#, fuzzy
 msgid  "Options..."
 msgstr "Val …"
 
 #: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
+#, fuzzy
 msgid  "Printer Options"
 msgstr "Skrivarval"
 
 #: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
+#, fuzzy
 msgid  "Printer busy"
 msgstr "Skrivaren er oppteken"
 
 #: source/view/view.src#STR_ERROR_PRINT.String.Text
+#, fuzzy
 msgid  "Error while printing"
 msgstr "Feil ved utskrift"
 
 #: source/view/view.src#STR_PRINTING.String.Text
+#, fuzzy
 msgid  "Printing"
 msgstr "Skriv ut"
 
 #: source/view/view.src#STR_PAGE.String.Text
+#, fuzzy
 msgid  "Page "
 msgstr "Side "
 
 #: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Error saving template "
 msgstr "Feil ved lagring av mal "
 
 #: source/view/view.src#STR_READONLY.String.Text
+#, fuzzy
 msgid  " (read-only)"
 msgstr " (skriveverna)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr "Sidestorleiken og -retninga er endra.\nVil du lagra dei nye innstillingane i det \ngjeldande dokumentet?"
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgstr ""
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
-msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr "Sidestorleiken er endra.\nVil du lagra dei nye innstillingane\ni det gjeldande dokumentet?"
+msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
+msgstr ""
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr "Sidestorleiken og -retninga er endra.\nVil du lagra dei nye innstillingane i det \ngjeldande dokumentet?"
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgstr ""
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
+#, fuzzy
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Tittel:</b><dd>$(TITEL)<dt><b>Emne:</b><dd>$(THEME)<dt><b>Nøkkelord:</b><dd>$(KEYWORDS)<dt><b>Skildring:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
+#, fuzzy
 msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
 msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Fann ingen dokumenteigenskapar.</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
-msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr "Dokumentet kan ikkje lukkast fordi\nein utskriftsjobb ikkje er ferdig."
+msgid  "The document cannot be closed because a\\n print job is being carried out."
+msgstr ""
 
 #: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+#, fuzzy
 msgid  "Print Monitor"
 msgstr "Utskriftsovervaking"
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
+#, fuzzy
 msgid  "is being printed on"
 msgstr "blir skrive ut"
 
 #: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
+#, fuzzy
 msgid  "is being prepared for printing"
 msgstr "vert klargjord til utskrift"
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr "Det oppstod feil under sending av e-post. Det kan skuldast at brukarkontoen manglar eller at oppsettet er feil.\nSjekk oppsettet for %PRODUCTNAME eller innstillingane i e-postprogrammet ditt."
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
+#, fuzzy
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "Dette dokumentet kan ikkje opnast for redigering,\nsannsynlegvis fordi tilgangsrettane ikkje er tilstrekkelege.\nVil du bruka det som mal for eit nytt dokument?"
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
+#, fuzzy
 msgid  " (repaired document)"
 msgstr " (reparert dokument)"
 
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr "%PRODUCTNAME fann ingen nettlesar på maskina di. Sjå over skrivebordsinnstillingane eller installer ein nettlesar (til dømes Mozilla) i standardplasseringa som vert føreslått under installasjonen."

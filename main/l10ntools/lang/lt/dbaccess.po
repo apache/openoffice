@@ -72,8 +72,8 @@ msgid  "The data source was not saved. Please use the interface XStorable to sav
 msgstr "Duomenų šaltinis nebuvo įrašytas. Naudokite „XStorable“ sąsają duomenų šaltiniui įrašyti."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
-msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr "Duotoji komanda nėra SELECT sakinys.\nLeidžiamos tik užklausos."
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -188,8 +188,8 @@ msgid  "There are tables in the database whose names conflict with the names of 
 msgstr "Duomenų bazėje yra lentelių, kurių pavadinimai konfliktuoja su esamų užklausų pavadinimais. Kad galėtumėte naudotis visomis užklausomis ir lentelėmis, pavadinkite jas skirtingai."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
-msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr "SQL komanda, lemianti šią klaidą, yra:\n\n$command$"
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -220,11 +220,11 @@ msgid  "Unable to find the document '$name$'."
 msgstr "Nepavyko rasti dokumento „$name$“."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
-msgid  "Could not save the document to $location$:\n$message$"
+msgid  "Could not save the document to $location$:\\n$message$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
-msgid  "Error accessing data source '$name$':\n$error$"
+msgid  "Error accessing data source '$name$':\\n$error$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
@@ -305,330 +305,410 @@ msgid  "The extension is not installed."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
+#, fuzzy
 msgid  "Database ~name"
 msgstr "Duomenų ~bazės pavadinimas"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
+#, fuzzy
 msgid  "User settings"
 msgstr "Naudotojo nuostatos"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
+#, fuzzy
 msgid  "~Control user"
 msgstr "~Valdantis naudotojas"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
+#, fuzzy
 msgid  "~Administrator"
 msgstr "~Administratorius"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
+#, fuzzy
 msgid  "~Domain user"
 msgstr "~Srities naudotojas"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
+#, fuzzy
 msgid  "P~assword..."
 msgstr "Slaptažodis..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
+#, fuzzy
 msgid  "~Password..."
 msgstr "Slaptažodis..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
+#, fuzzy
 msgid  "Passwo~rd..."
 msgstr "Slaptažodis..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
+#, fuzzy
 msgid  "~Backup file"
 msgstr "Atsarginės ~kopijos failas"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
+#, fuzzy
 msgid  "Database settings"
 msgstr "Duomenų bazės nuostatos"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "S~YSDEVSPACE"
 msgstr "S~YSDEVSPACE"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
+#, fuzzy
 msgid  "TRANSACTI~ONLOG"
 msgstr "TRANSACTI~ONLOG"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "DATAD~EVSPACE"
 msgstr "DATAD~EVSPACE"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
+#, fuzzy
 msgid  "Transaction ~file (MB)"
 msgstr "Operacijų ~failas (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
+#, fuzzy
 msgid  "Data~base size (MB)"
 msgstr "Duomenų ~bazės dydis (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
+#, fuzzy
 msgid  "Data ~buffer size (MB)"
 msgstr "Duomenų ~buferio dydis (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
+#, fuzzy
 msgid  "Backup file information"
 msgstr "Atsarginės kopijos failo informacija"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
+#, fuzzy
 msgid  "Create New Adabas D Database"
 msgstr "Sukurti naują „Adabas D“ duomenų bazę"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
+#, fuzzy
 msgid  "No entry could be written in the configuration file."
 msgstr "Į sąrankos failą nepavyko įrašyti jokio įrašo."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
+#, fuzzy
 msgid  "An error occurred as the DB files were being created."
 msgstr "Kuriant duomenų bazės failus įvyko klaida."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
+#, fuzzy
 msgid  "An error occurred as the system tables were being created."
 msgstr "Kuriant sistemos lenteles įvyko klaida."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
+#, fuzzy
 msgid  "The backup file entered does not exist."
 msgstr "Nurodytas atsarginės kopijos failas neegzistuoja."
 
 #: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
-msgid  "The fully qualified file cannot be longer than \'#\' characters."
-msgstr ""
+#, fuzzy
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "Tinkamas failo vardas negali būti ilgesnis nei \\'#\\' rašmenų."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
+#, fuzzy
 msgid  "The administrator and the control user cannot have the same name!"
 msgstr "Administratorius ir valdantis naudotojas negali turėti vienodų vardų!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
+#, fuzzy
 msgid  "No name has been entered for the $name$ file!"
 msgstr "Failui $name$ neįvestas vardas!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
+#, fuzzy
 msgid  "You have to have administrator rights to create a new database!"
 msgstr "Naujai duomenų bazei sukurti reikalingos administratoriaus teisės!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
+#, fuzzy
 msgid  "The specified file name or directory does not exist."
 msgstr "Nurodyto failo arba katalogo nėra."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr "Nepavyko sukurti naujos duomenų bazės.\nPatikrinkite „Adabas D“ diegimą, ypač kintamuosius \"DBROOT\" ir \"DBWORK\"."
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
+#, fuzzy
 msgid  "Warning!"
 msgstr "Įspėjimas!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
+#, fuzzy
 msgid  "Creating database files."
 msgstr "Kuriami duomenų bazės failai."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
+#, fuzzy
 msgid  "Creating database configuration file."
 msgstr "Kuriamas duomenų bazės sąrankos failas."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
+#, fuzzy
 msgid  "Starting database for the first time."
 msgstr "Duomenų bazė paleidžiama pirmą kartą."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
+#, fuzzy
 msgid  "The name entered already exists."
 msgstr "Toks vardas jau yra."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
+#, fuzzy
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
 msgstr "Nepavyko nustatyti numatytųjų duomenų bazės failų vardų. Bendras ilgis viršija 40 rašmenų."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
+#, fuzzy
 msgid  "No default names could be set for the database files. There is no write access."
 msgstr "Nepavyko nustatyti numatytųjų duomenų bazės failų vardų. Nesuteiktos rašymo teisės."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
+#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
 msgstr "Veikiamąją duomenų bazę reikia konvertuoti. Įveskite valdančiojo naudotojo vardą ir slaptažodį."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
+#, fuzzy
 msgid  "Spaces are not permitted in the password. Please enter a new password."
 msgstr "Slaptažodyje negali būti tarpų. Įveskite kitą slaptažodį."
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
+#, fuzzy
 msgid  "Database Document Macro Migration"
 msgstr "Duomenų bazės dokumento makrokomandų perkėlimas"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
+#, fuzzy
 msgid  "Prepare"
 msgstr "Pasiruošimas"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
+#, fuzzy
 msgid  "Backup Document"
 msgstr "Atsarginės kopijos dokumentas"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
+#, fuzzy
 msgid  "Migrate"
 msgstr "Perkėlimas"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
+#, fuzzy
 msgid  "Summary"
 msgstr "Santrauka"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Welcome to the Database Macro Migration Wizard"
 msgstr "Sveiki! Čia duomenų bazės makrokomandų perkėlimo vediklis."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
-msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr "Naudojantis šiuo vedikliu bus lengviau perkelti makrokomandas.\n\nAtlikus šią operaciją visos į duomenų bazės dokumento formas ir ataskaitas įterptos makrokomandos bus perkeltos į patį dokumentą. Operacijos metu bibliotekos bus atitinkamai pervadintos.\n\nJei formose ir ataskaitose yra nuorodos į tas makrokomandas, jos, jei įmanoma, bus atitinkamai pataisytos.\n\nPrieš pradedant perkėlimą reikia užverti visas dokumento formas, ataskaitas, užklausas ir lenteles. Spustelėkite „Toliau“, jei norite tai padaryti."
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
+#, fuzzy
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
 msgstr "Nepavyko užverti visų objektų. Likusius užverkite patys ir paleiskite vediklį iš naujo."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Backup your Document"
 msgstr "Sukurkite atsarginę dokumento kopiją."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
 msgstr "Kad galėtumėte atkurti dokumentą, buvusį prieš perkėlimą, pasirinktoje vietoje bus sukurta atsarginė duomenų bazės dokumento kopija."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Save To:"
 msgstr "Įrašyti į:"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
+#, fuzzy
 msgid  "Browse ..."
 msgstr "Parinkti ..."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
+#, fuzzy
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
 msgstr "Spustelėkite „Toliau“, kad įrašytumėte dokumento kopiją ir pradėtumėte perkėlimą."
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Migration Progress"
 msgstr "Perkėlimo eiga"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
 msgstr "Duomenų bazės dokumente yra $forms$ formų ir $reports$ ataskaitų, kurios šiuo metu tvarkomos:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Current object:"
 msgstr "Tvarkomas objektas:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Current progress:"
 msgstr "Objekto eiga:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Overall progress:"
 msgstr "Bendra eiga:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
+#, fuzzy
 msgid  "document $current$ of $overall$"
 msgstr "$current$ dokumentas iš $overall$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
+#, fuzzy
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
 msgstr "Sėkmingai sutvarkytos visos formos ir ataskaitos. Spustelėję „Toliau“ pamatysite išsamesnę informaciją."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Summary"
 msgstr "Santrauka"
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
+#, fuzzy
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
 msgstr "Perkėlimas pavyko. Žemiau išvardinti visi veiksmai, kurie buvo atlikti dokumente."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
+#, fuzzy
 msgid  "The migration was not successful. Examine the migration log below for details."
 msgstr "Perkėlimas nepavyko. Išsamesnės informacijos ieškokite perkėlimo žurnale žemiau."
 
 #: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
+#, fuzzy
 msgid  "Form '$name$'"
 msgstr "Forma „$name$“"
 
 #: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
+#, fuzzy
 msgid  "Report '$name$'"
 msgstr "Ataskaita „$name$“"
 
 #: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
+#, fuzzy
 msgid  "document $current$ of $overall$"
 msgstr "$current$ dokumentas iš $overall$"
 
 #: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
+#, fuzzy
 msgid  "Database Document"
 msgstr "Duomenų bazės dokumentas"
 
 #: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
+#, fuzzy
 msgid  "saved copy to $location$"
 msgstr "kopija įrašyta į „$location$“"
 
 #: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
+#, fuzzy
 msgid  "migrated $type$ library '$old$' to '$new$'"
 msgstr "„$type$“ biblioteka „$old$“ perkelta į „$new$“"
 
 #: source/ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.String.Text
+#, fuzzy
 msgid  "$type$ library '$library$'"
 msgstr "„$type$“ biblioteka „$library$“"
 
 #: source/ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.String.Text
+#, fuzzy
 msgid  "migrating libraries ..."
 msgstr "perkeliamos bibliotekos..."
 
 #: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Basic"
 msgstr "„%PRODUCTNAME% Basic“"
 
 #: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
+#, fuzzy
 msgid  "JavaScript"
 msgstr "JavaScript"
 
 #: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
+#, fuzzy
 msgid  "BeanShell"
 msgstr "BeanShell"
 
 #: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
+#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
+#, fuzzy
 msgid  "Python"
 msgstr "Python"
 
 #: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
+#, fuzzy
 msgid  "dialog"
 msgstr "dialogas"
 
 #: source/ext/macromigration/macromigration.src#STR_ERRORS.String.Text
+#, fuzzy
 msgid  "Error(s)"
 msgstr "Klaida(-os)"
 
 #: source/ext/macromigration/macromigration.src#STR_WARNINGS.String.Text
+#, fuzzy
 msgid  "Warnings"
 msgstr "Įspėjimai"
 
 #: source/ext/macromigration/macromigration.src#STR_EXCEPTION.String.Text
+#, fuzzy
 msgid  "caught exception: "
 msgstr "išimtinė situacija:"
 
 #: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
+#, fuzzy
 msgid  "You need to choose a backup location other than the document location itself."
 msgstr "Atsarginės kopijos vieta turi būti kita nei paties dokumento."
 
@@ -645,26 +725,32 @@ msgid  "Not applicable to read-only documents."
 msgstr ""
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
+#, fuzzy
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 msgstr "Negalima lentelei ir užklausai priskirti to paties pavadinimo. Priskirkite pavadinimą, nenaudojamą užklausos ar lentelės."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Lentelė"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
+#, fuzzy
 msgid  "Query"
 msgstr "Užklausa"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
+#, fuzzy
 msgid  "The given connection is no valid query and/or tables supplier."
 msgstr "Nurodytas ryšys nėra tinkamas užklausų ir (arba) lentelių šaltinis."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
+#, fuzzy
 msgid  "The given object is no table object."
 msgstr "Nurodytas objektas nėra lentelės objektas."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
+#, fuzzy
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
 msgstr "Neleistinas komponavimo tipas - reikalinga reikšmė iš com.sun.star.sdb.tools.CompositionType."
 
@@ -674,106 +760,132 @@ msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.Comman
 msgstr "Neleistinas komandos tipas - leidžiamos tik TABLE ir AND QUERY komandos iš com.sun.star.sdb.CommandType."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
+#, fuzzy
 msgid  "Create Form in Design View..."
 msgstr "Kurti formą projektavimo veiksenoje..."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
+#, fuzzy
 msgid  "Use Wizard to Create Form..."
 msgstr "Kurti formą vedikliu..."
 
 #: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
+#, fuzzy
 msgid  "Use Wizard to Create Report..."
 msgstr "Kurti ataskaitą vedikliu..."
 
 #: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
+#, fuzzy
 msgid  "Create Report in Design View..."
 msgstr "Kurti ataskaitą projektavimo veiksenoje..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
+#, fuzzy
 msgid  "Create Query in Design View..."
 msgstr "Kurti užklausą projektavimo veiksenoje..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
+#, fuzzy
 msgid  "Create Query in SQL View..."
 msgstr "Kurti užklausą SQL veiksenoje..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
+#, fuzzy
 msgid  "Use Wizard to Create Query..."
 msgstr "Kurti užklausą vedikliu..."
 
 #: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
+#, fuzzy
 msgid  "Create Table in Design View..."
 msgstr "Kurti lentelę projektavimo veiksenoje..."
 
 #: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
+#, fuzzy
 msgid  "Use Wizard to Create Table..."
 msgstr "Kurti lentelę vedikliu..."
 
 #: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
+#, fuzzy
 msgid  "Create View..."
 msgstr "Kurti rodinį..."
 
 #: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
+#, fuzzy
 msgid  "Forms"
 msgstr "Formos"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
+#, fuzzy
 msgid  "Reports"
 msgstr "Ataskaitos"
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MenuItem.Text
+#, fuzzy
 msgid  "Form..."
 msgstr "Forma..."
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
+#, fuzzy
 msgid  "Report..."
 msgstr "Ataskaita..."
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
+#, fuzzy
 msgid  "View (Simple)..."
 msgstr "Rodymas (paprastas)..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MenuItem.Text
+#, fuzzy
 msgid  "Paste Special..."
 msgstr "Įdėti ~kitaip..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Šalinti"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MenuItem.Text
+#, fuzzy
 msgid  "Rename"
 msgstr "Pervadinti"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Taisyti"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MenuItem.Text
+#, fuzzy
 msgid  "Edit in SQL View..."
 msgstr "Taisyti SQL veiksenoje..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MenuItem.Text
+#, fuzzy
 msgid  "Open"
 msgstr "Atverti"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MenuItem.Text
+#, fuzzy
 msgid  "Create as View"
 msgstr "Kurti kaip rodinį"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+#, fuzzy
 msgid  "Form Wizard..."
 msgstr "Formos vediklis..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MenuItem.Text
+#, fuzzy
 msgid  "Report..."
 msgstr "Ataskaita..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+#, fuzzy
 msgid  "Report Wizard..."
 msgstr "Ataskaitos vediklis..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MenuItem.Text
+#, fuzzy
 msgid  "Select All"
 msgstr "Pažymėti viską"
 
@@ -888,14 +1000,12 @@ msgid  "Disable Preview"
 msgstr "Užverti peržiūrą"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
-#, fuzzy
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr "Duomenų bazė buvo pakeista.\nAr įrašyti pakeitimus?"
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
-#, fuzzy
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr "Ryšio tipas buvo pakeistas.\nKad pakeitimai įsigaliotų, reikia užverti visas formas, ataskaitas, užklausas ir lenteles.\n\nAr užverti visus dokumentus dabar?"
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -943,9 +1053,8 @@ msgid  "The document contains forms or reports with embedded macros."
 msgstr "Dokumente yra formų ir ataskaitų su įterptomis makrokomandomis."
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
-#, fuzzy
-msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr "Makrokomandos turėtų būtį įterptos į patį duomenų bazės dokumentą.\n\nGalima naudoti dokumentą kaip ir anksčiau, tačiau rekomenduotina perkelti makrokomandas. Reikiamą funkciją iškviesite pasirinkę menių komandą „Priemonės -> Perkelti makrokomandas“.\n\nKol makrokomandos nebus perkeltos, jų negalėsite įterpti į duomenų bazės dokumentą."
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr ""
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 #, fuzzy
@@ -961,230 +1070,286 @@ msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr "Dabartinis įrašas pakeistas.\nAr įrašyti pakeitimus?"
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "Ar pašalinti pažymėtus duomenis?"
 
 #: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+#, fuzzy
 msgid  "(filtered)"
 msgstr "(filtruota)"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "Klaida nustatant rikiavimo kriterijus"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "Klaida nustatant filtro kriterijus"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+#, fuzzy
 msgid  "Connection lost"
 msgstr "Ryšys nutrūko"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Queries"
 msgstr "Užklausos"
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "Lentelės"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+#, fuzzy
 msgid  "Edit ~Database File..."
 msgstr "Taisyti ~duomenų bazės failą"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+#, fuzzy
 msgid  "Registered databases ..."
 msgstr "Užregistruotos duomenų bazės..."
 
 #: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+#, fuzzy
 msgid  "Disco~nnect"
 msgstr "Atju~ngti"
 
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "Patvirtinti šalinimą"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "Ar tikrai pašalinti lentelę „%1“?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
 msgstr "Užklausa jau yra. Ar ją pašalinti?"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "Ryšys su duomenų baze nutrūko. Ar vėl prisijungti?"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+#, fuzzy
 msgid  "Warnings encountered"
 msgstr "Yra įspėjimų"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
 msgstr "Gaunant lentelių duomenis, gauta duomenų bazės ryšio įspėjimų."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
 msgstr "Jungiamasi prie „$name$“ ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "Įkeliama užklausa „$name$“ ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "Įkeliama lentelė „$name$“ ..."
 
 #: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+#, fuzzy
 msgid  "No table format could be found."
 msgstr "Lentelės formatas nerastas."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "Ryšio su duomenų šaltiniu „$name$“ nepavyko užmegzti."
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+#, fuzzy
 msgid  "Rebuild"
 msgstr "Atstatyti"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+#, fuzzy
 msgid  "Column ~Format..."
 msgstr "Stulpelio ~formatavimas..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "Kopijuoti stulpelio a~prašą"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+#, fuzzy
 msgid  "Table Format..."
 msgstr "Lentelės formatavimas..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Row Height..."
 msgstr "Eilutės aukštis..."
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "Atšaukti: duomenų įvedimą"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+#, fuzzy
 msgid  "Save current record"
 msgstr "Įrašyti dabartinį įrašą"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+#, fuzzy
 msgid  "Query #"
 msgstr "Užklausa #"
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "Lentelė #"
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+#, fuzzy
 msgid  "View #"
 msgstr "Rodinys #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+#, fuzzy
 msgid  "The name \"#\" already exists."
 msgstr "Pavadinimas „#“ jau yra."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+#, fuzzy
 msgid  "No matching column names were found."
 msgstr "Atitinkamų stulpelių pavadinimų nerasta."
 
 #: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
 msgstr "Įvyko klaida. Ar tęsti kopijavimą?"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+#, fuzzy
 msgid  "Data source table view"
 msgstr "Duomenų šaltinio lentelės peržiūra"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+#, fuzzy
 msgid  "Shows the selected table or query."
 msgstr "Rodoma pasirinkta lentelė arba užklausa."
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "Lentelė #"
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "Keisti SQL sakinį (sakinius)"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+#, fuzzy
 msgid  "Table name"
 msgstr "Lentelės pavadinimas"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+#, fuzzy
 msgid  "Insert data"
 msgstr "Įterpti duomenis"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+#, fuzzy
 msgid  "Delete data"
 msgstr "Šalinti duomenis"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+#, fuzzy
 msgid  "Modify data"
 msgstr "Keisti duomenis"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+#, fuzzy
 msgid  "Alter structure"
 msgstr "Keisti struktūrą"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+#, fuzzy
 msgid  "Read data"
 msgstr "Skaityti duomenis"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+#, fuzzy
 msgid  "Modify references"
 msgstr "Keisti nuorodas"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+#, fuzzy
 msgid  "Drop structure"
 msgstr "Tempti struktūrą"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Ascending"
 msgstr "Rikiuoti didėjančiai"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Descending"
 msgstr "Rikiuoti mažėjančiai"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
 msgstr "Negalima prisijungti prie SDBC tvarkyklės (#servicename#)."
 
 #: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "Tvarkyklė neužregistruota URL adresui #connurl#."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
 msgstr "Negalima užmegzti ryšio URL #connurl#."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
 msgstr "Patikrinkite nuostatas, pvz., naudotojo vardą ir slaptažodį."
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+#, fuzzy
 msgid  "Successfully connected, but information about database tables is not available."
 msgstr "Prisijungta sėkmingai, bet informacija apie duomenų bazės lenteles nepasiekiama."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+#, fuzzy
 msgid  "All tables"
 msgstr "Visos lentelės"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+#, fuzzy
 msgid  "All views"
 msgstr "Visi rodiniai"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+#, fuzzy
 msgid  "All tables and views"
 msgstr "Visos lentelės ir rodiniai"
 
@@ -1769,9 +1934,8 @@ msgid  "A password is needed to connect to the data source \"$name$\"."
 msgstr "Norint prisijungti prie duomenų šaltinio „$name$“ reikia slaptažodžio."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
-#, fuzzy
-msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr "Aplanko\n\n$path$\n\nnėra. Ar jį sukurti?"
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr ""
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 #, fuzzy
@@ -1998,9 +2162,8 @@ msgid  "Database"
 msgstr "Duomenų bazė"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
-#, fuzzy
-msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr "Tolesniuose languose galima nurodyti išsamias ryšio nuostatas.\n\nNaujosios nuostatos pakeis iki šiol buvusias."
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 #, fuzzy
@@ -2018,9 +2181,8 @@ msgid  "Could not load the program library #lib# or it is corrupted. The ODBC da
 msgstr "Negalima įkelti programos bibliotekos #lib# arba ji yra iškraipyta. Pasirinktas ODBC duomenų šaltinis nepasiekiamas."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
-#, fuzzy
-msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr "Ši duomenų šaltinio rūšis nesuderinama su šia platforma.\nGalite keisti nuostatas, bet tikriausiai negalėsite prisijungti prie duomenų bazės."
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 #, fuzzy
@@ -2408,66 +2570,82 @@ msgid  "MS Access 2007 file"
 msgstr "„MS Access 2007“ failas"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+#, fuzzy
 msgid  "Database files"
 msgstr "Duomenų bazės failai"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
+#, fuzzy
 msgid  "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+#, fuzzy
 msgid  "Database sizes"
 msgstr "Duomenų bazės dydis"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "D~ydis (MB):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "~Laisvos atminties (MB):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "~Panaudota atminties (%):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+#, fuzzy
 msgid  "Database Statistics"
 msgstr "Duomenų bazės statistika"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+#, fuzzy
 msgid  "Contains the system tables"
 msgstr "Apima sistemos lenteles"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+#, fuzzy
 msgid  "Contains information about transaction"
 msgstr "Apima informaciją apie sandorį"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+#, fuzzy
 msgid  "Contains all data files"
 msgstr "Turi visus duomenų failus"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+#, fuzzy
 msgid  "Total size of the database files"
 msgstr "Visų duomenų bazės failų dydis"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Laisva atminties dalis, dar nesukūrus duomenų failo."
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+#, fuzzy
 msgid  "Currently used memory"
 msgstr "Naudojama atminties"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
 msgstr "Negalima rodyti informacijos, nes reikalaujamoms sistemos lentelėms nėra prieigos teisių."
 
@@ -2634,7 +2812,7 @@ msgstr "„dBASE“ ryšio aprašymas"
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
 #, fuzzy
 msgid  "Set up a connection to text files"
-msgstr "Teksto failų ryšio aprašymas"
+msgstr "Aprašykite ryšį su teksto failais"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
 #, fuzzy
@@ -2706,9 +2884,8 @@ msgid  "Set up a connection to a MySQL database"
 msgstr "Aprašykite ryšį su „MySQL“ duomenų baze"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
-#, fuzzy
-msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Prie „MySQL“ duomenų bazės galima prisijungti naudojant ODBC arba JDBC.\nKreipkitės į sistemos administratorių, jei nežinote reikalingų nuostatų."
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 #, fuzzy
@@ -2800,9 +2977,8 @@ msgid  "Set up connection to a MySQL database using JDBC"
 msgstr "Aprašykite ryšį su „MySQL“ duomenų baze naudojant JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Įveskite reikiamą informaciją ryšiui su MySQL duomenų baze užmegzti naudojant JDBC. Kompiuteryje turi būti įdiegta ir užregistruota „%PRODUCTNAME“ programoje JDBC tvarkyklės klasė.\nKreipkitės į sistemos administratorių, jei nežinote reikiamų nuostatų."
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 #, fuzzy
@@ -2865,9 +3041,8 @@ msgid  "Set up a connection to an LDAP directory"
 msgstr "Aprašykite ryšį su LDAP katalogu"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Įveskite reikiamą informaciją prie LDAP katalogo prisijungti.\nKreipkitės į sistemos administratorių, jei nežinote reikiamų nuostatų."
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 #, fuzzy
@@ -2885,9 +3060,8 @@ msgid  "Set up a connection to an Adabas D database"
 msgstr "Aprašykite ryšį su „Adabas D“ duomenų baze"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr "Įveskite „Adabas D“ duomenų bazės, prie kurios norite prisijungti, pavadinimą.\nSpustelėję „Parinkti...“, galėsite nurodyti „%PRODUCTNAME“ programoje užregistruotą „Adabas D“ duomenų bazę."
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 #, fuzzy
@@ -2895,9 +3069,8 @@ msgid  "Set up a connection to an ADO database"
 msgstr "Aprašykite ryšį su ADO duomenų baze"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Įveskite ADO duomenų šaltinio, prie kurio norite prisijungti, URL adresą.\nSpustelėję „Parinkti“ nurodykite tiekėjo nuostatas.\nKreipkitės į sistemos administratorių, jei nežinote reikiamų nuostatų."
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2905,9 +3078,8 @@ msgid  "Set up a connection to an ODBC database"
 msgstr "Aprašykite ryšį su ODBC duomenų baze"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Įveskite ODBC duomenų bazės, prie kurios norite prisijungti, pavadinimą.\nSpustelėję „Parinkti...“ galėsite nurodyti „%PRODUCTNAME“ programoje užregistruotą ODBC duomenų bazę.\nKreipkitės į sistemos administratorių, jei nežinote reikiamų nuostatų."
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2915,9 +3087,8 @@ msgid  "Set up a connection to a JDBC database"
 msgstr "Aprašykite ryšį su JDBC duomenų baze"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Įveskite reikiamą informaciją prie JDBC duomenų bazės prisijungti.\nKreipkitės į sistemos administratorių, jei nežinote reikiamų nuostatų."
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 #, fuzzy
@@ -2935,9 +3106,8 @@ msgid  "Oracle JDBC ~driver class"
 msgstr "„Oracle JDBC“ ~tvarkyklės klasė"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Įveskite reikiamą informaciją ryšiui su „Oracle“ duomenų baze užmegzti. Kompiuteryje turi būti įdiegta ir užregistruota „%PRODUCTNAME“ programoje JDBC tvarkyklės klasė.\nKreipkitės į sistemos administratorių, jei nežinote reikiamų nuostatų."
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 #, fuzzy
@@ -2945,9 +3115,8 @@ msgid  "Set up a connection to spreadsheets"
 msgstr "Aprašykite ryšį su skaičiuoklės dokumentais"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr "Spustelėję „Parinkti...“ pasirinkite „Microsoft Excel“ arba „%PRODUCTNAME“ skaičiuoklės dokumentą.\n„%PRODUCTNAME“ programoje šis dokumentas bus atvertas tik skaitymui."
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 #, fuzzy
@@ -3088,9 +3257,8 @@ msgid  "{None}"
 msgstr "{Nieko}"
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
-#, fuzzy
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Tarpas}\t32"
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
 #, fuzzy
@@ -3122,96 +3290,118 @@ msgid  "Socket"
 msgstr ""
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+#, fuzzy
 msgid  "Refresh"
 msgstr "Atnaujinti"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~View Design"
 msgstr "Naujas ~rodinio projektas"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Table Design"
 msgstr "Naujas ~lentelės projektas"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "Užklausos vediklis..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "Nauja ~užklausa (projektavimo veiksena)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "~Edit Query"
 msgstr "~Taisyti užklausą"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "Nauja užklausa (~SQL veiksena)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "Taisa..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+#, fuzzy
 msgid  "Column ~Width..."
 msgstr "S~tulpelio plotis..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+#, fuzzy
 msgid  "Report Wizard..."
 msgstr "Ataskaitos vediklis..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "Formos vediklis..."
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+#, fuzzy
 msgid  "System"
 msgstr "Sistema"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+#, fuzzy
 msgid  "Error during creation"
 msgstr "Klaida kuriant"
 
 #: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "Netikėta klaida. Operacijos nepavyko atlikti."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
 msgstr "Dokumento „$file$“ nepavyko atverti."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
 msgstr "Lentelės negalima pašalinti, nes duomenų bazės ryšys to neleidžia."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+#, fuzzy
 msgid  "~All"
 msgstr "~Viskas"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+#, fuzzy
 msgid  "Undo:"
 msgstr "Atšaukti:"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+#, fuzzy
 msgid  "Redo:"
 msgstr "Atstatyti:"
 
 #: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
 msgstr "Stulpeliui „#1“ nepavyko rasti atitinkamo stulpelio tipo."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+#, fuzzy
 msgid  "The file \"$file$\" does not exist."
 msgstr "Failo „$file$“ nėra."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr "Jungiantis prie duomenų šaltinio gauta įspėjimų. Spustelėkite „$buttontext$“, jei norite juos peržiūrėti."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
-msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr "Pavadinimas „$#$“ jau yra.\nĮveskite kitą pavadinimą."
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
 #, fuzzy
@@ -3229,9 +3419,8 @@ msgid  "Type formatting"
 msgstr "Tipo formatavimas"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
-#, fuzzy
-msgid  "The following fields have already been set as primary keys:\n"
-msgstr "Nurodyti laukai jau nustatyti kaip pirminiai raktai:\n"
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
 #, fuzzy
@@ -3294,14 +3483,12 @@ msgid  "Primary Key"
 msgstr "Pirminis raktas"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
-#, fuzzy
-msgid  "Source table: \n"
-msgstr "Pirminė lentelė: \n"
+msgid  "Source table: \\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
-#, fuzzy
-msgid  "Destination table: \n"
-msgstr "Paskirties lentelė: \n"
+msgid  "Destination table: \\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
 #, fuzzy
@@ -3468,201 +3655,248 @@ msgid  "Contains only one column for each pair of equally-named columns from '%1
 msgstr "Vienas stulpelis kiekvienai vienodai pavadintų stulpelių iš „%1“ ir iš „%2“ porai."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+#, fuzzy
 msgid  "Add Table Window"
 msgstr "Pridėti lentelės langą"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+#, fuzzy
 msgid  "Move table window"
 msgstr "Perkelti lentelės langą"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+#, fuzzy
 msgid  "Insert Join"
 msgstr "Įterpti jungtį"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+#, fuzzy
 msgid  "Delete Join"
 msgstr "Šalinti jungtį"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+#, fuzzy
 msgid  "Resize table window"
 msgstr "Keisti lentelės lango dydį"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+#, fuzzy
 msgid  "Delete Column"
 msgstr "Šalinti stulpelį"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+#, fuzzy
 msgid  "Move column"
 msgstr "Perkelti stulpelį"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+#, fuzzy
 msgid  "Add Column"
 msgstr "Pridėti stulpelį"
 
 #: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "Neteisingas reiškinys, lentelės „$name$“ nėra."
 
 #: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
 msgstr "Neteisingas reiškinys, lauko pavadinimo „$name$“ nėra."
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "Užklausa susieta su #num# lentelėmis. Pasirinkto tipo duomenų bazė gali naudoti daugiausiai #maxnum# lenteles(-ių) viename sakinyje."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+#, fuzzy
 msgid  "Delete Table Window"
 msgstr "Šalinti lentelės langą"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+#, fuzzy
 msgid  "Edit Column Description"
 msgstr "Taisyti stulpelio aprašą"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+#, fuzzy
 msgid  "Adjust column width"
 msgstr "Parinkti stulpelio plotį"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
+#, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "(nerikiuotas);didėjančiai;mažėjančiai"
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+#, fuzzy
 msgid  "(no function);Group"
 msgstr "(nėra funkcijos);Grupė"
 
 #: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
+#, fuzzy
 msgid  "(no table)"
 msgstr "(nėra lentelės)"
 
 #: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+#, fuzzy
 msgid  "The database only supports sorting for visible fields."
 msgstr "Duomenų bazėje galimas tik matomų laukų rikiavimas."
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+#, fuzzy
 msgid  "Functions"
 msgstr "Funkcijos"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+#, fuzzy
 msgid  "Table Name"
 msgstr "Lentelės pavadinimas"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+#, fuzzy
 msgid  "Alias"
 msgstr "Alternatyvus vardas"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+#, fuzzy
 msgid  "Distinct Values"
 msgstr "Skirtingos reikšmės"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Laukas;Alternatyva;Lentelė;Rikiuoti;Matomas;Funkcija;Kriterijus;Arba;Arba"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+#, fuzzy
 msgid  "There are too many columns."
 msgstr "Per daug stulpelių."
 
 #: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "Laukui [*] negalima pritaikyti sąlygų"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+#, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "Per ilgas SQL sakinys."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+#, fuzzy
 msgid  "Query is too complex"
 msgstr "Užklausa per sudėtinga"
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "Nieko nepažymėta."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+#, fuzzy
 msgid  "Too many search criteria"
 msgstr "Per daug paieškos kriterijų"
 
 #: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
+#, fuzzy
 msgid  "SQL syntax error"
 msgstr "SQL sintaksės klaida"
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "[*] negalima naudoti kaip rikiavimo kriterijaus."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+#, fuzzy
 msgid  "There are too many tables."
 msgstr "Per daug lentelių."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "Komanda nebus taikoma, kai kreipiamasi duomenų bazės SQL dialektu."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "Lauko pavadinimas nerastas arba nėra unikalus"
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+#, fuzzy
 msgid  "Join could not be processed"
 msgstr "Jungties apdoroti nepavyko"
 
 #: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
+#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Sintaksės klaida SQL sakinyje"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+#, fuzzy
 msgid  "This database does not support table views."
 msgstr "Ši duomenų bazė nesuderinama su lentelės veiksena."
 
 #: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+#, fuzzy
 msgid  "This database does not support altering of existing table views."
 msgstr "Šioje duomenų bazėje negalima keisti esamų lentelės rodinių."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "Ar vietoj to norite sukurti užklausą?"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+#, fuzzy
 msgid  "No query could be created."
 msgstr "Užklausos sukurti nepavyko."
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+#, fuzzy
 msgid  "No query could be created because no fields were selected."
 msgstr "Užklausos sukurti nepavyko, nes nėra pažymėtų laukų."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
 msgstr "Atitinkamas duomenų šaltinis pašalintas. Duomenų, susijusių su šiuo duomenų šaltiniu, negalima įrašyti."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "Stulpelis „$name$“ nežinomas."
 
 #: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+#, fuzzy
 msgid  "Columns can only be compared using '='."
 msgstr "Stulpelius galima lyginti tik naudojant „=“."
 
 #: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
 msgstr "Prieš komandą „LIKE“ reikia naudoti stulpelio pavadinimą."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
 msgstr "Stulpelis nepavyko rasti. Pastaba: duomenų bazėje didžiosios ir mažosios raidės laikomos skirtingomis."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
 msgstr " - „%PRODUCTNAME“ duomenų bazių programa: užklausos projektas"
 
 #: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
 msgstr " - „%PRODUCTNAME“ duomenų bazių programa: rodinio projektas"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
-#, fuzzy
-msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr "Objektas „$object$“ buvo pakeistas.\nAr įrašyti pakeitimus?"
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
@@ -3696,35 +3930,41 @@ msgid  "Both the ActiveConnection and the DataSourceName parameter are missing o
 msgstr "Trūksta abiejų - ActiveConnection ir DataSourceName - parametrų arba jie yra neteisingi. Nepavyko paleisti užklausos projektavimo."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "Toks sąryšis jau yra. Ar norite jį taisyti, ar sukuti naują?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "Taisyti..."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+#, fuzzy
 msgid  "Create..."
 msgstr "Sukurti..."
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " - „%PRODUCTNAME“ duomenų bazių programa: sąryšio projektas"
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+#, fuzzy
 msgid  "The database does not support relations."
 msgstr "Duomenų bazė nesuderinama su sąryšiais."
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr "Sąryšio projektas pakeistas.\nAr įrašyti pakeitimus?"
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "Jei pašalinsite šią lentelę, bus pašalinti visi su ja susiję sąryšiai. Ar tęsti?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
-msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
@@ -3907,14 +4147,12 @@ msgid  "Format example"
 msgstr "Formato pavyzdys"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
-#, fuzzy
-msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr "Pasirinkite numatytąją įrašo reikšmę. Ji bus naudojama visuose naujuose įrašuose.\nJei nereikia numatytosios reikšmės, pasirinkite tuščią eilutę."
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
-#, fuzzy
-msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr "Įveskite numatytąją lauko reikšmę.\n\nVėliau į lentelę įvedant duomenis, ši eilutė bus naudojama kiekviename naujame pasirinkto lauko įraše. Ši eilutė turi atitikti langelio formatą, nurodomą žemiau."
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 #, fuzzy
@@ -3932,9 +4170,8 @@ msgid  "Enter the number format."
 msgstr "Įveskite skaičiaus formatą."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
-#, fuzzy
-msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr "Nurodykite šio lauko duomenų ilgį.\n\nJei laukas dešimtainis, tai reikia įvesti maksimalų skaičiaus ilgį, jei dvejetainis – duomenų bloko ilgį.\nReikšmė bus pataisoma, jei viršys nurodytą maksimalų ilgį."
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 #, fuzzy
@@ -3952,9 +4189,8 @@ msgid  "This is where you determine the output format of the data."
 msgstr "Čia nurodomas išvedamų duomenų formatas."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
-#, fuzzy
-msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr "Nurodykite, ar lauke bus automatiškai didėjančių reikšmių.\n\nŠio tipo laukuose negalėsite įvesti duomenų. Reikšmė automatiškai bus priskiriama kiekvienam naujam įrašui (priklausomai nuo ankstesnio įrašo reikšmės didėjimo)."
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 #, fuzzy
@@ -3992,14 +4228,12 @@ msgid  "Warning!"
 msgstr "Įspėjimas!"
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
-#, fuzzy
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr "Lentelė buvo pakeista.\nAr įrašyti pakeitimus?"
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
-#, fuzzy
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr "Ryšys su duomenų baze nutrūko! Atsijungus lentelės projektas gali būti naudojamas ribotai.\nAr atnaujinti ryšį?"
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
 #, fuzzy
@@ -4012,9 +4246,8 @@ msgid  "The table filter could not be adjusted because the data source has been 
 msgstr "Lentelės filtro negalima taisyti, nes duomenų šaltinis pašalintas."
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
-#, fuzzy
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr "Jei norite taisyti lentelės indeksus, reikia įrašyti lentelę.\nAr įrašyti lentelę dabar?"
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
 #, fuzzy
@@ -4022,9 +4255,8 @@ msgid  "No primary key"
 msgstr "Nėra pirminio rakto"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
-#, fuzzy
-msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr "Šioje duomenų bazėje duomenų įrašams atpažinti būtinas unikalus indeksas arba pirminis raktas.\nDuomenis į šią lentelę galima įvesti tik tada, kai tenkinama viena iš šių sąlygų.\n\nAr sukurti pirminį raktą dabar?"
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 #, fuzzy
@@ -4057,14 +4289,12 @@ msgid  "A~uto-increment statement"
 msgstr "~Savaime didinanti komanda"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
-#, fuzzy
-msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr "Įveskite SQL sakinį automatiškai didėjančios reikšmės laukui.\n\nSukūrus lentelę, sakinys automatiškai bus perkeltas tiesiai į duomenų bazę."
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
-#, fuzzy
-msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr "Iš duomenų bazės nepavyko gauti informacijos apie tipą.\nLentelės projekto veiksena šiam duomenų šaltiniui negalima."
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 #, fuzzy
@@ -4087,42 +4317,52 @@ msgid  "change field attribute"
 msgstr "keisti lauko požymį"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~Prisiminti slaptažodį iki seanso pabaigos"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+#, fuzzy
 msgid  "~Remember password"
 msgstr "~Prisiminti slaptažodį"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "Paskirties duomenų bazė nesuderinama su rodiniais."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "Paskirties duomenų bazė nesuderinama su pirminiais raktais."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
+#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "Nerastas duomenų prieigos aprašas arba jokiame duomenų prieigos apraše nėra visos reikiamos informacijos."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "Leistinos tik lentelės ir užklausos."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "Duomenų kopijavimo rezultatų rinkinys turi būti suderinamas su žymelėmis."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "Nesuderinamas šaltinio stulpelio tipas ($type$) stulpelio vietoje $pos$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "Neleistinas inicijavimo parametrų skaičius."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "Inicijavimo metu įvyko klaida."
 

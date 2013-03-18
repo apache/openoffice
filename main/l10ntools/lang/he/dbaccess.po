@@ -72,8 +72,8 @@ msgid  "The data source was not saved. Please use the interface XStorable to sav
 msgstr "מקור הנתונים לא נשמר. נא להשתמש בממשק XStorable לשמור את מקור הנתונים."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
-msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr "The given command is not a SELECT statement.\nOnly queries are allowed."
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -190,9 +190,8 @@ msgid  "There are tables in the database whose names conflict with the names of 
 msgstr "ישנן טבלאות במסד הנתונים עם שמות שמתנגשים עם שמות שאילתות במסד הנתונים. מצב זה יגביל את השימוש בצירופים שונים של שאילתות וטבלאות."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
-#, fuzzy
-msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr "משפט הSQL שגרם שגיאה זו הוא:\n\n$command$"
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 #, fuzzy
@@ -230,14 +229,12 @@ msgid  "Unable to find the document '$name$'."
 msgstr "לא ניתן למצוא את המסמך '$name$'."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
-#, fuzzy
-msgid  "Could not save the document to $location$:\n$message$"
-msgstr "אין אפשרות לשמור את המסמך ל־ $location$:\n$message$"
+msgid  "Could not save the document to $location$:\\n$message$"
+msgstr ""
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
-#, fuzzy
-msgid  "Error accessing data source '$name$':\n$error$"
-msgstr "שגיאה בגישה למקור הנתונים $name$':\n$error$"
+msgid  "Error accessing data source '$name$':\\n$error$"
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
 #, fuzzy
@@ -326,250 +323,310 @@ msgid  "The extension is not installed."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
+#, fuzzy
 msgid  "Database ~name"
 msgstr "שמ מסד הנתונים"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
+#, fuzzy
 msgid  "User settings"
 msgstr "קבועי משתמש"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
+#, fuzzy
 msgid  "~Control user"
 msgstr "משתמש עם הרשאות שליטה"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
+#, fuzzy
 msgid  "~Administrator"
 msgstr "אדמיניסטראטור"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
+#, fuzzy
 msgid  "~Domain user"
 msgstr "מנהל מתחם (Domain)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
+#, fuzzy
 msgid  "P~assword..."
 msgstr "ססמה..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
+#, fuzzy
 msgid  "~Password..."
 msgstr "ססמה..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
+#, fuzzy
 msgid  "Passwo~rd..."
 msgstr "ססמה..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
+#, fuzzy
 msgid  "~Backup file"
 msgstr "קובץ גיבוי"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
+#, fuzzy
 msgid  "Database settings"
 msgstr "קבועי מסד נתונים"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "S~YSDEVSPACE"
 msgstr "S~YSDEVSPACE"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
+#, fuzzy
 msgid  "TRANSACTI~ONLOG"
 msgstr "TRANSACTI~ONLOG"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "DATAD~EVSPACE"
 msgstr "DATAD~EVSPACE"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
+#, fuzzy
 msgid  "Transaction ~file (MB)"
 msgstr "קובץ פעולות (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
+#, fuzzy
 msgid  "Data~base size (MB)"
 msgstr "גודל המסד (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
+#, fuzzy
 msgid  "Data ~buffer size (MB)"
 msgstr "גודל חוצץ נתונים הזמני (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
+#, fuzzy
 msgid  "Backup file information"
 msgstr "נתוני קובץ הגיבוי"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
+#, fuzzy
 msgid  "Create New Adabas D Database"
 msgstr "יצירת מסד נתונים אדאבס D חדש"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
+#, fuzzy
 msgid  "No entry could be written in the configuration file."
 msgstr "לא ניתן לכתוב רשומה לקובץ התצורה."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
+#, fuzzy
 msgid  "An error occurred as the DB files were being created."
 msgstr "ארעה שגיאה בעת יצירת קבצי מסד הנתונים."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
+#, fuzzy
 msgid  "An error occurred as the system tables were being created."
 msgstr "ארעה שגיאה בעת יצירת טבלאות המערכת. "
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
+#, fuzzy
 msgid  "The backup file entered does not exist."
 msgstr "קובץ הגיבוי שצויין לא קיים."
 
 #: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
-msgid  "The fully qualified file cannot be longer than \'#\' characters."
-msgstr ""
+#, fuzzy
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "השם הנתיב המלא לא יכול להיות ארוך מ \\'#\\' תווים."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
+#, fuzzy
 msgid  "The administrator and the control user cannot have the same name!"
 msgstr "שמות האדמיניסטראטור ומשתמש השליטה חייבים להיות שונים!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
+#, fuzzy
 msgid  "No name has been entered for the $name$ file!"
 msgstr "לא הוקלד של לקובץ ה $name$!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
+#, fuzzy
 msgid  "You have to have administrator rights to create a new database!"
 msgstr "יצירת מסד נתונים חדש דורשת הרשאות אדמיניסטראטור!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
+#, fuzzy
 msgid  "The specified file name or directory does not exist."
 msgstr "הקובץ או הספריה שצויין אינו קיים."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr "נא לבדוק את תצורת ההתקנה של אדאבס D ובמיוחד ערכי המשתנים \"DBROOT\" ו \"DBWORK\"."
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
+#, fuzzy
 msgid  "Warning!"
 msgstr "אזהרה!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
+#, fuzzy
 msgid  "Creating database files."
 msgstr "יוצר קבצי מסד הנתונים."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
+#, fuzzy
 msgid  "Creating database configuration file."
 msgstr "יוצר קובץ תצורה למסד הנתונים."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
+#, fuzzy
 msgid  "Starting database for the first time."
 msgstr "מפעיל את מסד הנתונים לפעם הראשונה."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
+#, fuzzy
 msgid  "The name entered already exists."
 msgstr "השם שהוקלד כבר קיים במערכת."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
+#, fuzzy
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
 msgstr "לא ניתן לקבוע את שמות ברירת המחדל לקבצי מסד הנתונים. האורך הכולל עולה על ארבעים תווים."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
+#, fuzzy
 msgid  "No default names could be set for the database files. There is no write access."
 msgstr "לא ניתן לקבוע את שמות ברירת המחדל לקבצי מסד הנתונים. אין הרשאת כתיבה."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
+#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
 msgstr "מסד הנתונים הנוכחי דרוש הסבה. נא להקליד שם משתמש השליטה וססמה."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
+#, fuzzy
 msgid  "Spaces are not permitted in the password. Please enter a new password."
 msgstr "אין להקליד ססמה עם רווח. נא להקליד ססמה אחרת."
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
+#, fuzzy
 msgid  "Database Document Macro Migration"
 msgstr "הסבת מאקרואים של מסמך מסד נתונים"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
+#, fuzzy
 msgid  "Prepare"
 msgstr "הכנה"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
+#, fuzzy
 msgid  "Backup Document"
 msgstr "מסמך גיבוי"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
+#, fuzzy
 msgid  "Migrate"
 msgstr "הסבה"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
+#, fuzzy
 msgid  "Summary"
 msgstr "סיכום"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Welcome to the Database Macro Migration Wizard"
 msgstr "ברוכים הבאים לאשף הסבת המאקרוים"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
-msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr "אשף זה ידריך את תהליך הסבת המאקרוים והסקריפטים.\n\nבסיום התהליך, כל הסקריפטים והמאקרוים שהיו בטפסים ובדו\"ות ישובצו במסמך מסד הנתונים.תוך כדי ההסבה, שמות קבצי ספריה יקבלו שמות חדשים לפי הצורך.\n\nשמות המאקרוים והסקריפטים שמופיעים בהפניות בטפסים ודו\"חות יוסבו לשמות החדשים ככל שניתן.\n\nלפני התחלת ההסבה יש לסגור את כל הטפסים, השאילתות והטבלאות באצעות לחיצה על הכפתור 'הבא'."
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
+#, fuzzy
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
 msgstr "לא ניתן לסגור את כל העצמים. נא לסגור אותם באופן יזום ולהפעיל מחדש את האשף."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Backup your Document"
 msgstr "לגבות את המסמך"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
 msgstr "האשף יגבה את מסמך מסד הנתונים למקום בחירתך כדי לאפשר חזרה למצב הקודם. האשף יבצע את ההסבה על המסמך המקורי ולא על עותק הגיבוי."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Save To:"
 msgstr "שמירה ל:"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
+#, fuzzy
 msgid  "Browse ..."
 msgstr "דפדוף..."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
+#, fuzzy
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
 msgstr "לשמירת עותק הגיבוי ולהתחיל את ההסבה יש ללחוץ \"הבא\"."
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Migration Progress"
 msgstr "התקדמות ההסבה"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
 msgstr "מסמך מסד הנתונים מכיל $forms$ טפסים ו$reports$ דו\"חות להסבה:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Current object:"
 msgstr "העצם הנוכחי:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Current progress:"
 msgstr "התקדמות:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Overall progress:"
 msgstr "ההקדמות הכוללת:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
+#, fuzzy
 msgid  "document $current$ of $overall$"
 msgstr "מסמך $current$ מתוך $overall$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
+#, fuzzy
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
 msgstr "כל המסמכים הוסבו בהצלחה. לחצה על \"הבא\" מראה סיכום."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Summary"
 msgstr "סיכום"
 
@@ -582,26 +639,32 @@ msgid  "The migration was not successful. Examine the migration log below for de
 msgstr ""
 
 #: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
+#, fuzzy
 msgid  "Form '$name$'"
 msgstr "טופס '$name$'"
 
 #: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
+#, fuzzy
 msgid  "Report '$name$'"
 msgstr "דו\"ח '$name$'"
 
 #: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
+#, fuzzy
 msgid  "document $current$ of $overall$"
 msgstr "מסמך $current$ מתוך $overall$"
 
 #: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
+#, fuzzy
 msgid  "Database Document"
 msgstr "מסמך מסד נתונים"
 
 #: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
+#, fuzzy
 msgid  "saved copy to $location$"
 msgstr "$location$ עותק הגיבוי נשמר ל"
 
 #: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
+#, fuzzy
 msgid  "migrated $type$ library '$old$' to '$new$'"
 msgstr "ספרית $old$ מסוג $type$ נקראת מעתה $new$"
 
@@ -614,26 +677,32 @@ msgid  "migrating libraries ..."
 msgstr ""
 
 #: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Basic"
 msgstr "%PRODUCTNAME% בייסיק"
 
 #: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
+#, fuzzy
 msgid  "JavaScript"
 msgstr "ג'אווהסקריפט"
 
 #: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
+#, fuzzy
 msgid  "BeanShell"
 msgstr "מבצע שפת ג'אווה קל"
 
 #: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
+#, fuzzy
 msgid  "Java"
 msgstr "ג'אווה"
 
 #: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
+#, fuzzy
 msgid  "Python"
 msgstr "פית'ון"
 
 #: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
+#, fuzzy
 msgid  "dialog"
 msgstr "תיבת דו-שיח"
 
@@ -666,134 +735,167 @@ msgid  "Not applicable to read-only documents."
 msgstr ""
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
+#, fuzzy
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 msgstr "לא ניתן להשתמש באותו שם גם לטבלה וגם לשאילתה. נא לבחור שם אחר.‏"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "טבלה"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
+#, fuzzy
 msgid  "Query"
 msgstr "שאילתה"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
+#, fuzzy
 msgid  "The given connection is no valid query and/or tables supplier."
 msgstr "החיבור שצויין אינו ספק שאילתות או טבלאות חוקי."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
+#, fuzzy
 msgid  "The given object is no table object."
 msgstr "העצם שצויין אינו עצם טבלאי חוקי."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
+#, fuzzy
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
 msgstr "סוג התחביר אינו חוקי. הוא חייב להיות ערך מתוך com.sun.star.sdb.tools.CompositionType."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
+#, fuzzy
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
 msgstr "סוג הפקודה אינו חוקי. הוא חייב להיות ערך TABLE או QUERY מתוך com.sun.star.sdb.CommandType."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
+#, fuzzy
 msgid  "Create Form in Design View..."
 msgstr "יצירת טופס בתצוגת התכנון"
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
+#, fuzzy
 msgid  "Use Wizard to Create Form..."
 msgstr "יצירת טופס באמצעות אשף...‏"
 
 #: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
+#, fuzzy
 msgid  "Use Wizard to Create Report..."
 msgstr "יצירת דו\"ח באמצעות אשף...‏"
 
 #: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
+#, fuzzy
 msgid  "Create Report in Design View..."
 msgstr "יצירת דו\"ח במבט התיכנון..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
+#, fuzzy
 msgid  "Create Query in Design View..."
 msgstr "יצירת שאילתה בתצוגת התכנון"
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
+#, fuzzy
 msgid  "Create Query in SQL View..."
 msgstr "יצירת שאילתה בתצוגת ה ‏‪SQL‬‏...‏"
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
+#, fuzzy
 msgid  "Use Wizard to Create Query..."
 msgstr "יצירת שאילתה באמצעות אשף...‏"
 
 #: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
+#, fuzzy
 msgid  "Create Table in Design View..."
 msgstr "יצירת טבלה בתצוגת התכנון...‏"
 
 #: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
+#, fuzzy
 msgid  "Use Wizard to Create Table..."
 msgstr "יצירת טבלה באמצעות אשף...‏"
 
 #: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
+#, fuzzy
 msgid  "Create View..."
 msgstr "יצירת תצוגה...‏"
 
 #: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
+#, fuzzy
 msgid  "Forms"
 msgstr "טפסים"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
+#, fuzzy
 msgid  "Reports"
 msgstr "דו\"חות"
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MenuItem.Text
+#, fuzzy
 msgid  "Form..."
 msgstr "טופס...‏"
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
+#, fuzzy
 msgid  "Report..."
 msgstr "דו\"ח..."
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
+#, fuzzy
 msgid  "View (Simple)..."
 msgstr "תצוגה (פשוטה)...‏"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MenuItem.Text
+#, fuzzy
 msgid  "Paste Special..."
 msgstr "הדבקה מיוחדת...‏"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "מחיקה"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MenuItem.Text
+#, fuzzy
 msgid  "Rename"
 msgstr "שינוי שם"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "עריכה"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MenuItem.Text
+#, fuzzy
 msgid  "Edit in SQL View..."
 msgstr "עריכה בתצוגת ‏‪SQL‬‏...‏"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MenuItem.Text
+#, fuzzy
 msgid  "Open"
 msgstr "פתיחה"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MenuItem.Text
+#, fuzzy
 msgid  "Create as View"
 msgstr "יצירה כתצוגה"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+#, fuzzy
 msgid  "Form Wizard..."
 msgstr "אשף הטפסים...‏"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MenuItem.Text
+#, fuzzy
 msgid  "Report..."
 msgstr "דו\"ח..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+#, fuzzy
 msgid  "Report Wizard..."
 msgstr "אשף הדו\"חות...‏"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MenuItem.Text
+#, fuzzy
 msgid  "Select All"
 msgstr "בחירת הכל"
 
@@ -908,14 +1010,12 @@ msgid  "Disable Preview"
 msgstr "חסימת תצוגה מקדימה"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
-#, fuzzy
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr "מסד הנתונים שונה.\nהאם לשמור את השינויים?‏"
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
-#, fuzzy
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr "סוג החיבור שונה.\nיש לסגור את כל הטפסים, דו\"חות, שאילתות וטבלאות כדי שהשינוי יחול.\n\nהאם לסגור את כולם עכשיו?‏"
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -963,9 +1063,8 @@ msgid  "The document contains forms or reports with embedded macros."
 msgstr "המסמך מכיל טפסים או דו\"חות עם מאקרואים או סקריפטים משובצים."
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
-#, fuzzy
-msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr "עדיף לשבץ מאקרואים וסקריפטים בתוך מסמך מסד הנתונים עצמו.\n\nניתן להמשיך כמו קודם, אבל עדיף להסב את המאקרואים והסקריפטים למסמך על ידי תפריט ה\"כלים\"-\"הסבת מאקרואים וסקריפטים\"...\n\nאין אפשרות לשבץ מאקרואים או סקריפטים חדשים לפני הסבת הישנים למסמך מסד הנתונים."
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr ""
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 #, fuzzy
@@ -983,230 +1082,286 @@ msgid  "Unsupported object type found ($type$)."
 msgstr "אותר סוג אובייקט לא נתמך ($type$)."
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr "הרשומה הנוכחית שונתה.\nהאם לשמור את השינויים?‏"
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "האם למחוק את הנתונים הנבחרים?‏"
 
 #: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+#, fuzzy
 msgid  "(filtered)"
 msgstr "(מסונן)"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "שגיאה בקביעת קריטריוני המיון"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "שגיאה בקביעת קריטריוני הסינון"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+#, fuzzy
 msgid  "Connection lost"
 msgstr "הקשר אבד.‏"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Queries"
 msgstr "שאילתות"
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "טבלאות"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+#, fuzzy
 msgid  "Edit ~Database File..."
 msgstr "עריכת קובץ מסד הנתונים...‏"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+#, fuzzy
 msgid  "Registered databases ..."
 msgstr "עריכת קובץ מסד הנתונים...‏"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+#, fuzzy
 msgid  "Disco~nnect"
 msgstr "ניתוק"
 
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "אישור המחיקה"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "האם למחוק את הטבלה '%1'?‏"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
 msgstr "השאילתה כבר קיימת. האם למחוק אותה?‏"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "אבד הקשר עם מסד הנתונים. האם לחדש את הקשר?‏"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+#, fuzzy
 msgid  "Warnings encountered"
 msgstr "נמצאו אזהרות.‏"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
 msgstr "החיבור למסד הנתונים דיווח על אזהרות בעת משיכת הטבלאות.‏"
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
 msgstr "מתבצע חיבור ל ‏‪\"‏‪$name$‬‏\"‬‏...‏"
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "טעינת השאילתה ‏‪$name$‬‏ ...‏"
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "טעינת הטבלה ‏‪$name$‬‏ ...‏"
 
 #: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+#, fuzzy
 msgid  "No table format could be found."
 msgstr "לא נמצא עיצוב לטבלה.‏"
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "לא ניתן להתחבר למקור הנתונים ‏‪\"‏‪$name$‬‏\"‬‏.‏"
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+#, fuzzy
 msgid  "Rebuild"
 msgstr "בנייה מחדש"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+#, fuzzy
 msgid  "Column ~Format..."
 msgstr "עיצוב עמודה...‏"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "העתקת תיאור עמודה"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+#, fuzzy
 msgid  "Table Format..."
 msgstr "עיצוב טבלה...‏"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Row Height..."
 msgstr "גובה שורה...‏"
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "ביטול: קלט נתונים"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+#, fuzzy
 msgid  "Save current record"
 msgstr "שמירת הרשומה הנוכחית"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+#, fuzzy
 msgid  "Query #"
 msgstr "שאילתה #‏"
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "טבלה #‏"
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+#, fuzzy
 msgid  "View #"
 msgstr "תצוגה #‏"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+#, fuzzy
 msgid  "The name \"#\" already exists."
 msgstr "השם \"#\" כבר קיים.‏"
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+#, fuzzy
 msgid  "No matching column names were found."
 msgstr "לא ניתן היה למצוא שמות עמודות תואמים.‏"
 
 #: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
 msgstr "ארעה שגיאה, האם להמשיך להעתיק?‏"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+#, fuzzy
 msgid  "Data source table view"
 msgstr "תצוגת טבלת נתוני מקור"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+#, fuzzy
 msgid  "Shows the selected table or query."
 msgstr "הצגת הטבלה או השאילתה שנבחרו.‏"
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "טבלה #‏"
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "שינוי משפט(י) ‏‪SQL‬‏.‏"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+#, fuzzy
 msgid  "Table name"
 msgstr "שם טבלה"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+#, fuzzy
 msgid  "Insert data"
 msgstr "הכנסת נתונים"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+#, fuzzy
 msgid  "Delete data"
 msgstr "מחיקת נתונים"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+#, fuzzy
 msgid  "Modify data"
 msgstr "שינוי נתונים"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+#, fuzzy
 msgid  "Alter structure"
 msgstr "שינוי מבנה"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+#, fuzzy
 msgid  "Read data"
 msgstr "קריאת נתונים"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+#, fuzzy
 msgid  "Modify references"
 msgstr "שינוי הפניות"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+#, fuzzy
 msgid  "Drop structure"
 msgstr "הורדת מבנה"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Ascending"
 msgstr "מיון בסדר עולה"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Descending"
 msgstr "מיון בסדר יורד"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
 msgstr "לא ניתן ליצור קשר עם מנהל התקן ה ‏‪SDBC (#servicename#)‬‏.‏"
 
 #: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "לא רשום מנהל התקן עבור ה ‏‪URL #connurl#‬‏.‏"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
 msgstr "לא ניתן היה ליצור קשר עבור ה ‏‪URL #connurl#‬‏.‏"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
 msgstr "יש לבדוק את ההגדרות הנוכחיות, למשל, שם משתמש/ת וסיסמה.‏"
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+#, fuzzy
 msgid  "Successfully connected, but information about database tables is not available."
 msgstr "החיבור הצליח אבל לא ניתן לקבל מידע אודות מסד הנתונים.‏"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+#, fuzzy
 msgid  "All tables"
 msgstr "כל הטבלאות"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+#, fuzzy
 msgid  "All views"
 msgstr "כל התצוגות"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+#, fuzzy
 msgid  "All tables and views"
 msgstr "כל הטבלאות והתצוגות"
 
@@ -1792,9 +1947,8 @@ msgid  "A password is needed to connect to the data source \"$name$\"."
 msgstr "נדרשת ססמה כדי להתחבר למקור הנתונים ‏‪\"$name$\"‬‏.‏"
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
-#, fuzzy
-msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr "תיקית ה\n\n$path$\n\nאינה קיימת. האם ליוצרה כעת?‏"
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr ""
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 #, fuzzy
@@ -1827,18 +1981,22 @@ msgid  "Mark the tables that should be visible for the applications."
 msgstr "ציון טבלאות הנראות ליישומים.‏"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Database name"
 msgstr "~שם מסד הנתונים"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
+#, fuzzy
 msgid  "Se~rver / Port"
 msgstr "ש~רת / פורט"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Server"
 msgstr "~שרת"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
+#, fuzzy
 msgid  "~Port"
 msgstr "~פורט"
 
@@ -1933,7 +2091,7 @@ msgstr "יש להשתמש בקטלוג עבור מסדי נתונים מבוסס
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
 #, fuzzy
 msgid  "Connection Settings"
-msgstr "הגדרות חיבור"
+msgstr "הגדרות החיבור"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
 #, fuzzy
@@ -2021,9 +2179,8 @@ msgid  "Database"
 msgstr "מסד נתונים"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
-#, fuzzy
-msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr "בדפים הבאים ניתן להגדיר את פרטי הגדרות החיבור.‏ ההגדרות החדשות ידרסו את ההגדרות הקיימות.‏"
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 #, fuzzy
@@ -2041,9 +2198,8 @@ msgid  "Could not load the program library #lib# or it is corrupted. The ODBC da
 msgstr "לא ניתן לטעון את ספרית התוכניות ‏‪#lib#‬‏, או שקובץ הספריה פגום, ולכן מקור הנתונים ה ‏‪ODBC‬‏ אינו זמין.‏"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
-#, fuzzy
-msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr "סוג זה של מקור נתונים אינו נתמך מחשב זה.‏\nניתן לשנות הגדרות, אבל הסיכוי להתחבר קלוש.‏"
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 #, fuzzy
@@ -2431,66 +2587,82 @@ msgid  "MS Access 2007 file"
 msgstr "קובץ אקסס 2007"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+#, fuzzy
 msgid  "Database files"
 msgstr "קבצי מסד נתונים"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
+#, fuzzy
 msgid  "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+#, fuzzy
 msgid  "Database sizes"
 msgstr "גודל מסדי נתונים"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "גודל ‏‪(MB):‏"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "מרחב זכרון פנוי ‏‪(MB)‏"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "ניצול זכרון (ב%):‏"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+#, fuzzy
 msgid  "Database Statistics"
 msgstr "נתונים סטטיסטיים של מסד הנתונים"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+#, fuzzy
 msgid  "Contains the system tables"
 msgstr "מכילה את טבלאות המערכת"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+#, fuzzy
 msgid  "Contains information about transaction"
 msgstr "מכילה מידע על עיסקה"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+#, fuzzy
 msgid  "Contains all data files"
 msgstr "מכילה את כל קבצי הנתונים"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+#, fuzzy
 msgid  "Total size of the database files"
 msgstr "גדלם הכולל של קבצי מסד הנתונים"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "מקום זמין כרגע, לפני יצירתו של קובץ ‏‪datadev‬‏ חדש.‏"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+#, fuzzy
 msgid  "Currently used memory"
 msgstr "הזכרון הנמצא כרגע בשימוש"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
 msgstr "לא ניתן להציג מידע כי אין הרשאות גישה לטבלאות המערכת הנדרשות.‏"
 
@@ -2730,9 +2902,8 @@ msgid  "Set up a connection to a MySQL database"
 msgstr "הגדרת חיבור למסד נתונים ‏‪MySQL‏"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
-#, fuzzy
-msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "ניתן להתחבר למסד נתונים ‏‪MySQL‬‏ באמצעות מנהל התקן ‏‪ODBC או JDBC‬‏.‏\nנא להתיעץ עם מנהל/ת המערכת אם לא ידוע לך כיצד להגדיר את ההגדרות הבאות.‏"
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 #, fuzzy
@@ -2825,9 +2996,8 @@ msgid  "Set up connection to a MySQL database using JDBC"
 msgstr "הגדרת חיבור למסד נתונים ‏‪MySQL‬‏ באמצעות ‏‪JDBC‏"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "נא להקליד את המידע הנדרש להתחברות למסד נתונים MySQL באמצעות JDBC. מנהל ההתקן ה JDBC חייב להיות מותקן כבר במערכת ורשום ב %PRODUCTNAME.\nנא להתיעץ עם מנהל/ת המערכת אם לא ידוע לך כיצד להגדיר את ההגדרות הבאות.‏"
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 #, fuzzy
@@ -2890,9 +3060,8 @@ msgid  "Set up a connection to an LDAP directory"
 msgstr "הגדרת חיבור למדריך ‏‪LDAP‏"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "נא להקליד את המידע הנדרש להתחברות למדריך ‏‪LDAP‬‏.‏\nנא להתיעץ עם מנהל/ת המערכת אם לא ידוע לך כיצד להגדיר את ההגדרות הבאות.‏"
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 #, fuzzy
@@ -2910,9 +3079,8 @@ msgid  "Set up a connection to an Adabas D database"
 msgstr "הגדרת חיבור למסד נתונים ‏‪Adabas D‏"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr "נא להקליד את שם מסד הנתונים ה ‏‪Adabas D‬‏ אליו להתחבר או\nללחוץ 'דפדוף...' כדי לבחור מסד נתונים ‏‪Adabas D‬‏ שכבר רשום ב ‏‪%PRODUCTNAME‬‏.‏\n‏"
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 #, fuzzy
@@ -2920,9 +3088,8 @@ msgid  "Set up a connection to an ADO database"
 msgstr "הגדרת חיבור למסד נתונים ‏‪ADO‏"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "נא להקליד את כתובת ה ‏‪URL‬‏ של מקור הנתונים ה ‏‪ADO‬‏ שאליו יש להתחבר.‏\nיש ללחוץ 'דפדוף...' כדי להגדיר את ההגדרות המיוחדות לכל מספק.‏\nנא להתיעץ עם מנהל/ת המערכת אם לא ידוע לך כיצד להגדיר את ההגדרות הבאות.‏"
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2930,9 +3097,8 @@ msgid  "Set up a connection to an ODBC database"
 msgstr "הגדרת חיבור למסד נתונים ‏‪ODBC‏"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "נא להקליד את שם מסד הנתונים ה ‏‪ODBC‬‏ אליו להתחבר או\nללחוץ 'דפדוף...' כדי לבחור מסד נתונים ‏‪ODBC‬‏ שכבר רשום ב ‏‪%PRODUCTNAME‬‏.‏\nנא להתיעץ עם מנהל/ת המערכת אם לא ידוע לך כיצד להגדיר את ההגדרות הבאות.‏"
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2940,9 +3106,8 @@ msgid  "Set up a connection to a JDBC database"
 msgstr "הגדרת חיבור למסד נתונים ‏‪JDBC‏"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "נא להקליד את המידע הנדרש להתחברות למסד נתונים ‏‪JDBC‬‏.‏\nנא להתיעץ עם מנהל/ת המערכת אם לא ידוע לך כיצד להגדיר את ההגדרות הבאות.‏"
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 #, fuzzy
@@ -2960,9 +3125,8 @@ msgid  "Oracle JDBC ~driver class"
 msgstr "מנהל התקן ‏‪Oracle JDBC‏"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "נא להקליד את המידע הנדרש להתחברות למסד נתונים ‏‪Oracle‬‏.מנהל ההתקן ה ‏‪JDBC‬‏ חייב להיות מותקן כבר במערכת ורשום ב ‏‪%PRODUCTNAME‬‏.‏\nנא להתיעץ עם מנהל/ת המערכת אם לא ידוע לך כיצד להגדיר את ההגדרות הבאות.‏"
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 #, fuzzy
@@ -2970,9 +3134,8 @@ msgid  "Set up a connection to spreadsheets"
 msgstr "הגדרת חיבור לגליונות עבודה"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr "יש ללחוץ 'דפדוף' כדי לבחור גיליון עבודה של ‏‪%PRODUCTNAME‬‏ או של ‏‪Microsoft Excel‬‏.‏\nהקובץ יפתח על ידי ‏‪%PRODUCTNAME‬‏ לקריאה בלבד.‏"
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 #, fuzzy
@@ -3115,9 +3278,8 @@ msgid  "{None}"
 msgstr "{ללא}"
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
-#, fuzzy
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
 #, fuzzy
@@ -3149,96 +3311,118 @@ msgid  "Socket"
 msgstr ""
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+#, fuzzy
 msgid  "Refresh"
 msgstr "רענון"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~View Design"
 msgstr "עיצוב תצוגה חדש"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Table Design"
 msgstr "עיצוב טבלה חדש"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "טייס אוטומטי לשאילות...‏"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "שאילתה חדשה (תצוגת עיצוב)‏"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "~Edit Query"
 msgstr "עריכת שאילתה"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "שאילתה חדשה (תצוגת ‏‪SQL‬‏)‏"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "עריכה...‏"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+#, fuzzy
 msgid  "Column ~Width..."
 msgstr "רוחב עמודה...‏"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+#, fuzzy
 msgid  "Report Wizard..."
 msgstr "טייס דו\"חות אוטומטי...‏"
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "טייס טפסים אוטומטי...‏"
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+#, fuzzy
 msgid  "System"
 msgstr "מערכת"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+#, fuzzy
 msgid  "Error during creation"
 msgstr "ארע שגיאה בעת יצירת"
 
 #: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "ארעה שגיאה בלתי צפוייה. לא ניתן היה לבצע את הפעולה.‏"
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
 msgstr "לא ניתן לפתוח את המסמך בשם\n$file$\n.‏"
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
 msgstr "סוג זה של קישור למסד הנתונים אינו תומך במחיקת טבלאות.‏"
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+#, fuzzy
 msgid  "~All"
 msgstr "הכל"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+#, fuzzy
 msgid  "Undo:"
 msgstr "ביטול פעולה:‏"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+#, fuzzy
 msgid  "Redo:"
 msgstr "שחזור פעולה:‏"
 
 #: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
 msgstr "לא נמצא סוג עמודה מתאים לעמודה '#1'.‏"
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+#, fuzzy
 msgid  "The file \"$file$\" does not exist."
 msgstr "הקובץ ‏‪\"$file$\"‬‏ אינו קיים.‏"
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr "אזהרות התקבלו בעת יצירת הקשר עם מקור הנתונים. יש ללחוץ 'עוד' כדי לראות את האזהרות.‏"
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
-msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr "השם '$#$'  כבר קיים.‏\nנא לבחור שם אחר.‏"
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
 #, fuzzy
@@ -3256,9 +3440,8 @@ msgid  "Type formatting"
 msgstr "עיצוב סוג"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
-#, fuzzy
-msgid  "The following fields have already been set as primary keys:\n"
-msgstr "השדות הבאים כבר נקבעו כשדות מפתח ראשיים:‏\n"
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
 #, fuzzy
@@ -3321,14 +3504,12 @@ msgid  "Primary Key"
 msgstr "מפתח ראשי"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
-#, fuzzy
-msgid  "Source table: \n"
-msgstr "טבלת מקור:‏\n"
+msgid  "Source table: \\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
-#, fuzzy
-msgid  "Destination table: \n"
-msgstr "טבלת יעד:‏\n"
+msgid  "Destination table: \\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
 #, fuzzy
@@ -3411,268 +3592,333 @@ msgid  "Please change the table name. It is too long."
 msgstr "יש לשנות את שם הטבלה. הוא ארוך מדי.‏"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "אפשרויות"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "טיפוס"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
+#, fuzzy
 msgid  "Inner join"
 msgstr "צירוף פנים"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
+#, fuzzy
 msgid  "Left join"
 msgstr "צירוף שמאלי"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
+#, fuzzy
 msgid  "Right join"
 msgstr "צירוף ימני"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
+#, fuzzy
 msgid  "Full (outer) join"
 msgstr "צירוף מלא (חיצוני)"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
+#, fuzzy
 msgid  "Cross join"
 msgstr "צירוף מוצלב"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
+#, fuzzy
 msgid  "Natural"
 msgstr "גולמי"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+#, fuzzy
 msgid  "Tables involved"
 msgstr "הטבלאות המעורבות"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+#, fuzzy
 msgid  "Fields involved"
 msgstr "השדות המעורבים"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
+#, fuzzy
 msgid  "Join Properties"
 msgstr "מאפייני חיבור רב טבלאי ‏‪(Join Properties)‬‏‏"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
+#, fuzzy
 msgid  "Please note that some databases may not support this join type."
 msgstr "לידיעתך - לא כל הסוגים של מסדי נתונים תומכים בסוג זה של שאילתת חיבור"
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
+#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
 msgstr "כולל רק רשומות שתוכן השדות המקבילים בשתי הטבלאות זהה.‏"
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
+#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
 msgstr "כולל כל הרשומות מטבלה '%1', ורשומות מטבלה '%2' שבהן השדות המקבילים זהים.‏"
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
+#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
 msgstr "מכילה את כל הרשומות מ '%1' ומ '%2'.‏"
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
+#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "מכיל את התוצר הקרטסיאני של כל הרשומות מ'%1' ומ'%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
+#, fuzzy
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
 msgstr "מכיל עמודה אחת בלבד עבור כל זוג עמודות מ'%1' ומ'%2' בעלי שמות זהים."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+#, fuzzy
 msgid  "Add Table Window"
 msgstr "הוספת חלון טבלה"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+#, fuzzy
 msgid  "Move table window"
 msgstr "הזזת חלון טבלה"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+#, fuzzy
 msgid  "Insert Join"
 msgstr "הכנסת שאילתה רב טבלאית"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+#, fuzzy
 msgid  "Delete Join"
 msgstr "מחיקת שאילתה רב טבלאית"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+#, fuzzy
 msgid  "Resize table window"
 msgstr "שינוי גודל חלון טבלה"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+#, fuzzy
 msgid  "Delete Column"
 msgstr "מחיקת עמודה"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+#, fuzzy
 msgid  "Move column"
 msgstr "הזזת עמודה"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+#, fuzzy
 msgid  "Add Column"
 msgstr "הוספת עמודה"
 
 #: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "ביטוי בלתי חוקי, הטבלה ‏‪'$name$'‬‏ אינה קיימת!‏"
 
 #: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
 msgstr "ביטוי בלתי חוקי, שם השדה ‏‪'$name$'‬‏ אינו קיים.‏"
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "השאילתה כוללת ‏‪#num#‬‏ טבלאות. ברם, סוג מסד הנתונים תומך בלא יותר מ ‏‪#maxnum#‬‏ טבלאות בכל שאילתה.‏"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+#, fuzzy
 msgid  "Delete Table Window"
 msgstr "מחיקת חלון טבלה"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+#, fuzzy
 msgid  "Edit Column Description"
 msgstr "עריכת תיאור עמודה"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+#, fuzzy
 msgid  "Adjust column width"
 msgstr "שינוי רוחב העמודה"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
+#, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "‏(לא התבצע מיון);סדר עולה; סדר יורד"
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+#, fuzzy
 msgid  "(no function);Group"
 msgstr "‏(אין פונקציה); קיבוץ"
 
 #: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
+#, fuzzy
 msgid  "(no table)"
 msgstr "(אין טבלה)"
 
 #: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+#, fuzzy
 msgid  "The database only supports sorting for visible fields."
 msgstr "מסד הנתונים רק תומך במיון של שדות גלויים לעין.‏"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+#, fuzzy
 msgid  "Functions"
 msgstr "פונקציות"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+#, fuzzy
 msgid  "Table Name"
 msgstr "שם טבלה"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+#, fuzzy
 msgid  "Alias"
 msgstr "כינויים"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+#, fuzzy
 msgid  "Distinct Values"
 msgstr "ערכים נבדלים"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "שדה;כינוי;טבלה;מיון;גלוי;פונקציה;תנאי;או;או"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+#, fuzzy
 msgid  "There are too many columns."
 msgstr "קיימות עמודות רבות מדי.‏"
 
 #: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "לא ניתן ליישם תנאי על שדה [*].‏"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+#, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "משפט ה ‏‪SQL‬‏ שנוצר ארוך מדי.‏"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+#, fuzzy
 msgid  "Query is too complex"
 msgstr "השאילתה מורכבת מדי"
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "לא נבחר דבר!‏"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+#, fuzzy
 msgid  "Too many search criteria"
 msgstr "יותר מדי תנאי חיפוש"
 
 #: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
+#, fuzzy
 msgid  "SQL syntax error"
 msgstr "שגיאת תחביר ‏‪SQL‬‏‏"
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "לא ניתן להשתמש ב [*] כתנאי למיון.‏"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+#, fuzzy
 msgid  "There are too many tables."
 msgstr "קיימות יותר מדי טבלאות.‏"
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "משפט זה אינו ישים בניב של ‏‪SQL‬‏ של מסד נתונים זה.‏"
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "שם השדה לא נמצא או לא ייחודי"
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+#, fuzzy
 msgid  "Join could not be processed"
 msgstr "לא ניתן היה לעבד את השאילתה הרב טבלאית"
 
 #: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
+#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "שגיאה בתחביר (סינטקס) ‏‪SQL‬‏‏"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+#, fuzzy
 msgid  "This database does not support table views."
 msgstr "מסד נתונים זה אינו תומך בתצוגת טבלאות!‏"
 
 #: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+#, fuzzy
 msgid  "This database does not support altering of existing table views."
 msgstr "מסד נתונים זה אינו מאפשר שינוים במבטי הטבלאות הקיימים."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "האם ליצור במקום זאת שאילתה?‏"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+#, fuzzy
 msgid  "No query could be created."
 msgstr "לא ניתן היה ליצור שאילתה.‏"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+#, fuzzy
 msgid  "No query could be created because no fields were selected."
 msgstr "לא ניתן היה ליצור שאילתה מפני שלא נבחרו שום שדות.‏"
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
 msgstr "מקור הנתונים הרלוונטי נמחק ולכן אין אפשרות לשמור נתונים לאותו מקור.‏"
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "העמודה ‏‪'$name$'‬‏ אינה ידועה.‏"
 
 #: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+#, fuzzy
 msgid  "Columns can only be compared using '='."
 msgstr "ניתן להשוות עמודות רק באמצעות '='.‏"
 
 #: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
 msgstr "יש להשתמש בשם עמודה לפני ‏‪'LIKE'‬‏.‏"
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
 msgstr "העמודה לא נמצאת. (לידיעתך, מסד הנתונים מבדיל בין אותיות קטנות וגדולות).‏"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
 msgstr "‏ - ‏‪%PRODUCTNAME Base‬‏: תכנון שאילתות"
 
 #: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
 msgstr "‏ - ‏‪%PRODUCTNAME Base‬‏: תכנון תצוגות"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
-msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr "עצם ‏‪$object$‬‏ שונה.‏\nהאם לשמור את השינויים?‏"
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
@@ -3683,55 +3929,66 @@ msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
+#, fuzzy
 msgid  "The table view"
 msgstr "השאילתה"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
+#, fuzzy
 msgid  "The query"
 msgstr "התצוגה הטבלאית"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
+#, fuzzy
 msgid  "The SQL statement"
 msgstr "המשפט ה ‏‪SQL‬‏‏"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
 msgstr "השאילתה אינה מניבה נתונים ולכן אינה יכולה להיות מרכיב של שאילתה אחרת."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
+#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "אין אפשרות לאתחל את מתכנן השאילתות - משתני הActiveConnection וגם הDataSourceName או חסרים או שגויים."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "יחס זה כבר קיים. האם לערוך אותו?‏"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "עריכה..."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+#, fuzzy
 msgid  "Create..."
 msgstr "יצירה..."
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr "‏ - ‏‪%PRODUCTNAME Base‬‏: תכנון יחסים"
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+#, fuzzy
 msgid  "The database does not support relations."
 msgstr "מסד הנתונים אינו תומך ביחסים"
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr "תכנון היחסים שונה.\nהאם לשמור את השינויים?‏"
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "בעת מחיקת טבלה זו, כל היחסים השייכים לטבלה יימחקו גם כן. האם להמשיך?‏"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
-msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
@@ -3740,336 +3997,409 @@ msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
-msgstr "הוספה/הסרה של מפתח ראשי"
+msgstr "הכנסה/הסרה של מפתח ראשי"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "כן"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "לא"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+#, fuzzy
 msgid  "Ascending"
 msgstr "סדר עולה"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+#, fuzzy
 msgid  "Descending"
 msgstr "סדר יורד"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+#, fuzzy
 msgid  "<none>"
 msgstr "<ללא>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+#, fuzzy
 msgid  "Field name"
 msgstr "שם שדה"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "Field Name"
 msgstr "שם שדה"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
+#, fuzzy
 msgid  "Field ~type"
 msgstr "סוג שדה"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
+#, fuzzy
 msgid  "Field Type"
 msgstr "טיפוס שדה"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
+#, fuzzy
 msgid  "Field length"
 msgstr "אורך שדה"
 
 #: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
+#, fuzzy
 msgid  "Description"
 msgstr "תאור"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "Column Description"
 msgstr "תיאור עמודה"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
+#, fuzzy
 msgid  "Input required"
 msgstr "נדרש קלט"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
+#, fuzzy
 msgid  "~AutoValue"
 msgstr "ערך אטוטמטי"
 
 #: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Field Properties"
 msgstr "תכונות שדה"
 
 #: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
+#, fuzzy
 msgid  "General"
 msgstr "כללי"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "Description:"
 msgstr "תאור:‏"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Table properties"
 msgstr "תכונות טבלה"
 
 #: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
+#, fuzzy
 msgid  "The text you entered is not a list element. "
 msgstr "הטקסט שהוכנס אינו כלול ברשימה.‏"
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
+#, fuzzy
 msgid  "Insert Rows"
 msgstr "הכנסת שורות"
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+#, fuzzy
 msgid  "Primary Key"
 msgstr "מפתח ראשי"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
+#, fuzzy
 msgid  "Modify cell"
 msgstr "שינוי תא"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
+#, fuzzy
 msgid  "Delete row"
 msgstr "מחיקת שורה"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
+#, fuzzy
 msgid  "Modify field type"
 msgstr "שינוי סוג שדה"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
+#, fuzzy
 msgid  "Insert row"
 msgstr "הכנסת שורה"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
+#, fuzzy
 msgid  "Insert new row"
 msgstr "הכנסת שורה חדשה"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
+#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "הכנסה/הסרה של מפתח ראשי"
 
 #: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
+#, fuzzy
 msgid  "~Default value"
 msgstr "ערך ברירת מחדל"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
+#, fuzzy
 msgid  "~Entry required"
 msgstr "נדרש ערך"
 
 #: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+#, fuzzy
 msgid  "~Length"
 msgstr "אורך"
 
 #: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "סוג"
 
 #: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
+#, fuzzy
 msgid  "~Length"
 msgstr "אורך"
 
 #: source/ui/tabledesign/table.src#STR_SCALE.String.Text
+#, fuzzy
 msgid  "Decimal ~places"
 msgstr "מקומות עשרוניים"
 
 #: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
+#, fuzzy
 msgid  "Format example"
 msgstr "דוגמת עיצוב"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
-msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr "יש לציין ערך ברירת מחדל לשדה שיוכנס לכל רשומה חדשה.\nאם לא נדרש ערך ברירת מחדל ניתן להשאיר ריק.‏"
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
-msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr "יש לציין ערך ברירת מחדל לשדה זה.\n\nערך זה יוכנס לשדה בכל רשומה חדשה. יש להשתמש בערך מתאים לצורת התא למטה.‏"
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
+#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
 msgstr "יש להפעיל אפשרות זו במקרה שאסור לשדה להישאר ללא ערך (NULL).\nאפשרות זו מאלצת את המשתמש להכניס ערך לשדה.‏"
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
+#, fuzzy
 msgid  "Enter the maximum text length permitted."
 msgstr "יש להזין את אורך הטקסט המירבי המותר.‏"
 
 #: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
+#, fuzzy
 msgid  "Enter the number format."
 msgstr "יש להזין את צורת המספרים.‏"
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
-msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr "יש לקבוע את אורך הנתון בשדה זה.\n\nאם השדה עשרוני אזי יש להקליד את מספר המירבי של ספרות שנדרש לשמור בשדה. אם השדה בינרי אזי יש להקליד\nאת מספר הביטים הנדרש להכיל את המספר המירבי שיושמר בשדה. בכל מקרה, אם המספר שהוקלד עולה\nעל המספר המירבי שמסד הנתונים מאפשר, אזי המספר יוקטן באופן אוטומטי למספר המירבי שמסד\nהנתונים מאפשר.‏"
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
+#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
 msgstr "יש לציין את מספר המקומות העשרוניים המותרים בשדה זה.‏"
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
+#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
 msgstr "כאן רואים כיצד הנתון יראה בצורה זו. ניתן להשתמש בכפתור בצד ימין לשנות את הצורה.‏"
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
+#, fuzzy
 msgid  "This is where you determine the output format of the data."
 msgstr "כאן ניתן לקבוע את צורת הפלט של הנתונים.‏"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
-msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr "יש להחליט אם שדה זה יהיה מטיפוס 'תיסוף אוטומטי'‏ ‏‪(auto increment)‬‏.‏\n\nמסד הנתונים בעצמו קובע את הערכים של שדות אלו ולא המשתמש.  בכל רשומה חדשה ערך השדה עולה.‏"
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
+#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "השם ‏‪\"$column$\"‬‏ הושמה ליותר מעמודה אחת ולכן אין אפשרות לשמור את הטבלה.‏"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
+#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "עמודת ‏‪\"$column$\"‬‏ שייכת למפתח ראשי. מחיקת העמודה תגרום למחיקת המפתח.‏\nהאם למחוק את העמודה בכל זאת?‏"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
+#, fuzzy
 msgid  "Primary Key Affected"
 msgstr "מפתח הראשי מיושם"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "Column"
 msgstr "עמודה"
 
 #: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
+#, fuzzy
 msgid  "Continue anyway?"
 msgstr "להמשיך בכל זאת?‏"
 
 #: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+#, fuzzy
 msgid  "Warning!"
 msgstr "אזהרה!‏"
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr "הטבלה שונתה. האם לשמור את השינויים?‏"
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr "נותק הקשר עם מסד הנתונים! אין אפשרות לתכנן טבלאות באופן מלא ללא קשר.\nהאם להתחבר שוב?‏"
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
+#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
 msgstr "בעיות חיבור למסד הנתונים מונעות שמירת הטבלה.‏"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
+#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
 msgstr "לא ניתן לעדכן את מסנן הטבלה כי מקור הנתונים נמחק.‏"
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr "עריכת אינדקס של טבלה מותרת רק אחרי שמירת שינויים.\nהאם לשמור את השינויים עכשיו?‏"
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
+#, fuzzy
 msgid  "No primary key"
 msgstr "אין מפתח ראשי"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
-msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr "כדי לזהות רשומה מסוימת במסד נתונים זה נדרש אינדקס יחיד או מפתח ראשי,\nאחרת לא ניתן להכניס נתונים לטבלה זו.\nהאם ליצור מפתח ראשי עכשיו?‏"
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr "‏ - ‏‪%PRODUCTNAME Base‬‏: תכנון טבלאות"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
+#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr "לא ניתן לשנות את עמודת ‏‪\"$column$\"‬‏. האם למחוק את העמודה וליצור עמודה חדשה במקומה?‏"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
+#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "Error while saving the table design"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
+#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "לא ניתן למחוק את העמודה ‏‪$column$‬‏.‏"
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
+#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
 msgstr "הפעולה הנוכחית תמחוק את כל העמודות מהטבלה וזה יגרום למחיקת הטבלה. האם זאת הכוונה?‏"
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
+#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "משפט תיסוף אוטומטי ‏‪(auto-increment)‬‏‏"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
-msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr "יש להכניס משפט ‏‪SQL‬‏ עבור שדה התיסוף האוטומטי.‏\n\nמשפט זה יעובר למסד הנתונים בעת יצירת הטבלה.‏"
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
-msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr "לא ניתן להשיג מידע אודות הסוגים של הנתונים במסד נתונים זה\nולכן תכנון טבלאות אינו ישים.‏"
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "change field name"
 msgstr "שינוי שם שדה"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
+#, fuzzy
 msgid  "change field type"
 msgstr "שינוי סוג שדה"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "change field description"
 msgstr "שינוי תאור שדה"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "change field attribute"
 msgstr "שינוי תכונת שדה"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "זכירת הסיסמה רק עד סוף ההתקשרות הנוכחית"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+#, fuzzy
 msgid  "~Remember password"
 msgstr "זכירת סיסמה"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "מסד הנתונים היעד אינו תומך במבטים."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "מסד הנתונים היעד אינו תומך במפתחות ראשוניים"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
+#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "לא נמצא מתאר גישה לנתונים (דסקריפטור), או שמתאר הגישה אינו מכיל את כל המידע הנדרש."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "כרגע רק טבלאות ושאילתות נתמכים."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "סט התוצאות של מקור ההעתקה חייב לתמוך בסימניות."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "טיפוס עמודת המקור ($type$) במיקום $pos$ אינו נתמך."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "מספר נתוני האתחול לא נכון."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "ארעה שגיאה בעת האתחול."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.String.Text
+#, fuzzy
 msgid  "Unsupported setting in the copy source descriptor: $name$."
 msgstr "הגדרה לא נתמכת בעותק מקור מתאר: $name$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
+#, fuzzy
 msgid  "To copy a query, your connection must be able to provide queries."
 msgstr "כדי להעתיק שאילתה, על החיבור שלך לאפשר הספקת שאילתות."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
+#, fuzzy
 msgid  "The given interaction handler is invalid."
 msgstr "טיפול אינטראקציה שצוין אינו חוקי"

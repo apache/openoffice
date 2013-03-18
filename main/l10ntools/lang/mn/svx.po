@@ -581,7 +581,7 @@ msgstr "Параграфын загварыг засах..."
 
 #: inc/globlmn_tmpl.hrc#SID_GROUP.#define.Text
 msgid  "~Group"
-msgstr "~Бүлэглэх"
+msgstr "~Бүлэг"
 
 #: inc/globlmn_tmpl.hrc#SID_UNGROUP.#define.Text
 msgid  "~Ungroup"
@@ -940,12 +940,12 @@ msgid  "~Delete"
 msgstr "~Устгах"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "ImageMap өөрчлөгдлөө.\nТа өөрчлөлтүүдийг хадгалахыг хүсэж байна уу?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "ImageMap өөрчлөгдлөө.\nТа өөрчлөлтүүдийг хадгалахыг хүсэж байна уу?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 msgid  "~Left margin"
@@ -1028,8 +1028,8 @@ msgid  "~More..."
 msgstr "~Нэмэлт..."
 
 #: source/dialog/hdft.src#RID_SVXQBX_DELETE_HEADFOOT.QueryBox.Message
-msgid  "Removing headers or footers deletes the contents.\nDo you want to delete this text?"
-msgstr "Толгой эсвэл хөлийг устгавал түүний агуулга мөн устана.\nТа тэр бичвэрийг устгахыг хүсэж байна уу?"
+msgid  "Removing headers or footers deletes the contents.\\nDo you want to delete this text?"
+msgstr ""
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_LEFT.String.Text
 msgid  "Left"
@@ -1276,8 +1276,8 @@ msgid  "%PRODUCTNAME Document Recovery"
 msgstr "%PRODUCTNAME баримт сэргээлт"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
-msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\n\nThe 'Status' column shows whether the document could be recovered."
-msgstr "Доор жагсаасан баримтуудыг сэргээхдээ 'Сэргээлт эхлүүл' товч дээр дарна уу.\n\n'Төлөв' багана тухайн баримт сэргээгдэж чадсан эсэхийг үзүүлнэ."
+msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 msgid  "Recovering document:"
@@ -1288,8 +1288,8 @@ msgid  "Status of recovered documents:"
 msgstr "Баримт сэргээлтийн төлөв:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
-msgid  "Document Name\tStatus"
-msgstr "Баримтын нэр\tТөлөв"
+msgid  "Document Name\\tStatus"
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 msgid  "~Start Recovery >"
@@ -1328,8 +1328,8 @@ msgid  "A report of the crash was created to help us identify the reason why %PR
 msgstr "%PRODUCTNAME яагаад гацсанг шалтгааныг олоход бидэнд туслах гацалтын тайлан үүсгэгдлээ. Алдаа тайлагнагч хэрэгслийг эхлүүлэхдээ 'Үргэлжлүүлэх' дээр энэ алхамыг алгасахыг хүсвэл 'Цуцлах' дээр дарна уу."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
-msgid  "Recovery of your documents was finished.\nClick 'Finish' to see your documents."
-msgstr "Таны баримтуудын сэргээлт дууслаа.\nБаримтуудаа үзэхдээ 'Дуусгах' дээр дарна уу."
+msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 msgid  "~Finish"
@@ -1340,8 +1340,8 @@ msgid  "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 msgstr "Та %PRODUCTNAME баримт сэргээлтийн цуцлахдаа итгэлтэй байна уу?"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
-msgid  "The automatic recovery process was interrupted.\n\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr "Автомат сэргээлтийн процесс тасарлаа.\n\nТаны 'Хадгалах' дээр дарахад доор жагсаагдсан баримтууд тэмдэглэгдсэн хавтаснуудад хадгалагдана. Баримтуудыг хадгалахгүйгээр залуурчийг хаахыг хүсвэл 'Цуцлах' дээр дарна уу."
+msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 msgid  "Documents"
@@ -1364,7 +1364,7 @@ msgid  "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 msgstr "%PRODUCTNAME %PRODUCTVERSION Алдаа тайлагнагчид тавтай морил"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
-msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\n\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\nCustomer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\nwww.oracle.com/html/services-privacy-policy.html"
+msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
 msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
@@ -1448,8 +1448,8 @@ msgid  "~Port"
 msgstr "~Порт"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
-msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "%PRODUCTNAME% Алдаа Илтгэгч хэрэгсэл алдааны тайлан илгээхийн тулд интернетэд холбогдох шаардлагатай.\nКомпаниуд сүлжээгээ хамгаалахын тулд үргэлж итгэмжлэгч серверийг галт ханын хамт хэрэглэдэг.\nХэрэв таны нөхцөл тийм бол та тухайн итгэмжлэгч серверийн хаяг болон портыг тодорхойлоно уу."
+msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 msgid  "Error Report"
@@ -1905,7 +1905,7 @@ msgstr "Доод хил"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.5.ItemList.item
 msgid  "Horizontal border line"
-msgstr "Хэвтээ шулуун"
+msgstr "Хэвтээ хилийн шулуун"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.6.ItemList.item
 msgid  "Vertical border line"
@@ -2680,8 +2680,8 @@ msgid  "As Button"
 msgstr "Товч шиг"
 
 #: source/dialog/hyprlink.src#RID_SVXQB_DONTEXIST.QueryBox.Message
-msgid  "This URL does not exist.\nInsert anyway?"
-msgstr "Энэ хаяг (URL) алга.\nЯмар ч гэсэн оруул?"
+msgid  "This URL does not exist.\\nInsert anyway?"
+msgstr ""
 
 #: source/dialog/sdstring.src#RID_SVXSTR_SOLID.String.Text
 msgid  "Continuous"
@@ -2733,7 +2733,7 @@ msgstr "Ногоон"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CYAN.String.Text
 msgid  "Turquoise"
-msgstr "Оюу"
+msgstr "Оюу ногоон"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_RED.String.Text
 msgid  "Red"
@@ -2797,7 +2797,7 @@ msgstr "Сум"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_SQUARE.String.Text
 msgid  "Square"
-msgstr "Квадрат"
+msgstr "Дөрвөлжин"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CIRCLE.String.Text
 msgid  "Circle"
@@ -3392,16 +3392,16 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
-msgid  "The contour has been modified.\nDo you want to save the changes?"
-msgstr "Хялбар өөрчлөгдлөө.\nТа өөрчлөлтүүдийг хадгалахыг хүсэж байна уу?"
+msgid  "The contour has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 msgid  "Do you want to create a new contour?"
 msgstr "Та шинэ хаялбар үүсгэхийг хүсэж байна уу? "
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
-msgid  "Setting a new workspace will\ncause the contour to be deleted.\nAre you sure you want to continue?"
-msgstr "Шинэ ажлын талбарын тогтоолт\nхаялбарыг устгахад хүргэнэ.\nТа үргэлжлүүлэхдээ итгэлтэй байна уу?"
+msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 msgid  "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?"
@@ -3909,23 +3909,23 @@ msgstr "3Х эффектүүд"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
 msgid  "Geometry"
-msgstr "Геометр"
+msgstr "Geometry"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
 msgid  "Shading"
-msgstr "Сүүдэрлэлт"
+msgstr "Shading"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
 msgid  "Illumination"
-msgstr "Гэрэлтүүлэг"
+msgstr "Illumination"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
 msgid  "Textures"
-msgstr "Даавуулаг"
+msgstr "Textures"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
 msgid  "Material"
-msgstr "Материал"
+msgstr "Material"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
 msgid  "Update"
@@ -3993,7 +3993,7 @@ msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
 msgid  "Flat"
-msgstr "Flat"
+msgstr "Хавтгай"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
 msgid  "Spherical"
@@ -4376,8 +4376,8 @@ msgid  "Input required in field '#'. Please enter a value."
 msgstr "'#' уг талбарт утга оруулах хэрэгтэй. Утга оруулна уу?"
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
-msgid  "Entry already exists.\nPlease choose another name."
-msgstr "Оруулга аль хэдийн байна.\nӨөр нэр сонгоно уу."
+msgid  "Entry already exists.\\nPlease choose another name."
+msgstr ""
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 msgid  "Forms"
@@ -4456,8 +4456,8 @@ msgid  "# records will be deleted."
 msgstr "# бичлэгүүдийг устгана."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
-msgid  "If you click Yes, you won't be able to undo this operation.\nDo you want to continue anyway?"
-msgstr "Хэрэв та Тийм гэдгийг сонговол та энэ үйлдлийг буцаах боломжтой!\nТа цааш үргэлжлүүлэн ажиллах уу?"
+msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
@@ -4636,8 +4636,8 @@ msgid  "<AutoField>"
 msgstr "<АвтоТалбар>"
 
 #: source/form/fmstring.src#RID_QRY_SAVEMODIFIED.QueryBox.Message
-msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr "Идэвхтэй маягтын агуулга өөрчлөгдлөө.\nТа өөрчлөлтөө хадгалахыг хүсэж байна уу?"
+msgid  "The content of the current form has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.1.String.Text
 msgid  "LIKE"
@@ -4997,7 +4997,7 @@ msgstr "Тэг ~биш"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
 msgid  "Add Item"
-msgstr "Зүйл нэмэх"
+msgstr "Элемент нэмэх"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
 msgid  "Add Element"
@@ -5064,32 +5064,32 @@ msgid  "~Show Details"
 msgstr "~Тодруулгыг харуулах"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_MODEL.QueryBox.Message
-msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\nDo you really want to delete this model?"
-msgstr "'$MODELNAME' модулийг устгах нь тус модультай холбогдох бүх хяналтанд нөлөөлнө.\nТа үнэнхээр энэ модулийг устгамаар байна уу?"
+msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\\nDo you really want to delete this model?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_INSTANCE.QueryBox.Message
-msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\nDo you really want to delete this instance?"
-msgstr "'$INSTANCENAME' инстанц буюу объектыг устгах нь түүнтэй холбоотой бүх хяналтанд нөлөөлөнө.\nТа үнэнхээр энэ инстанцийг устгамаар байна уу?"
+msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\\nDo you really want to delete this instance?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ELEMENT.QueryBox.Message
-msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\nDo you really want to delete this element?"
-msgstr "'$ELEMENTNAME' элементийг устгах нь түүнтэй холбоотой бүх хяналтанд нөлөөлөнө.\nТа үнэнхээр энэ элементийг устгамаар байна уу?  "
+msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\\nDo you really want to delete this element?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ATTRIBUTE.QueryBox.Message
 msgid  "Do you really want to delete the attribute '$ATTRIBUTENAME'?"
 msgstr "Та '$ATTRIBUTENAME' шинжийг устгахыг үнэхээр хүсэж байна уу?"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_SUBMISSION.QueryBox.Message
-msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\n\nDo you really want to delete this submission?"
-msgstr "'$SUBMISSIONNAME' илгээлт (submission)-ийг устгах нь түүнтэй холбоотой бүх хяналтанд нөлөөлөнө.\nТа үнэнхээр энэ илгээлтийг устгамаар байна уу?  "
+msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\\n\\nDo you really want to delete this submission?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_BINDING.QueryBox.Message
-msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\n\nDo you really want to delete this binding?"
-msgstr "'$BINDINGNAME' уялтыг (binding) устгах нь түүнтэй холбоотой бүх хяналтанд нөлөөлөнө.\nТа үнэнхээр энэ уялтыг устгамаар байна уу?"
+msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\\n\\nDo you really want to delete this binding?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_LINK_WARNING.MessBox.Message
-msgid  "This instance is linked with the form.\n\nThe changes you make to this instance will be lost when the form is reloaded.\n\nHow do you want to proceed?"
-msgstr "Энэ инстанц маягттай холбоотой байна.\n\nМаягт дахин ачаалагдахад инстанцад таны хийсэн өөрчлөлт гээгдэх болно.\nТа цааш яаж үргэлжлүүлэх вэ?"
+msgid  "This instance is linked with the form.\\n\\nThe changes you make to this instance will be lost when the form is reloaded.\\n\\nHow do you want to proceed?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLNAME.ErrorBox.Message
 msgid  "The name '%1' is not valid in XML. Please enter a different name."
@@ -5453,7 +5453,7 @@ msgstr "Галерей"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
 msgid  "Update"
-msgstr "Шинэчлэл"
+msgstr "Шинэчлэх"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
 msgid  "This file cannot be opened"
@@ -5464,12 +5464,12 @@ msgid  "Invalid Theme Name!"
 msgstr "Загварын хүчингүй нэр!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
-msgid  "Do you really want to\ndelete this object?"
-msgstr "Та энэ объектыг үнэхээр\nустгахыг хүсэж байна уу?"
+msgid  "Do you really want to\\ndelete this object?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
-msgid  "Do you really want to\ndelete this theme?"
-msgstr "Та энэ хэв маягийг үнэхээр\nустгахыг хүсэж байна уу?"
+msgid  "Do you really want to\\ndelete this theme?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
 msgid  "Wave - Sound File"
@@ -5500,8 +5500,8 @@ msgid  "Do you want to delete the linked file?"
 msgstr "Та холбоотой файлыг устгахыг хүсэж байна уу?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
-msgid  "This file cannot be opened.\nDo you want to enter a different search path? "
-msgstr "Файлыг нээх боломжгүй.\nТа өөр хайлтын зам оруулахыг хүсэж байна уу? "
+msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
 msgid  "New Theme"
@@ -5512,8 +5512,8 @@ msgid  "~Organizer..."
 msgstr "~Зохион байгуулагч..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
-msgid  "This theme name already exists.\nPlease choose a different one."
-msgstr "Ийм загварын нэр хэдийнэ байна.\nӨөр нэр сонгоно уу."
+msgid  "This theme name already exists.\\nPlease choose a different one."
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
 msgid  "I~mport..."
@@ -5776,12 +5776,12 @@ msgid  "$(ERR) loading the graphics."
 msgstr "$(ERR) графикуудыг ачаалахдаа."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_THESAURUSNOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "No thesaurus available for the current language.\nPlease check your installation and install the desired language."
-msgstr "Энэ хэлний тайлбар толиор үйлчлэх боломжгүй.\nӨөрийн суулгацыг шалгаад, хэрэгцээтэй хэлээ суулгана уу. "
+msgid  "No thesaurus available for the current language.\\nPlease check your installation and install the desired language."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LANGUAGENOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\nPlease check your installation and, if necessary, install the required language module\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
-msgstr "$(ARG1) нь зөв бичгийн функцээр дэмжигдээгүй эсвэл одоо идэвхжээгүй байна.\nСуулгалтыг шалгах, хэрэв хэрэгцээтэй бол шаардагдах хэлний модулийг суулгах \nэсвэл 'Хэрэгсэл-Тохиргоо-Хэлний тохиргоо-Хэл шинжлэл' гэдгийг идэвхжүүлэх."
+msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\\nPlease check your installation and, if necessary, install the required language module\\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
 msgid  "Spellcheck is not available."
@@ -5852,8 +5852,8 @@ msgid  "The loading of password-encrypted Microsoft PowerPoint presentations is 
 msgstr "Microsoft PowerPoint нууц үгээр нууцалдаг үзүүлэнгийн ачаалалт нь энд дэмжигдээгүй."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_EXPORT_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
-msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\nDo you want to save the document without password protection?"
-msgstr "Баримтыг Microsoft Office форматаар хадгалсан тохиолдолд нууц үгийн хамгаалалт дэмжигдээгүй.\nТа баримтыг нууц үгийн хамгаалалтгүй хадгалахыг хүсэж байна уу?"
+msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\\nDo you want to save the document without password protection?"
+msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
 msgid  "Scale"
@@ -5997,7 +5997,7 @@ msgstr "Хуудас"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_MODEL.ItemList.item
 msgid  "Page Style"
-msgstr "Хуудасны загвар"
+msgstr "Хуудасны хэлбэр"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_KEEP.ItemList.item
 msgid  "Keep with next paragraph"
@@ -6520,7 +6520,7 @@ msgid  "The specified device is invalid."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
-msgid  "The object cannot be accessed\ndue to insufficient user rights."
+msgid  "The object cannot be accessed\\ndue to insufficient user rights."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
@@ -6532,7 +6532,7 @@ msgid  "No more space on device."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ISWILDCARD.String.Text
-msgid  "This operation cannot be run on\nfiles containing wildcards."
+msgid  "This operation cannot be run on\\nfiles containing wildcards."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSUPPORTED.String.Text
@@ -6616,7 +6616,7 @@ msgid  "The file cannot be used as template."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTREADDOCINFO.String.Text
-msgid  "Document information could not be read from the file because\nthe document information format is unknown or because document information does not\nexist."
+msgid  "Document information could not be read from the file because\\nthe document information format is unknown or because document information does not\\nexist."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_ALREADYOPEN.String.Text
@@ -6648,11 +6648,11 @@ msgid  "Could not establish Internet connection to $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_READ.String.Text
-msgid  "Error reading data from the Internet.\nServer error message: $(ARG1)."
+msgid  "Error reading data from the Internet.\\nServer error message: $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_WRITE.String.Text
-msgid  "Error transferring data to the Internet.\nServer error message: $(ARG1)."
+msgid  "Error transferring data to the Internet.\\nServer error message: $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_GENERAL.String.Text
@@ -6764,7 +6764,7 @@ msgid  "A subscription folder is required to install a Channel."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSTORABLEINBINARYFORMAT.String.Text
-msgid  "This document contains attributes that cannot be saved in the selected format.\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
+msgid  "This document contains attributes that cannot be saved in the selected format.\\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_TARGETFILECORRUPTED.String.Text
@@ -6780,19 +6780,19 @@ msgid  "Could not create backup copy."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_MACROS_SUPPORT_DISABLED.String.Text
-msgid  "An attempt was made to execute a macro.\nFor security reasons, macro support is disabled."
+msgid  "An attempt was made to execute a macro.\\nFor security reasons, macro support is disabled."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_DOCUMENT_MACRO_DISABLED.String.Text
-msgid  "This document contains macros.\n\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\n\nTherefore, some functionality may not be available."
+msgid  "This document contains macros.\\n\\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\\n\\nTherefore, some functionality may not be available."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_BROKENSIGNATURE.String.Text
-msgid  "The digitally signed document content and/or macros do not match the current document signature.\n\nThis could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
+msgid  "The digitally signed document content and/or macros do not match the current document signature.\\n\\nThis could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_INCOMPLETE_ENCRYPTION.String.Text
-msgid  "The encrypted document contains unexpected non-encrypted streams.\n\nThis could be the result of document manipulation.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
+msgid  "The encrypted document contains unexpected non-encrypted streams.\\n\\nThis could be the result of document manipulation.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_INVALIDLENGTH.String.Text
@@ -6820,7 +6820,7 @@ msgid  "Function not possible: write protected."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_SHARED_NOPASSWORDCHANGE.String.Text
-msgid  "The password of a shared spreadsheet cannot be set or changed.\nDeactivate sharing mode first."
+msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactivate sharing mode first."
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
@@ -6917,7 +6917,7 @@ msgstr "дүрслэл объект"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
 msgid  "draw objects"
-msgstr "дүрслэл объект"
+msgstr "- дүрслэл объект -"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
 msgid  "group object"
@@ -7513,7 +7513,7 @@ msgstr "%1-н дарааллыг тонгоруулах"
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
 msgid  "Move %1"
-msgstr "%1-г зөөх"
+msgstr "%1-г шилжүүлэх"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
 msgid  "Resize %1"
@@ -7525,23 +7525,23 @@ msgstr "%1-г эргүүлэх"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
 msgid  "Flip %1 horizontal"
-msgstr "%1-г хэвтээгээр урвуулах"
+msgstr "%1-г хэвтээгээр эргүүлэх"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
 msgid  "Flip %1 vertical"
-msgstr "%1-г босоогоор урвуулах"
+msgstr "%1-г босоогоор эргүүлэх"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorDiag.String.Text
 msgid  "Flip %1 diagonal"
-msgstr "%1-г диагоналиар урвуулах"
+msgstr "%1-г диагоналиар эргүүлэх"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
 msgid  "Flip %1 freehand"
-msgstr "%1 -г чөлөөтэйгээр урвуулах"
+msgstr "%1-г чөлөөтэйгээр эргүүлэх"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
 msgid  "Distort %1 (slant)"
-msgstr "%1-г хазайлгах (ташуу)"
+msgstr "%1-г хазайлгах (ташуу болгох)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
 msgid  "Arrange %1 in circle"
@@ -7957,7 +7957,7 @@ msgstr "Залгаатай"
 
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
 msgid  "off"
-msgstr "Салгаатай"
+msgstr "идэвхгүй"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
 msgid  "yes"
@@ -8313,7 +8313,7 @@ msgstr "Гамма"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
 msgid  "Transparency"
-msgstr "Тунгалагжилт"
+msgstr "Тунгалаг"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
 msgid  "Invert"
@@ -8481,7 +8481,7 @@ msgstr "Битмап дүүргэлт"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
 msgid  "Transparency"
-msgstr "Тунгалаг"
+msgstr "Тунгалагжилт"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
 msgid  "Number of gradient steps"
@@ -9909,11 +9909,11 @@ msgstr "~Устгах"
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr ""
+msgstr "~Уламжлалт хятад хэлнээс хялбаршуулсан хятад хэл рүү"
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr ""
+msgstr "~Хялбаршуулсан хятад хэлнээс уламжлалт хятад хэл рүү"
 
 #: source/unodialogs/textconversiondlgs/chinese_dialogs.src#DLG_CHINESEDICTIONARY.ModalDialog.Text
 msgid  "Edit Dictionary"

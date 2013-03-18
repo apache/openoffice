@@ -152,12 +152,12 @@ msgid  "Create New Directory"
 msgstr "ဒိုင်ယာထရီ အသစ် ပြုလုပ်သည်"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "ဒိုင်ယာထရီ '${DIR}' မတည်ရှိပါ \n၎င်းကို ယခု ဖန်တီးရန် ဆန္ဒရှိပါသလား။"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "ဒိုင်ယာထရီ '${DIR}' မတည်ရှိပါ \n၎င်းကို ယခု ဖန်တီးရန် ဆန္ဒရှိပါသလား (သို့) အခြားဒိုင်ယာထရီကို ရွေးချယ်လိုပါသလား။"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -260,8 +260,8 @@ msgid  "To continue, click 'Next'."
 msgstr "ဆက်လက်လုပ်ဆောင်ရန် ‘ရှေ့’ ကို ကလစ်နှိပ်ပါ"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "မှတ်ချက်- ရင်းမြစ်ခွင့်ပြုချက်များ မပါရှိဘဲ ဤထည့်သွင်းမှု လုပ်ဆောင်လိမ့်မည်။ ထို့ကြောင့် လုပ်ဆောင်ချက်များကို လျော့ချရလိမ့်မည်။ (ဂျာဗား အလုပ်လုပ်စဉ် ဝန်းကျင် (JRE) ထည့်သွင်းထားခြင်းမရှိ၊ စနစ်စုစည်းမှု ဖြစ်နိုင်​ခြေမရှိ) \nပြည့်စုံသော လုပ်ဆောင်ချက်များကို အသုံးပြုရန် ‘ရုတ်သိမ်းပါ’ ကို ကလစ်နှိပ်ြပီး ရင်းမြစ်ခွင့်ပြုချက်များကို ပြောင်းလဲပါ။"
+msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -432,8 +432,8 @@ msgid  "Analyzing ..."
 msgstr "ခွဲခြမ်းစိတ်ဖြာသည်......"
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "ဒေတာဘေ့စ် ခွဲခြမ်းစိတ်ဖြာနေသည် \nအချိန်အနည်းငယ် စောင့်ဆိုင်းပါ"
+msgid  "Analyzing database\\nPlease wait a moment ..."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"

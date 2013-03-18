@@ -152,12 +152,12 @@ msgid  "Create New Directory"
 msgstr "Yeni Dizin Oluştur"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "'${DIR}' dizini bulunmamaktadır.\nŞimdi oluşturmak ister misiniz?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "'${DIR}' dizini bulunmamaktadır.\nŞimdi oluşturmak ya da farklı bir dizin seçmek ister misiniz?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -260,8 +260,8 @@ msgid  "To continue, click 'Next'."
 msgstr "Devam etmek için 'İleri' düğmesini tıklayın."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "Not: Bu kurulum için root hakları gerekebilir. Bundan dolayı bazı özellikler tam olarak çalışmayabilir (Java Çalıştırma Ortamı (JRE) yüklenemeyebilir, sistem entegrasyonu olmayabilir).\nTam işlevselliği kullanmak isterseniz 'İptal' düğmesine tıklayın ve root haklarını alarak kurulumu tamamlayın."
+msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -432,8 +432,8 @@ msgid  "Analyzing ..."
 msgstr "Çözümlüyor..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "Veritabanını çözümlüyor\nLütfen bekleyiniz..."
+msgid  "Analyzing database\\nPlease wait a moment ..."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
@@ -441,11 +441,11 @@ msgstr "Kurulum Sihirbazına Hoş Geldiniz.<p>Sihirbaz yapılandırma ayarların
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
-msgstr "'Geri' düğmesi bir önceki sayfaya dönmenizi sağlar."
+msgstr "'Geri' bir önceki sayfaya dönmenizi sağlar."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
 msgid  "'Next' takes you to the next page. "
-msgstr "'İleri' düğmesi bir sonraki sayfaya gitmenizi sağlar."
+msgstr "'İleri' bir sonraki sayfaya ulaşmanızı sağlar."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 msgid  "'Cancel' ends the Installation Wizard without installing this software."
@@ -453,7 +453,7 @@ msgstr "'İptal' düğmesi kurulumu sonlandırarak kurulum sihirbazından çıkm
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr "'Yardım' geçerli sayfa hakkında bilgiler verir ve yardım bilgisini gösterir."
+msgstr "'Yardım' gösterilen sayfa hakkında daha fazla bilgiyi gösterir, şu anda gösterilen sayfa gibi."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."

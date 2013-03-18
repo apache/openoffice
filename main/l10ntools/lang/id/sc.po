@@ -144,8 +144,8 @@ msgid  "Column Fields"
 msgstr "Ruas Kolom"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-msgid  "Row\nFields"
-msgstr "Baris\nRuas"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -2268,8 +2268,8 @@ msgid  "~Discard"
 msgstr "~Buang"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "Apakah entri\n#\ningin dihapus?"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 msgid  "Copy List"
@@ -2712,8 +2712,8 @@ msgid  "Hide ~all"
 msgstr "Sembunyikan semu~a"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "Proteksi sel hanya efektif jika lembar ini sudah diproteksi.\n\nPilih 'Lindungi Dokumen' pada menu 'Perkakas', dan tentukan 'Lembar'nya."
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
 msgid  "Protection"
@@ -3013,7 +3013,7 @@ msgstr "Subtotal"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 msgid  "Sort"
-msgstr "Mengurut"
+msgstr "Pengurutan"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 msgid  "Filter"
@@ -3232,8 +3232,8 @@ msgid  "No operations to execute"
 msgstr "Tidak ada operasi untuk dieksekusi"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "Jangkauan tidak mempunyai tajuk kolom.\nApakah baris pertama akan dianggap tajuk kolom?"
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 msgid  "Error while importing data!"
@@ -3296,8 +3296,8 @@ msgid  "Search key not found."
 msgstr "Kunci pencarian tidak ketemu."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-msgid  "Goal Seek successful.\n"
-msgstr "Berhasil mencari sasaran.\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 msgid  "Insert result ("
@@ -3308,12 +3308,12 @@ msgid  ") into current cell?"
 msgstr ") ke dalam sel aktif?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-msgid  "Goal Seek not successful.\n"
-msgstr "Berhasil mencari sasaran.\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-msgid  "No exact value found. \n"
-msgstr "Tidak dijumpai nilai yang tepat.\n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 msgid  "Insert closest value ("
@@ -3604,7 +3604,1087 @@ msgid  "Text Attributes"
 msgstr "Atribut Teks"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+msgid  "\\"
+msgstr "\\"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+msgid  "PAGE"
+msgstr "HALAMAN"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+msgid  "PAGES"
+msgstr "HALAMAN"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+msgid  "DATE"
+msgstr "TANGGAL"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+msgid  "TIME"
+msgstr "WAKTU"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+msgid  "FILE"
+msgstr "BERKAS"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+msgid  "SHEET"
+msgstr "LEMBAR"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+msgid  "Protected cells can not be modified."
+msgstr "Sel yang diproteksi tidak bisa diubah."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+msgid  "Document opened in read-only mode."
+msgstr "Dokumen dibuka dalam modus hanya-baca."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+msgid  "You cannot change only part of an array."
+msgstr "Larik tidak bisa diubah secara parsial."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+msgid  "Header"
+msgstr "Tajuk"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+msgid  "Footer"
+msgstr "Kaki"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+msgid  "Err:"
+msgstr "Galat:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+msgid  "Error: Ranges do not intersect"
+msgstr "Galat: Jangkauan tidak bersinggungan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+msgid  "Error: Division by zero"
+msgstr "Galat: Pembagian oleh nol"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+msgid  "Error: Wrong data type"
+msgstr "Galat: Jenis data salah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+msgid  "Error: Not a valid reference"
+msgstr "Galat: Bukan referensi yang sah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+msgid  "Error: Invalid name"
+msgstr "Galat: Nama tidak sah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+msgid  "Error: Invalid numeric value"
+msgstr "Galat: Nilai numerik tidak sah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+msgid  "Error: Value not available"
+msgstr "Galat: Nilai tidak tersedia"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+msgid  "#ADDIN?"
+msgstr "#ADDIN?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+msgid  "Error: Add-in not found"
+msgstr "Galat: Tidak menemukan pengaya"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+msgid  "#MACRO?"
+msgstr "#MACRO?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+msgid  "Error: Macro not found"
+msgstr "Galat: Macro tidak ditemukan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+msgid  "Internal syntactical error"
+msgstr "Kesalahan sintaks internal"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+msgid  "Error: Invalid argument"
+msgstr "Galat: Argumen tidak sah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+msgid  "Error in parameter list"
+msgstr "Kesalahan di senarai parameter"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+msgid  "Error: Invalid character"
+msgstr "Galat: Karakter tidak sah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+msgid  "Error: Invalid semicolon"
+msgstr "Galat: Titik koma tidak valid"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+msgid  "Error: in bracketing"
+msgstr "Galat: pada tanda kurung"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+msgid  "Error: Operator missing"
+msgstr "Galat: Tidak ada operator"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+msgid  "Error: Variable missing"
+msgstr "Galat: Tidak ada variabel"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+msgid  "Error: Formula overflow"
+msgstr "Galat: Rumus terlalu banyak"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+msgid  "Error: String overflow"
+msgstr "Galat: String terlalu panjang"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+msgid  "Error: Internal overflow"
+msgstr "Galat: Overflow internal"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+msgid  "Error: Circular reference"
+msgstr "Galat: Referensi sirkuler"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+msgid  "Error: Calculation does not converge"
+msgstr "Galat: Perhitungan tidak bisa selesai"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+msgid  "Grid color"
+msgstr "Warna kisi-kisi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "Apakah isi dari sel yang tersembunyi dipindahkan ke sel pertama?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+msgid  "Filter"
+msgstr "Penyaring"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+msgid  "The target database range does not exist."
+msgstr "Jangkauan basis data yang dituju tidak ada."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+msgid  "Invalid increment"
+msgstr "Penambahan tidak sah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+msgid  "MULTIPLE.OPERATIONS"
+msgstr "OPERASI.BERGANDA"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+msgid  "Multiple operations"
+msgstr "Operasi berganda"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+msgid  "Range"
+msgstr "Jangkauan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+msgid  "Yes"
+msgstr "Ya"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+msgid  "No"
+msgstr "Tidak"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+msgid  "Protection"
+msgstr "Proteksi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+msgid  "Formulas"
+msgstr "Rumus"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+msgid  "Hide"
+msgstr "Sembunyikan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+msgid  "Print"
+msgstr "Cetak"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+msgid  "(nested)"
+msgstr "(bersarang)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+msgid  "(optional)"
+msgstr "(opsional)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+msgid  "(required)"
+msgstr "(diperlukan)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+msgid  "invalid"
+msgstr "tidak sah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+msgid  "Edit Function"
+msgstr "Fungsi untuk menyunting"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+msgid  "Comments"
+msgstr "Komentar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "Anda yakin hendak menghapus skenario yang dipilih?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "Anda yakin hendak menghapus skenario yang dipilih?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+msgid  "Thesaurus is not available"
+msgstr "Tesaurus tidak tersedia"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+msgid  "Spellcheck not available"
+msgstr "Spellcheck tidak tersedia"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+msgid  "Import text files"
+msgstr "Impor berkas teks"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+msgid  "Export Text File"
+msgstr "Ekspor Berkas Teks"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+msgid  "Import Lotus files"
+msgstr "Impor berkas Lotus"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+msgid  "Import DBase files"
+msgstr "Impor berkas DBase"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+msgid  "DBase export"
+msgstr "Ekspor DBase"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+msgid  "Dif Export"
+msgstr "Ekspor Dif"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+msgid  "Dif Import"
+msgstr "Impor Dif"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+msgid  "Default"
+msgstr "Baku"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+msgid  "Result"
+msgstr "Hasil"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+msgid  "Result2"
+msgstr "Hasil2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+msgid  "Heading"
+msgstr "Tajuk"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+msgid  "Heading1"
+msgstr "Tajuk1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+msgid  "Report"
+msgstr "Laporan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+msgid  "Report1"
+msgstr "Laporan1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "Tesaurus hanya bisa dipakai untuk teks dalam sel!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "Apakah pemeriksaan ejaan perlu diteruskan dari awal lembar?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "Pemeriksaan ejaan selesai untuk lembar ini."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+msgid  "No language set"
+msgstr "Bahasa tidak disetel"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+msgid  "Insert Sheet"
+msgstr "Menyisipkan Lembar Kerja"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+msgid  "Delete Sheets"
+msgstr "Menghapus Lembar Kerja"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+msgid  "Rename Sheet"
+msgstr "Mengganti Nama Lembar Kerja"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+msgid  "Color Tab"
+msgstr "Warna Tab"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+msgid  "Color Tabs"
+msgstr "Warna Tab"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+msgid  "Move Sheets"
+msgstr "Memindahkan Lembar Kerja"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+msgid  "Copy Sheet"
+msgstr "Menyalin Lembar Kerja"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+msgid  "Append sheet"
+msgstr "Menambahkan lembar kerja"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+msgid  "Show Sheet"
+msgstr "Menampilkan Lembar Kerja"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+msgid  "Hide sheet"
+msgstr "Menyembunyikan lembar kerja"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+msgid  "Flip sheet"
+msgstr "Melipat lembar kerja"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+msgid  "Toggle the use of R1C1 notation"
+msgstr "Toggle penggunaan notasi R1C1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+msgid  "Main Title"
+msgstr "Judul Utama"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+msgid  "Subtitle"
+msgstr "Subjudul"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+msgid  "X axis title"
+msgstr "Nama sumbu X"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+msgid  "Y axis title"
+msgstr "Nama sumbu Y"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+msgid  "Z axis title"
+msgstr "Nama sumbu Z"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "Tabel yang baru memiliki referensi absolut ke tabel lain yang bisa jadi salah!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr "Karena dua nama sama, nama jangkauan pada dokumen tujuan telah berubah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+msgid  "AutoFilter not possible"
+msgstr "PenyaringOtomatis tidak dimungkinkan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME Calc sudah mencari hingga awal lembar kerja. Diulang dari akhir?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME Calc sudah mencari hingga akhir lembar kerja. Diulang dari awal?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+msgid  "Find & Replace"
+msgstr "Cari & Ganti"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME Calc sudah mencari hingga akhir dokumen. Diulang dari akhir?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME Calc sudah mencari hingga akhir dokumen. Diulang dari awal?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+msgid  "Replace existing definition of #?"
+msgstr "Ganti definisi # secara dini?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+msgid  "Invalid selection for range names"
+msgstr "Salah cara memilih nama jangkauan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+msgid  "References can not be inserted above the source data."
+msgstr "Referensi tidak bisa ditambahkan di atas data sumber."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+msgid  "Scenario not found"
+msgstr "Skenario tidak ada"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+msgid  "Do you really want to delete the entry #?"
+msgstr "Anda yakin untuk menghapus entri #?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+msgid  "Objects/graphics"
+msgstr "Objek/grafik"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+msgid  "Charts"
+msgstr "Bagan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+msgid  "Drawing Objects"
+msgstr "Objek Menggambar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+msgid  "Show"
+msgstr "Tampilkan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+msgid  "Hide"
+msgstr "Sembunyi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+msgid  "Top to bottom"
+msgstr "Atas ke bawah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+msgid  "Left-to-right"
+msgstr "Kiri ke kanan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+msgid  "Comments"
+msgstr "Komentar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+msgid  "Grid"
+msgstr "Kisi-kisi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+msgid  "Row & Column Headers"
+msgstr "Tajuk Baris & Kolom"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+msgid  "Formulas"
+msgstr "Rumus"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+msgid  "Zero Values"
+msgstr "Nilai Nol"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+msgid  "Print direction"
+msgstr "Arah cetak"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+msgid  "First page number"
+msgstr "Nomor halaman pertama"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+msgid  "Reduce/enlarge printout"
+msgstr "Perbesar/perkecil hasil cetak"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+msgid  "Fit print range(s) on number of pages"
+msgstr "Jangkauan cetak sesuai jumlah halaman"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+msgid  "Fit print range(s) to width/height"
+msgstr "Jangkauan cetak sesuai lebar/tinggi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+msgid  "Width"
+msgstr "Lebar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+msgid  "Height"
+msgstr "Tinggi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+msgid  "%1 page(s)"
+msgstr "%1 halaman"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+msgid  "automatic"
+msgstr "otomatis"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+msgid  "Statistics"
+msgstr "Statistik"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+msgid  "The link could not be updated."
+msgstr "Tautnya tidak dapat diperbaharui."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+msgid  "File:"
+msgstr "Berkas:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+msgid  "Sheet:"
+msgstr "Lembar:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+msgid  "Overview"
+msgstr "Gambaran"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+msgid  "Doc.Information"
+msgstr "Info.Dokumen"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+msgid  "Created"
+msgstr "Dibuat"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+msgid  "Modified"
+msgstr "Diubah"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+msgid  "Printed"
+msgstr "Dicetak"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+msgid  "Subject"
+msgstr "Subjek"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+msgid  "Key words"
+msgstr "Kata kunci"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+msgid  "Comments"
+msgstr "Komentar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+msgid  "by"
+msgstr "oleh"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+msgid  "on"
+msgstr "pada"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+msgid  "Too many conditions"
+msgstr "Terlalu banyak syarat"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+msgid  "The table could not be inserted."
+msgstr "Tabel tidak bisa ditambahkan."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+msgid  "The sheets could not be deleted."
+msgstr "Lembar kerja tidak bisa dihapus."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "Isi papan klip tidak dapat disalin."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "Lembar tidak punya cukup ruang untuk disisipi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+msgid  "No references found."
+msgstr "Tidak dijumpai referensi."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+msgid  "Source and destination must not overlap."
+msgstr "Sumber dan tujuan tidak boleh tumpang tindih."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+msgid  "Graphics"
+msgstr "Grafik"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+msgid  "Invalid name."
+msgstr "Nama tidak sah."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+msgid  "Selected macro not found."
+msgstr "Makro yang dipilih tidak ditemukan."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+msgid  "Invalid value."
+msgstr "Nilai tidak sah."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+msgid  "calculating"
+msgstr "sedang menghitung"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+msgid  "sorting"
+msgstr "sedang mengurutkan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+msgid  "Adapt row height"
+msgstr "Ubah tinggi baris"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+msgid  "Compare #"
+msgstr "Bandingkan #"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+msgid  "Delete contents"
+msgstr "Hapus isi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+msgid  "%1 R  x %2 C"
+msgstr "%1 R  x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+msgid  "More..."
+msgstr "Lainnya..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+msgid  "Invalid range"
+msgstr "Jangkauan tidak sah."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr "Nilai Tabel Pivot"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr "Hasil Tabel Pivot"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr "Kategori Tabel Pivot"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr "Judul Tabel Pivot"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr "Kolom Tabel Pivot"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr "Pojok Tabel Pivot"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+msgid  "Filter"
+msgstr "Penyaring"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+msgid  "Sort"
+msgstr "Pengurutan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+msgid  "Subtotals"
+msgstr "Subtotal"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+msgid  "None"
+msgstr "Nihil"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+msgid  "Do you want to replace the contents of #?"
+msgstr "Apakah ingin mengganti isi #?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+msgid  "Width:"
+msgstr "Lebar:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+msgid  "Height:"
+msgstr "Tinggi:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+msgid  "Hide"
+msgstr "Sembunyi"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+msgid  "The object could not be inserted."
+msgstr "Objek tidak bisa disisipkan."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+msgid  "<empty>"
+msgstr "<kosong>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "Sel #1 diubah dari '#2' ke '#3'"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+msgid  "#1 inserted"
+msgstr "#1 disisipkan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+msgid  "#1deleted"
+msgstr "#1 dihapus"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+msgid  "Range moved from #1 to #2"
+msgstr "Jangkauan dipindah dari #1 ke #2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+msgid  "Exit Recording"
+msgstr "Keluar dari merekam"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+msgid  "The document can not be closed while a link is being updated."
+msgstr "Dokumen tidak dapat ditutup karena ada taut yang sedang diupdate."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+msgid  "Adapt array area"
+msgstr "Sesuaikan area larik"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+msgid  "Array formula  %1 R x %2 C"
+msgstr "Rumus larik %1 R x %2 C."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+msgid  "Hangul/Hanja Conversion"
+msgstr "Konversi Hangu/Hanja"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+msgid  "Select Cell"
+msgstr "Pilih Sel"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+msgid  "Select Range"
+msgstr "Pilih Jangkauan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+msgid  "Select Database Range"
+msgstr "Pilih Jangkauan Basis Data"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+msgid  "Go To Row"
+msgstr "Lompat ke Baris"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+msgid  "Go To Sheet"
+msgstr "Lompat ke Lembar"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+msgid  "Define Name for Range"
+msgstr "Memberi Nama Jangkauan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "Pilihan harus berbentuk kotak kalau ingin diberi nama."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "Anda harus memasukkan referensi valid atau memberi nama valid terhadap jangkauan."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "PERINGATAN: Aksi ini telah menyebabkan perubahan yang tidak diharapkan pada referensi sel di beberapa rumus."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr "PERINGATAN: Aksi ini akan menyebabkan referensi ke wilayah yang dihapus tidak bisa dikembalikan."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+msgid  "(none)"
+msgstr "(nihil)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+msgid  "of"
+msgstr "dari"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+msgid  "of ?"
+msgstr "dari ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+msgid  "Created by"
+msgstr "Dibuat oleh"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+msgid  "Confidential"
+msgstr "Rahasia"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+msgid  "Customized"
+msgstr "Disesuaikan selera"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+msgid  "Custom footer"
+msgstr "Kaki ubahan"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+msgid  "Chinese conversion"
+msgstr "Konversi Cina"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+msgid  "You cannot change this part of the pivot table."
+msgstr "Anda tidak bisa mengubah tabel pivot pada bagian ini."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+msgid  "Manual"
+msgstr "Manual"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+msgid  "Automatic"
+msgstr "Otomatis"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+msgid  "Nested arrays are not supported."
+msgstr "Larik bersarang tidak didukung."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+msgid  "Text to Columns"
+msgstr "Teks ke Kolom"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr "Lembar kerja Anda telah diperbaharui dengan perubahan yang disimpan oleh pengguna lain."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+msgid  "Unknown User"
+msgstr "Pengguna Tak Dikenal"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+msgid  "Cell Styles"
+msgstr "Gaya Sel"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+msgid  "Page Styles"
+msgstr "Gaya Halaman"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr "Data sumber tabel pivot tidak valid."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr "Nama kolom tidak boleh kosong. Periksa baris pertama sumber data untuk memastikan tidak ada sel kosong."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr "Tabel pivot memerlukan paling tidak dua baris data untuk membuat atau memperbaharui."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+msgid  "Character"
+msgstr "Karakter"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+msgid  "Font"
+msgstr "Fonta"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr "Efek Fonta"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+msgid  "Font Position"
+msgstr "Posisi Fonta"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+msgid  "Back"
+msgstr "Kembali"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+msgid  "Paragraph"
+msgstr "Paragraf"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+msgid  "Indents & Spacing"
+msgstr "Indentasi & Jarak"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+msgid  "Alignment"
+msgstr "Perataan"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+msgid  "Asian Typography"
+msgstr "Tipografi asia"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+msgid  "Tab"
+msgstr "Tab"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+msgid  "Back"
+msgstr "Kembali"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+msgid  "AutoFormat"
+msgstr "FormatOtomatis"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+msgid  "F~ormat"
+msgstr "F~ormat"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+msgid  "A~utoFit width and height"
+msgstr "Ses~uaiOtomatis dengan lebar dan tinggi"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+msgid  "~Borders"
+msgstr "~Bingkai"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+msgid  "F~ont"
+msgstr "F~onta"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+msgid  "~Pattern"
+msgstr "~Pola"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+msgid  "Alignmen~t"
+msgstr "Pera~taan"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+msgid  "~Number format"
+msgstr "Format A~ngka"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+msgid  "Formatting"
+msgstr "Pemformatan"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+msgid  "~Add..."
+msgstr "T~ambah..."
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "~Hapus"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+msgid  "~Rename"
+msgstr "~Ubah Nama"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+msgid  "Add AutoFormat"
+msgstr "Tambah FormatOtomatis"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+msgid  "Rename AutoFormat"
+msgstr "Ubah Nama FormatOtomatis"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+msgid  "Name"
+msgstr "Nama"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+msgid  "Delete AutoFormat"
+msgstr "Hapus FormatOtomatis"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
@@ -3725,11 +4805,11 @@ msgstr "Terkecil"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Largest %"
-msgstr "% yang terbesar"
+msgstr "% lebih besar"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Smallest %"
-msgstr "% yang terkecil"
+msgstr "% lebih kecil"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Contains"
@@ -4201,7 +5281,7 @@ msgstr "Hitung jumlah sel jangkauan data yang isinya cocok dengan kriteria penca
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.2.String.Text
 msgid  "Database"
-msgstr "Basis data"
+msgstr "Basi data"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 msgid  "The range of cells containing data."
@@ -4213,7 +5293,7 @@ msgstr "Kolom basis data"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "Tandai ruas (kolom) basis data yang ingin digunakan sebagai kriteria pencarian."
+msgstr "Tandai ruas (kolom) database yang ingin digunakan sebagai kriteria pencarian."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.6.String.Text
 msgid  "Search criteria"
@@ -4229,7 +5309,7 @@ msgstr "Hitung berapa sel yang tidak kosong pada jangkauan data yang isinya terk
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.2.String.Text
 msgid  "Database"
-msgstr "Basis data"
+msgstr "Basi data"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 msgid  "The range of cells containing data."
@@ -4601,7 +5681,7 @@ msgstr "Tanggal_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.5.String.Text
 msgid  "The end date for calculating the difference in days."
-msgstr "Tanggal akhir untuk menghitung selisih haris."
+msgstr "Tanggal akhir untuk menghitung selisih hari."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
@@ -5049,7 +6129,7 @@ msgstr "Periode pembayaran. Total jumlah periode selama anuitas (pensiun) dibaya
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.8.String.Text
 msgid  "pv"
-msgstr "PV"
+msgstr "pv"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.9.String.Text
 msgid  "Present value. The current value of a series of payments"
@@ -5249,7 +6329,7 @@ msgstr "Salvage: Nilai tersisa dari aset di akhir masa hidupnya."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 msgid  "Life"
-msgstr "Masa hidup"
+msgstr "Masahidup"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
@@ -5285,7 +6365,7 @@ msgstr "Salvage: Nilai tersisa dari aset di akhir masa hidupnya."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.6.String.Text
 msgid  "Life"
-msgstr "Masahidup"
+msgstr "Masa hidup"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
@@ -5313,7 +6393,7 @@ msgstr "Salvage: Nilai tersisa dari aset di akhir masa hidupnya."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.6.String.Text
 msgid  "Life"
-msgstr "Masa hidup"
+msgstr "Masahidup"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
@@ -5485,7 +6565,7 @@ msgstr "Nilai netto sekarang. Menghitung nilai bersih saat ini dari suatu invest
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.2.String.Text
 msgid  "RATE"
-msgstr "SUKU"
+msgstr "SUKU BUNGA"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.3.String.Text
 msgid  "The rate of discount for one period."
@@ -5877,7 +6957,7 @@ msgstr "Mengembalikan TRUE jika peubah bebas bernilai TRUE."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_OR.2.String.Text
 msgid  "Logical value "
-msgstr "Nilai logikal"
+msgstr "Nilai logika "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_OR.3.String.Text
 msgid  "Logical value 1, logical value 2,... are 1 to 30 conditions to be tested and which return either TRUE or FALSE."
@@ -6149,7 +7229,7 @@ msgstr "Mengembalikan akar suatu bilangan."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "bilangan"
+msgstr "jumlah"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -6337,7 +7417,7 @@ msgstr "Mengembalikan nilai sinus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 msgid  "number"
-msgstr "bilangan"
+msgstr "jumlah"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 msgid  "The angle in radians for which the sine is to be calculated."
@@ -6361,7 +7441,7 @@ msgstr "Nilai sudut dalam radian yang akan dihitung tangennya."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 msgid  "number"
-msgstr "bilangan"
+msgstr "jumlah"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 msgid  "The angle in radians for which the tangent is to be calculated."
@@ -6385,7 +7465,7 @@ msgstr "Mengembalikan nilai hiperbolik sinus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 msgid  "number"
-msgstr "bilangan"
+msgstr "jumlah"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic sine is to be calculated."
@@ -7329,7 +8409,7 @@ msgstr "bilangan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_DEV_SQ.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Bilangan 1, bilangan 2,... 1 hingga 30 argumen numerik yang menggambarkan sampel."
+msgstr "Bilangan 1, bilangan 2, ... 1..30 argumen numerik yang menggambarkan potret sampel."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVE_DEV.1.String.Text
 msgid  "Returns the average of the absolute deviations of a sample from the mean."
@@ -7377,7 +8457,7 @@ msgstr "bilangan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GEO_MEAN.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Bilangan 1, bilangan 2, ... 1..30 argumen numerik yang menggambarkan potret sampel."
+msgstr "Bilangan 1, bilangan 2, ... 1..30 argumen numerik yang mewakili sampel."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.1.String.Text
 msgid  "Returns the harmonic mean of a sample."
@@ -7389,7 +8469,7 @@ msgstr "bilangan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Bilangan 1, bilangan 2, ... 1..30 argumen numerik yang mewakili sampel."
+msgstr "Bilangan 1, bilangan 2, ... 1..30 argumen numerik yang memberi potret sampel."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MODAL_VALUE.1.String.Text
 msgid  "Returns the most common value in a sample."
@@ -7473,7 +8553,7 @@ msgstr "Rank_c"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.5.String.Text
 msgid  "The ranking of the value."
-msgstr "Nilai ranking."
+msgstr "Derajat suatu nilai."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.1.String.Text
 msgid  "Returns the k-th smallest value of a sample."
@@ -7645,7 +8725,7 @@ msgstr "bilangan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "Distribusi normal standar dihitung menggunakan nilai ini."
+msgstr "Bilangan yang akan dihitung distribusi normal standarnya."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 msgid  "Returns the integral values of the standard normal cumulative distribution."
@@ -7801,7 +8881,7 @@ msgstr "Kumulatif"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 atau FALSE mengkalkulasi probabilitas dari fungsi densitas. Nilai lain atau TRUE atau diabaikan akan menghitung fungsi distribusi kumulatif."
+msgstr "0 atau FALSE mengkalkulasi fungsi densitas probabilitas. Nilai lain atau TRUE atau diabaikan menghitung fungsi distribusi kumulatif."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 msgid  "Values of the normal distribution."
@@ -7821,7 +8901,7 @@ msgstr "Mean"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.5.String.Text
 msgid  "The mean value. The mean value of the normal distribution."
-msgstr "Rerata. Rerata nilai distribusi normal"
+msgstr "Rerata. Rerata nilai distribusi normal."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 msgid  "STDEV"
@@ -7837,7 +8917,7 @@ msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 atau FALSE mengkalkulasi fungsi densitas probabilitas. Nilai lain atau TRUE atau diabaikan menghitung fungsi distribusi kumulatif."
+msgstr "0 atau FALSE akan menghitung probabilitas fungsi densitas. Nilai lain atau TRUE atau diabaikan akan menghitung fungsi distribusi kumulatif."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 msgid  "Values of the inverse normal distribution."
@@ -7925,7 +9005,7 @@ msgstr "Kumulatif"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 atau FALSE mengkalkulasi fungsi densitas probabilitas. Nilai lain atau TRUE atau diabaikan menghitung fungsi distribusi kumulatif."
+msgstr "0 atau FALSE mengkalkulasi fungsi densitas probabilitas. Nilai lain atau TRUE atau kosong mengkalkulasi fungsi distribusi kumulatif."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV.1.String.Text
 msgid  "Values of the inverse of the lognormal distribution."
@@ -8301,7 +9381,7 @@ msgstr "Bilangan yang akan dihitung distribusi F-nya."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.4.String.Text
 msgid  "degrees_freedom_1"
-msgstr "derajat_kebebasan_2"
+msgstr "derajat_kebebasan_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.5.String.Text
 msgid  "The degrees of freedom in the numerator of the F distribution."
@@ -8585,7 +9665,7 @@ msgstr "Data_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 msgid  "The first record array."
-msgstr "Larik rekaman pertama."
+msgstr "Larik data pertama."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 msgid  "data_2"
@@ -8593,7 +9673,7 @@ msgstr "Data_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 msgid  "The second record array."
-msgstr "Larik rekaman kedua."
+msgstr "Larik data kedua."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 msgid  "Calculates the T test."
@@ -8605,7 +9685,7 @@ msgstr "Data_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.3.String.Text
 msgid  "The first record array."
-msgstr "Larik data pertama."
+msgstr "Larik rekaman pertama."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.4.String.Text
 msgid  "data_2"
@@ -8613,7 +9693,7 @@ msgstr "Data_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.5.String.Text
 msgid  "The second record array."
-msgstr "Larik data kedua."
+msgstr "Larik rekaman kedua."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.6.String.Text
 msgid  "mode"
@@ -8853,7 +9933,7 @@ msgstr "referensi"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 msgid  "The reference to a (multiple) range."
-msgstr "Referensi ke jangkauan jamak."
+msgstr "Referensi ke jangkauan (jamak)."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 msgid  "Selects a value from a list of up to 30 value arguments."
@@ -8885,7 +9965,7 @@ msgstr "referensi"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 msgid  "The reference to a cell or a range."
-msgstr "Referensi ke sel atau ke jangkauan."
+msgstr "Referensi ke sel atau jangkauan."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 msgid  "Defines the internal row number of a reference."
@@ -9085,7 +10165,7 @@ msgstr "Kriteria pencarian"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.3.String.Text
 msgid  "The value to be used for comparison."
-msgstr "Nilai yang digunakan untuk pembadingan."
+msgstr "Nilai yang digunakan untuk pembandingan."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.4.String.Text
 msgid  "Search vector"
@@ -9601,7 +10681,7 @@ msgstr "Banyaknya huruf yang akan diganti."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.8.String.Text
 msgid  "new text"
-msgstr "subteks baru"
+msgstr "teks_baru"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.9.String.Text
 msgid  "The text to be inserted."
@@ -9789,7 +10869,7 @@ msgstr "basis"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "Basis bilangan untuk konversi, antara 2 - 36."
+msgstr "Basis untuk konversi bilangan, antara 2 - 36."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 msgid  "Minimum length"
@@ -9829,7 +10909,7 @@ msgstr "nilai"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 msgid  "The value to be converted."
-msgstr "Nilai yang akan dikonversi."
+msgstr "Nilai yang akan diubah."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 msgid  "text"
@@ -10412,8 +11492,8 @@ msgid  "Font Attributes"
 msgstr "Atribut Fonta"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "Terdapat banyak sekali data di clipboard.\nApakah Anda ingin isi clipboard bisa diakses oleh aplikasi lain?"
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 msgid  "System Options"
@@ -10480,8 +11560,8 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
-msgstr "%PRODUCTNAME Calc menemukan kesalahan pada rumus yang Anda ketik.\nApakah koreksi seperti di bawah ini disetujui?\n\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file can not be opened"
@@ -10521,11 +11601,11 @@ msgstr "Pilih Lembar Kerja"
 
 #: source/ui/src/scstring.src#STR_DLG_SELECTTABLES_LBNAME.String.Text
 msgid  "~Selected sheets"
-msgstr "~Lembar kerja yang dipilih"
+msgstr "~Lembar terpilih"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "Anda mencoba menempel data ke sel yang sudah berisi data.\nApakah data yang ada ingin ditimpa?"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"
@@ -12232,20 +13312,20 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "Dokumen terlalu kompleks sehingga kalkulasi tidak otomatis. Tekan F9 untuk kalkulasi."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "Dokumen mengandung jumlah baris yang lebih banyak dari yang diperkenankan untuk format tersebut.\nBaris tambahan tidak disimpan."
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "Dokumen mengandung informasi yang tidak dikenal oleh program versi ini.\nMenyimpan sekali lagi akan menghapus informasi ini!"
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 msgid  "Not all cell contents could be saved in the specified format."
 msgstr "Tidak semua isi sel bisa disimpan dalam format yang dipilih."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
-msgstr "Karakter berikut tidak bisa dikonversi ke jenis karakter yang dipilih\ndan ditulis sebagai &#1234; menggantikan:\n\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."

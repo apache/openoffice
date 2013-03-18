@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "ពុម្ព​បាន​បង្កើត​តាម​រយៈ <wizard_name> លើ <current_date> ។"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "មិន​អាច​រត់​អ្នកជំនួយការ ពីព្រោះ​ឯកសារ​សំខាន់ មិនត្រូវ​បាន​រកឃើញ ។\nក្រោម 'ឧបករណ៍-ជម្រើស- %PRODUCTNAME - ផ្លូវ' ចុចប៊ូតុង 'លំនាំដើម' ដើម្បី​កំណត់​ផ្លូវ​ទៅ​ការ​កំណត់​លំនាំដើម​ឡើង​វិញ ។\nបន្ទាប់​មក​រត់​អ្នក​ជំនួយការ​ម្តងទៀត ។"
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "វាល​​​ក្នុង​​សំណុំ​​បែបបទ "
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "វាល​​គោល​ពីរ តែងតែ​​បាន​រាយ និង​អាច​ជ្រើស​បាន​ពី​បញ្ជី​ខាង​ឆ្វេង ។​\nប្រសិន​បើ​អាច  ពួកវា​ត្រូវ​បាន​បកប្រែ​ជា​រូបភាព ។"
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "សំណុំ​បែបបទ​រង គឺ​ជា​សំណុំ​បែបបទ​ដែល​​បាន​បញ្ចូល​ក្នុង​សំណុំ​បែបបទ​​មួយ​ផ្សេង​ទៀត ។\nប្រើ​សំណុំ​បែបបទ​រង ដើម្បី​បង្ហាញ​ទិន្នន័យ​ពី​តារាង ឬ សំណួរ ដោយ​ប្រើ​​ទំនាក់​ទំនង មួយ-ទៅ-ច្រើន ។"
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "វាល​​​ក្នុង​​សំណុំ​​បែបបទ"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "ការ​ចូល​រួម​ '<FIELDNAME1>' និង​ '<FIELDNAME2>' ត្រូវ​បាន​ជ្រើ​ស​ពីរ​ដង​ ។ \nប៉ុន្តែ​ការ​ចូល​រួម​អាច​ត្រូវ​បាន​ប្រើ​តែ​ម្តង​គត់​ ។"
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "កំណត់​ឈ្មោះ​សំណុំ​បែបបទ"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "មាន​សំណុំបែបបទ​ឈ្មោះ '%FORMNAME' រួច​ហើយ ។\nសូម​ជ្រើស​ឈ្មោះ​មួយ​ទៀត ។"
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "មិន​អាច​បញ្ចូល​វាល​បាន​ទេ ព្រោះ​វា​នឹង​លើស​ចំនួន​អតិបរមា​នៃ​វាល %COUNT ដែល​អាច​ធ្វើ​បាន​ក្នុង​តារាង​មូលដ្ឋាន​ទិន្នន័យ ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "មាន​ឈ្មោះ '%TABLENAME' រួច​ហើយ ។\nសូម​បញ្ចូល​ឈ្មោះ​មួយ​ទៀត ។"
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "អ្នក​ជំនួយការ បណ្តាញ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "អ្នក​​ជំនួយការ​​បណ្តាញ​នេះ​នឹង​ជួយ​អ្នក​ក្នុង​ការ​បោះពុម្ព​ផ្សាយ​ឯកសារ​លើ​អ៊ីនធឺណិត ។​\n\nវា​នឹង​បម្លែង​ឯកសារ ដូច្នេះ​ពួកវា​អាច​ត្រូវ​បានបង្ហាញ​​ដោយ​កម្មវិធី​រុករក​បណ្តាញ ។ ជា​បន្ថែម វា​នឹង​បង្កើត​ទំព័រ​តារាង​មាតិកា​មួយ​ជាមួយ​តំណ សម្រាប់​ភាព​ងាយស្រួល​ចូល​ដំណើរការ​​​ឯកសារ ។ អ្នក​ជំនួយការ​បណ្តាញ​នឹង​អនុញ្ញាត​ផង​ដែរ​ឲ្យ​អ្នក​ប្តូរ​ការ​រចនា និងប្លង់​​​​នៃ​តំបន់​បណ្តាញ​របស់​អ្នក​តាម​បំណង ។​\n\nអ្នក​នឹង​អាច​រក្សា​ឯកសារ​ដែល​អ្នក​បាន​បោះពុម្ព​ផ្សាយ​លើ​បណ្តាញ ឲ្យ​ទាន់​សម័យ និង​អាច​បន្ថែម ឬ យក​ឯកសារ​ចេញ​នៅ​ពេល​ណា​ក៏​បាន ។"
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "មើល​ជា​​​មុន"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "ការ​កំណត់​ដែល​បាន​ជ្រើស នឹង​ត្រូវ​បាន​លុប ។​\n\nតើ​អ្នក​ពិត​ជា​ចង់​លុប​ការ​កំណត់​ទាំងនេះ​ឬ ?"
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "មិន​អាច​បង្កើត​ថត FTP '%FILENAME' ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "ថត FTP '%FILENAME' មិន​ទាន់​មាន​ទេ ។ \nបង្កើត​ថត​ឥឡូវ​ឬ ?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "មិន​អាចបង្កើត​ឯកសារ ZIP '%FILENAME' ៖ ថត​មួយ​ដែល​មាន​ឈ្មោះ​ដូចគ្នា មាន​រួច​ហើយ ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "មិន​អាច​បង្កើត​ថត​មូលដ្ឋាន '%FILENAME' ។​\nសូម​ពិនិត្យមើល​សិទ្ធ​ចូល​ដំណើរការ​សរសេរ​របស់​អ្នក ។"
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "មិន​មាន​ថត​​មូលដ្ឋាន '%FILENAME' ។​\nបង្កើត​ថត​ឥឡូវ​ឬ ?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2841,7 +2841,7 @@ msgstr "សូម​អាន"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +34.String.Text
 msgid  "Please bring"
-msgstr "សូម​នាំយកមក​នូវ​​"
+msgstr "សូម​នាំយក​មក​នូវ​"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +35.String.Text
 msgid  "Notes"

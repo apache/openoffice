@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "ရုပ်ပုံဆလိုက်များ ရွှေ့ပြောင်းပါ"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "မှတ်ဉာဏ် မလုံလောက်ပါ။ \nလုပ်ဆောင်ချက် ဖျက်သိမ်းလိမ့်မည်။"
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1341,7 +1341,7 @@ msgstr "⁠~ကူးယူပြန်ထည့်ပါ"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MenuItem.Text
 msgid  "~Delete Comment"
-msgstr "ထင်မြင်သုံးသပ်ချက်များဖျက်ပါ"
+msgstr "ထင်မြင်သုံးသပ်ချက်ဖျက်ပါ"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MenuItem.Text
 msgid  "Delete All Comments b~y %1"
@@ -1809,9 +1809,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "မြှားခေါင်း အသစ်အတွက် အမည်တစ်ခုသို့ ဝင်ပေးပါ-"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-#, fuzzy
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "ရွေးသော အမည် အဆင်သင့် ရှိပြီးဖြစ်သည်။ \nအခြားအမည်သို့ ဝင်ပေးပါ။"
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -1899,9 +1898,8 @@ msgid  "Insert slides"
 msgstr "ရုပ်ပုံဆလိုက်များ ထည့်ပါ"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-#, fuzzy
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "\"$\" အဆင့်ကို ဖျက်ရန် ဆန္ဒရှိပါသလား? \nမှတ်ချက်-ဤအဆင့်ပေါ်ရှိ အရာဝတ္ထုများအားလုံး ဖျက်လိမ့်မည်!"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -1959,9 +1957,8 @@ msgid  "Insert text frame"
 msgstr "စာသားဘောင်ထည့်ပါ"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-#, fuzzy
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "ဤဖန်ရှင်သည် \nရွေးချယ်ထားသည့် အရာဝတ္ထုများနှင့်အတူ အလုပ်မလုပ်နိုင်ပါ။"
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -1974,9 +1971,8 @@ msgid  "The file could not be loaded!"
 msgstr "ဖိုင် မဆွဲတင်နိုင်ပါ!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-#, fuzzy
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "စာမျက်နှာများအသစ်၏ စီစဉ်ဖွဲ့စည်းမှုပုံစံနှင့် လိုက်ဖက်အောင် ပြင်ဆင်လိမ့်မည်။ အရာဝတ္ထုများကိုပါ လိုက်ဖက်အောင် ပြင်ဆင်ရန် ဆန္ဒရှိပါသလား?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -1999,9 +1995,8 @@ msgid  "~Edit"
 msgstr "~တည်းဖြတ်ပါ"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-#, fuzzy
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "ဤလုပ်ဆောင်ချက်သည် ပြုလုပ်၍ မရသော လုပ်ဆောင်ချက်များ၏ စာရင်းကို ဖျက်သည်။\nမှတ်တမ်းမှတ်ရာသို့ ပြုလုပ်ခဲ့သော ယခင် ပြောင်းလဲမှုများသည် တရားဝင်နေဆဲ ဖြစ်သည်၊ \nသို့သော် မပြုလုပ်နိုင်ပါ။ ရှေ့ဆက်ပြီး လုပ်ရန်\nရုပ်ပုံဆလိုက် ပုံစံဒီဇိုင်းအသစ် အချိန်၊ နေရာ စသည်ဖြင့် သတ်မှတ်လိုပါသလား?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2024,9 +2019,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "သတ်မှတ်သည့် ပရင်တာပေါ်တွင် မှတ်တမ်းမှတ်ရာ စီစဉ်ဖွဲ့စည်းမှုပုံစံ မဖန်တီးနိုင်ပါ။"
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-#, fuzzy
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "ဤပန်းချီဒီဇိုင်းသည် မှတ်တမ်းမှတ်ရာ တစ်ခုနှင့်ချိတ်ဆက်နေသည်။ \nတည်းဖြတ်ရန် ညွှန်ကြားထားသော ပန်းချီဒီဇိုင်းကို မချိတ်ဆက်ရန် ဆန္ဒရှိပါသလား?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2164,9 +2158,8 @@ msgid  " (Outline)"
 msgstr "(ကောက်ကြောင်း)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-#, fuzzy
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "သတ်မှတ်သည့် စကေးသည် မှားယွင်းသောညွှန်ကြားချက်တစ်ခု ဖြစ်သည်။ \nအသစ် တစ်ခုသို့ ဝင်ရန် ဆန္ဒရှိပါသလား?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2518,9 +2511,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "ပုံဆွဲထားသော အရာဝတ္ထုများ အားလုံးကို အုပ်စု မဖွဲ့ရန် မဖြစ်နိုင်ပါ။"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-#, fuzzy
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "ဤအမည်နှင့်အတူ ပုံစံ ဒီဇိုင်း တစ်ခု အဆင်သင့် တည်ရှိသည်။ \nအစားထိုးချင်ပါသလား?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2663,9 +2655,8 @@ msgid  "Graphics filter"
 msgstr "ပန်းချီဒီဇိုင်းစစ်ထုတ်ကိရိယာ"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-#, fuzzy
-msgid  "The file %\nis not a valid sound file !"
-msgstr "ဖိုင်သည် %\nတရားဝင်သော အသံဖိုင်တစ်ခု ဟုတ်ပါသလား !"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -2955,254 +2946,317 @@ msgid  "All Styles"
 msgstr "ဆဲလ်အကွက် စတိုင်လ်များ"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Distribution..."
 msgstr "~ဖြန့်ဝေခြင်း..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Drawing View"
 msgstr "~ပုံဆွဲသောမြင်ကွင်း"
 
 #: source/ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Outline View"
 msgstr "~ကောက်ကြောင်း မြင်ကွင်း"
 
 #: source/ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Sorter"
 msgstr "~ရုပ်ပုံဆလိုက် စနစ်တကျစီထားသူ"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MenuItem.Text
+#, fuzzy
 msgid  "Slide Sho~w"
 msgstr "ရုပ်ပုံ ဆလိုက်ပြသည် "
 
 #: source/ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MenuItem.Text
+#, fuzzy
 msgid  "~Insert Snap Point/Line..."
 msgstr "~ပြတ်သည့် အမှတ်များ/မျဉ်းများ ထည့်သည်....."
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~တည်းဖြတ်ပါ..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~ဖျက်ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slide ~Layout"
 msgstr "ရုပ်ပုံ ဆလိုက် အဆင်အပြင်"
 
 #: source/ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MenuItem.Text
+#, fuzzy
 msgid  "~Page Setup..."
 msgstr "⁠~စာမျက်နှာ စတင် အသုံးပြုရန် စီမံခြင်း..."
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~New Slide"
 msgstr "~ရုပ်ပုံဆလိုက်အသစ်"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~New Master"
 msgstr "ပင်မ အသစ်"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~New Page"
 msgstr "စာမျက်နှာအသစ်"
 
 #: source/ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MenuItem.Text
+#, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "ဆလိုက်အတွက်နောက်ခံပန်းချီကားချပ်ထားရှိသည်"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MenuItem.Text
+#, fuzzy
 msgid  "Display Background of Master"
 msgstr "ပင်မနောက်ခံပြသသည်"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "Display Objects from Master"
 msgstr "ပင်မမှ အရာ၀တ္တုများ ပြသသည်"
 
 #: source/ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "Pag~e"
 msgstr "စာမျက်နှာ"
 
 #: source/ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "Slid~e"
 msgstr "ရုပ်ပုံ ဆလိုက်"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Layer..."
 msgstr "အလွှာ အမည်ပြန်ပေးပါ..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~elete Slide"
 msgstr "ရုပ်ပုံဆလိုက်ဖျက်ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~elete Master"
 msgstr "ပင်မဖျက်ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~elete Page"
 msgstr "စာမျက်နှာဖျက်ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Slide"
 msgstr "ရုပ်ပုံ ဆလိုက် အမည် ပြန်ပေးပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Master"
 msgstr "ပင်မ အမည် ပြန်ပေးပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Page"
 msgstr "စာမျက်နှာ အမည်ပြန်ပေးပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MenuItem.Text
+#, fuzzy
 msgid  "L~ine..."
 msgstr "မျဉ်း..."
 
 #: source/ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MenuItem.Text
+#, fuzzy
 msgid  "~Area..."
 msgstr "~ဧရိယာ..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Text..."
 msgstr "~စာသား..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Connector..."
 msgstr "~ချိတ်ဆက်သူ..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MenuItem.Text
+#, fuzzy
 msgid  "Reset ~Routing"
 msgstr "ပုံမှန် လုပ်ဆောင်မှု အစမှ ပြန်လည် စတင်ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MenuItem.Text
+#, fuzzy
 msgid  "Position and Si~ze..."
 msgstr "ရပ်တည်ချက်နှင့် အရွယ်..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit ~Points"
-msgstr "အစက်အပြောက်အမှတ်များ တည်းဖြတ်ပါ"
+msgstr "အမှတ်များ တည်းဖြတ်ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "Arra~nge"
 msgstr "စီစဉ်ထားသိုပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MenuItem.Text
+#, fuzzy
 msgid  "~Bring to Front"
 msgstr "အရှေ့ပိုင်းသို့သယ်ဆောင်ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "အရှေ့ပိုင်းသယ်ဆောင်ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "နောက်ပိုင်းသို့ပို့ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MenuItem.Text
+#, fuzzy
 msgid  "~Send to Back"
 msgstr "အနောက်ပိုင်းသို့ပို့ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "အရာဝတ္ထု၏ရှေ့ပိုင်းတွင်"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "Be~hind Object"
 msgstr "အရာဝတ္ထု၏နောက်ကွယ်"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MenuItem.Text
+#, fuzzy
 msgid  "~Reverse"
 msgstr "ဆန့်ကျင်ဖက်သို့လှည့်ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "C~haracter..."
 msgstr "အက္ခရာများပါဝင်ခြင်း..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MenuItem.Text
+#, fuzzy
 msgid  "P~aragraph..."
 msgstr "စာပိုဒ်..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MenuItem.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "~ဖောင့်"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Size"
 msgstr "~အရွယ်"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "St~yle"
 msgstr "စတိုင်လ်ပုံစံ"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Bold"
 msgstr "စာလုံးမဲ"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MenuItem.Text
+#, fuzzy
 msgid  "Italic"
 msgstr "စာလုံးစောင်း"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_OVERLINE.MenuItem.Text
+#, fuzzy
 msgid  "Overline"
 msgstr "မျဉ်းအလွန်"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
+#, fuzzy
 msgid  "Underline"
 msgstr "အောက်မှ မျဉ်းသားပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "ဖြတ်မျဉ်း"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MenuItem.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "အရိပ်"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MenuItem.Text
+#, fuzzy
 msgid  "~Contour"
 msgstr "~ကွန်တိုမျဉ်း"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "⁠~မျဉ်းနေရာလွတ်"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MenuItem.Text
+#, fuzzy
 msgid  "Single Line Spacing"
 msgstr "မျဉ်းတစ်ကြောင်းစာနေရာလွတ်"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MenuItem.Text
+#, fuzzy
 msgid  "1.5 Lines"
 msgstr "၁.၅ မျဉ်းများ"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MenuItem.Text
+#, fuzzy
 msgid  "~Double"
 msgstr "~နှစ်ဆ"
 
 #: source/ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MenuItem.Text
+#, fuzzy
 msgid  "S~pecial Character..."
 msgstr "အက္ခရာများပါဝင်ခြင်း..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "ဖြောင့်တန်းမှု"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "~ဘယ်ဖက်"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "~ညာဖက်"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
+#, fuzzy
 msgid  "~Centered"
 msgstr "~အလယ်တည့်တည့်"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
+#, fuzzy
 msgid  "Justified"
 msgstr "စာကြောင်းညှိပေးသည်"
 
@@ -3212,18 +3266,22 @@ msgid  "Al~ignment"
 msgstr "ဖြောင့်တန်းမှု"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_LEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "~ဘယ်ဖက်"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_CENTER.MenuItem.Text
+#, fuzzy
 msgid  "~Centered"
 msgstr "~အလယ်တည့်တည့်"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "~ညာဖက်"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
+#, fuzzy
 msgid  "~Top"
 msgstr "~ထိပ်"
 
@@ -3240,7 +3298,7 @@ msgstr "~အောက်ခြေ"
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
 #, fuzzy
 msgid  "Close ~Object"
-msgstr "အရာဝတ္ထု ပိတ်ပါ"
+msgstr "အရာဝတ္ထုပိတ်ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
 #, fuzzy
@@ -3608,78 +3666,97 @@ msgid  "~Rename"
 msgstr "~အမည်ပြန်ပေးပါ"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MenuItem.Text
+#, fuzzy
 msgid  "To ~Curve"
 msgstr "မျဉ်းခုံးသို့"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MenuItem.Text
+#, fuzzy
 msgid  "To ~Polygon"
 msgstr "ဗဟုဂံသို့"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MenuItem.Text
+#, fuzzy
 msgid  "To C~ontour"
 msgstr "ကွန်တိုမျဉ်းသို့"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MenuItem.Text
+#, fuzzy
 msgid  "To 3~D"
 msgstr "3~D သို့"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MenuItem.Text
+#, fuzzy
 msgid  "To ~Bitmap"
 msgstr "ပုံရိပ်သို့"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MenuItem.Text
+#, fuzzy
 msgid  "To ~Metafile"
 msgstr "Metafile သို့"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MenuItem.Text
+#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "3D အရာဝတ္ထု အလှည့်ကျ လှည့်ပေးခြင်းသို့"
 
 #: source/ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "~ထောင့်မှန်ကျကျ"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "~Horizontally"
 msgstr "အလျားလိုက်"
 
 #: source/ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MenuItem.Text
+#, fuzzy
 msgid  "~3D Effects"
 msgstr "~3D အကျိုးကျေးဇူးများ"
 
 #: source/ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Design"
 msgstr "~ရုပ်ပုံဆလိုက်ပုံစံဒီဇိုင်း"
 
 #: source/ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MenuItem.Text
+#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "ရုပ်ပုံဆလိုက် အကူးအပြောင်း"
 
 #: source/ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Show Slide"
 msgstr "~ဆလိုက်ပြပါ"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Hide Slide"
 msgstr "ရုပ်ပုံဆလိုက် ခေတ္တဖျောက်ထားပါ"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Group"
 msgstr "~အုပ်စု"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Ungroup"
 msgstr "~အုပ်စုမဖွဲ့ပါ"
 
 #: source/ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Edit Group"
 msgstr "~အုပ်စုတည်းဖြတ်ပါ"
 
 #: source/ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "E~xit group"
 msgstr "အုပ်စုမှထွက်ပါ"
 
 #: source/ui/app/menuids3_tmpl.src#MNSUB_GROUP.MN_SUB_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Group"
 msgstr "~အုပ်စု"
 
@@ -3761,7 +3838,7 @@ msgstr "~ရွေးချယ်ပါ"
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MenuItem.Text
 #, fuzzy
 msgid  "~Insert..."
-msgstr "~ထည့်သွင်းပါ. . . "
+msgstr "~ထည့်သွင်းပါ"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 #, fuzzy
@@ -3816,7 +3893,7 @@ msgstr "~ရုပ်ပုံ ဆလိုက် အားလုံးကို
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 #, fuzzy
 msgid  "Apply to ~Selected Slides"
-msgstr "ရွေးချယ်ထားသည့် ရုပ်ပုံဆလိုက်များကိုလက်တွေ့ အသုံးချပါ"
+msgstr "ရွေးချယ်ထားသည့် ရုပ်ပုံ ဆလိုက်များကို လက်တွေ့ အသုံးချပါ"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -3889,358 +3966,447 @@ msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you 
 msgstr "%PRODUCTNAME ပုံဆွဲခြင်းသည် မှတ်တမ်းမှတ်ရာ၏ အစသို့ ရှာဖွေသည်။ အဆုံးသတ်မှ ဆက်လုပ်လိုပါသလား?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
+#, fuzzy
 msgid  "~New"
 msgstr "~အသစ်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MenuItem.Text
+#, fuzzy
 msgid  "~Export..."
 msgstr "~တင်ပို့ပါ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MenuItem.Text
+#, fuzzy
 msgid  "Export as PDF..."
 msgstr "PDF အဖြစ်ပို့ပါ..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MenuItem.Text
+#, fuzzy
 msgid  "Sen~d"
 msgstr "ပေးပို့ပါ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
+#, fuzzy
 msgid  "~Page..."
 msgstr "~စာမျက်နှာ..."
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~တည်းဖြတ်ပါ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
+#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "အထူး ဖြတ်ကူးယူပြန်ထည့်ပါ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "Duplicat~e..."
 msgstr "မူပွားပါ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MenuItem.Text
+#, fuzzy
 msgid  "Cross-fading..."
 msgstr "ကန့်လန့်မှိန်သွားစေသည်..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MenuItem.Text
+#, fuzzy
 msgid  "F~ields..."
 msgstr "နေရာကွက်များ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MenuItem.Text
+#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "အလွှာ ဖျက်ပါ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
+#, fuzzy
 msgid  "Lin~ks..."
 msgstr "ကွင်းဆက်များ..."
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
+#, fuzzy
 msgid  "~View"
 msgstr "~မြင်ကွင်း"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
+#, fuzzy
 msgid  "Main ~Toolbar"
 msgstr "အဓိက~တူးလ်ဘား"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MenuItem.Text
+#, fuzzy
 msgid  "Optio~n Bar"
 msgstr "ရွေးပိုင်ခွင့်ဘား"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MenuItem.Text
+#, fuzzy
 msgid  "~Presentation"
 msgstr "⁠~တင်ဆက်မှုပုံစံ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MenuItem.Text
+#, fuzzy
 msgid  "Customi~ze..."
 msgstr "လိုအပ်ချက်နှင့် ကိုက်ညီအောင် ပြုပြင် ရေးသားပါ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MenuItem.Text
+#, fuzzy
 msgid  "~Rulers"
 msgstr "~ပေတံများ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Notes View"
 msgstr "~မှတ်ချက်များမြင်ကွင်း"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Handout View"
 msgstr "~လက်ကမ်းစာလွှာ မြင်ကွင်း"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MenuItem.Text
+#, fuzzy
 msgid  "~Preview"
 msgstr "~အစမ်းကြည့်ပါ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MenuItem.Text
+#, fuzzy
 msgid  "S~lide"
 msgstr "ရုပ်ပုံဆလိုက်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Master"
 msgstr "~ပင်မဆလိုက်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "~ခေါင်းစဉ်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Notes"
 msgstr "~မှတ်စုများ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Handout"
 msgstr "~လက်ကမ်းစာလွှာ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MenuItem.Text
+#, fuzzy
 msgid  "La~yer"
 msgstr "အလွှာ"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MenuItem.Text
+#, fuzzy
 msgid  "Wor~kspace"
 msgstr "အလုပ်နေရာလွတ်"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Master"
 msgstr "~ပင်မ"
 
 #: source/ui/app/menuids2_tmpl.src#21.#define.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "~ထပ်ထည့်ပါ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slid~e..."
 msgstr "ရုပ်ပုံဆလိုက်..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slid~e"
 msgstr "ရုပ်ပုံဆလိုက်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~uplicate Slide"
 msgstr "ရုပ်ပုံဆလိုက်မူပွားပါ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "E~xpand Slide"
 msgstr "ရုပ်ပုံဆလိုက် တိုးချဲ့ပါ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "ရုပ်ပုံဆလိုက်အကျဉ်းချုပ်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Layer..."
 msgstr "~အလွှာ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
+#, fuzzy
 msgid  "~Date (fixed)"
 msgstr "⁠~ရက်စွဲ (ပုံသွင်းသည်)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MenuItem.Text
+#, fuzzy
 msgid  "Dat~e (variable)"
 msgstr "ရက်စွဲ (ကိန်းရှင်)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MenuItem.Text
+#, fuzzy
 msgid  "~Time (fixed)"
 msgstr "~အချိန် (ပုံသွင်းသည်)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MenuItem.Text
+#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "အချိန် (ကိန်းရှင်)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Page Number"
 msgstr "⁠~စာမျက်နှာနံပါတ်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MenuItem.Text
+#, fuzzy
 msgid  "~File Name"
 msgstr "~ဖိုင်အမည်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MenuItem.Text
+#, fuzzy
 msgid  "~Author"
 msgstr "~စာရေးသူ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MenuItem.Text
+#, fuzzy
 msgid  "~Select Source..."
 msgstr "~မူရင်းရွေးချယ်ပါ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MenuItem.Text
+#, fuzzy
 msgid  "~Request..."
 msgstr "~တောင်းဆိုပါ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MenuItem.Text
+#, fuzzy
 msgid  "Sp~readsheet"
 msgstr "စာရွက်အချပ်လွှာ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MenuItem.Text
+#, fuzzy
 msgid  "From ~File..."
 msgstr "ဖိုင် ~မှ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MenuItem.Text
+#, fuzzy
 msgid  "Chart"
 msgstr "ကားချပ်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MenuItem.Text
+#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "အတည်တကျမနေသောဘောင်..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MenuItem.Text
+#, fuzzy
 msgid  "~File..."
 msgstr "~ဖိုင်..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MenuItem.Text
+#, fuzzy
 msgid  "Fiel~ds"
 msgstr "နေရာကွက်များ"
 
 #: source/ui/app/menuids2_tmpl.src#22.#define.Text
+#, fuzzy
 msgid  "F~ormat"
 msgstr "စီစဉ်ဖွဲ့စည်းမှုပုံစံ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Te~xt..."
 msgstr "စာသား..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "အတိုင်းအတာပမာဏများ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Connector..."
 msgstr "~ချိတ်ဆက်သည့်အရာ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Layer..."
 msgstr "~အလွှာ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Modify ~Layout..."
 msgstr "အဆင်အပြင်အထူးပြုခြင်း ..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
+#, fuzzy
 msgid  "Styl~es"
 msgstr "စတိုလ်များ"
 
 #: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+#, fuzzy
 msgid  "~Tools"
 msgstr "~ကိရိယာများ"
 
 #: source/ui/app/menuids2_tmpl.src#26.#define.Text
+#, fuzzy
 msgid  "~Slide Show"
 msgstr "⁠~ပြသသော ရုပ်ပုံဆလိုက်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
+#, fuzzy
 msgid  "~Check..."
 msgstr "~စစ်ဆေးပါ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MenuItem.Text
+#, fuzzy
 msgid  "~AutoSpellcheck"
 msgstr "~အလိုအလျောက်စာလုံးပေါင်း စစ်ဆေးသည်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MenuItem.Text
+#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "~ဝေါဟာရပဒေသာကျမ်း..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MenuItem.Text
+#, fuzzy
 msgid  "~Hyphenation"
 msgstr "~တုံးတိုသုံးနည်း"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~AutoCorrect..."
 msgstr "⁠~အလိုအလျောက်မှန်ကန်သည်..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Show Settings..."
 msgstr "~ရုပ်ပုံဆလိုက် ပြင်ဆင်ချိန်ညှိမှုများ..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Custom Slide Show..."
 msgstr "~စိတ်ကြိုက်ရုပ်ပုံဆလိုက်ပြသသည်......"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "~Animation"
 msgstr "~သက်ဝင်လှုပ်ရှားခြင်း"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MenuItem.Text
+#, fuzzy
 msgid  "~Interaction..."
 msgstr "⁠~အပြန်အလှန်တုံ့ပြန်မှုများ..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
+#, fuzzy
 msgid  "~Spellcheck"
 msgstr "~စာလုံးပေါင်းစစ်ဆေးပါ"
 
 #: source/ui/app/menuids2_tmpl.src#24.#define.Text
+#, fuzzy
 msgid  "~Modify"
 msgstr "~ပြုပြင်ပါ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "အရှေ့ပိုင်းသယ်ဆောင်ပါ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "နောက်ပိုင်းသို့ပို့ပါ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "အရာဝတ္ထု၏ရှေ့ပိုင်းတွင်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "Be~hind Object"
 msgstr "အရာဝတ္ထု၏နောက်ကွယ်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MenuItem.Text
+#, fuzzy
 msgid  "~Reverse"
 msgstr "~ဆန့်ကျင်ဖက်သို့လှည့်ပါ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MenuItem.Text
+#, fuzzy
 msgid  "~Eyedropper"
 msgstr "~ဓါတ်ပုံမှအရောင်ရွေးချယ်မှုများ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MenuItem.Text
+#, fuzzy
 msgid  "~Gallery"
 msgstr "~ပြခန်း"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "~အရောင်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
+#, fuzzy
 msgid  "~Grayscale"
 msgstr "~မီးခိုးရောင်စကေးလ်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
+#, fuzzy
 msgid  "~Black and White"
 msgstr "~အနက်နှင့်အဖြူရောင်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
+#, fuzzy
 msgid  "~High Contrast"
 msgstr "~အမြင့်ဆန့်ကျင်ကွဲလွဲချက်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "~အရောင်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MenuItem.Text
+#, fuzzy
 msgid  "~Grayscale"
 msgstr "~မီးခိုးရောင်စကေးလ်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MenuItem.Text
+#, fuzzy
 msgid  "~Black and White"
 msgstr "~အနက်နှင့်အဖြူရောင်"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MenuItem.Text
+#, fuzzy
 msgid  "~High Contrast"
 msgstr "~အမြင့်ဆန့်ကျင်ကွဲလွဲချက်"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "~စီစဉ်ထားသိုပါ"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ItemList.Text
+#, fuzzy
 msgid  "~Display Quality"
 msgstr "~အရည်အသွေး ပြသပါ"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
+#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "အစမ်းကြည့်ခြင်းနည်းလမ်း"
 
@@ -4716,7 +4882,7 @@ msgstr "~နောက်ထပ် >>"
 #: source/ui/dlg/dlgass.src#DLG_ASS.BUT_FINISH.OKButton.Text
 #, fuzzy
 msgid  "~Create"
-msgstr "~ဖန်တီးပါ"
+msgstr "ဖန်တီးပါ"
 
 #: source/ui/dlg/dlgass.src#DLG_ASS.STR_OPEN.String.Text
 #, fuzzy
@@ -5602,190 +5768,237 @@ msgid  "Animation"
 msgstr "သက်ဝင်လှုပ်ရှားခြင်း"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "First Image"
 msgstr "ပထမပုံရိပ်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Backwards"
 msgstr "နောက်သို့"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Stop"
 msgstr "ရပ်ပါ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Play"
 msgstr "လုပ်ဆောင်ပါ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Last Image"
 msgstr "နောက်ဆုံးပုံရိပ်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
+#, fuzzy
 msgid  "Image Number"
 msgstr "ပုံရိပ်နံပါတ်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
+#, fuzzy
 msgid  "Duration"
 msgstr "အတောအတွင်း"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item1.StringList.item
+#, fuzzy
 msgid  "1"
 msgstr "၁"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item2.StringList.item
+#, fuzzy
 msgid  "2"
 msgstr "၂"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item3.StringList.item
+#, fuzzy
 msgid  "3"
 msgstr "၃"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item4.StringList.item
+#, fuzzy
 msgid  "4"
 msgstr "၄"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item5.StringList.item
+#, fuzzy
 msgid  "5"
 msgstr "၅"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item6.StringList.item
+#, fuzzy
 msgid  "6"
 msgstr "၆"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item7.StringList.item
+#, fuzzy
 msgid  "7"
 msgstr "၇"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item8.StringList.item
+#, fuzzy
 msgid  "8"
 msgstr "၈"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item9.StringList.item
+#, fuzzy
 msgid  "9"
 msgstr "၉"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item10.StringList.item
+#, fuzzy
 msgid  "10"
 msgstr "၁၀"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item11.StringList.item
+#, fuzzy
 msgid  "12"
 msgstr "၁၂"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item12.StringList.item
+#, fuzzy
 msgid  "15"
 msgstr "၁၅"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item13.StringList.item
+#, fuzzy
 msgid  "20"
 msgstr "၂၀"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item14.StringList.item
+#, fuzzy
 msgid  "25"
 msgstr "၂၅"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item15.StringList.item
+#, fuzzy
 msgid  "50"
 msgstr "၅၀"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item16.StringList.item
+#, fuzzy
 msgid  "100"
 msgstr "၁၀၀"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item17.StringList.item
+#, fuzzy
 msgid  "500"
 msgstr "၅၀၀"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item18.StringList.item
+#, fuzzy
 msgid  "1000"
 msgstr "၁၀၀၀"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item19.StringList.item
+#, fuzzy
 msgid  "Max."
 msgstr "အများဆုံး"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
+#, fuzzy
 msgid  "Loop Count"
 msgstr "ထပ်တလဲလဲရေတွက်သည်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Apply Object"
 msgstr "အရာ၀တ္တုကိုသက်ရောက်မှုရှိသည်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Apply Objects Individually"
 msgstr "အရာ၀တ္တုတစ်ခုချင်းစီပေါ်သို့သက်ရောက်မှုရှိသည်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Delete Current Image"
 msgstr "လက်ရှိပုံရိပ်ကိုဖျက်ပါ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Delete All Images"
 msgstr "ပုံရိပ်အားလုံးကိုဖျက်ပါ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "Number"
 msgstr "နံပါတ်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FixedLine.Text
+#, fuzzy
 msgid  "Image"
 msgstr "ပုံရိပ်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RadioButton.Text
+#, fuzzy
 msgid  "Group object"
 msgstr "အရာဝတ္ထုအုပ်စု"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RadioButton.Text
+#, fuzzy
 msgid  "Bitmap object"
 msgstr "အရာဝတ္ထုပုံရိပ်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FixedText.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "ဖြောင့်တန်းမှု"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Top Left"
 msgstr "ထိပ်ဘယ်ဖက်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Left"
 msgstr "ဘယ်ဖက်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Bottom Left"
 msgstr "အောက်ခြေဘယ်ဘက်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Top"
 msgstr "ထိပ်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Centered"
 msgstr "အလယ်တည့်တည့်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Bottom"
 msgstr "အောက်ခြေ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Top Right"
 msgstr "ထိပ်ညာဖက်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Right"
 msgstr "ညာဖက်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Bottom Right"
 msgstr "အောက်ခြေညာဖက်"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+#, fuzzy
 msgid  "Create"
 msgstr "ဖန်တီးပါ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+#, fuzzy
 msgid  "Animation group"
 msgstr "သက်ဝင်လှုပ်ရှားခြင်းအုပ်စု"
 
@@ -5910,26 +6123,32 @@ msgid  "Paper tray from printer s~ettings"
 msgstr "ပရင်တာရွေးနိုင်ခြင်းများမှ စာရွက်ထည့်သည့်ဗန်း"
 
 #: source/ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DockingWindow.Text
+#, fuzzy
 msgid  "Notes Window"
 msgstr "ဝင်းဒိုး မှတ်စု "
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Next"
 msgstr "~နောက်ထပ်"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Previous"
 msgstr "~ယခင်"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MenuItem.Text
+#, fuzzy
 msgid  "~Go to Slide"
 msgstr "~ဆလိုက် သို့ သွားပါ"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~First Slide"
 msgstr "~ပထမဆုံး ဆလိုက်"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Last Slide"
 msgstr "~နောက်ဆုံး ဆလိုက်"
 
@@ -6023,252 +6242,313 @@ msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
 msgid  "Table Design"
-msgstr "ဇယား ဒီဇိုင်း"
+msgstr "ဇယားပုံစံ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
+#, fuzzy
 msgid  "Show"
 msgstr "ပြပါ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW+1.CheckBox.Text
+#, fuzzy
 msgid  "Header Row"
 msgstr "အတန်း အမြင့်"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW+1.CheckBox.Text
+#, fuzzy
 msgid  "Total Row"
 msgstr "အတန်း အမြင့်"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS+1.CheckBox.Text
+#, fuzzy
 msgid  "Banded Rows"
 msgstr "အတန်းများ စုစည်းထားသည်"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
+#, fuzzy
 msgid  "First Column"
 msgstr "ပထမဆုံး ကော်လံ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
+#, fuzzy
 msgid  "Last Column"
 msgstr "နောက်ဆုံး ကော်လံ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS+1.CheckBox.Text
+#, fuzzy
 msgid  "Banded Columns"
 msgstr "ကော်လံများ စုစည်းထားသည်"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
+#, fuzzy
 msgid  "Styles"
 msgstr "စတိုင်လ်များ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.ModalDialog.Text
+#, fuzzy
 msgid  "Table Design"
 msgstr "ဇယားပုံစံ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_GROUP_NAME.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME %s"
 msgstr "%PRODUCTNAME %s"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_CONTENT.String.Text
+#, fuzzy
 msgid  "Print content"
 msgstr "ပရင့်တာမာတိကာ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_GROUP.String.Text
+#, fuzzy
 msgid  "Print"
 msgstr "ပရင်တာ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "မှတ်တမ်းမှတ်ရာ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item1.ItemList.item
+#, fuzzy
 msgid  "Slides"
 msgstr "ဆလိုက်များ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item2.ItemList.item
+#, fuzzy
 msgid  "Handouts"
 msgstr "လမ်းကမ်း စာစောင်များ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item3.ItemList.item
+#, fuzzy
 msgid  "Notes"
 msgstr "မှတ်စုများ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item4.ItemList.item
+#, fuzzy
 msgid  "Outline"
 msgstr "အပြင်လိုင်း"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE.String.Text
+#, fuzzy
 msgid  "Slides per page"
 msgstr "စာမျက်နှာတစ်ခုပေါ်ရှိဆလိုက်များ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item1.ItemList.item
+#, fuzzy
 msgid  "Default"
 msgstr "နဂိုမူလ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item2.ItemList.item
+#, fuzzy
 msgid  "1"
 msgstr "၁"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item3.ItemList.item
+#, fuzzy
 msgid  "2"
 msgstr "၂"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item4.ItemList.item
+#, fuzzy
 msgid  "3"
 msgstr "၃"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item5.ItemList.item
+#, fuzzy
 msgid  "4"
 msgstr "၄"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item6.ItemList.item
+#, fuzzy
 msgid  "6"
 msgstr "၆"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item7.ItemList.item
+#, fuzzy
 msgid  "9"
 msgstr "၉"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER.String.Text
+#, fuzzy
 msgid  "Order"
 msgstr "အစီအစဉ်"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.item1.ItemList.item
+#, fuzzy
 msgid  "Left to right, then down"
 msgstr "ဘယ်မှညာသို့၊ ထို့နောက်အောက်သို့"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.item2.ItemList.item
+#, fuzzy
 msgid  "Top to bottom, then right"
 msgstr "အပေါ်မှအောက်သို့၊ ထို့နောက် ညာဘက်သို့"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT.String.Text
+#, fuzzy
 msgid  "~Contents"
 msgstr "~မာတိကာများ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_NAME.String.Text
+#, fuzzy
 msgid  "~Slide name"
 msgstr "⁠~ဆလိုက်အမည်"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_IS_PRINT_NAME.String.Text
+#, fuzzy
 msgid  "P~age name"
 msgstr "စာမျက်နှာအမည်"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_DATE.String.Text
+#, fuzzy
 msgid  "~Date and time"
 msgstr "~ရက်စွဲနှင့်အချိန်"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_HIDDEN.String.Text
+#, fuzzy
 msgid  "Hidden pages"
 msgstr "ဝှက်ထားသောစာမျက်နှာများ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_OUTPUT_OPTIONS_GROUP.String.Text
+#, fuzzy
 msgid  "Output options"
 msgstr "အထွက်ရွေးပိုင်ခွင့်များ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY.String.Text
+#, fuzzy
 msgid  "Color"
 msgstr "အရောင်"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item1.ItemList.item
+#, fuzzy
 msgid  "Original colors"
 msgstr "မူလအ ရောင်များ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item2.ItemList.item
+#, fuzzy
 msgid  "Grayscale"
 msgstr "မီးခိုးရောင်စကေး"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item3.ItemList.item
+#, fuzzy
 msgid  "Black & white"
 msgstr "အဖြူ၊ အမဲ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS.String.Text
+#, fuzzy
 msgid  "~Size"
 msgstr "⁠~အရွယ်အစား"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item1.ItemList.item
+#, fuzzy
 msgid  "Original size"
 msgstr "မူလအရွယ်အစား"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item2.ItemList.item
+#, fuzzy
 msgid  "Fit to printable page"
 msgstr "ပရင့်ထုတ်သောစာမျက်နှာကိုသတ်မှတ်ပါ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item3.ItemList.item
+#, fuzzy
 msgid  "Distribute on multiple sheets of paper"
 msgstr "စာရွက်များဖြန့်ဝေပါ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item4.ItemList.item
+#, fuzzy
 msgid  "Tile sheet of paper with repeated slides"
 msgstr "စာရွက်တွင်ဆလိုက်များထပ်ခါထပ်ခါအကွက်ချပါ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item1.ItemList.item
+#, fuzzy
 msgid  "Original size"
 msgstr "မူလအရွယ်အစား"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item2.ItemList.item
+#, fuzzy
 msgid  "Fit to printable page"
 msgstr "ပရင့်ထုတ်သောစာမျက်နှာကိုသတ်မှတ်ပါ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item3.ItemList.item
+#, fuzzy
 msgid  "Distribute on multiple sheets of paper"
 msgstr "စာရွက်များဖြန့်ဝေပါ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item4.ItemList.item
+#, fuzzy
 msgid  "Tile sheet of paper with repeated pages"
 msgstr "စာရွက်တွင်စာမျက်နှာများထပ်ခါထပ်ခါအကွက်ချပါ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE.String.Text
+#, fuzzy
 msgid  "Brochure"
 msgstr "အညွှန်းစာစောင်"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_SIDES.String.Text
+#, fuzzy
 msgid  "Page sides"
 msgstr "စာမျက်နှာအနားများ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE.String.Text
+#, fuzzy
 msgid  "Include"
 msgstr "ပါဝင်သည်"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.item1.ItemList.item
+#, fuzzy
 msgid  "All pages"
 msgstr "စာမျက်နှာအားလုံး"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.item2.ItemList.item
+#, fuzzy
 msgid  "Front sides / right pages"
 msgstr "အရှေ့အနားများ/ညာဘက်စာမျက်နှာများ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.item3.ItemList.item
+#, fuzzy
 msgid  "Back sides / left pages"
 msgstr "အနောက်အနားများ/ဘယ်ဘက်စာမျက်နှာများ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAPER_TRAY_GROUP.String.Text
+#, fuzzy
 msgid  "Paper tray"
 msgstr "စာရွက်ဗန်း"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAPER_TRAY.String.Text
+#, fuzzy
 msgid  "~Use only paper tray from printer preferences"
 msgstr "~ပရင်တာရွေးပိုင်ခွင့်မှ စာရွက်ဗန်းသာလျှင်အသုံးပြုပါ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE.String.Text
+#, fuzzy
 msgid  "Print range"
 msgstr "ပရင့်ထုတ်ရန်နယ်ပယ်"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item1.ItemList.item
+#, fuzzy
 msgid  "~All slides"
 msgstr "~အနားများအာလုံး"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item2.ItemList.item
+#, fuzzy
 msgid  "~Slides"
 msgstr "⁠~အနားများ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item3.ItemList.item
 msgid  "Se~lection"
-msgstr "~လက်ရွေးစင်"
+msgstr "လက်ရွေးစင်"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item1.ItemList.item
+#, fuzzy
 msgid  "~All pages"
 msgstr "⁠~စာမျက်နှာများအားလုံး"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item2.ItemList.item
+#, fuzzy
 msgid  "Pa~ges"
 msgstr "စာမျက်နှာများ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item3.ItemList.item
+#, fuzzy
 msgid  "Se~lection"
 msgstr "လက်ရွေးစင်"

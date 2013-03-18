@@ -53,7 +53,7 @@ msgstr "Linennoù savenn"
 
 #: source/core/glob.src#STR_PAGE.String.Text
 msgid  "Slide"
-msgstr "Pajenn"
+msgstr "Treyonenn"
 
 #: source/core/glob.src#STR_PAGE_NAME.String.Text
 msgid  "Page"
@@ -129,7 +129,7 @@ msgstr "Klikit evit ouzhpennañ un titl"
 
 #: source/core/glob.src#STR_PRESOBJ_OUTLINE.String.Text
 msgid  "Click to add text"
-msgstr "Klikit evit ouzhpennañ ur steuñv"
+msgstr "Klikit evit ouzhpennañ un destenn"
 
 #: source/core/glob.src#STR_PRESOBJ_TEXT.String.Text
 msgid  "Click to add text"
@@ -201,7 +201,7 @@ msgstr "Skoueriek"
 
 #: source/core/glob.src#STR_LAYOUT_DEFAULT_TITLE_NAME.String.Text
 msgid  "Title"
-msgstr "Titl"
+msgstr "Titl 3 "
 
 #: source/core/glob.src#STR_STANDARD_STYLESHEET_NAME.String.Text
 msgid  "Default"
@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "Dilec'hiañ pajennoù"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "Memor re skort !\nTroc'het e vo ar gwezhiadur."
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -257,7 +257,7 @@ msgstr "Alinea"
 
 #: source/core/glob.src#STR_POOLSHEET_TITLE.String.Text
 msgid  "Title"
-msgstr "Titl 3 "
+msgstr "Titl"
 
 #: source/core/glob.src#STR_POOLSHEET_TITLE1.String.Text
 msgid  "Title1"
@@ -1732,8 +1732,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Bizskrivit un anv evit ar penn nevez :"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "An anv hoc'h eus euvret zo anezhañ endeo. \nEuvrit unan all."
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "Enlakaat pajennoù"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "Fellout a ra deoc'h dilemel ar gwiskad '$' da vat ?\nDiwallit : dilamet e vo an holl ergorennoù war ar gwiskad-mañ ivez "
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1852,8 +1852,8 @@ msgid  "Insert text frame"
 msgstr "Enlakaat ur stern testenn"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "N'hall ket an arc'hwel bezañ erounezet \ngant an ergorennoù diuzet."
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1864,8 +1864,8 @@ msgid  "The file could not be loaded!"
 msgstr "N'haller ket kargañ ar restr "
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "Azasaet e vo mentrezh ar pajennoù nevez.\nAzasaat an ergorennoù a fell deoc'h ivez ?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1884,8 +1884,8 @@ msgid  "~Edit"
 msgstr "Embann"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "Dilemel a ra ar gwered-mañ rollad ar gwezhadurioù ac'hall\nbezañ nullet. Ne dizh ket an daskemmadurioù\ngraet d'an teul, mirout a ra avat o nullañ.\nFellout a ra deoc'h kenderc'hel ha deverkañ ar stil pajenn nevez ?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1904,8 +1904,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "N'haller ket kenglotañ ar mentrezh teul ouzh ar voullerez."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "Erenet eo ar skeudenn-mañ ouzh an teul.\nDilemel an ere a fell deoc'h a-benn daskemmañ ar skeudenn ?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2016,8 +2016,8 @@ msgid  " (Outline)"
 msgstr " (Steuñv)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "Direizh eo ar skeul erspizet. \nEnlakaat unan all a fell deoc'h ?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2300,8 +2300,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "N'haller ket digenstrollañ an holl ergorennoù tresañ."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "Un ergrafadenn gant an hevelep anv zo anezhi endeo. \n Fellout ar ra deoc'h hec'h erlec'hiañ outi."
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2416,8 +2416,8 @@ msgid  "Graphics filter"
 msgstr "Sil kevregañ"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-msgid  "The file %\nis not a valid sound file !"
-msgstr "Ar restr %\nn'eo ket ur restr sten talvoudek."
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -3285,7 +3285,7 @@ msgstr "~Masklañ an dreyonenn"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
 msgid  "~Group"
-msgstr "~Strollad"
+msgstr "~Strollañ"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
 msgid  "~Ungroup"
@@ -5133,7 +5133,7 @@ msgstr "Perzhded"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RadioButton.Text
 msgid  "Default"
-msgstr "Dre ziouer"
+msgstr "Skoueriek"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RadioButton.Text
 msgid  "Gra~yscale"

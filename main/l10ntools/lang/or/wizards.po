@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "ସୃଷ୍ଟିହୋଇଥିବା ନମୁନା  via <ଉଇଜାର୍ଡ_ନାମ>ରେ <ଚଳିତ_ତାରିଖ>।"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "ଉଇଜାର୍ଡ ଚାଲୁ ହୋଇପାରିବ ନାହିଁ,କାରଣ ଗୁରତ୍ବପୂର୍ଣ୍ଣ ଫାଇଲଗୁଡିକ ମିଳୁନାହିଁ।\n'ଟୁଲଗୁଡିକ-ବିକଳ୍ପଗୁଡିକ-%PRODUCTNAME - ପଥଗୁଡିକ'ତଳେ ମୂଳ ଡିଫଲଟ ସେଟିଙ୍ଗଗୁଡିକର ପଥଗୁଡିକ ପୁନଃସେଟକରିବା ପାଇଁ 'ଡିଫଲଟ'ବଟନକୁ ଦବାଅ।\nପରେ ଆଉଥରେ ଉଇଜାର୍ଡକୁ ଚାଲୁ କର।"
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "ଫର୍ମରେ କ୍ଷେତ୍ରଗୁଡିକ"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "ବାମ ତାଲିକାରୁ ସବୁବେଳେ ୟୁଗ୍ମ କ୍ଷେତ୍ରଗୁଡିକ ତାଲିକାହୋଇଛି ଏବଂ ମନୋନୀତ ୟୋଗ୍ଯ।\nୟଦି ସମ୍ଭବ,ସମାନେ ଚିତ୍ରଗୁଡିକ ପରି ବ୍ଯାଖ୍ଯା ହୋଇଛି।"
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "ଗୋଟିଏ ଉପଫର୍ମ ଗୋଟିଏ ଉର୍ମ ୟାହା ଅନ୍ଯ ଗୋଟିଏ ଫର୍ମରେ ଭର୍ତ୍ତି ହୋଇଛି।\nଗୋଟିଏ-ରୁ-ଅଧିକ ସମ୍ପର୍କୀଯ ସହିତ ଟେବୁଲଗୁଡିକରୁ କିମ୍ବା ପ୍ରଶ୍ନଗୁଡିକରୁ ତଥ୍ଯ ଦେଖାଇବା ପାଇଁ ଉପଫର୍ମଗୁଡିକୁ ଉପୟୋଗ କର।"
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "ଫର୍ମରେ କ୍ଷେତ୍ରଗୁଡିକ"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "ୟୋଡ '<FIELDNAME1>' ଏବଂ '<FIELDNAME2>' ଦୁଇଥର ମନୋନୀତ ହୋଇଛି।\nକିନ୍ତୁ ୟୋଡଗୁଡିକ କେବଳ ଥରେ ଉପୟୋଗ ହୋଇପାରେ।"
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "ଫର୍ମର ନାମ ସେଟ କର"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "'%FORMNAME' ନାମକ ଗୋଟିଏ ଫର୍ମ ପୂର୍ବରୁ ଅବସ୍ଥିତ ଅଛି।\nଅନ୍ୟ ଏକ ନାମ ବାଛନ୍ତୁ।"
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "କ୍ଷେତ୍ର ଭର୍ତ୍ତି ହୋଇପାରିବ ନାହିଁ କାରଣ ତଥ୍ଯସଞ୍ଚଯ ଟେବୁଲରେ %COUNTର ସମ୍ଭବ ସର୍ବାଧିକ ସଂଖ୍ଯାକୁ ଏହା ଅତିକ୍ରମ କରୁଛି"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "'%TABLENAME' ନାମ ପୂର୍ବରୁ ଅଛି।\nଦଯାକରି ଅନ୍ଯ ଗୋଟିଏ ନାମ ବାଛ।"
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "ଉଏବ ଉଇଜାର୍ଡ "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "ଇଣ୍ଟରନେଟରେ ଦଲିଲଗୁଡିକ ପ୍ରକାଶନକରିବା ପାଇଁ ଏହି ଉଏବ ଉଇଜାର୍ଡ ତୁମକୁ ସାହାୟ୍ଯ କରିବ।\n\nଏହା ଦଲିଲଗୁଡିକୁ ରୂପାନ୍ତରକରିବ ୟାହାଦ୍ବାରା ଗୋଟିଏ ଉଏବ୍ ବ୍ରାଉଜର ଦ୍ବାରା ୟାହା ଦେଖା ୟାଇପାରିବ। ଆଉମଧ୍ଯ,ଦଲିଲଗୁଡିକୁ ସହଜ ପ୍ରବେଶକରିବା ପାଇଁ ଲିଙ୍କଗୁଡିକ ସହିତ ଏହା ଗୋଟିଏ ଟେବୁଲର ସୂଚୀପତ୍ରଗୁଡିକ ସୃଷ୍ଟି କରିବ। ତୁମ ଉଏବ ସାଇଟର ଲେପନ ଏବଂ ଡିଜାଇନକୁ ବ୍ଯବସ୍ଥା କରିବାକୁ ତୁମକୁ ଏହି ଉଏବ ଉଇଜାର୍ଡ ମଧ୍ଯ ସ୍ବୀକୃତ ଦେବ।\n\nଅପଟୁଡେଟ ଉଏବରେ ତୁମ ପ୍ରକାଶିତ ଦଲିଲଗୁଡିକୁ ତୁମେ ରଖିବାକୁ ୟୋଗ୍ଯହେବ ଏବଂ ୟେକୈଣସି ସମଯରେ ଦଲିଲଗୁଡିକ ମିଶାଅ କିମ୍ବା ହଟାଅ।"
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "ପୂର୍ବଦୃଶ୍ଯ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "ମନୋନୀତ ହୋଇଥିବା ସେଟିଙ୍ଗଗୁଡିକ ବିଲୋପ ହେବ।\n\nଏହି ସେଟିଙ୍ଗଗୁଡିକ ତୁମେ ନିଶ୍ଚଯ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛ କି?"
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "FTP ବିବରଣୀପଞ୍ଜିକା  '%FILENAME'ସୃଷ୍ଟି ହୋଇ ପାରିବ ନାହିଁ।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP ବିବରଣୀପଞ୍ଜିକା  '%FILENAME' ଉପସ୍ଥିତ ନାହିଁ।\nବର୍ତ୍ତମାନ ବିବରଣୀପଞ୍ଜିକା ସୃଷ୍ଟି କର?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "ଜିପ ଫାଇଲ '%FILENAME' ସୃଷ୍ଟି ହୋଇ ପାରିବ ନାହିଁ: ଗୋଟିଏ ବିବରଣୀପଞ୍ଜିକାର ସମାନ ନାମ ପୂର୍ବରୁ ଅଛି।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "ସ୍ଥାନୀଯ ବିବରଣୀପଞ୍ଜିକା  '%FILENAME' ସୃଷ୍ଟି ହୋଇ ପାରିବ ନାହିଁ।\nବର୍ତ୍ତମାନ ବିବରଣୀପଞ୍ଜିକା ସୃଷ୍ଟି କର?"
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "ସ୍ଥାନୀଯ ବିବରଣୀପଞ୍ଜିକା  '%FILENAME' ଉପସ୍ଥିତ ନାହିଁ।\nବର୍ତ୍ତମାନ ବିବରଣୀପଞ୍ଜିକା ସୃଷ୍ଟି କର?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

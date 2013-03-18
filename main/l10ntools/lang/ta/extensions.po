@@ -49,15 +49,15 @@ msgstr "அட்டவணை தேர்ந்தெடுத்தல்"
 
 #: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.String.Text
 msgid  "Field Assignment"
-msgstr "மூல ஒதுக்கீடு"
+msgstr "புல ஒதுக்கீடு"
 
 #: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.String.Text
 msgid  "Data Source Title"
 msgstr "தரவு மூல தலைப்பு"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -108,32 +108,32 @@ msgid  "Other external data source"
 msgstr "மற்ற வெளி தரவு மூலம்"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "புதிய தகவல் மூலத்தை அமைக்க, மேலும் தகவல் தேவை.\n\nகீழ்வரும் பட்டன் மேல் அழுத்தி நீங்கள் உள்ளிட மற்றொரு உரையாடல் துவக்கலாம். "
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
 msgstr "அமைவுகள்"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "தரவு மூலத்துடன் இணைப்பை நிர்னயிக்க முடியவில்லை.\nதொடர்வதற்கு முன், அமைவுகளைச் சரி பார்க்கவும், அல்லது (இதற்கு முன்னுள்ள பக்கத்தில்) வேறொரு முகவரி தரவு மூல வகையைத் தேர்ந்தெடுக்கவும்."
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr "நீங்கள் தேர்ந்தெடுத்த வெளித்தகவல் மூலத்தில் பல முகவரிப் புத்தகம் உள்ளன.\nநீங்கள் விரும்புவதை பணிபுரிய தேர்ந்தெடுக்கவும்: "
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "உங்கள் வார்ப்புருகளில் முகவரித் தரவை இணைக்க %PRODUCTNAMEக்கு எப் புலங்களில் எத்தரவு உள்ளது என்பது தெரியவேண்டும்.n\nஎடுத்துக்காட்டிற்கு, உங்கள் மின்னஞ்சல் முகவரிகளை \"மின்னஞ்சல்\", \"E-mail\", \"EM\" போன்ற பெயர் கொண்ட ஏதாவதொரு புலத்தில் சேமித்திருக்கலாம்.\n\nகீழுள்ள பொத்தானை சொடுக்குவதால் தோன்றும் உரையாடல் பெட்டியில் உங்கள் தரவு மூலத்தின் அமைவுகளை உள்ளிடவும்."
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
 msgstr "புல ஒதுக்கீடு"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "தேவைப்பட்ட தகவல் கிடைத்துவிட்டது உங்கள் முகவரி புத்தக தரவு %PRODUCTNAMEஇல் உள்ளன\n\nஇப்போது, %PRODUCTNAMEஇல் தரவு மூலத்தை பதிவுசெய்ய விரும்ப பெயரை உள்ளிடவும். "
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -160,8 +160,8 @@ msgid  "Please select a type of address book."
 msgstr "முகவரி புத்தகத்தின் வகையை தேர்ந்தெடுக்கவும்."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr "தகவல் மூலத்தில் அட்டவணை எதுவும் இல்லை.\nமுகவரித் தகவல் தரவு மூலமாக அமைக்க வேண்டுமா, எப்படியிருப்பினும்? "
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "தரவு முகவரி - புலம் ஒதுக்குதல்"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "எந்தப் புலமும் இவ்வேளையில் குறிப்பிடப்படவில்லை.\nநீங்கள் இப்போதே அல்லது பின்வரும் கோப்பை தெரிவுசெய்த பின்னர் புலங்களைக் குறிப்பிடலாம்:\n\"கோப்பு - வார்ப்புரு - முகவரிப் புத்தக மூலம்...\""
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr ""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -216,8 +216,8 @@ msgid  "Data Source"
 msgstr "தரவு மூலம்"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\n"
-msgstr "பின்வரும் நிரல் பெயர்கள் ஒதுக்கப்டடவில்லை.\n"
+msgid  "The following column names could not be assigned:\\n"
+msgstr ""
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -492,8 +492,8 @@ msgid  "Control"
 msgstr "கட்டுப்பாடு"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "வலது பக்கத்தில், தரவு மூலத்திலிருந்து அவற்றை அனைத்து அட்டவணைகளையும் பார்க்கவும். \n\n\nபட்டியல் உள்ளடக்கத்தை சார்ந்து பயன்படுத்தும் அட்டவணையிலிருந்து தேர்ந்தெடுக்கவும். "
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -588,8 +588,8 @@ msgid  "Data"
 msgstr "தரவு"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "தற்போது, இந்த கட்டுப்டுத்தி (முழுவதுமாக இல்லை)  இந்த தரவு மூலத்தில் கட்டவில்லை.\n\nதரவு மூலத்தையும் ஒரு அட்டவணையும் தேர்ந்தெடுக்கவும்.\n\n\nஇந்த அமைவுகளை இந்த பக்கத்தில் உடனடியாக செயல்படும் என்பதை நினைவுக் கொள்ளவும். "
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -657,7 +657,7 @@ msgstr "எந்த பெயர்களை விருப்பப் பு
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
 msgid  "~Option fields"
-msgstr "விருப்பப் புலங்கள் (~O)"
+msgstr "விருப்ப புலங்கள் (~O)"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
 msgid  "Default Field Selection"
@@ -736,8 +736,8 @@ msgid  "Welcome"
 msgstr "நல்வரவு"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr ""
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -816,8 +816,8 @@ msgid  "Forms"
 msgstr "படிவங்கள்"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "நீங்கள் '#type#' தரவு வகையை மாதியிலிருந்து அழிக்க விரும்புகிறீர்களா?\nஇத்தரவு வகையுடன் தொடர்புள்ள அனைத்து கட்டுப்படுத்திகளையும் இது பாதிக்கும் என்பதைக் கருத்தில் கொள்ளவும்."
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2296,12 +2296,12 @@ msgid  "Type a name for the new data type:"
 msgstr "புதிய தரவு வகைக்கு ஒரு பெயரை அச்சிடவும்:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\n Dev~ice"
-msgstr "பற்றி\nசாதனம் (~i)"
+msgid  "About\\n Dev~ice"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\nPreview"
-msgstr "உருவாக்கு\nமுன்னோட்டம்"
+msgid  "Create\\nPreview"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2356,8 +2356,8 @@ msgid  "Scanner"
 msgstr "ஸ்கேனர்"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "சாதனம்: %s\nவிற்பவர்: %s\nமாதிரி: %s\nவகை: %s"
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2404,8 +2404,8 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION புதுப்பிக்கப்பட்டுள்ளது."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2420,16 +2420,16 @@ msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "%PRODUCTNAME %NEXTVERSION பதிவிறக்கம் துவக்குகிறது"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "பதிவிறக்கம் இடமானது: %DOWNLOAD_PATH.\n\nகருவிகளின் கீழ் – விருப்பங்கள்... - %PRODUCTNAME – ஆன்லைன் புதுப்பித்தலில் நீங்கள் பதிவிறக்க இடத்தை மாற்றலாம்."
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME %DOWNLOAD_PATH என்ற இடத்தில் பதிவிறக்கப்பட்டுள்ளது."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "தானான பதிவிறக்கம் நடப்பு புதிப்பித்தலில் கிடைக்கப் பெறவில்லை.\n\n'பதிவிறக்கு...'  %PRODUCTNAME %NEXTVERSION கைமுறையாக இணைய தளத்திலிருந்து  என்பதை பதிவிறக்க  க்ளிக் செய்யவும்."
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2517,7 +2517,7 @@ msgstr "ரத்துசெய்"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
 msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME புதுப்பித்தல் கிடைக்கப்பெறும்"
+msgstr "%PRODUCTNAME மேம்படுத்தல் கிடைக்கப்பெறும்"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
 msgid  "Click here to start the download."
@@ -2586,7 +2586,7 @@ msgstr "விரிவாக்கத்தின் மேம்படுத�
 msgid  "Click here for more information."
 msgstr "கூடுதல் விவரங்களுக்கு இங்கு க்ளிக்செய்."
 
-#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
 #, fuzzy
 msgid  "Check for ~Updates..."
 msgstr "புதுப்பித்தல்களை சரிப்பார் (~U)..."

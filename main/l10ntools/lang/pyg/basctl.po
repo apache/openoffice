@@ -69,7 +69,7 @@ msgstr "M~boguata"
 #: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CancelButton.Text
 #, fuzzy
 msgid  "Close"
-msgstr "Mboty"
+msgstr "Mbogue"
 
 #: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PushButton.Text
 #, fuzzy
@@ -137,142 +137,175 @@ msgid  "~Save"
 msgstr "~Ñongatu"
 
 #: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
+#, fuzzy
 msgid  "<All>"
 msgstr "Opaite"
 
 #: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
+#, fuzzy
 msgid  "< No Module >"
 msgstr "< ndaipóri vore >"
 
 #: source/basicide/basidesh.src#RID_STR_WRONGPASSWORD.String.Text
+#, fuzzy
 msgid  "Incorrect Password"
 msgstr "Rejavy nde réra ñemi"
 
 #: source/basicide/basidesh.src#RID_STR_OPEN.String.Text
+#, fuzzy
 msgid  "Load"
 msgstr "Hupi"
 
 #: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
+#, fuzzy
 msgid  "Save"
 msgstr "Ñongatu"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "Ko haipy tuichaiterei upévare ndaikatúi oñeñongatu térâ oñembyaty. \nEmbogue ne remimo'â térâ embohasa ambue vorépe."
+msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
+#, fuzzy
 msgid  "Error opening file"
 msgstr "Ojejavy ojepe'akuévo ko ñongatuha."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENLIB.String.Text
+#, fuzzy
 msgid  "Error loading library"
 msgstr "Ojejavy ojehupikuévo arandukaty."
 
 #: source/basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.String.Text
+#, fuzzy
 msgid  "The file does not contain any BASIC libraries"
 msgstr "Ko ñongatupýpe ndaipóri arandukaty BASIC"
 
 #: source/basicide/basidesh.src#RID_STR_BADSBXNAME.String.Text
+#, fuzzy
 msgid  "Invalid Name"
 msgstr "Ko téra ndovaléi"
 
 #: source/basicide/basidesh.src#RID_STR_LIBNAMETOLONG.String.Text
+#, fuzzy
 msgid  "A library name can have up to 30 characters."
 msgstr "Arandukaty réra ndaikatúi ohasávo 30 tai."
 
 #: source/basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.String.Text
+#, fuzzy
 msgid  "Macros from other documents are not accessible."
 msgstr "Ndaikatúi ojeikévo ambue Kuatiakuéra macros-pe"
 
 #: source/basicide/basidesh.src#RID_STR_LIBISREADONLY.String.Text
+#, fuzzy
 msgid  "This library is read-only."
 msgstr "Ko arandukaty oñemoñe'ẽ haĝuánte. "
 
 #: source/basicide/basidesh.src#RID_STR_REPLACELIB.String.Text
+#, fuzzy
 msgid  "'XX' cannot be replaced."
 msgstr "'XX' ndaikatúi oñemyengovia."
 
 #: source/basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "'XX' cannot be added."
 msgstr "Ndaikatúi oñembojoapy 'XX'."
 
 #: source/basicide/basidesh.src#RID_STR_NOIMPORT.String.Text
+#, fuzzy
 msgid  "'XX' was not added."
 msgstr "'XX' ndojoapýi."
 
 #: source/basicide/basidesh.src#RID_STR_ENTERPASSWORD.String.Text
+#, fuzzy
 msgid  "Enter password for 'XX'"
 msgstr "Emoinge téra ñemi 'XX'-pe ĝuarã."
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.String.Text
+#, fuzzy
 msgid  "Name already exists"
 msgstr "Ko téra oĩma."
 
 #: source/basicide/basidesh.src#RID_STR_SIGNED.String.Text
+#, fuzzy
 msgid  "(Signed)"
 msgstr "(Oñemboheraguapypyre)"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.String.Text
+#, fuzzy
 msgid  "Object with same name already exists"
 msgstr "Oĩma ambue mba'e hérava péicha."
 
 #: source/basicide/basidesh.src#RID_STR_FILEEXISTS.String.Text
+#, fuzzy
 msgid  "The 'XX' file already exists"
 msgstr "Ñongatuha 'XX' oĩmavoi."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr " ko macro ndaikatúi oñemboguata noĩrigui seguridad.\n\nReñemomaranduve haĝua ikatu rehecha seguridad reko. "
+msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
+#, fuzzy
 msgid  "Compile Error: "
 msgstr "Ojejavy oñembyatykuévo:"
 
 #: source/basicide/basidesh.src#RID_STR_RUNTIMEERROR.String.Text
+#, fuzzy
 msgid  "Runtime Error: #"
 msgstr "Ojejavy oñemboguatakuévo: #"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.String.Text
+#, fuzzy
 msgid  "Search key not found"
 msgstr "Ndojejuhúi ñe'ẽ rehekáva."
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
+#, fuzzy
 msgid  "Search to last module complete. Continue at first module?"
 msgstr "Ojeheka vore paha peve. Rehekasevépa vore peteĩhápe."
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
+#, fuzzy
 msgid  "Search key replaced XX times"
 msgstr "Ñe'ẽ rehekáva oñemyengovia XX jey. "
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTREAD.String.Text
+#, fuzzy
 msgid  "The file could not be read"
 msgstr "Ndaikatúi oñemoñe'ẽ ko ñongatuha."
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTWRITE.String.Text
+#, fuzzy
 msgid  "The file could not be saved"
 msgstr "Ndaikatúi oñeñongatu ko ñongatuha."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.String.Text
+#, fuzzy
 msgid  "The name of the default library cannot be changed."
 msgstr "Ndaikatúi oñemoambue arandukaty ypy réra."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
+#, fuzzy
 msgid  "The name of a referenced library cannot be changed."
 msgstr "Ndaikatúi oñemoambue arandukaty oñeñe'êha réra."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
+#, fuzzy
 msgid  "The default library cannot be deactivated"
 msgstr "Ndaikatúi ojejoko arandukaty ypy."
 
 #: source/basicide/basidesh.src#RID_STR_GENERATESOURCE.String.Text
+#, fuzzy
 msgid  "Generating source"
 msgstr "Ojejapo haipy fuente"
 
 #: source/basicide/basidesh.src#RID_STR_FILENAME.String.Text
+#, fuzzy
 msgid  "File name:"
 msgstr "Ñongatuha réra:"
 
 #: source/basicide/basidesh.src#RID_STR_APPENDLIBS.String.Text
+#, fuzzy
 msgid  "Import Libraries"
 msgstr "Egueru arandukaty"
 
@@ -422,9 +455,8 @@ msgid  "A name must be entered."
 msgstr "Tekotevẽ oñemoinge peteĩ téra."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
-#, fuzzy
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "Tekotevẽ reñepyrũ pyahu ko programa remoambue rire.\nRehosevépa hese."
+msgid  "You will have to restart the program after this edit.\\nContinue?"
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 #, fuzzy
@@ -589,7 +621,7 @@ msgid  "Dialog Import - Name already used"
 msgstr "Jeguerúva rehegua - Ko téra ojepurúma"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
+msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
@@ -605,7 +637,7 @@ msgid  "Dialog Import - Language Mismatch"
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
+msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
 msgstr ""
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
@@ -865,85 +897,105 @@ msgid  "Extension"
 msgstr "Extensión"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.ModalDialog.Text
+#, fuzzy
 msgid  "Manage User Interface Languages [$1]"
 msgstr "Intefaz puruhára ñe'ẽ sãmbyhy [$1]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Present Languages"
 msgstr "Ñe'ẽ ojeporavokuaáva"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
+#, fuzzy
 msgid  "Add..."
 msgstr "Mbojoapy..."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "~Mbogue"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
+#, fuzzy
 msgid  "Default"
 msgstr "Mba'e ypy"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
 msgstr "Peteĩ puruhára interfaz noñemohendáiramo iconfiguración regional, ojepuru pe ñe'ẽ ypy. Upéicha avei pe ñe'ẽ ypy joajukuéra oho avei umi ñe'ẽ rembipuru oñemoingévape. "
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Mboty"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
+#, fuzzy
 msgid  "[Default Language]"
 msgstr "[Ñe'ẽ ypy]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Mbogue"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.String.Text
+#, fuzzy
 msgid  "<Press 'Add' to create language resources>"
 msgstr "<Ejopy 'Mbojoapy' remoñepyrũ haĝua ñe'ẽ rembipururã>"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Title
+#, fuzzy
 msgid  "Delete Language Resources"
 msgstr "Embogue ñe'ẽ rembipuru."
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr "Remboguepotareína ñe'ẽ rembipuru reiporavova'ekue. Oguéta oĩhaguéicha interfaz joajukuéra ko ñe'ẽme ĝuarã.\n\nRemboguesépa ñe'ẽ rembipuru reiporavova'ekue."
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
+#, fuzzy
 msgid  "Set Default User Interface Language"
 msgstr "Eiporavo interfaz puruhára ñe'ẽ ypy."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Default language"
 msgstr "Ñe'ẽ ypy"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
+#, fuzzy
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
 msgstr "Eiporavo peteĩ ñe'ẽ rereko haĝua interfaz puruhára ñe'ẽ ypy. Oĩhaguéicha joajukuéra oikéta pe ñe'ẽ poravopyre rembipurukuérape."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
+#, fuzzy
 msgid  "Add User Interface Languages"
 msgstr "Embojoapy interfaz puruhára ñe'ẽ. "
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.String.Text
+#, fuzzy
 msgid  "Available Languages"
 msgstr "Ñe'ẽ iporavopyrã"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
+#, fuzzy
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
 msgstr "Eiporavo ñe'ẽ rembojoapyséva. Ko ñe'ẽ rembipuru oñemoñepyrũta arandukatýpe. interfaz puruhára ñe'ẽ ypy joajukuéra oikéta ijeheguiete ko'ã tembipurúpe."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Properties: "
 msgstr "Teko"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+#, fuzzy
 msgid  "No Control marked"
 msgstr "Ndojeporavói mba'eve."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+#, fuzzy
 msgid  "Multiselection"
 msgstr "Heta jeporavorã."

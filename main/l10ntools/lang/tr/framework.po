@@ -136,24 +136,24 @@ msgid  "Retry"
 msgstr "Yeniden Dene"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "%PRODUCTNAME, yeterli disk boşluğu olmaması nedeniyle bilgiyi kaydedemedi:\n%PATH\n\n%PRODUCTNAME ile işleme devam etmek için daha fazla boş alan alana ihtiyaç duymaktadır.\n\nDiskte yeteri kadar boş alan oluşturduktan sonra \"Yeniden dene\" düğmesine basın.\n\n"
+msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
+msgstr ""
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
 msgstr "İlk haline geti~r"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "Kullanıcı arayüzü yapılandırma verisi yüklenirken bir hata meydana geldi. Programa şimdi son verildi.\nLütfen uygulamayı tekrar yükleyin."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "Kullanıcı arayüzü yapılandırma verisi yüklenirken bir hata meydana geldi. Programa şimdi son verildi.\nLütfen uygulama için kullanıcı profilinizi kaldırıp tekrar deneyin."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "Kullanıcı arayüzü yapılandırma verisi yüklenirken bir hata meydana geldi. Programa şimdi son verildi.\nİlk uygulama için kullanıcı profilinizi kaldırın ya da uygulamayı tekrar yükleyin."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

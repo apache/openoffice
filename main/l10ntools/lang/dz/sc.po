@@ -153,9 +153,8 @@ msgid  "Column Fields"
 msgstr "ཀེར་འཕྲེག་གི་ས་སྒོ།"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-#, fuzzy
-msgid  "Row\nFields"
-msgstr "གྲལ་ཐིག་\n ས་སྒོ་ཚུ།"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 #, fuzzy
@@ -566,12 +565,12 @@ msgstr "འགོ་བཙུགས།"
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOSTART.RadioButton.Text
 #, fuzzy
 msgid  "~Automatically"
-msgstr "རང་བཞིན་གྱིས།(~A)"
+msgstr "རང་བཞིན་གྱིས་འབད།(~A)"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANSTART.RadioButton.Text
 #, fuzzy
 msgid  "~Manually at"
-msgstr "དེ་ཁར་ ལག་ཐོག་ལས།(~M)"
+msgstr "དེ་ཁར་་ལག་ཐོག་ལས།(~M)"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_END.FixedLine.Text
 #, fuzzy
@@ -581,7 +580,7 @@ msgstr "མཇུག"
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOEND.RadioButton.Text
 #, fuzzy
 msgid  "A~utomatically"
-msgstr "རང་བཞིན་གྱིས།(~u)"
+msgstr "རང་བཞིན་གྱིས་འབད།(~u)"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANEND.RadioButton.Text
 #, fuzzy
@@ -1015,7 +1014,7 @@ msgstr "ཤུལ་མམ་གྱི་རྣམ་གྲངས།"
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.MoreButton.Text
 #, fuzzy
 msgid  "Data Field"
-msgstr "གནད་སྡུད་ཀྱི་ས་སྒོ"
+msgstr "གནད་སྡུད་ས་སྒོ།"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_PIVOTSUBT.ModalDialog.Text
 #, fuzzy
@@ -1173,10 +1172,12 @@ msgid  "Text Import"
 msgstr "ཚིག་ཡིག་ནང་འདྲེན།"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_FIELDOPT.FixedLine.Text
+#, fuzzy
 msgid  "Import"
 msgstr "ནང་འདྲེན།"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CHARSET.FixedText.Text
+#, fuzzy
 msgid  "Ch~aracter set"
 msgstr "ཡིག་འབྲུ་ཆ་ཚན།(~a)"
 
@@ -1185,46 +1186,57 @@ msgid  "Language"
 msgstr ""
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_AT_ROW.FixedText.Text
+#, fuzzy
 msgid  "From ro~w"
 msgstr "གྲལ་ཐིག་ནང་ལས།(~w)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_SEPOPT.FixedLine.Text
+#, fuzzy
 msgid  "Separator options"
 msgstr "དབྱེ་བྱེད་གདམ་ཁ།"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_FIXED.RadioButton.Text
+#, fuzzy
 msgid  "~Fixed width"
 msgstr "གཏན་བཟོས་རྒྱ་ཚད།(~F)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_SEPARATED.RadioButton.Text
+#, fuzzy
 msgid  "~Separated by"
 msgstr "ཁ་ཕྱེ་གཏང་མི།(~S)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_TAB.CheckBox.Text
+#, fuzzy
 msgid  "~Tab"
 msgstr "མཆོང་ལྡེ།(~T)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_COMMA.CheckBox.Text
+#, fuzzy
 msgid  "~Comma"
 msgstr "ལྷོད་རྟགས།(~C)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_OTHER.CheckBox.Text
+#, fuzzy
 msgid  "~Other"
 msgstr "གཞན།(~O)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SEMICOLON.CheckBox.Text
+#, fuzzy
 msgid  "S~emicolon"
 msgstr "སེ་མི་ཀོ་ལཱོན་ (;)(~e)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SPACE.CheckBox.Text
+#, fuzzy
 msgid  "S~pace"
 msgstr "བར་སྟོང་།(~p)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_ASONCE.CheckBox.Text
+#, fuzzy
 msgid  "Merge ~delimiters"
 msgstr "དབྱེ་རྟགས་མཉམ་བསྡོམ་འབད།(~d)"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TEXTSEP.FixedText.Text
+#, fuzzy
 msgid  "Te~xt delimiter"
 msgstr "ཚིག་ཡིག་གི་དབྱེ་རྟགས།(~x)"
 
@@ -1330,58 +1342,72 @@ msgid  "Settings"
 msgstr "སྒྲིག་སྟངས།"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_TABLES_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of sheets:"
 msgstr "ལེབ་གྲངས་ཀྱི་གྱངས་ཁ:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_CELLS_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of cells:"
 msgstr "ནང་ཐིག་གི་གྱང་ཁ:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_PAGES_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of pages:"
 msgstr "ཤོག་ལེབ་ཀྱི་གྱངས་ཁ:"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Document: "
 msgstr "ཡིག་ཆ:"
 
 #: source/ui/drawfunc/objdraw.src#MN_RESET.SID_TEXT_STANDARD.MenuItem.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "སྔོན་སྒྲིག(~D)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.MenuItem.Text
+#, fuzzy
 msgid  "~Style"
 msgstr "བཟོ་རྣམ།(~S)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUPER_SCRIPT.MenuItem.Text
+#, fuzzy
 msgid  "~Superscript"
 msgstr "སྟེང་ཡིག(~S)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUB_SCRIPT.MenuItem.Text
+#, fuzzy
 msgid  "S~ubscript"
 msgstr "འོག་ཡིག(~u)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.MenuItem.Text
+#, fuzzy
 msgid  "~Alignment"
 msgstr "ཕྲང་སྒྲིག(~A)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNLEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "གཡོན།(~L)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNRIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "གཡས།(~R)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNCENTERHOR.MenuItem.Text
+#, fuzzy
 msgid  "~Centered"
 msgstr "དབུས་སྒྲིག(~C)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNBLOCK.MenuItem.Text
+#, fuzzy
 msgid  "~Justified"
 msgstr "ལྟེམས་བཅོས་འབད་ཡོདཔ།(~J)"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_LINESPACE.MenuItem.Text
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "གྲལ་ཐིག་བར་སྟོང་བཏོན་ནི།(~L)"
 
@@ -1394,6 +1420,7 @@ msgid  "~Remove Hyperlink"
 msgstr ""
 
 #: source/ui/drawfunc/objdraw.src#MN_DRWTXTATTR.SID_DRAWTEXT_ATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Te~xt..."
 msgstr "ཚིག་ཡིག(~x)"
 
@@ -1402,278 +1429,347 @@ msgid  "Assig~n Macro..."
 msgstr ""
 
 #: source/ui/drawfunc/objdraw.src#MN_ORIGINALSIZE.SID_ORIGINALSIZE.MenuItem.Text
+#, fuzzy
 msgid  "~Original Size"
 msgstr "ཚད་ངོ་མ།(~O)"
 
 #: source/ui/drawfunc/objdraw.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "མིང་..."
 
 #: source/ui/drawfunc/objdraw.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "འགྲེལ་བཤད..."
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.MenuItem.Text
+#, fuzzy
 msgid  "~Flip"
 msgstr "མྱུར་ལྷོག(~F)"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "ཀེར་ཕྲེང་སྦེ།(~V)"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "~Horizontal"
 msgstr "ཐད་སྙོམས།(~H)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "བདེ་ཞིབ།(~A)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "གདོང་བསྐྱོད་འབད།(~F)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "རྒྱབ་ལོག་གཏང་།(~w)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
+#, fuzzy
 msgid  "An~chor"
 msgstr "ཨེན་ཀོར་འབད།(~c)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "To P~age"
 msgstr "ཤོག་ལེབ་ལུ།(~a)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
+#, fuzzy
 msgid  "To ~Cell"
 msgstr "ནང་ཐིག་ལུ།(~C)"
 
 #: source/ui/drawfunc/objdraw.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "ཕྲང་སྒྲིག(~l)"
 
 #: source/ui/drawfunc/objdraw.src#RID_DRAW_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Drawing Object Bar"
 msgstr "དངོས་པོའི་ཕྲ་རིང་འབྲི་དོ།"
 
 #: source/ui/drawfunc/objdraw.src#RID_TEXT_TOOLBOX.String.Text
+#, fuzzy
 msgid  "Text Object Bar"
 msgstr "ཚིག་ཡིག་དངོས་པོའི་པའི་ཕྲ་རིང་།"
 
 #: source/ui/drawfunc/objdraw.src#RID_GRAPHIC_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Graphics Object Bar"
 msgstr "ཚད་རིས་དངོས་པོའི་ཕྲ་རིང་།"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAW.String.Text
+#, fuzzy
 msgid  "Pop-up menu for drawing objects"
 msgstr "དངོས་པོ་འབྲ་ནིའི་དོན་ལུ་ མི་རློབས་དཀར་ཆ།"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAWTEXT.String.Text
+#, fuzzy
 msgid  "Pop-up menu for text objects"
 msgstr "ཚིག་ཡིག་དངོས་པོའི་དོན་ལུ་ དཀར་ཆ་པོབ་ཨབ་འབད།"
 
 #: source/ui/drawfunc/drformsh.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "མིང་..."
 
 #: source/ui/drawfunc/drformsh.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "འགྲེལ་བཤད..."
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "བདེ་ཞིབ་འབད།(~A)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "གདོང་བསྐྱོད་འབད།(~F)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "རྒྱབ་ལོག་གཏང་།(~w)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
+#, fuzzy
 msgid  "An~chor"
 msgstr "ཨེན་ཀོར།(~c)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "To P~age"
 msgstr "ཤོག་ལེབ་ལུ།(~a)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
+#, fuzzy
 msgid  "To ~Cell"
 msgstr "ནང་ཐིག་ལུ།(~C)"
 
 #: source/ui/drawfunc/drformsh.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "ཕྲང་སྒྲིག།(~l)"
 
 #: source/ui/drawfunc/drformsh.src#RID_POPUP_DRAWFORM.String.Text
+#, fuzzy
 msgid  "Popup menu for form objects"
 msgstr "རྣམ་པ་སྦེ་ཡོད་མི་དངོས་པོའི་དོན་ལུ་མི་རློབས་དཀར་ཆག།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Last Used"
 msgstr "མཇུག་ལུ་ལག་ལེན་འཐབ་ཡོད་མི།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "All"
 msgstr "ཆ་མཉམ།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Database"
 msgstr "གནད་སྡུད་གཞི་རྟེན།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Date&Time"
 msgstr "ཚེ་གྲངས་དང་ཆུ་ཚོད།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Financial"
 msgstr "དངུལ་འབྲེལ།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Information"
 msgstr "བརྡ་དོན།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Logical"
 msgstr "གཏན་ཚིག་ཅན།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Mathematical"
 msgstr "ཨང་རྩིས།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Array"
 msgstr "ཨེ་རེ།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Statistical"
 msgstr "ཚད་རྩིས་ཀྱི།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "ཤོག་ཁྲམ།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Text"
 msgstr "ཚིག་ཡིག"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Add-in"
 msgstr "ལུ་ཁ་སྐོང་རྐྱབས།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.IMB_INSERT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Insert Function into calculation sheet"
 msgstr "ལས་འགན་ཚུ་རྩིས་ལས་ལེབ་གྲངས་ནང་ལུ་ གཞི་བཙུགས་འབད།"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.ButtonImage.Text
+#, fuzzy
 msgid  "Functions"
 msgstr "ལས་འགན།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.FT_ASSIGN.FixedText.Text
+#, fuzzy
 msgid  "Range"
 msgstr "ཁྱབ་ཚད།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "ཆུང་ཀུ་བཟོ།/འཕར་ནི།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_COLS.String.Text
+#, fuzzy
 msgid  "Column inserted"
 msgstr "ཀེར་ཕྲེང་བཙུགས་ཡོདཔ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_ROWS.String.Text
+#, fuzzy
 msgid  "Row inserted "
 msgstr "གྲལ་ཐིག་བཙུགས་ཡོདཔ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_TABS.String.Text
+#, fuzzy
 msgid  "Sheet inserted "
 msgstr "ལེབ་གྲངས་བཙུགས་ཡོདཔ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_COLS.String.Text
+#, fuzzy
 msgid  "Column deleted"
 msgstr "ཀེར་ཐིག་བཏོན་གཏང་ཡོདཔ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_ROWS.String.Text
+#, fuzzy
 msgid  "Row deleted"
 msgstr "གྲལ་ཐིག་བཏོན་གཏང་ཡོདཔ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_TABS.String.Text
+#, fuzzy
 msgid  "Sheet deleted"
 msgstr "ལེབ་གྲངས་བཏོན་གཏང་ཡོདཔ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_MOVE.String.Text
+#, fuzzy
 msgid  "Range moved"
 msgstr "ཁྱབ་ཚད་སྤོ་བཤུད་འབད་ཡོདཔ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT.String.Text
+#, fuzzy
 msgid  "Changed contents"
 msgstr "བསྒྱུར་བཅོས་འབད་ཡོད་པའི་ནང་དོན་ཚུ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT_WITH_CHILD.String.Text
+#, fuzzy
 msgid  "Changed contents"
 msgstr "བསྒྱུར་བཅོས་འབད་ཡོད་པའི་ནང་དོན་ཚུ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_CONTENT.String.Text
+#, fuzzy
 msgid  "Changed to "
 msgstr "ལུ་བསྒྱུར་བཅོས་འབད་ཡོད་"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_ORGCONTENT.String.Text
+#, fuzzy
 msgid  "Original"
 msgstr "ངོ་མ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECT.String.Text
+#, fuzzy
 msgid  "Changes rejected"
 msgstr "བསྒྱུར་བཅོས་ཚུ་དང་ལེན་སྤངས་ཡོདཔ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_ACCEPTED.String.Text
+#, fuzzy
 msgid  "Accepted"
 msgstr "དང་ལེན་འབད་ཡོདཔ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECTED.String.Text
+#, fuzzy
 msgid  "Rejected"
 msgstr "དང་ལེན་སྤང་ཡོདཔ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_NO_ENTRY.String.Text
+#, fuzzy
 msgid  "No Entry"
 msgstr "འཛུལ་མི་ཆོག"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_EMPTY.String.Text
+#, fuzzy
 msgid  "<empty>"
 msgstr "<empty>"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.Bitmap.Text
+#, fuzzy
 msgid  "Accept or Reject Changes"
 msgstr "བསྒྱུར་བཅོས་ཚུ་དང་ལེན་འབད་ནི་དང་ ཡང་ན་ དང་ལེན་སྤང་།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_CHANGES_COMMENT.MenuItem.Text
+#, fuzzy
 msgid  "Edit Comment..."
 msgstr "བསམ་བཀོད་ཞུན་དག་འབད།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_ACTION.MenuItem.Text
+#, fuzzy
 msgid  "Action"
 msgstr "བྱ་བ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr "གནས་ས།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_AUTHOR.MenuItem.Text
+#, fuzzy
 msgid  "Author"
 msgstr "རྩོམ་པ་པོ།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_DATE.MenuItem.Text
+#, fuzzy
 msgid  "Date"
 msgstr "ཚེས་གྲངས།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_COMMENT.MenuItem.Text
+#, fuzzy
 msgid  "Description"
 msgstr "འགྲེལ་བཤད།"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.MenuItem.Text
+#, fuzzy
 msgid  "Sorting"
 msgstr "དབྱེ་སེལ་འབད་དོ།"
 
@@ -1706,10 +1802,12 @@ msgid  "Conflict"
 msgstr ""
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_AUTHOR.String.Text
+#, fuzzy
 msgid  "Author"
 msgstr "རྩོམ་པ་པོ།"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_DATE.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "ཚེས་གྲངས།"
 
@@ -1754,6 +1852,7 @@ msgid  "Re-type"
 msgstr ""
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME2.FixedText.Text
+#, fuzzy
 msgid  "Sheet2"
 msgstr "ལེབ་གྲངས།"
 
@@ -1766,6 +1865,7 @@ msgid  "Re-type"
 msgstr ""
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME3.FixedText.Text
+#, fuzzy
 msgid  "Sheet3"
 msgstr "ལེབ་གྲངས།"
 
@@ -1778,6 +1878,7 @@ msgid  "Re-type"
 msgstr ""
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME4.FixedText.Text
+#, fuzzy
 msgid  "Sheet4"
 msgstr "ལེབ་གྲངས།"
 
@@ -1850,10 +1951,12 @@ msgid  "Users currently accessing this spreadsheet"
 msgstr ""
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_NAME.String.Text
+#, fuzzy
 msgid  "Name"
 msgstr "མིང་།(~m)"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_ACCESSED.String.Text
+#, fuzzy
 msgid  "Accessed"
 msgstr "དང་ལེན་འབད་ཡོདཔ།"
 
@@ -1870,70 +1973,87 @@ msgid  "(exclusive access)"
 msgstr ""
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.ModalDialog.Text
+#, fuzzy
 msgid  "Insert Sheet"
 msgstr "ལེབ་གྲངས་བཙུགས།"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_POSITION.FixedLine.Text
+#, fuzzy
 msgid  "Position"
 msgstr "གནས་ས།"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEFORE.RadioButton.Text
+#, fuzzy
 msgid  "B~efore current sheet"
 msgstr "ད་ལྟོའི་ལེབ་གྲངས་ཀྱི་ཧེ་མ།(~e)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEHIND.RadioButton.Text
+#, fuzzy
 msgid  "~After current sheet"
 msgstr "ད་ལྟོའི་ལེབ་གྲངས་ཀྱི་ཤུལ་མ།(~A)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_TABLE.FixedLine.Text
+#, fuzzy
 msgid  "Sheet"
 msgstr "ལེབ་གྲངས།"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_NEW.RadioButton.Text
+#, fuzzy
 msgid  "~New sheet"
 msgstr "ལེབ་གྲངས་གསརཔ།(~N)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "N~o. of sheets"
 msgstr "ལེབ་གྲངས་ཀྱི་གྱངས་ཁ།(~o)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Na~me"
 msgstr "མིང་།(~m)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_FROMFILE.RadioButton.Text
+#, fuzzy
 msgid  "~From file"
 msgstr "ཡིག་སྣོད་ནང་ལས།(~F)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.BTN_BROWSE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "བརྡ་འཚོལ།(~B)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.CB_LINK.CheckBox.Text
+#, fuzzy
 msgid  "Lin~k"
 msgstr "འབྲེལ་ལམ།(~k)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT.CheckBox.Text
+#, fuzzy
 msgid  "~Show changes in spreadsheet"
 msgstr "བསྒྱུར་བཅོས་ཚུ་ཤོག་ཁྲམ་ནང་ལུ་སྟོན།(~S)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.FL_FILTER.FixedLine.Text
+#, fuzzy
 msgid  "Filter settings"
 msgstr "ཚགས་མ་སྒྲིག་སྟངས་འབད་ནི།"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_ACCEPT.CheckBox.Text
+#, fuzzy
 msgid  "Show ~accepted changes"
 msgstr "དང་ལེན་འབད་ཡོད་པའི་བསྒྱུར་བཅོས་ཚུ་སྟོན།(~a)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_REJECT.CheckBox.Text
+#, fuzzy
 msgid  "Show ~rejected changes"
 msgstr "དང་ལེན་སྤང་ཡོད་མི་བསྒྱུར་བཅོཧ་ཚུ་སྟོན།(~r)"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "ཆང་ཀུ་བཟོ་ནི་ /འཕར་ནི།"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.ImageButton.Text
+#, fuzzy
 msgid  "Show Changes"
 msgstr "བསྒྱུར་བཅོས་ཚུ་སྟོན་།"
 
@@ -1970,234 +2090,292 @@ msgid  "Select unlocked cells"
 msgstr ""
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FL_LOCATION.FixedLine.Text
+#, fuzzy
 msgid  "URL of ~external data source"
 msgstr "ཕྱིའི་གནད་སྡུད་འབྱུང་ཁུངས་ཀྱི་ཡུ་ཨཱར་ཨེལ།(~e)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_HINT.FixedText.Text
+#, fuzzy
 msgid  "(Enter the URL of the source document in the local file system or Internet here.)"
 msgstr "འབྱུང་ཁུངས་ཡིག་ཆ་གི་ཡུ་ཨཱར་ཨེལ་དེ་ ཉེ་གནས་ཀྱི་ཡིག་སྣོད་རིམ་ལུགས་དང་ཡང་ན་ ན་ལུ་ཡོད་མི་ནང་ལུ་བཙུགས་ནི་དང་ ཡང་ན་ ཨིན་ཊར་ནེཊི་ནང་ལུ་བཙུགས།"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_RANGES.FixedText.Text
+#, fuzzy
 msgid  "~Available tables/ranges"
 msgstr "འཐོབ་ཚུགས་འཔི་ཐིག་ཁྲམ་/ཁྱབ་ཚད།(~A)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.BTN_RELOAD.CheckBox.Text
+#, fuzzy
 msgid  "~Update every"
 msgstr "རེ་ན་ དུས་མཐུན་བཟོ།(~U)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_SECONDS.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "དཀར་ཆ།"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FixedText.Text
+#, fuzzy
 msgid  "External Data"
 msgstr "ཕྱིའི་གནད་སྡུད།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.Window.Text
+#, fuzzy
 msgid  "Navigator"
 msgstr "འགྲུལ་བསྐྱོདཔ།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
+#, fuzzy
 msgid  "Row"
 msgstr "གྲལ་ཐིག"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
+#, fuzzy
 msgid  "Row"
 msgstr "གྲལ་ཐིག"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
+#, fuzzy
 msgid  "Column"
 msgstr "ཀེར་ཐིག"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
+#, fuzzy
 msgid  "Column"
 msgstr "ཀེར་ཐིག"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.LB_DOCUMENTS.ListBox.QuickHelpText
+#, fuzzy
 msgid  "Document"
 msgstr "ཡིག་ཆ།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DATA.ToolBoxItem.Text
+#, fuzzy
 msgid  "Data Range"
 msgstr "གནད་སྡུད་ཁྱབ་ཚད།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_UP.ToolBoxItem.Text
+#, fuzzy
 msgid  "Start"
 msgstr "འགོ་བཙུགས།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DOWN.ToolBoxItem.Text
+#, fuzzy
 msgid  "End"
 msgstr "མཇུག"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "ནང་དོན།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_CHANGEROOT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Toggle"
 msgstr "སོར་སྟོན།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_SCENARIOS.ToolBoxItem.Text
+#, fuzzy
 msgid  "Scenarios"
 msgstr "འཆར་བཤད།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Drag Mode"
 msgstr "ཐབས་ལམ་འདྲུད།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
+#, fuzzy
 msgid  "Drag Mode"
 msgstr "ཐབས་ལམ་འདྲུད།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DISPLAY.String.Text
+#, fuzzy
 msgid  "Display"
 msgstr "བཀྲམ་སྟོན།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVE.String.Text
+#, fuzzy
 msgid  "active"
 msgstr "ཤུགས་ལྡན།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_NOTACTIVE.String.Text
+#, fuzzy
 msgid  "inactive"
 msgstr "ཤུགས་མེད།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_HIDDEN.String.Text
+#, fuzzy
 msgid  "hidden"
 msgstr "སབ་བཞག་ཡོདཔ།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVEWIN.String.Text
+#, fuzzy
 msgid  "Active Window"
 msgstr "སྒོ་སྒྲིག་ཤུགས་ལྡན་བཟོ།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_LISTBOX.String.Text
+#, fuzzy
 msgid  "Scenario Name"
 msgstr "འཆར་བཤད་མིང་།"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_COMMENT.String.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "བསམ་བཀོད།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_ROOT.String.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "ནང་དོན།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_TABLE.String.Text
+#, fuzzy
 msgid  "Sheets"
 msgstr "ལེབ་གྲངས་ཚུ།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_RANGENAME.String.Text
+#, fuzzy
 msgid  "Range names"
 msgstr "ཁྱབ་ཚད་ཀྱི་མིང་།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DBAREA.String.Text
+#, fuzzy
 msgid  "Database Ranges"
 msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ཁྱབ་ཚད།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_GRAPHIC.String.Text
+#, fuzzy
 msgid  "Graphics"
 msgstr "ཚད་རིས།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_OLEOBJECT.String.Text
+#, fuzzy
 msgid  "OLE objects"
 msgstr "ཨོ་ཨེལ་ཨི་ དངོས་པོ།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_NOTE.String.Text
+#, fuzzy
 msgid  "Comments"
 msgstr "བསམ་བཀོད།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_AREALINK.String.Text
+#, fuzzy
 msgid  "Linked areas"
 msgstr "འབྲེལ་མཐུད་འབད་ཡོད་པའི་མངའ་ཁོངས།"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DRAWING.String.Text
+#, fuzzy
 msgid  "Drawing objects"
 msgstr "དངོས་པོ་ཚུ་འབྲི་དོ།"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_URL.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Hyperlink"
 msgstr "ཧ་ཡི་པར་ལིནཀི་བཟུམ་སྦེ་བཙུགས།"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_LINK.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Link"
 msgstr "འབྲེལ་མཐུད་བཟུམ་སྦེ་བཙུགས།"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_COPY.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Copy"
 msgstr "འདྲ་བཤུས་བཟུམ་སྦེ་བཙུགས།"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "བཏོན་གཏང་།"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Properties..."
 msgstr "རྒྱུ་དངོས་ཚུ།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.ModelessDialog.Text
+#, fuzzy
 msgid  "Edit Print Ranges"
 msgstr "དཔར་བསྐྱུན་གྱི་ཁྱབ་ཚད་ཞུན་དག་འབད།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_PRINTAREA.FixedLine.Text
+#, fuzzy
 msgid  "Print range"
 msgstr "དཔར་བསྐྲུན་གྱི་ཁྱབ་ཚད།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "ཅི་མེད།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- entire sheet -"
 msgstr "ལེབ་གྲངས་ཧྲིལ་བུ།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- user defined -"
 msgstr "ལག་ལེན་པ་ངེས་འཛིན་འབད་ཡོདཔ།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- selection -"
 msgstr "སེལ་འཐུ།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "བསྐུམ།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
+#, fuzzy
 msgid  "Rows to repeat"
 msgstr "ཡང་བསྐྱར་འབད་ནིའི་དོན་ལུ་ གྲལ་ཐིག"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "ཅི་མེད།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
+#, fuzzy
 msgid  "- user defined -"
 msgstr "ལག་ལེན་པ་ངེས་འཛིན་འབད་ཡོདཔ།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "བསྐུམ།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATCOL.FixedLine.Text
+#, fuzzy
 msgid  "Columns to repeat"
 msgstr "ཡང་བསྐྱར་འབད་ནིའི་དོན་ལུ་ ཀེར་ཐིག"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "ཅི་མེད།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATCOL.Default.StringList.item
+#, fuzzy
 msgid  "- user defined -"
 msgstr "ལག་ལེན་པ་ངེས་འཛིན་འབད་ཡོདཔ།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATCOL.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
 msgstr "བསྐུམ།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_HEADER.CheckBox.Text
+#, fuzzy
 msgid  "~Column and row headers"
 msgstr "ཀེར་ཐིག་དང་ གྲལ་ཐིག་གི་མགོ་ཡིག་ཚུ།(~C)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_GRID.CheckBox.Text
+#, fuzzy
 msgid  "~Grid"
 msgstr "གིརིཌི།(~G)"
 
@@ -2206,186 +2384,232 @@ msgid  "~Comments"
 msgstr ""
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_OBJECTS.CheckBox.Text
+#, fuzzy
 msgid  "~Objects/graphics"
 msgstr "དངོས་པོ་ཚུ་/ཚད་རིས་ཚུ།(~O)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_CHARTS.CheckBox.Text
+#, fuzzy
 msgid  "Ch~arts"
 msgstr "དཔེ་རིས།(~a)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_DRAWINGS.CheckBox.Text
+#, fuzzy
 msgid  "~Drawing objects"
 msgstr "དངོས་པོ་འབྲི་དོ།(~D)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_FORMULAS.CheckBox.Text
+#, fuzzy
 msgid  "~Formulas"
 msgstr "མན་གང་ཚུ།(~F)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_NULLVALS.CheckBox.Text
+#, fuzzy
 msgid  "Zero ~values"
 msgstr "གནས་གོང་ ཀླད་ཀོར།(~v)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PRINT.FixedLine.Text
+#, fuzzy
 msgid  "Print"
 msgstr "དཔར་བསྐྲུན།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_TOPDOWN.RadioButton.Text
+#, fuzzy
 msgid  "~Top to bottom, then right"
 msgstr "སྤྱི་ཏོག་ལས་གཤམ་ལུ་དང་དེ་ལས་ གཡས་ལུ།(~T)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_LEFTRIGHT.RadioButton.Text
+#, fuzzy
 msgid  "~Left to right, then down"
 msgstr "གཡོན་ལས་གཡོན་ལུ་དང་དེ་ལས་ མར་ལུ།(~L)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.BTN_PAGENO.CheckBox.Text
+#, fuzzy
 msgid  "First ~page number"
 msgstr "ཤོག་ལེབ་དང་པམ་གྱི་ཨང་།(~p)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_PAGEDIR.FixedLine.Text
+#, fuzzy
 msgid  "Page order"
 msgstr "ཤོག་ལེབ་ཀྱི་གོ་རིམ།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEMODE.FixedText.Text
+#, fuzzy
 msgid  "Scaling ~mode"
 msgstr "ཐབས་ལམ་ཆ་ཚད་འཇལ་དོ།(~m)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_PERCENT.StringList.item
+#, fuzzy
 msgid  "Reduce/enlarge printout"
 msgstr "དཔར་བསྐྲུན་ མར་ཕབ་/ཆེར་བསྐྱེད་འབད།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO.StringList.item
+#, fuzzy
 msgid  "Fit print range(s) to width/height"
 msgstr "དཔར་བསྐྲུན་གྱི་ཁྱབ་ཚད་(s)དེ་ རྒྱ་ཚད་/མཐོ་ཚད་ལུ་ཚུད་སྒྲིག་འབད། "
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.LB_SCALEMODE.SC_TPTABLE_SCALE_TO_PAGES.StringList.item
+#, fuzzy
 msgid  "Fit print range(s) on number of pages"
 msgstr "དཔར་བསྐྲུན་གྱི་ཁྱབ་ཚད་ནང་ལུ་ཤོག་གྲངས་བཀོད།"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEFACTOR.FixedText.Text
+#, fuzzy
 msgid  "~Scaling factor"
 msgstr "ཆ་རྐྱེན་ཆ་ཚད་འཇལ་དོ།(~S)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEWIDTH.FixedText.Text
+#, fuzzy
 msgid  "~Width in pages"
 msgstr "ཤོག་ལེབ་ནང་གི་རྒྱ་ཚད།(~W)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGEHEIGHT.FixedText.Text
+#, fuzzy
 msgid  "H~eight in pages"
 msgstr "ཤོག་ལེབ་ནང་གི་མཐོ་ཚད།(~e)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FT_SCALEPAGENUM.FixedText.Text
+#, fuzzy
 msgid  "N~umber of pages"
 msgstr "ཤོག་ལེབ་ནང་གི་གྱངས་ཁ།(~u)"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCPAGE_TABLE.FL_SCALE.FixedLine.Text
+#, fuzzy
 msgid  "Scale"
 msgstr "ཆ་ཚད།"
 
 #: source/ui/pagedlg/hfedtdlg.src#HFEDIT_DLGTITLE.#define.Text
+#, fuzzy
 msgid  "Headers/Footers"
 msgstr "མགོ་ཡིག/མཇུག་ཡིག་ཚུ།"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER.#define.Text
+#, fuzzy
 msgid  "Header"
 msgstr "མགོ་ཡིག"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER.#define.Text
+#, fuzzy
 msgid  "Footer"
 msgstr "མཇུག་ཡིག"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_RIGHT.#define.Text
+#, fuzzy
 msgid  "Header (right)"
 msgstr "མགོ་ཡིག(གཡས་)"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_LEFT.#define.Text
+#, fuzzy
 msgid  "Header (left)"
 msgstr "མགོ་ཡིག(གཡོན་)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_RIGHT.#define.Text
+#, fuzzy
 msgid  "Footer (right)"
 msgstr "མཇུག་ཡིག(གཡས་)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_LEFT.#define.Text
+#, fuzzy
 msgid  "Footer (left)"
 msgstr "མཇུག་ཡིག(གཡོན་)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_HEADER.TabDialog.Text
+#, fuzzy
 msgid  "Headers"
 msgstr "མགོ་ཡིག"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_FOOTER.TabDialog.Text
+#, fuzzy
 msgid  "Footers"
 msgstr "མཇུག་ཡིག"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_LEFT.FixedText.Text
+#, fuzzy
 msgid  "~Left area"
 msgstr "གཡོན་གྱི་མངའ་ཁོངས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_CENTER.FixedText.Text
+#, fuzzy
 msgid  "~Center area"
 msgstr "དབུས་ཀྱི་མངའ་ཁོངས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_RIGHT.FixedText.Text
+#, fuzzy
 msgid  "R~ight area"
 msgstr "གཡས་ཀྱི་མངའ་ཁོངས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_DEFINED.FixedText.Text
+#, fuzzy
 msgid  "Hea~der"
 msgstr "མགོ་ཡིག"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_CUSTOM.FixedText.Text
+#, fuzzy
 msgid  "Custom header"
 msgstr "སྲོལ་སྒྲིག་མགོ་ཡིག"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TEXT.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Text Attributes"
 msgstr "ཚིག་ཡིག་གི་ཁྱད་ཆོས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Title"
 msgstr "མགོ་མིང་།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
+#, fuzzy
 msgid  "Title"
 msgstr "མགོ་མིང་།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_FILENAME.MenuItem.Text
+#, fuzzy
 msgid  "File Name"
 msgstr "ཡིག་སྣོད་ཀྱི་མིང་།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_PATH.MenuItem.Text
+#, fuzzy
 msgid  "Path/File Name"
 msgstr "འགྲུལ་ལམ་/ཡིག་སྣོད་མིང་།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TABLE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Sheet Name"
 msgstr "ལེབ་གྲངས་ཀྱི་མིང་།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Page"
 msgstr "ཤོག་ལེབ།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGES.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Pages"
 msgstr "ཤོག་ལེབ་ཚུ།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_DATE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Date"
 msgstr "ཚེས་གྲངས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TIME.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Time"
 msgstr "ཆུ་ཚོད།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "Use the buttons to change the font or insert field commands such as date, time, etc."
 msgstr "ཡིག་གཟུགས་བསྒྱུར་བཅོས་འབད་ནིའི་དོན་ལུ་ གཡེབ་རྟ་ཚུ་ལག་ལེན་འཐབ་ ཡང་ན་ ཚེས་གྲངས་ ཆུ་ཚོད་ལ་སོགས་པའི་ ས་སྒོའི་བརྡ་བཀོད་ཚུ་བཙུགས།"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Note"
 msgstr "དྲན་འཛིན།"
 
 #: source/ui/pagedlg/tphf.src#RID_SCBTN_HFEDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "ཞུན་དག(~E)"
 
@@ -2519,9 +2743,8 @@ msgid  "~Discard"
 msgstr "བཏོན་བཀོག།(~D)"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-#, fuzzy
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "ཐོ་བཀོད་\n#\nབཏོན་གཏང་གོ་ག?"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -3011,70 +3234,86 @@ msgid  "~Delete"
 msgstr "བཏོན་གཏང་།(~D)"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
+#, fuzzy
 msgid  "Format Cells"
 msgstr "ནང་ཐིག་ཚུ་རྩ་སྒྲིག་འབད།"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
+#, fuzzy
 msgid  "Numbers"
 msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "ཡིག་གཟུགས།"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "ཡིག་གཟུགས་ཀྱི་ནུས་པ།"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "ཕྲང་སྒྲིག"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
+#, fuzzy
 msgid  "Asian Typography"
 msgstr "ཨེ་ཤི་ཡེན་ དཔར་བསྐྲུན་རིག་པ།"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "མཐའ་མཚམས།"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "རྒྱབ་གཞི།"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
+#, fuzzy
 msgid  "Cell Protection"
 msgstr "ནང་ཐིག་ཉེན་སྐྱོབ།"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
+#, fuzzy
 msgid  "~Protected"
 msgstr "ཉེན་སྐྱོབ་འབད་ཡོདཔ།(~P)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~formula"
 msgstr "མན་ངག་སྦ་བཞག(~f)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~all"
 msgstr "ཆ་མཉམ་སྦ་བཞག(~a)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "ནང་ཐིག་ཉེན་སྐྱོབ་དེ་ ད་ལྟོའི་ལེབ་གྲངས་ཉེན་སྐྱོབ་འབད་ཚར་བའི་ཤུལ་ལས་རྐྱངམ་ཅིག་ནུས་པ་བྱུང་འོང་།\n\n 'ཉེན་སྐྱོབ་ཡིག་'ཆ་དེ་'ལག་ཆས'དཀར་ཆ་ནང་ལས་སེལ་འཐུ་འབད་དེ་ 'ལེབ་གྲངས'གསལ་བཀོད་འབད།."
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
+#, fuzzy
 msgid  "Protection"
 msgstr "ཉེན་སྐྱོབ།"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "དཔར་བསྐྲུན་ན་འབད་བའི་སྐབས་ལུ་སྦ་བཞག(~w)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
+#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་ནང་ཐིག་ཚུ་ དཔར་བསྐྲུན་འབད་བའི་སྐབས་ལུ་ སྐྱུར་བཞག་འོང།"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
+#, fuzzy
 msgid  "Print"
 msgstr "དཔར་བསྐྲུན།"
 
@@ -3416,12 +3655,12 @@ msgstr "རང་འཞིན་གྱི་ཕྱི་ཐིག"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SUBTOTALS.String.Text
 #, fuzzy
 msgid  "Subtotals"
-msgstr "ཆུང་བསྡོམས།"
+msgstr "བསྡོམས་ཆུང་།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 #, fuzzy
 msgid  "Sort"
-msgstr "དབྱེ་གསལ།"
+msgstr "དབྱེ་སེལ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 #, fuzzy
@@ -3689,9 +3928,8 @@ msgid  "No operations to execute"
 msgstr "ལག་ལེན་འཐབ་ནིའི་དོན་ལུ་ བཀོལ་སྤྱོད་མེད།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-#, fuzzy
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "ཁྱབ་ཚད་ནང་ལུ་ཀེར་ཐིག་གི་མགོ་ཡིག་མིན་འདུག \n ཁྱོད་ལུ་གྱལ་རིམ་དང་པམ་དེ་ ཀེར་ཐིག་མགོ་ཡིག་བཟུམ་སྦེ་ལག་ལེན་འཐབ་དགོཔ་ཨིན་ན?"
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -3769,9 +4007,8 @@ msgid  "Search key not found."
 msgstr "འཚོལ་ཞིབ་ལྡེ་མིག་ མ་འཐོབ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-#, fuzzy
-msgid  "Goal Seek successful.\n"
-msgstr "དམིགས་གཏད་ ཚོལ་ནི་མཐར་འཁྱོལ་བྱུང་ཡོདཔ།.\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 #, fuzzy
@@ -3784,14 +4021,12 @@ msgid  ") into current cell?"
 msgstr "ད་ལྟོའི་ནང་ཐིག་གི་ནང་ལུ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-#, fuzzy
-msgid  "Goal Seek not successful.\n"
-msgstr "དམིགས་གཏད་འཚོལ་ནི་ མཐར་འཁོལ་མ་བྱུང་།\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-#, fuzzy
-msgid  "No exact value found. \n"
-msgstr "གནས་གོང་ཏག་ཏག་ཐོབ་མ་ཚུགས།\n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -3831,7 +4066,7 @@ msgstr "ཡང་ན།"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_DEF.String.Text
 #, fuzzy
 msgid  "Sheet"
-msgstr "ལོབ་གྲངས།"
+msgstr "ལེབ་གྲངས།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MOVE_TO_END.String.Text
 #, fuzzy
@@ -4153,38 +4388,1349 @@ msgid  "Text Attributes"
 msgstr "ཚིག་ཡིག་གི་ཁྱད་ཆོས།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+msgid  "\\"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+#, fuzzy
+msgid  "PAGE"
+msgstr "ཤོག་ལེབ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+#, fuzzy
+msgid  "PAGES"
+msgstr "ཤོག་ལེབ་ཚུ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+#, fuzzy
+msgid  "DATE"
+msgstr "ཚེས་གྲངས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+#, fuzzy
+msgid  "TIME"
+msgstr "ཆུ་ཚོད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+#, fuzzy
+msgid  "FILE"
+msgstr "ཡིག་སྣོད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+#, fuzzy
+msgid  "SHEET"
+msgstr "ལེབ་གྲངས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+#, fuzzy
+msgid  "Protected cells can not be modified."
+msgstr "ཉེན་སྐྱིབ་འབད་ཡོད་པའི་ནང་ཐིག་ཚུ་ ལེགས་བཅོས་འབད་མི་ཚུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+#, fuzzy
+msgid  "Document opened in read-only mode."
+msgstr "ཐབས་ལམ་རྐྱངམ་ཅིག་ལྷག་-ནང་ལུ་ཡིག་སྣོད་ཁ་ཕྱེ་སྟེ་ཡོད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+#, fuzzy
+msgid  "You cannot change only part of an array."
+msgstr "ཁྱོད་ཀྱིས་ ཨེ་རེ་གི་ཆ་ཤས་རྐྱངམ་ཅིག་བསྒྱུར་བཅོས་འབད་མི་ཚུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+#, fuzzy
+msgid  "Header"
+msgstr "མགོ་ཡིག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+#, fuzzy
+msgid  "Footer"
+msgstr "མཇུག་ཡིག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+#, fuzzy
+msgid  "Err:"
+msgstr "Err:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+msgid  "Error: Ranges do not intersect"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+msgid  "Error: Division by zero"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+msgid  "Error: Wrong data type"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+#, fuzzy
+msgid  "Error: Not a valid reference"
+msgstr "འཛོལ་བ:ནུས་ཅན་གྱི་གཞི་བསྟུན་མེན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+#, fuzzy
+msgid  "Error: Invalid name"
+msgstr "འཛོལ་བ:ནུས་མེད་ཀྱི་མིང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+msgid  "Error: Invalid numeric value"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+#, fuzzy
+msgid  "Error: Value not available"
+msgstr "འཛོལ་བ:གནས་གོང་ཐོབ་མི་ཚུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "#ADDIN?"
+msgstr "#ADDIN?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "Error: Add-in not found"
+msgstr "འཛོལ་བ:དེ་ལུ་-ཁ་སྐོང་རྐྱབས་ ཐོབ་མ་ཚུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "#MACRO?"
+msgstr "#མེཀརོ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "Error: Macro not found"
+msgstr "འཛོལ་བ:མེཀརོ་ཐོབ་མ་ཚུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+#, fuzzy
+msgid  "Internal syntactical error"
+msgstr "ནང་འཁོད་ཚིག་སྦྱོར་གྱི་འཛོལ་བ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+#, fuzzy
+msgid  "Error: Invalid argument"
+msgstr "འཛོལ་བ:ནུས་མེད་ཀྱི་སྒྲུབ་རྟགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+#, fuzzy
+msgid  "Error in parameter list"
+msgstr "ཚད་བཟུང་ཐོ་ཡིག་ནང་ལུ་འཛོལ་བ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+#, fuzzy
+msgid  "Error: Invalid character"
+msgstr "འཛོལ་བ:ནུས་མེད་ཀྱི་ཡིག་འབྲུ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+#, fuzzy
+msgid  "Error: Invalid semicolon"
+msgstr "འཛོལ་བ:ནུས་མེད་ཀྱི་སེ་མི་ཀོ་ལཱོན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+#, fuzzy
+msgid  "Error: in bracketing"
+msgstr "འཛོལ་བ:གུག་ཤད་རྐྱབས་ནི་ལུ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+#, fuzzy
+msgid  "Error: Operator missing"
+msgstr "འཛོལ་བ:བཀོལ་སྤྱོད་འབད་མི་བརླག་སྟོར་ཞུགས་པ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+#, fuzzy
+msgid  "Error: Variable missing"
+msgstr "འཛོལ་བ:བསྒྱུར་ཅན་བརླག་སྟོར་ཞུགས་པ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+#, fuzzy
+msgid  "Error: Formula overflow"
+msgstr "འཛོལ་བ:མན་ངག་ལུད་སོང་བ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+#, fuzzy
+msgid  "Error: String overflow"
+msgstr "འཛོལ་བ:ཡིག་རྒྱུན་ལུད་སོང་བ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+#, fuzzy
+msgid  "Error: Internal overflow"
+msgstr "འཛོལ་བ:ནང་འཁོད་ལུད་སོང་བ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+#, fuzzy
+msgid  "Error: Circular reference"
+msgstr "འཛོལ་བ:སྒོར་ཐིག་ཅན་གྱི་གཞི་བསྟུན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+#, fuzzy
+msgid  "Error: Calculation does not converge"
+msgstr "འཛོལ་བ:རྩིས་ལས་གཅིག་ཏུ་མི་བསྡུ་བས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+#, fuzzy
+msgid  "Grid color"
+msgstr "ཚོས་གཞི་གི་རིཊི་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+#, fuzzy
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "སྦ་བཞག་ཡོད་མི་ནང་ཐིག་གི་ནང་དོན་ཚུ་ ནང་ཐིག་དང་པམ་ནང་ལུ་སྤོ་བཤུད་འབད་དགོ་ག?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "ཚགས་མ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+#, fuzzy
+msgid  "The target database range does not exist."
+msgstr "དམིགས་གཏད་ གནད་སྡུད་གཞི་རྟེན་གྱི་ཁྱབ་ཚད་དེ་མིན་འདུག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+#, fuzzy
+msgid  "Invalid increment"
+msgstr "ནུས་མེད་ཀྱི་ཡར་ཕར།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+#, fuzzy
+msgid  "MULTIPLE.OPERATIONS"
+msgstr "བཀོལ་སྤྱོད་སྣ་མང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+#, fuzzy
+msgid  "Multiple operations"
+msgstr "བཀོལ་སྤྱོད་སྣ་མང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+#, fuzzy
+msgid  "Range"
+msgstr "ཁྱབ་ཚད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "བཏུབ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "མི་བཏུབ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+#, fuzzy
+msgid  "Protection"
+msgstr "ཉེན་སྐྱོབ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "མན་ངག་ཚུ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "སྦ་བཞག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+#, fuzzy
+msgid  "Print"
+msgstr "དཔར་བསྐྲུན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+#, fuzzy
+msgid  "(nested)"
+msgstr "(ནེསི་ཊེཊི)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+#, fuzzy
+msgid  "(optional)"
+msgstr "(གདམ་ཁ་ཅན་)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+#, fuzzy
+msgid  "(required)"
+msgstr "(དགོས་མཁོ་ཡོདཔ་)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+#, fuzzy
+msgid  "invalid"
+msgstr "ནུས་མེད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+#, fuzzy
+msgid  "Edit Function"
+msgstr "ལས་འགན་ཞུན་དག་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "བསམ་བཀོད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "ཁྱོད་ཀྱིས་ སེལ་འཐུ་འབད་ཡོད་མི་འཆར་བཤད་བཏོན་གཏང་ནི་དེ་ངེས་ཏིག་ཨིན་ན?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "ཁྱོད་ཀྱིས་ སེལ་འཐུ་འབད་ཡོད་མི་འཆར་བཤད་བཏོན་གཏང་ནི་དེ་ངེས་ཏིག་ཨིན་ན?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+#, fuzzy
+msgid  "Thesaurus is not available"
+msgstr "སྔོན་བརྗོད་དེ་ཐོབ་མ་ཚུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+#, fuzzy
+msgid  "Spellcheck not available"
+msgstr "སྡེབ་དཔྱད་ཐོབ་མི་ཚུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+#, fuzzy
+msgid  "Import text files"
+msgstr "ཚི་ཡིག་ ཡིག་སྣོད་ཚུ་ནང་འདྲེན་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+msgid  "Export Text File"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+#, fuzzy
+msgid  "Import Lotus files"
+msgstr "ལོ་ཊོསི་ཡིག་སྣོད་ཚུ་ནང་འདྲེན་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+#, fuzzy
+msgid  "Import DBase files"
+msgstr "ཌི་གཞི་རྟེན་གྱི་ཡིག་སྣོད་ཚུ་ནང་འདྲེན་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+#, fuzzy
+msgid  "DBase export"
+msgstr "ཌི་གཞི་རྟེན་ཕྱིར་འདྲེན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Export"
+msgstr "ཕྱིར་འདྲེན་ སོ་སོ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Import"
+msgstr "ནང་འདྲེན་ སོ་སོ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+#, fuzzy
+msgid  "Default"
+msgstr "སྔོན་སྒྲིག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+#, fuzzy
+msgid  "Result"
+msgstr "གྲུབ་འབྲས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+#, fuzzy
+msgid  "Result2"
+msgstr "གྲུབ་འབྲས་ ༢"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+#, fuzzy
+msgid  "Heading"
+msgstr "མགུ་རྒྱན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+#, fuzzy
+msgid  "Heading1"
+msgstr "མགུ་རྒྱན་ ༡།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "སྙན་ཞུ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+#, fuzzy
+msgid  "Report1"
+msgstr "སྙན་ཞུ་ ༡།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+#, fuzzy
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "སྔོན་བརྗོད་ཚུ་ ཚིག་ཡིག་གི་ནང་ཐིག་ནང་རྐྱངམ་ཅིག་ལག་ལེན་འཐབ་ཚུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+#, fuzzy
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "སྡེབ་དཔྱད་འབད་ནི་དེ་ ད་ལྟོའི་ལེབ་གྲངས་འགོ་བཙུགསཔ་ད་ལུ་རང་ འཕྲོ་མཐུད་འབད་དགོཔ་ཨིན་ན?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+#, fuzzy
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "ལེབ་གྲངས་འདི་གི་སྡེབ་དཔྱད་དེ་མཇུག་བསྡུ་ཡི།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+#, fuzzy
+msgid  "No language set"
+msgstr "སྐད་ཡིག་ཆ་ཚན་མེད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+#, fuzzy
+msgid  "Insert Sheet"
+msgstr "ལེབ་གྲངས་བཙུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+#, fuzzy
+msgid  "Delete Sheets"
+msgstr "ལེབ་གྲངས་ཚུ་བཏོན་གཏང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+#, fuzzy
+msgid  "Rename Sheet"
+msgstr "ལེབ་གྲངས་བསྐྱར་མིང་བཏགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+msgid  "Color Tab"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+msgid  "Color Tabs"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+#, fuzzy
+msgid  "Move Sheets"
+msgstr "ལེབ་གྲངས་ཚུ་སྤོ་བཤུད་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+#, fuzzy
+msgid  "Copy Sheet"
+msgstr "ལེབ་གྲངས་འདྲ་བཤུས་རྐྱབས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+#, fuzzy
+msgid  "Append sheet"
+msgstr "ལེབ་གྲངས་མཇུག་བསྣོན་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+#, fuzzy
+msgid  "Show Sheet"
+msgstr "ལེབ་གྲངས་སྟོན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+#, fuzzy
+msgid  "Hide sheet"
+msgstr "ལེབ་གྲངས་སྦ་བཞག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+#, fuzzy
+msgid  "Flip sheet"
+msgstr "ལེབ་གྲངས་མྱུར་ལྷོོག་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+#, fuzzy
+msgid  "Toggle the use of R1C1 notation"
+msgstr "R1C1 དབྱངས་རྟགས་ཀྱི་ལག་ལེན་འདི་སོར་སྟོན་འབད་"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+#, fuzzy
+msgid  "Main Title"
+msgstr "མགོ་མིང་ངོ་མ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+#, fuzzy
+msgid  "Subtitle"
+msgstr "མགོ་མིང་ཡན་ལག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+#, fuzzy
+msgid  "X axis title"
+msgstr "ཨེགསི་ ཚད་ཐིག་གི་མགོ་མིང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+#, fuzzy
+msgid  "Y axis title"
+msgstr "ཝའི་ཚད་ཐིག་གི་མགོ་མིང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+#, fuzzy
+msgid  "Z axis title"
+msgstr "ཛེཊི་ ཚད་ཐིག་གི་མགོ་མིང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+#, fuzzy
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "ཐིག་ཁྲམ་གསརཔ་དེ་ནང་ ཐིག་ཁྲམ་གཞན་ལུ་ བདེན་མེད་སྦེ་བྱུང་སྲིད་ནི་ཨིན་མི་ གཞི་བསྟུན་ཡང་དག་ཚུ་ཡོདཔ་ཨིན། "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+#, fuzzy
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr "མིང་ཅོག་གཅིགཔ་ལུ་བརྟེན་ཏེ་ འགྲོ་ཡུལ་ཡིག་ཆའི་ནང་ཡོད་མི་ ཁྱབ་ཚད་ཀྱི་མིང་དེ་བསྒྱུར་བཅོས་འབད་ནུག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+#, fuzzy
+msgid  "AutoFilter not possible"
+msgstr "རང་བཞིན་གྱིས་བཙགས་མ་ཚུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME་ཀེལ་སི་ གིས་ལེབ་གྲངས་ཀྱི་འགོ་བཙུགས་གུ་ལུ་འཚོལ་ཞིབ་འབད་ནུག ཁྱོད་ཀྱིས་ མཇུག་ལུ་འཕྲོ་མཐུད་འབད་ནི་ཨིན་ན?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME ཀེལ་སི་གིས་ ལེབ་གྲངས་ཀྱི་མཇུག་ཚུན་ལུ་འཚོལ་ཞིབ་འབད་ནུག ཁྱོད་ཀྱིས་ འགོ་བཙུགས་གུར་འཕྲཽ་འབད་ནི་ཨིན་ན?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+#, fuzzy
+msgid  "Find & Replace"
+msgstr "འཚོལ་ཏེ་ཚབ་བཙུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "%PRODUCTNAMEཀེལ་སི་གིས་ ཡིག་ཆའིི་འགོ་བཙུགས་ཚུན་ལུ་འཚོལ་ཞིབ་འབད་ནུག ཁྱོད་ཀྱིས་མཇུག་ལུ་འཕྲོ་མཐུད་འབད་ནི་ཨིན་ན?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAMEཀེལ་སི་གིས་ ཡིག་ཆའི་མཇུག་ཚུན་ལུ་འཚོལ་ཞིབ་འབད་ནུག ཁྱོད་ཀྱིས་འགོ་བཙུགས་གུར་འཕྲོ་མཐུད་འབད་ནི་ཨིན་ན?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+#, fuzzy
+msgid  "Replace existing definition of #?"
+msgstr "#གི་ ད་ལྟཽ་ཡོད་མི་ངེས་ཚིག་ཚབ་བཙུགས?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+#, fuzzy
+msgid  "Invalid selection for range names"
+msgstr "ཁྱབ་ཚད་མིང་གི་དོན་ལུ་ནུས་མེད་ཀྱི་སེལ་འཐུ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+#, fuzzy
+msgid  "References can not be inserted above the source data."
+msgstr "གཞི་བསྟུན་ཚུ་འབྱུང་ཁུངས་གནད་སྡུད་འགལ་ཏེ་བཙུགས་མི་བཏུབ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+#, fuzzy
+msgid  "Scenario not found"
+msgstr "འཆར་བཤད་འཚོལ་མ་ཐོབ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+#, fuzzy
+msgid  "Do you really want to delete the entry #?"
+msgstr "ཁྱོད་ཀྱིས་ཐོ་བཀོད་འབད་ནི་བཏོན་གཏང་ནི་དེ་ཐད་རི་འབའ་རི་ཨིན་ན#?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+#, fuzzy
+msgid  "Objects/graphics"
+msgstr "དངོས་པོ/ཚད་རིས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+#, fuzzy
+msgid  "Charts"
+msgstr "དཔེ་རིས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+#, fuzzy
+msgid  "Drawing Objects"
+msgstr "དངོས་པོ་འབྲི་དོ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+#, fuzzy
+msgid  "Show"
+msgstr "སྟོན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "སྦ་བཞག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+#, fuzzy
+msgid  "Top to bottom"
+msgstr "འགོ་ལས་མཇུག་ཚུན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+#, fuzzy
+msgid  "Left-to-right"
+msgstr "གཡོན་ལས་གཡས་ཚུན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "བསམ་བཀོད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+#, fuzzy
+msgid  "Grid"
+msgstr "གི་རིཊི།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+#, fuzzy
+msgid  "Row & Column Headers"
+msgstr "གྲལ་ཐིག་དང་ ཀེར་ཐིག་མགོ་ཡིག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "མན་ངག་ཚུ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+#, fuzzy
+msgid  "Zero Values"
+msgstr "གནས་གོང་ཀླད་ཀོར།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+#, fuzzy
+msgid  "Print direction"
+msgstr "དཔར་བསྐྲུན་བཀོད་རྒྱ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+#, fuzzy
+msgid  "First page number"
+msgstr "ཤོག་ལེབ་དང་པའི་ཨང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+#, fuzzy
+msgid  "Reduce/enlarge printout"
+msgstr "དཔར་བསྐྲུན་ མར་ཕབ་འབད་/ཆེར་བསྐྱེད་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+#, fuzzy
+msgid  "Fit print range(s) on number of pages"
+msgstr "དཔར་བསྐྲུན་གྱི་ཁྱབ་ཚད་ཚུ་ཤོག་ལེབ་ལེ་ཤའི་གུར་ཚུད་སྒྲིག་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+#, fuzzy
+msgid  "Fit print range(s) to width/height"
+msgstr "དཔར་བསྐྲུན་གྱི་ཁྱབ་ཚད་ཚུ་ རྒྱ་ཚད་/མཐོ་ཚད་ལུ་ཚུད་སྒྲིག་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+#, fuzzy
+msgid  "Width"
+msgstr "རྒྱ་ཚད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height"
+msgstr "མཐོ་ཚད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+#, fuzzy
+msgid  "%1 page(s)"
+msgstr "%༡་ཤོག་ལེབ་(s)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+#, fuzzy
+msgid  "automatic"
+msgstr "རང་བཞིན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+#, fuzzy
+msgid  "Statistics"
+msgstr "ཚད་རྩིས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+#, fuzzy
+msgid  "The link could not be updated."
+msgstr "འབྲེལ་ལམ་དེ་དུས་མཐུན་བཟོ་མ་ཚུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+#, fuzzy
+msgid  "File:"
+msgstr "ཡིག་སྣོད:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+#, fuzzy
+msgid  "Sheet:"
+msgstr "ལེབ་གྲངས:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+#, fuzzy
+msgid  "Overview"
+msgstr "སྤྱི་མཐོང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+#, fuzzy
+msgid  "Doc.Information"
+msgstr "ཡིག་ཆའི་བརྡ་དོན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+#, fuzzy
+msgid  "Created"
+msgstr "གསར་བསྐྲུན་འབད་ཡོདཔ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+#, fuzzy
+msgid  "Modified"
+msgstr "ལེགས་བཅོས་འབད་ཡོདཔ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+#, fuzzy
+msgid  "Printed"
+msgstr "དཔར་བསྐྲུན་འབད་ཡོདཔ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "དོན་ཚན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+#, fuzzy
+msgid  "Key words"
+msgstr "མིང་ཚིག་གཙོ་བོ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "བསམ་བཀོད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+#, fuzzy
+msgid  "by"
+msgstr "གིས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+#, fuzzy
+msgid  "on"
+msgstr "གུ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+#, fuzzy
+msgid  "Too many conditions"
+msgstr "གནས་སྟངས་མང་དྲག་པས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+#, fuzzy
+msgid  "The table could not be inserted."
+msgstr "ཐིག་ཁྲམ་བཙུགས་མི་བཏུབ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+#, fuzzy
+msgid  "The sheets could not be deleted."
+msgstr "ལེབ་གྲངས་ཚུ་བཏོན་གཏང་མི་བཏུབ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+#, fuzzy
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "འཛིན་པང་གི་ནང་དོན་ཚུ་སྦྱར་མི་བཏུབ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+#, fuzzy
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "ལེབ་གྲངས་དེ་ནང་ལུ་གཞི་བཙུགས་འབད་ནིའི་དོན་ལུ་    ་བར་སྟོང་ལངམ་མིན་འདུག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+#, fuzzy
+msgid  "No references found."
+msgstr "གཞི་བསྟུན་འཚོལ་མ་ཐོབ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+#, fuzzy
+msgid  "Source and destination must not overlap."
+msgstr "འབྱུང་ཁུངས་དང་འགྲོ་ཡུལ་མཐའ་མནོན་འབད་མི་བཏུབ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+#, fuzzy
+msgid  "Graphics"
+msgstr "ཚད་རིས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+#, fuzzy
+msgid  "Invalid name."
+msgstr "ནུས་མེད་ཀྱི་མིང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+#, fuzzy
+msgid  "Selected macro not found."
+msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་མེཀརོ་འཚོལ་མ་ཐོབ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+#, fuzzy
+msgid  "Invalid value."
+msgstr "ནུས་མེད་གནས་གོང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+#, fuzzy
+msgid  "calculating"
+msgstr "རྩིས་སྟོན་དོ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+#, fuzzy
+msgid  "sorting"
+msgstr "དབྱེ་སེལ་འབད་དོ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+#, fuzzy
+msgid  "Adapt row height"
+msgstr "གྲལ་ཐིག་གི་མཐོ་ཚད་མཐུན་བྱེད་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+#, fuzzy
+msgid  "Compare #"
+msgstr "ག་བསྡུར་བརྐྱབ་ནི་#"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+#, fuzzy
+msgid  "Delete contents"
+msgstr "ནང་དོན་ཚུ་བཏོན་གཏང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+#, fuzzy
+msgid  "%1 R  x %2 C"
+msgstr "%༡ ཨཱར  x %༢ སི།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+#, fuzzy
+msgid  "More..."
+msgstr "ཧེང་བཀལ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+#, fuzzy
+msgid  "Invalid range"
+msgstr "ནུས་མེད་ཀྱི་ཁྱབ་ཚད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "ཚགས་མ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+#, fuzzy
+msgid  "Sort"
+msgstr "དབྱེ་སེལ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+#, fuzzy
+msgid  "Subtotals"
+msgstr "བསྡོམས་ཆུང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "ཅི་་མེད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+#, fuzzy
+msgid  "Do you want to replace the contents of #?"
+msgstr "ཁྱོད་ཀྱིས་ #གི་ནང་དོན་ཚུ་ཚབ་བཙུགས་ནི་ཨིན་ན?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+#, fuzzy
+msgid  "Width:"
+msgstr "རྒྱ་ཚད:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height:"
+msgstr "མཐོ་ཚད:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "སྦ་བཞག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+#, fuzzy
+msgid  "The object could not be inserted."
+msgstr "བཙུགས་ཡོདཔ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+#, fuzzy
+msgid  "<empty>"
+msgstr "<སྟོངམ་>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+#, fuzzy
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "ནང་ཐིག་ #༡  '#༢' ལས་ '#༣'ལུ་བསྒྱུར་བཅོས་འབད་ནུག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+#, fuzzy
+msgid  "#1 inserted"
+msgstr "#༡ བཙུགས་ཡོདཔ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+#, fuzzy
+msgid  "#1deleted"
+msgstr "#༡་བཏོན་གཏང་ཡོདཔ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+#, fuzzy
+msgid  "Range moved from #1 to #2"
+msgstr "གྱབ་ཚད་#༡་ལས་ #༢་ལུ་སཔོ་བཤུད་འབད་ནུག"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+#, fuzzy
+msgid  "Exit Recording"
+msgstr "སྒྲ་བཟུང་འབད་ནི་ཕྱིར་འཐོན་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+#, fuzzy
+msgid  "The document can not be closed while a link is being updated."
+msgstr "འབྲེལ་ལམ་དུས་མཐུན་བཟོ་བའི་སྐབས་ལུ་ ཡིག་ཆ་ཁ་བསྡམས་མི་ཚུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Adapt array area"
+msgstr "ཨེ་རེ་མངའ་ཁོངས་མཐུན་བྱེད་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Array formula  %1 R x %2 C"
+msgstr "ཨེ་རེ་མན་ངག་  %༡ ཨཱར x %༢ སི།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+#, fuzzy
+msgid  "Hangul/Hanja Conversion"
+msgstr "ཧང་གུལ/ཧཱན་ཇ་གི་གྲོས་གླེང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+#, fuzzy
+msgid  "Select Cell"
+msgstr "ནང་ཐིག་སེལ་འཐུ་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+#, fuzzy
+msgid  "Select Range"
+msgstr "ཁྱབ་ཚད་སེལ་འཐུ་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+#, fuzzy
+msgid  "Select Database Range"
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ཁྱབ་ཚད་སེལ་འཐུ་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+#, fuzzy
+msgid  "Go To Row"
+msgstr "གྲལ་ཐིག་ལུ་འགྱོ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+#, fuzzy
+msgid  "Go To Sheet"
+msgstr "ལེབ་གྲངས་ལུ་འགྱོ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+#, fuzzy
+msgid  "Define Name for Range"
+msgstr "ཁྱབ་ཚད་ཀྱི་དོན་ལུ་མིང་ངེས་འཛིན་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+#, fuzzy
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "འདི་མིང་བཏགས་ནིའི་དོན་ལུ་ སེལ་འཐུ་དེ་གྲུ་བཞི་ནར་མོ་སྦེ་དགོཔ་ཨིན།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+#, fuzzy
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་ཁྱབ་ཚད་ལུ་ ཁྱོད་ཀྱིས་ ནུས་ཅན་གཞི་བསྟུན་ཅིག་བཙུགས་ ཡང་ན་ ནུས་ཅན་མིང་ཅིག་ ཡིག་དཔར་རྐྱབས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "ཉེན་བརྡ:བྱ་བ་འདི་གིས་ མན་ངག་ནང་གི་ ནང་ཐིག་གཞི་བསྟུན་ཚུ་གིས་ གྲུབ་འབྲས་རེ་བ་ལྟར་དུ་མ་བྱུང་པས། "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr "ཉེན་བརྡ: བཏོན་གཏང་པའི་མངའ་ཁོངས་ སོར་ཆུད་མ་འབད་བར་ཡོད་མི་ལུ་ གཞི་བསྟུན་འབད་དེ་ གྲུབ་འབྲས་བྱ་བ་འདི་བྱུང་འབྱུངམ་འོང་།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+#, fuzzy
+msgid  "(none)"
+msgstr "(ཅི་་མེད་)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+#, fuzzy
+msgid  "of"
+msgstr "གི"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+#, fuzzy
+msgid  "of ?"
+msgstr "གི?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+#, fuzzy
+msgid  "Created by"
+msgstr "གསར་བསྐྲུན་འབད་མི།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+#, fuzzy
+msgid  "Confidential"
+msgstr "གསང་བྱ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+#, fuzzy
+msgid  "Customized"
+msgstr "སྲོལ་སྒྲིག་འབད་ཡོདཔ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+#, fuzzy
+msgid  "Custom footer"
+msgstr "མཇུག་ཡིག་སྲོལ་སྒྲིག་འབད།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+msgid  "Chinese conversion"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+#, fuzzy
+msgid  "You cannot change this part of the pivot table."
+msgstr "ཁྱོད་ཀྱིས་གནད་སྡུད་ པའི་ལོཊི་ཐིག་ཁྲམ་གི་ཡན་ལག་འདི་ སྦྱུར་བཅོས་འབད་མི་ཚུགས།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+#, fuzzy
+msgid  "Manual"
+msgstr "ལག་དེབ་"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "རང་བཞིན་"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+msgid  "Nested arrays are not supported."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+msgid  "Text to Columns"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+msgid  "Unknown User"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+#, fuzzy
+msgid  "Cell Styles"
+msgstr "ནང་ཐིག་གི་བཟོ་རྣམ།(~C)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+#, fuzzy
+msgid  "Page Styles"
+msgstr "ཤོག་ལེབ་ཀྱི་བཟོ་རྣམ།"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+#, fuzzy
+msgid  "Character"
+msgstr "ཡིག་འབྲུ།"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
+msgid  "Font"
+msgstr "ཡིག་གཟུགས།"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
+msgid  "Font Effects"
+msgstr "ཡིག་གཟུགས་ཀྱི་ནུས་པ།"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#, fuzzy
+msgid  "Font Position"
+msgstr "ཡིག་གཟུགས་ཀྱི་གནས་ས།"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "རྒྱབ།"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+#, fuzzy
+msgid  "Paragraph"
+msgstr "དོན་མཚམས།"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Indents & Spacing"
+msgstr "འགོ་མཚམས་དང་ བར་སྟོང་སྟོན་ནི།"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "ཕྲང་སྒྲིག"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+#, fuzzy
+msgid  "Asian Typography"
+msgstr "ཨེ༌ཤི་ཡན་གྱི་དཔར་བསྐྲུན་རིག་པ།"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+#, fuzzy
+msgid  "Tab"
+msgstr "མཆོང་ལྡེ།"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "རྒྱབ།"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+#, fuzzy
+msgid  "AutoFormat"
+msgstr "རང་བཞིན་རྩ་སྒྲིག"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "F~ormat"
+msgstr "རྩ་སྒྲིག(~o)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+#, fuzzy
+msgid  "A~utoFit width and height"
+msgstr "རྒྱ་ཚད་དང་མཐོ་ཚད་ རང་བཞིན་གྱིས་ཚུད་སྒྲིག་འབད།(~u)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+#, fuzzy
+msgid  "~Borders"
+msgstr "མཐའ་མཚམས།(~B)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+#, fuzzy
+msgid  "F~ont"
+msgstr "ཡིག་གཟུགས།(~o)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+#, fuzzy
+msgid  "~Pattern"
+msgstr "དཔེ་གཞི།(~P)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+#, fuzzy
+msgid  "Alignmen~t"
+msgstr "ཕྲང་སྒྲིག(~t)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+#, fuzzy
+msgid  "~Number format"
+msgstr "རྩ་སྒྲིག་གི་ཨང་གྲངས་བཀོད།(~N)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+#, fuzzy
+msgid  "Formatting"
+msgstr "རྩ་སྒྲིག་འབད་དོ།"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add..."
+msgstr "ཁ་སྐོང་།(~A)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "བཏོན་གཏང་།(~D)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+#, fuzzy
+msgid  "~Rename"
+msgstr "བསྐྱར་མིང་བཏགས།(~R)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+#, fuzzy
+msgid  "Add AutoFormat"
+msgstr "རང་བཞིན་རྩ་སྒྲིག་ཁ་སྐོང་རྐྱབས།"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+#, fuzzy
+msgid  "Rename AutoFormat"
+msgstr "རང་བཞིན་རྩ་སྒྲིག་བསྐྱར་མིང་བཏགས།"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "མིང་།"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+#, fuzzy
+msgid  "Delete AutoFormat"
+msgstr "རང་བཞིན་རྩ་སྒྲིག་བཏོན་གཏང་།"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "ཁ་བསྡམས།(~C)"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_JAN.String.Text
+#, fuzzy
 msgid  "Jan"
 msgstr "སྤྱི་ཟླ་དང་པ།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_FEB.String.Text
+#, fuzzy
 msgid  "Feb"
 msgstr "སྤྱི་ཟླ་གཉིས་པ།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MAR.String.Text
+#, fuzzy
 msgid  "Mar"
 msgstr "སྤྱི་ཟླ་གསུམ་པ།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_NORTH.String.Text
+#, fuzzy
 msgid  "North"
 msgstr "བྱང་།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MID.String.Text
+#, fuzzy
 msgid  "Mid"
 msgstr "བར་མ།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SOUTH.String.Text
+#, fuzzy
 msgid  "South"
 msgstr "ལྷོོ།"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SUM.String.Text
+#, fuzzy
 msgid  "Total"
 msgstr "བསྡོམས།"
 
@@ -4301,7 +5847,7 @@ msgstr "%ཆེ་ཤོས།"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest %"
-msgstr " %ཆུང་ཤོས།"
+msgstr "%ཆུང་ཤོས།"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Contains"
@@ -4572,7 +6118,7 @@ msgstr "ཁྱབ་ཚད་ནང་ལུ་ཀེར་ཐིག་གི་
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_UNIQUE.CheckBox.Text
 #, fuzzy
 msgid  "~No duplication"
-msgstr "འཛུན་མ་བཟོ་ནི་མེད།"
+msgstr "འཛུན་མ་བཟོ་ནི་མེད།(~N)"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_COPY_RESULT.CheckBox.Text
 #, fuzzy
@@ -4597,7 +6143,7 @@ msgstr "དཔེ་གཟུགས།"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA_LABEL.FixedText.Text
 #, fuzzy
 msgid  "Data range:"
-msgstr "གནད་སྡུད་ཁྱབ་ཚད:"
+msgstr "གནད་སྡུད་ཁྱབ་ཚད།"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.ModelessDialog.Text
 #, fuzzy
@@ -4617,7 +6163,7 @@ msgstr "བསྐུམ།"
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_CASE.CheckBox.Text
 #, fuzzy
 msgid  "~Case sensitive"
-msgstr "ཡི་གུ་ཆེ་ཆུང་གི་ཉེན་ཁ།"
+msgstr "ཡིག་གུ་ཆེ་ཆུང་གི་ཉེན་ཁ།(~C)"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_REGEXP.CheckBox.Text
 #, fuzzy
@@ -4872,27 +6418,27 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད་ནང་ལུ་ གནད་སྡུད་ཡོད་མི།"
+msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "གནད་སྡུད་གཞི་རྟེན་ ས་སྒོ"
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོེལ་ཞིབ་ཁྱབ་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་དེ་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་ (ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.6.String.Text
 #, fuzzy
 msgid  "Search criteria"
-msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཡོད་མི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 #, fuzzy
@@ -4907,17 +6453,17 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་མི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ"
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་ (ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.6.String.Text
 #, fuzzy
@@ -4927,7 +6473,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་མི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.1.String.Text
 #, fuzzy
@@ -4942,17 +6488,17 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་མི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ།"
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.6.String.Text
 #, fuzzy
@@ -4962,7 +6508,7 @@ msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་མི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.1.String.Text
 #, fuzzy
@@ -4977,17 +6523,17 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ།"
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨན་ན་བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.6.String.Text
 #, fuzzy
@@ -4997,7 +6543,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་མི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.1.String.Text
 #, fuzzy
@@ -5012,17 +6558,17 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ།"
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.6.String.Text
 #, fuzzy
@@ -5032,7 +6578,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.1.String.Text
 #, fuzzy
@@ -5047,7 +6593,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ནང་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.4.String.Text
 #, fuzzy
@@ -5057,7 +6603,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨན་ན་བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.6.String.Text
 #, fuzzy
@@ -5067,7 +6613,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཡོད་པའི་ནང་ཐིག་ཁྱབ་ཚད་ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.1.String.Text
 #, fuzzy
@@ -5082,7 +6628,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.4.String.Text
 #, fuzzy
@@ -5092,7 +6638,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག་)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.6.String.Text
 #, fuzzy
@@ -5102,7 +6648,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.1.String.Text
 #, fuzzy
@@ -5117,7 +6663,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.4.String.Text
 #, fuzzy
@@ -5127,7 +6673,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.6.String.Text
 #, fuzzy
@@ -5137,7 +6683,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཡོད་པའི་ནང་ཐིག་ཁྱབ་ཚད་ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV_P.1.String.Text
 #, fuzzy
@@ -5162,7 +6708,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV_P.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག་)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱབ་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་གི་ བརྡ སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV_P.6.String.Text
 #, fuzzy
@@ -5172,7 +6718,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV_P.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད་ངེས་འཛིན་འབད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_SUM.1.String.Text
 #, fuzzy
@@ -5207,7 +6753,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_SUM.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_VAR.1.String.Text
 #, fuzzy
@@ -5337,12 +6883,12 @@ msgstr "ཚེས་གྲངས་གནས་གོང་དང་མཐུན
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
 msgid  "The internal number for the date."
-msgstr "ཚེས་གྲངས་ཀྱི་དོན་ལུ་ནང་འཁོད་ཀྱི་ཨང་གྲངས།"
+msgstr "ཚེས་གྲངས་ཀྱི་དོན་ལུ་ ནང་འཁོད་ཀྱི་ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.1.String.Text
 #, fuzzy
@@ -5352,12 +6898,12 @@ msgstr "ལོ་གཅི་ག་ནང་ལུ་ཉིནམ་༣༦༠-�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.2.String.Text
 #, fuzzy
 msgid  "Date_1"
-msgstr "ཚེསགརངས་ ༡ །"
+msgstr "ཚེས་གྲངས་ ༡ །"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 #, fuzzy
 msgid  "The start date for calculating the difference in days."
-msgstr "ཉིནམ་གྱི་ཁྱད་པར་རྩིས་སྟོན་ནིའི་དོན་ལུ་ འགོ་བཙུགས་ཀྱི་ཚེས་གྲངས།"
+msgstr "ཉིནམ་གྱི་ཁྱད་པར་རྩིས་སྟོན་ནིའི་དོོན་ལུ་ འགོ་བཙུགས་ཀྱི་ཚེས་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 #, fuzzy
@@ -5367,7 +6913,7 @@ msgstr "ཚེས་གྲངས་ ༢ །"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.5.String.Text
 #, fuzzy
 msgid  "The end date for calculating the difference in days."
-msgstr "ཉིནམ་གྱི་ཁྱད་པར་རྩིས་སྟོན་ནིའི་དོན་ལུ་ མཇུག་བསྡུའི་ཚེས་གྲངས།"
+msgstr "ཉིནམ་གྱི་ཁྱད་པར་རྩིས་སྟོན་ནིའི་དོན་ལུ་ ཚེས་གྲངས་མཇུག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 #, fuzzy
@@ -5387,7 +6933,7 @@ msgstr "ཆུ་ཚོད་གནས་གོང་གི་དོན་ལུ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.3.String.Text
 #, fuzzy
@@ -5402,7 +6948,7 @@ msgstr "ཆུ་ཚོད་གནས་གོང་གི་དོན་ལུ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.3.String.Text
 #, fuzzy
@@ -5417,12 +6963,12 @@ msgstr "ཚེས་གྲངས་གནས་གོང་གི་དོན་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 #, fuzzy
 msgid  "The internal number of the date."
-msgstr "ཚེས་གྲངས་ཀྱི་ ནང་འཁོད་ཀྱི་ཨང་གྲངས།"
+msgstr "ཚེས་གྲངས་ཀྱི་ནང་འཁོད་ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_ACT_TIME.1.String.Text
 #, fuzzy
@@ -5437,7 +6983,7 @@ msgstr "ཆུ་ཚོད་གནས་གོང་གི་དོན་ལུ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.3.String.Text
 #, fuzzy
@@ -5507,7 +7053,7 @@ msgstr "ཚེས་གྲངས་ཀྱི་དོན་ལུ་ བདུ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.3.String.Text
 #, fuzzy
@@ -5532,7 +7078,7 @@ msgstr "ཚེས་གྲངས་གནས་གོང་གི་ལོ་ད
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_YEAR.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_YEAR.3.String.Text
 #, fuzzy
@@ -5572,7 +7118,7 @@ msgstr "བཀོད་དེ་ཡོད་པའི་ཚེས་གྲངས
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.3.String.Text
 #, fuzzy
@@ -5612,7 +7158,7 @@ msgstr "ད་ལྟོའི་གནས་གོང་། མ་རྩ་བ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.2.String.Text
 #, fuzzy
 msgid  "Rate"
-msgstr "གོང་ཚད"
+msgstr "གོང་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.3.String.Text
 #, fuzzy
@@ -5622,7 +7168,7 @@ msgstr "བཀོད་དེ་ཡེད་པའི་ དུས་ཡུན�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.4.String.Text
 #, fuzzy
 msgid  "NPER"
-msgstr "ཨེན་པི་ཨི་ཨཱར།"
+msgstr "ཨེན་པ་ཨི་ཨཱར།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.5.String.Text
 #, fuzzy
@@ -5657,7 +7203,7 @@ msgstr "དབྱེ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "དབྱེ་བ་=༡་གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་ རྡ་སྟོནམ་ཨིན།= ༠་ མཇུག་ལུ།"
+msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་རྟགས་སྟོནམ་ཨིན།=༠་ མཇུག་ལུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 #, fuzzy
@@ -5672,12 +7218,12 @@ msgstr "གོང་ཚད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "དུས་ཡུན་རེ་ལུ་ དངུལ་བསྐྱེད་ཀྱི་གོང་ཚད།"
+msgstr "དུས་ཡུན་རེ་ལུ་དངུལ་བསྐྱེད་ཀྱི་གོང་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 #, fuzzy
 msgid  "NPER"
-msgstr "ཨེན་པི་ཨི་ཨཱར།"
+msgstr "ཨེན་པི་ཨི་ཨར།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 #, fuzzy
@@ -5692,7 +7238,7 @@ msgstr "པི་ཨེམ་ཊི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 #, fuzzy
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "དུས་རྒྱུན་གྱི་གླ་དངུལ། དུས་ཡུན་རེ་ལུ་སྤྲོད་ནི་ཨིན་མི་ཆད་མེད་ཀྱི་ལོ་ཕོགས།"
+msgstr "དུས་རྒྱུན་གྱི་གླ་དངུལ། དུས་ཡུན་རེ་རེ་བཞིན་སྤྲོད་ནི་ཨིན་མི་ ཆད་མེད་ཀྱི་ལོ་ཕོགས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 #, fuzzy
@@ -5702,7 +7248,7 @@ msgstr "པི་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "ད་ལྟོའི་གནས་གོང་། གླ་དངུལ་རྒྱུན་རིམ་གྱི་ད་ལྟོའི་གནས་གོང་།"
+msgstr "ད་ལྟོའི་གནས་གོང་། རྒྱུན་རིམ་གླ་དངུལ་གྱི་ད་ལྟོའི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 #, fuzzy
@@ -5712,7 +7258,7 @@ msgstr "དབྱེ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་རྟགས་སྟོནམ་ཨིན།=༠་ མཇུག་ལུ།"
+msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་སྟོནམ་ཨིན།=མཇུག་ལུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 #, fuzzy
@@ -5727,7 +7273,7 @@ msgstr "གོང་ཚད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "དུས་ཡུན་རེ་ལུ་དངུལ་བསྐྱེད་ཀྱི་གོང་ཚད།"
+msgstr "དུསཡུན་རེ་ལུ་ དངུལ་བསྐྱེད་ཀྱི་གོང་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 #, fuzzy
@@ -5737,7 +7283,7 @@ msgstr "པི་ཨེམ་ཊི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.5.String.Text
 #, fuzzy
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "དུས་རྒྱུན་གྱི་གླ་དངུལ། དུས་ཡུན་རེ་རེ་བཞིན་སྤྲོད་ནི་ཨིན་མི་ ཆད་མེད་ཀྱི་ལོ་ཕོགས།"
+msgstr "དུས་རྒྱུན་གྱི་གླ་དངུལ། དུས་ཡུན་རེ་ལུ་སྤྲོད་ནི་ཨིན་མི་ཆད་མེད་ཀྱི་ལོ་ཕོགས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.6.String.Text
 #, fuzzy
@@ -5747,7 +7293,7 @@ msgstr "པི་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.7.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "ད་ལྟོའི་གནས་གོང་། རྒྱུན་རིམ་གླ་དངུལ་གྱི་ད་ལྟོའི་གནས་གོང་།"
+msgstr "ད་ལྟོའི་གནསཤ་གོང་། གླ་དངུལ་རྒྱུན་རིམ་གྱི་ད་ལྟོའི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.8.String.Text
 #, fuzzy
@@ -5757,7 +7303,7 @@ msgstr "ཨེཕ་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 #, fuzzy
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "མ་འོངས་གནས་གོང་། མཇུག་མམ་གྱི་གླ་དངུལ་གྱི་ཤུལ་ལས་ འཐོབ་ནི་ཨིན་མི་གནས་གོང་(མཇུག་མམ་གྱི་གནས་གོང་།)"
+msgstr "མ་འོངས་གནས་གོང་། མཇུག་མམ་གླ་དངུལ་གྱི་ཤུལ་ལས་ འཐོབ་ནི་ཨིན་མི་གནས་གོང་(མཇུག་མམ་གྱི་གནས་གོང་།) "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 #, fuzzy
@@ -5767,7 +7313,7 @@ msgstr "དབྱེ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་སྟོནམ་ཨིན།=མཇུག་ལུ།"
+msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་སྟོནམ་ཨིན།=༠་ མཇུག་ལུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 #, fuzzy
@@ -5782,12 +7328,12 @@ msgstr "གོང་ཚད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "དུསཡུན་རེ་ལུ་ དངུལ་བསྐྱེད་ཀྱི་གོང་ཚད།"
+msgstr "དུས་ཡུན་རེ་ལུ་ དངུལ་བསྐྱེད་ཀྱི་གོང་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.4.String.Text
 #, fuzzy
 msgid  "NPER"
-msgstr "ཨེན་པ་ཨི་ཨཱར།"
+msgstr "ཨེན་པི་ཨི་ཨཱར།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.5.String.Text
 #, fuzzy
@@ -5802,7 +7348,7 @@ msgstr "པི་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.7.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "ད་ལྟོའི་གནསཤ་གོང་། གླ་དངུལ་རྒྱུན་རིམ་གྱི་ད་ལྟོའི་གནས་གོང་།"
+msgstr "ད་ལྟོའི་གནས་གོང་། གླ་དངུལ་རྒྱུན་རིམ་གྱི་ད་ལྟོའི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.8.String.Text
 #, fuzzy
@@ -5812,7 +7358,7 @@ msgstr "ཨེཕ་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.9.String.Text
 #, fuzzy
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "མ་འོངས་གནས་གོང་། མཇུག་མམ་གྱི་གླ་དངུལ་གྱི་ཤུལ་ལས་ འཐོབ་ནི་ཨིན་མི་གནས་གོང་(མཇུག་མམ་གྱི་གནས་གོང་།)"
+msgstr "མ་འོངས་གནས་གོང་། མཇུག་གི་གླ་དངུལ་གྱི་ཤུལ་ལས་འཐོབ་ནི་ཨིན་མི་གནས་གོང་(མཇུག་གི་གནས་གོང་།)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.10.String.Text
 #, fuzzy
@@ -5822,7 +7368,7 @@ msgstr "དབྱེ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་སྟོནམ་ཨིན།=༠་ མཇུག་ལུ།"
+msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་གི་བརྡ་སྟོནམ་ཨིན།=༠་ མཇུག་ལུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 #, fuzzy
@@ -5877,7 +7423,7 @@ msgstr "དབྱེ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་གི་བརྡ་སྟོནམ་ཨིན།=༠་ མཇུག་ལུ།"
+msgstr "བྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་སྟོནམ་ཨིན།=༠་མཇུག་ལུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.12.String.Text
 #, fuzzy
@@ -5952,7 +7498,7 @@ msgstr "དབྱེ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.13.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "བྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་སྟོནམ་ཨིན།=༠་མཇུག་ལུ།"
+msgstr "བྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་གི་བརྡ་སྟོནམ་ཨིན།=༠་མཇུག་ལུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.1.String.Text
 #, fuzzy
@@ -5997,7 +7543,7 @@ msgstr "པི་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.9.String.Text
 #, fuzzy
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "ད་ལྟོའི་གནས་གོང་། ད་ལྟོའིི་གནས་གོང་ ཡང་ན་ ལོ་ཕོགས་ཀྱི་དངུལ་བསྡོམས་དེ་གིས་ ད་ལྟོ་དེ་ཅིག་གནསཔ་ཨིན།"
+msgstr "ད་ལྟོའི་གནས་གོང་། ད་ལྟོའི་གནས་གོང་ ཡང་ན་ ལོ་ཕོགས་དངུལ་བསྡོམས་དེ་གིས་ ད་ལྟོ་དེ་ཅིག་གནསཔ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.10.String.Text
 #, fuzzy
@@ -6052,7 +7598,7 @@ msgstr "པི་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.7.String.Text
 #, fuzzy
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "ད་ལྟོའི་གནས་གོང་། ད་ལྟོའི་གནས་གོང་ ཡང་ན་ ལོ་ཕོགས་དངུལ་བསྡོམས་དེ་གིས་ ད་ལྟོ་དེ་ཅིག་གནསཔ་ཨིན།"
+msgstr "ད་ལྟོའི་གནས་གོང་། ད་ལྟོའི་གནས་གོང་ ཡང་ན་ ལོ་ཕོགས་དངུལ་བསྡོམས་དེ་གིས་ ད་ལྟོ་དེ་ཅིག་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.8.String.Text
 #, fuzzy
@@ -6157,12 +7703,12 @@ msgstr "གསལ་བཀོད་འབད་ཡོད་པའི་དུས
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.2.String.Text
 #, fuzzy
 msgid  "Cost"
-msgstr "རིན་གོང་།"
+msgstr "གོང་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.3.String.Text
 #, fuzzy
 msgid  "Acquisition costs. The initial cost of the asset."
-msgstr "ཉོ་བསྒྲུབས་རིན་གོང་། བདོག་གཏད་ཀྱི་འགོ་ཐོག་གནས་གོང་།"
+msgstr "ཉོ་བསྒྲུབས་རིན་གོང་། བདོག་གཏད་དེ་གི་འགོ་ཐོག་རིན་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.4.String.Text
 #, fuzzy
@@ -6182,7 +7728,7 @@ msgstr "ཚེ་ཡུན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "ཕན་ཐོགས་ཅན་གྱི་ཚེ། བདོག་གཏད་ཕན་ཐོག་ཅན་སྦེ་སྡོད་པའི་སྐབས་ཀྱི་ དུས་ཡུན་གྱི་གྱངས་ཁ།"
+msgstr "ཕན་ཐོགས་ཅན་གྱི་ཚེ་ཡུན། བདོག་གཏད་ཕན་ཐོག་ཅན་གྱི་ནང་ལུ་ དུས་ཡུན་གྱི་གྱང་ཁ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 #, fuzzy
@@ -6202,7 +7748,7 @@ msgstr "དུས་ཡུན་རེ་ལུ་ ལའི་ནར་གྱ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.2.String.Text
 #, fuzzy
 msgid  "Cost"
-msgstr "རིན་གོང་།"
+msgstr "གོང་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.3.String.Text
 #, fuzzy
@@ -6227,7 +7773,7 @@ msgstr "ཚེ་ཡུན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "ཕན་ཐོགས་ཅན་གྱི་ཚེ། བདོག་གཏད་ཕན་ཐོག་ཅན་སྦེ་སྡོད་པའི་སྐབས་ཀྱི་ དུས་ཡུན་གྱི་གྱངས་ཁ།"
+msgstr "ཕན་ཐོག་ཅན་གྱི་ཚེ་ཡུན། བདོག་གཏད་ཀྱི་ཕན་ཐོག་ཅན་གྱི་ཚེ་ཡུན་ནང་ལུ་ དུས་ཡུན་གྱི་གྱང་ཁ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.1.String.Text
 #, fuzzy
@@ -6627,7 +8173,7 @@ msgstr "ཨེཕ་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LAUFZ.7.String.Text
 #, fuzzy
 msgid  "The future value of the investment."
-msgstr "མ་རྩ་བཙུགས་ཡོད་པའི་མ་འོངས་པའི་གནས་གོང་།"
+msgstr "མ་རྩ་བཙུགས་ཡོད་པའིི་མ་འོངས་པའི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZGZ.1.String.Text
 #, fuzzy
@@ -6677,7 +8223,7 @@ msgstr "གནས་གོང་།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "བརྟག་ཞིབ་འབད་ནི་གི་ གནས་གོང་།"
+msgstr "བརྟག་ཞིབ་འབད་ནི་གི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.1.String.Text
 #, fuzzy
@@ -6692,7 +8238,7 @@ msgstr "གནས་གོང་།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "བརྟག་ཞིབ་འབད་ནི་གི་ གནས་གོང་།"
+msgstr "བརྟག་ཞིབ་འབད་ནི་གི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.1.String.Text
 #, fuzzy
@@ -6707,7 +8253,7 @@ msgstr "གནས་གོང་།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "བརྟག་ཞིབ་འབད་ནི་གི་གནས་གོང་།"
+msgstr "བརྟག་ཞིབ་འབད་ནི་གི་ གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.1.String.Text
 #, fuzzy
@@ -6722,7 +8268,7 @@ msgstr "གནས་གོང་།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "བརྟག་ཞིབ་འབད་ནི་གི་གནས་གོང་།"
+msgstr "བརྟག་ཞིབ་འབད་དགོ་པའི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.1.String.Text
 #, fuzzy
@@ -6737,7 +8283,7 @@ msgstr "གནས་གོང་།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "བརྟག་ཞིབ་འབད་ནི་གི་ གནས་གོང་།"
+msgstr "བརྟག་ཞིབ་འབད་དགོ་པའི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NV.1.String.Text
 #, fuzzy
@@ -7004,7 +8550,7 @@ msgstr "ཨང་གྲངས་ཅིག་གི་གནས་གོང་ཡ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ABS.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ABS.3.String.Text
 #, fuzzy
@@ -7018,7 +8564,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.2.String.Text
 #, fuzzy
 msgid  "Base"
-msgstr "གཞི་རྟེན།"
+msgstr "ཞགི་རྟེན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.3.String.Text
 msgid  "The base a of the power a^b."
@@ -7060,7 +8606,7 @@ msgstr "བསྒྲུབ་རྟགས་ཆ་མཉམ་གྱི་དང
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ཨང་།"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 #, fuzzy
@@ -7075,7 +8621,7 @@ msgstr "བསྒྲུབ་རྟགས་ཀྱི་གྲུ་བཞི་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་གྲངས་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 #, fuzzy
@@ -7120,7 +8666,7 @@ msgstr "ཁྱད་ཚད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.5.String.Text
 #, fuzzy
 msgid  "The cell range in which the search criteria are given."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་བཀོད་དེ་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་བཀོད་དེ་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.6.String.Text
 #, fuzzy
@@ -7271,7 +8817,7 @@ msgstr "ཨང་གྲངས་གཅིག་གི་རྩ་གྲངས་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 #, fuzzy
@@ -7321,17 +8867,17 @@ msgstr "ཡང་བསྐྱར་མེད་པའི་རྒྱུ་་ར
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.2.String.Text
 #, fuzzy
 msgid  "number_1"
-msgstr "ཨང་གྲངས་ ༡་།(_1)"
+msgstr "ཨང་གྲངས་༡།(_1)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.3.String.Text
 #, fuzzy
 msgid  "The total number of elements."
-msgstr "རྒྱུ་རྫས་ཀྱི་གྱངས་ཁ་བསྡོམས།"
+msgstr "རྒྱུ་་རྫས་ཀྱི་བསྡོམས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.4.String.Text
 #, fuzzy
 msgid  "number_2"
-msgstr "ཨང་གྲངས་ ༢་།(_2)"
+msgstr "ཨང་གྲངས་ ༢།(_2)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.5.String.Text
 #, fuzzy
@@ -7351,7 +8897,7 @@ msgstr "ཨང་གྲངས་༡།(_1)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.3.String.Text
 #, fuzzy
 msgid  "The total number of elements."
-msgstr "རྒྱུ་རྫས་ཀྱི་གྱངས་ཁ་བསྡོམས།"
+msgstr "རྒྱུ་རྫས་ཀྱི་བསྡོམས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.4.String.Text
 #, fuzzy
@@ -7371,7 +8917,7 @@ msgstr "ཨང་ཡིག་ཅི་ག་གི་ཨར་ཀོ་ས་ཡ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS.3.String.Text
 #, fuzzy
@@ -7386,7 +8932,7 @@ msgstr "ཨང་ཡིག་ཨརཀ་ས་ཡིན་དེ་ སླར�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN.3.String.Text
 #, fuzzy
@@ -7401,7 +8947,7 @@ msgstr "ཨང་ཡིག་ལུགས་ལྡོག་སྦེ་ཡོད
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS_HYP.3.String.Text
 #, fuzzy
@@ -7416,7 +8962,7 @@ msgstr "ཨང་ཡིག་གི་ལུགས་ལྡོག་རབ་བ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN_HYP.3.String.Text
 #, fuzzy
@@ -7431,7 +8977,7 @@ msgstr "ཨང་ཡིག་གི་ལུགས་ལྡོག་སྦེ་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT.3.String.Text
 #, fuzzy
@@ -7446,7 +8992,7 @@ msgstr "ཨང་ཡིག་གི་ ཨརཀ་ཟུར་རེག་ལ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN.3.String.Text
 #, fuzzy
@@ -7461,7 +9007,7 @@ msgstr "ཨང་གྲངས་ཀྱི་རབ་ ལུགས་ལྡོ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT_HYP.3.String.Text
 #, fuzzy
@@ -7476,7 +9022,7 @@ msgstr "ཨང་གྲངས་ཀྱི་ལུགས་ལྡོག་སྦ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN_HYP.3.String.Text
 #, fuzzy
@@ -7491,7 +9037,7 @@ msgstr "ཨང་ཡིག་གི་ཀོ་སིན་ སླར་ལོ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS.3.String.Text
 #, fuzzy
@@ -7506,7 +9052,7 @@ msgstr "ཨང་ཡིག་གི་སིན་ སླར་ལོག་ག�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 #, fuzzy
@@ -7521,7 +9067,7 @@ msgstr "ཨང་ཡིག་གི་ཟུར་རེག་ལྡོག་ཟ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT.3.String.Text
 #, fuzzy
@@ -7536,7 +9082,7 @@ msgstr "ཨང་ཡིག་གི་ཊན་ཇནཊི་དེ་ སླ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 #, fuzzy
@@ -7551,7 +9097,7 @@ msgstr "ཨང་ཡིག་ཅིག་གི་རབ་བཏགས་ཅན
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS_HYP.3.String.Text
 #, fuzzy
@@ -7566,7 +9112,7 @@ msgstr "ཨང་ཡིག་གི་རབ་བཏགས་ཅན་གྱི
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 #, fuzzy
@@ -7581,7 +9127,7 @@ msgstr "ཨང་ཡིག་གི་རབ་བཏགས་ཅན་གྱི
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT_HYP.3.String.Text
 #, fuzzy
@@ -7596,7 +9142,7 @@ msgstr "ཨང་ཡིག་གི་རབ་བཏགས་ཅན་གྱི
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 #, fuzzy
@@ -7684,7 +9230,7 @@ msgstr "ཁུག་ཟུར་ཚུ་ལུ་ རེ་ཌི་ཡཱན�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DEG.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DEG.3.String.Text
 #, fuzzy
@@ -7699,7 +9245,7 @@ msgstr "ཁུག་ཟུར་ཚུ་རེ་ཌི་ཡཱནསི་ལ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RAD.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RAD.3.String.Text
 #, fuzzy
@@ -7714,7 +9260,7 @@ msgstr "གཞི་རྩ་ཨི་གི་དོན་ལུ་ བསྒ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EXP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EXP.3.String.Text
 #, fuzzy
@@ -7729,12 +9275,12 @@ msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་གང་ར
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.3.String.Text
 #, fuzzy
 msgid  "A value greater than 0 for which the logarithm is to be calculated."
-msgstr "མཉམ་གྲངས་དེ་རྩིས་སྟོན་དགོ་པའི་དོན་ལུ་ ༠་ལས་སྦོམ་པའི་གནས་གོང་ཅིག"
+msgstr "མཉམ་གྲངས་རྩིས་སྟོན་དགོ་པའི་དོན་ལུ་ ༠་ལས་སྦོམ་པའི་གནས་གོང་ཅིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.4.String.Text
 #, fuzzy
@@ -7753,7 +9299,7 @@ msgstr "ཨང་ཡིག་གི་རང་བཞིན་གྱི་མཉ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LN.3.String.Text
 #, fuzzy
@@ -7768,7 +9314,7 @@ msgstr "ཨང་ཡིག་ཅིག་གི་ གཞི་རྟེན་-�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG10.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG10.3.String.Text
 #, fuzzy
@@ -7783,7 +9329,7 @@ msgstr "ཨང་ཡིག་ཅི་ག་གི་ཆ་རྐྱེན་ར
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FACT.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FACT.3.String.Text
 #, fuzzy
@@ -7867,7 +9413,7 @@ msgstr "ཨང་ཡིག"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded down."
-msgstr "མར་སྐོར་ཐེངས་འབད་དགོ་ནི་ཨིན་མི་ཨང་ཡིག"
+msgstr "མར་སྐོར་ཐེངས་འབད་དགོ་པའི་ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.1.String.Text
 #, fuzzy
@@ -7877,7 +9423,7 @@ msgstr "ཨང་ཡིག་བཅུ་ཚག་གི་ས་གནས་ད
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.3.String.Text
 #, fuzzy
@@ -7902,7 +9448,7 @@ msgstr "སྔ་གོང་ངེས་འཛིན་འབད་ཡོད་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.3.String.Text
 #, fuzzy
@@ -7917,7 +9463,7 @@ msgstr "གྱངས་ཁ་རྐྱབས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 #, fuzzy
 msgid  "The number of places to which a number is to be rounded."
-msgstr "ཨང་ཡིག་སྐོར་ཐེངས་འབད་དགོ་ནི་ཨིན་མི་ས་གནས་ཀྱི་གྱངས་ཁ།"
+msgstr "ཨང་གྲངས་སྐོར་ཐེངས་འབད་དགོ་པའི་ས་གནས་ཀྱི་གྱངས་ཁ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 #, fuzzy
@@ -7927,12 +9473,12 @@ msgstr "འཁྲུལ་མེད་སྔ་གོང་ངེས་འཛི
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "ཡར་སྐོར་ཐེངས་འབད་ནི་གི་ཨང་ཡིག"
+msgstr "ཡར་སྐོར་ཐེངས་འབད་དགོ་པའི་ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 #, fuzzy
@@ -7952,12 +9498,12 @@ msgstr "སྔ་གོང་ངེསས་འཛིན་འབད་ཡོད
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded down."
-msgstr "མར་སྐོར་ཐེངས་འབད་དགོ་པའི་ཨང་ཡིག"
+msgstr "མར་སྐོར་ཐེངས་འབད་ནི་ཨིན་མིའི་ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.4.String.Text
 #, fuzzy
@@ -7982,7 +9528,7 @@ msgstr "ཨང་གྲངས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EVEN.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "ཡར་སྐོར་ཐེངས་འབད་དགོ་པའི་ཨང་ཡིག"
+msgstr "ཡར་སྐོར་ཐེངས་འབད་ནི་ཨིན་མིའི་ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.1.String.Text
 #, fuzzy
@@ -8017,7 +9563,7 @@ msgstr "ཡར་སྐོར་ཐེངས་འབད་ནི་ཨིན་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.4.String.Text
 #, fuzzy
 msgid  "Significance"
-msgstr "རྩ་ཧིང་།"
+msgstr "རྩ་ཆེ་ཧིང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.5.String.Text
 #, fuzzy
@@ -8207,17 +9753,17 @@ msgstr "ཨེ་རེ་གཉིས་ཀྱི་ གྲུ་བཞིའ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.2.String.Text
 #, fuzzy
 msgid  "array_x"
-msgstr "ཨེ་རེ་ ཨེགསི།(_x)"
+msgstr "ཨེ་རེ་ཨེགསི།(_x)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.3.String.Text
 #, fuzzy
 msgid  "First array where the square of the arguments are totalled."
-msgstr "སྒྲུབ་རྟགས་ཚུ་གི་གྲུ་བཞི་བསྡོམས་རྩིས་སྟོན་སྲོལ་ཡོད་པའི་ ཨེ་རེ་དང་པ།"
+msgstr "བསྒྲུབ་རྟགས་ཚུ་གི་གྲུ་བཞི་བསྡོམས་རྩིས་སྟོན་སྲོལ་ཡོད་པའི་ ཨེ་རེ་དང་པ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.4.String.Text
 #, fuzzy
 msgid  "array_y"
-msgstr "ཨེ་རེ་ ཝའི། (_y)"
+msgstr "ཨེ་རེ་ཝའི།(_y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.5.String.Text
 #, fuzzy
@@ -8282,7 +9828,7 @@ msgstr "འབྱུང་ཐེངས་བགོ་བཀྲམ་ཅིག་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.2.String.Text
 #, fuzzy
 msgid  "data"
-msgstr "གནད་སྡུད།"
+msgstr "གནད་སྡུད་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.3.String.Text
 #, fuzzy
@@ -8307,32 +9853,32 @@ msgstr "ཐིག་གི་རི་གེ་རེ་ཤཱན་གྱི་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "གནད་སྡུད་ཝའི།(_Y)"
+msgstr "གནད་སྡུད་ ཝའི།(_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "གནད་སྡུད་ཝའི་གི་ཨེ་རེ།"
+msgstr "ཝའི་གནད་སྡུད་ཀྱི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "གནད་སྡུད་ཨེསི།(_X)"
+msgstr "གནད་སྡུད་ཨེགསི།(_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "གནད་སྡུད་ཨེགསི་གི་ཨེ་རེ།"
+msgstr "ཨེགསི་གནད་སྡུད་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 #, fuzzy
 msgid  "Linear_type"
-msgstr "ཐིག་གི་དབྱེ་བ།"
+msgstr "ཐིག་གི་དབྱེ་བ།(_t)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.7.String.Text
 #, fuzzy
 msgid  "If type = 0 the linears will be calculated through the zero point, or else moved linears."
-msgstr "དབྱེ་བ་=༠་ཨིན་པ་ཅིན་ ཐིག་དེ་ཚུ་ ཡིག་ཚད་ཀླད་ཀོར་བརྒྱུད་དེ་ རྩིས་སྟོན་ནི་ཨིནམ་ད་ ཡང་ན་ གཞན་ཁ་ལུ་སྤོ་བཤུད་འབད་ཡོད་པའི་ཐིག་ཚུ།"
+msgstr "དབྱེ་བ་=༠་ཨིན་པ་ཅིན་ ཡིག་ཚད་དང་ ཡང་ན་ གཞན་མི་ཅིག་ལུ་སྤོ་བཤུད་འབད་ཡོད་པའི་ཐིག་ཚུ ཀླད་ཀོར་བརྒྱུད་དེ་རྩིས་སྟོན་འོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.8.String.Text
 #, fuzzy
@@ -8342,7 +9888,7 @@ msgstr "སི་ཊེཊིསི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.9.String.Text
 #, fuzzy
 msgid  "If parameter = 0 then only the regression coefficient will be calculated, otherwise other values as well."
-msgstr "ཚད་བཟུང་=༠་ཨིན་པ་ཅིན་རྐྱངམ་ཅིག་ རི་གེ་རེ་ཤཱན་གྲངས་རྟགས་དེ་རྩིས་སྟོན་ནི་ཨིནམ་དང་ དེ་མེན་པ་ཅིན་ གནས་གོེང་གཞན་མ་ཚུ་ཡང་རྩིས་སྟོན་འབད་འོང་།"
+msgstr "ཚད་བཟུང་=༠་ཨིན་པ་ཅིན་རྐྱངམ་ཅིག་ རི་གེ་རེ་ཤཱན་གྲངས་རྟགས་དེ་རྩིས་སྟོན་འོང་ དེ་མེན་པ་ཅིན་ གནས་གོང་གཞན་མི་ཡང་རྩིས་སྟོན་འབད་འོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.1.String.Text
 #, fuzzy
@@ -8352,22 +9898,22 @@ msgstr "བསྒྱུར་གྲངས་རི་གེ་རེ་ཤཱན
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "གནད་སྡུད་ཝའི།(_Y)"
+msgstr "གནད་སྡུད་ ཝའི།(_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "གནད་སྡུད་ཝའི་གི་ཨེ་རེ།"
+msgstr "ཝའི་གནད་སྡུད་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "གནད་སྡུད་ཨེགསི།(_X)"
+msgstr "གནད་སྡུད་ ཨེགསི།(_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "གནད་སྡུད་ཨེགསི་གི་ཨེ་རེ།"
+msgstr "ཨེགསི་གནད་སྡུད་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.6.String.Text
 #, fuzzy
@@ -8377,7 +9923,7 @@ msgstr "ལས་འགན་གྱི་དབྱེ་བ།(_t)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.7.String.Text
 #, fuzzy
 msgid  "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x."
-msgstr "དབྱེ་བ་=༠་ཨིན་པ་ཅིན་ ལས་འགན་དེ་ y=m^x,ཡང་ན་ ལས་འགན་y=b*m^x.གི་རྣམ་པ་སྦེ་རྩིསས་སྟོནམ་ཨིན།"
+msgstr "དབྱེ་བ་=༠་ཨིན་པ་ཅིན་ ལས་འགན་ཚུ་  y=m^x,ཡང་ན་ ལས་འགན་y=b*m^x.གི་རྣམ་པ་ལུ་ རྩིས་སྟོན་འོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.8.String.Text
 #, fuzzy
@@ -8397,22 +9943,22 @@ msgstr "རི་གེ་རེ་ཤཱན་གི་ཐིག་བརྒྱ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "གནད་སྡུད་ཝའི།(_Y)"
+msgstr "གནད་སྡུད་ ཝའི།(_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "ཝའི་གནད་སྡུད་ཀྱི་ཨེ་རེ།"
+msgstr "ཝའི་གནད་སྡུད་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "གནད་སྡུད་ཨེགསི།(_X)"
+msgstr "གནད་སྡུད་ ཨེགསི།(_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 #, fuzzy
 msgid  "The X data array as the basis for the regression."
-msgstr "ཨེགསི་གནད་སྡུད་ཨེ་རེ་དེ་ རི་གེ་རེ་ཤཱན་དེ་གི་དོན་ལུ་ གཞི་རྩ་བཟུམ་སྦེ་ཨིན།"
+msgstr "གནད་སྡུད་ཨེགསི་དེ་ རི་གེ་རེ་ཤཱན་གཱི་དོན་ལུ་ གཞི་རྩ་བཟུམ་སྦེ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.6.String.Text
 #, fuzzy
@@ -8422,7 +9968,7 @@ msgstr "གནད་སྡུད་གསརཔ་ ཨེགསི།(_X)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.7.String.Text
 #, fuzzy
 msgid  "The array of X data for recalculating the values."
-msgstr "གནས་གོང་ཚུ་རྩིས་སྟོན་ནིའི་དོན་ལུ་ གནད་སྡུད་ཨེགསི་གི་ཨེ་རེ།"
+msgstr "གནས་གོང་རྩིས་སྟོན་ནིའི་དོན་ལུ་ གནད་སྡུད་ཨེགསི་གི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.8.String.Text
 #, fuzzy
@@ -8442,17 +9988,17 @@ msgstr "བསྒྱུར་གྲངས་རི་གེ་རེ་ཤཱེ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "གནད་སྡུད་ཝའི།(_Y)"
+msgstr "གནད་སྡུད་ ཝའི།(_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "གནད་སྡུད་ཝའི་གི་ཨེ་རེ།"
+msgstr "ཝའི་གནད་སྡུད་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "གནད་སྡུད་ཨེགསི།(_X)"
+msgstr "གནད་སྡུད་ ཨེགསི།(_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.5.String.Text
 #, fuzzy
@@ -8517,7 +10063,7 @@ msgstr "བསྒྲུབ་རྟགས་ཀྱི་ཐོ་ཡིག་ན
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ཨང་གྲངས་།"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.3.String.Text
 #, fuzzy
@@ -8547,7 +10093,7 @@ msgstr "བསྒྲུབ་རྟགས་གི་ཐོ་ཡིག་ནང
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.3.String.Text
 #, fuzzy
@@ -8582,7 +10128,7 @@ msgstr "ཨང་གྲངས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ མི་བརློབས་ཅིག་གི་ དཔེ་ཚད་ཅིག་འདྲ་རིས་བཟོ་མི་ ༡་ལས་༣༠་ཚུན་གྱི་ ཨང་གྲངས་གྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
+msgstr "ཨང་ཡིང་༡་ ཨང་ཡིག་༢་ ཚུ་ མི་བརློབས་ཅི་ག་གི་དཔེ་ཚད་ཅིག་འདྲ་རིས་བཟོ་མི་ ༡་ལས་༣༠་ཚུན་གྱི་ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 #, fuzzy
@@ -8642,7 +10188,7 @@ msgstr "ཨང་གྲངས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "ཨང་ཡིང་༡་ ཨང་ཡིག་༢་ ཚུ་ མི་བརློབས་ཅི་ག་གི་དཔེ་ཚད་ཅིག་འདྲ་རིས་བཟོ་མི་ ༡་ལས་༣༠་ཚུན་གྱི་ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
+msgstr "ཨག་ཡིག་༡་ ཨང་ཡིག་༢་ ཚུ་ མི་བརློབས་ཀྱི་དཔེ་ཚད་ཅིག་འདྲ་རིས་བཟོ་མི་ ༡་ལས་༣༠་ཚུན་གྱི་ ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_A.1.String.Text
 #, fuzzy
@@ -8732,7 +10278,7 @@ msgstr "ཨང་ཡིག"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_DEV_SQ.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "ཨང་ཡིག་༡་ ཨང༌ཡིག་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་༡་ལས་༣༠་ཚུན་གྱི་ ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
+msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་ ༡་ལས་༣༠་ཚུན་གྱི་ཨང་གརངས་ཀྱི་ བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVE_DEV.1.String.Text
 #, fuzzy
@@ -8792,7 +10338,7 @@ msgstr "ཨང་གྲངས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GEO_MEAN.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་ ༡་ལས་༣༠་ཚུན་གྱི་ཨང་གརངས་ཀྱི་ བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
+msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་་ ༡་ལས་༣༠་ཚུན་གྱི་ ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.1.String.Text
 #, fuzzy
@@ -8807,7 +10353,7 @@ msgstr "ཨང་གྲངས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་་ ༡་ལས་༣༠་ཚུན་གྱི་ ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
+msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་ ཨང་གྲངས་ཀྱི་ བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MODAL_VALUE.1.String.Text
 #, fuzzy
@@ -8822,7 +10368,7 @@ msgstr "ཨང་གྲངས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MODAL_VALUE.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་ ཨང་གྲངས་ཀྱི་ བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
+msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་  ༡་ལས་༣༠་ཚུན་གྱི་ ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MEDIAN.1.String.Text
 #, fuzzy
@@ -8852,7 +10398,7 @@ msgstr "གནད་སྡུད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "དཔེ་ཚད་ནང་གི་ གནད་སྡུད་དེ་གི་ཨེ་རེ།"
+msgstr "དཔེ་ཚད་ནང་གི་ གནད་སྡུད་དེ་གི་ ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 #, fuzzy
@@ -8877,7 +10423,7 @@ msgstr "གནད་སྡུད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "དཔེ་ཚད་ནང་གི་ གནད་སྡུད་དེ་གི་ ཨེ་རེ།"
+msgstr "དཔེ་ཚད་ནང་གི་ གནད་སྡུད་ཀྱི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.4.String.Text
 #, fuzzy
@@ -8902,7 +10448,7 @@ msgstr "གནད་སྡུད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "དཔེ་ཚད་ནང་གི་ གནད་སྡུད་ཀྱི་ཨེ་རེ།"
+msgstr "གནད་སྡུད་ནང་གི་ གནད་སྡུད་ཀྱི་ཨེ་རེ། "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.4.String.Text
 #, fuzzy
@@ -8912,7 +10458,7 @@ msgstr "གོ་གནས་ཀྱི་རིམ་པ་ སི།(_c)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.5.String.Text
 #, fuzzy
 msgid  "The ranking of the value."
-msgstr "གནས་གོང་གི་གོ་གནས་རིམ་པ།"
+msgstr "གནས་གོང་གོ་གནས་ཀྱི་རིམ་པ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.1.String.Text
 #, fuzzy
@@ -8927,7 +10473,7 @@ msgstr "གནད་སྡུད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "གནད་སྡུད་ནང་གི་ གནད་སྡུད་ཀྱི་ཨེ་རེ། "
+msgstr "དཔེ་ཚད་ནང་གི་གནད་སྡུད་ཀྱི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.4.String.Text
 #, fuzzy
@@ -9077,7 +10623,7 @@ msgstr "དངོས་པོ་ནང་ན་བཙུགས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.2.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "རྗེས་བཤུལ།"
+msgstr "བརྗེས་བཤུལ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.3.String.Text
 #, fuzzy
@@ -9122,12 +10668,12 @@ msgstr "སྤྱིར་གཏང་ཚད་ལྡན་བགོ་བཀྲ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 #, fuzzy
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "སྤྱིར་གཏང་གི་ཚད་ལྡན་བགོ་བཀྲམ་རྩིས་སྟོན་ནི་ཨིན་མི་གི་དོན་ལུ་ གནས་གོང་།"
+msgstr "སྤྱིར་གཏང་བགོ་བཀྲམ་ཚད་ལྡན་དེ་ རྩིས་སྟོན་ནི་ཨིན་མིའི་དོན་ལུ་ གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 #, fuzzy
@@ -9197,7 +10743,7 @@ msgstr "རྗེས་བཤུལ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 #, fuzzy
 msgid  "The total number of trials."
-msgstr "རྗེས་བཤུལ་གྱི་བསྡོམས།"
+msgstr "བརྗེས་བཤུལ་གྱི་བསྡོམས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 #, fuzzy
@@ -9207,7 +10753,7 @@ msgstr "ཨེསི་པི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.7.String.Text
 #, fuzzy
 msgid  "The success probability of a trial."
-msgstr "རྗེས་བཤུལ་ཅིག་གི་ མཐར་འཁྱོལ་འབྱུང་ངེས།"
+msgstr "རྗེས་བཤུལ་ཅིག་གི་ མཐར་འགྱོལ་འབྱུང་ངེས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.8.String.Text
 #, fuzzy
@@ -9252,7 +10798,7 @@ msgstr "ཨེསི་པི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.7.String.Text
 #, fuzzy
 msgid  "The success probability of a trial."
-msgstr "རྗེས་བཤུལ་ཅིག་གི་ མཐར་འགྱོལ་འབྱུང་ངེས།"
+msgstr "རྗེས་བཤུལ་ཅིག་གི་མཐར་འགྱོལ་འབྱུང་ངེས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_KRIT_BINOM.1.String.Text
 #, fuzzy
@@ -9345,7 +10891,7 @@ msgstr "འབྲིང་རིམ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.5.String.Text
 #, fuzzy
 msgid  "The mean value. The mean value of the normal distribution."
-msgstr "འབྲིང་རིམ་གནས་གོང་། སྤྱིར་གཏང་བགོ་བཀྲམ་དེ་གི་འབྲིང་རིམ་གནས་གོང་།"
+msgstr "འབྲིང་རིམ་གནས་གོང་།སྤྱིར་གཏང་བགོ་བཀྲམ་དེ་གི་ འབྲིང་རིམ་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 #, fuzzy
@@ -9355,7 +10901,7 @@ msgstr "ཨེསི་ཊི་ཌི་ཨི་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.7.String.Text
 #, fuzzy
 msgid  "Standard deviation. The standard deviation of the normal distribution."
-msgstr "ཚད་ལྡན་གྱི་ཁ་བསྒྱུར་བ། སྤྱིར་གཏང་བགོ་བཀྲམ་དེ་གི་ཚད་ལྡན་ཁ་བསྒྱུར་བ།"
+msgstr "ཚད་ལྡན་ཁ་བསྒྱུར་བ། སྤྱིར་གཏང་བགོ་བཀྲམ་གྱི་ཚད་ལྡན་ཁ་བསྒྱུར་བ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.8.String.Text
 #, fuzzy
@@ -9540,7 +11086,7 @@ msgstr "སི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.7.String.Text
 #, fuzzy
 msgid  "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr "འདུ་གསོག་འབད་ཡོདཔ། སི་=༠་གིས་འགྲོ་ཡུལ་གྱི་ལས་འགན་དེ་རྩིས་སྟོནམ་ཨིན་ སི་=༡་གིས་ བགོ་བཀྲམ་དེ་རྩིས་སྟོནམ་ཨིན།"
+msgstr "འདུ་གསོག་འབད་ཡོདཔ། སི་=༠་གིས་འགྲོ་ཡུལ་ལས་འགན་དེ་རྩིས་སྟོནམ་ཨིན་ སི་=༡་གིས་ བགོ་བཀྲམ་དེ་རྩིས་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.1.String.Text
 msgid  "Returns the value of the probability density function or the cumulative distribution function for the Gamma distribution."
@@ -9671,7 +11217,7 @@ msgstr "ཨཱལ་ཕ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.5.String.Text
 #, fuzzy
 msgid  "The Alpha parameter of the Beta distribution."
-msgstr "སྔོན་དཔྱད་བགོ་བཀྲམ་དེ་གི་ཨཱལ་ཕ་ཚད་བཟུང་།"
+msgstr "སྔོན་དཔྱད་བགོ་བཀྲམ་དེ་གི་ ཨཱལ་ཕ་ཚད་བཟུང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.6.String.Text
 #, fuzzy
@@ -9681,7 +11227,7 @@ msgstr "སྔོན་དཔྱད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.7.String.Text
 #, fuzzy
 msgid  "The Beta parameter of the Beta distribution."
-msgstr "སྔོན་དཔྱད་བགོ་བཀྲམ་དེ་གི་སྔོན་དཔྱད་ཚད་བཟུང་།"
+msgstr "སྔོན་དཔྱད་བགོ་བཀྲམ་དེ་གི་ སྔོན་དཔྱད་ཚད་བཟུང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.8.String.Text
 #, fuzzy
@@ -9874,12 +11420,12 @@ msgstr "ཊི་བགོ་བཀྲམ་དེ་ རྩིས་སྟོ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.4.String.Text
 #, fuzzy
 msgid  "degrees_freedom"
-msgstr "དབྱེ་རིམ་ རང་དབང་།(_f)"
+msgstr "དབྱེ་རིམ་རང་དབང་།(_f)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the T distribution."
-msgstr "ཊི་བགོ་བཀྲམ་དེ་གི་ རང་དབང་གི་དབྱེ་རིམ།"
+msgstr "ཊི་ བགོ་བཀྲམ་དེ་གི་ རང་དབང་གི་དབྱེ་རིམ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.6.String.Text
 #, fuzzy
@@ -9934,22 +11480,22 @@ msgstr "ཨེཕ་བགོ་བཀྲམ་དེ་རྩིས་སྟོ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.4.String.Text
 #, fuzzy
 msgid  "degrees_freedom_1"
-msgstr "དབྱེ་རིམ་ དབང་༡།(_f_1)"
+msgstr "དབྱེ་རིམ་ རང་དབང་།(_f_1)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom in the numerator of the F distribution."
-msgstr "ཨེཕ་བགོ་བཀྲམ་དེ་གི་ དཔྱ་གྲངས་དེ་ནང་ རང་དབང་གི་དབྱེ་རིམ།"
+msgstr "ཨེཕ་བགོ་བཀྲམ་དེ་གི་དཔྱ་གྲངས་ནང་གི་ རང་དབང་དབྱེ་རིམ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.6.String.Text
 #, fuzzy
 msgid  "degrees_freedom_2"
-msgstr "དབྱེ་རིམ་ རང་དབང་༢།(_f_2)"
+msgstr "དབྱེ་རིམ་ རང་དབང་༢།( _f_2)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.7.String.Text
 #, fuzzy
 msgid  "The degrees of freedom in the denominator of the F distribution."
-msgstr "ཨེཕ་བགོ་བཀྲམ་དེ་གི་གཞི་གྲངས་དེ་ནང་གི་ རང་དབང་དབྱེ་རིམ་ཚུ།"
+msgstr "ཨེཕ་བགོ་བཀྲམ་གྱི་གཞི་གྲངས་དེ་ནང་གི་རང་དབང་དབྱེ་རིམ། "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_INV.1.String.Text
 #, fuzzy
@@ -10008,7 +11554,7 @@ msgstr "དབྱེ་རིམ་རང་དབང་།(_f)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "ཆི་གྲུ་བཞི་བགོ་བཀྲམ་གྱི་རང་དབང་དབྱེ་རིམ་ཚུ།"
+msgstr "ཆི་གྲུ་བཞི་བགོ་བཀྲམ་དེ་གི་རང་དབང་གི་དབྱེ་རིམ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 msgid  "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution."
@@ -10145,7 +11691,7 @@ msgstr "༢་གྱངས་ཁ་རྐྱབས།(_2)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VARIATIONEN.5.String.Text
 #, fuzzy
 msgid  "The selection number taken from the elements."
-msgstr "རྒྱུ་རྫས་ནང་ལས་བཏོན་མིའི་་སེལ་འཐུའི་གྱངས་ཁ།"
+msgstr "རྒྱུ་རྫས་ནང་བཏོན་མིའི་སེལ་འཐུའིི་གྱངས་ཁ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VARIATIONEN_2.1.String.Text
 #, fuzzy
@@ -10275,7 +11821,7 @@ msgstr "གནད་སྡུད་༡།(_1)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "སྒྲ་འཛིན་དང་པམ་གྱི་ཨེ་རེ།"
+msgstr "སྒྲ་འཛིན་དང་པའི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 #, fuzzy
@@ -10285,7 +11831,7 @@ msgstr "གནད་སྡུད་༢།(_2)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "སྒྲ་འཛིན་གཉིས་པམ་གྱི་ཨེ་རེ།"
+msgstr "སྒྲ་འཛིན་གཉིས་པའི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 #, fuzzy
@@ -10300,7 +11846,7 @@ msgstr "གནད་སྡུད་༡།(_1)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "སྒྲ་འཛིན་དང་པམ་གྱི་ཨེ་རེ།"
+msgstr "སྒྲ་འཛིན་དང་པའི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.4.String.Text
 #, fuzzy
@@ -10340,7 +11886,7 @@ msgstr "པི་ཡར་སཱོན་ ཐོན་བསྐྱེད་ཡ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "གནད་སྡུད་ ཝའི།(_Y)"
+msgstr "གནད་སྡུད་ ཝའི། (_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.3.String.Text
 #, fuzzy
@@ -10350,7 +11896,7 @@ msgstr "ཝའི་གནད་སྡུད་ཨེ་རེ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "གནད་སྡུད་ཨེགསི།(_X)"
+msgstr "གནད་སྡུད་ ཨེགསི།(_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.5.String.Text
 #, fuzzy
@@ -10550,7 +12096,7 @@ msgstr "ནང་ཐིག་ཅིག་ལུ་གཞི་བསྟུན་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.2.String.Text
 #, fuzzy
 msgid  "row"
-msgstr "གྲལ་ཐིག་"
+msgstr "གྲལ་ཐིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.3.String.Text
 #, fuzzy
@@ -10560,7 +12106,7 @@ msgstr "ནང་ཐིག་དེ་གི་གྲལ་དིག་གི་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.4.String.Text
 #, fuzzy
 msgid  "column"
-msgstr "ཀེར་ཐིག་"
+msgstr "ཀེར་ཐིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.5.String.Text
 #, fuzzy
@@ -10648,7 +12194,7 @@ msgstr "གཞི་བསྟུན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 #, fuzzy
 msgid  "The reference to a cell or a range."
-msgstr "ནང་ཐིག་ ཡང་ན་ ཁྱབ་ཚད་ཅིག་ལུ་ གཞི་བསྟུན།"
+msgstr "ནང་ཐིག་ཡང་ན་ ཁྱབ་ཚད་ལུ་ གཞི་བསྟུན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 #, fuzzy
@@ -10663,7 +12209,7 @@ msgstr "གཞི་བསྟུན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.3.String.Text
 #, fuzzy
 msgid  "The reference to a cell or a range."
-msgstr "ནང་ཐིག་ཡང་ན་ ཁྱབ་ཚད་ལུ་ གཞི་བསྟུན།"
+msgstr "ནང་ཐིག་ ཡང་ན་ ཁྱབ་ཚད་ལུ་གཞི་བསྟུན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TABLE.1.String.Text
 #, fuzzy
@@ -10896,7 +12442,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.3.String.Text
 #, fuzzy
 msgid  "The value to be used for comparison."
-msgstr "ག་བསྡུར་བརྐྱབ་ནིའི་དོན་ལུ་ལག་ལེན་འཐབ་ནི་གི་གནས་གོང་།"
+msgstr "ག་བསྡུར་བརྐྱབ་ནིའི་དོན་ལུ་ ལག་ལེན་འཐབ་ནི་གི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.4.String.Text
 #, fuzzy
@@ -11321,7 +12867,7 @@ msgstr "ཚིག་ཡིག་འཚོལ།(_t)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.3.String.Text
 #, fuzzy
 msgid  "The text to be found."
-msgstr "མཐོང་ནི་གི་ཚིག་ཡིག"
+msgstr "འཐོབ་ནི་ཨིན་མི་གི་ཚིག་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.4.String.Text
 #, fuzzy
@@ -11499,7 +13045,7 @@ msgstr "ཚིག་ཡིག་ཡིག་རྒྱུན་གྱི་ནང
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.2.String.Text
 #, fuzzy
 msgid  "Text"
-msgstr "ཚིག་ཡིག"
+msgstr "ཚིག་ཡིག་"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.3.String.Text
 #, fuzzy
@@ -11764,7 +13310,7 @@ msgstr "རྩ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 #, fuzzy
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "གཞི་བསྒྱུར་འབད་ནི་གི་དོན་ལུ་གཞི་རྟེན་ཨང་གྲངས་དེ་ ཁྱབ་ཚད་༢་-༣༦་ནང་ལུ་དགོཔ་ཨིན།"
+msgstr "གཞི་བསྒྱུར་གྱི་དོན་ལུ་ ཨང་གྲངས་དེ་ ཁྱབ་ཚད་༢་-༣༦་ནང་སྦེ་འོང་དགོཔ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 #, fuzzy
@@ -12507,9 +14053,8 @@ msgid  "Font Attributes"
 msgstr "ཡིག་གཟུགས་ཀྱི་ཁྱད་ཆོས།"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-#, fuzzy
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "ཁྱོད་ལུ་ གནད་སྡུད་ལེ་ཤ་ཅིགའཛིན་པང་ནང་སྲུང་བཞག་འབད་དེ་འདུག\n ཁྱོད་ཀྱིས་ འཛིན་པང་གི་ནང་དོན་ཚུ་ གློག་རིམ་གཞན་མི་ཅིག་ནང་ལུ་ འཐོབ་ཚུགསཔ་སྦེ་དགོཔ་ཨིན་ན།"
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -12590,9 +14135,8 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-#, fuzzy
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
-msgstr "%PRODUCTNAMEཀལ་སི་གིས་ ཐོ་བཀོད་འབད་ཡོད་པའི་མན་ངག་ནང་ལུ་ འཛོལ་བ་འཐོབ་ནུག\nཁྱོད་ཀྱིས་ གྲོས་བསྟུན་གྱི་ཐོག་ལས་ འོག་ལུ་བཀོད་དེ་ཡོད་པའི་ནོར་བཅོས་དེ་ དང་ལེན་འབད་ནི་ཨིན་ན? \n\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -12645,9 +14189,8 @@ msgid  "~Selected sheets"
 msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་ལེབ་གྲངས།(~S)"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-#, fuzzy
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "ཁྱོད་ཀྱིས་ཧེ་མ་ལས་གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་ཚུ་གི་ནང་ལུ་ གནད་སྡུད་སྦྱརཝ་མས། \nཁྱོད་ཀྱིས་ད་ལྟོ་ཡོད་པའི་གནད་སྡུད་དེ་  ཐད་རི་འབའ་རི་ཚབ་སྲུང་འབད་ནི་ཨིན་ན?"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"
@@ -13383,7 +14926,7 @@ msgstr ""
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_CELL_FORMAT.MenuItem.Text
 #, fuzzy
 msgid  "~Format Cells..."
-msgstr "རྩ་སྒྲིག་ནང་ཐིག་ཚུ།((~F)"
+msgstr "ནང་ཐིག་ཚུ་རྩ་སྒྲིག་འབད།(~F)"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_INS_CELL.MenuItem.Text
 #, fuzzy
@@ -13766,7 +15309,7 @@ msgstr "ཚེས་གྲངས་དང་ཆུ་ཚོད།(~D)"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELFORMULAS.CheckBox.Text
 #, fuzzy
 msgid  "~Formulas"
-msgstr "མན་ངག་ཚུ།(~F)"
+msgstr "མན་ངག(~F)"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELATTRS.CheckBox.Text
 #, fuzzy
@@ -14284,13 +15827,14 @@ msgid  "Shrink"
 msgstr "བསྐུམ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND1.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~1"
 msgstr "གནས་ཚིག ༡(~1)"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
 #, fuzzy
 msgid  "Cell value is"
-msgstr "ནང་ཐིག་གི་གནས་གོང་དེ།"
+msgstr "ནང་ཐིག་གནས་གོང་དེ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
 #, fuzzy
@@ -14315,7 +15859,7 @@ msgstr "དེ་ལས་མང་སུ།"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
 msgid  "less than or equal to"
-msgstr "དེ་ལས་ཉུང་སུ་ ཡང་ན་ དེ་དང་མཉམ་པ།"
+msgstr "དེ་ལས་ཉུང་སུ་ ཡང་ན་ དེ་དང་མཉམ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
@@ -14325,7 +15869,7 @@ msgstr "དེ་ལས་མང་སུ་ ཡང་ན་ དེ་དང་�
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
 msgid  "not equal to"
-msgstr "དེ་དང་མཉམ༌པ་མིན་འདུག"
+msgstr "དེ་དང་མཉམ་པ་མིན་འདུག"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
@@ -14369,7 +15913,7 @@ msgstr "གནས་ཚིག ༢(~2)"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
 #, fuzzy
 msgid  "Cell value is"
-msgstr "ནང་ཐིག་གནས་གོང་དེ།"
+msgstr "ནང་ཐིག་གི་གནས་གོང་དེ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
 #, fuzzy
@@ -14394,7 +15938,7 @@ msgstr "དེ་ལས་མང་སུ།"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 #, fuzzy
 msgid  "less than or equal to"
-msgstr "དེ་ལས་ཉུང་སུ་ ཡང་ན་ དེ་དང་མཉམ།"
+msgstr "དེ་ལས་ཉུང་སུ་ ཡང་ན དེ་དང་མཉམ་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 #, fuzzy
@@ -14727,14 +16271,12 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "རང་བཞིན་གྱིས་རྩིས་སྟོན་ནིའི་དོན་ལུ་ ཡིག་ཆ་དེ་གནམ་མེད་ས་མེད་ གོ་དཀའ་བ་ཅིག་ཨིན་པས། བསྐྱར་རྩིས་སྟོན་ནིའི་དོན་ལུ་ ཨེཕ་༩་གཡེབ།"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "ཡིག་ཆའི་ནང་ལུ་གྲལ་ཐིག་ཚུ་ སེལ་འཐུ་འབད་ཡོད་པའི་རྩ་སྒྲིག་ནང་ལུ་ རྒྱབ་སྐྱོར་འབད་ཡོད་མི་ལས་ཡང་ མངམ་སྦེ་ཡོདཔ་ཨིན།\n གྲལ་་ཐིག་ཁ་སྐོང་ཚུ་སྲུང་བཞག་མ་འབད་བས།"
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "ཡིག་ཆའི་ནང་ལུ་ ལས་རིམ་ཐོན་རིམ་འདི་གིས་ངོས་འཛིན་མ་འབད་མི་ བརྡ་དོན་ཡོདཔ་ཨིན།\n ཡིག་ཆ་སླར་སྲུང་འབད་མི་དེ་གིས་ བརྡ་དོན་འདི་བཏོན་གཏང་འོང་!"
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 #, fuzzy
@@ -14742,9 +16284,8 @@ msgid  "Not all cell contents could be saved in the specified format."
 msgstr "ནང་ཐིག་གི་ནང་དོན་ཆ་མཉམ་ གསལ་བཀོད་འབད་ཡོད་མི་རྩ་སྒྲིག་ནང་ལུ་ སྲུང་བཞག་འབད་མི་ཚུགས།"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
-msgstr "འོག་ལུ་བཀོད་དེ་ཡོད་མི་ surrogates:\n\n$(ARG1)ཡིག་འབྲུ་ཚུ་ སེལ་འཐུ་འབད་ཡོད་མི་ཡིག་འབྲུ་ཆ་ཚན་ལུ་ གཞི་བསྒྱུར་འབད་མི་ཚུགས་ནི་ཨིནམ་དང་\nདེ་ཡང་&#༡༢༣༤;སྦེ་འབྲི་ནུག  ཡིག་ཚབ:\n\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 #, fuzzy

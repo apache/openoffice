@@ -33,11 +33,12 @@ msgstr ""
 
 #: source/smres.src#RID_FONTDIALOG.ModalDialog.Text
 msgid  "Fonts"
-msgstr "ফন্টসমূহ"
+msgstr "ফন্ট"
 
 #: source/smres.src#RID_FONTDIALOG.1.FixedText.Text
+#, fuzzy
 msgid  "~Font"
-msgstr " ফন্ট (~F)"
+msgstr "ফন্ট (~F)"
 
 #: source/smres.src#RID_FONTDIALOG.1.CheckBox.Text
 msgid  "~Bold"
@@ -69,7 +70,7 @@ msgstr "সূচিসমূহ (~I)"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.6.FixedText.Text
 msgid  "~Functions"
-msgstr "ফাংশনসমূহ (~F)"
+msgstr "ফাংশন (~F)"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.7.FixedText.Text
 msgid  "~Operators"
@@ -128,8 +129,9 @@ msgid  "F~ixed"
 msgstr "অপরিবর্তিত (~i)"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.1.MenuButton.Text
+#, fuzzy
 msgid  "~Modify"
-msgstr "পরিবর্তন (~M)"
+msgstr "পরিবর্তন করুন (~M)"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.2.PushButton.Text
 msgid  "~Default"
@@ -196,8 +198,9 @@ msgid  "S~ubscript"
 msgstr "নিম্নলিপি (~u)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.3.1.String.Text
+#, fuzzy
 msgid  "Fractions"
-msgstr "ফাংশন"
+msgstr "ফাংশনসমূহ"
 
 #: source/smres.src#RID_DISTANCEDIALOG.3.2.String.Text
 msgid  "~Numerator"
@@ -220,8 +223,9 @@ msgid  "~Weight"
 msgstr "ওজন (~W)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.5.1.String.Text
+#, fuzzy
 msgid  "Limits"
-msgstr "সীমা"
+msgstr "সীমাসমূহ"
 
 #: source/smres.src#RID_DISTANCEDIALOG.5.2.String.Text
 msgid  "~Upper limit"
@@ -232,8 +236,9 @@ msgid  "~Lower limit"
 msgstr "নিম্নসীমা (~L)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.6.1.String.Text
+#, fuzzy
 msgid  "Brackets"
-msgstr "বন্ধনী"
+msgstr "বন্ধনীসমূহ"
 
 #: source/smres.src#RID_DISTANCEDIALOG.6.2.String.Text
 msgid  "~Excess size (left/right)"
@@ -260,8 +265,9 @@ msgid  "~Column spacing"
 msgstr "স্তম্ভ ফাঁকাকরণ (~C)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.8.1.String.Text
+#, fuzzy
 msgid  "Symbols"
-msgstr "প্রতীক"
+msgstr "প্রতীকসমূহ"
 
 #: source/smres.src#RID_DISTANCEDIALOG.8.2.String.Text
 msgid  "~Primary height"
@@ -272,8 +278,9 @@ msgid  "~Minimum spacing"
 msgstr "ন্যুনতম ফাঁকাকরণ (~M)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.9.1.String.Text
+#, fuzzy
 msgid  "Operators"
-msgstr "অপারেটর"
+msgstr "অপারেটরসমূহ"
 
 #: source/smres.src#RID_DISTANCEDIALOG.9.2.String.Text
 msgid  "~Excess size"
@@ -284,8 +291,9 @@ msgid  "~Spacing"
 msgstr "ফাঁকাকরণ (~S)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.1.String.Text
+#, fuzzy
 msgid  "Borders"
-msgstr "সীমানা"
+msgstr "সীমানাসমূহ"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.2.String.Text
 msgid  "~Left"
@@ -333,10 +341,12 @@ msgid  "Formula Options:Settings"
 msgstr "সুত্র পছন্দ: বিন্যাসনসমূহ"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Print options"
 msgstr "মুদ্রণ পছন্দসমূহ"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.CheckBox.Text
+#, fuzzy
 msgid  "~Title row"
 msgstr "শিরোনাম সারি (~T)"
 
@@ -470,14 +480,12 @@ msgid  "~Delete"
 msgstr "মুছে ফেলুন (~D)"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-#, fuzzy
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr " \"StarMath\" ফন্ট সংস্থাপন করা হয়নি।\nএ ফন্ট ছাড়া %PRODUCTNAME এর গণিত সঠিকভাবে কাজ করতে পারবে না।\nঅনুগ্রহ করে এই ফন্টটি সংস্থাপন করুন এবং %PRODUCTNAME এর গণিত পুনঃ শুরু করুন।"
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-#, fuzzy
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "পরিবর্তনগুলো কি পূর্বনির্ধারণ হিসেবে সংরক্ষিত হবে?\n\nএই পরিবর্তনগুলো সকল নতুন সূত্রের জন্য প্রয়োগ করা হবে।"
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -787,50 +795,62 @@ msgid  "~Scaling"
 msgstr "স্কেলিং (~S)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "ইউনারী/বাইনারী অপারেটর (~U)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Relations"
 msgstr "অন্বয় (~R)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Set Operations"
 msgstr "সেট অপারেশন (~S)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Functions"
 msgstr "ফাংশনসমূহ (~F)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
 msgid  "More"
 msgstr "আরও"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "O~perators"
 msgstr "অপারেটরসমূহ (~p)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Attributes"
 msgstr "বৈশিষ্ট্য (~A)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Brackets"
 msgstr "বন্ধনী (~B)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
+#, fuzzy
 msgid  "For~mats"
 msgstr "বিন্যাস (~m)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
+#, fuzzy
 msgid  "New Line"
 msgstr "নতুন লাইন"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
+#, fuzzy
 msgid  "Small Gap"
 msgstr "ছোট ফাঁক"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
+#, fuzzy
 msgid  "Gap"
 msgstr "ফাঁক"
 
@@ -839,6 +859,7 @@ msgid  "nospace {...}"
 msgstr ""
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Others"
 msgstr "অন্যান্য (~o)"
 

@@ -125,7 +125,7 @@ msgstr "Darllenwch y cytundeb trwyddedu canlynol yn ofalus."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr "Os ydych wedi darllen a derbyn holl amodau’r Cytundeb Trwyddedu Meddalwedd yna cliciwch 'Derbyn y Drwydded' i barhau gyda'r gosod."
+msgstr "Os ydych wedi darllen a derbyn holl amodau'r Cytundeb Trwyddedu Meddalwedd, cliciwch 'Derbyn y Drwydded' er mwyn parhau gyda'r gosod."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -152,12 +152,12 @@ msgid  "Create New Directory"
 msgstr "Creu Cyfeiriadur Newydd"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "Nid yw cyfeiriadur '${DIR}' yn bodoli.\nHoffech chi ei greu?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "Nid yw cyfeiriadur '${DIR}' yn bodoli.\nHoffech chi ei greu neu ddewis cyfeiriadur arall?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -197,7 +197,7 @@ msgstr "Maint (kB):"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1
 msgid  "Select the Type of Installation"
-msgstr "Dewis y Math o Osod"
+msgstr "Dewis y math o Osod"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2
 msgid  "Select the type of installation that best suits your needs:"
@@ -260,8 +260,8 @@ msgid  "To continue, click 'Next'."
 msgstr "I barhau, cliciwch 'Nesaf'."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "Sylwch: Bydd y gosod yn cael ei wneud heb freintiau gwraidd. Felly bydd gennych lai o swyddogaethau ar gael (Java Runtime Environment (JRE) heb ei osod, integreiddio'r system yn amhosib).\nCliciwch 'Diddymu' a newid eich breintiau i freintiau gwraidd, os ydych am ddefnyddio'r holl swyddogaethau."
+msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -432,8 +432,8 @@ msgid  "Analyzing ..."
 msgstr "Dadansoddi ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "Dadansoddi'r gronfa ddata\nArhoswch ..."
+msgid  "Analyzing database\\nPlease wait a moment ..."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"

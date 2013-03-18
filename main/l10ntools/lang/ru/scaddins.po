@@ -661,7 +661,7 @@ msgstr "Числитель"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
 msgid  "The dividend"
-msgstr "Числитель (делимое)."
+msgstr "Делимое."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
 msgid  "Denominator"
@@ -981,7 +981,7 @@ msgstr "Число"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
 msgid  "The decimal number"
-msgstr "Преобразуемое десятичное число."
+msgstr "Десятичное число."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.4.String.Text
 msgid  "Places"
@@ -1137,7 +1137,7 @@ msgstr "Комплексное число"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.3.String.Text
 msgid  "The complex number"
-msgstr "Комплексное число."
+msgstr "Комплексное число"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.1.String.Text
 msgid  "Returns the imaginary coefficient of a complex number"
@@ -1325,7 +1325,7 @@ msgstr "Возвращает разность двух комплексных ч
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.2.String.Text
 msgid  "Complex number 1"
-msgstr "Комплексное число 1"
+msgstr "Комплексное число 1."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.3.String.Text
 msgid  "Complex number 1"
@@ -1333,7 +1333,7 @@ msgstr "Комплексное число 1."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.4.String.Text
 msgid  "Complex number 2"
-msgstr "Комплексное число 2"
+msgstr "Комплексное число 2."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.5.String.Text
 msgid  "Complex number 2"
@@ -1517,7 +1517,7 @@ msgstr "Единица измерения результата."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr "Возвращает величину амортизации для каждого отчётного периода. Эта функция предназначена для французской системы бухгалтерского учёта."
+msgstr "Возвращает пропорциональное линейное обесценивание актива для каждого отчётного периода."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1529,7 +1529,7 @@ msgstr "Стоимость имущества."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.4.String.Text
 msgid  "Date purchased"
-msgstr "Дата"
+msgstr "Дата приобретения"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.5.String.Text
 msgid  "Purchase date of the asset"
@@ -1661,7 +1661,7 @@ msgstr "Соглашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
 msgid  "The settlement"
-msgstr "Дата соглашения для ценных бумаг."
+msgstr "Дата сделки (покупки) по ценным бумагам."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
 msgid  "Rate"
@@ -1669,7 +1669,7 @@ msgstr "Ставка"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.9.String.Text
 msgid  "The rate"
-msgstr "Годовая процентная ставка для купонов по ценным бумагам."
+msgstr "Процентная ставка."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 msgid  "Par"
@@ -1685,7 +1685,7 @@ msgstr "Частота"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.13.String.Text
 msgid  "The frequency"
-msgstr "Количество выплат процентов в год."
+msgstr "Частота выплат по купонам за год."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.14.String.Text
 msgid  "Basis"
@@ -1705,7 +1705,7 @@ msgstr "Выпуск"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.3.String.Text
 msgid  "The issue date"
-msgstr "Дата выпуска ценных бумаг."
+msgstr "Дата выпуска (эмиссии) ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.4.String.Text
 msgid  "Settlement"
@@ -1713,7 +1713,7 @@ msgstr "Соглашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.5.String.Text
 msgid  "The settlement"
-msgstr "Дата соглашения для ценных бумаг."
+msgstr "Дата соглашения (покупки) по ценным бумагам."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.6.String.Text
 msgid  "Rate"
@@ -1721,7 +1721,7 @@ msgstr "Ставка"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.7.String.Text
 msgid  "The rate"
-msgstr "Годовая процентная ставка для купонов по ценным бумагам."
+msgstr "Процентная ставка."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.8.String.Text
 msgid  "Par"
@@ -1749,7 +1749,7 @@ msgstr "Соглашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.3.String.Text
 msgid  "The settlement"
-msgstr "Дата сделки (покупки) по ценным бумагам."
+msgstr "Дата соглашения для ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 msgid  "Maturity"
@@ -1757,7 +1757,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
 msgid  "The maturity"
-msgstr "Дата погашения ценных бумаг."
+msgstr "Срок погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
 msgid  "Investment"
@@ -1765,7 +1765,7 @@ msgstr "Инвестиция"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.7.String.Text
 msgid  "The investment"
-msgstr "Стоимость ценных бумаг при покупке."
+msgstr "Объем инвестиции в ценные бумаги."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.8.String.Text
 msgid  "Discount"
@@ -1773,7 +1773,7 @@ msgstr "Дисконт"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.9.String.Text
 msgid  "The discount"
-msgstr "Величина скидки при покупке ценных бумаг."
+msgstr "(Ежегодная) Величина дисконта по ценным бумагам"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.10.String.Text
 msgid  "Basis"
@@ -1793,7 +1793,7 @@ msgstr "Соглашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.3.String.Text
 msgid  "The settlement"
-msgstr "Дата соглашения для ценных бумаг."
+msgstr "Дата соглашения для казначейского чека."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
 msgid  "Maturity"
@@ -1801,7 +1801,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
 msgid  "The maturity"
-msgstr "Срок погашения ценных бумаг."
+msgstr "Дата погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.6.String.Text
 msgid  "Price"
@@ -1809,15 +1809,15 @@ msgstr "Цена"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.7.String.Text
 msgid  "The price"
-msgstr "Цена ценных бумаг."
+msgstr "Цена казначейского чека."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.8.String.Text
 msgid  "Redemption"
-msgstr "Выкуп"
+msgstr "Выкупная стоимость"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
 msgid  "The redemption value"
-msgstr "Выкупная цена ценных бумаг."
+msgstr "Цена досрочного погашения за 100 единиц номинальной стоимости."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 msgid  "Basis"
@@ -1837,7 +1837,7 @@ msgstr "Соглашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.3.String.Text
 msgid  "The settlement"
-msgstr "Дата соглашения для ценных бумаг."
+msgstr "Дата соглашения для казначейского чека."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.4.String.Text
 msgid  "Maturity"
@@ -1845,7 +1845,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.5.String.Text
 msgid  "The maturity"
-msgstr "Срок погашения ценных бумаг."
+msgstr "Дата погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.6.String.Text
 msgid  "Coupon"
@@ -1861,7 +1861,7 @@ msgstr "Доход"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.9.String.Text
 msgid  "The yield"
-msgstr "Уровень доходности ценных бумаг."
+msgstr "Годовой доход по ценным бумагам."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.10.String.Text
 msgid  "Frequency"
@@ -1869,7 +1869,7 @@ msgstr "Частота"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.11.String.Text
 msgid  "The frequency"
-msgstr "Частота выплат по купонам за год."
+msgstr "Количество выплат процентов в год (1, 2 или 4)."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.12.String.Text
 msgid  "Basis"
@@ -1897,7 +1897,7 @@ msgstr "Периоды"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.5.String.Text
 msgid  "The periods"
-msgstr "Количество периодов, составляющих год."
+msgstr "Количество периодов."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
@@ -1909,7 +1909,7 @@ msgstr "Ставка"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.3.String.Text
 msgid  "The rate"
-msgstr "Процентная ставка."
+msgstr "Процентная ставка по ценным бумагам."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.4.String.Text
 msgid  "Nper"
@@ -1961,7 +1961,7 @@ msgstr "Ставка"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.3.String.Text
 msgid  "The rate"
-msgstr "Процентная ставка."
+msgstr "Процентная ставка дохода по ценным бумагам на дату выпуска."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.4.String.Text
 msgid  "Nper"
@@ -2013,7 +2013,7 @@ msgstr "Соглашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.3.String.Text
 msgid  "The settlement"
-msgstr "Дата соглашения (покупки) по ценным бумагам."
+msgstr "Дата соглашения для казначейского чека."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.4.String.Text
 msgid  "Maturity"
@@ -2021,7 +2021,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.5.String.Text
 msgid  "The maturity"
-msgstr "Срок погашения ценных бумаг."
+msgstr "Срок погашения для казначейского чека."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.6.String.Text
 msgid  "Rate"
@@ -2029,7 +2029,7 @@ msgstr "Ставка"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.7.String.Text
 msgid  "The rate"
-msgstr "Процентная ставка по ценным бумагам."
+msgstr "Годовая процентная ставка для купонов по ценным бумагам."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.8.String.Text
 msgid  "Yield"
@@ -2037,15 +2037,15 @@ msgstr "Доход"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.9.String.Text
 msgid  "The yield"
-msgstr "Уровень доходности ценных бумаг."
+msgstr "Доходность по ценным бумагам (в процентах к цене)."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.10.String.Text
 msgid  "Redemption"
-msgstr "Выкупная стоимость"
+msgstr "Выкуп"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.11.String.Text
 msgid  "The redemption value"
-msgstr "Цена досрочного погашения за 100 единиц номинальной стоимости."
+msgstr "Выкупная цена ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.12.String.Text
 msgid  "Frequency"
@@ -2053,7 +2053,7 @@ msgstr "Частота"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.13.String.Text
 msgid  "The frequency"
-msgstr "Количество выплат процентов в год (1, 2 или 4)."
+msgstr "Количество выплат по купонам за год."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.14.String.Text
 msgid  "Basis"
@@ -2073,7 +2073,7 @@ msgstr "Соглашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.3.String.Text
 msgid  "The settlement"
-msgstr "Дата сделки (покупки) по ценным бумагам."
+msgstr "Дата сделки (покупки) по ценным бумагам"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.4.String.Text
 msgid  "Maturity"
@@ -2081,7 +2081,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.5.String.Text
 msgid  "The maturity"
-msgstr "Дата погашения ценных бумаг."
+msgstr "Срок погашения для казначейского чека."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.6.String.Text
 msgid  "Discount"
@@ -2093,11 +2093,11 @@ msgstr "(Ежегодная) Величина дисконта по ценным
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.8.String.Text
 msgid  "Redemption"
-msgstr "Выкупная стоимость"
+msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.9.String.Text
 msgid  "The redemption value"
-msgstr "Цена досрочного погашения за 100 единиц номинальной стоимости."
+msgstr "Выкупная цена ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.10.String.Text
 msgid  "Basis"
@@ -2117,7 +2117,7 @@ msgstr "Соглашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.3.String.Text
 msgid  "The settlement"
-msgstr "Дата сделки (покупки) по ценным бумагам."
+msgstr "Дата соглашения (покупки) по ценным бумагам."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.4.String.Text
 msgid  "Maturity"
@@ -2125,7 +2125,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.5.String.Text
 msgid  "The maturity"
-msgstr "Дата погашения ценных бумаг."
+msgstr "Срок погашения для казначейского чека."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.6.String.Text
 msgid  "Issue"
@@ -2133,7 +2133,7 @@ msgstr "Выпуск"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.7.String.Text
 msgid  "The issue date"
-msgstr "Дата выпуска (эмиссии) ценных бумаг."
+msgstr "Дата выпуска ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.8.String.Text
 msgid  "Rate"
@@ -2141,7 +2141,7 @@ msgstr "Ставка"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.9.String.Text
 msgid  "The rate"
-msgstr "Процентная ставка дохода по ценным бумагам на дату выпуска."
+msgstr "Процентная ставка."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.10.String.Text
 msgid  "Yield"
@@ -2149,7 +2149,7 @@ msgstr "Доход"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.11.String.Text
 msgid  "The yield"
-msgstr "Уровень доходности ценных бумаг."
+msgstr "Доходность по ценным бумагам (в процентах к цене)."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.12.String.Text
 msgid  "Basis"
@@ -2169,7 +2169,7 @@ msgstr "Соглашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.3.String.Text
 msgid  "The settlement"
-msgstr "Дата соглашения для ценных бумаг."
+msgstr "Дата сделки (покупки) по ценным бумагам."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.4.String.Text
 msgid  "Maturity"
@@ -2177,7 +2177,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.5.String.Text
 msgid  "The maturity"
-msgstr "Срок погашения ценных бумаг."
+msgstr "Дата погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.6.String.Text
 msgid  "Coupon"
@@ -2201,7 +2201,7 @@ msgstr "Частота"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.11.String.Text
 msgid  "The frequency"
-msgstr "Количество выплат по купонам за год."
+msgstr "Количество выплат процентов в год (1, 2 или 4)."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.12.String.Text
 msgid  "Basis"
@@ -2289,7 +2289,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.5.String.Text
 msgid  "The maturity"
-msgstr "Срок погашения ценных бумаг."
+msgstr "Дата погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.6.String.Text
 msgid  "Rate"
@@ -2297,7 +2297,7 @@ msgstr "Ставка"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.7.String.Text
 msgid  "The rate"
-msgstr "Годовая процентная ставка для купонов по ценным бумагам."
+msgstr "Процентная ставка дохода по ценным бумагам."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.8.String.Text
 msgid  "Price"
@@ -2305,7 +2305,7 @@ msgstr "Цена"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.9.String.Text
 msgid  "The price"
-msgstr "Цена ценных бумаг."
+msgstr "Цена ценных бумаг"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.10.String.Text
 msgid  "Redemption"
@@ -2313,7 +2313,7 @@ msgstr "Выкуп"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.11.String.Text
 msgid  "The redemption value"
-msgstr "Выкупная цена ценных бумаг."
+msgstr "Цена досрочного погашения (за 100 единиц номинальной стоимости)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.12.String.Text
 msgid  "Frequency"
@@ -2321,7 +2321,7 @@ msgstr "Частота"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.13.String.Text
 msgid  "The frequency"
-msgstr "Количество выплат по купонам за год."
+msgstr "Количество выплат процентов в год (1, 2 или 4)."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.14.String.Text
 msgid  "Basis"
@@ -2349,7 +2349,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.5.String.Text
 msgid  "The maturity"
-msgstr "Срок погашения ценных бумаг."
+msgstr "Дата погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.6.String.Text
 msgid  "Price"
@@ -2365,7 +2365,7 @@ msgstr "Выкупная стоимость"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.9.String.Text
 msgid  "The redemption value"
-msgstr "Выкупная цена ценных бумаг."
+msgstr "Цена досрочного погашения (за 100 единиц номинальной стоимости)."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.10.String.Text
 msgid  "Basis"
@@ -2393,7 +2393,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.5.String.Text
 msgid  "The maturity"
-msgstr "Срок погашения ценных бумаг."
+msgstr "Дата погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.6.String.Text
 msgid  "Issue"
@@ -2409,7 +2409,7 @@ msgstr "Ставка"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.9.String.Text
 msgid  "The rate"
-msgstr "Процентная ставка дохода по ценным бумагам на дату выпуска."
+msgstr "Процентная ставка дохода по ценным бумагам."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.10.String.Text
 msgid  "Price"
@@ -2445,7 +2445,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.5.String.Text
 msgid  "The maturity"
-msgstr "Срок погашения для казначейского чека."
+msgstr "Срок погашения для ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.6.String.Text
 msgid  "Discount"
@@ -2453,7 +2453,7 @@ msgstr "Дисконт"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.7.String.Text
 msgid  "The discount rate"
-msgstr "Норма скидки для казначейского чека."
+msgstr "Норма скидки по казначейскому чеку."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.1.String.Text
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
@@ -2473,7 +2473,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.5.String.Text
 msgid  "The maturity"
-msgstr "Срок погашения для казначейского чека."
+msgstr "Срок погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.6.String.Text
 msgid  "Discount"
@@ -2501,7 +2501,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillyield.5.String.Text
 msgid  "The maturity"
-msgstr "Срок погашения для казначейского чека."
+msgstr "Срок погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillyield.6.String.Text
 msgid  "Price"
@@ -2529,7 +2529,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.5.String.Text
 msgid  "The maturity"
-msgstr "Дата погашения ценных бумаг."
+msgstr "Срок погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.6.String.Text
 msgid  "Issue"
@@ -2553,7 +2553,7 @@ msgstr "Ставка"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.11.String.Text
 msgid  "The rate"
-msgstr "Процентная ставка."
+msgstr "Процентная ставка дохода по ценным бумагам."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.12.String.Text
 msgid  "Yield"
@@ -2569,7 +2569,7 @@ msgstr "Выкупная стоимость"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.15.String.Text
 msgid  "The redemption value"
-msgstr "Цена досрочного погашения (за 100 единиц номинальной стоимости)"
+msgstr "Цена досрочного погашения (за 100 единиц номинальной стоимости)."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.16.String.Text
 msgid  "Frequency"
@@ -2577,7 +2577,7 @@ msgstr "Частота"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.17.String.Text
 msgid  "The frequency"
-msgstr "Количество выплат процентов в год (1, 2 или 4)."
+msgstr "Количество выплат по купонам за год."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.18.String.Text
 msgid  "Basis"
@@ -2605,7 +2605,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.5.String.Text
 msgid  "The maturity"
-msgstr "Дата погашения ценных бумаг."
+msgstr "Срок погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.6.String.Text
 msgid  "Issue"
@@ -2629,7 +2629,7 @@ msgstr "Ставка"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.11.String.Text
 msgid  "The rate"
-msgstr "Процентная ставка дохода по ценным бумагам."
+msgstr "Норма скидки, применяемая к операциям с наличными."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.12.String.Text
 msgid  "Price"
@@ -2645,7 +2645,7 @@ msgstr "Выкупная стоимость"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.15.String.Text
 msgid  "The redemption value"
-msgstr "Цена досрочного погашения (за 100 единиц номинальной стоимости)."
+msgstr "Цена досрочного погашения (за 100 единиц номинальной стоимости)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.16.String.Text
 msgid  "Frequency"
@@ -2653,7 +2653,7 @@ msgstr "Частота"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.17.String.Text
 msgid  "The frequency"
-msgstr "Количество выплат процентов в год (1, 2 или 4)."
+msgstr "Количество выплат по купонам за год."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.18.String.Text
 msgid  "Basis"
@@ -2681,7 +2681,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.5.String.Text
 msgid  "The maturity"
-msgstr "Дата погашения ценных бумаг."
+msgstr "Срок погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.6.String.Text
 msgid  "Last interest"
@@ -2689,7 +2689,7 @@ msgstr "Последние проценты"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.7.String.Text
 msgid  "The last interest date"
-msgstr "Дата последней выплаты процентов по ценным бумагам."
+msgstr "Дата последней выплаты процентов."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.8.String.Text
 msgid  "Rate"
@@ -2713,7 +2713,7 @@ msgstr "Выкупная стоимость"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.13.String.Text
 msgid  "The redemption value"
-msgstr "Цена досрочного погашения (за 100 единиц номинальной стоимости)."
+msgstr "Выкупная стоимость ценых бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.14.String.Text
 msgid  "Frequency"
@@ -2721,7 +2721,7 @@ msgstr "Частота"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.15.String.Text
 msgid  "The frequency"
-msgstr "Количество выплат процентов в год (1, 2 или 4)."
+msgstr "Количество выплат по купонам за год."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.16.String.Text
 msgid  "Basis"
@@ -2749,7 +2749,7 @@ msgstr "Погашение"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.5.String.Text
 msgid  "The maturity"
-msgstr "Дата погашения ценных бумаг."
+msgstr "Срок погашения ценных бумаг."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.6.String.Text
 msgid  "Last interest"
@@ -2789,7 +2789,7 @@ msgstr "Частота"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.15.String.Text
 msgid  "The frequency"
-msgstr "Количество выплат процентов в год (1, 2 или 4)."
+msgstr "Количество выплат по купонам за год."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.16.String.Text
 msgid  "Basis"
@@ -2925,7 +2925,7 @@ msgstr "Частота"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupncd.7.String.Text
 msgid  "The frequency"
-msgstr "Количество выплат по купонам за год."
+msgstr "Число выплат по купонам за год."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupncd.8.String.Text
 msgid  "Basis"

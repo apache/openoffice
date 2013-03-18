@@ -699,42 +699,52 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr "Component for enabling use %PRODUCTNAME without a display"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
+#, fuzzy
 msgid  "Information"
 msgstr "தகவல்"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
+#, fuzzy
 msgid  "Internet"
 msgstr "இணையம்"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
+#, fuzzy
 msgid  "Java"
 msgstr "ஜாவா"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
+#, fuzzy
 msgid  "Fun&More"
 msgstr "வேடிக்கையும் இதரவும்"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
+#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME API"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
+#, fuzzy
 msgid  "Travel"
 msgstr "பயணம்"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
+#, fuzzy
 msgid  "Chapters"
 msgstr "அத்தியாயங்கள்"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
+#, fuzzy
 msgid  "Files"
 msgstr "கோப்புகள்"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
+#, fuzzy
 msgid  "From Template"
 msgstr "வார்ப்புருவிலிருந்து"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
+#, fuzzy
 msgid  "Open Document"
 msgstr "திறந்த ஆவணம்"
 
@@ -1041,7 +1051,7 @@ msgstr "தமிழ்"
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TA
 #, fuzzy
 msgid  "Installs Tamil support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "தமிழ் ஆதரவை %PRODUCTNAME %PRODUCTVERSION ல் நிறுவும்"
+msgstr "%PRODUCTNAME %PRODUCTVERSION ல் தமிழ் ஆரவை நிறுவும்"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA_IN
 #, fuzzy
@@ -1216,7 +1226,7 @@ msgstr "ஒரியா மொழி ஆதரவை %PRODUCTNAME %PRODUCTVERSIO
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MR
 #, fuzzy
 msgid  "Marathi"
-msgstr "மராத்தி"
+msgstr "மாராத்தி"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR
 #, fuzzy
@@ -1895,145 +1905,181 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
+#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "மின்னஞ்சல் அஞ்சலிணை"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
+#, fuzzy
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
 msgstr "%PRODUCTNAME மின்னஞ்சல் அஞ்சலிணை அம்சத்திற்கான தொகுதி"
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
+#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "பைத்தான்-UNO Bridge"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
+#, fuzzy
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
 msgstr "பைத்தான் குறிப்பு மொழியால் %PRODUCTNAME ஐ தானியங்கு செயல்திறனை சேர்க்கிறது. முழு ஆவணத்திற்கு http://udk.openoffice.org/python/python-bridge.html ல் பார்க்கவும்."
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
+#, fuzzy
 msgid  "Quickstarter"
 msgstr "Quickstarter"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
+#, fuzzy
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
 msgstr "%PRODUCTNAME %PRODUCTVERSIONன் துவக்கு நேரத்தை வேகப்படுத்த கணினியின் ஆரம்பத்தில் அடிப்படை கூறுகளை ஏற்றுகிறது."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
+#, fuzzy
 msgid  "Software Development Kit (SDK)"
 msgstr "Software Development Kit (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
+#, fuzzy
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
 msgstr "The SDK provides all necessary tools, examples and documentation to program with and for the office."
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "விண்டோஸ் எக்ஸ்ப்ளோரர் விரிவாக்கம்"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+#, fuzzy
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
 msgstr "%PRODUCTNAME ஆவணங்களான குறும்பட முன்பார்வைகள் போன்றவற்றை பற்றிய விவரங்களை காட்ட மைக்ரோசாஃப்ட் விண்டோஸ் எக்ஸ்ப்ளோரரை செயல்படுத்துகிறது. "
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
+#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML ஆவணம்"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
+#, fuzzy
 msgid  "Text Document"
 msgstr "உரை ஆவணம்"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
 msgstr "ரைட்டரை பயன்படுத்தி கடிதங்கள், அறிக்கை, ஆவணங்கள் மற்றும் இணைய பக்கங்களில் உரை மற்றும் வரைகலைகளை உருவாக்கி மற்றும் தொகுக்கிறது."
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+#, fuzzy
 msgid  "&New"
 msgstr "&புதிய"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
+#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION உரை ஆவணம்"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
+#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION முதன்மை ஆவணம்"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
+#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION உரை ஆவண வார்ப்புரு"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
+#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "திறந்த ஆவண உரை"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
+#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "திறந்த ஆவண உரை வார்ப்புரு"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
+#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "திறந்த ஆவண முதன்மை ஆவணம்"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
+#, fuzzy
 msgid  "HTML Document Template"
 msgstr "HTML ஆவண வார்ப்புரு"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
+#, fuzzy
 msgid  "Microsoft Word 97-2003 Document"
 msgstr "மைக்ரோசாப்ட் வேர்ட் 97-2003 ஆவணம்"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
+#, fuzzy
 msgid  "Microsoft Word Document"
 msgstr "மைரோசாப்ட் வேர்ட் ஆவணம்"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
+#, fuzzy
 msgid  "Microsoft Word 97-2003 Template"
 msgstr "மைக்ரோசாப்ட் வேர்ட் 97-2003 வார்ப்புரு"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
+#, fuzzy
 msgid  "Microsoft Word Template"
 msgstr "மைக்ரோசாப்ட் வேர்ட் வார்ப்புரு"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
+#, fuzzy
 msgid  "Rich Text Document"
 msgstr "மேம்பட்ட உரை ஆவணம்"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
+#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME ரைட்டர்"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
 msgstr "%PRODUCTNAME ரைட்டரை பயன்படுத்தி கடிதங்கள், அறிக்கை, ஆவணங்கள் மற்றும் இணைய பக்கங்களில் உரை மற்றும் வரைகலைகளை உருவாக்கி மற்றும் தொகுக்கிறது."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
+#, fuzzy
 msgid  "Program Module"
 msgstr "நிரல் தொகுதி"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
+#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "பயன்பாடு %PRODUCTNAME ரைட்டர்"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
+#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "%PRODUCTNAME ரைட்டர் உதவி"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
+#, fuzzy
 msgid  "Help about %PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME ரைட்டர் பற்றிய உதவி"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
+#, fuzzy
 msgid  "LaTeX Export"
 msgstr "LaTeX ஏற்றுமதி"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
+#, fuzzy
 msgid  "LaTeX export filter for Writer documents."
 msgstr "ரைட்டர் ஆவணங்களுக்கான LaTeX ஏற்றுமதி வடிகட்டி."
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
+#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT மாதிரி வடிகட்டிகள்"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
+#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT மாதிரி வடிகட்டிகள்"

@@ -696,16 +696,16 @@ msgid  "Delete..."
 msgstr "លុប​..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
-msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr "ចំណាំ​ ៖\n​ដើម្បី​ទទួល​បាន​គុណភាព​ល្អ​បំផុត ទំហំរបស់​រូបតំណាង​គួរ​តែ​មាន​ទំហំ​ត្រឹម​ ១៦x១៦ ភីកសែល ។ រូប​តំណាង​ដែល​មាន​ទំហំ​ក្រៅ​ពី​នេះ​នឹង​ត្រូវ​បាន​ធ្វើ​មាត្រ​ដ្ឋាន​ដោយ​ស្វ័យ​ប្រវត្តិ ។"
+msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
+msgstr ""
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
-msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
-msgstr "មិន​អាច​នាំចូល​ឯកសារ​ដែល​បាន​រាយ​​ខាង​ក្រោមនេះ​បាន​ទេ​​ ។\nមិន​អាច​បក​ប្រែ​ទ្រង់​ទ្រាយ​ឯកសារ​នេះ​​ ។"
+msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
+msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -716,8 +716,8 @@ msgid  "Are you sure to delete the image?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​រូបភាព​ឬ​ ?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
-msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
-msgstr "រូប​តំណាង​របស់​ %ICONNAME ​មាននៅ​ក្នុង​បញ្ជី​រូបភាព​រួច​ហើយ ។\nតើ​អ្នក​ចង់​ជំនួស​រូប​តំណាង​ដែល​មាន​ស្រាប់​ឬ​ ?"
+msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
+msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -757,7 +757,7 @@ msgstr "មិន​មាន​ពាក្យ​បញ្ជា​ផ្សេ
 
 #: source/customize/cfg.src#QBX_CONFIRM_RESET.QueryBox.Message
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr "ការកំណត់​រចនា​សម្ព័ន្ធ​ម៉ឺនុយ​សម្រាប់​ %SAVE IN SELECTION%​នឹង​ត្រូវ​បាន​កំណត់​ឡើង​វិញ​ទៅ​តាម​ការកំណត់​មក​ពី​រោងចក្រ ។ តើ​អ្នក​ចង់​បន្ត​ឬ​?"
+msgstr "ការកំណត់​រចនា​សម្ព័ន្ធ​ម៉ឺនុយ​សម្រាប់​ %SAVE IN SELECTION% ​នឹង​ត្រូវ​បាន​កំណត់​ឡើង​វិញ​ទៅ​តាម​ការកំណត់​មក​ពី​រោងចក្រ ។ តើ​អ្នក​ចង់​បន្ត​ឬ​?"
 
 #: source/customize/cfg.src#RID_SVXSTR_CONFIRM_MENU_RESET.String.Text
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
@@ -1864,7 +1864,7 @@ msgid  "License..."
 msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT.String.Text
-msgid  "Copyright © 2012 Apache Software Foundation.\nAll rights reserved.\n\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\nApache OpenOffice acknowledges all community members, especially those mentioned at"
+msgid  "Copyright © 2012 Apache Software Foundation.\\nAll rights reserved.\\n\\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\\nApache OpenOffice acknowledges all community members, especially those mentioned at"
 msgstr ""
 
 #: source/dialogs/about.src#RID_CUI_README_DLG.ModalDialog.Text
@@ -1884,8 +1884,8 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
-msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr "មិន​អាច​ពិនិត្យ​អក្ខរាវិរុទ្ធ​បាន​ទេ​\n សូម​ពិនិត្យ​មើល​ការដំឡើង​របស់​អ្នក រួច​ដំឡើង​ភាសា​ដែល​​ចង់បាន\n"
+msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
+msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 msgid  "Hyphenation"
@@ -3056,16 +3056,16 @@ msgid  "Macro Security..."
 msgstr "សុវត្ថិភាព​ម៉ាក្រូ..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
-msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr "ការ​បិទ​មុខងារ​ ដើម្បី​រក្សា​ទុក​ពាក្យ​សម្ងាត់​ជា​អចិន្ត្រៃយ៍នឹង​លុប​បញ្ជី​ពាក្យ​សម្ងាត់​ដែល​បាន​រក្សា​ទុក ហើយ​​​​កំណត់​ពាក្យ​សម្ងាត់​មេ ​ឡើងវិញ ។\n\nតើ​អ្នក​ចង់​លុប​បញ្ជី​ពាក្យ​សម្ងាត់​ ហើយ​​កំណត់​ពាក្យ​សម្ងាត់​មេ​ឡើងវិញដែរ​​ឬ​ទេ​ ?"
+msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
-msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr "តម្លៃ​មិន​ត្រឹម​ត្រូវ !\n\n​តម្លៃ​មិន​ត្រឹម​ត្រូវសម្រាប់​ច្រក​គឺ​ ៦៥៥៣៥ ។"
+msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
-msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr "សូម​ចំណាំ​ថា​ជា​មួយ​ Java\n​អ្នក​នឹង​បិទ​ Javascript ​​ផង​ដែរ ។\n\n​តើ​អ្នក​នៅ​តែ​ចង់​បិទ​ Java ឬ​?"
+msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 msgid  "~Don't show warning again"
@@ -3148,8 +3148,8 @@ msgid  "Note that street, Zip code and city are used to generate the registratio
 msgstr "ចំណាំថា​ ផ្លូវ​ លេខ​កូដ​ និង​ទីក្រុង​នឹង​ត្រូវ​បាន​ប្រើ ​ដើម្បី​បង្កើតសោ​​​ចុះ​ឈ្មោះ ។ អ្នក​នឹង​មិន​អាច​ផ្លាស់​ប្តូរ​ទិន្នន័យ​អ្នក​ប្រើ​ម្តង​ទៀត​បាន​ទេ​ លុះ​ត្រា​តែ​ការ​ចុះ​ឈ្មោះ​ត្រូវ​បាន​អនុវត្ត​ ។ តើ​អ្នក​ចង់​កែប្រែ​ទិន្នន័យ​អ្នក​ប្រើ​ឥឡូវ​នេះដែរ​​ឬទេ ​?"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
-msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
-msgstr "ទិន្នន័យ​អ្នក​ប្រើ​ត្រូវ​បាន​ផ្លាស់​ប្តូរ​ ។\nចំណាំ​ថា បើ​អ្នក​នៅ​តែ​បន្ត សោ​​ចុះ​ឈ្មោះ​នឹង​មិន​មាន​សុពលភាព​ទេ ។\nដូច្នេះ សោ​​ចុះ​ឈ្មោះ​ថ្មី​នឹង​ត្រូវ​បាន​ទាម​ទារ​ក្នុង​រយៈ​ពេល​ ៣០ ថ្ងៃ​ទៀត​ ។\nអ្នក​អាច​ស្វែង​រក​សំណុំ​បែប​បទ​ចុះ​ឈ្មោះ​នៅ​ក្នុង​ម៉ឺនុយ​ ជំនួយ​ - ការ​ចុះ​ឈ្មោះ​...\n​តើ​អ្នក​ពិត​ជា​ចង់​ផ្លាស់​ប្តូរ​ទិន្នន័យ​អ្នក​ប្រើ​​របស់​អ្នក​​ដែរឬទេ ?"
+msgid  "The User Data have been changed.\\nDo you really want to change your User Data?"
+msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
 msgid  "Treat as equal"
@@ -3612,16 +3612,16 @@ msgid  "Create Database Link"
 msgstr "បង្កើត​តំណ​មូលដ្ឋាន​ទិន្នន័យ​"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
-msgid  "The file\n$file$\ndoes not exist."
-msgstr "មិន​មាន​ឯកសារ​\n$file$\n ទេ ។"
+msgid  "The file\\n$file$\\ndoes not exist."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
-msgid  "The file\n$file$\ndoes not exist in the local file system."
-msgstr "មិន​មាន​ឯកសារ​\n$file$\n​នៅ​ក្នុង​ប្រព័ន្ធ​ឯកសារ​មូលដ្ឋាន​ទេ ។"
+msgid  "The file\\n$file$\\ndoes not exist in the local file system."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
-msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
-msgstr "ឈ្មោះ​  '$file$' ត្រូវ​បាន​ប្រើ​រួច​ហើយ​សម្រាប់​មូលដ្ឋាន​ទិន្នន័យ​ផ្សេង​ទៀត​ ។\nសូម​ជ្រើស​ឈ្មោះ​ផ្សេង​ទៀត​ ។"
+msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
+msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 msgid  "Do you want to delete the entry?"
@@ -4128,8 +4128,8 @@ msgid  "Assig~ned start parameters"
 msgstr "ប៉ារ៉ាម៉ែត្រ​ចាប់​ផ្តើម​ដែល​បាន​ផ្តល់ "
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FixedText.Text
-msgid  "For example: -Dmyprop=c:\program files\java"
-msgstr ""
+msgid  "For example: -Dmyprop=c:\\program files\\java"
+msgstr "ឧទាហរណ៍ ៖ -Dmyprop=c:\\program files\\java"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
 msgid  "~Remove"
@@ -4156,20 +4156,20 @@ msgid  "~Remove"
 msgstr "យក​ចេញ "
 
 #: source/options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ErrorBox.Message
-msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr "ថត​ដែល​អ្នក​បានជ្រើស​មិន​មាន​បរិស្ថាន​ពេល​វេលា​រត់​ Java ​ទេ ។\n​សូម​ជ្រើស​ថត​មួយ​ទៀត ។"
+msgid  "The folder you selected does not contain a Java runtime environment.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ErrorBox.Message
-msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr "បរិស្ថាន​ពេល​វេលា​រត់​ Java ​ដែល​អ្នក​បាន​ជ្រើស​មិន​មែន​ជា​កំណែ​ដែល​ទាម​ទារ​ទេ ។\n​សូម​ជ្រើស​ថត​ផ្សេង​ទៀត ។"
+msgid  "The Java runtime environment you selected is not the required version.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WarningBox.Message
-msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr "ត្រូវ​តែ​ចាប់​ផ្តើម​ %PRODUCTNAME ​ដើម្បី​ឲ្យ​បរិស្ថាន​ពេល​វេលា​រត់ Java ដែល​បាន​ជ្រើស​ធ្វើ​ការ​បាន​ត្រឹម​ត្រូវ ។\n​សូម​ចាប់​ផ្តើម​ %PRODUCTNAME ឡើង​វិញឥឡូវ​នេះ ។"
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WarningBox.Message
-msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
-msgstr "អ្នក​ត្រូវ​តែ​ចាប់​ផ្តើម​ %PRODUCTNAME ​ឡើង​វិញ​ ដូច្នេះ​តម្លៃ​ដែល​កែប្រែ​ ឬ​​តម្លៃ​​​អាច​មាន​​​ប្រសិទ្ធភាព​ ។\nសូម​ចាប់​ផ្តើម​ %PRODUCTNAME ​ឡើង​វិញ​ឥឡូវ​ ។"
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
 msgid  "Connection pool"
@@ -4328,8 +4328,8 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "​មិន​ប្រើ​​ ODF 1.2 ដែល​បាន​ពង្រីក ​​អាចបណ្ដាល​ឲ្យ​បាត់បង់​ព័ត៌មាន ។"
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-msgid  "Using \"%1\" as default file format may cause information loss.\n"
-msgstr "ការប្រើ​ \"%1\" ​ជា​ទ្រង់​ទ្រាយ​ឯកសារ​លំនាំ​ដើម​អាច​បណ្តាល​ឲ្យ​បាត់​បង់​ព័ត៌មាន​ ។\n"
+msgid  "Using \"%1\" as default file format may cause information loss.\\n"
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 msgid  "%PRODUCTNAME Improvement Program"
@@ -4340,8 +4340,8 @@ msgid  "Improvement Program"
 msgstr "កម្មវិធីធ្វើ​ឲ្យ​ប្រសើរ​ឡើង"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
-msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr "យើង​អញ្ជើញ​អ្នក​ឲ្យ​ចូលរួម​ក្នុង​​កម្មវិធី​ធ្វើ​ឲ្យ​ប្រសើរ​ឡើង​​នៃ %PRODUCTNAME របស់​យើង ដើម្បី​ជួយ​​បង្កើន​គុណភាព​របស់ %PRODUCTNAME ។\n\nប្រសិនបើ​អ្នក​សុខចិត្ត​ចូលរួម យើង​នឹង​ប្រមូល​ស្ថិតិ​អនាមិក​អំពី​វិធី​ដែល​អ្នក​ប្រើ %PRODUCTNAME ។ ទិន្នន័យ​ត្រូវបានប្រើ​ ដើម្បីកំណត់​​លំនាំ​ប្រើប្រាស់ ។\n\nកម្មវិធី​ធ្វើ​ឲ្យ​ប្រសើ​រឡើង %PRODUCTNAME នឹង​មិន​ប្រមូល​ទិន្នន័យ​ផ្ទាល់​ខ្លួន ឬ​មាតិកា​ឯកសារ​ណាមួយ​ទេ ។"
+msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
@@ -4456,8 +4456,8 @@ msgid  "Edit Paths: %1"
 msgstr "កែ​សម្រួល​ផ្លូវ​ ៖ %1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
-msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ និង​ថត​សំបុត្រ​​ត្រូវ​តែ​បញ្ជាក់​​ជា​ថត​ដែល​ដាច់​​ដោយ​ឡែក ។\n​សូម​ជ្រើស​ផ្លូវ​ថ្មី ។"
+msgid  "The configuration and mail directories must be specified as separate directories.\\nPlease choose a new path."
+msgstr ""
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 msgid  "Configuration"
@@ -5032,8 +5032,8 @@ msgid  "~Close"
 msgstr "បិទ "
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
-msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr "មាន​ឈ្មោះ​ដែល​បាន​បញ្ជាក់​នេះ​រួច​ហើយ​ ។\nសូម​បញ្ចូល​ឈ្មោះ​ថ្មី ។"
+msgid  "The specified name already exists.\\nPlease enter a new name."
+msgstr ""
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 msgid  "Do you want to change the '%1' dictionary language?"
@@ -5565,7 +5565,7 @@ msgstr "គ្មាន"
 
 #: source/tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_FILLCHAR_OTHER.RadioButton.Text
 msgid  "Character"
-msgstr "តួ​​អក្សរ​"
+msgstr "តួអក្សរ"
 
 #: source/tabpages/tabstpge.src#RID_SVXPAGE_TABULATOR.BTN_NEW.PushButton.Text
 msgid  "~New"
@@ -6240,8 +6240,8 @@ msgid  "O~uter"
 msgstr "ខាង​ក្រៅ "
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
-msgid  "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
-msgstr "ការ​កំណត់​រឹម​នៅ​ខាង​ក្រោម​ជួរ​បោះពុម្ព ។\n\nតើ​អ្នក​នៅ​តែ​ចង់​អនុវត្ត​ការ​កំណត់​ទាំង​នេះ​ឬ ?"
+msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
+msgstr ""
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -6257,7 +6257,7 @@ msgstr "A3"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A3.ItemList.item
 msgid  "A3"
-msgstr "A2"
+msgstr "B6 (ISO)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_B6_ISO.ItemList.item
 msgid  "B6 (ISO)"
@@ -6333,7 +6333,7 @@ msgstr "C4 Envelope"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C4.ItemList.item
 msgid  "C4 Envelope"
-msgstr "Dia Slide"
+msgstr "#6 3/4 (Personal) Envelope"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM675.ItemList.item
 msgid  "#6 3/4 (Personal) Envelope"
@@ -7084,8 +7084,8 @@ msgid  "Assigned macro"
 msgstr "ម៉ាក្រូ​ដែល​បាន​ផ្តល់​តម្លៃ"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
-msgid  "~Existing macros\n"
-msgstr "​ម៉ាក្រូ​ដែល​មាន​ស្រាប់​ក្នុង ៖​\n"
+msgid  "~Existing macros\\n"
+msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
 msgid  "~Assign"
@@ -7468,8 +7468,8 @@ msgid  "Do you want to delete the gradient?"
 msgstr "តើ​អ្នក​ចង់​លុប​ជម្រាល​ដែរឬទេ ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
-msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr "ជម្រាល​ត្រូ​វបាន​កែប្រែ​ដោយ​មិន​រក្សាទុក ។\nកែប្រែ​ជម្រាល​ដែលបាន​ជ្រើស​ ឬ​បន្ថែម​ជម្រាល​ថ្មី ។"
+msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 msgid  "Please enter a name for the bitmap:"
@@ -7484,8 +7484,8 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​រូបភាព​ឬ​​​​ ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
-msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr "រូបភាព​ត្រូវបានកែប្រែ​ដោយ​មិន​រក្សាទុក ។ \nកែប្រែ​រូបភាព​ដែល​បានជ្រើស ឬ​បន្ថែម​រូបភាព​ថ្មី ។"
+msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 msgid  "Please enter a name for the line style:"
@@ -7496,8 +7496,8 @@ msgid  "Do you want to delete the line style?"
 msgstr "តើ​អ្នក​ចង់​លុប​រចនាប័ទ្ម​បន្ទាត់​​ដែរ​​ឬទេ ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
-msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr "រចនាប័ទ្ម​បន្ទាត់​ត្រូវបាន​កែប្រែ​ដោយ​មិន​រក្សាទុក ។ \nកែប្រែ​រចនាប័ទ្ម​បន្ទាត់​ដែលបានជ្រើស​ ឬ​បន្ថែម​រចនាប័ទ្ម​បន្ទាត់​ថ្មី ។"
+msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 msgid  "Please enter a name for the hatching:"
@@ -7508,8 +7508,8 @@ msgid  "Do you want to delete the hatching?"
 msgstr "តើ​​អ្នក​​ចង់​លុប​ឆ្នូត​ៗ​ដែរ​ឬ​ទេ ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
-msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr "ប្រភេទ​​​ឆ្នូត​ៗ​ត្រូវ​បាន​កែប្រែ ប៉ុន្តែ​​មិន​​ទាន់​​បាន​​រក្សាទុក​ ។​\nកែប្រែ​​ប្រភេទ​​ឆ្នូត​ៗ​ដែល​បាន​ជ្រើស ឬ បន្ថែម​ប្រភេទ​​ឆ្នូត​ៗ​ថ្មី​មួយ ។"
+msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 msgid  "Modify"
@@ -7528,8 +7528,8 @@ msgid  "Do you want to delete the color?"
 msgstr "តើ​អ្នក​ចង់​លុប​ពណ៌​ដែរឬទេ ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
-msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr "ពណ៌​ត្រូវ​បាន​កែប្រែ​​ ដោយ​មិន​បាន​រក្សាទុក ។\nកែប្រែ​​ពណ៌​​ដែល​បាន​ជ្រើស ឬ បន្ថែម​ពណ៌​ថ្មី​មួយ ។"
+msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 msgid  "Table"
@@ -7548,8 +7548,8 @@ msgid  "The list was modified without saving. Would you like to save the list no
 msgstr "បញ្ជី​ត្រូវ​បាន​កែប្រែ​ ដោយ​មិន​បាន​រក្សាទុក ។ តើ​អ្នក​ចង់​រក្សាទុក​បញ្ជី​ឥឡូវ​ដែរ​ឬ​ទេ ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr "ឈ្មោះ​ដែល​អ្នក​បាន​បញ្ចូល​មាន​រួច​ហើយ ។​\nសូម​ជ្រើស​ឈ្មោះ​ផ្សេង​ ។"
+msgid  "The name you have entered already exists. \\nPlease choose another name."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 msgid  "Please enter a name for the new arrowhead:"
@@ -7560,8 +7560,8 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "តើ​អ្នក​ចង់​លុប​ក្បាល​ព្រួញ​ឬ​ទេ ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
-msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr "ក្បាល​ព្រួញ​ត្រូវ​បាន​កែប្រែ​ ដោយ​មិន​បាន​រក្សាទុក ។​\nតើ​អ្នក​ចង់​រក្សាទុក​ក្បាល​ព្រួញ​ឥឡូវ​ដែរ​​​​ឬ​ទេ ?"
+msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
+msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 msgid  "Indents and Spacing"

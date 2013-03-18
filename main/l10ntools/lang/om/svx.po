@@ -449,7 +449,7 @@ msgstr "Wanta"
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_OBJECT.MenuItem.Text
 msgid  "~OLE Object..."
-msgstr "Want OLE..."
+msgstr "Wanta OLE..."
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_MATH.MenuItem.Text
 msgid  "~Formula..."
@@ -971,14 +971,12 @@ msgid  "~Delete"
 msgstr "Haqi"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
-#, fuzzy
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "Barruyyaan Fakkaattii fooyya'eera.\nJijjiiramoota kana olkaa'uu barbaaddaa?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
-#, fuzzy
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "Barruyyaan Fakkaattii fooyya'eera.\nJijjiiramoota kana olkaa'uu barbaaddaa?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 #, fuzzy
@@ -1008,7 +1006,7 @@ msgstr "Qabiyyee walfakkaataa bitaa/mirga"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_DIST.FixedText.Text
 #, fuzzy
 msgid  "~Spacing"
-msgstr "Addaan Fageenya"
+msgstr "Addaan fageenya"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_DYNSPACING.CheckBox.Text
 #, fuzzy
@@ -1081,9 +1079,8 @@ msgid  "~More..."
 msgstr "Dabalata..."
 
 #: source/dialog/hdft.src#RID_SVXQBX_DELETE_HEADFOOT.QueryBox.Message
-#, fuzzy
-msgid  "Removing headers or footers deletes the contents.\nDo you want to delete this text?"
-msgstr "Irraantoo ykn jalaantoo balleessuun qabeentoota haqa.\nBarruu kana haquu ni barbaaddaa?"
+msgid  "Removing headers or footers deletes the contents.\\nDo you want to delete this text?"
+msgstr ""
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_LEFT.String.Text
 #, fuzzy
@@ -1296,10 +1293,12 @@ msgid  "Line of text"
 msgstr "Barruu irra sarara"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.GRP_Q.FixedLine.Text
+#, fuzzy
 msgid  "Colors"
 msgstr "Halluuwwan"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.FT_1.FixedText.Text
+#, fuzzy
 msgid  "Source color"
 msgstr "Halluu Maddaa"
 
@@ -1386,9 +1385,8 @@ msgid  "%PRODUCTNAME Document Recovery"
 msgstr "Fayyii Galmee %PRODUCTNAME"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
-#, fuzzy
-msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\n\nThe 'Status' column shows whether the document could be recovered."
-msgstr "Adeemsa fayyii galmeewwan armaan gaditti tarreeffamanii jalqabsiisuuf, 'Fayyii Eegali' dhiibi."
+msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 #, fuzzy
@@ -1401,9 +1399,8 @@ msgid  "Status of recovered documents:"
 msgstr "Haalojii galmeewwan fayyanii:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "Document Name\tStatus"
-msgstr "Maqaa\tHaalojii Galmee"
+msgid  "Document Name\\tStatus"
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 #, fuzzy
@@ -1451,9 +1448,8 @@ msgid  "A report of the crash was created to help us identify the reason why %PR
 msgstr "Sababii %PRODUCTNAME itti halake beekuuf akka nu gargaaru, gabaasni halakuu uumamee jira. Meeshaa Gabaasa Dogoggoraa argachuuf 'Itti Aanee' cuqaasi yookiin ejjatoo kana irra darbuuf 'Dhiisi' cuqaasi."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
-#, fuzzy
-msgid  "Recovery of your documents was finished.\nClick 'Finish' to see your documents."
-msgstr "Fayyiin galmeewwan keetii xumurameera.\nGalmeewwan kee ilaaluuf 'Xumuri' cuqaasi."
+msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 #, fuzzy
@@ -1466,9 +1462,8 @@ msgid  "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 msgstr "Fayyii galmee %PRODUCTNAME dhiisuu barbaaddaa?"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
-#, fuzzy
-msgid  "The automatic recovery process was interrupted.\n\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr "Fayyiin ofmaa addaan citee jira.\n'Olkaa'i' yoo cuqaaste galmeewwan armaan gaditti tarreeffaman ukaankaa armaan gaditti ibsame keessatti olkaa'amu. Galmeewwan osoo hin olkaa'in masaka cufuuf 'Dhiisi' cuqaasi."
+msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 #, fuzzy
@@ -1496,7 +1491,7 @@ msgid  "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 msgstr "Baga Gabaasa Dogoggoraa %PRODUCTNAME %PRODUCTVERSION tti nagaan dhufte"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
-msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\n\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\nCustomer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\nwww.oracle.com/html/services-privacy-policy.html"
+msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
 msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
@@ -1599,9 +1594,8 @@ msgid  "~Port"
 msgstr "Buufata"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
-#, fuzzy
-msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "Gabaasota dogoggoraa erguuf meeshaan Gabaasa Dogoggoraa %PRODUCTNAME Intarneetiitti walidhuu qaba.\nKubbaniyyoonni cimdaa isaanii eeguuf yeroo hedduu kaadimoota walsimsiisoo dallawa cimdaa waliin fayyadamu.\nHalli kun kan keetiin kan walfakkaatu taanaan, teessoo fi buufata kaadimichaa ifteessuu qabda."
+msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 #, fuzzy
@@ -2023,7 +2017,7 @@ msgstr "Haalata irra barbaadi"
 #: source/dialog/srchdlg.src#RID_SVXDLG_SEARCH.CB_NOTES.CheckBox.Text
 #, fuzzy
 msgid  "Notes"
-msgstr "Yaadannoota"
+msgstr "Yaadannoo"
 
 #: source/dialog/srchdlg.src#RID_SVXDLG_SEARCH.CB_JAP_MATCH_FULL_HALF_WIDTH.CheckBox.Text
 #, fuzzy
@@ -3073,9 +3067,8 @@ msgid  "As Button"
 msgstr "Akka Qabduutti"
 
 #: source/dialog/hyprlink.src#RID_SVXQB_DONTEXIST.QueryBox.Message
-#, fuzzy
-msgid  "This URL does not exist.\nInsert anyway?"
-msgstr "URLiin kun hin jiru.\nTa'us haa saagamuu?"
+msgid  "This URL does not exist.\\nInsert anyway?"
+msgstr ""
 
 #: source/dialog/sdstring.src#RID_SVXSTR_SOLID.String.Text
 #, fuzzy
@@ -3110,7 +3103,7 @@ msgstr "Halluu"
 #: source/dialog/sdstring.src#RID_SVXSTR_HATCH.String.Text
 #, fuzzy
 msgid  "Hatching"
-msgstr "Saphapheessuu"
+msgstr "Hatching"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_LINEEND.String.Text
 #, fuzzy
@@ -3140,7 +3133,7 @@ msgstr "Magariisa"
 #: source/dialog/sdstring.src#RID_SVXSTR_CYAN.String.Text
 #, fuzzy
 msgid  "Turquoise"
-msgstr "Turquoise"
+msgstr "Cuquliisa Magariisa"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_RED.String.Text
 #, fuzzy
@@ -3210,7 +3203,7 @@ msgstr "Fajajaa cuquliisa"
 #: source/dialog/sdstring.src#RID_SVXSTR_ORANGE.String.Text
 #, fuzzy
 msgid  "Orange"
-msgstr "Burtukaana"
+msgstr "Boora"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_ARROW.String.Text
 #, fuzzy
@@ -3235,7 +3228,7 @@ msgstr "- none -"
 #: source/dialog/sdstring.src#RID_SVXSTR_TRANSPARENCE.String.Text
 #, fuzzy
 msgid  "Transparency"
-msgstr "Dabarsa ifaa"
+msgstr "Iftooma"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CENTERED.String.Text
 #, fuzzy
@@ -3945,9 +3938,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
-#, fuzzy
-msgid  "The contour has been modified.\nDo you want to save the changes?"
-msgstr "Tooriin fooyya'eera.\nJijjiiramoota olkaa'uu barbaaddaa?"
+msgid  "The contour has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 #, fuzzy
@@ -3955,9 +3947,8 @@ msgid  "Do you want to create a new contour?"
 msgstr "Toorii haaraa uumuu barbaaddaa?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
-#, fuzzy
-msgid  "Setting a new workspace will\ncause the contour to be deleted.\nAre you sure you want to continue?"
-msgstr "Iddojii taasisuun\ntooriin akka haqamu godha.Itti fufuu barbaaddaa?"
+msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 #, fuzzy
@@ -4529,418 +4520,517 @@ msgid  "Switch"
 msgstr ""
 
 #: source/engine3d/string3d.src#RID_SVX_3D_CREATE_LATHE.String.Text
+#, fuzzy
 msgid  "Create 3D rotation object"
 msgstr "Wanta marfataa G3 uumi"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXCHANGE_PASTE.String.Text
+#, fuzzy
 msgid  "Insert object(s)"
 msgstr "Wanta(oota) saagi"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_SEGMENTS.String.Text
+#, fuzzy
 msgid  "Number of segments"
 msgstr "Lakkoofsa cittootaa"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_DEEPTH.String.Text
+#, fuzzy
 msgid  "Object depth"
 msgstr "Liixxaa wantaa"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_FOCAL.String.Text
+#, fuzzy
 msgid  "Focal length"
 msgstr "Dheerina fuulleffannoo"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_CAMPOS.String.Text
+#, fuzzy
 msgid  "Camera position"
 msgstr "Qubannoo kaameraa"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ROTATE.String.Text
+#, fuzzy
 msgid  "Rotate 3D object"
 msgstr "Wanta G3 marsi"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXTRUDE.String.Text
+#, fuzzy
 msgid  "Create extrusion object"
 msgstr "Wanta bokokaa uumi"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_LATHE.String.Text
+#, fuzzy
 msgid  "Create rotation object"
 msgstr "Wanta marfataa uumi"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_BREAK_LATHE.String.Text
+#, fuzzy
 msgid  "Split 3D object"
 msgstr "Wanta G3 addabaasi"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ATTRIBUTES.String.Text
+#, fuzzy
 msgid  "3D Attributes"
 msgstr "Amaloota G3"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.DockingWindow.Text
+#, fuzzy
 msgid  "3D Effects"
 msgstr "Galteewwan G3"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Geometry"
 msgstr "Ji'oomeetrii"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Shading"
 msgstr "Gaaddiddeessuu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Illumination"
 msgstr "Ibsaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Textures"
 msgstr "Makalluulee"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Material"
 msgstr "Meeshaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Update"
 msgstr "Haaromsi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_ASSIGN.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Assign"
 msgstr "Ramadi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_CHANGE_TO_3D.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Convert to 3D"
 msgstr "G3tti jijjiiri"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LATHE_OBJ.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Convert to Lathe Object"
 msgstr "Wanta Bocaatti jijjiiri"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_PERSPECTIVE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Perspective On/Off"
 msgstr "Mul'annoo Bani/Dhaamsi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_GEOMETRIE.FixedLine.Text
+#, fuzzy
 msgid  "Geometry"
 msgstr "Ji'oomeetrii"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_PERCENT_DIAGONAL.FixedText.Text
+#, fuzzy
 msgid  "R~ounded edges"
 msgstr "Qarreewwan naannawoo"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_BACKSCALE.FixedText.Text
+#, fuzzy
 msgid  "~Scaled depth"
 msgstr "Lixxaa madaalame"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_END_ANGLE.FixedText.Text
+#, fuzzy
 msgid  "~Rotation angle"
 msgstr "Kofa Marsaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
 msgid  " degree(s)"
-msgstr " digirii"
+msgstr " digrii(lee)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
+#, fuzzy
 msgid  "~Depth"
 msgstr "Liixxaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SEGMENTS.FixedLine.Text
+#, fuzzy
 msgid  "Segments"
 msgstr "Keeyatoota"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_HORIZONTAL.FixedText.Text
+#, fuzzy
 msgid  "~Horizontal"
 msgstr "Sardala"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_VERTICAL.FixedText.Text
+#, fuzzy
 msgid  "~Vertical"
 msgstr "Sarjaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_NORMALS.FixedLine.Text
+#, fuzzy
 msgid  "Normals"
 msgstr "Baratamoowwan"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "Wantarratti kan hundaa'e"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Flat"
 msgstr "Diriiraa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Spherical"
 msgstr "Mulullaawaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_INVERT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Invert Normals"
 msgstr "Baratamoota garagalchi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TWO_SIDED_LIGHTING.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Double-Sided Illumination"
 msgstr "Ibsaa Roga dachaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_DOUBLE_SIDED.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Double-Sided"
 msgstr "Raga-Lameessa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SHADEMODE.FixedText.Text
+#, fuzzy
 msgid  "~Mode"
 msgstr "Haalata"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item1.StringList.item
+#, fuzzy
 msgid  "Flat"
 msgstr "Diriiraa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item2.StringList.item
+#, fuzzy
 msgid  "Phong"
 msgstr "Pongii"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item3.StringList.item
+#, fuzzy
 msgid  "Gouraud"
 msgstr "Guuraad"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SHADOW.FixedLine.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Gaaddidduu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SHADOW_3D.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "3D Shadowing On/Off"
 msgstr "Gaaddiddeessuu G3 Banuu/Dhaamsuu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SLANT.FixedText.Text
+#, fuzzy
 msgid  "S~urface angle"
 msgstr "Kofa diriirtoo"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_SLANT.MetricField.CustomUnitText
+#, fuzzy
 msgid  " degree(s)"
 msgstr " digrii(lee)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_CAMERA.FixedLine.Text
+#, fuzzy
 msgid  "Camera"
 msgstr "Kaameraa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DISTANCE.FixedText.Text
+#, fuzzy
 msgid  "~Distance"
 msgstr "Addaan fageenya"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_FOCAL_LENGTH.FixedText.Text
+#, fuzzy
 msgid  "~Focal length"
 msgstr "Dheerina fuulleffannoo"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_REPRESENTATION.FixedLine.Text
+#, fuzzy
 msgid  "Shading"
 msgstr "Gaaddiddeessuu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_LIGHTSOURCE.FixedText.Text
+#, fuzzy
 msgid  "~Light source"
 msgstr "Madda ibsaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_1.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 1"
 msgstr "Madda ibsaa 1"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_2.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 2"
 msgstr "Madda ibsaa 2"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_3.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 3"
 msgstr "Madda ibsaa 3"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_4.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 4"
 msgstr "Madda ibsaa 4"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_5.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 5"
 msgstr "Madda ibsaa 5"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_6.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 6"
 msgstr "Madda ibsaa 6"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_7.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 7"
 msgstr "Madda ibsaa 7"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_8.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 8"
 msgstr "Madda ibsaa 8"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "Qaaqa halluuwwanii"
+msgstr "Qaaqa Halluuwwanii"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
+#, fuzzy
 msgid  "~Ambient light"
 msgstr "Ibsaa Naannoo"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "Qaaqa halluuwwanii"
+msgstr "Qaaqa Halluuwwanii"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
+#, fuzzy
 msgid  "Illumination"
 msgstr "Ibsaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_KIND.FixedText.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "Akaakuu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_LUMINANCE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Black & White"
 msgstr "Gurraachaaf Adii"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Color"
 msgstr "Halluu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_MODE.FixedText.Text
+#, fuzzy
 msgid  "~Mode"
 msgstr "Haalata"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_REPLACE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Only Texture"
 msgstr "Makalluu Qofa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_MODULATE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Texture and Shading"
 msgstr "Makalluu fi Gaaddiddeessuu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_BLEND.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Texture, Shadow and Color"
 msgstr "Makalluu, Gaaddidduu fi Halluu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_X.FixedText.Text
+#, fuzzy
 msgid  "~Projection X"
 msgstr "Karooratii X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "Wantarratti kan hundaa'e"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Parallel"
 msgstr "Waltarree"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_X.ButtonImage.QuickHelpText
 msgid  "Circular"
-msgstr "Geengawaa"
+msgstr "Geengaww"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_Y.FixedText.Text
+#, fuzzy
 msgid  "P~rojection Y"
 msgstr "Karooratii X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "Wantarratti kan hundaa'e"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Parallel"
 msgstr "Waltarree"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Circular"
 msgstr "Geengaww"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_FILTER.FixedText.Text
+#, fuzzy
 msgid  "~Filtering"
 msgstr "Calaluu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_FILTER.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Filtering On/Off"
 msgstr "Banaa/Dhaamaa Calaluu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_TEXTURE.FixedLine.Text
+#, fuzzy
 msgid  "Textures"
 msgstr "Makalluulee"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_FAVORITES.FixedText.Text
+#, fuzzy
 msgid  "~Favorites"
 msgstr "Jaalatamaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item1.StringList.item
+#, fuzzy
 msgid  "User-defined"
 msgstr "Fayyadamaan kan ibsame"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item2.StringList.item
+#, fuzzy
 msgid  "Metal"
 msgstr "Sibiila"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item3.StringList.item
+#, fuzzy
 msgid  "Gold"
 msgstr "Sabbuu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item4.StringList.item
+#, fuzzy
 msgid  "Chrome"
 msgstr "Halluu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item5.StringList.item
+#, fuzzy
 msgid  "Plastic"
 msgstr "Plaastiikii"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item6.StringList.item
+#, fuzzy
 msgid  "Wood"
 msgstr "Muka"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_COLOR.FixedText.Text
+#, fuzzy
 msgid  "~Object color"
 msgstr "Halluu wantaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "Qaaqa Halluuwwanii"
+msgstr "Qaaqa Halluu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
+#, fuzzy
 msgid  "~Illumination color"
 msgstr "Halluu ibsaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_EMISSION_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Qaaqa Halluuwwanii"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MAT_SPECULAR.FixedLine.Text
+#, fuzzy
 msgid  "Specular"
 msgstr "Fakkaataa Daaw'itii"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR.FixedText.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "Halluu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SPECULAR_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Qaaqa Halluu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR_INTENSITY.FixedText.Text
+#, fuzzy
 msgid  "I~ntensity"
 msgstr "Inteensitii"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MATERIAL.FixedLine.Text
+#, fuzzy
 msgid  "Material"
 msgstr "Meeshaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FAVORITE.String.Text
+#, fuzzy
 msgid  "Favorite"
 msgstr "Jaalatamaa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_X.String.Text
+#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Y.String.Text
+#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Z.String.Text
+#, fuzzy
 msgid  "Z"
 msgstr "Z"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_R.String.Text
+#, fuzzy
 msgid  "R:"
 msgstr "R:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_G.String.Text
+#, fuzzy
 msgid  "G:"
 msgstr "G:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_B.String.Text
+#, fuzzy
 msgid  "B:"
 msgstr "B:"
 
@@ -4949,90 +5039,112 @@ msgid  "Color Light Preview"
 msgstr ""
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_DELETEROWS.MenuItem.Text
+#, fuzzy
 msgid  "Delete Rows"
 msgstr "Tarreelee Haqi"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_SAVE.MenuItem.Text
+#, fuzzy
 msgid  "Save Record"
 msgstr "Galmee Olkaa'i"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_UNDO.MenuItem.Text
+#, fuzzy
 msgid  "Undo: Data entry"
 msgstr "Galiinsa deetaa: Gaabbi"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.MenuItem.Text
+#, fuzzy
 msgid  "Insert ~Column"
 msgstr "Tarjaa Saagi"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Text Box"
 msgstr "Sanduuqa Barruu"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CHECKBOX.MenuItem.Text
+#, fuzzy
 msgid  "Check Box"
 msgstr "Sanduuqa Filannoo"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_COMBOBOX.MenuItem.Text
+#, fuzzy
 msgid  "Combo Box"
 msgstr "Sanduuqa Koomboo"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_LISTBOX.MenuItem.Text
+#, fuzzy
 msgid  "List Box"
 msgstr "Sanduuqa Tarree"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_DATEFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Date Field"
 msgstr "Dirree Guyyaa"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TIMEFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Time Field"
 msgstr "Dirree Yeroo"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_NUMERICFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Numeric Field"
 msgstr "Dirree Lakkoofsaa"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CURRENCYFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Currency Field"
 msgstr "Dirree Maallaqaa"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_PATTERNFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Pattern Field"
 msgstr "Dirree Sarxaa"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_FORMATTEDFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Formatted Field"
 msgstr "Dirree Dhangeeffame"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TWOFIELDS_DATE_N_TIME.MenuItem.Text
+#, fuzzy
 msgid  "Date and Time Field"
 msgstr "Dirree Guyyaa fi Yeroo"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_CHANGECOL.MenuItem.Text
+#, fuzzy
 msgid  "~Replace with"
 msgstr "Kanan bakka buusi"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_DELETECOL.MenuItem.Text
+#, fuzzy
 msgid  "Delete Column"
 msgstr "Tarjaa Haqi"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_HIDECOL.MenuItem.Text
+#, fuzzy
 msgid  "~Hide Column"
 msgstr "Tarjaa Dhoksi"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWCOLS_MORE.MenuItem.Text
+#, fuzzy
 msgid  "~More..."
 msgstr "Dabalata..."
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWALLCOLS.MenuItem.Text
+#, fuzzy
 msgid  "~All"
 msgstr "Mara"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.MenuItem.Text
+#, fuzzy
 msgid  "~Show Columns"
 msgstr "Tarjaalee Mul'isi"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
+#, fuzzy
 msgid  "Column..."
 msgstr "Tarjaa..."
 
@@ -5047,9 +5159,8 @@ msgid  "Input required in field '#'. Please enter a value."
 msgstr "Dirree '#' keessatti naqni ni barbaachiisa. Mee gatii tokko galchi."
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
-#, fuzzy
-msgid  "Entry already exists.\nPlease choose another name."
-msgstr "Galfatni kanaan dura jira.\nMee maqaa biroo fili."
+msgid  "Entry already exists.\\nPlease choose another name."
+msgstr ""
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 #, fuzzy
@@ -5147,7 +5258,7 @@ msgid  "# records will be deleted."
 msgstr "Kuusaawwan # ni haqamu."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
-msgid  "If you click Yes, you won't be able to undo this operation.\nDo you want to continue anyway?"
+msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
 msgstr ""
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
@@ -5371,9 +5482,8 @@ msgid  "<AutoField>"
 msgstr "<DirreeOfmaa>"
 
 #: source/form/fmstring.src#RID_QRY_SAVEMODIFIED.QueryBox.Message
-#, fuzzy
-msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr "Qabiyyeen unka ammee fooyya'eera.\nJijjiiramoota kee olkaa'uu barbaaddaa?"
+msgid  "The content of the current form has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.1.String.Text
 #, fuzzy
@@ -5820,22 +5930,27 @@ msgid  "I~s not Null"
 msgstr "Dhabilee Miti"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Item"
 msgstr "Maalimaa Dabali"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Element"
 msgstr "Maalimaa Ida'i"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "Amala Ida'i"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Gulaali"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Haqi"
 
@@ -5900,19 +6015,16 @@ msgid  "~Show Details"
 msgstr "Bal'ina Mul'isi"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_MODEL.QueryBox.Message
-#, fuzzy
-msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\nDo you really want to delete this model?"
-msgstr "Ilaallata '$MODELNAME' haqun fira Ilaallata kana too'atamtoota ammee mara dhiibbessaa.\nIlaallata kana haqu barbaada?"
+msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\\nDo you really want to delete this model?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_INSTANCE.QueryBox.Message
-#, fuzzy
-msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\nDo you really want to delete this instance?"
-msgstr "Miseensa '$INSTANCENAME' haqun fira miseensa kana too'atamtoota ammee mara dhiibbessaa.\nMiseensa kana haqu barbaada?"
+msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\\nDo you really want to delete this instance?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ELEMENT.QueryBox.Message
-#, fuzzy
-msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\nDo you really want to delete this element?"
-msgstr "Maalimaa '$ELEMENTNAME' haqun fira maalimaaa kana too'atamtoota ammee mara dhiibbessaa.\nMaalimaa kana haqu barbaada?"
+msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\\nDo you really want to delete this element?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ATTRIBUTE.QueryBox.Message
 #, fuzzy
@@ -5920,19 +6032,16 @@ msgid  "Do you really want to delete the attribute '$ATTRIBUTENAME'?"
 msgstr "Amala '$ATTRIBUTENAME' haquu barbaaddaa?"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_SUBMISSION.QueryBox.Message
-#, fuzzy
-msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\n\nDo you really want to delete this submission?"
-msgstr "Dabarsa '$SUBMISSIONNAME' haquun too'atamtoota ammaaf dabarsa kanatti kornyatan mara dhiibbessa.\n\nDabarsa kana haquu barbaaddaa?"
+msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\\n\\nDo you really want to delete this submission?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_BINDING.QueryBox.Message
-#, fuzzy
-msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\n\nDo you really want to delete this binding?"
-msgstr "Hidhaa '$BINDINGNAME' haquun too'atamtoota ammaaf hidhaa kanatti kornyatan mara dhiibbessa.\nHidhaa kana haquu barbaaddaa?"
+msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\\n\\nDo you really want to delete this binding?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_LINK_WARNING.MessBox.Message
-#, fuzzy
-msgid  "This instance is linked with the form.\n\nThe changes you make to this instance will be lost when the form is reloaded.\n\nHow do you want to proceed?"
-msgstr "Miseensi kun unka wajjin koronyatee jira.\n\nYammuu unki lamfe'amu jijjiiramoonni ati miseensa kanatti goote ni badu.\nAkkamitti itti fufuu barbaadda?"
+msgid  "This instance is linked with the form.\\n\\nThe changes you make to this instance will be lost when the form is reloaded.\\n\\nHow do you want to proceed?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLNAME.ErrorBox.Message
 #, fuzzy
@@ -6141,7 +6250,7 @@ msgstr "~Huddeelsoo"
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_URL.FixedText.Text
 #, fuzzy
 msgid  "~URL"
-msgstr "~URL"
+msgstr "URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.STR_EDIT_TEXT.String.Text
 #, fuzzy
@@ -6151,7 +6260,7 @@ msgstr "Neemspeesota Gulaali"
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.ModalDialog.Text
 #, fuzzy
 msgid  "Add Submission"
-msgstr "Galfata Ida'i"
+msgstr "Galfata Dirqisiisaa Ida'i"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FL_SUBMISSION.FixedLine.Text
 #, fuzzy
@@ -6379,82 +6488,98 @@ msgid  "~Edit"
 msgstr "Gulaali"
 
 #: source/gallery2/gallery.src#RID_SVXDLG_GALLERYBROWSER.DockingWindow.Text
+#, fuzzy
 msgid  "Gallery"
 msgstr "Kuusaa Faayaa"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
+#, fuzzy
 msgid  "Update"
 msgstr "Haaromsi"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
+#, fuzzy
 msgid  "This file cannot be opened"
 msgstr "Faayilii kana banuun hin danda'amu"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NOTHEME.String.Text
+#, fuzzy
 msgid  "Invalid Theme Name!"
 msgstr "Maqaa Dhamsaa Fashala!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
-msgid  "Do you really want to\ndelete this object?"
-msgstr "Wanta kana haquu\nni barbaaddaa?"
+msgid  "Do you really want to\\ndelete this object?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
-msgid  "Do you really want to\ndelete this theme?"
-msgstr "Dhamsa kana haquu\nni barbaaddaa?"
+msgid  "Do you really want to\\ndelete this theme?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
+#, fuzzy
 msgid  "Wave - Sound File"
 msgstr "Dambalii - Faayilii Sagalee"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT2_UI.String.Text
+#, fuzzy
 msgid  "Audio Interchange File Format"
 msgstr "Dhangii Faayilii Waljijjiirraa Dhageetti"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT3_UI.String.Text
+#, fuzzy
 msgid  "AU - Sound File"
 msgstr "AU - Faayilii Sagalee"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FILTER.String.Text
+#, fuzzy
 msgid  "Graphics filter"
 msgstr "Calaltuu saxaatoo"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LENGTH.String.Text
+#, fuzzy
 msgid  "Length:"
 msgstr "Dheerina:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SIZE.String.Text
+#, fuzzy
 msgid  "Size:"
 msgstr "Hammamtaa:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEDD.String.Text
+#, fuzzy
 msgid  "Do you want to delete the linked file?"
 msgstr "Faayilii kornyate haquu barbaaddaa?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
-msgid  "This file cannot be opened.\nDo you want to enter a different search path? "
-msgstr "Faayiliin kun banamuu hin danda'u.\nXurree barbaachaa biroo galchuu barbaaddaa? "
+msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
+#, fuzzy
 msgid  "New Theme"
 msgstr "Dhamsa Haaraa"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_BROWSER.String.Text
+#, fuzzy
 msgid  "~Organizer..."
 msgstr "Qindeessituu..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
-msgid  "This theme name already exists.\nPlease choose a different one."
-msgstr "Maqaan dhamsaa kun kanaan dura jira.\nMee maqaa biroo fili."
+msgid  "This theme name already exists.\\nPlease choose a different one."
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
+#, fuzzy
 msgid  "I~mport..."
 msgstr "Alaagi..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_CREATETHEME.String.Text
+#, fuzzy
 msgid  "New Theme..."
 msgstr "Dhamsa Haaraa..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DIALOGID.String.Text
+#, fuzzy
 msgid  "Assign ID"
 msgstr "ID Ramadi"
 
@@ -6733,108 +6858,131 @@ msgid  "Screen Beans"
 msgstr "Biinsii Argii"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_THESAURUS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the thesaurus."
 msgstr "$(ERR) raawwii tarree moggoolee."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_SPELLING&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the spellcheck."
 msgstr "$(ERR) raawwii to'annaaqubeeffannoo."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_HYPHENATION&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the hyphenation."
 msgstr "$(ERR) raawwii murfisaa."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_DICTIONARY&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) creating a dictionary."
 msgstr "$(ERR) uuminsa galmee jechootaa."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_BACKGROUND&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) setting background attribute."
 msgstr "$(ERR) qindaa'ina amala duubbee."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_IMPORT_GRAPHIC&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) loading the graphics."
 msgstr "$(ERR) fe'iinsa saxaatoo."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_THESAURUSNOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "No thesaurus available for the current language.\nPlease check your installation and install the desired language."
-msgstr "Afaan ammaatiif tarreen moggoolee hinjirru.\nMee ijaarsa kee ilaaliitoo afaan barbaachisu ijaari."
+msgid  "No thesaurus available for the current language.\\nPlease check your installation and install the desired language."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LANGUAGENOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\nPlease check your installation and, if necessary, install the required language module\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
-msgstr "$(ARG1)iin to'annaaqubeeffannootiin kan deeggaramuu miti ykn ammaaf ka'aa miti.\nMee ijaarsa kee ilaalitoo, barbaachisaa yoo tahe, moojuulii afaanii barbaadame ijaari\n ykn 'Meeshaalee - Dirqalaalee -  Qindaa'inoota Afaanii - Gargaarsaalee Barreeffamaa' jalaa moojuulii afaanii kana kakaasi."
+msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\\nPlease check your installation and, if necessary, install the required language module\\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "Spellcheck is not available."
 msgstr "To'annaaqubeeffannoon hin jiru."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_HYPHENNOTEXISTS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "Hyphenation not available."
 msgstr "Murfisni hin jiru."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTREADABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be read."
 msgstr "Jechiikaa maamiloo $(ARG1) dubbisuun hin danda'amu."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTWRITEABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be created."
 msgstr "Jechiikaa maamiloo $(ARG1) uumuun hin danda'amu."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_NOTREADABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The graphic $(ARG1) could not be found."
 msgstr "Saxaatoon $(ARG1) argamuu hin dandeegne."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_WRONG_FILEFORMAT&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "An unlinked graphic could not be loaded."
 msgstr "Saxaatoo hin koronyoofne fe'uu hin dandeegne."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_NOLANGUAGE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "A language has not been fixed for the selected term."
 msgstr "Jecha filatameef afaan hin murtuufne."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
+#, fuzzy
 msgid  "The form layer wasn't loaded as the required IO-services (stardiv.uno.io.*) could not be instantiated."
 msgstr "Tajaajiloota-IO(stardiv.uno.io.*) barbaachisan jalqabsiisuu waan hindandeegneef, baqqaannni unkaa hin fe'amne."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
+#, fuzzy
 msgid  "The form layer wasn't written as the required IO services (stardiv.uno.io.*) could not be instantiated."
 msgstr "Tajaajiloota-IO(stardiv.uno.io.*) barbaachisan jalqabsiisuu waan hindandeegneef, baqqaannni unkaa hin barreeffamne."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
+#, fuzzy
 msgid  "An error occurred while reading the form controls. The form layer has not been loaded."
 msgstr "Osoo too'annaalee unkaa dubbisaa jiruu dogoggorri uumameera. Baqqaanni unkaa hin fe'amne."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
+#, fuzzy
 msgid  "An error occurred while writing the form controls. The form layer has not been saved."
 msgstr "Osoo too'annaalee unkaa barreessaa jiruu dogoggorri uumameera. Baqqaanni unkaa hin fe'amne."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_BULLETITEM_NOBULLET.String.Text
+#, fuzzy
 msgid  "An error occurred while reading one of the bullets. Not all of the bullets were loaded."
 msgstr "Osoo rasaasaalee keessaa isa tokko dubbisaa jiruu dogoggorri uumameera. Rasaasaalee hundi hin fe'amne."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_MODIFIED_VBASIC_STORAGE & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "All changes to the Basic Code are lost.The original VBA Macro Code is saved instead."
 msgstr "Jijjiirraalee Lakkaddaa Bu'uuraa marti baderaa.Haata'u malee Lakkaddaan Maakroo VBA xabboo olkaa'ameera."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_VBASIC_STORAGE_EXIST & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The original VBA Basic Code contained in the document will not be saved."
 msgstr "Lakkaddaan Bu'uuraa VBA xabboo galmee keessa jiru hinkaa'amuu."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_WRONGPASS & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The password is incorrect. The document cannot be opened."
 msgstr "Iggitaan kun dogoggora dha. Galmeen banamuu hindanda'u."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The encryption method used in this document is not supported. Only Microsoft Office 97/2000 compatible password encryption is supported."
 msgstr "Tooftaan icciteessuu galmee kana keessatti fayyadame kan deeggarmuu miti. Icciteessuu iggitaa walta'oo Maayikiroosooft Ofiis 97/2000 qoofatu deeggarama."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_PPOINT & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The loading of password-encrypted Microsoft PowerPoint presentations is not supported."
 msgstr "Fe'iinsi dhiheessa Maaykiroosoft Paawor Pooyintii iggitaan-icciteessamee hin deeggaramu."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_EXPORT_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
-msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\nDo you want to save the document without password protection?"
-msgstr "Galmeen yoo dhangii Maaykiroosooft Ofiisiin olkaa'ame hayyisni iggitaa hin deeggaramu.\nGalmee hayyisa iggitaa malee olkaa'uu barbaaddaa?"
+msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\\nDo you want to save the document without password protection?"
+msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
 msgid  "Scale"
@@ -7077,30 +7225,37 @@ msgid  "Font color"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND.String.Text
+#, fuzzy
 msgid  "Search"
 msgstr "Barbaadi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND_ALL.String.Text
+#, fuzzy
 msgid  "Find All"
 msgstr "Mara Barbaadi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE.String.Text
+#, fuzzy
 msgid  "Replace"
 msgstr "Bakkabuusi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE_ALL.String.Text
+#, fuzzy
 msgid  "Replace all"
 msgstr "Mara bakkabuusi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_CHAR.String.Text
+#, fuzzy
 msgid  "Character Style"
 msgstr "Akkaataa Arfii"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PARA.String.Text
+#, fuzzy
 msgid  "Paragraph Style"
 msgstr "Akkaataa Keewwataa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_FRAME.String.Text
+#, fuzzy
 msgid  "Frame Style"
 msgstr "Akkaataa Goodayyaa"
 
@@ -7109,54 +7264,67 @@ msgid  "Page Style"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_FORMULA.String.Text
+#, fuzzy
 msgid  "Formula"
 msgstr "Foormulaa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_VALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "Gatii"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_NOTE.String.Text
+#, fuzzy
 msgid  "Note"
 msgstr "Yaadannoo"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_NULL.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "Homaa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_SOLID.String.Text
+#, fuzzy
 msgid  "Solid"
 msgstr "Jajjaboo"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_HORZ.String.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "Sardala"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_VERT.String.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "Sarjaa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_CROSS.String.Text
+#, fuzzy
 msgid  "Grid"
 msgstr "Tarsaa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DIAGCROSS.String.Text
+#, fuzzy
 msgid  "Diamond"
 msgstr "Diggaa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_UPDIAG.String.Text
+#, fuzzy
 msgid  "Diagonal up"
 msgstr "Shafaxa ol"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DOWNDIAG.String.Text
+#, fuzzy
 msgid  "Diagonal down"
 msgstr "Shafaxa gadi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_BITMAP.String.Text
+#, fuzzy
 msgid  "Image"
 msgstr "Fakkaattii"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_STANDARD.String.Text
+#, fuzzy
 msgid  "Horizontal alignment default"
 msgstr "Durtii hiriirfama sardalaa"
 
@@ -7165,6 +7333,7 @@ msgid  "Align left"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_CENTER.String.Text
+#, fuzzy
 msgid  "Centered horizontally"
 msgstr "Sardalaan wiirtaa'e"
 
@@ -7177,86 +7346,107 @@ msgid  "Justify"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_REPEAT.String.Text
+#, fuzzy
 msgid  "Repeat alignment"
 msgstr "Hiriirfama irra deebi'i"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_STANDARD.String.Text
+#, fuzzy
 msgid  "Vertical alignment default"
 msgstr "Durtii hiriirfama sarjaa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_TOP.String.Text
+#, fuzzy
 msgid  "Align to top"
 msgstr "Gara gubbaatti hiriirsi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_CENTER.String.Text
+#, fuzzy
 msgid  "Centered vertically"
 msgstr "Sarjinaan wiirtaa'e"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_BOTTOM.String.Text
+#, fuzzy
 msgid  "Align to bottom"
 msgstr "Gara jalaatti hiriirsi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STANDARD.String.Text
+#, fuzzy
 msgid  "Default orientation"
 msgstr "Hiriirfama durtii"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_TOPBOTTOM.String.Text
+#, fuzzy
 msgid  "From top to bottom"
 msgstr "Gubbaarraa gara jalaa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_BOTTOMTOP.String.Text
+#, fuzzy
 msgid  "Bottom to Top"
 msgstr "Jalaa gara Gubbaa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STACKED.String.Text
+#, fuzzy
 msgid  "Stacked"
 msgstr "Walirra Naqame"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_TRUE.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Gabatee"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_FALSE.String.Text
+#, fuzzy
 msgid  "Not Table"
 msgstr "Gabatee Miti"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_TRUE.String.Text
+#, fuzzy
 msgid  "Spacing enabled"
 msgstr "Addaan fageenyi dandeessifame"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_FALSE.String.Text
+#, fuzzy
 msgid  "Spacing disabled"
 msgstr "Addaan fageenyi aangooleessame"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_TRUE.String.Text
+#, fuzzy
 msgid  "Keep spacing interval"
 msgstr "Addaan fageenya gidduutt eegi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_FALSE.String.Text
+#, fuzzy
 msgid  "Allowed to fall short of spacing interval"
 msgstr "Addaan fageenya gidduutt gabaabaa kuffisuun hayyamamaa dha"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_LEFT.String.Text
+#, fuzzy
 msgid  "Left margin: "
 msgstr "Muudana bitaa: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_TOP.String.Text
+#, fuzzy
 msgid  "Top margin: "
 msgstr "Muudana gubbaa: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_RIGHT.String.Text
+#, fuzzy
 msgid  "Right margin: "
 msgstr "Muudana mirgaa: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_BOTTOM.String.Text
+#, fuzzy
 msgid  "Bottom margin: "
 msgstr "Muudana jalaa: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_COMPLETE.String.Text
+#, fuzzy
 msgid  "Page Description: "
 msgstr "Ibsa Fuulaa: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_UPPER.String.Text
+#, fuzzy
 msgid  "Capitals"
 msgstr "Qubguddaalessoota"
 
@@ -7265,26 +7455,32 @@ msgid  "Lowercase"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_UPPER.String.Text
+#, fuzzy
 msgid  "Uppercase Roman"
 msgstr "Qubee Guddaa Roomaa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_LOWER.String.Text
+#, fuzzy
 msgid  "Lowercase Roman"
 msgstr "Qubee xixiqqaa Roomaa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ARABIC.String.Text
+#, fuzzy
 msgid  "Arabic"
 msgstr "Afaan Arabaa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_NONE.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "Homaa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_TRUE.String.Text
+#, fuzzy
 msgid  "Landscape"
 msgstr "Dalgeessa"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_FALSE.String.Text
+#, fuzzy
 msgid  "Portrait"
 msgstr "Fakkoo"
 
@@ -7297,30 +7493,37 @@ msgid  "Right"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_ALL.String.Text
+#, fuzzy
 msgid  "All"
 msgstr "Mara"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_MIRROR.String.Text
+#, fuzzy
 msgid  "Mirrored"
 msgstr "Daawwiteessame"
 
 #: source/items/svxitems.src#RID_SVXITEMS_AUTHOR_COMPLETE.String.Text
+#, fuzzy
 msgid  "Author: "
 msgstr "Barreessaa: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_DATE_COMPLETE.String.Text
+#, fuzzy
 msgid  "Date: "
 msgstr "Guyyaa: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_TEXT_COMPLETE.String.Text
+#, fuzzy
 msgid  "Text: "
 msgstr "Barruu: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_BACKGROUND_COLOR.String.Text
+#, fuzzy
 msgid  "Background color: "
 msgstr "Halluu duubbee: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PATTERN_COLOR.String.Text
+#, fuzzy
 msgid  "Pattern color: "
 msgstr "Halluu sarxaa: "
 
@@ -7329,6 +7532,7 @@ msgid  "Character background"
 msgstr ""
 
 #: source/src/app.src#RID_ERRBOX_MODULENOTINSTALLED.ErrorBox.Message
+#, fuzzy
 msgid  "The action could not be executed. The %PRODUCTNAME program module needed for this action is currently not installed."
 msgstr "Gochaa kana raawwachuu hin dandeenye. Mojuuliin sagantaa %PRODUCTNAME gocha kanaaf barbaachisu ammaaf hin ijaaramne."
 
@@ -7501,7 +7705,7 @@ msgid  "The specified device is invalid."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
-msgid  "The object cannot be accessed\ndue to insufficient user rights."
+msgid  "The object cannot be accessed\\ndue to insufficient user rights."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
@@ -7513,7 +7717,7 @@ msgid  "No more space on device."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ISWILDCARD.String.Text
-msgid  "This operation cannot be run on\nfiles containing wildcards."
+msgid  "This operation cannot be run on\\nfiles containing wildcards."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSUPPORTED.String.Text
@@ -7597,7 +7801,7 @@ msgid  "The file cannot be used as template."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTREADDOCINFO.String.Text
-msgid  "Document information could not be read from the file because\nthe document information format is unknown or because document information does not\nexist."
+msgid  "Document information could not be read from the file because\\nthe document information format is unknown or because document information does not\\nexist."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_ALREADYOPEN.String.Text
@@ -7629,11 +7833,11 @@ msgid  "Could not establish Internet connection to $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_READ.String.Text
-msgid  "Error reading data from the Internet.\nServer error message: $(ARG1)."
+msgid  "Error reading data from the Internet.\\nServer error message: $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_WRITE.String.Text
-msgid  "Error transferring data to the Internet.\nServer error message: $(ARG1)."
+msgid  "Error transferring data to the Internet.\\nServer error message: $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_GENERAL.String.Text
@@ -7745,7 +7949,7 @@ msgid  "A subscription folder is required to install a Channel."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSTORABLEINBINARYFORMAT.String.Text
-msgid  "This document contains attributes that cannot be saved in the selected format.\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
+msgid  "This document contains attributes that cannot be saved in the selected format.\\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_TARGETFILECORRUPTED.String.Text
@@ -7761,19 +7965,19 @@ msgid  "Could not create backup copy."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_MACROS_SUPPORT_DISABLED.String.Text
-msgid  "An attempt was made to execute a macro.\nFor security reasons, macro support is disabled."
+msgid  "An attempt was made to execute a macro.\\nFor security reasons, macro support is disabled."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_DOCUMENT_MACRO_DISABLED.String.Text
-msgid  "This document contains macros.\n\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\n\nTherefore, some functionality may not be available."
+msgid  "This document contains macros.\\n\\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\\n\\nTherefore, some functionality may not be available."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_BROKENSIGNATURE.String.Text
-msgid  "The digitally signed document content and/or macros do not match the current document signature.\n\nThis could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
+msgid  "The digitally signed document content and/or macros do not match the current document signature.\\n\\nThis could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_INCOMPLETE_ENCRYPTION.String.Text
-msgid  "The encrypted document contains unexpected non-encrypted streams.\n\nThis could be the result of document manipulation.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
+msgid  "The encrypted document contains unexpected non-encrypted streams.\\n\\nThis could be the result of document manipulation.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_INVALIDLENGTH.String.Text
@@ -7801,506 +8005,630 @@ msgid  "Function not possible: write protected."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_SHARED_NOPASSWORDCHANGE.String.Text
-msgid  "The password of a shared spreadsheet cannot be set or changed.\nDeactivate sharing mode first."
+msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactivate sharing mode first."
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
+#, fuzzy
 msgid  "INSRT"
 msgstr "INSRT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_OVERWRITE_TEXT.String.Text
+#, fuzzy
 msgid  "OVER"
 msgstr "OVER"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_STD.String.Text
+#, fuzzy
 msgid  "STD"
 msgstr "STD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ER.String.Text
+#, fuzzy
 msgid  "EXT"
 msgstr "EXT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ERG.String.Text
+#, fuzzy
 msgid  "ADD"
 msgstr "ADD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_BLK.String.Text
+#, fuzzy
 msgid  "BLK"
 msgstr "BLK"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature is OK."
 msgstr "Mallattoo Lakqurxaawaa: Mallattoon galmee sirriidha."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK_NO_VERIFY.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature is OK, but the certificates could not be validated."
 msgstr "Mallattoo Lakqurxaawaa: Mallattoon galmee sirriidha, garuu ragaalee gataa'essuun hin danda'amne."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_NOT_OK.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature does not match the document content. We strongly recommend you to do not trust this document."
 msgstr "Mallattoo Lakqurxaawaa: Mallattoon galmee qabeentaa galmee waliin walinsimu. Galmee akka hin amanne ciminaan si yaadachiifna."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_NO_SIG.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document is not signed."
 msgstr "Mallattoo Lakqurxaawaa: Galmeen kun hin mallattoofne."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_CERT_OK_PARTIAL_SIG.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature and the certificate are OK, but not all parts of the document are signed."
 msgstr "Mallattoo Laqqursaawaa: mallattoon galmee fi certificate sirriidha, garuu kutaaleen galmee marti hin mallatteeffaman."
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_OPTIMAL.MenuItem.Text
+#, fuzzy
 msgid  "Optimal"
 msgstr "Gutoola"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_PAGE_WIDTH.MenuItem.Text
+#, fuzzy
 msgid  "Page Width"
 msgstr "Bal'ina Fuulaa"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_WHOLE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "Entire Page"
 msgstr "Fuula Waamaraa"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_AVG.MenuItem.Text
+#, fuzzy
 msgid  "Average"
 msgstr "Jiddugaleessa"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT2.MenuItem.Text
+#, fuzzy
 msgid  "CountA"
 msgstr "CountA"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT.MenuItem.Text
+#, fuzzy
 msgid  "Count"
 msgstr "Lakkaa'i"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MAX.MenuItem.Text
+#, fuzzy
 msgid  "Maximum"
 msgstr "Olaantoo"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MIN.MenuItem.Text
+#, fuzzy
 msgid  "Minimum"
 msgstr "Gadaantoo"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_SUM.MenuItem.Text
+#, fuzzy
 msgid  "Sum"
 msgstr "Ida'ama"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_NONE.MenuItem.Text
+#, fuzzy
 msgid  "None"
 msgstr "Homaa"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_XMLSECSTATBAR.XMLSEC_CALL.MenuItem.Text
+#, fuzzy
 msgid  "Digital Signatures..."
 msgstr "Mallattoo Lakqurxaawaa..."
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNONE.String.Text
+#, fuzzy
 msgid  "draw object"
 msgstr "wanta fakkasaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
+#, fuzzy
 msgid  "draw objects"
 msgstr "wantoota fakkasaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
+#, fuzzy
 msgid  "group object"
 msgstr "wanta garee"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUP.String.Text
+#, fuzzy
 msgid  "group objects"
 msgstr "wantoota garee"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUPEMPTY.String.Text
+#, fuzzy
 msgid  "blank group object"
 msgstr "wanta garee duwwaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUPEMPTY.String.Text
+#, fuzzy
 msgid  "Blank group objects"
 msgstr "Wantoota garee duwwaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE.String.Text
+#, fuzzy
 msgid  "Line"
 msgstr "Sarara"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Hori.String.Text
+#, fuzzy
 msgid  "horizontal line"
 msgstr "sarara sardalaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Vert.String.Text
+#, fuzzy
 msgid  "Vertical line"
 msgstr "Sarara sarjaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Diag.String.Text
+#, fuzzy
 msgid  "diagonal line"
 msgstr "sarara shafaxa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLINE.String.Text
+#, fuzzy
 msgid  "Lines"
 msgstr "Sararoota"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECT.String.Text
+#, fuzzy
 msgid  "Rectangle"
 msgstr "Rogafree"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECT.String.Text
+#, fuzzy
 msgid  "Rectangles"
 msgstr "Rogafreewwan"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUAD.String.Text
+#, fuzzy
 msgid  "Square"
 msgstr "Arfakkuu"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUAD.String.Text
+#, fuzzy
 msgid  "Squares"
 msgstr "Arfakkuuwwan"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARAL.String.Text
+#, fuzzy
 msgid  "Parallelogram"
 msgstr "Paaraaleeloograamii"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARAL.String.Text
+#, fuzzy
 msgid  "Parallelograms"
 msgstr "Paaraaleeloograamota"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTE.String.Text
+#, fuzzy
 msgid  "Rhombus"
 msgstr "Rombosii"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTE.String.Text
+#, fuzzy
 msgid  "Rhombuses"
 msgstr "Rombosiiwwan"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECTRND.String.Text
+#, fuzzy
 msgid  "Rounded rectangle"
 msgstr "Reektaangilii qonyataa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECTRND.String.Text
+#, fuzzy
 msgid  "Rounded Rectangles"
 msgstr "Reektaangiliiwwan Qonyatoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUADRND.String.Text
+#, fuzzy
 msgid  "rounded square"
 msgstr "iskuweerii qonyataa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUADRND.String.Text
+#, fuzzy
 msgid  "Rounded Squares"
 msgstr "Iskuweeriiwwan Qonyatoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARALRND.String.Text
+#, fuzzy
 msgid  "Rounded Parallelogram"
 msgstr "Paaraleeloograamii Qonyataa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARALRND.String.Text
+#, fuzzy
 msgid  "Rounded parallelograms"
 msgstr "Paaraleeloograamiiwwan qonyatoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTERND.String.Text
+#, fuzzy
 msgid  "rounded rhombus"
 msgstr "roombasii qonyataa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTERND.String.Text
+#, fuzzy
 msgid  "Rounded rhombuses"
 msgstr "Roombasiiwwan qonyatoowwan"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRC.String.Text
+#, fuzzy
 msgid  "Circle"
 msgstr "Geengoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRC.String.Text
+#, fuzzy
 msgid  "Circles"
 msgstr "Geengoowwan"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECT.String.Text
+#, fuzzy
 msgid  "Circle sector"
 msgstr "Birkoo geengoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECT.String.Text
+#, fuzzy
 msgid  "Circle sectors"
 msgstr "Birkoowwan geengoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARC.String.Text
+#, fuzzy
 msgid  "Arc"
 msgstr "Golboo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARC.String.Text
+#, fuzzy
 msgid  "Arcs"
 msgstr "Golboowwan"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
+#, fuzzy
 msgid  "Circle segment"
 msgstr "Muraa geengoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
+#, fuzzy
 msgid  "Circle segments"
 msgstr "Muraawwan geengoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRCE.String.Text
+#, fuzzy
 msgid  "Ellipse"
 msgstr "Luulloo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRCE.String.Text
+#, fuzzy
 msgid  "Ellipses"
 msgstr "Luulloowwan"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECTE.String.Text
+#, fuzzy
 msgid  "Ellipse Pie"
 msgstr "Muraangoo Luulloo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECTE.String.Text
+#, fuzzy
 msgid  "Ellipse Pies"
 msgstr "Muraangoowwan Luulloo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARCE.String.Text
+#, fuzzy
 msgid  "Elliptical arc"
 msgstr "Golboo luulloo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARCE.String.Text
+#, fuzzy
 msgid  "Elliptical arcs"
 msgstr "Golboowwan luulloo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUTE.String.Text
+#, fuzzy
 msgid  "Ellipse Segment"
 msgstr "Muraa Luulloo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUTE.String.Text
+#, fuzzy
 msgid  "Ellipse Segments"
 msgstr "Muraawwan Luulloo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY.String.Text
+#, fuzzy
 msgid  "Polygon"
 msgstr "Rogdanee"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY_PntAnz.String.Text
+#, fuzzy
 msgid  "Polygon %2 corners"
 msgstr "Rogdanee gooleewwan %2"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPOLY.String.Text
+#, fuzzy
 msgid  "Polygons"
 msgstr "Rogdaneewwan"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN.String.Text
+#, fuzzy
 msgid  "Polyline"
 msgstr "Sarara-danee"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN_PntAnz.String.Text
+#, fuzzy
 msgid  "Polyline with %2 corners"
 msgstr "Sarara-danee gooleewwan %2 qabu"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPLIN.String.Text
+#, fuzzy
 msgid  "Polylines"
 msgstr "Sarara-danoota"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHLINE.String.Text
+#, fuzzy
 msgid  "Bézier curve"
 msgstr "Qonyoo Bézier"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHLINE.String.Text
+#, fuzzy
 msgid  "Bézier curves"
 msgstr "Qonyoota Bézier"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHFILL.String.Text
+#, fuzzy
 msgid  "Bézier curve"
 msgstr "Qonyoo Bézier"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHFILL.String.Text
+#, fuzzy
 msgid  "Bézier curves"
 msgstr "Qonyoota Bézier"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREELINE.String.Text
+#, fuzzy
 msgid  "Freeform Line"
 msgstr "Sarara Unka Akka Feetee"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREELINE.String.Text
+#, fuzzy
 msgid  "Freeform Lines"
 msgstr "Sararoota Unka Akka Feetee"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREEFILL.String.Text
+#, fuzzy
 msgid  "Freeform Line"
 msgstr "Sarara Unka Akka Feetee"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREEFILL.String.Text
+#, fuzzy
 msgid  "Freeform Lines"
 msgstr "Sararoota Unka Akka Feetee"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBLINE.String.Text
+#, fuzzy
 msgid  "Curve"
 msgstr "Qonyoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBLINE.String.Text
+#, fuzzy
 msgid  "Curve objects"
 msgstr "Wantoota qonyoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBFILL.String.Text
+#, fuzzy
 msgid  "Curve"
 msgstr "Qonyoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBFILL.String.Text
+#, fuzzy
 msgid  "Curve objects"
 msgstr "Wantoota qonyoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNATSPLN.String.Text
+#, fuzzy
 msgid  "Natural Spline"
 msgstr "Qonyoo Uumamaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNATSPLN.String.Text
+#, fuzzy
 msgid  "Natural Splines"
 msgstr "Qonyoota Uumamaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPERSPLN.String.Text
+#, fuzzy
 msgid  "Periodic Spline"
 msgstr "Qonyoo Perediikii"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPERSPLN.String.Text
+#, fuzzy
 msgid  "Periodic Splines"
 msgstr "Qonyoota Perediikii"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXT.String.Text
 msgid  "Text Frame"
-msgstr "Goodayyaa barruu"
+msgstr "Goodayyaa Barruu"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXT.String.Text
+#, fuzzy
 msgid  "Text Frame"
 msgstr "Goodayyaa Barruu"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXTLNK.String.Text
+#, fuzzy
 msgid  "Linked text frame"
 msgstr "Goodayyaa barruu kornyate"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXTLNK.String.Text
+#, fuzzy
 msgid  "Linked text frames"
 msgstr "Goodayyaalee barruu kornyatan"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "Wanta barruu hammatti-taasisii"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "Wantoota barruu hammatti-taasisii"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITALLTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "Wanta barruu hammatti-taasisii"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITALLTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "Wantoota barruu hammatti-taasisii"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTITLETEXT.String.Text
+#, fuzzy
 msgid  "Title text"
 msgstr "Barruu mataduree"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTITLETEXT.String.Text
+#, fuzzy
 msgid  "Title texts"
 msgstr "Barruulee mataduree"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOUTLINETEXT.String.Text
+#, fuzzy
 msgid  "Outline Text"
 msgstr "Barruu Toorii"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOUTLINETEXT.String.Text
+#, fuzzy
 msgid  "Outline Texts"
 msgstr "Barruulee Toorii"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAF.String.Text
+#, fuzzy
 msgid  "graphic"
 msgstr "saxaatoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAF.String.Text
+#, fuzzy
 msgid  "graphics"
 msgstr "saxaatoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFLNK.String.Text
+#, fuzzy
 msgid  "Linked graphic"
 msgstr "Saxaatoo kornyate"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFLNK.String.Text
+#, fuzzy
 msgid  "Linked graphics"
 msgstr "Saxaatoowwan kornyate"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONE.String.Text
+#, fuzzy
 msgid  "Blank graphic object"
 msgstr "Wanta saxaatoo duwwaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONE.String.Text
+#, fuzzy
 msgid  "Blank graphic objects"
 msgstr "Wantoota saxaatoo duwwaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONELNK.String.Text
+#, fuzzy
 msgid  "Blank linked graphic"
 msgstr "Saxaatoo kornyate duwwaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONELNK.String.Text
+#, fuzzy
 msgid  "Blank linked graphics"
 msgstr "Saxaatoowwan kornyate duwwaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTF.String.Text
+#, fuzzy
 msgid  "Metafile"
 msgstr "Galsarmee"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTF.String.Text
+#, fuzzy
 msgid  "Metafiles"
 msgstr "Galsarmeewwan"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTFLNK.String.Text
+#, fuzzy
 msgid  "Linked Metafile"
 msgstr "Galsarmee Kornyate"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTFLNK.String.Text
+#, fuzzy
 msgid  "Linked Metafiles"
 msgstr "Galsarmeewwan Kornyatan"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMP.String.Text
+#, fuzzy
 msgid  "Bitmap"
 msgstr "Suurxiqqoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANS.String.Text
+#, fuzzy
 msgid  "Bitmap with transparency"
 msgstr "Suurxiqqoo dabarsa ifaa qabu"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPLNK.String.Text
+#, fuzzy
 msgid  "Linked Bitmap"
 msgstr "Suurxiqqoo Kornyate"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANSLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmap with transparency"
 msgstr "Suurxiqqoo kornyate dabarsa ifaa qabu"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMP.String.Text
+#, fuzzy
 msgid  "Bitmaps"
 msgstr "Suurxiqqoota"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANS.String.Text
+#, fuzzy
 msgid  "Bitmaps with transparency"
 msgstr "Suurxiqqoota dabarsa ifaa qaban"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmaps"
 msgstr "Suurxiqqoota kornyatan"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANSLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmaps with transparency"
 msgstr "Suurxiqqoota kornyata dabarsa ifaa qaban"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCUSTOMSHAPE.String.Text
+#, fuzzy
 msgid  "Shape"
 msgstr "Boca"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCUSTOMSHAPE.String.Text
+#, fuzzy
 msgid  "Shapes"
 msgstr "Bocaalee"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMAC.String.Text
+#, fuzzy
 msgid  "Mac graphic"
 msgstr "Saxaatoo Mac"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMAC.String.Text
+#, fuzzy
 msgid  "Mac graphics"
 msgstr "Saxaatoon Mac"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMACLNK.String.Text
+#, fuzzy
 msgid  "Linked Mac graphic"
 msgstr "Saxaatoo Maak kornyate"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMACLNK.String.Text
+#, fuzzy
 msgid  "Linked Mac graphics"
 msgstr "Saxaatoowwan Maak kornyatan"
 
@@ -8313,1686 +8641,2106 @@ msgid  "SVGs"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2.String.Text
+#, fuzzy
 msgid  "embedded object (OLE)"
 msgstr "wanta suuqame (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2.String.Text
+#, fuzzy
 msgid  "Embedded objects (OLE)"
 msgstr "Wantoota suuqaman (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulUno.String.Text
+#, fuzzy
 msgid  "Control"
 msgstr "Too'annaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralUno.String.Text
+#, fuzzy
 msgid  "Controls"
 msgstr "Too'annaalee"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2LNK.String.Text
+#, fuzzy
 msgid  "linked embedded object (OLE)"
 msgstr "wanta suuqamee kornyate (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2LNK.String.Text
+#, fuzzy
 msgid  "Linked embedded objects (OLE)"
 msgstr "Wantoota suuqamanii kornyatan (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjOLE2NamePrefix.String.Text
+#, fuzzy
 msgid  "Object"
 msgstr "Wanta"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFrame.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "Goodayyaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFrame.String.Text
+#, fuzzy
 msgid  "Frames"
 msgstr "Goodayyaalee"
 
 #: source/svdraw/svdstr.src#STR_ObjFrameNamePrefix.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "Goodayyaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulEDGE.String.Text
+#, fuzzy
 msgid  "Object Connectors"
 msgstr "Walqabsiistota Wantaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralEDGE.String.Text
+#, fuzzy
 msgid  "Object Connectors"
 msgstr "Walqabsiistota Wantaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCAPTION.String.Text
+#, fuzzy
 msgid  "Callout"
 msgstr "Balballoo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCAPTION.String.Text
+#, fuzzy
 msgid  "Callouts"
 msgstr "Balballoota"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPAGE.String.Text
+#, fuzzy
 msgid  "Preview object"
 msgstr "Wanta durargii"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPAGE.String.Text
+#, fuzzy
 msgid  "Preview objects"
 msgstr "Wantoota durargii"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEASURE.String.Text
+#, fuzzy
 msgid  "Dimension line"
 msgstr "Sarara rogaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEASURE.String.Text
+#, fuzzy
 msgid  "Dimensioning objects"
 msgstr "Wantoota hammamteessuu"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePlural.String.Text
+#, fuzzy
 msgid  "draw objects"
 msgstr "wantoota fakkasaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameNoObj.String.Text
+#, fuzzy
 msgid  "No draw object"
 msgstr "Wanti fakkasaa hin jiru"
 
 #: source/svdraw/svdstr.src#STR_ObjNameAnd.String.Text
+#, fuzzy
 msgid  "and"
 msgstr "fi"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPlural.String.Text
+#, fuzzy
 msgid  "draw object(s)"
 msgstr "wanta(oota) fakkasaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCube3d.String.Text
+#, fuzzy
 msgid  "3D cube"
 msgstr "Kuubii G3"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCube3d.String.Text
+#, fuzzy
 msgid  "3D cubes"
 msgstr "Kuubota G3"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulExtrude3d.String.Text
+#, fuzzy
 msgid  "Extrusion object"
 msgstr "Wanta dhiita'iinsaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralExtrude3d.String.Text
+#, fuzzy
 msgid  "Extrusion objects"
 msgstr "Wantoota dhiita'iinsaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLabel3d.String.Text
+#, fuzzy
 msgid  "3D text"
 msgstr "Barruu G3"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLabel3d.String.Text
+#, fuzzy
 msgid  "3D texts"
 msgstr "Barruulee G3"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLathe3d.String.Text
+#, fuzzy
 msgid  "rotation object"
 msgstr "wanta naanna'iinsaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLathe3d.String.Text
+#, fuzzy
 msgid  "rotation objects"
 msgstr "wantoota naanna'iinsaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulObj3d.String.Text
+#, fuzzy
 msgid  "3D object"
 msgstr "Wanta G3"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralObj3d.String.Text
+#, fuzzy
 msgid  "3D objects"
 msgstr "Wantoota G3"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPoly3d.String.Text
+#, fuzzy
 msgid  "3D polygons"
 msgstr "Rogdaneewwan G3"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulScene3d.String.Text
+#, fuzzy
 msgid  "3D scene"
 msgstr "Agarsiisa G3"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralScene3d.String.Text
+#, fuzzy
 msgid  "3D scenes"
 msgstr "Agarsiisota G3"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSphere3d.String.Text
+#, fuzzy
 msgid  "sphere"
 msgstr "mulullee"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSphere3d.String.Text
+#, fuzzy
 msgid  "spheres"
 msgstr "mululleewwan"
 
 #: source/svdraw/svdstr.src#STR_EditWithCopy.String.Text
+#, fuzzy
 msgid  "with copy"
 msgstr "garagalcha waliin"
 
 #: source/svdraw/svdstr.src#STR_EditPosSize.String.Text
+#, fuzzy
 msgid  "Set position and size for %1"
 msgstr "%1 dhaaf qubannoo fi hammamtaa qindeessi"
 
 #: source/svdraw/svdstr.src#STR_EditDelete.String.Text
+#, fuzzy
 msgid  "Delete %1"
 msgstr "%1 haqi"
 
 #: source/svdraw/svdstr.src#STR_EditMovToTop.String.Text
+#, fuzzy
 msgid  "Move %1 forward"
 msgstr "%1 fuulduratti siiqsi"
 
 #: source/svdraw/svdstr.src#STR_EditMovToBtm.String.Text
+#, fuzzy
 msgid  "Move %1 further back"
 msgstr "%1 dabalataan duubatti siiqsi"
 
 #: source/svdraw/svdstr.src#STR_EditPutToTop.String.Text
+#, fuzzy
 msgid  "Move %1 to front"
 msgstr "%1 duratti siiqsi"
 
 #: source/svdraw/svdstr.src#STR_EditPutToBtm.String.Text
+#, fuzzy
 msgid  "Move %1 to back"
 msgstr "%1 duubatti siiqsi"
 
 #: source/svdraw/svdstr.src#STR_EditRevOrder.String.Text
+#, fuzzy
 msgid  "Reverse order of %1"
 msgstr "Tartiiba %1 gargalchi"
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "%1 siiqsi"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
 msgstr "%1 lamhammamteessi"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
+#, fuzzy
 msgid  "Rotate %1"
 msgstr "%1 naanneessi"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
+#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "%1 dalgata meelchi"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
+#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "%1 sarjinaan meelchi"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorDiag.String.Text
+#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "%1 shafaxa meelchi"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
+#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "%1 harkaan meelchi"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
+#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "%1 ciqilchi (hirkataa)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
+#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "%1 geengoo keessatti qindeessi"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
+#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "%1 geengoo keessatti qonyeessi"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
+#, fuzzy
 msgid  "Distort %1"
 msgstr "%1 ciqilchi"
 
 #: source/svdraw/svdstr.src#STR_EditRipUp.String.Text
+#, fuzzy
 msgid  "Undo %1"
 msgstr "%1 gaabbi"
 
 #: source/svdraw/svdstr.src#STR_EditSetPointsSmooth.String.Text
+#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "Amaloota bézier %1 fooyyessi"
 
 #: source/svdraw/svdstr.src#STR_EditSetSegmentsKind.String.Text
+#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "Amaloota bézier %1 fooyyessi"
 
 #: source/svdraw/svdstr.src#STR_EditShut.String.Text
+#, fuzzy
 msgid  "Close %1"
 msgstr "%1 cufi"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueEscDir.String.Text
+#, fuzzy
 msgid  "Set exit direction for %1"
 msgstr "Kallattii bahiinsa %1 qindeessi"
 
 #: source/svdraw/svdstr.src#STR_EditSetGluePercent.String.Text
+#, fuzzy
 msgid  "Set relative attribute at %1"
 msgstr "Amala sadhaatawaa %1 irraa qondeessi"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueAlign.String.Text
+#, fuzzy
 msgid  "Set reference point for %1"
 msgstr "Iddoo wabii %1 qindeessi"
 
 #: source/svdraw/svdstr.src#STR_EditGroup.String.Text
+#, fuzzy
 msgid  "Group %1"
 msgstr "%1 gurmeessi"
 
 #: source/svdraw/svdstr.src#STR_EditUngroup.String.Text
+#, fuzzy
 msgid  "Ungroup %1"
 msgstr "%1 garbaasi"
 
 #: source/svdraw/svdstr.src#STR_EditSetAttributes.String.Text
+#, fuzzy
 msgid  "Apply attributes to %1"
 msgstr "Amaloota %1 tti fayyadami"
 
 #: source/svdraw/svdstr.src#STR_EditSetStylesheet.String.Text
+#, fuzzy
 msgid  "Apply Styles to %1"
 msgstr "Akkaataalee %1 tti fayyadami"
 
 #: source/svdraw/svdstr.src#STR_EditDelStylesheet.String.Text
+#, fuzzy
 msgid  "Remove Style from %1"
 msgstr "%1 irraa Akkaataa balleessi"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPoly.String.Text
+#, fuzzy
 msgid  "Convert %1 to polygon"
 msgstr "%1 rogdaneetti geeddari"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPolys.String.Text
+#, fuzzy
 msgid  "Convert %1 to polygons"
 msgstr "%1 rogdanootatti geeddari"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurve.String.Text
+#, fuzzy
 msgid  "Convert %1 to curve"
 msgstr "%1 qonyootti geeddari"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurves.String.Text
+#, fuzzy
 msgid  "Convert %1 to curves"
 msgstr "%1 qonyootatti geeddari"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContour.String.Text
+#, fuzzy
 msgid  "Convert %1 to contour"
 msgstr "%1 sararrootti geeddari"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContours.String.Text
+#, fuzzy
 msgid  "Convert %1 to contours"
 msgstr "%1 sararrootatti geeddari"
 
 #: source/svdraw/svdstr.src#STR_EditAlign.String.Text
+#, fuzzy
 msgid  "Align %1"
 msgstr "%1 hiriirsi"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVTop.String.Text
+#, fuzzy
 msgid  "Align %1 to top"
 msgstr "%1 gubbaatti hiriirsi"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVBottom.String.Text
+#, fuzzy
 msgid  "Align %1 to bottom"
 msgstr "%1 jalatti hiriirsi"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVCenter.String.Text
+#, fuzzy
 msgid  "Horizontally center %1"
 msgstr "%1 dalgatti wiirtessi"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHLeft.String.Text
+#, fuzzy
 msgid  "Align %1 to left"
 msgstr "%1 bitaatti hiriirsi"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHRight.String.Text
+#, fuzzy
 msgid  "Align %1 to right"
 msgstr "%1 mirgatti hiriirsi"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHCenter.String.Text
+#, fuzzy
 msgid  "Vertically center %1"
 msgstr "%1 sarjinaan wiirtessi"
 
 #: source/svdraw/svdstr.src#STR_EditAlignCenter.String.Text
+#, fuzzy
 msgid  "Center %1"
 msgstr "%1 wiirtessi"
 
 #: source/svdraw/svdstr.src#STR_EditTransform.String.Text
+#, fuzzy
 msgid  "Transform %1"
 msgstr "%1 geeddari"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_PolyPoly.String.Text
+#, fuzzy
 msgid  "Combine %1"
 msgstr "%1 walqabsiisi"
 
 #: source/svdraw/svdstr.src#STR_EditMergeMergePoly.String.Text
+#, fuzzy
 msgid  "Merge %1"
 msgstr "%1 maki"
 
 #: source/svdraw/svdstr.src#STR_EditMergeSubstractPoly.String.Text
+#, fuzzy
 msgid  "Subtract %1"
 msgstr "%1 hir'isi"
 
 #: source/svdraw/svdstr.src#STR_EditMergeIntersectPoly.String.Text
+#, fuzzy
 msgid  "Intersect %1"
 msgstr "%1 qaxxaamuri"
 
 #: source/svdraw/svdstr.src#STR_DistributeMarkedObjects.String.Text
+#, fuzzy
 msgid  "Distribute selected objects"
 msgstr "Wantoota filaman raabsi"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_OnePoly.String.Text
+#, fuzzy
 msgid  "Combine %1"
 msgstr "%1 walqabsiisi"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Polys.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "%1 addabaasi"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Lines.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "%1 addabaasi"
 
 #: source/svdraw/svdstr.src#STR_EditImportMtf.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "%1 addabaasi"
 
 #: source/svdraw/svdstr.src#STR_ExchangePaste.String.Text
+#, fuzzy
 msgid  "Insert object(s)"
 msgstr "Wanta(oota) saagi"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpCut.String.Text
+#, fuzzy
 msgid  "Cut %1"
 msgstr "%1 muri"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpPaste.String.Text
+#, fuzzy
 msgid  "Paste Clipboard"
 msgstr "Gabatee muraa maxxansi"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDD.String.Text
+#, fuzzy
 msgid  "Drag and Drop %1"
 msgstr "%1 Harkisii Kaa'i"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDDPaste.String.Text
+#, fuzzy
 msgid  "Insert Drag and Drop"
 msgstr "Harkisii Kaa'ii Saagi"
 
 #: source/svdraw/svdstr.src#STR_DragInsertPoint.String.Text
+#, fuzzy
 msgid  "Insert point to %1"
 msgstr "Tuqaa %1 tti saagi"
 
 #: source/svdraw/svdstr.src#STR_DragInsertGluePoint.String.Text
+#, fuzzy
 msgid  "Insert glue point to %1"
 msgstr "Tuqaa maxxannee %1 tti saagi"
 
 #: source/svdraw/svdstr.src#STR_DragMethMovHdl.String.Text
+#, fuzzy
 msgid  "Move reference-point"
 msgstr "Iddoo-wabii siiqsi"
 
 #: source/svdraw/svdstr.src#STR_DragMethObjOwn.String.Text
+#, fuzzy
 msgid  "Geometrically change %1"
 msgstr "%1 Ji'oometraayinaan jijjiiri"
 
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "%1 siiqsi"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
 msgstr "%1 lamhammamteessi"
 
 #: source/svdraw/svdstr.src#STR_DragMethRotate.String.Text
+#, fuzzy
 msgid  "Rotate %1"
 msgstr "%1 naanneessi"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorHori.String.Text
+#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "%1 dalgata meelchi"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorVert.String.Text
+#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "%1 sarjinaan meelchi"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorDiag.String.Text
+#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "%1 shafaxa meelchi"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorFree.String.Text
+#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "%1 harkaan meelchi"
 
 #: source/svdraw/svdstr.src#STR_DragMethGradient.String.Text
+#, fuzzy
 msgid  "Interactive gradient for %1"
 msgstr "%1 dhaaf gargartoo haasoo"
 
 #: source/svdraw/svdstr.src#STR_DragMethTransparence.String.Text
+#, fuzzy
 msgid  "Interactive transparency for %1"
 msgstr "%1 dhaaf dabarsa ifaa haasoo"
 
 #: source/svdraw/svdstr.src#STR_DragMethShear.String.Text
+#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "%1 ciqilchi (hirkataa)"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrook.String.Text
+#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "%1 geengoo keessatti qindeessi"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrookContortion.String.Text
+#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "%1 geengoo keessatti qonyeessi"
 
 #: source/svdraw/svdstr.src#STR_DragMethDistort.String.Text
+#, fuzzy
 msgid  "Distort %1"
 msgstr "%1 ciqilchi"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrop.String.Text
+#, fuzzy
 msgid  "Crop %O"
 msgstr "%0 soofi"
 
 #: source/svdraw/svdstr.src#STR_DragRectEckRad.String.Text
+#, fuzzy
 msgid  "Alter radius by %1"
 msgstr "Raadiyasii %1 dhaan jijjiiri"
 
 #: source/svdraw/svdstr.src#STR_DragPathObj.String.Text
+#, fuzzy
 msgid  "Change %1"
 msgstr "%1 jijjiiri"
 
 #: source/svdraw/svdstr.src#STR_DragRectResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
 msgstr "%1 lamhammamteessi"
 
 #: source/svdraw/svdstr.src#STR_DragCaptFram.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "%1 siiqsi"
 
 #: source/svdraw/svdstr.src#STR_DragCaptTail.String.Text
+#, fuzzy
 msgid  "Move end point of %1"
 msgstr "Dhuma %1 siiqsi"
 
 #: source/svdraw/svdstr.src#STR_DragCircAngle.String.Text
+#, fuzzy
 msgid  "Adjust angle by %1"
 msgstr "Kofa %1 dhaan mijeessi"
 
 #: source/svdraw/svdstr.src#STR_DragEdgeTail.String.Text
+#, fuzzy
 msgid  "Change %1"
 msgstr "%1 jijjiiri"
 
 #: source/svdraw/svdstr.src#STR_ViewTextEdit.String.Text
+#, fuzzy
 msgid  "TextEdit: Paragraph %1, Row %2, Column %3"
 msgstr "BarruuGulaali: Keewwata %1, Tarree %2, Tarjaa %3"
 
 #: source/svdraw/svdstr.src#STR_ViewMarked.String.Text
+#, fuzzy
 msgid  "%1 selected"
 msgstr "%1 filame"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoint.String.Text
+#, fuzzy
 msgid  "Point from %1"
 msgstr "Tuqaa %1 irraa"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoints.String.Text
+#, fuzzy
 msgid  "%2 points from %1"
 msgstr "Tuqaalee %2 %1 irraa"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoint.String.Text
+#, fuzzy
 msgid  "Glue point from %1"
 msgstr "Tuqaa maxxannee %1 irraa"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoints.String.Text
+#, fuzzy
 msgid  "%2 glue points from %1"
 msgstr "Tuqaalee maxxannee %2 %1 irraa"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkObjs.String.Text
+#, fuzzy
 msgid  "Mark objects"
 msgstr "Wantoota mallatteessi"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreObjs.String.Text
+#, fuzzy
 msgid  "Mark additional objects"
 msgstr "Wantoota dabalataa mallatteessi"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkPoints.String.Text
+#, fuzzy
 msgid  "Mark points"
 msgstr "Tuqaalee mallatteessi"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMorePoints.String.Text
+#, fuzzy
 msgid  "Mark additional points"
 msgstr "Tuqaalee dabablataa mallatteessi"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkGluePoints.String.Text
+#, fuzzy
 msgid  "Mark glue points"
 msgstr "Tuqaalee maxxannee mallatteessi"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreGluePoints.String.Text
+#, fuzzy
 msgid  "Mark additional glue points"
 msgstr "Tuqaalee maxxannee dabalataa mallateessi"
 
 #: source/svdraw/svdstr.src#STR_ViewCreateObj.String.Text
+#, fuzzy
 msgid  "Create %1"
 msgstr "%1 uumi"
 
 #: source/svdraw/svdstr.src#STR_UndoInsertObj.String.Text
+#, fuzzy
 msgid  "Insert %1"
 msgstr "%1 saagi"
 
 #: source/svdraw/svdstr.src#STR_UndoCopyObj.String.Text
+#, fuzzy
 msgid  "Copy %1"
 msgstr "%1 garagalchi"
 
 #: source/svdraw/svdstr.src#STR_UndoObjOrdNum.String.Text
+#, fuzzy
 msgid  "Change object order of %1"
 msgstr "Tartiiba wanta %1 jijjiiri"
 
 #: source/svdraw/svdstr.src#STR_UndoObjSetText.String.Text
+#, fuzzy
 msgid  "Edit text of %1"
 msgstr "Barruu %1 gulaali"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPage.String.Text
+#, fuzzy
 msgid  "Insert page"
 msgstr "Fuula saagi"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPage.String.Text
+#, fuzzy
 msgid  "Delete page"
 msgstr "Fuula haqi"
 
 #: source/svdraw/svdstr.src#STR_UndoCopPage.String.Text
+#, fuzzy
 msgid  "Copy page"
 msgstr "Fuula garagalchi"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPage.String.Text
+#, fuzzy
 msgid  "Change order of pages"
 msgstr "Tartiiba fuulotaa jijjiiri"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Assign background page"
 msgstr "Fuula duubbee ramadi"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Clear background page assignment"
 msgstr "Ramaddii fuula duubbee balleessi"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Move background page assignment"
 msgstr "Ramaddii fuula duubbee siiqsi"
 
 #: source/svdraw/svdstr.src#STR_UndoChgPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Change background page assignment"
 msgstr "Ramaddii fuula duubbee jijjiiri"
 
 #: source/svdraw/svdstr.src#STR_UndoMergeModel.String.Text
+#, fuzzy
 msgid  "Insert document"
 msgstr "Galmee saagi"
 
 #: source/svdraw/svdstr.src#STR_UndoNewLayer.String.Text
+#, fuzzy
 msgid  "Insert Layer"
 msgstr "Baqqaana Saagi"
 
 #: source/svdraw/svdstr.src#STR_UndoDelLayer.String.Text
+#, fuzzy
 msgid  "Delete layer"
 msgstr "Fuula haqi"
 
 #: source/svdraw/svdstr.src#STR_UndoMovLayer.String.Text
+#, fuzzy
 msgid  "Change order of layers"
 msgstr "Tartiiba baqqaanota jijjiiri"
 
 #: source/svdraw/svdstr.src#STR_UndoObjName.String.Text
+#, fuzzy
 msgid  "Change object name of %1 to"
 msgstr "Maqaa wanta %1 kanatti jijjiiri"
 
 #: source/svdraw/svdstr.src#STR_UndoObjTitle.String.Text
+#, fuzzy
 msgid  "Change object title of %1"
 msgstr "Mataduree wanta %1 jijjiiri"
 
 #: source/svdraw/svdstr.src#STR_UndoObjDescription.String.Text
+#, fuzzy
 msgid  "Change object description of %1"
 msgstr "Ibsa wanta %1 jijjiiri"
 
 #: source/svdraw/svdstr.src#STR_StandardLayerName.String.Text
+#, fuzzy
 msgid  "Standard"
 msgstr "Waaltina"
 
 #: source/svdraw/svdstr.src#STR_ItemValON.String.Text
+#, fuzzy
 msgid  "on"
 msgstr "banaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
+#, fuzzy
 msgid  "off"
 msgstr "dhaamaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
+#, fuzzy
 msgid  "yes"
 msgstr "eyyee"
 
 #: source/svdraw/svdstr.src#STR_ItemValNO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "Lakki"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE1.String.Text
+#, fuzzy
 msgid  "Type 1"
 msgstr "Akaakuu 1"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE2.String.Text
+#, fuzzy
 msgid  "Type 2"
 msgstr "Akaakuu 2"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE3.String.Text
+#, fuzzy
 msgid  "Type 3"
 msgstr "Akaakuu 3"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE4.String.Text
+#, fuzzy
 msgid  "Type 4"
 msgstr "Akaakuu 4"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCHORI.String.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "Sardala"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCVERT.String.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "Sarjaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCBESTFIT.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "Ofmaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZENONE.String.Text
+#, fuzzy
 msgid  "Off"
 msgstr "Dhaamaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEPROP.String.Text
+#, fuzzy
 msgid  "Proportional"
 msgstr "Gitaawaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEALLLINES.String.Text
+#, fuzzy
 msgid  "Fit to size (all rows separately) "
 msgstr "Hammamtaatti taasisi (tarreewwan mara kophaatti)"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZERESIZEAT.String.Text
+#, fuzzy
 msgid  "Use hard attributes"
 msgstr "Amaloota jajaboo fayyadami"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJTOP.String.Text
+#, fuzzy
 msgid  "Top"
 msgstr "Irra"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJCENTER.String.Text
+#, fuzzy
 msgid  "Center"
 msgstr "Wiirtuu"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBOTTOM.String.Text
+#, fuzzy
 msgid  "Bottom"
 msgstr "Jala"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBLOCK.String.Text
+#, fuzzy
 msgid  "Use entire height"
 msgstr "Hojjaa guutuu fayyadami"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJSTRETCH.String.Text
+#, fuzzy
 msgid  "Stretched"
 msgstr "Diriirfamaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJLEFT.String.Text
+#, fuzzy
 msgid  "Left"
 msgstr "Bitaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJCENTER.String.Text
+#, fuzzy
 msgid  "Center"
 msgstr "Wiirtuu"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJRIGHT.String.Text
+#, fuzzy
 msgid  "Right"
 msgstr "Mirga"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJBLOCK.String.Text
+#, fuzzy
 msgid  "Use entire width"
 msgstr "Hojjaa guutuu fayyadami"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJSTRETCH.String.Text
+#, fuzzy
 msgid  "Stretched"
 msgstr "Diriirfamaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_NONE.String.Text
+#, fuzzy
 msgid  "off"
 msgstr "dhaamaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_BLINK.String.Text
+#, fuzzy
 msgid  "flash"
 msgstr "balaqqee"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SCROLL.String.Text
+#, fuzzy
 msgid  "Scroll Through"
 msgstr "Keessa Marfadhu"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_ALTERNATE.String.Text
+#, fuzzy
 msgid  "alternating"
 msgstr "jijijjiiramaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SLIDE.String.Text
+#, fuzzy
 msgid  "Scroll In"
 msgstr "Keessatti Marsi"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_LEFT.String.Text
+#, fuzzy
 msgid  "left"
 msgstr "bitaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_UP.String.Text
+#, fuzzy
 msgid  "up"
 msgstr "ol"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_RIGHT.String.Text
+#, fuzzy
 msgid  "right"
 msgstr "mirga"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_DOWN.String.Text
+#, fuzzy
 msgid  "down"
 msgstr "gadi"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ORTHOLINES.String.Text
+#, fuzzy
 msgid  "Standard Connector"
 msgstr "Walqabsiistuu Waaltawaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_THREELINES.String.Text
+#, fuzzy
 msgid  "Line Connector"
 msgstr "Walqabsiistuu Sararaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ONELINE.String.Text
+#, fuzzy
 msgid  "Straight Connector"
 msgstr "Walqabsiistuu Sirrii"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_BEZIER.String.Text
+#, fuzzy
 msgid  "Curved Connector"
 msgstr "Walqabsiistuu Jalloo"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_STD.String.Text
+#, fuzzy
 msgid  "Standard"
 msgstr "Waaltina"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_RADIUS.String.Text
+#, fuzzy
 msgid  "Radius"
 msgstr "Raadiyasii"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTHAUTO.String.Text
+#, fuzzy
 msgid  "automatic"
 msgstr "ofmaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTLEFTOUTSIDE.String.Text
+#, fuzzy
 msgid  "left outside"
 msgstr "bitaa ala"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTINSIDE.String.Text
+#, fuzzy
 msgid  "inside (centered)"
 msgstr "keessa (wiirta'aa)"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTRIGHTOUTSID.String.Text
+#, fuzzy
 msgid  "right outside"
 msgstr "mirga ala"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTVAUTO.String.Text
+#, fuzzy
 msgid  "automatic"
 msgstr "ofmaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_ABOVE.String.Text
+#, fuzzy
 msgid  "on the line"
 msgstr "sarara irra"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_BREAKEDLINE.String.Text
+#, fuzzy
 msgid  "broken line"
 msgstr "sarara ciccitaa"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_BELOW.String.Text
+#, fuzzy
 msgid  "below the line"
 msgstr "sararaa gadi"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_VERTICALCEN.String.Text
+#, fuzzy
 msgid  "centered"
 msgstr "wiirta'aa"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_FULL.String.Text
+#, fuzzy
 msgid  "full circle"
 msgstr "geengoo guutuu"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_SECT.String.Text
+#, fuzzy
 msgid  "Circle Pie"
 msgstr "Muraangoo Geengoo"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_CUT.String.Text
+#, fuzzy
 msgid  "Circle segment"
 msgstr "Muraa geengoo"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_ARC.String.Text
+#, fuzzy
 msgid  "Arc"
 msgstr "Golboo"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW.String.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Gaaddidduu"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWCOLOR.String.Text
+#, fuzzy
 msgid  "Shadow color"
 msgstr "Halluu gaaddidduu"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWXDIST.String.Text
+#, fuzzy
 msgid  "Horizontal shadow outline"
 msgstr "Toorii gaaddidduu sardalaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWYDIST.String.Text
+#, fuzzy
 msgid  "Vertical shadow outline"
 msgstr "Toorii gaaddidduu sarjaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Dabarsa ifaa gaaddidduu"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
+#, fuzzy
 msgid  "3D shadow"
 msgstr "Gaaddidduu G3"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
+#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Gaaddidduu mul'annoo"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
+#, fuzzy
 msgid  "Callout type"
 msgstr "Akaakuu balballoo"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Given angle"
 msgstr "Kofa kenname"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONANGLE.String.Text
+#, fuzzy
 msgid  "Angle"
 msgstr "Kofa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONGAP.String.Text
+#, fuzzy
 msgid  "Gap"
 msgstr "Iddoo duwwaa wantoota gidduu"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCDIR.String.Text
+#, fuzzy
 msgid  "Exit direction"
 msgstr "Kallaattii barruu"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCISREL.String.Text
+#, fuzzy
 msgid  "Relative exit position"
 msgstr "Iddoo bahiinsaa sadhaatawaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCREL.String.Text
+#, fuzzy
 msgid  "Exit Position"
 msgstr "Iddoo Bahiinsaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCABS.String.Text
+#, fuzzy
 msgid  "Exit Position"
 msgstr "Iddoo Bahiinsaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONLINELEN.String.Text
+#, fuzzy
 msgid  "Line length"
 msgstr "Dheerina sararaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFITLINELEN.String.Text
+#, fuzzy
 msgid  "Auto line length"
 msgstr "Dheerina sarara ofmaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ECKENRADIUS.String.Text
+#, fuzzy
 msgid  "Corner radius"
 msgstr "Raadiyasii goolee"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LEFTDIST.String.Text
+#, fuzzy
 msgid  "Left border spacing"
 msgstr "Addaan fageenya handaara bitaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_RIGHTDIST.String.Text
+#, fuzzy
 msgid  "Right border spacing"
 msgstr "Addaan fageenya handaara mirgaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_UPPERDIST.String.Text
+#, fuzzy
 msgid  "Upper border spacing"
 msgstr "Addaan fageenya handaara gubbaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LOWERDIST.String.Text
+#, fuzzy
 msgid  "Lower border spacing"
 msgstr "Addaan fageenya handaara jalaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWHEIGHT.String.Text
+#, fuzzy
 msgid  "AutoFit frame height"
 msgstr "Hojjaa goodayyaa oftaasisaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Min. frame height"
 msgstr "Hojjaa goodayyaa gadaantoo"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Max. frame height"
 msgstr "Hojjaa goodayyaa olaantoo"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWWIDTH.String.Text
+#, fuzzy
 msgid  "AutoFit frame width"
 msgstr "Bal'ina goodayyaa oftaasisaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Min. frame width"
 msgstr "Bal'ina goodayyaa gadaantoo"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Max. frame width"
 msgstr "Bal'ina goodayyaa olaantoo"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_VERTADJUST.String.Text
+#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "Korkoddii barruu sarjaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_HORZADJUST.String.Text
+#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "Korkoddii barruu sardalaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
 msgid  "Fit text to frame"
-msgstr "Barruu godayyaatti taasisi"
+msgstr "Barruu goodayyaatti taasisi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
+#, fuzzy
 msgid  "Red"
 msgstr "Diimaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGREEN.String.Text
+#, fuzzy
 msgid  "Green"
 msgstr "Magariisa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFBLUE.String.Text
+#, fuzzy
 msgid  "Blue"
 msgstr "Cuquliisa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFLUMINANCE.String.Text
+#, fuzzy
 msgid  "Brightness"
 msgstr "Ifiinsa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFCONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast"
 msgstr "Addaadoo"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGAMMA.String.Text
+#, fuzzy
 msgid  "Gamma"
 msgstr "Gaamaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Dabarsoo Ifaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
+#, fuzzy
 msgid  "Invert"
 msgstr "Garagalchi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFMODE.String.Text
+#, fuzzy
 msgid  "Graphics mode"
 msgstr "Haalata saxaatoo"
 
 #: source/svdraw/svdstr.src#STR_ItemNamSET_MISC.String.Text
+#, fuzzy
 msgid  "Various attributes"
 msgstr "Amaloota addaddaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJMOVEPROTECT.String.Text
+#, fuzzy
 msgid  "Position protected"
 msgstr "Qubannoon eegame"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJSIZEPROTECT.String.Text
+#, fuzzy
 msgid  "Size Protection"
 msgstr "Hayyisa Hammamtaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJPRINTABLE.String.Text
+#, fuzzy
 msgid  "Don't print"
 msgstr "Hin maxxansin"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERID.String.Text
+#, fuzzy
 msgid  "Layer Indicator"
 msgstr "Agarsiistuu Baqqaanaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERNAME.String.Text
+#, fuzzy
 msgid  "Le~vel"
 msgstr "Sadarkaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
+#, fuzzy
 msgid  "Object name"
 msgstr "Maqaa wantaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
+#, fuzzy
 msgid  "Start angle"
 msgstr "Kofa jalqabaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ENDANGLE.String.Text
+#, fuzzy
 msgid  "Final angle"
 msgstr "Kofa dhumaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONX.String.Text
+#, fuzzy
 msgid  "X Position"
 msgstr "Qubannoo X"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONY.String.Text
+#, fuzzy
 msgid  "Y Position"
 msgstr "Qubannoo Y"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Width"
 msgstr "Bal'ina"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Height"
 msgstr "Hojjaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ROTATEANGLE.String.Text
+#, fuzzy
 msgid  "Rotation angle"
 msgstr "Kofa naanna'iinsaa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHEARANGLE.String.Text
+#, fuzzy
 msgid  "Shear angle"
 msgstr "Kofa shiir"
 
 #: source/svdraw/svdstr.src#SIP_UNKNOWN_ATTR.String.Text
+#, fuzzy
 msgid  "Unknown attribute"
 msgstr "Amala hinbeekamna"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTYLE.String.Text
+#, fuzzy
 msgid  "Line style"
 msgstr "Akkaataa sararaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEDASH.String.Text
+#, fuzzy
 msgid  "Line pattern"
 msgstr "Sarxaa sararaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEWIDTH.String.Text
+#, fuzzy
 msgid  "Line width"
 msgstr "Bal'ina sararaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINECOLOR.String.Text
+#, fuzzy
 msgid  "Line color"
 msgstr "Halluu sararaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTART.String.Text
+#, fuzzy
 msgid  "Line head"
 msgstr "Mataa sararaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEEND.String.Text
+#, fuzzy
 msgid  "Line end"
 msgstr "Xumura sararaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTWIDTH.String.Text
+#, fuzzy
 msgid  "Line head width"
 msgstr "Yabbina mataa sararaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDWIDTH.String.Text
+#, fuzzy
 msgid  "Line end width"
 msgstr "Yabbina xumuraa sararaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTCENTER.String.Text
+#, fuzzy
 msgid  "Center arrowhead"
 msgstr "Fiixee-xiyyaa wiirtessi"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDCENTER.String.Text
+#, fuzzy
 msgid  "Center arrowend"
 msgstr "Xumura-xiyyaa wiirtessi"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINETRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Line transparency"
 msgstr "Dabarsa ifaa sararaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEJOINT.String.Text
+#, fuzzy
 msgid  "Line joint"
 msgstr "Walqabsiistuu sararaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED2.String.Text
+#, fuzzy
 msgid  "Line reserved for 2"
 msgstr "Sarara 2aaf olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED3.String.Text
+#, fuzzy
 msgid  "Line reserved for 3"
 msgstr "Sarara 3iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED4.String.Text
+#, fuzzy
 msgid  "Line reserved for 4"
 msgstr "Sarara 4iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED5.String.Text
+#, fuzzy
 msgid  "Line reserved for 5"
 msgstr "Sarara 5iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED_LAST.String.Text
+#, fuzzy
 msgid  "Line reserved for 6"
 msgstr "Sarara 6aaf olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_LINE.String.Text
+#, fuzzy
 msgid  "Line attributes"
 msgstr "Amaloota sararaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLSTYLE.String.Text
+#, fuzzy
 msgid  "Fill style"
 msgstr "Akaakuu guuti"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLCOLOR.String.Text
+#, fuzzy
 msgid  "Fillcolor"
 msgstr "Halluu Guutinsaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLGRADIENT.String.Text
+#, fuzzy
 msgid  "Gradient"
 msgstr "Gargartoo"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLHATCH.String.Text
+#, fuzzy
 msgid  "Hatching"
 msgstr "Sararoota qaxxaamuraan gaaddiddeessuu"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBITMAP.String.Text
+#, fuzzy
 msgid  "Fillbitmap"
 msgstr "Suurxiqqoo Guutinsaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Dabarsoo Ifaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
+#, fuzzy
 msgid  "Number of gradient steps"
 msgstr "Baay'ina eejjatoowwan gargartoo"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILE.String.Text
+#, fuzzy
 msgid  "Tile fill"
 msgstr "Guutinsa daltuulii"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POS.String.Text
+#, fuzzy
 msgid  "Fillbitmap position"
 msgstr "Qubannoo suurxiqqoo guutinsaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEX.String.Text
+#, fuzzy
 msgid  "Fillbitmap width"
 msgstr "Dalgee suurxiqqoo guutinsaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEY.String.Text
+#, fuzzy
 msgid  "Height of fillbitmap"
 msgstr "Hojjaa suurxiqqoo guutinsaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLFLOATTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparent gradient"
 msgstr "Gargartoo dabarsa ifaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_SECONDARYFILLCOLOR.String.Text
+#, fuzzy
 msgid  "Fill reserved for 2"
 msgstr "Guutinsa 2aaf olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZELOG.String.Text
+#, fuzzy
 msgid  "Tile size not in %"
 msgstr "Hammamtaa daltuulii % keessa hin jirre"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETX.String.Text
+#, fuzzy
 msgid  "Tile offset X in %"
 msgstr "Iddooda daltuulii X % keessaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETY.String.Text
+#, fuzzy
 msgid  "Tile offset Y in %"
 msgstr "Iddooda daltuulii Y % keessaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_STRETCH.String.Text
+#, fuzzy
 msgid  "Bitmap scaling"
 msgstr "Madaala suurxiqqoo"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED3.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 3"
 msgstr "Suurxiqqoo 3iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED4.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 4"
 msgstr "Suurxiqqoo 4iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED5.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 5"
 msgstr "Suurxiqqoo 5iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED6.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 6"
 msgstr "Suurxiqqoo 6aaf olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED7.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 7"
 msgstr "Suurxiqqoo 7aaf olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED8.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 8"
 msgstr "Suurxiqqoo 8iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETX.String.Text
+#, fuzzy
 msgid  "Tile position X in %"
 msgstr "Qubannoo daltuulii X % keessaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETY.String.Text
+#, fuzzy
 msgid  "Tile position Y in %"
 msgstr "Qubannoo daltuulii Y % keessaa"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBACKGROUND.String.Text
+#, fuzzy
 msgid  "Background fill"
 msgstr "Guutinsa duubbee"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED10.String.Text
+#, fuzzy
 msgid  "Fill reserved for 10"
 msgstr "Guutinsa 10iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED11.String.Text
+#, fuzzy
 msgid  "Fill reserved for 11"
 msgstr "Guutinsa 11oof olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED_LAST.String.Text
+#, fuzzy
 msgid  "Fill reserved for 12"
 msgstr "Guutinsa 12aaf olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_FILL.String.Text
+#, fuzzy
 msgid  "Area attributes"
 msgstr "Amaloota naannoo"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTYLE.String.Text
+#, fuzzy
 msgid  "Fontwork style"
 msgstr "Akkaataa hojiibocquu"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTADJUST.String.Text
+#, fuzzy
 msgid  "Fontwork alignment"
 msgstr "Hiriirfama hojiibocquu"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTDISTANCE.String.Text
+#, fuzzy
 msgid  "Fontwork spacing"
 msgstr "Addaan fageenya hojiibocquu"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTART.String.Text
+#, fuzzy
 msgid  "Fontwork font begin"
 msgstr "Jalqaba bocquu hojiibocquu"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTMIRROR.String.Text
+#, fuzzy
 msgid  "Fontwork mirror"
 msgstr "Fuuldoyyaa hojiibocquu"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTOUTLINE.String.Text
+#, fuzzy
 msgid  "Fontwork outline"
 msgstr "Toorii hojiibocquu"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHADOW.String.Text
+#, fuzzy
 msgid  "Fontwork shadow"
 msgstr "Gaaddidduu hojiibocquu"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWCOLOR.String.Text
+#, fuzzy
 msgid  "Fontwork shadow color"
 msgstr "Halluu gaaddidduu hojiibocquu"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWXVAL.String.Text
+#, fuzzy
 msgid  "Fontwork shadow offset X"
 msgstr "Iddooda gaaddidduu hojiibocquu X"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWYVAL.String.Text
+#, fuzzy
 msgid  "Fontwork shadow offset Y"
 msgstr "Iddooda gaaddidduu hojiibocquu Y"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTDFORM.String.Text
+#, fuzzy
 msgid  "Fontwork default form"
 msgstr "Unka durtii hojiibocquu"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTHIDEFORM.String.Text
+#, fuzzy
 msgid  "Hide fontwork outline"
 msgstr "Toorii hojiibocquu dhoksi"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWTRANSP.String.Text
+#, fuzzy
 msgid  "Fontwork shadow transparency"
 msgstr "Dabarsa ifaa gaaddidduu hojiibocquu"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED2.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 2"
 msgstr "Hojiibocquu 2aaf olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED3.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 3"
 msgstr "Hojiibocquu 3iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED4.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 4"
 msgstr "Hojiibocquu 4iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED5.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 5"
 msgstr "Hojiibocquu 5iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED_LAST.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 6"
 msgstr "Hojiibocquu 6aaf olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW.String.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Gaaddidduu"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWCOLOR.String.Text
+#, fuzzy
 msgid  "Shadow color"
 msgstr "Halluu gaaddidduu"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWXDIST.String.Text
+#, fuzzy
 msgid  "Shadow spacing X"
 msgstr "Addaan fageenya gaaddidduu X"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWYDIST.String.Text
+#, fuzzy
 msgid  "Shadow spacing Y"
 msgstr "Addaan fageenya gaaddidduu Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Dabarsa ifaa gaaddidduu"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW3D.String.Text
+#, fuzzy
 msgid  "3D shadow"
 msgstr "Gaaddidduu G3"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWPERSP.String.Text
+#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Gaaddidduu mul'annoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONTYPE.String.Text
+#, fuzzy
 msgid  "Type of legend"
 msgstr "Akaakuu waayoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Fixed legend angle"
 msgstr "Kofa waayoo dhaabbataa"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONANGLE.String.Text
+#, fuzzy
 msgid  "Legend angle"
 msgstr "Kofa waayoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONGAP.String.Text
+#, fuzzy
 msgid  "Legend lines spacing"
 msgstr "Addaan fageenya sararoota waayoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCDIR.String.Text
+#, fuzzy
 msgid  "Legend exit alignment"
 msgstr "Hiriirfama bahiinsa waayoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCISREL.String.Text
+#, fuzzy
 msgid  "Relative exit legend"
 msgstr "Waayoo bahiinsa sadhaatawaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCREL.String.Text
+#, fuzzy
 msgid  "Relative exit legend"
 msgstr "Waayoo bahiinsa sadhaatawaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCABS.String.Text
+#, fuzzy
 msgid  "Absolute exit of legend"
 msgstr "Bahiinsa sirrii waayoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONLINELEN.String.Text
+#, fuzzy
 msgid  "Legend line length"
 msgstr "Dheerina sararaa waayoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFITLINELEN.String.Text
+#, fuzzy
 msgid  "AutoLength of legend lines"
 msgstr "DheerinaOfmaa sararoota waayoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_ECKENRADIUS.String.Text
+#, fuzzy
 msgid  "Corner radius"
 msgstr "Raadiyasii goolee"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Minimal frame height"
 msgstr "Hojjaa goodayyaa gadaantoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWHEIGHT.String.Text
+#, fuzzy
 msgid  "AutoFit height"
 msgstr "Hojjaa OfTaasisaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_FITTOSIZE.String.Text
+#, fuzzy
 msgid  "Fit text to frame"
 msgstr "Barruu goodayyaatti taasisi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LEFTDIST.String.Text
+#, fuzzy
 msgid  "Left text frame spacing"
 msgstr "Addaan fageenya goodayyaa barruu bitaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_RIGHTDIST.String.Text
+#, fuzzy
 msgid  "Right text frame spacing"
 msgstr "Addaan fageenya goodayyaa barruu mirgaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_UPPERDIST.String.Text
+#, fuzzy
 msgid  "Upper text frame spacing"
 msgstr "Addaan fageenya goodayyaa barruu gubbaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LOWERDIST.String.Text
+#, fuzzy
 msgid  "Lower text frame spacing"
 msgstr "Addaan fageenya goodayyaa barruu jalaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_VERTADJUST.String.Text
+#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "Korkoddii barruu sarjaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Maximal frame height"
 msgstr "Hojjaa goodayyaa olaantoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Minimal frame width"
 msgstr "Bal'ina goodayyaa gadaantoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Maximal frame width"
 msgstr "Bal'ina goodayyaa olaantoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWWIDTH.String.Text
+#, fuzzy
 msgid  "AutoFit width"
 msgstr "Bal'ina OfTaasisaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_HORZADJUST.String.Text
+#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "Korkoddii barruu sardalaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIKIND.String.Text
+#, fuzzy
 msgid  "Ticker"
 msgstr "Sa'aatii"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDIRECTION.String.Text
+#, fuzzy
 msgid  "Ticker direction"
 msgstr "Kallattii sa'aatii"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTARTINSIDE.String.Text
+#, fuzzy
 msgid  "Ticker start inside"
 msgstr "Sa'aatii keessaa eegali"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTOPINSIDE.String.Text
+#, fuzzy
 msgid  "Ticker stop inside"
 msgstr "Sa'aatii keessaa dhaabi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANICOUNT.String.Text
+#, fuzzy
 msgid  "Number of ticker runs"
 msgstr "Lakkoofsa ka'iinsa sa'aatii"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDELAY.String.Text
+#, fuzzy
 msgid  "Speed of ticker"
 msgstr "Saffisa sa'aatii"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIAMOUNT.String.Text
+#, fuzzy
 msgid  "Ticker step size"
 msgstr "Hammamtaa ejjatoo sa'aatii"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_CONTOURFRAME.String.Text
+#, fuzzy
 msgid  "Outline text flow"
 msgstr "Yaa'insa barruu toorii"
 
 #: source/svdraw/svdstr.src#SIP_SA_CUSTOMSHAPE_ADJUSTMENT.String.Text
+#, fuzzy
 msgid  "Shape Adjustment"
 msgstr "Mijeessa bocaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_XMLATTRIBUTES.String.Text
+#, fuzzy
 msgid  "User-defined attributes"
 msgstr "Amaloota fayyadamaadhaan murtaa'an"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_USEFIXEDCELLHEIGHT.String.Text
+#, fuzzy
 msgid  "Use font-independent line spacing"
 msgstr "Addaan fageenya sararaa bocquutti hin hundoofne fayyadami"
 
 #: source/svdraw/svdstr.src#SIP_SA_WORDWRAP.String.Text
+#, fuzzy
 msgid  "Word wrap text in shape"
 msgstr "Boca keessatti barruu maraa jechaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_AUTOGROWSIZE.String.Text
+#, fuzzy
 msgid  "Auto grow shape to fit text"
 msgstr "Barruu taasisuuf boca ofiin guddisi"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE18.String.Text
+#, fuzzy
 msgid  "SvDraw reserved for 18"
 msgstr "SvDraw 18iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE19.String.Text
+#, fuzzy
 msgid  "SvDraw reserved for 19"
 msgstr "FakkasaaSv 19iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGEKIND.String.Text
+#, fuzzy
 msgid  "Type of connector"
 msgstr "Akaakuu walqabsiistuu"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1HORZDIST.String.Text
+#, fuzzy
 msgid  "Horz. spacing object 1"
 msgstr "Wanta addaan fageenyaa sardala 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1VERTDIST.String.Text
+#, fuzzy
 msgid  "Vert. spacing object 1"
 msgstr "Wanta addaan fageenyaa sarjaa 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2HORZDIST.String.Text
+#, fuzzy
 msgid  "Horz. spacing object 2"
 msgstr "Wanta addaan fageenyaa sardala 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2VERTDIST.String.Text
+#, fuzzy
 msgid  "Vert. spacing object 2"
 msgstr "Wanta addaan fageenyaa sarjaa 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1GLUEDIST.String.Text
+#, fuzzy
 msgid  "Glue spacing object 1"
 msgstr "Wanta addaan fageenyaa maxxannee 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2GLUEDIST.String.Text
+#, fuzzy
 msgid  "Glue spacing object 2"
 msgstr "Wanta addaan fageenyaa sardala 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINEDELTAANZ.String.Text
+#, fuzzy
 msgid  "Number of movable lines"
 msgstr "Baay'ina sararoota socho'anii"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE1DELTA.String.Text
+#, fuzzy
 msgid  "Offset line 1"
 msgstr "Sarara Iddoodaa 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE2DELTA.String.Text
+#, fuzzy
 msgid  "Offset line 2"
 msgstr "Sarara Iddoodaa 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE3DELTA.String.Text
+#, fuzzy
 msgid  "Offset line 3"
 msgstr "Sarara Iddoodaa 3"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREKIND.String.Text
+#, fuzzy
 msgid  "Type of dimensioning"
 msgstr "Akaakuu hammamteessuu"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTHPOS.String.Text
+#, fuzzy
 msgid  "Dimension value - horizontal position"
 msgstr "Gatii hammamteessaa - qubannoo sardala"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTVPOS.String.Text
+#, fuzzy
 msgid  "Dimension value - vertical position"
 msgstr "Gatii hammamteessaa - qubannoo sardala"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURELINEDIST.String.Text
+#, fuzzy
 msgid  "Dimension line space"
 msgstr "Iddoo duwwaa sarara rogaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEOVERHANG.String.Text
+#, fuzzy
 msgid  "Dimension help line overhang"
 msgstr "Rarra'a sarara gargaarsaa hammamteessi"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEDIST.String.Text
+#, fuzzy
 msgid  "Dimension help line spacing"
 msgstr "Addaan fageegna sarara gargaarsaa hammamteessi"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE1LEN.String.Text
+#, fuzzy
 msgid  "Backlog of dimension help line 1"
 msgstr "Baakloogii sarara gargaarsaa rogaa 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE2LEN.String.Text
+#, fuzzy
 msgid  "Backlog of dimension help line 2"
 msgstr "Baakloogii sarara gargaarsaa rogaa 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREBELOWREFEDGE.String.Text
+#, fuzzy
 msgid  "Lower edge dimensioning"
 msgstr "Qaree jalaa hammamteessuu"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTROTA90.String.Text
+#, fuzzy
 msgid  "Dimension value across dimension line"
 msgstr "Gatii rogaa sarara rogaa irra"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTUPSIDEDOWN.String.Text
+#, fuzzy
 msgid  "Rotate dimension value by 180 degree"
 msgstr "Gatii rogaa diigrii 180n naannessi"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREOVERHANG.String.Text
+#, fuzzy
 msgid  "Dimension line overhang"
 msgstr "Rarra'a sararaa hammamteessi"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREUNIT.String.Text
+#, fuzzy
 msgid  "Measure unit"
 msgstr "Safartuu"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESCALE.String.Text
+#, fuzzy
 msgid  "Additional scale factor"
 msgstr "Hirmaataa safaraa dabalataa"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESHOWUNIT.String.Text
+#, fuzzy
 msgid  "Measure unit display"
 msgstr "Agarsiisa safartuu"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREFORMATSTRING.String.Text
+#, fuzzy
 msgid  "Dimension value format"
 msgstr "Dhangii gatii rogaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLE.String.Text
+#, fuzzy
 msgid  "AutoPositioning of the dimension value"
 msgstr "OfmaaQubachiisa gatii rogaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLEVIEW.String.Text
+#, fuzzy
 msgid  "Angle for the automatic positioning of the dimension value"
 msgstr "Kofa ofmaa qubachiisa gatii rogaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTISFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Determination of the dimension value angle"
 msgstr "Murteessa kofa gatii rogaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Angle of the dimension value"
 msgstr "Kofa gatii rogaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREDECIMALPLACES.String.Text
+#, fuzzy
 msgid  "Decimal places"
 msgstr "Bakkoota kurnyee"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE05.String.Text
+#, fuzzy
 msgid  "Dimensioning reserved 5"
 msgstr "Hammamteessaa olkaa'ame 5"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE06.String.Text
+#, fuzzy
 msgid  "Dimensioning reserved for 6"
 msgstr "Hammamteessaa olkaa'ame 6"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE07.String.Text
+#, fuzzy
 msgid  "Dimensioning reserved for 7"
 msgstr "Hammamteessaa olkaa'ame 7"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCKIND.String.Text
+#, fuzzy
 msgid  "Type of circle"
 msgstr "Akaakuu geengoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCSTARTANGLE.String.Text
+#, fuzzy
 msgid  "Start angle"
 msgstr "Kofa jalqabaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCENDANGLE.String.Text
+#, fuzzy
 msgid  "End angle"
 msgstr "Kofa dhumaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE0.String.Text
+#, fuzzy
 msgid  "Circle reserved for 0"
 msgstr "Geengoo 0dhaaf olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE1.String.Text
+#, fuzzy
 msgid  "Circle reserved for 1"
 msgstr "Geengoo 1oof olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE2.String.Text
+#, fuzzy
 msgid  "Circle reserved for 2"
 msgstr "Geengoo 2aaf olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE3.String.Text
+#, fuzzy
 msgid  "Circle reserved for 3"
 msgstr "Geengoo 3iif olkaa'ame"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJMOVEPROTECT.String.Text
+#, fuzzy
 msgid  "Protected object position"
 msgstr "Qubannoo wantaa eegame"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJSIZEPROTECT.String.Text
+#, fuzzy
 msgid  "Protected object size"
 msgstr "Hamma wantaa eegame"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJPRINTABLE.String.Text
+#, fuzzy
 msgid  "Object, printable"
 msgstr "Wanta, maxxanfamuu danda'u"
 
@@ -10001,350 +10749,437 @@ msgid  "Object, visible"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERID.String.Text
+#, fuzzy
 msgid  "Level ID"
 msgstr "ID sadarkaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERNAME.String.Text
+#, fuzzy
 msgid  "Layer"
 msgstr "Baqqaana"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJECTNAME.String.Text
+#, fuzzy
 msgid  "Object name"
 msgstr "Maqaa wantaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONX.String.Text
+#, fuzzy
 msgid  "Position X, complete"
 msgstr "Qubannoo X, guutuu"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONY.String.Text
+#, fuzzy
 msgid  "Position Y, complete"
 msgstr "Qubannoo Y, guutuu"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Total Width"
 msgstr "Ida'ama bal'inaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Height, complete"
 msgstr "Hojjaa, guutuu"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONX.String.Text
+#, fuzzy
 msgid  "Single position X"
 msgstr "Qubannoo baaxxee X"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONY.String.Text
+#, fuzzy
 msgid  "Single position Y"
 msgstr "Qubannoo baaxxee Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Single width"
 msgstr "Bal'ina baaxxee"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Single height"
 msgstr "Hojjaa baaxxee"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Logical width"
 msgstr "Bal'ina yaayaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Logical height"
 msgstr "Hojjaa yaayaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEANGLE.String.Text
+#, fuzzy
 msgid  "Single rotation angle"
 msgstr "Kofa naanna'iinsaa baaxxee"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHEARANGLE.String.Text
+#, fuzzy
 msgid  "Single shear angle"
 msgstr "Kofa muriinsaa baaxxee"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEX.String.Text
+#, fuzzy
 msgid  "Move horizontally"
 msgstr "Dalgata siiqsi"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEY.String.Text
+#, fuzzy
 msgid  "Move vertically"
 msgstr "Sarjinaan siiqsi"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXONE.String.Text
+#, fuzzy
 msgid  "Resize X, single"
 msgstr "X Lamhammamteessi, baaqqee"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYONE.String.Text
+#, fuzzy
 msgid  "Resize Y, single"
 msgstr "Y Lamhammamteessi, baaxxee"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEONE.String.Text
+#, fuzzy
 msgid  "Single rotation"
 msgstr "Naanna'insa baaxxee"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARONE.String.Text
+#, fuzzy
 msgid  "Single horizontal shear"
 msgstr "Muriinsa sardalaa baaxxee"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARONE.String.Text
+#, fuzzy
 msgid  "Single vertical shear"
 msgstr "Muriinsa sarjaa baaxxee"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXALL.String.Text
+#, fuzzy
 msgid  "Resize X, complete"
 msgstr "X Lamhammamteessi, guutuu"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYALL.String.Text
+#, fuzzy
 msgid  "Resize Y, complete"
 msgstr "Y Lamhammamteessi, guutuu"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEALL.String.Text
+#, fuzzy
 msgid  "Rotate all"
 msgstr "Mara naannessi"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARALL.String.Text
+#, fuzzy
 msgid  "Shear horizontal, complete"
 msgstr "Dalgata muri, guutuu"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARALL.String.Text
+#, fuzzy
 msgid  "Shear vertical, complete"
 msgstr "Sarjinaan muri, guutuu"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1X.String.Text
+#, fuzzy
 msgid  "Reference point 1 X"
 msgstr "Tuqaa wabii 1 X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1Y.String.Text
+#, fuzzy
 msgid  "Reference point 1 Y"
 msgstr "Tuqaa wabii 1 Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2X.String.Text
+#, fuzzy
 msgid  "Reference point 2 X"
 msgstr "Tuqaa wabii 2 X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2Y.String.Text
+#, fuzzy
 msgid  "Reference point 2 Y"
 msgstr "Tuqaa wabii 2 Y"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_HYPHENATE.String.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "Murfisa"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLETSTATE.String.Text
+#, fuzzy
 msgid  "Display bullets"
 msgstr "Rasaasaalee agarsiisi"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLRSPACE.String.Text
+#, fuzzy
 msgid  "Numbering indents"
 msgstr "Galumsoota lakkaawwii"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLEVEL.String.Text
+#, fuzzy
 msgid  "Numbering level"
 msgstr "Sadarkaa lakkaawwii"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLET.String.Text
+#, fuzzy
 msgid  "Bullets and Numberings"
 msgstr "Rasaasaaf Lakkaawwii"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_LRSPACE.String.Text
+#, fuzzy
 msgid  "Indents"
 msgstr "Galumsoota"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_ULSPACE.String.Text
+#, fuzzy
 msgid  "Paragraph spacing"
 msgstr "Addaan fageegna keewwataa"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_SBL.String.Text
+#, fuzzy
 msgid  "Line spacing"
 msgstr "Iddina sararaa"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_JUST.String.Text
+#, fuzzy
 msgid  "Paragraph alignment"
 msgstr "Hiriirfama keewwataa"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_TABS.String.Text
+#, fuzzy
 msgid  "Tabulators"
 msgstr "Gabateessitoota"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_COLOR.String.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "Halluu bocquu"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTINFO.String.Text
+#, fuzzy
 msgid  "Character set"
 msgstr "Tuuta arfii"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTHEIGHT.String.Text
+#, fuzzy
 msgid  "Font size"
 msgstr "Hammamtaa bocquu"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTWIDTH.String.Text
+#, fuzzy
 msgid  "Font width"
 msgstr "Yabbina bocquu"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WEIGHT.String.Text
+#, fuzzy
 msgid  "Bold (thickness)"
 msgstr "Yabbuu (furdina)"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_UNDERLINE.String.Text
+#, fuzzy
 msgid  "Underline"
 msgstr "Jalmura"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OVERLINE.String.Text
+#, fuzzy
 msgid  "Overline"
 msgstr "Sarararra"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_STRIKEOUT.String.Text
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "Irrasarara"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ITALIC.String.Text
+#, fuzzy
 msgid  "Italic"
 msgstr "Mirgada"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OUTLINE.String.Text
+#, fuzzy
 msgid  "Outline"
 msgstr "Toorii"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_SHADOW.String.Text
+#, fuzzy
 msgid  "Font shadow"
 msgstr "Gaaddidduu hojiibocquu"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ESCAPEMENT.String.Text
+#, fuzzy
 msgid  "Superscript/subscript"
 msgstr "Irrarfii/jalarfii"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_PAIRKERNING.String.Text
+#, fuzzy
 msgid  "Kerning"
 msgstr "Rukkina"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_KERNING.String.Text
+#, fuzzy
 msgid  "Manual kerning"
 msgstr "Rukkina hujeekaa"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WLM.String.Text
+#, fuzzy
 msgid  "No underline for spaces"
 msgstr "Iddoo duuwwaadhaaf jalmurri hin jiru"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_TAB.String.Text
+#, fuzzy
 msgid  "Tabulator"
 msgstr "Gabateessaa"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_LINEBR.String.Text
+#, fuzzy
 msgid  "Optional line break"
 msgstr "Cita sararaa dirqalee"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_NOTCONV.String.Text
+#, fuzzy
 msgid  "Non-convertible character"
 msgstr "Arfii hinjijjiiramne"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_FIELD.String.Text
+#, fuzzy
 msgid  "Fields"
 msgstr "Dirreewwan"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFRED.String.Text
+#, fuzzy
 msgid  "Red"
 msgstr "Diimaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGREEN.String.Text
+#, fuzzy
 msgid  "Green"
 msgstr "Magariisa"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFBLUE.String.Text
+#, fuzzy
 msgid  "Blue"
 msgstr "Cuquliisa"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFLUMINANCE.String.Text
+#, fuzzy
 msgid  "Brightness"
 msgstr "Ifiinsa"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast"
 msgstr "Addaadoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGAMMA.String.Text
+#, fuzzy
 msgid  "Gamma"
 msgstr "Gaamaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Dabarsoo Ifaa"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFINVERT.String.Text
+#, fuzzy
 msgid  "Invert"
 msgstr "Garagalchi"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFMODE.String.Text
+#, fuzzy
 msgid  "Graphics mode"
 msgstr "Haalata saxaatoo"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCROP.String.Text
+#, fuzzy
 msgid  "Crop"
 msgstr "Soofi"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEDIA.String.Text
+#, fuzzy
 msgid  "Media object"
 msgstr "Wanta miidiyaa"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEDIA.String.Text
+#, fuzzy
 msgid  "Media objects"
 msgstr "Wantoota miidiyaa"
 
 #: source/svdraw/svdstr.src#STR_TABLE_ATTR.String.Text
+#, fuzzy
 msgid  "Apply table attributes"
 msgstr "Amaloota gabatee fayyadami"
 
 #: source/svdraw/svdstr.src#STR_TABLE_AUTOFMT.String.Text
+#, fuzzy
 msgid  "AutoFormat table"
 msgstr "Gabatee ofmaadhangeessi"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSCOL.String.Text
+#, fuzzy
 msgid  "Insert column"
 msgstr "Tarjaa saagi"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSROW.String.Text
+#, fuzzy
 msgid  "Insert row"
 msgstr "Tarree saagi"
 
 #: source/svdraw/svdstr.src#STR_UNDO_COL_DELETE.String.Text
+#, fuzzy
 msgid  "Delete column"
 msgstr "Tarjaa haqi"
 
 #: source/svdraw/svdstr.src#STR_UNDO_ROW_DELETE.String.Text
+#, fuzzy
 msgid  "Delete row"
 msgstr "Tarree haqi"
 
 #: source/svdraw/svdstr.src#STR_TABLE_SPLIT.String.Text
+#, fuzzy
 msgid  "Split cells"
 msgstr "Man'eewwan addabaasi"
 
 #: source/svdraw/svdstr.src#STR_TABLE_MERGE.String.Text
+#, fuzzy
 msgid  "Merge cells"
 msgstr "Man'eewwan maki"
 
 #: source/svdraw/svdstr.src#STR_TABLE_NUMFORMAT.String.Text
+#, fuzzy
 msgid  "Format cell"
 msgstr "Man'ee foormulaa"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_ROWS.String.Text
+#, fuzzy
 msgid  "Distribute rows"
 msgstr "Tarreelee raabsi"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_COLUMNS.String.Text
+#, fuzzy
 msgid  "Distribute columns"
 msgstr "Tarjaalee raabsi"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE.String.Text
+#, fuzzy
 msgid  "Table style"
 msgstr "Akkaataa gabatee"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE_SETTINGS.String.Text
+#, fuzzy
 msgid  "Table style settings"
 msgstr "Qindaa'inoota akkiaataa gabatee"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTable.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Gabatee"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTable.String.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "Gabateewwan"
 
@@ -10357,6 +11192,7 @@ msgid  "font works"
 msgstr ""
 
 #: source/table/table.src#RID_SVXSTR_STYLEFAMILY_TABLEDESIGN.String.Text
+#, fuzzy
 msgid  "Table Design Styles"
 msgstr "Akkaataalee Saxaxa Gabatee"
 
@@ -10420,50 +11256,62 @@ msgid  "Font color"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Direction"
 msgstr "Kallaattii Dhiita'iinsaa"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PERSPECTIVE.String.Text
+#, fuzzy
 msgid  "~Perspective"
 msgstr "Mul'annoo"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PARALLEL.String.Text
+#, fuzzy
 msgid  "P~arallel"
 msgstr "Waltarree"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NW.String.Text
+#, fuzzy
 msgid  "Extrusion North-West"
 msgstr "Dhiita'iinsa Kaaba-Dhihaa"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_N.String.Text
+#, fuzzy
 msgid  "Extrusion North"
 msgstr "Dhiita'iinsa Kaabaa"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NE.String.Text
+#, fuzzy
 msgid  "Extrusion North-East"
 msgstr "Dhiita'iinsa Kaaba-Bahaa"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_W.String.Text
+#, fuzzy
 msgid  "Extrusion West"
 msgstr "Dhiita'iinsa Dhihaa"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NONE.String.Text
+#, fuzzy
 msgid  "Extrusion Backwards"
 msgstr "Dhiita'iinsa Duubatti"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_E.String.Text
+#, fuzzy
 msgid  "Extrusion East"
 msgstr "Dhiita'iinsa Bahaa"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SW.String.Text
+#, fuzzy
 msgid  "Extrusion South-West"
 msgstr "Dhiita'iinsa Kibba-Dhihaa"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_S.String.Text
+#, fuzzy
 msgid  "Extrusion South"
 msgstr "Dhiita'iinsa Kibbaa"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SE.String.Text
+#, fuzzy
 msgid  "Extrusion South-East"
 msgstr "Dhiita'iinsa Kibba-Bahaa"
 
@@ -10473,10 +11321,12 @@ msgid  "Extrusion Depth"
 msgstr "Lixxaa Dhiita'iinsaa"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
+#, fuzzy
 msgid  "~Custom..."
 msgstr "Maamiloo..."
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_INFINITY.String.Text
+#, fuzzy
 msgid  "~Infinity"
 msgstr "Dhumadhablee"
 
@@ -10740,6 +11590,7 @@ msgid  "Crop"
 msgstr "Soofi"
 
 #: source/tbxctrls/colrctrl.src#RID_SVXCTRL_COLOR.DockingWindow.Text
+#, fuzzy
 msgid  "Colors"
 msgstr "Halluulee"
 
@@ -10768,74 +11619,92 @@ msgid  "Actions to redo: $(ARG1)"
 msgstr "Gochaalee irra deebi'aman: $(ARG1)"
 
 #: source/toolbars/extrusionbar.src#RID_SVX_EXTRUSION_BAR.String.Text
+#, fuzzy
 msgid  "Extrusion"
 msgstr "Dhiitahuu"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ON_OFF.String.Text
+#, fuzzy
 msgid  "Apply Extrusion On/Off"
 msgstr "Banaa/Dhaamaa Dhiitahiinsaa Fayyadami"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_DOWN.String.Text
+#, fuzzy
 msgid  "Tilt Down"
 msgstr "Gadi Jallisi"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_UP.String.Text
+#, fuzzy
 msgid  "Tilt Up"
 msgstr "Ol Jallisi"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_LEFT.String.Text
+#, fuzzy
 msgid  "Tilt Left"
 msgstr "Bitaatti Jallisi"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_RIGHT.String.Text
+#, fuzzy
 msgid  "Tilt Right"
 msgstr "Mirgatti Jallisi"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_DEPTH.String.Text
+#, fuzzy
 msgid  "Change Extrusion Depth"
 msgstr "Lixxaa Dhiitahiinsaa Jijjiiri"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ORIENTATION.String.Text
+#, fuzzy
 msgid  "Change Orientation"
 msgstr "Hiriirfama Jijjiiri"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_PROJECTION.String.Text
+#, fuzzy
 msgid  "Change Projection Type"
 msgstr "Akaakuu Karooratii Jijjiiri"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_LIGHTING.String.Text
+#, fuzzy
 msgid  "Change Lighting"
 msgstr "Ibsaa Jijjiiri"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_BRIGHTNESS.String.Text
+#, fuzzy
 msgid  "Change Brightness"
 msgstr "Ifiinsa Jijjiiri"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_SURFACE.String.Text
+#, fuzzy
 msgid  "Change Extrusion Surface"
 msgstr "Diriirtoo Dhiitahiinsaa Jijjiiri"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_COLOR.String.Text
+#, fuzzy
 msgid  "Change Extrusion Color"
 msgstr "Halluu Dhiitahiinsaa Jijjiiri"
 
 #: source/toolbars/fontworkbar.src#RID_SVX_FONTWORK_BAR.String.Text
+#, fuzzy
 msgid  "Fontwork"
 msgstr "Hojiibocquu"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SHAPE.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Shape"
 msgstr "Boca Hojiibocquu Fayyadami"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SAME_LETTER_HEIGHT.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Same Letter Heights"
 msgstr "Hojiibocquu Dheerinoota Qubee Walqixxee Fayyadami"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_ALIGNMENT.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Alignment"
 msgstr "Hiriirfama Hojiibocquu Fayyadami"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_CHARACTER_SPACING.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Character Spacing"
 msgstr "Addaan Fageegna Arfii Hojiibocquu Fayyadami"
 

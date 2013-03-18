@@ -129,7 +129,7 @@ msgstr "برای افزودن عنوان کلیک کنید"
 
 #: source/core/glob.src#STR_PRESOBJ_OUTLINE.String.Text
 msgid  "Click to add text"
-msgstr "برای افزودن رئوس مطالب کلیک کنید"
+msgstr "برای افزودن متن کلیک کنید"
 
 #: source/core/glob.src#STR_PRESOBJ_TEXT.String.Text
 msgid  "Click to add text"
@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "جابه‌جایی اسلایدها"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "حافظه کافی نیست!\nکنش قطع می‌شود."
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -760,18 +760,22 @@ msgid  "Custom Animation"
 msgstr ""
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_ENTRANCE.PageItem.Text
+#, fuzzy
 msgid  "Entrance"
 msgstr "ورودی"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EMPHASIS.PageItem.Text
+#, fuzzy
 msgid  "Emphasis"
 msgstr "تأکید"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EXIT.PageItem.Text
+#, fuzzy
 msgid  "Exit"
 msgstr "خروج"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MOTIONPATH.PageItem.Text
+#, fuzzy
 msgid  "Motion Paths"
 msgstr "مسیرهای حرکت"
 
@@ -1027,22 +1031,27 @@ msgid  "In reverse order"
 msgstr "به ترتیب معکوس"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_CLICK.MenuItem.Text
+#, fuzzy
 msgid  "Start On ~Click"
 msgstr "آغاز با ~کلیک"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_PREVIOUS.MenuItem.Text
+#, fuzzy
 msgid  "Start ~With Previous"
 msgstr "آغاز ~با قبلی"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_AFTER_PREVIOUS.MenuItem.Text
+#, fuzzy
 msgid  "Start ~After Previous"
 msgstr "آغاز ~بعد از قبلی"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_OPTIONS.MenuItem.Text
+#, fuzzy
 msgid  "~Effect Options..."
 msgstr "گزینه‌های ~جلوه..."
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_DURATION.MenuItem.Text
+#, fuzzy
 msgid  "~Timing..."
 msgstr "~زمان‌بندی..."
 
@@ -1055,10 +1064,12 @@ msgid  "Tiny"
 msgstr ""
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_50.MenuItem.Text
+#, fuzzy
 msgid  "Smaller"
 msgstr "کوچکتر"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MenuItem.Text
+#, fuzzy
 msgid  "Larger"
 msgstr "بزرگتر"
 
@@ -1071,10 +1082,12 @@ msgid  "Tiny"
 msgstr ""
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_50.MenuItem.Text
+#, fuzzy
 msgid  "Smaller"
 msgstr "کوچکتر"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_150.MenuItem.Text
+#, fuzzy
 msgid  "Larger"
 msgstr "بزرگتر"
 
@@ -1083,54 +1096,67 @@ msgid  "Extra large"
 msgstr ""
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "افقی"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "عمودی"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_BOTH.MenuItem.Text
+#, fuzzy
 msgid  "Both"
 msgstr "هر دو"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_QUARTER_SPIN.MenuItem.Text
+#, fuzzy
 msgid  "Quarter spin"
 msgstr "ربع دور"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_HALF_SPIN.MenuItem.Text
+#, fuzzy
 msgid  "Half spin"
 msgstr "نیم دور"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_FULL_SPIN.MenuItem.Text
+#, fuzzy
 msgid  "Full spin"
 msgstr "دور کامل"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_TWO_SPINS.MenuItem.Text
+#, fuzzy
 msgid  "Two spins"
 msgstr "دو دور"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_CLOCKWISE.MenuItem.Text
+#, fuzzy
 msgid  "Clockwise"
 msgstr "در جهت ساعت"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_COUNTERCLOCKWISE.MenuItem.Text
+#, fuzzy
 msgid  "Counter-clockwise"
 msgstr "خلاف جهت ساعت"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_BOLD.MenuItem.Text
+#, fuzzy
 msgid  "Bold"
 msgstr "سیاه"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_ITALIC.MenuItem.Text
+#, fuzzy
 msgid  "Italic"
 msgstr "ایتالیک"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_UNDERLINED.MenuItem.Text
+#, fuzzy
 msgid  "Underlined"
 msgstr "زیرخط‌دار"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_SLOW.String.Text
+#, fuzzy
 msgid  "Very slow"
 msgstr "خیلی آهسته"
 
@@ -1139,6 +1165,7 @@ msgid  "Slow"
 msgstr ""
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_NORMAL.String.Text
+#, fuzzy
 msgid  "Medium"
 msgstr "متوسط"
 
@@ -1147,126 +1174,157 @@ msgid  "Fast"
 msgstr ""
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_FAST.String.Text
+#, fuzzy
 msgid  "Very fast"
 msgstr "خیلی سریع"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_NONE.String.Text
+#, fuzzy
 msgid  "none"
 msgstr "هیچ‌کدام"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_NEXT_CLICK.String.Text
+#, fuzzy
 msgid  "Until next click"
 msgstr "تا کلیک بعدی"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_END_OF_SLIDE.String.Text
+#, fuzzy
 msgid  "Until end of slide"
 msgstr "تا پایان اسلاید"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DIRECTION_PROPERTY.String.Text
+#, fuzzy
 msgid  "Direction"
 msgstr "جهت"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_ZOOM_PROPERTY.String.Text
+#, fuzzy
 msgid  "Zoom"
 msgstr "زوم"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SPOKES_PROPERTY.String.Text
+#, fuzzy
 msgid  "Spokes"
 msgstr "پره‌ها"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FIRST_COLOR_PROPERTY.String.Text
+#, fuzzy
 msgid  "First color"
 msgstr "رنگ اول"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SECOND_COLOR_PROPERTY.String.Text
+#, fuzzy
 msgid  "Second color"
 msgstr "رنگ دوم"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FILL_COLOR_PROPERTY.String.Text
+#, fuzzy
 msgid  "Fill color"
 msgstr "رنگِ پر کردن"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STYLE_PROPERTY.String.Text
+#, fuzzy
 msgid  "Style"
 msgstr "سبک"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_PROPERTY.String.Text
+#, fuzzy
 msgid  "Font"
 msgstr "قلم"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_COLOR_PROPERTY.String.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "رنگ قلم"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_SIZE_STYLE_PROPERTY.String.Text
+#, fuzzy
 msgid  "Style"
 msgstr "سبک"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_STYLE_PROPERTY.String.Text
+#, fuzzy
 msgid  "Typeface"
 msgstr "طرح حروف"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LINE_COLOR_PROPERTY.String.Text
+#, fuzzy
 msgid  "Line color"
 msgstr "رنگ خط"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SIZE_PROPERTY.String.Text
+#, fuzzy
 msgid  "Font size"
 msgstr "اندازهٔ قلم"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SCALE_PROPERTY.String.Text
+#, fuzzy
 msgid  "Size"
 msgstr "اندازه"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_AMOUNT_PROPERTY.String.Text
+#, fuzzy
 msgid  "Amount"
 msgstr "مقدار"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_COLOR_PROPERTY.String.Text
+#, fuzzy
 msgid  "Color"
 msgstr "رنگ"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_NO_SOUND.String.Text
+#, fuzzy
 msgid  "(No sound)"
 msgstr "(بدون صدا)"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STOP_PREVIOUS_SOUND.String.Text
+#, fuzzy
 msgid  "(Stop previous sound)"
 msgstr "(توقف صدای قبلی)"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_BROWSE_SOUND.String.Text
+#, fuzzy
 msgid  "Other sound..."
 msgstr "صدای دیگر..."
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SAMPLE.String.Text
+#, fuzzy
 msgid  "Sample"
 msgstr "نمونه"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_1_SPOKES.String.Text
+#, fuzzy
 msgid  "1 Spoke"
 msgstr "۱ پره"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_2_SPOKES.String.Text
+#, fuzzy
 msgid  "2 Spokes"
 msgstr "۲ پره"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_3_SPOKES.String.Text
+#, fuzzy
 msgid  "3 Spokes"
 msgstr "۳ پره"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_4_SPOKES.String.Text
+#, fuzzy
 msgid  "4 Spokes"
 msgstr "۴ پره"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_8_SPOKES.String.Text
+#, fuzzy
 msgid  "8 Spokes"
 msgstr "۸ پره"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_INSTANT.String.Text
+#, fuzzy
 msgid  "Instant"
 msgstr "بلافاصله"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_GRADUAL.String.Text
+#, fuzzy
 msgid  "Gradual"
 msgstr "به تدریج"
 
@@ -1275,6 +1333,7 @@ msgid  "Trigger"
 msgstr ""
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.String.Text
+#, fuzzy
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
 msgstr "اول عنصری از اسلاید را انتخاب کنید سپس روی «اضافه...» کلیک کنید که یک جلوهٔ پویانمایی به آن اضافه شود."
 
@@ -1845,9 +1904,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "لطفاً نامی برای سرپیکان جدید وارد کنید:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-#, fuzzy
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "نام انتخاب شده از قبل وجود دارد.\nلطفاً نام دیگری انتخاب کنید."
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -1934,9 +1992,8 @@ msgid  "Insert slides"
 msgstr "درج اسلاید"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-#, fuzzy
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "آیا مطمئنید که می‌خواهید سطح «$» را حذف کنید؟\nتذکر: همه‌ی اشیاء این سطح حذف خواهند شد"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -1994,7 +2051,7 @@ msgid  "Insert text frame"
 msgstr "درج چارچوب متنی"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-msgid  "This function cannot be run \nwith the selected objects."
+msgid  "This function cannot be run \\nwith the selected objects."
 msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
@@ -2008,7 +2065,7 @@ msgid  "The file could not be loaded!"
 msgstr "نمی‌توان پرونده را بار کرد!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
 msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
@@ -2032,9 +2089,8 @@ msgid  "~Edit"
 msgstr "~ویرایش"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-#, fuzzy
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "این کنش فهرست کنش‌هایی را که می‌توان آنها را برگرداند حذف می‌کند.\nتغییرات قبلی انجام شده روی نوشتار معتبر خواهند بود، ولی نمی‌توان\nآنها را برگرداند. آیا می‌خواهید ادامه دهید و طراحی اسلاید جدید را تخصیص دهید؟"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2057,9 +2113,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "تنظیم قالب نوشتار روی چاپگر مشخص شده ممکن نیست."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-#, fuzzy
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "این گرافیک به نوشتار پیوند داده شده است.\nآیا می‌خواهید برای ویرایش گرافیک، پیوند آن را باز کنید؟"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2197,9 +2252,8 @@ msgid  " (Outline)"
 msgstr " (رئوس مطالب)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-#, fuzzy
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "مقیاس مشخص شده نامعتبر است.\nآیا می‌خواهید یک مقیاس دیگر وارد کنید؟"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2551,9 +2605,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "انحلال گروه‌های همهٔ شیاء نقاشی ممکن نبود."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-#, fuzzy
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "طرحی با این نام از قبل وجود دارد.\nمی‌خواهید آن را جایگزین کنید؟"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2696,9 +2749,8 @@ msgid  "Graphics filter"
 msgstr "صافی گرافیکی"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-#, fuzzy
-msgid  "The file %\nis not a valid sound file !"
-msgstr "پرونده‌ی %\nپرونده‌ی صوتی معتبری نیست"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -3849,6 +3901,7 @@ msgid  "~Page..."
 msgstr ""
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~ویرایش"
 
@@ -3877,6 +3930,7 @@ msgid  "Lin~ks..."
 msgstr ""
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
+#, fuzzy
 msgid  "~View"
 msgstr "~نما"
 
@@ -5532,190 +5586,237 @@ msgid  "Animation"
 msgstr ""
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "First Image"
 msgstr "First Image"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Backwards"
 msgstr "Backwards"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Stop"
 msgstr "Stop"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Play"
 msgstr "Play"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Last Image"
 msgstr "Last Image"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
+#, fuzzy
 msgid  "Image Number"
 msgstr "Image Number"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
+#, fuzzy
 msgid  "Duration"
 msgstr "Duration"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item1.StringList.item
+#, fuzzy
 msgid  "1"
 msgstr "۱"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item2.StringList.item
+#, fuzzy
 msgid  "2"
 msgstr "۲"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item3.StringList.item
+#, fuzzy
 msgid  "3"
 msgstr "۳"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item4.StringList.item
+#, fuzzy
 msgid  "4"
 msgstr "۴"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item5.StringList.item
+#, fuzzy
 msgid  "5"
 msgstr "۵"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item6.StringList.item
+#, fuzzy
 msgid  "6"
 msgstr "۶"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item7.StringList.item
+#, fuzzy
 msgid  "7"
 msgstr "۷"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item8.StringList.item
+#, fuzzy
 msgid  "8"
 msgstr "۸"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item9.StringList.item
+#, fuzzy
 msgid  "9"
 msgstr "۹"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item10.StringList.item
+#, fuzzy
 msgid  "10"
 msgstr "۱۰"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item11.StringList.item
+#, fuzzy
 msgid  "12"
 msgstr "۱۲"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item12.StringList.item
+#, fuzzy
 msgid  "15"
 msgstr "۱۵"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item13.StringList.item
+#, fuzzy
 msgid  "20"
 msgstr "۲۰"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item14.StringList.item
+#, fuzzy
 msgid  "25"
 msgstr "۲۵"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item15.StringList.item
+#, fuzzy
 msgid  "50"
 msgstr "۵۰"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item16.StringList.item
+#, fuzzy
 msgid  "100"
 msgstr "۱۰۰"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item17.StringList.item
+#, fuzzy
 msgid  "500"
 msgstr "۵۰۰"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item18.StringList.item
+#, fuzzy
 msgid  "1000"
 msgstr "۱۰۰۰"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item19.StringList.item
+#, fuzzy
 msgid  "Max."
 msgstr "حداکثر"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
+#, fuzzy
 msgid  "Loop Count"
 msgstr "Loop Count"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Apply Object"
 msgstr "Apply Object"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Apply Objects Individually"
 msgstr "Apply Objects Individually"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Delete Current Image"
 msgstr "Delete Current Image"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Delete All Images"
 msgstr "Delete All Images"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "Number"
 msgstr "عدد"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FixedLine.Text
+#, fuzzy
 msgid  "Image"
 msgstr "تصویر"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RadioButton.Text
+#, fuzzy
 msgid  "Group object"
 msgstr "شیء گروهی"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RadioButton.Text
+#, fuzzy
 msgid  "Bitmap object"
 msgstr "شیء نقشه‌بیتی"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FixedText.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "ردیف کردن"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Top Left"
 msgstr "بالا و چپ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Left"
 msgstr "چپ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Bottom Left"
 msgstr "پایین و چپ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Top"
 msgstr "بالا"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Centered"
 msgstr "وسط‌چین"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Bottom"
 msgstr "پایین"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Top Right"
 msgstr "بالا و راست"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Right"
 msgstr "راست"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Bottom Right"
 msgstr "پایین و راست"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+#, fuzzy
 msgid  "Create"
 msgstr "ایجاد"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+#, fuzzy
 msgid  "Animation group"
 msgstr "گروه پویانمایی"
 

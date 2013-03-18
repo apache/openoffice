@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "<wizard_name> хэвийг <current_date>-нд үүсгэсэн."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Чухал файлууд олдоогүй учир залуурчийг ажиллуулж чадахгүй.\n'Хэрэгсэл - Тохируулга - %PRODUCTNAME - Замууд' доторх 'Өгөгдмөл' товчийг дарж замуудад жинхэнэ өгөгдмөл тохиргоог буцааж олгоно.\nДараа нь залуурчийг дахин ажиллуулна уу."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "~Маягт дахь талбарууд"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Зүүн жагсаалтад хоёртын талбарууд нь үргэлж байх ба сонгогдох боломжтой.\nХэрвээ боломжтой бол тэд нар зурган хэлбэрээр тавигдсан байгаа."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Дэд маягт гэж өөр маягтад орсон маягт юм.\nДэд маягтууд нь хүснэгт эсвэл асуулгын өгөгдлийг one-to-many холбоос руу олгоход нэн тохиромжтой."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Анкет дахь талбарууд"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "'<FIELDNAME1>' ба '<FIELDNAME2>' холболт хоёр удаа сонгогдсон байна.\nХолболтууд зөвхөн нэг удаа л хэрэглэгдэнэ."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "Маягтын нэрийг тогтоох"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "'%FORMNAME' нэртэй маягт аль хэдийн байна. Өөр нэр сонгоно уу."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -825,7 +825,7 @@ msgstr "Хүснэгтүүд"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
 msgid  "A~vailable fields"
-msgstr "~Боломжит талбарууд"
+msgstr "~Оршин буй талбарууд"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
 msgid  "Name ~of the query"
@@ -1549,7 +1549,7 @@ msgstr "Баяр хүргэе. Өөрийн хүснэгтийг үүсгэхэ�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
-msgstr "Та дараа нь юу хийхийг хүсэж байна вэ?"
+msgstr "Дараа нь та юу хийхийг хүсэж байна?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
 msgid  "Modify the table design"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Өгөгдлийн сангийн хүснэгтийн агуулах талбарын хязгаар тоо болох %COUNT-с давсан тул талбарыг нэмэх боломжгүй."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "'%TABLENAME' нэр аль хэдийн байна.\nӨөр нэр оруулна уу."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1677,7 +1677,7 @@ msgstr "Тэмдгийг нугалах"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
 msgid  "~Complimentary close"
-msgstr "~Мэндчилгээний хэлбэр"
+msgstr "~Мэндчилгээн хэлбэр"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
 msgid  "~Footer"
@@ -1685,7 +1685,7 @@ msgstr "~Хөл"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
 msgid  "~Use user data for return address"
-msgstr "Илгээгчийн хаягаар хэрэглэгчийн өгөгдлийг хэрэглэх"
+msgstr "~Хэрэглэгчийн өгөгдлийг буцах хаягт ашигла"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
 msgid  "~New sender address:"
@@ -1693,19 +1693,19 @@ msgstr "~Шинэ илгээгчийн хаяг:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
 msgid  "Use placeholders for ~recipient's address"
-msgstr "Хүлээн авагчийн хаяганд зай хадгалагч хэрэглэх"
+msgstr "Зай хадгалагчийг х~үлээн авагчийн хаяганд ашиглах"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
 msgid  "Use address database for ~mail merge"
-msgstr "Мэйл нийлүүлэлтэнд хаягийн өгөгдлийн бааз хэрэглэх"
+msgstr "Хаягийн өгөгдлийн санг ~захиа нийлүүлэлтэнд ашиглах"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 msgid  "Include ~only on second and following pages"
-msgstr "~Зөвхөн хоёрдугаар болон дараагийн хуудсанд оруулах"
+msgstr "Зөвхөн хоёрдугаар болон дараагийн хуудсуудад багтаах"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
 msgid  "~Include page number"
-msgstr "Хуудасны дугаар ~оруулах"
+msgstr "Хуудасны дугаарыг ~оруулах"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 25.String.Text
 msgid  "Letter Template"
@@ -1749,7 +1749,7 @@ msgstr "Зүүн эмжээрийн ~зай:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 35.String.Text
 msgid  "Spacing ~to top margin:"
-msgstr "~Дээд эмжээрийн зай:"
+msgstr "Дээд эмжээрийн ~зай:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 36.String.Text
 msgid  "Height:"
@@ -1789,7 +1789,7 @@ msgstr "Гудамж:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
 msgid  "ZIP code/State/City:"
-msgstr "ZIP код/Аймаг/Хот:"
+msgstr "Шуудангийн код/Аймаг/Хот:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 46.String.Text
 msgid  "Recipient's address"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Вэб залуурч"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Вэб залуурч танд интернетэд баримт нийтлэхэд тань тусална. \n\nТаны баримт интернет хөтөчид харагддаг болж хөрвүүлэгдэнэ. Мөн түүнчлэн хялбар хандах боломжоор хангах баримт руу заасан холбоосуудтай агуулгын хүснэгт үүсгэнэ. Вэб залуурч мөн вэб хуудасны загвар, үзэмжийг өөрчлөх боломж олгоно.\n\nТа интернетэд нийтэлсэн баримтаа цаг үргэлж арчлах, шинэ байлгах мөн түүнчлэн баримт нэмэх болон устгах боломжтой."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "Нягтлан харах"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Сонгосон тохиргоо устах гэж байна.\n\nТа тэдгээр тохиргоог устгахыг үнэхээр хүсэж байна уу? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "'%FILENAME' FTP лавлахыг үүсгэх боломжгүй."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "'%FILENAME' FTP лавлах байхгүй байна.\nЛавлахыг одоо үүсгэх үү?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "'%FILENAME' Zip файлыг үүсгэх боломжгүй: Ижил нэртэй хавтас хэдийнэ байна."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "'%FILENAME' дотоод лавлах үүсгэх боломжгүй. \nТа бичих эрхтэй эсэхээ шалгана уу."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "'%FILENAME' дотоод лавлах байхгүй байна. \nЛавлахыг одоо үүсгэх үү?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2825,7 +2825,7 @@ msgstr "Ажиглагч"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +30.String.Text
 msgid  "Facility personnel"
-msgstr "Мэргэжилтэн"
+msgstr "Мэргэжилт"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."

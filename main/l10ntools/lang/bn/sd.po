@@ -238,9 +238,8 @@ msgid  "Move slides"
 msgstr "স্লাইডগুলো সরান"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-#, fuzzy
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "য়থেষ্ট স্মৃতি নেই!\nকাজটি বাতিল করা হবে"
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 #, fuzzy
@@ -437,298 +436,372 @@ msgid  "Last column"
 msgstr "শেষ স্তম্ভ"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.ModalDialog.Text
+#, fuzzy
 msgid  "HTML Export"
 msgstr "এইচটিএমএল রপ্তানি করুন"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_TITEL.FixedLine.Text
+#, fuzzy
 msgid  "Assign design"
 msgstr "ডিজাইন বরাদ্দ করুন"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_NEW_DESIGN.RadioButton.Text
+#, fuzzy
 msgid  "New design"
 msgstr "নতুন ডিজাইন"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_OLD_DESIGN.RadioButton.Text
+#, fuzzy
 msgid  "Existing design"
 msgstr "বিদ্যমান নকশা"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_DEL_DESIGN.PushButton.Text
+#, fuzzy
 msgid  "Delete Selected Design"
 msgstr "নির্বাচিত ডিজাইন মুছে ফেলুন"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_DESC.FixedText.Text
+#, fuzzy
 msgid  "Select an existing design or create a new one"
 msgstr "একটি বিদ্যমান ডিজাইন নির্বাচন করুন বা নতুন ডিজাইন তৈরি করুন"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL.FixedLine.Text
+#, fuzzy
 msgid  "Publication type"
 msgstr "প্রকাশনার ধরন"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_STANDARD.RadioButton.Text
+#, fuzzy
 msgid  "Standard H~TML format"
 msgstr "আদর্শ HTML বিন্যাস (~T)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_FRAMES.RadioButton.Text
+#, fuzzy
 msgid  "Standard HTML with ~frames"
 msgstr "ফ্রেম সহ আদর্শ HTML (~f)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "স্বয়ংক্রিয় (~A)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RadioButton.Text
+#, fuzzy
 msgid  "~WebCast"
 msgstr "WebCast (~W)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_HTML.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "পছন্দসমূহ"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CONTENT.CheckBox.Text
+#, fuzzy
 msgid  "Create title page"
 msgstr "শিরোনাম পৃষ্ঠা তৈরি করুন"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_NOTES.CheckBox.Text
+#, fuzzy
 msgid  "Show notes"
 msgstr "নোটসমূহ দেখান"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_KIOSK.FixedLine.Text
+#, fuzzy
 msgid  "Advance slides"
 msgstr "উন্নত স্লাইডসমূহ"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_DEFAULT.RadioButton.Text
+#, fuzzy
 msgid  "~As stated in document"
 msgstr "নথিতে বর্ণনানুযায়ী (~A)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_AUTO.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "স্বয়ংক্রিয় (~A)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TXT.FixedText.Text
+#, fuzzy
 msgid  "~Slide view time:"
 msgstr "স্লাইড প্রদর্শনের সময় (~S)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TMF.TimeField.QuickHelpText
+#, fuzzy
 msgid  "~Duration of page"
 msgstr "পৃষ্ঠার স্থায়িত্ব (~D)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ENDLESS.CheckBox.Text
+#, fuzzy
 msgid  "~Endless"
 msgstr "অফুরন্ত (~E)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_WEBCAST.FixedLine.Text
+#, fuzzy
 msgid  "WebCast"
 msgstr "WebCast"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ASP.RadioButton.Text
+#, fuzzy
 msgid  "~Active Server Pages (ASP)"
 msgstr "সক্রিয় সার্ভার পৃষ্ঠাসমূহ (ASP) (~A)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_PERL.RadioButton.Text
+#, fuzzy
 msgid  "Perl"
 msgstr "পার্ল"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_INDEX_TXT.FixedText.Text
+#, fuzzy
 msgid  "~URL for listeners"
 msgstr "শ্রোতাদের জন্য URL (~U)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_URL_TXT.FixedText.Text
+#, fuzzy
 msgid  "URL for ~presentation:"
 msgstr "উপস্থাপনার জন্য URL (~p):"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CGI_TXT.FixedText.Text
+#, fuzzy
 msgid  "URL for ~Perl scripts:"
 msgstr "পার্ল স্ক্রিপ্টের জন্য URL (~P):"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_1.FixedLine.Text
+#, fuzzy
 msgid  "Save graphics as"
 msgstr "এভাবে গ্রাফিক্স সংরক্ষণ করুন"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_PNG.RadioButton.Text
+#, fuzzy
 msgid  "~PNG"
 msgstr "PNG (~P)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_GIF.RadioButton.Text
+#, fuzzy
 msgid  "~GIF"
 msgstr "GIF (~G)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_JPG.RadioButton.Text
+#, fuzzy
 msgid  "~JPG"
 msgstr "JPG (~J)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_QUALITY_TXT.FixedText.Text
+#, fuzzy
 msgid  "Quality"
 msgstr "বৈশিষ্ট্য"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_2.FixedLine.Text
+#, fuzzy
 msgid  "Monitor resolution"
 msgstr "মনিটর রেসুলেশন"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_1.RadioButton.Text
+#, fuzzy
 msgid  "Low resolution (~640x480 pixels)"
 msgstr "নিম্ন রেসুলেশন (640x480 পিক্সেল) (~6)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_2.RadioButton.Text
+#, fuzzy
 msgid  "Medium resolution (~800x600 pixels)"
 msgstr "মধ্যম রেসুলেশন (800x600 পিক্সেল) (~8)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_3.RadioButton.Text
+#, fuzzy
 msgid  "High resolution (~1024x768 pixels)"
 msgstr "উচ্চ রেসুলেশন (1024x768 পিক্সেল) (~1) "
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_3.FixedLine.Text
+#, fuzzy
 msgid  "Effects"
 msgstr "প্রভাব"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_SLD_SOUND.CheckBox.Text
+#, fuzzy
 msgid  "~Export sounds when slide advances"
 msgstr "স্লাইড অগ্রসর হওয়ার সময় শব্দ সংযোজন করুন (~E) "
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_HIDDEN_SLIDES.CheckBox.Text
+#, fuzzy
 msgid  "Export ~hidden slides"
 msgstr "লুকানো স্লাইডসমূহ রপ্তানি করুন (~h)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_1.FixedLine.Text
+#, fuzzy
 msgid  "Information for the title page"
 msgstr "শিরোনাম পৃষ্ঠার জন্য তথ্য"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_AUTHOR_TXT.FixedText.Text
+#, fuzzy
 msgid  "~Author"
 msgstr "লেখক (~A)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_EMAIL_TXT.FixedText.Text
+#, fuzzy
 msgid  "E-~mail address"
 msgstr "ই-মেইল ঠিকানা (~m)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_WWW_TXT.FixedText.Text
+#, fuzzy
 msgid  "Your hom~epage"
 msgstr "আপনার আদ্যপৃষ্ঠা (~e)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_2.FixedText.Text
+#, fuzzy
 msgid  "Additional ~information"
 msgstr "অতিরিক্ত তথ্য (~i)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_DOWNLOAD.CheckBox.Text
+#, fuzzy
 msgid  "Link to a copy of the ~original presentation"
 msgstr "মূল উপস্থাপনার একটি অনুলিপি সংযুক্ত করুন (~o)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_CREATED.CheckBox.Text
+#, fuzzy
 msgid  "Note: 'Created with %PRODUCTNAME'"
 msgstr "নোট: '%PRODUCTNAME' দ্বারা তৈরি করা হয়েছে'"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TITEL.FixedLine.Text
+#, fuzzy
 msgid  "Select button style"
 msgstr "বোতাম শৈলী নির্বাচন করুন"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TEXTONLY.CheckBox.Text
+#, fuzzy
 msgid  "~Text only"
 msgstr "শুধুমাত্র পাঠ (~T)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TITEL.FixedLine.Text
+#, fuzzy
 msgid  "Select color scheme"
 msgstr "রংয়ের বিন্যাস নির্বাচন করুন"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DOCCOLORS.RadioButton.Text
+#, fuzzy
 msgid  "~Apply color scheme from document"
 msgstr "নথি থেকে রংয়ের বিন্যাস নির্বাচন করুন (~A)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DEFAULT.RadioButton.Text
+#, fuzzy
 msgid  "Use ~browser colors"
 msgstr "ব্রাউজারের রং ব্যবহার করুন (~b)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_USER.RadioButton.Text
+#, fuzzy
 msgid  "~Use custom color scheme"
 msgstr "স্বনির্বাচিত রংয়ের বিন্যাস নির্বাচন করুন (~U)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TEXT.PushButton.Text
+#, fuzzy
 msgid  "Text"
 msgstr "পাঠ"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_LINK.PushButton.Text
+#, fuzzy
 msgid  "Hyper~link"
 msgstr "হাইপারলিংক (~l)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_ALINK.PushButton.Text
+#, fuzzy
 msgid  "Active Li~nk"
 msgstr "সক্রিয় লিংক (~n)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_VLINK.PushButton.Text
+#, fuzzy
 msgid  "~Visited Link"
 msgstr "পরিদর্শিত লিংক (~V)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_BACK.PushButton.Text
+#, fuzzy
 msgid  "Bac~kground"
 msgstr "প্রেক্ষাপট (~k)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.BUT_LAST.PushButton.Text
+#, fuzzy
 msgid  "<< Back"
 msgstr "<< পিছনে"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.BUT_NEXT.PushButton.Text
+#, fuzzy
 msgid  "Next >>"
 msgstr "পরবর্তী >>"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.BUT_FINISH.OKButton.Text
+#, fuzzy
 msgid  "~Create"
 msgstr "তৈরি করুন (~C)"
 
 #: source/filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_SAVE.OKButton.Text
+#, fuzzy
 msgid  "~Save"
 msgstr "সংরক্ষণ করুন (~S)"
 
 #: source/filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_NOSAVE.CancelButton.Text
+#, fuzzy
 msgid  "Do Not Save"
 msgstr "সংরক্ষণ করবেন না"
 
 #: source/filter/html/pubdlg.src#DLG_DESIGNNAME.CancelButton.Text
+#, fuzzy
 msgid  "Name HTML Design"
 msgstr "এইচটিএমএল নকশার নাম"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.String.Text
+#, fuzzy
 msgid  "Drawing View"
 msgstr "অংকন প্রদর্শন"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you create and edit drawings."
 msgstr "এখানে আপনি অংকন তৈরী ও সম্পাদনা করেন।"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_N.String.Text
+#, fuzzy
 msgid  "Drawing View"
 msgstr "অংকন প্রদর্শন"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you create and edit slides."
 msgstr "এখানে আপনি স্লাইড তৈরী ও সম্পাদনা করেন।"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_N.String.Text
+#, fuzzy
 msgid  "Outline View"
 msgstr "আউটলাইন প্রদর্শন"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you enter or edit text in list form."
 msgstr "এখানে আপনি তালিকা ফর্মে পাঠ প্রবেশ ও সম্পাদনা করেন"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_N.String.Text
+#, fuzzy
 msgid  "Slides View"
 msgstr "স্লাইডসমূহের প্রদর্শন"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you sort slides."
 msgstr "এখানে আপনি স্লাইড সাজান।"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_N.String.Text
+#, fuzzy
 msgid  "Notes View"
 msgstr "নোটসমুহের প্রদর্শন"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you enter and view notes."
 msgstr "এখানে আপনি নোটসমূহ প্রবেশ ও প্রদর্শন করেন।"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_N.String.Text
+#, fuzzy
 msgid  "Handout View"
 msgstr "বিলিপত্রের প্রদর্শন"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you decide on the layout for handouts."
 msgstr "এখানে আপনি বিলিপত্রের জন্য বর্হিবিন্যাসে সিদ্ধান্ত নেন।"
 
@@ -1113,102 +1186,124 @@ msgid  "In reverse order"
 msgstr "বিপরীত বিন্যাসে"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_CLICK.MenuItem.Text
+#, fuzzy
 msgid  "Start On ~Click"
 msgstr "ক্লিক করলে শুরু করুন (~C)"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_PREVIOUS.MenuItem.Text
+#, fuzzy
 msgid  "Start ~With Previous"
 msgstr "পূর্ববর্তীর সাথে শুরু করুন (~W)"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_AFTER_PREVIOUS.MenuItem.Text
+#, fuzzy
 msgid  "Start ~After Previous"
 msgstr "পূর্ববর্তীর পরে শুরু করুন (~A)"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_OPTIONS.MenuItem.Text
+#, fuzzy
 msgid  "~Effect Options..."
 msgstr "প্রভাবের পছন্দসমূহ... (~E)"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_DURATION.MenuItem.Text
+#, fuzzy
 msgid  "~Timing..."
 msgstr "সময়... (~T)"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "অপসারণ করুন (~R)"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_25.MenuItem.Text
+#, fuzzy
 msgid  "Tiny"
 msgstr "অতিক্ষুদ্র"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_50.MenuItem.Text
 msgid  "Smaller"
-msgstr "অপেক্ষাকৃত ছোট"
+msgstr "অপেক্ষাকৃত ক্ষুদ্র"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MenuItem.Text
 msgid  "Larger"
-msgstr "অপেক্ষাকৃত বড়"
+msgstr "অপেক্ষাকৃত বৃহৎ"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MenuItem.Text
 msgid  "Extra large"
-msgstr "অতিরিক্ত বড়"
+msgstr "অতিরিক্ত বড়"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_25.MenuItem.Text
+#, fuzzy
 msgid  "Tiny"
 msgstr "অতিক্ষুদ্র"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_50.MenuItem.Text
+#, fuzzy
 msgid  "Smaller"
 msgstr "অপেক্ষাকৃত ক্ষুদ্র"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_150.MenuItem.Text
+#, fuzzy
 msgid  "Larger"
 msgstr "অপেক্ষাকৃত বৃহৎ"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_400.MenuItem.Text
+#, fuzzy
 msgid  "Extra large"
 msgstr "অতিরিক্ত বড়"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "অনুভূমিক"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "উলম্ব"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_BOTH.MenuItem.Text
+#, fuzzy
 msgid  "Both"
 msgstr "উভয়"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_QUARTER_SPIN.MenuItem.Text
+#, fuzzy
 msgid  "Quarter spin"
 msgstr "একচতুর্থাংশ ঘুরান"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_HALF_SPIN.MenuItem.Text
+#, fuzzy
 msgid  "Half spin"
 msgstr "অর্ধেক ঘুরান"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_FULL_SPIN.MenuItem.Text
+#, fuzzy
 msgid  "Full spin"
 msgstr "সম্পূর্ণ ঘুরান"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_TWO_SPINS.MenuItem.Text
+#, fuzzy
 msgid  "Two spins"
 msgstr "দুইবার ঘুরান"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_CLOCKWISE.MenuItem.Text
+#, fuzzy
 msgid  "Clockwise"
 msgstr "ঘড়ির কাঁটার দিকে"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_COUNTERCLOCKWISE.MenuItem.Text
+#, fuzzy
 msgid  "Counter-clockwise"
 msgstr "ঘড়ির কাঁটার বিপরীতে"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_BOLD.MenuItem.Text
+#, fuzzy
 msgid  "Bold"
 msgstr "মোটা"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_ITALIC.MenuItem.Text
+#, fuzzy
 msgid  "Italic"
 msgstr "বাঁকা"
 
@@ -1616,6 +1711,7 @@ msgid  "Reply to %1"
 msgstr ""
 
 #: source/ui/app/menuids4_tmpl.src#MNSUB_GRAPHIC_PORTAL.MN_SUB_GRAPHIC.MenuItem.Text
+#, fuzzy
 msgid  "~Graphics"
 msgstr "গ্রাফিক্স (~G)"
 
@@ -1860,7 +1956,7 @@ msgstr "আউটলাইন"
 #: source/ui/app/strings.src#STR_NOTES_MODE.String.Text
 #, fuzzy
 msgid  "Notes"
-msgstr "নোটসমূহ"
+msgstr "নোট"
 
 #: source/ui/app/strings.src#STR_HANDOUT_MODE.String.Text
 #, fuzzy
@@ -1994,9 +2090,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "অনুগ্রহ করে নতুন তীরের-অগ্রভাগের জন্য একটি নাম দিন"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-#, fuzzy
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "নির্বাচিত নামটি ইতোমধ্যে বিদ্যমান।\nঅনুগ্রহ করে আরেকটি নাম দিন।"
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -2084,9 +2179,8 @@ msgid  "Insert slides"
 msgstr "স্লাইডসমূহ প্রবেশ করান"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-#, fuzzy
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "আপনি কি নিশ্চিত যে আপনি \"$\" স্তর মুছে ফেলতে চান?\nনোট: এই স্তরের সকল অবজেক্ট মুছে যাবে!"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -2144,9 +2238,8 @@ msgid  "Insert text frame"
 msgstr "পাঠ কাঠামো প্রবেশ করান"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-#, fuzzy
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "নির্বাচিত অবজেক্টের সাথে\nএই ফাংশনটি চালানো যায় না।"
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -2159,9 +2252,8 @@ msgid  "The file could not be loaded!"
 msgstr "ফাইলটি লোড করা যাবে না!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-#, fuzzy
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "নতুন পৃষ্ঠাসমূহের বিন্যাস অভিযোজিত করা হবে।\nআপনি কি অবজেক্টও অভিযোজন করতে চান?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -2184,9 +2276,8 @@ msgid  "~Edit"
 msgstr "সম্পাদনা করুন (~E)"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-#, fuzzy
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "এই ক্রিয়াটি পূর্বের অবসথায় আনা সম্ভব ক্রিয়াগুলির তালিকাকে মুছে দেয়।\nডকুমেন্টটিতে আগে যেসব পরিবর্তন করা হয়েছে সেগুলি এখনও বৈধ,\nকিন্তু পূর্বাবস্থায় আনা সম্ভব নয়। আপনি কি চালিয়ে যেতে চান এবং\nনতুন স্লাইড ডিজাইনটি কার্যকর করতে চান?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2209,9 +2300,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "উল্লেখিত মুদ্রকে নথির বিন্যাস নির্ধারণ করা যায়নি।"
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-#, fuzzy
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "এই গ্রাফিকটি একটি নথিতে সংযুক্ত করা হয়েছে।\nআপনি কি এটি সম্পাদনা করার জন্য গ্রাফিকটির সংযোগ বাদ দিতে চান?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2349,9 +2439,8 @@ msgid  " (Outline)"
 msgstr "(আউটলাইন)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-#, fuzzy
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "উল্লেখিত স্কেল অবৈধ।\nআপনি কি নতুন একটি প্রবেশ করাতে চান?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2703,9 +2792,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "সকল অংকন অবজেক্টকে দলহীন করা সম্ভব হয়নি।"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-#, fuzzy
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "এই নামে একটি নকশা ইতোমধ্যে বিদ্যমান।\nআপনি কি এটি প্রতিস্থাপন করতে চান?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2848,9 +2936,8 @@ msgid  "Graphics filter"
 msgstr "গ্রাফিক্স পরিশ্রুতক"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-#, fuzzy
-msgid  "The file %\nis not a valid sound file !"
-msgstr "% ফাইলটি\nবৈধ সাউন্ড ফাইল নয় !"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -3135,658 +3222,822 @@ msgid  "All Styles"
 msgstr "কক্ষ শৈলীসমূহ"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Distribution..."
 msgstr "বিতরণ... (~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Drawing View"
 msgstr "অংকন দৃশ্য (~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Outline View"
 msgstr "আউটলাইন দৃশ্য (~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Sorter"
 msgstr "স্লাইড ক্রমসজ্জাকারী (~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MenuItem.Text
+#, fuzzy
 msgid  "Slide Sho~w"
 msgstr "স্লাইড প্রদর্শন (~w)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MenuItem.Text
+#, fuzzy
 msgid  "~Insert Snap Point/Line..."
 msgstr "স্ন্যাপ বিন্দু/রেখা প্রবেশ করান... (~I)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "সম্পাদনা করুন... (~E)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "মুছে ফেলুন (~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slide ~Layout"
 msgstr "স্লাইড বর্হিবিন্যাস (~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MenuItem.Text
+#, fuzzy
 msgid  "~Page Setup..."
 msgstr "পৃষ্ঠা বিন্যাসন... (~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~New Slide"
 msgstr "নতুন স্লাইড (~N)"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~New Master"
 msgstr "নতুন মাস্টার (~N)"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~New Page"
 msgstr "নতুন পৃষ্ঠা (~N)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MenuItem.Text
+#, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "স্লাইডের জন্য প্রেক্ষাপট চিত্র নির্ধারণ করুন..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MenuItem.Text
+#, fuzzy
 msgid  "Display Background of Master"
 msgstr "মাস্টারের প্রেক্ষাপট প্রদর্শন করুন"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "Display Objects from Master"
 msgstr "মাস্টার হতে অবজেক্টসমূহ প্রদর্শন করুন"
 
 #: source/ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "Pag~e"
 msgstr "পৃষ্ঠা (~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "Slid~e"
 msgstr "স্লাইড (~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Layer..."
 msgstr "স্তর পুনঃ নামকরণ করুন... (~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~elete Slide"
 msgstr "স্লাইড মুছে ফেলুন (~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~elete Master"
 msgstr "মাস্টার মুছে ফেলুন (~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~elete Page"
 msgstr "পৃষ্ঠা মুছে ফেলুন (~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Slide"
 msgstr "স্লাইড পুনঃ নামকরণ করুন... (~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Master"
 msgstr "মাস্টার পুনঃ নামকরণ করুন... (~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Page"
 msgstr "পৃষ্টা পুনঃ নামকরণ করুন... (~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MenuItem.Text
+#, fuzzy
 msgid  "L~ine..."
 msgstr "রেখা... (~i)"
 
 #: source/ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MenuItem.Text
+#, fuzzy
 msgid  "~Area..."
 msgstr "এলাকা... (~A)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Text..."
 msgstr "পাঠ... (~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Connector..."
 msgstr "সংযোজক... (~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MenuItem.Text
+#, fuzzy
 msgid  "Reset ~Routing"
 msgstr "রাউটিং পুনরায় স্থাপন করুন (~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "মাত্রসমূহ... (~s)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MenuItem.Text
+#, fuzzy
 msgid  "Position and Si~ze..."
 msgstr "অবস্থান এবং আকার... (~z)"
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit ~Points"
 msgstr "বিন্দুগুলো সম্পাদনা করুন (~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "Arra~nge"
 msgstr "সাজান (~n)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MenuItem.Text
+#, fuzzy
 msgid  "~Bring to Front"
 msgstr "সামনে আনুন (~B)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "অগ্রগামী করুন (~F)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "পশ্চাৎগামী করুন (~w)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MenuItem.Text
+#, fuzzy
 msgid  "~Send to Back"
 msgstr "পিছের পাঠান (~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "অবজেক্টের সামনে (~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "Be~hind Object"
 msgstr "অবজেক্টের পিছনে (~h)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MenuItem.Text
+#, fuzzy
 msgid  "~Reverse"
 msgstr "বিপরীত (~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "C~haracter..."
 msgstr "বর্ণচিহ্ন... (~h)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MenuItem.Text
+#, fuzzy
 msgid  "P~aragraph..."
 msgstr "অনুচ্ছেদ... (~a)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MenuItem.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "ফন্ট (~F)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Size"
 msgstr "আকার (~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "St~yle"
 msgstr "শৈলী (~y)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Bold"
 msgstr "মোটা"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MenuItem.Text
+#, fuzzy
 msgid  "Italic"
 msgstr "বাঁকা"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_OVERLINE.MenuItem.Text
+#, fuzzy
 msgid  "Overline"
 msgstr "উর্দ্ধরেখা"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
+#, fuzzy
 msgid  "Underline"
 msgstr "নিম্নরেখা"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "অবচ্ছেদন"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MenuItem.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "ছায়া"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MenuItem.Text
+#, fuzzy
 msgid  "~Contour"
 msgstr "দেহরেখা (~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "লাইন ফাঁকাকরণ (~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MenuItem.Text
+#, fuzzy
 msgid  "Single Line Spacing"
 msgstr "এক লাইন ফাঁকাকরণ"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MenuItem.Text
+#, fuzzy
 msgid  "1.5 Lines"
 msgstr "১.৫ লাইন"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MenuItem.Text
+#, fuzzy
 msgid  "~Double"
 msgstr "দ্বিগুন (~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MenuItem.Text
+#, fuzzy
 msgid  "S~pecial Character..."
 msgstr "বিশেষ বর্ণচিহ্ন... (~p)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "প্রান্তিককরণ (~l)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "বাম (~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "ডান (~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
+#, fuzzy
 msgid  "~Centered"
 msgstr "কেন্দ্রীয় (~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
+#, fuzzy
 msgid  "Justified"
 msgstr "প্রান্তিককৃত"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "Al~ignment"
 msgstr "প্রান্তিককরণ (~l)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_LEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "বাম (~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_CENTER.MenuItem.Text
+#, fuzzy
 msgid  "~Centered"
 msgstr "কেন্দ্রীয় (~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "ডান (~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
+#, fuzzy
 msgid  "~Top"
 msgstr "উপর (~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
+#, fuzzy
 msgid  "C~enter"
 msgstr "কেন্দ্র (~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "~Bottom"
 msgstr "নিচ (~B)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
+#, fuzzy
 msgid  "Close ~Object"
 msgstr "অবজেক্ট বন্ধ করুন (~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit ~Points"
 msgstr "বিন্দুগুলো সম্পাদনা করুন (~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_MOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Move Points"
 msgstr "বিন্দুগুলো সরান (~M)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_INSERT.MenuItem.Text
+#, fuzzy
 msgid  "Insert ~Points"
 msgstr "বিন্দুসমূহ প্রবেশ করান (~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete Points"
 msgstr "বিন্দুগুলো মুছে ফেলুন (~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CLOSE.MenuItem.Text
+#, fuzzy
 msgid  "Close ~Object"
 msgstr "অবজেক্ট বন্ধ করুন (~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CUTLINE.MenuItem.Text
+#, fuzzy
 msgid  "~Split Curve"
 msgstr "কার্ভ বিভক্ত করুন (~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_CONVERT.MenuItem.Text
+#, fuzzy
 msgid  "Con~vert to Curve"
 msgstr "কার্ভে রুপান্তর করুন (~v)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDGE.MenuItem.Text
+#, fuzzy
 msgid  "~Corner"
 msgstr "কোণা (~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SMOOTH.MenuItem.Text
+#, fuzzy
 msgid  "Smoot~h"
 msgstr "মসৃণ (~h)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_SYMMTR.MenuItem.Text
+#, fuzzy
 msgid  "S~ymmetric"
 msgstr "প্রতিসম (~y)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_ELIMINATE_POINTS.MenuItem.Text
+#, fuzzy
 msgid  "~Reduce Points"
 msgstr "বিন্দু কমান (~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GROUP.SID_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Group"
 msgstr "দল (~G)"
 
 #: source/ui/app/menuids_tmpl.src#MN_UNGROUP.SID_UNGROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Ungroup"
 msgstr "দলভঙ্গ (~U)"
 
 #: source/ui/app/menuids_tmpl.src#MN_COMBINE.SID_COMBINE.MenuItem.Text
+#, fuzzy
 msgid  "Comb~ine"
 msgstr "একত্রিত করুন (~i)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISMANTLE.SID_DISMANTLE.MenuItem.Text
+#, fuzzy
 msgid  "~Split"
 msgstr "বিভক্ত করুন (~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_ENTER_GROUP.SID_ENTER_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Enter Group"
 msgstr "দল প্রবেশ করান (~E)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LEAVE_GROUP.SID_LEAVE_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "E~xit Group"
 msgstr "দল ত্যাগ করুন (~x)"
 
 #: source/ui/app/menuids_tmpl.src#MN_NAME_GROUP.SID_NAME_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "নাম..."
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_TITLE_DESCRIPTION.SID_OBJECT_TITLE_DESCRIPTION.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "বিবরণ..."
 
 #: source/ui/app/menuids_tmpl.src#MN_REHEARSE_TIMINGS.SID_REHEARSE_TIMINGS.MenuItem.Text
+#, fuzzy
 msgid  "~Rehearse Timings"
 msgstr "মহড়ার সময় (~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_EFFECT.SID_CUSTOM_ANIMATION_PANEL.MenuItem.Text
+#, fuzzy
 msgid  "Custom Animation..."
 msgstr "পছন্দসই অ্যানিমেশন..."
 
 #: source/ui/app/menuids_tmpl.src#MN_ACTION.SID_ANIMATION_EFFECTS.MenuItem.Text
+#, fuzzy
 msgid  "Int~eraction..."
 msgstr "মিথস্ক্রিয়া... (~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATIONOBJECT.SID_PRESENTATIONOBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Presentation ~Object..."
 msgstr "উপস্থাপনা অবজেক্ট... (~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE.SID_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "মুছে ফেলুন (~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_DEFAULT.SID_SET_DEFAULT.MenuItem.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "পূর্বনির্ধারিত (~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_FONTWORK.SID_FONTWORK.MenuItem.Text
+#, fuzzy
 msgid  "F~ontwork"
 msgstr "ফন্টওয়ার্ক (~o)"
 
 #: source/ui/app/menuids_tmpl.src#MN_ORIGINAL_SIZE.SID_ORIGINAL_SIZE.MenuItem.Text
+#, fuzzy
 msgid  "~Original Size"
 msgstr "মূল আকার (~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_SAVEGRAPHIC.SID_SAVEGRAPHIC.MenuItem.Text
+#, fuzzy
 msgid  "Save as Picture..."
 msgstr "ছবি হিসেবে সংরক্ষণ করুন..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CROP.SID_ATTR_GRAF_CROP.MenuItem.Text
+#, fuzzy
 msgid  "Crop Picture..."
 msgstr "ছবি কাটুন..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NAVIGATOR.SID_NAVIGATOR.MenuItem.Text
+#, fuzzy
 msgid  "Na~vigator"
 msgstr "পরিক্রমক (~v)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_INSERT_POINT.SID_GLUE_INSERT_POINT.MenuItem.Text
+#, fuzzy
 msgid  "Insert ~Point"
 msgstr "বিন্দু প্রবেশ করান (~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_LEFT.SID_GLUE_ESCDIR_LEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "বাম (~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_TOP.SID_GLUE_ESCDIR_TOP.MenuItem.Text
+#, fuzzy
 msgid  "~Top"
 msgstr "উপর (~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_RIGHT.SID_GLUE_ESCDIR_RIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "ডান (~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_ESC_DIR_BOTTOM.SID_GLUE_ESCDIR_BOTTOM.MenuItem.Text
+#, fuzzy
 msgid  "~Bottom"
 msgstr "নিচ (~B)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_PERCENT.SID_GLUE_PERCENT.MenuItem.Text
+#, fuzzy
 msgid  "~Adapt Position to Object"
 msgstr "অবজেক্ট অনুযায়ী অবস্থান নির্ধারণ করুন (~A)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_LEFT.SID_GLUE_HORZALIGN_LEFT.MenuItem.Text
+#, fuzzy
 msgid  "Fixed ~Horizontal Left"
 msgstr "অপরিবর্তনীয় অনুভূমিক বামে (~H)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_CENTER.SID_GLUE_HORZALIGN_CENTER.MenuItem.Text
+#, fuzzy
 msgid  "Fixed Horizontal ~Center"
 msgstr "অপরিবর্তনীয় অনুভূমিক কেন্দ্রে (~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_HORZALIGN_RIGHT.SID_GLUE_HORZALIGN_RIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Fixed Hori~zontal Right"
 msgstr "অপরিবর্তনীয় অনুভূমিক ডানে (~z)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_TOP.SID_GLUE_VERTALIGN_TOP.MenuItem.Text
+#, fuzzy
 msgid  "Fixed ~Vertical Top"
 msgstr "অপরিবর্তনীয় উলম্ব উপরে (~V)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_CENTER.SID_GLUE_VERTALIGN_CENTER.MenuItem.Text
+#, fuzzy
 msgid  "Fixed V~ertical Center"
 msgstr "অপরিবর্তনীয় উলম্ব কেন্দ্রে (~e)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_VERTALIGN_BOTTOM.SID_GLUE_VERTALIGN_BOTTOM.MenuItem.Text
+#, fuzzy
 msgid  "Fixed Ver~tical Bottom"
 msgstr "অপরিবর্তনীয় উলম্ব নিচে (~t)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_VISIBLE.SID_GRID_VISIBLE.MenuItem.Text
+#, fuzzy
 msgid  "~Visible Grid"
 msgstr "দর্শনযোগ্য গরাদ (~V)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_USE.SID_GRID_USE.MenuItem.Text
+#, fuzzy
 msgid  "Snap to Grid"
 msgstr "গরাদের স্ন্যাপ"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID_FRONT.SID_GRID_FRONT.MenuItem.Text
+#, fuzzy
 msgid  "Grid to ~Front"
 msgstr "সামনে পর্যন্ত গরাদ (~F)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GRID.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "~Grid"
 msgstr "গরাদ (~G)"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_VISIBLE.SID_HELPLINES_VISIBLE.MenuItem.Text
+#, fuzzy
 msgid  "~Snap Lines Visible"
 msgstr "স্ন্যাপ রেখাগুলো দর্শনীয় (~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_USE.SID_HELPLINES_USE.MenuItem.Text
+#, fuzzy
 msgid  "Snap to Snap Lines"
 msgstr "স্ন্যাপ লাইনসমূহের স্ন্যাপ নিন"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES_FRONT.SID_HELPLINES_FRONT.MenuItem.Text
+#, fuzzy
 msgid  "Snap Lines to Front"
 msgstr "লাইনগুলোকে সামনে স্ন্যাপ করুন"
 
 #: source/ui/app/menuids_tmpl.src#MN_HELPLINES.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "~Snap Lines"
 msgstr "স্ন্যাপ লাইনসমূহ (~S)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONTROL_SHOW_BROWSER.SID_SHOW_BROWSER.MenuItem.Text
+#, fuzzy
 msgid  "Propert~ies..."
 msgstr "বৈশিষ্ট্যসমূহ... (~i)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_THRESHOLD.SID_CONVERT_TO_1BIT_THRESHOLD.MenuItem.Text
+#, fuzzy
 msgid  "1Bit ~Threshold"
 msgstr "১ বিট থ্রেশহোল্ড (~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_1BIT_MATRIX.SID_CONVERT_TO_1BIT_MATRIX.MenuItem.Text
+#, fuzzy
 msgid  "1 Bit ~Dithering"
 msgstr "১ বিট ডিদারিং (~D)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_GRAYS.SID_CONVERT_TO_4BIT_GRAYS.MenuItem.Text
+#, fuzzy
 msgid  "4 Bit G~rayscales"
 msgstr "৪ বিট ধূসর (~r)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_4BIT_COLORS.SID_CONVERT_TO_4BIT_COLORS.MenuItem.Text
+#, fuzzy
 msgid  "4 Bit ~Color Palette"
 msgstr "৪ বিট রং প্যালেট (~C)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_GRAYS.SID_CONVERT_TO_8BIT_GRAYS.MenuItem.Text
+#, fuzzy
 msgid  "8 Bit Gr~ayscales"
 msgstr "৮ বিট ধূসর (~a)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_8BIT_COLORS.SID_CONVERT_TO_8BIT_COLORS.MenuItem.Text
+#, fuzzy
 msgid  "8 Bit C~olor Palette"
 msgstr "৮ বিট রং প্যালেট (~o)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONVERT_TO_24BIT.SID_CONVERT_TO_24BIT.MenuItem.Text
+#, fuzzy
 msgid  "24 Bit ~True Colors"
 msgstr "২৪ বিট আসল রং (~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_COLORRESOLUTION.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "~Color Resolution"
 msgstr "রং রেসলেশন (~C)"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_CONVERT.SID_CONVERT.MenuItem.Text
+#, fuzzy
 msgid  "Con~vert"
 msgstr "রুপান্তর করুন (~v)"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_MIRROR.SID_MIRROR.MenuItem.Text
+#, fuzzy
 msgid  "~Flip"
 msgstr "উল্টান (~F)"
 
 #: source/ui/app/menuids_tmpl.src#MNSUB_ROTATE.SID_OBJECT_ROTATE.MenuItem.Text
+#, fuzzy
 msgid  "~Rotate"
 msgstr "ঘুরান (~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECT.SID_CONNECT.MenuItem.Text
+#, fuzzy
 msgid  "C~onnect"
 msgstr "সংযুক্ত করুন (~o)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BREAK.SID_BREAK.MenuItem.Text
+#, fuzzy
 msgid  "~Break"
 msgstr "বিরতি (~B)"
 
 #: source/ui/app/menuids_tmpl.src#MN_STYLEDT.SID_STYLE_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit Style..."
 msgstr "শৈলী সম্পাদনা করুন..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_HYPERLINK.SID_EDIT_HYPERLINK.MenuItem.Text
+#, fuzzy
 msgid  "H~yperlink..."
 msgstr "হাইপারলিঙ্ক... (~y)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POINT_EDITMODE.SID_BEZIER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Poi~nts"
 msgstr "বিন্দুসমূহ (~n)"
 
 #: source/ui/app/menuids_tmpl.src#MN_GLUE_EDITMODE.SID_GLUE_EDITMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Glue Points"
 msgstr "সংযোগ বিন্দু (~G)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "La~yer"
 msgstr "স্তর (~y)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_INSERTLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "প্রবেশ করান (~I)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_MODIFYLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Modify"
 msgstr "পরিবর্তন করান (~M)"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_DELETE_LAYER.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "মুছে ফেলুন"
 
 #: source/ui/app/menuids_tmpl.src#MN_LAYER_EDITMODE.DUMMY.SID_RENAMELAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Rename"
 msgstr "পুনঃ নামকরণ (~R)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MenuItem.Text
+#, fuzzy
 msgid  "To ~Curve"
 msgstr "কার্ভে (~C)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MenuItem.Text
+#, fuzzy
 msgid  "To ~Polygon"
 msgstr "বহুভূজে (~P)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MenuItem.Text
+#, fuzzy
 msgid  "To C~ontour"
 msgstr "দেহরেখায় (~o)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MenuItem.Text
+#, fuzzy
 msgid  "To 3~D"
 msgstr "ত্রিমাত্রিক এ (~D)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MenuItem.Text
+#, fuzzy
 msgid  "To ~Bitmap"
 msgstr "বিটম্যাপে (~B)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MenuItem.Text
+#, fuzzy
 msgid  "To ~Metafile"
 msgstr "মেটাফাইলে (~M)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MenuItem.Text
+#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "ত্রিমাত্রিক ঘূর্ণায়মান অবজেক্ট (~R)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "উলম্বভাবে (~V)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "~Horizontally"
 msgstr "অনুভূমিকভাবে (~H)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MenuItem.Text
+#, fuzzy
 msgid  "~3D Effects"
 msgstr "ত্রিমাত্রিক প্রভাব (~3)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Design"
 msgstr "স্লাইড নকশা (~S)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MenuItem.Text
+#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "স্লাইড পরিবর্তন (~T)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Show Slide"
 msgstr "স্লাইড দেখান (~S)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Hide Slide"
 msgstr "স্লাইড লুকান (~H)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Group"
 msgstr "দল (~G)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Ungroup"
 msgstr "দলভঙ্গ করুন (~U)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Edit Group"
 msgstr "দল সম্পাদনা করুন (~E)"
 
 #: source/ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "E~xit group"
 msgstr "দল ত্যাগ করুন (~x)"
 
 #: source/ui/app/menuids3_tmpl.src#MNSUB_GROUP.MN_SUB_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Group"
 msgstr "দল (~G)"
 
 #: source/ui/app/menuportal_tmpl.src#SD_MENU_PORTAL.MN_SUB_TOOLBAR.MenuItem.Text
+#, fuzzy
 msgid  "~Toolbars"
 msgstr "টুলবারসমূহ (~T)"
 
@@ -3916,7 +4167,7 @@ msgstr "সব স্লাইডে প্রয়োগ করুন (~A)"
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 #, fuzzy
 msgid  "Apply to ~Selected Slides"
-msgstr "নির্বাচিত স্লাইডগুলোতে প্রয়োগ করুন (~S)"
+msgstr "নির্বাচিত স্লাইডে প্রয়োগ করুন (~S)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -3936,7 +4187,7 @@ msgstr "সব স্লাইডে প্রয়োগ করুন (~A)"
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 #, fuzzy
 msgid  "Apply to ~Selected Slides"
-msgstr "নির্বাচিত স্লাইডে প্রয়োগ করুন (~S)"
+msgstr "নির্বাচিত স্লাইডগুলোতে প্রয়োগ করুন (~S)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MenuItem.Text
 msgid  "~Edit Master..."
@@ -3988,358 +4239,447 @@ msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you 
 msgstr "%PRODUCTNAME এর চিত্র নথিটির শুরু পর্যন্ত খোঁজা হয়েছে। আপনি কি শে‌ষ থেকে খোঁজা অব্যাহত রাখতে চান?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
+#, fuzzy
 msgid  "~New"
 msgstr "নতুন (~N)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MenuItem.Text
+#, fuzzy
 msgid  "~Export..."
 msgstr "রপ্তানি করুন... (~E)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MenuItem.Text
+#, fuzzy
 msgid  "Export as PDF..."
 msgstr "পিডিএফ হিসেবে রপ্তানি করুন..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MenuItem.Text
+#, fuzzy
 msgid  "Sen~d"
 msgstr "পাঠান (~d)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
+#, fuzzy
 msgid  "~Page..."
 msgstr "পৃষ্ঠা... (~P)"
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "সম্পাদনা করুন (~E)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
+#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "বিশেষ প্রতিলেপন... (~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "Duplicat~e..."
 msgstr "অনুরুপ... (~e)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MenuItem.Text
+#, fuzzy
 msgid  "Cross-fading..."
 msgstr "পারস্পরিক-ফেডিং..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MenuItem.Text
+#, fuzzy
 msgid  "F~ields..."
 msgstr "ক্ষেত্রসমূহ... (~i)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MenuItem.Text
+#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "স্তর মুছে ফেলুন... (~L)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
+#, fuzzy
 msgid  "Lin~ks..."
 msgstr "লিংকসমূহ... (~k)"
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
+#, fuzzy
 msgid  "~View"
 msgstr "প্রদর্শন করুন (~V)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
+#, fuzzy
 msgid  "Main ~Toolbar"
 msgstr "প্রধান টুলবার (~T)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MenuItem.Text
+#, fuzzy
 msgid  "Optio~n Bar"
 msgstr "পছন্দ বার (~n)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MenuItem.Text
+#, fuzzy
 msgid  "~Presentation"
 msgstr "উপস্থাপনা (~P)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MenuItem.Text
+#, fuzzy
 msgid  "Customi~ze..."
 msgstr "বিন্যাসন করুন... (~z)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MenuItem.Text
+#, fuzzy
 msgid  "~Rulers"
 msgstr "পরিমাপকসমূহ (~R)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Notes View"
 msgstr "নোটসমূহের প্রদর্শন (~N)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Handout View"
 msgstr "বিলিপত্রর প্রদর্শন (~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MenuItem.Text
+#, fuzzy
 msgid  "~Preview"
 msgstr "প্রাকদর্শন (~P)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MenuItem.Text
+#, fuzzy
 msgid  "S~lide"
 msgstr "স্লাইড (~l)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Master"
 msgstr "স্লাইড মাস্টার (~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "শিরোনাম (~T)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Notes"
 msgstr "নোটসমূহ (~N)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Handout"
 msgstr "বিলিপত্র (~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MenuItem.Text
+#, fuzzy
 msgid  "La~yer"
 msgstr "স্তর (~y)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MenuItem.Text
+#, fuzzy
 msgid  "Wor~kspace"
 msgstr "কর্মপরিসর (~k)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Master"
 msgstr "মাস্টার (~M)"
 
 #: source/ui/app/menuids2_tmpl.src#21.#define.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "প্রবেশ করান (~I)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slid~e..."
 msgstr "স্লাইড... (~e)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slid~e"
 msgstr "স্লাইড (~e)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~uplicate Slide"
 msgstr "অনুরুপ স্লাইড (~u)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "E~xpand Slide"
 msgstr "বর্ধিত স্লাইড (~x)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "সারসংক্ষেপ স্লাইড (~m)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Layer..."
 msgstr "স্তর... (~L)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
+#, fuzzy
 msgid  "~Date (fixed)"
 msgstr "তারিখ (অপরিবর্তনীয়) (~D)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MenuItem.Text
+#, fuzzy
 msgid  "Dat~e (variable)"
 msgstr "তারিখ (ভেরিয়েবল) (~e)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MenuItem.Text
+#, fuzzy
 msgid  "~Time (fixed)"
 msgstr "সময় (অপরিবর্তনীয়) (~T)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MenuItem.Text
+#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "সময় (ভেরিয়েবল) (~i)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Page Number"
 msgstr "পৃষ্ঠা নম্বর (~P)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MenuItem.Text
+#, fuzzy
 msgid  "~File Name"
 msgstr "ফাইলের নাম (~F)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MenuItem.Text
+#, fuzzy
 msgid  "~Author"
 msgstr "লেখক (~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MenuItem.Text
+#, fuzzy
 msgid  "~Select Source..."
 msgstr "উৎস নির্বাচন করুন... (~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MenuItem.Text
+#, fuzzy
 msgid  "~Request..."
 msgstr "অনুরোধ... (~R)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MenuItem.Text
+#, fuzzy
 msgid  "Sp~readsheet"
 msgstr "স্প্রেডশীট (~r)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MenuItem.Text
+#, fuzzy
 msgid  "From ~File..."
 msgstr "ফাইল থেকে... (~F)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MenuItem.Text
+#, fuzzy
 msgid  "Chart"
 msgstr "ছক"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MenuItem.Text
+#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "ফ্লোটিং কাঠামো... (~i)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MenuItem.Text
+#, fuzzy
 msgid  "~File..."
 msgstr "ফাইল... (~F)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MenuItem.Text
+#, fuzzy
 msgid  "Fiel~ds"
 msgstr "ক্ষেত্রসমূহ (~d)"
 
 #: source/ui/app/menuids2_tmpl.src#22.#define.Text
+#, fuzzy
 msgid  "F~ormat"
 msgstr "বিন্যাস (~o)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Te~xt..."
 msgstr "পাঠ... (~x)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "মাত্রাসমূহ... (~s)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Connector..."
 msgstr "সংযোজক... (~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Layer..."
 msgstr "স্তর... (~L)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Modify ~Layout..."
 msgstr "বর্হিবিন্যাস পরিবর্তন করুন... (~L)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
+#, fuzzy
 msgid  "Styl~es"
 msgstr "শৈলীসমূহ (~e)"
 
 #: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+#, fuzzy
 msgid  "~Tools"
 msgstr "টুলসমূহ (~T)"
 
 #: source/ui/app/menuids2_tmpl.src#26.#define.Text
+#, fuzzy
 msgid  "~Slide Show"
 msgstr "স্লাইড প্রদর্শন (~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
+#, fuzzy
 msgid  "~Check..."
 msgstr "পরীক্ষা করুন... (~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MenuItem.Text
+#, fuzzy
 msgid  "~AutoSpellcheck"
 msgstr "স্বAutoSpellcheck (~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MenuItem.Text
+#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "অভিধান... (~T)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MenuItem.Text
+#, fuzzy
 msgid  "~Hyphenation"
 msgstr "যোজকচিহ্ন প্রদান করুন (~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~AutoCorrect..."
 msgstr "AutoCorrect... (~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Show Settings..."
 msgstr "স্লাইড প্রদর্শনের বিন্যাসনসমূহ... (~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Custom Slide Show..."
 msgstr "পছন্দসই স্লাইড প্রদর্শন... (~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "~Animation"
 msgstr "অ্যানিমেশন (~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MenuItem.Text
+#, fuzzy
 msgid  "~Interaction..."
 msgstr "মিথস্ক্রিয়া... (~I)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
+#, fuzzy
 msgid  "~Spellcheck"
 msgstr "বানান-পরীক্ষণ (~S)"
 
 #: source/ui/app/menuids2_tmpl.src#24.#define.Text
+#, fuzzy
 msgid  "~Modify"
 msgstr "পরিবর্তন করুন (~M)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "সামনে আনুন (~F)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "পিছনে পাঠান (~w)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "অবজেক্টের সামনে (~O)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "Be~hind Object"
 msgstr "অবজেক্টের পিছনে (~h)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MenuItem.Text
+#, fuzzy
 msgid  "~Reverse"
 msgstr "উল্টান (~R)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MenuItem.Text
+#, fuzzy
 msgid  "~Eyedropper"
 msgstr "আইড্রপার (~E)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MenuItem.Text
+#, fuzzy
 msgid  "~Gallery"
 msgstr "গ্যালারি (~G)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "রং (~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
+#, fuzzy
 msgid  "~Grayscale"
 msgstr "ধূসর (~G)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
+#, fuzzy
 msgid  "~Black and White"
 msgstr "সাদা ও কালো (~B)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
+#, fuzzy
 msgid  "~High Contrast"
 msgstr "উচ্চ বৈসাদৃশ্য (~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "রং (~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MenuItem.Text
+#, fuzzy
 msgid  "~Grayscale"
 msgstr "ধূসর (~G)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MenuItem.Text
+#, fuzzy
 msgid  "~Black and White"
 msgstr "সাদা ও কালো (~B)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MenuItem.Text
+#, fuzzy
 msgid  "~High Contrast"
 msgstr "উচ্চ বৈসাদৃশ্য (~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "সাজান (~A)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ItemList.Text
+#, fuzzy
 msgid  "~Display Quality"
 msgstr "প্রদর্শন বৈশিষ্ট্য (~D)"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
+#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "প্রাকদর্শন পরিমন্ডল (~v)"
 
@@ -5700,30 +6040,37 @@ msgid  "Animation"
 msgstr "এ্যানিমেশন"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "First Image"
 msgstr "প্রথম চিত্র"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Backwards"
 msgstr "পশ্চাগামী"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Stop"
 msgstr "থামুন"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Play"
 msgstr "শুরু করুন"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Last Image"
 msgstr "শেষ চিত্র"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
+#, fuzzy
 msgid  "Image Number"
 msgstr "চিত্র নম্বর"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
+#, fuzzy
 msgid  "Duration"
 msgstr "স্থিতিকাল"
 
@@ -5823,6 +6170,7 @@ msgid  "Max."
 msgstr "সর্বোচ্চ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
+#, fuzzy
 msgid  "Loop Count"
 msgstr "লুপ গণনা করুন"
 
@@ -6047,26 +6395,32 @@ msgid  "Paper tray from printer s~ettings"
 msgstr "মুদ্রণ বিন্যাসনসমূহের কাগজের ট্রে (~e)"
 
 #: source/ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DockingWindow.Text
+#, fuzzy
 msgid  "Notes Window"
 msgstr "নোটের উইন্ডো"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Next"
 msgstr "পরবর্তী (~N)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Previous"
 msgstr "পূর্ববর্তী (~P)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MenuItem.Text
+#, fuzzy
 msgid  "~Go to Slide"
 msgstr "স্লাইডে যান (~G)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~First Slide"
 msgstr "প্রথম স্লাইড (~F)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Last Slide"
 msgstr "শেষ স্লাইড (~L)"
 
@@ -6107,18 +6461,22 @@ msgid  "~Erase all ink on Slide"
 msgstr ""
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MenuItem.Text
+#, fuzzy
 msgid  "~Screen"
 msgstr "পর্দা (~S)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MenuItem.Text
+#, fuzzy
 msgid  "~Black"
 msgstr "কালো (~B)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MenuItem.Text
+#, fuzzy
 msgid  "~White"
 msgstr "সাদা (~W)"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MenuItem.Text
+#, fuzzy
 msgid  "~End Show"
 msgstr "প্রদর্শন শেষ (~E)"
 
@@ -6147,42 +6505,52 @@ msgid  "Duplicate Slide"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
+#, fuzzy
 msgid  "Table Design"
 msgstr "সারণীর নকশা"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
+#, fuzzy
 msgid  "Show"
 msgstr "প্রদর্শন করুন"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW+1.CheckBox.Text
+#, fuzzy
 msgid  "Header Row"
 msgstr "শিরোনাম সারি"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW+1.CheckBox.Text
+#, fuzzy
 msgid  "Total Row"
 msgstr "মোট সারি"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS+1.CheckBox.Text
+#, fuzzy
 msgid  "Banded Rows"
 msgstr "বাধাগ্রস্থ সারিসমূহ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
+#, fuzzy
 msgid  "First Column"
 msgstr "প্রথম স্তম্ভ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
+#, fuzzy
 msgid  "Last Column"
 msgstr "শেষ স্তম্ভ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS+1.CheckBox.Text
+#, fuzzy
 msgid  "Banded Columns"
 msgstr "বাধাগ্রস্থ স্তম্ভসমূহ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
+#, fuzzy
 msgid  "Styles"
 msgstr "শৈলীসমূহ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.ModalDialog.Text
+#, fuzzy
 msgid  "Table Design"
 msgstr "সারণীর নকশা"
 

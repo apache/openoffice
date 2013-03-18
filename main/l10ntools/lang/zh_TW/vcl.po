@@ -192,8 +192,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
-msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr "無法載入程式元件(%s)。\n請選擇安裝程式的修複選項。"
+msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
+msgstr ""
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -472,8 +472,8 @@ msgid  "Page %p of %n"
 msgstr "第 %p / %n 頁"
 
 #: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "找不到預設印表機。\n請選擇印表機，然後再試一次。"
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr ""
 
 #: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
 msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
@@ -725,7 +725,7 @@ msgstr "說明(~H)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
 msgid  "~More"
-msgstr "其他(~M)"
+msgstr "更多(~M)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
 msgid  "~More"

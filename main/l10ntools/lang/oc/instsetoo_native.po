@@ -1041,7 +1041,7 @@ msgstr "Publicacion dels compausants qualificats"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_45
 msgid  "Component ID: [1], Qualifier: [2]"
-msgstr "ID compausant : [1], Qualificant : [2]"
+msgstr "ID compausant : [1], qualificant : [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_46
 msgid  "Publishing product features"
@@ -1077,7 +1077,7 @@ msgstr "Enregistrament dels servidors d'extension"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_54
 msgid  "Extension: [1]"
-msgstr "Extension : [1]"
+msgstr "Extension: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_55
 msgid  "Registering fonts"
@@ -1093,7 +1093,7 @@ msgstr "Enregistrament de las infos MIME"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "Tipe de contengut MIME : [1], Extension : [2]"
+msgstr "Tipe de contengut MIME : [1], extension : [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 msgid  "Registering product"
@@ -1141,7 +1141,7 @@ msgstr "Mesa a jorn de las cadenas d'environament"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "Nom : [1], Valor : [2], Accion : [3]"
+msgstr "Nom : [1], Valor : [2], Accion [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 msgid  "Removing applications"
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Vos mercejam d'aver telecargat %PRODUCTNAME %PRODUCTVERSION."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "&Descompressar"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "Los fichièrs d'installacion de %PRODUCTNAME %PRODUCTVERSION van èsser descompressats e enregistrats dins lo dorsièr indicat çaijós. Per enregistrar %PRODUCTNAME dins un autre dorsièr, clicatz sus \\'Percórrer\\' pr'amor de seleccionar lo dorsièr que volètz."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1521,11 +1521,11 @@ msgstr "Anullar"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_26
 msgid  "&Next >"
-msgstr "&Seguent >"
+msgstr "Segue&nt >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Benvenguda dins l'Installacion Wizard per [ProductName]"
+msgstr "{&TahomaBold10}Benvenguda dins l'assistent d'installacion de [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "Anullar"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}Entresenhas client"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1581,7 +1581,7 @@ msgstr "Nom &Utilizaire:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_43
 msgid  "&Next >"
-msgstr "&Seguent >"
+msgstr "Segue&nt >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_45
 msgid  "&Serial Number:"
@@ -1637,7 +1637,7 @@ msgstr "<camin seleccionat de la foncion>"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_60
 msgid  "&Next >"
-msgstr "&Seguent >"
+msgstr "Segue&nt >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_61
 msgid  "Feature size"
@@ -1713,7 +1713,7 @@ msgstr "Installar banca de donadas [ProductName] cap a:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_83
 msgid  "&Next >"
-msgstr "&Seguent >"
+msgstr "Segue&nt >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_84
 msgid  "< &Back"
@@ -1741,11 +1741,11 @@ msgstr "[INSTALLDIR]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
-msgstr "Installar [ProductName] cap a:"
+msgstr "Installar [ProductName] dins:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 msgid  "&Next >"
-msgstr "&Seguent >"
+msgstr "Segue&nt >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_96
 msgid  "The disk space required for the installation of the selected features."
@@ -1753,7 +1753,7 @@ msgstr "Espaci de disc requerit per l'installacion de las foncions seleccionadas
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "L'espaci de disc disponible dels volums meses en susbrilhança es insufisent pels compausants seleccionats. Podètz suprimir de fichièrs dels volums seleccionats, installar mens de compausants suls disques locals o causir d'autres lectors ciblas."
+msgstr "L'espaci de disc disponible dels volums mes en susbrilhança es insufisent pels compausants seleccionats. Podètz suprimir de fichièrs dels volums seleccionats, installar mens de compausants suls disques locals o causir d'autres lectors ciblas."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -1837,7 +1837,7 @@ msgstr "Segue&nt >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Benvenguda dins l'assistent d'installacion de [ProductName]"
+msgstr "{&TahomaBold10}Benvenguda dins l'Installacion Wizard per [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."

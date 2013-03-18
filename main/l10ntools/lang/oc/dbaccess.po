@@ -72,8 +72,8 @@ msgid  "The data source was not saved. Please use the interface XStorable to sav
 msgstr "La font de donadas es pas salvada. Se vos plai, emplegatz l'interfàcia XStorable per salvar la font de donadas."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
-msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr "La comanda escricha es pas una declaracion SELECT.\nSonque las requèstas son acceptadas."
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -188,8 +188,8 @@ msgid  "There are tables in the database whose names conflict with the names of 
 msgstr "Existís de taulas que sos noms son emplegats ja per nomenar de requèstas. Vos cal nomenar amb atencion las taulas e las requèstas per trabalhar amb seguretat."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
-msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr "L'error ven de la comanda SQL:\n\n$command$"
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -220,12 +220,12 @@ msgid  "Unable to find the document '$name$'."
 msgstr "Es pas possible de trapar lo document '$name$'."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
-msgid  "Could not save the document to $location$:\n$message$"
-msgstr "Pas possible de salvagardar lo document a $location$:\n$message$"
+msgid  "Could not save the document to $location$:\\n$message$"
+msgstr ""
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
-msgid  "Error accessing data source '$name$':\n$error$"
-msgstr "Error pendent l'accès a la sorga de donadas '$name$':\n$error$"
+msgid  "Error accessing data source '$name$':\\n$error$"
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
 msgid  "There exists no folder named \"$folder$\"."
@@ -317,474 +317,589 @@ msgid  "The extension is not installed."
 msgstr "L'extension es pas installada."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
+#, fuzzy
 msgid  "Database ~name"
 msgstr "~Nom de la basa de donadas"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
+#, fuzzy
 msgid  "User settings"
 msgstr "Paramètres de l'utilizaire"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
+#, fuzzy
 msgid  "~Control user"
 msgstr "Utilizaire mèstre"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
+#, fuzzy
 msgid  "~Administrator"
 msgstr "~Administrator"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
+#, fuzzy
 msgid  "~Domain user"
 msgstr "Utilizaire del ~domeni"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
+#, fuzzy
 msgid  "P~assword..."
 msgstr "Se~nhal..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
+#, fuzzy
 msgid  "~Password..."
 msgstr "~Senhal..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
+#, fuzzy
 msgid  "Passwo~rd..."
 msgstr "Sen~hal..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
+#, fuzzy
 msgid  "~Backup file"
 msgstr "Fichièr de salvament"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
+#, fuzzy
 msgid  "Database settings"
 msgstr "Paramètres de la banca de donadas"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "S~YSDEVSPACE"
 msgstr "S~YSDEVSPACE"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
+#, fuzzy
 msgid  "TRANSACTI~ONLOG"
 msgstr "TRANSACTI~ONLOG"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "DATAD~EVSPACE"
 msgstr "DATAD~EVSPACE"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
+#, fuzzy
 msgid  "Transaction ~file (MB)"
 msgstr "Transaccion ~fichièr (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
+#, fuzzy
 msgid  "Data~base size (MB)"
 msgstr "Talha de la ~basa de donadas (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
+#, fuzzy
 msgid  "Data ~buffer size (MB)"
 msgstr "Talha de la memòria temporària (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
+#, fuzzy
 msgid  "Backup file information"
 msgstr "Informacion sus lo fichièr de salvament"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
+#, fuzzy
 msgid  "Create New Adabas D Database"
 msgstr "Crear una banca de donadas Adabas D novèla"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
+#, fuzzy
 msgid  "No entry could be written in the configuration file."
 msgstr "Es pas possible d'escriure dins lo fichièr de configuracion."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
+#, fuzzy
 msgid  "An error occurred as the DB files were being created."
 msgstr "I a agut un error del temps que se creava lo fichièr de la basa de donadas."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
+#, fuzzy
 msgid  "An error occurred as the system tables were being created."
 msgstr "I a agut una error pendent la creacion del sistèma de taulas."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
+#, fuzzy
 msgid  "The backup file entered does not exist."
 msgstr "Lo fichièr de salvament existís pas."
 
 #: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
-msgid  "The fully qualified file cannot be longer than \'#\' characters."
-msgstr ""
+#, fuzzy
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "Es pas possible de causir un nom de fichièr mai long que \\'#\\' caractèrs."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
+#, fuzzy
 msgid  "The administrator and the control user cannot have the same name!"
 msgstr "Es pas possible de nomenar del meteis nom l'administrator e lo contraròtle d'utilizaire!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
+#, fuzzy
 msgid  "No name has been entered for the $name$ file!"
 msgstr "Pas cap de nom picat pel fichièr $name$!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
+#, fuzzy
 msgid  "You have to have administrator rights to create a new database!"
 msgstr "Vos cal aver los dreches d'administrator per crear una basa de donadas novèla!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
+#, fuzzy
 msgid  "The specified file name or directory does not exist."
 msgstr "Lo nom del fichièr o lo nom del repertòri existís pas."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr "Pas possible de crear una basa de donadas novèla.\n Se vos plai, vos cal verificar l'installacion d'Adabas D, especialament las variablas \"DBROOT\" e \"DBWORK\"."
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
+#, fuzzy
 msgid  "Warning!"
 msgstr "Avertiments!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
+#, fuzzy
 msgid  "Creating database files."
 msgstr "Creacion dels fichièrs de la banca de donadas."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
+#, fuzzy
 msgid  "Creating database configuration file."
 msgstr "Creacion dels fichièrs de configuracion de la banca de donadas."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
+#, fuzzy
 msgid  "Starting database for the first time."
 msgstr "Aviament de la banca de donadas pel primièr còp."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
+#, fuzzy
 msgid  "The name entered already exists."
 msgstr "Lo nom picat existís ja."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
+#, fuzzy
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
 msgstr "Es pas possible de nomenar per defaut lo fichièr de basa de donadas. La longor es de mai que 40 caractèrs."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
+#, fuzzy
 msgid  "No default names could be set for the database files. There is no write access."
 msgstr "Es pas possible de nomenar la banca de donadas. Avètz pas los dreches d'escritura."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
+#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
 msgstr "Cal convertir la basa de donadas correnta. Se vos plai, inserissètz lo contraròtle de l'utilizaire   e lo mot de santa Clara."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
+#, fuzzy
 msgid  "Spaces are not permitted in the password. Please enter a new password."
 msgstr "Los espacis son pas permeses dins lo mot de santa Clara. Se vos plai, dintratz un mot de santa Clara novèl."
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
+#, fuzzy
 msgid  "Database Document Macro Migration"
 msgstr "Migracion de macros de document de banca de donadas"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
+#, fuzzy
 msgid  "Prepare"
 msgstr "Preparar"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
+#, fuzzy
 msgid  "Backup Document"
 msgstr "Document de salvament"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
+#, fuzzy
 msgid  "Migrate"
 msgstr "Migrar"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
+#, fuzzy
 msgid  "Summary"
 msgstr "Somari"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Welcome to the Database Macro Migration Wizard"
 msgstr "Benvengut dins l'Ajudaire de migracion de banca de donadas"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
-msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr "Aqueste Assistent vos guidarà dins las etapas de la migracion de vòstras macros e escriptes.\n\nA la fin de la migracion, las macros e los escriptes seràn empegats dins vòstres formularis e los rapòrts, introduches dins los documents de la banca de donadas. Dins lo processús, las librariás seràn renomenadas.\n\nSe vòstres formularis e rapòrts contenon de referéncias cap a vòstras macros e escriptes, aquò serà apondut.\n\nAbans que la migracion s'avie, vos cal barrar totes los formularis, rapòrts, requèstas e taulas. Quichatz sus 'Seguent' per contunhar."
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
+#, fuzzy
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
 msgstr "Es pas possible de tampar totes los objèctes. Se vos plai, lo vos cal far manualament e tornat aviar l'assistent."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Backup your Document"
 msgstr "Salvar vòstre document"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
 msgstr "Per tornar en arrièr sus l'estat abans la migracion, lo document de la banca de donadas serà tornat dins un endrech qu'auretz causit. Cada cambiament fach per l'Ajudaire serà fach dins lo document original, lo salvament serà pas tocat."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Save To:"
 msgstr "Salvar cap a :"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
+#, fuzzy
 msgid  "Browse ..."
 msgstr "Navigar ..."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
+#, fuzzy
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
 msgstr "Causissètz 'Seguent' per salvar vòstre document e començar la migracion."
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Migration Progress"
 msgstr "Progression de la migracion"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
 msgstr "Lo document de la basa de donadas conten $forms$ formulari(s) e $reports$ rapòrt(s):"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Current object:"
 msgstr "Objècte actiu:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Current progress:"
 msgstr "Progression en cors:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
+#, fuzzy
 msgid  "Overall progress:"
 msgstr "Progression globala:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
 msgid  "document $current$ of $overall$"
-msgstr "documents $current$ de $overall$"
+msgstr "document $current$ sus $overall$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
+#, fuzzy
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
 msgstr "Los documents totes son creats. Causissètz 'Seguent' per afichar lo somari detalhat."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Summary"
 msgstr "Somari"
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
+#, fuzzy
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
 msgstr "La migracion a capitat. Çaijós un fichièr jornal del sistèma amb las accions executadas per vòstre document."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
+#, fuzzy
 msgid  "The migration was not successful. Examine the migration log below for details."
 msgstr "La migracion a pas capitat. Vos cal legir lo fichièr jornal del sistèma çaijós per ne veire los detalhs."
 
 #: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
+#, fuzzy
 msgid  "Form '$name$'"
 msgstr "Formulari '$name$'"
 
 #: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
+#, fuzzy
 msgid  "Report '$name$'"
 msgstr "Rapòrt '$name$'"
 
 #: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
+#, fuzzy
 msgid  "document $current$ of $overall$"
 msgstr "document $current$ sus $overall$"
 
 #: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
+#, fuzzy
 msgid  "Database Document"
 msgstr "Document de basa de donadas"
 
 #: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
+#, fuzzy
 msgid  "saved copy to $location$"
 msgstr "salvament d'una còpia cap a $location$"
 
 #: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
+#, fuzzy
 msgid  "migrated $type$ library '$old$' to '$new$'"
 msgstr "migrar $type$ de librariá '$old$' cap '$new$'"
 
 #: source/ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.String.Text
+#, fuzzy
 msgid  "$type$ library '$library$'"
 msgstr "$type$ de librariá '$library$'"
 
 #: source/ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.String.Text
+#, fuzzy
 msgid  "migrating libraries ..."
 msgstr "librariás que son a migrar ..."
 
 #: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Basic"
 msgstr "%PRODUCTNAME Basic"
 
 #: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
+#, fuzzy
 msgid  "JavaScript"
 msgstr "JavaScript"
 
 #: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
+#, fuzzy
 msgid  "BeanShell"
 msgstr "BeanShell"
 
 #: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
+#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
+#, fuzzy
 msgid  "Python"
 msgstr "Python"
 
 #: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
+#, fuzzy
 msgid  "dialog"
 msgstr "dialòg"
 
 #: source/ext/macromigration/macromigration.src#STR_ERRORS.String.Text
+#, fuzzy
 msgid  "Error(s)"
 msgstr "Error(s)"
 
 #: source/ext/macromigration/macromigration.src#STR_WARNINGS.String.Text
+#, fuzzy
 msgid  "Warnings"
 msgstr "Avertiments"
 
 #: source/ext/macromigration/macromigration.src#STR_EXCEPTION.String.Text
+#, fuzzy
 msgid  "caught exception: "
 msgstr "Excepcion interceptada: "
 
 #: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
+#, fuzzy
 msgid  "You need to choose a backup location other than the document location itself."
 msgstr "Avètz besonh de causir un luòc de salvament diferent del luòc ont se trapa lo document el meteis."
 
 #: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
+#, fuzzy
 msgid  "Invalid number of initialization arguments. Expected 1."
 msgstr "Argument del nombre d'inicialisacion es invalid. Esperat 1."
 
 #: source/ext/macromigration/macromigration.src#STR_NO_DATABASE.String.Text
+#, fuzzy
 msgid  "No database document found in the initialization arguments."
 msgstr "Pas cap de document de basa de donadas trapat dins los arguments d'inicialisacion."
 
 #: source/ext/macromigration/macromigration.src#STR_NOT_READONLY.String.Text
+#, fuzzy
 msgid  "Not applicable to read-only documents."
 msgstr "Pas possible de trasformar los documents sonque de lectura."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
+#, fuzzy
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
 msgstr "Podètz pas nomenar parièr una taula e una requèsta. Se vos plai, vos cal causir un nom qu'es pas pres ja, per una requèsta o una taula."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Taula"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
+#, fuzzy
 msgid  "Query"
 msgstr "Requèsta"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
+#, fuzzy
 msgid  "The given connection is no valid query and/or tables supplier."
 msgstr "La connexion en cors pòt pas acceptar una requèsta e/o una taula valida."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
+#, fuzzy
 msgid  "The given object is no table object."
 msgstr "L'objècte es pas un objècte taula."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
+#, fuzzy
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
 msgstr "Lo tipe de composicion es pas valid - cal que aja una valor de com.sun.star.sdb.tools.CompositionType."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
+#, fuzzy
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
 msgstr "Lo tipe d'instruccion es pas valid - sonque TABLE e AND QUERY de com.sun.star.sdb.CommandType  son permesas."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
+#, fuzzy
 msgid  "Create Form in Design View..."
 msgstr "Crear un formulari amb lo mòde esbòs..."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
+#, fuzzy
 msgid  "Use Wizard to Create Form..."
 msgstr "Emplegar l'Ajudaire per la creacion del formulari ..."
 
 #: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
+#, fuzzy
 msgid  "Use Wizard to Create Report..."
 msgstr "Emplegar l'Ajudaire per crear un rapòrt..."
 
 #: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
+#, fuzzy
 msgid  "Create Report in Design View..."
 msgstr "Crear un rapòrt dins lo mòde esbòs..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
+#, fuzzy
 msgid  "Create Query in Design View..."
 msgstr "Crear una requèsta amb lo mòde esbòs..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
+#, fuzzy
 msgid  "Create Query in SQL View..."
 msgstr "Crear una requèsta amb l'editor SQL..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
+#, fuzzy
 msgid  "Use Wizard to Create Query..."
 msgstr "Emplegar l'Ajudaire per crear una requèsta"
 
 #: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
+#, fuzzy
 msgid  "Create Table in Design View..."
 msgstr "Crear una taula amb lo mòde esbòs..."
 
 #: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
+#, fuzzy
 msgid  "Use Wizard to Create Table..."
 msgstr "Emplegar l'Ajudaire per crear una taula..."
 
 #: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
+#, fuzzy
 msgid  "Create View..."
 msgstr "Crear una vista..."
 
 #: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
+#, fuzzy
 msgid  "Forms"
 msgstr "Formularis"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
+#, fuzzy
 msgid  "Reports"
 msgstr "Raports"
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MenuItem.Text
+#, fuzzy
 msgid  "Form..."
 msgstr "Formulari..."
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
+#, fuzzy
 msgid  "Report..."
 msgstr "Rapòrt..."
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
+#, fuzzy
 msgid  "View (Simple)..."
 msgstr "Vista (simpla)"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MenuItem.Text
+#, fuzzy
 msgid  "Paste Special..."
 msgstr "Pegatge especial..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Escafar"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MenuItem.Text
+#, fuzzy
 msgid  "Rename"
 msgstr "Tornar nomenar"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Editar"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MenuItem.Text
+#, fuzzy
 msgid  "Edit in SQL View..."
 msgstr "Editar dins una vista SQL"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MenuItem.Text
+#, fuzzy
 msgid  "Open"
 msgstr "Dobrir"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MenuItem.Text
+#, fuzzy
 msgid  "Create as View"
 msgstr "Crear coma una vista"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+#, fuzzy
 msgid  "Form Wizard..."
 msgstr "Assistent de creacion de formulari"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MenuItem.Text
+#, fuzzy
 msgid  "Report..."
 msgstr "Rapòrt..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
+#, fuzzy
 msgid  "Report Wizard..."
 msgstr "Assistent de creacion de rapòrt"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MenuItem.Text
+#, fuzzy
 msgid  "Select All"
 msgstr "Seleccionar tot"
 
@@ -899,14 +1014,12 @@ msgid  "Disable Preview"
 msgstr "Desactivar la previsualisacion"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
-#, fuzzy
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr "La banca de donadas es cambiada.\nVolètz salvar los cambiaments?"
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
-#, fuzzy
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr "Lo tipe de la connexion es estat alterat.\nPer que los cambiaments sián aplicats, cal que los formularis, rapòrts, requèstas e taulas sián tampats.\n\nVolètz tampar, ara, totes los documents ?"
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -954,9 +1067,8 @@ msgid  "The document contains forms or reports with embedded macros."
 msgstr "Lo document conten de formularis o de rapòrts amb de macròs integradas."
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
-#, fuzzy
-msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr "Cal que los escriptes e las macros sián integrats dins lo document de la basa, el meteis.\n\nVos podètz servir del document coma de costuma, pasmens seriá plan de migrar vòstres escriptes e macròs. Per aquò far, la causida ' Espleches/Migracion dels escriptes e macros ...' vos ajudarà.\n\nVos cal notar que serà pas possible d'incorporar las macros e los escriptes dins lo document de la basa mentre que la migracion es pas facha. "
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr ""
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 #, fuzzy
@@ -974,230 +1086,286 @@ msgid  "Unsupported object type found ($type$)."
 msgstr "Tipe d'objècte trapat non suportat ($type$)."
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr "L'enregistrament en cors es estat cambiat.\nVolètz salvar los cambiaments ?"
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "Volètz escafar las donadas seleccionadas?"
 
 #: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+#, fuzzy
 msgid  "(filtered)"
 msgstr "(triat)"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "Error pendent lo reglatge del critèri de triada"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "Error pendent lo reglatge del critèri de filtre"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+#, fuzzy
 msgid  "Connection lost"
 msgstr "Pas mai de connexion"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Queries"
 msgstr "Requèstas"
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "Taulas"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+#, fuzzy
 msgid  "Edit ~Database File..."
 msgstr "Editar lo fichièr de basa de ~donadas..."
 
 #: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+#, fuzzy
 msgid  "Registered databases ..."
 msgstr "Bancas de donadas enregistradas ..."
 
 #: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+#, fuzzy
 msgid  "Disco~nnect"
 msgstr "Desco~nnectar"
 
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "Vos cal confirmar la supression"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "Volètz escafar la taula '%1'?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
 msgstr "La requèsta existís ja. La volètz escafar ?"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "I a pas mai de connexion amb la basa de donadas. La volètz tornar connectar?"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+#, fuzzy
 msgid  "Warnings encountered"
 msgstr "Avertiments"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
 msgstr "Pendent la recuperacion de las taulas, d'avertiments son senhalats per la connexion de la basa de donadas."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
 msgstr "Connexion cap a \"$name$\" ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "Cargament de la requèsta $name$ ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "Cargament de la taula $name$ ..."
 
 #: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+#, fuzzy
 msgid  "No table format could be found."
 msgstr "Pas cap de format de taula trapat."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "Se pòt pas connectar a la banca de donadas \"$name$\"."
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+#, fuzzy
 msgid  "Rebuild"
 msgstr "Tornar bastir"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+#, fuzzy
 msgid  "Column ~Format..."
 msgstr "~Format de la colomna..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "Copiar la d~escripcion de la colomna"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+#, fuzzy
 msgid  "Table Format..."
 msgstr "Format de taula..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Row Height..."
 msgstr "Nautor de la linha..."
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "Anullat : Entrada de las donadas"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+#, fuzzy
 msgid  "Save current record"
 msgstr "Salvar l'enregistrament en cors"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+#, fuzzy
 msgid  "Query #"
 msgstr "Requèsta #"
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "Taula #"
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+#, fuzzy
 msgid  "View #"
 msgstr "Vista #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+#, fuzzy
 msgid  "The name \"#\" already exists."
 msgstr "Lo nom \"#\" existís ja."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+#, fuzzy
 msgid  "No matching column names were found."
 msgstr "Pas de nom de colomnas correspondent."
 
 #: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
 msgstr "I a agut una error. Volètz contunhar de tot biais lo copiatge?"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+#, fuzzy
 msgid  "Data source table view"
 msgstr "Vista de la font de donadas de taula"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+#, fuzzy
 msgid  "Shows the selected table or query."
 msgstr "Mostrar la taula seleccionada o la requèsta."
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "Taula #"
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "Modificar la(s) comanda(s) SQL"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+#, fuzzy
 msgid  "Table name"
 msgstr "Nom de la taula"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+#, fuzzy
 msgid  "Insert data"
 msgstr "Insercion de donadas"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+#, fuzzy
 msgid  "Delete data"
 msgstr "Escafar las donadas"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+#, fuzzy
 msgid  "Modify data"
 msgstr "Modificar las donadas"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+#, fuzzy
 msgid  "Alter structure"
 msgstr "Modificar l'estructura"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+#, fuzzy
 msgid  "Read data"
 msgstr "Legir las donadas"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+#, fuzzy
 msgid  "Modify references"
 msgstr "Modificar las referéncias"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+#, fuzzy
 msgid  "Drop structure"
 msgstr "Escafar l'estructura"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Ascending"
 msgstr "Triada creissenta"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Descending"
 msgstr "Triada descreissenta"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
 msgstr "Se pòt pas connectar al gestionari del pilòt SDBC (#servicename#)."
 
 #: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "Pas cap de pilòt inscrich per l'URL #connurl#."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
 msgstr "Cap de connexion se pòt pas establir amb l'URL #connurl#."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
 msgstr "Se vos plai, vos calriá verificar los reglatges corrents, per exemple lo nom d'utilizaire e lo mot de santa Clara."
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+#, fuzzy
 msgid  "Successfully connected, but information about database tables is not available."
 msgstr "La connexion se fa mas l'informacion sus las taulas de la banca de donadas es pas disponibla."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+#, fuzzy
 msgid  "All tables"
 msgstr "Las taulas totas"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+#, fuzzy
 msgid  "All views"
 msgstr "Las vistas totas"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+#, fuzzy
 msgid  "All tables and views"
 msgstr "Las taulas totas e las vistas totas"
 
@@ -1494,7 +1662,7 @@ msgstr "Reglatge null"
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
 #, fuzzy
 msgid  "Set ~default"
-msgstr "Reglatge per ~defaut"
+msgstr "Reglatges per ~defaut"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
 #, fuzzy
@@ -1592,66 +1760,82 @@ msgid  "<none>"
 msgstr "<pas cap>"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Opcions"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
+#, fuzzy
 msgid  "Use SQL92 naming constraints"
 msgstr "Utilizar las constrenchas de nom SQL92"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
+#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
 msgstr "Apondre lo nom de l'aliàs de la taula dins la comanda SQL"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
+#, fuzzy
 msgid  "Use keyword AS before table alias names"
 msgstr "Cal emplegar lo mot clau AS abans los noms d'aliàs de las taulas"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
+#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
 msgstr "Emplegar la sintaxi de juntura extèrna '{OJ }'"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
+#, fuzzy
 msgid  "Ignore the privileges from the database driver"
 msgstr "Ignorar los privilègis del pilòt de la banca de donadas"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
+#, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "Repausar los paramètres nomenats amb '?'"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
+#, fuzzy
 msgid  "Display version columns (when available)"
 msgstr "Afichar las versions de las colomnas (quora possible)"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
+#, fuzzy
 msgid  "Use catalog name in SELECT statements"
 msgstr "Cal emplegar lo nom del catalòg dins las comandas SELECT"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
+#, fuzzy
 msgid  "Use schema name in SELECT statements"
 msgstr "Emplegar lo nom de l'esquèma dins la comanda SELECT"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
+#, fuzzy
 msgid  "Create index with ASC or DESC statement"
 msgstr "Crear l'indèx amb una triada creissenta o descreissenta"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
+#, fuzzy
 msgid  "End text lines with CR+LF"
 msgstr "Fin de linhas de tèxte amb CR+LF"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
+#, fuzzy
 msgid  "Ignore currency field information"
 msgstr "Ignorar las informacions del camp monetari"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
+#, fuzzy
 msgid  "Form data input checks for required fields"
 msgstr "Verificacion de las entradas de donadas de formulari pels camps requerits"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
+#, fuzzy
 msgid  "Use ODBC conformant date/time literals"
 msgstr "Utilizar las data/ora literalas confòrmas ODBC"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CheckBox.Text
+#, fuzzy
 msgid  "Supports primary keys"
 msgstr "Supòrta las claus primàrias "
 
@@ -1660,22 +1844,27 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "Default"
 msgstr "Per defaut"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "Mixed"
 msgstr "Mesclat"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "MS Access"
 msgstr "MS Access"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
+#, fuzzy
 msgid  "Comparison of Boolean values"
 msgstr "Comparason de valors boolenas"
 
@@ -1684,26 +1873,32 @@ msgid  "Rows to scan column types"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Paramètres"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
+#, fuzzy
 msgid  "Re~trieve generated values"
 msgstr "Recuperar las valors creadas automaticament"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
+#, fuzzy
 msgid  "~Auto-increment statement"
 msgstr "Expression d'~autoincrement"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
+#, fuzzy
 msgid  "~Query of generated values"
 msgstr "Re~quèsta de valors generadas"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
+#, fuzzy
 msgid  "Generated Values"
 msgstr "Valors generadas"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
+#, fuzzy
 msgid  "Special Settings"
 msgstr "Reglatges especials"
 
@@ -1712,34 +1907,42 @@ msgid  "Advanced Settings"
 msgstr ""
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
+#, fuzzy
 msgid  "Save"
 msgstr "Salvar"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Create New Directory"
 msgstr "Crear un repertòri novèl"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Up One Level"
 msgstr "Nivèl superior"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
+#, fuzzy
 msgid  "File ~name:"
 msgstr "~Nom del fichièr :"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
+#, fuzzy
 msgid  "Save"
 msgstr "Salvar"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
+#, fuzzy
 msgid  "~Path:"
 msgstr "~Camin :"
 
 #: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
+#, fuzzy
 msgid  "Folder"
 msgstr "Dorsièr"
 
 #: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
+#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "Lo fichièr existís ja. Volètz l'escafar?"
 
@@ -1749,9 +1952,8 @@ msgid  "A password is needed to connect to the data source \"$name$\"."
 msgstr "Cal un senhal per se connectar a la banca de donadas \"$name$\"."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
-#, fuzzy
-msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr "Lo repertòri\n\n$path$\n\nexistís pas. Lo volètz crear ?"
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr ""
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 #, fuzzy
@@ -1784,30 +1986,37 @@ msgid  "Mark the tables that should be visible for the applications."
 msgstr "Cal que las marcas de las taulas sián visiblas per las aplicacions."
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Database name"
 msgstr "Nom de la basa de ~donadas"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
+#, fuzzy
 msgid  "Se~rver / Port"
 msgstr "Servidor / Pòrt "
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Server"
 msgstr "~Servidor"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
+#, fuzzy
 msgid  "~Port"
 msgstr "~Pòrt "
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
+#, fuzzy
 msgid  "Default: 3306"
 msgstr "Per defaut : 3306"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
+#, fuzzy
 msgid  "So~cket"
 msgstr "So~cket"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
+#, fuzzy
 msgid  "Named p~ipe"
 msgstr "Tube (pipe) nomenat"
 
@@ -1822,26 +2031,32 @@ msgid  "User administration"
 msgstr "Administracion de l'utilizaire"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "Taulas"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
+#, fuzzy
 msgid  "Queries"
 msgstr "Requèstas"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "~Apondre"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "Tampat"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
+#, fuzzy
 msgid  "Add Tables"
 msgstr "Apondre de taulas"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
+#, fuzzy
 msgid  "Add Table or Query"
 msgstr "Apondre una taula o una requèsta"
 
@@ -1876,18 +2091,22 @@ msgid  "Table Format"
 msgstr "Format de taula"
 
 #: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
+#, fuzzy
 msgid  "Use catalog for file-based databases"
 msgstr "Utilizar lo catalòg per las bancas de donadas basadas sus de fichièrs"
 
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
 msgid  "Connection Settings"
 msgstr "Paramètres de connexion"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
+#, fuzzy
 msgid  "~Host name"
 msgstr "Ordenador"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
+#, fuzzy
 msgid  "~Port number"
 msgstr "Numèro de ~pòrt"
 
@@ -1967,9 +2186,8 @@ msgid  "Database"
 msgstr "Banca de donadas"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
-#, fuzzy
-msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr "Dins las paginas seguentas, poiretz parametrar mai precisament los paramètres de la connexion.\n\nLo paramètres novèls escafaràn los vòstres paramètres actuals."
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 #, fuzzy
@@ -1987,9 +2205,8 @@ msgid  "Could not load the program library #lib# or it is corrupted. The ODBC da
 msgstr "Se pòt pas cargar la bibliotèca del programa #lib# o es degalhat. La seleccion de la font de donadas es pas valabla."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
-#, fuzzy
-msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr "Aquela mena de font de donadas es pas acceptada per aquesta plataforma.\nPodètz cambiar los paramètres mas benlèu que serà pas possible de vos connectar."
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 #, fuzzy
@@ -2197,54 +2414,67 @@ msgid  "Insert as"
 msgstr "Inserir coma"
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "Camin dels fichièrs dBase"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the text files"
 msgstr "Camin pels fichièrs tèxte"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "Camin per lo document fuèlh de calcul"
 
 #: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
+#, fuzzy
 msgid  "Name of the ODBC data source on your system"
 msgstr "Nom de la font de las donadas ODBC sus vòstre sistèma"
 
 #: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
+#, fuzzy
 msgid  "Name of the MySQL database"
 msgstr "Nom de la banca de donadas MySQL"
 
 #: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
+#, fuzzy
 msgid  "Name of the Oracle database"
 msgstr "Nom de la banca de donadas Oracle"
 
 #: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
+#, fuzzy
 msgid  "Name of the Adabas D database"
 msgstr "Nom de la banca de donadas Adabas D"
 
 #: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
+#, fuzzy
 msgid  "Microsoft Access database file"
 msgstr "Fichièr d'una banca de donadas Microsoft Access"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
+#, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
 msgstr "Cap de reglatges son pas pus necessaris. Per verificar la connexion, clicatz sul boton '%test'."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
+#, fuzzy
 msgid  "Datasource URL"
 msgstr "Font URL de las donadas"
 
 #: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
+#, fuzzy
 msgid  "~Host name"
 msgstr "~Nom de l'òste"
 
 #: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
+#, fuzzy
 msgid  "~Mozilla profile name"
 msgstr "~Mozilla nom del perfil"
 
 #: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
+#, fuzzy
 msgid  "~Thunderbird profile name"
 msgstr "~Thunderbird Nom del perfil"
 
@@ -2279,134 +2509,167 @@ msgid  "Choose a database"
 msgstr "Causir una banca de donadas"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
 msgid  "General"
 msgstr "General"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
+#, fuzzy
 msgid  "~Host name"
 msgstr "Nom de l'ordenador"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
+#, fuzzy
 msgid  "User authentication"
 msgstr "Autentificacion de l'utilizaire"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
+#, fuzzy
 msgid  "~User name"
 msgstr "Nom de l'utilizaire"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
+#, fuzzy
 msgid  "Password required"
 msgstr "Lo senhal es obligatòri"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
+#, fuzzy
 msgid  "JDBC properties"
 msgstr "Proprietats JDBC"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
+#, fuzzy
 msgid  "~JDBC driver class"
 msgstr "Classa del pilòt JDBC"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
+#, fuzzy
 msgid  "Test Class"
 msgstr "Classa de tèst"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
+#, fuzzy
 msgid  "Test Connection"
 msgstr "Tèst de la connexion"
 
 #: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
+#, fuzzy
 msgid  "No Adabas D data sources were found on your system."
 msgstr "Cap de font de donadas Adabas D pas trobada sus vòstre sistèma."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
+#, fuzzy
 msgid  "Connection Test"
 msgstr "Tèst de la connexion"
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
+#, fuzzy
 msgid  "The connection was established successfully."
 msgstr "La connexion a capitat."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
+#, fuzzy
 msgid  "The connection could not be established."
 msgstr "Es pas possible d'establir una connexion."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
+#, fuzzy
 msgid  "The JDBC driver was loaded successfully."
 msgstr "Lo cargament del pilòt JDBC a capitat."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
+#, fuzzy
 msgid  "The JDBC driver could not be loaded."
 msgstr "Se pòt pas cargar lo pilòt JDBC."
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
+#, fuzzy
 msgid  "MS Access file"
 msgstr "Fichièr MS Access"
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
+#, fuzzy
 msgid  "MS Access 2007 file"
 msgstr "Fichièr MS Access 2007"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+#, fuzzy
 msgid  "Database files"
 msgstr "Fichièrs de la banca de donadas"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE :"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
+#, fuzzy
 msgid  "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG :"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE :"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+#, fuzzy
 msgid  "Database sizes"
 msgstr "Talha de la banca de donadas"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "Talha (MB) :"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "Espaci liure de memòria (MB) :"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "Utilizacion de la ~memòria (en %) :"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+#, fuzzy
 msgid  "Database Statistics"
 msgstr "Estatisticas de la banca de donadas"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+#, fuzzy
 msgid  "Contains the system tables"
 msgstr "Conten lo sistèma de las taulas"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+#, fuzzy
 msgid  "Contains information about transaction"
 msgstr "Conten d'informacions sus las transaccions"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+#, fuzzy
 msgid  "Contains all data files"
 msgstr "Conten totas las donadas dels fichièrs"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+#, fuzzy
 msgid  "Total size of the database files"
 msgstr "Talha totala dels fichièrs de la banca de donadas"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Espaci liure abans la creacion d'una banca de donadas."
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+#, fuzzy
 msgid  "Currently used memory"
 msgstr "Memòria utilizada"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
 msgstr "Pas cap d'informacions perque los dreches per accedir al sistèma de taulas existisson pas."
 
@@ -2553,7 +2816,7 @@ msgstr "Lo senhal es pas trapat. Se vos plai, tornatz picar lo senhal."
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
 #, fuzzy
 msgid  "Database Wizard"
-msgstr "Assistent de banca de donadas"
+msgstr "Assistent banca de donadas"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
 #, fuzzy
@@ -2573,7 +2836,7 @@ msgstr "Parametrar la connexion d'una basa dBase"
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
 #, fuzzy
 msgid  "Set up a connection to text files"
-msgstr "Parametrar una connexion a de fichièrs de tèxte"
+msgstr "Parametrar la connexion a de fichièrs tèxtes"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
 #, fuzzy
@@ -2646,9 +2909,8 @@ msgid  "Set up a connection to a MySQL database"
 msgstr "Parametrar una connexion a una banca de donadas MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
-#, fuzzy
-msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Vos podètz connectar cap a una banca de donadas MySQL amb la nòrma ODBC o JDBC.\nVos cal contactar l'administrator del vòstre sistèma se sètz pas segur dels paramètres seguents."
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 #, fuzzy
@@ -2741,9 +3003,8 @@ msgid  "Set up connection to a MySQL database using JDBC"
 msgstr "Parametrar la connexion a la banca MySQL amb la nòrma JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Se vos plai, vos cal picar las informacions per vos connectar a la banca de donadas MySQL amb la nòrma JDBC. Vos cal notar que cal qu'un pilòt JDBC siá installat sus vòstre sistèma e enregistrat amb %PRODUCTNAME.\nVos cal contactar vòstre administrator del sistèma se sètz pas segur de vòstres reglatges."
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 #, fuzzy
@@ -2806,9 +3067,8 @@ msgid  "Set up a connection to an LDAP directory"
 msgstr "Parametrar una connexion al repertòri LDAP"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Se vos plai, vos cal dintrar las informacions obligatòrias per se connectar cap al repertòri LDAP.\nVos cal contactar vòstre administrator se setz pas segur dels paramètres vòstres."
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 #, fuzzy
@@ -2826,9 +3086,8 @@ msgid  "Set up a connection to an Adabas D database"
 msgstr "Parametrar una connexion a una banca de donadas Adabas D"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr "Entratz un nom de banca de donadas Adabas D que volètz connectar.\nClicatz 'Navigar...' per seleccionar una banca de donadas Adabas D qu'es ja enregistrada dins %PRODUCTNAME."
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 #, fuzzy
@@ -2836,9 +3095,8 @@ msgid  "Set up a connection to an ADO database"
 msgstr "Parametrar una connexion a una banca de donadas ADO"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Se vos plai picatz l'URL de la font de donadas a la quala vos volètz connectar.\nClicatz sus 'Percórrer...' per configurar de paramètres especifics per vòstre provesidor d'access.\nVos cal contactar vòstre administrator se sètz pas segur dels paramètres."
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2846,9 +3104,8 @@ msgid  "Set up a connection to an ODBC database"
 msgstr "Parametrar una connexon a una banca de donadas ODBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Vos cal picar lo nom de la banca de donadas d'ODBC a la quala vos volètz connectar.\nClicatz 'Percórrer...' per seleccionar una banca ODBC qu'es ja enregistrada dins %PRODUCTNAME.\nVos cal contactar vòstre administrator sètz pas segur de vòstres parametratges."
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2856,9 +3113,8 @@ msgid  "Set up a connection to a JDBC database"
 msgstr "Parametrar una connexion a una banca de donadas JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Se vos plai, dintratz l'informacion que vos cal per vos connectar a una banca de donadas JDBC.\nVos cal contactar vòstre administrator sistèma se sètz pas segur dels paramètres."
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 #, fuzzy
@@ -2876,9 +3132,8 @@ msgid  "Oracle JDBC ~driver class"
 msgstr "Pilòt de classa Oracle JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "Vos cal picar las informacions que n'avètz besonh per vos connectar a una banca de donadas Oracle. Cal qu'un pilòt JDBC siá installat sus vòstre sistèma e enregistrat amb %PRODUCTNAME.\nVos cal contactar vòstre administrator del sistèma se sètz pas segur dels paramètres."
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 #, fuzzy
@@ -2886,9 +3141,8 @@ msgid  "Set up a connection to spreadsheets"
 msgstr "Parametrar una connexion a un fuèlh de calcul"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr "Clicar sus 'Navigar...' per seleccionar un taulador %PRODUCTNAME o un Microsoft Excel workbook.\n%PRODUCTNAME dobrirà aqueste fichièr dins lo mòde de lectura sola."
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 #, fuzzy
@@ -3031,9 +3285,8 @@ msgid  "{None}"
 msgstr "{Pas cap}"
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
-#, fuzzy
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
 #, fuzzy
@@ -3066,496 +3319,614 @@ msgid  "Socket"
 msgstr "Socket"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+#, fuzzy
 msgid  "Refresh"
 msgstr "Refrescar"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~View Design"
 msgstr "Esbòs novèl de vista"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Table Design"
 msgstr "Esbòs de ~taula novèl"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "Assistent de creacion de requèsta..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "Esbòs de re~questa (Vista dessenh)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "~Edit Query"
 msgstr "Editar la re~quèsta"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "Esbòs de requèsta (vista ~SQL)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "Editar..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+#, fuzzy
 msgid  "Column ~Width..."
 msgstr "Largor de la colomna..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+#, fuzzy
 msgid  "Report Wizard..."
 msgstr "Assistent de creacion de rapòrt..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "Assistent de creacion de formulari..."
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+#, fuzzy
 msgid  "System"
 msgstr "Sistèma"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+#, fuzzy
 msgid  "Error during creation"
 msgstr "Error pendent la creacion"
 
 #: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "I a agut una error imprevista. L'operacion pòt pas capitar."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
 msgstr "Lo document \"$file$\" se pòt pas dobrir."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
 msgstr "Se pòt pas escafar la taula per çò que la connexion de la banca de donadas es pas prevista per aquò far."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+#, fuzzy
 msgid  "~All"
 msgstr "~Tot"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+#, fuzzy
 msgid  "Undo:"
 msgstr "Anullar :"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+#, fuzzy
 msgid  "Redo:"
 msgstr "Tornar far :"
 
 #: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
 msgstr "Es pas possible de conéisser lo tipe de la colomna '#1'."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+#, fuzzy
 msgid  "The file \"$file$\" does not exist."
 msgstr "Lo fichièr \"$file$\" existís pas."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr "I a agut d'avertiments pendent la connexion cap a la font de donadas. Vos cal quichar sul boton \"$buttontext$\" per los veire."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
-msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr "Lo nom '$#$' existís ja.\nVos cal picar un autre nom."
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
+#, fuzzy
 msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr "Lo rapòrt, \"$file$\", a de besonh de l'extension Sun Report Builder."
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
+#, fuzzy
 msgid  "Apply columns"
 msgstr "Aplicar las colomnas"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.String.Text
+#, fuzzy
 msgid  "Type formatting"
 msgstr "Tipe de formatatge"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
-msgid  "The following fields have already been set as primary keys:\n"
-msgstr "Los camps seguents son ja causits coma clau primària:\n"
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
+#, fuzzy
 msgid  "Assign columns"
 msgstr "Assignar las colomnas"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.ModalDialog.Text
+#, fuzzy
 msgid  "Copy RTF Table"
 msgstr "Copiar una taula RTF"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.HelpButton.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "Ajuda"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.CancelButton.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "Anullar"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.PushButton.Text
+#, fuzzy
 msgid  "< ~Back"
 msgstr "< ~Precedent"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.PushButton.Text
+#, fuzzy
 msgid  "~Next>"
 msgstr "Segue~nt>"
 
 #: source/ui/misc/WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.OKButton.Text
+#, fuzzy
 msgid  "C~reate"
 msgstr "C~rear"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.FixedLine.Text
+#, fuzzy
 msgid  "Existing columns"
 msgstr "Colomnas disponiblas"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.FixedLine.Text
+#, fuzzy
 msgid  "Column information"
 msgstr "Informacion de la colomna"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.FixedLine.Text
+#, fuzzy
 msgid  "Automatic type recognition"
 msgstr "Reconeissança automatica del tipe"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.FixedText.Text
+#, fuzzy
 msgid  "Lines (ma~x)"
 msgstr "Linhas (ma~x)"
 
 #: source/ui/misc/WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+#, fuzzy
 msgid  "Primary Key"
 msgstr "Clau primària"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
-msgid  "Source table: \n"
-msgstr "Font de taula : \n"
+msgid  "Source table: \\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
-msgid  "Destination table: \n"
-msgstr "Taula de destinacion : \n"
+msgid  "Destination table: \\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
+#, fuzzy
 msgid  "~All"
 msgstr "Tot"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.PushButton.Text
+#, fuzzy
 msgid  "Non~e"
 msgstr "Pas cap"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.FixedText.Text
+#, fuzzy
 msgid  "Ta~ble name"
 msgstr "Nom de la taula"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Opcions"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.RadioButton.Text
+#, fuzzy
 msgid  "De~finition and data"
 msgstr "Definicion e donadas"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.RadioButton.Text
+#, fuzzy
 msgid  "Def~inition"
 msgstr "Def~inicion"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.RadioButton.Text
+#, fuzzy
 msgid  "A~s table view"
 msgstr "Coma una vi~sta de taula"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.RadioButton.Text
+#, fuzzy
 msgid  "Append ~data"
 msgstr "Apondre una ~data"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.CheckBox.Text
+#, fuzzy
 msgid  "Use first ~line as column names"
 msgstr "Utilizar la primièra ~linha coma noms de colomna"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.CheckBox.Text
+#, fuzzy
 msgid  "Crea~te primary key"
 msgstr "Crear una clau primària"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.FixedText.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Nom"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
+#, fuzzy
 msgid  "Copy table"
 msgstr "Copiar la taula"
 
 #: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
+#, fuzzy
 msgid  "Copy table"
 msgstr "Copiar la taula"
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME.String.Text
+#, fuzzy
 msgid  "This table name is not valid in the current database."
 msgstr "Lo nom de la taula es pas valid dins la banca de donadas dobèrta."
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
+#, fuzzy
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
 msgstr "Causissètz l'opcion 'Apondre de donadas' sus la pagina primièra per apondre las donadas dins una taula."
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
+#, fuzzy
 msgid  "Please change the table name. It is too long."
 msgstr "Se vos plai, cambiatz lo nom de la taula. Es tròp long."
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Opcions"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "~Tipe"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
+#, fuzzy
 msgid  "Inner join"
 msgstr "Juntura interna"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
+#, fuzzy
 msgid  "Left join"
 msgstr "Juntura extèrna esquèrra"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
+#, fuzzy
 msgid  "Right join"
 msgstr "Juntura extèrna dreita"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
+#, fuzzy
 msgid  "Full (outer) join"
 msgstr "Juntura complèta"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
+#, fuzzy
 msgid  "Cross join"
 msgstr "Juntura crosada"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
+#, fuzzy
 msgid  "Natural"
 msgstr "Natural"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+#, fuzzy
 msgid  "Tables involved"
 msgstr "Taulas obligatòrias"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+#, fuzzy
 msgid  "Fields involved"
 msgstr "Camps obligatòris"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
+#, fuzzy
 msgid  "Join Properties"
 msgstr "Proprietats de la juntura"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
+#, fuzzy
 msgid  "Please note that some databases may not support this join type."
 msgstr "Se vos plai, notatz que d'una banca de donadas supòrta pas aqueste tipe de juntura."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
+#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
 msgstr "Inclús sonque los enregistraments ont lo contengut dels camps compreses dins la relacion, de caduna de las taulas, son identics."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
+#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
 msgstr "Conten TOTES los enregistraments de la taula '%1' que la valor del camp ligat correspond exactament als enregistraments de la taula '%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
+#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
 msgstr "Conten los enregistraments totes de '%1'  e de '%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
+#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "Conten lo produit cartesian de los enregistraments totes de '%1' e de '%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
+#, fuzzy
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
 msgstr "Conten sonque una colomna per cada nom de colomna identic de '%1' e de '%2'."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+#, fuzzy
 msgid  "Add Table Window"
 msgstr "Apondre una fenèstra de taula"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+#, fuzzy
 msgid  "Move table window"
 msgstr "Desplaçar la fenèstra de la taula"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+#, fuzzy
 msgid  "Insert Join"
 msgstr "Inserir una juntura"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+#, fuzzy
 msgid  "Delete Join"
 msgstr "Escafar una juntura"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+#, fuzzy
 msgid  "Resize table window"
 msgstr "Cambiar las dimensions de la fenèstra de la taula"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+#, fuzzy
 msgid  "Delete Column"
 msgstr "Escafar una colomna"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+#, fuzzy
 msgid  "Move column"
 msgstr "Bolegar la colomna"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+#, fuzzy
 msgid  "Add Column"
 msgstr "Apondre una colomna"
 
 #: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "es pas una expression valida, la taula '$name$' existís pas."
 
 #: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
 msgstr "Es pas una expression valida, lo nom del camp '$name$' existís pas."
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "La requèsta cobrís #num# taulas. La banca de donadas seleccionada, gerís sonque un maximum de #maxnum#  taula(s) per requèsta."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+#, fuzzy
 msgid  "Delete Table Window"
 msgstr "Escafar la fenèstra de la taula"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+#, fuzzy
 msgid  "Edit Column Description"
 msgstr "Editar la descripcion de la colomna"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+#, fuzzy
 msgid  "Adjust column width"
 msgstr "Apondre la largor de la colomna"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
+#, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "(pas triat);creissent;descreissent"
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+#, fuzzy
 msgid  "(no function);Group"
 msgstr "(Pas cap de foncion);Grop"
 
 #: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
+#, fuzzy
 msgid  "(no table)"
 msgstr "(pas cap de taula)"
 
 #: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+#, fuzzy
 msgid  "The database only supports sorting for visible fields."
 msgstr "La banca de donadas tria sonque los camps visibles."
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+#, fuzzy
 msgid  "Functions"
 msgstr "Foncions"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+#, fuzzy
 msgid  "Table Name"
 msgstr "Nom de la taula"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+#, fuzzy
 msgid  "Alias"
 msgstr "Aliàs"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+#, fuzzy
 msgid  "Distinct Values"
 msgstr "Valors distintas"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Camp;Aliàs;Taula;Triada;Visible;Foncion;Critèri;O;O"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+#, fuzzy
 msgid  "There are too many columns."
 msgstr "I a tròp de colomnas."
 
 #: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "Se pòt pas aplicar aquesta condicion al camp [*]"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+#, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "La comanda SQL es trop longa."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+#, fuzzy
 msgid  "Query is too complex"
 msgstr "La requèsta es tròp complèxa."
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "Pas cap de seleccion."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+#, fuzzy
 msgid  "Too many search criteria"
 msgstr "Tròp de critèris de recèrca"
 
 #: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
+#, fuzzy
 msgid  "SQL syntax error"
 msgstr "Error de sintaxi SQL"
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "[*] se pòt pas utilizar coma un critèri de triada."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+#, fuzzy
 msgid  "There are too many tables."
 msgstr "I a tròp de taulas."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "Aquesta declaracion o comanda SQL serà pas aplicada amb lo dialècte SQL d'aquesta basa de donadas."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "Lo nom del camp es pas trapat o es pas unic"
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+#, fuzzy
 msgid  "Join could not be processed"
 msgstr "Se pòt pas aviar l'unificacion dins la requèsta SQL"
 
 #: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
+#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Error de sintaxi dins la comanda SQL"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+#, fuzzy
 msgid  "This database does not support table views."
 msgstr "Aquesta banca de donadas supòrta pas la visualizacion de las taulas."
 
 #: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+#, fuzzy
 msgid  "This database does not support altering of existing table views."
 msgstr "Aquesta banca de donadas supòrta pas la visualizacion de las taulas alteradas."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "Volètz crear una requèsta ?"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+#, fuzzy
 msgid  "No query could be created."
 msgstr "Impossible de crear de requèsta."
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+#, fuzzy
 msgid  "No query could be created because no fields were selected."
 msgstr "Se pòt pas crear de requèsta perque cap de camp es pas seleccionat."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
 msgstr "La font de las donadas es escafada. Doncas, las donadas ligadas a aquesta font de donadas seràn pas salvadas."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "La colomna '$name$' es desconeguda."
 
 #: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+#, fuzzy
 msgid  "Columns can only be compared using '='."
 msgstr "Se pòt comparar las colomnas sonque amb '='."
 
 #: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
 msgstr "Vos cal utilizar un nom de colomna abans 'LIKE'."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
 msgstr "Se pòt pas trobar la colomna. Se vos plai,  notatz que los noms dins la basa de donadas respècten la cassa es a dire minusculas/majusculas."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
 msgstr " - %PRODUCTNAME Basa: Esbòs de requèsta"
 
 #: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
 msgstr " - %PRODUCTNAME Basa: Visualizacion en mòde esbòs"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
-msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr "$object$ a cambiat.\nVolètz salvar los cambiaments ?"
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
@@ -3566,393 +3937,478 @@ msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
+#, fuzzy
 msgid  "The table view"
 msgstr "L'afichatge de la taula"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
+#, fuzzy
 msgid  "The query"
 msgstr "La requèsta"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
+#, fuzzy
 msgid  "The SQL statement"
 msgstr "L'instruccion SQL"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
 msgstr "La requèsta crea pas de resultat, e doncas se pòt pas integrar dins una autra requèsta."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
+#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "La connexion activa e lo paramètre del nom de banca de donadas son pas bons - doncas, se pòt pas inicializar lo mòde esbòs de la requèsta."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "Aquesta relacion existís ja. Volètz l'editar o ne crear una novèla?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "Editar..."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+#, fuzzy
 msgid  "Create..."
 msgstr "Crear..."
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " - %PRODUCTNAME Basa: Concepcion de las relacions"
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+#, fuzzy
 msgid  "The database does not support relations."
 msgstr "La banca de donadas supòrta pas las relacions."
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr "La concepcion de relacions a cambiat.\nVolètz salvar los cambiaments ?"
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "S'escafatz aquesta taula, totas sas relacions seràn escafadas tanben. Volètz contunhar ?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
-msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr "La banca de donadas a pas pogut crear de relacion. Benlèu que las claus estrangièras per aqueste tipe de taula son pas presas en carga.\nConsultatz la documentacion de la banca de donadas."
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
+#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 msgstr "Inconegut;Tèxt;Nombre;Data/Temps;Data;Temps;Òc/Non;Moneda;Memò;Comptador;Imatge;Tèxt (fixe);Decimal;Binari (fixe);Binari;BigInt;Doble;Flotant;Real;Entièr;PichonEntièr;Minuscule Entièr;SQL Ges;Objècte;Distinct;Estructura;Camps;BLOB;CLOB;REF;AUTRE;Bit (fix)"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
-msgstr "Inserir/suprimir una clau primària"
+msgstr "Inserir/escafar la clau primària"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "Òc"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "Non"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+#, fuzzy
 msgid  "Ascending"
 msgstr "Creissent"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+#, fuzzy
 msgid  "Descending"
 msgstr "Descreissent"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+#, fuzzy
 msgid  "<none>"
 msgstr "<pas cap>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+#, fuzzy
 msgid  "Field name"
 msgstr "Nom del camp"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "Field Name"
 msgstr "Nom del camp"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
+#, fuzzy
 msgid  "Field ~type"
 msgstr "~Tipe del camp"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
+#, fuzzy
 msgid  "Field Type"
 msgstr "Tipe del camp"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
+#, fuzzy
 msgid  "Field length"
 msgstr "Longor del camp"
 
 #: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
+#, fuzzy
 msgid  "Description"
 msgstr "Descripcion"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "Column Description"
 msgstr "Descripcion de colomna"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
+#, fuzzy
 msgid  "Input required"
 msgstr "L'entrada de donadas es obligatòria"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
+#, fuzzy
 msgid  "~AutoValue"
 msgstr "~Valor automatica"
 
 #: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Field Properties"
 msgstr "Proprietats del camp"
 
 #: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
+#, fuzzy
 msgid  "General"
 msgstr "General"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "Description:"
 msgstr "Descripcion:"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Table properties"
 msgstr "Proprietats de la taula"
 
 #: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
+#, fuzzy
 msgid  "The text you entered is not a list element. "
 msgstr "Lo tèxte qu'avètz dintrat es pas un element d'una lista. "
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
+#, fuzzy
 msgid  "Insert Rows"
 msgstr "Inserir de linhas"
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+#, fuzzy
 msgid  "Primary Key"
 msgstr "Clau primària"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
+#, fuzzy
 msgid  "Modify cell"
 msgstr "Modificar una cellula"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
+#, fuzzy
 msgid  "Delete row"
 msgstr "Escafar la linha"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
+#, fuzzy
 msgid  "Modify field type"
 msgstr "Modificar lo tipe del camp"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
+#, fuzzy
 msgid  "Insert row"
 msgstr "Inserir una linha"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
+#, fuzzy
 msgid  "Insert new row"
 msgstr "Inserir una linha novèla"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
+#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Inserir/escafar la clau primària"
 
 #: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
+#, fuzzy
 msgid  "~Default value"
 msgstr "Valor per ~defaut"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
+#, fuzzy
 msgid  "~Entry required"
 msgstr "~Picada obligatòria"
 
 #: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+#, fuzzy
 msgid  "~Length"
 msgstr "~Longor"
 
 #: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "~Tipe"
 
 #: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
+#, fuzzy
 msgid  "~Length"
 msgstr "~Longor"
 
 #: source/ui/tabledesign/table.src#STR_SCALE.String.Text
+#, fuzzy
 msgid  "Decimal ~places"
 msgstr "Decimalas"
 
 #: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
+#, fuzzy
 msgid  "Format example"
 msgstr "Exemple de format"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
-msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr "Seleccionar una valor que apareissarà dins totes los enregistraments novèls amb una valor per defaut.\nSe lo camp a pas cap de besonh d'una valor per defaut, seleccionatz la cadena de caractèrs voida."
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
-msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr "Picatz una valor per defaut per aqueste camp.\n\nQuora picaretz un enregistrament novèl dins la taula, lo sistèma prendrà aquesta cadena de caractèrs per emplenar lo camp seleccionat per cada enregistrament novèl. Cal que corresponda al format de la cellula"
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
+#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
 msgstr "Activar aquesta opcion se lo contengut se pòt pas conténer la valor NULL, aquò vòl dire que l'utilizador deurà dintrar totjorn un contengut dins aqueste camp."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
+#, fuzzy
 msgid  "Enter the maximum text length permitted."
 msgstr "Vos cal entrar la longor maximum del tèxte permesa."
 
 #: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
+#, fuzzy
 msgid  "Enter the number format."
 msgstr "Dintrar lo format del nombre."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
-msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr "Determinatz la longor de la donada que pòt conténer aqueste camp.\n\nS'es un camp amb un nombre decimal, cal que la longor de la chifra siá entrada, s'es un camp binari, cal donar la longor del blòt.\nLa valor serà corregida se depassa lo maximum per aquesta basa de donadas."
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
+#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
 msgstr "Vos cal especificar lo nombre de decimalas permesas dins aqueste camp."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
+#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
 msgstr "Es aicí que podètz veire cossí la donada serà estampada dins son format previst (vos cal quichar sul boton de drecha per modificar son format)."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
+#, fuzzy
 msgid  "This is where you determine the output format of the data."
 msgstr "Es aicí que sètz a determinar lo format de sortida de la donada."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
-msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr "Causissètz se lo camp contendrà una valor d'autoincrementacion.\n\nPodètz pas dintrar de donada dins aqueste tipe de camps. Una valor serà assignada per cada enregistrament novèl automaticament (incrementacion facha dempuèi l'enregistrament precedent)."
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
+#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "La taula se pòt pas salvar per çò que lo nom de la colomna  \"$column$\" ja es balhat."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
+#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "La colomna \"$column$\" aparten a la clau primària. Se la colomna es escafada, la clau primària tanben serà escafada. Sètz segur que volètz contunhar ?"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
+#, fuzzy
 msgid  "Primary Key Affected"
 msgstr "La clau primària afectada"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "Column"
 msgstr "Colomna"
 
 #: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
+#, fuzzy
 msgid  "Continue anyway?"
 msgstr "Volètz de tot biais, contunhar?"
 
 #: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+#, fuzzy
 msgid  "Warning!"
 msgstr "Avertiments !"
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr "La taula foguèt cambiada.\nVolètz salvargardar los cambiaments?"
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr "La connexion a la banca de donadas es copada ! L'esplech de creacion de taula quora i a pas de connexion, serà utilizat sonque amb de foncionalitats limitadas.\nVos volètz tornar connectar?"
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
+#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
 msgstr "La taula es pas salvada perque la connexion se pòt pas establir."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
+#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
 msgstr "Lo filtre de la taula se pòt pas apondre perque la font de donadas es escafada."
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr "Abans d'editar los indèxes de la taula, cal que sián salvats d'en primièr.\nLos volètz salvar ara ?"
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
+#, fuzzy
 msgid  "No primary key"
 msgstr "I a pas de clau primària"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
-msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr "Un indèx unic o una clau primària es obligatòri per identificar un enregistrament dins la banca de donadas.\nPodètz entrar de donadas dins una taula sonque s'una d'aquestas condicions estructuralas es causida.\n\nCal qu'una clau primària siá creada ?"
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " - %PRODUCTNAME Basa: Dessenh de la taula"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
+#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr "La colomna \"$column$\" se pòt pas cambiar. Cal que la colomna siá escafada e lo format novèl apondut?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
+#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "I a agut una error pendent lo salvament de la creacion de la taula"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
+#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "Es pas possible d'escafar la colomna $column$."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
+#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
 msgstr "Sètz a escafar totas las colomnas de la taula. Una taula pòt pas existir sens colomna. Volètz escafar la taula de la banca de donadas ? Se non, la taula serà pas cambiada."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
+#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "Expression de l'autoincrementacion"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
-msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr "Dintrar una instruccion SQL pel camp d'autoincrementacion.\n\nAquesta instruccion serà dirèctament trasferida cap a la banca de donadas quora la taula serà creada."
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
-msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr "Pas cap d'informacions se pòdon pas trapar de la banca de donadas.\nLo mòde de concepcion de taula es pas previst per aquesta font de donadas."
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "change field name"
 msgstr "modifica lo nom del camp"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
+#, fuzzy
 msgid  "change field type"
 msgstr "modifica lo tipe del camp"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "change field description"
 msgstr "modifica la descripcion del camp"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "change field attribute"
 msgstr "modifica los atributs del camp"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~Se remembrar lo senhal cap a la fin de la sesilha"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+#, fuzzy
 msgid  "~Remember password"
 msgstr "~Se remembrar lo senhal"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "La basa de destinacion supòrta pas las vistas."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "La basa de destinacion supòrta pas de claus primàrias."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
+#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "existís pas d'informacions sus l'interfàcia de connexion , o i a pas d'interfàcia que donariá las informacions necessàrias"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "Sonque las taulas e las requèstas son suportadas per lo moment."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "Cal que lo resultat de la còpia de la font supòrte los marcapaginas."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "Tipe de font de la colomna ($type$) pas suportat a la posicion de la colomna $pos$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "Illegal nombre de paramètres d'inicialisacion."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "I a agut una error pendent l'inicializacion."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.String.Text
+#, fuzzy
 msgid  "Unsupported setting in the copy source descriptor: $name$."
 msgstr "Paramètre pas suportat dins la descripcion de la sorga de còpia: $name$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
+#, fuzzy
 msgid  "To copy a query, your connection must be able to provide queries."
 msgstr "Per copiar una requèsta (query) cal que vòstra connexion siá capable de gerir  las resultas de requèstas."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
+#, fuzzy
 msgid  "The given interaction handler is invalid."
 msgstr "Lo gestionari d'interaccion es pas valid."

@@ -137,302 +137,374 @@ msgid  "~Save"
 msgstr "സൂക്ഷിക്കുക"
 
 #: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
+#, fuzzy
 msgid  "<All>"
 msgstr "<എല്ലാം>"
 
 #: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
+#, fuzzy
 msgid  "< No Module >"
 msgstr "< ഘടകം ലഭ്യമല്ല >"
 
 #: source/basicide/basidesh.src#RID_STR_WRONGPASSWORD.String.Text
+#, fuzzy
 msgid  "Incorrect Password"
 msgstr "തെറ്റായ പാസ്‌വേര്‍ഡ്"
 
 #: source/basicide/basidesh.src#RID_STR_OPEN.String.Text
+#, fuzzy
 msgid  "Load"
 msgstr "ലഭ്യമാക്കുക"
 
 #: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
+#, fuzzy
 msgid  "Save"
 msgstr "സൂക്ഷിക്കുക"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "ഉറവിട ഫയല്‍ വളരെ വലുതായതിനാല്‍ അതു് സംഗ്രഹിക്കാനോ സൂക്ഷിക്കുവാനോ സാധ്യമല്ല. \nഅതൊകൊണ്ടു് ചില അഭിപ്രായങ്ങള്‍ നീക്കം ചെയ്യുക അല്ലെങ്കില്‍ ചില രീതികള്‍ മറ്റൊരു ഘടകത്തിലേക്കു് മാറ്റുക."
+msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
+#, fuzzy
 msgid  "Error opening file"
 msgstr "ഫയല്‍ തുറക്കുന്നതില്‍ പിശക്"
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENLIB.String.Text
+#, fuzzy
 msgid  "Error loading library"
 msgstr "ലൈബ്രറി ലഭ്യമാക്കുന്നതില്‍ പിശക്"
 
 #: source/basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.String.Text
+#, fuzzy
 msgid  "The file does not contain any BASIC libraries"
 msgstr "BASIC ലൈബ്രറികള്‍ ഫയലില്‍ ലഭ്യമല്ല"
 
 #: source/basicide/basidesh.src#RID_STR_BADSBXNAME.String.Text
+#, fuzzy
 msgid  "Invalid Name"
 msgstr "അസാധുവായ പേര്"
 
 #: source/basicide/basidesh.src#RID_STR_LIBNAMETOLONG.String.Text
+#, fuzzy
 msgid  "A library name can have up to 30 characters."
 msgstr "ലൈബ്രറിയുടെ പേര് 30 അക്ഷരങ്ങള്‍ വരെ ആകാം."
 
 #: source/basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.String.Text
+#, fuzzy
 msgid  "Macros from other documents are not accessible."
 msgstr "മറ്റു രേഖകളില്‍ നിന്നുള്ള മാക്രോകള്‍ പ്രവര്‍ത്തിക്കുവാന്‍ സാധ്യമല്ല."
 
 #: source/basicide/basidesh.src#RID_STR_LIBISREADONLY.String.Text
+#, fuzzy
 msgid  "This library is read-only."
 msgstr "ഈ ലൈബ്രറി വായിക്കുവാന്‍ മാത്രമേ സാധിക്കൂ."
 
 #: source/basicide/basidesh.src#RID_STR_REPLACELIB.String.Text
+#, fuzzy
 msgid  "'XX' cannot be replaced."
 msgstr "'XX'-നു് പകരം മറ്റൊന്നു് സാധ്യമല്ല."
 
 #: source/basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "'XX' cannot be added."
 msgstr "'XX' ചേര്‍ക്കുവാന്‍ സാധ്യമല്ല."
 
 #: source/basicide/basidesh.src#RID_STR_NOIMPORT.String.Text
+#, fuzzy
 msgid  "'XX' was not added."
 msgstr "'XX' ചേര്‍ത്തിട്ടില്ല."
 
 #: source/basicide/basidesh.src#RID_STR_ENTERPASSWORD.String.Text
+#, fuzzy
 msgid  "Enter password for 'XX'"
 msgstr "'XX'-നുള്ള പാസ്‌വേര്‍ഡ് നല്‍കുക"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.String.Text
+#, fuzzy
 msgid  "Name already exists"
 msgstr "നിലവിലുള്ള പേരു്"
 
 #: source/basicide/basidesh.src#RID_STR_SIGNED.String.Text
+#, fuzzy
 msgid  "(Signed)"
 msgstr "(ഒപ്പിട്ടതു്)"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.String.Text
+#, fuzzy
 msgid  "Object with same name already exists"
 msgstr "ഇതേ പേരിളുള്ള വസ്തു നിലവിലുണ്ടു്."
 
 #: source/basicide/basidesh.src#RID_STR_FILEEXISTS.String.Text
+#, fuzzy
 msgid  "The 'XX' file already exists"
 msgstr "'XX' ഫയല്‍ നിലവിലുണ്ടു്"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "സുരക്ഷാകാരണങ്ങള്‍കൊണ്ടു് നിങ്ങള്‍ക്കു് ഈ മാക്രോ പ്രവര്‍ത്തിപ്പിക്കുവാന്‍ സാധ്യമല്ല.\n\n കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി സുരക്ഷാ ക്രമീകരണങ്ങള്‍ പരിശോധിക്കുക."
+msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
+#, fuzzy
 msgid  "Compile Error: "
 msgstr "സംഗ്രഹ പിശക്: "
 
 #: source/basicide/basidesh.src#RID_STR_RUNTIMEERROR.String.Text
+#, fuzzy
 msgid  "Runtime Error: #"
 msgstr "പ്രവര്‍ത്തനസമയത്തെ പിശക്: #"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.String.Text
+#, fuzzy
 msgid  "Search key not found"
 msgstr "അന്വേഷിച്ച കീ കണ്ടുകിട്ടിയില്ല."
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
+#, fuzzy
 msgid  "Search to last module complete. Continue at first module?"
 msgstr "അവസാന ഘടകം വരെയുള്ള അന്വേഷണം സമാപിച്ചു. ആദ്യത്തെ ഘടകത്തിലേക്കു് തുടരണമോ?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
+#, fuzzy
 msgid  "Search key replaced XX times"
 msgstr "അന്വേഷണ കീ XX പ്രാവശ്യം മാറ്റിവച്ചു‍."
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTREAD.String.Text
+#, fuzzy
 msgid  "The file could not be read"
 msgstr "ഫയല്‍ വായിക്കുവാന്‍ സാധ്യമായില്ല"
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTWRITE.String.Text
+#, fuzzy
 msgid  "The file could not be saved"
 msgstr "ഫയല്‍ സൂക്ഷിക്കുവാന്‍ സാധ്യമായില്ല"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.String.Text
+#, fuzzy
 msgid  "The name of the default library cannot be changed."
 msgstr "സ്വതവേയുള്ള ലൈബ്രറിയുടെ പേരു് മാറ്റുവാന്‍ സാധ്യമല്ല."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
+#, fuzzy
 msgid  "The name of a referenced library cannot be changed."
 msgstr "സൂചിപ്പിച്ചിട്ടുള്ള ലൈബ്രറിയുടെ പേരു് മാറ്റുവാന്‍ സാധ്യമല്ല."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
+#, fuzzy
 msgid  "The default library cannot be deactivated"
 msgstr "സ്വതവേയുള്ള ലൈബ്രറി നിഷ്ക്രിയമാക്കുവാന്‍ സാധ്യമല്ല."
 
 #: source/basicide/basidesh.src#RID_STR_GENERATESOURCE.String.Text
+#, fuzzy
 msgid  "Generating source"
 msgstr "ഉറവിടം ഉല്പാദിപ്പിക്കുന്നു"
 
 #: source/basicide/basidesh.src#RID_STR_FILENAME.String.Text
+#, fuzzy
 msgid  "File name:"
 msgstr "ഫയല്‍ നാമം:"
 
 #: source/basicide/basidesh.src#RID_STR_APPENDLIBS.String.Text
+#, fuzzy
 msgid  "Import Libraries"
 msgstr "ലൈബ്രറികള്‍ ഇംപോര്‍ട്ട് ചെയ്യുക"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELMACRO.String.Text
+#, fuzzy
 msgid  "Do you want to delete the macro XX?"
 msgstr "നിങ്ങള്‍ക്കു് മാക്രോ XX വെട്ടി നീക്കണമോ?"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELDIALOG.String.Text
+#, fuzzy
 msgid  "Do you want to delete the XX dialog?"
 msgstr "നിങ്ങള്‍ക്കു് XX സംഭാഷണം നീക്കം ചെയ്യണോ ?"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELLIB.String.Text
+#, fuzzy
 msgid  "Do you want to delete the XX library?"
 msgstr "നിങ്ങള്‍ക്കു് XX ലൈബ്രറി നീക്കം ചെയ്യണോ ?"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELLIBREF.String.Text
+#, fuzzy
 msgid  "Do you want to delete the reference to the XX library?"
 msgstr "നിങ്ങള്‍ക്കു് XX ലൈബ്രറിയ്ക്കുള്ള സൂചന നീക്കം ചെയ്യണോ ?"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELMODULE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the XX module?"
 msgstr "നിങ്ങള്‍ക്കു് XX ഘടകം നീക്കം ചെയ്യണോ?"
 
 #: source/basicide/basidesh.src#RID_STR_OBJNOTFOUND.String.Text
+#, fuzzy
 msgid  "Object or method not found"
 msgstr "വസ്തു അഥവാ രീതി ലഭ്യമായില്ല"
 
 #: source/basicide/basidesh.src#RID_STR_BASIC.String.Text
+#, fuzzy
 msgid  "BASIC"
 msgstr "BASIC"
 
 #: source/basicide/basidesh.src#RID_STR_LINE.String.Text
+#, fuzzy
 msgid  "Ln"
 msgstr "Ln"
 
 #: source/basicide/basidesh.src#RID_STR_COLUMN.String.Text
+#, fuzzy
 msgid  "Col"
 msgstr "Col"
 
 #: source/basicide/basidesh.src#RID_STR_DOC.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "രേഖ"
 
 #: source/basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Macro Bar"
 msgstr "മാക്രോ ബാര്‍"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
+#, fuzzy
 msgid  "The window cannot be closed while BASIC is running."
 msgstr "BASIC പ്രവര്‍ത്തിച്ചുകൊണ്ടിരിക്കുമ്പോള്‍ ജാലകം അടയ്ക്കുവാന്‍ സാധ്യമല്ല."
 
 #: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
+#, fuzzy
 msgid  "The default library cannot be replaced."
 msgstr "സ്വതവേയുള്ള ലൈബ്രറി മാറ്റി മറ്റൊന്നു് സാധ്യമല്ല."
 
 #: source/basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "Reference to 'XX' not possible."
 msgstr "'XX'-ലേക്കു് സൂചനകള്‍ സാധ്യമല്ല."
 
 #: source/basicide/basidesh.src#RID_STR_WATCHNAME.String.Text
+#, fuzzy
 msgid  "Watch"
 msgstr "നിരീക്ഷിക്കുക"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHVARIABLE.String.Text
+#, fuzzy
 msgid  "Variable"
 msgstr "വേരിയബിള്‍"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHVALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "മൂല്യം"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHTYPE.String.Text
+#, fuzzy
 msgid  "Type"
 msgstr "വിഭാഗം"
 
 #: source/basicide/basidesh.src#RID_STR_STACKNAME.String.Text
+#, fuzzy
 msgid  "Call Stack"
 msgstr "കോള്‍ സ്റ്റാക്ക്"
 
 #: source/basicide/basidesh.src#RID_STR_INITIDE.String.Text
+#, fuzzy
 msgid  "BASIC Initialization"
 msgstr "BASIC ആരംഭം"
 
 #: source/basicide/basidesh.src#RID_STR_STDMODULENAME.String.Text
+#, fuzzy
 msgid  "Module"
 msgstr "ഘടകം"
 
 #: source/basicide/basidesh.src#RID_STR_STDDIALOGNAME.String.Text
+#, fuzzy
 msgid  "Dialog"
 msgstr "സംഭാഷണം"
 
 #: source/basicide/basidesh.src#RID_STR_STDLIBNAME.String.Text
+#, fuzzy
 msgid  "Library"
 msgstr "ലൈബ്രറി"
 
 #: source/basicide/basidesh.src#RID_STR_NEWLIB.String.Text
+#, fuzzy
 msgid  "New Library"
 msgstr "പുതിയ ലൈബ്രറി"
 
 #: source/basicide/basidesh.src#RID_STR_NEWMOD.String.Text
+#, fuzzy
 msgid  "New Module"
 msgstr "പുതിയ ഘടകം"
 
 #: source/basicide/basidesh.src#RID_STR_NEWDLG.String.Text
+#, fuzzy
 msgid  "New Dialog"
 msgstr "പുതിയ സംഭാഷണം"
 
 #: source/basicide/basidesh.src#RID_STR_ALL.String.Text
+#, fuzzy
 msgid  "All"
 msgstr "എല്ലാം"
 
 #: source/basicide/basidesh.src#RID_STR_PAGE.String.Text
+#, fuzzy
 msgid  "Page"
 msgstr "താള്‍"
 
 #: source/basicide/basidesh.src#RID_STR_MACRONAMEREQ.String.Text
+#, fuzzy
 msgid  "A name must be entered."
 msgstr "ഒരു പേരു് നല്‍കേണ്ടതാണു്."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "ഇതു് ചിട്ടപ്പെടുത്തിയ ശേഷം നിങ്ങള്‍ പ്രോഗ്രാം വീണ്ടും ആരംഭിക്കേണ്ടതാണു്.\nതുടരണമോ?"
+msgid  "You will have to restart the program after this edit.\\nContinue?"
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
+#, fuzzy
 msgid  "Do you want to replace the text in all active modules?"
 msgstr "സജീവമായ എല്ലാ ഘടകങ്ങളിലുമുള്ള വാചകം നിങ്ങള്‍ക്കു് പുനഃസ്ഥാപിക്കണോ ?"
 
 #: source/basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Remove Watch"
 msgstr "നിരീക്ഷണം നീക്കം ചെയ്യുക"
 
 #: source/basicide/basidesh.src#RID_STR_REMOVEWATCH.String.Text
+#, fuzzy
 msgid  "Watch:"
 msgstr "നിരീക്ഷണം:"
 
 #: source/basicide/basidesh.src#RID_STR_STACK.String.Text
+#, fuzzy
 msgid  "Calls: "
 msgstr "കോളുകള്‍: "
 
 #: source/basicide/basidesh.src#RID_STR_USERMACROS.String.Text
+#, fuzzy
 msgid  "My Macros"
 msgstr "എന്റെ മാക്രോസ്"
 
 #: source/basicide/basidesh.src#RID_STR_USERDIALOGS.String.Text
+#, fuzzy
 msgid  "My Dialogs"
 msgstr "എന്റെ സംഭാഷണങ്ങള്‍"
 
 #: source/basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.String.Text
+#, fuzzy
 msgid  "My Macros & Dialogs"
 msgstr "എന്റെ മാക്രോസും സംഭാഷണങ്ങളും"
 
 #: source/basicide/basidesh.src#RID_STR_SHAREMACROS.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Macros"
 msgstr "%PRODUCTNAME മാക്രോസ്"
 
 #: source/basicide/basidesh.src#RID_STR_SHAREDIALOGS.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Dialogs"
 msgstr "%PRODUCTNAME സംഭാഷണങ്ങള്‍"
 
 #: source/basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Macros & Dialogs"
 msgstr "%PRODUCTNAME മാക്രോസും സംഭാഷണങ്ങളും"
 
@@ -442,10 +514,12 @@ msgid  "Properties"
 msgstr "ഗുണഗണങ്ങള്‍"
 
 #: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MenuItem.Text
+#, fuzzy
 msgid  "Active"
 msgstr "പ്രവര്‍ത്തന സജ്ജം"
 
 #: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MenuItem.Text
+#, fuzzy
 msgid  "Properties..."
 msgstr "ഗുണഗണങ്ങള്‍..."
 
@@ -546,9 +620,8 @@ msgid  "Dialog Import - Name already used"
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
-#, fuzzy
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr "ലൈബ്രറിയ്ക്കു് ഈ പേരില്‍ നിലവിലൊരു ഡയലോഗുണ്ടു്:\n\n$(ARG1)\n\nഈ ഡയലോഗ് സൂക്ഷിക്കുന്നതിനായി പേരു് മാറ്റുക അല്ലെങ്കില്‍ നിലവിലുള്ളതു് മാറ്റിസ്ഥാപിക്കുക.\n "
+msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 #, fuzzy
@@ -565,7 +638,7 @@ msgid  "Dialog Import - Language Mismatch"
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
+msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
 msgstr ""
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
@@ -825,85 +898,105 @@ msgid  "Extension"
 msgstr "UNO പാക്കേജ് ബണ്ടില്‍"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.ModalDialog.Text
+#, fuzzy
 msgid  "Manage User Interface Languages [$1]"
 msgstr "യൂസര്‍ ഇന്റര്‍ഫെയിസ് ഭാഷകള്‍ കൈകാര്യം ചെയ്യുക [$1]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Present Languages"
 msgstr "ലഭ്യമായ ഭാഷകള്‍"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
+#, fuzzy
 msgid  "Add..."
 msgstr "ചേര്‍ക്കുക"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "വെട്ടി നീക്കുക"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
+#, fuzzy
 msgid  "Default"
 msgstr "സ്വതവേയുള്ള"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
 msgstr "യൂസര്‍ ഇന്റര്‍ഫെയിസ് ലൊക്കെയിലിനുള്ള പ്രാതേശികവത്കരണം ലഭ്യമല്ലെങ്കില്‍, സ്വതവേയുള്ള ഭാഷ ഉപയോഗിക്കുന്നു. ഇതിനുപുറമേ, സ്വതവേയുള്ള ഭാഷയില്‍ നിന്നും എല്ലാ വാചകങ്ങളും പുതുതായി ചേര്‍ത്തിരിക്കുന്ന ഭാഷകള്‍ക്കുള്ള പിന്തുണയില്‍ പകര്‍ത്തുന്നു."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "അടയ്ക്കുക"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
+#, fuzzy
 msgid  "[Default Language]"
 msgstr "[സ്വതവേയുള്ള ഭാഷ]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "വെട്ടി നീക്കുക"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.String.Text
+#, fuzzy
 msgid  "<Press 'Add' to create language resources>"
 msgstr "<ഭാഷയുക്കുള്ള പിന്തുണകള്‍ ഉണ്ടാക്കുന്നതിനായി 'ചേര്‍ക്കുക' അമര്‍ത്തുക>"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Title
+#, fuzzy
 msgid  "Delete Language Resources"
 msgstr "ഭാഷയ്ക്കുള്ള പിന്തുണകള്‍ വെട്ടി നീക്കുക"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr "തെരഞ്ഞെടുത്തിട്ടുള്ള ഭാഷകളുടെ പിന്തുണകള്‍ നിങ്ങള്‍ വെട്ടി നീക്കുവാന്‍ തുടങ്ങുന്നു. ഈ ഭാഷയ്ക്കുള്ള എല്ലാ യൂസര്‍ ഇന്റര്‍ഫെയിസ് വാചകങ്ങളും നീക്കം ചെയ്യപ്പെടുന്നതാണു്. \n\nതെരഞ്ഞെടുത്ത ഭാഷയുടെ പിന്തുണകള്‍ വെട്ടി നീക്കണമോ?"
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
+#, fuzzy
 msgid  "Set Default User Interface Language"
 msgstr "യൂസര്‍ ഇന്റര്‍ഫെയിസിനു് സ്വതവേയുള്ള ഭാഷ തെരഞ്ഞെടുക്കുക"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Default language"
 msgstr "സ്വതവേയുള്ള ഭാഷ"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
+#, fuzzy
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
 msgstr "സ്വതവേയുള്ള യൂസര്‍ ഇന്റര്‍ഫെയിസ് ഭാഷയായി ഒന്നു് തെരഞ്ഞെടുക്കുക. നിലവിലുള്ള എല്ല വാചകങ്ങളും തെരഞ്ഞെടുത്തിട്ടുള്ള ഭാഷയ്ക്കായി ഉണ്ടാക്കിയിരിക്കുന്ന പിന്തുണകള്‍ക്കു് നല്‍കുന്നു."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
+#, fuzzy
 msgid  "Add User Interface Languages"
 msgstr "യൂസര്‍ ഇന്റര്‍ഫെയിസിനുള്ള ഭാഷകള്‍ ചേര്‍ക്കുക"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.String.Text
+#, fuzzy
 msgid  "Available Languages"
 msgstr "ലഭ്യമായ ഭാഷകള്‍"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
+#, fuzzy
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
 msgstr "ചേര്‍ക്കുവാനുള്ള ഭാഷകള്‍ തെരഞ്ഞെടുക്കുക. ഇവയ്ക്കുള്ള പിന്തുണകള്‍ ലൈബ്രറിയില്‍ ലഭ്യമാക്കുന്നു, നിലവില്‍ സ്വതവേയുള്ള യൂസര്‍ ഇന്റര്‍ഫെയിസ് ഭാഷയ്ക്കുള്ള വാചകങ്ങള്‍ സ്വയമേ പുതിയ പിന്തുണയിലേക്കു് പകര്‍ത്തപ്പെടുന്നു."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Properties: "
 msgstr "ഗുണഗണങ്ങള്‍:"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+#, fuzzy
 msgid  "No Control marked"
 msgstr "ഒരു നിയന്ത്രണവും രേഖപ്പെടുത്തിയിട്ടില്ല."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+#, fuzzy
 msgid  "Multiselection"
 msgstr "അനേകം മാര്‍ഗ്ഗങ്ങള്‍"

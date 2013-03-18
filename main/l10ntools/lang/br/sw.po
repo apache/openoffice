@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "Ne oa ket tu da enrollañ an teul en e bezh."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "Makroioù %PRODUCTNAME Basic zo en teul HTML. \nAr re-mañ n'int ket bet enrollet gant an arventennoù ezporzhiañ oberiat."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -865,7 +865,7 @@ msgstr "Stiloù chabistr"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SWSTYLEBIT_LIST.FilterList.item
 msgid  "List Styles"
-msgstr "Stiloù rollad"
+msgstr "Stiloù stern"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SWSTYLEBIT_IDX.FilterList.item
 msgid  "Index Styles"
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "Pajenn c'houllo"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "Lakaet hoc'h eus un niver bras a roadennoù er golver. \nFellout a ra deoc'h mirout e endalc'had evit un arver diwezhatoc'h gant un arload all ?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "Ur c'holl stlennoù a c'hall bezañ krouet \ngant an amdreiñ er mentrezh HTML\nEnrollañ an teul a fell deoc'h ?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "Gwereet e c'hall bezañ an destenn darzh mard eo bet enrollet an teul e mentrezh HTML nemetken.\nEnrollañ an teul e mentrezh HTML a fell deoc'h ?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "Maeziennoù stlennvon chomlec'hioù zo e-barzh an teul. Ul lizher rizh a fell deoc'h moullañ ?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -1489,11 +1489,11 @@ msgstr "~Azasaat ebet"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP.MenuItem.Text
 msgid  "~Page Wrap"
-msgstr "Adkas dav~eel d'ar bajenn"
+msgstr "Adkas daveel d'a~r bajenn"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP_IDEAL.MenuItem.Text
 msgid  "~Optimal Page Wrap"
-msgstr "Adkas n~erzhek d'ar bajenn"
+msgstr "A~dkas nerzhek d'ar bajenn"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU.MenuItem.Text
 msgid  "~Wrap Through"
@@ -1501,7 +1501,7 @@ msgstr "~Dizehan"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU_TRANSP.MenuItem.Text
 msgid  "In ~Background"
-msgstr "En d~rekleur"
+msgstr "~En drekleur"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 msgid  "~First Paragraph"
@@ -2645,7 +2645,7 @@ msgstr "Enlakaat"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_ATTR.FixedText.Text
 msgid  "Attributes"
-msgstr "Doareennoù"
+msgstr "~Doareennoù"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 msgid  "[None]"
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<Perzhioù arveriad>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "Fellout a ra deoc'h daskemmañ dibarzhioù keverlec'hded ar patrom dre ziouer ?\nTizhet e vo an holl deulioù nevez diazezet diwar ar patrom dre ziouer."
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2896,8 +2896,8 @@ msgid  "Caption"
 msgstr "Leadell"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "Ouzhpennañ leadelloù ent emgefreek\ne-pad enlakadur eus :"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -2945,7 +2945,7 @@ msgstr "Dispartieroù an niverenniñ"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TXT_TEXT.FixedText.Text
 msgid  "Separator"
-msgstr "Di~spartier"
+msgstr "Dispartier"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TXT_POS.FixedText.Text
 msgid  "Position"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "N'eus anv ebet dezverket evit ar restr kenstaget. Mar fell deoc'h ouzhpennañ unan, e euvrit bremañ."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "A-benn bezañ evit kas teulioù mailing dre bostel ez eo ret deoc'h pourchas titouroù a-fet kont postelerezh da arverañ da %PRODUCTNAME.\n\n Euvriñ an titouroù o taveiñ ouzh ar gont postelerezh bremañ ?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "~Cci"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "Evezhiadenn :\nDispartiit ar chomlec'hioù postel gant ur pik-skej (;)."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "C'hwitadenn ar c'has : chomlec'h didalvoudek"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "Emañ kemennadennoù e-barzh ho poest kas %PRODUCTNAME c'hoazh.\nHa fellout a ra deoc'h kuitaat an arload a dra sur ?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "Embann an teul"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "Ma n'eo ket bet graet ganeoc'h c'hoazh, krouit pe embannit ho teul bremañ. Tizhet e vo an holl deulioù toueziet gant an daskemmadurioù.\n\nPa vez kliket war Embann an teul ganeoc'h e vez bihanaet ent padennek prenestr ar skozeller a-benn ma c'hallot embann ho teul. Goude ma vo embannet an teul, klikit war Distreiñ d'ar skoazeller Mailing er prenestr bihanaet da zistreiñ er skozeller."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "N'eo ket hegerz ar mentrezh golver hetet."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "Emañ ar skejad en ur mentrezh dispredet. \nN'hallot enrollañ daskemmadur ebet \nanez henn emdreiñ. \nFellout a ra deoc'h sevel an amdreiñ hep gortoz ?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "Notenn diaz pajenn :"
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "Emañ endalc'had ar sined pe an diuzad e mod lenn nemetken.\nDaskemmadur ebet aotreet."
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "Dibarzhioù"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "An dikedenn \"%1 / %2\" zo anezhi endeo. \nFlastrañ ar roadennoù a fell deoc'h ?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6089,7 +6089,7 @@ msgstr "Stadegenn"
 
 #: source/ui/fldui/fldui.src#STR_AUTHORFLD.String.Text
 msgid  "Author"
-msgstr "Aozer"
+msgstr "Arveriad"
 
 #: source/ui/fldui/fldui.src#STR_TEMPLNAMEFLD.String.Text
 msgid  "Templates"
@@ -6185,7 +6185,7 @@ msgstr "Enrollañ dargouezhek"
 
 #: source/ui/fldui/fldui.src#STR_DBSETNUMBERFLD.String.Text
 msgid  "Record number"
-msgstr "Niverenn enrollañ"
+msgstr "Niverenn an enrollañ"
 
 #: source/ui/fldui/fldui.src#STR_PREVPAGEFLD.String.Text
 msgid  "Previous page"
@@ -6257,7 +6257,7 @@ msgstr "Rannbennadoù"
 
 #: source/ui/fldui/fldui.src#FLD_STAT_GRF.String.Text
 msgid  "Graphics"
-msgstr "Skeudennoù"
+msgstr "Skeudenn"
 
 #: source/ui/fldui/fldui.src#FLD_STAT_OBJ.String.Text
 msgid  "Objects"
@@ -6289,7 +6289,7 @@ msgstr "Anv"
 
 #: source/ui/fldui/fldui.src#FLD_EU_ABK.String.Text
 msgid  "Initials"
-msgstr "Tallizherennoù"
+msgstr "Berradenn"
 
 #: source/ui/fldui/fldui.src#FLD_EU_STRASSE.String.Text
 msgid  "Street"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "Kantreal..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "Reiñ a ra tu ar voest emziviz-mañ da erlec'hiañ stlennvonioù all ouzh ar stlennvonioù a dizhit en ho teul dre ar maeziennoù stlennvon. Aotreet ez eus ur c'hemm bewech nemetken. Ul liesdiuzad a c'hallit seveniñ adalek ar roll a-gleiz. \n Arverit an afell ergerzhout da ziuzañ ur restr stlennvon."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -6881,7 +6881,7 @@ msgstr "Padelligoù"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
 msgid  "Numbering Style"
-msgstr "Rizh niverenniñ"
+msgstr "Stil niverenniñ"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
 msgid  "Outline"
@@ -6905,7 +6905,7 @@ msgstr "Stil niverenniñ"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.TabDialog.Text
 msgid  "Frame"
-msgstr "~Frame"
+msgstr "Stern"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_STD.PageItem.Text
 msgid  "Type"
@@ -7589,11 +7589,11 @@ msgstr "Lec'hiadur"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_BEGINNING.String.Text
 msgid  "Above"
-msgstr "Dreist"
+msgstr "D'an deroù"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_END.String.Text
 msgid  "Below"
-msgstr "Dan"
+msgstr "En dibenn"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_ABOVE.String.Text
 msgid  "Above"
@@ -7937,7 +7937,7 @@ msgstr "Stiloù ouzhpenn"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.ST_USER_ADDSTYLE.String.Text
 msgid  "Styl~es"
-msgstr "Stiloù"
+msgstr "~Stiloù"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.CB_TOXMARKS.CheckBox.Text
 msgid  "Inde~x marks"
@@ -8513,7 +8513,7 @@ msgstr "Anv"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.FT_SHORTNAME.FixedText.Text
 msgid  "~Shortcut"
-msgstr "Be~rradenn"
+msgstr "~Berr."
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.LB_BIB.ST_READONLY.String.Text
 msgid  "read-only"
@@ -8561,7 +8561,7 @@ msgstr "N'eus gwir skrivañ ebet evit ar c'havlec'hioù 'EmDestenn'. Ha fellout 
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
-msgstr "Ne~vez"
+msgstr "~Nevez"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE_TEXT.MenuItem.Text
 msgid  "New (text only)"
@@ -9485,7 +9485,7 @@ msgstr "Rannbennad"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PAGE_TEMPL.FixedText.Text
 msgid  "~Page"
-msgstr "~Pajenn"
+msgstr "P~ajenn"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CHAR_TEMPL.FixedLine.Text
 msgid  "Character Styles"
@@ -9493,7 +9493,7 @@ msgstr "Stiloù arouezennoù "
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 msgid  "Te~xt area"
-msgstr "Maez testenn"
+msgstr "Maez ~testenn"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_TEXT_CHARFMT.FixedText.Text
 msgid  "~Footnote area"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "EmVentrezhañ"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "Echu eo gant an EmVentrezhañ.\nDibab a c'hallit degemer pe zisteurel en un taol an holl zaskemmadurioù, pe\nda wereañ an holl zaskemmadurioù a-benn o gwelout en-dro."
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "Sammad"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "Euvret hoc'h eus un anv didalvoudek.\nN'eo ket bet evit bezañ sevenet an EmVentrezhañ.\nMenegit un anv all."
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "Bann gentañ evel tikedenn"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "Ma n'emañ ket ar roadennoù hetet er c'helligoù diuzet, diuzit al lijorenn bremañ.\n\nMerkit ar c'helligoù oc'h enderc'hel tikedennoù bann ha linenn mar fell deoc'h o diskouez en diervad."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "C'hoant hoc'h eus gwiriañ an destenn bennañ ?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "Gweredekaet eo an dibarzh Skrammañ an anvioù maeziennoù.\nMoullañ an teul gant an anvioù maeziennoù a fell deoc'h ?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Pennlizherenn e deroù ar frazenn"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "Erlec'hiañ daouaskoù %1lizherennek %2 ouzh ar \"paroù estlamm\" "
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -10953,7 +10953,7 @@ msgstr "Seveniñ ar stil \"Korf testenn\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 msgid  "Set \"Text body indent\" Style"
-msgstr "Seveniñ ar stil \"Alinea\""
+msgstr "Seveniñ ar stil \"Pukad korf testenn\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 msgid  "Set \"Hanging indent\" Style"
@@ -11045,7 +11045,7 @@ msgstr "Sternioù testenn"
 
 #: source/ui/utlui/utlui.src#STR_CONTENT_TYPE_GRAPHIC.String.Text
 msgid  "Graphics"
-msgstr "Skeudennoù"
+msgstr "Skeudenn"
 
 #: source/ui/utlui/utlui.src#STR_CONTENT_TYPE_OLE.String.Text
 msgid  "OLE objects"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[Reizhiad]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "Emañ ar gwiriañ reizhskrivadurel etrewezhiat \ndindan erounit en un teul all."
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "Emañ an troc'hañ gerioù etrewezhiat \ndindan erounit en un teul all."
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -11357,7 +11357,7 @@ msgstr "Levr-stroll"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CONFERENCE.String.Text
 msgid  "Conference proceedings"
-msgstr "Danevell gendael"
+msgstr "Danevell gendalc'h"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INBOOK.String.Text
 msgid  "Book excerpt"
@@ -11969,7 +11969,7 @@ msgstr "Roll"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_REGISTER_BASE.String.Text
 msgid  "Index"
-msgstr "Kavlec'hiad"
+msgstr "Ibil"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_CONFRONTATION.String.Text
 msgid  "List Indent"

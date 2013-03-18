@@ -177,7 +177,7 @@ msgstr "ಅಂತರ(~S)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.3.String.Text
 msgid  "~Line spacing"
-msgstr "ಸಾಲಿನ ಅಂತರ(~L)"
+msgstr "ಸಾಲು ಅಂತರ(~L)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.4.String.Text
 msgid  "~Root spacing"
@@ -289,11 +289,11 @@ msgstr "ಅಂಚುಗಳು"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.2.String.Text
 msgid  "~Left"
-msgstr "ಎಡ(~L)"
+msgstr "ಎಡಕ್ಕೆ(~L)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.3.String.Text
 msgid  "~Right"
-msgstr "ಬಲ(~R)"
+msgstr "ಬಲಕ್ಕೆ(~R)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.4.String.Text
 msgid  "~Top"
@@ -444,12 +444,12 @@ msgid  "~Delete"
 msgstr "ಅಳಿಸು(~D)"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr "\"StarMath\" ಅಕ್ಷರಶೈಲಿಯನ್ನು ಅನುಸ್ಥಾಪನೆ ಮಾಡಲಾಗಿಲ್ಲ.\nಈ ಅಕ್ಷರಶೈಲಿ ಇಲ್ಲದೆ %PRODUCTNAME Math ಸರಿಯಾಗಿ ಕಾರ್ಯ ನಿರ್ವಹಿಸುವುದಿಲ್ಲ.\nದಯವಿಟ್ಟು ಈ ಅಕ್ಷರಶೈಲಿಯನ್ನು ಅನುಸ್ಥಾಪಿಸಿ ಮತ್ತು %PRODUCTNAME Math ಅನ್ನು ಪುನರಾರಂಭಿಸಿ."
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "ಬದಲಾವಣೆಗಳನ್ನು ಪೂರ್ವನಿಯೋಜಿತಗಳಂತೆ ಉಳಿಸಬೇಕೇ?\n\nಈ ಬದಲಾವಣೆಗಳು ಎಲ್ಲಾ ಹೊಸ ಸೂತ್ರಗಳಿಗೆ ಅನ್ವಯಿಸಲ್ಪಡುತ್ತವೆ."
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -706,58 +706,72 @@ msgid  "~Scaling"
 msgstr "ಅಳತೆಬದಲಾವಣೆ(~S)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "ಯುನರಿ/ಬೈನರಿ ಕಾರ್ಯನಿರ್ವಾಹಕಗಳು(~U)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Relations"
 msgstr "ಸಂಬಂಧಗಳು(~R)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Set Operations"
 msgstr "ಕಾರ್ಯಗಳನ್ನು ಸಿದ್ಧಗೊಳಿಸು(~S)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Functions"
 msgstr "ಕಾರ್ಯಭಾರಗಳು(~F)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
 msgid  "More"
 msgstr "ಇನ್ನಷ್ಟು"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "O~perators"
 msgstr "ಕಾರ್ಯನಿರ್ವಾಹಕಗಳು(~p)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Attributes"
 msgstr "ಗುಣವಿಶೇಷಗಳು(~A)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Brackets"
 msgstr "ಆವರಣ ಚಿಹ್ನೆಗಳು(~B)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
+#, fuzzy
 msgid  "For~mats"
 msgstr "ರಚನೆಗಳು(~m)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
+#, fuzzy
 msgid  "New Line"
 msgstr "ಹೊಸ ಸಾಲು"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
+#, fuzzy
 msgid  "Small Gap"
 msgstr "ಚಿಕ್ಕ ಅಂತರ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
+#, fuzzy
 msgid  "Gap"
 msgstr "ಅಂತರ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MenuItem.Text
+#, fuzzy
 msgid  "nospace {...}"
 msgstr "ಖಾಲಿಜಾಗವಿಲ್ಲ {...}"
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Others"
 msgstr "ಇತರೆ(~O)"
 

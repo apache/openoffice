@@ -215,9 +215,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
-#, fuzzy
-msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr "بار کردن مؤلفه‌ی (%s) ممکن نبود.\nلطفاً برنامه‌ی برپاسازی را با گزینه‌ی repair آغاز کنید."
+msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
+msgstr ""
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 #, fuzzy
@@ -537,7 +536,7 @@ msgstr "چاپ در صفحه معکوس"
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.TabPage.Text
 #, fuzzy
 msgid  "Options"
-msgstr "گزینه‌ ها"
+msgstr "گزینه ها"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_PRINT_FL.FixedLine.Text
 #, fuzzy
@@ -565,9 +564,8 @@ msgid  "Page %p of %n"
 msgstr "چاپ %p از %n"
 
 #: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
-#, fuzzy
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "هیچ چاپگر پیش‌گزیده‌ی پیدا نشد.\nلطفاً یک چاپگر انتخاب و دوباره سعی کنید."
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr ""
 
 #: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
 #, fuzzy
@@ -813,41 +811,51 @@ msgid  "Quit %PRODUCTNAME"
 msgstr "خروج %PRODUCTNAME"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
+#, fuzzy
 msgid  "OK"
 msgstr "تأیید"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "انصراف"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
+#, fuzzy
 msgid  "~Yes"
 msgstr "~بله"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
+#, fuzzy
 msgid  "~No"
 msgstr "~خیر"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
+#, fuzzy
 msgid  "~Retry"
 msgstr "~دوباره سعی شود"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~راهنما"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
+#, fuzzy
 msgid  "~More"
 msgstr "~بیشتر"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
+#, fuzzy
 msgid  "~More"
 msgstr "~بیشتر"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
+#, fuzzy
 msgid  "~Ignore"
 msgstr "~نادیده گرفته شود"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
+#, fuzzy
 msgid  "~Abort"
 msgstr "~قطع شود"

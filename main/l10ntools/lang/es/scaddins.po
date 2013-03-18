@@ -509,7 +509,7 @@ msgstr "Meses"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
 msgid  "Number of months before or after the start date"
-msgstr "Cantidad de meses anterior o posterior a la fecha inicial."
+msgstr "Cantidad de meses anterior o posterior a la fecha inicial"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
@@ -585,7 +585,7 @@ msgstr "Devuelve el valor VERDADERO si el número es par."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
 msgid  "Number"
-msgstr "Número"
+msgstr "Potencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
 msgid  "The number"
@@ -669,7 +669,7 @@ msgstr "Denominador"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
 msgid  "The divisor"
-msgstr "El divisor"
+msgstr "Número entero usado como denominador."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
 msgid  "Returns a number rounded to a specified multiple"
@@ -757,7 +757,7 @@ msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.3.String.Text
 msgid  "The value at which the function is to be evaluated"
-msgstr "El valor con el que se evalúa la función."
+msgstr "El valor para el que se evalúa la función."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.4.String.Text
 msgid  "N"
@@ -765,7 +765,7 @@ msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.5.String.Text
 msgid  "The order of the Bessel function"
-msgstr "El orden de la función Bessel."
+msgstr "Orden de la función Bessel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.1.String.Text
 msgid  "Returns the Bessel function Jn(x)"
@@ -785,7 +785,7 @@ msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.5.String.Text
 msgid  "The order of the Bessel function"
-msgstr "Orden de la función Bessel"
+msgstr "Orden de la función Bessel."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.1.String.Text
 msgid  "Returns the Bessel function Kn(x)"
@@ -981,7 +981,7 @@ msgstr "Potencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
 msgid  "The decimal number"
-msgstr "Número decimal"
+msgstr "Es el número decimal."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.4.String.Text
 msgid  "Places"
@@ -1073,7 +1073,7 @@ msgstr "Límite inferior"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.3.String.Text
 msgid  "The lower limit for integration"
-msgstr "límite inferior de la integración"
+msgstr "Límite inferior de la integral."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.4.String.Text
 msgid  "Upper limit"
@@ -1213,7 +1213,7 @@ msgstr "Denominador"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.5.String.Text
 msgid  "The divisor"
-msgstr "Número entero usado como denominador."
+msgstr "El divisor"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.1.String.Text
 msgid  "Returns the algebraic form of the exponential of a complex number"
@@ -1517,7 +1517,7 @@ msgstr "Unidad de medida del resultado."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr "Devuelve la depreciación de una cantidad en un periodo en base al método francés de amortización progresiva completa."
+msgstr "Devuelve la depreciación de un bien en un determinado período en base al sistema contable francés."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1525,7 +1525,7 @@ msgstr "Costo"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.3.String.Text
 msgid  "Cost of the asset"
-msgstr "El coste de la inversión."
+msgstr "Coste de la adquisición del bien."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.4.String.Text
 msgid  "Date purchased"
@@ -1537,7 +1537,7 @@ msgstr "Fecha de la adquisición del bien."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.6.String.Text
 msgid  "First period"
-msgstr "Primer periodo"
+msgstr "Primer período"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.7.String.Text
 msgid  "Date the first period ends"
@@ -1561,7 +1561,7 @@ msgstr "Período"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.12.String.Text
 msgid  "Rate"
-msgstr "Interés nominal"
+msgstr "Tasa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.13.String.Text
 msgid  "The rate of depreciation"
@@ -1573,7 +1573,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.15.String.Text
 msgid  "The year basis to be used"
-msgstr "Base anual a usar"
+msgstr "Tipo de base anual a usar."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
@@ -1621,7 +1621,7 @@ msgstr "Período"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.12.String.Text
 msgid  "Rate"
-msgstr "Interés nominal"
+msgstr "Tasa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.13.String.Text
 msgid  "The rate of depreciation"
@@ -1661,15 +1661,15 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
 msgid  "The settlement"
-msgstr "Liquidación"
+msgstr "Fecha de liquidación del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
 msgid  "Rate"
-msgstr "Tasa"
+msgstr "Interés"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.9.String.Text
 msgid  "The rate"
-msgstr "Interés nominal"
+msgstr "Interés"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 msgid  "Par"
@@ -1685,7 +1685,7 @@ msgstr "Frecuencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.13.String.Text
 msgid  "The frequency"
-msgstr "La frecuencia"
+msgstr "El número de cupones a pagar por año."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.14.String.Text
 msgid  "Basis"
@@ -1693,7 +1693,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.15.String.Text
 msgid  "The basis"
-msgstr "Base"
+msgstr "Tipo de base según el cual deben contarse los días."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
@@ -1705,7 +1705,7 @@ msgstr "Emisión"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.3.String.Text
 msgid  "The issue date"
-msgstr "Emisión"
+msgstr "La fecha de emisión del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.4.String.Text
 msgid  "Settlement"
@@ -1713,15 +1713,15 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.5.String.Text
 msgid  "The settlement"
-msgstr "Liquidación"
+msgstr "Fecha de liquidación del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.6.String.Text
 msgid  "Rate"
-msgstr "Tasa"
+msgstr "Interés"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.7.String.Text
 msgid  "The rate"
-msgstr "Interés nominal"
+msgstr "Interés"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.8.String.Text
 msgid  "Par"
@@ -1737,7 +1737,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.11.String.Text
 msgid  "The basis"
-msgstr "Base"
+msgstr "El tipo de base según el cual deben contarse los días."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
@@ -1749,7 +1749,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.3.String.Text
 msgid  "The settlement"
-msgstr "Fecha de liquidación del valor."
+msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 msgid  "Maturity"
@@ -1757,7 +1757,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
 msgid  "The maturity"
-msgstr "La amortización"
+msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
 msgid  "Investment"
@@ -1769,11 +1769,11 @@ msgstr "Inversión"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.8.String.Text
 msgid  "Discount"
-msgstr "Descuento"
+msgstr "TASA.DESC"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.9.String.Text
 msgid  "The discount"
-msgstr "La tasa de descuento del valor."
+msgstr "Es la tasa de descuento de un valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.10.String.Text
 msgid  "Basis"
@@ -1781,7 +1781,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.11.String.Text
 msgid  "The basis"
-msgstr "Tipo de base según el cual deben contarse los días."
+msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.1.String.Text
 msgid  "Returns the discount rate for a security"
@@ -1793,7 +1793,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.3.String.Text
 msgid  "The settlement"
-msgstr "Liquidación"
+msgstr "Fecha de liquidación del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
 msgid  "Maturity"
@@ -1801,23 +1801,23 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
 msgid  "The maturity"
-msgstr "Vencimiento"
+msgstr "La fecha de vencimiento del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.6.String.Text
 msgid  "Price"
-msgstr "Cotización"
+msgstr "Precio"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.7.String.Text
 msgid  "The price"
-msgstr "El precio"
+msgstr "Cotización"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.8.String.Text
 msgid  "Redemption"
-msgstr "Rescate"
+msgstr "Reembolso"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
 msgid  "The redemption value"
-msgstr "El valor de rescate"
+msgstr "Reembolso"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 msgid  "Basis"
@@ -1825,7 +1825,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.11.String.Text
 msgid  "The basis"
-msgstr "El tipo de base según el cual deben contarse los días."
+msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
@@ -1837,7 +1837,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.3.String.Text
 msgid  "The settlement"
-msgstr "Fecha de liquidación del valor."
+msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.4.String.Text
 msgid  "Maturity"
@@ -1845,7 +1845,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.5.String.Text
 msgid  "The maturity"
-msgstr "La fecha de vencimiento del valor."
+msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.6.String.Text
 msgid  "Coupon"
@@ -1861,7 +1861,7 @@ msgstr "Rédito"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.9.String.Text
 msgid  "The yield"
-msgstr "El rendimiento anual del valor."
+msgstr "Rédito"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.10.String.Text
 msgid  "Frequency"
@@ -1869,7 +1869,7 @@ msgstr "Frecuencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.11.String.Text
 msgid  "The frequency"
-msgstr "El número de cupones a pagar por año."
+msgstr "Frecuencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.12.String.Text
 msgid  "Basis"
@@ -1877,7 +1877,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.13.String.Text
 msgid  "The basis"
-msgstr "Base"
+msgstr "El tipo de base en el que deben contarse los días."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.1.String.Text
 msgid  "Returns the effective annual interest rate"
@@ -1909,7 +1909,7 @@ msgstr "Interés"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.3.String.Text
 msgid  "The rate"
-msgstr "Interés"
+msgstr "La tasa de interés del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.4.String.Text
 msgid  "Nper"
@@ -1917,7 +1917,7 @@ msgstr "NPER"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.5.String.Text
 msgid  "Number of payment periods"
-msgstr "Cantidad de periodos de pago"
+msgstr "Cantidad de periodos de pago."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.6.String.Text
 msgid  "Pv"
@@ -1961,7 +1961,7 @@ msgstr "Interés"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.3.String.Text
 msgid  "The rate"
-msgstr "Interés"
+msgstr "Tasa de interés en la fecha de emisión."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.4.String.Text
 msgid  "Nper"
@@ -2013,7 +2013,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.3.String.Text
 msgid  "The settlement"
-msgstr "Liquidación"
+msgstr "Fecha de liquidación del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.4.String.Text
 msgid  "Maturity"
@@ -2021,7 +2021,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.5.String.Text
 msgid  "The maturity"
-msgstr "Vencimiento"
+msgstr "Fecha de vencimiento del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.6.String.Text
 msgid  "Rate"
@@ -2029,7 +2029,7 @@ msgstr "Interés"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.7.String.Text
 msgid  "The rate"
-msgstr "Interés"
+msgstr "Es la tasa de interés en la fecha de emisión."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.8.String.Text
 msgid  "Yield"
@@ -2037,15 +2037,15 @@ msgstr "Rédito"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.9.String.Text
 msgid  "The yield"
-msgstr "El rendimiento anual del valor."
+msgstr "Rendimiento anual del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.10.String.Text
 msgid  "Redemption"
-msgstr "Reembolso"
+msgstr "Devolución"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.11.String.Text
 msgid  "The redemption value"
-msgstr "Reembolso"
+msgstr "Devolución"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.12.String.Text
 msgid  "Frequency"
@@ -2053,7 +2053,7 @@ msgstr "Frecuencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.13.String.Text
 msgid  "The frequency"
-msgstr "El número de cupones a pagar por año."
+msgstr "Frecuencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.14.String.Text
 msgid  "Basis"
@@ -2061,7 +2061,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.15.String.Text
 msgid  "The basis"
-msgstr "Base"
+msgstr "Es el tipo de base según el cual se contarán los días."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
@@ -2073,7 +2073,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.3.String.Text
 msgid  "The settlement"
-msgstr "Liquidación"
+msgstr "Fecha de liquidación del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.4.String.Text
 msgid  "Maturity"
@@ -2081,11 +2081,11 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.5.String.Text
 msgid  "The maturity"
-msgstr "Vencimiento"
+msgstr "Fecha de vencimiento del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.6.String.Text
 msgid  "Discount"
-msgstr "TASA.DESC"
+msgstr "Descuento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.7.String.Text
 msgid  "The discount"
@@ -2097,7 +2097,7 @@ msgstr "Devolución"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.9.String.Text
 msgid  "The redemption value"
-msgstr "Devolución"
+msgstr "El valor de cancelación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.10.String.Text
 msgid  "Basis"
@@ -2105,7 +2105,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.11.String.Text
 msgid  "The basis"
-msgstr "Base"
+msgstr "Es el tipo de base según el cual se contarán los días."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
@@ -2117,7 +2117,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.3.String.Text
 msgid  "The settlement"
-msgstr "Fecha de liquidación del valor."
+msgstr "Es la fecha de liquidación del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.4.String.Text
 msgid  "Maturity"
@@ -2125,7 +2125,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.5.String.Text
 msgid  "The maturity"
-msgstr "Vencimiento"
+msgstr "La fecha de vencimiento del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.6.String.Text
 msgid  "Issue"
@@ -2133,7 +2133,7 @@ msgstr "Emisión"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.7.String.Text
 msgid  "The issue date"
-msgstr "Emisión"
+msgstr "Fecha de emisión del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.8.String.Text
 msgid  "Rate"
@@ -2149,7 +2149,7 @@ msgstr "Rédito"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.11.String.Text
 msgid  "The yield"
-msgstr "Rédito"
+msgstr "El rendimiento anual del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.12.String.Text
 msgid  "Basis"
@@ -2157,7 +2157,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.13.String.Text
 msgid  "The basis"
-msgstr "Base"
+msgstr "El tipo de base para contar los días."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
@@ -2169,7 +2169,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.3.String.Text
 msgid  "The settlement"
-msgstr "Liquidación"
+msgstr "Es la fecha de liquidación del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.4.String.Text
 msgid  "Maturity"
@@ -2177,7 +2177,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.5.String.Text
 msgid  "The maturity"
-msgstr "Vencimiento"
+msgstr "Es la fecha de vencimiento del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.6.String.Text
 msgid  "Coupon"
@@ -2201,7 +2201,7 @@ msgstr "Frecuencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.11.String.Text
 msgid  "The frequency"
-msgstr "El número de cupones a pagar por año."
+msgstr "Frecuencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.12.String.Text
 msgid  "Basis"
@@ -2209,7 +2209,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.13.String.Text
 msgid  "The basis"
-msgstr "Base"
+msgstr "El tipo de base con el que se contarán los días."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Nominal.1.String.Text
 msgid  "Returns the annual nominal interest rate"
@@ -2281,7 +2281,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.3.String.Text
 msgid  "The settlement"
-msgstr "Fecha de liquidación del valor."
+msgstr "Es la fecha de liquidación del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.4.String.Text
 msgid  "Maturity"
@@ -2289,7 +2289,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.5.String.Text
 msgid  "The maturity"
-msgstr "Fecha de vencimiento del valor."
+msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.6.String.Text
 msgid  "Rate"
@@ -2301,11 +2301,11 @@ msgstr "La tasa de interés del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.8.String.Text
 msgid  "Price"
-msgstr "Cotización"
+msgstr "Precio"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.9.String.Text
 msgid  "The price"
-msgstr "Cotización"
+msgstr "Es es precio de la letra."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.10.String.Text
 msgid  "Redemption"
@@ -2313,7 +2313,7 @@ msgstr "Devolución"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.11.String.Text
 msgid  "The redemption value"
-msgstr "Devolución"
+msgstr "Devuelve el rendimiento de un valor con el último período irregular."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.12.String.Text
 msgid  "Frequency"
@@ -2321,7 +2321,7 @@ msgstr "Frecuencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.13.String.Text
 msgid  "The frequency"
-msgstr "Frecuencia"
+msgstr "El número de interés en cupones a pagar anualmente."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.14.String.Text
 msgid  "Basis"
@@ -2329,7 +2329,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.15.String.Text
 msgid  "The basis"
-msgstr "El tipo de base en el que deben contarse los días."
+msgstr "El tipo de base según el cual se contarán los días."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.1.String.Text
 msgid  "Returns the annual yield for a discounted security"
@@ -2341,7 +2341,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.3.String.Text
 msgid  "The settlement"
-msgstr "Liquidación"
+msgstr "Fecha de liquidación del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.4.String.Text
 msgid  "Maturity"
@@ -2349,7 +2349,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.5.String.Text
 msgid  "The maturity"
-msgstr "Vencimiento"
+msgstr "Fecha de vencimiento del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.6.String.Text
 msgid  "Price"
@@ -2357,7 +2357,7 @@ msgstr "Cotización"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.7.String.Text
 msgid  "The price"
-msgstr "Cotización"
+msgstr "El precio del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.8.String.Text
 msgid  "Redemption"
@@ -2365,7 +2365,7 @@ msgstr "Devolución"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.9.String.Text
 msgid  "The redemption value"
-msgstr "El valor de cancelación"
+msgstr "El valor de devolución del título bursátil."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.10.String.Text
 msgid  "Basis"
@@ -2373,7 +2373,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.11.String.Text
 msgid  "The basis"
-msgstr "Base"
+msgstr "El tipo de base según el cual deben ser contados los días."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.1.String.Text
 msgid  "Returns the annual yield of a security that pays interest at maturity"
@@ -2385,7 +2385,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.3.String.Text
 msgid  "The settlement"
-msgstr "Fecha de liquidación del valor."
+msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.4.String.Text
 msgid  "Maturity"
@@ -2393,7 +2393,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.5.String.Text
 msgid  "The maturity"
-msgstr "Fecha de vencimiento del valor."
+msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.6.String.Text
 msgid  "Issue"
@@ -2401,7 +2401,7 @@ msgstr "Emisión"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.7.String.Text
 msgid  "The issue date"
-msgstr "La fecha de emisión del valor."
+msgstr "Fecha de la emisión del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.8.String.Text
 msgid  "Rate"
@@ -2417,7 +2417,7 @@ msgstr "Precio"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.11.String.Text
 msgid  "The price"
-msgstr "Es es precio de la letra."
+msgstr "Es el precio del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.12.String.Text
 msgid  "Basis"
@@ -2425,7 +2425,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.13.String.Text
 msgid  "The basis"
-msgstr "Base"
+msgstr "El tipo de base según el cual se contarán los días."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.1.String.Text
 msgid  "Returns the bond-equivalent yield for a treasury bill"
@@ -2437,7 +2437,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.3.String.Text
 msgid  "The settlement"
-msgstr "Es la fecha de liquidación del valor."
+msgstr "Fecha de liquidación de la letra."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.4.String.Text
 msgid  "Maturity"
@@ -2445,7 +2445,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.5.String.Text
 msgid  "The maturity"
-msgstr "Vencimiento"
+msgstr "Es la fecha de vencimiento de la letra."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.6.String.Text
 msgid  "Discount"
@@ -2453,7 +2453,7 @@ msgstr "Descuento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.7.String.Text
 msgid  "The discount rate"
-msgstr "La tasa de descuento de la letra."
+msgstr "Es la tasa de descuento de la letra."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.1.String.Text
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
@@ -2465,7 +2465,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.3.String.Text
 msgid  "The settlement"
-msgstr "Es la fecha de liquidación del valor."
+msgstr "Fecha de liquidación de la letra."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.4.String.Text
 msgid  "Maturity"
@@ -2473,7 +2473,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.5.String.Text
 msgid  "The maturity"
-msgstr "La fecha de vencimiento del valor."
+msgstr "Es la fecha de vencimiento de la letra."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.6.String.Text
 msgid  "Discount"
@@ -2493,7 +2493,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillyield.3.String.Text
 msgid  "The settlement"
-msgstr "Es la fecha de liquidación del valor."
+msgstr "Es la fecha de liquidación de la letra."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillyield.4.String.Text
 msgid  "Maturity"
@@ -2501,7 +2501,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillyield.5.String.Text
 msgid  "The maturity"
-msgstr "Es la fecha de vencimiento del valor."
+msgstr "Es la fecha de vencimiento de la letra."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillyield.6.String.Text
 msgid  "Price"
@@ -2521,7 +2521,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.3.String.Text
 msgid  "The settlement"
-msgstr "Liquidación"
+msgstr "Es la fecha de liquidación del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.4.String.Text
 msgid  "Maturity"
@@ -2529,7 +2529,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.5.String.Text
 msgid  "The maturity"
-msgstr "Vencimiento"
+msgstr "Es la fecha de vencimiento del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.6.String.Text
 msgid  "Issue"
@@ -2569,7 +2569,7 @@ msgstr "Devolución"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.15.String.Text
 msgid  "The redemption value"
-msgstr "Devuelve el rendimiento de un valor con el último período irregular."
+msgstr "El rendimiento del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.16.String.Text
 msgid  "Frequency"
@@ -2577,7 +2577,7 @@ msgstr "Frecuencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.17.String.Text
 msgid  "The frequency"
-msgstr "Frecuencia"
+msgstr "El número de cupones a pagar anualmente."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.18.String.Text
 msgid  "Basis"
@@ -2597,7 +2597,7 @@ msgstr "Liquidación"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.3.String.Text
 msgid  "The settlement"
-msgstr "Fecha de liquidación del valor."
+msgstr "Es la fecha de liquidación del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.4.String.Text
 msgid  "Maturity"
@@ -2605,7 +2605,7 @@ msgstr "Vencimiento"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.5.String.Text
 msgid  "The maturity"
-msgstr "Fecha de vencimiento del valor."
+msgstr "La fecha de vencimiento del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.6.String.Text
 msgid  "Issue"
@@ -2645,7 +2645,7 @@ msgstr "Devolución"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.15.String.Text
 msgid  "The redemption value"
-msgstr "El valor de devolución del título bursátil."
+msgstr "Devolución"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.16.String.Text
 msgid  "Frequency"
@@ -2653,7 +2653,7 @@ msgstr "Frecuencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.17.String.Text
 msgid  "The frequency"
-msgstr "Frecuencia"
+msgstr "El número de cupones a pagar por año."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.18.String.Text
 msgid  "Basis"
@@ -2689,7 +2689,7 @@ msgstr "Último plazo de interés"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.7.String.Text
 msgid  "The last interest date"
-msgstr "La fecha del último cupón."
+msgstr "Último plazo de interés"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.8.String.Text
 msgid  "Rate"
@@ -2713,7 +2713,7 @@ msgstr "Devolución"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.13.String.Text
 msgid  "The redemption value"
-msgstr "El rendimiento del valor."
+msgstr "Es el rendimiento del valor."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.14.String.Text
 msgid  "Frequency"
@@ -2721,7 +2721,7 @@ msgstr "Frecuencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.15.String.Text
 msgid  "The frequency"
-msgstr "El número de interés en cupones a pagar anualmente."
+msgstr "Frecuencia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.16.String.Text
 msgid  "Basis"
@@ -3145,7 +3145,7 @@ msgstr "Fecha inicial"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.3.String.Text
 msgid  "First day of the period"
-msgstr "Primer día del periodo"
+msgstr "Primer día del periodo."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.4.String.Text
 msgid  "End date"

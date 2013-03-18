@@ -971,14 +971,12 @@ msgid  "~Delete"
 msgstr "~Skrap"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
-#, fuzzy
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "Die ImageMap is gewysig.\nWil u die veranderings stoor?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
-#, fuzzy
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "Die ImageMap is gewysig.\nWil u die veranderings stoor?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 #, fuzzy
@@ -1081,9 +1079,8 @@ msgid  "~More..."
 msgstr "~Meer..."
 
 #: source/dialog/hdft.src#RID_SVXQBX_DELETE_HEADFOOT.QueryBox.Message
-#, fuzzy
-msgid  "Removing headers or footers deletes the contents.\nDo you want to delete this text?"
-msgstr "As u koppe en voete verwyder, word die inhoud geskrap.\nWil u hierdie teks skrap?"
+msgid  "Removing headers or footers deletes the contents.\\nDo you want to delete this text?"
+msgstr ""
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_LEFT.String.Text
 #, fuzzy
@@ -1296,10 +1293,12 @@ msgid  "Line of text"
 msgstr "Teksreël"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.GRP_Q.FixedLine.Text
+#, fuzzy
 msgid  "Colors"
 msgstr "Kleure"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.FT_1.FixedText.Text
+#, fuzzy
 msgid  "Source color"
 msgstr "Bronkleur"
 
@@ -1386,9 +1385,8 @@ msgid  "%PRODUCTNAME Document Recovery"
 msgstr "%PRODUCTNAME-dokumentherwinning"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
-#, fuzzy
-msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\n\nThe 'Status' column shows whether the document could be recovered."
-msgstr "Druk 'Begin herwinning' om die herwinningsproses van die dokumente hier onder te begin.\n\nDie 'Status'-kolom wys of die dokument herwin kon word."
+msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 #, fuzzy
@@ -1401,9 +1399,8 @@ msgid  "Status of recovered documents:"
 msgstr "Status van herwonne dokumente:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "Document Name\tStatus"
-msgstr "Dokumentnaam\tStatus"
+msgid  "Document Name\\tStatus"
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 #, fuzzy
@@ -1451,9 +1448,8 @@ msgid  "A report of the crash was created to help us identify the reason why %PR
 msgstr "'n Verslag van die omval is geskep om ons te help om die rede te bepaal hoekom %PRODUCTNAME omgeval het. Kliek 'Volgende' om na die Foutrapporteerhulpmiddel te gaan, of druk 'Kanselleer' om hierdie stap oor te slaan."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
-#, fuzzy
-msgid  "Recovery of your documents was finished.\nClick 'Finish' to see your documents."
-msgstr "Herwinning van u dokumente is afgehandel.\nKliek 'Klaar' om u dokumente te sien."
+msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 #, fuzzy
@@ -1466,9 +1462,8 @@ msgid  "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 msgstr "Is u seker u wil die %PRODUCTNAME-dokumentherwinning kanselleer?"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
-#, fuzzy
-msgid  "The automatic recovery process was interrupted.\n\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr "Die outomatiese herwinningsproses is onderbreek.\n\nDie dokumente wat hieronder gelys word, sal in die vouer wat hier onder aangegee word, gestoor word wanneer u 'Stoor' kliek. Kliek 'Kanselleer' om die slimmerd af te sluit sonder om die dokumente te stoor."
+msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 #, fuzzy
@@ -1496,7 +1491,7 @@ msgid  "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 msgstr "Welkom by die %PRODUCTNAME %PRODUCTVERSION-foutverslag"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
-msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\n\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\nCustomer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\nwww.oracle.com/html/services-privacy-policy.html"
+msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
 msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
@@ -1599,9 +1594,8 @@ msgid  "~Port"
 msgstr "~Poort"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
-#, fuzzy
-msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "Die %PRODUCTNAME-foutverslagnutsding moet aan die internet gekoppel wees om foutverslae te kan stuur.\nBesighede gebruik dikwels instaanbedieners saam met 'n brandmuur om die netwerk te beskerm.\nAs dit op u situasie van toepassing is, moet u die adres en poort vir die bediener spesifiseer."
+msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 #, fuzzy
@@ -3097,9 +3091,8 @@ msgid  "As Button"
 msgstr "As knoppie"
 
 #: source/dialog/hyprlink.src#RID_SVXQB_DONTEXIST.QueryBox.Message
-#, fuzzy
-msgid  "This URL does not exist.\nInsert anyway?"
-msgstr "Hierdie URL bestaan nie.\nNogtans invoeg?"
+msgid  "This URL does not exist.\\nInsert anyway?"
+msgstr ""
 
 #: source/dialog/sdstring.src#RID_SVXSTR_SOLID.String.Text
 #, fuzzy
@@ -3970,9 +3963,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
-#, fuzzy
-msgid  "The contour has been modified.\nDo you want to save the changes?"
-msgstr "Die kontoer is verander.\nWil u die wysigings stoor?"
+msgid  "The contour has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 #, fuzzy
@@ -3980,9 +3972,8 @@ msgid  "Do you want to create a new contour?"
 msgstr "Wil u 'n nuwe kontoer skep?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
-#, fuzzy
-msgid  "Setting a new workspace will\ncause the contour to be deleted.\nAre you sure you want to continue?"
-msgstr "As u 'n nuwe werkspasie instel,\nsal die kontoer geskrap word.\nIs u seker u wil voortgaan?"
+msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 #, fuzzy
@@ -4554,418 +4545,522 @@ msgid  "Switch"
 msgstr ""
 
 #: source/engine3d/string3d.src#RID_SVX_3D_CREATE_LATHE.String.Text
+#, fuzzy
 msgid  "Create 3D rotation object"
 msgstr "Skep 3-D-rotasieobjek"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXCHANGE_PASTE.String.Text
+#, fuzzy
 msgid  "Insert object(s)"
 msgstr "Voeg objek(te) in"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_SEGMENTS.String.Text
+#, fuzzy
 msgid  "Number of segments"
 msgstr "Getal segmente"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_DEEPTH.String.Text
+#, fuzzy
 msgid  "Object depth"
 msgstr "Objekdiepte"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_FOCAL.String.Text
+#, fuzzy
 msgid  "Focal length"
 msgstr "Fokuslengte"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_CAMPOS.String.Text
+#, fuzzy
 msgid  "Camera position"
 msgstr "Kameraposisie"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ROTATE.String.Text
+#, fuzzy
 msgid  "Rotate 3D object"
 msgstr "Roteer 3-D-objek"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXTRUDE.String.Text
+#, fuzzy
 msgid  "Create extrusion object"
 msgstr "Skep ekstrusieobjek"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_LATHE.String.Text
+#, fuzzy
 msgid  "Create rotation object"
 msgstr "Skep rotasieobjek"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_BREAK_LATHE.String.Text
+#, fuzzy
 msgid  "Split 3D object"
 msgstr "Verdeel 3-D-objek"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ATTRIBUTES.String.Text
+#, fuzzy
 msgid  "3D Attributes"
 msgstr "3-D-attribute"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.DockingWindow.Text
+#, fuzzy
 msgid  "3D Effects"
 msgstr "3-D-effekte"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Geometry"
 msgstr "Geometrie"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Shading"
 msgstr "Skakering"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Illumination"
 msgstr "Verligting"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Textures"
 msgstr "Teksture"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Material"
 msgstr "Materiaal"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Update"
 msgstr "Bywerk"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_ASSIGN.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Assign"
 msgstr "Wys toe"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_CHANGE_TO_3D.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Convert to 3D"
 msgstr "Skakel om in 3D"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LATHE_OBJ.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Convert to Lathe Object"
 msgstr "Skakel om in draaibankobjek"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_PERSPECTIVE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Perspective On/Off"
 msgstr "Perspektief aan/af"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_GEOMETRIE.FixedLine.Text
+#, fuzzy
 msgid  "Geometry"
 msgstr "Geometrie"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_PERCENT_DIAGONAL.FixedText.Text
+#, fuzzy
 msgid  "R~ounded edges"
 msgstr "Ger~onde kante"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_BACKSCALE.FixedText.Text
+#, fuzzy
 msgid  "~Scaled depth"
 msgstr "~Geskaleerde diepte"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_END_ANGLE.FixedText.Text
+#, fuzzy
 msgid  "~Rotation angle"
 msgstr "~Rotasiehoek"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
+#, fuzzy
 msgid  " degree(s)"
 msgstr " graad/grade"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
+#, fuzzy
 msgid  "~Depth"
 msgstr "~Diepte"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SEGMENTS.FixedLine.Text
+#, fuzzy
 msgid  "Segments"
 msgstr "Segmente"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_HORIZONTAL.FixedText.Text
+#, fuzzy
 msgid  "~Horizontal"
 msgstr "~Horisontaal"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_VERTICAL.FixedText.Text
+#, fuzzy
 msgid  "~Vertical"
 msgstr "~Vertikaal"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_NORMALS.FixedLine.Text
+#, fuzzy
 msgid  "Normals"
 msgstr "Normale"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "Objekspesifiek"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Flat"
 msgstr "Plat"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Spherical"
 msgstr "Sferies"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_INVERT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Invert Normals"
 msgstr "Keer normale om"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TWO_SIDED_LIGHTING.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Double-Sided Illumination"
 msgstr "Tweesydige beligting"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_DOUBLE_SIDED.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Double-Sided"
 msgstr "Tweesydig"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SHADEMODE.FixedText.Text
+#, fuzzy
 msgid  "~Mode"
 msgstr "~Modus"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item1.StringList.item
+#, fuzzy
 msgid  "Flat"
 msgstr "Plat"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item2.StringList.item
+#, fuzzy
 msgid  "Phong"
 msgstr "Phong"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item3.StringList.item
+#, fuzzy
 msgid  "Gouraud"
 msgstr "Gouraud"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SHADOW.FixedLine.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Skadu"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SHADOW_3D.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "3D Shadowing On/Off"
 msgstr "3-D-skaduwees aan/af"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SLANT.FixedText.Text
+#, fuzzy
 msgid  "S~urface angle"
 msgstr "O~ppervlaktehoek"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_SLANT.MetricField.CustomUnitText
+#, fuzzy
 msgid  " degree(s)"
 msgstr " graad/grade"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_CAMERA.FixedLine.Text
+#, fuzzy
 msgid  "Camera"
 msgstr "Kamera"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DISTANCE.FixedText.Text
+#, fuzzy
 msgid  "~Distance"
 msgstr "A~fstand"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_FOCAL_LENGTH.FixedText.Text
+#, fuzzy
 msgid  "~Focal length"
 msgstr "~Fokuslengte"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_REPRESENTATION.FixedLine.Text
+#, fuzzy
 msgid  "Shading"
 msgstr "Skakering"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_LIGHTSOURCE.FixedText.Text
+#, fuzzy
 msgid  "~Light source"
 msgstr "~Ligbron"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_1.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 1"
 msgstr "Ligbron 1"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_2.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 2"
 msgstr "Ligbron 2"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_3.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 3"
 msgstr "Ligbron 3"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_4.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 4"
 msgstr "Ligbron 4"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_5.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 5"
 msgstr "Ligbron 5"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_6.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 6"
 msgstr "Ligbron 6"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_7.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 7"
 msgstr "Ligbron 7"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_8.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 8"
 msgstr "Ligbron 8"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Kleuredialoog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
+#, fuzzy
 msgid  "~Ambient light"
 msgstr "~Omgewingslig"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Kleuredialoog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
+#, fuzzy
 msgid  "Illumination"
 msgstr "Verligting"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_KIND.FixedText.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "~Soort"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_LUMINANCE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Black & White"
 msgstr "Swart-en-wit"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Color"
 msgstr "Kleur"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_MODE.FixedText.Text
+#, fuzzy
 msgid  "~Mode"
 msgstr "~Modus"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_REPLACE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Only Texture"
 msgstr "Slegs tekstuur"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_MODULATE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Texture and Shading"
 msgstr "Tekstuur en inkleuring"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_BLEND.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Texture, Shadow and Color"
 msgstr "Tekstuur, skadu en kleur"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_X.FixedText.Text
+#, fuzzy
 msgid  "~Projection X"
 msgstr "~Projeksie X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "Objekspesifiek"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Parallel"
 msgstr "Parallel"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Circular"
 msgstr "Rond"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_Y.FixedText.Text
+#, fuzzy
 msgid  "P~rojection Y"
 msgstr "P~rojeksie Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "Objekspesifiek"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Parallel"
 msgstr "Parallel"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Circular"
 msgstr "Rond"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_FILTER.FixedText.Text
+#, fuzzy
 msgid  "~Filtering"
 msgstr "~Filtrering"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_FILTER.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Filtering On/Off"
 msgstr "Filtering aan/af"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_TEXTURE.FixedLine.Text
+#, fuzzy
 msgid  "Textures"
 msgstr "Teksture"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_FAVORITES.FixedText.Text
+#, fuzzy
 msgid  "~Favorites"
 msgstr "~Gunstelinge"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item1.StringList.item
+#, fuzzy
 msgid  "User-defined"
 msgstr "Gebruikergedefinieer"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item2.StringList.item
+#, fuzzy
 msgid  "Metal"
 msgstr "Metaal"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item3.StringList.item
+#, fuzzy
 msgid  "Gold"
 msgstr "Goud"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item4.StringList.item
+#, fuzzy
 msgid  "Chrome"
 msgstr "Chroom"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item5.StringList.item
+#, fuzzy
 msgid  "Plastic"
 msgstr "Plastiek"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item6.StringList.item
+#, fuzzy
 msgid  "Wood"
 msgstr "Hout"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_COLOR.FixedText.Text
+#, fuzzy
 msgid  "~Object color"
 msgstr "~Objekkleur"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Kleuredialoog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
+#, fuzzy
 msgid  "~Illumination color"
 msgstr "~Beligtingskleur"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_EMISSION_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Kleuredialoog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MAT_SPECULAR.FixedLine.Text
+#, fuzzy
 msgid  "Specular"
 msgstr "Spekulêr"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR.FixedText.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "~Kleur"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SPECULAR_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Kleuredialoog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR_INTENSITY.FixedText.Text
+#, fuzzy
 msgid  "I~ntensity"
 msgstr "I~ntensiteit"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MATERIAL.FixedLine.Text
+#, fuzzy
 msgid  "Material"
 msgstr "Materiaal"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FAVORITE.String.Text
+#, fuzzy
 msgid  "Favorite"
 msgstr "Gunsteling"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_X.String.Text
+#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Y.String.Text
+#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Z.String.Text
+#, fuzzy
 msgid  "Z"
 msgstr "Z"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_R.String.Text
+#, fuzzy
 msgid  "R:"
 msgstr "R:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_G.String.Text
+#, fuzzy
 msgid  "G:"
 msgstr "G:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_B.String.Text
+#, fuzzy
 msgid  "B:"
 msgstr "B:"
 
@@ -4974,678 +5069,844 @@ msgid  "Color Light Preview"
 msgstr ""
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_DELETEROWS.MenuItem.Text
+#, fuzzy
 msgid  "Delete Rows"
 msgstr "Skrap rye"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_SAVE.MenuItem.Text
+#, fuzzy
 msgid  "Save Record"
 msgstr "Stoor rekord"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_UNDO.MenuItem.Text
+#, fuzzy
 msgid  "Undo: Data entry"
 msgstr "Ontdoen data-inskrywing"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.MenuItem.Text
+#, fuzzy
 msgid  "Insert ~Column"
 msgstr "Voeg ~kolom in"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Text Box"
 msgstr "Tekskassie"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CHECKBOX.MenuItem.Text
+#, fuzzy
 msgid  "Check Box"
 msgstr "Merkblokkie"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_COMBOBOX.MenuItem.Text
+#, fuzzy
 msgid  "Combo Box"
 msgstr "Kombinasiekassie"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_LISTBOX.MenuItem.Text
+#, fuzzy
 msgid  "List Box"
 msgstr "Lyskassie"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_DATEFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Date Field"
 msgstr "Datum-veld"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TIMEFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Time Field"
 msgstr "Tyd-veld"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_NUMERICFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Numeric Field"
 msgstr "Numeriese veld"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CURRENCYFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Currency Field"
 msgstr "Geldeenheidveld"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_PATTERNFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Pattern Field"
 msgstr "Patroonveld"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_FORMATTEDFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Formatted Field"
 msgstr "Geformateerde veld"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TWOFIELDS_DATE_N_TIME.MenuItem.Text
+#, fuzzy
 msgid  "Date and Time Field"
 msgstr "Datum- en tydveld"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_CHANGECOL.MenuItem.Text
+#, fuzzy
 msgid  "~Replace with"
 msgstr "~Vervang met"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_DELETECOL.MenuItem.Text
+#, fuzzy
 msgid  "Delete Column"
 msgstr "Skrap kolom"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_HIDECOL.MenuItem.Text
+#, fuzzy
 msgid  "~Hide Column"
 msgstr "~Versteek kolom"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWCOLS_MORE.MenuItem.Text
+#, fuzzy
 msgid  "~More..."
 msgstr "~Meer..."
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWALLCOLS.MenuItem.Text
+#, fuzzy
 msgid  "~All"
 msgstr "~Alles"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.MenuItem.Text
+#, fuzzy
 msgid  "~Show Columns"
 msgstr "~Vertoon kolomme"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
+#, fuzzy
 msgid  "Column..."
 msgstr "Kolom..."
 
 #: source/form/fmstring.src#RID_ERR_CONTEXT_ADDFORM.String.Text
+#, fuzzy
 msgid  "Error while creating form"
 msgstr "Fout tydens skep van vorm"
 
 #: source/form/fmstring.src#RID_ERR_FIELDREQUIRED.String.Text
+#, fuzzy
 msgid  "Input required in field '#'. Please enter a value."
 msgstr "Toevoer benodig in veld '#'. Tik asseblief 'n waarde in."
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
-msgid  "Entry already exists.\nPlease choose another name."
-msgstr "Inskrywing bestaan reeds.\nKies asseblief 'n ander naam."
+msgid  "Entry already exists.\\nPlease choose another name."
+msgstr ""
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
+#, fuzzy
 msgid  "Forms"
 msgstr "Vorms"
 
 #: source/form/fmstring.src#RID_STR_NO_PROPERTIES.String.Text
+#, fuzzy
 msgid  "No control selected"
 msgstr "Geen beheer geselekteer nie"
 
 #: source/form/fmstring.src#RID_STR_PROPERTIES_CONTROL.String.Text
+#, fuzzy
 msgid  "Properties: "
 msgstr "Eienskappe: "
 
 #: source/form/fmstring.src#RID_STR_PROPERTIES_FORM.String.Text
+#, fuzzy
 msgid  "Form Properties"
 msgstr "Vormeienskappe"
 
 #: source/form/fmstring.src#RID_STR_FMEXPLORER.String.Text
+#, fuzzy
 msgid  "Form Navigator"
 msgstr "Vormnavigator"
 
 #: source/form/fmstring.src#RID_STR_FORM.String.Text
+#, fuzzy
 msgid  "Form"
 msgstr "Vorm"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.1.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Tabel"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.2.String.Text
+#, fuzzy
 msgid  "Query"
 msgstr "Navraag"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.3.String.Text
+#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/form/fmstring.src#RID_STR_STDFORMNAME.String.Text
+#, fuzzy
 msgid  "Form"
 msgstr "Vorm"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_HIDDEN.String.Text
+#, fuzzy
 msgid  "Hidden Control"
 msgstr "Versteekte kontrole"
 
 #: source/form/fmstring.src#RID_STR_CONTROL.String.Text
+#, fuzzy
 msgid  "Control"
 msgstr "Beheer"
 
 #: source/form/fmstring.src#RID_STR_REC_TEXT.String.Text
+#, fuzzy
 msgid  "Record"
 msgstr "Rekord"
 
 #: source/form/fmstring.src#RID_STR_REC_FROM_TEXT.String.Text
+#, fuzzy
 msgid  "of"
 msgstr "van"
 
 #: source/form/fmstring.src#RID_STR_FIELDSELECTION.String.Text
+#, fuzzy
 msgid  "Add field:"
 msgstr "Voeg veld by:"
 
 #: source/form/fmstring.src#RID_STR_WRITEERROR.String.Text
+#, fuzzy
 msgid  "Error writing data to database"
 msgstr "Kan nie data na databasis skryf nie"
 
 #: source/form/fmstring.src#RID_STR_SYNTAXERROR.String.Text
+#, fuzzy
 msgid  "Syntax error in query expression"
 msgstr "Sintaksfout in navraaguitdrukking"
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM_RECORD.String.Text
+#, fuzzy
 msgid  "You intend to delete 1 record."
 msgstr "U beoog om 1 rekord te skrap."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM_RECORDS.String.Text
+#, fuzzy
 msgid  "# records will be deleted."
 msgstr "# rekords sal geskrap word."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
-msgid  "If you click Yes, you won't be able to undo this operation.\nDo you want to continue anyway?"
+msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
 msgstr ""
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
+#, fuzzy
 msgid  "Choose an entry from the list or enter a text corresponding to one of the list items."
 msgstr "Kies 'n inskrywing uit die lys of tik 'n teks in wat met een van die lysitems ooreenstem."
 
 #: source/form/fmstring.src#RID_STR_GROUPBOX.String.Text
+#, fuzzy
 msgid  "Frame element"
 msgstr "Raamelement"
 
 #: source/form/fmstring.src#RID_STR_NAVIGATION.String.Text
+#, fuzzy
 msgid  "Navigation"
 msgstr "Navigasie"
 
 #: source/form/fmstring.src#RID_STR_NAVIGATIONBAR.String.Text
+#, fuzzy
 msgid  "Navigation bar"
 msgstr "Navigasiebalk"
 
 #: source/form/fmstring.src#RID_STR_COLUMN.String.Text
+#, fuzzy
 msgid  "Col"
 msgstr "Kol"
 
 #: source/form/fmstring.src#RID_STR_UNDO_PROPERTY.String.Text
+#, fuzzy
 msgid  "Set property '#'"
 msgstr "Stel eienskap '#' op"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_INSERT.String.Text
+#, fuzzy
 msgid  "Insert in container"
 msgstr "Voeg in houer in"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REMOVE.String.Text
+#, fuzzy
 msgid  "Delete #"
 msgstr "Skrap #"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REMOVE_MULTIPLE.String.Text
+#, fuzzy
 msgid  "Delete # objects"
 msgstr "Skrap # objekte"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REPLACE.String.Text
+#, fuzzy
 msgid  "Replace a container element"
 msgstr "Vervang 'n houerelement"
 
 #: source/form/fmstring.src#RID_STR_UNDO_DELETE_LOGICAL.String.Text
+#, fuzzy
 msgid  "Delete structure"
 msgstr "Skrap struktuur"
 
 #: source/form/fmstring.src#RID_STR_UNDO_MODEL_REPLACE.String.Text
+#, fuzzy
 msgid  "Replace Control"
 msgstr "Vervang beheer"
 
 #: source/form/fmstring.src#RID_STR_DATE.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "Datum"
 
 #: source/form/fmstring.src#RID_STR_TIME.String.Text
+#, fuzzy
 msgid  "Time"
 msgstr "Tyd"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
+#, fuzzy
 msgid  "Push Button"
 msgstr "Druk knoppie"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
+#, fuzzy
 msgid  "Option Button"
 msgstr "Opsieknoppie"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
+#, fuzzy
 msgid  "Check Box"
 msgstr "Merkblokkie"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+#, fuzzy
 msgid  "Label Field"
 msgstr "Etiketveld"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
+#, fuzzy
 msgid  "Group Box"
 msgstr "Groepkassie"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_EDIT.String.Text
+#, fuzzy
 msgid  "Text Box"
 msgstr "Tekskassie"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+#, fuzzy
 msgid  "Formatted Field"
 msgstr "Geformateerde veld"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_LISTBOX.String.Text
+#, fuzzy
 msgid  "List Box"
 msgstr "Lyskassie"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
+#, fuzzy
 msgid  "Combo Box"
 msgstr "Kombinasiekassie"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
+#, fuzzy
 msgid  "Image Button"
 msgstr "Beeldknoppie"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+#, fuzzy
 msgid  "Image Control"
 msgstr "Beeldbeheer"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
+#, fuzzy
 msgid  "File Selection"
 msgstr "Lêerseleksie"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
+#, fuzzy
 msgid  "Date Field"
 msgstr "Datum-veld"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
+#, fuzzy
 msgid  "Time Field"
 msgstr "Tyd-veld"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
+#, fuzzy
 msgid  "Numeric Field"
 msgstr "Numeriese veld"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
+#, fuzzy
 msgid  "Currency Field"
 msgstr "Geldeenheidveld"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
+#, fuzzy
 msgid  "Pattern Field"
 msgstr "Patroonveld"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_DBGRID.String.Text
+#, fuzzy
 msgid  "Table Control "
 msgstr "Tabelbeheer "
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_SCROLLBAR.String.Text
+#, fuzzy
 msgid  "Scrollbar"
 msgstr "Rolstaaf"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_SPINBUTTON.String.Text
+#, fuzzy
 msgid  "Spin Button"
 msgstr "Spinknoppie"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_NAVBAR.String.Text
+#, fuzzy
 msgid  "Navigation Bar"
 msgstr "Navigasiebalk"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_MULTISELECT.String.Text
+#, fuzzy
 msgid  "Multiselection"
 msgstr "Veelvoudige seleksie"
 
 #: source/form/fmstring.src#RID_STR_NODATACONTROLS.String.Text
+#, fuzzy
 msgid  "No data-related controls in the current form!"
 msgstr "Geen dataverwante beheerinstrumente in huidige vorm nie!"
 
 #: source/form/fmstring.src#RID_STR_POSTFIX_DATE.String.Text
+#, fuzzy
 msgid  " (Date)"
 msgstr " (Datum)"
 
 #: source/form/fmstring.src#RID_STR_POSTFIX_TIME.String.Text
+#, fuzzy
 msgid  " (Time)"
 msgstr " (Tyd)"
 
 #: source/form/fmstring.src#RID_STR_FILTER_NAVIGATOR.String.Text
+#, fuzzy
 msgid  "Filter navigator"
 msgstr "Filternavigator"
 
 #: source/form/fmstring.src#RID_STR_FILTER_FILTER_FOR.String.Text
+#, fuzzy
 msgid  "Filter for"
 msgstr "Filter vir"
 
 #: source/form/fmstring.src#RID_STR_FILTER_FILTER_OR.String.Text
+#, fuzzy
 msgid  "Or"
 msgstr "Of"
 
 #: source/form/fmstring.src#RID_STR_NOCONTROLS_FOR_EXTERNALDISPLAY.String.Text
+#, fuzzy
 msgid  "Valid bound controls which can be used in the table view do not exist in the current form."
 msgstr "Geldige gebinde beheerinstrumente wat in die tabelaansig gebruik kan word bestaan nie in die huidige vorm nie."
 
 #: source/form/fmstring.src#RID_STR_AUTOFIELD.String.Text
+#, fuzzy
 msgid  "<AutoField>"
 msgstr "<OutoVeld>"
 
 #: source/form/fmstring.src#RID_QRY_SAVEMODIFIED.QueryBox.Message
-msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr "Die inhoud van die huidige vorm is gewysig.\nWil u u wysigings stoor?"
+msgid  "The content of the current form has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.1.String.Text
+#, fuzzy
 msgid  "LIKE"
 msgstr "SOOS"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.2.String.Text
+#, fuzzy
 msgid  "NOT"
 msgstr "NOT"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.3.String.Text
+#, fuzzy
 msgid  "EMPTY"
 msgstr "LEEG"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.4.String.Text
+#, fuzzy
 msgid  "TRUE"
 msgstr "TRUE"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.5.String.Text
+#, fuzzy
 msgid  "FALSE"
 msgstr "FALSE"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.6.String.Text
+#, fuzzy
 msgid  "IS"
 msgstr "IS"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.7.String.Text
+#, fuzzy
 msgid  "BETWEEN"
 msgstr "TUSSEN"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.8.String.Text
+#, fuzzy
 msgid  "OR"
 msgstr "OR"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.9.String.Text
+#, fuzzy
 msgid  "AND"
 msgstr "AND"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.10.String.Text
+#, fuzzy
 msgid  "Average"
 msgstr "Gemiddelde"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.11.String.Text
+#, fuzzy
 msgid  "Count"
 msgstr "Tel"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.12.String.Text
+#, fuzzy
 msgid  "Maximum"
 msgstr "Maksimum"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.13.String.Text
+#, fuzzy
 msgid  "Minimum"
 msgstr "Minimum"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.14.String.Text
+#, fuzzy
 msgid  "Sum"
 msgstr "Som"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.15.String.Text
+#, fuzzy
 msgid  "Every"
 msgstr "Elke"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.16.String.Text
+#, fuzzy
 msgid  "Any"
 msgstr "Enige"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.17.String.Text
+#, fuzzy
 msgid  "Some"
 msgstr "Sekere"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.18.String.Text
+#, fuzzy
 msgid  "STDDEV_POP"
 msgstr "STDDEV_POP"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.19.String.Text
+#, fuzzy
 msgid  "STDDEV_SAMP"
 msgstr "STDDEV_SAMP"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.20.String.Text
+#, fuzzy
 msgid  "VAR_SAMP"
 msgstr "VAR_SAMP"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.21.String.Text
+#, fuzzy
 msgid  "VAR_POP"
 msgstr "VAR_POP"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.22.String.Text
+#, fuzzy
 msgid  "Collect"
 msgstr "Versamel"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.23.String.Text
+#, fuzzy
 msgid  "Fusion"
 msgstr "Fusie"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.24.String.Text
+#, fuzzy
 msgid  "Intersection"
 msgstr "Snyding"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_ERROR.String.Text
+#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Sintaksfout in SQL-stelling"
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_VALUE_NO_LIKE.String.Text
+#, fuzzy
 msgid  "The value #1 cannot be used with LIKE."
 msgstr "Die waarde #1 kan nie saam met LIKE gebruik word nie."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_FIELD_NO_LIKE.String.Text
+#, fuzzy
 msgid  "LIKE cannot be used with this field."
 msgstr "LIKE kan nie saam met hierdie veld gebruik word nie."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_ACCESS_DAT_NO_VALID.String.Text
+#, fuzzy
 msgid  "The value entered is not a valid date. Please enter a date in a valid format, for example, MM/DD/YY."
 msgstr "Die waarde wat ingevoer is, is nie 'n geldige datum nie. Tik asseblief 'n datum in 'n geldige formaat in, byvoorbeeld MM/DD/JJ."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_INT_NO_VALID.String.Text
+#, fuzzy
 msgid  "The field cannot be compared with an integer."
 msgstr "Die veld kan nie met 'n heelgetal vergelyk word nie."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_TABLE.String.Text
+#, fuzzy
 msgid  "The database does not contain a table named \"#\"."
 msgstr "Die databasis bevat nie 'n tabel genaamd \"#\" nie."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_TABLE_OR_QUERY.String.Text
+#, fuzzy
 msgid  "The database does contain neither a table nor a query named \"#\"."
 msgstr "Die databasis bevat nie 'n tabel of 'n navraag genaamd \"#\" nie."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_TABLE_EXISTS.String.Text
+#, fuzzy
 msgid  "The database already contains a table or view with name \"#\"."
 msgstr "Die databasis bevat reeds 'n tabel of 'n aansig genaamd \"#\"."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_QUERY_EXISTS.String.Text
+#, fuzzy
 msgid  "The database already contains a query with name \"#\"."
 msgstr "Die databasis bevat reeds 'n navraag genaamd \"#\"."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_COLUMN.String.Text
+#, fuzzy
 msgid  "The column \"#1\" is unknown in the table \"#2\"."
 msgstr "Die kolom \"#1\" is onbekend in die tabel \"#2\"."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_REAL_NO_VALID.String.Text
+#, fuzzy
 msgid  "The field cannot be compared with a floating point number."
 msgstr "Die veld kan nie met 'n wisselpuntgetal vergelyk word nie."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_CRIT_NO_COMPARE.String.Text
+#, fuzzy
 msgid  "The entered criterion cannot be compared with this field."
 msgstr "Die toegevoerde kriterium kan nie met hierdie veld vergelyk word nie."
 
 #: source/form/fmstring.src#RID_STR_DATANAVIGATOR.String.Text
+#, fuzzy
 msgid  "Data Navigator"
 msgstr "Datanavigator"
 
 #: source/form/fmstring.src#RID_STR_READONLY_VIEW.String.Text
+#, fuzzy
 msgid  " (read-only)"
 msgstr " (leesalleen)"
 
 #: source/form/fmstring.src#RID_STR_ALREADYEXISTOVERWRITE.String.Text
+#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "Die lêer bestaan reeds. Oorheenskryf?"
 
 #: source/form/fmstring.src#RID_STR_OBJECT_LABEL.String.Text
+#, fuzzy
 msgid  "#object# label"
 msgstr "#object#-etiket"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.MenuItem.Text
+#, fuzzy
 msgid  "~New"
 msgstr "~Nuwe"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.SID_FM_NEW_FORM.MenuItem.Text
+#, fuzzy
 msgid  "Form"
 msgstr "Vorm"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.SID_FM_NEW_HIDDEN.MenuItem.Text
+#, fuzzy
 msgid  "Hidden Control"
 msgstr "Versteekte kontrole"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_CHANGECONTROLTYPE.MenuItem.Text
+#, fuzzy
 msgid  "Replace with"
 msgstr "Vervang met"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Skrap"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_TAB_DIALOG.MenuItem.Text
+#, fuzzy
 msgid  "Tab Order..."
 msgstr "Tabuleerkeeporde..."
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "~Rename"
 msgstr "~Hernoem"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
+#, fuzzy
 msgid  "Propert~ies"
 msgstr "E~ienskappe"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_OPEN_READONLY.MenuItem.Text
+#, fuzzy
 msgid  "Open in Design Mode"
 msgstr "Open in ontwerpmodus"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_AUTOCONTROLFOCUS.MenuItem.Text
+#, fuzzy
 msgid  "Automatic Control Focus"
 msgstr "Outomatiese beheerfokus"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Text Box"
 msgstr "~Tekskassie"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_BUTTON.MenuItem.Text
+#, fuzzy
 msgid  "~Button"
 msgstr "~Knoppie"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FIXEDTEXT.MenuItem.Text
+#, fuzzy
 msgid  "La~bel field"
 msgstr "Eti~ketveld"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_GROUPBOX.MenuItem.Text
+#, fuzzy
 msgid  "G~roup Box"
 msgstr "G~roepkassie"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_LISTBOX.MenuItem.Text
+#, fuzzy
 msgid  "L~ist Box"
 msgstr "L~yskassie"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_CHECKBOX.MenuItem.Text
+#, fuzzy
 msgid  "~Check Box"
 msgstr "~Merkblokkie"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_RADIOBUTTON.MenuItem.Text
+#, fuzzy
 msgid  "~Radio Button"
 msgstr "~Radioknoppie"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_COMBOBOX.MenuItem.Text
+#, fuzzy
 msgid  "Combo Bo~x"
 msgstr "~Kombinasiekassie"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_IMAGEBUTTON.MenuItem.Text
+#, fuzzy
 msgid  "I~mage Button"
 msgstr "~Beeldknoppie"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FILECONTROL.MenuItem.Text
+#, fuzzy
 msgid  "~File Selection"
 msgstr "~Lêerseleksie"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_DATE.MenuItem.Text
+#, fuzzy
 msgid  "~Date Field"
 msgstr "~Datum-veld"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_TIME.MenuItem.Text
+#, fuzzy
 msgid  "Tim~e Field"
 msgstr "Tyd-v~eld"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_NUMERIC.MenuItem.Text
+#, fuzzy
 msgid  "~Numerical Field"
 msgstr "~Numeriese veld"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_CURRENCY.MenuItem.Text
+#, fuzzy
 msgid  "C~urrency Field"
 msgstr "Geld~eenheidveld"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_PATTERN.MenuItem.Text
+#, fuzzy
 msgid  "~Pattern Field"
 msgstr "~Patroonveld"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_IMAGECONTROL.MenuItem.Text
+#, fuzzy
 msgid  "Ima~ge Control"
 msgstr "Beeld~beheer"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FORMATTED.MenuItem.Text
+#, fuzzy
 msgid  "Fo~rmatted Field"
 msgstr "Gefo~rmateerde veld"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_SCROLLBAR.MenuItem.Text
+#, fuzzy
 msgid  "Scroll bar"
 msgstr "Rolbalk"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_SPINBUTTON.MenuItem.Text
+#, fuzzy
 msgid  "Spin Button"
 msgstr "Spinknoppie"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_NAVIGATIONBAR.MenuItem.Text
+#, fuzzy
 msgid  "Navigation Bar"
 msgstr "Navigasiebalk"
 
 #: source/form/fmexpl.src#RID_SVXDLG_SETFORM.GB_PATH.GroupBox.Text
+#, fuzzy
 msgid  "Path"
 msgstr "Pad"
 
 #: source/form/fmexpl.src#RID_SVXDLG_SETFORM.HelpButton.Text
+#, fuzzy
 msgid  "Select form"
 msgstr "Kies vorm"
 
 #: source/form/fmexpl.src#RID_SVX_FMEXPLORER.DockingWindow.Text
+#, fuzzy
 msgid  "Form Navigator"
 msgstr "Vormnavigator"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_STYLE.MenuItem.Text
+#, fuzzy
 msgid  "St~yle"
 msgstr "St~yl"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_ALIGNMENT.MenuItem.Text
+#, fuzzy
 msgid  "~Alignment"
 msgstr "~Belyning"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_SPACING.MenuItem.Text
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~Reëlspasiëring"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.TabDialog.Text
+#, fuzzy
 msgid  "Character"
 msgstr "Karakter"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "Font"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "Font-effekte"
 
@@ -5654,162 +5915,196 @@ msgid  "Position"
 msgstr ""
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.TabDialog.Text
+#, fuzzy
 msgid  "Paragraph"
 msgstr "Paragraaf"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Inkepe en spasiëring"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "Belyning"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+#, fuzzy
 msgid  "Asian Typography"
 msgstr "Asiatiese tipografie"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+#, fuzzy
 msgid  "Tabs"
 msgstr "Kepe"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Skrap"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~Redigeer"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NULL.MenuItem.Text
+#, fuzzy
 msgid  "~Is Null"
 msgstr "~Is nul"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NOT_NULL.MenuItem.Text
+#, fuzzy
 msgid  "I~s not Null"
 msgstr "I~s nie nul nie"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Item"
 msgstr "Voeg item by"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Element"
 msgstr "Voeg element by"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "Voeg attribuut by"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Redigeer"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Skrap"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MenuButton.Text
+#, fuzzy
 msgid  "~Models"
 msgstr "~Modelle"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "~Voeg by..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Redigeer..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "~Verwyder"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_INSTANCE.PageItem.Text
+#, fuzzy
 msgid  "Instance"
 msgstr "Instans"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_SUBMISSION.PageItem.Text
+#, fuzzy
 msgid  "Submissions"
 msgstr "Indienings"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_BINDINGS.PageItem.Text
+#, fuzzy
 msgid  "Bindings"
 msgstr "Bindings"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MenuButton.Text
+#, fuzzy
 msgid  "~Instances"
 msgstr "~Instanse"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "~Voeg by..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Redigeer..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "~Verwyder"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_SHOW_DETAILS.MenuItem.Text
+#, fuzzy
 msgid  "~Show Details"
 msgstr "~Toon details"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_MODEL.QueryBox.Message
-msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\nDo you really want to delete this model?"
-msgstr "Om die model '$MODELNAME' te skrap, sal alle kontroles wat tans aan hierdie model gebind is affekteer.\nWil u werklik hierdie model skrap?"
+msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\\nDo you really want to delete this model?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_INSTANCE.QueryBox.Message
-msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\nDo you really want to delete this instance?"
-msgstr "Om die model '$INSTANCENAME' te skrap, sal alle kontroles wat tans aan hierdie instans gebind is affekteer.\nWil u werklik hierdie instans skrap?"
+msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\\nDo you really want to delete this instance?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ELEMENT.QueryBox.Message
-msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\nDo you really want to delete this element?"
-msgstr "Om die model '$ELEMENTNAME' te skrap, sal alle kontroles wat tans aan hierdie element gebind is affekteer.\nWil u werklik hierdie element skrap?"
+msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\\nDo you really want to delete this element?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ATTRIBUTE.QueryBox.Message
+#, fuzzy
 msgid  "Do you really want to delete the attribute '$ATTRIBUTENAME'?"
 msgstr "Wil u werklik die attribuut '$ATTRIBUTENAME' skrap?"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_SUBMISSION.QueryBox.Message
-msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\n\nDo you really want to delete this submission?"
-msgstr "As u die indiening '$SUBMISSIONNAME' skrap, sal dit alle kontroles wat tans aan hierdie indiening gebind is, beïnvloed.\n\nWil u regtig hierdie indiening skrap?"
+msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\\n\\nDo you really want to delete this submission?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_BINDING.QueryBox.Message
-msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\n\nDo you really want to delete this binding?"
-msgstr "As u die binding '$BINDINGNAME' skrap, sal dit alle kontroles wat tans aan hierdie binding gebind is, beïnvloed.\n\nWil u regtig hierdie binding skrap?"
+msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\\n\\nDo you really want to delete this binding?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_LINK_WARNING.MessBox.Message
-msgid  "This instance is linked with the form.\n\nThe changes you make to this instance will be lost when the form is reloaded.\n\nHow do you want to proceed?"
-msgstr "Hierdie instans is met die vorm geskakel.\n\nDie wysigings wat u aan hierdie instans aanbring, sal verlore gaan wanneer die vorm herlaai word.\n\nHoe wil u van hier af voortgaan?"
+msgid  "This instance is linked with the form.\\n\\nThe changes you make to this instance will be lost when the form is reloaded.\\n\\nHow do you want to proceed?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLNAME.ErrorBox.Message
+#, fuzzy
 msgid  "The name '%1' is not valid in XML. Please enter a different name."
 msgstr "Die naam '%1' is nie geldig in XML nie. Tik asseblief 'n ander naam in."
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLPREFIX.ErrorBox.Message
+#, fuzzy
 msgid  "The prefix '%1' is not valid in XML. Please enter a different prefix."
 msgstr "Die voorvoegsel '%1' is nie geldig in XML nie. Tik asseblief 'n ander voorvoegsel in."
 
 #: source/form/datanavi.src#RID_ERR_DOUBLE_MODELNAME.ErrorBox.Message
+#, fuzzy
 msgid  "The name '%1' already exists. Please enter a new name."
 msgstr "Die naam '%1' bestaan reeds. Tik asseblief 'n nuwe naam in."
 
 #: source/form/datanavi.src#RID_ERR_EMPTY_SUBMISSIONNAME.ErrorBox.Message
+#, fuzzy
 msgid  "The submission must have a name."
 msgstr "Die indiening moet 'n naam hê."
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_ITEM.FixedLine.Text
+#, fuzzy
 msgid  "Item"
 msgstr "Item"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Naam"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DEFAULT.FixedText.Text
+#, fuzzy
 msgid  "~Default Value"
 msgstr "~Verstek waarde"
 
@@ -5818,406 +6113,503 @@ msgid  "Settings"
 msgstr ""
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DATATYPE.FixedText.Text
+#, fuzzy
 msgid  "~Data Type"
 msgstr "~Datasoort"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_REQUIRED.CheckBox.Text
+#, fuzzy
 msgid  "~Required"
 msgstr "~Vereis"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_REQUIRED.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Voorwaarde"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_RELEVANT.CheckBox.Text
+#, fuzzy
 msgid  "R~elevant"
 msgstr "R~elevant"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_RELEVANT.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Voorwaarde"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CONSTRAINT.CheckBox.Text
+#, fuzzy
 msgid  "~Constraint"
 msgstr "~Beperking"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CONSTRAINT.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Voorwaarde"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_READONLY.CheckBox.Text
+#, fuzzy
 msgid  "Read-~only"
 msgstr "Lees~alleen"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_READONLY.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Voorwaarde"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CALCULATE.CheckBox.Text
+#, fuzzy
 msgid  "Calc~ulate"
 msgstr "Bere~ken"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CALCULATE.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Voorwaarde"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ELEMENT.String.Text
+#, fuzzy
 msgid  "Element"
 msgstr "Element"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Attribute"
 msgstr "Attribuut"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_BINDING.String.Text
+#, fuzzy
 msgid  "Binding"
 msgstr "Binding"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDTEXT_BINDING.String.Text
+#, fuzzy
 msgid  "Binding expression"
 msgstr "Bindinguitdrukking"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD.MenuItem.Text
+#, fuzzy
 msgid  "Add Item"
 msgstr "Voeg item by"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ELEMENT.MenuItem.Text
+#, fuzzy
 msgid  "Add Element"
 msgstr "Voeg element by"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ATTRIBUTE.MenuItem.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "Voeg attribuut by"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Redigeer"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Skrap"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.ModalDialog.Text
+#, fuzzy
 msgid  "Add Condition"
 msgstr "Voeg voorwaarde by"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_CONDITION.FixedText.Text
+#, fuzzy
 msgid  "~Condition"
 msgstr "~Voorwaarde"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_RESULT.FixedText.Text
+#, fuzzy
 msgid  "~Result"
 msgstr "~Resultaat"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.PB_EDIT_NAMESPACES.PushButton.Text
+#, fuzzy
 msgid  "~Edit Namespaces..."
 msgstr "~Redigeer naamspasies..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.ModalDialog.Text
+#, fuzzy
 msgid  "Namespaces for Forms"
 msgstr "Naamspasies vir vorms"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.FT_NAMESPACES.FixedText.Text
+#, fuzzy
 msgid  "~Namespaces"
 msgstr "~Naamspasies"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_ADD_NAMESPACE.PushButton.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "~Voeg by..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_EDIT_NAMESPACE.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Redigeer..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_DELETE_NAMESPACE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Skrap"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_PREFIX.String.Text
+#, fuzzy
 msgid  "Prefix"
 msgstr "Voorvoegsel"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_URL.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.ModalDialog.Text
+#, fuzzy
 msgid  "Add Namespace"
 msgstr "Voeg naamspasie by"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_PREFIX.FixedText.Text
+#, fuzzy
 msgid  "~Prefix"
 msgstr "~Voorvoegsel"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.STR_EDIT_TEXT.String.Text
+#, fuzzy
 msgid  "Edit Namespace"
 msgstr "Redigeer naamspasie"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.ModalDialog.Text
+#, fuzzy
 msgid  "Add Submission"
 msgstr "Voeg indiening by"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FL_SUBMISSION.FixedLine.Text
+#, fuzzy
 msgid  "Submission"
 msgstr "Indiening"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Naam"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_ACTION.FixedText.Text
+#, fuzzy
 msgid  "~Action"
 msgstr "~Aksie"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_METHOD.FixedText.Text
+#, fuzzy
 msgid  "~Method"
 msgstr "~Metode"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REF.FixedText.Text
+#, fuzzy
 msgid  "Binding e~xpression"
 msgstr "Bindingu~itdrukking"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.PB_SUBMIT_REF.PushButton.Text
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_BIND.FixedText.Text
+#, fuzzy
 msgid  "~Binding"
 msgstr "~Binding"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REPLACE.FixedText.Text
+#, fuzzy
 msgid  "~Replace"
 msgstr "~Vervang"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_POST.String.Text
+#, fuzzy
 msgid  "Post"
 msgstr "Post"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_PUT.String.Text
+#, fuzzy
 msgid  "Put"
 msgstr "Plaas"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_GET.String.Text
+#, fuzzy
 msgid  "Get"
 msgstr "Get"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_NONE.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "Geen"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_INST.String.Text
+#, fuzzy
 msgid  "Instance"
 msgstr "Instans"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_DOC.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "Dokument"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.ModalDialog.Text
+#, fuzzy
 msgid  "Add Model"
 msgstr "Voeg model by"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FL_INSTANCE.FixedLine.Text
+#, fuzzy
 msgid  "Model"
 msgstr "Model"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FT_INST_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Naam"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.CB_MODIFIES_DOCUMENT.CheckBox.Text
+#, fuzzy
 msgid  "Model data updates change document's modification status"
 msgstr "Modeldatabywerkings verandering dokument se wysigingstand"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.STR_EDIT_TEXT.String.Text
+#, fuzzy
 msgid  "Edit Model"
 msgstr "Redigeermodel"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.ModalDialog.Text
+#, fuzzy
 msgid  "Add Instance"
 msgstr "Voeg instans by"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FL_INSTANCE.FixedLine.Text
+#, fuzzy
 msgid  "Instance"
 msgstr "Instans"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Naam"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_URL.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.CB_INST_LINKINST.CheckBox.Text
+#, fuzzy
 msgid  "~Link instance"
 msgstr "~Skakel instans"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.STR_EDIT_TEXT.String.Text
+#, fuzzy
 msgid  "Edit Instance"
 msgstr "Redigeer instans"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_PARENT.String.Text
+#, fuzzy
 msgid  "Submission: "
 msgstr "Indiening: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ID.String.Text
+#, fuzzy
 msgid  "ID: "
 msgstr "ID: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_BIND.String.Text
+#, fuzzy
 msgid  "Binding: "
 msgstr "Binding: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REF.String.Text
+#, fuzzy
 msgid  "Reference: "
 msgstr "Verwysing: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ACTION.String.Text
+#, fuzzy
 msgid  "Action: "
 msgstr "Aksie: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_METHOD.String.Text
+#, fuzzy
 msgid  "Method: "
 msgstr "Metode: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REPLACE.String.Text
+#, fuzzy
 msgid  "Replace: "
 msgstr "Vervang: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ELEMENT.String.Text
+#, fuzzy
 msgid  "Add Element"
 msgstr "Voeg element by"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ELEMENT.String.Text
+#, fuzzy
 msgid  "Edit Element"
 msgstr "Redigeer element"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ELEMENT.String.Text
+#, fuzzy
 msgid  "Delete Element"
 msgstr "Skrap element"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "Voeg attribuut by"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Edit Attribute"
 msgstr "Redigeer attribuut"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Delete Attribute"
 msgstr "Skrap attribuut"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_BINDING.String.Text
+#, fuzzy
 msgid  "Add Binding"
 msgstr "Voeg binding by"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_BINDING.String.Text
+#, fuzzy
 msgid  "Edit Binding"
 msgstr "Redigeer binding"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_BINDING.String.Text
+#, fuzzy
 msgid  "Delete Binding"
 msgstr "Skrap binding"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_SUBMISSION.String.Text
+#, fuzzy
 msgid  "Add Submission"
 msgstr "Voeg indiening by"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_SUBMISSION.String.Text
+#, fuzzy
 msgid  "Edit Submission"
 msgstr "Redigeer indiening"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_SUBMISSION.String.Text
+#, fuzzy
 msgid  "Delete Submission"
 msgstr "Skrap indiening"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_LINKWARN_BUTTON.String.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~Redigeer"
 
 #: source/gallery2/gallery.src#RID_SVXDLG_GALLERYBROWSER.DockingWindow.Text
+#, fuzzy
 msgid  "Gallery"
 msgstr "Galery"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
+#, fuzzy
 msgid  "Update"
 msgstr "Bywerk"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
+#, fuzzy
 msgid  "This file cannot be opened"
 msgstr "Hierdie lêer kan nie oopgemaak word nie"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NOTHEME.String.Text
+#, fuzzy
 msgid  "Invalid Theme Name!"
 msgstr "Ongeldige temanaam!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
-msgid  "Do you really want to\ndelete this object?"
-msgstr "Wil u regtig\nhierdie objek skrap?"
+msgid  "Do you really want to\\ndelete this object?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
-msgid  "Do you really want to\ndelete this theme?"
-msgstr "Wil u regtig\nhierdie tema skrap?"
+msgid  "Do you really want to\\ndelete this theme?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
+#, fuzzy
 msgid  "Wave - Sound File"
 msgstr "Golf - klanklêer"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT2_UI.String.Text
+#, fuzzy
 msgid  "Audio Interchange File Format"
 msgstr "Audio-uitruillêerformaat"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT3_UI.String.Text
+#, fuzzy
 msgid  "AU - Sound File"
 msgstr "AU - klanklêer"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FILTER.String.Text
+#, fuzzy
 msgid  "Graphics filter"
 msgstr "Grafikafilter"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LENGTH.String.Text
+#, fuzzy
 msgid  "Length:"
 msgstr "Lengte:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SIZE.String.Text
+#, fuzzy
 msgid  "Size:"
 msgstr "Grootte:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEDD.String.Text
+#, fuzzy
 msgid  "Do you want to delete the linked file?"
 msgstr "Wil u die gekoppelde lêer skrap?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
-msgid  "This file cannot be opened.\nDo you want to enter a different search path? "
-msgstr "Hierdie lêer kan nie oopgemaak word nie.\n Wil u 'n ander soekpad intik? "
+msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
+#, fuzzy
 msgid  "New Theme"
 msgstr "Nuwe tema"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_BROWSER.String.Text
+#, fuzzy
 msgid  "~Organizer..."
 msgstr "~Organiseerder..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
-msgid  "This theme name already exists.\nPlease choose a different one."
-msgstr "Hierdie temanaam bestaan reeds.\nKies asseblief 'n ander een."
+msgid  "This theme name already exists.\\nPlease choose a different one."
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
+#, fuzzy
 msgid  "I~mport..."
 msgstr "I~nvoer..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_CREATETHEME.String.Text
+#, fuzzy
 msgid  "New Theme..."
 msgstr "Nuwe tema..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DIALOGID.String.Text
+#, fuzzy
 msgid  "Assign ID"
 msgstr "Wys ID toe"
 
@@ -6496,108 +6888,131 @@ msgid  "Screen Beans"
 msgstr "Skermboontjies"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_THESAURUS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the thesaurus."
 msgstr "$(ERR) met uitvoering van die tesourus."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_SPELLING&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the spellcheck."
 msgstr "$(ERR) met uitvoering van die speltoets."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_HYPHENATION&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the hyphenation."
 msgstr "$(ERR) met plasing van die koppelteken."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_DICTIONARY&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) creating a dictionary."
 msgstr "$(ERR) met skep van die woordeboek."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_BACKGROUND&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) setting background attribute."
 msgstr "$(ERR) met instelling van die agtergrondattribuut."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_IMPORT_GRAPHIC&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) loading the graphics."
 msgstr "$(ERR) met laai van die grafika."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_THESAURUSNOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "No thesaurus available for the current language.\nPlease check your installation and install the desired language."
-msgstr "Geen tesourus in die huidige taal beskikbaar nie.\nKontroleer asseblief u installasie en installeer die gewenste taal."
+msgid  "No thesaurus available for the current language.\\nPlease check your installation and install the desired language."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LANGUAGENOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\nPlease check your installation and, if necessary, install the required language module\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
-msgstr "$(ARG1) word nie deur die speltoetsfunksie ondersteun nie, of is nie nou aktief nie.\nKontroleer asseblief u installasie en installeer, indien nodig, die betrokke taalmodule\n of aktiveer dit onder 'Nutsgoed - Opsies - Taalinstellings - Skryfhulpmiddels'."
+msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\\nPlease check your installation and, if necessary, install the required language module\\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "Spellcheck is not available."
 msgstr "Speltoetser nie beskikbaar nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_HYPHENNOTEXISTS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "Hyphenation not available."
 msgstr "Koppeltekenplasing nie beskikbaar nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTREADABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be read."
 msgstr "Die pasmaak woordeboek $(ARG1) kan nie gelees word nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTWRITEABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be created."
 msgstr "Die pasmaak woordeboek $(ARG1) kan nie geskep word nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_NOTREADABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The graphic $(ARG1) could not be found."
 msgstr "Die grafiese objek $(ARG1) kon nie gevind word nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_WRONG_FILEFORMAT&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "An unlinked graphic could not be loaded."
 msgstr "'n Ongekoppelde grafiese objek kon nie gelaai word nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_NOLANGUAGE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "A language has not been fixed for the selected term."
 msgstr "'n Taal is nie vir die gemerkte term vasgelê nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
+#, fuzzy
 msgid  "The form layer wasn't loaded as the required IO-services (stardiv.uno.io.*) could not be instantiated."
 msgstr "Die vormlaag is nie gelaai nie omdat die vereiste TA-dienste (stardiv.uno.io.*) nie geïnisieer kon word nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
+#, fuzzy
 msgid  "The form layer wasn't written as the required IO services (stardiv.uno.io.*) could not be instantiated."
 msgstr "Die vormlaag is nie geskryf nie omdat die vereiste TA-dienste (stardiv.uno.io.*) nie geïnisieer kon word nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
+#, fuzzy
 msgid  "An error occurred while reading the form controls. The form layer has not been loaded."
 msgstr "'n Fout het voorgekom terwyl die vormkontroles gelees is. Die vormlaag is nie gelaai nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
+#, fuzzy
 msgid  "An error occurred while writing the form controls. The form layer has not been saved."
 msgstr "'n Fout het voorgekom terwyl die vormkontroles geskryf is. Die vormlaag is nie gestoor nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_BULLETITEM_NOBULLET.String.Text
+#, fuzzy
 msgid  "An error occurred while reading one of the bullets. Not all of the bullets were loaded."
 msgstr "'n Fout het voorgekom terwyl een van die kolle gelees is. Nie al die kolle is gelaai nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_MODIFIED_VBASIC_STORAGE & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "All changes to the Basic Code are lost.The original VBA Macro Code is saved instead."
 msgstr "Alle wysigings aan die Basic-kode is verlore. In plaas daarvan is die oorspronklike VBA-makrokode gestoor."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_VBASIC_STORAGE_EXIST & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The original VBA Basic Code contained in the document will not be saved."
 msgstr "Die oorspronklike VBA Basic-kode in die dokument sal nie gestoor word nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_WRONGPASS & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The password is incorrect. The document cannot be opened."
 msgstr "Die wagwoord is ongeldig. Die dokument kan nie geopen word nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The encryption method used in this document is not supported. Only Microsoft Office 97/2000 compatible password encryption is supported."
 msgstr "Die enkripsiemetode wat in hierdie dokument gebruik word, word nie ondersteun nie. Net Microsoft Office 97/2000-versoenbare wagwoordenkripsie word ondersteun."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_PPOINT & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The loading of password-encrypted Microsoft PowerPoint presentations is not supported."
 msgstr "Die laai van wagwoordgeënkripteerde Microsoft PowerPoint-voorleggings word nie ondersteun nie."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_EXPORT_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
-msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\nDo you want to save the document without password protection?"
-msgstr "Wagwoordbeskerming word nie ondersteun wanneer dokumente in 'n Microsoft Office-formaat gestoor word nie.\nWil u die dokument sonder wagwoordbeskerming stoor?"
+msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\\nDo you want to save the document without password protection?"
+msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
 msgid  "Scale"
@@ -6840,30 +7255,37 @@ msgid  "Font color"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND.String.Text
+#, fuzzy
 msgid  "Search"
 msgstr "Soek"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND_ALL.String.Text
+#, fuzzy
 msgid  "Find All"
 msgstr "Vind almal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE.String.Text
+#, fuzzy
 msgid  "Replace"
 msgstr "Vervang"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE_ALL.String.Text
+#, fuzzy
 msgid  "Replace all"
 msgstr "Vervang almal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_CHAR.String.Text
+#, fuzzy
 msgid  "Character Style"
 msgstr "Karakterstyl"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PARA.String.Text
+#, fuzzy
 msgid  "Paragraph Style"
 msgstr "Paragraafstyl"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_FRAME.String.Text
+#, fuzzy
 msgid  "Frame Style"
 msgstr "Raamstyl"
 
@@ -6872,54 +7294,67 @@ msgid  "Page Style"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_FORMULA.String.Text
+#, fuzzy
 msgid  "Formula"
 msgstr "Formule"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_VALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "Waarde"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_NOTE.String.Text
+#, fuzzy
 msgid  "Note"
 msgstr "Nota"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_NULL.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "Geen"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_SOLID.String.Text
+#, fuzzy
 msgid  "Solid"
 msgstr "Solied"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_HORZ.String.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "Horisontaal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_VERT.String.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "Vertikaal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_CROSS.String.Text
+#, fuzzy
 msgid  "Grid"
 msgstr "Rooster"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DIAGCROSS.String.Text
+#, fuzzy
 msgid  "Diamond"
 msgstr "Diamant"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_UPDIAG.String.Text
+#, fuzzy
 msgid  "Diagonal up"
 msgstr "Diagonaal op"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DOWNDIAG.String.Text
+#, fuzzy
 msgid  "Diagonal down"
 msgstr "Diagonaal af"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_BITMAP.String.Text
+#, fuzzy
 msgid  "Image"
 msgstr "Beeld"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_STANDARD.String.Text
+#, fuzzy
 msgid  "Horizontal alignment default"
 msgstr "Verstek van horisontale belyning"
 
@@ -6928,6 +7363,7 @@ msgid  "Align left"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_CENTER.String.Text
+#, fuzzy
 msgid  "Centered horizontally"
 msgstr "Horisontaal gesentreer"
 
@@ -6940,86 +7376,107 @@ msgid  "Justify"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_REPEAT.String.Text
+#, fuzzy
 msgid  "Repeat alignment"
 msgstr "Herhaal belyning"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_STANDARD.String.Text
+#, fuzzy
 msgid  "Vertical alignment default"
 msgstr "Verstek van vertikale belyning"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_TOP.String.Text
+#, fuzzy
 msgid  "Align to top"
 msgstr "Belyn met bokant"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_CENTER.String.Text
+#, fuzzy
 msgid  "Centered vertically"
 msgstr "Vertikaal gesentreer"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_BOTTOM.String.Text
+#, fuzzy
 msgid  "Align to bottom"
 msgstr "Belyn met onderkant"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STANDARD.String.Text
+#, fuzzy
 msgid  "Default orientation"
 msgstr "Verstek oriëntasie"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_TOPBOTTOM.String.Text
+#, fuzzy
 msgid  "From top to bottom"
 msgstr "Van bo na onder"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_BOTTOMTOP.String.Text
+#, fuzzy
 msgid  "Bottom to Top"
 msgstr "Onder na bo"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STACKED.String.Text
+#, fuzzy
 msgid  "Stacked"
 msgstr "Gestapel"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_TRUE.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Tabel"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_FALSE.String.Text
+#, fuzzy
 msgid  "Not Table"
 msgstr "Nie tabel nie"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_TRUE.String.Text
+#, fuzzy
 msgid  "Spacing enabled"
 msgstr "Spasiëring geaktiveer"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_FALSE.String.Text
+#, fuzzy
 msgid  "Spacing disabled"
 msgstr "Spasiëring gedeaktiveer"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_TRUE.String.Text
+#, fuzzy
 msgid  "Keep spacing interval"
 msgstr "Behou spasiëringsinterval"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_FALSE.String.Text
+#, fuzzy
 msgid  "Allowed to fall short of spacing interval"
 msgstr "Laat vermindering van spasiëringsinterval toe"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_LEFT.String.Text
+#, fuzzy
 msgid  "Left margin: "
 msgstr "Linkerkantlyn: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_TOP.String.Text
+#, fuzzy
 msgid  "Top margin: "
 msgstr "Boonste kantlyn: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_RIGHT.String.Text
+#, fuzzy
 msgid  "Right margin: "
 msgstr "Regterkantlyn: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_BOTTOM.String.Text
+#, fuzzy
 msgid  "Bottom margin: "
 msgstr "Onderste kantlyn: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_COMPLETE.String.Text
+#, fuzzy
 msgid  "Page Description: "
 msgstr "Bladsybeskrywing: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_UPPER.String.Text
+#, fuzzy
 msgid  "Capitals"
 msgstr "Hoofletters"
 
@@ -7028,26 +7485,32 @@ msgid  "Lowercase"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_UPPER.String.Text
+#, fuzzy
 msgid  "Uppercase Roman"
 msgstr "Bokas Romein"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_LOWER.String.Text
+#, fuzzy
 msgid  "Lowercase Roman"
 msgstr "Onderkas Romein"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ARABIC.String.Text
+#, fuzzy
 msgid  "Arabic"
 msgstr "Arabies"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_NONE.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "Geen"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_TRUE.String.Text
+#, fuzzy
 msgid  "Landscape"
 msgstr "Landskap"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_FALSE.String.Text
+#, fuzzy
 msgid  "Portrait"
 msgstr "Regop"
 
@@ -7060,30 +7523,37 @@ msgid  "Right"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_ALL.String.Text
+#, fuzzy
 msgid  "All"
 msgstr "Almal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_MIRROR.String.Text
+#, fuzzy
 msgid  "Mirrored"
 msgstr "Spieëlbeeld"
 
 #: source/items/svxitems.src#RID_SVXITEMS_AUTHOR_COMPLETE.String.Text
+#, fuzzy
 msgid  "Author: "
 msgstr "Outeur: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_DATE_COMPLETE.String.Text
+#, fuzzy
 msgid  "Date: "
 msgstr "Datum: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_TEXT_COMPLETE.String.Text
+#, fuzzy
 msgid  "Text: "
 msgstr "Teks: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_BACKGROUND_COLOR.String.Text
+#, fuzzy
 msgid  "Background color: "
 msgstr "Agtergrondkleur: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PATTERN_COLOR.String.Text
+#, fuzzy
 msgid  "Pattern color: "
 msgstr "Patroonkleur: "
 
@@ -7092,6 +7562,7 @@ msgid  "Character background"
 msgstr ""
 
 #: source/src/app.src#RID_ERRBOX_MODULENOTINSTALLED.ErrorBox.Message
+#, fuzzy
 msgid  "The action could not be executed. The %PRODUCTNAME program module needed for this action is currently not installed."
 msgstr "Die aksie kon nie uitgevoer word nie. Die %PRODUCTNAME-programmodule wat vir hierdie aksie benodig word, is tans nie geïnstalleer nie."
 
@@ -7264,7 +7735,7 @@ msgid  "The specified device is invalid."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
-msgid  "The object cannot be accessed\ndue to insufficient user rights."
+msgid  "The object cannot be accessed\\ndue to insufficient user rights."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
@@ -7276,7 +7747,7 @@ msgid  "No more space on device."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ISWILDCARD.String.Text
-msgid  "This operation cannot be run on\nfiles containing wildcards."
+msgid  "This operation cannot be run on\\nfiles containing wildcards."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSUPPORTED.String.Text
@@ -7360,7 +7831,7 @@ msgid  "The file cannot be used as template."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTREADDOCINFO.String.Text
-msgid  "Document information could not be read from the file because\nthe document information format is unknown or because document information does not\nexist."
+msgid  "Document information could not be read from the file because\\nthe document information format is unknown or because document information does not\\nexist."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_ALREADYOPEN.String.Text
@@ -7392,11 +7863,11 @@ msgid  "Could not establish Internet connection to $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_READ.String.Text
-msgid  "Error reading data from the Internet.\nServer error message: $(ARG1)."
+msgid  "Error reading data from the Internet.\\nServer error message: $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_WRITE.String.Text
-msgid  "Error transferring data to the Internet.\nServer error message: $(ARG1)."
+msgid  "Error transferring data to the Internet.\\nServer error message: $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_GENERAL.String.Text
@@ -7508,7 +7979,7 @@ msgid  "A subscription folder is required to install a Channel."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSTORABLEINBINARYFORMAT.String.Text
-msgid  "This document contains attributes that cannot be saved in the selected format.\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
+msgid  "This document contains attributes that cannot be saved in the selected format.\\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_TARGETFILECORRUPTED.String.Text
@@ -7524,19 +7995,19 @@ msgid  "Could not create backup copy."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_MACROS_SUPPORT_DISABLED.String.Text
-msgid  "An attempt was made to execute a macro.\nFor security reasons, macro support is disabled."
+msgid  "An attempt was made to execute a macro.\\nFor security reasons, macro support is disabled."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_DOCUMENT_MACRO_DISABLED.String.Text
-msgid  "This document contains macros.\n\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\n\nTherefore, some functionality may not be available."
+msgid  "This document contains macros.\\n\\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\\n\\nTherefore, some functionality may not be available."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_BROKENSIGNATURE.String.Text
-msgid  "The digitally signed document content and/or macros do not match the current document signature.\n\nThis could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
+msgid  "The digitally signed document content and/or macros do not match the current document signature.\\n\\nThis could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_INCOMPLETE_ENCRYPTION.String.Text
-msgid  "The encrypted document contains unexpected non-encrypted streams.\n\nThis could be the result of document manipulation.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
+msgid  "The encrypted document contains unexpected non-encrypted streams.\\n\\nThis could be the result of document manipulation.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_INVALIDLENGTH.String.Text
@@ -7564,506 +8035,631 @@ msgid  "Function not possible: write protected."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_SHARED_NOPASSWORDCHANGE.String.Text
-msgid  "The password of a shared spreadsheet cannot be set or changed.\nDeactivate sharing mode first."
+msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactivate sharing mode first."
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
+#, fuzzy
 msgid  "INSRT"
 msgstr "INVOEG"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_OVERWRITE_TEXT.String.Text
+#, fuzzy
 msgid  "OVER"
 msgstr "OORTIK"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_STD.String.Text
+#, fuzzy
 msgid  "STD"
 msgstr "STD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ER.String.Text
+#, fuzzy
 msgid  "EXT"
 msgstr "EXT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ERG.String.Text
+#, fuzzy
 msgid  "ADD"
 msgstr "ADD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_BLK.String.Text
+#, fuzzy
 msgid  "BLK"
 msgstr "BLK"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature is OK."
 msgstr "Digitale handtekening: Die dokument se handtekening is OK."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK_NO_VERIFY.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature is OK, but the certificates could not be validated."
 msgstr "Digitale handtekening: Die dokument se handtekening is OK, maar die sertifikaat kon nie gevalideer word nie."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_NOT_OK.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature does not match the document content. We strongly recommend you to do not trust this document."
 msgstr "Digitale handtekening: Die dokument se handtekening pas nie by die dokument se inhoud nie. Ons beveel sterk aan dat jy nie hierdie dokument vertrou nie."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_NO_SIG.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document is not signed."
 msgstr "Digitale handtekening: Die dokument is nie onderteken nie."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_CERT_OK_PARTIAL_SIG.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature and the certificate are OK, but not all parts of the document are signed."
 msgstr "Digitale handtekening: Die dokumenthandtekening en die sertifikaat is goed, maar nie alle dele van die dokument is onderteken nie."
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_OPTIMAL.MenuItem.Text
+#, fuzzy
 msgid  "Optimal"
 msgstr "Optimaal"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_PAGE_WIDTH.MenuItem.Text
+#, fuzzy
 msgid  "Page Width"
 msgstr "Bladsywydte"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_WHOLE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "Entire Page"
 msgstr "Hele bladsy"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_AVG.MenuItem.Text
+#, fuzzy
 msgid  "Average"
 msgstr "Gemiddelde"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT2.MenuItem.Text
+#, fuzzy
 msgid  "CountA"
 msgstr "TelA"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT.MenuItem.Text
+#, fuzzy
 msgid  "Count"
 msgstr "Tel"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MAX.MenuItem.Text
+#, fuzzy
 msgid  "Maximum"
 msgstr "Maksimum"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MIN.MenuItem.Text
+#, fuzzy
 msgid  "Minimum"
 msgstr "Minimum"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_SUM.MenuItem.Text
+#, fuzzy
 msgid  "Sum"
 msgstr "Som"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_NONE.MenuItem.Text
+#, fuzzy
 msgid  "None"
 msgstr "Geen"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_XMLSECSTATBAR.XMLSEC_CALL.MenuItem.Text
+#, fuzzy
 msgid  "Digital Signatures..."
 msgstr "Digitale handtekeninge..."
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNONE.String.Text
+#, fuzzy
 msgid  "draw object"
 msgstr "teken objek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
+#, fuzzy
 msgid  "draw objects"
 msgstr "teken objekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
+#, fuzzy
 msgid  "group object"
 msgstr "groepobjek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUP.String.Text
+#, fuzzy
 msgid  "group objects"
 msgstr "groepobjekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUPEMPTY.String.Text
+#, fuzzy
 msgid  "blank group object"
 msgstr "blanko groepobjek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUPEMPTY.String.Text
+#, fuzzy
 msgid  "Blank group objects"
 msgstr "Blanko groepobjekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE.String.Text
+#, fuzzy
 msgid  "Line"
 msgstr "Reël"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Hori.String.Text
+#, fuzzy
 msgid  "horizontal line"
 msgstr "horisontale reël"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Vert.String.Text
+#, fuzzy
 msgid  "Vertical line"
 msgstr "Vertikale reël"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Diag.String.Text
+#, fuzzy
 msgid  "diagonal line"
 msgstr "diagonale lyn"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLINE.String.Text
+#, fuzzy
 msgid  "Lines"
 msgstr "Reëls"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECT.String.Text
+#, fuzzy
 msgid  "Rectangle"
 msgstr "Reghoek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECT.String.Text
+#, fuzzy
 msgid  "Rectangles"
 msgstr "Reghoeke"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUAD.String.Text
+#, fuzzy
 msgid  "Square"
 msgstr "Vierkant"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUAD.String.Text
+#, fuzzy
 msgid  "Squares"
 msgstr "Vierkante"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARAL.String.Text
+#, fuzzy
 msgid  "Parallelogram"
 msgstr "Parallelogram"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARAL.String.Text
+#, fuzzy
 msgid  "Parallelograms"
 msgstr "Parallelogramme"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTE.String.Text
+#, fuzzy
 msgid  "Rhombus"
 msgstr "Ruit"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTE.String.Text
+#, fuzzy
 msgid  "Rhombuses"
 msgstr "Ruite"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECTRND.String.Text
+#, fuzzy
 msgid  "Rounded rectangle"
 msgstr "Geronde reghoek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECTRND.String.Text
+#, fuzzy
 msgid  "Rounded Rectangles"
 msgstr "Geronde reghoeke"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUADRND.String.Text
+#, fuzzy
 msgid  "rounded square"
 msgstr "geronde vierkant"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUADRND.String.Text
+#, fuzzy
 msgid  "Rounded Squares"
 msgstr "Geronde vierkante"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARALRND.String.Text
+#, fuzzy
 msgid  "Rounded Parallelogram"
 msgstr "Geronde parallelogram"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARALRND.String.Text
+#, fuzzy
 msgid  "Rounded parallelograms"
 msgstr "Geronde parallelogramme"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTERND.String.Text
+#, fuzzy
 msgid  "rounded rhombus"
 msgstr "geronde ruit"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTERND.String.Text
+#, fuzzy
 msgid  "Rounded rhombuses"
 msgstr "Geronde ruite"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRC.String.Text
+#, fuzzy
 msgid  "Circle"
 msgstr "Sirkel"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRC.String.Text
+#, fuzzy
 msgid  "Circles"
 msgstr "Sirkels"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECT.String.Text
+#, fuzzy
 msgid  "Circle sector"
 msgstr "Sirkelsektor"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECT.String.Text
+#, fuzzy
 msgid  "Circle sectors"
 msgstr "Sirkelsektore"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARC.String.Text
+#, fuzzy
 msgid  "Arc"
 msgstr "Boog"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARC.String.Text
+#, fuzzy
 msgid  "Arcs"
 msgstr "Boë"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
+#, fuzzy
 msgid  "Circle segment"
 msgstr "Sirkelsegment"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
+#, fuzzy
 msgid  "Circle segments"
 msgstr "Sirkelsegmente"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRCE.String.Text
+#, fuzzy
 msgid  "Ellipse"
 msgstr "Ellips"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRCE.String.Text
+#, fuzzy
 msgid  "Ellipses"
 msgstr "Ellipse"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECTE.String.Text
+#, fuzzy
 msgid  "Ellipse Pie"
 msgstr "Elliptiese sektordiagram"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECTE.String.Text
+#, fuzzy
 msgid  "Ellipse Pies"
 msgstr "Elliptiese sirkeldiagramme"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARCE.String.Text
+#, fuzzy
 msgid  "Elliptical arc"
 msgstr "Elliptiese boog"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARCE.String.Text
+#, fuzzy
 msgid  "Elliptical arcs"
 msgstr "Elliptiese boë"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUTE.String.Text
+#, fuzzy
 msgid  "Ellipse Segment"
 msgstr "Elliptiese segment"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUTE.String.Text
+#, fuzzy
 msgid  "Ellipse Segments"
 msgstr "Ellipssegmente"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY.String.Text
+#, fuzzy
 msgid  "Polygon"
 msgstr "Poligoon"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY_PntAnz.String.Text
+#, fuzzy
 msgid  "Polygon %2 corners"
 msgstr "Veelhoek %2 hoeke"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPOLY.String.Text
+#, fuzzy
 msgid  "Polygons"
 msgstr "Veelhoeke"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN.String.Text
+#, fuzzy
 msgid  "Polyline"
 msgstr "Meervoudige lyn"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN_PntAnz.String.Text
+#, fuzzy
 msgid  "Polyline with %2 corners"
 msgstr "Meervoudige lyn met %2 hoeke"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPLIN.String.Text
+#, fuzzy
 msgid  "Polylines"
 msgstr "Meervoudige lyne"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHLINE.String.Text
+#, fuzzy
 msgid  "Bézier curve"
 msgstr "Bézier-kurwe"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHLINE.String.Text
+#, fuzzy
 msgid  "Bézier curves"
 msgstr "Bézier-kurwes"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHFILL.String.Text
+#, fuzzy
 msgid  "Bézier curve"
 msgstr "Bézier-kurwe"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHFILL.String.Text
+#, fuzzy
 msgid  "Bézier curves"
 msgstr "Bézier-kurwes"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREELINE.String.Text
+#, fuzzy
 msgid  "Freeform Line"
 msgstr "Vryevormlyn"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREELINE.String.Text
+#, fuzzy
 msgid  "Freeform Lines"
 msgstr "Vryevormlyne"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREEFILL.String.Text
+#, fuzzy
 msgid  "Freeform Line"
 msgstr "Vryevormlyn"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREEFILL.String.Text
+#, fuzzy
 msgid  "Freeform Lines"
 msgstr "Vryevormlyne"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBLINE.String.Text
+#, fuzzy
 msgid  "Curve"
 msgstr "Kurwe"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBLINE.String.Text
+#, fuzzy
 msgid  "Curve objects"
 msgstr "Kurweobjekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBFILL.String.Text
+#, fuzzy
 msgid  "Curve"
 msgstr "Kurwe"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBFILL.String.Text
+#, fuzzy
 msgid  "Curve objects"
 msgstr "Kurweobjekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNATSPLN.String.Text
+#, fuzzy
 msgid  "Natural Spline"
 msgstr "Natuurlike kromme"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNATSPLN.String.Text
+#, fuzzy
 msgid  "Natural Splines"
 msgstr "Natuurlike krommes"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPERSPLN.String.Text
+#, fuzzy
 msgid  "Periodic Spline"
 msgstr "Periodieke kromme"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPERSPLN.String.Text
+#, fuzzy
 msgid  "Periodic Splines"
 msgstr "Periodieke krommes"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXT.String.Text
+#, fuzzy
 msgid  "Text Frame"
 msgstr "Teksraam"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXT.String.Text
+#, fuzzy
 msgid  "Text Frame"
 msgstr "Teksraam"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXTLNK.String.Text
+#, fuzzy
 msgid  "Linked text frame"
 msgstr "Gekoppelde teksraam"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXTLNK.String.Text
+#, fuzzy
 msgid  "Linked text frames"
 msgstr "Gekoppelde teksrame"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "Inpas-teksobjek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "Inpas-teksobjekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITALLTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "Inpas-teksobjek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITALLTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "Inpas-teksobjekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTITLETEXT.String.Text
+#, fuzzy
 msgid  "Title text"
 msgstr "Opskrifteks"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTITLETEXT.String.Text
+#, fuzzy
 msgid  "Title texts"
 msgstr "Opskriftekste"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOUTLINETEXT.String.Text
+#, fuzzy
 msgid  "Outline Text"
 msgstr "Raamwerkteks"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOUTLINETEXT.String.Text
+#, fuzzy
 msgid  "Outline Texts"
 msgstr "Raamwerktekste"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAF.String.Text
+#, fuzzy
 msgid  "graphic"
 msgstr "grafika"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAF.String.Text
+#, fuzzy
 msgid  "graphics"
 msgstr "grafika"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFLNK.String.Text
+#, fuzzy
 msgid  "Linked graphic"
 msgstr "Gekoppelde grafiese objek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFLNK.String.Text
+#, fuzzy
 msgid  "Linked graphics"
 msgstr "Gekoppelde grafika"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONE.String.Text
+#, fuzzy
 msgid  "Blank graphic object"
 msgstr "Blank grafiese objek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONE.String.Text
+#, fuzzy
 msgid  "Blank graphic objects"
 msgstr "Blanko grafiese objekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONELNK.String.Text
+#, fuzzy
 msgid  "Blank linked graphic"
 msgstr "Blanko gekoppelde grafiese objek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONELNK.String.Text
+#, fuzzy
 msgid  "Blank linked graphics"
 msgstr "Blanko gekoppelde grafika"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTF.String.Text
+#, fuzzy
 msgid  "Metafile"
 msgstr "Metalêer"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTF.String.Text
+#, fuzzy
 msgid  "Metafiles"
 msgstr "Metalêers"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTFLNK.String.Text
+#, fuzzy
 msgid  "Linked Metafile"
 msgstr "Gekoppelde metalêer"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTFLNK.String.Text
+#, fuzzy
 msgid  "Linked Metafiles"
 msgstr "Gekoppelde metalêers"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMP.String.Text
+#, fuzzy
 msgid  "Bitmap"
 msgstr "Biskaart"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANS.String.Text
+#, fuzzy
 msgid  "Bitmap with transparency"
 msgstr "Biskaart met deursigtigheid"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPLNK.String.Text
+#, fuzzy
 msgid  "Linked Bitmap"
 msgstr "Gekoppelde biskaart"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANSLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmap with transparency"
 msgstr "Gekoppelde biskaart met deursigtigheid"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMP.String.Text
+#, fuzzy
 msgid  "Bitmaps"
 msgstr "Biskaarte"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANS.String.Text
+#, fuzzy
 msgid  "Bitmaps with transparency"
 msgstr "Biskaarte met deursigtigheid"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmaps"
 msgstr "Gekoppelde biskaarte"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANSLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmaps with transparency"
 msgstr "Gekoppelde biskaarte met deursigtigheid"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCUSTOMSHAPE.String.Text
+#, fuzzy
 msgid  "Shape"
 msgstr "Vorm"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCUSTOMSHAPE.String.Text
+#, fuzzy
 msgid  "Shapes"
 msgstr "Vorms"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMAC.String.Text
+#, fuzzy
 msgid  "Mac graphic"
 msgstr "Mac- grafiese objek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMAC.String.Text
+#, fuzzy
 msgid  "Mac graphics"
 msgstr "Mac-grafika"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMACLNK.String.Text
+#, fuzzy
 msgid  "Linked Mac graphic"
 msgstr "Gekoppelde Mac- grafiese objek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMACLNK.String.Text
+#, fuzzy
 msgid  "Linked Mac graphics"
 msgstr "Gekoppelde Mac-grafika"
 
@@ -8076,1686 +8672,2107 @@ msgid  "SVGs"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2.String.Text
+#, fuzzy
 msgid  "embedded object (OLE)"
 msgstr "ingebedde objek (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2.String.Text
+#, fuzzy
 msgid  "Embedded objects (OLE)"
 msgstr "Ingebedde objekte (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulUno.String.Text
+#, fuzzy
 msgid  "Control"
 msgstr "Beheer"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralUno.String.Text
+#, fuzzy
 msgid  "Controls"
 msgstr "Kontroles"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2LNK.String.Text
+#, fuzzy
 msgid  "linked embedded object (OLE)"
 msgstr "gekoppelde ingebedde objek (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2LNK.String.Text
+#, fuzzy
 msgid  "Linked embedded objects (OLE)"
 msgstr "Gekoppelde ingebedde objekte (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjOLE2NamePrefix.String.Text
+#, fuzzy
 msgid  "Object"
 msgstr "Objek"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFrame.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "Raam"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFrame.String.Text
+#, fuzzy
 msgid  "Frames"
 msgstr "Rame"
 
 #: source/svdraw/svdstr.src#STR_ObjFrameNamePrefix.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "Raam"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulEDGE.String.Text
+#, fuzzy
 msgid  "Object Connectors"
 msgstr "Objekverbinders"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralEDGE.String.Text
+#, fuzzy
 msgid  "Object Connectors"
 msgstr "Objekverbinders"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCAPTION.String.Text
+#, fuzzy
 msgid  "Callout"
 msgstr "Uitroep"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCAPTION.String.Text
+#, fuzzy
 msgid  "Callouts"
 msgstr "Uitroepe"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPAGE.String.Text
+#, fuzzy
 msgid  "Preview object"
 msgstr "Voorskou objek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPAGE.String.Text
+#, fuzzy
 msgid  "Preview objects"
 msgstr "Voorskou objekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEASURE.String.Text
+#, fuzzy
 msgid  "Dimension line"
 msgstr "Dimensielyn"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEASURE.String.Text
+#, fuzzy
 msgid  "Dimensioning objects"
 msgstr "Dimensionering van objekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePlural.String.Text
+#, fuzzy
 msgid  "draw objects"
 msgstr "teken objekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameNoObj.String.Text
+#, fuzzy
 msgid  "No draw object"
 msgstr "Geen tekenobjek"
 
 #: source/svdraw/svdstr.src#STR_ObjNameAnd.String.Text
+#, fuzzy
 msgid  "and"
 msgstr "en"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPlural.String.Text
+#, fuzzy
 msgid  "draw object(s)"
 msgstr "tekenobjek(te)"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCube3d.String.Text
+#, fuzzy
 msgid  "3D cube"
 msgstr "3-D-kubus"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCube3d.String.Text
+#, fuzzy
 msgid  "3D cubes"
 msgstr "3-D-kubusse"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulExtrude3d.String.Text
+#, fuzzy
 msgid  "Extrusion object"
 msgstr "Ekstrusieobjek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralExtrude3d.String.Text
+#, fuzzy
 msgid  "Extrusion objects"
 msgstr "Ekstrusieobjekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLabel3d.String.Text
+#, fuzzy
 msgid  "3D text"
 msgstr "3-D-teks"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLabel3d.String.Text
+#, fuzzy
 msgid  "3D texts"
 msgstr "3-D-tekste"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLathe3d.String.Text
+#, fuzzy
 msgid  "rotation object"
 msgstr "rotasieobjek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLathe3d.String.Text
+#, fuzzy
 msgid  "rotation objects"
 msgstr "rotasieobjekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulObj3d.String.Text
+#, fuzzy
 msgid  "3D object"
 msgstr "3-D-objek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralObj3d.String.Text
+#, fuzzy
 msgid  "3D objects"
 msgstr "3-D-objekte"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPoly3d.String.Text
+#, fuzzy
 msgid  "3D polygons"
 msgstr "3-D-veelhoeke"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulScene3d.String.Text
+#, fuzzy
 msgid  "3D scene"
 msgstr "3-D-toneel"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralScene3d.String.Text
+#, fuzzy
 msgid  "3D scenes"
 msgstr "3-D-tonele"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSphere3d.String.Text
+#, fuzzy
 msgid  "sphere"
 msgstr "sfeer"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSphere3d.String.Text
+#, fuzzy
 msgid  "spheres"
 msgstr "sfere"
 
 #: source/svdraw/svdstr.src#STR_EditWithCopy.String.Text
+#, fuzzy
 msgid  "with copy"
 msgstr "met kopie"
 
 #: source/svdraw/svdstr.src#STR_EditPosSize.String.Text
+#, fuzzy
 msgid  "Set position and size for %1"
 msgstr "Stel posisie en grootte vir %1"
 
 #: source/svdraw/svdstr.src#STR_EditDelete.String.Text
+#, fuzzy
 msgid  "Delete %1"
 msgstr "Skrap %1"
 
 #: source/svdraw/svdstr.src#STR_EditMovToTop.String.Text
+#, fuzzy
 msgid  "Move %1 forward"
 msgstr "Skuif %1 vorentoe"
 
 #: source/svdraw/svdstr.src#STR_EditMovToBtm.String.Text
+#, fuzzy
 msgid  "Move %1 further back"
 msgstr "Skuif %1 verder terug"
 
 #: source/svdraw/svdstr.src#STR_EditPutToTop.String.Text
+#, fuzzy
 msgid  "Move %1 to front"
 msgstr "Skuif %1 na vore"
 
 #: source/svdraw/svdstr.src#STR_EditPutToBtm.String.Text
+#, fuzzy
 msgid  "Move %1 to back"
 msgstr "Skuif %1 na agter"
 
 #: source/svdraw/svdstr.src#STR_EditRevOrder.String.Text
+#, fuzzy
 msgid  "Reverse order of %1"
 msgstr "Keer volgorde van %1 om"
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "Skuif %1"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
 msgstr "Skaleer %1"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
+#, fuzzy
 msgid  "Rotate %1"
 msgstr "Draai %1"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
+#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "Keer %1 horisontaal om"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
+#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "Keer %1 vertikaal om"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorDiag.String.Text
+#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "Keer %1 diagonaal om"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
+#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "Keer %1 vryhand om"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
+#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "Vervorm %1 (skuins)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
+#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "Rangskik %1 in sirkel"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
+#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "Kurwe %1 in sirkel"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
+#, fuzzy
 msgid  "Distort %1"
 msgstr "Verwring %1"
 
 #: source/svdraw/svdstr.src#STR_EditRipUp.String.Text
+#, fuzzy
 msgid  "Undo %1"
 msgstr "Ontdoen %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetPointsSmooth.String.Text
+#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "Wysig bézier-kenmerke van %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetSegmentsKind.String.Text
+#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "Wysig bézier-kenmerke van %1"
 
 #: source/svdraw/svdstr.src#STR_EditShut.String.Text
+#, fuzzy
 msgid  "Close %1"
 msgstr "Sluit %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueEscDir.String.Text
+#, fuzzy
 msgid  "Set exit direction for %1"
 msgstr "Stel uitgangsrigting vir %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetGluePercent.String.Text
+#, fuzzy
 msgid  "Set relative attribute at %1"
 msgstr "Stel relatiewe attribuut op %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueAlign.String.Text
+#, fuzzy
 msgid  "Set reference point for %1"
 msgstr "Stel verwysingspunt vir %1"
 
 #: source/svdraw/svdstr.src#STR_EditGroup.String.Text
+#, fuzzy
 msgid  "Group %1"
 msgstr "Groepeer %1"
 
 #: source/svdraw/svdstr.src#STR_EditUngroup.String.Text
+#, fuzzy
 msgid  "Ungroup %1"
 msgstr "Ontgroepeer %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetAttributes.String.Text
+#, fuzzy
 msgid  "Apply attributes to %1"
 msgstr "Pas attribute op %1 toe"
 
 #: source/svdraw/svdstr.src#STR_EditSetStylesheet.String.Text
+#, fuzzy
 msgid  "Apply Styles to %1"
 msgstr "Pas style op %1 toe"
 
 #: source/svdraw/svdstr.src#STR_EditDelStylesheet.String.Text
+#, fuzzy
 msgid  "Remove Style from %1"
 msgstr "Verwyder styl van %1"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPoly.String.Text
+#, fuzzy
 msgid  "Convert %1 to polygon"
 msgstr "Omskep %1 in veelhoek"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPolys.String.Text
+#, fuzzy
 msgid  "Convert %1 to polygons"
 msgstr "Omskep %1 in veelhoeke"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurve.String.Text
+#, fuzzy
 msgid  "Convert %1 to curve"
 msgstr "Omskep %1 in kromme"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurves.String.Text
+#, fuzzy
 msgid  "Convert %1 to curves"
 msgstr "Omskep %1 in krommes"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContour.String.Text
+#, fuzzy
 msgid  "Convert %1 to contour"
 msgstr "Omskep %1 in kontoer"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContours.String.Text
+#, fuzzy
 msgid  "Convert %1 to contours"
 msgstr "Omskep %1 in kontoere"
 
 #: source/svdraw/svdstr.src#STR_EditAlign.String.Text
+#, fuzzy
 msgid  "Align %1"
 msgstr "Belyn %1"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVTop.String.Text
+#, fuzzy
 msgid  "Align %1 to top"
 msgstr "Belyn %1 met bokant"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVBottom.String.Text
+#, fuzzy
 msgid  "Align %1 to bottom"
 msgstr "Belyn %1 met onderkant"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVCenter.String.Text
+#, fuzzy
 msgid  "Horizontally center %1"
 msgstr "Sentreer %1 horisontaal"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHLeft.String.Text
+#, fuzzy
 msgid  "Align %1 to left"
 msgstr "Belyn %1 na links"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHRight.String.Text
+#, fuzzy
 msgid  "Align %1 to right"
 msgstr "Belyn %1 na regs"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHCenter.String.Text
+#, fuzzy
 msgid  "Vertically center %1"
 msgstr "Sentreer %1 vertikaal"
 
 #: source/svdraw/svdstr.src#STR_EditAlignCenter.String.Text
+#, fuzzy
 msgid  "Center %1"
 msgstr "Sentreer %1"
 
 #: source/svdraw/svdstr.src#STR_EditTransform.String.Text
+#, fuzzy
 msgid  "Transform %1"
 msgstr "Omvorm %1"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_PolyPoly.String.Text
+#, fuzzy
 msgid  "Combine %1"
 msgstr "Kombineer %1"
 
 #: source/svdraw/svdstr.src#STR_EditMergeMergePoly.String.Text
+#, fuzzy
 msgid  "Merge %1"
 msgstr "Voeg %1 saam"
 
 #: source/svdraw/svdstr.src#STR_EditMergeSubstractPoly.String.Text
+#, fuzzy
 msgid  "Subtract %1"
 msgstr "Trek %1 af"
 
 #: source/svdraw/svdstr.src#STR_EditMergeIntersectPoly.String.Text
+#, fuzzy
 msgid  "Intersect %1"
 msgstr "Sny %1"
 
 #: source/svdraw/svdstr.src#STR_DistributeMarkedObjects.String.Text
+#, fuzzy
 msgid  "Distribute selected objects"
 msgstr "Versprei geselekteerde objekte"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_OnePoly.String.Text
+#, fuzzy
 msgid  "Combine %1"
 msgstr "Kombineer %1"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Polys.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "Verdeel %1"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Lines.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "Verdeel %1"
 
 #: source/svdraw/svdstr.src#STR_EditImportMtf.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "Verdeel %1"
 
 #: source/svdraw/svdstr.src#STR_ExchangePaste.String.Text
+#, fuzzy
 msgid  "Insert object(s)"
 msgstr "Voeg objek(te) in"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpCut.String.Text
+#, fuzzy
 msgid  "Cut %1"
 msgstr "Knip %1"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpPaste.String.Text
+#, fuzzy
 msgid  "Paste Clipboard"
 msgstr "Plak knipbord"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDD.String.Text
+#, fuzzy
 msgid  "Drag and Drop %1"
 msgstr "Sleep en los %1"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDDPaste.String.Text
+#, fuzzy
 msgid  "Insert Drag and Drop"
 msgstr "Voeg sleep en los in"
 
 #: source/svdraw/svdstr.src#STR_DragInsertPoint.String.Text
+#, fuzzy
 msgid  "Insert point to %1"
 msgstr "Voeg punt by %1 in"
 
 #: source/svdraw/svdstr.src#STR_DragInsertGluePoint.String.Text
+#, fuzzy
 msgid  "Insert glue point to %1"
 msgstr "Voeg plakpunt by %1 in"
 
 #: source/svdraw/svdstr.src#STR_DragMethMovHdl.String.Text
+#, fuzzy
 msgid  "Move reference-point"
 msgstr "Skuif verwysingspunt"
 
 #: source/svdraw/svdstr.src#STR_DragMethObjOwn.String.Text
+#, fuzzy
 msgid  "Geometrically change %1"
 msgstr "Verander %1 geometries"
 
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "Skuif %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
 msgstr "Skaleer %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethRotate.String.Text
+#, fuzzy
 msgid  "Rotate %1"
 msgstr "Draai %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorHori.String.Text
+#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "Keer %1 horisontaal om"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorVert.String.Text
+#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "Keer %1 vertikaal om"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorDiag.String.Text
+#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "Keer %1 diagonaal om"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorFree.String.Text
+#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "Keer %1 vryhand om"
 
 #: source/svdraw/svdstr.src#STR_DragMethGradient.String.Text
+#, fuzzy
 msgid  "Interactive gradient for %1"
 msgstr "Interaktiewe gradiënt vir %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethTransparence.String.Text
+#, fuzzy
 msgid  "Interactive transparency for %1"
 msgstr "Interaktiewe deursigtigheid vir %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethShear.String.Text
+#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "Vervorm %1 (skuins)"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrook.String.Text
+#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "Rangskik %1 in sirkel"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrookContortion.String.Text
+#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "Kurwe %1 in sirkel"
 
 #: source/svdraw/svdstr.src#STR_DragMethDistort.String.Text
+#, fuzzy
 msgid  "Distort %1"
 msgstr "Verwring %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrop.String.Text
+#, fuzzy
 msgid  "Crop %O"
 msgstr "Snoei %O"
 
 #: source/svdraw/svdstr.src#STR_DragRectEckRad.String.Text
+#, fuzzy
 msgid  "Alter radius by %1"
 msgstr "Verander radius met %1"
 
 #: source/svdraw/svdstr.src#STR_DragPathObj.String.Text
+#, fuzzy
 msgid  "Change %1"
 msgstr "Verander %1"
 
 #: source/svdraw/svdstr.src#STR_DragRectResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
 msgstr "Skaleer %1"
 
 #: source/svdraw/svdstr.src#STR_DragCaptFram.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "Skuif %1"
 
 #: source/svdraw/svdstr.src#STR_DragCaptTail.String.Text
+#, fuzzy
 msgid  "Move end point of %1"
 msgstr "Skuif eindpunt van %1"
 
 #: source/svdraw/svdstr.src#STR_DragCircAngle.String.Text
+#, fuzzy
 msgid  "Adjust angle by %1"
 msgstr "Verstel hoek met %1"
 
 #: source/svdraw/svdstr.src#STR_DragEdgeTail.String.Text
+#, fuzzy
 msgid  "Change %1"
 msgstr "Verander %1"
 
 #: source/svdraw/svdstr.src#STR_ViewTextEdit.String.Text
+#, fuzzy
 msgid  "TextEdit: Paragraph %1, Row %2, Column %3"
 msgstr "TeksRedigeer: Paragraaf %1, ry %2, kolom %3"
 
 #: source/svdraw/svdstr.src#STR_ViewMarked.String.Text
+#, fuzzy
 msgid  "%1 selected"
 msgstr "%1 gekies"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoint.String.Text
+#, fuzzy
 msgid  "Point from %1"
 msgstr "Punt vanaf %1"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoints.String.Text
+#, fuzzy
 msgid  "%2 points from %1"
 msgstr "%2 punte vanaf %1"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoint.String.Text
+#, fuzzy
 msgid  "Glue point from %1"
 msgstr "Plakpunt vanaf %1"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoints.String.Text
+#, fuzzy
 msgid  "%2 glue points from %1"
 msgstr "%2 plakpunte vanaf %1"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkObjs.String.Text
+#, fuzzy
 msgid  "Mark objects"
 msgstr "Merk objekte"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreObjs.String.Text
+#, fuzzy
 msgid  "Mark additional objects"
 msgstr "Merk bykomende objekte"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkPoints.String.Text
+#, fuzzy
 msgid  "Mark points"
 msgstr "Merk punte"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMorePoints.String.Text
+#, fuzzy
 msgid  "Mark additional points"
 msgstr "Merk bykomende punte"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkGluePoints.String.Text
+#, fuzzy
 msgid  "Mark glue points"
 msgstr "Merk plakpunte"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreGluePoints.String.Text
+#, fuzzy
 msgid  "Mark additional glue points"
 msgstr "Merk bykomende plakpunte"
 
 #: source/svdraw/svdstr.src#STR_ViewCreateObj.String.Text
+#, fuzzy
 msgid  "Create %1"
 msgstr "Skep %1"
 
 #: source/svdraw/svdstr.src#STR_UndoInsertObj.String.Text
+#, fuzzy
 msgid  "Insert %1"
 msgstr "Voeg %1 in"
 
 #: source/svdraw/svdstr.src#STR_UndoCopyObj.String.Text
+#, fuzzy
 msgid  "Copy %1"
 msgstr "Kopieer %1"
 
 #: source/svdraw/svdstr.src#STR_UndoObjOrdNum.String.Text
+#, fuzzy
 msgid  "Change object order of %1"
 msgstr "Verander objekvolgorde van %1"
 
 #: source/svdraw/svdstr.src#STR_UndoObjSetText.String.Text
+#, fuzzy
 msgid  "Edit text of %1"
 msgstr "Redigeer teks van %1"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPage.String.Text
+#, fuzzy
 msgid  "Insert page"
 msgstr "Voeg bladsy in"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPage.String.Text
+#, fuzzy
 msgid  "Delete page"
 msgstr "Skrap bladsy"
 
 #: source/svdraw/svdstr.src#STR_UndoCopPage.String.Text
+#, fuzzy
 msgid  "Copy page"
 msgstr "Kopieer bladsy"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPage.String.Text
+#, fuzzy
 msgid  "Change order of pages"
 msgstr "Verander bladsyorde"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Assign background page"
 msgstr "Wys agtergrondbladsy toe"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Clear background page assignment"
 msgstr "Verwyder toewysing van agtergrondbladsy"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Move background page assignment"
 msgstr "Skuif toewysing van agtergrondbladsy"
 
 #: source/svdraw/svdstr.src#STR_UndoChgPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Change background page assignment"
 msgstr "Verander toewysing van agtergrondbladsy"
 
 #: source/svdraw/svdstr.src#STR_UndoMergeModel.String.Text
+#, fuzzy
 msgid  "Insert document"
 msgstr "Voeg dokument in"
 
 #: source/svdraw/svdstr.src#STR_UndoNewLayer.String.Text
+#, fuzzy
 msgid  "Insert Layer"
 msgstr "Voeg laag in"
 
 #: source/svdraw/svdstr.src#STR_UndoDelLayer.String.Text
+#, fuzzy
 msgid  "Delete layer"
 msgstr "Skrap laag"
 
 #: source/svdraw/svdstr.src#STR_UndoMovLayer.String.Text
+#, fuzzy
 msgid  "Change order of layers"
 msgstr "Verander laagorde"
 
 #: source/svdraw/svdstr.src#STR_UndoObjName.String.Text
+#, fuzzy
 msgid  "Change object name of %1 to"
 msgstr "Verander objeknaam van %1 na"
 
 #: source/svdraw/svdstr.src#STR_UndoObjTitle.String.Text
+#, fuzzy
 msgid  "Change object title of %1"
 msgstr "Verander objektitel van %1"
 
 #: source/svdraw/svdstr.src#STR_UndoObjDescription.String.Text
+#, fuzzy
 msgid  "Change object description of %1"
 msgstr "Verander objekbeskrywing van %1"
 
 #: source/svdraw/svdstr.src#STR_StandardLayerName.String.Text
+#, fuzzy
 msgid  "Standard"
 msgstr "Standaard"
 
 #: source/svdraw/svdstr.src#STR_ItemValON.String.Text
+#, fuzzy
 msgid  "on"
 msgstr "aan"
 
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
+#, fuzzy
 msgid  "off"
 msgstr "af"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
+#, fuzzy
 msgid  "yes"
 msgstr "ja"
 
 #: source/svdraw/svdstr.src#STR_ItemValNO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "Nee"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE1.String.Text
+#, fuzzy
 msgid  "Type 1"
 msgstr "Tipe 1"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE2.String.Text
+#, fuzzy
 msgid  "Type 2"
 msgstr "Tipe 2"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE3.String.Text
+#, fuzzy
 msgid  "Type 3"
 msgstr "Tipe 3"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE4.String.Text
+#, fuzzy
 msgid  "Type 4"
 msgstr "Tipe 4"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCHORI.String.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "Horisontaal"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCVERT.String.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "Vertikaal"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCBESTFIT.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "Outomaties"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZENONE.String.Text
+#, fuzzy
 msgid  "Off"
 msgstr "Af"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEPROP.String.Text
+#, fuzzy
 msgid  "Proportional"
 msgstr "Proporsioneel"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEALLLINES.String.Text
+#, fuzzy
 msgid  "Fit to size (all rows separately) "
 msgstr "Pas aan by grootte (alle rye apart) "
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZERESIZEAT.String.Text
+#, fuzzy
 msgid  "Use hard attributes"
 msgstr "Gebruik harde attribute"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJTOP.String.Text
+#, fuzzy
 msgid  "Top"
 msgstr "Bokant"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJCENTER.String.Text
+#, fuzzy
 msgid  "Center"
 msgstr "Sentreer"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBOTTOM.String.Text
+#, fuzzy
 msgid  "Bottom"
 msgstr "Onderkant"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBLOCK.String.Text
+#, fuzzy
 msgid  "Use entire height"
 msgstr "Gebruik volle hoogte"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJSTRETCH.String.Text
+#, fuzzy
 msgid  "Stretched"
 msgstr "Gerek"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJLEFT.String.Text
+#, fuzzy
 msgid  "Left"
 msgstr "Links"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJCENTER.String.Text
+#, fuzzy
 msgid  "Center"
 msgstr "Sentreer"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJRIGHT.String.Text
+#, fuzzy
 msgid  "Right"
 msgstr "Regs"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJBLOCK.String.Text
+#, fuzzy
 msgid  "Use entire width"
 msgstr "Gebruik volle breedte"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJSTRETCH.String.Text
+#, fuzzy
 msgid  "Stretched"
 msgstr "Gerek"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_NONE.String.Text
+#, fuzzy
 msgid  "off"
 msgstr "af"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_BLINK.String.Text
+#, fuzzy
 msgid  "flash"
 msgstr "flits"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SCROLL.String.Text
+#, fuzzy
 msgid  "Scroll Through"
 msgstr "Rol deur"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_ALTERNATE.String.Text
+#, fuzzy
 msgid  "alternating"
 msgstr "afwisselend"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SLIDE.String.Text
+#, fuzzy
 msgid  "Scroll In"
 msgstr "Rol in"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_LEFT.String.Text
+#, fuzzy
 msgid  "left"
 msgstr "links"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_UP.String.Text
+#, fuzzy
 msgid  "up"
 msgstr "op"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_RIGHT.String.Text
+#, fuzzy
 msgid  "right"
 msgstr "regs"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_DOWN.String.Text
+#, fuzzy
 msgid  "down"
 msgstr "af"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ORTHOLINES.String.Text
+#, fuzzy
 msgid  "Standard Connector"
 msgstr "Standaard verbinder"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_THREELINES.String.Text
+#, fuzzy
 msgid  "Line Connector"
 msgstr "Lynverbinder"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ONELINE.String.Text
+#, fuzzy
 msgid  "Straight Connector"
 msgstr "Reguit verbinder"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_BEZIER.String.Text
+#, fuzzy
 msgid  "Curved Connector"
 msgstr "Krom verbinder"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_STD.String.Text
+#, fuzzy
 msgid  "Standard"
 msgstr "Standaard"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_RADIUS.String.Text
+#, fuzzy
 msgid  "Radius"
 msgstr "Radius"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTHAUTO.String.Text
+#, fuzzy
 msgid  "automatic"
 msgstr "outomaties"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTLEFTOUTSIDE.String.Text
+#, fuzzy
 msgid  "left outside"
 msgstr "links buite"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTINSIDE.String.Text
+#, fuzzy
 msgid  "inside (centered)"
 msgstr "binnekant (gesentreer)"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTRIGHTOUTSID.String.Text
+#, fuzzy
 msgid  "right outside"
 msgstr "regs buite"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTVAUTO.String.Text
+#, fuzzy
 msgid  "automatic"
 msgstr "outomaties"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_ABOVE.String.Text
+#, fuzzy
 msgid  "on the line"
 msgstr "op die lyn"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_BREAKEDLINE.String.Text
+#, fuzzy
 msgid  "broken line"
 msgstr "gebroke lyn"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_BELOW.String.Text
+#, fuzzy
 msgid  "below the line"
 msgstr "onder die lyn"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_VERTICALCEN.String.Text
+#, fuzzy
 msgid  "centered"
 msgstr "gesentreer"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_FULL.String.Text
+#, fuzzy
 msgid  "full circle"
 msgstr "volle sirkel"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_SECT.String.Text
+#, fuzzy
 msgid  "Circle Pie"
 msgstr "Ronde sektordiagram"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_CUT.String.Text
+#, fuzzy
 msgid  "Circle segment"
 msgstr "Sirkelsegment"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_ARC.String.Text
+#, fuzzy
 msgid  "Arc"
 msgstr "Boog"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW.String.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Skadu"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWCOLOR.String.Text
+#, fuzzy
 msgid  "Shadow color"
 msgstr "Skadukleur"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWXDIST.String.Text
+#, fuzzy
 msgid  "Horizontal shadow outline"
 msgstr "Horisontale skadubuitelyn"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWYDIST.String.Text
+#, fuzzy
 msgid  "Vertical shadow outline"
 msgstr "Vertikale skadubuitelyn"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Skadudeursigtigheid"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
+#, fuzzy
 msgid  "3D shadow"
 msgstr "3-D-skadu"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
+#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Perspektiefskadu"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
+#, fuzzy
 msgid  "Callout type"
 msgstr "Uitroeptipe"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Given angle"
 msgstr "Gegewe hoek"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONANGLE.String.Text
+#, fuzzy
 msgid  "Angle"
 msgstr "Hoek"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONGAP.String.Text
+#, fuzzy
 msgid  "Gap"
 msgstr "Gaping"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCDIR.String.Text
+#, fuzzy
 msgid  "Exit direction"
 msgstr "Afsluitrigting"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCISREL.String.Text
+#, fuzzy
 msgid  "Relative exit position"
 msgstr "Relatiewe uitgangsposisie"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCREL.String.Text
+#, fuzzy
 msgid  "Exit Position"
 msgstr "Verlaat posisie"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCABS.String.Text
+#, fuzzy
 msgid  "Exit Position"
 msgstr "Verlaat posisie"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONLINELEN.String.Text
+#, fuzzy
 msgid  "Line length"
 msgstr "Lynlengte"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFITLINELEN.String.Text
+#, fuzzy
 msgid  "Auto line length"
 msgstr "Outolynlengte"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ECKENRADIUS.String.Text
+#, fuzzy
 msgid  "Corner radius"
 msgstr "Hoekradius"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LEFTDIST.String.Text
+#, fuzzy
 msgid  "Left border spacing"
 msgstr "Spasiëring: Linkerrandstrook"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_RIGHTDIST.String.Text
+#, fuzzy
 msgid  "Right border spacing"
 msgstr "Spasiëring: Regterrandstrook"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_UPPERDIST.String.Text
+#, fuzzy
 msgid  "Upper border spacing"
 msgstr "Spasiëring: Boonste randstrook"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LOWERDIST.String.Text
+#, fuzzy
 msgid  "Lower border spacing"
 msgstr "Spasiëring: Onderste randstrook"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWHEIGHT.String.Text
+#, fuzzy
 msgid  "AutoFit frame height"
 msgstr "OutoPas raamhoogte"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Min. frame height"
 msgstr "Min. raamhoogte"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Max. frame height"
 msgstr "Maks. raamhoogte"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWWIDTH.String.Text
+#, fuzzy
 msgid  "AutoFit frame width"
 msgstr "OutoPas raamwydte"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Min. frame width"
 msgstr "Min. raamwydte"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Max. frame width"
 msgstr "Maks. raamwydte"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_VERTADJUST.String.Text
+#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "Vertikale teksanker"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_HORZADJUST.String.Text
+#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "Horisontale teksanker"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
+#, fuzzy
 msgid  "Fit text to frame"
 msgstr "Pas teks in raam"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
+#, fuzzy
 msgid  "Red"
 msgstr "Rooi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGREEN.String.Text
+#, fuzzy
 msgid  "Green"
 msgstr "Groen"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFBLUE.String.Text
+#, fuzzy
 msgid  "Blue"
 msgstr "Blou"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFLUMINANCE.String.Text
+#, fuzzy
 msgid  "Brightness"
 msgstr "Helderheid"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFCONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast"
 msgstr "Kontras"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGAMMA.String.Text
+#, fuzzy
 msgid  "Gamma"
 msgstr "Gamma"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Deursigtigheid"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
+#, fuzzy
 msgid  "Invert"
 msgstr "Negatief"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFMODE.String.Text
+#, fuzzy
 msgid  "Graphics mode"
 msgstr "Grafikamodus"
 
 #: source/svdraw/svdstr.src#STR_ItemNamSET_MISC.String.Text
+#, fuzzy
 msgid  "Various attributes"
 msgstr "Allerlei attribute"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJMOVEPROTECT.String.Text
+#, fuzzy
 msgid  "Position protected"
 msgstr "Posisie beskerm"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJSIZEPROTECT.String.Text
+#, fuzzy
 msgid  "Size Protection"
 msgstr "Groottebeskerming"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJPRINTABLE.String.Text
+#, fuzzy
 msgid  "Don't print"
 msgstr "Moenie druk nie"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERID.String.Text
+#, fuzzy
 msgid  "Layer Indicator"
 msgstr "Laagaanwyser"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERNAME.String.Text
+#, fuzzy
 msgid  "Le~vel"
 msgstr "Vla~k"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
+#, fuzzy
 msgid  "Object name"
 msgstr "Objeknaam"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
+#, fuzzy
 msgid  "Start angle"
 msgstr "Beginhoek"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ENDANGLE.String.Text
+#, fuzzy
 msgid  "Final angle"
 msgstr "Finale hoek"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONX.String.Text
+#, fuzzy
 msgid  "X Position"
 msgstr "X-posisie"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONY.String.Text
+#, fuzzy
 msgid  "Y Position"
 msgstr "Y-posisie"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Width"
 msgstr "Wydte"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Height"
 msgstr "Hoogte"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ROTATEANGLE.String.Text
+#, fuzzy
 msgid  "Rotation angle"
 msgstr "Rotasiehoek"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHEARANGLE.String.Text
+#, fuzzy
 msgid  "Shear angle"
 msgstr "Skuifskeurhoek"
 
 #: source/svdraw/svdstr.src#SIP_UNKNOWN_ATTR.String.Text
+#, fuzzy
 msgid  "Unknown attribute"
 msgstr "Onbekende attribuut"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTYLE.String.Text
+#, fuzzy
 msgid  "Line style"
 msgstr "Lynstyl"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEDASH.String.Text
+#, fuzzy
 msgid  "Line pattern"
 msgstr "Lynpatroon"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEWIDTH.String.Text
+#, fuzzy
 msgid  "Line width"
 msgstr "Lynbreedte"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINECOLOR.String.Text
+#, fuzzy
 msgid  "Line color"
 msgstr "Lynkleur"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTART.String.Text
+#, fuzzy
 msgid  "Line head"
 msgstr "Lynkop"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEEND.String.Text
+#, fuzzy
 msgid  "Line end"
 msgstr "Lyn einde"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTWIDTH.String.Text
+#, fuzzy
 msgid  "Line head width"
 msgstr "Breedte van lynkop"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDWIDTH.String.Text
+#, fuzzy
 msgid  "Line end width"
 msgstr "Breedte van lyn einde"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTCENTER.String.Text
+#, fuzzy
 msgid  "Center arrowhead"
 msgstr "Sentreer pylpunt"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDCENTER.String.Text
+#, fuzzy
 msgid  "Center arrowend"
 msgstr "Sentreer pylveer"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINETRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Line transparency"
 msgstr "Lyndeursigtigheid"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEJOINT.String.Text
+#, fuzzy
 msgid  "Line joint"
 msgstr "Lynlas"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED2.String.Text
+#, fuzzy
 msgid  "Line reserved for 2"
 msgstr "Lyn gereserveer vir 2"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED3.String.Text
+#, fuzzy
 msgid  "Line reserved for 3"
 msgstr "Lyn gereserveer vir 3"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED4.String.Text
+#, fuzzy
 msgid  "Line reserved for 4"
 msgstr "Lyn gereserveer vir 4"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED5.String.Text
+#, fuzzy
 msgid  "Line reserved for 5"
 msgstr "Lyn gereserveer vir 5"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED_LAST.String.Text
+#, fuzzy
 msgid  "Line reserved for 6"
 msgstr "Lyn gereserveer vir 6"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_LINE.String.Text
+#, fuzzy
 msgid  "Line attributes"
 msgstr "Lynattribute"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLSTYLE.String.Text
+#, fuzzy
 msgid  "Fill style"
 msgstr "Invulstyl"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLCOLOR.String.Text
+#, fuzzy
 msgid  "Fillcolor"
 msgstr "Invulkleur"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLGRADIENT.String.Text
+#, fuzzy
 msgid  "Gradient"
 msgstr "Gradiënt"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLHATCH.String.Text
+#, fuzzy
 msgid  "Hatching"
 msgstr "Arsering"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBITMAP.String.Text
+#, fuzzy
 msgid  "Fillbitmap"
 msgstr "Invulbiskaart"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Deursigtigheid"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
+#, fuzzy
 msgid  "Number of gradient steps"
 msgstr "Getal gradiëntstappe"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILE.String.Text
+#, fuzzy
 msgid  "Tile fill"
 msgstr "Teëlinvulling"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POS.String.Text
+#, fuzzy
 msgid  "Fillbitmap position"
 msgstr "Posisie van invulbiskaart"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEX.String.Text
+#, fuzzy
 msgid  "Fillbitmap width"
 msgstr "Breedte van invulbiskaart"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEY.String.Text
+#, fuzzy
 msgid  "Height of fillbitmap"
 msgstr "Hoogte van invulbiskaart"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLFLOATTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparent gradient"
 msgstr "Deursigtige gradiënt"
 
 #: source/svdraw/svdstr.src#SIP_XA_SECONDARYFILLCOLOR.String.Text
+#, fuzzy
 msgid  "Fill reserved for 2"
 msgstr "Invulling gereserveer vir 2"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZELOG.String.Text
+#, fuzzy
 msgid  "Tile size not in %"
 msgstr "Teëlgrootte nie in %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETX.String.Text
+#, fuzzy
 msgid  "Tile offset X in %"
 msgstr "Teëlverplasing X in %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETY.String.Text
+#, fuzzy
 msgid  "Tile offset Y in %"
 msgstr "Teëlverplasing Y in %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_STRETCH.String.Text
+#, fuzzy
 msgid  "Bitmap scaling"
 msgstr "Biskaartskalering"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED3.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 3"
 msgstr "Biskaart gereserveer vir 3"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED4.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 4"
 msgstr "Biskaart gereserveer vir 4"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED5.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 5"
 msgstr "Biskaart gereserveer vir 5"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED6.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 6"
 msgstr "Biskaart gereserveer vir 6"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED7.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 7"
 msgstr "Biskaart gereserveer vir 7"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED8.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 8"
 msgstr "Biskaart gereserveer vir 8"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETX.String.Text
+#, fuzzy
 msgid  "Tile position X in %"
 msgstr "Teëlposisie X in %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETY.String.Text
+#, fuzzy
 msgid  "Tile position Y in %"
 msgstr "Teëlposisie Y in %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBACKGROUND.String.Text
+#, fuzzy
 msgid  "Background fill"
 msgstr "Agtergrondinvulling"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED10.String.Text
+#, fuzzy
 msgid  "Fill reserved for 10"
 msgstr "Invulling gereserveer vir 10"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED11.String.Text
+#, fuzzy
 msgid  "Fill reserved for 11"
 msgstr "Invulling gereserveer vir 11"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED_LAST.String.Text
+#, fuzzy
 msgid  "Fill reserved for 12"
 msgstr "Invulling gereserveer vir 12"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_FILL.String.Text
+#, fuzzy
 msgid  "Area attributes"
 msgstr "Area-attribute"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTYLE.String.Text
+#, fuzzy
 msgid  "Fontwork style"
 msgstr "Fontwerkstyl"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTADJUST.String.Text
+#, fuzzy
 msgid  "Fontwork alignment"
 msgstr "Fontwerk-belyning"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTDISTANCE.String.Text
+#, fuzzy
 msgid  "Fontwork spacing"
 msgstr "Fontwerkspasiëring"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTART.String.Text
+#, fuzzy
 msgid  "Fontwork font begin"
 msgstr "Fontwerk begin van font"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTMIRROR.String.Text
+#, fuzzy
 msgid  "Fontwork mirror"
 msgstr "Fontwerkspieëlbeeld"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTOUTLINE.String.Text
+#, fuzzy
 msgid  "Fontwork outline"
 msgstr "Fontwerkbuitelyn"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHADOW.String.Text
+#, fuzzy
 msgid  "Fontwork shadow"
 msgstr "Fontwerkskaduwee"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWCOLOR.String.Text
+#, fuzzy
 msgid  "Fontwork shadow color"
 msgstr "Fontwerkskaduweekleur"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWXVAL.String.Text
+#, fuzzy
 msgid  "Fontwork shadow offset X"
 msgstr "Fontwerkskaduweeverplasing X"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWYVAL.String.Text
+#, fuzzy
 msgid  "Fontwork shadow offset Y"
 msgstr "Fontwerkskaduweeverplasing Y"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTDFORM.String.Text
+#, fuzzy
 msgid  "Fontwork default form"
 msgstr "Fontwerk- verstek vorm"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTHIDEFORM.String.Text
+#, fuzzy
 msgid  "Hide fontwork outline"
 msgstr "Versteek fontwerkbuitelyn"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWTRANSP.String.Text
+#, fuzzy
 msgid  "Fontwork shadow transparency"
 msgstr "Fontwerkskaduweedeursigtigheid"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED2.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 2"
 msgstr "Fontwerk gereserveer vir 2"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED3.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 3"
 msgstr "Fontwerk gereserveer vir 3"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED4.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 4"
 msgstr "Fontwerk gereserveer vir 4"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED5.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 5"
 msgstr "Fontwerk gereserveer vir 5"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED_LAST.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 6"
 msgstr "Fontwerk gereserveer vir 6"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW.String.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Skadu"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWCOLOR.String.Text
+#, fuzzy
 msgid  "Shadow color"
 msgstr "Skadukleur"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWXDIST.String.Text
+#, fuzzy
 msgid  "Shadow spacing X"
 msgstr "Skaduweespasiëring X"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWYDIST.String.Text
+#, fuzzy
 msgid  "Shadow spacing Y"
 msgstr "Skaduweespasiëring Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Skadudeursigtigheid"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW3D.String.Text
+#, fuzzy
 msgid  "3D shadow"
 msgstr "3-D-skadu"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWPERSP.String.Text
+#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Perspektiefskadu"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONTYPE.String.Text
+#, fuzzy
 msgid  "Type of legend"
 msgstr "Tipe legende"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Fixed legend angle"
 msgstr "Vaste legendehoek"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONANGLE.String.Text
+#, fuzzy
 msgid  "Legend angle"
 msgstr "Legendehoek"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONGAP.String.Text
+#, fuzzy
 msgid  "Legend lines spacing"
 msgstr "Spasiëring van legendelyne"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCDIR.String.Text
+#, fuzzy
 msgid  "Legend exit alignment"
 msgstr "Uitgangsbelyning van legende"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCISREL.String.Text
+#, fuzzy
 msgid  "Relative exit legend"
 msgstr "Relatiewe verlaatlegende"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCREL.String.Text
+#, fuzzy
 msgid  "Relative exit legend"
 msgstr "Relatiewe verlaatlegende"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCABS.String.Text
+#, fuzzy
 msgid  "Absolute exit of legend"
 msgstr "Absolute uitgang van legende"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONLINELEN.String.Text
+#, fuzzy
 msgid  "Legend line length"
 msgstr "Lengte van legendelyn"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFITLINELEN.String.Text
+#, fuzzy
 msgid  "AutoLength of legend lines"
 msgstr "OutoLengte van legendelyne"
 
 #: source/svdraw/svdstr.src#SIP_SA_ECKENRADIUS.String.Text
+#, fuzzy
 msgid  "Corner radius"
 msgstr "Hoekradius"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Minimal frame height"
 msgstr "Minimum raamhoogte"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWHEIGHT.String.Text
+#, fuzzy
 msgid  "AutoFit height"
 msgstr "OutoPas hoogte"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_FITTOSIZE.String.Text
+#, fuzzy
 msgid  "Fit text to frame"
 msgstr "Pas teks in raam"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LEFTDIST.String.Text
+#, fuzzy
 msgid  "Left text frame spacing"
 msgstr "Teksraamspasiëring links"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_RIGHTDIST.String.Text
+#, fuzzy
 msgid  "Right text frame spacing"
 msgstr "Teksraamspasiëring regs"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_UPPERDIST.String.Text
+#, fuzzy
 msgid  "Upper text frame spacing"
 msgstr "Teksraamspasiëring bo"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LOWERDIST.String.Text
+#, fuzzy
 msgid  "Lower text frame spacing"
 msgstr "Teksraamspasiëring onder"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_VERTADJUST.String.Text
+#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "Vertikale teksanker"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Maximal frame height"
 msgstr "Maksimum raamhoogte"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Minimal frame width"
 msgstr "Minimum raamwydte"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Maximal frame width"
 msgstr "Maksimum raamwydte"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWWIDTH.String.Text
+#, fuzzy
 msgid  "AutoFit width"
 msgstr "OutoPas wydte"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_HORZADJUST.String.Text
+#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "Horisontale teksanker"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIKIND.String.Text
+#, fuzzy
 msgid  "Ticker"
 msgstr "Tikker"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDIRECTION.String.Text
+#, fuzzy
 msgid  "Ticker direction"
 msgstr "Tikkerrigting"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTARTINSIDE.String.Text
+#, fuzzy
 msgid  "Ticker start inside"
 msgstr "Tikker begin binnekant"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTOPINSIDE.String.Text
+#, fuzzy
 msgid  "Ticker stop inside"
 msgstr "Tikker stop binnekant"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANICOUNT.String.Text
+#, fuzzy
 msgid  "Number of ticker runs"
 msgstr "Getal tikkerlopies"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDELAY.String.Text
+#, fuzzy
 msgid  "Speed of ticker"
 msgstr "Tikkerspoed"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIAMOUNT.String.Text
+#, fuzzy
 msgid  "Ticker step size"
 msgstr "Tikkerstapgrootte"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_CONTOURFRAME.String.Text
+#, fuzzy
 msgid  "Outline text flow"
 msgstr "Vloei van raamwerkteks"
 
 #: source/svdraw/svdstr.src#SIP_SA_CUSTOMSHAPE_ADJUSTMENT.String.Text
+#, fuzzy
 msgid  "Shape Adjustment"
 msgstr "Vormaanpassing"
 
 #: source/svdraw/svdstr.src#SIP_SA_XMLATTRIBUTES.String.Text
+#, fuzzy
 msgid  "User-defined attributes"
 msgstr "Gebruikergedefinieerde attribute"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_USEFIXEDCELLHEIGHT.String.Text
+#, fuzzy
 msgid  "Use font-independent line spacing"
 msgstr "Gebruik fontonafhanklike reëlspasiëring"
 
 #: source/svdraw/svdstr.src#SIP_SA_WORDWRAP.String.Text
+#, fuzzy
 msgid  "Word wrap text in shape"
 msgstr "Vou teks in vorm om"
 
 #: source/svdraw/svdstr.src#SIP_SA_AUTOGROWSIZE.String.Text
+#, fuzzy
 msgid  "Auto grow shape to fit text"
 msgstr "Outogroei vorm om by teks te pas"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE18.String.Text
+#, fuzzy
 msgid  "SvDraw reserved for 18"
 msgstr "SvDraw gereserveer vir 18"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE19.String.Text
+#, fuzzy
 msgid  "SvDraw reserved for 19"
 msgstr "SvDraw gereserveer vir 19"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGEKIND.String.Text
+#, fuzzy
 msgid  "Type of connector"
 msgstr "Tipe verbinder"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1HORZDIST.String.Text
+#, fuzzy
 msgid  "Horz. spacing object 1"
 msgstr "Horis. spasiëring objek 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1VERTDIST.String.Text
+#, fuzzy
 msgid  "Vert. spacing object 1"
 msgstr "Vert. spasiëring objek 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2HORZDIST.String.Text
+#, fuzzy
 msgid  "Horz. spacing object 2"
 msgstr "Horis. spasiëring objek 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2VERTDIST.String.Text
+#, fuzzy
 msgid  "Vert. spacing object 2"
 msgstr "Vert. spasiëring objek 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1GLUEDIST.String.Text
+#, fuzzy
 msgid  "Glue spacing object 1"
 msgstr "Plak spasiëring objek 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2GLUEDIST.String.Text
+#, fuzzy
 msgid  "Glue spacing object 2"
 msgstr "Plak spasiëring objek 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINEDELTAANZ.String.Text
+#, fuzzy
 msgid  "Number of movable lines"
 msgstr "Getal skuifbare lyne"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE1DELTA.String.Text
+#, fuzzy
 msgid  "Offset line 1"
 msgstr "Verplasing lyn 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE2DELTA.String.Text
+#, fuzzy
 msgid  "Offset line 2"
 msgstr "Verplasing lyn 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE3DELTA.String.Text
+#, fuzzy
 msgid  "Offset line 3"
 msgstr "Verplasing lyn 3"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREKIND.String.Text
+#, fuzzy
 msgid  "Type of dimensioning"
 msgstr "Tipe dimensionering"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTHPOS.String.Text
+#, fuzzy
 msgid  "Dimension value - horizontal position"
 msgstr "Dimensiewaarde - horisontale posisie"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTVPOS.String.Text
+#, fuzzy
 msgid  "Dimension value - vertical position"
 msgstr "Dimensiewaarde - vertikale posisie"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURELINEDIST.String.Text
+#, fuzzy
 msgid  "Dimension line space"
 msgstr "Dimensie lynspasie"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEOVERHANG.String.Text
+#, fuzzy
 msgid  "Dimension help line overhang"
 msgstr "Dimensiehulp lynoorhang"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEDIST.String.Text
+#, fuzzy
 msgid  "Dimension help line spacing"
 msgstr "Dimensiehulp lynspasiëring"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE1LEN.String.Text
+#, fuzzy
 msgid  "Backlog of dimension help line 1"
 msgstr "Agterstand van dimensiehulp lyn 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE2LEN.String.Text
+#, fuzzy
 msgid  "Backlog of dimension help line 2"
 msgstr "Agterstand van dimensiehulp lyn 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREBELOWREFEDGE.String.Text
+#, fuzzy
 msgid  "Lower edge dimensioning"
 msgstr "Dimensionering van onderste rand"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTROTA90.String.Text
+#, fuzzy
 msgid  "Dimension value across dimension line"
 msgstr "Dimensiewaarde oor dimensielyn"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTUPSIDEDOWN.String.Text
+#, fuzzy
 msgid  "Rotate dimension value by 180 degree"
 msgstr "Roteer dimensiewaarde met 180 grade"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREOVERHANG.String.Text
+#, fuzzy
 msgid  "Dimension line overhang"
 msgstr "Dimensielynoorhang"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREUNIT.String.Text
+#, fuzzy
 msgid  "Measure unit"
 msgstr "Meet eenheid"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESCALE.String.Text
+#, fuzzy
 msgid  "Additional scale factor"
 msgstr "Bykomende skaalfaktor"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESHOWUNIT.String.Text
+#, fuzzy
 msgid  "Measure unit display"
 msgstr "Meet eenheidsvertoon"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREFORMATSTRING.String.Text
+#, fuzzy
 msgid  "Dimension value format"
 msgstr "Formaat van dimensiewaarde"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLE.String.Text
+#, fuzzy
 msgid  "AutoPositioning of the dimension value"
 msgstr "OutoPosisionering van die dimensiewaarde"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLEVIEW.String.Text
+#, fuzzy
 msgid  "Angle for the automatic positioning of the dimension value"
 msgstr "Hoek vir die outomatiese posisionering van die dimensiewaarde"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTISFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Determination of the dimension value angle"
 msgstr "Bepaling van die dimensiewaarde hoek"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Angle of the dimension value"
 msgstr "Hoek van die dimensiewaarde"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREDECIMALPLACES.String.Text
+#, fuzzy
 msgid  "Decimal places"
 msgstr "Desimale plekke"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE05.String.Text
+#, fuzzy
 msgid  "Dimensioning reserved 5"
 msgstr "Dimensionering gereserveer vir 5"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE06.String.Text
+#, fuzzy
 msgid  "Dimensioning reserved for 6"
 msgstr "Dimensionering gereserveer vir 6"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE07.String.Text
+#, fuzzy
 msgid  "Dimensioning reserved for 7"
 msgstr "Dimensionering gereserveer vir 7"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCKIND.String.Text
+#, fuzzy
 msgid  "Type of circle"
 msgstr "Tipe sirkel"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCSTARTANGLE.String.Text
+#, fuzzy
 msgid  "Start angle"
 msgstr "Beginhoek"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCENDANGLE.String.Text
+#, fuzzy
 msgid  "End angle"
 msgstr "Eindhoek"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE0.String.Text
+#, fuzzy
 msgid  "Circle reserved for 0"
 msgstr "Sirkel gereserveer vir 0"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE1.String.Text
+#, fuzzy
 msgid  "Circle reserved for 1"
 msgstr "Sirkel gereserveer vir 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE2.String.Text
+#, fuzzy
 msgid  "Circle reserved for 2"
 msgstr "Sirkel gereserveer vir 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE3.String.Text
+#, fuzzy
 msgid  "Circle reserved for 3"
 msgstr "Sirkel gereserveer vir 3"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJMOVEPROTECT.String.Text
+#, fuzzy
 msgid  "Protected object position"
 msgstr "Beskermde objekposisie"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJSIZEPROTECT.String.Text
+#, fuzzy
 msgid  "Protected object size"
 msgstr "Beskermde objekgrootte"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJPRINTABLE.String.Text
+#, fuzzy
 msgid  "Object, printable"
 msgstr "Objek, drukbaar"
 
@@ -9764,350 +10781,437 @@ msgid  "Object, visible"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERID.String.Text
+#, fuzzy
 msgid  "Level ID"
 msgstr "ID-vlak"
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERNAME.String.Text
+#, fuzzy
 msgid  "Layer"
 msgstr "Laag"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJECTNAME.String.Text
+#, fuzzy
 msgid  "Object name"
 msgstr "Objeknaam"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONX.String.Text
+#, fuzzy
 msgid  "Position X, complete"
 msgstr "Posisie X, voltooi"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONY.String.Text
+#, fuzzy
 msgid  "Position Y, complete"
 msgstr "Posisie Y, voltooi"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Total Width"
 msgstr "Totale breedte"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Height, complete"
 msgstr "Hoogte, voltooi"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONX.String.Text
+#, fuzzy
 msgid  "Single position X"
 msgstr "Enkele posisie X"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONY.String.Text
+#, fuzzy
 msgid  "Single position Y"
 msgstr "Enkele posisie Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Single width"
 msgstr "Enkele breedte"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Single height"
 msgstr "Enkele hoogte"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Logical width"
 msgstr "Logiese breedte"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Logical height"
 msgstr "Logiese hoogte"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEANGLE.String.Text
+#, fuzzy
 msgid  "Single rotation angle"
 msgstr "Enkele rotasiehoek"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHEARANGLE.String.Text
+#, fuzzy
 msgid  "Single shear angle"
 msgstr "Enkele skuifskeurhoek"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEX.String.Text
+#, fuzzy
 msgid  "Move horizontally"
 msgstr "Skuif horisontaal"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEY.String.Text
+#, fuzzy
 msgid  "Move vertically"
 msgstr "Skuif vertikaal"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXONE.String.Text
+#, fuzzy
 msgid  "Resize X, single"
 msgstr "Verstel grootte van X, enkel"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYONE.String.Text
+#, fuzzy
 msgid  "Resize Y, single"
 msgstr "Verstel grootte van Y, enkel"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEONE.String.Text
+#, fuzzy
 msgid  "Single rotation"
 msgstr "Enkele rotasie"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARONE.String.Text
+#, fuzzy
 msgid  "Single horizontal shear"
 msgstr "Enkele horisontale skuifskeur"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARONE.String.Text
+#, fuzzy
 msgid  "Single vertical shear"
 msgstr "Enkele vertikale skuifskeur"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXALL.String.Text
+#, fuzzy
 msgid  "Resize X, complete"
 msgstr "Verstel grootte van X, voltooi"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYALL.String.Text
+#, fuzzy
 msgid  "Resize Y, complete"
 msgstr "Verstel grootte van Y, voltooi"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEALL.String.Text
+#, fuzzy
 msgid  "Rotate all"
 msgstr "Roteer almal"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARALL.String.Text
+#, fuzzy
 msgid  "Shear horizontal, complete"
 msgstr "Skuifskeur horisontaal, voltooi"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARALL.String.Text
+#, fuzzy
 msgid  "Shear vertical, complete"
 msgstr "Skuifskeur vertikaal, voltooi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1X.String.Text
+#, fuzzy
 msgid  "Reference point 1 X"
 msgstr "Verwysingspunt 1 X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1Y.String.Text
+#, fuzzy
 msgid  "Reference point 1 Y"
 msgstr "Verwysingspunt 1 Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2X.String.Text
+#, fuzzy
 msgid  "Reference point 2 X"
 msgstr "Verwysingspunt 2 X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2Y.String.Text
+#, fuzzy
 msgid  "Reference point 2 Y"
 msgstr "Verwysingspunt 2 Y"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_HYPHENATE.String.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "Woordafbreking"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLETSTATE.String.Text
+#, fuzzy
 msgid  "Display bullets"
 msgstr "Vertoon kolle"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLRSPACE.String.Text
+#, fuzzy
 msgid  "Numbering indents"
 msgstr "Nommerinkepings"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLEVEL.String.Text
+#, fuzzy
 msgid  "Numbering level"
 msgstr "Nommeringsvlak"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLET.String.Text
+#, fuzzy
 msgid  "Bullets and Numberings"
 msgstr "Kolle en nommering"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_LRSPACE.String.Text
+#, fuzzy
 msgid  "Indents"
 msgstr "Inkepe"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_ULSPACE.String.Text
+#, fuzzy
 msgid  "Paragraph spacing"
 msgstr "Paragraafspasiëring"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_SBL.String.Text
+#, fuzzy
 msgid  "Line spacing"
 msgstr "Reëlspasiëring"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_JUST.String.Text
+#, fuzzy
 msgid  "Paragraph alignment"
 msgstr "Paragraafbelyning"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_TABS.String.Text
+#, fuzzy
 msgid  "Tabulators"
 msgstr "Tabuleerders"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_COLOR.String.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "Fontkleur"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTINFO.String.Text
+#, fuzzy
 msgid  "Character set"
 msgstr "Karakterstel"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTHEIGHT.String.Text
+#, fuzzy
 msgid  "Font size"
 msgstr "Fontgrootte"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTWIDTH.String.Text
+#, fuzzy
 msgid  "Font width"
 msgstr "Fontbreedte"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WEIGHT.String.Text
+#, fuzzy
 msgid  "Bold (thickness)"
 msgstr "Vet (dikte)"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_UNDERLINE.String.Text
+#, fuzzy
 msgid  "Underline"
 msgstr "Onderstreep"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OVERLINE.String.Text
+#, fuzzy
 msgid  "Overline"
 msgstr "Oorlyn"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_STRIKEOUT.String.Text
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "Deurhaal"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ITALIC.String.Text
+#, fuzzy
 msgid  "Italic"
 msgstr "Skuinsdruk"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OUTLINE.String.Text
+#, fuzzy
 msgid  "Outline"
 msgstr "Skema"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_SHADOW.String.Text
+#, fuzzy
 msgid  "Font shadow"
 msgstr "Fontskaduwee"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ESCAPEMENT.String.Text
+#, fuzzy
 msgid  "Superscript/subscript"
 msgstr "Superskrif/subskrif"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_PAIRKERNING.String.Text
+#, fuzzy
 msgid  "Kerning"
 msgstr "Tekssaamdrukking"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_KERNING.String.Text
+#, fuzzy
 msgid  "Manual kerning"
 msgstr "Saamdrukking per hand"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WLM.String.Text
+#, fuzzy
 msgid  "No underline for spaces"
 msgstr "Geen onderstreping van spasies"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_TAB.String.Text
+#, fuzzy
 msgid  "Tabulator"
 msgstr "Tabuleerder"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_LINEBR.String.Text
+#, fuzzy
 msgid  "Optional line break"
 msgstr "Opsionele lynbreuk"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_NOTCONV.String.Text
+#, fuzzy
 msgid  "Non-convertible character"
 msgstr "Nieomskakelbare karakter"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_FIELD.String.Text
+#, fuzzy
 msgid  "Fields"
 msgstr "Velde"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFRED.String.Text
+#, fuzzy
 msgid  "Red"
 msgstr "Rooi"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGREEN.String.Text
+#, fuzzy
 msgid  "Green"
 msgstr "Groen"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFBLUE.String.Text
+#, fuzzy
 msgid  "Blue"
 msgstr "Blou"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFLUMINANCE.String.Text
+#, fuzzy
 msgid  "Brightness"
 msgstr "Helderheid"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast"
 msgstr "Kontras"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGAMMA.String.Text
+#, fuzzy
 msgid  "Gamma"
 msgstr "Gamma"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Deursigtigheid"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFINVERT.String.Text
+#, fuzzy
 msgid  "Invert"
 msgstr "Negatief"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFMODE.String.Text
+#, fuzzy
 msgid  "Graphics mode"
 msgstr "Grafikamodus"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCROP.String.Text
+#, fuzzy
 msgid  "Crop"
 msgstr "Snoei"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEDIA.String.Text
+#, fuzzy
 msgid  "Media object"
 msgstr "Mediaobjek"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEDIA.String.Text
+#, fuzzy
 msgid  "Media objects"
 msgstr "Mediaobjekte"
 
 #: source/svdraw/svdstr.src#STR_TABLE_ATTR.String.Text
+#, fuzzy
 msgid  "Apply table attributes"
 msgstr "Pas tabeleienskappe toe"
 
 #: source/svdraw/svdstr.src#STR_TABLE_AUTOFMT.String.Text
+#, fuzzy
 msgid  "AutoFormat table"
 msgstr "OutoFormateer tabel"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSCOL.String.Text
+#, fuzzy
 msgid  "Insert column"
 msgstr "Voeg kolom in"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSROW.String.Text
+#, fuzzy
 msgid  "Insert row"
 msgstr "Voeg ry in"
 
 #: source/svdraw/svdstr.src#STR_UNDO_COL_DELETE.String.Text
+#, fuzzy
 msgid  "Delete column"
 msgstr "Skrap kolom"
 
 #: source/svdraw/svdstr.src#STR_UNDO_ROW_DELETE.String.Text
+#, fuzzy
 msgid  "Delete row"
 msgstr "Skrap ry"
 
 #: source/svdraw/svdstr.src#STR_TABLE_SPLIT.String.Text
+#, fuzzy
 msgid  "Split cells"
 msgstr "Verdeel selle"
 
 #: source/svdraw/svdstr.src#STR_TABLE_MERGE.String.Text
+#, fuzzy
 msgid  "Merge cells"
 msgstr "Voeg selle saam"
 
 #: source/svdraw/svdstr.src#STR_TABLE_NUMFORMAT.String.Text
+#, fuzzy
 msgid  "Format cell"
 msgstr "Formateer sel"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_ROWS.String.Text
+#, fuzzy
 msgid  "Distribute rows"
 msgstr "Versprei rye"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_COLUMNS.String.Text
+#, fuzzy
 msgid  "Distribute columns"
 msgstr "Versprei kolomme"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE.String.Text
+#, fuzzy
 msgid  "Table style"
 msgstr "Tabelstyl"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE_SETTINGS.String.Text
+#, fuzzy
 msgid  "Table style settings"
 msgstr "Tabelstylinstellings"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTable.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Tabel"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTable.String.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "Tabelle"
 
@@ -10120,6 +11224,7 @@ msgid  "font works"
 msgstr ""
 
 #: source/table/table.src#RID_SVXSTR_STYLEFAMILY_TABLEDESIGN.String.Text
+#, fuzzy
 msgid  "Table Design Styles"
 msgstr "Tabelontwerpstyle"
 
@@ -10183,50 +11288,62 @@ msgid  "Font color"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Direction"
 msgstr "Ekstrusierigting"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PERSPECTIVE.String.Text
+#, fuzzy
 msgid  "~Perspective"
 msgstr "~Perspektief"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PARALLEL.String.Text
+#, fuzzy
 msgid  "P~arallel"
 msgstr "P~arallel"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NW.String.Text
+#, fuzzy
 msgid  "Extrusion North-West"
 msgstr "Ekstrusie noordwes"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_N.String.Text
+#, fuzzy
 msgid  "Extrusion North"
 msgstr "Ekstrusie noord"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NE.String.Text
+#, fuzzy
 msgid  "Extrusion North-East"
 msgstr "Ekstrusie noordoos"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_W.String.Text
+#, fuzzy
 msgid  "Extrusion West"
 msgstr "Ekstrusie wes"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NONE.String.Text
+#, fuzzy
 msgid  "Extrusion Backwards"
 msgstr "Ekstrusie agtertoe"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_E.String.Text
+#, fuzzy
 msgid  "Extrusion East"
 msgstr "Ekstrusie oos"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SW.String.Text
+#, fuzzy
 msgid  "Extrusion South-West"
 msgstr "Ekstrusie suidwes"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_S.String.Text
+#, fuzzy
 msgid  "Extrusion South"
 msgstr "Ekstrusie suid"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SE.String.Text
+#, fuzzy
 msgid  "Extrusion South-East"
 msgstr "Ekstrusie suidoos"
 
@@ -10236,10 +11353,12 @@ msgid  "Extrusion Depth"
 msgstr "Ekstrusiediepte"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
+#, fuzzy
 msgid  "~Custom..."
 msgstr "~Pasmaak..."
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_INFINITY.String.Text
+#, fuzzy
 msgid  "~Infinity"
 msgstr "~Oneindigheid"
 
@@ -10503,6 +11622,7 @@ msgid  "Crop"
 msgstr "Snoei"
 
 #: source/tbxctrls/colrctrl.src#RID_SVXCTRL_COLOR.DockingWindow.Text
+#, fuzzy
 msgid  "Colors"
 msgstr "Kleure"
 
@@ -10531,74 +11651,92 @@ msgid  "Actions to redo: $(ARG1)"
 msgstr "Aksies om te herdoen: $(ARG1)"
 
 #: source/toolbars/extrusionbar.src#RID_SVX_EXTRUSION_BAR.String.Text
+#, fuzzy
 msgid  "Extrusion"
 msgstr "Ekstrusie"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ON_OFF.String.Text
+#, fuzzy
 msgid  "Apply Extrusion On/Off"
 msgstr "Pas ekstrusie aan/af"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_DOWN.String.Text
+#, fuzzy
 msgid  "Tilt Down"
 msgstr "Kantel af"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_UP.String.Text
+#, fuzzy
 msgid  "Tilt Up"
 msgstr "Kantel op"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_LEFT.String.Text
+#, fuzzy
 msgid  "Tilt Left"
 msgstr "Kantel links"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_RIGHT.String.Text
+#, fuzzy
 msgid  "Tilt Right"
 msgstr "Kantel regs"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_DEPTH.String.Text
+#, fuzzy
 msgid  "Change Extrusion Depth"
 msgstr "Verander ekstrusiediepte"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ORIENTATION.String.Text
+#, fuzzy
 msgid  "Change Orientation"
 msgstr "Verander gerigtheid"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_PROJECTION.String.Text
+#, fuzzy
 msgid  "Change Projection Type"
 msgstr "Verander projeksiesoort"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_LIGHTING.String.Text
+#, fuzzy
 msgid  "Change Lighting"
 msgstr "Verander beligting"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_BRIGHTNESS.String.Text
+#, fuzzy
 msgid  "Change Brightness"
 msgstr "Verander helderheid"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_SURFACE.String.Text
+#, fuzzy
 msgid  "Change Extrusion Surface"
 msgstr "Verander ekstrusieoppervlak"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_COLOR.String.Text
+#, fuzzy
 msgid  "Change Extrusion Color"
 msgstr "Verander ekstrusiekleur"
 
 #: source/toolbars/fontworkbar.src#RID_SVX_FONTWORK_BAR.String.Text
+#, fuzzy
 msgid  "Fontwork"
 msgstr "Fontwerk"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SHAPE.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Shape"
 msgstr "Pas Fontwerk-vorm toe"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SAME_LETTER_HEIGHT.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Same Letter Heights"
 msgstr "Pas Fontwerk-selfdeletterhoogtes toe"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_ALIGNMENT.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Alignment"
 msgstr "Pas Fontwerk-belyning toe"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_CHARACTER_SPACING.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Character Spacing"
 msgstr "Pas Fontwerk-karakterspasiëring toe"
 

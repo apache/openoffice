@@ -153,9 +153,8 @@ msgid  "Column Fields"
 msgstr "ကော်လံ နေရာကွက်များ"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-#, fuzzy
-msgid  "Row\nFields"
-msgstr "အတန်းလိုက် \nနေရာကွက်များ"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 #, fuzzy
@@ -320,7 +319,7 @@ msgstr "⁠~ ပြင်ပရင်းမြစ် / ကြားခံ ဆက
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.FL_FRAME.FixedLine.Text
 #, fuzzy
 msgid  "Selection"
-msgstr "ရွေးချယ်မှု"
+msgstr "လက်ရွေးစင်"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.FixedLine.Text
 #, fuzzy
@@ -596,7 +595,7 @@ msgstr "~အုပ်စုအနေဖြင့် "
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.HelpButton.Text
 #, fuzzy
 msgid  "Grouping"
-msgstr "အုပ်စုဖွဲ့သော"
+msgstr "အုပ်စုဖွဲ့နေသည်"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_START.FixedLine.Text
 #, fuzzy
@@ -1174,10 +1173,12 @@ msgid  "Text Import"
 msgstr "စာသား သွင်းသည်"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_FIELDOPT.FixedLine.Text
+#, fuzzy
 msgid  "Import"
 msgstr "သွင်းပါ"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_CHARSET.FixedText.Text
+#, fuzzy
 msgid  "Ch~aracter set"
 msgstr "အက္ခရာများ~အစု"
 
@@ -1186,46 +1187,57 @@ msgid  "Language"
 msgstr ""
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_AT_ROW.FixedText.Text
+#, fuzzy
 msgid  "From ro~w"
 msgstr "အတန်း~လိုက်မှ"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FL_SEPOPT.FixedLine.Text
+#, fuzzy
 msgid  "Separator options"
 msgstr "အကန့် ရွေးပိုင်ခွင့်များ "
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_FIXED.RadioButton.Text
+#, fuzzy
 msgid  "~Fixed width"
 msgstr "~အံဝင်ခွင်ကျဖြစ်သည့်အကျယ်အဝန်း"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.RB_SEPARATED.RadioButton.Text
+#, fuzzy
 msgid  "~Separated by"
 msgstr "~ပိုင်းခြားထားသည်"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_TAB.CheckBox.Text
+#, fuzzy
 msgid  "~Tab"
 msgstr "~တက်ဘ်"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_COMMA.CheckBox.Text
+#, fuzzy
 msgid  "~Comma"
 msgstr "~ကော်မာ"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_OTHER.CheckBox.Text
+#, fuzzy
 msgid  "~Other"
 msgstr "~အခြား"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SEMICOLON.CheckBox.Text
+#, fuzzy
 msgid  "S~emicolon"
 msgstr "ဆီမီ~ကော်လံ"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CKB_SPACE.CheckBox.Text
+#, fuzzy
 msgid  "S~pace"
 msgstr "နေရာ~လပ်"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.CB_ASONCE.CheckBox.Text
+#, fuzzy
 msgid  "Merge ~delimiters"
 msgstr "အစွန်းသင်္ကေတများ~ပေါင်းစပ်ပါ"
 
 #: source/ui/dbgui/asciiopt.src#RID_SCDLG_ASCII.FT_TEXTSEP.FixedText.Text
+#, fuzzy
 msgid  "Te~xt delimiter"
 msgstr "စာသား~အစွန်းသင်္ကေတ"
 
@@ -1332,806 +1344,1006 @@ msgid  "Settings"
 msgstr "ပြင်ဆင်ချိန်ညှိမှုများ"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_TABLES_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of sheets:"
 msgstr "စာရွက်လွှာများ၏အရေအတွက် -"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_CELLS_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of cells:"
 msgstr "ဆဲလ်အကွက်များ၏အရေအတွက် -"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FT_PAGES_LBL.FixedText.Text
+#, fuzzy
 msgid  "Number of pages:"
 msgstr "စာမျက်နှာများ၏အရေအတွက် -"
 
 #: source/ui/docshell/tpstat.src#RID_SCPAGE_STAT.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Document: "
 msgstr "မှတ်တမ်းမှတ်ရာ -"
 
 #: source/ui/drawfunc/objdraw.src#MN_RESET.SID_TEXT_STANDARD.MenuItem.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "~နဂိုမူလ"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.MenuItem.Text
+#, fuzzy
 msgid  "~Style"
 msgstr "~စတိုင်လ်"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUPER_SCRIPT.MenuItem.Text
+#, fuzzy
 msgid  "~Superscript"
 msgstr "~စာသားပေါ်တွင်ထပ်တင်ပါ"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_STYLE.SID_SET_SUB_SCRIPT.MenuItem.Text
+#, fuzzy
 msgid  "S~ubscript"
 msgstr "စာသားကို~အောက်တွင်ထားပါ"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.MenuItem.Text
+#, fuzzy
 msgid  "~Alignment"
 msgstr "~ဖြောင့်တန်းမှု"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNLEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "⁠~ဘယ်ဘက်"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNRIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
 msgstr "~ညာဘက်"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNCENTERHOR.MenuItem.Text
+#, fuzzy
 msgid  "~Centered"
 msgstr "~ဗဟိုချက်"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_ALGN.SID_ALIGNBLOCK.MenuItem.Text
+#, fuzzy
 msgid  "~Justified"
 msgstr "⁠~စာကြောင်းဘယ်၊ညာညှိသည်"
 
 #: source/ui/drawfunc/objdraw.src#MN_TEXT_ATTR.RID_MN_FORMAT_LINESPACE.MenuItem.Text
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~မျဉ်းနေရာလွတ်"
 
 #: source/ui/drawfunc/objdraw.src#MN_EDITLNK.SID_DRAW_HLINK_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Hyperlink..."
 msgstr "~ဟိုက်ပါလင့်ခ်..."
 
 #: source/ui/drawfunc/objdraw.src#MN_DELLNK.SID_DRAW_HLINK_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove Hyperlink"
 msgstr "~ဟိုက်ပါလင့်ခ် ဖယ်ရှားပါ"
 
 #: source/ui/drawfunc/objdraw.src#MN_DRWTXTATTR.SID_DRAWTEXT_ATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Te~xt..."
 msgstr "စာ~သား..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ASSIGNMACRO.SID_ASSIGNMACRO.MenuItem.Text
+#, fuzzy
 msgid  "Assig~n Macro..."
 msgstr "မက်ခရိုထည့်~သွင်းပါ..."
 
 #: source/ui/drawfunc/objdraw.src#MN_ORIGINALSIZE.SID_ORIGINALSIZE.MenuItem.Text
+#, fuzzy
 msgid  "~Original Size"
 msgstr "~မူလအရွယ်အစား"
 
 #: source/ui/drawfunc/objdraw.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "အမည်..."
 
 #: source/ui/drawfunc/objdraw.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "ဖော်ပြချက်..."
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.MenuItem.Text
+#, fuzzy
 msgid  "~Flip"
 msgstr "~လှန်ပါ"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "~ဒေါင်လိုက်"
 
 #: source/ui/drawfunc/objdraw.src#MN_MIRRORSUB.SUBMENU_OBJMIRROR.SID_MIRROR_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "~Horizontal"
 msgstr "~ရေပြင်ညီ"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "~စီစဉ်ထားသိုပါ"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "ရှေ့သို့~ယူဆောင်ပါ"
 
 #: source/ui/drawfunc/objdraw.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "အနောက်သို့~ပို့ပါ"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
+#, fuzzy
 msgid  "An~chor"
 msgstr "ကျောက်~ဆူး"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "To P~age"
 msgstr "စာမျက်နှာ~သို့"
 
 #: source/ui/drawfunc/objdraw.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
+#, fuzzy
 msgid  "To ~Cell"
 msgstr "ဆဲလ်~အကွက်သို့"
 
 #: source/ui/drawfunc/objdraw.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "ဖြောင့်တန်း~မှု"
 
 #: source/ui/drawfunc/objdraw.src#RID_DRAW_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Drawing Object Bar"
 msgstr "အရာဝတ္ထုပုံဆွဲရန်ဘား"
 
 #: source/ui/drawfunc/objdraw.src#RID_TEXT_TOOLBOX.String.Text
+#, fuzzy
 msgid  "Text Object Bar"
 msgstr "စာသားအရာဝတ္ထုဘား"
 
 #: source/ui/drawfunc/objdraw.src#RID_GRAPHIC_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Graphics Object Bar"
 msgstr "ပန်းချီဒီဇိုင်းအရာဝတ္ထုဘား"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAW.String.Text
+#, fuzzy
 msgid  "Pop-up menu for drawing objects"
 msgstr "ပုံဆွဲသောအရာဝတ္ထုများအတွက် မီနူးထွက်ပေါ်လာခြင်း"
 
 #: source/ui/drawfunc/objdraw.src#RID_POPUP_DRAWTEXT.String.Text
+#, fuzzy
 msgid  "Pop-up menu for text objects"
 msgstr "စာသားအရာဝတ္ထုများအတွက်မီနူးထွက်ပေါ်လာခြင်း"
 
 #: source/ui/drawfunc/drformsh.src#MN_RENAME_OBJECT.SID_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Name..."
 msgstr "အမည်..."
 
 #: source/ui/drawfunc/drformsh.src#MN_TITLE_DESCRIPTION_OBJECT.SID_TITLE_DESCRIPTION_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "Description..."
 msgstr "ဖော်ပြချက်..."
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "~စီစဉ်ထားသိုပါ"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "ရှေ့သို့~ယူဆောင်ပါ"
 
 #: source/ui/drawfunc/drformsh.src#MN_ARRANGESUB.SUBMENU_OBJARRANGE.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "အနောက်သို့~ပို့ပါ"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.MenuItem.Text
+#, fuzzy
 msgid  "An~chor"
 msgstr "ကျောက်~ဆူး"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "To P~age"
 msgstr "စာမျက်နှာ~သို့"
 
 #: source/ui/drawfunc/drformsh.src#MN_ANCHORSUB.SUBMENU_ANCHOR.SID_ANCHOR_CELL.MenuItem.Text
+#, fuzzy
 msgid  "To ~Cell"
 msgstr "ဆဲလ်~အကွက်သို့"
 
 #: source/ui/drawfunc/drformsh.src#MN_ALIGNSUB.SID_OBJECT_ALIGN.MenuItem.Text
+#, fuzzy
 msgid  "A~lignment"
 msgstr "ဖြောင့်~တန်းမှု"
 
 #: source/ui/drawfunc/drformsh.src#RID_POPUP_DRAWFORM.String.Text
+#, fuzzy
 msgid  "Popup menu for form objects"
 msgstr "အရာဝတ္ထုပုံစံများအတွက်မီနူးထွက်ပေါ်လာခြင်း"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Last Used"
 msgstr "နောက်ဆုံးအသုံးပြုထားသည်"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "All"
 msgstr "အားလုံး"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Database"
 msgstr "ဒေတာဘေ့စ်"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Date&Time"
 msgstr "ရက်စွဲနှင့်အချိန်"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Financial"
 msgstr "ငွေကြေးဆိုင်ရာ"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Information"
 msgstr "သတင်းအချက်အလက်"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Logical"
 msgstr "လောဂျစ်ဆိုင်ရာ"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Mathematical"
 msgstr "ဂဏန်းသင်္ချာဆိုင်ရာ"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Array"
 msgstr "အရေးရ်"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Statistical"
 msgstr "စာရင်းဇယားဆိုင်ရာ"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "စာရင်းစာရွက်လွှာ"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Text"
 msgstr "စာသား"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.CB_CAT.Default.StringList.item
+#, fuzzy
 msgid  "Add-in"
 msgstr "တွင်-ထပ်ဖြည့်ပါ"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.IMB_INSERT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Insert Function into calculation sheet"
 msgstr "တွက်ချက်မှုဆိုင်ရာစာရွက်လွှာတွင်လုပ်ဆောင်ချက်များထည့်သွင်းပါ"
 
 #: source/ui/formdlg/dwfunctr.src#FID_FUNCTION_BOX.ButtonImage.Text
+#, fuzzy
 msgid  "Functions"
 msgstr "လုပ်ဆောင်ချက်များ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.FT_ASSIGN.FixedText.Text
+#, fuzzy
 msgid  "Range"
 msgstr "ကန့်သတ်ချက်နယ်ပယ်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "ချုံ့ / ချဲ့"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_COLS.String.Text
+#, fuzzy
 msgid  "Column inserted"
 msgstr "ကော်လံထည့်ထားသည်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_ROWS.String.Text
+#, fuzzy
 msgid  "Row inserted "
 msgstr "အတန်းထည့်ထားသည်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_INSERT_TABS.String.Text
+#, fuzzy
 msgid  "Sheet inserted "
 msgstr "စာရွက်လွှာထည့်ထားသည်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_COLS.String.Text
+#, fuzzy
 msgid  "Column deleted"
 msgstr "ဖျက်ထားသည့်ကော်လံ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_ROWS.String.Text
+#, fuzzy
 msgid  "Row deleted"
 msgstr "ဖျက်ထားသည့်အတန်း"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_DELETE_TABS.String.Text
+#, fuzzy
 msgid  "Sheet deleted"
 msgstr "ဖျက်ထားသည့်စာရွက်လွှာ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_MOVE.String.Text
+#, fuzzy
 msgid  "Range moved"
 msgstr "ရွေ့ပြောင်းထားသည့်ကန့်သတ်ချက်နယ်ပယ်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT.String.Text
+#, fuzzy
 msgid  "Changed contents"
 msgstr "ပြောင်းထားသောမာတိကာများ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CONTENT_WITH_CHILD.String.Text
+#, fuzzy
 msgid  "Changed contents"
 msgstr "ပြောင်းထားသောမာတိကာများ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_CONTENT.String.Text
+#, fuzzy
 msgid  "Changed to "
 msgstr "သို့ပြောင်းထားသည်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_CHILD_ORGCONTENT.String.Text
+#, fuzzy
 msgid  "Original"
 msgstr "မူလ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECT.String.Text
+#, fuzzy
 msgid  "Changes rejected"
 msgstr "ပြောင်းလဲမှုများငြင်းပယ်ထားသည်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_ACCEPTED.String.Text
+#, fuzzy
 msgid  "Accepted"
 msgstr "လက်ခံထားသည်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_REJECTED.String.Text
+#, fuzzy
 msgid  "Rejected"
 msgstr "ငြင်းပယ်ထားသည်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_NO_ENTRY.String.Text
+#, fuzzy
 msgid  "No Entry"
 msgstr "မဝင်ပါ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.STR_EMPTY.String.Text
+#, fuzzy
 msgid  "<empty>"
 msgstr "<empty>"
 
 #: source/ui/miscdlgs/acredlin.src#RID_SCDLG_CHANGES.Bitmap.Text
+#, fuzzy
 msgid  "Accept or Reject Changes"
 msgstr "ပြောင်းလဲမှုများလက်ခံ (သို့) ငြင်းပယ်ပါ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_CHANGES_COMMENT.MenuItem.Text
+#, fuzzy
 msgid  "Edit Comment..."
 msgstr "ထင်မြင်သုံးသပ်ချက်တည်းဖြတ်ပါ..."
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_ACTION.MenuItem.Text
+#, fuzzy
 msgid  "Action"
 msgstr "လုပ်ဆောင်ချက်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr "ရပ်တည်ချက်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_AUTHOR.MenuItem.Text
+#, fuzzy
 msgid  "Author"
 msgstr "လက်ရာရှင်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_DATE.MenuItem.Text
+#, fuzzy
 msgid  "Date"
 msgstr "ရက်စွဲ"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.SC_SORT_COMMENT.MenuItem.Text
+#, fuzzy
 msgid  "Description"
 msgstr "ဖော်ပြချက်"
 
 #: source/ui/miscdlgs/acredlin.src#RID_POPUP_CHANGES.SC_SUB_SORT.MenuItem.Text
+#, fuzzy
 msgid  "Sorting"
 msgstr "စနစ်တကျစီနေသည်"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.ModalDialog.Text
+#, fuzzy
 msgid  "Resolve Conflicts"
 msgstr "ကွဲလွဲချက်များကိုပြန်လည်​ဖြေရှင်းပါ"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.FT_CONFLICTS.FixedText.Text
+#, fuzzy
 msgid  "There are conflicting changes in this shared spreadsheet. Conflicts must be resolved before saving the spreadsheet. Keep either own or other changes."
 msgstr "ဤဝေမျှထားသည့် စာရွက်လွှာတွင် ဆန့်ကျင်ဘက်ပြောင်းလဲမှုများဖြစ်ပေါ်သည်။ စာရွက်လွှာကို သိမ်းဆည်းမှုမပြုမီဖြေရှင်းပါ။ ကိုယ်ပိုင်လုပ်ဆောင်ချက်များ (သို့) ပြောင်းလဲမှုများကိုသိမ်းဆည်းပါ။ "
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPMINE.PushButton.Text
+#, fuzzy
 msgid  "Keep ~Mine"
 msgstr "ကိုယ်ပိုင်အချက်အလက်များ~သိမ်းဆည်းပါ"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPOTHER.PushButton.Text
+#, fuzzy
 msgid  "Keep ~Other"
 msgstr "အခြားအချက်အလက်များ~သိမ်းဆည်းပါ"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLMINE.PushButton.Text
+#, fuzzy
 msgid  "~Keep All Mine"
 msgstr "~ကိုယ်ပိုင်အချက်အလက်များအားလုံးသိမ်းဆည်းသည်"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.BTN_KEEPALLOTHERS.PushButton.Text
+#, fuzzy
 msgid  "Keep ~All Others"
 msgstr "အခြားအချက်အလက်များအားလုံး~သိမ်းဆည်းပါ"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_CONFLICT.String.Text
+#, fuzzy
 msgid  "Conflict"
 msgstr "ဆန့်ကျင်ကွဲလွဲချက်"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_AUTHOR.String.Text
+#, fuzzy
 msgid  "Author"
 msgstr "လက်ရာရှင်"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_TITLE_DATE.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "ရက်စွဲ"
 
 #: source/ui/miscdlgs/conflictsdlg.src#RID_SCDLG_CONFLICTS.STR_UNKNOWN_USER.String.Text
+#, fuzzy
 msgid  "Unknown User"
 msgstr "အသုံးပြုသူမသိပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.ModalDialog.Text
+#, fuzzy
 msgid  "Re-type Password"
 msgstr "စကားဝှက်ပြန်ရိုက်ပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DESC.FixedText.Text
+#, fuzzy
 msgid  "The document you are about to export has one or more protected items with password that cannot be exported.  Please re-type your password to be able to export your document."
 msgstr "သင်တင်ပို့လိုသည့် မှတ်တမ်းမှတ်ရာရှိ တစ်ခု (သို့) တစ်ခုထက်မကသော အမျိုးအစားများကို စကားဝှက်ြဖင့် ကာကွယ်ထားသည်။ သင့်မှတ်တမ်းမှတ်ရာများကို တင်ပို့နိုင်ရန် ကျေးဇူးပြု၍ စကားဝှက်များ မှန်ကန်စွာ ရိုက်ထည့်ပါ။"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_DOCUMENT.FixedLine.Text
+#, fuzzy
 msgid  "Document protection"
 msgstr "မှတ်တမ်းမှတ်ရာကာကွယ်မှု"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DOCSTATUS.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "မသိသောအခြေအနေ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_DOC.PushButton.Text
 msgid  "Re-type"
-msgstr "ပြန်ရိုက်ပါ"
+msgstr "ပြန်-ရိုက်ပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_SHEET.FixedLine.Text
+#, fuzzy
 msgid  "Sheet protection"
 msgstr "စာရွက်လွှာကာကွယ်မှု"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME1.FixedText.Text
+#, fuzzy
 msgid  "Sheet1 has a really long name"
 msgstr "စာရွက်လွှာ၁တွင် အမည်ရှည်တစ်ခု ရှိသည်"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS1.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "မသိသောအခြေအနေ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET1.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "ပြန်ရိုက်ပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME2.FixedText.Text
+#, fuzzy
 msgid  "Sheet2"
 msgstr "စာရွက်လွှာ ၂"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS2.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "မသိသောအခြေအနေ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET2.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "ပြန်ရိုက်ပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME3.FixedText.Text
+#, fuzzy
 msgid  "Sheet3"
 msgstr "စာရွက်လွှာ ၃"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS3.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "မသိသောအခြေအနေ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET3.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "ပြန်ရိုက်ပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME4.FixedText.Text
+#, fuzzy
 msgid  "Sheet4"
 msgstr "စာရွက်လွှာ ၄"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETSTATUS4.FixedText.Text
+#, fuzzy
 msgid  "Status unknown"
 msgstr "မသိသောအခြေအနေ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET4.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "ပြန်-ရိုက်ပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_NOT_PROTECTED.String.Text
+#, fuzzy
 msgid  "Not protected"
 msgstr "ကာကွယ်မထားပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_NOT_PASS_PROTECTED.String.Text
+#, fuzzy
 msgid  "Not password-protected"
 msgstr "စကားဝှက်ဖြင့်ကာကွယ်မထားပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_BAD.String.Text
+#, fuzzy
 msgid  "Hash incompatible"
 msgstr "ပုစ္ဆာစစ်ဆေးမှုနှင့်ကိုက်ညီမှုမရှိ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_GOOD.String.Text
+#, fuzzy
 msgid  "Hash compatible"
 msgstr "ပုစ္ဆာစစ်ဆေးမှုနှင့်ကိုက်ညီမှုရှိသည်"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.STR_HASH_REGENERATED.String.Text
+#, fuzzy
 msgid  "Hash re-generated"
 msgstr "ပုစ္ဆာစစ်ဆေးမှုကိုပြန်လည်တွက်ချက်သည်"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.ModalDialog.Text
+#, fuzzy
 msgid  "Re-type Password"
 msgstr "စကားဝှက်ပြန်ရိုက်ပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_RETYPE_PASSWORD.RadioButton.Text
+#, fuzzy
 msgid  "Re-type password"
 msgstr "စကားဝှက်ပြန်ရိုက်ပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.FT_PASSWORD1.FixedText.Text
+#, fuzzy
 msgid  "~Password"
 msgstr "~စကားဝှက်"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.FT_PASSWORD2.FixedText.Text
+#, fuzzy
 msgid  "~Confirm"
 msgstr "~အတည်ပြုပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_MATCH_OLD_PASSWORD.CheckBox.Text
+#, fuzzy
 msgid  "New password must match the original password."
 msgstr "မူလစကားဝှက်နှင့်စကားဝှက်အသစ်ကိုက်ညီမှုရှိရမည်။"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS_INPUT.BTN_REMOVE_PASSWORD.RadioButton.Text
+#, fuzzy
 msgid  "Remove password from this protected item."
 msgstr "ဤအမျိုးအစားအားကာကွယ်ထားသည့်စကားဝှက်အားဖယ်ရှားပါ။"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.ModalDialog.Text
+#, fuzzy
 msgid  "Share Document"
 msgstr "မှတ်တမ်းမှတ်ရာများဝေမျှသည်"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.CB_SHARE.CheckBox.Text
+#, fuzzy
 msgid  "Share this spreadsheet with other users"
 msgstr "အခြားအသုံးပြုသူများနှင့်အတူစာရွက်လွှာကိုဝေမျှပါ"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Note: Changes to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
 msgstr "မှတ်ချက် - ဖောင့်များ၊ အရောင်များ နှင့် နံပါတ်စီစဉ်ထားသိုမှု ပြောင်းလဲချက်များကို သိမ်းဆည်းထားလိမ့်မည် မဟုတ်ပါ။ ပုံစံကားချပ်များ တည်းဖြတ်မှုနှင့် ရုပ်ပုံရေးဆွဲမှုများ ကဲ့သို့သော လုပ်ဆောင်ချက်များကို ဝေမျှမှု နည်းလမ်းတွင် အသုံးပြု နိုင်မည်မဟုတ်ပါ။ ထိုပြောင်းလဲမှုများနှင့် လုပ်ဆောင်ချက်များကို ကောင်းမွန်စွာ ရရှိနိုင်ရန် ဝေမျှမှု နည်းလမ်းကို ပိတ်ထားပါ။"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.FT_USERS.FixedText.Text
+#, fuzzy
 msgid  "Users currently accessing this spreadsheet"
 msgstr "ဤစာရင်းစာရွက်လွှာကိုလက်ရှိအသုံးပြုနေသည်"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_NAME.String.Text
+#, fuzzy
 msgid  "Name"
 msgstr "အမည် "
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_TITLE_ACCESSED.String.Text
+#, fuzzy
 msgid  "Accessed"
 msgstr "အသုံးပြုခွင့်ရှိသည်"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_NO_USER_DATA.String.Text
+#, fuzzy
 msgid  "No user data available."
 msgstr "အသုံးပြုသူအချက်အလက်များမရရှိနိုင်ပါ"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_UNKNOWN_USER.String.Text
+#, fuzzy
 msgid  "Unknown User"
 msgstr "အသုံးပြုသူမသိပါ"
 
 #: source/ui/miscdlgs/sharedocdlg.src#RID_SCDLG_SHAREDOCUMENT.STR_EXCLUSIVE_ACCESS.String.Text
+#, fuzzy
 msgid  "(exclusive access)"
 msgstr "(ထုတ်ပယ်ခွင့်ရသည်)"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.ModalDialog.Text
+#, fuzzy
 msgid  "Insert Sheet"
 msgstr "စာရွက်လွှာထည့်ပါ"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_POSITION.FixedLine.Text
+#, fuzzy
 msgid  "Position"
 msgstr "တည်နေရာ"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEFORE.RadioButton.Text
+#, fuzzy
 msgid  "B~efore current sheet"
 msgstr "လက်ရှိ~စာရွက်လွှာမတိုင်မီ"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_BEHIND.RadioButton.Text
+#, fuzzy
 msgid  "~After current sheet"
 msgstr "~လက်ရှိစာရွက်လွှာပြီးနောက်"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FL_TABLE.FixedLine.Text
+#, fuzzy
 msgid  "Sheet"
 msgstr "စာရွက်လွှာ"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_NEW.RadioButton.Text
+#, fuzzy
 msgid  "~New sheet"
 msgstr "~စာရွက်လွှာအသစ်"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "N~o. of sheets"
 msgstr "စာရွက်~လွှာများအရေအတွက်"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Na~me"
 msgstr "အ~မည်"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.RB_FROMFILE.RadioButton.Text
+#, fuzzy
 msgid  "~From file"
 msgstr "~ဖိုင်မှ"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.BTN_BROWSE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "~ဘရောက်စ်"
 
 #: source/ui/miscdlgs/instbdlg.src#RID_SCDLG_INSERT_TABLE.CB_LINK.CheckBox.Text
+#, fuzzy
 msgid  "Lin~k"
 msgstr "ချိတ်~ဆက်မှု"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT.CheckBox.Text
+#, fuzzy
 msgid  "~Show changes in spreadsheet"
 msgstr "~စာရွက်လွှာရှိပြောင်းလဲမှုများပြပါ"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.FL_FILTER.FixedLine.Text
+#, fuzzy
 msgid  "Filter settings"
 msgstr "စစ်ထုတ်ကိရိယာရွေးနိုင်ခြင်းများ"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_ACCEPT.CheckBox.Text
+#, fuzzy
 msgid  "Show ~accepted changes"
 msgstr "လက်ခံထားသည့်~ပြောင်းလဲမှုများပြပါ"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.CB_HIGHLIGHT_REJECT.CheckBox.Text
+#, fuzzy
 msgid  "Show ~rejected changes"
 msgstr "ငြင်းပယ်ထားသည့်~ပြောင်းလဲမှုများပြပါ"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.RB_ASSIGN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Minimize/Maximize"
 msgstr "ချုံ့/ချဲ့"
 
 #: source/ui/miscdlgs/highred.src#RID_SCDLG_HIGHLIGHT_CHANGES.ImageButton.Text
+#, fuzzy
 msgid  "Show Changes"
 msgstr "ပြောင်းလဲမှုများပြပါ"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ModalDialog.Text
+#, fuzzy
 msgid  "Protect Sheet"
 msgstr "စာရွက်လွှာကို ကာကွယ်ပါ..."
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.BTN_PROTECT.CheckBox.Text
+#, fuzzy
 msgid  "P~rotect this sheet and the contents of locked cells"
 msgstr "ဤစာရွက်လွှာအား~ကာကွယ်ထားပြီး ဆဲလ်အကွက်ရှိအကြောင်းအရာများကိုသော့ခတ်ထားပါ"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD1.FixedText.Text
+#, fuzzy
 msgid  "~Password"
 msgstr "~စကားဝှက်"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_PASSWORD2.FixedText.Text
+#, fuzzy
 msgid  "~Confirm"
 msgstr "~အတည်ပြုပါ"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "ရွေးပိုင်ခွင့်များ"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.FT_OPTIONS.FixedText.Text
+#, fuzzy
 msgid  "Allow all users of this sheet to:"
 msgstr "ဤစာရွက်လွှာအသုံးပြုသူအားလုံးကိုခွင့်ပြုသည်"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_LOCKED_CELLS.String.Text
+#, fuzzy
 msgid  "Select locked cells"
 msgstr "သော့ခတ်ထားသည့်ဆဲလ်အကွက်များကိုရွေးချယ်ပါ"
 
 #: source/ui/miscdlgs/protectiondlg.src#RID_SCDLG_TABPROTECTION.ST_SELECT_UNLOCKED_CELLS.String.Text
+#, fuzzy
 msgid  "Select unlocked cells"
 msgstr "သော့ခတ်မထားသည့်ဆဲလ်အကွက်များကိုရွေးချယ်ပါ"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FL_LOCATION.FixedLine.Text
+#, fuzzy
 msgid  "URL of ~external data source"
 msgstr "ပြင်ပအချက်~အလက်မူရင်း၏ URL"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_HINT.FixedText.Text
+#, fuzzy
 msgid  "(Enter the URL of the source document in the local file system or Internet here.)"
 msgstr "(အတွင်းဖိုင်စနစ် (သို့) ဤနေရာရှိ အင်တာနက်၏ မှတ်တမ်းမှတ်ရာမူရင်း URL ကို ရိုက်ထည့်ပါ)"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_RANGES.FixedText.Text
+#, fuzzy
 msgid  "~Available tables/ranges"
 msgstr "~ အသုံးပြုနိုင်သောဇယားများ / ကန့်သတ်နယ်ပယ်များ"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.BTN_RELOAD.CheckBox.Text
+#, fuzzy
 msgid  "~Update every"
 msgstr "~အရာရာတိုင်းကိုနောက်ဆုံးသစ်လွင်မှုပြုပါ"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FT_SECONDS.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "စက္ကန့်"
 
 #: source/ui/miscdlgs/linkarea.src#RID_SCDLG_LINKAREA.FixedText.Text
+#, fuzzy
 msgid  "External Data"
 msgstr "ပြင်ပအချက်အလက်များ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.Window.Text
+#, fuzzy
 msgid  "Navigator"
 msgstr "လမ်းညွှန်ကိရိယာ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
+#, fuzzy
 msgid  "Row"
 msgstr "အတန်း"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
+#, fuzzy
 msgid  "Row"
 msgstr "အတန်း"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
+#, fuzzy
 msgid  "Column"
 msgstr "ကော်လံ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
+#, fuzzy
 msgid  "Column"
 msgstr "ကော်လံ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.LB_DOCUMENTS.ListBox.QuickHelpText
+#, fuzzy
 msgid  "Document"
 msgstr "မှတ်တမ်းမှတ်ရာ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DATA.ToolBoxItem.Text
+#, fuzzy
 msgid  "Data Range"
 msgstr "အချက်အလက်နယ်ပယ်ကန့်သတ်ချက်"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_UP.ToolBoxItem.Text
+#, fuzzy
 msgid  "Start"
 msgstr "စတင်ပါ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DOWN.ToolBoxItem.Text
+#, fuzzy
 msgid  "End"
 msgstr "အဆုံးသတ်ပါ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "မာတိကာများ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_CHANGEROOT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Toggle"
 msgstr "အပြောင်းအလဲနှစ်ခုမှတစ်ခုခုကိုရွေးချယ်ခြင်း"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_SCENARIOS.ToolBoxItem.Text
+#, fuzzy
 msgid  "Scenarios"
 msgstr "ဇာတ်ညွှန်းအပြည့်အစုံ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Drag Mode"
 msgstr "နည်းလမ်းယူပါ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
+#, fuzzy
 msgid  "Drag Mode"
 msgstr "နည်းလမ်းယူပါ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DISPLAY.String.Text
+#, fuzzy
 msgid  "Display"
 msgstr "ပြသပါ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVE.String.Text
+#, fuzzy
 msgid  "active"
 msgstr "သက်ရောက်မှုရှိသည်"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_NOTACTIVE.String.Text
+#, fuzzy
 msgid  "inactive"
 msgstr "လုပ်ဆောင်မှုမရှိပါ"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_HIDDEN.String.Text
+#, fuzzy
 msgid  "hidden"
 msgstr "ဝှက်ထားသည်"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_ACTIVEWIN.String.Text
+#, fuzzy
 msgid  "Active Window"
 msgstr "လုပ်ဆောင်မှုပြုနေသောဝင်းဒိုး"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_LISTBOX.String.Text
+#, fuzzy
 msgid  "Scenario Name"
 msgstr "ဇာတ်ညွှန်းအမည်"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_QHLP_SCEN_COMMENT.String.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "ထင်မြင်သုံးသပ်ချက်"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_ROOT.String.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "မာတိကာများ"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_TABLE.String.Text
+#, fuzzy
 msgid  "Sheets"
 msgstr "စာရွက်လွှာများ"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_RANGENAME.String.Text
+#, fuzzy
 msgid  "Range names"
 msgstr "ကန့်သတ်ထားသောအမည်များ"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DBAREA.String.Text
+#, fuzzy
 msgid  "Database Ranges"
 msgstr "ဒေတာဘေ့စ်ကန့်သတ်ချက်"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_GRAPHIC.String.Text
+#, fuzzy
 msgid  "Graphics"
 msgstr "ရုပ်ပုံများ"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_OLEOBJECT.String.Text
+#, fuzzy
 msgid  "OLE objects"
 msgstr "OLE အရာဝတ္ထုများ"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_NOTE.String.Text
+#, fuzzy
 msgid  "Comments"
 msgstr "ထင်မြင်ချက်များ"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_AREALINK.String.Text
+#, fuzzy
 msgid  "Linked areas"
 msgstr "ချိတ်ဆက်ထားသောဧရိယာများ"
 
 #: source/ui/navipi/navipi.src#SCSTR_CONTENT_DRAWING.String.Text
+#, fuzzy
 msgid  "Drawing objects"
 msgstr "ရေးဆွဲထားသောအရာဝတ္ထုများ"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_URL.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Hyperlink"
 msgstr "ဟိုက်ပါလင့်ခ်အဖြစ်ထည့်ပါ"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_LINK.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Link"
 msgstr "ချိတ်ဆက်မှုထည့်ပါ"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_DROPMODE.RID_DROPMODE_COPY.MenuItem.Text
+#, fuzzy
 msgid  "Insert as Copy"
 msgstr "မိတ္တူကူးယူထည့်ပါ"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/ui/navipi/navipi.src#RID_POPUP_NAVIPI_SCENARIO.RID_NAVIPI_SCENARIO_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Properties..."
 msgstr "ဂုဏ်သတ္တိများ..."
 
@@ -2141,13 +2353,14 @@ msgid  "Edit Print Ranges"
 msgstr "ပရင့်ထုတ်ကန့်သတ်နယ်ပယ်ကိုတည်းဖြတ်ပါ"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_PRINTAREA.FixedLine.Text
+#, fuzzy
 msgid  "Print range"
 msgstr "ပရင့်ထုတ်ရန်ကန့်သတ်နယ်ပယ်"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
 msgid  "- none -"
-msgstr "- ဘာမျှမရှိပါ -"
+msgstr "-ဘာမျှမရှိပါ -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
@@ -2157,7 +2370,7 @@ msgstr "- စာရွက်လွှာတစ်ခုလုံး -"
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
 msgid  "- user defined -"
-msgstr "- အသုံးပြုသူ၏သတ်မှတ်ချက် -"
+msgstr "- အသုံးပြုသူ၏သတ်မှတ်ချက်-"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
@@ -2320,106 +2533,132 @@ msgid  "Scale"
 msgstr "စကေး"
 
 #: source/ui/pagedlg/hfedtdlg.src#HFEDIT_DLGTITLE.#define.Text
+#, fuzzy
 msgid  "Headers/Footers"
 msgstr "စာမျက်နှာထိပ်များ/အောက်ခြေများ"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER.#define.Text
+#, fuzzy
 msgid  "Header"
 msgstr "စာမျက်နှာထိပ်"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER.#define.Text
+#, fuzzy
 msgid  "Footer"
 msgstr "စာမျက်နှာအောက်ခြေ"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_RIGHT.#define.Text
+#, fuzzy
 msgid  "Header (right)"
 msgstr "စာမျက်နှာထိပ် (ညာဖက်)"
 
 #: source/ui/pagedlg/hfedtdlg.src#HEADER_LEFT.#define.Text
+#, fuzzy
 msgid  "Header (left)"
 msgstr "စာမျက်နှာထိပ် (ဘယ်ဖက်)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_RIGHT.#define.Text
+#, fuzzy
 msgid  "Footer (right)"
 msgstr "စာမျက်နှာအောက် (ညာဖက်)"
 
 #: source/ui/pagedlg/hfedtdlg.src#FOOTER_LEFT.#define.Text
+#, fuzzy
 msgid  "Footer (left)"
 msgstr "စာမျက်နှာအောက် (ဘယ်ဖက်)"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_HEADER.TabDialog.Text
+#, fuzzy
 msgid  "Headers"
 msgstr "စာမျက်နှာထိပ်များ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_SCDLG_HFED_FOOTER.TabDialog.Text
+#, fuzzy
 msgid  "Footers"
 msgstr "စာမျက်နှာအောက်ခြေများ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_LEFT.FixedText.Text
+#, fuzzy
 msgid  "~Left area"
 msgstr "~ဘယ်ဖက်ဧရိယာ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_CENTER.FixedText.Text
+#, fuzzy
 msgid  "~Center area"
 msgstr "~ဗဟိုဧရိယာ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_RIGHT.FixedText.Text
+#, fuzzy
 msgid  "R~ight area"
 msgstr "ညာ~ဖက်ဧရိယာ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_DEFINED.FixedText.Text
+#, fuzzy
 msgid  "Hea~der"
 msgstr "စာမျက်နှာ~ထိပ်"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_HF_CUSTOM.FixedText.Text
+#, fuzzy
 msgid  "Custom header"
 msgstr "စိတ်ကြိုက်စာမျက်နှာထိပ်"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TEXT.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Text Attributes"
 msgstr "စာသားလုပ်ဆောင်နိုင်မှုများ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Title"
 msgstr "ခေါင်းစဉ်"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
+#, fuzzy
 msgid  "Title"
 msgstr "ခေါင်းစဉ်"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_FILENAME.MenuItem.Text
+#, fuzzy
 msgid  "File Name"
 msgstr "ဖိုင်အမည်"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_PATH.MenuItem.Text
+#, fuzzy
 msgid  "Path/File Name"
 msgstr "လမ်းကြောင်း/ဖိုင်အမည်"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TABLE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Sheet Name"
 msgstr "စာရွက်လွှာအမည်"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Page"
 msgstr "စာမျက်နှာ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_PAGES.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Pages"
 msgstr "စာမျက်နှာများ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_DATE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Date"
 msgstr "နေ့စွဲ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_TIME.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Time"
 msgstr "အချိန်"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "Use the buttons to change the font or insert field commands such as date, time, etc."
 msgstr "စာလုံးပြောင်းလဲရန်ခလုတ်များအသုံးပြုပါ။ (သို့) နေ့စွဲ၊အချိန်အစရှိသည်တို့ဖြည့်ရန်နေရာကွက်များထည့်ပါ။"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Note"
 msgstr "မှတ်ချက်"
 
@@ -2558,9 +2797,8 @@ msgid  "~Discard"
 msgstr "⁠~ဖယ်ရှားပါ"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-#, fuzzy
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "ဝင်ရောက်မှု ကို \n#\nဖျက်သင့်သလား။"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 #, fuzzy
@@ -3053,70 +3291,86 @@ msgid  "~Delete"
 msgstr "~ဖျက်ပါ"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.TabDialog.Text
+#, fuzzy
 msgid  "Format Cells"
 msgstr "အကွက်များစီစဉ်ဖွဲ့စည်းမှုပုံစံ"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_NUMBER.PageItem.Text
+#, fuzzy
 msgid  "Numbers"
 msgstr "ကိန်းဂဏန်းများ"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONT.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "ဖောင့်"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_FONTEFF.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "ဖောင့်အကျိုးသက်ရောက်မှုများ"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ALIGNMENT.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "ဖြောင့်တန်းမှု"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_ASIAN.PageItem.Text
+#, fuzzy
 msgid  "Asian Typography"
 msgstr "အာရှပုံနှိပ်လက်ရာ"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "နယ်နိမိတ်များ"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "နောက်ခံ"
 
 #: source/ui/src/attrdlg.src#RID_SCDLG_ATTR.1.TP_PROTECTION.PageItem.Text
+#, fuzzy
 msgid  "Cell Protection"
 msgstr "ဆဲလ်အကွက်ကာကွယ်မှု"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_PROTECTED.TriStateBox.Text
+#, fuzzy
 msgid  "~Protected"
 msgstr "~ကာကွယ်ထားသည်"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_FORMULAR.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~formula"
 msgstr "ပုံသေနည်း~ခေတ္တဖျောက်ထားပါ"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_ALL.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~all"
 msgstr "အားလုံး~ခေတ္တဖျောက်ထားပါ"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "လက်ရှိ စာရွက်လွှာကို ကာကွယ်မှုပြုပြီးနောက်မှသာလျှင် ဆဲလ်အကွက်ကာကွယ်မှု သက်ရောက်မှုရှိသည် \n\n‘ကိရိယာများ’ မီနူးမှ ‘မှတ်တမ်းမှတ်ရာ ကာကွယ်ပါ’ ကို ရွေးချယ်ပြီး၊ ‘စာရွက်လွှာ’ကိုသတ်မှတ်ပါ။"
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
+#, fuzzy
 msgid  "Protection"
 msgstr "ကာကွယ်ခြင်း"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.BTN_HIDE_PRINT.TriStateBox.Text
+#, fuzzy
 msgid  "Hide ~when printing"
 msgstr "ပရင့်ထုတ်သောအခါ~ခေတ္တဖျောက်ထားပါ"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT2.FixedText.Text
+#, fuzzy
 msgid  "The cells selected will be omitted when printing."
 msgstr "ပရင့်ထုတ်သောအခါ ရွေးချယ်ထားသည့် ဆဲလ်အကွက်များ ချန်ထားရလိမ့်မည်။"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PRINT.FixedLine.Text
+#, fuzzy
 msgid  "Print"
 msgstr "ပရင့်ထုတ်ပါ"
 
@@ -3143,7 +3397,7 @@ msgstr "ရွေးပိုင်ခွင့်များ"
 #: source/ui/src/solveroptions.src#RID_SCDLG_SOLVER_INTEGER.CancelButton.Text
 #, fuzzy
 msgid  "Edit Setting"
-msgstr "~ပြင်ဆင်ချိန်ညှိမှု ကို တည်းဖြတ်ပါ"
+msgstr "~ပြင်ဆင်ချိန်ညှိမှု ကိုတည်းဖြတ်ပါ"
 
 #: source/ui/src/solveroptions.src#RID_SCDLG_SOLVER_DOUBLE.CancelButton.Text
 #, fuzzy
@@ -3468,7 +3722,7 @@ msgstr "အလိုအလျောက်ကောက်ကြောင်း"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SUBTOTALS.String.Text
 #, fuzzy
 msgid  "Subtotals"
-msgstr "အပေါင်းကိန်းအခွဲ"
+msgstr "စုစုပေါင်းကိန်းခွဲများ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 #, fuzzy
@@ -3745,9 +3999,8 @@ msgid  "No operations to execute"
 msgstr "စီမံဆောင်ရွက်ရန် လုပ်ဆောင်မှုများ မရှိပါ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-#, fuzzy
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "ကော်လံများထိပ်တွင် သတ်မှတ်ချက်နယ်ပယ် မပါဝင်ပါ။ \nကော်လံထိပ်အဖြစ် အသုံးပြုရန် ပထမဆုံးမျဉ်းကို အလိုရှိပါသလား။"
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 #, fuzzy
@@ -3825,9 +4078,8 @@ msgid  "Search key not found."
 msgstr "သော့ ရှာမတွေ့ပါ။"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-#, fuzzy
-msgid  "Goal Seek successful.\n"
-msgstr "ပန်းတိုင် အောင်မြင်စွာ ရှာဖွေသည်။\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 #, fuzzy
@@ -3840,14 +4092,12 @@ msgid  ") into current cell?"
 msgstr ") အဖြေထည့်မည်လား။"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-#, fuzzy
-msgid  "Goal Seek not successful.\n"
-msgstr "ပန်းတိုင် ရှာဖွေခြင်း မအောင်မြင်ပါ။\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-#, fuzzy
-msgid  "No exact value found. \n"
-msgstr "တိကျသော တန်ဖိုး ရှာမတွေ့ပါ။ \n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 #, fuzzy
@@ -3867,7 +4117,7 @@ msgstr "စုစုပေါင်းချုပ်"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_ERGEBNIS.String.Text
 #, fuzzy
 msgid  "Result"
-msgstr "အ​ဖြေ"
+msgstr "အဖြေ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SPELLING.String.Text
 #, fuzzy
@@ -3887,7 +4137,7 @@ msgstr "OR"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_DEF.String.Text
 #, fuzzy
 msgid  "Sheet"
-msgstr "စာရွက်အချပ်လွှာ"
+msgstr "စာရွက်လွှာ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MOVE_TO_END.String.Text
 #, fuzzy
@@ -4209,38 +4459,1358 @@ msgid  "Text Attributes"
 msgstr "စာသားလုပ်ဆောင်နိုင်မှုများ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+#, fuzzy
+msgid  "\\"
+msgstr "\\"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+#, fuzzy
+msgid  "PAGE"
+msgstr "PAGE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+#, fuzzy
+msgid  "PAGES"
+msgstr "PAGES"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+#, fuzzy
+msgid  "DATE"
+msgstr "DATE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+#, fuzzy
+msgid  "TIME"
+msgstr "TIME"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+#, fuzzy
+msgid  "FILE"
+msgstr "FILE"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+#, fuzzy
+msgid  "SHEET"
+msgstr "SHEET"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+#, fuzzy
+msgid  "Protected cells can not be modified."
+msgstr "ဆဲလ်အကွက်များကာကွယ်ထားမှုအထူးမပြုနိုင်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+#, fuzzy
+msgid  "Document opened in read-only mode."
+msgstr "မှတ်တမ်းမှတ်ရာကို ဖတ်ရန်သက်သက်နည်းလမ်းတွင် ဖွင့်ထားသည်။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+#, fuzzy
+msgid  "You cannot change only part of an array."
+msgstr "အရေး(ရ်)၏ အစိတ်အပိုင်းတစ်ခုကိုသာ ပြောင်းလဲရန် မဖြစ်နိုင်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+#, fuzzy
+msgid  "Header"
+msgstr "စာမျက်နှာထိပ်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+#, fuzzy
+msgid  "Footer"
+msgstr "စာမျက်နှာအောက်ခြေ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+#, fuzzy
+msgid  "Err:"
+msgstr "အမှား"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+#, fuzzy
+msgid  "Error: Ranges do not intersect"
+msgstr "အမှား - ပိုင်းဖြတ်ကန့်သတ်မှုမရှိပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+#, fuzzy
+msgid  "Error: Division by zero"
+msgstr "အမှား - သုညဖြင့်စားခြင်း"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+#, fuzzy
+msgid  "Error: Wrong data type"
+msgstr "အမှား - မှားယွင်းသောအချက်အလက်ပုံစံ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+#, fuzzy
+msgid  "Error: Not a valid reference"
+msgstr "အမှား - မှားယွင်းသောရည်ညွှန်းချက် "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+#, fuzzy
+msgid  "Error: Invalid name"
+msgstr "အမှား - မှားယွင်းသောအမည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+#, fuzzy
+msgid  "Error: Invalid numeric value"
+msgstr "အမှား - မှားယွင်းသောကိန်းဂဏန်းများတန်ဖိုး"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+#, fuzzy
+msgid  "Error: Value not available"
+msgstr "အမှား - တန်ဖိုးအသုံးမပြုနိုင်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "#ADDIN?"
+msgstr "#ADDIN?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+#, fuzzy
+msgid  "Error: Add-in not found"
+msgstr "အမှား - ထပ်ပေါင်းထည့်ခြင်းရှာမတွေ့ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "#MACRO?"
+msgstr "#MACRO?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+#, fuzzy
+msgid  "Error: Macro not found"
+msgstr "အမှား - မက်ခရိုရှာမတွေ့ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+#, fuzzy
+msgid  "Internal syntactical error"
+msgstr "အတွင်းပိုင်းဝါကျဖွဲ့စည်းပုံအမှား"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+#, fuzzy
+msgid  "Error: Invalid argument"
+msgstr "အမှား - မှားယွင်းသောကိန်းရှင်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+#, fuzzy
+msgid  "Error in parameter list"
+msgstr "ကိုယ်စားပြုအရာများစာရင်းရှိအမှား"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+#, fuzzy
+msgid  "Error: Invalid character"
+msgstr "အမှား - မှားယွင်းသောအက္ခရာ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+#, fuzzy
+msgid  "Error: Invalid semicolon"
+msgstr "အမှား - မှားယွင်းသောဆီမီးကော်လံ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+#, fuzzy
+msgid  "Error: in bracketing"
+msgstr "အမှား - ကွင်းခတ်ထားမှုတွင်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+#, fuzzy
+msgid  "Error: Operator missing"
+msgstr "အမှား - အော်ပရေတာ ပျောက်ဆုံးနေသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+#, fuzzy
+msgid  "Error: Variable missing"
+msgstr "အမှား - ကိန်းရှင်ပျောက်နေသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+#, fuzzy
+msgid  "Error: Formula overflow"
+msgstr "အမှား - ပုံသေနည်းအပိုပါရှိသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+#, fuzzy
+msgid  "Error: String overflow"
+msgstr "အမှား - စာ​ကြောင်းအပိုပါရှိ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+#, fuzzy
+msgid  "Error: Internal overflow"
+msgstr "အမှား - အတွင်းပိုင်းအပိုပါရှိ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+#, fuzzy
+msgid  "Error: Circular reference"
+msgstr "အမှား - စက်ဝိုင်းပုံရည်ညွှန်းချက်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+#, fuzzy
+msgid  "Error: Calculation does not converge"
+msgstr "အမှား - တွက်ချက်ခြင်းသည် မတူညီပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+#, fuzzy
+msgid  "Grid color"
+msgstr "ဂရစ်ကွက်အရောင်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+#, fuzzy
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "ခေတ္တဖျောက်ထားသည့် မာတိကာဆဲလ်အကွက်များကို ပထမဆုံး ဆဲလ်အကွက်အတွင်းသို့ ရွှေ့ပြောင်းသင့်သလား။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "စစ်ထုတ်ကိရိယာ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+#, fuzzy
+msgid  "The target database range does not exist."
+msgstr "ပစ်မှတ်ဒေတာဘေ့စ်အား နယ်ပယ်ကန့်သတ်ချက် မထားရှိပါ။ "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+#, fuzzy
+msgid  "Invalid increment"
+msgstr "မှားယွင်းသောနှစ်တိုး "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+#, fuzzy
+msgid  "MULTIPLE.OPERATIONS"
+msgstr "MULTIPLE.OPERATIONS"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+#, fuzzy
+msgid  "Multiple operations"
+msgstr "လုပ်ဆောင်မှုပေါင်းစုံ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+#, fuzzy
+msgid  "Range"
+msgstr "ကန့်သတ်ချက်နယ်ပယ်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "ဟုတ်သည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "မဟုတ်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+#, fuzzy
+msgid  "Protection"
+msgstr "ကာကွယ်မှု"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "ပုံသေနည်းများ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "ခေတ္တခဏဖျောက်ထားပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+#, fuzzy
+msgid  "Print"
+msgstr "ပရင့်ထုတ်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+#, fuzzy
+msgid  "(nested)"
+msgstr "(အစုံလိုက်ထပ်ထားသော)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+#, fuzzy
+msgid  "(optional)"
+msgstr "(စိတ်ကြိုက်)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+#, fuzzy
+msgid  "(required)"
+msgstr "(လိုအပ်သည့်)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+#, fuzzy
+msgid  "invalid"
+msgstr "မှားယွင်းသောညွှန်ကြားချက်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+#, fuzzy
+msgid  "Edit Function"
+msgstr "လုပ်ဆောင်ချက် တည်းဖြတ်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "ထင်မြင်သုံးသပ်ချက်များ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "ရွေးချယ်ထားသည့် အနာဂတ်ဖြစ်နိုင်ခြေများကို ဖျက်ရန် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+#, fuzzy
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "ရွေးချယ်ထားသည့် အနာဂတ်ဖြစ်နိုင်ခြေများကို ဖျက်ရန် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+#, fuzzy
+msgid  "Thesaurus is not available"
+msgstr "ဝေါဟာရပဒေသာကျမ်းအသုံးမပြုနိုင်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+#, fuzzy
+msgid  "Spellcheck not available"
+msgstr "စာလုံးပေါင်းစစ်ဆေးခြင်းအသုံးမပြုနိုင်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+#, fuzzy
+msgid  "Import text files"
+msgstr "စာသားဖိုင်များတင်သွင်းပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+msgid  "Export Text File"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+#, fuzzy
+msgid  "Import Lotus files"
+msgstr "Lotus ဖိုင်များတင်သွင်းပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+#, fuzzy
+msgid  "Import DBase files"
+msgstr "DBase ဖိုင်များတင်သွင်းပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+#, fuzzy
+msgid  "DBase export"
+msgstr "DBase တင်ပို့သည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Export"
+msgstr "Dif တင်ပို့သည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+#, fuzzy
+msgid  "Dif Import"
+msgstr "Dif တင်သွင်းသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+#, fuzzy
+msgid  "Default"
+msgstr "နဂိုမူလ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+#, fuzzy
+msgid  "Result"
+msgstr "အဖြေ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+#, fuzzy
+msgid  "Result2"
+msgstr "အဖြေ ၂"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+#, fuzzy
+msgid  "Heading"
+msgstr "ခေါင်းစဉ်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+#, fuzzy
+msgid  "Heading1"
+msgstr "ခေါင်းစဉ် ၁"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "အစီရင်ခံစာ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+#, fuzzy
+msgid  "Report1"
+msgstr "အစီရင်ခံစာ ၁"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+#, fuzzy
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "ဝေါဟာရပဒေသာကျမ်းကို စာသား ဆဲလ်အကွက်များတွင်သာ အသုံးပြု နိုင်လိမ့်မည်!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+#, fuzzy
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "လက်ရှိ စာရွက်လွှာ၏ အစ၌ စာလုံးပေါင်း စစ်ဆေးခြင်း ဆက်လုပ်သင့်ပါသလား။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+#, fuzzy
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "ဤစာရွက်လွှာ၏ စာလုံးပေါင်း စစ်ဆေးမှု ပြီးပြည့်စုံပြီ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+#, fuzzy
+msgid  "No language set"
+msgstr "ဘာသာစကားအစုများအသုံးပြုထားခြင်းမရှိပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+#, fuzzy
+msgid  "Insert Sheet"
+msgstr "စာရွက်အချပ်လွှာထည့်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+#, fuzzy
+msgid  "Delete Sheets"
+msgstr "စာရွက်အချပ်လွှာများဖျက်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+#, fuzzy
+msgid  "Rename Sheet"
+msgstr "စာရွက်အချပ်လွှာအမည်ပြန်ပေးပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+msgid  "Color Tab"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+msgid  "Color Tabs"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+#, fuzzy
+msgid  "Move Sheets"
+msgstr "စာရွက်အချပ်လွှာများရွှေ့ပြောင်းပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+#, fuzzy
+msgid  "Copy Sheet"
+msgstr "စာရွက်လွှာမိတ္တူကူးယူပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+#, fuzzy
+msgid  "Append sheet"
+msgstr "စာရွက်လွှာဖြည့်စွက်(ရေးသွင်း)ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+#, fuzzy
+msgid  "Show Sheet"
+msgstr "စာရွက်အချပ်လွှာပြပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+#, fuzzy
+msgid  "Hide sheet"
+msgstr "စာရွက်အချပ်လွှာခေတ္တခဏဖျောက်ထားပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+#, fuzzy
+msgid  "Flip sheet"
+msgstr "စာရွက်အချပ်လွှာလှန်ထားပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+#, fuzzy
+msgid  "Toggle the use of R1C1 notation"
+msgstr "R1C1 မှတ်သားချက်ကိုတလှည့်စီအသုံးပြုပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+#, fuzzy
+msgid  "Main Title"
+msgstr "အဓိကခေါင်းစဉ်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+#, fuzzy
+msgid  "Subtitle"
+msgstr "ခေါင်းစဉ်ခွဲ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+#, fuzzy
+msgid  "X axis title"
+msgstr "X ဝင်ရိုးခေါင်းစဉ်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+#, fuzzy
+msgid  "Y axis title"
+msgstr "Y ဝင်ရိုးခေါင်းစဉ်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+#, fuzzy
+msgid  "Z axis title"
+msgstr "Z ဝင်ရိုးခေါင်းစဉ်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+#, fuzzy
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "မှားယွင်းချက်များပါဝင်သည့် အခြားဇယားများကို ရည်ညွှန်းရန် ဇယားအသစ်ပါရှိသည်!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+#, fuzzy
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr "အမည်များ ထပ်တူညီမှု ဖြစ်သောကြောင့် သွားရောက်ရမည့် မှတ်တမ်းမှတ်ရာဖိုင်တွင် အမည်ကန့်သတ်ချက်နယ်ပယ်တစ်ခု အသင့်ထားရှိသည်!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+#, fuzzy
+msgid  "AutoFilter not possible"
+msgstr "အလိုအလျောက်စစ်ထုတ်မှုမဖြစ်နိုင်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME Calc သည် စာရွက်လွှာ၏ အစသို့ ရှာဖွေထားသည်။ အဆုံးသတ်ထိ ဆက်လက်ရှာဖွေရန် ဆန္ဒရှိပါသလား။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME Calc သည် စာရွက်လွှာ၏ အဆုံးသတ်သို့ ရှာဖွေထားသည်။ အစ၌ ဆက်လက်ရှာဖွေရန် ဆန္ဒရှိပါသလား။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+#, fuzzy
+msgid  "Find & Replace"
+msgstr "ရှာဖွေပြီး အစားထိုးပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME Calc သည် မှတ်တမ်းမှတ်ရာ၏ အစသို့ ရှာဖွေထားသည်။ အဆုံးသတ်ထိ ဆက်လက်ရှာဖွေရန် ဆန္ဒရှိပါသလား။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME Calc သည် မှတ်တမ်းမှတ်ရာ၏ အဆုံးသတ်သို့ ရှာဖွေထားသည်။ အစ၌ ဆက်လက်ရှာဖွေရန် ဆန္ဒရှိပါသလား။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+#, fuzzy
+msgid  "Replace existing definition of #?"
+msgstr "# ၏ ရှိပြီးသား အဓိပ္ပါယ်သတ်မှတ်ချက်ကို အစားထိုးလိုပါသလား?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+#, fuzzy
+msgid  "Invalid selection for range names"
+msgstr "အမည်များကန့်သတ်ချက်အတွက် မှားယွင်းသောရွေးချယ်မှု"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+#, fuzzy
+msgid  "References can not be inserted above the source data."
+msgstr "အထက်ပါ အချက်အလက်ရင်းမြစ်တွင် ရည်ညွှန်းချက်များ ထည့်သွင်းမထားနိုင်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+#, fuzzy
+msgid  "Scenario not found"
+msgstr "အနာဂတ်ဖြစ်နိုင်ခြေရှာမတွေ့ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+#, fuzzy
+msgid  "Do you really want to delete the entry #?"
+msgstr "# ဝင်ရောက်မှုကို ဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+#, fuzzy
+msgid  "Objects/graphics"
+msgstr "အရာဝတ္ထုများ/ရုပ်ပုံများ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+#, fuzzy
+msgid  "Charts"
+msgstr "ပုံစံကားချပ်များ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+#, fuzzy
+msgid  "Drawing Objects"
+msgstr "အရာဝတ္ထုများရေးဆွဲခြင်း"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+#, fuzzy
+msgid  "Show"
+msgstr "ပြပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "ဝှက်ထားပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+#, fuzzy
+msgid  "Top to bottom"
+msgstr "ထိပ်မှအောက်ခြေသို့"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+#, fuzzy
+msgid  "Left-to-right"
+msgstr "ဘယ်မှ - ညာ - သို့"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "ထင်မြင်သုံးသပ်ချက်များ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+#, fuzzy
+msgid  "Grid"
+msgstr "ဂရစ်ကွက်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+#, fuzzy
+msgid  "Row & Column Headers"
+msgstr "အတန်းနှင့်ကောလံ၏ထိပ်များ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+#, fuzzy
+msgid  "Formulas"
+msgstr "ပုံသေနည်းများ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+#, fuzzy
+msgid  "Zero Values"
+msgstr "သုံညတန်ဖိုးများ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+#, fuzzy
+msgid  "Print direction"
+msgstr "ဦးတည်ချက်ကိုပရင့်ထုတ်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+#, fuzzy
+msgid  "First page number"
+msgstr "ပထမဆုံးစာမျက်နှာနံပါတ်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+#, fuzzy
+msgid  "Reduce/enlarge printout"
+msgstr "ပရင့်ထုတ်ရန် လျှော့ချပါ / အကြီးချဲ့ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+#, fuzzy
+msgid  "Fit print range(s) on number of pages"
+msgstr "စာမျက်နှာများ အရေအတွက်နှင့် ပရင့်ထုတ်မည့် ကန့်သတ်ချက် ကိုက်ညီမှုရှိစေပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+#, fuzzy
+msgid  "Fit print range(s) to width/height"
+msgstr "အကျယ်အဝန်း/အမြင့်နှင့် ပရင့်ထုတ်မည့် ကန့်သတ်ချက် ကိုက်ညီမှုရှိစေပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+#, fuzzy
+msgid  "Width"
+msgstr "အကျယ်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height"
+msgstr "အမြင့်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+#, fuzzy
+msgid  "%1 page(s)"
+msgstr "%1 စာမျက်နှာ(များ)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+#, fuzzy
+msgid  "automatic"
+msgstr "အလိုအလျောက်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+#, fuzzy
+msgid  "Statistics"
+msgstr "ကိန်းဂဏန်းများ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+#, fuzzy
+msgid  "The link could not be updated."
+msgstr "နောက်ဆုံးသစ်လွင်မှုချိတ်ဆက်မပြုနိုင်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+#, fuzzy
+msgid  "File:"
+msgstr "ဖိုင် -"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+#, fuzzy
+msgid  "Sheet:"
+msgstr "စာရွက်လွှာ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+#, fuzzy
+msgid  "Overview"
+msgstr "ခြုံငုံသုံးသပ်ချက်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+#, fuzzy
+msgid  "Doc.Information"
+msgstr "သတင်းအချက်အလက်မှတ်တမ်းမှတ်ရာ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+#, fuzzy
+msgid  "Created"
+msgstr "ဖန်တီးထားသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+#, fuzzy
+msgid  "Modified"
+msgstr "အထူးပြုထားသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+#, fuzzy
+msgid  "Printed"
+msgstr "ပရင့်ထုတ်ထားသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "အကြောင်းကိစ္စ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+#, fuzzy
+msgid  "Key words"
+msgstr "သော့ချက်စကားလုံးများ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "ထင်မြင်သုံးသပ်ချက်များ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+#, fuzzy
+msgid  "by"
+msgstr "အားဖြင့်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+#, fuzzy
+msgid  "on"
+msgstr "ဖွင့်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+#, fuzzy
+msgid  "Too many conditions"
+msgstr "များစွာသောအခြေအနေများသည်လဲ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+#, fuzzy
+msgid  "The table could not be inserted."
+msgstr "ဇယား ထည့်သွင်းနိုင်လိမ့်မည် မဟုတ်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+#, fuzzy
+msgid  "The sheets could not be deleted."
+msgstr "စာရွက်လွှာများ ဖျက်နိုင်လိမ့်မည် မဟုတ်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+#, fuzzy
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "ကလစ်ဘုတ်၏ မာတိကာများ ဖြတ်ကူးယူသမျှ ပြန်ထည့်နိုင်လိမ့်မည် မဟုတ်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+#, fuzzy
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "ဤနေရာတွင် ထည့်သွင်းရန် စာရွက်လွှာပေါ်တွင် နေရာလွတ် မလုံလောက်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+#, fuzzy
+msgid  "No references found."
+msgstr "ရည်ညွှန်းချက်ရှာမတွေ့ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+#, fuzzy
+msgid  "Source and destination must not overlap."
+msgstr "မူရင်းနှင့် သွားရမည့်နေရာ အစွန်းချင်း ထပ်လိမ့်မည် မဟုတ်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+#, fuzzy
+msgid  "Graphics"
+msgstr "ရုပ်ပုံများ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+#, fuzzy
+msgid  "Invalid name."
+msgstr "မှားယွင်းသောအမည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+#, fuzzy
+msgid  "Selected macro not found."
+msgstr "ရွေးချယ်ထားသည့်မက်ခရို ရှာမတွေ့ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+#, fuzzy
+msgid  "Invalid value."
+msgstr "မှားယွင်းသောတန်ဖိုး"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+#, fuzzy
+msgid  "calculating"
+msgstr "တွက်ချက်နေသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+#, fuzzy
+msgid  "sorting"
+msgstr "စနစ်တကျစီထားသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+#, fuzzy
+msgid  "Adapt row height"
+msgstr "အတန်းအမြင့်လိုက်ဖက်အောင်ပြင်ဆင်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+#, fuzzy
+msgid  "Compare #"
+msgstr "# နှိုင်းယှဉ်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+#, fuzzy
+msgid  "Delete contents"
+msgstr "မာတိကာများဖျက်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+#, fuzzy
+msgid  "%1 R  x %2 C"
+msgstr "%1 R  x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+#, fuzzy
+msgid  "More..."
+msgstr "ပို၍..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+#, fuzzy
+msgid  "Invalid range"
+msgstr "မှားယွင်းသောကန့်သတ်ချက်နယ်ပယ်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "စစ်ထုတ်ကိရိယာ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+#, fuzzy
+msgid  "Sort"
+msgstr "စနစ်တကျစီထားပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+#, fuzzy
+msgid  "Subtotals"
+msgstr "စုစုပေါင်းကိန်းခွဲများ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "ဘာမျှမရှိပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+#, fuzzy
+msgid  "Do you want to replace the contents of #?"
+msgstr "# ၏ မာတိကာများ အစားထိုးရန် ဆန္ဒရှိပါသလား?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+#, fuzzy
+msgid  "Width:"
+msgstr "အကျယ် -"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height:"
+msgstr "အမြင့် -"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+#, fuzzy
+msgid  "Hide"
+msgstr "ဝှက်ထားပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+#, fuzzy
+msgid  "The object could not be inserted."
+msgstr "အရာဝတ္ထု ထည့်သွင်းနိုင်လိမ့်မည် မဟုတ်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+#, fuzzy
+msgid  "<empty>"
+msgstr "<အလွတ်>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+#, fuzzy
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "ဆဲလ်အကွက် #1ကို '#2'မှ '#3' သို့ပြောင်းထားသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+#, fuzzy
+msgid  "#1 inserted"
+msgstr "#1 ထည့်ထားသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+#, fuzzy
+msgid  "#1deleted"
+msgstr "#1 ဖျက်ထားသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+#, fuzzy
+msgid  "Range moved from #1 to #2"
+msgstr "#1 မှ #2 သို့ နေရာရွှေ့ပြောင်းထားသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+#, fuzzy
+msgid  "Exit Recording"
+msgstr "မှတ်တမ်းတင်ထားခြင်းမှထွက်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+#, fuzzy
+msgid  "The document can not be closed while a link is being updated."
+msgstr "နောက်ဆုံးသစ်လွင်မှုများရယူရန် ချိတ်ဆက်စဉ်အတွင်း မှတ်တမ်းမှတ်ရာကို ပိတ်နိုင်လိမ့်မည် မဟုတ်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Adapt array area"
+msgstr "အရေး(ရ်) ဧရိယာလိုက်ဖက်အောင်ပြင်ဆင်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+#, fuzzy
+msgid  "Array formula  %1 R x %2 C"
+msgstr "အရေး(ရ်) ပုံသေနည်း %၁ R x %၂ C "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+#, fuzzy
+msgid  "Hangul/Hanja Conversion"
+msgstr "ဟန်ဂူ/ဟန်ဂျာ ပြောင်းလဲခြင်းကိစ္စ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+#, fuzzy
+msgid  "Select Cell"
+msgstr "ဆဲလ်အကွက်ရွေးချယ်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+#, fuzzy
+msgid  "Select Range"
+msgstr "ကန့်သတ်ချက်နယ်ပယ်ရွေးချယ်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+#, fuzzy
+msgid  "Select Database Range"
+msgstr "ဒေတာဘေ့စ်ကန့်သတ်ချက်နယ်ပယ်ရွေးချယ်မှု"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+#, fuzzy
+msgid  "Go To Row"
+msgstr "အတန်းသို့သွားပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+#, fuzzy
+msgid  "Go To Sheet"
+msgstr "စာရွက်လွှာသို့သွားပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+#, fuzzy
+msgid  "Define Name for Range"
+msgstr "ကန့်သတ်ချက်နယ်ပယ်အတွက်အမည်သတ်မှတ်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+#, fuzzy
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "ထောင့်မှန်စတုဂံပုံကို အမည်ပေးရန် ရွေးချယ်မှု လိုအပ်သည်။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+#, fuzzy
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "ခိုင်လုံသော ရည်ညွှန်းချက်တစ်ခုသို့ ဝင်ရလိမ့်မည် (သို့) ရွေးချယ်ထားသော နေရာအတွက် ခိုင်လုံသော အမည်တစ်ခု ရိုက်ထည့်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "သတိပေးချက် –ဤလုပ်ဆောင်ချက်၏ အဖြေသည် ပုံသေနည်းများရှိ ဆဲလ်အကွက် ရည်ညွှန်းချက်များကို ပြောင်းလဲရန် ရည်ရွယ်မထားမှုများတွင် ရှိသည်။  "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+#, fuzzy
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr "သတိပေးချက် – ဤလုပ်ဆောင်ချက်၏ အ​ဖြေသည် ပြန်လည်သိုမှီးမထားသည့် ဖျက်ထားပြီး ဧရိယာများပေါ်တွင် ရှိနိုင်သည်။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+#, fuzzy
+msgid  "(none)"
+msgstr "(ဘာမျှမရှိပါ)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+#, fuzzy
+msgid  "of"
+msgstr "၏"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+#, fuzzy
+msgid  "of ?"
+msgstr "၏ ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+#, fuzzy
+msgid  "Created by"
+msgstr "အားဖြင့်ဖန်တီးထားသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+#, fuzzy
+msgid  "Confidential"
+msgstr "လျှို့ဝှက်ထားရန်ဖြစ်သော(ကိစ္စ)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+#, fuzzy
+msgid  "Customized"
+msgstr "လိုအပ်ချက်နှင့်ကိုက်ညီအောင်ပြုပြင်ရေးသားထားသည်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+#, fuzzy
+msgid  "Custom footer"
+msgstr "စိတ်ကြိုက်စာမျက်နှာအောက်ခြေ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+msgid  "Chinese conversion"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+#, fuzzy
+msgid  "You cannot change this part of the pivot table."
+msgstr "ရှေ့ပြေးအချက်အလက်ဇယား၏ အစိတ်အပိုင်းကို ပြောင်းလဲရန် သင်မတတ်နိုင်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+#, fuzzy
+msgid  "Manual"
+msgstr "လက်ဖြင့်တဆင့်ချင်း"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "အလိုအလျောက်"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+#, fuzzy
+msgid  "Nested arrays are not supported."
+msgstr "နတ်စတက်အရေး(ရ်)ကို အထောက်အကူမပြုနိုင်ပါ။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+#, fuzzy
+msgid  "Text to Columns"
+msgstr "ကော်လံများအတွင်းသို့စာသားထည့်ပါ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+#, fuzzy
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr "အခြားအသုံးပြုသူ ပြောင်းလဲသိမ်းဆည်းထားသည့် နောက်ဆုံးသစ်လွင်မှုများကို သင့်စာရွက်ပေါ်တွင် ထားရှိသည်။"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+#, fuzzy
+msgid  "Unknown User"
+msgstr "အသုံးပြုသူအမည်မသိပါ-"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+#, fuzzy
+msgid  "Cell Styles"
+msgstr "~ဆဲလ်အကွက်စတိုင်လ်များ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+#, fuzzy
+msgid  "Page Styles"
+msgstr "စာမျက်နှာစတိုင်လ်များ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+#, fuzzy
+msgid  "Character"
+msgstr "အက္ခရာ၊သင်္ကေတ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
+msgid  "Font"
+msgstr "ဖောင့်"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
+msgid  "Font Effects"
+msgstr "ဖောင့်အကျိုးသက်ရောက်မှု"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#, fuzzy
+msgid  "Font Position"
+msgstr "ဖောင့်တည်နေရာ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "အနောက်"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+#, fuzzy
+msgid  "Paragraph"
+msgstr "စာပိုဒ်"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Indents & Spacing"
+msgstr "အမှာစာများနှင့်လပ်နေသောနေရာ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "ဖြောင့်တန်းမှု"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+#, fuzzy
+msgid  "Asian Typography"
+msgstr "အာရှပုံနှိပ်လက်ရာ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+#, fuzzy
+msgid  "Tab"
+msgstr "အကွက်ခုန်"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+#, fuzzy
+msgid  "Back"
+msgstr "အနောက်"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+#, fuzzy
+msgid  "AutoFormat"
+msgstr "အလိုအလျောက်စီစဉ်ဖွဲ့စည်းမှုပုံစံ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "F~ormat"
+msgstr "စီစဉ်~ဖွဲ့စည်းမှုပုံစံ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+#, fuzzy
+msgid  "A~utoFit width and height"
+msgstr "အကျယ်နှင့်အမြင့်အလိုအလျောက်~ကိုက်ညီစေပါ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+#, fuzzy
+msgid  "~Borders"
+msgstr "~နယ်နိမိတ်များ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+#, fuzzy
+msgid  "F~ont"
+msgstr "ဖောင့်"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+#, fuzzy
+msgid  "~Pattern"
+msgstr "⁠~ပုံစံအကွက်"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+#, fuzzy
+msgid  "Alignmen~t"
+msgstr "ဖြောင့်တန်း~မှု"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+#, fuzzy
+msgid  "~Number format"
+msgstr "~နံပါတ်စီစဉ်ဖွဲ့စည်းမှုပုံစံ "
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+#, fuzzy
+msgid  "Formatting"
+msgstr "စီစဉ်ဖွဲ့စည်းမှုပုံစံ "
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add..."
+msgstr "⁠~ထပ်ထည့်ပါ..."
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "~ဖျက်ပါ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+#, fuzzy
+msgid  "~Rename"
+msgstr "⁠~အမည်ပြန်ပေးပါ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+#, fuzzy
+msgid  "Add AutoFormat"
+msgstr "အလိုအလျောက်စီစဉ်ဖွဲ့စည်းမှုပုံစံထည့်ပါ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+#, fuzzy
+msgid  "Rename AutoFormat"
+msgstr "အလိုအလျောက်စီစဉ်ဖွဲ့စည်းမှုပုံစံအမည်ပြန်ပေးပါ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "အမည်"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+#, fuzzy
+msgid  "Delete AutoFormat"
+msgstr "အလိုအလျောက်စီစဉ်ဖွဲ့စည်းမှုပုံစံဖျက်ပါ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "⁠~ပိတ်ပါ"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_JAN.String.Text
+#, fuzzy
 msgid  "Jan"
 msgstr "ဇန်နဝါရီ"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_FEB.String.Text
+#, fuzzy
 msgid  "Feb"
 msgstr "ဖေဖေါ်ဝါရီ"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MAR.String.Text
+#, fuzzy
 msgid  "Mar"
 msgstr "မတ်"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_NORTH.String.Text
+#, fuzzy
 msgid  "North"
 msgstr "မြောက်ပိုင်း"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_MID.String.Text
+#, fuzzy
 msgid  "Mid"
 msgstr "အလယ်ပိုင်း"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SOUTH.String.Text
+#, fuzzy
 msgid  "South"
 msgstr "တောင်ပိုင်း"
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_SUM.String.Text
+#, fuzzy
 msgid  "Total"
 msgstr "စုစုပေါင်း"
 
@@ -4252,7 +5822,7 @@ msgstr "စံနှုန်းစစ်ထုတ်ကိရိယာ "
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_OP.FixedText.Text
 #, fuzzy
 msgid  "Operator"
-msgstr "လုပ်ကိုင်သူ"
+msgstr "အော်ပရေတာ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_FIELD.FixedText.Text
 #, fuzzy
@@ -4352,12 +5922,12 @@ msgstr "အငယ်ဆုံး"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Largest %"
-msgstr "အကြီးဆုံး % "
+msgstr "% အကြီးဆုံး"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest %"
-msgstr "အငယ်ဆုံး % "
+msgstr "% အငယ်ဆုံး"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -4372,7 +5942,7 @@ msgstr "ပါဝင်မှုမရှိပါ"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Begins with"
-msgstr "ဖြင့်စတင်သည်"
+msgstr "ဖြင့်စတင်ပါ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -4632,7 +6202,7 @@ msgstr "ဖြင့်အဆုံးမသတ်ပါ"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FL_CRITERIA.FixedLine.Text
 #, fuzzy
 msgid  "Filter criteria"
-msgstr "မှတ်ကျောက်တင်စစ်ထုတ်ကိရိယာ"
+msgstr "မှတ်ကျောက်စစ်ထုတ်ကိရိယာ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_CASE.CheckBox.Text
 #, fuzzy
@@ -4652,7 +6222,7 @@ msgstr "ကော်လံအညွှန်းများပါဝင်သည
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_UNIQUE.CheckBox.Text
 #, fuzzy
 msgid  "~No duplication"
-msgstr "~ထပ်ခြင်းမရှိ"
+msgstr "~မူပွားခြင်းမဟုတ်ပါ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_COPY_RESULT.CheckBox.Text
 #, fuzzy
@@ -4677,7 +6247,7 @@ msgstr "အတု"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA_LABEL.FixedText.Text
 #, fuzzy
 msgid  "Data range:"
-msgstr "အချက်အလက်နယ်ပယ်ကန့်သတ်မှု"
+msgstr "အချက်အလက်များနယ်ပယ်ကန့်သတ်ချက်"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.ModelessDialog.Text
 #, fuzzy
@@ -4697,7 +6267,7 @@ msgstr "ချုံ့ပါ"
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_CASE.CheckBox.Text
 #, fuzzy
 msgid  "~Case sensitive"
-msgstr "~ကိစ္စရပ်ပေါ်တွင်အမှားအယွင်းမခံနိုင်မှု "
+msgstr "~ကိစ္စရပ်ပေါ်တွင်အမှားအယွင်းမခံနိုင်မှု"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_REGEXP.CheckBox.Text
 #, fuzzy
@@ -4742,7 +6312,7 @@ msgstr "အတု"
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.FT_DBAREA_LABEL.FixedText.Text
 #, fuzzy
 msgid  "Data range:"
-msgstr "အချက်အလက်များနယ်ပယ်ကန့်သတ်ချက်"
+msgstr "အချက်အလက်နယ်ပယ်ကန့်သတ်မှု"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.ModalDialog.Text
 #, fuzzy
@@ -4752,7 +6322,7 @@ msgstr "စစ်ထုတ်ကိရိယာ"
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FT_OP.FixedText.Text
 #, fuzzy
 msgid  "Operator"
-msgstr "အော်ပရေတာ"
+msgstr "လုပ်ကိုင်သူ"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FT_FIELD.FixedText.Text
 #, fuzzy
@@ -4952,17 +6522,17 @@ msgstr "ဒေတာဘေ့စ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "အချက်အလက်များပါဝင်သည့် ဆဲလ်အကွက်များ နေရာကန့်သတ်ချက်"
+msgstr "အချက်အလက်များပါဝင်သော ဆဲလ်အကွက်များ နေရာကန့်သတ်ချက်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "ဒေတာဘေ့စ် နယ်ပယ်"
+msgstr "ဒေတာဘေ့စ်နယ်ပယ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "မှတ်​ကျောက်ရှာဖွေမှုတွင် အသုံးပြုရန်အတွက် ဒေတာဘေ့စ်နယ်ပယ်(ကော်လံ) ကို ညွှန်ပြသည်။"
+msgstr "မှတ်​ကျောက်ရှာဖွေမှုတွင် အသုံးပြုရန်အတွက် ဒေတာဘေ့စ်နယ်ပယ်(ကော်လံ)ကို ညွှန်ပြသည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.6.String.Text
 #, fuzzy
@@ -4972,7 +6542,7 @@ msgstr "မှတ်ကျောက်ရှာဖွေမှု"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပာယ်သတ်မှတ်သည်။"
+msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပါယ်သတ်မှတ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 #, fuzzy
@@ -4997,7 +6567,7 @@ msgstr "ဒေတာဘေ့စ်နယ်ပယ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "မှတ်​ကျောက်ရှာဖွေမှုတွင် အသုံးပြုရန်အတွက် ဒေတာဘေ့စ်နယ်ပယ်(ကော်လံ)ကို ညွှန်ပြသည်။"
+msgstr "မှတ်​ကျောက်ရှာဖွေမှုတွင် အသုံးပြုရန်အတွက် ဒေတာဘေ့စ်နယ်ပယ်(ကော်လံ) ကို ညွှန်ပြသည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.6.String.Text
 #, fuzzy
@@ -5007,7 +6577,7 @@ msgstr "မှတ်ကျောက်ရှာဖွေမှု"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပာယ်သတ်မှတ်သည်။"
+msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပါယ်သတ်မှတ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.1.String.Text
 #, fuzzy
@@ -5032,7 +6602,7 @@ msgstr "ဒေတာဘေ့စ်နယ်ပယ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "မှတ်​ကျောက်ရှာဖွေမှုတွင် အသုံးပြုရန်အတွက် ဒေတာဘေ့စ်နယ်ပယ်(ကော်လံ) ကို ညွှန်ပြသည်။"
+msgstr "မှတ်​ကျောက်ရှာဖွေမှုတွင် အသုံးပြုရန်အတွက် ဒေတာဘေ့စ်နယ်ပယ် (ကော်လံ) ကို ညွှန်ပြသည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.6.String.Text
 #, fuzzy
@@ -5042,7 +6612,7 @@ msgstr "မှတ်ကျောက်ရှာဖွေမှု"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပာယ်သတ်မှတ်သည်။"
+msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပါယ်သတ်မှတ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.1.String.Text
 #, fuzzy
@@ -5077,7 +6647,7 @@ msgstr "မှတ်ကျောက်ရှာဖွေမှု"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပာယ်သတ်မှတ်သည်။"
+msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပာယ်သတ်မှတ်သည်။။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.1.String.Text
 #, fuzzy
@@ -5112,7 +6682,7 @@ msgstr "မှတ်ကျောက်ရှာဖွေမှု"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပါယ်သတ်မှတ်သည်။"
+msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပာယ်သတ်မှတ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.1.String.Text
 #, fuzzy
@@ -5417,12 +6987,12 @@ msgstr "ရက်စွဲအတွက် ကိန်းပြည့် (၁-�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်းများ"
+msgstr "ကိန်းဂဏန်း"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
 msgid  "The internal number for the date."
-msgstr "ရက်စွဲအတွက် အတွင်းပိုင်းနံပါတ်"
+msgstr "ရက်စွဲအတွက် အတွင်းပိုင်း နံပါတ်တပ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.1.String.Text
 #, fuzzy
@@ -5432,7 +7002,7 @@ msgstr "တစ်နှစ် ၃၆၀-ရက်ပေါ် အခြေခံ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.2.String.Text
 #, fuzzy
 msgid  "Date_1"
-msgstr "ရက်စွဲ _ ၁"
+msgstr "ရက်စွဲ_၁"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 #, fuzzy
@@ -5442,7 +7012,7 @@ msgstr "မတူညီသော နေ့ရက်များတွက်ခ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 #, fuzzy
 msgid  "Date_2"
-msgstr "ရက်စွဲ _ ၂"
+msgstr "ရက်စွဲ_၂"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.5.String.Text
 #, fuzzy
@@ -5452,7 +7022,7 @@ msgstr "မတူညီသော နေ့ရက်များတွက်ခ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 #, fuzzy
 msgid  "Type"
-msgstr "အမျိုးအစား"
+msgstr "ပုံစံ ရိုက်ပါ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.7.String.Text
 #, fuzzy
@@ -5467,7 +7037,7 @@ msgstr "အချိန် တန်ဖိုးအတွက် ရက် ၀-�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "ကိန်းဂဏန်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.3.String.Text
 #, fuzzy
@@ -5482,7 +7052,7 @@ msgstr "အချိန် တန်ဖိုးအတွက် ရက် ၀-�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.3.String.Text
 #, fuzzy
@@ -5497,12 +7067,12 @@ msgstr "ရက်စွဲအတွက် တစ်နှစ်၏ လအရေ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 #, fuzzy
 msgid  "The internal number of the date."
-msgstr "ရက်စွဲ၏ အတွင်းပိုင်းနံပါတ်"
+msgstr "ရက်စွဲ၏ အတွင်းပိုင်း နံပါတ်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_ACT_TIME.1.String.Text
 #, fuzzy
@@ -5517,7 +7087,7 @@ msgstr "အချိန်တန်ဖိုးအတွက် တစ်မိ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.3.String.Text
 #, fuzzy
@@ -5587,7 +7157,7 @@ msgstr "ရက်စွဲတန်ဖိုးအတွက် ၁-၇ ကိန
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.3.String.Text
 #, fuzzy
@@ -5597,7 +7167,7 @@ msgstr "ရက်စွဲအတွက် အတွင်းပိုင်း �
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.4.String.Text
 #, fuzzy
 msgid  "Type"
-msgstr "အမျိုးအစား"
+msgstr "ပုံစံ ရိုက်ပါ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.5.String.Text
 #, fuzzy
@@ -5612,7 +7182,7 @@ msgstr "ရက်စွဲတန်ဖိုးတစ်ခု၏ ကိန်�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_YEAR.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_YEAR.3.String.Text
 #, fuzzy
@@ -5652,7 +7222,7 @@ msgstr "ပေးထားသော ရက်များပေါ်မူတ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.3.String.Text
 #, fuzzy
@@ -5732,7 +7302,7 @@ msgstr "အနာဂတ် တန်ဖိုး။ နောက်ဆုံး 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.10.String.Text
 #, fuzzy
 msgid  "Type"
-msgstr "အမျိုးအစား"
+msgstr "ပုံစံ ရိုက်ပါ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 #, fuzzy
@@ -5762,7 +7332,7 @@ msgstr "NPER"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "ပေးရန်ကာလ။ နှစ်အလိုက်ပင်စင်ပေးရမည့် စုစုပေါင်း အချိန်ကာလအရေအတွက်။"
+msgstr "ပေးရန်ကာလ။ နှစ်အလိုက်(ပင်စင်)ပေးရမည့် စုစုပေါင်း အချိန်ကာလအရေအတွက်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 #, fuzzy
@@ -5772,7 +7342,7 @@ msgstr "PMT"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 #, fuzzy
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "ပုံမှန် ပေးရန်များ။အချိန်ကာလအသီးသီးအတွက် ပေးရန်ရှိသည့် နှစ်အလိုက်ပုံသေပမာဏ။"
+msgstr "ပုံမှန် ပေးရန်များ။ အချိန်ကာလ အသီးသီးရှိ ပေးရန်ရှိ နှစ်အလိုက်ပုံသေတန်ဖိုး။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 #, fuzzy
@@ -5787,7 +7357,7 @@ msgstr "လက်ရှိ တန်ဖိုး။ ပေးရန်ရှိ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 #, fuzzy
 msgid  "Type"
-msgstr "အမျိုးအစား"
+msgstr "ပုံစံရိုက်ပါ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 #, fuzzy
@@ -5817,7 +7387,7 @@ msgstr "PMT"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.5.String.Text
 #, fuzzy
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "ပုံမှန် ပေးရန်များ။ အချိန်ကာလ အသီးသီးရှိ ပေးရန်ရှိ နှစ်အလိုက်ပုံသေတန်ဖိုး။"
+msgstr "ပုံမှန် ပေးရန်များ။ အချိန်ကာလ အသီးသီးရှိ ပေးရန်ရှိ နှစ်အလိုက် ပုံသေတန်ဖိုး။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.6.String.Text
 #, fuzzy
@@ -5837,7 +7407,7 @@ msgstr "FV"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 #, fuzzy
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "အနာဂတ် တန်ဖိုး။ နောက်ဆုံး ပေးချေမှုပြုပြီးနောက် ကြိုးပမ်းရရှိသည့် (အဆုံးသတ် တန်ဖိုး) ဖြစ်သည်။"
+msgstr "အနာဂတ် တန်ဖိုး။ နောက်ဆုံး ပေးချေမှုပြုပြီးနောက် ကြိုးပမ်းရရှိသည့်(အဆုံးသတ် တန်ဖိုး) ဖြစ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 #, fuzzy
@@ -5872,7 +7442,7 @@ msgstr "NPER"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.5.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "ပေးရန်ကာလ။ နှစ်အလိုက်(ပင်စင်)ပေးရမည့် စုစုပေါင်း အချိန်ကာလအရေအတွက်။"
+msgstr "ပေးရန်ကာလ။ နှစ်အလိုက်ပင်စင်ပေးရမည့် စုစုပေါင်း အချိန်ကာလအရေအတွက်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.6.String.Text
 #, fuzzy
@@ -5917,7 +7487,7 @@ msgstr "NPER"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.3.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "ပေးရန်ကာလ။ နှစ်အလိုက်ပင်စင်ပေးရမည့် စုစုပေါင်း အချိန်ကာလအရေအတွက်။"
+msgstr "ပေးရန်ကာလ။ နှစ်အလိုက် ပင်စင်ပေးရမည့် စုစုပေါင်း အချိန်ကာလအရေအတွက်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.4.String.Text
 #, fuzzy
@@ -5987,7 +7557,7 @@ msgstr "အချိန်ကာလတစ်ခုရှိ အတိုးန�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 #, fuzzy
 msgid  "Period"
-msgstr "ကာလ"
+msgstr "အချိန်ကာလ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.5.String.Text
 #, fuzzy
@@ -6002,7 +7572,7 @@ msgstr "NPER"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.7.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "ပေးရန်ကာလ။ နှစ်အလိုက်ပင်စင်ပေးရမည့် စုစုပေါင်း အချိန်ကာလအရေအတွက်။"
+msgstr "ပေးရန်ကာလ။ နှစ်အလိုက် ပင်စင်ပေးရမည့် စုစုပေါင်း အချိန်ကာလအရေအတွက်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.8.String.Text
 #, fuzzy
@@ -6052,7 +7622,7 @@ msgstr "အချိန်ကာလတစ်ခုရှိ အတိုးန�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.4.String.Text
 #, fuzzy
 msgid  "Period"
-msgstr "အချိန်ကာလ"
+msgstr "ကာလ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.5.String.Text
 #, fuzzy
@@ -6077,7 +7647,7 @@ msgstr "PV"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.9.String.Text
 #, fuzzy
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "လက်ရှိ တန်ဖိုး။ ယခုလက်ရှိတန်ဖိုး (သို့) နှစ်အလိုက် ပမာဏ။"
+msgstr "လက်ရှိတန်ဖိုး။ယခုလက်ရှိတန်ဖိုး(သို့)နှစ်စဉ်ထုတ်ပေးသည့်ပမာဏ။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.10.String.Text
 #, fuzzy
@@ -6257,7 +7827,7 @@ msgstr "ဆယ်တင်မှု တန်ဖိုး။ နောက်ဆ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 #, fuzzy
 msgid  "Life"
-msgstr "သက်တမ်း။"
+msgstr "သက်တမ်း"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 #, fuzzy
@@ -7084,7 +8654,7 @@ msgstr "နံပါတ်တစ်ခု၏ အပြည့်အဝ တန်�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ABS.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ABS.3.String.Text
 #, fuzzy
@@ -7099,7 +8669,7 @@ msgstr "အခြေ a ၏ထပ်ညွှန်း b ပြန်ပေးသ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.2.String.Text
 #, fuzzy
 msgid  "Base"
-msgstr "အခြေ"
+msgstr "Base"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.3.String.Text
 #, fuzzy
@@ -7124,7 +8694,7 @@ msgstr "သတ်မှတ် အပိုင်းအခြားတစ်ခ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_EMPTY_CELLS.2.String.Text
 #, fuzzy
 msgid  "range"
-msgstr "သတ်မှတ်အပိုင်းအခြား"
+msgstr "ကန့်သတ်နယ်ပယ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_EMPTY_CELLS.3.String.Text
 #, fuzzy
@@ -7144,7 +8714,7 @@ msgstr "ကိန်းရှင်းအားလုံး ပေါင်း�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 #, fuzzy
@@ -7159,7 +8729,7 @@ msgstr "ကိန်းရှင်းအားလုံး၏ နှစ်ထ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 #, fuzzy
@@ -7189,7 +8759,7 @@ msgstr "အခြေအနေများနှင့် ကိုက်ညီ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.2.String.Text
 #, fuzzy
 msgid  "range"
-msgstr "ကန့်သတ်နယ်ပယ်"
+msgstr "နေရာကန့်သတ်ချက်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.3.String.Text
 #, fuzzy
@@ -7204,7 +8774,7 @@ msgstr "မှတ်ကျောက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.5.String.Text
 #, fuzzy
 msgid  "The cell range in which the search criteria are given."
-msgstr "ပေးထားသော မှတ်ကျောက်ရှာဖွေမှု အတွင်းရှိ ဆဲလ်အကွက် ကန့်သတ်နယ်ပယ်။"
+msgstr "ပေးထားသော မှတ်ကျောက်ရှာဖွေမှု အတွင်းရှိ ဆဲလ်အကွက် နေရာတစ်ခု။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.6.String.Text
 #, fuzzy
@@ -7223,7 +8793,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF.2.String.Text
 #, fuzzy
 msgid  "range"
-msgstr "နေရာကန့်သတ်ချက်"
+msgstr "ကန့်သတ်နယ်ပယ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF.3.String.Text
 msgid  "The range to be evaluated by the criteria given."
@@ -7355,7 +8925,7 @@ msgstr "နံပါတ် တစ်ခု၏ နှစ်ထပ်ကိန်�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 #, fuzzy
@@ -7410,7 +8980,7 @@ msgstr "နံပါတ် _ ၁"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.3.String.Text
 #, fuzzy
 msgid  "The total number of elements."
-msgstr "အချက်အလက်များ၏ စုစုပေါင်းအရေအတွက်"
+msgstr "ဂဏန်း(သို့)ဇယားကွက်တစ်ခုတွင် ပါသော အချက်အလက်များ၏ စုစုပေါင်း အရေအတွက်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.4.String.Text
 #, fuzzy
@@ -7435,7 +9005,7 @@ msgstr "နံပါတ် _ ၁"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.3.String.Text
 #, fuzzy
 msgid  "The total number of elements."
-msgstr "အချက်အလက်များ၏ စုစုပေါင်းအရေအတွက်"
+msgstr "ဂဏန်း(သို့)ဇယားကွက်တစ်ခုတွင် ပါသော အချက်အလက်များ၏ စုစုပေါင်း အရေအတွက် နံပါတ်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.4.String.Text
 #, fuzzy
@@ -7455,7 +9025,7 @@ msgstr "စက်ဝိုင်းပြတ်အကွေး ကိုဆိ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS.3.String.Text
 #, fuzzy
@@ -7470,7 +9040,7 @@ msgstr "စက်ဝန်းဆိုင်း၏ နံပါတ်တစ်�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN.3.String.Text
 #, fuzzy
@@ -7485,7 +9055,7 @@ msgstr "နံပါတ်တစ်ခု၏ ပြောင်းပြန် �
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS_HYP.3.String.Text
 #, fuzzy
@@ -7500,7 +9070,7 @@ msgstr "ပြောင်းပြန် ဟိုက်ပါဘိုလစ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN_HYP.3.String.Text
 #, fuzzy
@@ -7515,7 +9085,7 @@ msgstr "ပြောင်းပြန် ဟိုက်ပါဘိုလစ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT.3.String.Text
 #, fuzzy
@@ -7530,7 +9100,7 @@ msgstr "စက်ဝိုင်းပြတ် တန်းဂျင့်၏ �
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN.3.String.Text
 #, fuzzy
@@ -7545,7 +9115,7 @@ msgstr "ပြောင်းပြန် ဟိုက်ပါဘိုလစ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT_HYP.3.String.Text
 #, fuzzy
@@ -7560,7 +9130,7 @@ msgstr "ပြောင်းပြန် ဟိုက်ပါဘိုလစ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN_HYP.3.String.Text
 #, fuzzy
@@ -7575,7 +9145,7 @@ msgstr "ကိုဆိုင်း၏ နံပါတ်တစ်ခုသိ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS.3.String.Text
 #, fuzzy
@@ -7590,7 +9160,7 @@ msgstr "ဆိုင်း၏ နံပါတ်တစ်ခုသို့ ပ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 #, fuzzy
@@ -7605,7 +9175,7 @@ msgstr "ကိုတန်းဂျင့်၏ နံပါတ်တစ်ခ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT.3.String.Text
 #, fuzzy
@@ -7952,7 +9522,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded down."
-msgstr "နံပါတ် လျှော့ယူပါ။"
+msgstr "နံပါတ် အနီးစပ်ဆုံးတန်ဖိုးသို့လျှော့သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.1.String.Text
 #, fuzzy
@@ -8017,7 +9587,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "နံပါတ် အနီးစပ်ဆုံးတန်ဖိုးသို့တိုးသည်။"
+msgstr "နံပါတ် တိုး၍ လှည့်ရန် ဖြစ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 #, fuzzy
@@ -8042,7 +9612,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded down."
-msgstr "နံပါတ် အနီးစပ်ဆုံးတန်ဖိုးသို့လျှော့သည်။"
+msgstr "နံပါတ်ကို လျှော့ချပါ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.4.String.Text
 #, fuzzy
@@ -8067,7 +9637,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EVEN.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "နံပါတ် တိုး၍ လှည့်ရန် ဖြစ်သည်။"
+msgstr "နံပါတ် တိုး၍ယူသည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.1.String.Text
 #, fuzzy
@@ -8082,7 +9652,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "နံပါတ် တိုး၍ယူသည်။"
+msgstr "နံပါတ် တိုး၍ လှည့်ရန် ဖြစ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.1.String.Text
 #, fuzzy
@@ -8102,7 +9672,7 @@ msgstr "နံပါတ် တိုး၍ လှည့်ရန် ဖြစ်
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.4.String.Text
 #, fuzzy
 msgid  "Significance"
-msgstr "အရေးပါမှု"
+msgstr "အရာရောက်ဂဏန်း"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.5.String.Text
 #, fuzzy
@@ -8192,7 +9762,7 @@ msgstr "မတ်ထရစ်၏အတန်းနှင့်ကော်လံ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "မတ်ထရစ်"
+msgstr "အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.3.String.Text
 #, fuzzy
@@ -8207,7 +9777,7 @@ msgstr "မတ်ထရစ်မြှောက်ခြင်း။ မတ်�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "မတ်ထရစ်"
+msgstr "အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.3.String.Text
 #, fuzzy
@@ -8217,7 +9787,7 @@ msgstr "မတ်ထရစ်မြှောက်လဒ်အတွက် ပ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.4.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "မတ်ထရစ်"
+msgstr "အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.5.String.Text
 #, fuzzy
@@ -8232,7 +9802,7 @@ msgstr "မတ်ထရစ်၏ဒီတားမင်နန့် ပြန�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "မတ်ထရစ်"
+msgstr "အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.3.String.Text
 #, fuzzy
@@ -8392,7 +9962,7 @@ msgstr "အရေး(ရ်)တစ်ခုအဖြစ်ကြားဖြတ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "Y_အချက်အလက်"
+msgstr "Y_အချက်အလက်များ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 #, fuzzy
@@ -8402,7 +9972,7 @@ msgstr "Y အချက်အလက်များအရေး(ရ်)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "X_အချက်အလက်"
+msgstr "X_အချက်အလက်များ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
@@ -8417,7 +9987,7 @@ msgstr "မျဉ်းဖြောင့်ပုံစံ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.7.String.Text
 #, fuzzy
 msgid  "If type = 0 the linears will be calculated through the zero point, or else moved linears."
-msgstr "အမျိုးအစား = 0 ဖြစ်လျှင် မျဉ်းကြောင်းသည် သုညမှတ်ကို ဖြတ်သန်းတွက်ချက်လိမ့်မည်။ သို့မဟုတ်ပါက မျဉ်း​ကြောင်းများ ရွေ့လျားမှု ပြုသည်။"
+msgstr "အမျိုးအစား =0 ဖြစ်လျှင် မျဉ်းကြောင်းသည် သုညမှတ်ကို ဖြတ်သန်းတွက်ချက်လိမ့်မည်။ သို့မဟုတ်ပါက မျဉ်း​ကြောင်းများ ရွေ့လျားမှု ပြုသည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.8.String.Text
 #, fuzzy
@@ -8437,7 +10007,7 @@ msgstr "အရေး(ရ်) တစ်ခုအဖြစ် ထပ်ညွှ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "Y_အချက်အလက်"
+msgstr "Y_အချက်အလက်များ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 #, fuzzy
@@ -8447,7 +10017,7 @@ msgstr "Y အချက်အလက်များအရေး(ရ်)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "X_အချက်အလက်များ"
+msgstr "X_အချက်အလက်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 #, fuzzy
@@ -8482,7 +10052,7 @@ msgstr "နောက်သို့လျော့ချသည့် မျဉ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "Y_အချက်အလက်များ"
+msgstr "Y_အချက်အလက်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.3.String.Text
 #, fuzzy
@@ -8497,7 +10067,7 @@ msgstr "X_အချက်အလက်များ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 #, fuzzy
 msgid  "The X data array as the basis for the regression."
-msgstr "ကြားဖြတ်ခြင်းလိုင်းအတွက်Xအချက်အလက်များအရေး(ရ်)"
+msgstr "လိုင်၏ကြားဖြတ်ခြင်းအတွက် X အချက်အလက်များအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.6.String.Text
 #, fuzzy
@@ -8507,7 +10077,7 @@ msgstr "အချက်အလက်သစ် X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.7.String.Text
 #, fuzzy
 msgid  "The array of X data for recalculating the values."
-msgstr "တန်ဖိုးများပြန်တွက်ချက်ခြင်းအတွက်X အချက်အလက်များအရေး(ရ်)"
+msgstr "တန်ဖိုးများပြန်လည်တွက်ချက်ခြင်းအတွက်X အချက်အလက်များအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.8.String.Text
 #, fuzzy
@@ -8937,7 +10507,7 @@ msgstr "အချက်အလက်များ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "နမူနာတွင် အချက်အလက်များအရေး(ရ်)"
+msgstr "နမူနာတွင် အချက်အလက်ကြမ်းများအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 #, fuzzy
@@ -9162,7 +10732,7 @@ msgstr "စမ်းသပ် စစ်ဆေးခြင်း အကျို�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.2.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "လမ်းကြောင်းများ"
+msgstr "စမ်းသပ်စစ်ဆေးခြင်းများ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.3.String.Text
 #, fuzzy
@@ -9212,7 +10782,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 #, fuzzy
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "စံနှုန်း သာမာန် ဖြန့်ဝေခြင်းအတွက် တန်ဖိုး တွက်ချက်ရန် ဖြစ်သည်။"
+msgstr "စံနှုန်း သာမာန် ဖြန့်ဝေခြင်းအတွက် တန်ဖိုး တွက်ချက်ထားရန် ဖြစ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 #, fuzzy
@@ -9282,7 +10852,7 @@ msgstr "စမ်းသပ်စစ်ဆေးခြင်းများ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 #, fuzzy
 msgid  "The total number of trials."
-msgstr "စမ်းသပ် စစ်ဆေးခြင်းများ၏စုစုပေါင်း အရေအတွက် နံပါတ်။"
+msgstr "စမ်းသပ်စစ်ဆေးခြင်းများ၏ စုစုပေါင်း အရေအတွက် နံပါတ်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 #, fuzzy
@@ -9392,7 +10962,7 @@ msgstr "ပွိုင်ဇင် ဖြန့်ဝေခြင်းအတ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 #, fuzzy
 msgid  "mean"
-msgstr "ကိန်းသေတန်ဖိုး တစ်ခု"
+msgstr "ကိန်းသေတန်ဖိုး တစ်ခု "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 #, fuzzy
@@ -9407,7 +10977,7 @@ msgstr "စု၍နေသော"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "ဖြစ်နိုင်​ခြေရှိသော သိပ်သည်းဆတွက်ချက်မှုအတွက် '0' (သို့) FALSE၊ တန်ဖိုးတစ်ခုခု(သို့) TRUE (သို့) စုစည်း ဖြန့်ဝေမှု လုပ်ဆောင်ချက်များကို ဖယ်ရှားတွက်ချက်မှု"
+msgstr "တိုးပွားများပြားလာသည်။ C=0 သိပ်သည်းမှု ဖန်ရှင် တွက်ချက်သည်၊ C=1 ဖြန့်ဝေခြင်း။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 #, fuzzy
@@ -9452,7 +11022,7 @@ msgstr "C"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "တိုးပွားများပြားလာသည်။ C=0 သိပ်သည်းမှု ဖန်ရှင် တွက်ချက်သည်၊ C=1 ဖြန့်ဝေခြင်း။"
+msgstr "0 သို့ False သည် ဖြစ်နိုင်ချေ သိပ်သည်ဆဖန်ရှင်ကို တွက်ချက်သည်။ အခြားတန်ဖိုး သို့ True သို့ ချန်လှပ်ထားသောတန်ဖိုးသည် တိုးပွားလာသောဖြန့်ဝေခြင်းဖန်ရှင်ကို တွက်ချက်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 #, fuzzy
@@ -9562,7 +11132,7 @@ msgstr "စု၍နေသော"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 သို့ False သည် ဖြစ်နိုင်ချေ သိပ်သည်ဆဖန်ရှင်ကို တွက်ချက်သည်။ အခြားတန်ဖိုး သို့ True သို့ ချန်လှပ်ထားသောတန်ဖိုးသည် တိုးပွားလာသောဖြန့်ဝေခြင်းဖန်ရှင်ကို တွက်ချက်သည်။"
+msgstr "ဖြစ်နိုင်​ခြေရှိသော သိပ်သည်းဆတွက်ချက်မှုအတွက် '0' (သို့) FALSE၊ တန်ဖိုးတစ်ခုခု(သို့) TRUE (သို့) စုစည်း ဖြန့်ဝေမှု လုပ်ဆောင်ချက်များကို ဖယ်ရှားတွက်ချက်မှု"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV.1.String.Text
 #, fuzzy
@@ -9632,7 +11202,7 @@ msgstr "C"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.7.String.Text
 #, fuzzy
 msgid  "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr "တိုးပွားများပြားလာသည်။ C=0 သိပ်သည်းမှု ဖန်ရှင် တွက်ချက်သည်၊ C=1 ဖြန့်ဝေခြင်း။"
+msgstr "တိုးပွားများပြားလာသည်။ C=0 သိတ်သည်းမှု ဖန်ရှင် တွက်ချက်သည်၊ C=1 ဖြန့်ဝေခြင်း။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.1.String.Text
 #, fuzzy
@@ -9677,7 +11247,7 @@ msgstr "စု၍နေသော"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "ဖြစ်နိုင်​ခြေရှိသော သိပ်သည်းဆတွက်ချက်မှုအတွက် '0' (သို့) FALSE၊ တန်ဖိုးတစ်ခုခု(သို့) TRUE (သို့) စုစည်း ဖြန့်ဝေမှု လုပ်ဆောင်ချက်များကို ဖယ်ရှားတွက်ချက်မှု"
+msgstr "ဖြစ်နိုင်​ခြေရှိသော သိပ်သည်းဆတွက်ချက်မှုအတွက် '0' (သို့) FALSE၊ အခြားတန်ဖိုးတစ်ခု(သို့) TRUE (သို့) စုစည်း ဖြန့်ဝေမှု လုပ်ဆောင်ချက်များကို ဖယ်ရှားတွက်ချက်မှု"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_INV.1.String.Text
 #, fuzzy
@@ -9797,7 +11367,7 @@ msgstr "အဆုံးသတ်ပါ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.11.String.Text
 #, fuzzy
 msgid  "The final value for the value interval of the distribution."
-msgstr "ဖြန့်ဝေခြင်း၏ အတွင်းတန်ဖိုးအတွက် နောက်ဆုံး တန်ဖိုးရှိသည်။"
+msgstr "ဖြန့်ဝေခြင်း၏ အတွင်း တန်ဖိုးအတွက် နောက်ဆုံး တန်ဖိုးရှိသည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.12.String.Text
 #, fuzzy
@@ -10387,7 +11957,7 @@ msgstr "၁_အချက်အလက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "ပထမဆုံး မှတ်တမ်းအရေး(ရ်)"
+msgstr "ပထမဆုံး အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 #, fuzzy
@@ -10397,7 +11967,7 @@ msgstr "၂_အချက်အလက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "ဒုတိယ မှတ်တမ်းအရေး(ရ်)"
+msgstr "ဒုတိယ မှတ်တမ်း ဘုံအမည်တစ်ခုသုံး၍ ဆက်စပ်နေသော ဂဏန်းအစု။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 #, fuzzy
@@ -10412,7 +11982,7 @@ msgstr "၁_အချက်အလက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "ပထမဆုံး အရေး(ရ်)"
+msgstr "ပထမဆုံး မှတ်တမ်း အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.4.String.Text
 #, fuzzy
@@ -10422,7 +11992,7 @@ msgstr "၂_အချက်အလက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "ဒုတိယ မှတ်တမ်း ဘုံအမည်တစ်ခုသုံး၍ ဆက်စပ်နေသော ဂဏန်းအစု။"
+msgstr "ဒုတိယ မှတ်တမ်း အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.6.String.Text
 #, fuzzy
@@ -10552,22 +12122,22 @@ msgstr "ပီယာဆွန် ထုတ်ကုန် တဒင်္ဂ အ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.2.String.Text
 #, fuzzy
 msgid  "Data_1"
-msgstr "၁_အချက်အလက်များ"
+msgstr "၁_အချက်အလက်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "ပထမဆုံး မှတ်တမ်း အရေး(ရ်)"
+msgstr "ပထမဆုံး မှတ်တမ်းအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.4.String.Text
 #, fuzzy
 msgid  "Data_2"
-msgstr "၂_အချက်အလက်များ"
+msgstr "၂_အချက်အလက်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "ဒုတိယ မှတ်တမ်း အရေး(ရ်)"
+msgstr "ဒုတိယ မှတ်တမ်းအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.1.String.Text
 #, fuzzy
@@ -10582,7 +12152,7 @@ msgstr "၁_အချက်အလက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "ပထမဆုံး မှတ်တမ်းအရေး(ရ်)"
+msgstr "ပထမဆုံးမှတ်တမ်းအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.4.String.Text
 #, fuzzy
@@ -10697,7 +12267,7 @@ msgstr "A1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.9.String.Text
 #, fuzzy
 msgid  "The reference style: 0 or FALSE means R1C1 style, any other value or omitted means A1 style."
-msgstr "ရည်ညွှန်းချက်ပုံစံ - 0 သို့ FALSE သည် R1C1 ကိုဆိုလိုသည်၊ အခြားတန်းဖိုးတစ်ခုခု (သို့) ချန်လှပ်ထားရန်သည် A1 ကို ဆိုလိုသည်။ "
+msgstr "ရည်ညွှန်းချက်ပုံစံ - R1C1 ပုံစံသည် '0' (သို့) FALSE ကို ဆိုလိုသည်။ A1ပုံစံသည် အခြားတန်ဖိုးတစ်ခု (သို့) ချပ်လှပ်ထားမည့် တန်ဖိုးတစ်ခုကိုဆိုလိုသည် "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.10.String.Text
 #, fuzzy
@@ -10722,7 +12292,7 @@ msgstr "ရည်ညွှန်းချက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 #, fuzzy
 msgid  "The reference to a (multiple) range."
-msgstr "(ပေါင်းစုံ) ကန့်သတ်နယ်ပယ်ထားခြင်း တစ်ခုသို့ ရည်ညွှန်းချက်။"
+msgstr "(ပေါင်းစုံ) ကန့်သတ်နယ်ပယ်တစ်ခုသို့ ရည်ညွှန်းချက်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 #, fuzzy
@@ -11305,7 +12875,7 @@ msgstr "စာသား"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.3.String.Text
 #, fuzzy
 msgid  "The text to convert."
-msgstr "စာသားပြောင်းထားရန် ဖြစ်သည်။"
+msgstr "စာသားပြောင်းထားရန်ဖြစ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.1.String.Text
 #, fuzzy
@@ -11335,7 +12905,7 @@ msgstr "စာသား"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.3.String.Text
 #, fuzzy
 msgid  "This is the text for which the code of the first character is to be found."
-msgstr "ပထမဆုံး အက္ခရာ၏ လက္ခဏာအတွက် ရှာထားရန် စာသား ဖြစ်သည်။"
+msgstr "ပထမဆုံး အက္ခရာ၊သင်္ကေတ၏ လက္ခဏာအတွက် ရှာထားရန် စာသား ဖြစ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CURRENCY.1.String.Text
 #, fuzzy
@@ -11375,7 +12945,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHAR.3.String.Text
 #, fuzzy
 msgid  "The code value for the character."
-msgstr "အက္ခရာများအတွက် လက္ခဏာ တန်ဖိုးရှိသည်။"
+msgstr "အက္ခရာ၊သင်္ကေတများအတွက် လက္ခဏာ တန်ဖိုးရှိသည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.1.String.Text
 #, fuzzy
@@ -11888,7 +13458,7 @@ msgstr "အခြေခံကိန်း"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 #, fuzzy
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "၂ – ၃၆ ကန့်သတ်ထားခြင်းတွင် ပြောင်းလဲခြင်းအတွက် အခြေခံ နံပါတ် ရှိရမည်။"
+msgstr "၂ – ၃၆ ကန့်သတ်နယ်ပယ်တွင်ပြောင်းလဲခြင်းအတွက် အခြေခံ နံပါတ် ရှိရမည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 #, fuzzy
@@ -11938,7 +13508,7 @@ msgstr "တန်ဖိုး"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 #, fuzzy
 msgid  "The value to be converted."
-msgstr "တန်ဖိုး ကူးပြောင်းရန် ဖြစ်သည်။"
+msgstr "တန်ဖိုးကို ကူးပြောင်းပေးပါ။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 #, fuzzy
@@ -12248,7 +13818,7 @@ msgstr "StarCalc 3.0 ဖြန့်သော အလွှာချပ်"
 #: source/ui/src/scstring.src#SCSTR_SHORT_SCDOC_NAME.String.Text
 #, fuzzy
 msgid  "Spreadsheet"
-msgstr "ဖြန့်သော အလွှာချပ်"
+msgstr "ဖြန့်သောအလွှာချပ်"
 
 #: source/ui/src/scstring.src#SCSTR_HUMAN_SCDOC_NAME.String.Text
 #, fuzzy
@@ -12644,9 +14214,8 @@ msgid  "Font Attributes"
 msgstr "စာလုံး ပင်ကိုယ် အရည်အချင်းများ"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-#, fuzzy
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "ကလစ်ဘုတ်တွင် သိမ်းထားသည့် အချက်အလက်ကြမ်း၏ အရေအတွက် အများဆုံးတစ်ခု ရှိသည်။\nအခြား အသုံးပြုသော ပရိုဂရမ်များတွင် ရနိုင်ရန် ကလစ်ဘုတ် မာတိကာများ လိုချင်ပါသလား?"
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 #, fuzzy
@@ -12727,9 +14296,8 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-#, fuzzy
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
-msgstr "%PRODUCTNAME Calc သည် ဝင်သည့် ပုံသေနည်းတွင် အမှားတစ်ခု ရှာထားသည်။ \nအောက်ပါ ရည်ရွယ်သည့် မှန်ကန်ခြင်း လက်ခံ ရရှိရန် ဆန္ဒရှိပါသလား?\n\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -12782,9 +14350,8 @@ msgid  "~Selected sheets"
 msgstr "ရွေးချယ်ထားသည့် အချပ်လွှာများ"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-#, fuzzy
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "အကွက်များအတွင်းသို့ အချက်အလက်များဝင်ရောက်ခဲ့သည်မှာ အဆင်သင့် ပါဝင်နေသောကြောင့်ဖြစ်သည်။ \nတည်ရှိနေသော အချက်အလက်များဖိုင်ဟောင်းတွင် အသစ်ထပ်ဖြည့်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 #, fuzzy
@@ -13320,7 +14887,7 @@ msgstr ">="
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP1.Default.StringList.item
 #, fuzzy
 msgid  "Integer"
-msgstr "ကိန်း ပြည့်"
+msgstr "ကိန်းပြည့်"
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP1.Default.StringList.item
 #, fuzzy
@@ -13550,7 +15117,7 @@ msgstr "~နဂိုမူလစီစဉ်ဖွဲ့စည်းမှု�
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_CELL_FORMAT.MenuItem.Text
 #, fuzzy
 msgid  "~Format Cells..."
-msgstr "~ဆဲလ်အကွက်များစီစဉ်ဖွဲ့စည်းမှု..."
+msgstr "~ဆဲလ်အကွက်များ စီစဉ်ဖွဲ့စည်းမှုပုံစံ..."
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_INS_CELL.MenuItem.Text
 #, fuzzy
@@ -13931,12 +15498,12 @@ msgstr "~နံပါတ်များ"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELDATETIME.CheckBox.Text
 #, fuzzy
 msgid  "~Date & time"
-msgstr "⁠~ရက်စွဲနှင့်အချိန်"
+msgstr "~ရက်စွဲနှင့်အချိန်"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELFORMULAS.CheckBox.Text
 #, fuzzy
 msgid  "~Formulas"
-msgstr "⁠~ပုံသေနည်းများ"
+msgstr "~ပုံသေနည်းများ"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELATTRS.CheckBox.Text
 #, fuzzy
@@ -14454,13 +16021,14 @@ msgid  "Shrink"
 msgstr "ချုံ့ပါ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.CBX_COND1.CheckBox.Text
+#, fuzzy
 msgid  "Condition ~1"
 msgstr "အခြေအနေ~၁"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
 #, fuzzy
 msgid  "Cell value is"
-msgstr "ဆဲလ်အကွက်တန်ဖိုးသည်"
+msgstr "အကွက်တန်ဖိုးသည်"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
 #, fuzzy
@@ -14470,7 +16038,7 @@ msgstr "ပုံသေနည်းသည်"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
 msgid  "equal to"
-msgstr "ညီမျှသော"
+msgstr "သို့ညီမျှသော"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
@@ -14550,7 +16118,7 @@ msgstr "ပုံသေနည်းသည်"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 #, fuzzy
 msgid  "equal to"
-msgstr "သို့ညီမျှသော"
+msgstr "ညီမျှသော"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 #, fuzzy
@@ -14828,7 +16396,7 @@ msgstr "ဤဖိုင်တွင် အချက်အလက်အတန်�
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 #, fuzzy
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "$(ARG2)(row,col)၏  မှတ်တမ်းမှတ်ရာခွဲ $(ARG1)တွင် စီစဉ်ဖွဲ့စည်းမှုပုံစံအမှား ရှာဖွေတွေ့ရှိခဲ့သည်။ "
+msgstr "$(ARG2)(row,col)တွင် မှတ်တမ်းမှတ်ရာခွဲ $(ARG1)ရှိ ဖိုင်တွင် စီစဉ်ဖွဲ့စည်းမှုပုံစံ အမှား ရှာဖွေတွေ့ရှိထားသည်။"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FORMAT_ROWCOL & ERRCODE_RES_MASK.String.Text
 #, fuzzy
@@ -14901,14 +16469,12 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "အလိုအလျောက် တွက်ရန်အတွက် မှတ်တမ်းမှတ်ရာ ရှုတ်ထွေးလွန်းသည်။ F9 ကိုနှိပ်၍ ပြန်တွက်ချက်ပါ။"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "ရွေးချယ်ထားသည့် စီစဉ်ဖွဲ့စည်းမှုပုံစံတွင် ထောက်ပံ့သည်ထက် ပို၍ မှတ်တမ်းမှတ်ရာတွင် အတန်းများ ပါဝင်သည်။ \nအတန်းအပိုများ သိမ်းမထားပါ။"
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "မှတ်တမ်းမှတ်ရာတွင် ဤပရိုဂရမ် တင်ဆက်မှုအားဖြင့် အသိအမှတ် မပြုသည့် သတင်း အချက်အလက် ပါဝင်သည်။ \nပြန်လည် သိမ်းဆည်းထားသည့် မှတ်တမ်းမှတ်ရာသည် ဤသတင်း အချက်အလက်များကို ဖျက်လိမ့်မည်!"
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 #, fuzzy
@@ -14916,9 +16482,8 @@ msgid  "Not all cell contents could be saved in the specified format."
 msgstr "သတ်မှတ်ထားသည့် စီစဉ်ဖွဲ့စည်းမှုပုံစံတွင် မာတိကာအကွက်များအားလုံး သိမ်းနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-#, fuzzy
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
-msgstr "အောက်ပါ အက္ခရာများကို ရွေးချယ်ထားသည့် အက္ခရာ အစုသို့ ကူးပြောင်းနိုင်လိမ့်မည် မဟုတ်ပါ\n၎င်းအပြင် &#1234 ကဲ့သို့ ရေးသားနိုင်မည်လည်း မဟုတ်ပါ; ကိုယ်စား\n\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 #, fuzzy

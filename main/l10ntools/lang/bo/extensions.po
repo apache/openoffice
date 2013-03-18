@@ -56,8 +56,8 @@ msgid  "Data Source Title"
 msgstr "གཞི་གྲངས་མ་ཁུངས་ཁ་བྱང་།"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "%PRODUCTNAME སྤྱད་ནས་མ་ལག་སྟེང་གི་ད་ཡོད་འཕྲིན་གཏོང་དེབ་གཞི་གྲངས་ཀློག་འདོན་ཆོག་དེར་བརྟེན་རེའུ་མིག་རྣམས་པའི་ %PRODUCTNAME གཞི་གྲངས་གཅིག་འཛུགས་དགོས་དེའི་ནང་སྤྱོད་ཆོག་པའི་འཕྲིན་གཏོང་དེབ་ཚུད་ཡོད་\n\nསྣེ་སྟོང་འདིར་ཁྱེད་ལ་གཞི་གྲངས་ཁུངས་འདིའི་འཛུགས་རྒྱུར་རོགས་རམ་བྱེད།"
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -108,32 +108,32 @@ msgid  "Other external data source"
 msgstr "གཞན་པའི་ཕྱི་རོལ་གཞི་གྲངས་ཁུངས།"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "གཞི་གྲངས་ཁུངས་གསར་འཛུགས་སྐབས་ངེས་པར་དུ་བཀོད་སྒྲིག་གཞན་བྱེད་དགོས། \n\nའོག་མའི་གནོན་འཐེབ་རྡེབ་གནོན་རྗེས་གླིང་སྒྲོམ་གཅོག་ཐོན་གླིང་སྒྲོམ་དེའིནང་ཁྱེད་ཀྱིས་ད་དུང་གྲུབ་མེད་པའི་བཀོད་སྒྲིག་བྱས་ཆོག"
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
 msgstr "བཀོད་སྒྲོག"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "གཞི་གྲངས་ཁུངས་དང་སྦྲེལ་མཐུད་འཛུགས་ཐབས་བྲལ།\nམུ་མཐུད་བཀའ་ཚིག་ལག་སྟར་སྔོན་ལ་གྲུབ་ཟིན་པའི་བཀོད་སྒྲིག་ཡོངས་ལ་ཞིབ་དཔྱད་བྱེད་རོགས་ཡང་ན་ཤོག་ལྷེ་གོང་མར་ཕྱིར་ལེན་བྱས་ནས་འཕྲིན་གཏོང་དེབ་གཞི་གྲངས་ཁུངས་རིགས།"
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr "བདམས་པའི་ཕྱི་ངོས་གྲངས་གཞིའི་ཁུངས་ལ་འཕྲིན་དེབ་མང་པོ་ཞིག་ཚུད་འདུག  \n རྒྱུན་སྤྱོད་ཀྱི་འཕྲིན་དེབ་ཅིག་འདེམས་རོགས་གནང་།"
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "ཡིག་ཚགས་མ་ཚུལ་ནས་འཕྲིན་གཏོང་དེབ་གཞི་གྲངས་ཡང་དག་པར་བེད་སྤྱོད་དགོས་ན་ངེས་པར་དུ་ %PRODUCTNAME ལ་ཡིག་དུམ་གང་དག་ནང་གཞི་གྲངས་གང་ཞིག་ཚུད་ཡོད་པ་ཤོས་དགོས་ \n\nདཔེར་ན་ཁྱེད་ཀྱིས་རང་སྒྲིག་མིང་ཡིག་དུམ་ནང་ཡང་ན་\"EMail\" སྤྱད་པའི་ནང་ཡང་ན་\"E-Mail\" འམ་\"EM\"ཡི་ཡིག་དུམ་ནང་གློག་རྡུལ་སྦྲག་ཡིག་ས་གནས་གསོར་ཉར་བྱེད་ཆོག \n\nའོག་གི་གནོན་མཐེབ་རྡེབ་གནོན་རྗེས་གཞི་གྲངས་ཁུངས་བཀོད་སྒྲིག་བྱེད་མཁོ་འདོན་བྱེད་པའི་གླེང་སྒྲོམ་གཅིག་ཁ་ཕྱེ།"
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
 msgstr "ཡིག་དུམ་གཏན་ཕབ།"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "ཁྱེད་ཀྱིས་ %PRODUCTNAME འཕྲིན་གཏོང་དེབ་གཞི་གྲངས་བསྡུ་རུབ་ཀྱི་བཀོད་སྒྲིག་ཡོད་ཚད་བྱས་ཟིན་\n\nད་སྟ་ཁྱེད་ཉིད་ %PRODUCTNAME ཁོ་ན་ནང་འཇུག་བྱས་ནས་གཞི་གྲངས་ཁུངས་འདིའི་མིང་ཐོ་བཀོད་བྱེད།"
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -160,8 +160,8 @@ msgid  "Please select a type of address book."
 msgstr "གནས་སའི་་དེབ་ཀྱི་རིགས་གང་ཡིན་བདམས་དང་།"
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr "གཞི་གྲངས་ཁུངས་དེར་རེའུ་མིག་གང་ཡང་མེད་པས་\nགཞི་གྲངས་ཁུངས་དེ་འཕྲིན་ཐོའི་གཞི་གྲངས་ཁུངས་ནང་སྒྲིག་བཀོད་བྱེད་མཁན་ཡིན་ནམ།"
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "གནས་ཡུལ་གཞི་གྲངས། - དམིགས་འཛུགས་ཡིག་དུམ།"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "ད་བར་ད་དུང་ཡིག་དུམ་གཅིག་ཀྱང་གཏན་འཁེལ་བྱས་མེད། \nཁྱེད་ཀྱིས་ད་ལྟ་ཡིག་དུམ་གཏན་འཁེལ་བྱེད་ཆོག་ལ། རྗེས་སུ་ཡང་བསྐྱར་དེ་སྒྲིག་བཀོད་བྱས་ཀྱང་ཆོག:\n \"ཡིག་ཆ་-ཡིག་ཚགས་དཔེ་པང་- འཕྲིན་གཏོང་གཞི་གྲངས་ཁུངས་...\"འདེམས་བྱང་གནོན།"
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr ""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -216,8 +216,8 @@ msgid  "Data Source"
 msgstr "གཞི་གྲངས་ཁུངས།(D)"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\n"
-msgstr "གཤམ་གྱི་སྟར་མིང་སྟར་སྒྲིག་བྱེད་ཐབས་བྲལ།\n"
+msgid  "The following column names could not be assigned:\\n"
+msgstr ""
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -492,8 +492,8 @@ msgid  "Control"
 msgstr "ཚེད་འཛིན།"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "གཡས་ཕྱོགས་སུ་ཁྱེད་ཀྱིས་རེའུ་མིག་གཞི་གྲངས་ཁུངས་ཀྱི་གཞི་གྲངས་རེའུ་མིག་ཡོད་ཚད་མཐོང་ཐུབ་\n\n\nཤོན་ཚན་ནང་དོན་གྲུབ་པར་སྤྱོད་པའི་རྩ་བའི་གཞི་གྲངས་ཀྱི་རེའུ་མིག་ཁག་ཅིག་འདེམས་རོགས།"
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -588,8 +588,8 @@ msgid  "Data"
 msgstr "གཞི་གྲངས།"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "མིག་སྔའི་རེའུ་མིག་འདིར་ཚུད་པའི་ཚོས་འཇིན་ནི་གཞི་གྲངས་ཁུངས་གཅིག་དང་སྦྲེལ་མཐུད་བྱས་མེད།(ཡང་ན་ཆ་ཚང་མེད་)\n\n\nགཞི་གྲངས་ཁུངས་གཅིག་དང་གཞི་གྲངས་རེའུ་མིག་གཅིག་འདེམས་རོགས་\n\n\nཡིད་གཟབ་དགོས་རྒྱུད། རེའུ་མིག་ཤོག་ངོས་འདི་ཁ་བྲལ་སྐབས་བཀོད་སྒྲིག་གསར་པ་ཚང་མ་ལེགས་སེང་ནུས་པ་ཐོན།"
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -736,7 +736,7 @@ msgid  "Welcome"
 msgstr "དགའ་བསུ་ཞུ།"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
 msgstr ""
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
@@ -816,8 +816,8 @@ msgid  "Forms"
 msgstr "རེའུ་མིག་ཐོ།"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "གཞི་གྲངས་རིགས#type#དེ་དཔེ་རྣམ་ནང་ནས་སུབ་བམ་མི་སུབ།\n དོ་སྣང་བྱེད་རོགས།  དེས་གཞི་གྲངས་རིགས་ཀྱི་ཚོད་འཛིན་ལ་ཤུགས་རྐྱེན་སྤྲད་ཀྱི་ཡོད།"
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2296,12 +2296,12 @@ msgid  "Type a name for the new data type:"
 msgstr "གཞི་གྲངས་རིགས་གསར་པར་མིང་གཅིག་མཐེབ་འཇུག་བྱེད་རྒྱུ།"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\n Dev~ice"
-msgstr "སྒྲིག་ཆས་\nཆ་འཕྲིན།(~I)"
+msgid  "About\\n Dev~ice"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\nPreview"
-msgstr "སྔོན་ལྟ་འཛུགས་པ།"
+msgid  "Create\\nPreview"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2356,8 +2356,8 @@ msgid  "Scanner"
 msgstr "བཤར་འབེབས་འཕྲུལ་འཁོར།"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "སྒྲིག་ཆས་%s\n  བཟོ་འདོན་བྱེད་མཁན་%s\n   བཟོ་རྟགས་%s\n  རིགས་%s\n"
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2404,7 +2404,7 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
 msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
@@ -2420,7 +2420,7 @@ msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
 msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
@@ -2428,7 +2428,7 @@ msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
 msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
@@ -2575,6 +2575,6 @@ msgstr ""
 msgid  "Click here for more information."
 msgstr ""
 
-#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
 msgid  "Check for ~Updates..."
 msgstr ""

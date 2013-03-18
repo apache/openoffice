@@ -56,24 +56,20 @@ msgid  "Reset"
 msgstr "Sıfırla"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
-#, fuzzy
-msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr "Çok ~yüksek. \nSadece güvenilir yerlerden makro çalıştırılmasına izin verir. Diğer bütün makrolar, imzalanmış olsa bile çalıştırılmaz."
+msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
-#, fuzzy
-msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr "Yüksek~.\nSadece güvenilir yerlerde makro çalıştırılmasına izin verir. İmzalanmamış makrolar çalıştırılmaz."
+msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
-#, fuzzy
-msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr "~Orta. \nÖnceden elle onaylanmış güvenilir kaynaklardan gelen makrolar çalıştırılabilir."
+msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
-#, fuzzy
-msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr "~Düşük (önerilmez).\nMakrolar onay alınmadan çalıştırılır. Bu ayarı, ancak açılacak olan tüm belgelerin güvenli olduğunu emin olduktan sonra kullanınız."
+msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 #, fuzzy
@@ -81,9 +77,8 @@ msgid  "Trusted certificates"
 msgstr "Güvenilir sertifikalar"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "Issued to\tIssued by\tExpiration date"
-msgstr "Çıkarılan\tÇıkaran\tBitiş tarihi"
+msgid  "Issued to\\tIssued by\\tExpiration date"
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 #, fuzzy
@@ -186,9 +181,8 @@ msgid  "The following have signed this package:"
 msgstr "Takip eden imzalanmış paket:"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "\tSigned by\tDigital ID issued by\tDate"
-msgstr "\tİmzalayan\tDijital Kimliği çıkaran\tTarih"
+msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
+msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 #, fuzzy
@@ -203,7 +197,7 @@ msgstr "Sertifika geçerli değil"
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.String.Text
 #, fuzzy
 msgid  "The signatures in this document are invalid"
-msgstr "İmzalar bu belgede geçerli değil"
+msgstr "Bu belgedeki imzalar geçerli değildir"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FixedText.Text
 #, fuzzy
@@ -241,13 +235,12 @@ msgid  "Close"
 msgstr "Kapat"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ErrorBox.Message
-msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\\n\\nSave document in ODF 1.2 format and add all desired signatures again."
 msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
-#, fuzzy
-msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr "Bir makro imzası ekleme veya silme, tüm belge imzalarını siler.\nGerçekten devam etmek istiyor musunuz?"
+msgid  "Adding or removing a macro signature will remove all document signatures.\\nDo you really want to continue?"
+msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 #, fuzzy
@@ -305,9 +298,8 @@ msgid  "The certificate could not be validated."
 msgstr "Sertifika geçerli değil."
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "Field\tValue"
-msgstr "Alan\tDeğer"
+msgid  "Field\\tValue"
+msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 #, fuzzy
@@ -410,12 +402,13 @@ msgid  "Select Certificate"
 msgstr "Sertifika Seç"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FixedText.Text
+#, fuzzy
 msgid  "Select the certificate you want to use for signing"
 msgstr "İmzalamak için kullanmak istediğiniz sertifikayı seçin"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
-msgid  "Issued to\tIssued by\tExpiration date"
-msgstr "Çıkarılan\tÇıkaran\tBitiş tarihi"
+msgid  "Issued to\\tIssued by\\tExpiration date"
+msgstr ""
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 #, fuzzy

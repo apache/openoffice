@@ -60,12 +60,12 @@ msgid  "No Text"
 msgstr "Ingen tekst"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
-msgid  "Enter password to open file: \n"
-msgstr "Oppgi passordet for å åpne fila: \n"
+msgid  "Enter password to open file: \\n"
+msgstr ""
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
-msgid  "Enter password to modify file: \n"
-msgstr "Oppgi passordet for å endre fila: \n"
+msgid  "Enter password to modify file: \\n"
+msgstr ""
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -92,8 +92,8 @@ msgid  "Document in Use"
 msgstr "Dokumentet er i bruk"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr "Dokumentfila «$(ARG1)» er låst for redigering av:\n\n$(ARG2)\n\nÅpne dokumentet skrivebeskyttet eller åpne en kopi av dokumentet, som kan redigeres.\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
+msgstr ""
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -136,8 +136,8 @@ msgid  "Target already exists."
 msgstr "Målet finnes fra før."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
-msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr "Du er i ferd med å lagre/eksportere et passordbeskyttet Basic-bibliotek som inneholder modulen eller modulene \n$(ARG1)\nsom er for store til å lagres i binærformat. Hvis du vil at brukere som ikke har tilgang til bibliotekpassordet skal kunne kjøre makroer i disse modulene, må du dele modulene opp i mindre moduler. Vil du fortsette med å lagre/eksportere dette biblioteket?"
+msgid  "You are about to save/export a password protected basic library containing module(s) \\n$(ARG1)\\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -328,28 +328,28 @@ msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmis
 msgstr "%PRODUCTNAME kan ikke hindre at filer blir overskrevet hvis du bruker denne overføringsprotokollen. Vil du fortsette likevel?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
-msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr "Fila «$(ARG1)» inneholder  feil og kan derfor ikke åpnes. %PRODUCTNAME kan forsøke å reparere fila.\n\nFeilen kan være et resultat av dokumentmanipulasjon eller av strukturell dokumentødeleggelse forårsaket av dataoverføring.\n\nDet anbefales at man ikke stoler på innholdet i det reparerte dokumentet.\nKjøring av makroer er slått av for dette dokumentet.\n\nSkal %PRODUCTNAME reparere fila?\n"
+msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\\n\\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the repaired document.\\nExecution of macros is disabled for this document.\\n\\nShould %PRODUCTNAME repair the file?\\n"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
 msgstr "Klarte ikke å reparere fila «$(ARG1)». Fila kan derfor ikke åpnes."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
-msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr "Oppsettsdataene i «$(ARG1)» er ødelagte. Uten disse dataene kan det hende at noen funksjoner ikke virker som de skal.\nVil du fortsette oppstarten av %PRODUCTNAME uten de ødelagte oppsettsdataene?"
+msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
-msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr "Den personlige oppsettsfila «$(ARG1)» er ødelagt, og må slettes før du kan gå videre. Noen av dine personlige innstillinger kan gå tapt.\nVil du fortsette oppstarten av %PRODUCTNAME uten de ødelagte oppsettsdataene?"
+msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
 msgstr "Oppsettsdatakilden «$(ARG1)» er utilgjengelig. Uten disse dataene kan det hende at noen funksjoner ikke virker som de skal."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
-msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr "Oppsettsdatakilden «$(ARG1)» er utilgjengelig. Uten disse dataene kan det hende at noen funksjoner ikke virker som de skal.\nVil du fortsette oppstarten av %PRODUCTNAME uten de ødelagte oppsettsdataene?"
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -368,24 +368,24 @@ msgid  "The file $(ARG1) is currently not locked by yourself."
 msgstr "Fila $(ARG1) er for øyeblikket ikke låst av deg selv."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
-msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
-msgstr "Den tidligere låsen for fila $(ARG1) har utgått.\nDenne kan skyldes problemer på tjeneren som håndterer fil-låsen. Det er ingen garanti for at skriveoperasjoner på denne fila ikke vil overskrive endringer gjort av andre brukere."
+msgid  "The previously obtained lock for file $(ARG1) has expired.\\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
-msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr "Klarte ikke å bekrefte identiteten til nettstedet $(ARG1).\n\nFør du godtar dette sertifikatet, bør du undersøke sertifikatet til nettstedet nøye. Vil du godta dette sertifikatet som identifikasjon for nettstedet $(ARG1)?"
+msgid  "Unable to verify the identity of $(ARG1) site.\\n\\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
-msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr "$(ARG1) er et nettsted som bruker et sikkerhetssertifikat til å kryptere dataoverføringer, men dette sertifikatet gikk ut $(ARG2).\n\nDu bør sjekke at klokka til datamaskinen går rett."
+msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\\n\\nYou should check to make sure that your computer's time is correct."
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
-msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr "Du har prøvd å koble til $(ARG1), men sikkerhetssertifikatet tilhører $(ARG2). Det kan hende, men det er lite trolig, at noen prøver å bryte inn i kommunikasjonen med nettstedet.\n\nDersom du har grunn til å tro at sertifikatet ikke tilhører $(ARG1), bør du avbryte tilkoblinga og melde fra til administratoren av nettstedet.\n\nVil du fortsette likevel?"
+msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\\n\\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\\n\\nWould you like to continue anyway?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
-msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr "Klarte ikke å avgjøre om sertifikatet var gyldig. Du bør undersøke sertifikatet til nettstedet nøye.\n\nHvis du ikke stoler på sertifikatet, bør du avbryte tilkoblinga og melde fra til administratoren av nettstedet."
+msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\\n\\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -412,12 +412,12 @@ msgid  "Message from server:"
 msgstr "Melding fra tjeneren:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
-msgid  "Enter user name and password for: \n%1"
-msgstr "Oppgi brukernavnet og passordet for: \n%1"
+msgid  "Enter user name and password for: \\n%1"
+msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n\"%2\" on %1"
-msgstr "Oppgi brukernavn og passord for: \n«%2» på «%1»"
+msgid  "Enter user name and password for: \\n\"%2\" on %1"
+msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -468,24 +468,24 @@ msgid  "~Send"
 msgstr "~Send"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
-msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr "Tjeneren «${HOST}» ønsker å sette en eller flere informasjonskapsler.\nInformasjonskapsler inneholder informasjon om enkelte URL-klasser. Hvis %PRODUCTNAME senere spør etter et dokument med adresse som finnes i en annen informasjonskapsel, vil %PRODUCTNAME sende informasjonen til tjeneren. På denne måten kan et nettsted huske tilstanden til et nettbasert program, for eksempel netthandel.\n\nFølgende informasjonskapsler bør settes:\n\n"
+msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
-msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "Domene: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
 msgstr "Mottak av informasjonskapsel"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
-msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr "%PRODUCTNAME har lagret informasjonskapsler fra tjeneren «${HOST}». De vil bli sendt ved forespørsler etter dokumentet ${PATH}.\nInformasjonskapsler inneholder informasjon om enkelte klasser av nettadresser. Hvis %PRODUCTNAME senere spør etter et dokument med adresse som finnes i en annen informasjonskapsel, vil %PRODUCTNAME sende informasjonen til tjeneren. På denne måten kan et nettsted huske tilstanden til et nettbasert program, for eksempel netthandel.\n\nFølgende informasjonskapsler bør settes:\n\n"
+msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
-msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "Domene: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -528,8 +528,8 @@ msgid  "Document in Use"
 msgstr "Dokument i bruk"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr "Dokumentfila «$(ARG1)» er låst for redigering av:\n\n$(ARG2)\n\nÅpne dokumentet skrivebeskyttet eller åpne en kopi av dokumentet, som kan redigeres.\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
+msgstr ""
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -548,8 +548,8 @@ msgid  "Document Has Been Changed by Others"
 msgstr "Dokumentet har blitt endret av andre"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
-msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr "Fila har blitt endret siden sist den ble åpnet for redigering i %PRODUCTNAME. Hvis du lagrer fila nå vil du overskrive endringer andre har gjort.\n\nVil du lagre likevel?\n\n"
+msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
+msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -560,8 +560,8 @@ msgid  "%PRODUCTNAME Update Available"
 msgstr "En oppdatering til %PRODUCTNAME er tilgjengelig"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
-msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr "Dette dokumentet er laget i ein nyere versjon av %PRODUCTNAME. Det kan inneholde funksjoner som ikke er støttet i versjonen din.\n\nVelg «Oppdater nå …» for å oppdatere til den nyeste versjonen av %PRODUCTNAME over Internett."
+msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr ""
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -652,8 +652,8 @@ msgid  "Caution: If you forget the master password, you will be unable to access
 msgstr "Merk: Pass på at du husker hovedpassordet du har valgt. Hvis du glemmer hovedpassordet vil du ikke kunne få tilgang til den informasjonen passordet beskytter. Passordet skiller mellom store og små bokstaver og må ha minst fem tegn."
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr "Du har låst dokumentfila «$(ARG1)» for redigering på et annet system siden $(ARG2)\n\nÅpne dokumentet skrivebeskyttet eller ignorer fillåsinga og åpne en kopi av dokumentet, som kan redigeres.\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
+msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -664,8 +664,8 @@ msgid  "~Open"
 msgstr "~Åpne"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr "Dokumentfila «$(ARG1)» er låst og kan ikke redigeres. Fila er låst av deg på et annet filsystem siden $(ARG2)\n\nLukk dokumentet på det andre filsystemet og prøv igjen å lagre, eller overse din egen fillås og lagre dokumentet.\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
+msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

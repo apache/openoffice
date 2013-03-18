@@ -419,7 +419,7 @@ msgstr "Γραμμή ~τίτλου"
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
 #, fuzzy
 msgid  "~Formula text"
-msgstr "Κείμενο μα~θ. τύπου"
+msgstr "Καθορίζει τον αν θα εκτυπώνεται το όνομα του εγγράφου"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
 #, fuzzy
@@ -434,17 +434,17 @@ msgstr "Μορφή εκτύπωσης"
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
 #, fuzzy
 msgid  "O~riginal size"
-msgstr "Αρ~χικό μέγεθος"
+msgstr "Περι~γράμματα"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 #, fuzzy
 msgid  "Fit to ~page"
-msgstr "Προσαρμογή στη ~σελίδα"
+msgstr "Εφαρμόζει ένα λεπτό περίγραμμα στην περιοχή μαθηματικών τύπων στην εκτύπωση"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 #, fuzzy
 msgid  "~Scaling"
-msgstr "Κ~λιμάκωση"
+msgstr "Μέγεθος"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
 #, fuzzy
@@ -546,14 +546,12 @@ msgid  "~Delete"
 msgstr "~Διαγραφή"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-#, fuzzy
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr "Η γραμματοσειρά 'StarMath' δεν είναι εγκατεστημένη.\nΧωρλις αυτή τη  γραμματοσειρά δεν είναι δυνατή η σωστή λειτουργία του  %PRODUCTNAME.\nΠαρακαλώ εγκαταστήστε αυτή τη γραμματοσειρά και επανεκκινήστε το %PRODUCTNAME Math."
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-#, fuzzy
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "Να αποθηκευτούν οι αλλαγές ως προεπιλογή;\n\nΟι αλλαγές αυτές θα έχουν επίδραση σε όλες τις νέες φόρμουλες."
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -866,14 +864,17 @@ msgid  "~Scaling"
 msgstr "Μέγεθος"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "Ενα~δικοί/Δυαδικοί τελεστές"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Relations"
 msgstr "~Σχέσεις"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Set Operations"
 msgstr "~Πράξεις συνόλων"
 
@@ -883,6 +884,7 @@ msgid  "~Functions"
 msgstr "~Συναρτήσεις"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
 msgid  "More"
 msgstr "άλλα"
 

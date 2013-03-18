@@ -969,14 +969,12 @@ msgid  "~Delete"
 msgstr "~Olib tashlash"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
-#, fuzzy
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "Kontur oʻzgartirildi.\nOʻzgarishlarni saqlashni istaysizmi?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
-#, fuzzy
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "Kontur oʻzgartirildi.\nOʻzgarishlarni saqlashni istaysizmi?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 #, fuzzy
@@ -1076,7 +1074,7 @@ msgid  "~More..."
 msgstr "~Koʻproq..."
 
 #: source/dialog/hdft.src#RID_SVXQBX_DELETE_HEADFOOT.QueryBox.Message
-msgid  "Removing headers or footers deletes the contents.\nDo you want to delete this text?"
+msgid  "Removing headers or footers deletes the contents.\\nDo you want to delete this text?"
 msgstr ""
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_LEFT.String.Text
@@ -1290,10 +1288,12 @@ msgid  "Line of text"
 msgstr "Matnning satri"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.GRP_Q.FixedLine.Text
+#, fuzzy
 msgid  "Colors"
 msgstr "Ranglar"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.FT_1.FixedText.Text
+#, fuzzy
 msgid  "Source color"
 msgstr "Manba rangi"
 
@@ -1379,9 +1379,8 @@ msgid  "%PRODUCTNAME Document Recovery"
 msgstr "%PRODUCTNAME hujjatni tiklash"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
-#, fuzzy
-msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\n\nThe 'Status' column shows whether the document could be recovered."
-msgstr "Quyida keltirilgan hujjatlarni tiklash jarayonini boshlash uchun 'Tiklashni boshlash' tugmasini bosing.\n\nTiklanish, tiklanmaslik imkoniyati 'Holati' ustunida kursatiladi."
+msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 #, fuzzy
@@ -1394,9 +1393,8 @@ msgid  "Status of recovered documents:"
 msgstr "Tiklangan hujjatlarning holati:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "Document Name\tStatus"
-msgstr "Hujjat nomi\tHolati"
+msgid  "Document Name\\tStatus"
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 #, fuzzy
@@ -1444,9 +1442,8 @@ msgid  "A report of the crash was created to help us identify the reason why %PR
 msgstr "Xatolik hisoboti bizga %PRODUCTNAME nima sababdan xatolikka uchraganini sababini aniqlashda yordam beradi. Hisobotni tuzish  uchun 'Keyingi' tugmasini, o'tkazib yuborish uchun esa 'Bekor qilish' tugmasini bosing."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
-#, fuzzy
-msgid  "Recovery of your documents was finished.\nClick 'Finish' to see your documents."
-msgstr "Hujjatni tiklash yakunlandi.\nHujjatni ko'rish 'Tayyor' tugmasini bosing."
+msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 #, fuzzy
@@ -1459,7 +1456,7 @@ msgid  "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 msgstr "%PRODUCTNAME hujjatini tiklashdan voz kechishga ishonchingiz komilmi?"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
-msgid  "The automatic recovery process was interrupted.\n\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
+msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
 msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
@@ -1488,7 +1485,7 @@ msgid  "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 msgstr "%PRODUCTNAME %PRODUCTVERSION xatolik hisoboti tuzuvchisiga marhamat"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
-msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\n\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\nCustomer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\nwww.oracle.com/html/services-privacy-policy.html"
+msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
 msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
@@ -1590,7 +1587,7 @@ msgid  "~Port"
 msgstr "~Port"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
-msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\nIf this applies to your situation, you have to specify the address and port for the server."
+msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
 msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
@@ -2144,7 +2141,7 @@ msgstr "Yuqori chapdan pastgi o'ngga diogonal chegara chizig'i"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.8.ItemList.item
 #, fuzzy
 msgid  "Diagonal border line from bottom left to top right"
-msgstr "Pastgi o'ngdan yuqori o'ngga diogonal chegara chizig'i"
+msgstr "Pastgi chapdan yuqori o'ngga diogonal chegara chizig'i"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_DESCRIPTIONS.0.ItemList.item
 #, fuzzy
@@ -3072,9 +3069,8 @@ msgid  "As Button"
 msgstr "Tugma sifatida"
 
 #: source/dialog/hyprlink.src#RID_SVXQB_DONTEXIST.QueryBox.Message
-#, fuzzy
-msgid  "This URL does not exist.\nInsert anyway?"
-msgstr "Ushbu URL mavjud emas.\nShunga qaramasdan qoʻyilsinmi?"
+msgid  "This URL does not exist.\\nInsert anyway?"
+msgstr ""
 
 #: source/dialog/sdstring.src#RID_SVXSTR_SOLID.String.Text
 #, fuzzy
@@ -3921,9 +3917,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
-#, fuzzy
-msgid  "The contour has been modified.\nDo you want to save the changes?"
-msgstr "Kontur oʻzgartirildi.\nOʻzgarishlarni saqlashni istaysizmi?"
+msgid  "The contour has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 #, fuzzy
@@ -3931,9 +3926,8 @@ msgid  "Do you want to create a new contour?"
 msgstr "Yangi kontur yaratishni istaysizmi?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
-#, fuzzy
-msgid  "Setting a new workspace will\ncause the contour to be deleted.\nAre you sure you want to continue?"
-msgstr "Yangi ish muhiti yaratilishi\nkonturni olib tashlaydi.\nDavom ettirishga ishonchingiz komilmi?"
+msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 #, fuzzy
@@ -4541,78 +4535,97 @@ msgid  "3D Effects"
 msgstr "3D effektlar"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Geometry"
 msgstr "Geometriya"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Shading"
 msgstr "Soyalash"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Illumination"
 msgstr "Yoritish"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Textures"
 msgstr "Textures"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Material"
 msgstr "Material"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Update"
 msgstr "Yangilash"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_ASSIGN.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Assign"
 msgstr "Belgilash"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_CHANGE_TO_3D.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Convert to 3D"
 msgstr "3D koʻrinishga aylantirish"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LATHE_OBJ.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Convert to Lathe Object"
 msgstr "Convert to Lathe Object"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_PERSPECTIVE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Perspective On/Off"
 msgstr "Perspective On/Off"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_GEOMETRIE.FixedLine.Text
+#, fuzzy
 msgid  "Geometry"
 msgstr "Geometriya"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_PERCENT_DIAGONAL.FixedText.Text
+#, fuzzy
 msgid  "R~ounded edges"
 msgstr "~Yumaloqlangan burchaklar"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_BACKSCALE.FixedText.Text
+#, fuzzy
 msgid  "~Scaled depth"
 msgstr "~Masshtablangan chuqurlik"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_END_ANGLE.FixedText.Text
+#, fuzzy
 msgid  "~Rotation angle"
 msgstr "~Burish burchagi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
+#, fuzzy
 msgid  " degree(s)"
 msgstr " daraja(lar)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
+#, fuzzy
 msgid  "~Depth"
 msgstr "~Chuqurlik"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SEGMENTS.FixedLine.Text
+#, fuzzy
 msgid  "Segments"
 msgstr "Segmentlar"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_HORIZONTAL.FixedText.Text
+#, fuzzy
 msgid  "~Horizontal"
 msgstr "~Gorizontal"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_VERTICAL.FixedText.Text
+#, fuzzy
 msgid  "~Vertical"
 msgstr "~Vertikal"
 
@@ -4621,38 +4634,46 @@ msgid  "Normals"
 msgstr ""
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Flat"
 msgstr "Yassi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Spherical"
 msgstr "Sharsimon"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_INVERT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Invert Normals"
 msgstr "Invert Normals"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TWO_SIDED_LIGHTING.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Double-Sided Illumination"
 msgstr "Ikki tarafli yoritish"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_DOUBLE_SIDED.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Double-Sided"
 msgstr "Ikki tomonlama"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SHADEMODE.FixedText.Text
 msgid  "~Mode"
-msgstr "Usul"
+msgstr "~Usul"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item1.StringList.item
+#, fuzzy
 msgid  "Flat"
 msgstr "Yassi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item2.StringList.item
+#, fuzzy
 msgid  "Phong"
 msgstr "Fong"
 
@@ -4661,154 +4682,192 @@ msgid  "Gouraud"
 msgstr ""
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SHADOW.FixedLine.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Soya"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SHADOW_3D.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "3D Shadowing On/Off"
 msgstr "3D soyasini yoqish/oʻchirish"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SLANT.FixedText.Text
+#, fuzzy
 msgid  "S~urface angle"
 msgstr "~Yuza burchagi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_SLANT.MetricField.CustomUnitText
+#, fuzzy
 msgid  " degree(s)"
 msgstr " daraja(lar)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_CAMERA.FixedLine.Text
+#, fuzzy
 msgid  "Camera"
 msgstr "Kamera"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DISTANCE.FixedText.Text
+#, fuzzy
 msgid  "~Distance"
 msgstr "~Masofa"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_FOCAL_LENGTH.FixedText.Text
+#, fuzzy
 msgid  "~Focal length"
 msgstr "~Fokus"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_REPRESENTATION.FixedLine.Text
+#, fuzzy
 msgid  "Shading"
 msgstr "Soyalash"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_LIGHTSOURCE.FixedText.Text
+#, fuzzy
 msgid  "~Light source"
 msgstr "~Yorugʻlik manbasi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_1.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 1"
 msgstr "Yorugʻlik manbasi 1"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_2.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 2"
 msgstr "Yorugʻlik manbasi 2"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_3.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 3"
 msgstr "Yorugʻlik manbasi 3"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_4.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 4"
 msgstr "Yorugʻlik manbasi 4"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_5.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 5"
 msgstr "Yorugʻlik manbasi 5"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_6.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 6"
 msgstr "Yorugʻlik manbasi 6"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_7.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 7"
 msgstr "Yorugʻlik manbasi 7"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_8.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 8"
 msgstr "Yorugʻlik manbasi 8"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Ranglar dialogi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
+#, fuzzy
 msgid  "~Ambient light"
 msgstr "~Tarqoq yorugʻ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Ranglar dialogi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
+#, fuzzy
 msgid  "Illumination"
 msgstr "Yoritish"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_KIND.FixedText.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "Tur~i"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_LUMINANCE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Black & White"
 msgstr "Oq va qora"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Color"
 msgstr "Rang"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_MODE.FixedText.Text
+#, fuzzy
 msgid  "~Mode"
 msgstr "~Usul"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_REPLACE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Only Texture"
 msgstr "Faqat tekstura"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_MODULATE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Texture and Shading"
 msgstr "Tekstura va Sya"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_BLEND.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Texture, Shadow and Color"
 msgstr "Tekstura, Soya va Rang"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_X.FixedText.Text
+#, fuzzy
 msgid  "~Projection X"
 msgstr "~X proekiyasi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Parallel"
 msgstr "Parallel"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Circular"
 msgstr "Doirasimon"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_Y.FixedText.Text
+#, fuzzy
 msgid  "P~rojection Y"
 msgstr "Y p~roeksiyasi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Parallel"
 msgstr "Parallel"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Circular"
 msgstr "Doirasimon"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_FILTER.FixedText.Text
+#, fuzzy
 msgid  "~Filtering"
 msgstr "~Filtrlash"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_FILTER.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Filtering On/Off"
 msgstr "Filtrlashni yoqish/oʻchirish"
 
@@ -4936,90 +4995,112 @@ msgid  "Color Light Preview"
 msgstr ""
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_DELETEROWS.MenuItem.Text
+#, fuzzy
 msgid  "Delete Rows"
 msgstr "Satrlarni olib tashlash"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_SAVE.MenuItem.Text
+#, fuzzy
 msgid  "Save Record"
 msgstr "Yozuvni saqlash"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_UNDO.MenuItem.Text
+#, fuzzy
 msgid  "Undo: Data entry"
 msgstr "Bekor qilish: Maʼlumot kiritish"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.MenuItem.Text
+#, fuzzy
 msgid  "Insert ~Column"
 msgstr "~Ustun qoʻshish"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Text Box"
 msgstr "Matn maydoni"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CHECKBOX.MenuItem.Text
+#, fuzzy
 msgid  "Check Box"
 msgstr "Bayroqcha"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_COMBOBOX.MenuItem.Text
+#, fuzzy
 msgid  "Combo Box"
 msgstr "Ochiladigan roʻyxat qutisi"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_LISTBOX.MenuItem.Text
+#, fuzzy
 msgid  "List Box"
 msgstr "Roʻyxat"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_DATEFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Date Field"
 msgstr "Sana maydoni"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TIMEFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Time Field"
 msgstr "Vaqt maydoni"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_NUMERICFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Numeric Field"
 msgstr "Raqam maydoni"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CURRENCYFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Currency Field"
 msgstr "Pul maydoni"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_PATTERNFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Pattern Field"
 msgstr "Niqobli kiritish maydoni"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_FORMATTEDFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Formatted Field"
 msgstr "Formatlangan maydon"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TWOFIELDS_DATE_N_TIME.MenuItem.Text
+#, fuzzy
 msgid  "Date and Time Field"
 msgstr "Sana va vaqt maydoni"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_CHANGECOL.MenuItem.Text
+#, fuzzy
 msgid  "~Replace with"
 msgstr "Alm~ashtirish"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_DELETECOL.MenuItem.Text
+#, fuzzy
 msgid  "Delete Column"
 msgstr "Ustunni olib tashlash"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_HIDECOL.MenuItem.Text
+#, fuzzy
 msgid  "~Hide Column"
 msgstr "Ustunlarni ~bekitish"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWCOLS_MORE.MenuItem.Text
+#, fuzzy
 msgid  "~More..."
 msgstr "~Koʻproq"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWALLCOLS.MenuItem.Text
+#, fuzzy
 msgid  "~All"
 msgstr "Ham~masi"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.MenuItem.Text
+#, fuzzy
 msgid  "~Show Columns"
 msgstr "Ustunlarni ~koʻrsatish"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
+#, fuzzy
 msgid  "Column..."
 msgstr "Ustun..."
 
@@ -5032,10 +5113,11 @@ msgid  "Input required in field '#'. Please enter a value."
 msgstr ""
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
-msgid  "Entry already exists.\nPlease choose another name."
+msgid  "Entry already exists.\\nPlease choose another name."
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
+#, fuzzy
 msgid  "Forms"
 msgstr "Formalar"
 
@@ -5044,34 +5126,42 @@ msgid  "No control selected"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_PROPERTIES_CONTROL.String.Text
+#, fuzzy
 msgid  "Properties: "
 msgstr "Xossalari: "
 
 #: source/form/fmstring.src#RID_STR_PROPERTIES_FORM.String.Text
+#, fuzzy
 msgid  "Form Properties"
 msgstr "Forma xossalari"
 
 #: source/form/fmstring.src#RID_STR_FMEXPLORER.String.Text
+#, fuzzy
 msgid  "Form Navigator"
 msgstr "Forma navigatsiyasi"
 
 #: source/form/fmstring.src#RID_STR_FORM.String.Text
+#, fuzzy
 msgid  "Form"
 msgstr "Forma"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.1.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Jadval"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.2.String.Text
+#, fuzzy
 msgid  "Query"
 msgstr "Soʻrov"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.3.String.Text
+#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/form/fmstring.src#RID_STR_STDFORMNAME.String.Text
+#, fuzzy
 msgid  "Form"
 msgstr "Forma"
 
@@ -5080,10 +5170,12 @@ msgid  "Hidden Control"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_CONTROL.String.Text
+#, fuzzy
 msgid  "Control"
 msgstr "Boshqaruv"
 
 #: source/form/fmstring.src#RID_STR_REC_TEXT.String.Text
+#, fuzzy
 msgid  "Record"
 msgstr "Yozuv"
 
@@ -5092,6 +5184,7 @@ msgid  "of"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_FIELDSELECTION.String.Text
+#, fuzzy
 msgid  "Add field:"
 msgstr "Maydon qoʻshish:"
 
@@ -5104,15 +5197,17 @@ msgid  "Syntax error in query expression"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM_RECORD.String.Text
+#, fuzzy
 msgid  "You intend to delete 1 record."
 msgstr "Siz 1 ta yozuvni olib tashlamoqchisiz."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM_RECORDS.String.Text
+#, fuzzy
 msgid  "# records will be deleted."
 msgstr "# yozuv olib tashlanadi."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
-msgid  "If you click Yes, you won't be able to undo this operation.\nDo you want to continue anyway?"
+msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
 msgstr ""
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
@@ -5120,18 +5215,22 @@ msgid  "Choose an entry from the list or enter a text corresponding to one of th
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_GROUPBOX.String.Text
+#, fuzzy
 msgid  "Frame element"
 msgstr "Freym elementi"
 
 #: source/form/fmstring.src#RID_STR_NAVIGATION.String.Text
+#, fuzzy
 msgid  "Navigation"
 msgstr "Navigatsiya"
 
 #: source/form/fmstring.src#RID_STR_NAVIGATIONBAR.String.Text
+#, fuzzy
 msgid  "Navigation bar"
 msgstr "Navigatsiya paneli"
 
 #: source/form/fmstring.src#RID_STR_COLUMN.String.Text
+#, fuzzy
 msgid  "Col"
 msgstr "Ust"
 
@@ -5144,10 +5243,12 @@ msgid  "Insert in container"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REMOVE.String.Text
+#, fuzzy
 msgid  "Delete #"
 msgstr "Olib tashlash #"
 
 #: source/form/fmstring.src#RID_STR_UNDO_CONTAINER_REMOVE_MULTIPLE.String.Text
+#, fuzzy
 msgid  "Delete # objects"
 msgstr "# obyektlarni olib tashlash"
 
@@ -5164,10 +5265,12 @@ msgid  "Replace Control"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_DATE.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "Sana"
 
 #: source/form/fmstring.src#RID_STR_TIME.String.Text
+#, fuzzy
 msgid  "Time"
 msgstr "Vaqt"
 
@@ -5180,10 +5283,12 @@ msgid  "Option Button"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
+#, fuzzy
 msgid  "Check Box"
 msgstr "Bayroqcha"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+#, fuzzy
 msgid  "Label Field"
 msgstr "Yorliq maydoni"
 
@@ -5196,14 +5301,17 @@ msgid  "Text Box"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+#, fuzzy
 msgid  "Formatted Field"
 msgstr "Formatlangan maydon"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_LISTBOX.String.Text
+#, fuzzy
 msgid  "List Box"
 msgstr "Roʻyxat"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
+#, fuzzy
 msgid  "Combo Box"
 msgstr "Ochiladigan roʻyxat qutisi"
 
@@ -5216,34 +5324,42 @@ msgid  "Image Control"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
+#, fuzzy
 msgid  "File Selection"
 msgstr "Faylni tanlash"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
+#, fuzzy
 msgid  "Date Field"
 msgstr "Sana maydoni"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
+#, fuzzy
 msgid  "Time Field"
 msgstr "Vaqt maydoni"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
+#, fuzzy
 msgid  "Numeric Field"
 msgstr "Son maydoni"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
+#, fuzzy
 msgid  "Currency Field"
 msgstr "Pul maydoni"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
+#, fuzzy
 msgid  "Pattern Field"
 msgstr "Niqobli kiritish maydoni"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_DBGRID.String.Text
+#, fuzzy
 msgid  "Table Control "
 msgstr "Jadval boshqaruvi"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_SCROLLBAR.String.Text
+#, fuzzy
 msgid  "Scrollbar"
 msgstr "Varaqlash paneli"
 
@@ -5252,10 +5368,12 @@ msgid  "Spin Button"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_NAVBAR.String.Text
+#, fuzzy
 msgid  "Navigation Bar"
 msgstr "Navigatsiya paneli"
 
 #: source/form/fmstring.src#RID_STR_PROPTITLE_MULTISELECT.String.Text
+#, fuzzy
 msgid  "Multiselection"
 msgstr "Ommaviy tanlash"
 
@@ -5264,14 +5382,17 @@ msgid  "No data-related controls in the current form!"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_POSTFIX_DATE.String.Text
+#, fuzzy
 msgid  " (Date)"
 msgstr " (Sana)"
 
 #: source/form/fmstring.src#RID_STR_POSTFIX_TIME.String.Text
+#, fuzzy
 msgid  " (Time)"
 msgstr " (Vaqt)"
 
 #: source/form/fmstring.src#RID_STR_FILTER_NAVIGATOR.String.Text
+#, fuzzy
 msgid  "Filter navigator"
 msgstr "Filtrlar navigatori"
 
@@ -5280,6 +5401,7 @@ msgid  "Filter for"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_FILTER_FILTER_OR.String.Text
+#, fuzzy
 msgid  "Or"
 msgstr "Yoki"
 
@@ -5288,12 +5410,13 @@ msgid  "Valid bound controls which can be used in the table view do not exist in
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_AUTOFIELD.String.Text
+#, fuzzy
 msgid  "<AutoField>"
 msgstr "<Avto-maydon>"
 
 #: source/form/fmstring.src#RID_QRY_SAVEMODIFIED.QueryBox.Message
-msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr "Joriy forma tarkibi oʻzgartirildi.\nOʻzgarishlarni saqlashni istaysizmi?"
+msgid  "The content of the current form has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.1.String.Text
 msgid  "LIKE"
@@ -5304,14 +5427,17 @@ msgid  "NOT"
 msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.3.String.Text
+#, fuzzy
 msgid  "EMPTY"
 msgstr "BOʻSH"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.4.String.Text
+#, fuzzy
 msgid  "TRUE"
 msgstr "HAQIQIY"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.5.String.Text
+#, fuzzy
 msgid  "FALSE"
 msgstr "NOTOʻGʻRI"
 
@@ -5320,18 +5446,22 @@ msgid  "IS"
 msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.7.String.Text
+#, fuzzy
 msgid  "BETWEEN"
 msgstr "ORASIDA"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.8.String.Text
+#, fuzzy
 msgid  "OR"
 msgstr "YOKI"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.9.String.Text
+#, fuzzy
 msgid  "AND"
 msgstr "VA"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.10.String.Text
+#, fuzzy
 msgid  "Average"
 msgstr "Oʻrtacha qiymat"
 
@@ -5340,14 +5470,17 @@ msgid  "Count"
 msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.12.String.Text
+#, fuzzy
 msgid  "Maximum"
 msgstr "Maksimum"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.13.String.Text
+#, fuzzy
 msgid  "Minimum"
 msgstr "Minimum"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.14.String.Text
+#, fuzzy
 msgid  "Sum"
 msgstr "Yigʻindi"
 
@@ -5364,18 +5497,22 @@ msgid  "Some"
 msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.18.String.Text
+#, fuzzy
 msgid  "STDDEV_POP"
 msgstr "STDDEV_POP"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.19.String.Text
+#, fuzzy
 msgid  "STDDEV_SAMP"
 msgstr "STDDEV_SAMP"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.20.String.Text
+#, fuzzy
 msgid  "VAR_SAMP"
 msgstr "VAR_SAMP"
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.21.String.Text
+#, fuzzy
 msgid  "VAR_POP"
 msgstr "VAR_POP"
 
@@ -5388,6 +5525,7 @@ msgid  "Fusion"
 msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.24.String.Text
+#, fuzzy
 msgid  "Intersection"
 msgstr "Kesishish"
 
@@ -5396,38 +5534,47 @@ msgid  "Syntax error in SQL statement"
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_VALUE_NO_LIKE.String.Text
+#, fuzzy
 msgid  "The value #1 cannot be used with LIKE."
 msgstr "#1 qiymatni LIKE bilan qoʻllab boʻlmaydi."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_FIELD_NO_LIKE.String.Text
+#, fuzzy
 msgid  "LIKE cannot be used with this field."
 msgstr "LIKE ushbu maydon bilan qoʻllanilmaydi."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_ACCESS_DAT_NO_VALID.String.Text
+#, fuzzy
 msgid  "The value entered is not a valid date. Please enter a date in a valid format, for example, MM/DD/YY."
 msgstr "Kiritilgan sana mavjud emas. Iltimos sanani toʻgʻri formatda kiriting, masalan, OO/KK/YY."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_INT_NO_VALID.String.Text
+#, fuzzy
 msgid  "The field cannot be compared with an integer."
 msgstr "Ushbu maydonni butun son bilan taqqoslab boʻlmaydi."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_TABLE.String.Text
+#, fuzzy
 msgid  "The database does not contain a table named \"#\"."
 msgstr "Maʼlumot bazasida \"#\" nomli jadval mavjud emas."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_TABLE_OR_QUERY.String.Text
+#, fuzzy
 msgid  "The database does contain neither a table nor a query named \"#\"."
 msgstr "Maʼlumot bazasida \"#\" nomli jadval yoki koʻrinish mavjud emas."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_TABLE_EXISTS.String.Text
+#, fuzzy
 msgid  "The database already contains a table or view with name \"#\"."
 msgstr "Maʼlumot bazasida allqachon \"#\" nomli jadval yoki koʻrinish mavjud."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_QUERY_EXISTS.String.Text
+#, fuzzy
 msgid  "The database already contains a query with name \"#\"."
 msgstr "Maʼlumot bazasida \"#\" nomli soʻrov allaqachon mavjud."
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_COLUMN.String.Text
+#, fuzzy
 msgid  "The column \"#1\" is unknown in the table \"#2\"."
 msgstr "\"#1\" ustun \"#2\" jadvalda aniqlanmadi."
 
@@ -5436,18 +5583,22 @@ msgid  "The field cannot be compared with a floating point number."
 msgstr ""
 
 #: source/form/fmstring.src#RID_STR_SVT_SQL_SYNTAX_CRIT_NO_COMPARE.String.Text
+#, fuzzy
 msgid  "The entered criterion cannot be compared with this field."
 msgstr "Kiritilgan mezonni ushbu maydon bilan taqqoslab boʻlmaydi."
 
 #: source/form/fmstring.src#RID_STR_DATANAVIGATOR.String.Text
+#, fuzzy
 msgid  "Data Navigator"
 msgstr "Maʼlumot navigatori"
 
 #: source/form/fmstring.src#RID_STR_READONLY_VIEW.String.Text
+#, fuzzy
 msgid  " (read-only)"
 msgstr " (faqat oʻqishga)"
 
 #: source/form/fmstring.src#RID_STR_ALREADYEXISTOVERWRITE.String.Text
+#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "Fayl allaqachon mavjud. Almashtirilsinmi?"
 
@@ -5456,10 +5607,12 @@ msgid  "#object# label"
 msgstr ""
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.MenuItem.Text
+#, fuzzy
 msgid  "~New"
 msgstr "~Yangi"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_NEW.SID_FM_NEW_FORM.MenuItem.Text
+#, fuzzy
 msgid  "Form"
 msgstr "Forma"
 
@@ -5468,26 +5621,32 @@ msgid  "Hidden Control"
 msgstr ""
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_CHANGECONTROLTYPE.MenuItem.Text
+#, fuzzy
 msgid  "Replace with"
 msgstr "Quyidagiga almashtirish"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Olib tashlash"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_TAB_DIALOG.MenuItem.Text
+#, fuzzy
 msgid  "Tab Order..."
 msgstr "Tab tartibi..."
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_RENAME_OBJECT.MenuItem.Text
+#, fuzzy
 msgid  "~Rename"
 msgstr "Nomini oʻz~gartirish"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
+#, fuzzy
 msgid  "Propert~ies"
 msgstr "Xossa~lari"
 
 #: source/form/fmexpl.src#RID_FMEXPLORER_POPUPMENU.SID_FM_OPEN_READONLY.MenuItem.Text
+#, fuzzy
 msgid  "Open in Design Mode"
 msgstr "Dizayn usulida ochish"
 
@@ -5500,10 +5659,12 @@ msgid  "~Text Box"
 msgstr ""
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_BUTTON.MenuItem.Text
+#, fuzzy
 msgid  "~Button"
 msgstr "~Tugma"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FIXEDTEXT.MenuItem.Text
+#, fuzzy
 msgid  "La~bel field"
 msgstr "Yor~liq maydoni"
 
@@ -5512,10 +5673,12 @@ msgid  "G~roup Box"
 msgstr ""
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_LISTBOX.MenuItem.Text
+#, fuzzy
 msgid  "L~ist Box"
 msgstr "~Roʻyxat"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_CHECKBOX.MenuItem.Text
+#, fuzzy
 msgid  "~Check Box"
 msgstr "~Bayroqcha"
 
@@ -5524,6 +5687,7 @@ msgid  "~Radio Button"
 msgstr ""
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_COMBOBOX.MenuItem.Text
+#, fuzzy
 msgid  "Combo Bo~x"
 msgstr "Kombo ~quti"
 
@@ -5532,26 +5696,32 @@ msgid  "I~mage Button"
 msgstr ""
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FILECONTROL.MenuItem.Text
+#, fuzzy
 msgid  "~File Selection"
 msgstr "~Fayl tanlash"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_DATE.MenuItem.Text
+#, fuzzy
 msgid  "~Date Field"
 msgstr "~Sana maydoni"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_TIME.MenuItem.Text
+#, fuzzy
 msgid  "Tim~e Field"
 msgstr "Vaq~t maydoni"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_NUMERIC.MenuItem.Text
+#, fuzzy
 msgid  "~Numerical Field"
 msgstr "~Son maydoni"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_CURRENCY.MenuItem.Text
+#, fuzzy
 msgid  "C~urrency Field"
 msgstr "P~ul maydoni"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_PATTERN.MenuItem.Text
+#, fuzzy
 msgid  "~Pattern Field"
 msgstr "~Niqobli kiritish maydoni"
 
@@ -5560,10 +5730,12 @@ msgid  "Ima~ge Control"
 msgstr ""
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_FORMATTED.MenuItem.Text
+#, fuzzy
 msgid  "Fo~rmatted Field"
 msgstr "Fo~rmatlangan maydon"
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_SCROLLBAR.MenuItem.Text
+#, fuzzy
 msgid  "Scroll bar"
 msgstr "Varaqlash paneli"
 
@@ -5572,58 +5744,72 @@ msgid  "Spin Button"
 msgstr ""
 
 #: source/form/fmexpl.src#RID_FMSHELL_CONVERSIONMENU.SID_FM_CONVERTTO_NAVIGATIONBAR.MenuItem.Text
+#, fuzzy
 msgid  "Navigation Bar"
 msgstr "Navigatsiya paneli"
 
 #: source/form/fmexpl.src#RID_SVXDLG_SETFORM.GB_PATH.GroupBox.Text
+#, fuzzy
 msgid  "Path"
 msgstr "Yoʻl"
 
 #: source/form/fmexpl.src#RID_SVXDLG_SETFORM.HelpButton.Text
+#, fuzzy
 msgid  "Select form"
 msgstr "Formani tanlash"
 
 #: source/form/fmexpl.src#RID_SVX_FMEXPLORER.DockingWindow.Text
+#, fuzzy
 msgid  "Form Navigator"
 msgstr "Forma navigatsiyasi"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_STYLE.MenuItem.Text
+#, fuzzy
 msgid  "St~yle"
 msgstr "Uslu~b"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_ALIGNMENT.MenuItem.Text
+#, fuzzy
 msgid  "~Alignment"
 msgstr "~Tekislash"
 
 #: source/form/formshell.src#RID_FM_TEXTATTRIBUTE_MENU.MENU_FM_TEXTATTRIBITES_SPACING.MenuItem.Text
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "~Satr orasidagi oraliq"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.TabDialog.Text
+#, fuzzy
 msgid  "Character"
 msgstr "Belgi"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "Shrift"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "Shrift effektlari"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_CHARATTR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Oʻrni"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.TabDialog.Text
+#, fuzzy
 msgid  "Paragraph"
 msgstr "Paragraf"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Chekinish va oraliq"
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "Tekislash"
 
@@ -5632,62 +5818,77 @@ msgid  "Asian Typography"
 msgstr ""
 
 #: source/form/formshell.src#RID_SVXDLG_TEXTCONTROL_PARAATTR.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+#, fuzzy
 msgid  "Tabs"
 msgstr "Tablar"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Olib tashlash"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~Tahrirlash"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NULL.MenuItem.Text
+#, fuzzy
 msgid  "~Is Null"
 msgstr "~Boʻsh"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NOT_NULL.MenuItem.Text
+#, fuzzy
 msgid  "I~s not Null"
 msgstr "Boʻsh ~emas"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Item"
 msgstr "Element qoʻshish"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Element"
 msgstr "Element qoʻshish"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "Atribut qoʻshish"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Tahrirlash"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Olib tashlash"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MenuButton.Text
+#, fuzzy
 msgid  "~Models"
 msgstr "~Modellar"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "Qoʻsh~ish..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Tahrirlash..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "~Olib tashlash"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_INSTANCE.PageItem.Text
+#, fuzzy
 msgid  "Instance"
 msgstr "~Nusxalar"
 
@@ -5700,35 +5901,40 @@ msgid  "Bindings"
 msgstr ""
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MenuButton.Text
+#, fuzzy
 msgid  "~Instances"
 msgstr "~Nusxalar"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "Qoʻsh~ish..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Tahrirlash..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "~Olib tashlash"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_SHOW_DETAILS.MenuItem.Text
+#, fuzzy
 msgid  "~Show Details"
 msgstr "Tafsilotlarni ~koʻrsatish"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_MODEL.QueryBox.Message
-msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\nDo you really want to delete this model?"
+msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\\nDo you really want to delete this model?"
 msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_INSTANCE.QueryBox.Message
-msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\nDo you really want to delete this instance?"
+msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\\nDo you really want to delete this instance?"
 msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ELEMENT.QueryBox.Message
-msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\nDo you really want to delete this element?"
+msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\\nDo you really want to delete this element?"
 msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ATTRIBUTE.QueryBox.Message
@@ -5736,15 +5942,15 @@ msgid  "Do you really want to delete the attribute '$ATTRIBUTENAME'?"
 msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_SUBMISSION.QueryBox.Message
-msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\n\nDo you really want to delete this submission?"
+msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\\n\\nDo you really want to delete this submission?"
 msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_BINDING.QueryBox.Message
-msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\n\nDo you really want to delete this binding?"
+msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\\n\\nDo you really want to delete this binding?"
 msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_LINK_WARNING.MessBox.Message
-msgid  "This instance is linked with the form.\n\nThe changes you make to this instance will be lost when the form is reloaded.\n\nHow do you want to proceed?"
+msgid  "This instance is linked with the form.\\n\\nThe changes you make to this instance will be lost when the form is reloaded.\\n\\nHow do you want to proceed?"
 msgstr ""
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLNAME.ErrorBox.Message
@@ -5764,30 +5970,37 @@ msgid  "The submission must have a name."
 msgstr ""
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_ITEM.FixedLine.Text
+#, fuzzy
 msgid  "Item"
 msgstr "Element"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nomi"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DEFAULT.FixedText.Text
+#, fuzzy
 msgid  "~Default Value"
 msgstr "~Andoza qiymat"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_SETTINGS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Moslamalar"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DATATYPE.FixedText.Text
+#, fuzzy
 msgid  "~Data Type"
 msgstr "~Maʼlumot turi"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_REQUIRED.CheckBox.Text
+#, fuzzy
 msgid  "~Required"
 msgstr "~Talab qilinadi"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_REQUIRED.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Shart"
 
@@ -5796,38 +6009,47 @@ msgid  "R~elevant"
 msgstr ""
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_RELEVANT.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Shart"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CONSTRAINT.CheckBox.Text
+#, fuzzy
 msgid  "~Constraint"
 msgstr "~Cheklov"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CONSTRAINT.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Shart"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_READONLY.CheckBox.Text
+#, fuzzy
 msgid  "Read-~only"
 msgstr "Faqat oʻqishga"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_READONLY.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Shart"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CALCULATE.CheckBox.Text
+#, fuzzy
 msgid  "Calc~ulate"
 msgstr "~Hisoblash"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CALCULATE.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Shart"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ELEMENT.String.Text
+#, fuzzy
 msgid  "Element"
 msgstr "Element"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Attribute"
 msgstr "Atribut"
 
@@ -5840,34 +6062,42 @@ msgid  "Binding expression"
 msgstr ""
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD.MenuItem.Text
+#, fuzzy
 msgid  "Add Item"
 msgstr "Element qoʻshish"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ELEMENT.MenuItem.Text
+#, fuzzy
 msgid  "Add Element"
 msgstr "Element qoʻshish"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ATTRIBUTE.MenuItem.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "Atribut qoʻshish"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Tahrirlash"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Olib tashlash"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.ModalDialog.Text
+#, fuzzy
 msgid  "Add Condition"
 msgstr "Shart qoʻshish"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_CONDITION.FixedText.Text
+#, fuzzy
 msgid  "~Condition"
 msgstr "~Shart"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_RESULT.FixedText.Text
+#, fuzzy
 msgid  "~Result"
 msgstr "~Natija"
 
@@ -5884,22 +6114,27 @@ msgid  "~Namespaces"
 msgstr ""
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_ADD_NAMESPACE.PushButton.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "Qoʻsh~ish..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_EDIT_NAMESPACE.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Tahrirlash..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_DELETE_NAMESPACE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Olib tashlash"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_PREFIX.String.Text
+#, fuzzy
 msgid  "Prefix"
 msgstr "Prefiks"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_URL.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
@@ -5908,10 +6143,12 @@ msgid  "Add Namespace"
 msgstr ""
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_PREFIX.FixedText.Text
+#, fuzzy
 msgid  "~Prefix"
 msgstr "~Prefiks"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
@@ -5928,14 +6165,17 @@ msgid  "Submission"
 msgstr ""
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nomi"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_ACTION.FixedText.Text
+#, fuzzy
 msgid  "~Action"
 msgstr "~Amal"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_METHOD.FixedText.Text
+#, fuzzy
 msgid  "~Method"
 msgstr "~Usul"
 
@@ -5944,6 +6184,7 @@ msgid  "Binding e~xpression"
 msgstr ""
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.PB_SUBMIT_REF.PushButton.Text
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
@@ -5952,6 +6193,7 @@ msgid  "~Binding"
 msgstr ""
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REPLACE.FixedText.Text
+#, fuzzy
 msgid  "~Replace"
 msgstr "~Almashtirish"
 
@@ -5964,30 +6206,37 @@ msgid  "Put"
 msgstr ""
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_GET.String.Text
+#, fuzzy
 msgid  "Get"
 msgstr "Olish"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_NONE.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "Yoʻq"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_INST.String.Text
+#, fuzzy
 msgid  "Instance"
 msgstr "~Nusxalar"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_DOC.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "Hujjat"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.ModalDialog.Text
+#, fuzzy
 msgid  "Add Model"
 msgstr "Model qoʻshish"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FL_INSTANCE.FixedLine.Text
+#, fuzzy
 msgid  "Model"
 msgstr "Model"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FT_INST_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nomi"
 
@@ -5996,30 +6245,37 @@ msgid  "Model data updates change document's modification status"
 msgstr ""
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.STR_EDIT_TEXT.String.Text
+#, fuzzy
 msgid  "Edit Model"
 msgstr "Modelni tahrirlash"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.ModalDialog.Text
+#, fuzzy
 msgid  "Add Instance"
 msgstr "Nusxasini qoʻshish"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FL_INSTANCE.FixedLine.Text
+#, fuzzy
 msgid  "Instance"
 msgstr "~Nusxalar"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nomi"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_URL.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.CB_INST_LINKINST.CheckBox.Text
+#, fuzzy
 msgid  "~Link instance"
 msgstr "~Bogʻlama nusxasi"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.STR_EDIT_TEXT.String.Text
+#, fuzzy
 msgid  "Edit Instance"
 msgstr "Nusxasini qoʻshish"
 
@@ -6028,6 +6284,7 @@ msgid  "Submission: "
 msgstr ""
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ID.String.Text
+#, fuzzy
 msgid  "ID: "
 msgstr "ID: "
 
@@ -6036,42 +6293,52 @@ msgid  "Binding: "
 msgstr ""
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REF.String.Text
+#, fuzzy
 msgid  "Reference: "
 msgstr "Bogʻlama: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ACTION.String.Text
+#, fuzzy
 msgid  "Action: "
 msgstr "Amal: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_METHOD.String.Text
+#, fuzzy
 msgid  "Method: "
 msgstr "Usul: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REPLACE.String.Text
+#, fuzzy
 msgid  "Replace: "
 msgstr "Almashtirish:"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ELEMENT.String.Text
+#, fuzzy
 msgid  "Add Element"
 msgstr "Element qoʻshish"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ELEMENT.String.Text
+#, fuzzy
 msgid  "Edit Element"
 msgstr "Elementni tahrirlash"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ELEMENT.String.Text
+#, fuzzy
 msgid  "Delete Element"
 msgstr "Elementni olib tashlash"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "Atribut qoʻshish"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Edit Attribute"
 msgstr "Atributni tahrirlash"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Delete Attribute"
 msgstr "Atributni olib tashlash"
 
@@ -6100,178 +6367,218 @@ msgid  "Delete Submission"
 msgstr ""
 
 #: source/form/datanavi.src#RID_STR_DATANAV_LINKWARN_BUTTON.String.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~Tahrirlash"
 
 #: source/gallery2/gallery.src#RID_SVXDLG_GALLERYBROWSER.DockingWindow.Text
+#, fuzzy
 msgid  "Gallery"
 msgstr "Galereya"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
+#, fuzzy
 msgid  "Update"
 msgstr "Yangilash"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
+#, fuzzy
 msgid  "This file cannot be opened"
 msgstr "Bu faylni ochib boʻlmaydi"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NOTHEME.String.Text
+#, fuzzy
 msgid  "Invalid Theme Name!"
 msgstr "Xato mavzu nomi!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
-msgid  "Do you really want to\ndelete this object?"
-msgstr "Rostdan ham ushbu obyektni\nolib tashlamoqchimisiz?"
+msgid  "Do you really want to\\ndelete this object?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
-msgid  "Do you really want to\ndelete this theme?"
-msgstr "Rostdan ham ushbu mavzuni\nolib tashlamoqchimisiz?"
+msgid  "Do you really want to\\ndelete this theme?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
+#, fuzzy
 msgid  "Wave - Sound File"
 msgstr "Wave - tovush fayli"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT2_UI.String.Text
+#, fuzzy
 msgid  "Audio Interchange File Format"
 msgstr "Tovush almashinish audio formati"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT3_UI.String.Text
+#, fuzzy
 msgid  "AU - Sound File"
 msgstr "AU - tovush fayli"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FILTER.String.Text
+#, fuzzy
 msgid  "Graphics filter"
 msgstr "Grafik filtr"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LENGTH.String.Text
+#, fuzzy
 msgid  "Length:"
 msgstr "Uzunlik:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SIZE.String.Text
+#, fuzzy
 msgid  "Size:"
 msgstr "Oʻlcham:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEDD.String.Text
+#, fuzzy
 msgid  "Do you want to delete the linked file?"
 msgstr "Bogʻlangan faylni olib tashlashni istaysizmi?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
-msgid  "This file cannot be opened.\nDo you want to enter a different search path? "
-msgstr "Ushbu faylni ochib boʻlmaydi.\nBoshqa qidirish yoʻlini kiritasizmi? "
+msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
+#, fuzzy
 msgid  "New Theme"
 msgstr "Yangi mavzu"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_BROWSER.String.Text
+#, fuzzy
 msgid  "~Organizer..."
 msgstr "~Organayzer..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
-msgid  "This theme name already exists.\nPlease choose a different one."
-msgstr "Bunday mavzu nomi allaqachon mavjud.\nIltimos boshqa nom tanlang."
+msgid  "This theme name already exists.\\nPlease choose a different one."
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
+#, fuzzy
 msgid  "I~mport..."
 msgstr "~Import qilish"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_CREATETHEME.String.Text
+#, fuzzy
 msgid  "New Theme..."
 msgstr "Yangi mavzu"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DIALOGID.String.Text
+#, fuzzy
 msgid  "Assign ID"
 msgstr "ID'ni belgilash"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_TITLE.String.Text
+#, fuzzy
 msgid  "Title"
 msgstr "Sarlavhasi"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_PATH.String.Text
+#, fuzzy
 msgid  "Path"
 msgstr "Yoʻl"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ICONVIEW.String.Text
+#, fuzzy
 msgid  "Icon View"
 msgstr "Nishonchali koʻrinish"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LISTVIEW.String.Text
+#, fuzzy
 msgid  "Detailed View"
 msgstr "Batafsil koʻrinish"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ACTUALIZE.MenuItem.Text
+#, fuzzy
 msgid  "Update"
 msgstr "Yangilash"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Olib tashlash"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_RENAME.MenuItem.Text
+#, fuzzy
 msgid  "~Rename"
 msgstr "Nomini oʻz~gartirish"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ASSIGN_ID.MenuItem.Text
+#, fuzzy
 msgid  "Assign ~ID"
 msgstr "~ID'ni belgilash"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_PROPERTIES.MenuItem.Text
+#, fuzzy
 msgid  "Propert~ies..."
 msgstr "~Xossalari..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "Qoʻyi~sh"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
 msgstr "~Nusxa olish"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
+#, fuzzy
 msgid  "Link"
 msgstr "Bogʻlama"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_BACKGROUND.MenuItem.Text
+#, fuzzy
 msgid  "Bac~kground"
 msgstr "~Orqa fon"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PREVIEW.MenuItem.Text
+#, fuzzy
 msgid  "~Preview"
 msgstr "~Koʻrib chiqish"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_TITLE.MenuItem.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "~Sarlavha"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Olib tashlash"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_COPYCLIPBOARD.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
 msgstr "~Nusxa olish"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PASTECLIPBOARD.MenuItem.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "Qoʻyi~sh"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_3D.String.Text
+#, fuzzy
 msgid  "3D Effects"
 msgstr "3D effektlar"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ANIMATIONS.String.Text
+#, fuzzy
 msgid  "Animations"
 msgstr "Animatsiya"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BULLETS.String.Text
+#, fuzzy
 msgid  "Bullets"
 msgstr "Belgilar"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_OFFICE.String.Text
+#, fuzzy
 msgid  "Office"
 msgstr "Idora"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLAGS.String.Text
+#, fuzzy
 msgid  "Flags"
 msgstr "Bayroqlar"
 
@@ -6280,42 +6587,52 @@ msgid  "Flow Charts"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EMOTICONS.String.Text
+#, fuzzy
 msgid  "Emoticons"
 msgstr "His-tuygʻular"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PHOTOS.String.Text
+#, fuzzy
 msgid  "Pictures"
 msgstr "Rasmlar"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BACKGROUNDS.String.Text
+#, fuzzy
 msgid  "Backgrounds"
 msgstr "Orqa fonlar"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_HOMEPAGE.String.Text
+#, fuzzy
 msgid  "Homepage"
 msgstr "Veb-sahifa"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_INTERACTION.String.Text
+#, fuzzy
 msgid  "Interaction"
 msgstr "Hamkorlik"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MAPS.String.Text
+#, fuzzy
 msgid  "Maps"
 msgstr "Xarita"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PEOPLE.String.Text
+#, fuzzy
 msgid  "People"
 msgstr "Odamlar"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SURFACES.String.Text
+#, fuzzy
 msgid  "Surfaces"
 msgstr "Yuzasi"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_RULERS.String.Text
+#, fuzzy
 msgid  "Rulers"
 msgstr "Chizgʻichlar"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMPUTERS.String.Text
+#, fuzzy
 msgid  "Computers"
 msgstr "Kompyuterlar"
 
@@ -6340,50 +6657,62 @@ msgid  "Textshapes"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SOUNDS.String.Text
+#, fuzzy
 msgid  "Sounds"
 msgstr "Tovushlar"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SYMBOLS.String.Text
+#, fuzzy
 msgid  "Symbols"
 msgstr "Belgilar"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MYTHEME.String.Text
+#, fuzzy
 msgid  "My Theme"
 msgstr "Mening mavzuim"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ARROWS.String.Text
+#, fuzzy
 msgid  "Arrows"
 msgstr "Koʻrsatkich millari"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BALLOONS.String.Text
+#, fuzzy
 msgid  "Balloons"
 msgstr "Sharlar"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_KEYBOARD.String.Text
+#, fuzzy
 msgid  "Keyboard"
 msgstr "Klaviatura"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TIME.String.Text
+#, fuzzy
 msgid  "Time"
 msgstr "Vaqt"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PRESENTATION.String.Text
+#, fuzzy
 msgid  "Presentation"
 msgstr "Namoyish"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CALENDAR.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "Kalendar"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_NAVIGATION.String.Text
+#, fuzzy
 msgid  "Navigation"
 msgstr "Navigatsiya"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMMUNICATION.String.Text
+#, fuzzy
 msgid  "Communication"
 msgstr "Aloqa"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FINANCES.String.Text
+#, fuzzy
 msgid  "Finances"
 msgstr "Moliya"
 
@@ -6392,14 +6721,17 @@ msgid  "Computers"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CLIMA.String.Text
+#, fuzzy
 msgid  "Climate"
 msgstr "Iqlim"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EDUCATION.String.Text
+#, fuzzy
 msgid  "School & University"
 msgstr "Maktab va Universitet"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TROUBLE.String.Text
+#, fuzzy
 msgid  "Problem Solving"
 msgstr "Muammoni yechuvchi"
 
@@ -6408,54 +6740,65 @@ msgid  "Screen Beans"
 msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_THESAURUS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the thesaurus."
 msgstr "$(ERR) tezaurusni ishga tushirish."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_SPELLING&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the spellcheck."
 msgstr "$(ERR) imloni tekshirishni ishga tushirish."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_HYPHENATION&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the hyphenation."
 msgstr "Boʻgʻin koʻchirishda $(ERR)."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_DICTIONARY&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) creating a dictionary."
 msgstr "$(ERR) lugʻat yaratish."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_BACKGROUND&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) setting background attribute."
 msgstr "$(ERR) orqa fon atributlarini oʻrnatish."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_IMPORT_GRAPHIC&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) loading the graphics."
 msgstr "$(ERR) grafikalarni yuklash."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_THESAURUSNOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "No thesaurus available for the current language.\nPlease check your installation and install the desired language."
-msgstr "Joriy til uchun tezaurus mavjud emas.\nIltimos oʻrnatilganligini tekshiring kerakli tilni oʻrnating."
+msgid  "No thesaurus available for the current language.\\nPlease check your installation and install the desired language."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LANGUAGENOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\nPlease check your installation and, if necessary, install the required language module\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
+msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\\nPlease check your installation and, if necessary, install the required language module\\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
 msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "Spellcheck is not available."
 msgstr "Imloni tekshirish mavjud emas."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_HYPHENNOTEXISTS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "Hyphenation not available."
 msgstr "Boʻgʻin koʻchirish mavjud emas."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTREADABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be read."
 msgstr "$(ARG1) joriy lugʻatni oʻqib boʻlmaydi."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTWRITEABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be created."
 msgstr "$(ARG1) joriy lugʻatni yaratib boʻlmaydi."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_NOTREADABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The graphic $(ARG1) could not be found."
 msgstr "$(ARG1) grafik obyekti topilmadi."
 
@@ -6464,6 +6807,7 @@ msgid  "An unlinked graphic could not be loaded."
 msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_NOLANGUAGE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "A language has not been fixed for the selected term."
 msgstr "Tanlangan ibora uchun til oʻrnatilmagan."
 
@@ -6488,70 +6832,86 @@ msgid  "An error occurred while reading one of the bullets. Not all of the bulle
 msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_MODIFIED_VBASIC_STORAGE & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "All changes to the Basic Code are lost.The original VBA Macro Code is saved instead."
 msgstr "Basic kodidagi barcha oʻzgarishlar yoʻqotildi. Buning oʻrniga asl VBA makro kodi saqlanadi."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_VBASIC_STORAGE_EXIST & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The original VBA Basic Code contained in the document will not be saved."
 msgstr "Hujjatdagi asl VBA Basic kodi saqlanmaydi."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_WRONGPASS & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The password is incorrect. The document cannot be opened."
 msgstr "Maxfiy soʻz xato. Hujjatni ochib boʻlmadi."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The encryption method used in this document is not supported. Only Microsoft Office 97/2000 compatible password encryption is supported."
 msgstr "Ushbu hujjatda qoʻllanilgan shifrlash usuli qoʻllanilmaydi. Faqat Microsoft Office 97/2000 maxfiy soʻzni shifrlash usuli qoʻllaniladi."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_PPOINT & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The loading of password-encrypted Microsoft PowerPoint presentations is not supported."
 msgstr "Maxfiy soʻz bilan shifrlangan Microsoft PowerPoint namoyishlarini yuklash qoʻllanilmaydi."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_EXPORT_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
-msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\nDo you want to save the document without password protection?"
-msgstr "Hujjat Microsoft Office formatida saqlanganda maxfiy soʻz bilan himoya qilib boʻlmaydi.\nHujjatni maxfiy soʻzsiz saqlashni istaysizmi?"
+msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\\nDo you want to save the document without password protection?"
+msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
+#, fuzzy
 msgid  "Scale"
 msgstr "Masshtab"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH.ItemList.item
+#, fuzzy
 msgid  "Brush"
 msgstr "Boʻyoq"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_TABSTOP.ItemList.item
+#, fuzzy
 msgid  "Tab stops"
 msgstr "Tabulyasiyalar"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR.ItemList.item
+#, fuzzy
 msgid  "Character"
 msgstr "Belgi"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONT.ItemList.item
+#, fuzzy
 msgid  "Font"
 msgstr "Shrift"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_POSTURE.ItemList.item
+#, fuzzy
 msgid  "Font posture"
 msgstr "Shriftning joylashishi"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_WEIGHT.ItemList.item
+#, fuzzy
 msgid  "Font weight"
 msgstr "Shriftning qalinligi"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_SHADOWED.ItemList.item
+#, fuzzy
 msgid  "Shadowed"
 msgstr "Soyali"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_WORDLINEMODE.ItemList.item
+#, fuzzy
 msgid  "Individual words"
 msgstr "Alohida soʻzlar"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CONTOUR.ItemList.item
+#, fuzzy
 msgid  "Outline"
 msgstr "Kontur"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_STRIKEOUT.ItemList.item
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "Ustidan chizish"
 
@@ -6560,38 +6920,47 @@ msgid  "Underline"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONTHEIGHT.ItemList.item
+#, fuzzy
 msgid  "Font size"
 msgstr "Shriftning oʻlchami"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_PROPSIZE.ItemList.item
+#, fuzzy
 msgid  "Rel. Font size"
 msgstr "Shriftning haqiqiy oʻlchami"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
+#, fuzzy
 msgid  "Font color"
 msgstr "Shriftning rangi"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_KERNING.ItemList.item
+#, fuzzy
 msgid  "Kerning"
 msgstr "Belgilar orasidagi oraliq"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CASEMAP.ItemList.item
+#, fuzzy
 msgid  "Effects"
 msgstr "Effektlar"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_LANGUAGE.ItemList.item
+#, fuzzy
 msgid  "Language"
 msgstr "Til"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ESCAPEMENT.ItemList.item
+#, fuzzy
 msgid  "Position"
 msgstr "Joylashishi"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_AUTOKERN.ItemList.item
+#, fuzzy
 msgid  "Blinking"
 msgstr "Oʻchib-yonadigan"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CHARSETCOLOR.ItemList.item
+#, fuzzy
 msgid  "Character set color"
 msgstr "Belgilar rangi"
 
@@ -6600,66 +6969,82 @@ msgid  "Overline"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA.ItemList.item
+#, fuzzy
 msgid  "Paragraph"
 msgstr "Paragraf"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ADJUST.ItemList.item
+#, fuzzy
 msgid  "Alignment"
 msgstr "Tekislash"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LINESPACE.ItemList.item
+#, fuzzy
 msgid  "Line spacing"
 msgstr "Satrlar orasidagi masofa"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_PAGEBREAK.ItemList.item
+#, fuzzy
 msgid  "Page Break"
 msgstr "Sahifa ajratuvchisi"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_HYPHENZONE.ItemList.item
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "Boʻgʻin koʻchirish"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SPLIT.ItemList.item
+#, fuzzy
 msgid  "Do not split paragraph"
 msgstr "Pragraf uzilmasin"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ORPHANS.ItemList.item
+#, fuzzy
 msgid  "Orphans"
 msgstr "Satr boshidagi yolgʻiz qolgan qator"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_WIDOWS.ItemList.item
+#, fuzzy
 msgid  "Widows"
 msgstr "Satr oxiridagi yolgʻiz qolgan qator"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ULSPACE.ItemList.item
+#, fuzzy
 msgid  "Spacing"
 msgstr "Oraliq"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LRSPACE.ItemList.item
+#, fuzzy
 msgid  "Indent"
 msgstr "Chekinish"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_LRSPACE.ItemList.item
+#, fuzzy
 msgid  "Indent"
 msgstr "Chekinish"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ULSPACE.ItemList.item
+#, fuzzy
 msgid  "Spacing"
 msgstr "Oraliq"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PAGE.ItemList.item
+#, fuzzy
 msgid  "Page"
 msgstr "Sahifa"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_MODEL.ItemList.item
+#, fuzzy
 msgid  "Page Style"
 msgstr "Sahifaning uslubi"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_KEEP.ItemList.item
+#, fuzzy
 msgid  "Keep with next paragraph"
 msgstr "Keyingi paragrafdan uzilmasin"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_FLASH.ItemList.item
+#, fuzzy
 msgid  "Blinking"
 msgstr "Oʻchib-yonadigan"
 
@@ -6668,58 +7053,72 @@ msgid  "Register-true"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH_CHAR.ItemList.item
+#, fuzzy
 msgid  "Character background"
 msgstr "Belgi foni"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONT.ItemList.item
+#, fuzzy
 msgid  "Asian font"
 msgstr "Osiyocha shrift"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONTHEIGHT.ItemList.item
+#, fuzzy
 msgid  "Size of Asian font"
 msgstr "Osiyocha shriftning oʻlchami"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_LANGUAGE.ItemList.item
+#, fuzzy
 msgid  "Language of Asian font"
 msgstr "Osiyocha shrift tili"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_POSTURE.ItemList.item
+#, fuzzy
 msgid  "Posture of Asian font"
 msgstr "Osiyo shriftlarining holati"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_WEIGHT.ItemList.item
+#, fuzzy
 msgid  "Weight of Asian font"
 msgstr "Osiyo shriftlarini qalinligi"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_FONT.ItemList.item
+#, fuzzy
 msgid  "CTL"
 msgstr "CTL"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_FONTHEIGHT.ItemList.item
+#, fuzzy
 msgid  "Size of complex scripts"
 msgstr "Kompleks skriplar oʻlchami"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_LANGUAGE.ItemList.item
+#, fuzzy
 msgid  "Language of complex scripts"
 msgstr "Kompleks skriptlar tili"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_POSTURE.ItemList.item
+#, fuzzy
 msgid  "Posture of complex scripts"
 msgstr "Kompleks skripti holati"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_WEIGHT.ItemList.item
+#, fuzzy
 msgid  "Weight of complex scripts"
 msgstr "kompleks skript ogʻirligi"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_TWO_LINES.ItemList.item
+#, fuzzy
 msgid  "Double-lined"
 msgstr "Juft chiziqli"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_EMPHASISMARK.ItemList.item
+#, fuzzy
 msgid  "Emphasis mark"
 msgstr "Urgʻu belgisi"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SCRIPTSPACE.ItemList.item
+#, fuzzy
 msgid  "Text spacing"
 msgstr "Matn oraligʻi"
 
@@ -6728,90 +7127,112 @@ msgid  "Hanging punctuation"
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_FORBIDDEN_RULES.ItemList.item
+#, fuzzy
 msgid  "Forbidden characters"
 msgstr "Taʼqiqlangan belgilar"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ROTATED.ItemList.item
+#, fuzzy
 msgid  "Rotation"
 msgstr "Aylantirish"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_SCALEWIDTH.ItemList.item
+#, fuzzy
 msgid  "Scale"
 msgstr "Masshtab"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_RELIEF.ItemList.item
+#, fuzzy
 msgid  "Relief"
 msgstr "Boʻrtma"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_PARA_VERTALIGN.ItemList.item
+#, fuzzy
 msgid  "Vertical text alignment"
 msgstr "Matnni vertikal tekislash"
 
 #: source/items/svxitems.src#RID_SVXITEMS_EXTRAS_CHARCOLOR.String.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "Shriftning rangi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND.String.Text
+#, fuzzy
 msgid  "Search"
 msgstr "Qidirish"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND_ALL.String.Text
+#, fuzzy
 msgid  "Find All"
 msgstr "Hamma~sini qidirish"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE.String.Text
+#, fuzzy
 msgid  "Replace"
 msgstr "Almashtirish"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE_ALL.String.Text
+#, fuzzy
 msgid  "Replace all"
 msgstr "Hammasini almashtirish"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_CHAR.String.Text
+#, fuzzy
 msgid  "Character Style"
 msgstr "Belgi uslubi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PARA.String.Text
+#, fuzzy
 msgid  "Paragraph Style"
 msgstr "Paragraf uslubi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_FRAME.String.Text
+#, fuzzy
 msgid  "Frame Style"
 msgstr "Freym uslubi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PAGE.String.Text
+#, fuzzy
 msgid  "Page Style"
 msgstr "Sahifaning uslubi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_FORMULA.String.Text
+#, fuzzy
 msgid  "Formula"
 msgstr "Formula"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_VALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "Qiymati"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_NOTE.String.Text
+#, fuzzy
 msgid  "Note"
 msgstr "Izoh"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_NULL.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "Yoʻq"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_SOLID.String.Text
+#, fuzzy
 msgid  "Solid"
 msgstr "Yaxlit"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_HORZ.String.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "Gorizontal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_VERT.String.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "Vertikal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_CROSS.String.Text
+#, fuzzy
 msgid  "Grid"
 msgstr "Toʻr"
 
@@ -6820,66 +7241,82 @@ msgid  "Diamond"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_UPDIAG.String.Text
+#, fuzzy
 msgid  "Diagonal up"
 msgstr "Diagonal yuqoriga"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DOWNDIAG.String.Text
+#, fuzzy
 msgid  "Diagonal down"
 msgstr "Diagonal pastga"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_BITMAP.String.Text
+#, fuzzy
 msgid  "Image"
 msgstr "Rasm"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_STANDARD.String.Text
+#, fuzzy
 msgid  "Horizontal alignment default"
 msgstr "Gorizontal tekislash andozasi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_LEFT.String.Text
+#, fuzzy
 msgid  "Align left"
 msgstr "Chap tomonga tekislash"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_CENTER.String.Text
+#, fuzzy
 msgid  "Centered horizontally"
 msgstr "Markazda gorizontal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_RIGHT.String.Text
+#, fuzzy
 msgid  "Align right"
 msgstr "Oʻng tomonga tekislash"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_BLOCK.String.Text
+#, fuzzy
 msgid  "Justify"
 msgstr "Eniga tekislash"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_REPEAT.String.Text
+#, fuzzy
 msgid  "Repeat alignment"
 msgstr "Tekislashni takrorlash"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_STANDARD.String.Text
+#, fuzzy
 msgid  "Vertical alignment default"
 msgstr "Vertikal tekislash andozasi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_TOP.String.Text
+#, fuzzy
 msgid  "Align to top"
 msgstr "Yuqoriga tekislash"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_CENTER.String.Text
+#, fuzzy
 msgid  "Centered vertically"
 msgstr "Markazda vertikal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_BOTTOM.String.Text
+#, fuzzy
 msgid  "Align to bottom"
 msgstr "Pastga tekislash"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STANDARD.String.Text
+#, fuzzy
 msgid  "Default orientation"
 msgstr "Andoza moʻljal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_TOPBOTTOM.String.Text
+#, fuzzy
 msgid  "From top to bottom"
 msgstr "Yuqoridan pastga"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_BOTTOMTOP.String.Text
+#, fuzzy
 msgid  "Bottom to Top"
 msgstr "Pastdan yuqoriga"
 
@@ -6888,22 +7325,27 @@ msgid  "Stacked"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_TRUE.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Jadval"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_FALSE.String.Text
+#, fuzzy
 msgid  "Not Table"
 msgstr "Jadval emas"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_TRUE.String.Text
+#, fuzzy
 msgid  "Spacing enabled"
 msgstr "Oraliq yoqilgan"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_FALSE.String.Text
+#, fuzzy
 msgid  "Spacing disabled"
 msgstr "Oraliq oʻchirilgan"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_TRUE.String.Text
+#, fuzzy
 msgid  "Keep spacing interval"
 msgstr "Oraliq intervalni saqlash"
 
@@ -6912,98 +7354,122 @@ msgid  "Allowed to fall short of spacing interval"
 msgstr ""
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_LEFT.String.Text
+#, fuzzy
 msgid  "Left margin: "
 msgstr "Chap tomondagi boʻsh maydon: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_TOP.String.Text
+#, fuzzy
 msgid  "Top margin: "
 msgstr "Yuqori tomondagi boʻsh maydon: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_RIGHT.String.Text
+#, fuzzy
 msgid  "Right margin: "
 msgstr "Oʻng tomondagi boʻsh maydon: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_BOTTOM.String.Text
+#, fuzzy
 msgid  "Bottom margin: "
 msgstr "Pastki boʻsh maydon:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_COMPLETE.String.Text
+#, fuzzy
 msgid  "Page Description: "
 msgstr "Sahifaning taʼrifi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_UPPER.String.Text
+#, fuzzy
 msgid  "Capitals"
 msgstr "Bosh harflar"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_LOWER.String.Text
+#, fuzzy
 msgid  "Lowercase"
 msgstr "Kichik harf"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_UPPER.String.Text
+#, fuzzy
 msgid  "Uppercase Roman"
 msgstr "Katta rim raqamlari"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_LOWER.String.Text
+#, fuzzy
 msgid  "Lowercase Roman"
 msgstr "Kichik rim raqamlari"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ARABIC.String.Text
+#, fuzzy
 msgid  "Arabic"
 msgstr "Arabcha"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_NONE.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "Yoʻq"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_TRUE.String.Text
+#, fuzzy
 msgid  "Landscape"
 msgstr "Eniga"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_FALSE.String.Text
+#, fuzzy
 msgid  "Portrait"
 msgstr "Uzunasiga"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_LEFT.String.Text
+#, fuzzy
 msgid  "Left"
 msgstr "Chap"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_RIGHT.String.Text
+#, fuzzy
 msgid  "Right"
 msgstr "O'ng"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_ALL.String.Text
+#, fuzzy
 msgid  "All"
 msgstr "Hammasi"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_MIRROR.String.Text
+#, fuzzy
 msgid  "Mirrored"
 msgstr "Akslangan"
 
 #: source/items/svxitems.src#RID_SVXITEMS_AUTHOR_COMPLETE.String.Text
+#, fuzzy
 msgid  "Author: "
 msgstr "Muallif:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_DATE_COMPLETE.String.Text
+#, fuzzy
 msgid  "Date: "
 msgstr "Sana: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_TEXT_COMPLETE.String.Text
+#, fuzzy
 msgid  "Text: "
 msgstr "Matn:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BACKGROUND_COLOR.String.Text
+#, fuzzy
 msgid  "Background color: "
 msgstr "Orqa fon rangi:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PATTERN_COLOR.String.Text
+#, fuzzy
 msgid  "Pattern color: "
 msgstr "Namunaning rangi:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSH_CHAR.String.Text
+#, fuzzy
 msgid  "Character background"
 msgstr "Belgi foni"
 
 #: source/src/app.src#RID_ERRBOX_MODULENOTINSTALLED.ErrorBox.Message
+#, fuzzy
 msgid  "The action could not be executed. The %PRODUCTNAME program module needed for this action is currently not installed."
 msgstr "Amalni bajarib boʻlmaydi. Ushbu amal uchun kerak boʻladigan %PRODUCTNAME dasturi moduli oʻrnatilmagan."
 
@@ -7176,7 +7642,7 @@ msgid  "The specified device is invalid."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
-msgid  "The object cannot be accessed\ndue to insufficient user rights."
+msgid  "The object cannot be accessed\\ndue to insufficient user rights."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
@@ -7188,7 +7654,7 @@ msgid  "No more space on device."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ISWILDCARD.String.Text
-msgid  "This operation cannot be run on\nfiles containing wildcards."
+msgid  "This operation cannot be run on\\nfiles containing wildcards."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSUPPORTED.String.Text
@@ -7272,7 +7738,7 @@ msgid  "The file cannot be used as template."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTREADDOCINFO.String.Text
-msgid  "Document information could not be read from the file because\nthe document information format is unknown or because document information does not\nexist."
+msgid  "Document information could not be read from the file because\\nthe document information format is unknown or because document information does not\\nexist."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_ALREADYOPEN.String.Text
@@ -7304,11 +7770,11 @@ msgid  "Could not establish Internet connection to $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_READ.String.Text
-msgid  "Error reading data from the Internet.\nServer error message: $(ARG1)."
+msgid  "Error reading data from the Internet.\\nServer error message: $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_WRITE.String.Text
-msgid  "Error transferring data to the Internet.\nServer error message: $(ARG1)."
+msgid  "Error transferring data to the Internet.\\nServer error message: $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_GENERAL.String.Text
@@ -7420,7 +7886,7 @@ msgid  "A subscription folder is required to install a Channel."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSTORABLEINBINARYFORMAT.String.Text
-msgid  "This document contains attributes that cannot be saved in the selected format.\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
+msgid  "This document contains attributes that cannot be saved in the selected format.\\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_TARGETFILECORRUPTED.String.Text
@@ -7436,19 +7902,19 @@ msgid  "Could not create backup copy."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_MACROS_SUPPORT_DISABLED.String.Text
-msgid  "An attempt was made to execute a macro.\nFor security reasons, macro support is disabled."
+msgid  "An attempt was made to execute a macro.\\nFor security reasons, macro support is disabled."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_DOCUMENT_MACRO_DISABLED.String.Text
-msgid  "This document contains macros.\n\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\n\nTherefore, some functionality may not be available."
+msgid  "This document contains macros.\\n\\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\\n\\nTherefore, some functionality may not be available."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_BROKENSIGNATURE.String.Text
-msgid  "The digitally signed document content and/or macros do not match the current document signature.\n\nThis could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
+msgid  "The digitally signed document content and/or macros do not match the current document signature.\\n\\nThis could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_INCOMPLETE_ENCRYPTION.String.Text
-msgid  "The encrypted document contains unexpected non-encrypted streams.\n\nThis could be the result of document manipulation.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
+msgid  "The encrypted document contains unexpected non-encrypted streams.\\n\\nThis could be the result of document manipulation.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_INVALIDLENGTH.String.Text
@@ -7476,46 +7942,56 @@ msgid  "Function not possible: write protected."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_SHARED_NOPASSWORDCHANGE.String.Text
-msgid  "The password of a shared spreadsheet cannot be set or changed.\nDeactivate sharing mode first."
+msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactivate sharing mode first."
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
+#, fuzzy
 msgid  "INSRT"
 msgstr "QOʻYISH"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_OVERWRITE_TEXT.String.Text
+#, fuzzy
 msgid  "OVER"
 msgstr "ALMASH"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_STD.String.Text
+#, fuzzy
 msgid  "STD"
 msgstr "AND"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ER.String.Text
+#, fuzzy
 msgid  "EXT"
 msgstr "KENG"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ERG.String.Text
+#, fuzzy
 msgid  "ADD"
 msgstr "QOʻSHISH"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_BLK.String.Text
+#, fuzzy
 msgid  "BLK"
 msgstr "BLK"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature is OK."
 msgstr "Elektron imzo: Hujjatning imzosi toʻgʻri."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK_NO_VERIFY.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature is OK, but the certificates could not be validated."
 msgstr "Elektron imzo: Hujjatning imzosi toʻgʻri, lekin sertifikatni tekshirib boʻlmadi."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_NOT_OK.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature does not match the document content. We strongly recommend you to do not trust this document."
 msgstr "Elektron imzo: Hujjatning imzosi uning taribiga mos kelmadi. Ushbu hujjatga ishonmasligingizni tavsiya etamiz."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_NO_SIG.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document is not signed."
 msgstr "Elektron imzo: Hujjat imzolanmagan."
 
@@ -7524,258 +8000,321 @@ msgid  "Digital Signature: The document signature and the certificate are OK, bu
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_OPTIMAL.MenuItem.Text
+#, fuzzy
 msgid  "Optimal"
 msgstr "Optimal"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_PAGE_WIDTH.MenuItem.Text
+#, fuzzy
 msgid  "Page Width"
 msgstr "Sahifaning eni"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_WHOLE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "Entire Page"
 msgstr "Butun sahifa"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_AVG.MenuItem.Text
+#, fuzzy
 msgid  "Average"
 msgstr "Oʻrtacha"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT2.MenuItem.Text
+#, fuzzy
 msgid  "CountA"
 msgstr "ASanash"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT.MenuItem.Text
+#, fuzzy
 msgid  "Count"
 msgstr "Sanash"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MAX.MenuItem.Text
+#, fuzzy
 msgid  "Maximum"
 msgstr "Maksimum"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MIN.MenuItem.Text
+#, fuzzy
 msgid  "Minimum"
 msgstr "Minimum"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_SUM.MenuItem.Text
+#, fuzzy
 msgid  "Sum"
 msgstr "Yigʻindi"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_NONE.MenuItem.Text
+#, fuzzy
 msgid  "None"
 msgstr "Yoʻq"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_XMLSECSTATBAR.XMLSEC_CALL.MenuItem.Text
+#, fuzzy
 msgid  "Digital Signatures..."
 msgstr "Elektron imzolar..."
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNONE.String.Text
+#, fuzzy
 msgid  "draw object"
 msgstr "chizma obyekt"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
 msgid  "draw objects"
-msgstr "Grafik obyektlar"
+msgstr "grafik obyektlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
+#, fuzzy
 msgid  "group object"
 msgstr "obyektni guruhlash"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUP.String.Text
+#, fuzzy
 msgid  "group objects"
 msgstr "obyektlarni guruhlash"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUPEMPTY.String.Text
+#, fuzzy
 msgid  "blank group object"
 msgstr "boʻsh guruh obxekti"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUPEMPTY.String.Text
+#, fuzzy
 msgid  "Blank group objects"
 msgstr "Boʻsh guruh obxekti"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE.String.Text
+#, fuzzy
 msgid  "Line"
 msgstr "Chiziq"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Hori.String.Text
+#, fuzzy
 msgid  "horizontal line"
 msgstr "gorizontal chiziq"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Vert.String.Text
+#, fuzzy
 msgid  "Vertical line"
 msgstr "Vertikal chiziq"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Diag.String.Text
+#, fuzzy
 msgid  "diagonal line"
 msgstr "diagonal chiziq"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLINE.String.Text
+#, fuzzy
 msgid  "Lines"
 msgstr "Chiziqlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECT.String.Text
+#, fuzzy
 msgid  "Rectangle"
 msgstr "Toʻrtburchak"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECT.String.Text
+#, fuzzy
 msgid  "Rectangles"
 msgstr "Toʻgʻri burchaklar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUAD.String.Text
+#, fuzzy
 msgid  "Square"
 msgstr "Kvadrat"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUAD.String.Text
+#, fuzzy
 msgid  "Squares"
 msgstr "Kvadratlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARAL.String.Text
+#, fuzzy
 msgid  "Parallelogram"
 msgstr "Parallelogram"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARAL.String.Text
+#, fuzzy
 msgid  "Parallelograms"
 msgstr "Parallelogramlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTE.String.Text
+#, fuzzy
 msgid  "Rhombus"
 msgstr "Romb"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTE.String.Text
+#, fuzzy
 msgid  "Rhombuses"
 msgstr "Romblar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECTRND.String.Text
+#, fuzzy
 msgid  "Rounded rectangle"
 msgstr "Doirasimon toʻgʻri burchak"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECTRND.String.Text
+#, fuzzy
 msgid  "Rounded Rectangles"
 msgstr "Doirasimon toʻgʻri burchaklar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUADRND.String.Text
+#, fuzzy
 msgid  "rounded square"
 msgstr "Doirasimon kvadrat"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUADRND.String.Text
+#, fuzzy
 msgid  "Rounded Squares"
 msgstr "Doirasimon kvadratlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARALRND.String.Text
+#, fuzzy
 msgid  "Rounded Parallelogram"
 msgstr "Doirasimon parallelogram"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARALRND.String.Text
+#, fuzzy
 msgid  "Rounded parallelograms"
 msgstr "Doirasimon parallelogramlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTERND.String.Text
+#, fuzzy
 msgid  "rounded rhombus"
 msgstr "doirasimon romb"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTERND.String.Text
+#, fuzzy
 msgid  "Rounded rhombuses"
 msgstr "Doirasimon romblar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRC.String.Text
+#, fuzzy
 msgid  "Circle"
 msgstr "Aylana"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRC.String.Text
+#, fuzzy
 msgid  "Circles"
 msgstr "Aylanalar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECT.String.Text
+#, fuzzy
 msgid  "Circle sector"
 msgstr "Aylana sektori"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECT.String.Text
+#, fuzzy
 msgid  "Circle sectors"
 msgstr "Aylana sektrlari"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARC.String.Text
+#, fuzzy
 msgid  "Arc"
 msgstr "Yoy"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARC.String.Text
+#, fuzzy
 msgid  "Arcs"
 msgstr "Yoylar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
+#, fuzzy
 msgid  "Circle segment"
 msgstr "Aylana segmenti"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
+#, fuzzy
 msgid  "Circle segments"
 msgstr "Aylana segmentlari"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRCE.String.Text
+#, fuzzy
 msgid  "Ellipse"
 msgstr "Ellips"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRCE.String.Text
+#, fuzzy
 msgid  "Ellipses"
 msgstr "Ellipslar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECTE.String.Text
+#, fuzzy
 msgid  "Ellipse Pie"
 msgstr "Ellips sektori"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECTE.String.Text
+#, fuzzy
 msgid  "Ellipse Pies"
 msgstr "Ellips sektorlari"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARCE.String.Text
+#, fuzzy
 msgid  "Elliptical arc"
 msgstr "Ellipssimon yoy"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARCE.String.Text
+#, fuzzy
 msgid  "Elliptical arcs"
 msgstr "Ellipssimon yoylar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUTE.String.Text
+#, fuzzy
 msgid  "Ellipse Segment"
 msgstr "Ellips segsenti"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUTE.String.Text
+#, fuzzy
 msgid  "Ellipse Segments"
 msgstr "Ellips segsentlari"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY.String.Text
+#, fuzzy
 msgid  "Polygon"
 msgstr "Koʻpburchak"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY_PntAnz.String.Text
+#, fuzzy
 msgid  "Polygon %2 corners"
 msgstr "%2 burchakli koʻpburchak"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPOLY.String.Text
+#, fuzzy
 msgid  "Polygons"
 msgstr "Koʻpburchaklar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN.String.Text
+#, fuzzy
 msgid  "Polyline"
 msgstr "Siniq chiziq"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN_PntAnz.String.Text
+#, fuzzy
 msgid  "Polyline with %2 corners"
 msgstr "%2 burchakli siniq chiziq"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPLIN.String.Text
+#, fuzzy
 msgid  "Polylines"
 msgstr "Siniq chiziqlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHLINE.String.Text
+#, fuzzy
 msgid  "Bézier curve"
 msgstr "Bézier egri chizig'i"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHLINE.String.Text
+#, fuzzy
 msgid  "Bézier curves"
 msgstr "Bézier egri chiziqlari"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHFILL.String.Text
+#, fuzzy
 msgid  "Bézier curve"
 msgstr "Bézier egri chizig'i"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHFILL.String.Text
+#, fuzzy
 msgid  "Bézier curves"
 msgstr "Bézier egri chiziqlari"
 
@@ -7796,50 +8335,62 @@ msgid  "Freeform Lines"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBLINE.String.Text
+#, fuzzy
 msgid  "Curve"
 msgstr "Egri chiziq"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBLINE.String.Text
+#, fuzzy
 msgid  "Curve objects"
 msgstr "Egri obyektlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBFILL.String.Text
+#, fuzzy
 msgid  "Curve"
 msgstr "Egri chiziq"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBFILL.String.Text
+#, fuzzy
 msgid  "Curve objects"
 msgstr "Egri obyektlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNATSPLN.String.Text
+#, fuzzy
 msgid  "Natural Spline"
 msgstr "Tabiiy splayn"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNATSPLN.String.Text
+#, fuzzy
 msgid  "Natural Splines"
 msgstr "Tabiiy splaynlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPERSPLN.String.Text
+#, fuzzy
 msgid  "Periodic Spline"
 msgstr "Davriy splayn"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPERSPLN.String.Text
+#, fuzzy
 msgid  "Periodic Splines"
 msgstr "Davriy splaynlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXT.String.Text
+#, fuzzy
 msgid  "Text Frame"
 msgstr "Matn freymi"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXT.String.Text
+#, fuzzy
 msgid  "Text Frame"
 msgstr "Matn freymi"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXTLNK.String.Text
+#, fuzzy
 msgid  "Linked text frame"
 msgstr "Bogʻlangan matn freymi"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXTLNK.String.Text
+#, fuzzy
 msgid  "Linked text frames"
 msgstr "Bogʻlangan matn freymlari"
 
@@ -7860,122 +8411,152 @@ msgid  "Fit-to-size text objects"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTITLETEXT.String.Text
+#, fuzzy
 msgid  "Title text"
 msgstr "Sarlavha matni"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTITLETEXT.String.Text
+#, fuzzy
 msgid  "Title texts"
 msgstr "Sarlavha matnlari"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOUTLINETEXT.String.Text
+#, fuzzy
 msgid  "Outline Text"
 msgstr "Tuzilma matni"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOUTLINETEXT.String.Text
+#, fuzzy
 msgid  "Outline Texts"
 msgstr "Tuzilma matnlari"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAF.String.Text
+#, fuzzy
 msgid  "graphic"
 msgstr "grafik obyekt"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAF.String.Text
+#, fuzzy
 msgid  "graphics"
 msgstr "grafik obyektlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFLNK.String.Text
+#, fuzzy
 msgid  "Linked graphic"
 msgstr "Bogʻlangan grafika"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFLNK.String.Text
+#, fuzzy
 msgid  "Linked graphics"
 msgstr "Bogʻlangan grafikalar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONE.String.Text
+#, fuzzy
 msgid  "Blank graphic object"
 msgstr "Boʻsh grafik obyekt"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONE.String.Text
+#, fuzzy
 msgid  "Blank graphic objects"
 msgstr "Boʻsh grafik obyektlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONELNK.String.Text
+#, fuzzy
 msgid  "Blank linked graphic"
 msgstr "Boʻsh bogʻlangan grafik obyekt"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONELNK.String.Text
+#, fuzzy
 msgid  "Blank linked graphics"
 msgstr "Boʻsh bogʻlangan grafik obyektlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTF.String.Text
+#, fuzzy
 msgid  "Metafile"
 msgstr "Meta-fayl"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTF.String.Text
+#, fuzzy
 msgid  "Metafiles"
 msgstr "Meta-fayllar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTFLNK.String.Text
+#, fuzzy
 msgid  "Linked Metafile"
 msgstr "Bogʻlangan meta-fayl"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTFLNK.String.Text
+#, fuzzy
 msgid  "Linked Metafiles"
 msgstr "Bogʻlangan meta-fayllar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMP.String.Text
+#, fuzzy
 msgid  "Bitmap"
 msgstr "Bit kartasi"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANS.String.Text
+#, fuzzy
 msgid  "Bitmap with transparency"
 msgstr "Shaffof bit kartasi"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPLNK.String.Text
+#, fuzzy
 msgid  "Linked Bitmap"
 msgstr "Bogʻlangan bit kartasi"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANSLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmap with transparency"
 msgstr "Shaffof bogʻlangan bit kartasi"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMP.String.Text
+#, fuzzy
 msgid  "Bitmaps"
 msgstr "Bit kartalari"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANS.String.Text
+#, fuzzy
 msgid  "Bitmaps with transparency"
 msgstr "Shaffof bit kartalari"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmaps"
 msgstr "Bogʻlangan bit kartalari"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANSLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmaps with transparency"
 msgstr "Shaffof bogʻlangan bit kartalari"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCUSTOMSHAPE.String.Text
+#, fuzzy
 msgid  "Shape"
 msgstr "Shakl"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCUSTOMSHAPE.String.Text
+#, fuzzy
 msgid  "Shapes"
 msgstr "Shakllar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMAC.String.Text
+#, fuzzy
 msgid  "Mac graphic"
 msgstr "Mac grafik obyekti"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMAC.String.Text
+#, fuzzy
 msgid  "Mac graphics"
 msgstr "Mac grafik obyektlari"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMACLNK.String.Text
+#, fuzzy
 msgid  "Linked Mac graphic"
 msgstr "Bogʻlangan Mac grafik obyekti"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMACLNK.String.Text
+#, fuzzy
 msgid  "Linked Mac graphics"
 msgstr "Bogʻlangan Mac grafik obyektlari"
 
@@ -7996,10 +8577,12 @@ msgid  "Embedded objects (OLE)"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulUno.String.Text
+#, fuzzy
 msgid  "Control"
 msgstr "Boshqaruv elementi"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralUno.String.Text
+#, fuzzy
 msgid  "Controls"
 msgstr "Boshqaruv elementlari"
 
@@ -8012,26 +8595,32 @@ msgid  "Linked embedded objects (OLE)"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjOLE2NamePrefix.String.Text
+#, fuzzy
 msgid  "Object"
 msgstr "Obyekt"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFrame.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "Freym"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFrame.String.Text
+#, fuzzy
 msgid  "Frames"
 msgstr "Freymlar"
 
 #: source/svdraw/svdstr.src#STR_ObjFrameNamePrefix.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "Freym"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulEDGE.String.Text
+#, fuzzy
 msgid  "Object Connectors"
 msgstr "Obyekt bog'lovchlari"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralEDGE.String.Text
+#, fuzzy
 msgid  "Object Connectors"
 msgstr "Obyekt bog'lovchlari"
 
@@ -8044,86 +8633,107 @@ msgid  "Callouts"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPAGE.String.Text
+#, fuzzy
 msgid  "Preview object"
 msgstr "Obyektni koʻrib chiqish"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPAGE.String.Text
+#, fuzzy
 msgid  "Preview objects"
 msgstr "Obyektlarni koʻrib chiqish"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEASURE.String.Text
+#, fuzzy
 msgid  "Dimension line"
 msgstr "Oʻlchamli chiziq"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEASURE.String.Text
+#, fuzzy
 msgid  "Dimensioning objects"
 msgstr "Oʻlchamli obyektlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePlural.String.Text
+#, fuzzy
 msgid  "draw objects"
 msgstr "grafik obyektlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameNoObj.String.Text
+#, fuzzy
 msgid  "No draw object"
 msgstr "Grafik obyekt yoʻq"
 
 #: source/svdraw/svdstr.src#STR_ObjNameAnd.String.Text
+#, fuzzy
 msgid  "and"
 msgstr "va"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPlural.String.Text
+#, fuzzy
 msgid  "draw object(s)"
 msgstr "grafik obyekt(lar)"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCube3d.String.Text
+#, fuzzy
 msgid  "3D cube"
 msgstr "3D kub"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCube3d.String.Text
+#, fuzzy
 msgid  "3D cubes"
 msgstr "3D kublar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulExtrude3d.String.Text
+#, fuzzy
 msgid  "Extrusion object"
 msgstr "Ekstruziya obyekti"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralExtrude3d.String.Text
+#, fuzzy
 msgid  "Extrusion objects"
 msgstr "Ekstruziya obyektlari"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLabel3d.String.Text
+#, fuzzy
 msgid  "3D text"
 msgstr "3D matn"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLabel3d.String.Text
+#, fuzzy
 msgid  "3D texts"
 msgstr "3D matnlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLathe3d.String.Text
+#, fuzzy
 msgid  "rotation object"
 msgstr "aylanish obyekti"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLathe3d.String.Text
+#, fuzzy
 msgid  "rotation objects"
 msgstr "aylanish obyektlari"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulObj3d.String.Text
+#, fuzzy
 msgid  "3D object"
 msgstr "3D obyekt"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralObj3d.String.Text
+#, fuzzy
 msgid  "3D objects"
 msgstr "3D obyektlar"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPoly3d.String.Text
+#, fuzzy
 msgid  "3D polygons"
 msgstr "3D koʻpburchaklar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulScene3d.String.Text
+#, fuzzy
 msgid  "3D scene"
 msgstr "3D sahna"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralScene3d.String.Text
+#, fuzzy
 msgid  "3D scenes"
 msgstr "3D sahnalar"
 
@@ -8136,30 +8746,37 @@ msgid  "spheres"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_EditWithCopy.String.Text
+#, fuzzy
 msgid  "with copy"
 msgstr "nusxa olish"
 
 #: source/svdraw/svdstr.src#STR_EditPosSize.String.Text
+#, fuzzy
 msgid  "Set position and size for %1"
 msgstr "%1 manzili va o'lchamini o'rnatish"
 
 #: source/svdraw/svdstr.src#STR_EditDelete.String.Text
+#, fuzzy
 msgid  "Delete %1"
 msgstr "%1 'ni olib tashlash"
 
 #: source/svdraw/svdstr.src#STR_EditMovToTop.String.Text
+#, fuzzy
 msgid  "Move %1 forward"
 msgstr "%1 ni oldinga koʻchirish"
 
 #: source/svdraw/svdstr.src#STR_EditMovToBtm.String.Text
+#, fuzzy
 msgid  "Move %1 further back"
 msgstr "%1 bitta orqaga koʻchirish"
 
 #: source/svdraw/svdstr.src#STR_EditPutToTop.String.Text
+#, fuzzy
 msgid  "Move %1 to front"
 msgstr "%1 'ni oldinga ko'chirish"
 
 #: source/svdraw/svdstr.src#STR_EditPutToBtm.String.Text
+#, fuzzy
 msgid  "Move %1 to back"
 msgstr "%1 'ni orqaga ko'chirish"
 
@@ -8168,26 +8785,32 @@ msgid  "Reverse order of %1"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "%1 ni koʻchirish"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
 msgstr "%1 o'lchamini o'zgartirish"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
+#, fuzzy
 msgid  "Rotate %1"
 msgstr "%1 'ni burish"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
+#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "%1 'ni gorizontal akslantirish"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
+#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "%1 'ni vertikal akslantirish"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorDiag.String.Text
+#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "%1 'ni diogonal akslantirish"
 
@@ -8200,10 +8823,12 @@ msgid  "Distort %1 (slant)"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
+#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "%1 'ni doira ichiga joylashtirish"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
+#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "%1 'ni doira ichida egish"
 
@@ -8212,22 +8837,27 @@ msgid  "Distort %1"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_EditRipUp.String.Text
+#, fuzzy
 msgid  "Undo %1"
 msgstr "%1 'ni bekor qilish"
 
 #: source/svdraw/svdstr.src#STR_EditSetPointsSmooth.String.Text
+#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "%1 'ning bézier xossalarini o'zgartirish"
 
 #: source/svdraw/svdstr.src#STR_EditSetSegmentsKind.String.Text
+#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "%1 'ning bézier xossalarini o'zgartirish"
 
 #: source/svdraw/svdstr.src#STR_EditShut.String.Text
+#, fuzzy
 msgid  "Close %1"
 msgstr "%1 'ni yopish"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueEscDir.String.Text
+#, fuzzy
 msgid  "Set exit direction for %1"
 msgstr "%1 uchun chiqish yo'nalishini o'rnatish"
 
@@ -8240,6 +8870,7 @@ msgid  "Set reference point for %1"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_EditGroup.String.Text
+#, fuzzy
 msgid  "Group %1"
 msgstr "%1 'ni guruhlash"
 
@@ -8248,50 +8879,62 @@ msgid  "Ungroup %1"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_EditSetAttributes.String.Text
+#, fuzzy
 msgid  "Apply attributes to %1"
 msgstr "Atributlarni %1 'ga qoʻllash"
 
 #: source/svdraw/svdstr.src#STR_EditSetStylesheet.String.Text
+#, fuzzy
 msgid  "Apply Styles to %1"
 msgstr "Uslublarni %1 'ga qoʻllash"
 
 #: source/svdraw/svdstr.src#STR_EditDelStylesheet.String.Text
+#, fuzzy
 msgid  "Remove Style from %1"
 msgstr "%1 'dan uslubni olib tashlash"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPoly.String.Text
+#, fuzzy
 msgid  "Convert %1 to polygon"
 msgstr "%1 'ni koʻpburchakka aylantirish"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPolys.String.Text
+#, fuzzy
 msgid  "Convert %1 to polygons"
 msgstr "%1 'ni koʻpburchaklarga aylantirish"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurve.String.Text
+#, fuzzy
 msgid  "Convert %1 to curve"
 msgstr "%1 'ni egri chiziqqa aylantirish"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurves.String.Text
+#, fuzzy
 msgid  "Convert %1 to curves"
 msgstr "%1 'ni egri chiziqlarga aylantirish"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContour.String.Text
+#, fuzzy
 msgid  "Convert %1 to contour"
 msgstr "%1 'ni konturga aylantirish"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContours.String.Text
+#, fuzzy
 msgid  "Convert %1 to contours"
 msgstr "%1 'ni konturlarga aylantirish"
 
 #: source/svdraw/svdstr.src#STR_EditAlign.String.Text
+#, fuzzy
 msgid  "Align %1"
 msgstr "%1 'ni tekislash"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVTop.String.Text
+#, fuzzy
 msgid  "Align %1 to top"
 msgstr "%1 'ni yuqoriga tekislash"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVBottom.String.Text
+#, fuzzy
 msgid  "Align %1 to bottom"
 msgstr "%1 'ni pastda tekislash"
 
@@ -8300,10 +8943,12 @@ msgid  "Horizontally center %1"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_EditAlignHLeft.String.Text
+#, fuzzy
 msgid  "Align %1 to left"
 msgstr "%1 'ni chapda tekislash"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHRight.String.Text
+#, fuzzy
 msgid  "Align %1 to right"
 msgstr "%1 'ni oʻngda tekislash"
 
@@ -8320,10 +8965,12 @@ msgid  "Transform %1"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_EditCombine_PolyPoly.String.Text
+#, fuzzy
 msgid  "Combine %1"
 msgstr "%1 'ni birlashtirish"
 
 #: source/svdraw/svdstr.src#STR_EditMergeMergePoly.String.Text
+#, fuzzy
 msgid  "Merge %1"
 msgstr "%1 'ni birlashtirish"
 
@@ -8332,54 +8979,67 @@ msgid  "Subtract %1"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_EditMergeIntersectPoly.String.Text
+#, fuzzy
 msgid  "Intersect %1"
 msgstr "%1 'ni kesishtirish"
 
 #: source/svdraw/svdstr.src#STR_DistributeMarkedObjects.String.Text
+#, fuzzy
 msgid  "Distribute selected objects"
 msgstr "Tanlangan obyektlarni tarqatish"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_OnePoly.String.Text
+#, fuzzy
 msgid  "Combine %1"
 msgstr "%1 'ni birlashtirish"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Polys.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "%1 'ni boʻlish"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Lines.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "%1 'ni boʻlish"
 
 #: source/svdraw/svdstr.src#STR_EditImportMtf.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "%1 'ni boʻlish"
 
 #: source/svdraw/svdstr.src#STR_ExchangePaste.String.Text
+#, fuzzy
 msgid  "Insert object(s)"
 msgstr "Obyekt(lar) qoʻyish"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpCut.String.Text
+#, fuzzy
 msgid  "Cut %1"
 msgstr "%1 'ni kesish"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpPaste.String.Text
+#, fuzzy
 msgid  "Paste Clipboard"
 msgstr "Klipborddagini qoʻyish"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDD.String.Text
+#, fuzzy
 msgid  "Drag and Drop %1"
 msgstr "%1 'ushlab tortish"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDDPaste.String.Text
+#, fuzzy
 msgid  "Insert Drag and Drop"
 msgstr "Ushlab olib qoʻyish usuli bilan qoʻyish"
 
 #: source/svdraw/svdstr.src#STR_DragInsertPoint.String.Text
+#, fuzzy
 msgid  "Insert point to %1"
 msgstr "%1 'ga nuqta qoʻyish"
 
 #: source/svdraw/svdstr.src#STR_DragInsertGluePoint.String.Text
+#, fuzzy
 msgid  "Insert glue point to %1"
 msgstr "%1 'ga birlashtirish nuqtasi qoʻyish"
 
@@ -8388,30 +9048,37 @@ msgid  "Move reference-point"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_DragMethObjOwn.String.Text
+#, fuzzy
 msgid  "Geometrically change %1"
 msgstr "%1 'ni geometrik oʻzgartirish"
 
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "%1 ni koʻchirish"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
 msgstr "%1 o'lchamini o'zgartirish"
 
 #: source/svdraw/svdstr.src#STR_DragMethRotate.String.Text
+#, fuzzy
 msgid  "Rotate %1"
 msgstr "%1 'ni burish"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorHori.String.Text
+#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "%1 'ni gorizontal akslantirish"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorVert.String.Text
+#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "%1 'ni vertikal akslantirish"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorDiag.String.Text
+#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "%1 'ni diogonal akslantirish"
 
@@ -8420,10 +9087,12 @@ msgid  "Flip %1 freehand"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_DragMethGradient.String.Text
+#, fuzzy
 msgid  "Interactive gradient for %1"
 msgstr "%1 uchun interaktiv gradient"
 
 #: source/svdraw/svdstr.src#STR_DragMethTransparence.String.Text
+#, fuzzy
 msgid  "Interactive transparency for %1"
 msgstr "%1 uchun interaktiv shaffoflik"
 
@@ -8432,10 +9101,12 @@ msgid  "Distort %1 (slant)"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_DragMethCrook.String.Text
+#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "%1 'ni doira ichiga joylashtirish"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrookContortion.String.Text
+#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "%1 'ni doira ichida egish"
 
@@ -8444,6 +9115,7 @@ msgid  "Distort %1"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_DragMethCrop.String.Text
+#, fuzzy
 msgid  "Crop %O"
 msgstr "%O 'ni kesish"
 
@@ -8452,18 +9124,22 @@ msgid  "Alter radius by %1"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_DragPathObj.String.Text
+#, fuzzy
 msgid  "Change %1"
 msgstr "%1 'ni oʻzgartirish"
 
 #: source/svdraw/svdstr.src#STR_DragRectResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
 msgstr "%1 o'lchamini o'zgartirish"
 
 #: source/svdraw/svdstr.src#STR_DragCaptFram.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "%1 ni koʻchirish"
 
 #: source/svdraw/svdstr.src#STR_DragCaptTail.String.Text
+#, fuzzy
 msgid  "Move end point of %1"
 msgstr "%1 yakuniy nuqtasini koʻchirish"
 
@@ -8472,122 +9148,152 @@ msgid  "Adjust angle by %1"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_DragEdgeTail.String.Text
+#, fuzzy
 msgid  "Change %1"
 msgstr "%1 'ni oʻzgartirish"
 
 #: source/svdraw/svdstr.src#STR_ViewTextEdit.String.Text
+#, fuzzy
 msgid  "TextEdit: Paragraph %1, Row %2, Column %3"
 msgstr "Matnni tahrirlash: Paragraf %1, Satr %2, Ustun %3"
 
 #: source/svdraw/svdstr.src#STR_ViewMarked.String.Text
+#, fuzzy
 msgid  "%1 selected"
 msgstr "%1 tanlandi"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoint.String.Text
+#, fuzzy
 msgid  "Point from %1"
 msgstr "%1 'dan nurqta"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoints.String.Text
+#, fuzzy
 msgid  "%2 points from %1"
 msgstr "%1 'dan %2 nurqtalar"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoint.String.Text
+#, fuzzy
 msgid  "Glue point from %1"
 msgstr "%1 dan birlashtirish nuqtasi"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoints.String.Text
+#, fuzzy
 msgid  "%2 glue points from %1"
 msgstr "%1 dan %2 birlashtirish nuqtalari"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkObjs.String.Text
+#, fuzzy
 msgid  "Mark objects"
 msgstr "Obyektlarni belgilash"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreObjs.String.Text
+#, fuzzy
 msgid  "Mark additional objects"
 msgstr "Qoʻshimcha obyektlarni belgilash"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkPoints.String.Text
+#, fuzzy
 msgid  "Mark points"
 msgstr "Nuqtalarni belgilash"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMorePoints.String.Text
+#, fuzzy
 msgid  "Mark additional points"
 msgstr "Qoʻshimcha nuqtalarni belgilash"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkGluePoints.String.Text
+#, fuzzy
 msgid  "Mark glue points"
 msgstr "Birlashtirish nuqtalarini belgilash"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreGluePoints.String.Text
+#, fuzzy
 msgid  "Mark additional glue points"
 msgstr "Qoʻshimcha birlashtirish nuqtalarini belgilash"
 
 #: source/svdraw/svdstr.src#STR_ViewCreateObj.String.Text
+#, fuzzy
 msgid  "Create %1"
 msgstr "%1 yaratish"
 
 #: source/svdraw/svdstr.src#STR_UndoInsertObj.String.Text
+#, fuzzy
 msgid  "Insert %1"
 msgstr "%1 qoʻyish"
 
 #: source/svdraw/svdstr.src#STR_UndoCopyObj.String.Text
+#, fuzzy
 msgid  "Copy %1"
 msgstr "%1 nusxasini olish"
 
 #: source/svdraw/svdstr.src#STR_UndoObjOrdNum.String.Text
+#, fuzzy
 msgid  "Change object order of %1"
 msgstr "%1 obyekt tartibini oʻzgartirish"
 
 #: source/svdraw/svdstr.src#STR_UndoObjSetText.String.Text
+#, fuzzy
 msgid  "Edit text of %1"
 msgstr "%1 matnini tahrirlash"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPage.String.Text
+#, fuzzy
 msgid  "Insert page"
 msgstr "Sahifa qoʻyish"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPage.String.Text
+#, fuzzy
 msgid  "Delete page"
 msgstr "Sahifani olib tashlash"
 
 #: source/svdraw/svdstr.src#STR_UndoCopPage.String.Text
+#, fuzzy
 msgid  "Copy page"
 msgstr "Sahifadan nusxa olish"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPage.String.Text
+#, fuzzy
 msgid  "Change order of pages"
 msgstr "Sahifaning tartibini oʻzgartirish"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Assign background page"
 msgstr "Orqa fon sahifasini belgilash"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Clear background page assignment"
 msgstr "Orqa fon sahifasi tayinlanishini tozalash"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Move background page assignment"
 msgstr "Orqa fon sahifasi tayinlanishini koʻchirish"
 
 #: source/svdraw/svdstr.src#STR_UndoChgPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Change background page assignment"
 msgstr "Orqa fon sahifasi tayinlanishini oʻzgartirish"
 
 #: source/svdraw/svdstr.src#STR_UndoMergeModel.String.Text
+#, fuzzy
 msgid  "Insert document"
 msgstr "Hujjat qoʻyish"
 
 #: source/svdraw/svdstr.src#STR_UndoNewLayer.String.Text
+#, fuzzy
 msgid  "Insert Layer"
 msgstr "Qatlam qoʻyish"
 
 #: source/svdraw/svdstr.src#STR_UndoDelLayer.String.Text
+#, fuzzy
 msgid  "Delete layer"
 msgstr "Qatlamni olib tashlash"
 
 #: source/svdraw/svdstr.src#STR_UndoMovLayer.String.Text
+#, fuzzy
 msgid  "Change order of layers"
 msgstr "Qatlamlar tartibini oʻzgartirish"
 
@@ -8596,6 +9302,7 @@ msgid  "Change object name of %1 to"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_UndoObjTitle.String.Text
+#, fuzzy
 msgid  "Change object title of %1"
 msgstr "%1 obyekt tartibini oʻzgartirish"
 
@@ -8604,58 +9311,72 @@ msgid  "Change object description of %1"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_StandardLayerName.String.Text
+#, fuzzy
 msgid  "Standard"
 msgstr "Andoza"
 
 #: source/svdraw/svdstr.src#STR_ItemValON.String.Text
+#, fuzzy
 msgid  "on"
 msgstr "yoqilgan"
 
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
+#, fuzzy
 msgid  "off"
 msgstr "oʻchirilgan"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
+#, fuzzy
 msgid  "yes"
 msgstr "ha"
 
 #: source/svdraw/svdstr.src#STR_ItemValNO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "Yoʻq"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE1.String.Text
+#, fuzzy
 msgid  "Type 1"
 msgstr "Tur 1"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE2.String.Text
+#, fuzzy
 msgid  "Type 2"
 msgstr "Tur 2"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE3.String.Text
+#, fuzzy
 msgid  "Type 3"
 msgstr "Tur 3"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE4.String.Text
+#, fuzzy
 msgid  "Type 4"
 msgstr "Tur 4"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCHORI.String.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "Gorizontal"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCVERT.String.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "Vertikal"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCBESTFIT.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "Avtomatik"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZENONE.String.Text
+#, fuzzy
 msgid  "Off"
 msgstr "Oʻchirilgan"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEPROP.String.Text
+#, fuzzy
 msgid  "Proportional"
 msgstr "Proporsional"
 
@@ -8664,22 +9385,27 @@ msgid  "Fit to size (all rows separately) "
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZERESIZEAT.String.Text
+#, fuzzy
 msgid  "Use hard attributes"
 msgstr "Qattiq atributlardan foydalanish"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJTOP.String.Text
+#, fuzzy
 msgid  "Top"
 msgstr "Yuqorida"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJCENTER.String.Text
+#, fuzzy
 msgid  "Center"
 msgstr "Markazda"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBOTTOM.String.Text
+#, fuzzy
 msgid  "Bottom"
 msgstr "Pastda"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBLOCK.String.Text
+#, fuzzy
 msgid  "Use entire height"
 msgstr "Butun balandligi boʻyicha foydalanish"
 
@@ -8688,18 +9414,22 @@ msgid  "Stretched"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJLEFT.String.Text
+#, fuzzy
 msgid  "Left"
 msgstr "Chapda"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJCENTER.String.Text
+#, fuzzy
 msgid  "Center"
 msgstr "Markazda"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJRIGHT.String.Text
+#, fuzzy
 msgid  "Right"
 msgstr "Oʻngda"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJBLOCK.String.Text
+#, fuzzy
 msgid  "Use entire width"
 msgstr "Butun kengligicha foydalanish"
 
@@ -8708,10 +9438,12 @@ msgid  "Stretched"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_NONE.String.Text
+#, fuzzy
 msgid  "off"
 msgstr "oʻchirilgan"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_BLINK.String.Text
+#, fuzzy
 msgid  "flash"
 msgstr "miltillash"
 
@@ -8728,22 +9460,27 @@ msgid  "Scroll In"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_LEFT.String.Text
+#, fuzzy
 msgid  "left"
 msgstr "chapga"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_UP.String.Text
+#, fuzzy
 msgid  "up"
 msgstr "yuqoriga"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_RIGHT.String.Text
+#, fuzzy
 msgid  "right"
 msgstr "oʻngga"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_DOWN.String.Text
+#, fuzzy
 msgid  "down"
 msgstr "pastga"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ORTHOLINES.String.Text
+#, fuzzy
 msgid  "Standard Connector"
 msgstr "Andoza bogʻlash chizigʻi"
 
@@ -8752,22 +9489,27 @@ msgid  "Line Connector"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ONELINE.String.Text
+#, fuzzy
 msgid  "Straight Connector"
 msgstr "Toʻgʻri bogʻlash chizigʻi"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_BEZIER.String.Text
+#, fuzzy
 msgid  "Curved Connector"
 msgstr "Egri bogʻlash chizigʻi"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_STD.String.Text
+#, fuzzy
 msgid  "Standard"
 msgstr "Andoza"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_RADIUS.String.Text
+#, fuzzy
 msgid  "Radius"
 msgstr "Radius"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTHAUTO.String.Text
+#, fuzzy
 msgid  "automatic"
 msgstr "avtomatik"
 
@@ -8784,26 +9526,32 @@ msgid  "right outside"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTVAUTO.String.Text
+#, fuzzy
 msgid  "automatic"
 msgstr "avtomatik"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_ABOVE.String.Text
+#, fuzzy
 msgid  "on the line"
 msgstr "chiziqda"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_BREAKEDLINE.String.Text
+#, fuzzy
 msgid  "broken line"
 msgstr "kesik chiziq"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_BELOW.String.Text
+#, fuzzy
 msgid  "below the line"
 msgstr "chiziq ostida"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_VERTICALCEN.String.Text
+#, fuzzy
 msgid  "centered"
 msgstr "markazda"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_FULL.String.Text
+#, fuzzy
 msgid  "full circle"
 msgstr "doira"
 
@@ -8812,18 +9560,22 @@ msgid  "Circle Pie"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_CUT.String.Text
+#, fuzzy
 msgid  "Circle segment"
 msgstr "Aylana segmenti"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_ARC.String.Text
+#, fuzzy
 msgid  "Arc"
 msgstr "Yoy"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW.String.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Soya"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWCOLOR.String.Text
+#, fuzzy
 msgid  "Shadow color"
 msgstr "Soyaning rangi"
 
@@ -8832,18 +9584,22 @@ msgid  "Horizontal shadow outline"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWYDIST.String.Text
+#, fuzzy
 msgid  "Vertical shadow outline"
 msgstr "Soyaning vertikal konturi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Soya shaffofligi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
+#, fuzzy
 msgid  "3D shadow"
 msgstr "3D soya"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
+#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Perspektiv soya"
 
@@ -8856,182 +9612,226 @@ msgid  "Given angle"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONANGLE.String.Text
+#, fuzzy
 msgid  "Angle"
 msgstr "Burchak"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONGAP.String.Text
+#, fuzzy
 msgid  "Gap"
 msgstr "Bo'shliq"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCDIR.String.Text
+#, fuzzy
 msgid  "Exit direction"
 msgstr "Chiqish yoʻnalishi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCISREL.String.Text
+#, fuzzy
 msgid  "Relative exit position"
 msgstr "Nisbiy chiqish joyi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCREL.String.Text
+#, fuzzy
 msgid  "Exit Position"
 msgstr "Chiqish oʻrni"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCABS.String.Text
+#, fuzzy
 msgid  "Exit Position"
 msgstr "Chiqish oʻrni"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONLINELEN.String.Text
+#, fuzzy
 msgid  "Line length"
 msgstr "Chiziq uzunligi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFITLINELEN.String.Text
+#, fuzzy
 msgid  "Auto line length"
 msgstr "Avtomatik chiziq uzunligi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ECKENRADIUS.String.Text
+#, fuzzy
 msgid  "Corner radius"
 msgstr "Burchak radiusi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LEFTDIST.String.Text
+#, fuzzy
 msgid  "Left border spacing"
 msgstr "Chap chegara oraligʻi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_RIGHTDIST.String.Text
+#, fuzzy
 msgid  "Right border spacing"
 msgstr "Oʻng chegara oraligʻi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_UPPERDIST.String.Text
+#, fuzzy
 msgid  "Upper border spacing"
 msgstr "Yuqori chegara oraligʻi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LOWERDIST.String.Text
+#, fuzzy
 msgid  "Lower border spacing"
 msgstr "Quyi chegara oraligʻi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWHEIGHT.String.Text
+#, fuzzy
 msgid  "AutoFit frame height"
 msgstr "Freym balandligi avtomatik belgilash"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Min. frame height"
 msgstr "Freymning minimal balandligi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Max. frame height"
 msgstr "Freymning maksimal balandligi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWWIDTH.String.Text
+#, fuzzy
 msgid  "AutoFit frame width"
 msgstr "Freym kengligini avtomatik belgilash"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Min. frame width"
 msgstr "Freymning minimal kengligi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Max. frame width"
 msgstr "Freymning maksimal kengligi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_VERTADJUST.String.Text
+#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "Vertikal matn tutashtirish"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_HORZADJUST.String.Text
+#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "Gorizontal matn tutashtirish"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
+#, fuzzy
 msgid  "Fit text to frame"
 msgstr "Matnni freymga sigʻdirish"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
+#, fuzzy
 msgid  "Red"
 msgstr "Qizil"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGREEN.String.Text
+#, fuzzy
 msgid  "Green"
 msgstr "Yashil"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFBLUE.String.Text
+#, fuzzy
 msgid  "Blue"
 msgstr "Koʻk"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFLUMINANCE.String.Text
+#, fuzzy
 msgid  "Brightness"
 msgstr "Yorugʻlik"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFCONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast"
 msgstr "Kontrast"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGAMMA.String.Text
+#, fuzzy
 msgid  "Gamma"
 msgstr "Gamma"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Shaffoflik"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
 msgid  "Invert"
-msgstr "Teskari"
+msgstr "Teskari qilish"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFMODE.String.Text
+#, fuzzy
 msgid  "Graphics mode"
 msgstr "Grafik usul"
 
 #: source/svdraw/svdstr.src#STR_ItemNamSET_MISC.String.Text
+#, fuzzy
 msgid  "Various attributes"
 msgstr "Har xil atributlar"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJMOVEPROTECT.String.Text
+#, fuzzy
 msgid  "Position protected"
 msgstr "Oʻrni himoyalangan"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJSIZEPROTECT.String.Text
+#, fuzzy
 msgid  "Size Protection"
 msgstr "Oʻlchamini himoyalash"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJPRINTABLE.String.Text
+#, fuzzy
 msgid  "Don't print"
 msgstr "Bosib chiqarilmasin"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERID.String.Text
+#, fuzzy
 msgid  "Layer Indicator"
 msgstr "Qatlam indikatori"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERNAME.String.Text
+#, fuzzy
 msgid  "Le~vel"
 msgstr "Da~raja"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
+#, fuzzy
 msgid  "Object name"
 msgstr "Obyekt nomi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
+#, fuzzy
 msgid  "Start angle"
 msgstr "Boshlangʻich burchak"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ENDANGLE.String.Text
+#, fuzzy
 msgid  "Final angle"
 msgstr "Yakuniy burchak"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONX.String.Text
+#, fuzzy
 msgid  "X Position"
 msgstr "X holati"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONY.String.Text
+#, fuzzy
 msgid  "Y Position"
 msgstr "Y holati"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Width"
 msgstr "Kengligi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Height"
 msgstr "Uzunasi"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ROTATEANGLE.String.Text
+#, fuzzy
 msgid  "Rotation angle"
 msgstr "Aylantirish darajasi"
 
@@ -9040,38 +9840,47 @@ msgid  "Shear angle"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_UNKNOWN_ATTR.String.Text
+#, fuzzy
 msgid  "Unknown attribute"
 msgstr "Nomaʼlum atribut"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTYLE.String.Text
+#, fuzzy
 msgid  "Line style"
 msgstr "Chiziqning uslubi"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEDASH.String.Text
+#, fuzzy
 msgid  "Line pattern"
 msgstr "Chiziq namunasi"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEWIDTH.String.Text
+#, fuzzy
 msgid  "Line width"
 msgstr "Chiziqning kengligi"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINECOLOR.String.Text
+#, fuzzy
 msgid  "Line color"
 msgstr "Chiziqning rangi"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTART.String.Text
+#, fuzzy
 msgid  "Line head"
 msgstr "Chiziq boshi"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEEND.String.Text
+#, fuzzy
 msgid  "Line end"
 msgstr "Chiziq oxiri"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTWIDTH.String.Text
+#, fuzzy
 msgid  "Line head width"
 msgstr "Chiziq boshining kengligi"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDWIDTH.String.Text
+#, fuzzy
 msgid  "Line end width"
 msgstr "Chiziq oxirining kengligi"
 
@@ -9084,10 +9893,12 @@ msgid  "Center arrowend"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_XA_LINETRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Line transparency"
 msgstr "Chiziqning shaffofligi"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEJOINT.String.Text
+#, fuzzy
 msgid  "Line joint"
 msgstr "Chiziqlarni birlashtirish"
 
@@ -9112,18 +9923,22 @@ msgid  "Line reserved for 6"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_LINE.String.Text
+#, fuzzy
 msgid  "Line attributes"
 msgstr "Chiziq atributlari"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLSTYLE.String.Text
+#, fuzzy
 msgid  "Fill style"
 msgstr "Toʻldirish usuli"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLCOLOR.String.Text
+#, fuzzy
 msgid  "Fillcolor"
 msgstr "T0ldirish rangi"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLGRADIENT.String.Text
+#, fuzzy
 msgid  "Gradient"
 msgstr "Gradient"
 
@@ -9136,10 +9951,12 @@ msgid  "Fillbitmap"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Shaffoflik"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
+#, fuzzy
 msgid  "Number of gradient steps"
 msgstr "Gradient bosqichlarining soni"
 
@@ -9160,6 +9977,7 @@ msgid  "Height of fillbitmap"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLFLOATTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparent gradient"
 msgstr "Shaffof gradient"
 
@@ -9216,6 +10034,7 @@ msgid  "Tile position Y in %"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBACKGROUND.String.Text
+#, fuzzy
 msgid  "Background fill"
 msgstr "Orqa fon toʻldirishi"
 
@@ -9232,18 +10051,22 @@ msgid  "Fill reserved for 12"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_FILL.String.Text
+#, fuzzy
 msgid  "Area attributes"
 msgstr "Soha atributlari"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTYLE.String.Text
+#, fuzzy
 msgid  "Fontwork style"
 msgstr "Matn effekti uslubi"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTADJUST.String.Text
+#, fuzzy
 msgid  "Fontwork alignment"
 msgstr "Matn effektini tekislash"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTDISTANCE.String.Text
+#, fuzzy
 msgid  "Fontwork spacing"
 msgstr "Matn effekti oraligʻi"
 
@@ -9252,6 +10075,7 @@ msgid  "Fontwork font begin"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTMIRROR.String.Text
+#, fuzzy
 msgid  "Fontwork mirror"
 msgstr "Matn effektini koʻzgusimon aks etishi"
 
@@ -9260,10 +10084,12 @@ msgid  "Fontwork outline"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHADOW.String.Text
+#, fuzzy
 msgid  "Fontwork shadow"
 msgstr "Matn effekti soyasi"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWCOLOR.String.Text
+#, fuzzy
 msgid  "Fontwork shadow color"
 msgstr "Matn effekti soyasi rangi"
 
@@ -9276,14 +10102,17 @@ msgid  "Fontwork shadow offset Y"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTDFORM.String.Text
+#, fuzzy
 msgid  "Fontwork default form"
 msgstr "Matn effektining andoza formasi"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTHIDEFORM.String.Text
+#, fuzzy
 msgid  "Hide fontwork outline"
 msgstr "Matn effekti konturini bekitish"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWTRANSP.String.Text
+#, fuzzy
 msgid  "Fontwork shadow transparency"
 msgstr "Matn effektining shaffofligi"
 
@@ -9308,42 +10137,52 @@ msgid  "Fontwork reserved for 6"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW.String.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Soya"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWCOLOR.String.Text
+#, fuzzy
 msgid  "Shadow color"
 msgstr "Soyaning rangi"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWXDIST.String.Text
+#, fuzzy
 msgid  "Shadow spacing X"
 msgstr "X soya oraligʻi"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWYDIST.String.Text
+#, fuzzy
 msgid  "Shadow spacing Y"
 msgstr "Y soya oraligʻi"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Soya shaffofligi"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW3D.String.Text
+#, fuzzy
 msgid  "3D shadow"
 msgstr "3D soya"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWPERSP.String.Text
+#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Perspektiv soya"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONTYPE.String.Text
+#, fuzzy
 msgid  "Type of legend"
 msgstr "Legenda turi"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Fixed legend angle"
 msgstr "Oʻrnatilgan legenda burchagi"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONANGLE.String.Text
+#, fuzzy
 msgid  "Legend angle"
 msgstr "Legenda burchagi"
 
@@ -9364,10 +10203,12 @@ msgid  "Relative exit legend"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCABS.String.Text
+#, fuzzy
 msgid  "Absolute exit of legend"
 msgstr "Legendadan butunlay chiqish"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONLINELEN.String.Text
+#, fuzzy
 msgid  "Legend line length"
 msgstr "Legaenda chizigʻining uzunligi"
 
@@ -9376,58 +10217,72 @@ msgid  "AutoLength of legend lines"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_ECKENRADIUS.String.Text
+#, fuzzy
 msgid  "Corner radius"
 msgstr "Burchak radiusi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Minimal frame height"
 msgstr "Freymning minimal balandligi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWHEIGHT.String.Text
+#, fuzzy
 msgid  "AutoFit height"
 msgstr "Balandligini avtomatik moslash"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_FITTOSIZE.String.Text
+#, fuzzy
 msgid  "Fit text to frame"
 msgstr "Matnni freymga sigʻdirish"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LEFTDIST.String.Text
+#, fuzzy
 msgid  "Left text frame spacing"
 msgstr "Chap matn freymi oraligʻi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_RIGHTDIST.String.Text
+#, fuzzy
 msgid  "Right text frame spacing"
 msgstr "Oʻng matn freymi oraligʻi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_UPPERDIST.String.Text
+#, fuzzy
 msgid  "Upper text frame spacing"
 msgstr "Yuqori matn freymi oraligʻi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LOWERDIST.String.Text
+#, fuzzy
 msgid  "Lower text frame spacing"
 msgstr "Quyi matn freymi oraligʻi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_VERTADJUST.String.Text
+#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "Vertikal matn tutashtirish"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Maximal frame height"
 msgstr "Freymning maksimal balandligi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Minimal frame width"
 msgstr "Freymning minimal kengligi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Maximal frame width"
 msgstr "Freymning maksimal kengligi"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWWIDTH.String.Text
+#, fuzzy
 msgid  "AutoFit width"
 msgstr "Kengligini avtomatik moslash"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_HORZADJUST.String.Text
+#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "Gorizontal matn tutashtirish"
 
@@ -9464,14 +10319,17 @@ msgid  "Outline text flow"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_CUSTOMSHAPE_ADJUSTMENT.String.Text
+#, fuzzy
 msgid  "Shape Adjustment"
 msgstr "Shaklni tekislash"
 
 #: source/svdraw/svdstr.src#SIP_SA_XMLATTRIBUTES.String.Text
+#, fuzzy
 msgid  "User-defined attributes"
 msgstr "Foydalanuvchi atributlari"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_USEFIXEDCELLHEIGHT.String.Text
+#, fuzzy
 msgid  "Use font-independent line spacing"
 msgstr "Shriftga bogʻliq boʻlmagan satrlar oraligʻidan foydalanish"
 
@@ -9492,6 +10350,7 @@ msgid  "SvDraw reserved for 19"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGEKIND.String.Text
+#, fuzzy
 msgid  "Type of connector"
 msgstr "Bogʻlash chizigʻi turi"
 
@@ -9520,6 +10379,7 @@ msgid  "Glue spacing object 2"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINEDELTAANZ.String.Text
+#, fuzzy
 msgid  "Number of movable lines"
 msgstr "Koʻchiriladigan chiziqlar soni"
 
@@ -9536,6 +10396,7 @@ msgid  "Offset line 3"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREKIND.String.Text
+#, fuzzy
 msgid  "Type of dimensioning"
 msgstr "Oʻlchamlar turi"
 
@@ -9572,10 +10433,12 @@ msgid  "Lower edge dimensioning"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTROTA90.String.Text
+#, fuzzy
 msgid  "Dimension value across dimension line"
 msgstr "Oʻlchov matni oʻlchov chizigʻini kesib oʻtgan"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTUPSIDEDOWN.String.Text
+#, fuzzy
 msgid  "Rotate dimension value by 180 degree"
 msgstr "Oʻlchov matnini 180 darajaga burish"
 
@@ -9584,14 +10447,17 @@ msgid  "Dimension line overhang"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREUNIT.String.Text
+#, fuzzy
 msgid  "Measure unit"
 msgstr "Oʻlchov birligi"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESCALE.String.Text
+#, fuzzy
 msgid  "Additional scale factor"
 msgstr "Qoʻshimcha oʻlchov faktori"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESHOWUNIT.String.Text
+#, fuzzy
 msgid  "Measure unit display"
 msgstr "Oʻlchov birligini koʻrsatish"
 
@@ -9632,14 +10498,17 @@ msgid  "Dimensioning reserved for 7"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCKIND.String.Text
+#, fuzzy
 msgid  "Type of circle"
 msgstr "Aylana turi"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCSTARTANGLE.String.Text
+#, fuzzy
 msgid  "Start angle"
 msgstr "Boshlangʻich burchak"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCENDANGLE.String.Text
+#, fuzzy
 msgid  "End angle"
 msgstr "Oxirigi burchak"
 
@@ -9660,14 +10529,17 @@ msgid  "Circle reserved for 3"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJMOVEPROTECT.String.Text
+#, fuzzy
 msgid  "Protected object position"
 msgstr "Obyektning joylashishi himoyalangan"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJSIZEPROTECT.String.Text
+#, fuzzy
 msgid  "Protected object size"
 msgstr "Obyekt oʻlchami himoyalangan"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJPRINTABLE.String.Text
+#, fuzzy
 msgid  "Object, printable"
 msgstr "Obyekt, bosib chiqariladigan"
 
@@ -9676,14 +10548,17 @@ msgid  "Object, visible"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERID.String.Text
+#, fuzzy
 msgid  "Level ID"
 msgstr "Qatlam ID'si"
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERNAME.String.Text
+#, fuzzy
 msgid  "Layer"
 msgstr "Qatlam"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJECTNAME.String.Text
+#, fuzzy
 msgid  "Object name"
 msgstr "Obyekt nomi"
 
@@ -9696,10 +10571,12 @@ msgid  "Position Y, complete"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Total Width"
 msgstr "Umumiy kengligi"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Height, complete"
 msgstr "Balandlik (toʻlaligicha)"
 
@@ -9712,6 +10589,7 @@ msgid  "Single position Y"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Single width"
 msgstr "Chiziqning kengligi"
 
@@ -9720,10 +10598,12 @@ msgid  "Single height"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Logical width"
 msgstr "Mantiqiy kenglik"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Logical height"
 msgstr "Mantiqiy balandlik"
 
@@ -9736,18 +10616,22 @@ msgid  "Single shear angle"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEX.String.Text
+#, fuzzy
 msgid  "Move horizontally"
 msgstr "Gorizontal koʻchirish"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEY.String.Text
+#, fuzzy
 msgid  "Move vertically"
 msgstr "Vertikal koʻchirish"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXONE.String.Text
+#, fuzzy
 msgid  "Resize X, single"
 msgstr "X oʻlchamini oʻzgartirish (alohida)"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYONE.String.Text
+#, fuzzy
 msgid  "Resize Y, single"
 msgstr "Y oʻlchamini oʻzgartirish (alohida)"
 
@@ -9764,14 +10648,17 @@ msgid  "Single vertical shear"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXALL.String.Text
+#, fuzzy
 msgid  "Resize X, complete"
 msgstr "X oʻlchamini oʻzgartirish (toʻlaligicha)"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYALL.String.Text
+#, fuzzy
 msgid  "Resize Y, complete"
 msgstr "Y oʻlchamini oʻzgartirish (toʻlaligicha)"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEALL.String.Text
+#, fuzzy
 msgid  "Rotate all"
 msgstr "Hammachini burish"
 
@@ -9800,66 +10687,82 @@ msgid  "Reference point 2 Y"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_HYPHENATE.String.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "Boʻgʻin koʻchirish"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLETSTATE.String.Text
+#, fuzzy
 msgid  "Display bullets"
 msgstr "Belgilarni koʻrsatish"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLRSPACE.String.Text
+#, fuzzy
 msgid  "Numbering indents"
 msgstr "Raqamlash chekinishlari"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLEVEL.String.Text
+#, fuzzy
 msgid  "Numbering level"
 msgstr "Raqamlash darajasi"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLET.String.Text
+#, fuzzy
 msgid  "Bullets and Numberings"
 msgstr "Belgilar va raqamlash"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_LRSPACE.String.Text
+#, fuzzy
 msgid  "Indents"
 msgstr "Chekinish"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_ULSPACE.String.Text
+#, fuzzy
 msgid  "Paragraph spacing"
 msgstr "Paragraf orasidagi oraliq"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_SBL.String.Text
+#, fuzzy
 msgid  "Line spacing"
 msgstr "Satrlar orasidagi masofa"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_JUST.String.Text
+#, fuzzy
 msgid  "Paragraph alignment"
 msgstr "Paragrafni tekislash"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_TABS.String.Text
+#, fuzzy
 msgid  "Tabulators"
 msgstr "Tabulyasiya"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_COLOR.String.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "Shriftning rangi"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTINFO.String.Text
+#, fuzzy
 msgid  "Character set"
 msgstr "Kodlash usuli"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTHEIGHT.String.Text
+#, fuzzy
 msgid  "Font size"
 msgstr "Shriftning oʻlchami"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTWIDTH.String.Text
+#, fuzzy
 msgid  "Font width"
 msgstr "Shriftning eni"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WEIGHT.String.Text
+#, fuzzy
 msgid  "Bold (thickness)"
 msgstr "Qalin (qalin)"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_UNDERLINE.String.Text
+#, fuzzy
 msgid  "Underline"
 msgstr "Tagini chizish"
 
@@ -9868,38 +10771,47 @@ msgid  "Overline"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_STRIKEOUT.String.Text
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "Ustidan chizish"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ITALIC.String.Text
+#, fuzzy
 msgid  "Italic"
 msgstr "Qiya"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OUTLINE.String.Text
+#, fuzzy
 msgid  "Outline"
 msgstr "Kontur"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_SHADOW.String.Text
+#, fuzzy
 msgid  "Font shadow"
 msgstr "Shriftning soyasi"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ESCAPEMENT.String.Text
+#, fuzzy
 msgid  "Superscript/subscript"
 msgstr "Ustiga/ostiga chizilgan"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_PAIRKERNING.String.Text
+#, fuzzy
 msgid  "Kerning"
 msgstr "Belgilar orasidagi oraliq"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_KERNING.String.Text
+#, fuzzy
 msgid  "Manual kerning"
 msgstr "Oraliqni qoʻlbola oʻrnatish"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WLM.String.Text
+#, fuzzy
 msgid  "No underline for spaces"
 msgstr "Boʻsh joyning tagi chizilmasin"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_TAB.String.Text
+#, fuzzy
 msgid  "Tabulator"
 msgstr "Tabulyasiya"
 
@@ -9908,118 +10820,147 @@ msgid  "Optional line break"
 msgstr ""
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_NOTCONV.String.Text
+#, fuzzy
 msgid  "Non-convertible character"
 msgstr "Boshqa shaklga aylantirib boʻlmaydigan belgilar"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_FIELD.String.Text
+#, fuzzy
 msgid  "Fields"
 msgstr "Maydonlar"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFRED.String.Text
+#, fuzzy
 msgid  "Red"
 msgstr "Qizil"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGREEN.String.Text
+#, fuzzy
 msgid  "Green"
 msgstr "Yashil"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFBLUE.String.Text
+#, fuzzy
 msgid  "Blue"
 msgstr "Koʻk"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFLUMINANCE.String.Text
+#, fuzzy
 msgid  "Brightness"
 msgstr "Yorugʻlik"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast"
 msgstr "Kontrast"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGAMMA.String.Text
+#, fuzzy
 msgid  "Gamma"
 msgstr "Gamma"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Shaffoflik"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFINVERT.String.Text
+#, fuzzy
 msgid  "Invert"
 msgstr "Teskari qilish"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFMODE.String.Text
+#, fuzzy
 msgid  "Graphics mode"
 msgstr "Grafik usul"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCROP.String.Text
+#, fuzzy
 msgid  "Crop"
 msgstr "Qirqish"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEDIA.String.Text
+#, fuzzy
 msgid  "Media object"
 msgstr "Media obyekti"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEDIA.String.Text
+#, fuzzy
 msgid  "Media objects"
 msgstr "Media obyektlari"
 
 #: source/svdraw/svdstr.src#STR_TABLE_ATTR.String.Text
+#, fuzzy
 msgid  "Apply table attributes"
 msgstr "Jadval atributlarini qoʻllash"
 
 #: source/svdraw/svdstr.src#STR_TABLE_AUTOFMT.String.Text
+#, fuzzy
 msgid  "AutoFormat table"
 msgstr "Jadvalni avtomatik formatlash"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSCOL.String.Text
+#, fuzzy
 msgid  "Insert column"
 msgstr "Ustun qoʻshish"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSROW.String.Text
+#, fuzzy
 msgid  "Insert row"
 msgstr "Satr qoʻshish"
 
 #: source/svdraw/svdstr.src#STR_UNDO_COL_DELETE.String.Text
+#, fuzzy
 msgid  "Delete column"
 msgstr "Ustunni olib tashlash"
 
 #: source/svdraw/svdstr.src#STR_UNDO_ROW_DELETE.String.Text
+#, fuzzy
 msgid  "Delete row"
 msgstr "Satrni olib tashlash"
 
 #: source/svdraw/svdstr.src#STR_TABLE_SPLIT.String.Text
+#, fuzzy
 msgid  "Split cells"
 msgstr "Kataklarni boʻlish"
 
 #: source/svdraw/svdstr.src#STR_TABLE_MERGE.String.Text
+#, fuzzy
 msgid  "Merge cells"
 msgstr "Kataklarni birlashtirish"
 
 #: source/svdraw/svdstr.src#STR_TABLE_NUMFORMAT.String.Text
+#, fuzzy
 msgid  "Format cell"
 msgstr "Katakni formatlash"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_ROWS.String.Text
+#, fuzzy
 msgid  "Distribute rows"
 msgstr "Satrlarni taqsimlash"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_COLUMNS.String.Text
+#, fuzzy
 msgid  "Distribute columns"
 msgstr "Ustunlarni taqsimlash"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE.String.Text
+#, fuzzy
 msgid  "Table style"
 msgstr "Jadval uslubi"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE_SETTINGS.String.Text
+#, fuzzy
 msgid  "Table style settings"
 msgstr "Jadval uslubi parametrlari"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTable.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Jadval"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTable.String.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "Jadvallar"
 
@@ -10032,50 +10973,62 @@ msgid  "font works"
 msgstr ""
 
 #: source/table/table.src#RID_SVXSTR_STYLEFAMILY_TABLEDESIGN.String.Text
+#, fuzzy
 msgid  "Table Design Styles"
 msgstr "Jadval Dizayni Uslublari"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_TRANSPARENT.String.Text
+#, fuzzy
 msgid  "No Fill"
 msgstr "Toʻldirishsiz"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FILLPATTERN.String.Text
+#, fuzzy
 msgid  "Pattern"
 msgstr "Namuna"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME.String.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "Chegaralar"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_STYLE.String.Text
+#, fuzzy
 msgid  "Border Style"
 msgstr "Chegaraning uslubi"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_COLOR.String.Text
+#, fuzzy
 msgid  "Border Color"
 msgstr "Chegaraning rangi"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_EXTRAS_CHARBACKGROUND.String.Text
+#, fuzzy
 msgid  "Highlighting"
 msgstr "Belgilab koʻrsatish"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_BACKGROUND.String.Text
+#, fuzzy
 msgid  "Background"
 msgstr "Orqa fon"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_AUTOMATIC.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "Avtomatik"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_PAGES.String.Text
+#, fuzzy
 msgid  "Pages"
 msgstr "Sahifalar"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_CLEARFORM.String.Text
+#, fuzzy
 msgid  "Clear formatting"
 msgstr "Formatlashni tozalash"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_MORE.String.Text
+#, fuzzy
 msgid  "More..."
 msgstr "Koʻproq..."
 
@@ -10084,6 +11037,7 @@ msgid  "Font color"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Direction"
 msgstr "Ekstruziya yoʻnalishi"
 
@@ -10092,22 +11046,27 @@ msgid  "~Perspective"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PARALLEL.String.Text
+#, fuzzy
 msgid  "P~arallel"
 msgstr "~Parallel"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NW.String.Text
+#, fuzzy
 msgid  "Extrusion North-West"
 msgstr "Shimoliy-gʻarbiy ekstruziya"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_N.String.Text
+#, fuzzy
 msgid  "Extrusion North"
 msgstr "Shimoliy ekstruziya"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NE.String.Text
+#, fuzzy
 msgid  "Extrusion North-East"
 msgstr "Shimoliy-sharqiy ekstruziya"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_W.String.Text
+#, fuzzy
 msgid  "Extrusion West"
 msgstr "Gʻarbiy ekstruziya"
 
@@ -10116,182 +11075,227 @@ msgid  "Extrusion Backwards"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_E.String.Text
+#, fuzzy
 msgid  "Extrusion East"
 msgstr "Sharqiy ekstruziya"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SW.String.Text
+#, fuzzy
 msgid  "Extrusion South-West"
 msgstr "Janubiy-gʻarbiy ekstruziya"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_S.String.Text
+#, fuzzy
 msgid  "Extrusion South"
 msgstr "Janubiy ekstruziya"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SE.String.Text
+#, fuzzy
 msgid  "Extrusion South-East"
 msgstr "Janubiy-sharqiy ekstruziya"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "Ekstruziya chuqurligi"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
+#, fuzzy
 msgid  "~Custom..."
 msgstr "~Boshqacha..."
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_INFINITY.String.Text
+#, fuzzy
 msgid  "~Infinity"
 msgstr "~Toʻxtovsiz"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Lighting"
 msgstr "Ekstruziyani yoritish"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_BRIGHT.String.Text
+#, fuzzy
 msgid  "~Bright"
 msgstr "~Yorugʻ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_NORMAL.String.Text
+#, fuzzy
 msgid  "~Normal"
 msgstr "~Oddiy"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_DIM.String.Text
+#, fuzzy
 msgid  "~Dim"
 msgstr "~Xira"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Surface"
 msgstr "Ekstruziya yuzasi"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_WIREFRAME.String.Text
+#, fuzzy
 msgid  "~Wire Frame"
 msgstr "~Sim karkasli freym"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_MATTE.String.Text
+#, fuzzy
 msgid  "~Matt"
 msgstr "~Xira"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_PLASTIC.String.Text
+#, fuzzy
 msgid  "~Plastic"
 msgstr "~Plastik"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_METAL.String.Text
+#, fuzzy
 msgid  "Me~tal"
 msgstr "Me~tal"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.ModalDialog.Text
+#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "Ekstruziya chuqurligi"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.FL_DEPTH.FixedText.Text
+#, fuzzy
 msgid  "~Value"
 msgstr "~Qiymati"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_EXTRUSION_COLOR.String.Text
+#, fuzzy
 msgid  "Extrusion Color"
 msgstr "Ekstruziya rangi"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0.String.Text
+#, fuzzy
 msgid  "~0 cm"
 msgstr "~0 sm"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1.String.Text
+#, fuzzy
 msgid  "~1 cm"
 msgstr "~1 sm"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2.String.Text
+#, fuzzy
 msgid  "~2.5 cm"
 msgstr "~2.5 sm"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3.String.Text
+#, fuzzy
 msgid  "~5 cm"
 msgstr "~5 sm"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4.String.Text
+#, fuzzy
 msgid  "10 ~cm"
 msgstr "10 ~sm"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0_INCH.String.Text
+#, fuzzy
 msgid  "0 inch"
 msgstr "0 dyuym"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1_INCH.String.Text
+#, fuzzy
 msgid  "0.~5 inch"
 msgstr "0.~5 dyuym"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2_INCH.String.Text
+#, fuzzy
 msgid  "~1 inch"
 msgstr "~1 dyuym"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3_INCH.String.Text
+#, fuzzy
 msgid  "~2 inch"
 msgstr "~2 dyuym"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4_INCH.String.Text
+#, fuzzy
 msgid  "~4 inch"
 msgstr "~4 dyuym"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.ModalDialog.Text
+#, fuzzy
 msgid  "Fontwork Gallery"
 msgstr "Matn effekti galereyasi"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.FL_FAVORITES.FixedLine.Text
+#, fuzzy
 msgid  "Select a Fontwork style:"
 msgstr "Matn effekti uslubini tanlash: "
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.STR_CLICK_TO_ADD_TEXT.String.Text
+#, fuzzy
 msgid  "Click to edit text"
 msgstr "Matnni tahrirlash uchun bosing"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.DockingWindow.Text
+#, fuzzy
 msgid  "Fontwork Alignment"
 msgstr "Matn effektlarini tekislash"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_LEFT.String.Text
+#, fuzzy
 msgid  "~Left Align"
 msgstr "~Chap tomonga tekislangan"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_CENTER.String.Text
+#, fuzzy
 msgid  "~Center"
 msgstr "~Markazda"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_RIGHT.String.Text
+#, fuzzy
 msgid  "~Right Align"
 msgstr "~Oʻng tomonga tekislangan"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_WORD.String.Text
+#, fuzzy
 msgid  "~Word Justify"
 msgstr "~Eniga"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_STRETCH.String.Text
+#, fuzzy
 msgid  "S~tretch Justify"
 msgstr "Eniga yo~yilgan"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.DockingWindow.Text
+#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "Matn effektlari belgilari orasidagi oraliq"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_TIGHT.String.Text
+#, fuzzy
 msgid  "~Very Tight"
 msgstr "~Juda zich"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_TIGHT.String.Text
+#, fuzzy
 msgid  "~Tight"
 msgstr "~Zich"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_NORMAL.String.Text
+#, fuzzy
 msgid  "~Normal"
 msgstr "~Oddiy"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_LOOSE.String.Text
+#, fuzzy
 msgid  "~Loose"
 msgstr "~Erkin"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_LOOSE.String.Text
+#, fuzzy
 msgid  "Very ~Loose"
 msgstr "Juda ~erkin"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_CUSTOM.String.Text
+#, fuzzy
 msgid  "~Custom..."
 msgstr "~Boshqacha..."
 
@@ -10300,10 +11304,12 @@ msgid  "~Kern Character Pairs"
 msgstr ""
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.ModalDialog.Text
+#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "Matn effektlari belgilari orasidagi oraliq"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.FT_VALUE.FixedText.Text
+#, fuzzy
 msgid  "~Value"
 msgstr "~Qiymati"
 
@@ -10312,46 +11318,57 @@ msgid  "Find"
 msgstr ""
 
 #: source/tbxctrls/grafctrl.src#RID_SVXTBX_GRFFILTER.FloatingWindow.Text
+#, fuzzy
 msgid  "Filters"
 msgstr "Filtrlar"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFMODE.String.Text
+#, fuzzy
 msgid  "Graphics Mode"
 msgstr "Grafik usul"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFRED.String.Text
+#, fuzzy
 msgid  "Red"
 msgstr "Qizil"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGREEN.String.Text
+#, fuzzy
 msgid  "Green"
 msgstr "Yashil"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFBLUE.String.Text
+#, fuzzy
 msgid  "Blue"
 msgstr "Koʻk"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFLUMINANCE.String.Text
+#, fuzzy
 msgid  "Brightness"
 msgstr "Yorugʻlik"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFCONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast"
 msgstr "Kontrast"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGAMMA.String.Text
+#, fuzzy
 msgid  "Gamma"
 msgstr "Gamma"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFTRANSPARENCY.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Shaffoflik"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_GRAFCROP.String.Text
+#, fuzzy
 msgid  "Crop"
 msgstr "Qirqish"
 
 #: source/tbxctrls/colrctrl.src#RID_SVXCTRL_COLOR.DockingWindow.Text
+#, fuzzy
 msgid  "Colors"
 msgstr "Ranglar"
 
@@ -10360,90 +11377,112 @@ msgid  "Color Palette"
 msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
+#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "Bekor qilish amali: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
+#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "Bekor qilish amali: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTIONS.String.Text
+#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "Qaytarish amali: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTION.String.Text
+#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "Qaytarish amali: $(ARG1)"
 
 #: source/toolbars/extrusionbar.src#RID_SVX_EXTRUSION_BAR.String.Text
+#, fuzzy
 msgid  "Extrusion"
 msgstr "Ekstruziya"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ON_OFF.String.Text
+#, fuzzy
 msgid  "Apply Extrusion On/Off"
 msgstr "Ekstruziyani yoqish/oʻchirishni qoʻllash"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_DOWN.String.Text
+#, fuzzy
 msgid  "Tilt Down"
 msgstr "Pastga burish"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_UP.String.Text
+#, fuzzy
 msgid  "Tilt Up"
 msgstr "Yuqoriga burish"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_LEFT.String.Text
+#, fuzzy
 msgid  "Tilt Left"
 msgstr "Chapga burish"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_RIGHT.String.Text
+#, fuzzy
 msgid  "Tilt Right"
 msgstr "oʻngga burish"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_DEPTH.String.Text
+#, fuzzy
 msgid  "Change Extrusion Depth"
 msgstr "Ekstruziya chuqurligini oʻzgartirish"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ORIENTATION.String.Text
+#, fuzzy
 msgid  "Change Orientation"
 msgstr "Moʻljalni oʻzgartirish"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_PROJECTION.String.Text
+#, fuzzy
 msgid  "Change Projection Type"
 msgstr "Proeksiya turini oʻzgartirish"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_LIGHTING.String.Text
+#, fuzzy
 msgid  "Change Lighting"
 msgstr "Yoritishni oʻzgartirish"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_BRIGHTNESS.String.Text
+#, fuzzy
 msgid  "Change Brightness"
 msgstr "Yorugʻlikni oʻzgartirish"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_SURFACE.String.Text
+#, fuzzy
 msgid  "Change Extrusion Surface"
 msgstr "Ekstruziya yuzasini oʻzgartirish"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_COLOR.String.Text
+#, fuzzy
 msgid  "Change Extrusion Color"
 msgstr "Ekstruziya rangini oʻzgartirish"
 
 #: source/toolbars/fontworkbar.src#RID_SVX_FONTWORK_BAR.String.Text
+#, fuzzy
 msgid  "Fontwork"
 msgstr "Matn effektlari"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SHAPE.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Shape"
 msgstr "Matn effekti shaklini qoʻllash"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SAME_LETTER_HEIGHT.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Same Letter Heights"
 msgstr "Harflar balandligini effektlar bilan bir xil qilish"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_ALIGNMENT.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Alignment"
 msgstr "Matn effektlari harflarini tekislash"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_CHARACTER_SPACING.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Character Spacing"
 msgstr "Matn effektlarida belgilar orasidagi oraliqni qoʻllash"
 

@@ -33,22 +33,22 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_CAPTION%
 msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "%PRODUCTNAME% %PRODUCTVERSION% ၏အမှားအစီရင်ခံစာ"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% ၏အမှား အစီရင်ခံစာ"
 
 #: source/all/crashrep.ulf#%WELCOME_HEADER%
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION%အမှားအစီရင်ခံစာကိုကြိုဆိုပါသည်"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY1%
-msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\\n\\n"
 msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
-msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr "လွယ်ကူသောနည်း -ရှေ့ဒိုင်ယာလော့ဂ်တွင် ‘ပို့ပါ’ကိုကလစ်နှိပ်ခြင်းဖြင့် သင့်အစိတ်အပိုင်းပေါ်တွင် မည်သည့် သက်ရောက်မှုမှ မရှိစေဘဲ အစီရင်ခံစာကို ပို့နိုင်သည်၊ (သို့) အမှားဖြစ်ပွားပုံကို အကျဉ်းချုံးဖော်ပြပြီး ‘ပို့ပါ’ကိုကလစ်နှိပ်ပါ။ အကယ်၍ အစီရင်ခံစာကို ကြည့်လိုပါက ‘အစီရင်ခံစာပြပါ’ကိုကလစ်နှိပ်ပါ။ အချက်အလက်များမပေးပို့လိုပါက ‘မပို့ပါ’ ကိုကလစ်နှိပ်ပါ\n\n"
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\n"
+msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
-msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgid  "Customer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\n"
 msgstr ""
 
 #: source/all/crashrep.ulf#%PRIVACY_URL%
@@ -76,7 +76,7 @@ msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION%အလုပ်လုပ်စဉ်အမှားဖြစ်ပွားသည်"
 
 #: source/all/crashrep.ulf#%REPORT_BODY%
-msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\\n"
 msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
@@ -120,16 +120,16 @@ msgid  "Save Report to"
 msgstr "သို့ အစီရင်ခံစာ သိမ်းပါ"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
-msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr "အမှားအစီရင်ခံစာမပို့နိုင်သောအကြောင်းမှာမူလရှိသောအီးမေးလ်ပရိုဂရမ်သည်MAPIကိုမကူညီနိုင်ပါ။ \nတိုက်ရိုက်အသုံးပြု နိုင်သည့်MAPI-အီးမေးလ်ပရိုဂရမ်ကိုသုံးပါ။"
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\\n Please use a MAPI-compatible e-mail program."
+msgstr ""
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr "အမှားအစီရင်ခံစာကိုယာယီမသိမ်းနိုင်ပါ၊ထို့ကြောင့်ပို့နိုင်လိမ့်မည်မဟုတ်ပါ။"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
-msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr "‘မေးလ်ပို့ရန်’အလုပ်မလုပ်သောကြောင့် အမှားအစီရင်ခံစာကို မပို့နိုင်ပါ။ ‘မေးလ်ပို့ရန်’ကိုပြင်ဆင်မှုပြု နိုင်ရန်စစ်ဆေးပါ။"
+msgid  "The error report could not be sent because 'sendmail' could not be started.\\nPlease check the 'sendmail' settings."
+msgstr ""
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
@@ -172,8 +172,8 @@ msgid  "~Port"
 msgstr "~ပေါထ်"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
-msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "%PRODUCTNAME% အမှားအစီရင်ခံစာ ကိရိယာသည် အစီရင်ခံစာများပို့ရန် အင်တာနက်သို့ ချိတ်ဆက်ရန်လိုသည်။ \n\nကုမ္ပဏီသည် ကွန်ရက်စနစ် ကာကွယ်ရန် ကာကွယ်ရေးစနစ်တစ်ခုနှင့်အတူ ချိတ်ထားသော ကွန်ပျူတာများသို့ အချက်အလက်ပေးပို့ခြင်း ကိုယ်စားလှယ်ကို တခါတရံ သုံးသည်။ \n\nအကယ်၍ လက်တွေ့ အသုံးချပါက၊ ချိတ်ထားသော ကွန်ပျူတာများသို့ အချက်အလက်ပေးပို့ရန်အတွက် ကွန်ယက်လိပ်စာနှင့်ပေါ့ထ် သတ်မှတ်ရန်ဖြစ်သည်။"
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\\n\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\n\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -188,7 +188,7 @@ msgid  "Status: The error report has been sent successfully."
 msgstr "လက်ရှိအခြေအနေ - အမှားအစီရင်ခံစာကို အောင်မြင်စွာ ပို့ထားပြီး။"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOEMAILADDRESS%
-msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\\nPlease enter your e-mail address."
 msgstr ""
 
 #: source/all/crashrep.ulf#%MSG_CMDLINE_USAGE%
@@ -204,5 +204,5 @@ msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "အမှားအစီရင်ခံစာကိရိယာသို့ ID(PID)ဖြစ်စဉ် %PRODUCTNAME% သတ်မှတ်ပါ"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
-msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr "ဤအကူစာသားပြပါ။ \nအသေးစိတ်သတင်းအချက်အလက်ကို စတင်သုံးသော လမ်းညွှန်ချက်တွင် ရှာတွေ့နိုင်သည်။"
+msgid  "Shows this help text.\\nDetailed information can be found in the Setup Guide."
+msgstr ""

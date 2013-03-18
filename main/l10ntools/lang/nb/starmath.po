@@ -177,7 +177,7 @@ msgstr "~Avstand"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.3.String.Text
 msgid  "~Line spacing"
-msgstr "~Linjeavstand"
+msgstr "~Radavstand"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.4.String.Text
 msgid  "~Root spacing"
@@ -341,7 +341,7 @@ msgstr "~Overskriftsrad"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
 msgid  "~Formula text"
-msgstr "~Formeltekst"
+msgstr "Spesifiserer om det er ønskelig at navnet på dokument blir tatt med i utskriften"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
 msgid  "B~order"
@@ -353,15 +353,15 @@ msgstr "Utskriftsformat"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
 msgid  "O~riginal size"
-msgstr "~Opprinnelig størrelse"
+msgstr "~Kantlinjer"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 msgid  "Fit to ~page"
-msgstr "Tilpass til si~da"
+msgstr "Legger til en tynn kant i formelområdet i utskriften."
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 msgid  "~Scaling"
-msgstr "~Skalering"
+msgstr "Størrelse"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
 msgid  "Miscellaneous options"
@@ -444,12 +444,12 @@ msgid  "~Delete"
 msgstr "~Slett"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr "Denne «StarMath»-skrifta er ikke installert.\nUten denne skrifta virker ikke %PRODUCTNAME Math som det skal.\nInstaller denne skrifta og start %PRODUCTNAME Math på nytt."
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "Vil du lagre endringene som standard?\n\nDisse endringene vil gjelde alle nye formler."
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"

@@ -40,8 +40,8 @@ msgid  "File Recovery"
 msgstr "回復檔案"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
-msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr "真是非常抱歉。剛才的動作引發了一個無法排除的錯誤。\n\n先前修改過的檔案已經儲存。\n在下一次啟動程式時很可能重新恢復這些檔案。"
+msgid  "An unrecoverable error has occurred.\\n\\nAll modified files have been saved and can\\nprobably be recovered at program restart."
+msgstr ""
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
@@ -116,16 +116,16 @@ msgid  "The changes to your personal settings cannot be stored centrally because
 msgstr "由於缺少存取權限，個人設定的變更無法集中儲存。 "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
-msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr "由於存取 %PRODUCTNAME 配置資料的錯誤，無法啟動 %PRODUCTNAME。\n\n請和系統管理員連絡。"
+msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
+msgstr ""
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
 msgstr "發生以下內部錯誤： "
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
-msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr "可能有另一個 %PRODUCTNAME 正在存取您的個人設定，或個人設定被鎖定。\n同時存取可能會導致個人設定的不一致。在繼續前，應該確認使用者 '$u' 關閉了主機 '$h' 上的 %PRODUCTNAME。\n\n真的要繼續？"
+msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\\n\\nDo you really want to continue?"
+msgstr ""
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -136,7 +136,7 @@ msgid  "Printing is disabled. No documents can be printed."
 msgstr "已停用列印。無法列印任何文件。"
 
 #: source/app/desktop.src#INFOBOX_EXPIRED.InfoBox.Message
-msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
+msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\\nvisit http://www.openoffice.org"
 msgstr ""
 
 #: source/app/desktop.src#STR_TITLE_EXPIRED.String.Text
@@ -144,39 +144,39 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
-msgid  "The path manager is not available.\n"
-msgstr "路徑管理程式不存在。\n"
+msgid  "The path manager is not available.\\n"
+msgstr ""
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
-msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr "可用磁碟空間不足，無法完成 %PRODUCTNAME 的使用者安裝。請在下列位置釋放更多的磁碟空間，並重新啟動 %PRODUCTNAME：\n\n"
+msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
+msgstr ""
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
-msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr "缺少存取權限，無法進行 %PRODUCTNAME 的使用者安裝。請確定您對下列位置有足夠的存取權限，並重新啟動 %PRODUCTNAME：\n\n"
+msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\\n\\n"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThat version is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThat version, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
@@ -184,8 +184,8 @@ msgid  "System dependencies check"
 msgstr "系統相依性檢查"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
-msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr "未滿足下列系統相依性，\n因此擴充套件無法進行安裝："
+msgid  "The extension cannot be installed as the following\\nsystem dependencies are not fulfilled:"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -252,16 +252,16 @@ msgid  "Quit"
 msgstr "退出"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
-msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr "%PRODUCTNAME 已更新為新版本。某些共用的 %PRODUCTNAME 擴充套件與此版本不相容，且必須更新才能啟動 %PRODUCTNAME。\n\n更新共用的擴充套件需要管理員權限。請連絡系統管理員，以更新下列共用的擴充套件："
+msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\\n\\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
 msgstr "無法啟用擴充套件，因為未滿足下列系統相依性："
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
-msgid  "This extension is disabled because you haven't accepted the license yet.\n"
-msgstr "因為您尚未接受授權，所以已停用此擴充套件。\n"
+msgid  "This extension is disabled because you haven't accepted the license yet.\\n"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
 msgid  "Show license"
@@ -280,16 +280,16 @@ msgid  "1."
 msgstr "1."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-msgid  "Read the complete License Agreement. Use the scroll bar or the \'Scroll Down\' button in this dialog to view the entire license text."
-msgstr ""
+msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
+msgstr "閱讀完整的授權合約。使用捲動軸或此對話方塊中的 [向下捲動] 按鈕，以便檢視完整的授權合約內容。"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
 msgstr "2."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-msgid  "Accept the License Agreement for the extension by pressing the \'Accept\' button."
-msgstr ""
+msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
+msgstr "按 [接受] 按鈕接受擴充套件的授權合約。"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
 msgid  "~Scroll Down"
@@ -312,28 +312,28 @@ msgid  "Close"
 msgstr "關閉"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WarningBox.Message
-msgid  "You are about to install the extension \'%NAME\'.\nClick \'OK\' to proceed with the installation.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install the extension \\'%NAME\\'.\\nClick \\'OK\\' to proceed with the installation.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WarningBox.Message
-msgid  "You are about to remove the extension \'%NAME\'.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgid  "You are about to remove the extension \\'%NAME\\'.\\nClick \\'OK\\' to remove the extension.\\nClick \\'Cancel\\' to stop removing the extension."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to remove the extension.\\nClick \\'Cancel\\' to stop removing the extension."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to enable the extension.\nClick \'Cancel\' to stop enabling the extension."
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to enable the extension.\\nClick \\'Cancel\\' to stop enabling the extension."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to disable the extension.\nClick \'Cancel\' to stop disabling the extension."
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to disable the extension.\\nClick \\'Cancel\\' to stop disabling the extension."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.String.Text
-msgid  "The extension \'%Name\' does not work on this computer."
-msgstr ""
+msgid  "The extension \\'%Name\\' does not work on this computer."
+msgstr "擴充套件「%Name」無法在此電腦上運作。"
 
 #: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.ModalDialog.Text
 msgid  "Download and Installation"
@@ -484,11 +484,11 @@ msgid  "Enable Updates"
 msgstr "開啟更新"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.String.Text
-msgid  "This update will be ignored.\n"
-msgstr "此更新將被忽略。\n"
+msgid  "This update will be ignored.\\n"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WarningBox.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to update the extensions.\nClick \'Cancel\' to stop updating the extensions."
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to update the extensions.\\nClick \\'Cancel\\' to stop updating the extensions."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.ModelessDialog.Text
@@ -536,8 +536,8 @@ msgid  "Disable all"
 msgstr "全部停用"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr "當您在多使用者環境中為所有使用者安裝擴充套件時，請確定沒有其他使用者正在使用相同的 %PRODUCTNAME。\n\n要安裝擴充套件的對象為？\n"
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\\n\\nFor whom do you want to install the extension?\\n"
+msgstr ""
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
 msgid  "Copying: "
@@ -636,12 +636,12 @@ msgid  "Help"
 msgstr "說明"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
-msgid  "The extension cannot be installed because:\n"
-msgstr "無法安裝擴充套件，因為：\n"
+msgid  "The extension cannot be installed because:\\n"
+msgstr ""
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
-msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr "說明檔案發生錯誤，擴充套件未被安裝：\n"
+msgid  "The extension will not be installed because an error occurred in the Help files:\\n"
+msgstr ""
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 msgid  "Extension"
@@ -736,24 +736,24 @@ msgid  "Registration"
 msgstr "註冊"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
-msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "此精靈將引導您完成閱讀授權合約、遷移 %OLD_VERSION 中的使用者資料以及註冊 %PRODUCTNAME。\n\n按 [下一步] 以繼續。"
+msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
+msgstr ""
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
-msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "此精靈將引導您完成 %PRODUCTNAME 的註冊。\n\n請按 [下一步] 繼續。"
+msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
+msgstr ""
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
 msgstr "完成(~F)"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
-msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr "您現在有機會可以支援與貢獻全球最快速成長的開放原始碼社群。\n\n請以註冊方式，協助我們證明 %PRODUCTNAME 已取得顯著的市場佔有率。\n\n註冊純屬自願性質，而非強制性。"
+msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\\n\\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\\n\\nRegistering is voluntary and without obligation."
+msgstr ""
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
-msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr "啟動瀏覽器時發生一個錯誤。\n請您檢查 %PRODUCTNAME 的設定和瀏覽器的設定。"
+msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr ""
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -764,8 +764,8 @@ msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "歡迎使用 %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
-msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "此精靈將帶領您閱讀授權合約以及註冊 %PRODUCTNAME。\n\n按 [下一步] 以繼續。"
+msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
+msgstr ""
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -804,8 +804,8 @@ msgid  "Transfer personal data"
 msgstr "遷移個人資料"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
-msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr "大部分 %OLDPRODUCT 安裝的私人資料可以在 %PRODUCTNAME %PRODUCTVERSION 中重新使用。\n\n若您不希望重新使用 %PRODUCTNAME %PRODUCTVERSION 中的任何設定，請取消標記核取方塊。"
+msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
+msgstr ""
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -816,8 +816,8 @@ msgid  "Online Update"
 msgstr "線上更新"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
-msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr "%PRODUCTNAME 會定期自動搜尋是否有新版本。\n執行此線上更新不會傳送個人資料。\n一旦有新版本時將會通知您。\n\n您可利用 [工具] / [選項...] / [%PRODUCTNAME] / [線上更新] 配置此功能。"
+msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\\nIn doing so online update does not transfer personal data.\\nAs soon as a new version is available, you will be notified.\\n\\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
+msgstr ""
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -852,8 +852,8 @@ msgid  "%PRODUCTNAME Registration"
 msgstr "%PRODUCTNAME 註冊"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
-msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr "您現在有機會以 %PRODUCTNAME 使用者的身份註冊。註冊是自行決定的，不是義務。\n\n如果註冊，我們可以通知您有關此產品的新開發資訊。"
+msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
+msgstr ""
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -868,8 +868,8 @@ msgid  "I do not want to ~register"
 msgstr "不要註冊(~R)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
-msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr "我們希望您有愉快的 %PRODUCTNAME 使用經驗。\n\n要結束精靈，請按一下 [完成]。"
+msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
+msgstr ""
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -920,16 +920,16 @@ msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "無效的指令行選項「%s」。說明請使用 '/?'。"
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
-msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr "此套裝軟體至少需要版本為「%s」的 Windows Installer。\n系統上的 Windows Installer 為「%s」！"
+msgid  "This package requires at least the version '%s' of the Windows Installer. \\nYou have Windows Installer '%s' on your system!"
+msgstr ""
 
 #: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
-msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr "此套裝軟體需要 Windows Installer。\n系統上至少需要 Windows Installer「%s」！"
+msgid  "This package requires the Windows Installer. \\nYou need at least Windows Installer '%s' on your system!"
+msgstr ""
 
 #: win32/source/setup/setup.ulf#%USAGE%
-msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr "用法：\n   /?：顯示此對話方塊。\n /a :執行管理安裝。\n /j[u|m] :執行最小安裝。\n /q[n] :不顯示任何使用者介面 (無訊息模式)。\n"
+msgid  "Usage:\\n   /? :  Shows this dialog.\\n   /a :  Performs an administrative installation.\\n   /j[u|m] :  Performs an advertising installation.\\n   /q[n] : Do not show any user interface (silent mode).\\n"
+msgstr ""
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."

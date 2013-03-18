@@ -192,8 +192,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
-msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr "N'haller ket kargañ unan eus ar parzhioù (%s).\nAdloc'hit ar goulev staliañ (Setup) hag erounezit ur ratreadenn."
+msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
+msgstr ""
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -472,7 +472,7 @@ msgid  "Page %p of %n"
 msgstr ""
 
 #: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
-msgid  "No default printer found.\nPlease choose a printer and try again."
+msgid  "No default printer found.\\nPlease choose a printer and try again."
 msgstr ""
 
 #: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
@@ -725,7 +725,7 @@ msgstr "Skoazell"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
 msgid  "~More"
-msgstr "~All"
+msgstr "~Dibarzhioù"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
 msgid  "~More"

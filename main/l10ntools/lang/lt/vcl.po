@@ -210,9 +210,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
-#, fuzzy
-msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr "Komponento (%s) nepavyko įkelti.\nPaleiskite diegimo programą ir pasirinkite taisymo parinktį."
+msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
+msgstr ""
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 #, fuzzy
@@ -507,7 +506,7 @@ msgid  "Page %p of %n"
 msgstr ""
 
 #: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
-msgid  "No default printer found.\nPlease choose a printer and try again."
+msgid  "No default printer found.\\nPlease choose a printer and try again."
 msgstr ""
 
 #: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
@@ -684,34 +683,42 @@ msgid  "B6 (JIS)"
 msgstr ""
 
 #: source/src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.String.Text
+#, fuzzy
 msgid  "<No selection possible>"
 msgstr "<Veiksmai negalimi>"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MenuItem.Text
+#, fuzzy
 msgid  "~Undo"
 msgstr "~Atšaukti"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MenuItem.Text
+#, fuzzy
 msgid  "Cu~t"
 msgstr "~Iškirpti"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
 msgstr "~Kopijuoti"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MenuItem.Text
+#, fuzzy
 msgid  "~Paste"
 msgstr "Į~dėti"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Šalinti"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MenuItem.Text
+#, fuzzy
 msgid  "Select ~All"
 msgstr "Pažymėti ~viską"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MenuItem.Text
+#, fuzzy
 msgid  "~Special Character..."
 msgstr "~Specialieji rašmenys..."
 
@@ -720,6 +727,7 @@ msgid  "Services"
 msgstr ""
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEAPP.String.Text
+#, fuzzy
 msgid  "Hide %PRODUCTNAME"
 msgstr "Apie „%PRODUCTNAME“"
 
@@ -732,45 +740,56 @@ msgid  "Show All"
 msgstr ""
 
 #: source/src/menu.src#SV_MENU_MAC_QUITAPP.String.Text
+#, fuzzy
 msgid  "Quit %PRODUCTNAME"
 msgstr "Apie „%PRODUCTNAME“"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
+#, fuzzy
 msgid  "OK"
 msgstr "Gerai"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "Atsisakyti"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
+#, fuzzy
 msgid  "~Yes"
 msgstr "~Taip"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
+#, fuzzy
 msgid  "~No"
 msgstr "~Ne"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
+#, fuzzy
 msgid  "~Retry"
 msgstr "~Bandyti vėl"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~Žinynas"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
+#, fuzzy
 msgid  "~More"
 msgstr "~Daugiau"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
+#, fuzzy
 msgid  "~More"
 msgstr "~Daugiau"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
+#, fuzzy
 msgid  "~Ignore"
 msgstr "~Nepaisyti"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
+#, fuzzy
 msgid  "~Abort"
 msgstr "~Nutraukti"

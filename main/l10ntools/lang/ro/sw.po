@@ -37,11 +37,11 @@ msgstr "nu este posibil"
 
 #: source/core/undo/undo.src#STR_DELETE_UNDO.String.Text
 msgid  "Delete $1"
-msgstr "Șterge $1"
+msgstr "Ștergere $1"
 
 #: source/core/undo/undo.src#STR_INSERT_UNDO.String.Text
 msgid  "Insert $1"
-msgstr "Inserează $1"
+msgstr "Inserare $1"
 
 #: source/core/undo/undo.src#STR_OVR_UNDO.String.Text
 msgid  "Overwrite: $1"
@@ -417,7 +417,7 @@ msgstr "Tabel/index schimbat"
 
 #: source/core/undo/undo.src#STR_START_QUOTE.String.Text
 msgid  "'"
-msgstr "”"
+msgstr "„"
 
 #: source/core/undo/undo.src#STR_END_QUOTE.String.Text
 msgid  "'"
@@ -741,7 +741,7 @@ msgstr "Acesta nu este un fișier WinWord97"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "Eroare de format descoperită în fișier în subdocumentul $(ARG1) la $(ARG2) (rând,coloană)."
+msgstr "S-a descoperit o eroare de formatare în fișierul din sub-documentul $(ARG1) la $(ARG2)(row,col)."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "Documentul nu a putut fi salvat în întregime."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "Acest document HTML conține macrocomenzi %PRODUCTNAME Basic.\nEle nu au fost salvate cu configurările curente de export."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "pagină goală"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "Clipboard-ul conține o cantitate mare de date.\nDoriți să păstrați conținutul pentru a fi disponibil în alte aplicații?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "Conversia în format HTML \n poate conduce la pierderea de informații.\nDoriți să salvați documentul?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "Codul sursă poate fi afișat doar dacă documentul este salvat în format HTML.\nDoriți să salvați documentul ca HTML ?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "Documentul dumneavoastră conține câmpuri de bază de date cu adrese. Doriți să tipăriți o scrisoare în serie ?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -1433,7 +1433,7 @@ msgstr "~Trimite mai în spate"
 
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "~Aranjare"
+msgstr "~Aranjează"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
@@ -1481,7 +1481,7 @@ msgstr "~Editează conturul..."
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.MenuItem.Text
 msgid  "~Wrap"
-msgstr "~Împachetează"
+msgstr "Îm~pachetează"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_NOWRAP.MenuItem.Text
 msgid  "~No Wrap"
@@ -1897,7 +1897,7 @@ msgstr "Paragraf"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_STD.PageItem.Text
 msgid  "Indents & Spacing"
-msgstr "Spațiere paragrafări"
+msgstr "Spațiere și alinieri"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_ALIGN.PageItem.Text
 msgid  "Alignment"
@@ -2649,7 +2649,7 @@ msgstr "Atribute"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 msgid  "[None]"
-msgstr "[Nimic]"
+msgstr "[Niciunul]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item2.StringList.item
 msgid  "Bold"
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<Setări de utilizator>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "Doriți să schimbați opțiunile de compatibilitate ale șablonului implicit?\nAceasta va afecta toate documentele noi bazate pe șablonul implicit."
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2893,11 +2893,11 @@ msgstr "Folosește modul de pagină pătrată pentru grila de text"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TabPage.Text
 msgid  "Caption"
-msgstr "Titlu"
+msgstr "Subtitrare"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "Adaugă automat titluri\ncând inserez:"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -2961,7 +2961,7 @@ msgstr "Nivel"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.LB_LEVEL.item1.StringList.item
 msgid  "None"
-msgstr "Niciunul"
+msgstr "Nimic"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_SEPARATOR.FixedText.Text
 msgid  "Separator"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "Nu ați specificat un nume nou pentru anexă. Dacă doriți să introduceți unul, vă rugăm să o faceți acum."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "Pentru a putea trimite documente combinate prin email, %PRODUCTNAME are nevoie de informații despre contul de email ce va fi folosit.\n\n Doriți să introduceți informațiile despre contul de email acum?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "~Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "Notă:\nSepararea adreselor de email se face cu punct și virgulă (;)."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "Trimitere eșuată (adresă nevalidă)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "Există încă mesaje email netrimise în %PRODUCTNAME.\nDoriți sa ieșiți oricum?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "Editare document"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "Scrieți sau editați documentul dumneavoastră acum dacă nu ați făcut-o deja. Schimbările vor afecta toate documentele combinate.\n\nUn clic pe „Editare document...” va reduce temporar asistentul la o fereastră mică astfel încât să puteți edita documentul ce trebuie combinat. După editarea documentului reveniți la asistent printr-un clic în fereastra mică pe „Înapoi la asistentul de corespondență în serie”."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "Formatul de clipboard solicitat nu este disponibil."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "Formatul secțiunii este depășit.\nE nevoie să fie convertit pentru ca schimbările\nsă fie salvată.\nConvertim acum?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "Notă de subsol: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "Conținutul protejat la scriere nu poate fi schimbat.\nNici o modificare nu va fi acceptată."
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "Opțiuni"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "Eticheta \"%1 / %2\" există deja.\nDoriți să o suprascrieți ?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6061,7 +6061,7 @@ msgstr "Editează câmpuri"
 
 #: source/ui/fldui/fldui.src#STR_DATEFLD.String.Text
 msgid  "Date"
-msgstr "Dată"
+msgstr "Data"
 
 #: source/ui/fldui/fldui.src#STR_TIMEFLD.String.Text
 msgid  "Time"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "Răsfoiește..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "Folosiți acest dialog pentru a înlocui bazele de date pe care le accesați în document prin câmpuri de baze de date, cu alte baze de date. Puteți face doar câte o singură modificare. Selecția multiplă este posibilă în lista din stânga.\nFolosiți butonul „Răsfoiește” pentru a selecta un fișier cu o bază de date."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -7545,7 +7545,7 @@ msgstr "Spațierea coloanei depășește lărgimea coloanei."
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.ModalDialog.Text
 msgid  "Caption"
-msgstr "Titlu"
+msgstr "Subtitrare"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.BTN_AUTOCAPTION.PushButton.Text
 msgid  "AutoCaption..."
@@ -7605,7 +7605,7 @@ msgstr "Dedesubt"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_CATEGORY_NONE.String.Text
 msgid  "<None>"
-msgstr "<Niciuna>"
+msgstr "<Niciunul>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.ModalDialog.Text
 msgid  "Options"
@@ -8009,7 +8009,7 @@ msgstr "~Creează..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MN_AUTOMARK_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "~Editare..."
+msgstr "~Editează..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MenuItem.Text
 msgid  "~File"
@@ -8245,7 +8245,7 @@ msgstr "Interval numere și descriere"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.FT_ENTRY_NO.FixedText.Text
 msgid  "Format"
-msgstr "Formatare"
+msgstr "Format"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.LB_ENTRY_NO.item1.StringList.item
 msgid  "Number"
@@ -9349,7 +9349,7 @@ msgstr "Crescător"
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.RB_DN2.RadioButton.Text
 msgid  "Descending"
-msgstr "descrescător"
+msgstr "Descrescător"
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.CB_KEY3.CheckBox.Text
 msgid  "Key ~3"
@@ -9489,7 +9489,7 @@ msgstr "~Pagină"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CHAR_TEMPL.FixedLine.Text
 msgid  "Character Styles"
-msgstr "Stiluri de caractere"
+msgstr "Stiluri caracter"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 msgid  "Te~xt area"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "Formatare automată"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "Formatare automată completată.\nPuteți accepta sau respinge toate schimbările\nsau doar unele schimbări."
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "Sumă"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "Ați introdus un nume nevalid.\nNu s-a putut crea formatarea automată dorită. \nÎncercați din nou folosind un alt nume."
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "Prima ~coloană ca legendă"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "Dacă celulele selectate nu conțin datele dorite, selectați intervalul de date acum.\n\nIncludeți celulele care conțin etichetele de coloană și rând dacă doriți să le includeți în diagramă."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "Doriți să verificați textul principal ?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "Opțiunea de vedere a comenzilor de câmp este bifată.\nDoriți să tipăriți documentul cu numele câmpurilor ?  "
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Prima literă a propoziției în majusculă"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "Înlocuiește ghilimelele \"standard\" cu ghilimele %1personalizate%2"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -10953,7 +10953,7 @@ msgstr "Configurează stilul pentru \"Corp text\"\"\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 msgid  "Set \"Text body indent\" Style"
-msgstr "Configurează stil \"aliniere corp text\" "
+msgstr "Configurează \"Aliniere corp text\" "
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 msgid  "Set \"Hanging indent\" Style"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[Sistem]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "Corectarea ortografică interactivă este deja activă\nîntr-un document diferit"
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "Despărțirea în silabe interactivă este deja activă\nintr-un document diferit"
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -11413,7 +11413,7 @@ msgstr "Document WWW"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "Definit de utilizator1"
+msgstr "Definit de utilizator 1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
@@ -11585,7 +11585,7 @@ msgstr "Înainte"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_DROP_REGION.ToolBoxItem.Text
 msgid  "Drag Mode"
-msgstr "Mod Tragere"
+msgstr "Mod tragere"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_ITEM_UP.ToolBoxItem.Text
 msgid  "Promote Chapter"

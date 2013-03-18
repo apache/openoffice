@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "შაბლონი შეიქმნა <wizard_name> ზე <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "ოსტატი ვერ გაიშვება, იმიტომ რომ აუცილებელი ფაილები ვერ მოიძებნა.\n'ინსტრუმენტები  - საშუალებები - %PRODUCTNAME - მდებარეოებები' დააწკაპუნეთ კლავიშზე 'ნაგულისხმევი' რომ დაყენდეს ორიგინალური ნაგულისხმევი პარამერები.\nგაუშვით ოსტატი თავიდან."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "ფელები ~პორმაში"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "ორობითი ველები არიან ყოველთვის დაჯგუფებული მონიშვნადი მარცხენა ცხრილიდან.\nშესაძლებლობის მიხედვით ისინი ინტერპრეტირდებინ, როგორც გამოსახულებები."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "ქვეფორმა არის ფორმა, რომელიც ჩასმული სხვა ფორმაში.\nგამოიყენეთ ქვეფორმები, რომ გამოჩნდეს მონაცემთა ცხრილის ფორმები ან მოთხოვნები ერთი-ბევრთან კავშირით."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "ველები ფორმაში"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "აირჩიეთ '<FIELDNAME1>' და '<FIELDNAME2>' არჩეულია ორჯერ.\nმაგერამ არჩევანის გამოყენება შეიძლება მხოლოდ ერთხელ."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "მიანიჭეთ სახელი ფორმიდან"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "ფორმა სახელით '%FORMNAME' უკვე არსებობს.\nაირჩიეთ სხვა სახელი."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -825,7 +825,7 @@ msgstr "~ცხრილები"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
 msgid  "A~vailable fields"
-msgstr "ც~ვლადების ველები"
+msgstr "ხელ~მისაწვდომი ველები"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
 msgid  "Name ~of the query"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "ველი ვერ იქნება ჩასმული , იმოტომ რომ ამან გადააჭარბა მაქსიმალურ რიცხვს %COUNT შესაძლებელ ველებზე მონაცემთა ბაზის ცხრილში"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "სახელი '%TABLENAME' უკვე არსებობს.\nგთხოვთ შეიყვენოთ სხვა სახელი."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1617,7 +1617,7 @@ msgstr "წერილის ოსტატი"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 2.String.Text
 msgid  "Label9"
-msgstr "ჭდე9"
+msgstr "წარწერა9"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 3.String.Text
 msgid  "~Business letter"
@@ -1641,7 +1641,7 @@ msgstr "~ლოგო"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 8.String.Text
 msgid  "Return address"
-msgstr "მისამართის დაბრუნება"
+msgstr "საპასუხო მისამართი"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 9.String.Text
 msgid  "~Include footer"
@@ -1665,7 +1665,7 @@ msgstr "სიმბოლოთა ნიშნები"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 14.String.Text
 msgid  "S~ubject line"
-msgstr "თ~ემის სტრიქონი"
+msgstr "თე~მის სტრიქონი"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 15.String.Text
 msgid  "Salu~tation"
@@ -1677,7 +1677,7 @@ msgstr "საკეცი ~ნიშნები"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
 msgid  "~Complimentary close"
-msgstr "შე~საქები დახურვა"
+msgstr "~სანაქებო დახურვა"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
 msgid  "~Footer"
@@ -1685,7 +1685,7 @@ msgstr "~ქვედა კოლონტიტული"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
 msgid  "~Use user data for return address"
-msgstr "მისამართის დასაბრუნებლად მომხმარებლის მონაცემთა ~გამოყენება"
+msgstr "მომხმარებლის მონაცემთა ~გამოყენება მისამართის დასაბრუნებლად"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
 msgid  "~New sender address:"
@@ -1701,11 +1701,11 @@ msgstr "~წერილთა გასაერთიანებლად მ
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 msgid  "Include ~only on second and following pages"
-msgstr "~მხოლოდ შემდეგი და მიმდინარე გვერდების შემცველობით"
+msgstr "~მხოლოდ შემდეგი და მიმდინარე გვერდების ჩათვლით"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
 msgid  "~Include page number"
-msgstr "გვერდის ნომრის შე~მცველობით"
+msgstr "გვერდის ნომრების ჩათ~ვლით"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 25.String.Text
 msgid  "Letter Template"
@@ -1812,8 +1812,9 @@ msgid  "Template name:"
 msgstr "შაბლონის სახელი:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
+#, fuzzy
 msgid  "Location and file name:"
-msgstr "მდებარეობა და ფაილის სახელი:"
+msgstr "მდებარეობა და სახელი:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
 msgid  "How do you want to proceed?"
@@ -1857,7 +1858,7 @@ msgstr "გამარჯობა"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 1.String.Text
 msgid  "Sincerely"
-msgstr "პატივისცემით"
+msgstr "გულწრფელად"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 2.String.Text
 msgid  "Best regards"
@@ -1933,7 +1934,7 @@ msgstr "მომხმარებლის მონაცემთა ~გა
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 11.String.Text
 msgid  "~New return address"
-msgstr "~ახალი დასაბრუნებელი მისამართი"
+msgstr "დაბრუნების ~ახალი მისამართი"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 12.String.Text
 msgid  "My Fax Template"
@@ -2120,8 +2121,8 @@ msgid  "Web Wizard"
 msgstr "ქსელის ოსტატი"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "ეს ქსელის ოსტატი დაგეხმარებათთქვენი დოკჯუმენტებიის გამოქვეყნებაში ინტერნეტში.\n\nის გარდაქმნის დოკუმენტებს ისე,რომ ხილვადი იყვეს ვებ ბროუზერისთვის.გარდა ამისა, ის წარმოქმნის ცხრილს გვერდის შიგთავსით, რომ ადვილად ხელმისაწვდომი იყვეს დოკუმენტებისთვის. ქსელის ოსტატი აგრეთვე გაძლევთ საშუალებას გააფორნოთ თქვენი გვერდის დიზაინი და მოირგიოთ იგი.\n\nთქვენ შეგეძლებათ დოკუმენტების შენახვა რომელიც გამოაქვეყნეთ ქსელსი მაღალ დონეზე ან დამატებ ან წაშლა დოკუმენტების ნებისმიერდროს."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2541,8 @@ msgid  "Preview"
 msgstr "გადახედვა"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "აღნისნული პარამეტრები წაიშლება.\n\nთქვენ ნამდვილად გნებავთ ამ პარამეტრების წაშლა? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2609,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "FTP დირეტორია '%FILENAME' ვერ შეიქმნება."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP დირექტორია '%FILENAME' არ არსებობს. \nშექმნას ახალი დირექტორი ახლავე?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Zip ფაილი  '%FILENAME' ვერ სეიქმნება: დირექტორი ამ სახელით უკვე არსებობს."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "ლოკალური დირექტოტრია '%FILENAME' ვერ შეიქმნება. \nგთხოვთ შეამოწმეთ თქვენი ჩაწერის -წვდომა."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "ლოკალური დირექტორია'%FILENAME' არ არსებობს. \nგნებავთ შეიქმნას ეხლავე?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2827,7 +2828,7 @@ msgstr "შეხვედრის გამოძახება"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
 #, fuzzy
 msgid  "Chairperson"
-msgstr "წარმომადგენელი"
+msgstr "Chairperson"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +26.String.Text
 #, fuzzy
@@ -3050,729 +3051,911 @@ msgid  "Move down"
 msgstr "დაწევა"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~დახმარება"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~გაუქმება"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
+#, fuzzy
 msgid  "<< ~Back"
 msgstr "<< ~უკან"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
+#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "შემდე~გი >>"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
+#, fuzzy
 msgid  "~Convert"
 msgstr "~გარდაქმნა"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~დახურვა"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
+#, fuzzy
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
 msgstr "ოსტატი გარდაქმნის დოკუმენტს  %PRODUCTNAME ფორმატში და Microsoft Office დოკუმენტებს ახალ OpenDocument ფორმატში."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
+#, fuzzy
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
 msgstr "გთხოვთ ჩაინიშნოთ, რომ Microsoft-ის დოკუმენტები კარგავენ საკუთარ შესაძლებლობებს VBA მაკროსებად გადაყვანისას."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
+#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "მონიშვნა დოკუმენტის ტიპის გარდასაქმნელად:"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Word templates"
 msgstr "Word-ის შაბლონი"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Excel templates"
 msgstr "Excel-ის შაბლონი"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
+#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "PowerPoint-ის შაბლონი"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Word documents"
 msgstr "Word-ის დოკუმენტი"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Excel documents"
 msgstr "Excel-ის დოკუმენტი"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
+#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "PowerPoint-ის დოკუმენტი"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
+#, fuzzy
 msgid  "Including subdirectories"
 msgstr "ქვედირექტორიის ჩათვლით"
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
+#, fuzzy
 msgid  "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
+#, fuzzy
 msgid  "Summary:"
 msgstr "შეჯამება:"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
+#, fuzzy
 msgid  "Import from:"
 msgstr "იმპორტირება:"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
+#, fuzzy
 msgid  "Save to:"
 msgstr "შენახვა:"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
+#, fuzzy
 msgid  "Imported_Templates"
 msgstr "იმპორტირებული_შაბლონი"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
+#, fuzzy
 msgid  "Progress: "
 msgstr "პროგრესი: "
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "დოკუმენტი"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
+#, fuzzy
 msgid  "Documents"
 msgstr "დოკუმენტები"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "შაბლონები"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
+#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr "'%1' დიარექტორიის შექმნა ვერ ხერხდება:"
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
+#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr "'%1' დიარექტორია არ არსებობს."
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
+#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "გინდა რომ შეიქმნას ახლა?"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
+#, fuzzy
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "'<1>' უკვე არსებობს.<CR>გინდა რომ ზედ გადააწერო?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
+#, fuzzy
 msgid  "Directories do not exist"
 msgstr "დირექტორიები არ არსებობენ"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
+#, fuzzy
 msgid  "Do you want to overwrite documents without being asked?"
 msgstr "გინდა რომ შეუკითხავათ ზედ გადააწერო ხოლმე დოკუმენტს?"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
+#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "დოკუმენტის მაკრო საჭიროებს გადახედვას."
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
+#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "დოკუმენტის '<1>' შენახვა ვერ ხერხდება."
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
+#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr "დოკუმენტი '<1>' გახსნა ვერ ხერხდება."
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
+#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "თქვენ ნამდვილად გინდათ ამ ეტაპზე გარდაქმნის შეწვეტა?"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
+#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "გაუკმების ოსტატი"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
+#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "ოსტატში აღმოჩნდა მოულოდნელი შეცდომა."
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
+#, fuzzy
 msgid  "Error"
 msgstr "შეცდომა"
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
+#, fuzzy
 msgid  "Select a directory"
 msgstr "დირექტორიის მონიშვნა"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
+#, fuzzy
 msgid  "Document Converter"
 msgstr "დოკუმენტის გარდაქმნელი"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
+#, fuzzy
 msgid  "Progress"
 msgstr "პროგრესი"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
+#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "დროულად დოკუმენტის აღდგენა:"
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
+#, fuzzy
 msgid  "Converting the documents"
 msgstr "დოკუმენტების გარდაქმნა"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
+#, fuzzy
 msgid  "Found:"
 msgstr "ნაპოვნია:"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
+#, fuzzy
 msgid  "%1 found"
 msgstr "%1 ნაპოვნია"
 
 #: source/importwizard/importwi.src#sReady.String.Text
+#, fuzzy
 msgid  "Finished"
 msgstr "დამთავრებულია"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Text templates"
 msgstr "შაბლონის ტექსტი"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "ელექტრონული ცხრილის შაბლონი"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
+#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "სახატავი/პრეზეტაციის შაბლონები"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
+#, fuzzy
 msgid  "Master documents"
 msgstr "მთავარი დოკუმენტები"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Text documents"
 msgstr "ტექსტური დოკუმენტები"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Spreadsheets"
 msgstr "ელექტრონული ცხრილები"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
+#, fuzzy
 msgid  "Drawing/presentation documents"
 msgstr "სახატავი/პრეზენტაციის დოკუმენტები"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
+#, fuzzy
 msgid  "Master documents/formulas"
 msgstr "მთავარი ფორმულა/დოკუმენტები"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
+#, fuzzy
 msgid  "Master documents"
 msgstr "მთავარი დოკუმენტები"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
+#, fuzzy
 msgid  "Formulas"
 msgstr "ფორმულები"
 
 #: source/importwizard/importwi.src#sSourceDocuments.String.Text
+#, fuzzy
 msgid  "Source documents"
 msgstr "დოკუმენტების წყარო"
 
 #: source/importwizard/importwi.src#sTargetDocuments.String.Text
+#, fuzzy
 msgid  "Target documents"
 msgstr "სამიზნე დოკუმენტები"
 
 #: source/importwizard/importwi.src#sCreateLogfile.String.Text
+#, fuzzy
 msgid  "Create log file"
 msgstr "აღრიცხვის ფაილის შექმნა"
 
 #: source/importwizard/importwi.src#sLogfileSummary.String.Text
+#, fuzzy
 msgid  "<COUNT> documents converted"
 msgstr "<COUNT> დოკუმენტები გარდაქმნილია"
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
+#, fuzzy
 msgid  "A log file will be created in your work directory"
 msgstr "თქვენ სამუშაო დირექტორიში აღრიცხვის ფაილი შეიქმნება"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
+#, fuzzy
 msgid  "Show log file"
 msgstr "აღრიცვის ფაილის ჩვენება"
 
 #: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
+#, fuzzy
 msgid  "All subdirectories will be taken into account"
 msgstr "ყველა ქვედირექტორია იქნება აღრიცხული"
 
 #: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
+#, fuzzy
 msgid  "These will be exported to the following directory:"
 msgstr "ესენი ექსპორტირებული იქნება შემდეგ დირექტტორიაში:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
 msgstr "იმპორტირებული იქნება შემდეგ დირექტორიაში მყოფი %PRODUCTNAME-ის ყველა ტექსტური დოკუმენტი:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
 msgstr "იმპორტირებული იქნება შემდეგ დირექტორიაში მყოფი %PRODUCTNAME-ის ყველა ელექტრონული ცხრილი:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
 msgstr "იმპორტირებული იქნება შემდეგ დირექტორიაში მყოფი %PRODUCTNAME-ის ხატვისა და პრეზენტაციის დოკუმენტები:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
 msgstr "იმპორტირებული იქნება შემდეგ დირექტორიაში მყოფი %PRODUCTNAME-ის ყველა ფურმულა დოკუმენტები:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
 msgstr "იმპორტირებული იქნება შემდეგ დირექტორიაში მყოფი %PRODUCTNAME-ის ყველა ტექსტის შაბლონები:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
 msgstr "იმპორტირებული იქნება შემდეგ დირექტორიაში მყოფი %PRODUCTNAME-ის ყველა ცხრილის შაბლონები:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
 msgstr "იმპორტირებული იქნება შემდეგ დირექტორიაში მყოფი %PRODUCTNAME-ის ყველა სახატავი და პრეზენტაციის შაბლონი:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
 msgstr "იმპორტირებული იქნება შემდეგ დირექტორიაში მყოფი %PRODUCTNAME-ის ყველა მთავარი დოკუმენტები:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
+#, fuzzy
 msgid  "All Word documents contained in the following directory will be imported:"
 msgstr "იმპორტირებული იქნება შემდეგ დირექტორიაში მყოფი ყველა Word დოკუმენტი:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
+#, fuzzy
 msgid  "All Excel documents contained in the following directory will be imported:"
 msgstr "იმპორტირებული იქნება შემდეგ დირექტორიაში მყოფი ყველა Exce-ისl დოკუმენტები:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
+#, fuzzy
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
 msgstr "იმპორტირებული იქნება შემდეგ დირექტორიაში მყოფი ყველა PowerPoint-ისl დოკუმენტები:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
+#, fuzzy
 msgid  "All Word templates contained in the following directory will be imported:"
 msgstr "მიმდინარე დირექტორიაში არსებული Word-ის ყველა შაბლონი ინპორტირებული იქნება:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
+#, fuzzy
 msgid  "All Excel templates contained in the following directory will be imported:"
 msgstr "მიმდინარე დირექტორიაში არსებული Excel-ის ყველა შაბლონი ინპორტირებული იქნება:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
+#, fuzzy
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
 msgstr "მიმდინარე დირექტორიაში არსებული PowerPoint-ის ყველა შაბლონი ინპორტირებული იქნება:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Calendar"
 msgstr "%PRODUCTNAME კალენდარი"
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
+#, fuzzy
 msgid  "Back"
 msgstr "უკან"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "პერსონალური მონაცემები"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
+#, fuzzy
 msgid  "Add Holidays to Calendar"
 msgstr "კალენდარში არდადეგების დამატება"
 
 #: source/schedule/schedule.src#dlgOK.String.Text
+#, fuzzy
 msgid  "Create"
 msgstr "შექმნა"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "გაუქმება"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "კალენდარი"
 
 #: source/schedule/schedule.src#dlgCalOptionYear.String.Text
+#, fuzzy
 msgid  "~Year Overview"
 msgstr "~წლის წარმოდგენა"
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
+#, fuzzy
 msgid  "~Month"
 msgstr "~თვე"
 
 #: source/schedule/schedule.src#dlgSchdlDescription.String.Text
+#, fuzzy
 msgid  "Add holidays for"
 msgstr "არდადეგების დამატება"
 
 #: source/schedule/schedule.src#dlgSchdlCountry.String.Text
+#, fuzzy
 msgid  "USA"
 msgstr "USA"
 
 #: source/schedule/schedule.src#dlgTime.String.Text
+#, fuzzy
 msgid  "Time Frame"
 msgstr "დროის ჩარჩო"
 
 #: source/schedule/schedule.src#dlgYear.String.Text
+#, fuzzy
 msgid  "Year"
 msgstr "წელი"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "თვე"
 
 #: source/schedule/schedule.src#dlgCalOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "პერსონალური მონაცემები"
 
 #: source/schedule/schedule.src#dlgCalInsert.String.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "ჩა~სმა"
 
 #: source/schedule/schedule.src#dlgCalDelete.String.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~წაშლა"
 
 #: source/schedule/schedule.src#dlgCalNewEvent.String.Text
+#, fuzzy
 msgid  "New Event"
 msgstr "ახალი მოვლენა"
 
 #: source/schedule/schedule.src#dlgCalEvent.String.Text
+#, fuzzy
 msgid  "Event"
 msgstr "მოვლენა"
 
 #: source/schedule/schedule.src#dlgCalEventOnce.String.Text
+#, fuzzy
 msgid  "One-Time"
 msgstr "ერთხელ"
 
 #: source/schedule/schedule.src#dlgCalEventDay.String.Text
+#, fuzzy
 msgid  "Day"
 msgstr "დღე"
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "თვე"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
+#, fuzzy
 msgid  "Year"
 msgstr "წელი"
 
 #: source/schedule/schedule.src#dlgBitmapFile.String.Text
+#, fuzzy
 msgid  "usa.bmp"
 msgstr "usa.bmp"
 
 #: source/schedule/schedule.src#dlgState.String.Text
+#, fuzzy
 msgid  "Public holidays"
 msgstr "საჯარო დასვენებები"
 
 #: source/schedule/schedule.src#dlgMonth.String.Text
+#, fuzzy
 msgid  "January"
 msgstr "იანვარი"
 
 #: source/schedule/schedule.src#dlgMonth+1.String.Text
+#, fuzzy
 msgid  "February"
 msgstr "თებერვალი"
 
 #: source/schedule/schedule.src#dlgMonth+2.String.Text
+#, fuzzy
 msgid  "March"
 msgstr "მარტი"
 
 #: source/schedule/schedule.src#dlgMonth+3.String.Text
+#, fuzzy
 msgid  "April"
 msgstr "აპრილი"
 
 #: source/schedule/schedule.src#dlgMonth+4.String.Text
+#, fuzzy
 msgid  "May"
 msgstr "მაისი"
 
 #: source/schedule/schedule.src#dlgMonth+5.String.Text
+#, fuzzy
 msgid  "June"
 msgstr "ივნისი"
 
 #: source/schedule/schedule.src#dlgMonth+6.String.Text
+#, fuzzy
 msgid  "July"
 msgstr "ივლისი"
 
 #: source/schedule/schedule.src#dlgMonth+7.String.Text
+#, fuzzy
 msgid  "August"
 msgstr "აგვისტო"
 
 #: source/schedule/schedule.src#dlgMonth+8.String.Text
+#, fuzzy
 msgid  "September"
 msgstr "სექტემბერი"
 
 #: source/schedule/schedule.src#dlgMonth+9.String.Text
+#, fuzzy
 msgid  "October"
 msgstr "ოქტომბერი"
 
 #: source/schedule/schedule.src#dlgMonth+10.String.Text
+#, fuzzy
 msgid  "November"
 msgstr "ნოემბერი"
 
 #: source/schedule/schedule.src#dlgMonth+11.String.Text
+#, fuzzy
 msgid  "December"
 msgstr "დეკემბერი"
 
 #: source/schedule/schedule.src#msgCalErrorTitle.String.Text
+#, fuzzy
 msgid  "Yearly / Monthly Calendar"
 msgstr "წლიური / თვიური კალენდარი"
 
 #: source/schedule/schedule.src#msgCalError.String.Text
+#, fuzzy
 msgid  "An error occurred while creating the calendar."
 msgstr "შეცდომა კალენდარის შექმნისას"
 
 #: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
+#, fuzzy
 msgid  "Delete event entries"
 msgstr "მოვლენის შენატანების წაშლა"
 
 #: source/schedule/schedule.src#msgCalRemove.String.Text
+#, fuzzy
 msgid  "Delete the selected entries?"
 msgstr "წავშალო არჩეული შენატანები?"
 
 #: source/schedule/schedule.src#stlWorkday.String.Text
+#, fuzzy
 msgid  "Workweek"
 msgstr "სამუშაო კვირა"
 
 #: source/schedule/schedule.src#stlWeekend.String.Text
+#, fuzzy
 msgid  "Weekend"
 msgstr "დასვენების დღეები"
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "კალენდარი"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "თვე"
 
 #: source/schedule/schedule.src#sProgress.String.Text
+#, fuzzy
 msgid  "Progress:"
 msgstr "პროგრესი:"
 
 #: source/template/template.src#SAMPLES.String.Text
+#, fuzzy
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
 msgstr "ამ ნიმუშის სრული ფუნქციონალობების გამოსაყენებლად შექმენით ამ შაბლონზე დაფუძნებული დოკუმენტი."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
+#, fuzzy
 msgid  "Remarks"
 msgstr "შენიშვნები"
 
 #: source/template/template.src#STYLES.String.Text
+#, fuzzy
 msgid  "Theme Selection"
 msgstr "თემის არჩევა"
 
 #: source/template/template.src#STYLES + 1.String.Text
+#, fuzzy
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
 msgstr "შეცდომა დოკუმენტის გაცვლითი ბუფერში შენახვისას! მიმდინარე მოქმედების დაბრუნება შეუძლებელია."
 
 #: source/template/template.src#STYLES + 2.String.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~გაუქმება"
 
 #: source/template/template.src#STYLES + 3.String.Text
+#, fuzzy
 msgid  "~OK"
 msgstr "~კარგი"
 
 #: source/template/template.src#AgendaDlgName.String.Text
+#, fuzzy
 msgid  "Minutes Template"
 msgstr "წუთების შაბლონი"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
+#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "პარამეტრი უნდა იყოს დადასტურებული."
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
+#, fuzzy
 msgid  "Minutes Type"
 msgstr "წუთების ტიპი"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
+#, fuzzy
 msgid  "Results Minutes"
 msgstr "შედეგების წუთები"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
+#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "შეფასების წუთები"
 
 #: source/template/template.src#CorrespondenceNoTextmark.String.Text
+#, fuzzy
 msgid  "The bookmark 'Recipient' is missing."
 msgstr "არ არის სანიშნე 'მიმღები'."
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
+#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "შეუძლებელია შეიცავდეს ფორმის სიმბოლოების ველებს."
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
+#, fuzzy
 msgid  "An error has occurred."
 msgstr "მოხდა შეცდომა."
 
 #: source/template/template.src#CorrespondenceDialog.String.Text
+#, fuzzy
 msgid  "Addressee"
 msgstr "ადრესატი"
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
+#, fuzzy
 msgid  "One recipient"
 msgstr "ერთი მიმღები"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
+#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "რამდენიმე მიმღები (მისამართთა მონაცემთა ბაზა)"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
+#, fuzzy
 msgid  "Use of This Template"
 msgstr "ამ შაბლონის გამოყენება"
 
 #: source/template/template.src#CorrespondenceFields.String.Text
+#, fuzzy
 msgid  "Click placeholder and overwrite"
 msgstr "დააწკაპუნეთ ველზე და გადაწერაზე"
 
 #: source/template/template.src#CorrespondenceFields+1.String.Text
+#, fuzzy
 msgid  "Company"
 msgstr "კომპანია"
 
 #: source/template/template.src#CorrespondenceFields+2.String.Text
+#, fuzzy
 msgid  "Department"
 msgstr "დეპარტამენტი"
 
 #: source/template/template.src#CorrespondenceFields+3.String.Text
+#, fuzzy
 msgid  "First Name"
 msgstr "სახელი"
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
+#, fuzzy
 msgid  "Last Name"
 msgstr "გვარი"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
+#, fuzzy
 msgid  "Street"
 msgstr "ქუჩა"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
+#, fuzzy
 msgid  "Country"
 msgstr "ქვეყანა"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
+#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "ZIP/საფოსტო კოდი"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
+#, fuzzy
 msgid  "City"
 msgstr "ქალაქი"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
+#, fuzzy
 msgid  "Title"
 msgstr "სათაური"
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
+#, fuzzy
 msgid  "Position"
 msgstr "პოზიცია"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
+#, fuzzy
 msgid  "Form of Address"
 msgstr "მისამართის ფორმა"
 
 #: source/template/template.src#CorrespondenceFields+12.String.Text
+#, fuzzy
 msgid  "Initials"
 msgstr "ინიციალები"
 
 #: source/template/template.src#CorrespondenceFields+13.String.Text
+#, fuzzy
 msgid  "Salutation"
 msgstr "მისალმება"
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
+#, fuzzy
 msgid  "Home Phone"
 msgstr "სახლის ტელეფონი"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
+#, fuzzy
 msgid  "Work Phone"
 msgstr "სამსახურის ტელეფონი"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
+#, fuzzy
 msgid  "Fax"
 msgstr "ფაქსი"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
+#, fuzzy
 msgid  "E-Mail"
 msgstr "ელფოსტა"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
+#, fuzzy
 msgid  "Notes"
 msgstr "ჩანაწერები"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
+#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "ალტ. ველი 1"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
+#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "ალტ. ველი 2"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
+#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "ალტ. ველი 3"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
+#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "ალტ. ველი 4"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
+#, fuzzy
 msgid  "ID"
 msgstr "აიდი"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
+#, fuzzy
 msgid  "State"
 msgstr "მდგომარეობა"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
+#, fuzzy
 msgid  "Office Phone"
 msgstr "ოფისის ტელეფონი"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
+#, fuzzy
 msgid  "Pager"
 msgstr "პეიჯერი"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
+#, fuzzy
 msgid  "Mobile Phone"
 msgstr "მობილური ტელეფონი"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
+#, fuzzy
 msgid  "Other Phone"
 msgstr "სხვა ტელეფონი"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
+#, fuzzy
 msgid  "Calendar URL"
 msgstr "კალენდარის URL"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
+#, fuzzy
 msgid  "Invite"
 msgstr "მოწვევა"
 
 #: source/template/template.src#TextField.String.Text
+#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "მომხმარებლის მონაცემთა ველი არაა განსაზღვრული!"
 
 #: source/template/template.src#Newsletter.String.Text
+#, fuzzy
 msgid  "General layout"
 msgstr "მთავარი განლაგება"
 
 #: source/template/template.src#Newsletter + 1.String.Text
+#, fuzzy
 msgid  "Default layout"
 msgstr "ნაგულისხმევი განლაგება"
 
 #: source/template/template.src#Newsletter + 2.String.Text
+#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "სამახსოვრო გამოცემის განლაგება"
 
 #: source/template/template.src#Newsletter + 3.String.Text
+#, fuzzy
 msgid  "Brochure layout"
 msgstr "Brochure განლაგება"
 
 #: source/template/template.src#Newsletter + 10.String.Text
+#, fuzzy
 msgid  "Format"
 msgstr "ფორმატი"
 
 #: source/template/template.src#Newsletter + 11.String.Text
+#, fuzzy
 msgid  "Single-sided"
 msgstr "ერთმხრიანი"
 
 #: source/template/template.src#Newsletter + 12.String.Text
+#, fuzzy
 msgid  "Double-sided"
 msgstr "ორმხრიანი"

@@ -136,8 +136,8 @@ msgid  "Save"
 msgstr "Enregistrer"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "Le texte source est trop long : enregistrement et compilation impossibles.\nSupprimez des commentaires ou transférez des méthodes dans un autre module."
+msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -200,8 +200,8 @@ msgid  "The 'XX' file already exists"
 msgstr "Le fichier 'XX' existe déjà"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "Pour des raisons de sécurité, il est impossible d'exécuter cette macro.\n\nPour plus d'informations, vérifiez les paramètres de sécurité."
+msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -372,8 +372,8 @@ msgid  "A name must be entered."
 msgstr "Vous devez indiquer un nom."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "Vous devrez redémarrer le programme après cette modification.\nPoursuivre ?"
+msgid  "You will have to restart the program after this edit.\\nContinue?"
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -508,8 +508,8 @@ msgid  "Dialog Import - Name already used"
 msgstr "Import de la boîte de dialogue - nom déjà utilisé"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr "La bibliothèque contient déjà une boîte de dialogue ayant le nom :\n\n$(ARG1)\n\nRenommez la boîte de dialogue pour conserver la boîte de dialogue actuelle ou remplacez la boîte de dialogue existante.\n "
+msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -524,8 +524,8 @@ msgid  "Dialog Import - Language Mismatch"
 msgstr "Import de la boîte de dialogue - la langue ne correspond pas"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr "La boîte de dialogue à importer prend en charge d'autres langues que celles de la bibliothèque cible.\n\nAjoutez ces langues à la bibliothèque pour conserver les ressources de langues supplémentaires fournies par la boîte de dialogue ou omettez-les pour conserver les langues de la bibliothèque actuelle.\n\nRemarque : pour les langues non prises en charge par la boîte de dialogue, les ressources de la langue par défaut de la boîte de dialogue seront utilisées.\n "
+msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
+msgstr ""
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -780,8 +780,8 @@ msgid  "Delete Language Resources"
 msgstr "Supprimer les ressources linguistiques"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr "Vous êtes sur le point de supprimer les ressources des langues sélectionnées. Toutes les chaînes d'interface utilisateur pour ces langues seront supprimées.\n\nVoulez-vous supprimer les ressources des langues sélectionnées ?"
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"

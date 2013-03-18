@@ -72,8 +72,8 @@ msgid  "The data source was not saved. Please use the interface XStorable to sav
 msgstr "தரவு மூலம் சேமிக்கப்படவில்லை. தரவு மூலத்தைச் சேமிக்க XStorable இடைமுகப்பைப் பயன்படுத்தவும்."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
-msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr "கொடுக்கப்பட்ட கட்டளை ஒரு SELECT கூற்று கிடையாது.\nகேள்விகளுக்கு மட்டுமே அனுமதியுள்ளது."
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -188,8 +188,8 @@ msgid  "There are tables in the database whose names conflict with the names of 
 msgstr "ஏற்கனவே உள்ள கேள்விகளின் பெயர்களுடன் முரணான பெயர் கொண்ட அட்டவணைகள் தரவுத்தளத்திலுள்ளன. எல்லா கேள்விகளையும் அட்டவணைகளையும் முழுமையாகப் பயன்படுத்த, அவற்றிக்குத் தனிப்பட்ட பெயர்களிருப்பதை உறுதிசெய்வும்."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
-msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr "இப்பிழைக்கு காரணமான SQL கட்டளை:\n\n$command$"
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -220,11 +220,11 @@ msgid  "Unable to find the document '$name$'."
 msgstr "'$name$' ஆவணத்தைக் கண்டுபிடிக்க முடியவில்லை."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
-msgid  "Could not save the document to $location$:\n$message$"
-msgstr "ஆவணத்தை சேமிக்க முடியவில்லை:\n\n$except$:\n$message$"
+msgid  "Could not save the document to $location$:\\n$message$"
+msgstr ""
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
-msgid  "Error accessing data source '$name$':\n$error$"
+msgid  "Error accessing data source '$name$':\\n$error$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
@@ -408,8 +408,8 @@ msgid  "The backup file entered does not exist."
 msgstr "உள்ளிடப்பட்ட பின்சேமிப்பு கோப்பு இருக்கவில்லை."
 
 #: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
-msgid  "The fully qualified file cannot be longer than \'#\' characters."
-msgstr ""
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "\\'#\\'எழுத்துக்களை விட முழு தரமான கோப்பு இல்லை."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
 msgid  "The administrator and the control user cannot have the same name!"
@@ -428,8 +428,8 @@ msgid  "The specified file name or directory does not exist."
 msgstr "கொடுக்கப்பட்ட கோப்பின் பெயரோ அடைவோ இருக்கவில்லை."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr "புதிய தரவுத்தளம் உருவாக்க முடியாது.\nஉங்கள் Adabas D நிறுவலை, குறிப்பாக \"DBROOT\"மற்றும் \"DBWORK\" மாறிகளை பரிசோதிக்கவும்."
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -492,8 +492,8 @@ msgid  "Welcome to the Database Macro Migration Wizard"
 msgstr "தரவுத்தள மேக்ரோ இடப்பெயர்வு வழிகாட்டிக்கு வருக"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
-msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr "இவ்வழிகாட்டி மேக்ரோ இடம்பெயர்ப்பு பணியின் இடையே உங்களை வழிநடத்திச்செல்லும்.\n\nநடப்பு ஆவணத்தின் படிவங்களிலும் அறிக்கைகளிலும் முன்பு பதிக்கப்பட்டிருந்த மேக்ரோக்கள் நீங்கள் முடித்த பின்னர் ஆவணத்திற்குள்ளேயே இடமாற்றப்பட்டிருக்கும். அப்போது, தேவைக்கேற்றவாறு நூலகங்கள் மறுபெயரிடப்படும்.\n\nஉங்கள் படிவங்களிலும் அறிக்கைகளிலும் அம்மேக்ரோக்களுக்கான மேற்கோள்கள் இருப்பின், அவை முடிந்தவரை சரிசெய்யப்படும்.\n\nஇடப்பெயர்வு தொடங்குவதற்கு முன், அனைத்து படிவங்கள், அறிக்கைகள், கேள்விகள், அட்டவணைகளும் மூடப்பட வேண்டும். அதனைச் செய்ய 'அடுத்து' தட்டவும்."
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
@@ -886,14 +886,12 @@ msgid  "Disable Preview"
 msgstr "முன்னோட்டத்தை செயல்நீக்கு"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
-#, fuzzy
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr "தரவுத்தளம் திருத்தப்பட்டுள்ளது.\nநீங்கள் மாற்றங்களைச் சேமிக்க விரும்புகிறீர்களா?"
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
-#, fuzzy
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr "இணைப்பு வகை மாற்றப்பட்டது.\nமாற்றங்களைப் பயன்படுத்த, அனைத்து படிவங்கள், அறிக்கைகள், கேள்விகள், அட்டவணைகளும் மூடப்பட வேண்டும்.\n\nஅனைத்து ஆவணங்களையும் இப்போது நீங்கள் மூட விரும்புகிறீர்களா?"
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -941,9 +939,8 @@ msgid  "The document contains forms or reports with embedded macros."
 msgstr "பதிக்கப்பட்ட மேக்ரோக்களுடைய படிவங்களையும் அறிக்கைகளையும் ஆவணம் கொண்டுள்ளது."
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
-#, fuzzy
-msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr "மேக்ரோகள் தரவுத்தள ஆவணத்திலேயே பதிக்கப்படல் வேண்டும்.\n\nஉங்கள் ஆவணத்தை முன்பைப் போலவே நீங்கள் தொடர்ந்து பயன்படுத்தலாம், ஆனால் உங்கள் மேக்ரோக்களை இடம்பெயர்ப்பது நல்லது. 'கருவிகள் / மேக்ரோக்களை இடம்பெயர் ...' பட்டியல் உருப்படி இதற்கு உதவும்.\n\nஇவ்விடம்பெயர்ப்பு நிகழும் வரை ரேக்ரோக்களை உங்களால் தரவுத்தள ஆவணத்தில் பதிக்க இயலாது என்பதைக் கவனத்தில் கொள்ளவும்."
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr ""
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 #, fuzzy
@@ -959,230 +956,286 @@ msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr "நடப்பு அறிக்கை மாற்றப்பட்டது.\nநீங்கள் மாற்றங்களை சேமிக்க விரும்புகிறீர்களா?"
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "தேர்ந்தெடுக்கப்பட்ட தரவை நீங்கள் அழிக்க விரும்புகிறீர்களா?"
 
 #: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
+#, fuzzy
 msgid  "(filtered)"
 msgstr "(வடிகட்டப்பட்டது)"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "வரிசைபடுத்தல் விதியை அமைப்பதில் பிழை"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "வடிகட்டி விதியை அமைப்பதில் பிழை"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+#, fuzzy
 msgid  "Connection lost"
 msgstr "இணைப்பு துண்டிக்கப்பட்டது"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Queries"
 msgstr "வினவல்கள்"
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "அட்டவணைகள்"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+#, fuzzy
 msgid  "Edit ~Database File..."
 msgstr "தரவுத்தள கோப்பைத் தொகு (~D)..."
 
 #: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+#, fuzzy
 msgid  "Registered databases ..."
 msgstr "பதிவு செய்யப்பட்ட தரவுத்தளங்கள் ..."
 
 #: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+#, fuzzy
 msgid  "Disco~nnect"
 msgstr "இணைப்பைத் துண்டி (~n)"
 
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "அழித்தலை உறுதிசெய்"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "அட்டவணை '%1' ஐ அழிக்க விரும்புகிறீர்களா?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
 msgstr "கேள்வி ஏற்கெனவே உள்ளது. அதை அழிக்க விரும்புகிறீர்களா?"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "தரவுத்தளத்தின் இணைப்பு துண்டிக்கப்பட்டது. மீண்டும் இணைக்க விரும்புகிறீர்களா?"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+#, fuzzy
 msgid  "Warnings encountered"
 msgstr "எச்சரிக்கைகள் எதிர்கொள்ளப்பட்டன"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
 msgstr "அட்டவணைகளை மீட்கையில், எச்சரிக்கைகள் தரவுத்தள இணைப்பால் தெரிவிக்கப்பட்டன."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
 msgstr "\"$name$\" உடன் இணைக்கப்படுகிறது ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "$name$ கேள்வி ஏற்றப்படுகிறது ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "$name$ அட்டவணை ஏற்றப்படுகிறது ..."
 
 #: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+#, fuzzy
 msgid  "No table format could be found."
 msgstr "எந்த ஒரு அட்டவணை வடிவமைப்புமில்லை."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "\"$name$\" தரவு மூலத்துடனான இணைப்பை ஏற்படுத்த முடியவில்லை."
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+#, fuzzy
 msgid  "Rebuild"
 msgstr "மறுஉருவாக்கம்"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+#, fuzzy
 msgid  "Column ~Format..."
 msgstr " நிரல் வடிவமைப்பு (~F)..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "பத்தி விவரத்தை நகலெடு (~e)"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+#, fuzzy
 msgid  "Table Format..."
 msgstr "அட்டவணை வடிவமைப்பு..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Row Height..."
 msgstr "வரி உயரம்..."
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "செயல்நீக்கு: தரவு உள்ளீடு"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+#, fuzzy
 msgid  "Save current record"
 msgstr "நடப்பு ஆவணைத்தைச் சேமி"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+#, fuzzy
 msgid  "Query #"
 msgstr "வினவல் #"
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "அட்டவணை #"
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+#, fuzzy
 msgid  "View #"
 msgstr "பார்வை #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+#, fuzzy
 msgid  "The name \"#\" already exists."
 msgstr "\"#\" என்ற பெயர் ஏற்கனவே உள்ளது."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+#, fuzzy
 msgid  "No matching column names were found."
 msgstr "பொருந்தும் நிரல் பெயர்கள் காணப்படவில்லை."
 
 #: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
 msgstr "ஒரு பிழை ஏற்பட்டது. நகலெடுப்பதைத் தொடர விரும்புகிறீர்களா?"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+#, fuzzy
 msgid  "Data source table view"
 msgstr " தரவு மூல அட்டவணை பார்வை"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+#, fuzzy
 msgid  "Shows the selected table or query."
 msgstr "தேர்ந்தெடுக்கப்பட்ட அட்டவணை அல்லது வினவலைக் காட்டுகிறது."
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "அட்டவணை #"
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr " SQL கூற்றுகளைத் திருத்து"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+#, fuzzy
 msgid  "Table name"
 msgstr "அட்டவணை பெயர்"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+#, fuzzy
 msgid  "Insert data"
 msgstr "தரவை நுழை"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+#, fuzzy
 msgid  "Delete data"
 msgstr "தரவை அழி"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+#, fuzzy
 msgid  "Modify data"
 msgstr "தரவை மாற்றியமை"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+#, fuzzy
 msgid  "Alter structure"
 msgstr "கட்டமைப்பை மாற்று"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+#, fuzzy
 msgid  "Read data"
 msgstr "தரவை வாசி"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+#, fuzzy
 msgid  "Modify references"
 msgstr "மேற்கோள்களைத் திருத்து"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+#, fuzzy
 msgid  "Drop structure"
 msgstr "கட்டமைப்பை அகற்று"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Ascending"
 msgstr "ஏறுவரிசையில் அடுக்கு"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Descending"
 msgstr "இறங்குவரிசையில் அடுக்கு"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
 msgstr " SDBC இயக்கி மேலாளருடன் இணைக்க முடியவில்லை (#servicename#)."
 
 #: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "#connurl# URLக்கு ஒரு இயக்கி பதிவுசெய்யப்படவில்லை."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
 msgstr "#connurl# URLக்கு ஒரு இணைப்பை ஏற்படுத்த இயலவில்லை."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
 msgstr "நடப்பு அமைவுகளைச் சரிபார்க்கவும், எ.கா. பயனர் பெயர் மற்றும் கடவுச்சொல்."
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+#, fuzzy
 msgid  "Successfully connected, but information about database tables is not available."
 msgstr "வெற்றிகரமாக இணைக்கப்பட்ட போதிலும், தரவுத்தள அட்டவணைகளைப் பற்றிய தகவல் கிடைக்கவில்லை."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+#, fuzzy
 msgid  "All tables"
 msgstr "எல்லா அட்டவணைகளும்"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+#, fuzzy
 msgid  "All views"
 msgstr "எல்லா பார்வைகளும்"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+#, fuzzy
 msgid  "All tables and views"
 msgstr "அனைத்துப் அட்டவணைகளும் பார்வைகளும்"
 
@@ -1389,7 +1442,7 @@ msgstr "நிலையான வடிகட்டி"
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 #, fuzzy
 msgid  "AND"
-msgstr "AND"
+msgstr "OR"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 #, fuzzy
@@ -1479,7 +1532,7 @@ msgstr "காலியாக அமை (~S)"
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
 #, fuzzy
 msgid  "Set ~default"
-msgstr "முன்னிருப்பாக அமை (~d)"
+msgstr "முன்னிருப்பை அமை (~d)"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
 #, fuzzy
@@ -1577,62 +1630,77 @@ msgid  "<none>"
 msgstr "<ஏதுமில்லை>"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "விருப்பங்கள்"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
+#, fuzzy
 msgid  "Use SQL92 naming constraints"
 msgstr "SQL92 பெயரிடும் வரையறைகளைப் பயன்படுத்து"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
+#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
 msgstr "SELECT கூற்றுகளில் அட்டவணைப் புனைப்பெயரை சேர்க்கவும்"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
+#, fuzzy
 msgid  "Use keyword AS before table alias names"
 msgstr "விசைவார்த்தை AS க்கு முன்பு அட்டவணை புனைப் பெயர்களை பயன்படுத்தவும்"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
+#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
 msgstr "வெளிப்புற சேர்க்கை syntax '{OJ }'ஐ பயன்படுத்தவும்"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
+#, fuzzy
 msgid  "Ignore the privileges from the database driver"
 msgstr "தரவுத்தள இயக்கியிலிருந்து முன்னுரிமைகளை புறக்கணிக்கவும்"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
+#, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "பெயரிடப்பட்ட அளவுருக்களை மாற்றவா  '?'"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
+#, fuzzy
 msgid  "Display version columns (when available)"
 msgstr "பதிப்பு நிரல்களைக் காட்டு (கிடைத்தால்)"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
+#, fuzzy
 msgid  "Use catalog name in SELECT statements"
 msgstr "SELECT கூற்றுகளில்  வகை பெயரை பயன்படுத்தவும்"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
+#, fuzzy
 msgid  "Use schema name in SELECT statements"
 msgstr "SELECT கூற்றுகளில் திட்டப் பெயரை பயன்படுத்தவும்"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
+#, fuzzy
 msgid  "Create index with ASC or DESC statement"
 msgstr "ASC அல்லது DESC கூற்றுகளுடன் உள்ளடக்கத்தை உருவாக்கு"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
+#, fuzzy
 msgid  "End text lines with CR+LF"
 msgstr "CR+LF உடன் உரை வரிகளை முடி"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
+#, fuzzy
 msgid  "Ignore currency field information"
 msgstr "கரன்சி பல தகவலை புறக்கணி"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
+#, fuzzy
 msgid  "Form data input checks for required fields"
 msgstr "தேவைப்படும் புலத்திற்கான படிவம் தரவு உள்ளீடு பரிசோதனைகள்"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
+#, fuzzy
 msgid  "Use ODBC conformant date/time literals"
 msgstr "ODBC ஒத்த தேதி/நேர சொற்களுக்கு பயன்படுத்தவும்"
 
@@ -1645,22 +1713,27 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "Default"
 msgstr "முன்னிருப்பு"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "SQL"
 msgstr "SQL"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "Mixed"
 msgstr "கலந்தது"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "MS Access"
 msgstr "MS அணுகல்"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
+#, fuzzy
 msgid  "Comparison of Boolean values"
 msgstr "பூலியன் மதிப்புகளை ஒப்பிடவும்"
 
@@ -1669,26 +1742,32 @@ msgid  "Rows to scan column types"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "அமைவுகள்"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
+#, fuzzy
 msgid  "Re~trieve generated values"
 msgstr "உருவாக்கப்பட்ட மதிப்புகளை திரும்பி எடுக்கவும் (~t)"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
+#, fuzzy
 msgid  "~Auto-increment statement"
 msgstr "தானியக்கி அதிகரிக்கும் கூற்று (~A)"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
+#, fuzzy
 msgid  "~Query of generated values"
 msgstr "உருவாக்கப்பட்ட மதிப்புகளை வினவும் (~Q)"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
+#, fuzzy
 msgid  "Generated Values"
 msgstr "உருவாக்கப்பட்ட மதிப்புகள்"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
+#, fuzzy
 msgid  "Special Settings"
 msgstr "சிறப்பு அமைவுகள்"
 
@@ -1697,34 +1776,42 @@ msgid  "Advanced Settings"
 msgstr ""
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
+#, fuzzy
 msgid  "Save"
 msgstr "சேமி"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Create New Directory"
 msgstr "புதிய அடைவவை உருவாக்கு"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Up One Level"
 msgstr "ஒரு படி மேலே"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
+#, fuzzy
 msgid  "File ~name:"
 msgstr "கோப்பின் பெயர் (~n):"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
+#, fuzzy
 msgid  "Save"
 msgstr "சேமி"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
+#, fuzzy
 msgid  "~Path:"
 msgstr "பாதை (~P):"
 
 #: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
+#, fuzzy
 msgid  "Folder"
 msgstr "கோப்புறை"
 
 #: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
+#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "கோப்பு முன்பே உள்ளது. மேலெழுதவேண்டுமா?"
 
@@ -1734,9 +1821,8 @@ msgid  "A password is needed to connect to the data source \"$name$\"."
 msgstr "\"$name$\" தரவு மூலத்துடன் இணைக்க ஒரு கடவுச்சொல் தேவை."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
-#, fuzzy
-msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr "இந்த அடைவு\n\n$path$\n\nஉள்ளிருக்கவில்லை. இதை உருவாக்க வேண்டுமா?"
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr ""
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 #, fuzzy
@@ -1769,30 +1855,37 @@ msgid  "Mark the tables that should be visible for the applications."
 msgstr "பயன்பாடுகளால் காணக்கூடிய அட்டவணைகளைக் குறிப்பிடவும்."
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Database name"
 msgstr "தரவுத்தள பெயர் (~D)"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
+#, fuzzy
 msgid  "Se~rver / Port"
 msgstr "சேவையகம்/துறை (~r)"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Server"
 msgstr "சேவையகம் (~S)"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
+#, fuzzy
 msgid  "~Port"
 msgstr "துறை (~P)"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
+#, fuzzy
 msgid  "Default: 3306"
 msgstr "முன்னிருப்பு: 3306"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
+#, fuzzy
 msgid  "So~cket"
 msgstr "சாக்கெட் (~c)"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
+#, fuzzy
 msgid  "Named p~ipe"
 msgstr "பெயரிடப்பட்ட பைப் (~i)"
 
@@ -1807,26 +1900,32 @@ msgid  "User administration"
 msgstr "பயனர் நிர்வாகி"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "அட்டவணைகள்"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
+#, fuzzy
 msgid  "Queries"
 msgstr "கேள்விகள்"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "சேர்க்க (~A)"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "மூடு (~C)"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
+#, fuzzy
 msgid  "Add Tables"
 msgstr "பட்டிகளைச் சேர்க்க"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
+#, fuzzy
 msgid  "Add Table or Query"
 msgstr "அட்டவணை அல்லது கேள்வியைச் சேர்"
 
@@ -1861,18 +1960,22 @@ msgid  "Table Format"
 msgstr "அட்டவணை வடிவம்"
 
 #: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
+#, fuzzy
 msgid  "Use catalog for file-based databases"
 msgstr "கோப்பு சார்ந்த தரவுத்தளங்களில் வகையை பயன்படுத்தவும்"
 
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
 msgid  "Connection Settings"
 msgstr "இணைப்பு அமைவுகள்"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
+#, fuzzy
 msgid  "~Host name"
-msgstr "வழங்கி பெயர் (~H)"
+msgstr "புரவலப் பெயர் (~H)"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
+#, fuzzy
 msgid  "~Port number"
 msgstr "துறை எண் (~P)"
 
@@ -1952,9 +2055,8 @@ msgid  "Database"
 msgstr "தரவுத்தளம்"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
-#, fuzzy
-msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr "பின்வரும் பக்கங்களில், இணைப்பிற்கான அமைவுகளை விரிவாகக் குறிக்கலாம்.\n\nநீங்கள் செய்யும் புதிய அமைவுகள் தற்பொழுதுள்ள அமைவுகளை மாற்றியமைக்கும்."
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 #, fuzzy
@@ -1972,9 +2074,8 @@ msgid  "Could not load the program library #lib# or it is corrupted. The ODBC da
 msgstr "#lib#-ன் நிரல் நூலகத்தை ஏற்ற இயலவில்லை, அல்லது அது சேமடைந்துள்ளது. ODBC தரவு மூலத் தேர்வு கிடையாது."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
-#, fuzzy
-msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr "இவ்வகையான தரவு மூலத்திற்கு இத்தளத்தில் ஆதரவில்லை.\nஅமைவுகளை மாற்றும் அனுமதி உங்களுக்கு இருந்தாலும், தரவுத்தளத்துடன் இணைய உங்களால் முடியாமல் போகலாம்."
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 #, fuzzy
@@ -2182,54 +2283,67 @@ msgid  "Insert as"
 msgstr "இதுவாக உள்நுழை"
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "dBASE கோப்புகளுக்கான பாதை"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the text files"
 msgstr "உரை கோப்புகளுக்கான பாதை"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "விரிதாள் ஆவணத்திற்கான பாதை"
 
 #: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
+#, fuzzy
 msgid  "Name of the ODBC data source on your system"
 msgstr "உங்கள் கணினியிலுள்ள ODBC தரவு மூலத்தின் பெயர்"
 
 #: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
+#, fuzzy
 msgid  "Name of the MySQL database"
 msgstr "MySQL தரவுத்தளத்தின் பெயர்"
 
 #: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
+#, fuzzy
 msgid  "Name of the Oracle database"
 msgstr "ஆரக்கல் தரவுத்தளின் பெயர்"
 
 #: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
+#, fuzzy
 msgid  "Name of the Adabas D database"
 msgstr "Adabas D தரவுத்தளத்தின் பெயர்"
 
 #: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
+#, fuzzy
 msgid  "Microsoft Access database file"
 msgstr "மைக்ரோஸாஃப்ட் அணுகல் தரவுத்தள கோப்பு"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
+#, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
 msgstr "மேற்பட்ட அமைவுகள் தேவையில்லை. இணைப்பு சரியாக வேலை செய்கிறதா எனப் பரிசோதிக்க, '%test' பொத்தானைச் சொடுக்கவும்."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
+#, fuzzy
 msgid  "Datasource URL"
 msgstr "தரவுமூல URL"
 
 #: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
+#, fuzzy
 msgid  "~Host name"
 msgstr "புரவலப் பெயர் (~H)"
 
 #: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
+#, fuzzy
 msgid  "~Mozilla profile name"
 msgstr "~Mozilla விவரக்குறிப்பின் பெயர்"
 
 #: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
+#, fuzzy
 msgid  "~Thunderbird profile name"
 msgstr "~Thunderbird விவரக்குறிப்பு பெயர்"
 
@@ -2264,134 +2378,167 @@ msgid  "Choose a database"
 msgstr "ஒரு தரவுத்தளத்தைத் தேர்ந்தெடு"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
 msgid  "General"
 msgstr "பொது"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
+#, fuzzy
 msgid  "~Host name"
 msgstr "புரவலப் பெயர் (~H)"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
+#, fuzzy
 msgid  "User authentication"
 msgstr "பயனர் அங்கீகாரம்"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
+#, fuzzy
 msgid  "~User name"
 msgstr "பயனர் பெயர் (~U)"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
+#, fuzzy
 msgid  "Password required"
 msgstr "கடவுச்சொல் தேவைப்படுகிறது"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
+#, fuzzy
 msgid  "JDBC properties"
 msgstr "JDBC பண்புகள்"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
+#, fuzzy
 msgid  "~JDBC driver class"
 msgstr "~JDBC இயக்கியின் வகை"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
+#, fuzzy
 msgid  "Test Class"
 msgstr "சோதனை வகை"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
+#, fuzzy
 msgid  "Test Connection"
 msgstr "சொதனை இணைப்பு"
 
 #: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
+#, fuzzy
 msgid  "No Adabas D data sources were found on your system."
 msgstr "Adabas D தரவு மூலங்கள் உங்கள் முறைமையில் காணப்படவில்லை."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
+#, fuzzy
 msgid  "Connection Test"
 msgstr "இணைப்பு சோதனை"
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
+#, fuzzy
 msgid  "The connection was established successfully."
 msgstr "இணைப்பு வெற்றிகரமாக ஏற்படுத்தப்பட்டது."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
+#, fuzzy
 msgid  "The connection could not be established."
 msgstr "இணைப்பை ஏற்படுத்த முடியவில்லை."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
+#, fuzzy
 msgid  "The JDBC driver was loaded successfully."
 msgstr "JDBC இயக்கி வெற்றிகரமாக ஏற்றப்பட்டது."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
+#, fuzzy
 msgid  "The JDBC driver could not be loaded."
 msgstr "JDBC இயக்கியை ஏற்ற முடியவில்லை."
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
+#, fuzzy
 msgid  "MS Access file"
 msgstr "MS அணுகல் கோப்பு"
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
+#, fuzzy
 msgid  "MS Access 2007 file"
 msgstr "MS அணுகல் 2007 கோப்பு"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+#, fuzzy
 msgid  "Database files"
 msgstr "தரவுத்தள கோப்புகள்"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
+#, fuzzy
 msgid  "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
+#, fuzzy
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+#, fuzzy
 msgid  "Database sizes"
 msgstr "தகவல்தள அளவுகள்"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "அளவு (~i) (MB):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "இலவச நினைவகம் இடைவெளி (~F) (MB):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "நினைவகம் பயன்பாடு (~M) (in %):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+#, fuzzy
 msgid  "Database Statistics"
 msgstr "தரவுத்தள புள்ளி விவரம்"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+#, fuzzy
 msgid  "Contains the system tables"
 msgstr "முறைமை அட்டவணைகளை கொண்டுள்ளன"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+#, fuzzy
 msgid  "Contains information about transaction"
 msgstr "பரிமாற்றம் பற்றிய தகவல்களை கொண்டுள்ளது"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+#, fuzzy
 msgid  "Contains all data files"
 msgstr "அனைத்து தரவு கோப்புகளையும் கொண்டுள்ளன"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+#, fuzzy
 msgid  "Total size of the database files"
 msgstr "தரவுத்தள கோப்புகளின் மொத்த அளவு"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "தற்போதைய வெற்றிடம் கிடைக்கபெறும் முன்பு புதிய தரவுடெவ் கோப்பு உருவாக்கும்."
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+#, fuzzy
 msgid  "Currently used memory"
 msgstr "நடப்பில் பயன்படுத்தப்படும் நினைவகம்"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
 msgstr "எந்த தகவலும் தெரியவில்லை ஏனென்றால் தேவையான முறைமை அட்டவணைகளை இயக்கும் உரிமை இல்லை."
 
@@ -2558,7 +2705,7 @@ msgstr "dBASE இணைப்பை அமை"
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
 #, fuzzy
 msgid  "Set up a connection to text files"
-msgstr "dBASE கோப்புகளுக்கான இணைப்பை அமை"
+msgstr "உரை கோப்புகளுடன் ஒரு இணைப்பை அமை"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
 #, fuzzy
@@ -2631,9 +2778,8 @@ msgid  "Set up a connection to a MySQL database"
 msgstr "ஒரு MySQL தரவுத்தளத்துடன் இணைப்பை அமை"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
-#, fuzzy
-msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "நீங்கள் MySQL தரவுத்தளத்துடன் ODBC அல்லது JDBC கொண்டு இணையலாம்.\nபின்வரும் அமைவுகள் புரியவில்லையானால் உங்கள் மண்டல நிர்வாகியைத் தொர்பு கொள்க."
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 #, fuzzy
@@ -2726,9 +2872,8 @@ msgid  "Set up connection to a MySQL database using JDBC"
 msgstr "ஒரு MySQL தரவுத்தளத்தை JDBCஐ பயன்படுத்தி இணைப்பை அமைக்கவும்"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "MySQL தரவுத்தளத்தில் JDBCஐ பயன்படுத்தி இணைப்பதற்கு தேவையான தகவலை உள்ளிடவும். ஒரு JDBC இயக்கி வகுப்பு உங்கள் கணினியில் நிறுவப்பட்டு %PRODUCTNAME உடன் பதிவு செய்யப்பட வேண்டும்.\nபின்வரும் அமைவுகளில் உறுதி இல்லையெனில் உங்கள் கணினி நிர்வாகியை தொடர்பு கொள்ளவும்."
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 #, fuzzy
@@ -2791,9 +2936,8 @@ msgid  "Set up a connection to an LDAP directory"
 msgstr "ஒரு LDAP அடைவிற்கு ஒரு இணைப்பை அமை"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "ஒரு LDAP அடைவினை இணைக்க தேவையான தகவலை உள்ளிடவும்.\nபின்வரும் அமைவுகளைப் பற்றி உறுதி இல்லை எனில் உங்கள் கணினி நிர்வாகியை தொடர்பு கொள்ளவும்."
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 #, fuzzy
@@ -2811,9 +2955,8 @@ msgid  "Set up a connection to an Adabas D database"
 msgstr "ஒரு Adabas D தரவுத்தளத்திற்கு ஒரு இணைப்பை அமை"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr "Adabas D தரவுத்தளத்தை நீங்கள் இணைக்க விரும்பினால் பெயரை உள்ளிடவும்.\n'உலாவு...'ஐ க்ளிக் செய்து ஒரு Adabas D தரவுத்தளத்தில் ஏற்கனவே பதிவுசெய்யப்பட்ட %PRODUCTNAMEஐ தேர்ந்தெடுக்கவும்."
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 #, fuzzy
@@ -2821,9 +2964,8 @@ msgid  "Set up a connection to an ADO database"
 msgstr "ஒரு ADO தரவுத்தளத்திற்கு ஒரு இணைப்பை அமைக்கவும்"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "ADO தரவு மூலத்தை நீங்கள் இணைக்க விரும்பினால் URLஐ உள்ளிடவும்.\n'உலாவி' குறிப்பிட்ட-வழங்கி அமைவை கட்டமைக்க க்ளிக் செய்யவும்.\nபின்வரும் அமைவுகளைப் பற்றி உறுதி இல்லை எனில் உங்கள் கணினி நிர்வாகியை தொடர்பு கொள்ளவும்."
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2831,9 +2973,8 @@ msgid  "Set up a connection to an ODBC database"
 msgstr "ஒரு ODBC தரவுத்தளத்திற்கு ஒரு இணைப்பை அமை"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "ODBC தரவுத்தளத்தை நீங்கள் இணைக்க விரும்பினால் பெயரை உள்ளிடவும்.\n'உலாவி...' க்ளிக் செய்து ஒரு ODBC தரவுத்தளத்தை அது ஏற்கனவே %PRODUCTNAMEஐ பதிவுசெய்யப்பட தேர்ந்தெடுக்கவும்.\nபின்வரும் அமைவுகளைப் பற்றி உறுதி இல்லை எனில் உங்கள் கணினி நிர்வாகியை தொடர்பு கொள்ளவும்."
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2841,9 +2982,8 @@ msgid  "Set up a connection to a JDBC database"
 msgstr "ஒரு JDBC தரவுத்தளத்திற்கு ஒரு இணைப்பை அமை"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "ஒரு JDBC தரவுத்தளத்தை இணைக்க தேவையான தகவலை உள்ளிடவும்.\nபின்வரும் அமைவுகளைப் பற்றி உறுதி இல்லை எனில் உங்கள் கணினி நிர்வாகியை தொடர்பு கொள்ளவும்."
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 #, fuzzy
@@ -2861,9 +3001,8 @@ msgid  "Oracle JDBC ~driver class"
 msgstr "ஆரக்கல் JDBC இயக்கி வகுப்பு (~d)"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "ஒரு ஆரக்கல் தரவுத்தளத்தை இணைக்க தேவையான தகவலை உள்ளிடவும்.ஒரு JDBC இயக்கி வகுப்பு  உங்கள் கணினியில் நிறுவப்பட்டு %PRODUCTNAME உடன் பதிவுசெய்யப்பட வேண்டும்.\nபின்வரும் அமைவுகளைப் பற்றி உறுதி இல்லை எனில் உங்கள் கணினி நிர்வாகியை தொடர்பு கொள்ளவும்."
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 #, fuzzy
@@ -2871,9 +3010,8 @@ msgid  "Set up a connection to spreadsheets"
 msgstr "விரிதாள்களுக்கு ஒரு இணைப்பை அமை"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr "'உலாவி...' க்ளிக்செய்து ஒரு %PRODUCTNAME விரிதாள் அல்லது மைக்ரோஸாஃப்ட் எக்செல் பணிபுத்தகத்தில் தேர்ந்தெடுக்கவும்.\nஇந்த கோப்பினை %PRODUCTNAMEஐ வாசிக்கும்- முறைமை மட்டும் திறக்கவும்."
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 #, fuzzy
@@ -3016,9 +3154,8 @@ msgid  "{None}"
 msgstr "{எதுவுமில்லை}"
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
-#, fuzzy
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
 #, fuzzy
@@ -3051,96 +3188,118 @@ msgid  "Socket"
 msgstr "சாக்கெட்"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+#, fuzzy
 msgid  "Refresh"
 msgstr "புதுப்பி"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~View Design"
 msgstr "புதிய பார்வை வடிவாக்கம் (~V)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Table Design"
 msgstr "புதிய அட்டவணை வடிவாக்கம் (~T)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "கேள்வி தானோட்டி..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "புதிய கேள்வி (வடிவாக்கப் பார்வை) (~Q)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "~Edit Query"
 msgstr "கேள்வியைத் திருத்து (~E)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "புதிய கேள்வி (~SQL பார்வை)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "திருத்து..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+#, fuzzy
 msgid  "Column ~Width..."
 msgstr "நிரல் அகலம் (~W)..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+#, fuzzy
 msgid  "Report Wizard..."
 msgstr "அறிக்கை வழிகாட்டி..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "படிவ தானோட்டி..."
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+#, fuzzy
 msgid  "System"
 msgstr "முறைமை"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+#, fuzzy
 msgid  "Error during creation"
 msgstr "உருவாக்கத்தின் போது பிழை"
 
 #: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "எதிர்பாராத பிழை ஏற்பட்டது. செயயல்பாட்டை  செயற்படுத்த முடியவில்லை."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
 msgstr "\"$file$\" ஆவணத்தைத் திறக்க முடியவில்லை."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
 msgstr "அட்டவணையை அழிக்க முடியவில்லை ஏனெனில் தரவுத்தள இணைப்பு இதனை ஆதரிக்கவில்லை."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+#, fuzzy
 msgid  "~All"
 msgstr "அனைத்தும் (~A)"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+#, fuzzy
 msgid  "Undo:"
 msgstr "செயல்நீக்கு:"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+#, fuzzy
 msgid  "Redo:"
 msgstr "மறுபடி செய்:"
 
 #: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
 msgstr "'#1'நிரலுக்கு ஏற்புடைய நிரல் வகையைக் காணவில்லை."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+#, fuzzy
 msgid  "The file \"$file$\" does not exist."
 msgstr "\"$file$\" என்ற கோப்பு இருக்கவில்லை."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr "தரவு மூலத்துடன் இணையும்போது எச்சரிக்கைகள் விடுக்கப்பட்டன. இவற்றைக் காண \"$buttontext$\" ஐ சொடுக்கவும்."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
-msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr "'$#$' என்ற பெயர் ஏற்கனவே உள்ளது.\nவேறொரு பெயரை உள்ளிடவும்."
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
 #, fuzzy
@@ -3158,9 +3317,8 @@ msgid  "Type formatting"
 msgstr "வகை வடிவமைப்பு"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
-#, fuzzy
-msgid  "The following fields have already been set as primary keys:\n"
-msgstr "பின்வரும் புலங்கள் முதன்மை விசைகளாக ஏற்கனவே அமைக்கப்பட்டுள்ளன:\n"
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
 #, fuzzy
@@ -3223,14 +3381,12 @@ msgid  "Primary Key"
 msgstr "முதன்மை சாவி"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
-#, fuzzy
-msgid  "Source table: \n"
-msgstr "மூல அட்டவணை:\n"
+msgid  "Source table: \\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
-#, fuzzy
-msgid  "Destination table: \n"
-msgstr "சேரிட அட்டவணை: \n"
+msgid  "Destination table: \\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
 #, fuzzy
@@ -3313,268 +3469,333 @@ msgid  "Please change the table name. It is too long."
 msgstr "அட்டவணை பெயரை மாற்றவும். அதிக நீளமாக உள்ளது."
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "விருப்பங்கள்"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "வகை (~T)"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
+#, fuzzy
 msgid  "Inner join"
 msgstr "உள் இணைப்பு"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
+#, fuzzy
 msgid  "Left join"
 msgstr "இடது இணைப்பு"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
+#, fuzzy
 msgid  "Right join"
 msgstr "வலது இணைப்பு"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
+#, fuzzy
 msgid  "Full (outer) join"
 msgstr "முழு (வெளி) இணைப்பு"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
+#, fuzzy
 msgid  "Cross join"
 msgstr "குறுக்கு இணைப்பு"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
+#, fuzzy
 msgid  "Natural"
 msgstr "இயற்கையான"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+#, fuzzy
 msgid  "Tables involved"
 msgstr "ஈடுபட்டுள்ள அட்டவணைகள்"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+#, fuzzy
 msgid  "Fields involved"
 msgstr "ஈடுபட்டுள்ள புலங்கள்"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
+#, fuzzy
 msgid  "Join Properties"
 msgstr "இணைப்பு பண்புகள்"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
+#, fuzzy
 msgid  "Please note that some databases may not support this join type."
 msgstr "சில தரவுத்தளங்கள் இவ்வகை இணைப்புகளை ஆதரிக்கவில்லை என கருத்தில் கொள்ளவும்."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
+#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
 msgstr "இரு பட்டிகளிலும் உள்ள தொடர்புடைய நெடுவரிசைகளைக் கொண்ட பதிவுகளைக் கொண்டது."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
+#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
 msgstr " '%1'உள்ள அனைத்துப் பதிவுகளும் ஆனால் பட்டி '%2'பொருந்தும் பதிவுகள் மட்டுமே உள்ளன."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
+#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
 msgstr "அனைத்துப் பதிவுகள் '%1' இலிருந்து '%2' இல் உள்ளன."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
+#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "'%1'மற்றும் '%2'இலிருந்து அனைத்து பதிவுகளும் கார்டீசியன் தயாரிப்பினை கொண்டுள்ளன."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
+#, fuzzy
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
 msgstr "'%1' மற்றும் '%2'இலிருந்து சமமாக பெயரிடப்பட்ட நிரல்களின் ஜோடிகளை ஒவ்வொரு நிரலும் கொண்டுள்ளன. "
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+#, fuzzy
 msgid  "Add Table Window"
 msgstr "அட்டவணை சாளரத்தைச் சேர்"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+#, fuzzy
 msgid  "Move table window"
 msgstr "அட்டவணை சாளரத்தை நகர்த்து"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+#, fuzzy
 msgid  "Insert Join"
 msgstr "இணைப்பை நுழை"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+#, fuzzy
 msgid  "Delete Join"
 msgstr "இணைப்பை அழி"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+#, fuzzy
 msgid  "Resize table window"
 msgstr "அட்டவணை சாளரத்தை மறுஅளவிடு"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+#, fuzzy
 msgid  "Delete Column"
 msgstr "நிரலை அழி"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+#, fuzzy
 msgid  "Move column"
 msgstr "நிரலை நகர்த்து"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+#, fuzzy
 msgid  "Add Column"
 msgstr "நிரலைச் சேர்"
 
 #: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "தவறான  தெரிவித்தல், '$name$' என்ற ஒரு அட்டவணை இல்லை."
 
 #: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
 msgstr "செல்லாத தெரிவித்தல், புலப் பெயர் '$name$' இருக்கவில்லை."
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "இந்த கேள்வி #num#அட்டவணையையும் சேர்க்கிறது. தேர்ந்தெடுக்கப்பட்ட தரவுத்தளத்தின் வகை, எப்படியிருப்பினும், ஒரு அதிகபட்ச #maxnum# அட்டவணை(கள்) கூற்றை செயற்படுகிறது."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+#, fuzzy
 msgid  "Delete Table Window"
 msgstr "அட்டவணை சாளரத்தை அழி"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+#, fuzzy
 msgid  "Edit Column Description"
 msgstr "நிரல் விளக்கத்தைத் திருத்து"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+#, fuzzy
 msgid  "Adjust column width"
 msgstr "நிரல் அகலத்தைத் ஒதுக்கவும்"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
+#, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "(வரிசைபடுத்தப்படாதது);ஏறுவரிசை;இறங்குவரிசை"
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+#, fuzzy
 msgid  "(no function);Group"
 msgstr "(செயல்பாடு அல்ல);குழு"
 
 #: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
+#, fuzzy
 msgid  "(no table)"
 msgstr "(அட்டவணை இல்லை)"
 
 #: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+#, fuzzy
 msgid  "The database only supports sorting for visible fields."
 msgstr "காணும் புலங்களின் வரிசைபடுத்தலை மட்டுமே தரவுத்தளம் ஆதரிக்கிறது."
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+#, fuzzy
 msgid  "Functions"
 msgstr "செயல்பாடுகள்"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+#, fuzzy
 msgid  "Table Name"
 msgstr "அட்டவணை பெயர்"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+#, fuzzy
 msgid  "Alias"
 msgstr "மாற்று"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+#, fuzzy
 msgid  "Distinct Values"
 msgstr "தனிப்பட்ட மதிப்புகள்"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "புலம்;மாற்று;அட்டவணை;வரிசை;செயற்பாடு;அலகு;அல்லது;அல்லது"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+#, fuzzy
 msgid  "There are too many columns."
 msgstr "மிகவும் அதிகமான நிரல்களுள்ளன."
 
 #: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "புலம் [*] நிபந்தனைப் படுத்தவியலாது"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+#, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "உருவாக்கிய SQL கூற்று மிக்க நீளமாக உள்ளது."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+#, fuzzy
 msgid  "Query is too complex"
 msgstr "கேள்வி மிக கடினமாக உள்ளது"
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "எதுவும் தெரிவுசெய்யப்படவில்லை."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+#, fuzzy
 msgid  "Too many search criteria"
 msgstr "மிக அதிகமான தேடல் வரையறைகளுள்ளன"
 
 #: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
+#, fuzzy
 msgid  "SQL syntax error"
 msgstr "SQL இலக்கண பிழை"
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "[*] ஒரு வரிசைபடுத்தும் வரையறையாக பயன்படுத்த முடியாது."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+#, fuzzy
 msgid  "There are too many tables."
 msgstr "மிகவும் அதிகமான அட்டவணைகளுள்ளன."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "தரவுதளத்தின் SQL மொழியில் வினவப்படும் போது கூற்றைப் பயன்படுத்த முடியாது."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "புலப் பெயர் காணவில்லை அல்லது தனித்து இருக்கவில்லை"
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+#, fuzzy
 msgid  "Join could not be processed"
 msgstr "சேர்ப்பதை செயல்படுத்த முடியாது"
 
 #: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
+#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "SQL கூற்றில் இலக்கண பிழை"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+#, fuzzy
 msgid  "This database does not support table views."
 msgstr "இத்தரவுத்தள அட்டவணை பார்வையை ஆதரிக்கவில்லை."
 
 #: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+#, fuzzy
 msgid  "This database does not support altering of existing table views."
 msgstr "இத்தரவுத்தளம் ஏற்கனவே உள்ள அட்டவணைப் பார்வையை மாற்ற ஆதரிக்கவில்லை."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "வினவலை உருவாக்க நீங்கள் விருப்புகிறீர்களா?"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+#, fuzzy
 msgid  "No query could be created."
 msgstr "எந்த வினவலையும் உருவாக்க இயலாது."
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+#, fuzzy
 msgid  "No query could be created because no fields were selected."
 msgstr "புலங்களைத் தேர்ந்தெடுக்க வினவல் உருவாக்கப்படவில்லை."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
 msgstr "தரவு மூலம நீக்கப்பட்டது. ஆகையால், தரவு மூலம் சம்பந்தப்பட்ட தரவைச் சேமிக்க முடியாது."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "'$name$' நிரல் தெரியவில்லை."
 
 #: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+#, fuzzy
 msgid  "Columns can only be compared using '='."
 msgstr "நிரல்களை '=' ஐக் கொண்டுதான் ஒப்பிட முடியும்."
 
 #: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
 msgstr "நீங்கள் 'LIKE' க்கு முன் ஒரு நிரல் பெயரை பயன்படுத்த வேண்டும்."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
 msgstr "நிரல் கிடைக்கவில்லை. தரவுதளத்தில் ஒவ்வொரு எழுத்தும் முக்கியம் என கருத்தில் கொள்ளவும்."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
 msgstr " - %PRODUCTNAME தளம்: கேள்வி வடிவாக்கம்"
 
 #: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
 msgstr " - %PRODUCTNAME தளம்: பார்வை வடிவாக்கம்"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
-msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr "$object$ மாற்றப்பட்டது.\n மாற்றங்களை நீங்கள் சேமிக்க விரும்புகிறீர்களா?"
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
@@ -3585,106 +3806,129 @@ msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
+#, fuzzy
 msgid  "The table view"
 msgstr "அட்டவணைப் பார்வை"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
+#, fuzzy
 msgid  "The query"
 msgstr "இந்த வினா"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
+#, fuzzy
 msgid  "The SQL statement"
 msgstr "SQL கூற்று"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
 msgstr "இந்த வினா ஒரு அறிக்கையை அமைப்பை உருவாக்கவில்லை, மற்றும் மற்றொரு வினாவின் பகுதியில்லை."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
+#, fuzzy
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "செயல்பாட்டு இணைப்பு மற்றும் தரவு மூல பெயர் ஆகிய இரண்டும் அளவுருவில் விடுபட்டது அல்லது தவறான - வினா வடிவமைப்பில் துவக்க முடியவில்லை."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "இத்தொடர்பு ஏற்கனவே உள்ளது. அதனை தொகுக்கவோ அல்லது புதிய ஒன்றை உருவாக்கவோ விரும்புகிறீர்களா?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "தொகு..."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+#, fuzzy
 msgid  "Create..."
 msgstr "உருவாக்கு..."
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " - %PRODUCTNAME தளம்: தொடர்பு வடிவாக்கம்"
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+#, fuzzy
 msgid  "The database does not support relations."
 msgstr "தரவுத்தளம் தொடர்புகளை துணைபுரியவில்லை."
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr "தொடர்பு வடிவாக்கம் மாற்றபட்டுள்ளது.\nமாற்றங்களை நீங்கள் சேமிக்க விரும்புகிறீர்களா?"
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "இவ்வட்டவணையை அழித்தால் அனைத்து தொடர்புகளும் கூடவே அழிக்கப்படும். தொடரவா?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
-msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr "தரவுத்தளமானது இந்த தொடர்பை உருவாக்கவில்லை. வெளிநாட்டு விசைகள் இந்த வகையான அட்டவணைக்கு துணைபுரியவில்லை.\nதரவுத்தளத்தில் உங்கள் ஆவணத்தை சரிபார்க்கவும்."
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
+#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 msgstr "தெரியாத;உரை;எண்;தேதி/நேரம்;தேதி;நேரம்;சரி/இல்லை;நோட்டு;குறிப்பு;Counter;படம்;உரை (fix);தசமம்;இருநிலை (fix);இருநிலை;BigInt;இருபக்க;Float;Real; முழுஎண்;Small Integer;Tiny Integer;SQL Null;பொருள்;Distinct;கட்டமைப்பு;புலம்;BLOB;CLOB;REF;OTHER"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
-msgstr "முதன்மை சாவியை நுழை/நீக்கு"
+msgstr "முதன்மை சாவியை நுழை/அகற்று"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "சரி"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "இல்லை"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+#, fuzzy
 msgid  "Ascending"
 msgstr "ஏறுவரிசை"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+#, fuzzy
 msgid  "Descending"
 msgstr "இறங்குவரிசை"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+#, fuzzy
 msgid  "<none>"
 msgstr "<ஒன்றுமில்லை>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+#, fuzzy
 msgid  "Field name"
 msgstr "புலப் பெயர்"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "Field Name"
 msgstr "புலப் பெயர்"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
+#, fuzzy
 msgid  "Field ~type"
 msgstr "புலத்தின் வகை (~t)"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
+#, fuzzy
 msgid  "Field Type"
 msgstr "புலத்தின் வகை"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
+#, fuzzy
 msgid  "Field length"
 msgstr "புலத்தின் நீளம்"
 
 #: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
+#, fuzzy
 msgid  "Description"
 msgstr "விளக்கம்"
 
@@ -3693,274 +3937,332 @@ msgid  "Column Description"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
+#, fuzzy
 msgid  "Input required"
 msgstr "உள்ளீடு தேவை"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
+#, fuzzy
 msgid  "~AutoValue"
 msgstr "தன்னியக்க மதிப்பு (~A)"
 
 #: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Field Properties"
 msgstr "புலப் பண்புகள்"
 
 #: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
+#, fuzzy
 msgid  "General"
 msgstr "பொது"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "Description:"
 msgstr "விளக்கம்:"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Table properties"
 msgstr "அட்டவணை பண்புகள்"
 
 #: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
+#, fuzzy
 msgid  "The text you entered is not a list element. "
 msgstr "நீங்களிட்ட உரை பட்டியல் உறுப்படி இல்லை. "
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
+#, fuzzy
 msgid  "Insert Rows"
 msgstr "வரிசைகளைச் சேர்"
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+#, fuzzy
 msgid  "Primary Key"
 msgstr "முதன்மைச் சாவி"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
+#, fuzzy
 msgid  "Modify cell"
 msgstr "சிற்றறையைத் திருத்து"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
+#, fuzzy
 msgid  "Delete row"
 msgstr "வரிசையை அழி"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
+#, fuzzy
 msgid  "Modify field type"
 msgstr "புல வகையைத் திருத்து"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
+#, fuzzy
 msgid  "Insert row"
 msgstr "வரிசையை நுழை"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
+#, fuzzy
 msgid  "Insert new row"
 msgstr "புதிய வரிசையை நுழை"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
+#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "முதன்மை சாவியை நுழை/அகற்று"
 
 #: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
+#, fuzzy
 msgid  "~Default value"
 msgstr "முன்னிருப்பு மதிப்பு (~D)"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
+#, fuzzy
 msgid  "~Entry required"
 msgstr "உள்ளீடு தேவை (~E)"
 
 #: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+#, fuzzy
 msgid  "~Length"
 msgstr "நீளம் (~L)"
 
 #: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "வகை (~T)"
 
 #: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
+#, fuzzy
 msgid  "~Length"
 msgstr "நீளம் (~L)"
 
 #: source/ui/tabledesign/table.src#STR_SCALE.String.Text
+#, fuzzy
 msgid  "Decimal ~places"
 msgstr "தசம இடங்கள் ( ~p)"
 
 #: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
+#, fuzzy
 msgid  "Format example"
 msgstr "வடிவமைப்பு எடுத்துக்காட்டு"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
-msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr "அனைத்து புதிய ஏடுகளிலும் முன்னிருப்பாக தெரியும் மதிப்பைத் தேர்ந்தெடுக்கவும்.\nமுன்னிருப்பு மதிப்பு புலத்தில் இருக்க வேண்டாமென்றால், வெற்று சரத்தைத் தேர்ந்தெடுக்கவும்."
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
-msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr "இப்புலத்தின் முன்னிருப்பு மதிப்பை உள்ளிடு.\n\nஅட்டவணையில் தரவைப் பிறகு இடும்போது, இச்சரம் தேர்ந்தெடுத்த ஒவ்வொரு புதிய ஏடுகளிலும் பயன்படுத்தப்படும். ஆதலால், அது கீழே இடவுள்ள சிற்றறை வடிவமைப்புடன் ஏற்றதாக இருத்தல் வேண்டும்."
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
+#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
 msgstr "இப்புலம் NULL மதிப்புகளை கொண்டிருக்க முடியாதென்றால் இவ்விருப்பத்தை செயல்படுத்தவும், அதாவது பயனர் எப்போதுமே தரவை உள்ளிட வேண்டும்."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
+#, fuzzy
 msgid  "Enter the maximum text length permitted."
 msgstr "அனுமதிக்கப்பட்ட அதிகபட்ச உரை நீளத்தை உள்ளிடு."
 
 #: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
+#, fuzzy
 msgid  "Enter the number format."
 msgstr "எண் வடிவத்தைத் உள்ளிடு."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
-msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr "இப்புலத்தில் இருக்கக்கூடிய தரவின் நீளத்தை முடிவுசெய்யவும்.\n\nதசமமாக இருந்தால், அதிக பட்ச எண்ணிக்கையிலான எண்களை உள்ளிடலாம், இருமம் எனில் தகவலின் நீளம்.\nதரவுத்தளத்தின் அளவு அதிகமாகும் போது மதிப்பு தானாக திருத்தப்படும்."
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
+#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
 msgstr "இப்புலத்தில் அனுமதிக்கப்பட்ட தசம இடங்களை குறிப்பிடவும்."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
+#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
 msgstr "தரவு எவ்வாறு நடப்பு வடிவமைப்பில் காட்டப்படும் என்பதை  நீங்கள் பார்க்கலாம் (வடிவமைப்பைத் திருத்த வலப்புறமுள்ள பொத்தானை பயன்படுத்தவும்)."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
+#, fuzzy
 msgid  "This is where you determine the output format of the data."
 msgstr "தரவின் வெளியீட்டு வடிவமைப்பை  நீங்கள் நிர்ணயிக்க வேண்டும்."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
-msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr "தானாக உயரும் மதிப்புகளை  கொண்டிருக்க வேண்டுமானால் இப்புலத்தை தேர்ந்தெடுக்கவும்\n\nஇவ்வகையான புலங்களில் தரவை உள்ளிட முடியாது. ஒவ்வொரு புதிய பதிவும் ஒரு மதிப்பு தானாகவே ஒதுக்கப்படும். (முந்தைய பதிவின் முடிவுகளை ஒட்டி அதிகரிக்கும்)."
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
+#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "\"$column$\" என்ற நிரலின் பெயர் இருமுறை குறிப்பிட்டுள்ளதால் சேமிக்க முடியவில்லை."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
+#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "\"$column$\" நிரல் முதன்மை சாவியினுடையது. அப்படி அந்நிரல் அழிக்கப்பட்டால், முதன்மை சாவியும் கூடவே அழிக்கப்படும். உறுதியாக தொடர விரும்புகிறீர்களா?"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
+#, fuzzy
 msgid  "Primary Key Affected"
 msgstr "முதன்மை சாவி பாதிக்கப்பட்டுள்ளது"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "Column"
 msgstr "நிரல்"
 
 #: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
+#, fuzzy
 msgid  "Continue anyway?"
 msgstr "இருப்பினும் தொடரவா?"
 
 #: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+#, fuzzy
 msgid  "Warning!"
 msgstr "எச்சரிக்கை!"
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr "அட்டவணை மாற்றபட்டுள்ளது.\nமாற்றங்களைச் சேமிக்க விரும்புகிறீர்களா?"
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr "தரவுதளத்துடனான இணைப்பு தூண்டிக்கபட்டது! இணைப்பு இல்லாவிடின் குறைந்த செயல்பாடுடைய அட்டவணை வடிவமைப்பையே பயன்படுத்தக்கூடும்.\nமீண்டும் இணைக்கவா?"
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
+#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
 msgstr "தரவுத்தளத்துடன் இணைப்பதில் சிக்கலிருப்பதால் அட்டவணையைச் சேமிக்க முடியவில்லை."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
+#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
 msgstr "தரவு மூலம் அழிக்கப்பட்டதால் அட்டவணை வடிகட்டியைத் திருத்த முடியவில்லை."
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr "ஒரு அட்டவணை உள்ளடக்கத்தைத் தொகுப்பதற்குமுன், அதனை நீங்கள் சேமிக்க வேண்டும்.\nமாற்றங்களை இப்போது சேமிக்க விரும்புகிறீர்களா?"
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
+#, fuzzy
 msgid  "No primary key"
 msgstr "முதன்மைச் சாவி இல்லை"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
-msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr "தரவு பதிவு அடையாளத்திற்கு ஒரு தனிப்பட்ட சுட்டுவரிசை அல்லது முதன்மை சாவி இத்தரவுதளத்தில் தேவைப்படுகிறது.\nஇவ்விரண்டு கட்டமைப்பு நிபந்தனைகளில் ஏதெனும் ஒன்று நிறைபெற்றால் மட்டுமே உங்களால் தரவை இந்த அட்டவணையில் உள்ளிட முடியும்.\n\nமுதன்மை சாவி இப்போது உருவாக்கப்பட வேண்டுமா?"
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
+#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " - %PRODUCTNAME தளம்: அட்டவணை வடிவமைப்பு"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
+#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr "\"$column$\" என்ற நிரலை மாற்ற முடியாது. அதற்கு பதில் அந்நிரலை அழித்துவிட்டு புதிய வடிவமைப்பை இணைக்கலாமா?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
+#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "அட்டவணை வடிவத்தை சேமிக்கையில் பிழை"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
+#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "$column$ நிரலை அழிக்க முடியவில்லை."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
+#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
 msgstr "அட்டவணையிலுள்ள எல்லா நிரல்களையும் அழிக்க முயல்கிறீர்கள். ஒரு அட்டவணை நிரல்லில்லாமல் இருக்க முடியாது. அட்டவணை தரவுதளத்திலிருந்து அழிக்க வேண்டுமா? இல்லையேல், அட்டவணை மாறுதல்கள் இல்லாமல் இருக்கும்."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
+#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "தானாக-உயரும் கூற்று (~u)"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
-msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr "தானாக-உயரும் புலத்தில் ஒரு SQL கூற்றை உள்ளிடு.\n\nஅட்டவணை உருவாக்கப்படும்போது இக்கூற்று நேரடியாக தரவுத்தளத்திற்க்கு இடமாற்றப்படும்."
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
-msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr "எவ்வகையான தகவலையும் தரவுத்தளத்திலிருந்து மீட்க முடியாது.\nஇத்தரவு மூலத்திறகான அட்டவணை வடிவ விதம் கிடைக்கவில்லை."
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "change field name"
 msgstr "புலப்பெயரை மாற்று"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
+#, fuzzy
 msgid  "change field type"
 msgstr "புல வகையை மாற்று"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "change field description"
 msgstr "புலத்தின் விளக்கத்தை மாற்று"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "change field attribute"
 msgstr "புலத்தின் பணைபை மாற்று"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "அமர்வு முடியுமட்டும் கடவுச்சொல்லை நினைவில் வை (~R)"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+#, fuzzy
 msgid  "~Remember password"
 msgstr "கடவுச்சொல்லை நினைவில் வை (~R)"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "இலக்கு தரவுத்தளம் பார்வைகளை துணைபுரியவில்லை."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "இலக்கு தரவுத்தளம் முதன்மை சாவிகளுக்கு துணைபுரியவில்லை."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
+#, fuzzy
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
 msgstr "தரவு அணுகல் விளக்கி காணப்படவில்லை, அல்லது அணுகல் விளக்கியால் அனைத்து தேவையான தகவலையும் வழங்க முடியவில்லை"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "தற்போது அட்டவணைகளுக்கும் கேள்விகளுக்கும் மட்டுமே ஆதரவுள்ளது."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "நகல் மூலங்களின் முடிவு அமைப்பு புத்தகக்குறிகளை ஆதரிக்க வேண்டும்."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "$pos$ நிரல் இடத்தில் ($type$)துணைபுரியாத நிரல் வகை."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "துவக்க அளவுருக்களின் தவறான எண்."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "துவங்கும்போது பிழை ஏற்பட்டது."
 

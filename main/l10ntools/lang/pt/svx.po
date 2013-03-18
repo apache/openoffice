@@ -888,7 +888,7 @@ msgstr "Restaurar"
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_ACTIVE.ToolBoxItem.Text
 #, fuzzy
 msgid  "Active"
-msgstr "Activo"
+msgstr "~Activo"
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_MACRO.ToolBoxItem.Text
 #, fuzzy
@@ -971,14 +971,12 @@ msgid  "~Delete"
 msgstr "E~liminar"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
-#, fuzzy
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "O ImageMap foi modificado.\nDeseja guardar as modificações?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
-#, fuzzy
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "O ImageMap foi modificado.\nDeseja aplicar as modificações?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 #, fuzzy
@@ -1003,7 +1001,7 @@ msgstr "Activar ~cabeçalho"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_SHARED.CheckBox.Text
 #, fuzzy
 msgid  "Same ~content left/right"
-msgstr "~Mesmo conteúdo esquerda/direita"
+msgstr "Mesmo ~conteúdo esquerda/direita"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_DIST.FixedText.Text
 #, fuzzy
@@ -1023,7 +1021,7 @@ msgstr "~Altura"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_HEIGHT_DYN.CheckBox.Text
 #, fuzzy
 msgid  "~AutoFit height"
-msgstr "Ajuste di~nâmico da altura"
+msgstr "Ajuste dinâmico da altura"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FL_FRAME.FixedLine.Text
 #, fuzzy
@@ -1081,9 +1079,8 @@ msgid  "~More..."
 msgstr "~Outros..."
 
 #: source/dialog/hdft.src#RID_SVXQBX_DELETE_HEADFOOT.QueryBox.Message
-#, fuzzy
-msgid  "Removing headers or footers deletes the contents.\nDo you want to delete this text?"
-msgstr "Ao desactivar o cabeçalho ou o rodapé apaga o respectivo conteúdo.\nDeseja realmente eliminar o texto?"
+msgid  "Removing headers or footers deletes the contents.\\nDo you want to delete this text?"
+msgstr ""
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_LEFT.String.Text
 #, fuzzy
@@ -1296,10 +1293,12 @@ msgid  "Line of text"
 msgstr "Linha de texto"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.GRP_Q.FixedLine.Text
+#, fuzzy
 msgid  "Colors"
 msgstr "Cores"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.FT_1.FixedText.Text
+#, fuzzy
 msgid  "Source color"
 msgstr "Cor-fonte"
 
@@ -1386,9 +1385,8 @@ msgid  "%PRODUCTNAME Document Recovery"
 msgstr "Recuperação de documentos do %PRODUCTNAME"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
-#, fuzzy
-msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\n\nThe 'Status' column shows whether the document could be recovered."
-msgstr "Prima 'Iniciar recuperação' para iniciar o processo de recuperação dos documentos abaixo indicados.\n\nA coluna 'Estado' indica se foi possível recuperar o documento."
+msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 #, fuzzy
@@ -1401,9 +1399,8 @@ msgid  "Status of recovered documents:"
 msgstr "Estado dos documentos recuperados:"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "Document Name\tStatus"
-msgstr "Nome do documento\tEstado"
+msgid  "Document Name\\tStatus"
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 #, fuzzy
@@ -1451,9 +1448,8 @@ msgid  "A report of the crash was created to help us identify the reason why %PR
 msgstr "Foi criado um relatório do fim anormal para ajudar a identificar a razão pela qual o %PRODUCTNAME finalizou de forma anormal. Faça clique em 'Seguinte' para aceder à Ferramenta de Relatório de Erros ou prima 'Cancelar' para ignorar este passo."
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
-#, fuzzy
-msgid  "Recovery of your documents was finished.\nClick 'Finish' to see your documents."
-msgstr "Foi concluída a recuperação dos documentos.\nFaça clique em 'Terminar' para ver os documentos."
+msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 #, fuzzy
@@ -1466,9 +1462,8 @@ msgid  "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 msgstr "Tem a certeza de que pretende cancelar a recuperação de documentos do %PRODUCTNAME?"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
-#, fuzzy
-msgid  "The automatic recovery process was interrupted.\n\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr "O processo de recuperação automática foi interrompido.\n\nOs documentos a seguir indicados serão guardados na pasta a seguir indicada se fizer clique em 'Guardar'. Para fechar o assistente sem guardar os documentos, faça clique em 'Cancelar'."
+msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 #, fuzzy
@@ -1496,7 +1491,7 @@ msgid  "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 msgstr "Bem-vindo ao Relatório de Erros do %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
-msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\n\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\nCustomer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\nwww.oracle.com/html/services-privacy-policy.html"
+msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
 msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
@@ -1599,9 +1594,8 @@ msgid  "~Port"
 msgstr "~Porta"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
-#, fuzzy
-msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "A Ferramenta de Relatório de Erros do %PRODUCTNAME tem de estabelecer ligação à Internet para poder enviar relatórios de erro.\nNormalmente, as empresas utilizam servidores proxy em conjunto com uma firewall para proteger a rede.\nSe for este o caso, terá de especificar o endereço e a porta do servidor."
+msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 #, fuzzy
@@ -1690,7 +1684,7 @@ msgstr "..."
 #: source/dialog/ctredlin.src#SID_REDLIN_FILTER_PAGE.CB_COMMENT.CheckBox.Text
 #, fuzzy
 msgid  "Comment"
-msgstr "D~escrição"
+msgstr "Descrição"
 
 #: source/dialog/ctredlin.src#SID_REDLIN_FILTER_PAGE.STR_DATE_COMBOX.String.Text
 msgid  "Date Condition"
@@ -2138,7 +2132,7 @@ msgstr "Menos ~opções"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.0.ItemList.item
 #, fuzzy
 msgid  "Border setting"
-msgstr "Definição do contorno"
+msgstr "Definição de contorno"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.1.ItemList.item
 #, fuzzy
@@ -2153,7 +2147,7 @@ msgstr "Linha de contorno direita"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.3.ItemList.item
 #, fuzzy
 msgid  "Top border line"
-msgstr "Linha de controno superior"
+msgstr "Linha de contorno superior"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.4.ItemList.item
 #, fuzzy
@@ -3131,9 +3125,8 @@ msgid  "As Button"
 msgstr "Como ~botão"
 
 #: source/dialog/hyprlink.src#RID_SVXQB_DONTEXIST.QueryBox.Message
-#, fuzzy
-msgid  "This URL does not exist.\nInsert anyway?"
-msgstr "O URL não existe.\nDeseja contudo inseri-lo?"
+msgid  "This URL does not exist.\\nInsert anyway?"
+msgstr ""
 
 #: source/dialog/sdstring.src#RID_SVXSTR_SOLID.String.Text
 #, fuzzy
@@ -4013,9 +4006,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
-#, fuzzy
-msgid  "The contour has been modified.\nDo you want to save the changes?"
-msgstr "O contorno foi modificado.\nDeseja aplicarr as modificações?"
+msgid  "The contour has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 #, fuzzy
@@ -4023,9 +4015,8 @@ msgid  "Do you want to create a new contour?"
 msgstr "Deseja criar um novo contorno?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
-#, fuzzy
-msgid  "Setting a new workspace will\ncause the contour to be deleted.\nAre you sure you want to continue?"
-msgstr "Ao definir uma nova área de\ntrabalho eliminará o contorno.\nDeseja continuar?"
+msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 #, fuzzy
@@ -4597,418 +4588,521 @@ msgid  "Switch"
 msgstr ""
 
 #: source/engine3d/string3d.src#RID_SVX_3D_CREATE_LATHE.String.Text
+#, fuzzy
 msgid  "Create 3D rotation object"
 msgstr "Criar objectos de rotação 3D"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXCHANGE_PASTE.String.Text
+#, fuzzy
 msgid  "Insert object(s)"
 msgstr "Inserir objecto(s)"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_SEGMENTS.String.Text
+#, fuzzy
 msgid  "Number of segments"
 msgstr "Número de segmentos"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_DEEPTH.String.Text
+#, fuzzy
 msgid  "Object depth"
 msgstr "Profundidade do objecto"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_FOCAL.String.Text
+#, fuzzy
 msgid  "Focal length"
 msgstr "Distância focal"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_CAMPOS.String.Text
+#, fuzzy
 msgid  "Camera position"
 msgstr "Posição da câmara"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ROTATE.String.Text
+#, fuzzy
 msgid  "Rotate 3D object"
 msgstr "Rodar objecto 3D"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXTRUDE.String.Text
+#, fuzzy
 msgid  "Create extrusion object"
 msgstr "Criar objecto de extrusão"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_LATHE.String.Text
+#, fuzzy
 msgid  "Create rotation object"
 msgstr "Criar objecto de rotação"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_BREAK_LATHE.String.Text
+#, fuzzy
 msgid  "Split 3D object"
 msgstr "Subdividir objecto 3-D"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ATTRIBUTES.String.Text
+#, fuzzy
 msgid  "3D Attributes"
 msgstr "Atributos 3-D"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.DockingWindow.Text
+#, fuzzy
 msgid  "3D Effects"
 msgstr "Efeitos 3D"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Geometry"
 msgstr "Geometria"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Shading"
 msgstr "Sombreado"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Illumination"
 msgstr "Iluminação"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Textures"
 msgstr "Texturas"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Material"
 msgstr "Material"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Update"
 msgstr "Actualizar"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_ASSIGN.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Assign"
 msgstr "Atribuir"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_CHANGE_TO_3D.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Convert to 3D"
 msgstr "Converte em 3-D"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LATHE_OBJ.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Convert to Lathe Object"
 msgstr "Converte em objecto de rotação"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_PERSPECTIVE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Perspective On/Off"
 msgstr "Activa/Desactiva Perspectiva"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_GEOMETRIE.FixedLine.Text
+#, fuzzy
 msgid  "Geometry"
 msgstr "Geometria"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_PERCENT_DIAGONAL.FixedText.Text
+#, fuzzy
 msgid  "R~ounded edges"
 msgstr "Arredondar arestas"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_BACKSCALE.FixedText.Text
+#, fuzzy
 msgid  "~Scaled depth"
 msgstr "Escala de profundidade"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_END_ANGLE.FixedText.Text
+#, fuzzy
 msgid  "~Rotation angle"
 msgstr "Ângulo de rotação"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
+#, fuzzy
 msgid  " degree(s)"
 msgstr " grau(s)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
+#, fuzzy
 msgid  "~Depth"
 msgstr "Profundidade"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SEGMENTS.FixedLine.Text
+#, fuzzy
 msgid  "Segments"
 msgstr "Segmentos"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_HORIZONTAL.FixedText.Text
+#, fuzzy
 msgid  "~Horizontal"
 msgstr "Horizontal"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_VERTICAL.FixedText.Text
+#, fuzzy
 msgid  "~Vertical"
 msgstr "Vertical"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_NORMALS.FixedLine.Text
+#, fuzzy
 msgid  "Normals"
 msgstr "Verticais"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "Específico do objecto"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
 msgid  "Flat"
-msgstr "Plano"
+msgstr "plano"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Spherical"
 msgstr "Esférico"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_INVERT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Invert Normals"
 msgstr "Inverter normais"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TWO_SIDED_LIGHTING.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Double-Sided Illumination"
 msgstr "Iluminação de ambos os lados"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_DOUBLE_SIDED.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Double-Sided"
 msgstr "Ambos os lados"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SHADEMODE.FixedText.Text
+#, fuzzy
 msgid  "~Mode"
 msgstr "Modo"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item1.StringList.item
+#, fuzzy
 msgid  "Flat"
 msgstr "plano"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item2.StringList.item
+#, fuzzy
 msgid  "Phong"
 msgstr "Phong"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item3.StringList.item
+#, fuzzy
 msgid  "Gouraud"
 msgstr "Gouraud"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SHADOW.FixedLine.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Sombras"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SHADOW_3D.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "3D Shadowing On/Off"
 msgstr "Activa/Desactiva sombras 3-D"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SLANT.FixedText.Text
+#, fuzzy
 msgid  "S~urface angle"
 msgstr "Ângulo do papel"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_SLANT.MetricField.CustomUnitText
+#, fuzzy
 msgid  " degree(s)"
 msgstr " grau(s)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_CAMERA.FixedLine.Text
+#, fuzzy
 msgid  "Camera"
 msgstr "Câmera"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DISTANCE.FixedText.Text
+#, fuzzy
 msgid  "~Distance"
 msgstr "Distância"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_FOCAL_LENGTH.FixedText.Text
+#, fuzzy
 msgid  "~Focal length"
 msgstr "Distância focal"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_REPRESENTATION.FixedLine.Text
+#, fuzzy
 msgid  "Shading"
 msgstr "Sombreado"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_LIGHTSOURCE.FixedText.Text
+#, fuzzy
 msgid  "~Light source"
 msgstr "Fonte de luz"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_1.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 1"
 msgstr "Fonte de luz 1"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_2.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 2"
 msgstr "Fonte de luz 2"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_3.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 3"
 msgstr "Fonte de luz 3"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_4.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 4"
 msgstr "Fonte de luz 4"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_5.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 5"
 msgstr "Fonte de luz 5"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_6.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 6"
 msgstr "Fonte de luz 6"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_7.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 7"
 msgstr "Fonte de luz 7"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_8.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 8"
 msgstr "Fonte de luz 8"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Caixa de diálogo das cores"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
+#, fuzzy
 msgid  "~Ambient light"
 msgstr "Luz ambiente"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Caixa de diálogo das cores"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
+#, fuzzy
 msgid  "Illumination"
 msgstr "Iluminação"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_KIND.FixedText.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "Tipo"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_LUMINANCE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Black & White"
 msgstr "Preto & Branco"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Color"
 msgstr "Cor"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_MODE.FixedText.Text
+#, fuzzy
 msgid  "~Mode"
 msgstr "Modo"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_REPLACE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Only Texture"
 msgstr "Só textura"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_MODULATE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Texture and Shading"
 msgstr "Textura e sombreado"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_BLEND.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Texture, Shadow and Color"
 msgstr "Textura, sombras e cor"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_X.FixedText.Text
+#, fuzzy
 msgid  "~Projection X"
 msgstr "Projecção X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "Específico do objecto"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Parallel"
 msgstr "Paralelo"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Circular"
 msgstr "Circular"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_Y.FixedText.Text
+#, fuzzy
 msgid  "P~rojection Y"
 msgstr "Projecção Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "Específico do objecto"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Parallel"
 msgstr "Paralelo"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Circular"
 msgstr "Circular"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_FILTER.FixedText.Text
+#, fuzzy
 msgid  "~Filtering"
 msgstr "Filtros"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_FILTER.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Filtering On/Off"
 msgstr "Activa/Desactiva filtro"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_TEXTURE.FixedLine.Text
+#, fuzzy
 msgid  "Textures"
 msgstr "Texturas"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_FAVORITES.FixedText.Text
+#, fuzzy
 msgid  "~Favorites"
 msgstr "Favoritos"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item1.StringList.item
+#, fuzzy
 msgid  "User-defined"
 msgstr "Definido pelo utilizador"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item2.StringList.item
+#, fuzzy
 msgid  "Metal"
 msgstr "Metal"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item3.StringList.item
+#, fuzzy
 msgid  "Gold"
 msgstr "Ouro"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item4.StringList.item
+#, fuzzy
 msgid  "Chrome"
 msgstr "Cromado"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item5.StringList.item
+#, fuzzy
 msgid  "Plastic"
 msgstr "Plástico"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item6.StringList.item
+#, fuzzy
 msgid  "Wood"
 msgstr "Madeira"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_COLOR.FixedText.Text
+#, fuzzy
 msgid  "~Object color"
 msgstr "Cor do objecto"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Caixa de diálogo das cores"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
+#, fuzzy
 msgid  "~Illumination color"
 msgstr "Cor de iluminação"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_EMISSION_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Caixa de diálogo das cores"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MAT_SPECULAR.FixedLine.Text
+#, fuzzy
 msgid  "Specular"
 msgstr "Ponto brilhante"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR.FixedText.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "Cor"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SPECULAR_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "Caixa de diálogo das cores"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR_INTENSITY.FixedText.Text
+#, fuzzy
 msgid  "I~ntensity"
 msgstr "Intensidade"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MATERIAL.FixedLine.Text
+#, fuzzy
 msgid  "Material"
 msgstr "Material"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FAVORITE.String.Text
+#, fuzzy
 msgid  "Favorite"
 msgstr "Favorito"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_X.String.Text
+#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Y.String.Text
+#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Z.String.Text
+#, fuzzy
 msgid  "Z"
 msgstr "Z"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_R.String.Text
+#, fuzzy
 msgid  "R:"
 msgstr "R:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_G.String.Text
+#, fuzzy
 msgid  "G:"
 msgstr "G:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_B.String.Text
+#, fuzzy
 msgid  "B:"
 msgstr "B:"
 
@@ -5017,90 +5111,112 @@ msgid  "Color Light Preview"
 msgstr ""
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_DELETEROWS.MenuItem.Text
+#, fuzzy
 msgid  "Delete Rows"
 msgstr "Eliminar linhas"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_SAVE.MenuItem.Text
+#, fuzzy
 msgid  "Save Record"
 msgstr "Guardar registo"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_UNDO.MenuItem.Text
+#, fuzzy
 msgid  "Undo: Data entry"
 msgstr "Anular: entrada de dados"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.MenuItem.Text
+#, fuzzy
 msgid  "Insert ~Column"
 msgstr "~Inserir coluna"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Text Box"
 msgstr "Caixa de texto"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CHECKBOX.MenuItem.Text
+#, fuzzy
 msgid  "Check Box"
 msgstr "Caixa de verificação"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_COMBOBOX.MenuItem.Text
+#, fuzzy
 msgid  "Combo Box"
 msgstr "Caixa de combinação"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_LISTBOX.MenuItem.Text
+#, fuzzy
 msgid  "List Box"
 msgstr "Caixa de lista"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_DATEFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Date Field"
 msgstr "Campo para data"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TIMEFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Time Field"
 msgstr "Campo horário"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_NUMERICFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Numeric Field"
 msgstr "Campo numérico"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CURRENCYFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Currency Field"
 msgstr "Campo de moeda"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_PATTERNFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Pattern Field"
 msgstr "Campo de padrão"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_FORMATTEDFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Formatted Field"
 msgstr "Campo formatado"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TWOFIELDS_DATE_N_TIME.MenuItem.Text
+#, fuzzy
 msgid  "Date and Time Field"
 msgstr "Campo para data e hora"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_CHANGECOL.MenuItem.Text
+#, fuzzy
 msgid  "~Replace with"
 msgstr "~Substituir por"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_DELETECOL.MenuItem.Text
+#, fuzzy
 msgid  "Delete Column"
 msgstr "E~liminar coluna"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_HIDECOL.MenuItem.Text
+#, fuzzy
 msgid  "~Hide Column"
 msgstr "~Ocultar coluna"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWCOLS_MORE.MenuItem.Text
+#, fuzzy
 msgid  "~More..."
 msgstr "~Mais..."
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWALLCOLS.MenuItem.Text
+#, fuzzy
 msgid  "~All"
 msgstr "~Todas"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.MenuItem.Text
+#, fuzzy
 msgid  "~Show Columns"
 msgstr "~Mostrar colunas"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
+#, fuzzy
 msgid  "Column..."
 msgstr "~Coluna..."
 
@@ -5115,9 +5231,8 @@ msgid  "Input required in field '#'. Please enter a value."
 msgstr "É necessária uma entrada para o campo '#'.\nEspecifique um valor"
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
-#, fuzzy
-msgid  "Entry already exists.\nPlease choose another name."
-msgstr "Esta entrada já existe.\nSeleccione outro nome."
+msgid  "Entry already exists.\\nPlease choose another name."
+msgstr ""
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 #, fuzzy
@@ -5215,9 +5330,8 @@ msgid  "# records will be deleted."
 msgstr "Eliminará # registos."
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
-#, fuzzy
-msgid  "If you click Yes, you won't be able to undo this operation.\nDo you want to continue anyway?"
-msgstr "Se clicar em Sim, não será possível anular esta operação.\nDeseja continuar?"
+msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 #, fuzzy
@@ -5440,9 +5554,8 @@ msgid  "<AutoField>"
 msgstr "<Campo automático>"
 
 #: source/form/fmstring.src#RID_QRY_SAVEMODIFIED.QueryBox.Message
-#, fuzzy
-msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr "O conteúdo do formulário activo foi modificado.\nGuardar alterações?"
+msgid  "The content of the current form has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.1.String.Text
 #, fuzzy
@@ -5870,686 +5983,844 @@ msgid  "Tabs"
 msgstr "Tabulações"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "E~liminar"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~Editar"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NULL.MenuItem.Text
+#, fuzzy
 msgid  "~Is Null"
 msgstr "~Vazio"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NOT_NULL.MenuItem.Text
+#, fuzzy
 msgid  "I~s not Null"
 msgstr "~Não vazio"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Item"
 msgstr "Adicionar item"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Element"
 msgstr "Adicionar elemento"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "Adicionar atributo"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Editar"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Eliminar"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MenuButton.Text
+#, fuzzy
 msgid  "~Models"
 msgstr "~Modelos"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "~Adicionar..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Editar..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "~Remover"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_INSTANCE.PageItem.Text
+#, fuzzy
 msgid  "Instance"
 msgstr "Ocorrência"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_SUBMISSION.PageItem.Text
+#, fuzzy
 msgid  "Submissions"
 msgstr "Submissões"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_BINDINGS.PageItem.Text
+#, fuzzy
 msgid  "Bindings"
 msgstr "Associações"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MenuButton.Text
+#, fuzzy
 msgid  "~Instances"
 msgstr "Ocorrênc~ias"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "~Adicionar..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Editar..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "~Remover"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_SHOW_DETAILS.MenuItem.Text
+#, fuzzy
 msgid  "~Show Details"
 msgstr "Mos~trar detalhes"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_MODEL.QueryBox.Message
-msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\nDo you really want to delete this model?"
-msgstr "A eliminação do modelo '$MODELNAME' afecta todos os controlos actualmente associados ao mesmo.\nTem a certeza de que pretende eliminar este modelo?"
+msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\\nDo you really want to delete this model?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_INSTANCE.QueryBox.Message
-msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\nDo you really want to delete this instance?"
-msgstr "A eliminação da ocorrência '$INSTANCENAME' afecta todos os controlos actualmente associados à mesma.\nTem a certeza de que pretende eliminar esta ocorrência?"
+msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\\nDo you really want to delete this instance?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ELEMENT.QueryBox.Message
-msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\nDo you really want to delete this element?"
-msgstr "A eliminação do elemento '$ELEMENTNAME' afecta todos os controlos actualmente associados ao mesmo.\nTem a certeza de que pretende eliminar este elemento?"
+msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\\nDo you really want to delete this element?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ATTRIBUTE.QueryBox.Message
+#, fuzzy
 msgid  "Do you really want to delete the attribute '$ATTRIBUTENAME'?"
 msgstr "Tem a certeza de que pretende eliminar o atributo '$ATTRIBUTENAME'?"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_SUBMISSION.QueryBox.Message
-msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\n\nDo you really want to delete this submission?"
-msgstr "A eliminação da submissão '$SUBMISSIONNAME' afecta todos os controlos actualmente associados à mesma.\nTem a certeza de que pretende eliminar esta submissão?"
+msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\\n\\nDo you really want to delete this submission?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_BINDING.QueryBox.Message
-msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\n\nDo you really want to delete this binding?"
-msgstr "A eliminação da associação '$BINDINGNAME' afecta todos os controlos actualmente associados à mesma.\nTem a certeza de que pretende eliminar esta associação?"
+msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\\n\\nDo you really want to delete this binding?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_LINK_WARNING.MessBox.Message
-msgid  "This instance is linked with the form.\n\nThe changes you make to this instance will be lost when the form is reloaded.\n\nHow do you want to proceed?"
-msgstr "Esta ocorrência está ligada ao formulário.\n\nAs alterações que efectuar à mesma perder-se-ão quando o formulário for recarregado.\n\nComo pretende proceder?"
+msgid  "This instance is linked with the form.\\n\\nThe changes you make to this instance will be lost when the form is reloaded.\\n\\nHow do you want to proceed?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLNAME.ErrorBox.Message
+#, fuzzy
 msgid  "The name '%1' is not valid in XML. Please enter a different name."
 msgstr "O nome '%1' não é válido em XML. Introduza um nome diferente."
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLPREFIX.ErrorBox.Message
+#, fuzzy
 msgid  "The prefix '%1' is not valid in XML. Please enter a different prefix."
 msgstr "O prefixo '%1' não é válido em XML. Introduza um prefixo diferente."
 
 #: source/form/datanavi.src#RID_ERR_DOUBLE_MODELNAME.ErrorBox.Message
+#, fuzzy
 msgid  "The name '%1' already exists. Please enter a new name."
 msgstr "O nome '%1' já existe. Introduza um novo nome."
 
 #: source/form/datanavi.src#RID_ERR_EMPTY_SUBMISSIONNAME.ErrorBox.Message
+#, fuzzy
 msgid  "The submission must have a name."
 msgstr "A submissão tem de ter um nome."
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_ITEM.FixedLine.Text
+#, fuzzy
 msgid  "Item"
 msgstr "Item"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nome"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DEFAULT.FixedText.Text
+#, fuzzy
 msgid  "~Default Value"
 msgstr "Valor ~predefinido"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_SETTINGS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Definições"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DATATYPE.FixedText.Text
+#, fuzzy
 msgid  "~Data Type"
 msgstr "Tipo de ~dados"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_REQUIRED.CheckBox.Text
+#, fuzzy
 msgid  "~Required"
 msgstr "~Requerido"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_REQUIRED.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Condição"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_RELEVANT.CheckBox.Text
+#, fuzzy
 msgid  "R~elevant"
 msgstr "R~elevante"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_RELEVANT.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Condição"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CONSTRAINT.CheckBox.Text
+#, fuzzy
 msgid  "~Constraint"
 msgstr "Re~strição"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CONSTRAINT.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Condição"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_READONLY.CheckBox.Text
+#, fuzzy
 msgid  "Read-~only"
 msgstr "Só de ~leitura"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_READONLY.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Condição"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CALCULATE.CheckBox.Text
+#, fuzzy
 msgid  "Calc~ulate"
 msgstr "Calc~ular"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CALCULATE.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "Condição"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ELEMENT.String.Text
+#, fuzzy
 msgid  "Element"
 msgstr "Elemento"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Attribute"
 msgstr "Atributo"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_BINDING.String.Text
+#, fuzzy
 msgid  "Binding"
 msgstr "Associação"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDTEXT_BINDING.String.Text
+#, fuzzy
 msgid  "Binding expression"
 msgstr "Expressão de associação"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD.MenuItem.Text
+#, fuzzy
 msgid  "Add Item"
 msgstr "Adicionar item"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ELEMENT.MenuItem.Text
+#, fuzzy
 msgid  "Add Element"
 msgstr "Adicionar elemento"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ATTRIBUTE.MenuItem.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "Adicionar atributo"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Editar"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Eliminar"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.ModalDialog.Text
+#, fuzzy
 msgid  "Add Condition"
 msgstr "Adicionar condição"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_CONDITION.FixedText.Text
+#, fuzzy
 msgid  "~Condition"
 msgstr "~Condição"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_RESULT.FixedText.Text
+#, fuzzy
 msgid  "~Result"
 msgstr "~Resultado"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.PB_EDIT_NAMESPACES.PushButton.Text
+#, fuzzy
 msgid  "~Edit Namespaces..."
 msgstr "~Editar espaços de nome..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.ModalDialog.Text
+#, fuzzy
 msgid  "Namespaces for Forms"
 msgstr "Espaços de nome para formulários"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.FT_NAMESPACES.FixedText.Text
+#, fuzzy
 msgid  "~Namespaces"
 msgstr "Espaços de ~nome"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_ADD_NAMESPACE.PushButton.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "~Adicionar..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_EDIT_NAMESPACE.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Editar..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_DELETE_NAMESPACE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "E~liminar"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_PREFIX.String.Text
+#, fuzzy
 msgid  "Prefix"
 msgstr "Prefixo"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_URL.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.ModalDialog.Text
+#, fuzzy
 msgid  "Add Namespace"
 msgstr "Adicionar espaço de nome"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_PREFIX.FixedText.Text
+#, fuzzy
 msgid  "~Prefix"
 msgstr "~Prefixo"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "U~RL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.STR_EDIT_TEXT.String.Text
+#, fuzzy
 msgid  "Edit Namespace"
 msgstr "Editar espaço de nome"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.ModalDialog.Text
+#, fuzzy
 msgid  "Add Submission"
 msgstr "Adicionar submissão"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FL_SUBMISSION.FixedLine.Text
+#, fuzzy
 msgid  "Submission"
 msgstr "Submissão"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nome"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_ACTION.FixedText.Text
+#, fuzzy
 msgid  "~Action"
 msgstr "~Acção"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_METHOD.FixedText.Text
+#, fuzzy
 msgid  "~Method"
 msgstr "~Método"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REF.FixedText.Text
+#, fuzzy
 msgid  "Binding e~xpression"
 msgstr "E~xpressão de associação"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.PB_SUBMIT_REF.PushButton.Text
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_BIND.FixedText.Text
+#, fuzzy
 msgid  "~Binding"
 msgstr "Asso~ciação"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REPLACE.FixedText.Text
+#, fuzzy
 msgid  "~Replace"
 msgstr "~Substituir"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_POST.String.Text
+#, fuzzy
 msgid  "Post"
 msgstr "Publicar"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_PUT.String.Text
+#, fuzzy
 msgid  "Put"
 msgstr "Colocar"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_GET.String.Text
+#, fuzzy
 msgid  "Get"
 msgstr "Obter"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_NONE.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "Nenhum(a)"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_INST.String.Text
+#, fuzzy
 msgid  "Instance"
 msgstr "Ocorrência"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_DOC.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "Documento"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.ModalDialog.Text
+#, fuzzy
 msgid  "Add Model"
 msgstr "Adicionar modelo"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FL_INSTANCE.FixedLine.Text
+#, fuzzy
 msgid  "Model"
 msgstr "Modelo"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FT_INST_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nome"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.CB_MODIFIES_DOCUMENT.CheckBox.Text
+#, fuzzy
 msgid  "Model data updates change document's modification status"
 msgstr "A actualizações de dados do modelo alteram o estado de modificação do documento"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.STR_EDIT_TEXT.String.Text
+#, fuzzy
 msgid  "Edit Model"
 msgstr "Editar Modelo"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.ModalDialog.Text
+#, fuzzy
 msgid  "Add Instance"
 msgstr "Adicionar ocorrência"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FL_INSTANCE.FixedLine.Text
+#, fuzzy
 msgid  "Instance"
 msgstr "Ocorrência"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nome"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_URL.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "U~RL"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.CB_INST_LINKINST.CheckBox.Text
+#, fuzzy
 msgid  "~Link instance"
 msgstr "~Ligar ocorrência"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.STR_EDIT_TEXT.String.Text
+#, fuzzy
 msgid  "Edit Instance"
 msgstr "Editar ocorrência"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_PARENT.String.Text
+#, fuzzy
 msgid  "Submission: "
 msgstr "Submissão: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ID.String.Text
+#, fuzzy
 msgid  "ID: "
 msgstr "ID: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_BIND.String.Text
+#, fuzzy
 msgid  "Binding: "
 msgstr "Associação: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REF.String.Text
+#, fuzzy
 msgid  "Reference: "
 msgstr "Referência:"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ACTION.String.Text
+#, fuzzy
 msgid  "Action: "
 msgstr "Acção: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_METHOD.String.Text
+#, fuzzy
 msgid  "Method: "
 msgstr "Método: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REPLACE.String.Text
+#, fuzzy
 msgid  "Replace: "
 msgstr "Substituir: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ELEMENT.String.Text
+#, fuzzy
 msgid  "Add Element"
 msgstr "Adicionar elemento"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ELEMENT.String.Text
+#, fuzzy
 msgid  "Edit Element"
 msgstr "Editar elemento"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ELEMENT.String.Text
+#, fuzzy
 msgid  "Delete Element"
 msgstr "Eliminar elemento"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "Adicionar atributo"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Edit Attribute"
 msgstr "Editar atributo"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Delete Attribute"
 msgstr "Eliminar atributo"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_BINDING.String.Text
+#, fuzzy
 msgid  "Add Binding"
 msgstr "Adicionar associação"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_BINDING.String.Text
+#, fuzzy
 msgid  "Edit Binding"
 msgstr "Editar associação"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_BINDING.String.Text
+#, fuzzy
 msgid  "Delete Binding"
 msgstr "Eliminar associação"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_SUBMISSION.String.Text
+#, fuzzy
 msgid  "Add Submission"
 msgstr "Adicionar submissão"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_SUBMISSION.String.Text
+#, fuzzy
 msgid  "Edit Submission"
 msgstr "Editar submissão"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_SUBMISSION.String.Text
+#, fuzzy
 msgid  "Delete Submission"
 msgstr "Eliminar submissão"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_LINKWARN_BUTTON.String.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~Editar"
 
 #: source/gallery2/gallery.src#RID_SVXDLG_GALLERYBROWSER.DockingWindow.Text
+#, fuzzy
 msgid  "Gallery"
 msgstr "Galeria"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
 msgid  "Update"
-msgstr "Actualizar"
+msgstr "Ac~tualizar"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
+#, fuzzy
 msgid  "This file cannot be opened"
 msgstr "Impossível abrir este ficheiro."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NOTHEME.String.Text
+#, fuzzy
 msgid  "Invalid Theme Name!"
 msgstr "O nome do tema não é válido!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
-msgid  "Do you really want to\ndelete this object?"
-msgstr "Eliminar realmente\neste objecto?"
+msgid  "Do you really want to\\ndelete this object?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
-msgid  "Do you really want to\ndelete this theme?"
-msgstr "Eliminar realmente\neste tema?"
+msgid  "Do you really want to\\ndelete this theme?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
+#, fuzzy
 msgid  "Wave - Sound File"
 msgstr "Wave - ficheiro áudio"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT2_UI.String.Text
+#, fuzzy
 msgid  "Audio Interchange File Format"
 msgstr "Formato de Interligação de Ficheiro de Audio"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT3_UI.String.Text
+#, fuzzy
 msgid  "AU - Sound File"
 msgstr "AU - ficheiro áudio"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FILTER.String.Text
+#, fuzzy
 msgid  "Graphics filter"
 msgstr "Filtro gráfico"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LENGTH.String.Text
+#, fuzzy
 msgid  "Length:"
 msgstr "Comprimento:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SIZE.String.Text
+#, fuzzy
 msgid  "Size:"
 msgstr "Tamanho:"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEDD.String.Text
+#, fuzzy
 msgid  "Do you want to delete the linked file?"
 msgstr "Eliminar o ficheiro ligado?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
-msgid  "This file cannot be opened.\nDo you want to enter a different search path? "
-msgstr "Impossível abrir este ficheiro.\nDeseja indicar outro atalho de localização? "
+msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
+#, fuzzy
 msgid  "New Theme"
 msgstr "Novo tema"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_BROWSER.String.Text
+#, fuzzy
 msgid  "~Organizer..."
 msgstr "~Organizador..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
-msgid  "This theme name already exists.\nPlease choose a different one."
-msgstr "Este nome de tema já existe.\nQueira escolher outro."
+msgid  "This theme name already exists.\\nPlease choose a different one."
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
+#, fuzzy
 msgid  "I~mport..."
 msgstr "Im~portar..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_CREATETHEME.String.Text
+#, fuzzy
 msgid  "New Theme..."
 msgstr "Novo tema..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DIALOGID.String.Text
+#, fuzzy
 msgid  "Assign ID"
 msgstr "Atribuir ID"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_TITLE.String.Text
+#, fuzzy
 msgid  "Title"
 msgstr "Maiúsculas iniciais"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_PATH.String.Text
+#, fuzzy
 msgid  "Path"
 msgstr "Atalho"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ICONVIEW.String.Text
+#, fuzzy
 msgid  "Icon View"
 msgstr "Ver ícones"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LISTVIEW.String.Text
+#, fuzzy
 msgid  "Detailed View"
 msgstr "Ver detalhes"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ACTUALIZE.MenuItem.Text
+#, fuzzy
 msgid  "Update"
 msgstr "Ac~tualizar"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "E~liminar"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_RENAME.MenuItem.Text
+#, fuzzy
 msgid  "~Rename"
 msgstr "~Mudar nome"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ASSIGN_ID.MenuItem.Text
+#, fuzzy
 msgid  "Assign ~ID"
 msgstr "Atribuir ~ID"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_PROPERTIES.MenuItem.Text
+#, fuzzy
 msgid  "Propert~ies..."
 msgstr "~Propriedades ..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
 msgid  "~Insert"
-msgstr "~Adicionar"
+msgstr "~Inserir"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
 msgid  "~Copy"
-msgstr "~Cópia"
+msgstr "~Copiar"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
+#, fuzzy
 msgid  "Link"
 msgstr "~Ligação"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_BACKGROUND.MenuItem.Text
+#, fuzzy
 msgid  "Bac~kground"
 msgstr "~Plano de fundo"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PREVIEW.MenuItem.Text
+#, fuzzy
 msgid  "~Preview"
 msgstr "~Pré-visualizar"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_TITLE.MenuItem.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "~Título"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "E~liminar"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_COPYCLIPBOARD.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
 msgstr "~Copiar"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PASTECLIPBOARD.MenuItem.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "~Inserir"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_3D.String.Text
+#, fuzzy
 msgid  "3D Effects"
 msgstr "Efeitos 3D"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ANIMATIONS.String.Text
+#, fuzzy
 msgid  "Animations"
 msgstr "Animações"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BULLETS.String.Text
+#, fuzzy
 msgid  "Bullets"
 msgstr "Marcas"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_OFFICE.String.Text
+#, fuzzy
 msgid  "Office"
 msgstr "Escritório"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLAGS.String.Text
+#, fuzzy
 msgid  "Flags"
 msgstr "Bandeiras"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLOWCHARTS.String.Text
+#, fuzzy
 msgid  "Flow Charts"
 msgstr "Fluxogramas"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EMOTICONS.String.Text
+#, fuzzy
 msgid  "Emoticons"
 msgstr "Ícone expressivo"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PHOTOS.String.Text
+#, fuzzy
 msgid  "Pictures"
 msgstr "Fotografias"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BACKGROUNDS.String.Text
+#, fuzzy
 msgid  "Backgrounds"
 msgstr "Planos de fundo"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_HOMEPAGE.String.Text
+#, fuzzy
 msgid  "Homepage"
 msgstr "Página inicial"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_INTERACTION.String.Text
+#, fuzzy
 msgid  "Interaction"
 msgstr "Interacção"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MAPS.String.Text
+#, fuzzy
 msgid  "Maps"
 msgstr "Mapas"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PEOPLE.String.Text
+#, fuzzy
 msgid  "People"
 msgstr "Pessoas"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SURFACES.String.Text
+#, fuzzy
 msgid  "Surfaces"
 msgstr "Texturas"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_RULERS.String.Text
+#, fuzzy
 msgid  "Rulers"
 msgstr "Limites"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMPUTERS.String.Text
+#, fuzzy
 msgid  "Computers"
 msgstr "Computador"
 
@@ -6574,50 +6845,62 @@ msgid  "Textshapes"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SOUNDS.String.Text
+#, fuzzy
 msgid  "Sounds"
 msgstr "Sons"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SYMBOLS.String.Text
+#, fuzzy
 msgid  "Symbols"
 msgstr "Símbolos"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MYTHEME.String.Text
+#, fuzzy
 msgid  "My Theme"
 msgstr "Temas próprios"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ARROWS.String.Text
+#, fuzzy
 msgid  "Arrows"
 msgstr "Setas"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BALLOONS.String.Text
+#, fuzzy
 msgid  "Balloons"
 msgstr "Balões"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_KEYBOARD.String.Text
+#, fuzzy
 msgid  "Keyboard"
 msgstr "Teclado"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TIME.String.Text
+#, fuzzy
 msgid  "Time"
 msgstr "Hora"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PRESENTATION.String.Text
+#, fuzzy
 msgid  "Presentation"
 msgstr "Apresentação"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CALENDAR.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "Calendário"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_NAVIGATION.String.Text
+#, fuzzy
 msgid  "Navigation"
 msgstr "Navegação"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMMUNICATION.String.Text
+#, fuzzy
 msgid  "Communication"
 msgstr "Comunicação"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FINANCES.String.Text
+#, fuzzy
 msgid  "Finances"
 msgstr "Finanças"
 
@@ -6626,618 +6909,765 @@ msgid  "Computers"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CLIMA.String.Text
+#, fuzzy
 msgid  "Climate"
 msgstr "Clima"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EDUCATION.String.Text
+#, fuzzy
 msgid  "School & University"
 msgstr "Escola e Universidade"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TROUBLE.String.Text
+#, fuzzy
 msgid  "Problem Solving"
 msgstr "Solução de problemas"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SCREENBEANS.String.Text
+#, fuzzy
 msgid  "Screen Beans"
 msgstr "Screen Beans"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_THESAURUS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the thesaurus."
 msgstr "$(ERR) ao executar o dicionário de sinónimos."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_SPELLING&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the spellcheck."
 msgstr "$(ERR) ao executar a verificação ortográfica."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_HYPHENATION&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the hyphenation."
 msgstr "$(ERR) ao executar a hifenização."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_DICTIONARY&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) creating a dictionary."
 msgstr "$(ERR) ao criar dicionário."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_BACKGROUND&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) setting background attribute."
 msgstr "$(ERR) ao definir atributo do plano de fundo."
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_IMPORT_GRAPHIC&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) loading the graphics."
 msgstr "$(ERR) ao carregar objecto gráfico."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_THESAURUSNOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "No thesaurus available for the current language.\nPlease check your installation and install the desired language."
-msgstr "O dicionário de sinónimos não se encontra disponível para o idioma actual.\nVerifique a instalação e, se necessário, instale o idioma pretendido."
+msgid  "No thesaurus available for the current language.\\nPlease check your installation and install the desired language."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LANGUAGENOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\nPlease check your installation and, if necessary, install the required language module\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
-msgstr "$(ARG1) não tem suporte para verificação ortográfica ou encontra-se desactivado. \nConfira a sua instalação e, se necessário, instale o módulo linguístico desejado\nou então active-o em 'Ferramentas - Opções - Definições de idioma - Ajudas linguísticas'."
+msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\\nPlease check your installation and, if necessary, install the required language module\\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "Spellcheck is not available."
 msgstr "A verificação ortográfica não está disponível."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_HYPHENNOTEXISTS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "Hyphenation not available."
 msgstr "A separação silábica não está disponível."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTREADABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be read."
 msgstr "Impossível ler o dicionário personalizado $(ARG1)."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTWRITEABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be created."
 msgstr "Impossível criar o dicionário personalizado $(ARG1)."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_NOTREADABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The graphic $(ARG1) could not be found."
 msgstr "Foi impossível encontrar a imagem $(ARG1)."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_WRONG_FILEFORMAT&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "An unlinked graphic could not be loaded."
 msgstr "Não foi possível carregar um objecto gráfico não ligado."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_NOLANGUAGE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "A language has not been fixed for the selected term."
 msgstr "Não foi especificado o idioma para o termo seleccionado."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
+#, fuzzy
 msgid  "The form layer wasn't loaded as the required IO-services (stardiv.uno.io.*) could not be instantiated."
 msgstr "O nível do formulário não foi carregado uma vez que não foi possível criar uma ocorrência dos serviços E/S requeridos (stardiv.uno.io.*)."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
+#, fuzzy
 msgid  "The form layer wasn't written as the required IO services (stardiv.uno.io.*) could not be instantiated."
 msgstr "O nível do formulário não foi escrito uma vez que não foi possível criar uma ocorrência dos serviços E/S requeridos (stardiv.uno.io.*)."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
+#, fuzzy
 msgid  "An error occurred while reading the form controls. The form layer has not been loaded."
 msgstr "Ocorreu um erro ao ler os controlos do formulário. Não foi possível carregar o nível de formulário."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
+#, fuzzy
 msgid  "An error occurred while writing the form controls. The form layer has not been saved."
 msgstr "Ocorreu um erro ao escrever os controlos do formulário. Não foi possível guardar o nível de formulário."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_BULLETITEM_NOBULLET.String.Text
+#, fuzzy
 msgid  "An error occurred while reading one of the bullets. Not all of the bullets were loaded."
 msgstr "Surgiu um erro durante a leitura de uma marca. Foi impossível carregá-las todas."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_MODIFIED_VBASIC_STORAGE & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "All changes to the Basic Code are lost.The original VBA Macro Code is saved instead."
 msgstr "As modificações efectuadas no documento Basic Code perder-se-ão. No seu lugar será guardado o código macro VBA."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_VBASIC_STORAGE_EXIST & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The original VBA Basic Code contained in the document will not be saved."
 msgstr "O código VBA original contido no documento não será guardado."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_WRONGPASS & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The password is incorrect. The document cannot be opened."
 msgstr "A palavra-passe está incorrecta. Não é possível abrir o documento."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The encryption method used in this document is not supported. Only Microsoft Office 97/2000 compatible password encryption is supported."
 msgstr "O método de codificação utilizado neste documento não é suportado. Apenas é suportada a codificação de palavras-passe compatível com o Microsoft Office 97/2000."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_PPOINT & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The loading of password-encrypted Microsoft PowerPoint presentations is not supported."
 msgstr "O carregamento de apresentações do Microsoft PowerPoint codificadas por palavra-passe não é suportado."
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_EXPORT_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
-msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\nDo you want to save the document without password protection?"
-msgstr "A protecção por palavra-passe não é suportada para documentos guardados em formatos Microsoft Office.\nPretende guardar o documento sem protecção por palavra-passe?"
+msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\\nDo you want to save the document without password protection?"
+msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
 msgid  "Scale"
-msgstr "Escala"
+msgstr "Ampliação"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH.ItemList.item
+#, fuzzy
 msgid  "Brush"
 msgstr "Pintar"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_TABSTOP.ItemList.item
+#, fuzzy
 msgid  "Tab stops"
 msgstr "Tabulações"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR.ItemList.item
+#, fuzzy
 msgid  "Character"
 msgstr "Caracteres"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONT.ItemList.item
+#, fuzzy
 msgid  "Font"
 msgstr "Tipo de letra"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_POSTURE.ItemList.item
+#, fuzzy
 msgid  "Font posture"
 msgstr "Posição do tipo de letra"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_WEIGHT.ItemList.item
+#, fuzzy
 msgid  "Font weight"
 msgstr "Espessura da letra"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_SHADOWED.ItemList.item
+#, fuzzy
 msgid  "Shadowed"
 msgstr "Sombreado"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_WORDLINEMODE.ItemList.item
+#, fuzzy
 msgid  "Individual words"
 msgstr "Só palavras"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CONTOUR.ItemList.item
+#, fuzzy
 msgid  "Outline"
 msgstr "Contorno"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_STRIKEOUT.ItemList.item
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "Rasurado"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_UNDERLINE.ItemList.item
+#, fuzzy
 msgid  "Underline"
 msgstr "Sublinhado"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONTHEIGHT.ItemList.item
+#, fuzzy
 msgid  "Font size"
 msgstr "Altura do tipo de letra"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_PROPSIZE.ItemList.item
+#, fuzzy
 msgid  "Rel. Font size"
 msgstr "Tamanho da letra relativo"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
+#, fuzzy
 msgid  "Font color"
 msgstr "Cor do tipo de letra"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_KERNING.ItemList.item
+#, fuzzy
 msgid  "Kerning"
 msgstr "Kerning"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CASEMAP.ItemList.item
+#, fuzzy
 msgid  "Effects"
 msgstr "Marca"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_LANGUAGE.ItemList.item
+#, fuzzy
 msgid  "Language"
 msgstr "Idioma"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ESCAPEMENT.ItemList.item
+#, fuzzy
 msgid  "Position"
 msgstr "Posição"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_AUTOKERN.ItemList.item
+#, fuzzy
 msgid  "Blinking"
 msgstr "Intermitente"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CHARSETCOLOR.ItemList.item
+#, fuzzy
 msgid  "Character set color"
 msgstr "Cor dos caracteres"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_OVERLINE.ItemList.item
+#, fuzzy
 msgid  "Overline"
 msgstr "Linha sobreposta"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA.ItemList.item
+#, fuzzy
 msgid  "Paragraph"
 msgstr "Parágrafo"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ADJUST.ItemList.item
+#, fuzzy
 msgid  "Alignment"
 msgstr "Alinhar"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LINESPACE.ItemList.item
+#, fuzzy
 msgid  "Line spacing"
 msgstr "Espaçamento entre linhas"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_PAGEBREAK.ItemList.item
+#, fuzzy
 msgid  "Page Break"
 msgstr "Quebra de página"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_HYPHENZONE.ItemList.item
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "Hifenização"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SPLIT.ItemList.item
+#, fuzzy
 msgid  "Do not split paragraph"
 msgstr "Dividir parágrafo"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ORPHANS.ItemList.item
+#, fuzzy
 msgid  "Orphans"
 msgstr "Órfãos"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_WIDOWS.ItemList.item
+#, fuzzy
 msgid  "Widows"
 msgstr "Viúvas"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ULSPACE.ItemList.item
+#, fuzzy
 msgid  "Spacing"
 msgstr "Espaçamento"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LRSPACE.ItemList.item
+#, fuzzy
 msgid  "Indent"
 msgstr "Avanço de parágrafo"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_LRSPACE.ItemList.item
+#, fuzzy
 msgid  "Indent"
 msgstr "Avanço de parágrafo"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ULSPACE.ItemList.item
+#, fuzzy
 msgid  "Spacing"
 msgstr "Espaçamento"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PAGE.ItemList.item
+#, fuzzy
 msgid  "Page"
 msgstr "Página"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_MODEL.ItemList.item
 msgid  "Page Style"
-msgstr "Estilo de página"
+msgstr "Estilo da Página"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_KEEP.ItemList.item
+#, fuzzy
 msgid  "Keep with next paragraph"
 msgstr "Manter parágrafos juntos"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_FLASH.ItemList.item
+#, fuzzy
 msgid  "Blinking"
 msgstr "Intermitente"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_REGISTER.ItemList.item
+#, fuzzy
 msgid  "Register-true"
 msgstr "Registo"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH_CHAR.ItemList.item
 msgid  "Character background"
-msgstr "Fundo de caracteres"
+msgstr "Fundo do carácter"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONT.ItemList.item
+#, fuzzy
 msgid  "Asian font"
 msgstr "Tipo de letra asiática"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONTHEIGHT.ItemList.item
+#, fuzzy
 msgid  "Size of Asian font"
 msgstr "Tamanho do tipo de letra asiática"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_LANGUAGE.ItemList.item
+#, fuzzy
 msgid  "Language of Asian font"
 msgstr "Idioma de tipos de letra asiáticos"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_POSTURE.ItemList.item
+#, fuzzy
 msgid  "Posture of Asian font"
 msgstr "Posição de tipos de letra asiáticos"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_WEIGHT.ItemList.item
+#, fuzzy
 msgid  "Weight of Asian font"
 msgstr "Espessura de tipos de letra asiáticos"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_FONT.ItemList.item
+#, fuzzy
 msgid  "CTL"
 msgstr "Complex scripts"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_FONTHEIGHT.ItemList.item
+#, fuzzy
 msgid  "Size of complex scripts"
 msgstr "Tamanho de scripts complexos"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_LANGUAGE.ItemList.item
+#, fuzzy
 msgid  "Language of complex scripts"
 msgstr "Idioma de scripts complexos"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_POSTURE.ItemList.item
+#, fuzzy
 msgid  "Posture of complex scripts"
 msgstr "Posição de scripts complexos"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_WEIGHT.ItemList.item
+#, fuzzy
 msgid  "Weight of complex scripts"
 msgstr "Espessura de scripts complexos"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_TWO_LINES.ItemList.item
+#, fuzzy
 msgid  "Double-lined"
 msgstr "Linhas duplas"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_EMPHASISMARK.ItemList.item
+#, fuzzy
 msgid  "Emphasis mark"
 msgstr "Marca de ênfase"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SCRIPTSPACE.ItemList.item
+#, fuzzy
 msgid  "Text spacing"
 msgstr "Espaçamento de texto"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_HANGPUNCTUATION.ItemList.item
+#, fuzzy
 msgid  "Hanging punctuation"
 msgstr "Pontuação flutuante"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_FORBIDDEN_RULES.ItemList.item
+#, fuzzy
 msgid  "Forbidden characters"
 msgstr "Caracteres proibidos"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ROTATED.ItemList.item
+#, fuzzy
 msgid  "Rotation"
 msgstr "Rotação"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_SCALEWIDTH.ItemList.item
+#, fuzzy
 msgid  "Scale"
 msgstr "Ampliação"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_RELIEF.ItemList.item
+#, fuzzy
 msgid  "Relief"
 msgstr "Relevo"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_PARA_VERTALIGN.ItemList.item
+#, fuzzy
 msgid  "Vertical text alignment"
 msgstr "Alinhamento vertical do texto"
 
 #: source/items/svxitems.src#RID_SVXITEMS_EXTRAS_CHARCOLOR.String.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "Cor do tipo de letra"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND.String.Text
+#, fuzzy
 msgid  "Search"
 msgstr "Localizar"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND_ALL.String.Text
+#, fuzzy
 msgid  "Find All"
 msgstr "Localizar todos"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE.String.Text
+#, fuzzy
 msgid  "Replace"
 msgstr "Substituir"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE_ALL.String.Text
+#, fuzzy
 msgid  "Replace all"
 msgstr "Substituir tudo"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_CHAR.String.Text
+#, fuzzy
 msgid  "Character Style"
 msgstr "Estilo do carácter"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PARA.String.Text
+#, fuzzy
 msgid  "Paragraph Style"
 msgstr "Estilo de parágrafo"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_FRAME.String.Text
+#, fuzzy
 msgid  "Frame Style"
 msgstr "Estilos de molduras"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PAGE.String.Text
+#, fuzzy
 msgid  "Page Style"
 msgstr "Estilo da Página"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_FORMULA.String.Text
+#, fuzzy
 msgid  "Formula"
 msgstr "Fórmula"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_VALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "Valor"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_NOTE.String.Text
+#, fuzzy
 msgid  "Note"
 msgstr "Anotação"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_NULL.String.Text
 msgid  "None"
-msgstr "Nenhum"
+msgstr "Sem"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_SOLID.String.Text
+#, fuzzy
 msgid  "Solid"
 msgstr "Cheio"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_HORZ.String.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "Horizontal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_VERT.String.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "Vertical"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_CROSS.String.Text
+#, fuzzy
 msgid  "Grid"
 msgstr "Grelha"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DIAGCROSS.String.Text
+#, fuzzy
 msgid  "Diamond"
 msgstr "Losango"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_UPDIAG.String.Text
+#, fuzzy
 msgid  "Diagonal up"
 msgstr "Diagonal para cima"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DOWNDIAG.String.Text
+#, fuzzy
 msgid  "Diagonal down"
 msgstr "Diagonal para baixo"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_BITMAP.String.Text
+#, fuzzy
 msgid  "Image"
 msgstr "Imagem"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_STANDARD.String.Text
+#, fuzzy
 msgid  "Horizontal alignment default"
 msgstr "Alinhamento horizontal padrão"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_LEFT.String.Text
+#, fuzzy
 msgid  "Align left"
 msgstr "Alinhar à esquerda"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_CENTER.String.Text
+#, fuzzy
 msgid  "Centered horizontally"
 msgstr "Centrado na horizontal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_RIGHT.String.Text
+#, fuzzy
 msgid  "Align right"
 msgstr "Alinhar à direita"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_BLOCK.String.Text
+#, fuzzy
 msgid  "Justify"
 msgstr "Justificar"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_REPEAT.String.Text
+#, fuzzy
 msgid  "Repeat alignment"
 msgstr "Repetir alinhamento"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_STANDARD.String.Text
+#, fuzzy
 msgid  "Vertical alignment default"
 msgstr "Alinhamento vertical padrão"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_TOP.String.Text
+#, fuzzy
 msgid  "Align to top"
 msgstr "Alinhar para baixo"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_CENTER.String.Text
+#, fuzzy
 msgid  "Centered vertically"
 msgstr "Centrado na vertical"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_BOTTOM.String.Text
+#, fuzzy
 msgid  "Align to bottom"
 msgstr "Alinhar para baixo"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STANDARD.String.Text
+#, fuzzy
 msgid  "Default orientation"
 msgstr "Orientação padrão"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_TOPBOTTOM.String.Text
+#, fuzzy
 msgid  "From top to bottom"
 msgstr "De cima para baixo"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_BOTTOMTOP.String.Text
+#, fuzzy
 msgid  "Bottom to Top"
 msgstr "De baixo para cima"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STACKED.String.Text
+#, fuzzy
 msgid  "Stacked"
 msgstr "Empilhar"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_TRUE.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Tabela"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_FALSE.String.Text
+#, fuzzy
 msgid  "Not Table"
 msgstr "Sem tabela"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_TRUE.String.Text
+#, fuzzy
 msgid  "Spacing enabled"
 msgstr "Espaçamento activado"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_FALSE.String.Text
+#, fuzzy
 msgid  "Spacing disabled"
 msgstr "Espaçamento desactivado"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_TRUE.String.Text
+#, fuzzy
 msgid  "Keep spacing interval"
 msgstr "Manter espaçamento"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_FALSE.String.Text
+#, fuzzy
 msgid  "Allowed to fall short of spacing interval"
 msgstr "Permitido espaçamento menor do que o especificado"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_LEFT.String.Text
+#, fuzzy
 msgid  "Left margin: "
 msgstr "Margem esquerda: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_TOP.String.Text
+#, fuzzy
 msgid  "Top margin: "
 msgstr "Margem superior: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_RIGHT.String.Text
+#, fuzzy
 msgid  "Right margin: "
 msgstr "Margem direita: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_BOTTOM.String.Text
+#, fuzzy
 msgid  "Bottom margin: "
 msgstr "Margem inferior: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_COMPLETE.String.Text
+#, fuzzy
 msgid  "Page Description: "
 msgstr "Descrição de página: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_UPPER.String.Text
+#, fuzzy
 msgid  "Capitals"
 msgstr "Maiúsculas"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_LOWER.String.Text
+#, fuzzy
 msgid  "Lowercase"
 msgstr "Minúsculas"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_UPPER.String.Text
+#, fuzzy
 msgid  "Uppercase Roman"
 msgstr "Maiúsculas romanas"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_LOWER.String.Text
+#, fuzzy
 msgid  "Lowercase Roman"
 msgstr "Minúsculas romanas"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ARABIC.String.Text
+#, fuzzy
 msgid  "Arabic"
 msgstr "Árabe"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_NONE.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "Sem"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_TRUE.String.Text
+#, fuzzy
 msgid  "Landscape"
 msgstr "Horizontal"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_FALSE.String.Text
+#, fuzzy
 msgid  "Portrait"
 msgstr "Vertical"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_LEFT.String.Text
+#, fuzzy
 msgid  "Left"
 msgstr "Esquerda"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_RIGHT.String.Text
+#, fuzzy
 msgid  "Right"
 msgstr "Direita"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_ALL.String.Text
+#, fuzzy
 msgid  "All"
 msgstr "Tudo"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_MIRROR.String.Text
+#, fuzzy
 msgid  "Mirrored"
 msgstr "Invertido"
 
 #: source/items/svxitems.src#RID_SVXITEMS_AUTHOR_COMPLETE.String.Text
+#, fuzzy
 msgid  "Author: "
 msgstr "Autor: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_DATE_COMPLETE.String.Text
+#, fuzzy
 msgid  "Date: "
 msgstr "Data: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_TEXT_COMPLETE.String.Text
+#, fuzzy
 msgid  "Text: "
 msgstr "Texto:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BACKGROUND_COLOR.String.Text
+#, fuzzy
 msgid  "Background color: "
 msgstr "Cor de fundo:"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PATTERN_COLOR.String.Text
+#, fuzzy
 msgid  "Pattern color: "
 msgstr "Cor padrão: "
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSH_CHAR.String.Text
+#, fuzzy
 msgid  "Character background"
 msgstr "Fundo do carácter"
 
 #: source/src/app.src#RID_ERRBOX_MODULENOTINSTALLED.ErrorBox.Message
+#, fuzzy
 msgid  "The action could not be executed. The %PRODUCTNAME program module needed for this action is currently not installed."
 msgstr "Não foi possível executar a acção. O módulo de programa das %PRODUCTNAME necessário para esta acção não se encontra actualmente instalado."
 
@@ -7410,7 +7840,7 @@ msgid  "The specified device is invalid."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
-msgid  "The object cannot be accessed\ndue to insufficient user rights."
+msgid  "The object cannot be accessed\\ndue to insufficient user rights."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
@@ -7422,7 +7852,7 @@ msgid  "No more space on device."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ISWILDCARD.String.Text
-msgid  "This operation cannot be run on\nfiles containing wildcards."
+msgid  "This operation cannot be run on\\nfiles containing wildcards."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSUPPORTED.String.Text
@@ -7506,7 +7936,7 @@ msgid  "The file cannot be used as template."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTREADDOCINFO.String.Text
-msgid  "Document information could not be read from the file because\nthe document information format is unknown or because document information does not\nexist."
+msgid  "Document information could not be read from the file because\\nthe document information format is unknown or because document information does not\\nexist."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_ALREADYOPEN.String.Text
@@ -7538,11 +7968,11 @@ msgid  "Could not establish Internet connection to $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_READ.String.Text
-msgid  "Error reading data from the Internet.\nServer error message: $(ARG1)."
+msgid  "Error reading data from the Internet.\\nServer error message: $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_WRITE.String.Text
-msgid  "Error transferring data to the Internet.\nServer error message: $(ARG1)."
+msgid  "Error transferring data to the Internet.\\nServer error message: $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_GENERAL.String.Text
@@ -7654,7 +8084,7 @@ msgid  "A subscription folder is required to install a Channel."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSTORABLEINBINARYFORMAT.String.Text
-msgid  "This document contains attributes that cannot be saved in the selected format.\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
+msgid  "This document contains attributes that cannot be saved in the selected format.\\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_TARGETFILECORRUPTED.String.Text
@@ -7670,19 +8100,19 @@ msgid  "Could not create backup copy."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_MACROS_SUPPORT_DISABLED.String.Text
-msgid  "An attempt was made to execute a macro.\nFor security reasons, macro support is disabled."
+msgid  "An attempt was made to execute a macro.\\nFor security reasons, macro support is disabled."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_DOCUMENT_MACRO_DISABLED.String.Text
-msgid  "This document contains macros.\n\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\n\nTherefore, some functionality may not be available."
+msgid  "This document contains macros.\\n\\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\\n\\nTherefore, some functionality may not be available."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_BROKENSIGNATURE.String.Text
-msgid  "The digitally signed document content and/or macros do not match the current document signature.\n\nThis could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
+msgid  "The digitally signed document content and/or macros do not match the current document signature.\\n\\nThis could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_INCOMPLETE_ENCRYPTION.String.Text
-msgid  "The encrypted document contains unexpected non-encrypted streams.\n\nThis could be the result of document manipulation.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
+msgid  "The encrypted document contains unexpected non-encrypted streams.\\n\\nThis could be the result of document manipulation.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_INVALIDLENGTH.String.Text
@@ -7710,506 +8140,629 @@ msgid  "Function not possible: write protected."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_SHARED_NOPASSWORDCHANGE.String.Text
-msgid  "The password of a shared spreadsheet cannot be set or changed.\nDeactivate sharing mode first."
+msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactivate sharing mode first."
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
+#, fuzzy
 msgid  "INSRT"
 msgstr "INSER"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_OVERWRITE_TEXT.String.Text
+#, fuzzy
 msgid  "OVER"
 msgstr "SUB"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_STD.String.Text
+#, fuzzy
 msgid  "STD"
 msgstr "PAD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ER.String.Text
+#, fuzzy
 msgid  "EXT"
 msgstr "EXT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ERG.String.Text
+#, fuzzy
 msgid  "ADD"
 msgstr "ADI"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_BLK.String.Text
+#, fuzzy
 msgid  "BLK"
 msgstr "BLK"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature is OK."
 msgstr "Assinatura digital: A assinatura do documento está OK."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK_NO_VERIFY.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature is OK, but the certificates could not be validated."
 msgstr "Assinatura digital: A assinatura do documento está OK, mas não foi possível validar os certificados."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_NOT_OK.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature does not match the document content. We strongly recommend you to do not trust this document."
 msgstr "Assinatura digital: A assinatura do documento não corresponde ao conteúdo do documento. Recomenda-se vivamente que não considere este documento fiável. "
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_NO_SIG.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document is not signed."
 msgstr "Assinatura digital: O documento não está assinado."
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_CERT_OK_PARTIAL_SIG.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature and the certificate are OK, but not all parts of the document are signed."
 msgstr "Assinatura digital: A assinatura do documento e o certificado estão correctos, mas nem todas as partes do documento estão assinadas."
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_OPTIMAL.MenuItem.Text
+#, fuzzy
 msgid  "Optimal"
 msgstr "Optimizar"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_PAGE_WIDTH.MenuItem.Text
+#, fuzzy
 msgid  "Page Width"
 msgstr "Larg. de página"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_WHOLE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "Entire Page"
 msgstr "Página inteira"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_AVG.MenuItem.Text
+#, fuzzy
 msgid  "Average"
 msgstr "Média"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT2.MenuItem.Text
+#, fuzzy
 msgid  "CountA"
 msgstr "Contar"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT.MenuItem.Text
+#, fuzzy
 msgid  "Count"
 msgstr "Quantidade"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MAX.MenuItem.Text
+#, fuzzy
 msgid  "Maximum"
 msgstr "Máximo"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MIN.MenuItem.Text
+#, fuzzy
 msgid  "Minimum"
 msgstr "Mínimo"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_SUM.MenuItem.Text
+#, fuzzy
 msgid  "Sum"
 msgstr "Soma"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_NONE.MenuItem.Text
+#, fuzzy
 msgid  "None"
 msgstr "Nenhuma"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_XMLSECSTATBAR.XMLSEC_CALL.MenuItem.Text
+#, fuzzy
 msgid  "Digital Signatures..."
 msgstr "Assinaturas digitais..."
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNONE.String.Text
+#, fuzzy
 msgid  "draw object"
 msgstr "Objecto de desenho"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
+#, fuzzy
 msgid  "draw objects"
 msgstr "Objectos de desenho"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
+#, fuzzy
 msgid  "group object"
 msgstr "Objecto de grupo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUP.String.Text
+#, fuzzy
 msgid  "group objects"
 msgstr "Objectos de grupo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUPEMPTY.String.Text
+#, fuzzy
 msgid  "blank group object"
 msgstr "Objecto de grupo vazio"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUPEMPTY.String.Text
+#, fuzzy
 msgid  "Blank group objects"
 msgstr "Objectos de grupo vazios"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE.String.Text
+#, fuzzy
 msgid  "Line"
 msgstr "Linha"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Hori.String.Text
+#, fuzzy
 msgid  "horizontal line"
 msgstr "Linha horizontal"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Vert.String.Text
+#, fuzzy
 msgid  "Vertical line"
 msgstr "Linha vertical"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Diag.String.Text
+#, fuzzy
 msgid  "diagonal line"
 msgstr "Linha diagonal"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLINE.String.Text
+#, fuzzy
 msgid  "Lines"
 msgstr "Linhas"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECT.String.Text
+#, fuzzy
 msgid  "Rectangle"
 msgstr "Rectângulo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECT.String.Text
+#, fuzzy
 msgid  "Rectangles"
 msgstr "Rectângulos"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUAD.String.Text
+#, fuzzy
 msgid  "Square"
 msgstr "Quadrado"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUAD.String.Text
+#, fuzzy
 msgid  "Squares"
 msgstr "Quadrados"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARAL.String.Text
+#, fuzzy
 msgid  "Parallelogram"
 msgstr "Paralelograma"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARAL.String.Text
+#, fuzzy
 msgid  "Parallelograms"
 msgstr "Paralelogramas"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTE.String.Text
+#, fuzzy
 msgid  "Rhombus"
 msgstr "Losango"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTE.String.Text
+#, fuzzy
 msgid  "Rhombuses"
 msgstr "Losangos"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECTRND.String.Text
+#, fuzzy
 msgid  "Rounded rectangle"
 msgstr "Rectângulo arredondado"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECTRND.String.Text
+#, fuzzy
 msgid  "Rounded Rectangles"
 msgstr "Rectângulos arredondados"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUADRND.String.Text
+#, fuzzy
 msgid  "rounded square"
 msgstr "Quadrado arredondado"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUADRND.String.Text
+#, fuzzy
 msgid  "Rounded Squares"
 msgstr "Quadrados arredondados"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARALRND.String.Text
+#, fuzzy
 msgid  "Rounded Parallelogram"
 msgstr "Paralelograma arredondado"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARALRND.String.Text
+#, fuzzy
 msgid  "Rounded parallelograms"
 msgstr "Paralelogramas arredondados"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTERND.String.Text
+#, fuzzy
 msgid  "rounded rhombus"
 msgstr "Losango arredondado"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTERND.String.Text
+#, fuzzy
 msgid  "Rounded rhombuses"
 msgstr "Losangos arredondados"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRC.String.Text
+#, fuzzy
 msgid  "Circle"
 msgstr "Círculo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRC.String.Text
+#, fuzzy
 msgid  "Circles"
 msgstr "Círculos"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECT.String.Text
+#, fuzzy
 msgid  "Circle sector"
 msgstr "Sector de círculo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECT.String.Text
+#, fuzzy
 msgid  "Circle sectors"
 msgstr "Sectores de círculo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARC.String.Text
 msgid  "Arc"
-msgstr "Arco"
+msgstr "Arco de círculo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARC.String.Text
+#, fuzzy
 msgid  "Arcs"
 msgstr "Arcos"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
+#, fuzzy
 msgid  "Circle segment"
 msgstr "Segmento de círculo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
+#, fuzzy
 msgid  "Circle segments"
 msgstr "Segmentos de círculo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRCE.String.Text
+#, fuzzy
 msgid  "Ellipse"
 msgstr "Elipse"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRCE.String.Text
+#, fuzzy
 msgid  "Ellipses"
 msgstr "Elipses"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECTE.String.Text
+#, fuzzy
 msgid  "Ellipse Pie"
 msgstr "Sector de elipse"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECTE.String.Text
+#, fuzzy
 msgid  "Ellipse Pies"
 msgstr "Sectores de elipse"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARCE.String.Text
+#, fuzzy
 msgid  "Elliptical arc"
 msgstr "Arco elíptico"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARCE.String.Text
+#, fuzzy
 msgid  "Elliptical arcs"
 msgstr "Arcos elípticos"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUTE.String.Text
+#, fuzzy
 msgid  "Ellipse Segment"
 msgstr "Segmento elíptico"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUTE.String.Text
+#, fuzzy
 msgid  "Ellipse Segments"
 msgstr "Segmentos elípticos"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY.String.Text
+#, fuzzy
 msgid  "Polygon"
 msgstr "Polígono"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY_PntAnz.String.Text
+#, fuzzy
 msgid  "Polygon %2 corners"
 msgstr "Polígono %2 pontos"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPOLY.String.Text
+#, fuzzy
 msgid  "Polygons"
 msgstr "Polígonos"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN.String.Text
+#, fuzzy
 msgid  "Polyline"
 msgstr "Polilinha"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN_PntAnz.String.Text
+#, fuzzy
 msgid  "Polyline with %2 corners"
 msgstr "Polilinha com %2 pontos"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPLIN.String.Text
+#, fuzzy
 msgid  "Polylines"
 msgstr "Polilinhas"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHLINE.String.Text
+#, fuzzy
 msgid  "Bézier curve"
 msgstr "Curva Bézier"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHLINE.String.Text
+#, fuzzy
 msgid  "Bézier curves"
 msgstr "Curvas Bézier"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHFILL.String.Text
+#, fuzzy
 msgid  "Bézier curve"
 msgstr "Curva Bézier"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHFILL.String.Text
+#, fuzzy
 msgid  "Bézier curves"
 msgstr "Curvas Bézier"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREELINE.String.Text
+#, fuzzy
 msgid  "Freeform Line"
 msgstr "Linha de forma livre"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREELINE.String.Text
+#, fuzzy
 msgid  "Freeform Lines"
 msgstr "Linhas de forma livre"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREEFILL.String.Text
+#, fuzzy
 msgid  "Freeform Line"
 msgstr "Linha de forma livre"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREEFILL.String.Text
+#, fuzzy
 msgid  "Freeform Lines"
 msgstr "Linhas de forma livre"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBLINE.String.Text
+#, fuzzy
 msgid  "Curve"
 msgstr "Curva"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBLINE.String.Text
+#, fuzzy
 msgid  "Curve objects"
 msgstr "Objectos curvados"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBFILL.String.Text
+#, fuzzy
 msgid  "Curve"
 msgstr "Curva"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBFILL.String.Text
+#, fuzzy
 msgid  "Curve objects"
 msgstr "Objectos curvados"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNATSPLN.String.Text
+#, fuzzy
 msgid  "Natural Spline"
 msgstr "Spline natural"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNATSPLN.String.Text
+#, fuzzy
 msgid  "Natural Splines"
 msgstr "Splines naturais"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPERSPLN.String.Text
+#, fuzzy
 msgid  "Periodic Spline"
 msgstr "Spline periódico"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPERSPLN.String.Text
+#, fuzzy
 msgid  "Periodic Splines"
 msgstr "Splines periódicos"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXT.String.Text
 msgid  "Text Frame"
-msgstr "Moldura de texto"
+msgstr "Molduras de texto"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXT.String.Text
+#, fuzzy
 msgid  "Text Frame"
 msgstr "Molduras de texto"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXTLNK.String.Text
+#, fuzzy
 msgid  "Linked text frame"
 msgstr "Moldura de texto ligada"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXTLNK.String.Text
+#, fuzzy
 msgid  "Linked text frames"
 msgstr "Molduras de texto ligadas"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "Objecto de texto encaixado"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "Objectos de texto encaixados"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITALLTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "Objecto de texto encaixado"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITALLTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "Objectos de texto encaixados"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTITLETEXT.String.Text
+#, fuzzy
 msgid  "Title text"
 msgstr "Texto do título"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTITLETEXT.String.Text
+#, fuzzy
 msgid  "Title texts"
 msgstr "Textos do título"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOUTLINETEXT.String.Text
+#, fuzzy
 msgid  "Outline Text"
 msgstr "Texto do esquema"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOUTLINETEXT.String.Text
+#, fuzzy
 msgid  "Outline Texts"
 msgstr "Textos do esquema"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAF.String.Text
+#, fuzzy
 msgid  "graphic"
 msgstr "Objecto gráfico"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAF.String.Text
+#, fuzzy
 msgid  "graphics"
 msgstr "objectos gráficos"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFLNK.String.Text
+#, fuzzy
 msgid  "Linked graphic"
 msgstr "Objecto gráfico ligado"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFLNK.String.Text
+#, fuzzy
 msgid  "Linked graphics"
 msgstr "Objectos gráficos ligadas"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONE.String.Text
+#, fuzzy
 msgid  "Blank graphic object"
 msgstr "Objecto gráfico vazio"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONE.String.Text
+#, fuzzy
 msgid  "Blank graphic objects"
 msgstr "Objecto gráfico vazio"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONELNK.String.Text
+#, fuzzy
 msgid  "Blank linked graphic"
 msgstr "Objecto gráfico vazio ligado"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONELNK.String.Text
+#, fuzzy
 msgid  "Blank linked graphics"
 msgstr "Objectos gráficos vazios ligados"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTF.String.Text
+#, fuzzy
 msgid  "Metafile"
 msgstr "Metaficheiro"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTF.String.Text
+#, fuzzy
 msgid  "Metafiles"
 msgstr "Metaficheiros"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTFLNK.String.Text
+#, fuzzy
 msgid  "Linked Metafile"
 msgstr "Metaficheiro ligado"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTFLNK.String.Text
+#, fuzzy
 msgid  "Linked Metafiles"
 msgstr "Metaficheiros ligados"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMP.String.Text
+#, fuzzy
 msgid  "Bitmap"
 msgstr "Mapa de bits"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANS.String.Text
+#, fuzzy
 msgid  "Bitmap with transparency"
 msgstr "Mapa de bits transparente"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPLNK.String.Text
+#, fuzzy
 msgid  "Linked Bitmap"
 msgstr "Mapa de bits ligado"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANSLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmap with transparency"
 msgstr "Ligação de mapa de bits com transparência"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMP.String.Text
+#, fuzzy
 msgid  "Bitmaps"
 msgstr "Mapas de bits"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANS.String.Text
+#, fuzzy
 msgid  "Bitmaps with transparency"
 msgstr "Mapas de bits transparentes"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmaps"
 msgstr "Mapas de bits ligados"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANSLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmaps with transparency"
 msgstr "Ligação de mapas de bits com transparência"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCUSTOMSHAPE.String.Text
+#, fuzzy
 msgid  "Shape"
 msgstr "Forma"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCUSTOMSHAPE.String.Text
+#, fuzzy
 msgid  "Shapes"
 msgstr "Formas"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMAC.String.Text
+#, fuzzy
 msgid  "Mac graphic"
 msgstr "Gráfico Mac"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMAC.String.Text
+#, fuzzy
 msgid  "Mac graphics"
 msgstr "Imagens Mac"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMACLNK.String.Text
+#, fuzzy
 msgid  "Linked Mac graphic"
 msgstr "Imagens Mac ligadas"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMACLNK.String.Text
+#, fuzzy
 msgid  "Linked Mac graphics"
 msgstr "Imagem Mac ligada"
 
@@ -8222,2038 +8775,2542 @@ msgid  "SVGs"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2.String.Text
+#, fuzzy
 msgid  "embedded object (OLE)"
 msgstr "Objecto incorporado (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2.String.Text
+#, fuzzy
 msgid  "Embedded objects (OLE)"
 msgstr "Objectos incorporados (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulUno.String.Text
+#, fuzzy
 msgid  "Control"
 msgstr "Campo de controlo"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralUno.String.Text
+#, fuzzy
 msgid  "Controls"
 msgstr "Campos de controlo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2LNK.String.Text
+#, fuzzy
 msgid  "linked embedded object (OLE)"
 msgstr "Objecto incorporado e ligado (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2LNK.String.Text
+#, fuzzy
 msgid  "Linked embedded objects (OLE)"
 msgstr "Objectos incorporados ligados (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjOLE2NamePrefix.String.Text
+#, fuzzy
 msgid  "Object"
 msgstr "Objecto"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFrame.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "Moldura"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFrame.String.Text
+#, fuzzy
 msgid  "Frames"
 msgstr "Formas"
 
 #: source/svdraw/svdstr.src#STR_ObjFrameNamePrefix.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "Moldura"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulEDGE.String.Text
+#, fuzzy
 msgid  "Object Connectors"
 msgstr "Conectores de objectos"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralEDGE.String.Text
+#, fuzzy
 msgid  "Object Connectors"
 msgstr "Conectores de objectos"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCAPTION.String.Text
+#, fuzzy
 msgid  "Callout"
 msgstr "Legenda"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCAPTION.String.Text
+#, fuzzy
 msgid  "Callouts"
 msgstr "Legendas"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPAGE.String.Text
+#, fuzzy
 msgid  "Preview object"
 msgstr "Objecto de apresentação de páginas"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPAGE.String.Text
+#, fuzzy
 msgid  "Preview objects"
 msgstr "Objectos de apresentação de páginas"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEASURE.String.Text
+#, fuzzy
 msgid  "Dimension line"
 msgstr "Objecto de dimensionamento"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEASURE.String.Text
+#, fuzzy
 msgid  "Dimensioning objects"
 msgstr "Objectos de dimensionamento"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePlural.String.Text
+#, fuzzy
 msgid  "draw objects"
 msgstr "Objectos de desenho"
 
 #: source/svdraw/svdstr.src#STR_ObjNameNoObj.String.Text
+#, fuzzy
 msgid  "No draw object"
 msgstr "Sem objecto de desenho"
 
 #: source/svdraw/svdstr.src#STR_ObjNameAnd.String.Text
+#, fuzzy
 msgid  "and"
 msgstr "e"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPlural.String.Text
+#, fuzzy
 msgid  "draw object(s)"
 msgstr "Objecto(s) de desenho"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCube3d.String.Text
+#, fuzzy
 msgid  "3D cube"
 msgstr "Cubo 3D"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCube3d.String.Text
+#, fuzzy
 msgid  "3D cubes"
 msgstr "Cubos 3D"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulExtrude3d.String.Text
+#, fuzzy
 msgid  "Extrusion object"
 msgstr "Objecto de extrusão"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralExtrude3d.String.Text
+#, fuzzy
 msgid  "Extrusion objects"
 msgstr "Objectos de extrusão"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLabel3d.String.Text
+#, fuzzy
 msgid  "3D text"
 msgstr "Texto 3D"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLabel3d.String.Text
+#, fuzzy
 msgid  "3D texts"
 msgstr "Textos 3D"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLathe3d.String.Text
+#, fuzzy
 msgid  "rotation object"
 msgstr "Objecto de rotação"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLathe3d.String.Text
+#, fuzzy
 msgid  "rotation objects"
 msgstr "Objectos de rotação"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulObj3d.String.Text
+#, fuzzy
 msgid  "3D object"
 msgstr "Objecto 3D"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralObj3d.String.Text
+#, fuzzy
 msgid  "3D objects"
 msgstr "Objectos 3D"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPoly3d.String.Text
+#, fuzzy
 msgid  "3D polygons"
 msgstr "Polígonos 3D"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulScene3d.String.Text
+#, fuzzy
 msgid  "3D scene"
 msgstr "Cena 3D"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralScene3d.String.Text
+#, fuzzy
 msgid  "3D scenes"
 msgstr "Cenas 3D"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSphere3d.String.Text
+#, fuzzy
 msgid  "sphere"
 msgstr "Esfera"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSphere3d.String.Text
+#, fuzzy
 msgid  "spheres"
 msgstr "Esferas"
 
 #: source/svdraw/svdstr.src#STR_EditWithCopy.String.Text
+#, fuzzy
 msgid  "with copy"
 msgstr "com cópia"
 
 #: source/svdraw/svdstr.src#STR_EditPosSize.String.Text
+#, fuzzy
 msgid  "Set position and size for %1"
 msgstr "Definir posição e tamanho para %1"
 
 #: source/svdraw/svdstr.src#STR_EditDelete.String.Text
+#, fuzzy
 msgid  "Delete %1"
 msgstr "Eliminar %1"
 
 #: source/svdraw/svdstr.src#STR_EditMovToTop.String.Text
+#, fuzzy
 msgid  "Move %1 forward"
 msgstr "Mover %1 para a frente"
 
 #: source/svdraw/svdstr.src#STR_EditMovToBtm.String.Text
+#, fuzzy
 msgid  "Move %1 further back"
 msgstr "Mover %1 ainda mais para trás"
 
 #: source/svdraw/svdstr.src#STR_EditPutToTop.String.Text
+#, fuzzy
 msgid  "Move %1 to front"
 msgstr "Mover %1 para primeiro plano"
 
 #: source/svdraw/svdstr.src#STR_EditPutToBtm.String.Text
+#, fuzzy
 msgid  "Move %1 to back"
 msgstr "Mover %1 para trás"
 
 #: source/svdraw/svdstr.src#STR_EditRevOrder.String.Text
+#, fuzzy
 msgid  "Reverse order of %1"
 msgstr "Inverter ordem de %1"
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "Mover %1"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
 msgstr "Redimensionar %1"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
+#, fuzzy
 msgid  "Rotate %1"
 msgstr "Rodar %1"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
+#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "Inverter %1 na horizontal"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
+#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "Inverter %1 na vertical"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorDiag.String.Text
+#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "Inverter %1 na diagonal"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
+#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "Inverter %1 manualmente"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
+#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "Distorcer %1 (inclinação)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
+#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "Dispor %1 em círculo"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
+#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "Curvar %1 em círculo"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
+#, fuzzy
 msgid  "Distort %1"
 msgstr "Distorcer %1"
 
 #: source/svdraw/svdstr.src#STR_EditRipUp.String.Text
+#, fuzzy
 msgid  "Undo %1"
 msgstr "Anular %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetPointsSmooth.String.Text
+#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "Modificar propriedades bézier de %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetSegmentsKind.String.Text
+#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "Modificar propriedades bézier de %1"
 
 #: source/svdraw/svdstr.src#STR_EditShut.String.Text
+#, fuzzy
 msgid  "Close %1"
 msgstr "Fechar %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueEscDir.String.Text
+#, fuzzy
 msgid  "Set exit direction for %1"
 msgstr "Definir direcção de saída para %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetGluePercent.String.Text
+#, fuzzy
 msgid  "Set relative attribute at %1"
 msgstr "Definir atributo relativo para %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueAlign.String.Text
+#, fuzzy
 msgid  "Set reference point for %1"
 msgstr "Definir ponto de referência para %1"
 
 #: source/svdraw/svdstr.src#STR_EditGroup.String.Text
+#, fuzzy
 msgid  "Group %1"
 msgstr "Agrupar %1"
 
 #: source/svdraw/svdstr.src#STR_EditUngroup.String.Text
+#, fuzzy
 msgid  "Ungroup %1"
 msgstr "Desagrupar %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetAttributes.String.Text
+#, fuzzy
 msgid  "Apply attributes to %1"
 msgstr "Aplicar atributos a %1"
 
 #: source/svdraw/svdstr.src#STR_EditSetStylesheet.String.Text
+#, fuzzy
 msgid  "Apply Styles to %1"
 msgstr "Aplicar estilos a %1"
 
 #: source/svdraw/svdstr.src#STR_EditDelStylesheet.String.Text
+#, fuzzy
 msgid  "Remove Style from %1"
 msgstr "Remover estilo de %1"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPoly.String.Text
+#, fuzzy
 msgid  "Convert %1 to polygon"
 msgstr "Converter %1 em polígono"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPolys.String.Text
+#, fuzzy
 msgid  "Convert %1 to polygons"
 msgstr "Converter %1 em polígonos"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurve.String.Text
+#, fuzzy
 msgid  "Convert %1 to curve"
 msgstr "Converter %1 em curva"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurves.String.Text
+#, fuzzy
 msgid  "Convert %1 to curves"
 msgstr "Converter %1 em curvas"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContour.String.Text
+#, fuzzy
 msgid  "Convert %1 to contour"
 msgstr "Converter %1 em contorno"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContours.String.Text
+#, fuzzy
 msgid  "Convert %1 to contours"
 msgstr "Converter %1 em contornos"
 
 #: source/svdraw/svdstr.src#STR_EditAlign.String.Text
+#, fuzzy
 msgid  "Align %1"
 msgstr "Alinhar %1"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVTop.String.Text
+#, fuzzy
 msgid  "Align %1 to top"
 msgstr "Alinhar %1 em cima"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVBottom.String.Text
+#, fuzzy
 msgid  "Align %1 to bottom"
 msgstr "Alinhar %1 em baixo"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVCenter.String.Text
+#, fuzzy
 msgid  "Horizontally center %1"
 msgstr "Centrar %1 horizontalmente"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHLeft.String.Text
+#, fuzzy
 msgid  "Align %1 to left"
 msgstr "Alinhar %1 à esquerda"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHRight.String.Text
+#, fuzzy
 msgid  "Align %1 to right"
 msgstr "Alinhar %1 à direita"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHCenter.String.Text
+#, fuzzy
 msgid  "Vertically center %1"
 msgstr "Centrar %1 verticalmente"
 
 #: source/svdraw/svdstr.src#STR_EditAlignCenter.String.Text
+#, fuzzy
 msgid  "Center %1"
 msgstr "Centrar %1"
 
 #: source/svdraw/svdstr.src#STR_EditTransform.String.Text
+#, fuzzy
 msgid  "Transform %1"
 msgstr "Transformar %1"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_PolyPoly.String.Text
+#, fuzzy
 msgid  "Combine %1"
 msgstr "Combinar %1"
 
 #: source/svdraw/svdstr.src#STR_EditMergeMergePoly.String.Text
+#, fuzzy
 msgid  "Merge %1"
 msgstr "Intercalar %1"
 
 #: source/svdraw/svdstr.src#STR_EditMergeSubstractPoly.String.Text
+#, fuzzy
 msgid  "Subtract %1"
 msgstr "Subtrair %1"
 
 #: source/svdraw/svdstr.src#STR_EditMergeIntersectPoly.String.Text
+#, fuzzy
 msgid  "Intersect %1"
 msgstr "Intersectar %1"
 
 #: source/svdraw/svdstr.src#STR_DistributeMarkedObjects.String.Text
+#, fuzzy
 msgid  "Distribute selected objects"
 msgstr "Distribuir objectos seleccionados"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_OnePoly.String.Text
+#, fuzzy
 msgid  "Combine %1"
 msgstr "Combinar %1"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Polys.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "Dividir %1"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Lines.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "Dividir %1"
 
 #: source/svdraw/svdstr.src#STR_EditImportMtf.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "Dividir %1"
 
 #: source/svdraw/svdstr.src#STR_ExchangePaste.String.Text
+#, fuzzy
 msgid  "Insert object(s)"
 msgstr "Inserir objecto(s)"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpCut.String.Text
+#, fuzzy
 msgid  "Cut %1"
 msgstr "Cortar %1"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpPaste.String.Text
+#, fuzzy
 msgid  "Paste Clipboard"
 msgstr "Colar conteúdo da área de transferência"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDD.String.Text
+#, fuzzy
 msgid  "Drag and Drop %1"
 msgstr "Arrastar e largar %1"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDDPaste.String.Text
+#, fuzzy
 msgid  "Insert Drag and Drop"
 msgstr "Inserir Arrastar e Largar"
 
 #: source/svdraw/svdstr.src#STR_DragInsertPoint.String.Text
+#, fuzzy
 msgid  "Insert point to %1"
 msgstr "Inserir ponto para %1"
 
 #: source/svdraw/svdstr.src#STR_DragInsertGluePoint.String.Text
+#, fuzzy
 msgid  "Insert glue point to %1"
 msgstr "Inserir ponto de colagem para %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethMovHdl.String.Text
+#, fuzzy
 msgid  "Move reference-point"
 msgstr "Mover ponto de referência"
 
 #: source/svdraw/svdstr.src#STR_DragMethObjOwn.String.Text
+#, fuzzy
 msgid  "Geometrically change %1"
 msgstr "Alterar %1 geometricamente"
 
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "Mover %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
 msgstr "Redimensionar %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethRotate.String.Text
+#, fuzzy
 msgid  "Rotate %1"
 msgstr "Rodar %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorHori.String.Text
+#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "Inverter %1 na horizontal"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorVert.String.Text
+#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "Inverter %1 na vertical"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorDiag.String.Text
+#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "Inverter %1 na diagonal"
 
 #: source/svdraw/svdstr.src#STR_DragMethMirrorFree.String.Text
+#, fuzzy
 msgid  "Flip %1 freehand"
 msgstr "Inverter %1 manualmente"
 
 #: source/svdraw/svdstr.src#STR_DragMethGradient.String.Text
+#, fuzzy
 msgid  "Interactive gradient for %1"
 msgstr "Gradação interactiva para %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethTransparence.String.Text
+#, fuzzy
 msgid  "Interactive transparency for %1"
 msgstr "Transparência interactiva para %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethShear.String.Text
+#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "Distorcer %1 (inclinação)"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrook.String.Text
+#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "Dispor %1 em círculo"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrookContortion.String.Text
+#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "Curvar %1 em círculo"
 
 #: source/svdraw/svdstr.src#STR_DragMethDistort.String.Text
+#, fuzzy
 msgid  "Distort %1"
 msgstr "Distorcer %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethCrop.String.Text
+#, fuzzy
 msgid  "Crop %O"
 msgstr "Recortar %O"
 
 #: source/svdraw/svdstr.src#STR_DragRectEckRad.String.Text
+#, fuzzy
 msgid  "Alter radius by %1"
 msgstr "Alterar raio por %1"
 
 #: source/svdraw/svdstr.src#STR_DragPathObj.String.Text
+#, fuzzy
 msgid  "Change %1"
 msgstr "Alterar %1"
 
 #: source/svdraw/svdstr.src#STR_DragRectResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
 msgstr "Redimensionar %1"
 
 #: source/svdraw/svdstr.src#STR_DragCaptFram.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "Mover %1"
 
 #: source/svdraw/svdstr.src#STR_DragCaptTail.String.Text
+#, fuzzy
 msgid  "Move end point of %1"
 msgstr "Mover ponto final de %1"
 
 #: source/svdraw/svdstr.src#STR_DragCircAngle.String.Text
+#, fuzzy
 msgid  "Adjust angle by %1"
 msgstr "Ajustar ângulo por %1"
 
 #: source/svdraw/svdstr.src#STR_DragEdgeTail.String.Text
+#, fuzzy
 msgid  "Change %1"
 msgstr "Alterar %1"
 
 #: source/svdraw/svdstr.src#STR_ViewTextEdit.String.Text
+#, fuzzy
 msgid  "TextEdit: Paragraph %1, Row %2, Column %3"
 msgstr "EditarTexto: Parágrafo %1, Linha %2, Coluna %3"
 
 #: source/svdraw/svdstr.src#STR_ViewMarked.String.Text
+#, fuzzy
 msgid  "%1 selected"
 msgstr "%1 seleccionado"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoint.String.Text
+#, fuzzy
 msgid  "Point from %1"
 msgstr "Ponto de %1"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedPoints.String.Text
+#, fuzzy
 msgid  "%2 points from %1"
 msgstr "%2 pontos de %1"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoint.String.Text
+#, fuzzy
 msgid  "Glue point from %1"
 msgstr "Ponto de colagem de %1"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkedGluePoints.String.Text
+#, fuzzy
 msgid  "%2 glue points from %1"
 msgstr "%2 pontos de colagem de %1"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkObjs.String.Text
+#, fuzzy
 msgid  "Mark objects"
 msgstr "Marcar objectos"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreObjs.String.Text
+#, fuzzy
 msgid  "Mark additional objects"
 msgstr "Marcar objectos adicionais"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkPoints.String.Text
+#, fuzzy
 msgid  "Mark points"
 msgstr "Marcar pontos"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMorePoints.String.Text
+#, fuzzy
 msgid  "Mark additional points"
 msgstr "Marcar pontos adicionais"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkGluePoints.String.Text
+#, fuzzy
 msgid  "Mark glue points"
 msgstr "Marcar pontos de colagem"
 
 #: source/svdraw/svdstr.src#STR_ViewMarkMoreGluePoints.String.Text
+#, fuzzy
 msgid  "Mark additional glue points"
 msgstr "Marcar pontos de colagem adicionais"
 
 #: source/svdraw/svdstr.src#STR_ViewCreateObj.String.Text
+#, fuzzy
 msgid  "Create %1"
 msgstr "Criar %1"
 
 #: source/svdraw/svdstr.src#STR_UndoInsertObj.String.Text
+#, fuzzy
 msgid  "Insert %1"
 msgstr "Inserir %1"
 
 #: source/svdraw/svdstr.src#STR_UndoCopyObj.String.Text
+#, fuzzy
 msgid  "Copy %1"
 msgstr "Copiar %1"
 
 #: source/svdraw/svdstr.src#STR_UndoObjOrdNum.String.Text
+#, fuzzy
 msgid  "Change object order of %1"
 msgstr "Alterar ordem dos objectos de %1"
 
 #: source/svdraw/svdstr.src#STR_UndoObjSetText.String.Text
+#, fuzzy
 msgid  "Edit text of %1"
 msgstr "Editar texto de %1"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPage.String.Text
+#, fuzzy
 msgid  "Insert page"
 msgstr "Inserir página"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPage.String.Text
+#, fuzzy
 msgid  "Delete page"
 msgstr "Eliminar página"
 
 #: source/svdraw/svdstr.src#STR_UndoCopPage.String.Text
+#, fuzzy
 msgid  "Copy page"
 msgstr "Copiar página"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPage.String.Text
+#, fuzzy
 msgid  "Change order of pages"
 msgstr "Alterar a ordem das páginas"
 
 #: source/svdraw/svdstr.src#STR_UndoNewPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Assign background page"
 msgstr "Atribuir página do plano de fundo"
 
 #: source/svdraw/svdstr.src#STR_UndoDelPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Clear background page assignment"
 msgstr "Remover atributos da página do plano de fundo"
 
 #: source/svdraw/svdstr.src#STR_UndoMovPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Move background page assignment"
 msgstr "Mover atributos da página do plano de fundo"
 
 #: source/svdraw/svdstr.src#STR_UndoChgPageMasterDscr.String.Text
+#, fuzzy
 msgid  "Change background page assignment"
 msgstr "Alterar atributos da página do plano de fundo"
 
 #: source/svdraw/svdstr.src#STR_UndoMergeModel.String.Text
+#, fuzzy
 msgid  "Insert document"
 msgstr "Inserir documento"
 
 #: source/svdraw/svdstr.src#STR_UndoNewLayer.String.Text
+#, fuzzy
 msgid  "Insert Layer"
 msgstr "Inserir nível"
 
 #: source/svdraw/svdstr.src#STR_UndoDelLayer.String.Text
+#, fuzzy
 msgid  "Delete layer"
 msgstr "Eliminar nível"
 
 #: source/svdraw/svdstr.src#STR_UndoMovLayer.String.Text
+#, fuzzy
 msgid  "Change order of layers"
 msgstr "Alterar a ordem dos níveis"
 
 #: source/svdraw/svdstr.src#STR_UndoObjName.String.Text
+#, fuzzy
 msgid  "Change object name of %1 to"
 msgstr "Alterar o nome do objecto de %1 para"
 
 #: source/svdraw/svdstr.src#STR_UndoObjTitle.String.Text
+#, fuzzy
 msgid  "Change object title of %1"
 msgstr "Alterar o título do objecto de %1"
 
 #: source/svdraw/svdstr.src#STR_UndoObjDescription.String.Text
+#, fuzzy
 msgid  "Change object description of %1"
 msgstr "Alterar a descrição do objecto de %1"
 
 #: source/svdraw/svdstr.src#STR_StandardLayerName.String.Text
+#, fuzzy
 msgid  "Standard"
 msgstr "Padrão"
 
 #: source/svdraw/svdstr.src#STR_ItemValON.String.Text
+#, fuzzy
 msgid  "on"
 msgstr "Ligado"
 
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
+#, fuzzy
 msgid  "off"
 msgstr "Desactivo"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
+#, fuzzy
 msgid  "yes"
 msgstr "Sim"
 
 #: source/svdraw/svdstr.src#STR_ItemValNO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "Não"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE1.String.Text
+#, fuzzy
 msgid  "Type 1"
 msgstr "Tipo 1"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE2.String.Text
+#, fuzzy
 msgid  "Type 2"
 msgstr "Tipo 2"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE3.String.Text
+#, fuzzy
 msgid  "Type 3"
 msgstr "Tipo 3"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONTYPE4.String.Text
+#, fuzzy
 msgid  "Type 4"
 msgstr "Tipo 4"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCHORI.String.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "Horizontal"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCVERT.String.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "Vertical"
 
 #: source/svdraw/svdstr.src#STR_ItemValCAPTIONESCBESTFIT.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "Automático"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZENONE.String.Text
+#, fuzzy
 msgid  "Off"
 msgstr "Desligar"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEPROP.String.Text
+#, fuzzy
 msgid  "Proportional"
 msgstr "Proporcional"
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZEALLLINES.String.Text
+#, fuzzy
 msgid  "Fit to size (all rows separately) "
 msgstr "Todas as linhas separadas "
 
 #: source/svdraw/svdstr.src#STR_ItemValFITTOSIZERESIZEAT.String.Text
+#, fuzzy
 msgid  "Use hard attributes"
 msgstr "Usar atributos duros"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJTOP.String.Text
+#, fuzzy
 msgid  "Top"
 msgstr "Em cima"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJCENTER.String.Text
+#, fuzzy
 msgid  "Center"
 msgstr "Centro"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBOTTOM.String.Text
+#, fuzzy
 msgid  "Bottom"
 msgstr "Em baixo"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBLOCK.String.Text
+#, fuzzy
 msgid  "Use entire height"
 msgstr "Aproveitar altura total"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJSTRETCH.String.Text
+#, fuzzy
 msgid  "Stretched"
 msgstr "Extenso"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJLEFT.String.Text
+#, fuzzy
 msgid  "Left"
 msgstr "Esquerda"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJCENTER.String.Text
+#, fuzzy
 msgid  "Center"
 msgstr "Centro"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJRIGHT.String.Text
+#, fuzzy
 msgid  "Right"
 msgstr "Direita"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJBLOCK.String.Text
+#, fuzzy
 msgid  "Use entire width"
 msgstr "Utilizar a largura total"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJSTRETCH.String.Text
+#, fuzzy
 msgid  "Stretched"
 msgstr "Extenso"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_NONE.String.Text
+#, fuzzy
 msgid  "off"
 msgstr "Desactivo"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_BLINK.String.Text
+#, fuzzy
 msgid  "flash"
 msgstr "intermitente"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SCROLL.String.Text
+#, fuzzy
 msgid  "Scroll Through"
 msgstr "Deslize contínuo"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_ALTERNATE.String.Text
+#, fuzzy
 msgid  "alternating"
 msgstr "alternado"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_SLIDE.String.Text
+#, fuzzy
 msgid  "Scroll In"
 msgstr "Deslizar só para dentro"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_LEFT.String.Text
+#, fuzzy
 msgid  "left"
 msgstr "para a esquerda"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_UP.String.Text
+#, fuzzy
 msgid  "up"
 msgstr "para cima"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_RIGHT.String.Text
+#, fuzzy
 msgid  "right"
 msgstr "para a direita"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTANI_DOWN.String.Text
+#, fuzzy
 msgid  "down"
 msgstr "para baixo"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ORTHOLINES.String.Text
+#, fuzzy
 msgid  "Standard Connector"
 msgstr "Conector padrão"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_THREELINES.String.Text
+#, fuzzy
 msgid  "Line Connector"
 msgstr "Conector linear"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_ONELINE.String.Text
+#, fuzzy
 msgid  "Straight Connector"
 msgstr "Conector directo"
 
 #: source/svdraw/svdstr.src#STR_ItemValEDGE_BEZIER.String.Text
+#, fuzzy
 msgid  "Curved Connector"
 msgstr "Conector curvilíneo"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_STD.String.Text
+#, fuzzy
 msgid  "Standard"
 msgstr "Padrão"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_RADIUS.String.Text
+#, fuzzy
 msgid  "Radius"
 msgstr "Raio"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTHAUTO.String.Text
+#, fuzzy
 msgid  "automatic"
 msgstr "automático"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTLEFTOUTSIDE.String.Text
+#, fuzzy
 msgid  "left outside"
 msgstr "Extremo esquerdo"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTINSIDE.String.Text
+#, fuzzy
 msgid  "inside (centered)"
 msgstr "interior (centrado)"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTRIGHTOUTSID.String.Text
+#, fuzzy
 msgid  "right outside"
 msgstr "Extremo direito"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_TEXTVAUTO.String.Text
+#, fuzzy
 msgid  "automatic"
 msgstr "automático"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_ABOVE.String.Text
+#, fuzzy
 msgid  "on the line"
 msgstr "sobre a linha"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_BREAKEDLINE.String.Text
+#, fuzzy
 msgid  "broken line"
 msgstr "Linha interrompida"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURE_BELOW.String.Text
+#, fuzzy
 msgid  "below the line"
 msgstr "abaixo da linha"
 
 #: source/svdraw/svdstr.src#STR_ItemValMEASURETEXT_VERTICALCEN.String.Text
+#, fuzzy
 msgid  "centered"
 msgstr "Centrado"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_FULL.String.Text
+#, fuzzy
 msgid  "full circle"
 msgstr "Círculo inteiro"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_SECT.String.Text
+#, fuzzy
 msgid  "Circle Pie"
 msgstr "Sector de círculo"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_CUT.String.Text
+#, fuzzy
 msgid  "Circle segment"
 msgstr "Segmento de círculo"
 
 #: source/svdraw/svdstr.src#STR_ItemValCIRC_ARC.String.Text
+#, fuzzy
 msgid  "Arc"
 msgstr "Arco de círculo"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW.String.Text
 msgid  "Shadow"
-msgstr "Sombras"
+msgstr "Sombreado"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWCOLOR.String.Text
+#, fuzzy
 msgid  "Shadow color"
 msgstr "Cor da sombra"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWXDIST.String.Text
+#, fuzzy
 msgid  "Horizontal shadow outline"
 msgstr "Deslocamento horizontal da sombra"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWYDIST.String.Text
+#, fuzzy
 msgid  "Vertical shadow outline"
 msgstr "Deslocamento vertical da sombra"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Transparência da sombra"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
 msgid  "3D shadow"
-msgstr "Sombreado 3D"
+msgstr "Sombra 3D"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
 msgid  "Perspective shadow"
-msgstr "Perspectiva da sombra"
+msgstr "Sombra em perspectiva"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
+#, fuzzy
 msgid  "Callout type"
 msgstr "Tipo de legenda"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Given angle"
 msgstr "Ângulo dado"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONANGLE.String.Text
+#, fuzzy
 msgid  "Angle"
 msgstr "Ângulo"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONGAP.String.Text
+#, fuzzy
 msgid  "Gap"
 msgstr "Espaço livre"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCDIR.String.Text
+#, fuzzy
 msgid  "Exit direction"
 msgstr "Direcção de saída"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCISREL.String.Text
+#, fuzzy
 msgid  "Relative exit position"
 msgstr "Posição de saída relativa"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCREL.String.Text
+#, fuzzy
 msgid  "Exit Position"
 msgstr "Posição de saída"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCABS.String.Text
+#, fuzzy
 msgid  "Exit Position"
 msgstr "Posição de saída"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONLINELEN.String.Text
+#, fuzzy
 msgid  "Line length"
 msgstr "Comprimento de linha"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONFITLINELEN.String.Text
+#, fuzzy
 msgid  "Auto line length"
 msgstr "Comprimento de linha automático"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ECKENRADIUS.String.Text
+#, fuzzy
 msgid  "Corner radius"
 msgstr "Raio do ângulo"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LEFTDIST.String.Text
+#, fuzzy
 msgid  "Left border spacing"
 msgstr "Margem esquerda da moldura"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_RIGHTDIST.String.Text
+#, fuzzy
 msgid  "Right border spacing"
 msgstr "Margem direita da moldura"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_UPPERDIST.String.Text
+#, fuzzy
 msgid  "Upper border spacing"
 msgstr "Margem superior da moldura"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LOWERDIST.String.Text
+#, fuzzy
 msgid  "Lower border spacing"
 msgstr "Margem inferior da moldura"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWHEIGHT.String.Text
+#, fuzzy
 msgid  "AutoFit frame height"
 msgstr "Ajuste automático da altura da moldura."
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Min. frame height"
 msgstr "Altura mínima da moldura"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Max. frame height"
 msgstr "Altura máxima da moldura"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_AUTOGROWWIDTH.String.Text
+#, fuzzy
 msgid  "AutoFit frame width"
 msgstr "Ajuste automático da largura da moldura."
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MINFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Min. frame width"
 msgstr "Largura mínima da moldura"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_MAXFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Max. frame width"
 msgstr "Largura máxima da moldura"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_VERTADJUST.String.Text
+#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "Âncora vertical do texto"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_HORZADJUST.String.Text
+#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "Âncora horizontal do texto"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
+#, fuzzy
 msgid  "Fit text to frame"
 msgstr "Ajustar texto à moldura"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
+#, fuzzy
 msgid  "Red"
 msgstr "Proporção de vermelho"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGREEN.String.Text
+#, fuzzy
 msgid  "Green"
 msgstr "Proporção de verde"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFBLUE.String.Text
+#, fuzzy
 msgid  "Blue"
 msgstr "Proporção de azul"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFLUMINANCE.String.Text
+#, fuzzy
 msgid  "Brightness"
 msgstr "Brilho"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFCONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast"
 msgstr "Contraste"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGAMMA.String.Text
 msgid  "Gamma"
-msgstr "Gamma"
+msgstr "Gama"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Transparência"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
+#, fuzzy
 msgid  "Invert"
 msgstr "Inverter"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFMODE.String.Text
+#, fuzzy
 msgid  "Graphics mode"
 msgstr "Modo de objectos gráficos"
 
 #: source/svdraw/svdstr.src#STR_ItemNamSET_MISC.String.Text
+#, fuzzy
 msgid  "Various attributes"
 msgstr "Atributos diversos"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJMOVEPROTECT.String.Text
+#, fuzzy
 msgid  "Position protected"
 msgstr "Protecção de posição"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJSIZEPROTECT.String.Text
+#, fuzzy
 msgid  "Size Protection"
 msgstr "Protecção de tamanho"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJPRINTABLE.String.Text
+#, fuzzy
 msgid  "Don't print"
 msgstr "Não imprimir"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERID.String.Text
+#, fuzzy
 msgid  "Layer Indicator"
 msgstr "Indicador de níveis"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_LAYERNAME.String.Text
+#, fuzzy
 msgid  "Le~vel"
 msgstr "Nível"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
+#, fuzzy
 msgid  "Object name"
 msgstr "Nome do objecto"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
 msgid  "Start angle"
-msgstr "Ângulo de partida"
+msgstr "Ângulo inicial"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ENDANGLE.String.Text
+#, fuzzy
 msgid  "Final angle"
 msgstr "Ângulo final"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONX.String.Text
+#, fuzzy
 msgid  "X Position"
 msgstr "Posição X"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_POSITIONY.String.Text
+#, fuzzy
 msgid  "Y Position"
 msgstr "Posição Y"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Width"
 msgstr "Largura"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Height"
 msgstr "Altura"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ROTATEANGLE.String.Text
+#, fuzzy
 msgid  "Rotation angle"
 msgstr "Ângulo de rotação"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHEARANGLE.String.Text
+#, fuzzy
 msgid  "Shear angle"
 msgstr "Ângulo de tesoura"
 
 #: source/svdraw/svdstr.src#SIP_UNKNOWN_ATTR.String.Text
+#, fuzzy
 msgid  "Unknown attribute"
 msgstr "Atributo desconhecido"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTYLE.String.Text
+#, fuzzy
 msgid  "Line style"
 msgstr "Estilo de linha"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEDASH.String.Text
+#, fuzzy
 msgid  "Line pattern"
 msgstr "Linha padrão"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEWIDTH.String.Text
+#, fuzzy
 msgid  "Line width"
 msgstr "Largura da linha"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINECOLOR.String.Text
+#, fuzzy
 msgid  "Line color"
 msgstr "Cor"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTART.String.Text
+#, fuzzy
 msgid  "Line head"
 msgstr "Início"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEEND.String.Text
+#, fuzzy
 msgid  "Line end"
 msgstr "Fim"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTWIDTH.String.Text
+#, fuzzy
 msgid  "Line head width"
 msgstr "Espessura início de linha"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDWIDTH.String.Text
+#, fuzzy
 msgid  "Line end width"
 msgstr "Espessura fim de linha"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINESTARTCENTER.String.Text
+#, fuzzy
 msgid  "Center arrowhead"
 msgstr "Início centrado"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEENDCENTER.String.Text
+#, fuzzy
 msgid  "Center arrowend"
 msgstr "Fim centrado"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINETRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Line transparency"
 msgstr "Transparência"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINEJOINT.String.Text
+#, fuzzy
 msgid  "Line joint"
 msgstr "Junção de linhas"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED2.String.Text
+#, fuzzy
 msgid  "Line reserved for 2"
 msgstr "Linha de reserva 2"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED3.String.Text
+#, fuzzy
 msgid  "Line reserved for 3"
 msgstr "Linha de reserva 3"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED4.String.Text
+#, fuzzy
 msgid  "Line reserved for 4"
 msgstr "Linha de reserva 4"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED5.String.Text
+#, fuzzy
 msgid  "Line reserved for 5"
 msgstr "Linha de reserva 5"
 
 #: source/svdraw/svdstr.src#SIP_XA_LINERESERVED_LAST.String.Text
+#, fuzzy
 msgid  "Line reserved for 6"
 msgstr "Linha de reserva 6"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_LINE.String.Text
+#, fuzzy
 msgid  "Line attributes"
 msgstr "Atributos"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLSTYLE.String.Text
+#, fuzzy
 msgid  "Fill style"
 msgstr "Preenchimento"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLCOLOR.String.Text
+#, fuzzy
 msgid  "Fillcolor"
 msgstr "Cor"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLGRADIENT.String.Text
+#, fuzzy
 msgid  "Gradient"
 msgstr "Gradação"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLHATCH.String.Text
+#, fuzzy
 msgid  "Hatching"
 msgstr "Tracejado"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBITMAP.String.Text
+#, fuzzy
 msgid  "Fillbitmap"
 msgstr "Mapa de bits de preenchimento"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Transparência"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
+#, fuzzy
 msgid  "Number of gradient steps"
 msgstr "Número de gradações"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILE.String.Text
+#, fuzzy
 msgid  "Tile fill"
 msgstr "Em mosaico"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POS.String.Text
+#, fuzzy
 msgid  "Fillbitmap position"
 msgstr "Posição do mapa de bits"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEX.String.Text
+#, fuzzy
 msgid  "Fillbitmap width"
 msgstr "Largura do mapa de bits"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZEY.String.Text
+#, fuzzy
 msgid  "Height of fillbitmap"
 msgstr "Altura do mapa de bits"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLFLOATTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparent gradient"
 msgstr "Gradação transparente"
 
 #: source/svdraw/svdstr.src#SIP_XA_SECONDARYFILLCOLOR.String.Text
+#, fuzzy
 msgid  "Fill reserved for 2"
 msgstr "Preenchimento reservado para 2"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_SIZELOG.String.Text
+#, fuzzy
 msgid  "Tile size not in %"
 msgstr "Tamanho não em %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETX.String.Text
+#, fuzzy
 msgid  "Tile offset X in %"
 msgstr "Deslocamento X do mosaico em %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_TILEOFFSETY.String.Text
+#, fuzzy
 msgid  "Tile offset Y in %"
 msgstr "Deslocamento Y do mosaico em %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_STRETCH.String.Text
+#, fuzzy
 msgid  "Bitmap scaling"
 msgstr "Extensão do mapa de bits"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED3.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 3"
 msgstr "Mapa de bits de reserva 3"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED4.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 4"
 msgstr "Mapa de bits de reserva 4"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED5.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 5"
 msgstr "Mapa de bits de reserva 5"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED6.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 6"
 msgstr "Mapa de bits de reserva 6"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED7.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 7"
 msgstr "Mapa de bits de reserva 7"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED8.String.Text
+#, fuzzy
 msgid  "Bitmap reserved for 8"
 msgstr "Mapa de bits de reserva 8"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETX.String.Text
+#, fuzzy
 msgid  "Tile position X in %"
 msgstr "Posição X do mosaico em %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBMP_POSOFFSETY.String.Text
+#, fuzzy
 msgid  "Tile position Y in %"
 msgstr "Posição Y do mosaico em %"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLBACKGROUND.String.Text
+#, fuzzy
 msgid  "Background fill"
 msgstr "Preencher plano de fundo"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED10.String.Text
+#, fuzzy
 msgid  "Fill reserved for 10"
 msgstr "Preenchimento de reserva 10"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED11.String.Text
+#, fuzzy
 msgid  "Fill reserved for 11"
 msgstr "Preenchimento de reserva 11"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLRESERVED_LAST.String.Text
+#, fuzzy
 msgid  "Fill reserved for 12"
 msgstr "Preenchimento de reserva 12"
 
 #: source/svdraw/svdstr.src#SIP_XATTRSET_FILL.String.Text
+#, fuzzy
 msgid  "Area attributes"
 msgstr "Atributos de preenchimento"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTYLE.String.Text
+#, fuzzy
 msgid  "Fontwork style"
 msgstr "Estilo Fontwork"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTADJUST.String.Text
+#, fuzzy
 msgid  "Fontwork alignment"
 msgstr "Alinhamento Fontwork"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTDISTANCE.String.Text
+#, fuzzy
 msgid  "Fontwork spacing"
 msgstr "Distância Fontwork"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTART.String.Text
+#, fuzzy
 msgid  "Fontwork font begin"
 msgstr "Início Fontwork"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTMIRROR.String.Text
+#, fuzzy
 msgid  "Fontwork mirror"
 msgstr "Reflectir Fontwork"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTOUTLINE.String.Text
+#, fuzzy
 msgid  "Fontwork outline"
 msgstr "Contorno Fontwork"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHADOW.String.Text
+#, fuzzy
 msgid  "Fontwork shadow"
 msgstr "Sombreado Fontwork"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWCOLOR.String.Text
+#, fuzzy
 msgid  "Fontwork shadow color"
 msgstr "Cor do sombreado Fontwork"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWXVAL.String.Text
+#, fuzzy
 msgid  "Fontwork shadow offset X"
 msgstr "Deslocamento do sombreado Fontwork X"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWYVAL.String.Text
+#, fuzzy
 msgid  "Fontwork shadow offset Y"
 msgstr "Deslocamento do sombreado Fontwork Y"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSTDFORM.String.Text
+#, fuzzy
 msgid  "Fontwork default form"
 msgstr "Forma padrão Fontwork"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTHIDEFORM.String.Text
+#, fuzzy
 msgid  "Hide fontwork outline"
 msgstr "Ocultar contorno Fontwork"
 
 #: source/svdraw/svdstr.src#SIP_XA_FORMTXTSHDWTRANSP.String.Text
+#, fuzzy
 msgid  "Fontwork shadow transparency"
 msgstr "Transparência do sombreado Fontwork"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED2.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 2"
 msgstr "Fontwork de reserva 2"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED3.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 3"
 msgstr "Fontwork de reserva 3"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED4.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 4"
 msgstr "Fontwork de reserva 4"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED5.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 5"
 msgstr "Fontwork de reserva 5"
 
 #: source/svdraw/svdstr.src#SIP_XA_FTRESERVED_LAST.String.Text
+#, fuzzy
 msgid  "Fontwork reserved for 6"
 msgstr "Fontwork de reserva 6"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW.String.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Sombreado"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWCOLOR.String.Text
+#, fuzzy
 msgid  "Shadow color"
 msgstr "Cor da sombra"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWXDIST.String.Text
+#, fuzzy
 msgid  "Shadow spacing X"
 msgstr "Distância de X ao sombreado"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWYDIST.String.Text
+#, fuzzy
 msgid  "Shadow spacing Y"
 msgstr "Distância de Y ao sombreado"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Shadow transparency"
 msgstr "Transparência da sombra"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOW3D.String.Text
+#, fuzzy
 msgid  "3D shadow"
 msgstr "Sombra 3D"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHADOWPERSP.String.Text
+#, fuzzy
 msgid  "Perspective shadow"
 msgstr "Sombra em perspectiva"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONTYPE.String.Text
+#, fuzzy
 msgid  "Type of legend"
 msgstr "Tipo de legenda"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Fixed legend angle"
 msgstr "Fixação do ângulo da legenda"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONANGLE.String.Text
+#, fuzzy
 msgid  "Legend angle"
 msgstr "Ângulo da legenda"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONGAP.String.Text
+#, fuzzy
 msgid  "Legend lines spacing"
 msgstr "Distância da linha da legenda"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCDIR.String.Text
+#, fuzzy
 msgid  "Legend exit alignment"
 msgstr "Direcção de saída da legenda"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCISREL.String.Text
+#, fuzzy
 msgid  "Relative exit legend"
 msgstr "Saída relativa da legenda"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCREL.String.Text
+#, fuzzy
 msgid  "Relative exit legend"
 msgstr "Saída relativa da legenda"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCABS.String.Text
+#, fuzzy
 msgid  "Absolute exit of legend"
 msgstr "Saída absoluta da legenda"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONLINELEN.String.Text
+#, fuzzy
 msgid  "Legend line length"
 msgstr "Comprimento da linha da legenda"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONFITLINELEN.String.Text
+#, fuzzy
 msgid  "AutoLength of legend lines"
 msgstr "Comprimento automático da linha da legenda"
 
 #: source/svdraw/svdstr.src#SIP_SA_ECKENRADIUS.String.Text
+#, fuzzy
 msgid  "Corner radius"
 msgstr "Raio do ângulo"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Minimal frame height"
 msgstr "Altura mínima da moldura"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWHEIGHT.String.Text
+#, fuzzy
 msgid  "AutoFit height"
 msgstr "Ajuste automático da altura"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_FITTOSIZE.String.Text
+#, fuzzy
 msgid  "Fit text to frame"
 msgstr "Ajustar texto à moldura"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LEFTDIST.String.Text
+#, fuzzy
 msgid  "Left text frame spacing"
 msgstr "Distância esquerda à moldura de texto"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_RIGHTDIST.String.Text
+#, fuzzy
 msgid  "Right text frame spacing"
 msgstr "Distância esquerda à moldura de texto"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_UPPERDIST.String.Text
+#, fuzzy
 msgid  "Upper text frame spacing"
 msgstr "Distância superior à moldura de texto"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_LOWERDIST.String.Text
+#, fuzzy
 msgid  "Lower text frame spacing"
 msgstr "Distância inferior à moldura de texto"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_VERTADJUST.String.Text
+#, fuzzy
 msgid  "Vertical text anchor"
 msgstr "Âncora vertical do texto"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEHEIGHT.String.Text
+#, fuzzy
 msgid  "Maximal frame height"
 msgstr "Altura máxima da moldura"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MINFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Minimal frame width"
 msgstr "Largura mínima da moldura"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_MAXFRAMEWIDTH.String.Text
+#, fuzzy
 msgid  "Maximal frame width"
 msgstr "Largura máxima da moldura"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_AUTOGROWWIDTH.String.Text
+#, fuzzy
 msgid  "AutoFit width"
 msgstr "Ajuste automático da largura"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_HORZADJUST.String.Text
+#, fuzzy
 msgid  "Horizontal text anchor"
 msgstr "Âncora horizontal do texto"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIKIND.String.Text
+#, fuzzy
 msgid  "Ticker"
 msgstr "Animação de texto"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDIRECTION.String.Text
+#, fuzzy
 msgid  "Ticker direction"
 msgstr "Direcção da animação de texto"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTARTINSIDE.String.Text
+#, fuzzy
 msgid  "Ticker start inside"
 msgstr "Início da animação de texto, dentro"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANISTOPINSIDE.String.Text
+#, fuzzy
 msgid  "Ticker stop inside"
 msgstr "Paragem da animação de texto, dentro"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANICOUNT.String.Text
+#, fuzzy
 msgid  "Number of ticker runs"
 msgstr "Quantidade de animações"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIDELAY.String.Text
+#, fuzzy
 msgid  "Speed of ticker"
 msgstr "Cadência da animação"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_ANIAMOUNT.String.Text
+#, fuzzy
 msgid  "Ticker step size"
 msgstr "Ritmo da animação"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_CONTOURFRAME.String.Text
+#, fuzzy
 msgid  "Outline text flow"
 msgstr "Contorno do fluxo de texto"
 
 #: source/svdraw/svdstr.src#SIP_SA_CUSTOMSHAPE_ADJUSTMENT.String.Text
+#, fuzzy
 msgid  "Shape Adjustment"
 msgstr "Ajuste de formas"
 
 #: source/svdraw/svdstr.src#SIP_SA_XMLATTRIBUTES.String.Text
+#, fuzzy
 msgid  "User-defined attributes"
 msgstr "Atributos personalizados"
 
 #: source/svdraw/svdstr.src#SIP_SA_TEXT_USEFIXEDCELLHEIGHT.String.Text
+#, fuzzy
 msgid  "Use font-independent line spacing"
 msgstr "Usar espaçamento entre linhas independente da fonte"
 
 #: source/svdraw/svdstr.src#SIP_SA_WORDWRAP.String.Text
+#, fuzzy
 msgid  "Word wrap text in shape"
 msgstr "Translinear na forma"
 
 #: source/svdraw/svdstr.src#SIP_SA_AUTOGROWSIZE.String.Text
+#, fuzzy
 msgid  "Auto grow shape to fit text"
 msgstr "Aumento automático da forma para ajustar o texto"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE18.String.Text
+#, fuzzy
 msgid  "SvDraw reserved for 18"
 msgstr "SvDraw Reserva 18"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESERVE19.String.Text
+#, fuzzy
 msgid  "SvDraw reserved for 19"
 msgstr "SvDraw Reserva 19"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGEKIND.String.Text
+#, fuzzy
 msgid  "Type of connector"
 msgstr "Tipo de conector"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1HORZDIST.String.Text
+#, fuzzy
 msgid  "Horz. spacing object 1"
 msgstr "Distância horizontal objecto 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1VERTDIST.String.Text
+#, fuzzy
 msgid  "Vert. spacing object 1"
 msgstr "Distância vertical objecto 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2HORZDIST.String.Text
+#, fuzzy
 msgid  "Horz. spacing object 2"
 msgstr "Distância horizontal - objecto 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2VERTDIST.String.Text
+#, fuzzy
 msgid  "Vert. spacing object 2"
 msgstr "Distância vertical - objecto 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE1GLUEDIST.String.Text
+#, fuzzy
 msgid  "Glue spacing object 1"
 msgstr "Distância de adesão - objecto 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGENODE2GLUEDIST.String.Text
+#, fuzzy
 msgid  "Glue spacing object 2"
 msgstr "Distância de adesão - objecto 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINEDELTAANZ.String.Text
+#, fuzzy
 msgid  "Number of movable lines"
 msgstr "Número de linhas móveis"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE1DELTA.String.Text
+#, fuzzy
 msgid  "Offset line 1"
 msgstr "Deslocamento da linha 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE2DELTA.String.Text
+#, fuzzy
 msgid  "Offset line 2"
 msgstr "Deslocamento da linha 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_EDGELINE3DELTA.String.Text
+#, fuzzy
 msgid  "Offset line 3"
 msgstr "Deslocamento da linha 3"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREKIND.String.Text
+#, fuzzy
 msgid  "Type of dimensioning"
 msgstr "Tipo de dimensões"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTHPOS.String.Text
+#, fuzzy
 msgid  "Dimension value - horizontal position"
 msgstr "Texto de dimensão - posição horizontal"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTVPOS.String.Text
+#, fuzzy
 msgid  "Dimension value - vertical position"
 msgstr "Texto de dimensão - posição vertical"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURELINEDIST.String.Text
+#, fuzzy
 msgid  "Dimension line space"
 msgstr "Distância das linhas de dimensionamento"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEOVERHANG.String.Text
+#, fuzzy
 msgid  "Dimension help line overhang"
 msgstr "Guias Sobresselentes"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINEDIST.String.Text
+#, fuzzy
 msgid  "Dimension help line spacing"
 msgstr "Distância entre guias de dimensionamento"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE1LEN.String.Text
+#, fuzzy
 msgid  "Backlog of dimension help line 1"
 msgstr "Reserva da linha 1 da ajuda da dimensão"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREHELPLINE2LEN.String.Text
+#, fuzzy
 msgid  "Backlog of dimension help line 2"
 msgstr "Reserva da linha 2 da ajuda da dimensão"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREBELOWREFEDGE.String.Text
+#, fuzzy
 msgid  "Lower edge dimensioning"
 msgstr "Dimensionamento margem inferior"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTROTA90.String.Text
+#, fuzzy
 msgid  "Dimension value across dimension line"
 msgstr "Valor de Dimensionamento oblíquo à Linha de Dimensionamento"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTUPSIDEDOWN.String.Text
+#, fuzzy
 msgid  "Rotate dimension value by 180 degree"
 msgstr "Rodar valor de dimensão 180ø"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREOVERHANG.String.Text
+#, fuzzy
 msgid  "Dimension line overhang"
 msgstr "Saliência da linha da dimensão"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREUNIT.String.Text
+#, fuzzy
 msgid  "Measure unit"
 msgstr "Saliência da linha da dimensão"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESCALE.String.Text
+#, fuzzy
 msgid  "Additional scale factor"
 msgstr "Factor adicional da escala"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURESHOWUNIT.String.Text
+#, fuzzy
 msgid  "Measure unit display"
 msgstr "Visualizar unidades de medida"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREFORMATSTRING.String.Text
+#, fuzzy
 msgid  "Dimension value format"
 msgstr "Formato do valor de dimensão"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLE.String.Text
+#, fuzzy
 msgid  "AutoPositioning of the dimension value"
 msgstr "Posicionamento automático do valor de dimensão"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTAUTOANGLEVIEW.String.Text
+#, fuzzy
 msgid  "Angle for the automatic positioning of the dimension value"
 msgstr "Ângulo do posicionamento automático do valor de dimensão"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTISFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Determination of the dimension value angle"
 msgstr "Definir ângulo do valor de dimensão"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURETEXTFIXEDANGLE.String.Text
+#, fuzzy
 msgid  "Angle of the dimension value"
 msgstr "Ângulo do valor de dimensão"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASUREDECIMALPLACES.String.Text
+#, fuzzy
 msgid  "Decimal places"
 msgstr "Casas ~decimais"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE05.String.Text
+#, fuzzy
 msgid  "Dimensioning reserved 5"
 msgstr "Dimensionamento reservado 5"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE06.String.Text
+#, fuzzy
 msgid  "Dimensioning reserved for 6"
 msgstr "Dimensionamento reservado 6"
 
 #: source/svdraw/svdstr.src#SIP_SA_MEASURERESERVE07.String.Text
+#, fuzzy
 msgid  "Dimensioning reserved for 7"
 msgstr "Dimensionamento reservado 7"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCKIND.String.Text
+#, fuzzy
 msgid  "Type of circle"
 msgstr "Tipo de círculo"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCSTARTANGLE.String.Text
+#, fuzzy
 msgid  "Start angle"
 msgstr "Ângulo inicial"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCENDANGLE.String.Text
+#, fuzzy
 msgid  "End angle"
 msgstr "Ângulo final"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE0.String.Text
+#, fuzzy
 msgid  "Circle reserved for 0"
 msgstr "Círculo reservado para 0"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE1.String.Text
+#, fuzzy
 msgid  "Circle reserved for 1"
 msgstr "Círculo reservado para 1"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE2.String.Text
+#, fuzzy
 msgid  "Circle reserved for 2"
 msgstr "Círculo reservado para 2"
 
 #: source/svdraw/svdstr.src#SIP_SA_CIRCRESERVE3.String.Text
+#, fuzzy
 msgid  "Circle reserved for 3"
 msgstr "Círculo reservado para 3"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJMOVEPROTECT.String.Text
+#, fuzzy
 msgid  "Protected object position"
 msgstr "Posição do objecto protegida"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJSIZEPROTECT.String.Text
+#, fuzzy
 msgid  "Protected object size"
 msgstr "Tamanho do objecto protegido"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJPRINTABLE.String.Text
+#, fuzzy
 msgid  "Object, printable"
 msgstr "Objecto imprimível"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJVISIBLE.String.Text
+#, fuzzy
 msgid  "Object, visible"
 msgstr "Objecto, visível"
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERID.String.Text
+#, fuzzy
 msgid  "Level ID"
 msgstr "Identificar níveis"
 
 #: source/svdraw/svdstr.src#SIP_SA_LAYERNAME.String.Text
+#, fuzzy
 msgid  "Layer"
 msgstr "Nível"
 
 #: source/svdraw/svdstr.src#SIP_SA_OBJECTNAME.String.Text
+#, fuzzy
 msgid  "Object name"
 msgstr "Nome do objecto"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONX.String.Text
+#, fuzzy
 msgid  "Position X, complete"
 msgstr "Posição X, completa"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLPOSITIONY.String.Text
+#, fuzzy
 msgid  "Position Y, complete"
 msgstr "Posição Y, completa"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Total Width"
 msgstr "Largura total"
 
 #: source/svdraw/svdstr.src#SIP_SA_ALLSIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Height, complete"
 msgstr "Altura total"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONX.String.Text
+#, fuzzy
 msgid  "Single position X"
 msgstr "Posição X individual"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONEPOSITIONY.String.Text
+#, fuzzy
 msgid  "Single position Y"
 msgstr "Posição Y individual"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Single width"
 msgstr "Largura individual"
 
 #: source/svdraw/svdstr.src#SIP_SA_ONESIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Single height"
 msgstr "Altura individual"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEWIDTH.String.Text
+#, fuzzy
 msgid  "Logical width"
 msgstr "Largura lógica"
 
 #: source/svdraw/svdstr.src#SIP_SA_LOGICSIZEHEIGHT.String.Text
+#, fuzzy
 msgid  "Logical height"
 msgstr "Altura lógica"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEANGLE.String.Text
+#, fuzzy
 msgid  "Single rotation angle"
 msgstr "Ângulo de rotação individual"
 
 #: source/svdraw/svdstr.src#SIP_SA_SHEARANGLE.String.Text
+#, fuzzy
 msgid  "Single shear angle"
 msgstr "Ângulo de desvio individual"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEX.String.Text
+#, fuzzy
 msgid  "Move horizontally"
 msgstr "Deslocar na horizontal"
 
 #: source/svdraw/svdstr.src#SIP_SA_MOVEY.String.Text
+#, fuzzy
 msgid  "Move vertically"
 msgstr "Deslocar na vertical"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXONE.String.Text
+#, fuzzy
 msgid  "Resize X, single"
 msgstr "Redimensionar apenas X"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYONE.String.Text
+#, fuzzy
 msgid  "Resize Y, single"
 msgstr "Redimensionar apenas Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEONE.String.Text
+#, fuzzy
 msgid  "Single rotation"
 msgstr "Rotação individual"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARONE.String.Text
+#, fuzzy
 msgid  "Single horizontal shear"
 msgstr "Desvio horizontal individual"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARONE.String.Text
+#, fuzzy
 msgid  "Single vertical shear"
 msgstr "Desvio vertical individual"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEXALL.String.Text
+#, fuzzy
 msgid  "Resize X, complete"
 msgstr "Redimensionar X, completo"
 
 #: source/svdraw/svdstr.src#SIP_SA_RESIZEYALL.String.Text
+#, fuzzy
 msgid  "Resize Y, complete"
 msgstr "Redimensionar Y, completo"
 
 #: source/svdraw/svdstr.src#SIP_SA_ROTATEALL.String.Text
+#, fuzzy
 msgid  "Rotate all"
 msgstr "Rodar todos"
 
 #: source/svdraw/svdstr.src#SIP_SA_HORZSHEARALL.String.Text
+#, fuzzy
 msgid  "Shear horizontal, complete"
 msgstr "Desvio horizontal, completo"
 
 #: source/svdraw/svdstr.src#SIP_SA_VERTSHEARALL.String.Text
+#, fuzzy
 msgid  "Shear vertical, complete"
 msgstr "Desvio vertical, completo"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1X.String.Text
+#, fuzzy
 msgid  "Reference point 1 X"
 msgstr "Ponto de referência 1 X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF1Y.String.Text
+#, fuzzy
 msgid  "Reference point 1 Y"
 msgstr "Ponto de referência 1 Y"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2X.String.Text
+#, fuzzy
 msgid  "Reference point 2 X"
 msgstr "Ponto de referência 2 X"
 
 #: source/svdraw/svdstr.src#SIP_SA_TRANSFORMREF2Y.String.Text
+#, fuzzy
 msgid  "Reference point 2 Y"
 msgstr "Ponto de referência 2 Y"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_HYPHENATE.String.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "Hifenização"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLETSTATE.String.Text
+#, fuzzy
 msgid  "Display bullets"
 msgstr "Mostrar marcas"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLRSPACE.String.Text
+#, fuzzy
 msgid  "Numbering indents"
 msgstr "Avanços na numeração"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_OUTLLEVEL.String.Text
+#, fuzzy
 msgid  "Numbering level"
 msgstr "Nível de numeração"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_BULLET.String.Text
+#, fuzzy
 msgid  "Bullets and Numberings"
 msgstr "Marcas e numeração"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_LRSPACE.String.Text
+#, fuzzy
 msgid  "Indents"
 msgstr "Avanços"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_ULSPACE.String.Text
+#, fuzzy
 msgid  "Paragraph spacing"
 msgstr "Espaçamento entre parágrafos"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_SBL.String.Text
+#, fuzzy
 msgid  "Line spacing"
 msgstr "Espaçamento entre linhas"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_JUST.String.Text
+#, fuzzy
 msgid  "Paragraph alignment"
 msgstr "Alinhamento de parágrafos"
 
 #: source/svdraw/svdstr.src#SIP_EE_PARA_TABS.String.Text
+#, fuzzy
 msgid  "Tabulators"
 msgstr "Tabulações"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_COLOR.String.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "Cor da letra"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTINFO.String.Text
+#, fuzzy
 msgid  "Character set"
 msgstr "Conjunto de caracteres"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTHEIGHT.String.Text
+#, fuzzy
 msgid  "Font size"
 msgstr "Tamanho da letra"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_FONTWIDTH.String.Text
+#, fuzzy
 msgid  "Font width"
 msgstr "Largura da letra"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WEIGHT.String.Text
+#, fuzzy
 msgid  "Bold (thickness)"
 msgstr "Espessura para caracteres"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_UNDERLINE.String.Text
+#, fuzzy
 msgid  "Underline"
 msgstr "Sublinhado"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OVERLINE.String.Text
+#, fuzzy
 msgid  "Overline"
 msgstr "Linha sobreposta"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_STRIKEOUT.String.Text
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "Rasurado"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ITALIC.String.Text
+#, fuzzy
 msgid  "Italic"
 msgstr "Itálico"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_OUTLINE.String.Text
+#, fuzzy
 msgid  "Outline"
 msgstr "Contorno"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_SHADOW.String.Text
+#, fuzzy
 msgid  "Font shadow"
 msgstr "Sombreado"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_ESCAPEMENT.String.Text
+#, fuzzy
 msgid  "Superscript/subscript"
 msgstr "Acima/abaixo da linha"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_PAIRKERNING.String.Text
+#, fuzzy
 msgid  "Kerning"
 msgstr "Kerning"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_KERNING.String.Text
+#, fuzzy
 msgid  "Manual kerning"
 msgstr "Sublinhado manual"
 
 #: source/svdraw/svdstr.src#SIP_EE_CHAR_WLM.String.Text
+#, fuzzy
 msgid  "No underline for spaces"
 msgstr "Não sublinhar espaços"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_TAB.String.Text
+#, fuzzy
 msgid  "Tabulator"
 msgstr "Tabulação"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_LINEBR.String.Text
+#, fuzzy
 msgid  "Optional line break"
 msgstr "Quebra de linha suave"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_NOTCONV.String.Text
+#, fuzzy
 msgid  "Non-convertible character"
 msgstr "Caracter não convertível"
 
 #: source/svdraw/svdstr.src#SIP_EE_FEATURE_FIELD.String.Text
+#, fuzzy
 msgid  "Fields"
 msgstr "Campos"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFRED.String.Text
+#, fuzzy
 msgid  "Red"
 msgstr "Proporção de vermelho"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGREEN.String.Text
+#, fuzzy
 msgid  "Green"
 msgstr "Proporção de verde"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFBLUE.String.Text
+#, fuzzy
 msgid  "Blue"
 msgstr "Proporção de azul"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFLUMINANCE.String.Text
+#, fuzzy
 msgid  "Brightness"
 msgstr "Brilho"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast"
 msgstr "Contraste"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFGAMMA.String.Text
+#, fuzzy
 msgid  "Gamma"
 msgstr "Gama"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Transparência"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFINVERT.String.Text
+#, fuzzy
 msgid  "Invert"
 msgstr "Inverter"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFMODE.String.Text
+#, fuzzy
 msgid  "Graphics mode"
 msgstr "Modo de objectos gráficos"
 
 #: source/svdraw/svdstr.src#SIP_SA_GRAFCROP.String.Text
+#, fuzzy
 msgid  "Crop"
 msgstr "Recortar"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEDIA.String.Text
+#, fuzzy
 msgid  "Media object"
 msgstr "Objecto multimédia"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEDIA.String.Text
+#, fuzzy
 msgid  "Media objects"
 msgstr "Objectos multimédia"
 
 #: source/svdraw/svdstr.src#STR_TABLE_ATTR.String.Text
+#, fuzzy
 msgid  "Apply table attributes"
 msgstr "Aplicar atributos de tabela"
 
 #: source/svdraw/svdstr.src#STR_TABLE_AUTOFMT.String.Text
+#, fuzzy
 msgid  "AutoFormat table"
 msgstr "Tabela de formatação automática"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSCOL.String.Text
+#, fuzzy
 msgid  "Insert column"
 msgstr "Inserir coluna"
 
 #: source/svdraw/svdstr.src#STR_TABLE_INSROW.String.Text
+#, fuzzy
 msgid  "Insert row"
 msgstr "Inserir linha"
 
 #: source/svdraw/svdstr.src#STR_UNDO_COL_DELETE.String.Text
+#, fuzzy
 msgid  "Delete column"
 msgstr "Eliminar coluna"
 
 #: source/svdraw/svdstr.src#STR_UNDO_ROW_DELETE.String.Text
+#, fuzzy
 msgid  "Delete row"
 msgstr "Eliminar linha"
 
 #: source/svdraw/svdstr.src#STR_TABLE_SPLIT.String.Text
+#, fuzzy
 msgid  "Split cells"
 msgstr "Dividir células"
 
 #: source/svdraw/svdstr.src#STR_TABLE_MERGE.String.Text
+#, fuzzy
 msgid  "Merge cells"
 msgstr "Unir células"
 
 #: source/svdraw/svdstr.src#STR_TABLE_NUMFORMAT.String.Text
+#, fuzzy
 msgid  "Format cell"
 msgstr "Formatar célula"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_ROWS.String.Text
+#, fuzzy
 msgid  "Distribute rows"
 msgstr "Distribuir linhas"
 
 #: source/svdraw/svdstr.src#STR_TABLE_DISTRIBUTE_COLUMNS.String.Text
+#, fuzzy
 msgid  "Distribute columns"
 msgstr "Distribuir colunas"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE.String.Text
+#, fuzzy
 msgid  "Table style"
 msgstr "Estilo de tabela"
 
 #: source/svdraw/svdstr.src#STR_TABLE_STYLE_SETTINGS.String.Text
+#, fuzzy
 msgid  "Table style settings"
 msgstr "Definições do estilo de tabela"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTable.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Tabela"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTable.String.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "Tabelas"
 
@@ -10266,50 +11323,62 @@ msgid  "font works"
 msgstr ""
 
 #: source/table/table.src#RID_SVXSTR_STYLEFAMILY_TABLEDESIGN.String.Text
+#, fuzzy
 msgid  "Table Design Styles"
 msgstr "Estilos de desenho da tabela"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_TRANSPARENT.String.Text
+#, fuzzy
 msgid  "No Fill"
 msgstr "Sem preenchimento"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FILLPATTERN.String.Text
+#, fuzzy
 msgid  "Pattern"
 msgstr "Modelo"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME.String.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "Contornos"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_STYLE.String.Text
+#, fuzzy
 msgid  "Border Style"
 msgstr "Estilo contorno"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_COLOR.String.Text
+#, fuzzy
 msgid  "Border Color"
 msgstr "Cor do contorno"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_EXTRAS_CHARBACKGROUND.String.Text
+#, fuzzy
 msgid  "Highlighting"
 msgstr "Destacar caracteres"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_BACKGROUND.String.Text
+#, fuzzy
 msgid  "Background"
 msgstr "Fundo"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_AUTOMATIC.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "Automático"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_PAGES.String.Text
+#, fuzzy
 msgid  "Pages"
 msgstr "Páginas"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_CLEARFORM.String.Text
+#, fuzzy
 msgid  "Clear formatting"
 msgstr "Limpar formatação"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_MORE.String.Text
+#, fuzzy
 msgid  "More..."
 msgstr "Mais..."
 
@@ -10318,274 +11387,342 @@ msgid  "Font color"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Direction"
 msgstr "Direcção do protraimento"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PERSPECTIVE.String.Text
+#, fuzzy
 msgid  "~Perspective"
 msgstr "~Perspectiva"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PARALLEL.String.Text
+#, fuzzy
 msgid  "P~arallel"
 msgstr "P~aralelo"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NW.String.Text
+#, fuzzy
 msgid  "Extrusion North-West"
 msgstr "Protraimento para Noroeste"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_N.String.Text
+#, fuzzy
 msgid  "Extrusion North"
 msgstr "Protraimento para Norte"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NE.String.Text
+#, fuzzy
 msgid  "Extrusion North-East"
 msgstr "Protraimento para Nordeste"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_W.String.Text
+#, fuzzy
 msgid  "Extrusion West"
 msgstr "Protraimento para Oeste"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NONE.String.Text
+#, fuzzy
 msgid  "Extrusion Backwards"
 msgstr "Protraimento para trás"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_E.String.Text
+#, fuzzy
 msgid  "Extrusion East"
 msgstr "Protraimento para Este"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SW.String.Text
+#, fuzzy
 msgid  "Extrusion South-West"
 msgstr "Protraimento para Sudoeste"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_S.String.Text
+#, fuzzy
 msgid  "Extrusion South"
 msgstr "Protraimento para Sul"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SE.String.Text
+#, fuzzy
 msgid  "Extrusion South-East"
 msgstr "Protraimento para Sudeste"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "Profundidade do protraimento"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
+#, fuzzy
 msgid  "~Custom..."
 msgstr "Personali~zar..."
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_INFINITY.String.Text
+#, fuzzy
 msgid  "~Infinity"
 msgstr "~Infinito"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Lighting"
 msgstr "Luminosidade do protraimento"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_BRIGHT.String.Text
+#, fuzzy
 msgid  "~Bright"
 msgstr "~Acentuar"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_NORMAL.String.Text
+#, fuzzy
 msgid  "~Normal"
 msgstr "~Normal"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_DIM.String.Text
+#, fuzzy
 msgid  "~Dim"
 msgstr "A~tenuar"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Surface"
 msgstr "Superfície do protraimento"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_WIREFRAME.String.Text
+#, fuzzy
 msgid  "~Wire Frame"
 msgstr "Es~boço"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_MATTE.String.Text
+#, fuzzy
 msgid  "~Matt"
 msgstr "~Mate"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_PLASTIC.String.Text
+#, fuzzy
 msgid  "~Plastic"
 msgstr "~Plástico"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_METAL.String.Text
+#, fuzzy
 msgid  "Me~tal"
 msgstr "Me~tal"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.ModalDialog.Text
+#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "Profundidade do protraimento"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.FL_DEPTH.FixedText.Text
+#, fuzzy
 msgid  "~Value"
 msgstr "~Valor"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_EXTRUSION_COLOR.String.Text
+#, fuzzy
 msgid  "Extrusion Color"
 msgstr "Cor do protraimento"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0.String.Text
+#, fuzzy
 msgid  "~0 cm"
 msgstr "~0 cm"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1.String.Text
+#, fuzzy
 msgid  "~1 cm"
 msgstr "~1 cm"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2.String.Text
+#, fuzzy
 msgid  "~2.5 cm"
 msgstr "~2,5 cm"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3.String.Text
+#, fuzzy
 msgid  "~5 cm"
 msgstr "~5 cm"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4.String.Text
+#, fuzzy
 msgid  "10 ~cm"
 msgstr "10 ~cm"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0_INCH.String.Text
+#, fuzzy
 msgid  "0 inch"
 msgstr "0 polegada"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1_INCH.String.Text
+#, fuzzy
 msgid  "0.~5 inch"
 msgstr "0,~5 polegada"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2_INCH.String.Text
+#, fuzzy
 msgid  "~1 inch"
 msgstr "~1 polegada"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3_INCH.String.Text
+#, fuzzy
 msgid  "~2 inch"
 msgstr "~2 polegadas"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4_INCH.String.Text
+#, fuzzy
 msgid  "~4 inch"
 msgstr "~4 polegadas"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.ModalDialog.Text
+#, fuzzy
 msgid  "Fontwork Gallery"
 msgstr "Galeria de Fontwork"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.FL_FAVORITES.FixedLine.Text
+#, fuzzy
 msgid  "Select a Fontwork style:"
 msgstr "Seleccione um estilo de Fontwork:"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.STR_CLICK_TO_ADD_TEXT.String.Text
+#, fuzzy
 msgid  "Click to edit text"
 msgstr "Faça clique para editar texto"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.DockingWindow.Text
+#, fuzzy
 msgid  "Fontwork Alignment"
 msgstr "Alinhamento do Fontwork"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_LEFT.String.Text
+#, fuzzy
 msgid  "~Left Align"
 msgstr "Alinhar à es~querda"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_CENTER.String.Text
+#, fuzzy
 msgid  "~Center"
 msgstr "~Centrado"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_RIGHT.String.Text
+#, fuzzy
 msgid  "~Right Align"
 msgstr "Alinhar à ~direita"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_WORD.String.Text
+#, fuzzy
 msgid  "~Word Justify"
 msgstr "~Palavra justificada"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_STRETCH.String.Text
+#, fuzzy
 msgid  "S~tretch Justify"
 msgstr "Es~ticar justificado"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.DockingWindow.Text
+#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "Espaçamento entre caracteres do Fontwork"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_TIGHT.String.Text
+#, fuzzy
 msgid  "~Very Tight"
 msgstr "~Muito justo"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_TIGHT.String.Text
+#, fuzzy
 msgid  "~Tight"
 msgstr "~Justo"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_NORMAL.String.Text
+#, fuzzy
 msgid  "~Normal"
 msgstr "~Normal"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_LOOSE.String.Text
+#, fuzzy
 msgid  "~Loose"
 msgstr "~Largo"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_LOOSE.String.Text
+#, fuzzy
 msgid  "Very ~Loose"
 msgstr "Muito ~largo"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_CUSTOM.String.Text
+#, fuzzy
 msgid  "~Custom..."
 msgstr "Personali~zar..."
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_KERN_PAIRS.String.Text
+#, fuzzy
 msgid  "~Kern Character Pairs"
 msgstr "~Kerning em pares de caracteres"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.ModalDialog.Text
+#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "Espaçamento entre caracteres do Fontwork"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.FT_VALUE.FixedText.Text
+#, fuzzy
 msgid  "~Value"
 msgstr "~Valor"
 
 #: source/tbxctrls/tbunosearchcontrollers.src#RID_SVXSTR_FINDBAR_FIND.String.Text
+#, fuzzy
 msgid  "Find"
 msgstr "Localizar"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXTBX_GRFFILTER.FloatingWindow.Text
+#, fuzzy
 msgid  "Filters"
 msgstr "Filtros"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFMODE.String.Text
+#, fuzzy
 msgid  "Graphics Mode"
 msgstr "Modo de objectos gráficos"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFRED.String.Text
+#, fuzzy
 msgid  "Red"
 msgstr "Proporção de vermelho"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGREEN.String.Text
+#, fuzzy
 msgid  "Green"
 msgstr "Proporção de verde"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFBLUE.String.Text
+#, fuzzy
 msgid  "Blue"
 msgstr "Proporção de azul"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFLUMINANCE.String.Text
+#, fuzzy
 msgid  "Brightness"
 msgstr "Brilho"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFCONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast"
 msgstr "Contraste"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGAMMA.String.Text
+#, fuzzy
 msgid  "Gamma"
 msgstr "Gamma"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFTRANSPARENCY.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Transparência"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_GRAFCROP.String.Text
+#, fuzzy
 msgid  "Crop"
 msgstr "Recortar"
 
 #: source/tbxctrls/colrctrl.src#RID_SVXCTRL_COLOR.DockingWindow.Text
+#, fuzzy
 msgid  "Colors"
 msgstr "Cores"
 
@@ -10594,90 +11731,112 @@ msgid  "Color Palette"
 msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
+#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "Acções a anular: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
+#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "Acções a anular: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTIONS.String.Text
+#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "Acções a restaurar: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTION.String.Text
+#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "Acções a restaurar: $(ARG1)"
 
 #: source/toolbars/extrusionbar.src#RID_SVX_EXTRUSION_BAR.String.Text
+#, fuzzy
 msgid  "Extrusion"
 msgstr "Protraimento"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ON_OFF.String.Text
+#, fuzzy
 msgid  "Apply Extrusion On/Off"
 msgstr "Activar/desactivar aplicação do protraimento"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_DOWN.String.Text
+#, fuzzy
 msgid  "Tilt Down"
 msgstr "Rodar para baixo"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_UP.String.Text
+#, fuzzy
 msgid  "Tilt Up"
 msgstr "Rodar para cima"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_LEFT.String.Text
+#, fuzzy
 msgid  "Tilt Left"
 msgstr "Rodar para a esquerda"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_RIGHT.String.Text
+#, fuzzy
 msgid  "Tilt Right"
 msgstr "Rodar para a direita"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_DEPTH.String.Text
+#, fuzzy
 msgid  "Change Extrusion Depth"
 msgstr "Alterar profundidade do protraimento"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ORIENTATION.String.Text
+#, fuzzy
 msgid  "Change Orientation"
 msgstr "Alterar orientação"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_PROJECTION.String.Text
+#, fuzzy
 msgid  "Change Projection Type"
 msgstr "Alterar tipo de projecção"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_LIGHTING.String.Text
+#, fuzzy
 msgid  "Change Lighting"
 msgstr "Alterar luminosidade"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_BRIGHTNESS.String.Text
+#, fuzzy
 msgid  "Change Brightness"
 msgstr "Alterar brilho"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_SURFACE.String.Text
+#, fuzzy
 msgid  "Change Extrusion Surface"
 msgstr "Alterar superfície do protraimento"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_COLOR.String.Text
+#, fuzzy
 msgid  "Change Extrusion Color"
 msgstr "Alterar cor do protraimento"
 
 #: source/toolbars/fontworkbar.src#RID_SVX_FONTWORK_BAR.String.Text
+#, fuzzy
 msgid  "Fontwork"
 msgstr "Fontwork"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SHAPE.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Shape"
 msgstr "Aplicar forma do Fontwork"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SAME_LETTER_HEIGHT.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Same Letter Heights"
 msgstr "Aplicar letras com a mesma altura no Fontwork"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_ALIGNMENT.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Alignment"
 msgstr "Aplicar alinhamento do Fontwork"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_CHARACTER_SPACING.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Character Spacing"
 msgstr "Aplicar espaçamento entre caracteres do Fontwork"
 

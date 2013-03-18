@@ -433,6 +433,7 @@ msgid  "Sheet is always unprotected"
 msgstr "Arket er alltid utan vern"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
+#, fuzzy
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
 msgstr "Klarte ikkje oppretta mappa «%1». <BR>Det kan henda det ikkje er nok plass på harddisken."
 
@@ -537,9 +538,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Mal oppretta via <wizard_name> den <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-#, fuzzy
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Vegvisaren klarte ikkje starta fordi nokre viktige filer manglar.\nUnder «Verktøy – Innstillingar – %PRODUCTNAME – Stigar», kan du trykkja på «Standard»-knappen for å tilbakestilla innstillingane for stigane.\nStart deretter vegvisaren på nytt."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 #, fuzzy
@@ -671,11 +671,11 @@ msgid  "Fields in ~the form"
 msgstr "Felt i ~skjemaet"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
@@ -716,9 +716,8 @@ msgid  "Fields in form"
 msgstr "Skjemafelt"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-#, fuzzy
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "Samanføyinga «<FIELDNAME1>» og «<FIELDNAME2>» er vald to gonger.\nSamanføyingar kan berre gjerast éin gong."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 #, fuzzy
@@ -981,9 +980,8 @@ msgid  "Set the name of the form"
 msgstr "Vel namnet på skjemaet"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-#, fuzzy
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Skjemaet «%FORMNAME» finst frå før.\nSkriv inn eit anna namn."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 #, fuzzy
@@ -1961,9 +1959,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Feltet kan ikkje setjast inn fordi det ville ha overskride det høgste talet på %COUNT moglege felt i databasetabellen"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-#, fuzzy
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Namnet «%TABLENAME» finst frå før.\nSkriv inn eit anna namn."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 #, fuzzy
@@ -2609,7 +2606,7 @@ msgid  "Web Wizard"
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
@@ -3127,9 +3124,8 @@ msgid  "Preview"
 msgstr "Førehandsvising"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-#, fuzzy
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Dei valde innstillingane vil bli sletta.\n\nVil du verkeleg sletta desse innstillingane? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 #, fuzzy
@@ -3212,9 +3208,8 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "FTP-mappa «%FILENAME» kunne ikkje opprettast."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-#, fuzzy
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP-mappa «%FILENAME» finst ikkje.\nVil du oppretta mappa no?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 #, fuzzy
@@ -3222,14 +3217,12 @@ msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name
 msgstr "Zip-fila «%FILENAME» kan ikkje opprettast: Ei mappe med det same namnet finst frå før."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-#, fuzzy
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Den lokale mappa «%FILENAME» kan ikkje opprettast. \nKontroller at du har skrivetilgang til det aktuelle området."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-#, fuzzy
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Den lokale mappa «%FILENAME» finst ikkje. \nVil du oppretta mappa no?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 #, fuzzy
@@ -3679,414 +3672,517 @@ msgid  "Move down"
 msgstr "Flytt ned"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~Hjelp"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~Avbryt"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
+#, fuzzy
 msgid  "<< ~Back"
 msgstr "<< ~Førre"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
+#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "Nes~te >>"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
+#, fuzzy
 msgid  "~Convert"
 msgstr "~Konverter"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Lukk"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
+#, fuzzy
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
 msgstr "Denne vegvisaren konverterer dokument frå %PRODUCTNAME og Microsoft Office til det nye OpenDocument-formatet."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
+#, fuzzy
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
 msgstr "Merknad: Når Microsoft-dokument blir konverterte, vil vedlagde VBA-makroar slutta å verka."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
+#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "Vel dokumenttypen for konvertering:"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Word templates"
 msgstr "Word-malar"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Excel templates"
 msgstr "Excel-malar"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
+#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "PowerPoint-malar"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Word documents"
 msgstr "Word-dokument"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Excel documents"
 msgstr "Excel-dokument"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
+#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "PowerPoint-dokument"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
+#, fuzzy
 msgid  "Including subdirectories"
 msgstr "Ta med undermapper"
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
+#, fuzzy
 msgid  "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
+#, fuzzy
 msgid  "Summary:"
 msgstr "Samandrag:"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
+#, fuzzy
 msgid  "Import from:"
 msgstr "Importer frå:"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
+#, fuzzy
 msgid  "Save to:"
 msgstr "Lagra til:"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
+#, fuzzy
 msgid  "Imported_Templates"
 msgstr "Importerte_malar"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
+#, fuzzy
 msgid  "Progress: "
 msgstr "Framdrift: "
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "Dokument"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
+#, fuzzy
 msgid  "Documents"
 msgstr "Dokument"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "Malar"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
+#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr "Mappa «%1» kan ikkje lagast: "
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
+#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr "Mappa «%1» finst ikkje."
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
+#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "Vil du laga han no?"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
+#, fuzzy
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "Fila «<1>» finst frå før.<CR>Vil du skriva over henne?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
+#, fuzzy
 msgid  "Directories do not exist"
 msgstr "Mappene finst ikkje"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
+#, fuzzy
 msgid  "Do you want to overwrite documents without being asked?"
 msgstr "Vil du skriva over dokumenta utan spørsmål?"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
+#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "Dokumentmakroen må tilpassast."
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
+#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "Klarte ikkje lagra dokumentet «<1>»."
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
+#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr "Klarte ikkje opna dokumentet «<1>»."
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
+#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "Er du sikker på at du vil avbryta konverteringa nett no?"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
+#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "Avbryt vegvisaren"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
+#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "Det oppstod ein uventa feil i vegvisaren."
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
+#, fuzzy
 msgid  "Error"
 msgstr "Feil"
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
+#, fuzzy
 msgid  "Select a directory"
 msgstr "Vel ei mappe"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
+#, fuzzy
 msgid  "Document Converter"
 msgstr "Dokumentkonvertering"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
+#, fuzzy
 msgid  "Progress"
 msgstr "Framdrift"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
+#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "Hentar dei relevante dokumenta:"
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
+#, fuzzy
 msgid  "Converting the documents"
 msgstr "Konverterer dokumenta"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
+#, fuzzy
 msgid  "Found:"
 msgstr "Funne:"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
+#, fuzzy
 msgid  "%1 found"
 msgstr "%1 funne"
 
 #: source/importwizard/importwi.src#sReady.String.Text
+#, fuzzy
 msgid  "Finished"
 msgstr "Ferdig"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Text templates"
 msgstr "Tekstmalar"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "Reknearkmalar"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
+#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "Malar for teikning/presentasjon"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
+#, fuzzy
 msgid  "Master documents"
 msgstr "Hovuddokument"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Text documents"
 msgstr "Tekstdokument"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Spreadsheets"
 msgstr "Rekneark"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
+#, fuzzy
 msgid  "Drawing/presentation documents"
 msgstr "Teikne- eller presentasjonsdokument"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
+#, fuzzy
 msgid  "Master documents/formulas"
 msgstr "Hovuddokument/-formlar"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
+#, fuzzy
 msgid  "Master documents"
 msgstr "Hovuddokument"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
+#, fuzzy
 msgid  "Formulas"
 msgstr "Formlar"
 
 #: source/importwizard/importwi.src#sSourceDocuments.String.Text
+#, fuzzy
 msgid  "Source documents"
 msgstr "Kjeldedokument"
 
 #: source/importwizard/importwi.src#sTargetDocuments.String.Text
+#, fuzzy
 msgid  "Target documents"
 msgstr "Måldokument"
 
 #: source/importwizard/importwi.src#sCreateLogfile.String.Text
+#, fuzzy
 msgid  "Create log file"
 msgstr "Lag loggfil"
 
 #: source/importwizard/importwi.src#sLogfileSummary.String.Text
+#, fuzzy
 msgid  "<COUNT> documents converted"
 msgstr "<COUNT> dokument konverterte"
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
+#, fuzzy
 msgid  "A log file will be created in your work directory"
 msgstr "Det vil bli oppretta ei loggfil i arbeidsmappa di"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
+#, fuzzy
 msgid  "Show log file"
 msgstr "Vis loggfil"
 
 #: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
+#, fuzzy
 msgid  "All subdirectories will be taken into account"
 msgstr "Alle undermapper vil bli rekna med"
 
 #: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
+#, fuzzy
 msgid  "These will be exported to the following directory:"
 msgstr "Desse vil bli eksporterte til følgjande mappe:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
 msgstr "Alle %PRODUCTNAME-tekstdokument som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
 msgstr "Alle %PRODUCTNAME-rekneark som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
 msgstr "Alle %PRODUCTNAME-teikning- og presentasjonsdokument som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
 msgstr "Alle %PRODUCTNAME-formeldokument som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
 msgstr "Alle %PRODUCTNAME-tekstmalar som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
 msgstr "Alle %PRODUCTNAME-tabellmalar som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
 msgstr "Alle %PRODUCTNAME-teiknings- og presentasjonsmalar som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
 msgstr "Alle %PRODUCTNAME-hovuddokument som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
+#, fuzzy
 msgid  "All Word documents contained in the following directory will be imported:"
 msgstr "Alle Word-dokument som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
+#, fuzzy
 msgid  "All Excel documents contained in the following directory will be imported:"
 msgstr "Alle Excel-dokument som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
+#, fuzzy
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
 msgstr "Alle PowerPoint-dokument som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
+#, fuzzy
 msgid  "All Word templates contained in the following directory will be imported:"
 msgstr "Alle Word-malar som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
+#, fuzzy
 msgid  "All Excel templates contained in the following directory will be imported:"
 msgstr "Alle Excel-malar som ligg i følgjande mappe vil bli importerte:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
+#, fuzzy
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
 msgstr "Alle PowerPoint-malar som ligg i følgjande mappe vil bli importerte:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Calendar"
 msgstr "%PRODUCTNAME Calendar"
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
+#, fuzzy
 msgid  "Back"
 msgstr "Tilbake"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "Personleg informasjon"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
+#, fuzzy
 msgid  "Add Holidays to Calendar"
 msgstr "Legg fridagar til i kalenderen"
 
 #: source/schedule/schedule.src#dlgOK.String.Text
+#, fuzzy
 msgid  "Create"
 msgstr "Lag"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "Avbryt"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "Kalender"
 
 #: source/schedule/schedule.src#dlgCalOptionYear.String.Text
+#, fuzzy
 msgid  "~Year Overview"
 msgstr "~Årsoversikt"
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
+#, fuzzy
 msgid  "~Month"
 msgstr "~Månad"
 
 #: source/schedule/schedule.src#dlgSchdlDescription.String.Text
+#, fuzzy
 msgid  "Add holidays for"
 msgstr "Legg til fridagar for"
 
 #: source/schedule/schedule.src#dlgSchdlCountry.String.Text
+#, fuzzy
 msgid  "USA"
 msgstr "USA"
 
 #: source/schedule/schedule.src#dlgTime.String.Text
+#, fuzzy
 msgid  "Time Frame"
 msgstr "Tidsrom"
 
 #: source/schedule/schedule.src#dlgYear.String.Text
+#, fuzzy
 msgid  "Year"
 msgstr "År"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "Månad"
 
 #: source/schedule/schedule.src#dlgCalOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "Personleg informasjon"
 
 #: source/schedule/schedule.src#dlgCalInsert.String.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "Set ~inn"
 
 #: source/schedule/schedule.src#dlgCalDelete.String.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Slett"
 
 #: source/schedule/schedule.src#dlgCalNewEvent.String.Text
+#, fuzzy
 msgid  "New Event"
 msgstr "Ny hending"
 
 #: source/schedule/schedule.src#dlgCalEvent.String.Text
+#, fuzzy
 msgid  "Event"
 msgstr "Hending"
 
 #: source/schedule/schedule.src#dlgCalEventOnce.String.Text
+#, fuzzy
 msgid  "One-Time"
 msgstr "Eingongshending"
 
 #: source/schedule/schedule.src#dlgCalEventDay.String.Text
+#, fuzzy
 msgid  "Day"
 msgstr "Dag"
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "Månad"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
+#, fuzzy
 msgid  "Year"
 msgstr "År"
 
 #: source/schedule/schedule.src#dlgBitmapFile.String.Text
+#, fuzzy
 msgid  "usa.bmp"
 msgstr "usa.bmp"
 
 #: source/schedule/schedule.src#dlgState.String.Text
+#, fuzzy
 msgid  "Public holidays"
 msgstr "Offentlege fridagar"
 
@@ -4099,78 +4195,97 @@ msgid  "February"
 msgstr ""
 
 #: source/schedule/schedule.src#dlgMonth+2.String.Text
+#, fuzzy
 msgid  "March"
 msgstr "Mars"
 
 #: source/schedule/schedule.src#dlgMonth+3.String.Text
+#, fuzzy
 msgid  "April"
 msgstr "April"
 
 #: source/schedule/schedule.src#dlgMonth+4.String.Text
+#, fuzzy
 msgid  "May"
 msgstr "Mai"
 
 #: source/schedule/schedule.src#dlgMonth+5.String.Text
+#, fuzzy
 msgid  "June"
 msgstr "Juni"
 
 #: source/schedule/schedule.src#dlgMonth+6.String.Text
+#, fuzzy
 msgid  "July"
 msgstr "Juli"
 
 #: source/schedule/schedule.src#dlgMonth+7.String.Text
+#, fuzzy
 msgid  "August"
 msgstr "August"
 
 #: source/schedule/schedule.src#dlgMonth+8.String.Text
+#, fuzzy
 msgid  "September"
 msgstr "September"
 
 #: source/schedule/schedule.src#dlgMonth+9.String.Text
+#, fuzzy
 msgid  "October"
 msgstr "Oktober"
 
 #: source/schedule/schedule.src#dlgMonth+10.String.Text
+#, fuzzy
 msgid  "November"
 msgstr "November"
 
 #: source/schedule/schedule.src#dlgMonth+11.String.Text
+#, fuzzy
 msgid  "December"
 msgstr "Desember"
 
 #: source/schedule/schedule.src#msgCalErrorTitle.String.Text
+#, fuzzy
 msgid  "Yearly / Monthly Calendar"
 msgstr "Årleg/månadleg kalender"
 
 #: source/schedule/schedule.src#msgCalError.String.Text
+#, fuzzy
 msgid  "An error occurred while creating the calendar."
 msgstr "Det oppstod ein feil ved laging av kalenderen."
 
 #: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
+#, fuzzy
 msgid  "Delete event entries"
 msgstr "Slett hendingar"
 
 #: source/schedule/schedule.src#msgCalRemove.String.Text
+#, fuzzy
 msgid  "Delete the selected entries?"
 msgstr "Vil du sletta dei merkte oppføringane?"
 
 #: source/schedule/schedule.src#stlWorkday.String.Text
+#, fuzzy
 msgid  "Workweek"
 msgstr "Arbeidsveke"
 
 #: source/schedule/schedule.src#stlWeekend.String.Text
+#, fuzzy
 msgid  "Weekend"
 msgstr "Helg"
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "Kalender"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "Månad"
 
 #: source/schedule/schedule.src#sProgress.String.Text
+#, fuzzy
 msgid  "Progress:"
 msgstr "Framdrift:"
 
@@ -4179,6 +4294,7 @@ msgid  "In order to use the full functionality of this sample, create a document
 msgstr ""
 
 #: source/template/template.src#SAMPLES + 1.String.Text
+#, fuzzy
 msgid  "Remarks"
 msgstr "Kommentarar"
 
@@ -4187,34 +4303,42 @@ msgid  "Theme Selection"
 msgstr ""
 
 #: source/template/template.src#STYLES + 1.String.Text
+#, fuzzy
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
 msgstr "Feil ved lagring av dokumentet til utklippstavla. Følgjande handling kan ikkje angrast."
 
 #: source/template/template.src#STYLES + 2.String.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~Avbryt"
 
 #: source/template/template.src#STYLES + 3.String.Text
+#, fuzzy
 msgid  "~OK"
 msgstr "~OK"
 
 #: source/template/template.src#AgendaDlgName.String.Text
+#, fuzzy
 msgid  "Minutes Template"
 msgstr "Referatmal"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
+#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "Du må stadfesta eit val."
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
+#, fuzzy
 msgid  "Minutes Type"
 msgstr "Referattype"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
+#, fuzzy
 msgid  "Results Minutes"
 msgstr "Resultatreferat"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
+#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "Evalueringsreferat"
 
@@ -4223,10 +4347,12 @@ msgid  "The bookmark 'Recipient' is missing."
 msgstr ""
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
+#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "Kan ikkje inkludera felt for brevfletting."
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
+#, fuzzy
 msgid  "An error has occurred."
 msgstr "Feil"
 
@@ -4235,14 +4361,17 @@ msgid  "Addressee"
 msgstr ""
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
+#, fuzzy
 msgid  "One recipient"
 msgstr "Ein mottakar"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
+#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "Fleire mottakarar (adressedatabase)"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
+#, fuzzy
 msgid  "Use of This Template"
 msgstr "Bruk av denne malen"
 
@@ -4263,118 +4392,147 @@ msgid  "First Name"
 msgstr ""
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
+#, fuzzy
 msgid  "Last Name"
 msgstr "Etternamn"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
+#, fuzzy
 msgid  "Street"
 msgstr "Adresse"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
+#, fuzzy
 msgid  "Country"
 msgstr "Land"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
+#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "Postnummer"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
+#, fuzzy
 msgid  "City"
 msgstr "Poststad"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
+#, fuzzy
 msgid  "Title"
 msgstr "Overskrift"
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Posisjon"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
+#, fuzzy
 msgid  "Form of Address"
 msgstr "Adresseskjema"
 
 #: source/template/template.src#CorrespondenceFields+12.String.Text
+#, fuzzy
 msgid  "Initials"
 msgstr "Forbokstavar"
 
 #: source/template/template.src#CorrespondenceFields+13.String.Text
+#, fuzzy
 msgid  "Salutation"
 msgstr "Helsing"
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
+#, fuzzy
 msgid  "Home Phone"
 msgstr "Privattelefon"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
+#, fuzzy
 msgid  "Work Phone"
 msgstr "Jobbtelefon"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
+#, fuzzy
 msgid  "Fax"
 msgstr "Faks"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
+#, fuzzy
 msgid  "E-Mail"
 msgstr "E-post"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
+#, fuzzy
 msgid  "Notes"
 msgstr "Notat"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
+#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "Alt. felt 1"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
+#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "Alt. felt 2"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
+#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "Alt. felt 3"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
+#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "Alt. felt 4"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
+#, fuzzy
 msgid  "ID"
 msgstr "ID"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
+#, fuzzy
 msgid  "State"
 msgstr "Delstat"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
+#, fuzzy
 msgid  "Office Phone"
 msgstr "Kontortelefon"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
+#, fuzzy
 msgid  "Pager"
 msgstr "Personsøkjar"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
+#, fuzzy
 msgid  "Mobile Phone"
 msgstr "Mobiltelefon"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
+#, fuzzy
 msgid  "Other Phone"
 msgstr "Annan telefon"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
+#, fuzzy
 msgid  "Calendar URL"
 msgstr "Kalender-URL"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
+#, fuzzy
 msgid  "Invite"
 msgstr "Inviter"
 
 #: source/template/template.src#TextField.String.Text
+#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "Det er ikkje definert noko brukardatafelt."
 
@@ -4387,21 +4545,26 @@ msgid  "Default layout"
 msgstr ""
 
 #: source/template/template.src#Newsletter + 2.String.Text
+#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "Sideoppsett for minnepublikasjon"
 
 #: source/template/template.src#Newsletter + 3.String.Text
+#, fuzzy
 msgid  "Brochure layout"
 msgstr "Sideoppsett for brosjyrar"
 
 #: source/template/template.src#Newsletter + 10.String.Text
+#, fuzzy
 msgid  "Format"
 msgstr "Format"
 
 #: source/template/template.src#Newsletter + 11.String.Text
+#, fuzzy
 msgid  "Single-sided"
 msgstr "Einsidig"
 
 #: source/template/template.src#Newsletter + 12.String.Text
+#, fuzzy
 msgid  "Double-sided"
 msgstr "Tosidig"

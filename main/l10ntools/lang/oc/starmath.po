@@ -289,7 +289,7 @@ msgstr "Bordaduras"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.2.String.Text
 msgid  "~Left"
-msgstr "A es~quèrra"
+msgstr "~A esquèrra"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.3.String.Text
 msgid  "~Right"
@@ -444,12 +444,12 @@ msgid  "~Delete"
 msgstr "~Suprimir"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr "La poliça \"StarMath\" es pas estada installada.\nSens aquela polissa %PRODUCTNAME Math pòt pas foncionar corrèctament...\nInstallatz aquela poliça e tornatz aviar %PRODUCTNAME Math."
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "Enregistrar las modificacions coma per defaut ?\n\nAquestas modificacions s'aplicaràn a totas las formulas novèlas."
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -706,58 +706,72 @@ msgid  "~Scaling"
 msgstr "~Escala"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "Operadors ~unaris/binaris"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Relations"
 msgstr "~Relacions"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Set Operations"
 msgstr "O~peradors d'ensemble"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Functions"
 msgstr "~Foncions"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
 msgid  "More"
 msgstr "Mai"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "O~perators"
 msgstr "~Operadors"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Attributes"
 msgstr "~Atributs"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Brackets"
 msgstr "~Parentèsis"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
+#, fuzzy
 msgid  "For~mats"
 msgstr "For~mats"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
+#, fuzzy
 msgid  "New Line"
 msgstr "Linha novèla"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
+#, fuzzy
 msgid  "Small Gap"
 msgstr "Espaci pichon"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
+#, fuzzy
 msgid  "Gap"
 msgstr "Espaci"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MenuItem.Text
+#, fuzzy
 msgid  "nospace {...}"
 msgstr "nospace {...}"
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Others"
 msgstr "~Autres"
 
@@ -949,7 +963,7 @@ msgstr "Es mens que o egal a"
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.ToolBoxItem.Text
 #, fuzzy
 msgid  "Is Greater Than Or Equal To"
-msgstr "Es mai grand que o egal a"
+msgstr "Es pus grand que o egal a"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMY.ToolBoxItem.Text
 #, fuzzy
@@ -1109,7 +1123,7 @@ msgstr "Ensem de nombres complèxes "
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EX.ToolBoxItem.Text
 #, fuzzy
 msgid  "Exponential Function"
-msgstr "Foncion exponenciala "
+msgstr "Foncion exponenciala"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LNX.ToolBoxItem.Text
 #, fuzzy

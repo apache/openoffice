@@ -56,8 +56,8 @@ msgid  "Data Source Title"
 msgstr "Teitl Ffynhonnell Data "
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "Mae %PRODUCTNAME yn caniatáu i chi gael mynediad at y cyfeiriad ar eich system. I wneud hyn bydd ffynhonnell data %PRODUCTNAME yn cael ei greu lle fydd eich data ar gael ar ffurf tabl.\n\nBydd yr AwtoPeilot hwn yn eich cynorthwyo i greu ffynhonnell data."
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -108,32 +108,32 @@ msgid  "Other external data source"
 msgstr "Ffynonellau data allanol eraill."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "I osod y ffynhonnell data newydd, bydd angen gwybodaeth ychwanegol.\n\nCliciwch y botwm canlynol i agor blwch deialog arall lle fyddwch yn rhoi'r wybodaeth."
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
 msgstr "Gosodiadau"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "Methu creu'r cysylltiad gyda'r ffynhonnell data.\nCyn mynd ymhellach, gwiriwch y gosodiadau wnaed, neu (ar y dudalen flaenorol) dewiswch fath arall o ffynhonnell data cyfeiriadau."
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr "Mae'r ffynhonnell data allanol rydych wedi ei ddewis yn cynnwys mwy nag un llyfr cyfeiriadau.\nDewiswch yr un byddwch am weithio ohono'n bennaf:"
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "I ymgorffori'r data cyfeiriad yn eich templedi, mae'n rhaid i, %PRODUCTNAME wybod pa feysydd sy'n cynnwys pa ddata.\n\nEr enghraifft, gallwch fod wedi cadw eich cyfeiriadau e-bost mewn maes o'r enw \"e-bost\", neu \"E-bost\" , neu rywbeth hollol wahanol.\n\nCliciwch y botwm islaw i agor deialog arall lle mae modd nodi gosodiadau eich ffynhonnell data."
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
 msgstr "Aseiniad Maes"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "Dyna'r cyfan o'r wybodaeth sy'n angenrheidiol i ymgorffori eich data cyfeiriadau i %PRODUCTNAME.\n\nNesaf, rhowch enw i gofrestru'r ffynhonnell data yn v %PRODUCTNAME."
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -160,8 +160,8 @@ msgid  "Please select a type of address book."
 msgstr "Dewiswch y math o lyfr cyfeiriad."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr "Nid yw'r ffynhonnell data'n cynnwys tablau.\nHoffech chi ei osod yn ffynhonnell data cyfeiriadau, beth bynnag?"
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Data Cyfeiriadau - Aseiniad Maes"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "Nid oes meysydd wedi eu neilltuo ar hyn o bryd.\nMae modd, un ai neilltuo maes neu yn ddiweddarach, drwy ddewis:\n\"Ffeil - Templed - Ffynhonnell Llyfr Cyfeiriadau...\""
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr ""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -216,8 +216,8 @@ msgid  "Data Source"
 msgstr "Ffynhonnell Data"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\n"
-msgstr "Methu neilltuo'r enwau colofn ganlynol:\n"
+msgid  "The following column names could not be assigned:\\n"
+msgstr ""
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -492,8 +492,8 @@ msgid  "Control"
 msgstr "Rheolaeth"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "Ar yr ochr llaw dde, gwelwch yr holl dablau o ffynhonnell ddata'r ffurflen.\n\n\nDewiswch y tabl o le ddaw'r data i'w ddefnyddio fel sail i'r rhestr cynnwys:"
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -588,8 +588,8 @@ msgid  "Data"
 msgstr "Data"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "Ar hyn o bryd nid yw'r ffurflen mae'r rheolydd yn perthyn iddi wedi ymglymu (neu ddim yn llwyr) i'r data ffynhonnell.\n\nDewiswch ffynhonnell data a thabl\nSylwch fod y gosodiadau wnaed ar y dudalen hon yn dod i rym yn syth ar ôl gadael y dudalen."
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -736,8 +736,8 @@ msgid  "Welcome"
 msgstr "Croeso"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr "Croeso i %PRODUCTNAME %PRODUCTVERSION OEM\n\nI gychwyn %PRODUCTNAME %PRODUCTVERSION OEM, rhowch eich gwybodaeth bersonol yn y deialog sy'n dilyn manylion y drwydded. Mae gwybodaeth bwysig i'w gael yn ffeil Darllenfi sydd i'w cael yng nghyfeiriadur rhiant %PRODUCTNAME. Darllenwch y ffeiliau yma'n ofalus. Mae manylion pellach i'w cael ar safle Sun \n\nhttp://www.sun.com/staroffice.\n\nCefnogaeth a Hyfforddiant:\n\nCewch gefnogaeth gyda'r feddalwedd AM DDIM am 60 niwrnod o'r dyddiad prynu. I gymryd mantais o'r cynnig, ewch i'r safle gwe isod.\n\nhttp://www.sun.com/star/service\n\nRydym yn gobeithio y gwnewch chi fwynhau gweithio gyda %PRODUCTNAME."
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr ""
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -816,8 +816,8 @@ msgid  "Forms"
 msgstr "Ffurflenni"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "Hoffech chi ddileu'r math o ddata '#type#' o'r model?\nSylwch y bydd hyn yn effeithio ar pob rheolydd sy ynghlwm â'r math yma o ddata."
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2296,12 +2296,12 @@ msgid  "Type a name for the new data type:"
 msgstr "Teipiwch enw ar gyfer y math newydd o ddata:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\n Dev~ice"
-msgstr "Ynghylch\n ~Dyfais"
+msgid  "About\\n Dev~ice"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\nPreview"
-msgstr "Creu\nRhagolwg"
+msgid  "Create\\nPreview"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2356,8 +2356,8 @@ msgid  "Scanner"
 msgstr "Sganiwr"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "Dyfais: %s\nGwerthwr: %s\nModel: %s\nMath: %s"
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2404,8 +2404,8 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "Mae %PRODUCTNAME %PRODUCTVERSION yn gyfoes."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr "Mae %PRODUCTNAME %NEXTVERSION ar gael.\n\nY fersiwn presennol yw %PRODUCTNAME %PRODUCTVERSION.\n\nNodyn: Cyn llwytho diweddariad i lawr, gwnewch yn siŵr fod gennych hawliau mynediad digonol i'w osod.\nEfallai bydd angen cyfrinair, cyfrinair y gweinyddwr neu root."
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2420,16 +2420,16 @@ msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "Ataliwyd llwytho %PRODUCTNAME %NEXTVERSION i lawr yn..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "Y lleoliad llwytho i lawr yw: %DOWNLOAD_PATH.\n\nO dan Offer – Dewisiadau... - %PRODUCTNAME – Diweddariad Ar-lein mae modd i chi newid y lleoliad llwytho i lawr."
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "Mae %FILE_NAME wedi ei llwytho i lawr i %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "Nid yw llwytho awtomatig ar gael ar hyn o bryd.\n\nCliciwch Llwytho i Lawr...' i lwytho i lawr to download %PRODUCTNAME %NEXTVERSION gyda llaw o'r safle gwe."
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2529,7 +2529,7 @@ msgstr "Mae diweddariad %PRODUCTNAME ar gael"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
 msgid  "Click here for more information."
-msgstr "Cliciwch yma am ragor o wybodaeth."
+msgstr "Cliciwch yma am wybodaeth bellach."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
 msgid  "%PRODUCTNAME update available"
@@ -2575,6 +2575,6 @@ msgstr "Diweddariad ar gyfer estyniadau ar gael."
 msgid  "Click here for more information."
 msgstr "Cliciwch yma am wybodaeth bellach."
 
-#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
 msgid  "Check for ~Updates..."
 msgstr "Gwirio am ~Ddiweddariadau..."

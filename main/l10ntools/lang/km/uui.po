@@ -60,12 +60,12 @@ msgid  "No Text"
 msgstr "គ្មាន​អត្ថបទ"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
-msgid  "Enter password to open file: \n"
-msgstr "បញ្ចូល​ពាក្យ​សម្ងាត់ ដើម្បី​បើក​ឯកសារ ៖ \n"
+msgid  "Enter password to open file: \\n"
+msgstr ""
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
-msgid  "Enter password to modify file: \n"
-msgstr "បញ្ចូល​ពាក្យ​សម្ងាត់ ដើម្បី​កែប្រែ​​ឯកសារ ៖ \n"
+msgid  "Enter password to modify file: \\n"
+msgstr ""
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
 msgid  "Enter password: "
@@ -92,8 +92,8 @@ msgid  "Document in Use"
 msgstr "ឯកសារ​កំពុងប្រើ"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr "ឯកសារ '$(ARG1)' គឺ​ត្រូវបាន​ចាក់សោ​សម្រាប់​ការ​កែសម្រួល​ដោយ ៖\n\n$(ARG2)\n\nព្យាយាម​ម្ដងទៀត ដើម្បី​រក្សាទូក​ឯកសារ ឬ​រក្សាទុក​ច្បាប់​ចម្លង​របស់​ឯកសារ​នោះ​។\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
+msgstr ""
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -136,8 +136,8 @@ msgid  "Target already exists."
 msgstr "មាន​គោលដៅ​រួច​ហើយ ។"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
-msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr "អ្នក​រៀប​នឹង​រក្សាទុក/នាំចេញ​បណ្ណាល័យ​មូលដ្ឋាន​ដែល​បានការពារ​ដោយ​ពាក្យ​សម្ងាត់ ដែល​មាន​ម៉ូឌុល \n$(ARG1)\nដែល​ធំពេក​ពិបាក​នឹង​ទុក​ក្នុង​ទ្រង់ទ្រាយ​គោលពីរ ។ ប្រសិន​បើ​អ្នក​ចង់​ឲ្យ​អ្នក​ប្រើ​ ដែល​គ្មាន​ពាក្យ​សម្ងាត់​ចូល​ដំណើរការ​បណ្ណាល​អាច​រត់​ម៉ាក្រូ​ក្នុង​ម៉ូឌុល​ទាំង​នោះ អ្នក​ត្រូវ​តែ​បំបែក​ម៉ូឌុល​ទាំង​នោះ​ជា​ចំនួន​ម៉ូឌុល​តូចៗ ។ តើ​អ្នក​ចង់​បន្ដ​រក្សាទុក/នាំចេញ​បណ្ណាល័យ​នេះ​ឬទេ ។"
+msgid  "You are about to save/export a password protected basic library containing module(s) \\n$(ARG1)\\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -328,28 +328,28 @@ msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmis
 msgstr "%PRODUCTNAME មិន​អាច​រក្សា​ឯកសារ​ពី​ការ​សរសេរ​ជាន់​លើ ពេល​ដែល​ពិធីការ​បញ្ជូន​នេះ​ត្រូវ​បាន​ប្រើ ។ យ៉ាង​ណា​​ក៏​ដោយ​ តើ​អ្នក​ចង់​បន្ត​ឬ ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
-msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr "ឯកសារ '$(ARG1)' ខូច និង​មិន​អាច​បើក​បាន​ទេ ។ %PRODUCTNAME អាច​សាកល្បង​ជួសជុល​ឯកសារ ។\n\nការ​ខូច​នេះ​អាច​មក​ពី​ការ​រៀបចំ​ឯកសារ ឬ​មក​ពី​រចនា​សម្ព័ន្ធ​របស់​ឯកសារ​ខូច ដោយ​សារ​ការ​បញ្ជូន​ទិន្នន័យ ។\n\nយើង​សូម​ផ្ដល់​អនុសាសន៍​ថា អ្នក​មិន​គួរ​ជឿជាក់​លើ​មាតិកា​នៃ​ឯកសារ​ដែល​ជួសជុល​ទេ ។\nការ​ប្រតិបត្តិ​ម៉ាក្រូ​ត្រូវ​បាន​បិទ​ចំពោះ​ឯកសារ​នេះ ។\n\nតើ %PRODUCTNAME គួរ​ជួសជុល​ឯកសារ​ឬ?\n"
+msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\\n\\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the repaired document.\\nExecution of macros is disabled for this document.\\n\\nShould %PRODUCTNAME repair the file?\\n"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
 msgstr "មិន​អាច​ជួសជុល​ឯកសារ '$(ARG1)' ដូច្នេះ​​មិន​អាច​បើក​បានទេ​ ។"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
-msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr "ទិន្នន័យ​កំណត់​រចនា​សម្ព័ន្ធ​ក្នុង '$(ARG1)' ត្រូវ​បាន​ខូច ។ គ្មាន​ឯកសារ​នេះ អនុគមន៍​ខ្លះ​ប្រហែល​ជា​ដំណើរការមិន​បាន​ត្រឹមត្រូវ ។\nតើ​អ្នក​ចង់​បន្ត​ចាប់ផ្តើម %PRODUCTNAME ដោយ​គ្មាន​ទិន្នន័យ​កំណត់​រចនា​សម្ព័ន្ធ​ដែល​ខូច​ឬ ?"
+msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
-msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr "ឯកសារ​កំណត់​រចនា​សម្ព័ន្ធ​ផ្ទាល់​ខ្លួន '$(ARG1)' គឺ​ខូច និង​ត្រូវ​តែ​លុប​វា​ចេញ ដើម្បី​បន្ត ។ ការ​កំណត់​ផ្ទាល់​ខ្លួន​ខ្លះ​របស់​អ្នក អាច​ត្រូវ​បាន​បាត់​បង់ ។\nតើ​អ្នក​ចង់​បន្ត​ចាប់​ផ្តើម​ %PRODUCTNAME ដោយ​គ្មាន​ទិន្នន័យ​កំណត់​រចនា​សម្ព័ន្ធ​ដែល​ខូច​ឬទេ ?"
+msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
 msgstr "មិន​មាន​ប្រភព​ទិន្នន័យ​កំណត់​រចនា​សម្ព័ន្ធ '$(ARG1)' ។ គ្មាន​ទិន្នន័យ​នេះ អនុគមន៍​ខ្លះ​ប្រហែល​ជា​ដំណើរការមិន​បាន​ត្រឹមត្រូវ ។​"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
-msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr "មិន​មាន​ប្រភព​ទិន្នន័យ​កំណត់​រចនា​សម្ព័ន្ធ '$(ARG1)' ។ គ្មាន​ទិន្នន័យ​នេះ អនុគមន៍​ខ្លះ​ប្រហែល​ជា​ដំណើរការមិន​បាន​ត្រឹមត្រូវ ។​\nតើ​អ្នក​ចង់​បន្ត​ចាប់ផ្តើម %PRODUCTNAME ដោយ​គ្មាន​ទិន្នន័យ​កំណត់​រចនា​សម្ព័ន្ធ​ដែល​បាត់​ឬ​ទេ ?"
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -368,24 +368,24 @@ msgid  "The file $(ARG1) is currently not locked by yourself."
 msgstr "ឯកសារ $(ARG1) បច្ចុប្បន្ន​ត្រូវបានចាក់សោយ​ដោយ​ខ្លួន​អ្នក​ផ្ទាល់ ។"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
-msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
-msgstr "បាន​ទទួល​ឯកសារ​ចាក់សោ​ពីមុន​របស់ $(ARG1) បានផុត​កំណត់​ហើយ ។\nវា​អាច​កតើ​ឡើង​ ដោយ​សារ​តែ​មានបញ្ហា​នៅ​លើ​ម៉ាស៊ីន​បម្រើ ដោយ​គ្រប់គ្រង​ការ​ចាក់សោ​ឯកសារ ។ វា​មិនអាច​ត្រូ​វបានធានា​ថា ប្រតិបត្តិការ​សសេរ​នៅ​លើ​ឯកសារ​នេះ​នឹង​មិន​សរសេរ​ជាន់លើ​កា​រផ្លាស់ប្ដូរ​ដែល​បាន​ធ្វើ​ដោយ​អ្នក​ប្រើ​ផ្សេង​ទេ !"
+msgid  "The previously obtained lock for file $(ARG1) has expired.\\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
-msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr "មិន​អាច​បញ្ជាក់​អត្តសញ្ញាណ​នៃ​តំបន់​បណ្ដាញ $(ARG1) ។\n\nមុន​ពេល​យល់ព្រម​ទទួល​វិញ្ញាបនបត្រ​នេះ អ្នក​គួរ​តែ​ពិនិត្យ​វិញ្ញាបនបត្រ​តំបន់​បណ្ដាញ​នេះ​ដោយ​ប្រុង​ប្រយ័ត្ន ។ តើ​អ្នក​ចង់​យល់ព្រម​ទទួល​វិញ្ញាបនបត្រ​នេះ ដោយ​ចង់​កំណត់​អត្តសញ្ញាណ​តំបន់​បណ្ដាញ $(ARG1) ឬ?"
+msgid  "Unable to verify the identity of $(ARG1) site.\\n\\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
-msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr "$(ARG1) គឺ​ជា​តំបន់​បណ្ដាញ​ដែល​ប្រើ​វិញ្ញាបនបត្រ​សុវត្ថិភាព​ដើម្បី​អ៊ីនគ្រីប​ទិន្នន័យ​កំឡុង​ពេល​បញ្ជូន ប៉ុន្តែ​វិញ្ញាបនបត្រ​ត្រូវ​ផុត​កំណត់​នៅ $(ARG2) ។\n\nអ្នក​គួរ​តែ​ពិនិត្យ​ឲ្យ​ច្បាស់​ថា ពេល​វេលា​កុំព្យូទ័រ​របស់​អ្នក​ត្រឹមត្រូវ ។"
+msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\\n\\nYou should check to make sure that your computer's time is correct."
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
-msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr "អ្នក​បាន​ប៉ុនប៉ង់​បង្កើត​ការ​តភ្ជាប់​ជាមួយ $(ARG1) ។ ទោះ​យ៉ាងណា វិញ្ញាបនបត្រ​សុវត្ថិភាព​ដែល​បាន​បង្ហាញ​ជា​កម្មសិទ្ធិ​របស់ $(ARG2) ។ វា​អាច​ថា មាន​នរណា​ម្នាក់​កំពុង​ព្យាយាម​រារាំង​ទំនាក់ទំនង​របស់​អ្នក​ជាមួយ​តំបន់​បណ្ដាញ​នេះ ។\n\nបើ​អ្នក​សង្ស័យ​ថា វិញ្ញាបនបត្រ​ដែល​បង្ហាញ​មិន​មែន​ជា​កម្មសិទ្ធិ​របស់ $(ARG1) សូម​បោះបង់​ការ​តភ្ជាប់ និង​ជូន​ដំណឹង​អ្នក​គ្រប់គ្រង​តំបន់​បណ្ដាញ ។\n\nតើ​អ្នក​ចង់​បន្ត​ឬ?"
+msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\\n\\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\\n\\nWould you like to continue anyway?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
-msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr "វិញ្ញាបនបត្រ​មិន​អាច​ត្រូវ​បាន​ធ្វើ​ឲ្យ​មាន​សុពលភាព​ទេ ។ អ្នក​គួរ​តែ​ពិនិត្យ​វិញ្ញាបនបត្រ​របស់​តំបន់​បណ្ដាញ​នេះ​ដោយ​ប្រុង​ប្រយ័ត្ន ។\n\nបើ​អ្នក​សង្ស័យ​ថា វិញ្ញាបនបត្រ​ដែល​បង្ហាញ សូម​បោះបង់​ការ​តភ្ជាប់ និង​ជូន​ដំណឹង​អ្នក​គ្រប់គ្រង​តំបន់​បណ្ដាញ ។"
+msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\\n\\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -412,12 +412,12 @@ msgid  "Message from server:"
 msgstr "សារ​ពី​ម៉ាស៊ីន​បម្រើ ៖"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
-msgid  "Enter user name and password for: \n%1"
-msgstr "បញ្ចូល​ឈ្មោះ​អ្នកប្រើ និង​ពាក្យ​សម្ងាត់​សម្រាប់ ៖ \n%1"
+msgid  "Enter user name and password for: \\n%1"
+msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n\"%2\" on %1"
-msgstr "បញ្ចូល​ឈ្មោះ​អ្នកប្រើ និង​ពាក្យ​សម្ងាត់​សម្រាប់ ៖\n\"%2\" នៅ​លើ %1"
+msgid  "Enter user name and password for: \\n\"%2\" on %1"
+msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -468,24 +468,24 @@ msgid  "~Send"
 msgstr "ផ្ញើ"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
-msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr "ម៉ាស៊ីន​បម្រើ '${HOST}' ចង់​កំណត់​ខូគី​មួយ​ ឬ ច្រើន ។\nខូគី​​មាន​​ព័ត៌មាន​​យោង​​ទៅ​ថ្នាក់​​ URL ខ្លះ​ ។ បើ​ពេល​ក្រោយ​ %PRODUCTNAME ​ស្នើ​សុំ​​​នូវ​ឯកសារ​មួយ​ជាមួយ​ URL ដែល​​ត្រូវ​គ្នា​​ទៅ​នឹង​ថ្នាក់​​របស់​ខូគី​ដែល​បាន​កំណត់​ពី​មុន​  %PRODUCTNAME នឹង​ផ្ញើ​ព័ត៌មាន​នេះ​ទៅ​ម៉ាស៊ីន​បម្រើ​ ។ នេះ​អនុញ្ញាត​ឲ្យ​ម៉ាស៊ីន​បម្រើ​មួយ​ស្គាល់​ស្ថានភាព​នៃ​កម្មវិធី WWW មួយ ។​ ឧទាហរណ៍ ពេល​ទិញ​តាម​បណ្តាញ ។\n\nខូគី​ដូច​ខាង​ក្រោម​គួរ​តែ​ត្រូវ​បាន​កំណត់ ៖​\n\n"
+msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
-msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "ដែន ៖ ${DOMAIN} ផ្លូវ ៖ ${PATH} ខូគី ៖ ${COOKIE} ។​\n"
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
 msgstr "ការ​ទទួល​ខូគី"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
-msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr "%PRODUCTNAME បាន​រក្សា​ទុក​ខូគី សម្រាប់​ម៉ាស៊ីន​បម្រើ '${HOST}' ដែល​នឹង​ត្រូវ​បានផ្ញើ ពេល​ស្នើ​សុំ​ឯកសារ ${PATH} ។\nខូគី​មាន​ព័ត៌មាន​ដែល​យោង​ទៅ​ថ្នាក់ URL ខ្លះ ។ ពួក​វា​ត្រូវ​បាន​ផ្ញើ​ដោយ​ម៉ាស៊ីន​បម្រើ​ខ្លះទៅ %PRODUCTNAME កន្លែង​ដែល​ពួក​វា​ត្រូវ​បាន​រក្សា​ទុក ពេល​ឯកសារ​ខ្លះ​ត្រូវ​បាន​ចូលដំណើរការ ។ យោង​តាម URL ប្រសិន​បើ %PRODUCTNAME ផ្ទុក​ឯកសារ​ដែលទាក់​ទង​ទៅ​នឹង​ថ្នាក់​របស់​ខូគី​មួយ​ក្នុង​ចំណោម​ខូគី​ដែល​បាន​ទទួលពីមុន %PRODUCTNAME នឹង​ផ្ញើ​ព័ត៌មាន​នេះ​ទៅ​ម៉ាស៊ីន​បម្រើ​នោះ ។ នេះ​ធ្វើ​ឲ្យ​ម៉ាស៊ីន​បម្រើ​អាច​រក្សា​ការ​តាមដាន​ស្ថានភាព​របស់​កម្មវិធី WWW  ឧទាហរណ៍ ពេល​ទិញ​ទំនិញ​តាម​បណ្តាញ ។\n\nខូគី​ខាង​ក្រោម​នេះ​គួរ​ត្រូវ​បាន​កំណត់ ៖\n\n"
+msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
-msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "ដែន ៖ ${DOMAIN} ផ្លូវ ៖ ${PATH} ខូគី ៖ ${COOKIE} ។​\n"
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -528,8 +528,8 @@ msgid  "Document in Use"
 msgstr "ឯកសារ​កំពុងប្រើ"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr "ឯកសារ '$(ARG1)' ត្រូវ​បាន​ចាក់សោ​សម្រាប់​ការ​កែសម្រួល​ដោយ ៖\n\n$(ARG2)\n\nបើក​ឯកសារ​ដែល​បាន​តែ​អាន ឬ​បើក​ច្បាប់​ចម្លង​ឯកសារ​ដើម្បី​កែសម្រួល ។\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
+msgstr ""
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -548,8 +548,8 @@ msgid  "Document Has Been Changed by Others"
 msgstr "ឯកសារ​ត្រូវ​បាន​ផ្លាស់ប្ដូរ​ដោយ​អ្នក​ផ្សេង"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
-msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr "ឯកសារ​ត្រូវបាន​ផ្លាស់ប្ដូរ ចាប់តាំង​ពី​វា​ត្រូវ​បាន​បើក​កែសម្រួល​នៅ​ក្នុង %PRODUCTNAME ។ ការ​រក្សាទុក​កំណែ​​ឯកសារ​របស់​អ្នក នឹង​សរសេរ​ជាន់លើ​ការ​ផ្លាស់ប្ដូរ​ដែល​អ្នក​ដ៏ទៃ​បាន​ធ្វើ ។\n\nតើ​អ្នក​ចង់​រក្សាទុក​ឬ​ទេ ?\n\n"
+msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
+msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -560,8 +560,8 @@ msgid  "%PRODUCTNAME Update Available"
 msgstr "មាន​បច្ចុប្បន្នភាព​របស់ %PRODUCTNAME"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
-msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr "ឯកសារ​នេះ​ត្រូវបាន​បង្កើត​ឡើង​ដោយ​កំណែ %PRODUCTNAME ថ្មី ។ វា​អាច​មាន​លក្ខណៈ​ពិសេស ដែល​មិន​បាន​គាំទ្រ​ដោយ​កំណែ​បច្ចុប្បន្ន​របស់​អ្នក ។\n\nចុច 'ធ្វើ​បច្ចុប្បន្ន​ភាព​ឥឡូវ...' ដើម្បី​ដំណើរការ​បច្ចុប្បន្នភាព​​លើ​បណ្ដាញ និងយក​កំណែ %PRODUCTNAME ​ចុងក្រោយ​បំផុត ។"
+msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr ""
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -652,8 +652,8 @@ msgid  "Caution: If you forget the master password, you will be unable to access
 msgstr "ប្រុងប្រយ័ត្ន ៖ ត្រូវ​ប្រាកដ​ថា អ្នក​ចងចាំ​ពាក្យ​សម្ងាត់​មេ ដែល​អ្នក​បាន​កំណត់ ។ ប្រសិន​បើ​អ្នក​ភ្លេច​ពាក្យ​សម្ងាត់​មេ អ្នក​នឹង​មិនអាច​ចូលដំណើរការ​ព័ត៌មាន​ណាមួយ​ដែល​វា​មាន​ពាក្យ​សម្ងាត់​នោះ​ការ​ពារ​នោះ​ទេ ។ ពាក្យ​សម្ងាត់​គឺ​ប្រកាន់​តួអក្សរ​តូច​ធំ ហើយ​យ៉ាង​ហោច​ណាស់​ក៏​ត្រូវមាន​តួអក្សរ ៥ តួ​អក្សរ​ដែរ ។"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr "ឯកសារ '$(ARG1)' ត្រូវបាន​ចាក់សោ​សម្រាប់​ការ​កែសម្រួល​ដោយ​ខ្លួន​របស់​អ្នក នៅ​លើ​ប្រព័ន្ធ​ផ្សេង​ដោយ $(ARG2)\n\nបើក​ឯកសារ​ ដែល​បាន​តែអាន ឬ​មិនអើពើ​នឹង​ឯកសារ​ផ្ទាល់ខ្លួន ដែល​ចាក់សោ និង​បើក​ឯកសារ​សម្រាប់​ការ​កែសម្រួល ។\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
+msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -664,8 +664,8 @@ msgid  "~Open"
 msgstr "បើក"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr "ឯកសារ '$(ARG1)' ត្រូវបាន​ចាក់សោ​សម្រាប់​ការ​កែសម្រួល​ដោយ​ខ្លួន​អ្នក​ផ្ទាល់​នៅលើ​ប្រព័ន្ធ​ផ្សេងគ្នា ដោយ $(ARG2)\n\nបិទ​ឯកសារ​នៅលើ​ប្រព័ន្ធ​ផ្សេង ហើយ​ព្យាយាម​រក្សាទុក ឬ​មិនអើពើ​នឹង​ការ​ចាក់សោ​ឯកសារ​ផ្ទាល់ខ្លួន និង​រក្សាទុក​ឯកសារ​បច្ចុប្បន្ន ។\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
+msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

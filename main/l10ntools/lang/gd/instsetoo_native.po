@@ -193,7 +193,7 @@ msgstr "An ùine air fhàgail: {[1] mionaid }{[2] diog}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_16
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr "Gun chuimhne gu leòr. Dùin aplacaidean eile mus feuch thu ris a-rithist."
+msgstr "Chan eil cuimhne gu leòr ann. Dùin aplacaidean eile mus feuch thu ris a-rithist."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_17
 msgid  "Installer is no longer responding."
@@ -705,7 +705,7 @@ msgstr "Thèid am feart seo agus gach feart foidhe a stàladh is iad 'gan ruith 
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
-msgstr "Thèid am feart seo a stàladh is e 'ga ruith on CD."
+msgstr "Thèid am feart seo a stàladh 's e 'ga ruith on CD."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_11
 msgid  "This feature will be installed on local hard drive."
@@ -1041,7 +1041,7 @@ msgstr "A' foillseachadh nan co-phàirtean freagarrach"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_45
 msgid  "Component ID: [1], Qualifier: [2]"
-msgstr "ID na co-phàirt: [1], Freagarraiche: [2]"
+msgstr "ID na co-phàirte: [1], Càilichear: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_46
 msgid  "Publishing product features"
@@ -1061,7 +1061,7 @@ msgstr "A' clàradh nam frithealaichean clas"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_50
 msgid  "Class ID: [1]"
-msgstr "ID a' chlas: [1]"
+msgstr "ID clas: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_51
 msgid  "Registering COM+ Applications and Components"
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Mòran taing airson %PRODUCTNAME %PRODUCTVERSION a luchdadh a-nuas."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "&Dì-phacaich"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "Thèid na faidhlichean stàlaidh %PRODUCTNAME %PRODUCTVERSION a dhì-phacadh agus a shàbhaladh sa phasgana a chì thu gu h-ìosal. Ma tha thu airson %PRODUCTNAME a shàbhaladh ann am pasgan eile, briog air \\'Brabhsaich\\' gus pasgan eile a thaghadh."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1453,11 +1453,11 @@ msgstr "Sguir dheth"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_5
 msgid  "&Look in:"
-msgstr "&Lorg ann an:"
+msgstr "L&org ann an:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_6
 msgid  "Browse to the destination folder."
-msgstr "Tagh am pasgan-uidhe."
+msgstr "Brabhsaich dhan phasgan-uidhe."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 msgid  "{&MSSansBold8}Change Current Destination Folder"
@@ -1481,11 +1481,11 @@ msgstr "Suas aon leibheil|"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_14
 msgid  "< &Back"
-msgstr "< &Air ais"
+msgstr "< Air ai&s"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_17
 msgid  "&Change..."
-msgstr "&Atharraich..."
+msgstr "Ath&arraich..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_18
 msgid  "Cancel"
@@ -1513,7 +1513,7 @@ msgstr "Àite air an &lìonra:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_24
 msgid  "< &Back"
-msgstr "< &Air ais"
+msgstr "< Air ai&s"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_25
 msgid  "Cancel"
@@ -1521,11 +1521,11 @@ msgstr "Sguir dheth"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_26
 msgid  "&Next >"
-msgstr "Air a&dhart >"
+msgstr "&Air adhart >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Fàilte dhan draoidh stàlaidh aig [ProductName]"
+msgstr "{&TahomaBold10}Fàilte gun draoidh stàlaidh aig [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
@@ -1545,15 +1545,15 @@ msgstr "&Tha"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_32
 msgid  "< &Back"
-msgstr "< &Air ais"
+msgstr "< Air ai&s"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_35
 msgid  "Cancel"
 msgstr "Sguir dheth"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}Fiosrachadh a' chustamair"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1581,7 +1581,7 @@ msgstr "&Ainm cleachdaiche:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_43
 msgid  "&Next >"
-msgstr "Air a&dhart >"
+msgstr "&Air adhart >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_45
 msgid  "&Serial Number:"
@@ -1589,7 +1589,7 @@ msgstr "Àireamh &shreathach:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_46
 msgid  "< &Back"
-msgstr "< &Air ais"
+msgstr "< Air ai&s"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_49
 msgid  "Cancel"
@@ -1597,7 +1597,7 @@ msgstr "Sguir dheth"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_50
 msgid  "&Change..."
-msgstr "Ath&arraich..."
+msgstr "&Atharraich..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_51
 msgid  "&Space"
@@ -1685,7 +1685,7 @@ msgstr "Gun dèid cuid dhe na fo-fheartan aige a stàladh air a' chlàr chruaidh
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_74
 msgid  "< &Back"
-msgstr "< &Air ais"
+msgstr "< Air ai&s"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_77
 msgid  "Cancel"
@@ -1697,7 +1697,7 @@ msgstr "&Atharraich..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr "Briog air \"Air adhart\" gus a stàladh dhan phasgan seo no briog air \"Atharraich\" gus a stàladh do phasgan eile."
+msgstr "Briog air \"Air adhart\" gus a stàladh sa phasgan seo no briog air \"Sguir dheth\" gus a stàladh ann am pasgan eile."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"

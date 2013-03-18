@@ -60,11 +60,11 @@ msgid  "No Text"
 msgstr "पाठ छैन"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
-msgid  "Enter password to open file: \n"
+msgid  "Enter password to open file: \\n"
 msgstr ""
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
-msgid  "Enter password to modify file: \n"
+msgid  "Enter password to modify file: \\n"
 msgstr ""
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
@@ -92,7 +92,7 @@ msgid  "Document in Use"
 msgstr ""
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
 msgstr ""
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
@@ -136,8 +136,8 @@ msgid  "Target already exists."
 msgstr "लक्ष्य पहिल्यै अवस्थित छ ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
-msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr "बाइनरी ढाँचामा भण्डारण गर्न तपाइँ सुरक्षित आधारभूत पुस्तकालय समावेस भएको मोड्यूलहरु\n$(ARG1)\nर पासवर्ड बचत/निर्यात गर्नेमा हुनुहुन्छ । यदि तपाइँ प्रयोगकर्तासँग मोड्यूलमा म्याक्रो चलाउन सक्षम बनाउनको लागि पुस्तकालय पासवर्डमा पहुँच चाहनु हुन्न भने साना मोड्यूलको सङ्ख्यामा मोड्यूलहरूलाई बिभाजन गर्नै पर्दछ । तपाइँ यो पुस्तकालयलाई बचत/निर्यात गर्नको लागि निरन्तर गर्न चाहानुहुन्छ ?"
+msgid  "You are about to save/export a password protected basic library containing module(s) \\n$(ARG1)\\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -328,28 +328,28 @@ msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmis
 msgstr "%PRODUCTNAME जब यो प्रसारणमा प्रोटोकोल प्रयोग गरिन्छ ,अधिलेखन सुरुआत बाट फाइलहरू राख्न सकिँदैन । तपाईँ जे भए पनि निरन्तरता दिनुहुन्छ ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
-msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr "फाइल '$(ARG1)' अनुपयोगी छ र खोल्न सकिएन । के '%PRODUCTNAME ले फाइल मर्मत गर्छ ?"
+msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\\n\\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the repaired document.\\nExecution of macros is disabled for this document.\\n\\nShould %PRODUCTNAME repair the file?\\n"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
 msgstr "फाइल '$(ARG1)'मर्मत गर्न सकिएन र खोल्न सकिएन ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
-msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr "'$(ARG1)'मा कन्फिगरेसन डेटा अनुपयोगी छ । यो डेटा बिना केही प्रकार्यहरू ठीक सँग संञ्चालन हुँदैन । \nतपाईँ अनुपयोगी गरिएको कन्फिगरेसन डेटा बिना %PRODUCTNAME को सुरुआत निरन्तरता दिन चाहनुहुन्छ ?"
+msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
-msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr "व्यक्तिगत कन्फिगरेसन फाइल '$(ARG1)' अनुपयोगी छ र जारी राख्नका लागि मेट्नुनै पर्छ । तपाईँंको केही व्यक्तिगत सेटिङहरू नष्ट हुन सक्छन् । \n तपाईँं अनुपयोगी कन्फिगरेसन डेटा बिना %PRODUCTNAME को स्टार्टप जारी राख्न चाहनुहुन्छ ?"
+msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
 msgstr "कन्फिगरेसन डेटा स्रोत '$(ARG1)'उपलब्ध छैन । यो डेटा बिना केही प्रकार्यहरू ठीक सँग सञ्चालन हुन सक्ने छैन ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
-msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr "कन्फिगरेसन डेटा स्रोत  '$(ARG1)' उपलब्ध छैन । यो डेटा बिना केही प्रकार्यहरू ठीकसँग सञ्चाल हुन सक्ने छैन । \n तपाईँं गल्ति भैरहेका कन्फिगरेसन डेटा बिना %PRODUCTNAME को स्टार्टप गर्न चाहनुहुन्छ ?"
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -368,24 +368,24 @@ msgid  "The file $(ARG1) is currently not locked by yourself."
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
-msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgid  "The previously obtained lock for file $(ARG1) has expired.\\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
-msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr "$(ARG1) को साइट पहिचाहन रूजु गर्न असक्षम छ ।\n\nयो प्रमाणपत्र स्विकार गर्नु अघि, तपाइँले होसियारि पूर्वक यो साइटको प्रमाणपत्रको जाँच गर्नु पर्दछ । तपाइँ वेब साइट $(ARG1) पहिचानको उदेश्यको लागि यो प्रमाणपत्र स्विकार गर्न चाहिरहनु भएको छ ?"
+msgid  "Unable to verify the identity of $(ARG1) site.\\n\\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
-msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr "$(ARG1) गुप्तिकरण डेटा स्थान्तरण गर्ने अवधिमा यो साइटले सुरक्षा प्रमाणपत्र प्रयोग गर्दछ , तर यो प्रमाणपत्र $(ARG2) मा समाप्त भयो ।\n\nतपाइँले तपाइँको कम्पूटरको ठिक समय छ छैन भनेर जाँच गर्नुपर्दछ ।"
+msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\\n\\nYou should check to make sure that your computer's time is correct."
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
-msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr "तपाइँले $(ARG1) सँग जडान स्थापना गर्न पुरा प्रयास गर्नुभएको छ । त्यसैले सुरक्षा प्रमाणपत्रले $(ARG2) मा अधिकार प्रस्तुत गर्यो । कसैले प्रयास गरीरहँदा यो वेब साइटसँग तपाइँको सञ्चार मिल्न गयो भने यो उपयुक्त जस्तो देखिन्छ ।\n\nयदि तपाइँ $(ARG1) सँग अधिकार नभएको प्रमाणपत्र देखाउन गोप्य गर्नुहुन्छ भने, कृपया जडानलाई रद्द गर्नुहोस् र साइट प्रसाशकलाई जानकरीदिनुहोस् ।\n\nकुनै तरिकाले कार्य सुचारू गर्न चाहानुहुन्छ ?"
+msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\\n\\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\\n\\nWould you like to continue anyway?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
-msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr "प्रमाणपत्र वैध गर्न सकिएन । तपाइँले यो साइटको प्रमाणपत्र होसियारी पूर्वक जाँच गर्नु पर्ने छ ।\n\nयदि तपाइँ प्रमाणपत्र देखाउन गोप्य चाहानुहुन्छ भने, कृपया जडान रद्द गर्नुहोस् र साइट प्रसाशकलाई जानकारी दिनुहोस् ।"
+msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\\n\\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -412,12 +412,12 @@ msgid  "Message from server:"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
-msgid  "Enter user name and password for: \n%1"
+msgid  "Enter user name and password for: \\n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n\"%2\" on %1"
-msgstr "कृपया, यहाँ %1 मा \"%2\"का लागि  प्रयोगकर्ता नाम र पासवर्ड प्रविष्ट गर्नुहोस् ।"
+msgid  "Enter user name and password for: \\n\"%2\" on %1"
+msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -468,24 +468,24 @@ msgid  "~Send"
 msgstr "पठाउनुहोस्"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
-msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr "'${HOST}' सर्भरले एक वा सो भन्दा बढी कुकीहरू सेट गर्न चाहान्छ ।\nकुकीहरूमा निश्चित URL वर्गहरूलाई अपिल गर्ने सूचना समावेश छ । यदि %PRODUCTNAME पछिका अनुरोधहरूको कागजात पहिलेका कुकिसेटको वर्गमा URL सँग सम्बन्धित छ भने, %PRODUCTNAME को यो सूचना सर्भरसँग पठाइने छ । यसले WWW अनुप्रयोगको वस्तुस्थिति पहिचान गर्ने सर्भरलाई अनुमति दिन्छ,उदाहरण का लागि-अनलाइनमा किनमेल गरींदा ।\n\n निम्न कुकीहरू सेट हुनै पर्दछ:\n\n"
+msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
-msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "डोमेन: ${DOMAIN}, मार्ग: ${PATH}, कुकी: ${COOKIE}।\n"
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
 msgstr "कुकी सोधपुछ"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
-msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr "%PRODUCTNAME सर्भरका लागि '${HOST}कुकीहरू बचत गरिएको छ,जब कागजात अनुरोध गरिन्छ तब त्यसलाई पठाइने छ । ${PATH}\nनिश्चित URL वर्गहरूमा प्रेषित गरिंदा कुकीहरूको सूचना समावेश गरिन्छ । तिनीहरू केही सर्भरहरूद्वारा %PRODUCTNAME मा पठाइन्छ, जहाँ तिनीहरू बचत गरिएकाछन्, त्यहाँ निश्चित कागजातहरू पहुँच प्राप्त हुन्छन् । यदि %PRODUCTNAME कागजात लोड गरिन्छन् कि URL को अनुसार ति पहिलेका प्राप्त कुकीहरू को एउटा वर्ग मा सम्बन्धित हुन्छ , %PRODUCTNAME को यो सूचना त्यो सर्भर मा पठाइने छ । यो योग्य बनाइने सर्भर अनुप्रयोग WWW को स्तरको ट्राकमा राखिन्छ, उदाहरणका लागि -अनलाइनमा किनमेल गरिंदा ।\n\n निम्न कुकीहरू सेट हुनै पर्दछ:\n\n"
+msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
-msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "डोमेन: ${DOMAIN}, मार्ग: ${PATH}, कुकी: ${COOKIE} ।\n"
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -528,7 +528,7 @@ msgid  "Document in Use"
 msgstr ""
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
 msgstr ""
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
@@ -548,7 +548,7 @@ msgid  "Document Has Been Changed by Others"
 msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
-msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
+msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
 msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
@@ -560,8 +560,8 @@ msgid  "%PRODUCTNAME Update Available"
 msgstr "%PRODUCTNAME अद्यावधिक उपलब्ध"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
-msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr "यो कागजात %PRODUCTNAME को नयाँ संस्करणद्वारा सिर्जना गरिएको थियो । यसमा तपाईँको हालको संस्करणले समर्थन नगर्ने विशेषता समाविष्ट हुनसक्छ ।\n\nअनलाइन अद्यावधिक चलाउन 'अहिले अद्यावधिक गर्नुहोस्...' बटनमा क्लिक गर्नुहोस् र %PRODUCTNAME को सबैभन्दा पछिल्लो संस्करण प्राप्त गर्नुहोस् ।"
+msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr ""
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -652,7 +652,7 @@ msgid  "Caution: If you forget the master password, you will be unable to access
 msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
 msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
@@ -664,7 +664,7 @@ msgid  "~Open"
 msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
 msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text

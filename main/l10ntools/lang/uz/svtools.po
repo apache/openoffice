@@ -576,6 +576,7 @@ msgid  "~Options..."
 msgstr "Param~etrlar"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SELECT.String.Text
+#, fuzzy
 msgid  "Select Directory"
 msgstr "Jildni tanlash"
 
@@ -584,122 +585,151 @@ msgid  "Cannot change to directory"
 msgstr ""
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OPEN.String.Text
+#, fuzzy
 msgid  "Open"
 msgstr "Ochish"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_FILE.String.Text
+#, fuzzy
 msgid  "~File"
 msgstr "~Fayl"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DIR.String.Text
+#, fuzzy
 msgid  "~Directory"
 msgstr "~Jild"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_TYPE.String.Text
+#, fuzzy
 msgid  "File ~type"
 msgstr "Faylning ~turi:"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.String.Text
+#, fuzzy
 msgid  "Can't open file"
 msgstr "Faylni ochib boʻlmadi"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.String.Text
+#, fuzzy
 msgid  "Can't open directory"
 msgstr "Jildni ochib boʻlmadi"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
-msgid  "This file already exists. \nOverwrite ?"
-msgstr "Fayl allaqachon mavjud.\nUni almashtirishni istaysizmi?"
+msgid  "This file already exists. \\nOverwrite ?"
+msgstr ""
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
+#, fuzzy
 msgid  "Up One Level"
 msgstr "Bir daraja yuqoriga"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SAVE.String.Text
+#, fuzzy
 msgid  "Save"
 msgstr "Saqlash"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DRIVES.String.Text
+#, fuzzy
 msgid  "D~rive"
 msgstr "Us~kuna"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_HOME.String.Text
+#, fuzzy
 msgid  "User Directory"
 msgstr "Foydalanuvchining jildi"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.String.Text
+#, fuzzy
 msgid  "Create Directory"
 msgstr "Jildni yaratish"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.String.Text
+#, fuzzy
 msgid  "Do you want the directory %s to be created ?"
 msgstr "%s jildi yaratilishini istaysizmi?"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.ModalDialog.Text
+#, fuzzy
 msgid  "Templates: Address Book Assignment"
 msgstr "Shablonlar: Manzillar daftarini tayinlash"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FixedLine.Text
+#, fuzzy
 msgid  "Address Book Source"
 msgstr "Manzillar daftari manbasi"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FixedText.Text
+#, fuzzy
 msgid  "Data source"
 msgstr "Maʼlumot manbasi"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PushButton.Text
+#, fuzzy
 msgid  "~Address Data Source..."
 msgstr "~Manzillar maʼlumot manbasi..."
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FixedText.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Jadval"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FixedText.Text
+#, fuzzy
 msgid  "Field assignment"
 msgstr "Maydon tayinlash"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.String.Text
+#, fuzzy
 msgid  "<none>"
 msgstr "<yoʻq>"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.String.Text
+#, fuzzy
 msgid  "Company"
 msgstr "Tashkilot"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.String.Text
+#, fuzzy
 msgid  "Department"
 msgstr "Boʻlim"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.String.Text
+#, fuzzy
 msgid  "First name"
 msgstr "Ismi"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.String.Text
+#, fuzzy
 msgid  "Last name"
 msgstr "Familiyasi"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.String.Text
+#, fuzzy
 msgid  "Street"
 msgstr "Koʻcha"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.String.Text
+#, fuzzy
 msgid  "Country"
 msgstr "Davlat"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.String.Text
+#, fuzzy
 msgid  "ZIP Code"
 msgstr "Indeks"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.String.Text
+#, fuzzy
 msgid  "City"
 msgstr "Shahar"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.String.Text
+#, fuzzy
 msgid  "Title"
 msgstr "Sarlavha"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.String.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Oʻrni"
 
@@ -716,46 +746,57 @@ msgid  "Complimentary close"
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.String.Text
+#, fuzzy
 msgid  "Tel: Home"
 msgstr "Tel: Uy"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.String.Text
+#, fuzzy
 msgid  "Tel: Work"
 msgstr "Tel: Ish"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.String.Text
+#, fuzzy
 msgid  "FAX"
 msgstr "Faks"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.String.Text
+#, fuzzy
 msgid  "E-mail"
 msgstr "Elektron pochta"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.String.Text
+#, fuzzy
 msgid  "Note"
 msgstr "Izoh"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.String.Text
+#, fuzzy
 msgid  "User 1"
 msgstr "Foydalanuvchi 1"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.String.Text
+#, fuzzy
 msgid  "User 2"
 msgstr "Foydalanuvchi 2"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.String.Text
+#, fuzzy
 msgid  "User 3"
 msgstr "Foydalanuvchi 3"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.String.Text
+#, fuzzy
 msgid  "User 4"
 msgstr "Foydalanuvchi 4"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.String.Text
+#, fuzzy
 msgid  "ID"
 msgstr "ID"
 
@@ -764,46 +805,57 @@ msgid  "State"
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.String.Text
+#, fuzzy
 msgid  "Tel: Office"
 msgstr "Tel: Idora"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.String.Text
+#, fuzzy
 msgid  "Pager"
 msgstr "Peyjer"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.String.Text
+#, fuzzy
 msgid  "Mobile"
 msgstr "Uyali"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.String.Text
+#, fuzzy
 msgid  "Tel: Other"
 msgstr "Tel: Boshqa"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "Kalendar"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.String.Text
+#, fuzzy
 msgid  "Invite"
 msgstr "Taklif qilish"
 
 #: source/dialogs/formats.src#STR_FORMAT_STRING.String.Text
+#, fuzzy
 msgid  "Unformatted text"
 msgstr "Formatlanmagan matn"
 
 #: source/dialogs/formats.src#STR_FORMAT_BITMAP.String.Text
+#, fuzzy
 msgid  "Bitmap"
 msgstr "BMP-fayl"
 
 #: source/dialogs/formats.src#STR_FORMAT_GDIMETAFILE.String.Text
+#, fuzzy
 msgid  "GDI metafile"
 msgstr "GDI meta-fayli"
 
 #: source/dialogs/formats.src#STR_FORMAT_RTF.String.Text
+#, fuzzy
 msgid  "Formatted text [RTF]"
 msgstr "Formatlangan matn [RTF]"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DRAWING.String.Text
+#, fuzzy
 msgid  "Drawing format"
 msgstr "Chizma formati"
 
@@ -816,22 +868,27 @@ msgid  "Status Info from Svx Internal Link"
 msgstr ""
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SOLK.String.Text
+#, fuzzy
 msgid  "SOLK (%PRODUCTNAME Link)"
 msgstr "SOLK (%PRODUCTNAME bogʻlama)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.String.Text
+#, fuzzy
 msgid  "Netscape Bookmark"
 msgstr "Netscape xatchoʻpi"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARSERVER.String.Text
+#, fuzzy
 msgid  "Star server format"
 msgstr "Star serveri formati"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.String.Text
+#, fuzzy
 msgid  "Star object format"
 msgstr "Star obyekti formati"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.String.Text
+#, fuzzy
 msgid  "Applet object"
 msgstr "Aplet obyekti"
 
@@ -840,138 +897,172 @@ msgid  "Plug-in object"
 msgstr ""
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.String.Text
+#, fuzzy
 msgid  "StarWriter 3.0 object"
 msgstr "StarWriter 3.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.String.Text
+#, fuzzy
 msgid  "StarWriter 4.0 object"
 msgstr "StarWriter 4.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.String.Text
+#, fuzzy
 msgid  "StarWriter 5.0 object"
 msgstr "StarWriter 5.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.String.Text
+#, fuzzy
 msgid  "StarWriter/Web 4.0 object"
 msgstr "StarWriter/Web 4.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.String.Text
+#, fuzzy
 msgid  "StarWriter/Web 5.0 object"
 msgstr "StarWriter/Web 5.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.String.Text
+#, fuzzy
 msgid  "StarWriter/Master 4.0 object"
 msgstr "StarWriter/Master 4.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.String.Text
+#, fuzzy
 msgid  "StarWriter/Master 5.0 object"
 msgstr "StarWriter/Master 5.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW.String.Text
+#, fuzzy
 msgid  "StarDraw object"
 msgstr "StarDraw obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.String.Text
+#, fuzzy
 msgid  "StarDraw 4.0 object"
 msgstr "StarDraw 4.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.String.Text
+#, fuzzy
 msgid  "StarImpress 5.0 object"
 msgstr "StarImpress 5.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.String.Text
+#, fuzzy
 msgid  "StarDraw 5.0 object"
 msgstr "StarDraw 5.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC.String.Text
+#, fuzzy
 msgid  "StarCalc object"
 msgstr "StarCalc obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.String.Text
+#, fuzzy
 msgid  "StarCalc  4.0 object"
 msgstr "StarCalc  4.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.String.Text
+#, fuzzy
 msgid  "StarCalc 5.0 object"
 msgstr "StarCalc 5.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART.String.Text
+#, fuzzy
 msgid  "StarChart object"
 msgstr "StarChart obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.String.Text
+#, fuzzy
 msgid  "StarChart 4.0 object"
 msgstr "StarChart 4.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.String.Text
+#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "StarChart 5.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.String.Text
+#, fuzzy
 msgid  "StarImage object"
 msgstr "StarImage obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.String.Text
+#, fuzzy
 msgid  "StarImage 4.0 object"
 msgstr "StarImage 4.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.String.Text
+#, fuzzy
 msgid  "StarImage 5.0 object"
 msgstr "StarImage 5.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH.String.Text
+#, fuzzy
 msgid  "StarMath object"
 msgstr "StarMath obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.String.Text
+#, fuzzy
 msgid  "StarMath 4.0 object"
 msgstr "StarMath 4.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.String.Text
+#, fuzzy
 msgid  "StarMath 5.0 object"
 msgstr "StarMath 5.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.String.Text
+#, fuzzy
 msgid  "StarObject Paint object"
 msgstr "StarObject Paint obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML.String.Text
+#, fuzzy
 msgid  "HTML (HyperText Markup Language)"
 msgstr "HTML"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.String.Text
+#, fuzzy
 msgid  "HTML format"
 msgstr "HTML formati"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_5.String.Text
+#, fuzzy
 msgid  "Biff5 (Microsoft Excel 5.0/95)"
 msgstr "Biff5 (Microsoft Excel 5.0/95)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_8.String.Text
+#, fuzzy
 msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
 msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SYLK.String.Text
+#, fuzzy
 msgid  "Sylk"
 msgstr "Sylk"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_LINK.String.Text
+#, fuzzy
 msgid  "DDE link"
 msgstr "DDE bogʻlamasi"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIF.String.Text
+#, fuzzy
 msgid  "DIF"
 msgstr "DIF"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.String.Text
+#, fuzzy
 msgid  "Microsoft Word object"
 msgstr "Microsoft Word obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.String.Text
+#, fuzzy
 msgid  "StarFrameSet object"
 msgstr "StarFrameSet obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.String.Text
+#, fuzzy
 msgid  "Office document object"
 msgstr "Ofis hujjati obyekti"
 
@@ -980,74 +1071,92 @@ msgid  "Notes document info"
 msgstr ""
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.String.Text
+#, fuzzy
 msgid  "Sfx document"
 msgstr "Sfx hujjati"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.String.Text
+#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "StarChart 5.0 obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.String.Text
+#, fuzzy
 msgid  "Graphic object"
 msgstr "Grafik obyekt"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc obyekti "
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_WMF.String.Text
+#, fuzzy
 msgid  "Windows metafile"
 msgstr "Windows meta-fayli"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.String.Text
+#, fuzzy
 msgid  "Data source object"
 msgstr "Maʼlumot manbasi obyekti"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.String.Text
+#, fuzzy
 msgid  "Data source table"
 msgstr "Maʼlumot manbasi jadvali"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.String.Text
+#, fuzzy
 msgid  "SQL query"
 msgstr "SQL soʻrovi"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
 msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.String.Text
+#, fuzzy
 msgid  "Link"
 msgstr "Bogʻlama"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.String.Text
+#, fuzzy
 msgid  "HTML format without comments"
 msgstr "HTML formati izohlarsiz"
 
@@ -1529,7 +1638,7 @@ msgid  "The picture needs about %1 KB of memory."
 msgstr ""
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.String.Text
-msgid  "The picture needs about %1 KB of memory,\n the file size is %2 KB."
+msgid  "The picture needs about %1 KB of memory,\\n the file size is %2 KB."
 msgstr ""
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.String.Text
@@ -1594,82 +1703,102 @@ msgid  "~Repeat: "
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.String.Text
+#, fuzzy
 msgid  "Source code"
 msgstr "Manba kodi"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.String.Text
+#, fuzzy
 msgid  "Bookmark file"
 msgstr "Xatchoʻp fayli"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.String.Text
+#, fuzzy
 msgid  "Graphics"
 msgstr "Grafika"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.String.Text
+#, fuzzy
 msgid  "Configuration file"
 msgstr "Moslama fayli"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.String.Text
+#, fuzzy
 msgid  "Application"
 msgstr "Dastur"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.String.Text
+#, fuzzy
 msgid  "Database table"
 msgstr "Maʼlumotlar bazasi jadvali"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.String.Text
+#, fuzzy
 msgid  "System file"
 msgstr "Tizim fayli"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.String.Text
+#, fuzzy
 msgid  "MS Word document"
 msgstr "MS Word hujjati"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.String.Text
+#, fuzzy
 msgid  "Help file"
 msgstr "Yordam fayli"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.String.Text
+#, fuzzy
 msgid  "HTML document"
 msgstr "HTML hujjat"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.String.Text
+#, fuzzy
 msgid  "Archive file"
 msgstr "Arxiv fayli"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.String.Text
+#, fuzzy
 msgid  "Log file"
 msgstr "Log fayli"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.String.Text
+#, fuzzy
 msgid  "%STAROFFICE Database"
 msgstr "%STAROFFICE maʼlumotlar bazasi"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.String.Text
+#, fuzzy
 msgid  "StarWriter 4.0 / 5.0 Master Document"
 msgstr "StarWriter 4.0 / 5.0 bosh hujjat"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.String.Text
+#, fuzzy
 msgid  "%STAROFFICE Image"
 msgstr "%STAROFFICE rasm"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.String.Text
+#, fuzzy
 msgid  "Text file"
 msgstr "Matn fayli"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LINK.String.Text
+#, fuzzy
 msgid  "Link"
 msgstr "Bogʻlama"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.String.Text
+#, fuzzy
 msgid  "%STAROFFICE 3.0 - 5.0 Template"
 msgstr "%STAROFFICE 3.0 - 5.0 shablon"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.String.Text
+#, fuzzy
 msgid  "MS Excel document"
 msgstr "MS Excel hujjati"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.String.Text
+#, fuzzy
 msgid  "MS Excel template"
 msgstr "MS Excel shabloni"
 
@@ -1678,42 +1807,52 @@ msgid  "Batch file"
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FILE.String.Text
+#, fuzzy
 msgid  "File"
 msgstr "Fayl"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FOLDER.String.Text
+#, fuzzy
 msgid  "Folder"
 msgstr "Jild"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.String.Text
+#, fuzzy
 msgid  "Text Document"
 msgstr "Matn hujjati"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.String.Text
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Elektron jadval"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.String.Text
+#, fuzzy
 msgid  "Presentation"
 msgstr "Namoyish"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.String.Text
+#, fuzzy
 msgid  "Drawing"
 msgstr "Chizma"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.String.Text
+#, fuzzy
 msgid  "HTML document"
 msgstr "HTML hujjat"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.String.Text
+#, fuzzy
 msgid  "Master document"
 msgstr "Bosh hujjat"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.String.Text
+#, fuzzy
 msgid  "Formula"
 msgstr "Formula"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.String.Text
+#, fuzzy
 msgid  "Database"
 msgstr "Maʼlumotlar bazasi"
 
@@ -1738,22 +1877,27 @@ msgid  "Local drive"
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.String.Text
+#, fuzzy
 msgid  "Disk drive"
 msgstr "Disk"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.String.Text
+#, fuzzy
 msgid  "CD-ROM drive"
 msgstr "Kompakt-disk"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.String.Text
+#, fuzzy
 msgid  "Network connection"
 msgstr "Tarmoqqa ulanish"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.String.Text
+#, fuzzy
 msgid  "MS PowerPoint Document"
 msgstr "MS PowerPoint hujjati"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.String.Text
+#, fuzzy
 msgid  "MS PowerPoint Template"
 msgstr "MS PowerPoint shabloni"
 
@@ -1790,322 +1934,402 @@ msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
+#, fuzzy
 msgid  "MathML Document"
 msgstr "MathML hujjati"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Database"
 msgstr "OpenDocument maʼlumotlar bazasi"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Drawing"
 msgstr "OpenDocument chizma"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Formula"
 msgstr "OpenDocument formula"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "OpenDocument bosh hujjat"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Presentation"
 msgstr "OpenDocument namoyish"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Spreadsheet"
 msgstr "OpenDocument elektron jadval"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "OpenDocument matn"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Spreadsheet Template"
 msgstr "OpenDocument elektron jadval shabloni"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Drawing Template"
 msgstr "OpenDocument chizma shabloni"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Presentation Template"
 msgstr "OpenDocument namoyish shabloni"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "OpenDocument matn shabloni"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Extension"
 msgstr "%PRODUCTNAME kengaytma"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PairedList.item
+#, fuzzy
 msgid  "[None]"
 msgstr "[Yoʻq]"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PairedList.item
+#, fuzzy
 msgid  "Unknown"
 msgstr "Nomaʼlum"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PairedList.item
+#, fuzzy
 msgid  "Default"
 msgstr "Andoza"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PairedList.item
+#, fuzzy
 msgid  "Afrikaans (South Africa)"
 msgstr "Afrikacha (Shimoliy Afrika)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.PairedList.item
+#, fuzzy
 msgid  "Albanian"
 msgstr "Albancha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PairedList.item
+#, fuzzy
 msgid  "Arabic"
 msgstr "Arabcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Algeria)"
 msgstr "Arabcha (Aljir)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Bahrain)"
 msgstr "Arabcha (Bahreyn)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.PairedList.item
+#, fuzzy
 msgid  "Arabic (Chad)"
 msgstr "Arabcha (Chad)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.PairedList.item
+#, fuzzy
 msgid  "Arabic (Comoros)"
 msgstr "Arabcha (Komoros)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.PairedList.item
+#, fuzzy
 msgid  "Arabic (Djibouti)"
 msgstr "Arabcha (Djibouti)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.PairedList.item
+#, fuzzy
 msgid  "Arabic (Egypt)"
 msgstr "Arabcha (Misr)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Eritrea)"
 msgstr "Arabcha (Eritreya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.PairedList.item
+#, fuzzy
 msgid  "Arabic (Iraq)"
 msgstr "Arabcha (Iroq)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.PairedList.item
+#, fuzzy
 msgid  "Arabic (Israel)"
 msgstr "Arabcha (Isroil)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Jordan)"
 msgstr "Arabcha (Iordaniya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.PairedList.item
+#, fuzzy
 msgid  "Arabic (Kuwait)"
 msgstr "Arabcha (Quvayt)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.PairedList.item
+#, fuzzy
 msgid  "Arabic (Lebanon)"
 msgstr "Arabcha (Livan)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Libya)"
 msgstr "Arabcha (Liviya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Mauritania)"
 msgstr "Arabcha (Mavritaniya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.PairedList.item
+#, fuzzy
 msgid  "Arabic (Morocco)"
 msgstr "Arabcha (Marokash)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Oman)"
 msgstr "Arabcha (Ummon)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.PairedList.item
+#, fuzzy
 msgid  "Arabic (Palestine)"
 msgstr "Arabcha (Falastin)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.PairedList.item
+#, fuzzy
 msgid  "Arabic (Qatar)"
 msgstr "Arabcha (Qatar)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Saudi Arabia)"
 msgstr "Arabcha (Saudiya Arabistoni)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Somalia)"
 msgstr "Arabcha (Somali)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Sudan)"
 msgstr "Arabcha (Sudan)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Syria)"
 msgstr "Arabcha (Suriya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Tunisia)"
 msgstr "Arabcha (Tunis)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.PairedList.item
+#, fuzzy
 msgid  "Arabic (UAE)"
 msgstr "Arabcha (BAA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Yemen)"
 msgstr "Arabcha (Yaman)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PairedList.item
+#, fuzzy
 msgid  "Armenian"
 msgstr "Armancha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PairedList.item
+#, fuzzy
 msgid  "Assami"
 msgstr "Assami"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PairedList.item
+#, fuzzy
 msgid  "Azerbaijani Latin"
 msgstr "Ozarbayjoncha (lotin)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.PairedList.item
+#, fuzzy
 msgid  "Azerbaijani Cyrillic"
 msgstr "Ozarbayjoncha (kiril)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.PairedList.item
+#, fuzzy
 msgid  "Basque"
 msgstr "Baskcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.PairedList.item
+#, fuzzy
 msgid  "Bengali (India)"
 msgstr "Bengalcha (Hindiston)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PairedList.item
+#, fuzzy
 msgid  "Bulgarian"
 msgstr "Bolgarcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PairedList.item
+#, fuzzy
 msgid  "Belarusian"
 msgstr "Beloruscha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.PairedList.item
+#, fuzzy
 msgid  "Catalan"
 msgstr "Kataloncha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PairedList.item
+#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "Xitoycha (Anʼanaviy)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PairedList.item
+#, fuzzy
 msgid  "Chinese (simplified)"
 msgstr "Xitoycha (Soddalashtirilgan)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.PairedList.item
+#, fuzzy
 msgid  "Chinese (Hong Kong)"
 msgstr "Xitoycha (Gankong)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PairedList.item
+#, fuzzy
 msgid  "Chinese (Singapore)"
 msgstr "Xitoycha (Singapur)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PairedList.item
+#, fuzzy
 msgid  "Chinese (Macau)"
 msgstr "Xitoycha (Makau)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PairedList.item
+#, fuzzy
 msgid  "Croatian"
 msgstr "Xorvatcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PairedList.item
+#, fuzzy
 msgid  "Czech"
 msgstr "Chexcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PairedList.item
+#, fuzzy
 msgid  "Danish"
 msgstr "Daniyaliklar tili"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.PairedList.item
+#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "Gollandcha (Niderlandlar)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PairedList.item
+#, fuzzy
 msgid  "Dutch (Belgium)"
 msgstr "Gollandcha (Belgiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PairedList.item
+#, fuzzy
 msgid  "English (USA)"
 msgstr "Inglizcha (AQSH)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.PairedList.item
+#, fuzzy
 msgid  "English (UK)"
 msgstr "Inglizcha (BB)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PairedList.item
+#, fuzzy
 msgid  "English (Australia)"
 msgstr "Inglizcha (Avstraliya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PairedList.item
+#, fuzzy
 msgid  "English (Canada)"
 msgstr "Inglizcha (Kanada)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PairedList.item
+#, fuzzy
 msgid  "English (New Zealand)"
 msgstr "Ingllizcha (Yangi Zellandiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PairedList.item
+#, fuzzy
 msgid  "English (Eire)"
 msgstr "Inglizcha (Irlandiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PairedList.item
+#, fuzzy
 msgid  "English (South Africa)"
 msgstr "Inglizcha (Janubiy Afrika)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PairedList.item
+#, fuzzy
 msgid  "English (Jamaica)"
 msgstr "Inglizcha (Yamayka)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PairedList.item
+#, fuzzy
 msgid  "English (Caribbean)"
 msgstr "Inglizcha (Karib orollari)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PairedList.item
+#, fuzzy
 msgid  "English (Belize)"
 msgstr "Inglizcha (Beliz)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PairedList.item
+#, fuzzy
 msgid  "English (Trinidad)"
 msgstr "Inglizcha (Trinidad)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PairedList.item
+#, fuzzy
 msgid  "English (Zimbabwe)"
 msgstr "Inglizcha (Zimbabve)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PairedList.item
+#, fuzzy
 msgid  "English (Philippines)"
 msgstr "Inglizcha (Filippin)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PairedList.item
+#, fuzzy
 msgid  "English (India)"
 msgstr "Inglizcha (HIndiston)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PairedList.item
+#, fuzzy
 msgid  "Estonian"
 msgstr "Estoncha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PairedList.item
+#, fuzzy
 msgid  "Finnish"
 msgstr "Fincha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PairedList.item
+#, fuzzy
 msgid  "Faroese"
 msgstr "Farercha"
 
@@ -2114,226 +2338,282 @@ msgid  "Persian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PairedList.item
+#, fuzzy
 msgid  "French (France)"
 msgstr "Fransuzcha (Fransiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PairedList.item
+#, fuzzy
 msgid  "French (Belgium)"
 msgstr "Fransuzcha (Belgiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PairedList.item
+#, fuzzy
 msgid  "French (Canada)"
 msgstr "Fransuzcha (Kanada)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PairedList.item
+#, fuzzy
 msgid  "French (Switzerland)"
 msgstr "Fransuzcha (Shveysariya0"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PairedList.item
+#, fuzzy
 msgid  "French (Luxembourg)"
 msgstr "Fransuzcha (Lyuksemburg)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PairedList.item
+#, fuzzy
 msgid  "French (Monaco)"
 msgstr "Fransuzcha (Monako)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.PairedList.item
+#, fuzzy
 msgid  "Gascon"
 msgstr "Gaskoncha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PairedList.item
+#, fuzzy
 msgid  "German (Germany)"
 msgstr "Nemischa (Germaniya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PairedList.item
+#, fuzzy
 msgid  "German (Switzerland)"
 msgstr "Nemischa (Sveysariya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PairedList.item
+#, fuzzy
 msgid  "German (Austria)"
 msgstr "Nemischa (Avstriya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PairedList.item
+#, fuzzy
 msgid  "German (Luxembourg)"
 msgstr "Nemischa (Lyuksemburg)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PairedList.item
+#, fuzzy
 msgid  "German (Liechtenstein)"
 msgstr "Nemischa (Lixtenshteyn)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PairedList.item
+#, fuzzy
 msgid  "Greek"
 msgstr "Yunoncha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PairedList.item
+#, fuzzy
 msgid  "Gujarati"
 msgstr "Gujorati"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PairedList.item
+#, fuzzy
 msgid  "Hebrew"
 msgstr "Yahudiycha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PairedList.item
+#, fuzzy
 msgid  "Hindi"
 msgstr "Hindcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PairedList.item
+#, fuzzy
 msgid  "Hungarian"
 msgstr "Vengrcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PairedList.item
+#, fuzzy
 msgid  "Icelandic"
 msgstr "Islandcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.PairedList.item
+#, fuzzy
 msgid  "Indonesian"
 msgstr "Indonezcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PairedList.item
+#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "Italyancha (Italiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PairedList.item
+#, fuzzy
 msgid  "Italian (Switzerland)"
 msgstr "Italyancha (Shveysariya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PairedList.item
+#, fuzzy
 msgid  "Japanese"
 msgstr "Yaponcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PairedList.item
+#, fuzzy
 msgid  "Kannada"
 msgstr "Kannada"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PairedList.item
+#, fuzzy
 msgid  "Kashmiri (Kashmir)"
 msgstr "Kashmircha (Kashmir)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Kashmiri (India)"
 msgstr "Kashmircha (Hindiston)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.PairedList.item
+#, fuzzy
 msgid  "Kazak"
 msgstr "Qozoqcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.PairedList.item
+#, fuzzy
 msgid  "Konkani"
 msgstr "Konkani"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.PairedList.item
+#, fuzzy
 msgid  "Korean (RoK)"
 msgstr "Koreyscha (Janubiy Koreya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PairedList.item
+#, fuzzy
 msgid  "Latvian"
 msgstr "Latviacha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PairedList.item
+#, fuzzy
 msgid  "Lithuanian"
 msgstr "Litvacha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PairedList.item
+#, fuzzy
 msgid  "Macedonian"
 msgstr "Makedoncha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.PairedList.item
+#, fuzzy
 msgid  "Malay (Malaysia)"
 msgstr "Malaycha (Malayziya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.PairedList.item
+#, fuzzy
 msgid  "Malay (Brunei Darussalam)"
 msgstr "Malaycha (Bruney Dorussalom)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PairedList.item
+#, fuzzy
 msgid  "Malayalam"
 msgstr "Malayalamcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.PairedList.item
+#, fuzzy
 msgid  "Manipuri"
 msgstr "Manipuri"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.PairedList.item
+#, fuzzy
 msgid  "Marathi"
 msgstr "Maratxi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.PairedList.item
+#, fuzzy
 msgid  "Nepali (Nepal)"
 msgstr "Nepalcha (Nepal)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Nepali (India)"
 msgstr "Nepalcha (Hindiston)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.PairedList.item
+#, fuzzy
 msgid  "Norwegian, Bokmål"
 msgstr "Norvegcha (bokmal)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.PairedList.item
+#, fuzzy
 msgid  "Norwegian, Nynorsk"
 msgstr "Norvegcha (ninorsk)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PairedList.item
+#, fuzzy
 msgid  "Oriya"
 msgstr "Oriya"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PairedList.item
+#, fuzzy
 msgid  "Polish"
 msgstr "Polyakcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.PairedList.item
+#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "Portugalcha (Portugaliya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.PairedList.item
+#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "Portugalcha (Braziliya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.PairedList.item
+#, fuzzy
 msgid  "Punjabi"
 msgstr "Panjobcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.PairedList.item
+#, fuzzy
 msgid  "Rhaeto-Romance"
 msgstr "Retro Roman"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.PairedList.item
+#, fuzzy
 msgid  "Romanian"
 msgstr "Rumincha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.PairedList.item
+#, fuzzy
 msgid  "Russian"
 msgstr "Ruscha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.PairedList.item
+#, fuzzy
 msgid  "Sanskrit"
 msgstr "Sanskritcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.PairedList.item
+#, fuzzy
 msgid  "Serbian Cyrillic (Serbia and Montenegro)"
 msgstr "Serbcha (kiril)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.PairedList.item
+#, fuzzy
 msgid  "Serbian Latin (Serbia and Montenegro)"
 msgstr "Serbcha (lotin)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.PairedList.item
+#, fuzzy
 msgid  "Serbian Cyrillic (Serbia)"
 msgstr "Serbcha (kiril, Serbiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.PairedList.item
+#, fuzzy
 msgid  "Serbian Latin (Serbia)"
 msgstr "Serbcha (lotin, Serbiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.PairedList.item
+#, fuzzy
 msgid  "Serbian Cyrillic (Montenegro)"
 msgstr "Serbcha (kiril, qoratogʻ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.PairedList.item
+#, fuzzy
 msgid  "Serbian Latin (Montenegro)"
 msgstr "Serbcha (lotin, qoratogʻ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.PairedList.item
+#, fuzzy
 msgid  "Sindhi"
 msgstr "Sindxi"
 
@@ -2342,202 +2622,252 @@ msgid  "Slovak"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.PairedList.item
+#, fuzzy
 msgid  "Slovenian"
 msgstr "Slovencha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.PairedList.item
+#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "Ispancha (Ispaniya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.PairedList.item
+#, fuzzy
 msgid  "Spanish (Mexico)"
 msgstr "Ispancha (Meksika)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Guatemala)"
 msgstr "Ispancha (Gvatemala)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Costa Rica)"
 msgstr "Ispancha (Kosta Rika)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Panama)"
 msgstr "Ispancha (Panama0"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.PairedList.item
+#, fuzzy
 msgid  "Spanish (Dom. Rep.)"
 msgstr "Ispancha (Dominikan respublikasi)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Venezuela)"
 msgstr "Ispancha (Venesuela)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Colombia)"
 msgstr "Ispancha (Kolumbiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.PairedList.item
+#, fuzzy
 msgid  "Spanish (Peru)"
 msgstr "Ispancha (Peru)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Argentina)"
 msgstr "Ispancha (Argentina)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.PairedList.item
+#, fuzzy
 msgid  "Spanish (Ecuador)"
 msgstr "Ispancha (Ekvador)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.PairedList.item
+#, fuzzy
 msgid  "Spanish (Chile)"
 msgstr "Ispancha (Chili)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.PairedList.item
+#, fuzzy
 msgid  "Spanish (Uruguay)"
 msgstr "Ispancha (Urugvay)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.PairedList.item
+#, fuzzy
 msgid  "Spanish (Paraguay)"
 msgstr "Ispancha (Paragvay)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Bolivia)"
 msgstr "Ispancha (Boliviya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.PairedList.item
+#, fuzzy
 msgid  "Spanish (El Salvador)"
 msgstr "Ispancha (Al Salvador)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.PairedList.item
+#, fuzzy
 msgid  "Spanish (Honduras)"
 msgstr "Ispancha (Gonduras)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Nicaragua)"
 msgstr "Ispancha (Nikaragua)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.PairedList.item
+#, fuzzy
 msgid  "Spanish (Puerto Rico)"
 msgstr "Ispancha (Puerto Riko)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.PairedList.item
+#, fuzzy
 msgid  "Swahili (Kenya)"
 msgstr "Svahili (Kenya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.PairedList.item
+#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "Shvedcha (Shvedcha)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.PairedList.item
+#, fuzzy
 msgid  "Swedish (Finland)"
 msgstr "Shvedcha (Finlandiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.PairedList.item
+#, fuzzy
 msgid  "Tajik"
 msgstr "Tojikcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PairedList.item
+#, fuzzy
 msgid  "Tamil"
 msgstr "Tamilcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.PairedList.item
+#, fuzzy
 msgid  "Tatar"
 msgstr "Tatarcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PairedList.item
+#, fuzzy
 msgid  "Telugu"
 msgstr "Telugucha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PairedList.item
+#, fuzzy
 msgid  "Thai"
 msgstr "Taycha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PairedList.item
+#, fuzzy
 msgid  "Turkish"
 msgstr "Turkcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.PairedList.item
+#, fuzzy
 msgid  "Urdu (Pakistan)"
 msgstr "Urdu (Pokiston)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.PairedList.item
+#, fuzzy
 msgid  "Urdu (India)"
 msgstr "Urdu (Hindiston)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.PairedList.item
+#, fuzzy
 msgid  "Ukrainian"
 msgstr "Ukraincha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.PairedList.item
+#, fuzzy
 msgid  "Uzbek Latin"
 msgstr "Oʻzbekcha (lotin)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.PairedList.item
+#, fuzzy
 msgid  "Welsh"
 msgstr "Uelscha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.PairedList.item
+#, fuzzy
 msgid  "User 1"
 msgstr "Foydalanuvchi 1"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.PairedList.item
+#, fuzzy
 msgid  "User 2"
 msgstr "Foydalanuvchi 2"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.PairedList.item
+#, fuzzy
 msgid  "User 3"
 msgstr "Foydalanuvchi 3"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.PairedList.item
+#, fuzzy
 msgid  "User 4"
 msgstr "Foydalanuvchi 4"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.PairedList.item
+#, fuzzy
 msgid  "User 5"
 msgstr "Foydalanuvchi 5"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.PairedList.item
+#, fuzzy
 msgid  "User 6"
 msgstr "Foydalanuvchi 6"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.PairedList.item
+#, fuzzy
 msgid  "User 7"
 msgstr "Foydalanuvchi 7"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.PairedList.item
+#, fuzzy
 msgid  "User 8"
 msgstr "Foydalanuvchi 8"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.PairedList.item
+#, fuzzy
 msgid  "User 9"
 msgstr "Foydalanuvch 9"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.PairedList.item
+#, fuzzy
 msgid  "Latin"
 msgstr "Lotincha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.PairedList.item
+#, fuzzy
 msgid  "Esperanto"
 msgstr "Esperanto"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.PairedList.item
+#, fuzzy
 msgid  "Kinyarwanda (Rwanda)"
 msgstr "Kinyaruanda (Ruanda)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.PairedList.item
+#, fuzzy
 msgid  "Maori (New Zealand)"
 msgstr "Maoricha (Yangi Zellandiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.PairedList.item
+#, fuzzy
 msgid  "Galician"
 msgstr "Galisiyacha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.PairedList.item
+#, fuzzy
 msgid  "Dhivehi"
 msgstr "Dhivehi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.PairedList.item
+#, fuzzy
 msgid  "Northern Sotho"
 msgstr "Shimoliy Sotocha"
 
@@ -2546,226 +2876,282 @@ msgid  "Gaelic (Scotland)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PairedList.item
+#, fuzzy
 msgid  "Mongolian"
 msgstr "Moʻgʻulcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.PairedList.item
+#, fuzzy
 msgid  "Interlingua"
 msgstr "Interlingva"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.PairedList.item
+#, fuzzy
 msgid  "Bosnian"
 msgstr "Bosniyacha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.PairedList.item
+#, fuzzy
 msgid  "Bengali (Bangladesh)"
 msgstr "Bengalcha (Bangladesh)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.PairedList.item
+#, fuzzy
 msgid  "Occitan"
 msgstr "Okkitan"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PairedList.item
+#, fuzzy
 msgid  "Khmer"
 msgstr "Xmercha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.PairedList.item
+#, fuzzy
 msgid  "Kurdish (Turkey)"
 msgstr "Kurdcha (Turkiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.PairedList.item
+#, fuzzy
 msgid  "Kurdish (Syria)"
 msgstr "Kurdcha (Suriya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.PairedList.item
+#, fuzzy
 msgid  "Kurdish (Iraq)"
 msgstr "Kurdcha (Iroq)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.PairedList.item
+#, fuzzy
 msgid  "Kurdish (Iran)"
 msgstr "Kurdcha (Eron)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.PairedList.item
+#, fuzzy
 msgid  "Sardinian"
 msgstr "Sardiniya"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.PairedList.item
+#, fuzzy
 msgid  "Dzongkha"
 msgstr "Zongxacha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.PairedList.item
+#, fuzzy
 msgid  "Swahili (Tanzania)"
 msgstr "Svaxili (Tanzania)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PairedList.item
+#, fuzzy
 msgid  "Lao"
 msgstr "Laoscha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.PairedList.item
+#, fuzzy
 msgid  "Irish"
 msgstr "Irlandcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.PairedList.item
+#, fuzzy
 msgid  "Tibetan (PR China)"
 msgstr "Tibetcha (XXR)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PairedList.item
+#, fuzzy
 msgid  "Georgian"
 msgstr "Gruzincha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.PairedList.item
+#, fuzzy
 msgid  "Frisian"
 msgstr "Frizcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.PairedList.item
+#, fuzzy
 msgid  "Tswana (South Africa)"
 msgstr "Tsvana (Shimoliy Afrika)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.PairedList.item
+#, fuzzy
 msgid  "Zulu"
 msgstr "Zulucha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PairedList.item
+#, fuzzy
 msgid  "Vietnamese"
 msgstr "Vetnamcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.PairedList.item
+#, fuzzy
 msgid  "Breton"
 msgstr "Bretoncha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.PairedList.item
+#, fuzzy
 msgid  "Kalaallisut"
 msgstr "Kalaallisut"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.PairedList.item
+#, fuzzy
 msgid  "Ndebele, South"
 msgstr "Ndebele, shimoliy"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.PairedList.item
+#, fuzzy
 msgid  "Southern Sotho"
 msgstr "Shimoliy Sotocha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.PairedList.item
+#, fuzzy
 msgid  "Swazi"
 msgstr "Svazilendcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.PairedList.item
+#, fuzzy
 msgid  "Tsonga"
 msgstr "Songa"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.PairedList.item
+#, fuzzy
 msgid  "Venda"
 msgstr "Vendacha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.PairedList.item
+#, fuzzy
 msgid  "Tswana (Botswana)"
 msgstr "Tsvana (Botsvana)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.PairedList.item
+#, fuzzy
 msgid  "Xhosa"
 msgstr "Xosa"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PairedList.item
+#, fuzzy
 msgid  "Sinhala"
 msgstr "Sinxala"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.PairedList.item
+#, fuzzy
 msgid  "Moore"
 msgstr "Mur"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.PairedList.item
+#, fuzzy
 msgid  "Bambara"
 msgstr "Bambara"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.PairedList.item
+#, fuzzy
 msgid  "Akan"
 msgstr "Akan"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.PairedList.item
+#, fuzzy
 msgid  "Luxembourgish"
 msgstr "Liksemburgcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.PairedList.item
+#, fuzzy
 msgid  "Friulian"
 msgstr "Friulian"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.PairedList.item
+#, fuzzy
 msgid  "Fijian"
 msgstr "Fijicha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.PairedList.item
+#, fuzzy
 msgid  "Afrikaans (Namibia)"
 msgstr "Afrikaans (Namibia)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.PairedList.item
+#, fuzzy
 msgid  "English (Namibia)"
 msgstr "Inglizcha (Namibia)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.PairedList.item
+#, fuzzy
 msgid  "Walloon"
 msgstr "Valoncha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.PairedList.item
+#, fuzzy
 msgid  "Coptic"
 msgstr "Koptik"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.PairedList.item
+#, fuzzy
 msgid  "Tigrigna (Eritrea)"
 msgstr "Tigrigna (Eritreya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.PairedList.item
+#, fuzzy
 msgid  "Tigrigna (Ethiopia)"
 msgstr "Tigrigna (Efiopiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.PairedList.item
+#, fuzzy
 msgid  "Amharic"
 msgstr "Amhara"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.PairedList.item
+#, fuzzy
 msgid  "Kirghiz"
 msgstr "Qirgʻizcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.PairedList.item
+#, fuzzy
 msgid  "German (Belgium)"
 msgstr "Nemischa (Belgiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.PairedList.item
+#, fuzzy
 msgid  "Chuvash"
 msgstr "Chuvashcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.PairedList.item
+#, fuzzy
 msgid  "Burmese"
 msgstr "Birmacha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.PairedList.item
+#, fuzzy
 msgid  "Hausa (Nigeria)"
 msgstr "Hausa (Nigeriya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.PairedList.item
+#, fuzzy
 msgid  "Hausa (Ghana)"
 msgstr "Hausa (Gana)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.PairedList.item
+#, fuzzy
 msgid  "Éwé"
 msgstr "Eve"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.PairedList.item
+#, fuzzy
 msgid  "English (Ghana)"
 msgstr "Inglizcha (Gana)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.PairedList.item
+#, fuzzy
 msgid  "Sango"
 msgstr "Sango"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.PairedList.item
+#, fuzzy
 msgid  "Tagalog"
 msgstr "Tagalcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.PairedList.item
+#, fuzzy
 msgid  "Ganda"
 msgstr "Ganda"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.PairedList.item
+#, fuzzy
 msgid  "Lingala"
 msgstr "Lingala"
 
@@ -2774,114 +3160,142 @@ msgid  "Low German"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.PairedList.item
+#, fuzzy
 msgid  "Hiligaynon"
 msgstr "Hiligaynon"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.PairedList.item
+#, fuzzy
 msgid  "Nyanja"
 msgstr "Nyanja"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.PairedList.item
+#, fuzzy
 msgid  "Kashubian"
 msgstr "Kashubcha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Cuba)"
 msgstr "Ispancha (Kuba)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.PairedList.item
+#, fuzzy
 msgid  "Tetun (Indonesia)"
 msgstr "Tetum (Indoneziya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.PairedList.item
+#, fuzzy
 msgid  "Quechua (Bolivia, North)"
 msgstr "Kechua (Boliviya, shimoliy)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.PairedList.item
+#, fuzzy
 msgid  "Quechua (Bolivia, South)"
 msgstr "Kechua (Boliviya, janubiy)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.PairedList.item
+#, fuzzy
 msgid  "Somali"
 msgstr "Somalicha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.PairedList.item
+#, fuzzy
 msgid  "Sami, Inari (Finland)"
 msgstr "Saamcha, inari (Finlandiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.PairedList.item
+#, fuzzy
 msgid  "Sami, Lule (Norway)"
 msgstr "Saamcha, lule (Norvegiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.PairedList.item
+#, fuzzy
 msgid  "Sami, Lule (Sweden)"
 msgstr "Saamcha, lule (Shvetsiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.PairedList.item
+#, fuzzy
 msgid  "Sami, Northern (Finland)"
 msgstr "Saamcha, shimoliy Finlandiya"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.PairedList.item
+#, fuzzy
 msgid  "Sami, Northern (Norway)"
 msgstr "Saamcha shimoliy Norvegiya"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.PairedList.item
+#, fuzzy
 msgid  "Sami, Northern (Sweden)"
 msgstr "Saamcha shimoliy Shvetsiya"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.PairedList.item
+#, fuzzy
 msgid  "Sami, Skolt (Finland)"
 msgstr "Saamcha (Finlandiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.PairedList.item
+#, fuzzy
 msgid  "Sami, Southern (Norway)"
 msgstr "Saamcha (Norvegiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.PairedList.item
+#, fuzzy
 msgid  "Sami, Southern (Sweden)"
 msgstr "Saamcha, (Shvetsiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.PairedList.item
+#, fuzzy
 msgid  "Sami, Kildin (Russia)"
 msgstr "Saamcha, Kildin (Rossiya)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.PairedList.item
+#, fuzzy
 msgid  "Guaraní, Paraguayan"
 msgstr "Guarani, Paragvay"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.PairedList.item
+#, fuzzy
 msgid  "Bodo"
 msgstr "Bodo"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Dogri"
 msgstr "Dogri"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Maithili"
 msgstr "Maithili"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Santali"
 msgstr "Santali"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.PairedList.item
+#, fuzzy
 msgid  "Tetun (Timor-Leste)"
 msgstr "Tetun (Sharqiy Temor)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.PairedList.item
+#, fuzzy
 msgid  "Turkmen"
 msgstr "Turmancha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.PairedList.item
+#, fuzzy
 msgid  "Maltese"
 msgstr "Maltacha"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.PairedList.item
+#, fuzzy
 msgid  "Tok Pisin"
 msgstr "Tok Pisin"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.PairedList.item
+#, fuzzy
 msgid  "Shuswap"
 msgstr "Shusvap"
 
@@ -2922,6 +3336,7 @@ msgid  "Latgalian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.PairedList.item
+#, fuzzy
 msgid  "Maore"
 msgstr "Mur"
 
@@ -3006,10 +3421,12 @@ msgid  "Haitian"
 msgstr ""
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
+#, fuzzy
 msgid  "Display IDs"
 msgstr "Displey ID'lari"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
+#, fuzzy
 msgid  "This is the input window"
 msgstr "Bu - kiritish oynasi"
 
@@ -3018,62 +3435,77 @@ msgid  "Transfer to TestTool"
 msgstr ""
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
+#, fuzzy
 msgid  "Show all windows"
 msgstr "Hamma oynalarni koʻrsatish"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
+#, fuzzy
 msgid  "Show short names (if available)"
 msgstr "Qisqa nomlarni koʻrsatish (agar mavjud boʻlsa)"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
+#, fuzzy
 msgid  "Always show long-name"
 msgstr "Uzun nomlarni doimo koʻrsatish"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
+#, fuzzy
 msgid  "DisplayHID"
 msgstr "Displey ID'lari"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
+#, fuzzy
 msgid  "Translation"
 msgstr "Tarjima"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "Tahr~irlash"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
+#, fuzzy
 msgid  "Original Text"
 msgstr "Asl matn"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "Izoh"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
+#, fuzzy
 msgid  "~Comment"
 msgstr "~Izoh"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
+#, fuzzy
 msgid  "~Select"
 msgstr "~Tanlash"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
+#, fuzzy
 msgid  "~Restore"
 msgstr "~Tiklash"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
+#, fuzzy
 msgid  "~Accept"
 msgstr "~Qabul qilish"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
+#, fuzzy
 msgid  "~Next"
 msgstr "~Keyingi"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
+#, fuzzy
 msgid  "Inplace Translation"
 msgstr "Darhol tarjima"
 
 #: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
+#, fuzzy
 msgid  "The Translation will be lost. Proceed anyway?"
 msgstr "Tarjima saqlanmaydi. Davom etishni istaysizmi?"
 
@@ -3082,6 +3514,7 @@ msgid  "The Control is no longer valid. The Translation cannot be saved."
 msgstr ""
 
 #: source/plugapp/testtool.src#TT_GPF.String.Text
+#, fuzzy
 msgid  "GPF occurred"
 msgstr "GPF yuz berdi"
 
@@ -3102,17 +3535,21 @@ msgid  "Roadmap Skeleton Demo"
 msgstr ""
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.String.Text
+#, fuzzy
 msgid  "Welcome"
 msgstr "Marhamat"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.String.Text
+#, fuzzy
 msgid  "Prepare"
 msgstr "Tayyorlash"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.String.Text
+#, fuzzy
 msgid  "Setup"
 msgstr "Oʻrnatish"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.String.Text
+#, fuzzy
 msgid  "Finish"
 msgstr "Tayyor"

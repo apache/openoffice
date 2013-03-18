@@ -901,7 +901,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
 msgid  "Searching for qualifying products"
-msgstr "ਠੀਕ ਪਰੋਡੱਕਟ ਲਈ ਖੋਜ ਕਰ ਰਿਹਾ ਹੈ"
+msgstr "ਠੀਕ ਉਤਪਾਦ ਲਈ ਖੋਜ ਕਰ ਰਿਹਾ ਹੈ"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 msgid  "Computing space requirements"
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "%PRODUCTNAME %PRODUCTVERSION ਨੂੰ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਧੰਨਵਾਦ ਹੈ।"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "ਖੋਲ੍ਹੋ(&U)"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "%PRODUCTNAME %PRODUCTVERSION ਇੰਸਟਾਲੇਸ਼ਨ ਫਾਇਲਾਂ ਨੂੰ ਖੋਲਿਆ ਜਾਵੇਗਾ ਅਤੇ ਹੇਠ ਦਿੱਤੇ ਫੋਲਡਰ ਵਿੱਚ ਸੰਭਾਲਿਆ ਜਾਵੇਗਾ।ਜੇਕਰ ਤੁਸੀਂ %PRODUCTNAME ਨੂੰ ਵੱਖਰੇ ਫੋਲਪਰ ਵਿੱਚ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਵੱਖਰੇ ਫੋਲਡਰ ਨੂੰ ਚੁਣੋ, ਵੱਖਰਾ ਫੋਲਡਰ ਚੁਣਨ ਲਈ \\'ਝਲਕ'\\ ਨੂੰ ਦਬਾਉ।"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "ਰੱਦ ਕਰੋ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}ਗਾਹਕ ਜਾਣਕਾਰੀ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -2049,7 +2049,7 @@ msgstr "ਸਹਾਇਕ ਤੋਂ ਬਾਹਰ ਆਉਣ ਲਈ ਮੁੜ-ਸੰ
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}ਇੰਸਟਾਲੇਸ਼ਨ ਸਹਾਇਕ ਪੂਰਾ ਹੋਇਆ"
+msgstr "{&TahomaBold10}ਇੰਸਟਾਲੇਸ਼ਨ ਸਹਾਇਕ ਮੁਕੰਮਲ ਹੋਇਆ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
@@ -2081,7 +2081,7 @@ msgstr "ਸਮਾਪਤ(&F)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_198
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}ਇੰਸਟਾਲੇਸ਼ਨ ਸਹਾਇਕ ਮੁਕੰਮਲ ਹੋਇਆ"
+msgstr "{&TahomaBold10}ਇੰਸਟਾਲੇਸ਼ਨ ਸਹਾਇਕ ਮੁਕੰਮਲ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."

@@ -261,7 +261,7 @@ msgstr "ಏಲಿಯನ್ ಗ್ರಾಫಿಕ್ ಮಾದರಿಗಳನ್�
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ADOBE
 msgid  "Adobe Photoshop Import Filter"
-msgstr "ಆಡೊಬ್‌ ಫೋಟೋಶಾಪ್ ಅಮದು ಶೋಧಕ"
+msgstr "ಆಡೊಬ್‌ ಫೋಟೋಶಾಪ್ ಆಮದು ಶೋಧಕ"
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_ADOBE
 msgid  "Adobe Photoshop Import Filter"
@@ -701,42 +701,52 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr "ಪ್ರದರ್ಶಕವಿಲ್ಲದೆಯೆ %PRODUCTNAME ಅನ್ನು ಬಳಸಲು ಶಕ್ತಗೊಳಿಸುವ ಘಟಕ"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
+#, fuzzy
 msgid  "Information"
 msgstr "ಮಾಹಿತಿ"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
+#, fuzzy
 msgid  "Internet"
 msgstr "ಅಂತರ್ಜಾಲ"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
+#, fuzzy
 msgid  "Java"
 msgstr "ಜಾವಾ"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
+#, fuzzy
 msgid  "Fun&More"
 msgstr "ಮೋಜು ಮತ್ತು ಇನ್ನಷ್ಟು(&M)"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
+#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME API"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
+#, fuzzy
 msgid  "Travel"
 msgstr "ಪ್ರಯಾಣ"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
+#, fuzzy
 msgid  "Chapters"
 msgstr "ಅಧ್ಯಾಯಗಳು"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
+#, fuzzy
 msgid  "Files"
 msgstr "ಕಡತಗಳು"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
+#, fuzzy
 msgid  "From Template"
 msgstr "ನಮೂನೆಯಿಂದ"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
+#, fuzzy
 msgid  "Open Document"
 msgstr "ದಸ್ತಾವೇಜನ್ನು ತೆರೆ"
 
@@ -1897,145 +1907,181 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
+#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "ಇ-ಮೈಲ್ ಅಂಚೆವಿಲೀನ"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
+#, fuzzy
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
 msgstr "%PRODUCTNAME ಇ-ಮೈಲ್ ಅಂಚೆವಿಲೀನ ಸವಲತ್ತಿನ ಘಟಕ"
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
+#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "Python-UNO ಸಂಪರ್ಕಬಂಧ"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
+#, fuzzy
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
 msgstr "ಪೈಥಾನ್ ಸ್ಕ್ರಿಪ್ಟಿಂಗ್ ಭಾಷೆಯೊಂದಿಗೆ %PRODUCTNAME ಅನ್ನು ತಾನಾಗಿಯೆ ಕೆಲಸ ಮಾಡಲು ಶಕ್ತಗೊಳಿಸುವುದನ್ನು ಸಾಮರ್ಥ್ಯವನ್ನು ಸೇರಿಸುತ್ತದೆ. ಸಂಪೂರ್ಣ ದಾಖಲಾತಿಗಳಿಗೆ http://udk.openoffice.org/python/python-bridge.html ಅನ್ನು ನೋಡಿ."
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
+#, fuzzy
 msgid  "Quickstarter"
 msgstr "ತಕ್ಷಣದ ಆರಂಭಗಾರ"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
+#, fuzzy
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
 msgstr "%PRODUCTNAME %PRODUCTVERSION ವು ಬೇಗನೆ ಆರಂಭಗೊಳ್ಳುವಂತೆ ಮಾಡಲು ಮೂಲ ಘಟಕಗಳನ್ನು ಗಣಕವು ಆರಂಭಗೊಳ್ಳುವಾಗ ಲೋಡ್‌ ಮಾಡಲಾಗುತ್ತದೆ."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
+#, fuzzy
 msgid  "Software Development Kit (SDK)"
 msgstr "ತಂತ್ರಾಂಶ ಅಭಿವೃದ್ಧಿ ಕಿಟ್‌ (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
+#, fuzzy
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
 msgstr "SDKಯು ಆಫೀಸ್‌ನೊಂದಿಗೆ ಹಾಗು ಆಫೀಸ್‌ಗಾಗಿ ಪ್ರೋಗ್ರಾಂ ಮಾಡಲು ಅವಶ್ಯಕವಾದ ಸಲಕರಣೆಗಳನ್ನು, ಉದಾಹರಣೆಗಳನ್ನು ಮತ್ತು ದಸ್ತಾವೇಜುಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ."
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "ವಿಂಡೋಸ್ ಎಕ್ಸ್‍ಫ್ಲೋರರ್ ವಿಸ್ತರಣೆ"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+#, fuzzy
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
 msgstr "%PRODUCTNAME ನ ಬಗೆಗಿನ ದಸ್ತಾವೇಜುಗಳ ಮಾಹಿತಿಯನ್ನು ಚಿಕ್ಕ ಗಾತ್ರದ ಮುನ್ನೋಟವನ್ನು ತೋರಿಸಲು ಮೈಕ್ರೊಸಾಫ್ಟ್ ಇಂಟರ್ನೆಟ್ ಎಕ್ಸ್‍ಫ್ಲೋರರನ್ನು ಶಕ್ತಗೊಳಿಸುತ್ತದೆ."
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
+#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML ದಸ್ತಾವೇಜು"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
+#, fuzzy
 msgid  "Text Document"
 msgstr "ಪಠ್ಯ ದಸ್ತಾವೇಜು"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
 msgstr "ರೈಟರ್ ಅನ್ನು ಉಪಯೋಗಿಸಿಕೊಂಡು ಪತ್ರಗಳಲ್ಲಿ, ವರದಿಗಳಲ್ಲಿ, ದಸ್ತಾವೇಜುಗಳಲ್ಲಿ ಹಾಗು ಅಂತರ್ಜಾಲದ ಪುಟಗಳಲ್ಲಿ ಪಠ್ಯ ಹಾಗು ಗ್ರಾಫಿಕ್ಸುಗಳನ್ನು ರಚಿಸಲು ಹಾಗು ಸಂಪಾದಿಸಿ."
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+#, fuzzy
 msgid  "&New"
 msgstr "ಹೊಸ(&N)"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
+#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION ಪಠ್ಯ ದಸ್ತಾವೇಜು "
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
+#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION ಪ್ರಮುಖ ದಸ್ತಾವೇಜು"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
+#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION ಪಠ್ಯ ದಸ್ತಾವೇಜು ನಮೂನೆ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
+#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "ಓಪನ್‌ಡಾಕ್ಯುಮೆಂಟ್‌ ಪಠ್ಯ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
+#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "ಓಪನ್‌ಡಾಕ್ಯುಮೆಂಟ್‌ ಪಠ್ಯ ನಮೂನೆ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
+#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "ಓಪನ್‌ಡಾಕ್ಯುಮೆಂಟ್‌ ಪ್ರಮುಖ ದಸ್ತಾವೇಜು"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
+#, fuzzy
 msgid  "HTML Document Template"
 msgstr "HTML ದಸ್ತಾವೇಜು ನಮೂನೆ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
+#, fuzzy
 msgid  "Microsoft Word 97-2003 Document"
 msgstr "ಮೈಕ್ರೋ ಸಾಫ್ಟ್ ವರ್ಡ್ ೯೭-೨೦೦೩ ದಸ್ತಾವೇಜು"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
+#, fuzzy
 msgid  "Microsoft Word Document"
 msgstr "ಮೈಕ್ರೋ ಸಾಫ್ಟ್ ವರ್ಡ್ ದಸ್ತಾವೇಜು"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
+#, fuzzy
 msgid  "Microsoft Word 97-2003 Template"
 msgstr "ಮೈಕ್ರೋ ಸಾಫ್ಟ್ ವರ್ಡ್ ೯೭-೨೦೦೩ ನಮೂನೆ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
+#, fuzzy
 msgid  "Microsoft Word Template"
 msgstr "ಮೈಕ್ರೋಸಾಫ್ಟ್ ವರ್ಡ್ ನಮೂನೆ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
+#, fuzzy
 msgid  "Rich Text Document"
 msgstr "ಸಮೃದ್ಧ ಪಠ್ಯ ದಸ್ತಾವೇಜು"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
+#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME ರೈಟರ್"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
 msgstr "%PRODUCTNAME ರೈಟರ್ ಅನ್ನು ಉಪಯೋಗಿಸಿಕೊಂಡು ಪತ್ರಗಳಲ್ಲಿ, ವರದಿಗಳಲ್ಲಿ, ದಸ್ತಾವೇಜುಗಳಲ್ಲಿ ಹಾಗು ಅಂತರ್ಜಾಲದ ಪುಟಗಳಲ್ಲಿ ಪಠ್ಯ ಹಾಗು ಗ್ರಾಫಿಕ್ಸುಗಳನ್ನು ರಚಿಸಲು ಹಾಗು ಸಂಪಾದಿಸಿ."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
+#, fuzzy
 msgid  "Program Module"
 msgstr "ಪ್ರೊಗ್ರಾಂ ಘಟಕ"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
+#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME ರೈಟರ್ ಅನ್ವಯ"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
+#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "%PRODUCTNAME ರೈಟರ್ ಸಹಾಯ"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
+#, fuzzy
 msgid  "Help about %PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME ರೈಟರ್ ಬಗ್ಗೆ ಸಹಾಯ"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
+#, fuzzy
 msgid  "LaTeX Export"
 msgstr "LaTeX ರಫ್ತು"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
+#, fuzzy
 msgid  "LaTeX export filter for Writer documents."
 msgstr "ರೈಟರ್ ದಸ್ತಾವೇಜುಗಳಿಗಾಗಿನ LaTeX ರಫ್ತು ಶೋಧಕ."
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
+#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT ಮಾದರಿ ಶೋಧಕಗಳು"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
+#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT ಮಾದರಿ ಶೋಧಕಗಳು"

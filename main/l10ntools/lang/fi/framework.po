@@ -136,24 +136,24 @@ msgid  "Retry"
 msgstr "Yritä uudelleen"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "%PRODUCTNAME ei voinut tallentaa tärkeitä sisäisiä tietoja johtuen riittämättömästä levytilasta seuraavassa sijainnissa:\n%PATH\n\nEt voi jatkaa %PRODUCTNAME-ohjelmiston käyttöä ennen kuin vapautat lisää levytilaa kyseisessä sijainnissa.\n\nKun olet vapauttanut levytilaa, paina 'Yritä uudelleen' yrittääksesi tallentaa tiedot uudelleen.\n\n"
+msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
+msgstr ""
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
 msgstr "~Palauta"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "Käyttöliittymän asetusten lataaminen epäonnistui. Sovellus suljetaan.\nYritä asentaa sovellus uudelleen."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "Käyttöliittymän asetusten lataaminen epäonnistui. Sovellus suljetaan.\nYritä poistaa oma sovelluksen käyttäjäprofiilisi."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "Käyttöliittymän asetusten lataaminen epäonnistui. Sovellus suljetaan.\nYritä poistaa ensin oma sovelluksen käyttäjäprofiilisi, tai asenna sovellus uudelleen."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

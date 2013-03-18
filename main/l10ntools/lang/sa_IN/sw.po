@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "लेख्यपत्रस्य पूर्णसञ्चयं न शक्यते ।"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "एतत् HTML लेख्यपत्रं %PRODUCTNAME बेसिकमैक्रो समावेशयति । \n  तान् वर्तमाननिर्यात-स्थापनया सह न सञ्चितः आसीत् ।"
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "रिक्तपृष्ठम्"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "भवतः पार्श्वे श्लेष्यसंग्रहे बहु अधिकं लेखाः सञ्चिताः सन्ति । \n किं श्लेष्यसंग्रहसामाग्री अन्यानुप्रयोगस्य कृते उपलब्धं भवितुं शक्नोति ?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "HTMLसंघटनायां रूपांतरणम् \nसूचनाहानेः कारणं भवितुं शक्नोति ।  \n किं भवान् लेख्यपत्रं सञ्चयितुम् इच्छति ?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "मूलकूटं तदा प्रदर्शयिष्यते यदा लेख्यपत्रं HTML  संघटनायां सञ्चयितुं  शक्यते । \n  किं भवान् लेख्यपत्रं HTML सघटनायां सञ्चयितुं  शक्यते ?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "भवतः लेख्यपत्रं पत्रसङ्केत-लेखाधिकरण-क्षेत्रं दधाति । किं भवान् प्रपत्र पत्रं मुद्रितुम् इच्छति ?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<प्रयोक्तृस्थापनाः>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "किं भवान् मूलभूत-प्रतिरूपस्य कृते योग्यताविकल्पान् परिवर्तितुम् इच्छति ? \n अयं सर्वस्यलेख्यपत्रस्य मूलभूत-प्रतिरूपं प्रभावितं करिष्यति ।"
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2896,8 +2896,8 @@ msgid  "Caption"
 msgstr "अनुशीर्षकः"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "अनुशीर्षकं स्वतः योजय \n यदा योजयति :"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "भवता अस्य संलग्नस्य कृते नूतननाम न निर्दिष्टः । यदि भवान् एकं दातुम् इच्छति, कृपया इदानीम् इमं टंकय ।"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "संदेशनिमज्जनलेख्यपत्रं ई-पत्रेण प्रेषणार्थं , %PRODUCTNAME कृते सूचना आवश्यकी अस्ति प्रयोगकुर्वनस्य ई-पत्रलेखायाः विषये \n \nई-पत्रलेखासूचनाम् इदानीं दातुम् इच्छति ?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "टिप्पणी :\nपृथक् ई-पत्र पत्रसङ्केतः अर्धविरामबिन्दुना च सह (;)."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "प्रेषण-असफलम् (असिद्ध-पत्रसङ्केतः)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "भवतः %PRODUCTNAME बहिःपेटिकायाम् इदानीम् ई-पत्रमस्ति । \nकिं भवान् कथञ्चित् बर्हिगमनम् इच्छति ?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "लेख्यपत्रान् संपादय"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "स्व लेख्यपत्रं लिख अथवा संपादय इदानीं यदि भवता पूर्वतः एतादृशं कार्यं न कृतम् । परिवर्तनानि सर्वान् निमज्जित-लेख्यपत्रान् प्रभावितं करिष्यति । \n\nक्लिक-क्रिया 'लेख्यपत्र-संपादय...'  विजार्डं अस्थायी रूपेण एकं लघु आयतने अपकर्षं करिष्यति  अतः भवान् संन्देशनिमज्जनं संपादितुं शक्नोति । लेख्यपत्रं संपादनानन्तरं, विजार्ड उपरि 'संदेश-निमज्जन विजार्ड मध्ये प्रतिगमय'  लघु आयतने क्लिक कृत्वा प्रतिगमय ।"
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "निवेदिता-श्लेष्यसंग्रह-संघटना नोपलभ्यते ।"
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "इयं वर्ग-संघटना प्राचीना अस्ति । \n अस्य परिवर्तनम् आवश्यकं भवितुं शक्नोति  अतः परिवर्तनानि  \n सञ्चयितुं शक्यते  \nकिम् इदानीं परिवर्तनीयम् ?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "पादटिप्पणी : "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "पठनमात्र सामग्रीं न परिवर्तितुं शक्यते । \n कोऽपि परिवर्तनं न स्वीकरिष्यते"
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "विकल्पाः"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "अंकितकं \"%1 / %2\" पूर्वतः विद्यते  । \nकिं भवान् एतस्य उपरि लेखितुम् इच्छति ?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6045,7 +6045,7 @@ msgstr "अन्तर्गतवस्तूनि"
 
 #: source/ui/fldui/javaedit.src#DLG_JAVAEDIT.STR_JAVA_EDIT.String.Text
 msgid  "Edit Script"
-msgstr "लिपिं संपादय"
+msgstr "लिपिं सम्पादय"
 
 #: source/ui/fldui/javaedit.src#DLG_JAVAEDIT.STR_JAVA_INSERT.String.Text
 msgid  "Insert Script"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "ब्रौस् कुरु..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "अन्यलेखाधिकरणैः सह लेखाधिकरणक्षेत्रैः द्वारा तव लेख्यपत्रे त्वया प्रविष्टानि लेखाधिकरणानि प्रतिसमाधातुम् एतं संवादम् उपयोजय। एकसमये एकमेव परिणामं कर्तुं शक्नोषि। बहुलवरणं सूच्यां वामे शक्यम्। \nलेखाधिकरणसञ्चिकां वृणोतुम् ब्रौस् पिञ्जम् उपयोजय।"
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "स्वतःसंघटना"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "स्वसंघटना पूर्णा। \nकिं भवान् संपूर्ण परिवर्तनान् स्वीकर्तुंम् अस्वीकर्तुं वा शक्यते ? \\ अथवा विशेष परिवर्तनं स्वीकर्तुंम् अस्वीकर्तुं वा शक्यते ।"
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "योगः"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "भवता एक असिद्ध-नाम अभिलिखतः। \n  अभिप्सिता स्वसंघटना न उत्पादयितुम् शक्यते । \n   एक-पृथक् नाम्ना सह पुनर्प्रयासं कुरू ।"
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "प्रथमस्तम्भः अनुशीर्षकं यथा"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "यदि वृता कोष्ठिका अभिप्सितलेखां न दधाति, लेखाप्रसरम् अधुना वृणु । \n \n स्तम्भान् पङ्क्ति-अंकितकान् च या कोष्ठिका दधाति तां समावेशय यदि भवान् स्व कोष्ठकपटे तां समावेशितुंम् इच्छति ।"
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "मुख्य-पाठ्यस्य परीक्षणं कर्तुम् इच्छति ?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "प्रदर्शय यत् निर्देशविकल्पस्य परीक्षणं कृतम् । \n  किं भवान् क्षेत्र-नाम्ना सह लेख्यपत्रं मुद्रितुम् इच्छति ?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "वाक्यस्य प्रथमं अक्षरं बृहद् कुरू"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "\"मानकः\" उद्धरणं %1custom%2 उद्धरणात् प्रतिस्थापय"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[पद्धतिः]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "अंतःक्रियात्मक-वर्तनीपरीक्षणं पूर्वतः सक्रियः अस्ति \n एकपृथक् लेख्यपत्रे"
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "अंतःक्रियात्मक-योजकचिह्नीकरणं पूर्वतः सक्रियः अस्ति \n एकपृथक् लेख्यपत्रे"
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"

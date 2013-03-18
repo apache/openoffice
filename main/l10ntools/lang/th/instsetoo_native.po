@@ -233,7 +233,7 @@ msgstr "เวลาที่เหลือ: {[1] นาที }{[2] วิน�
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_16
 #, fuzzy
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr "พื้นที่ความจำไม่เพียงพอ ปิดแอพพลิเคชันอื่นๆ ก่อนที่จะลองอีกครั้ง"
+msgstr "หน่วยความจำไม่เพียงพอ ปิดแอพพลิเคชันอื่นๆ ก่อนที่จะลองอีกครั้ง"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_17
 #, fuzzy
@@ -1071,54 +1071,64 @@ msgid  "Volume"
 msgstr "โวลุม"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_1
+#, fuzzy
 msgid  "Advertising application"
 msgstr "งานโฆษณา"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_2
+#, fuzzy
 msgid  "Allocating registry space"
 msgstr "แบ่งพื้นที่สำหรับ registry"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_3
+#, fuzzy
 msgid  "Free space: [1]"
 msgstr "พื้นที่ว่าง: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_4
+#, fuzzy
 msgid  "Searching for installed applications"
 msgstr "การค้นหาโปรแกรมที่ติดตั้งแล้ว"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_5
+#, fuzzy
 msgid  "Property: [1], Signature: [2]"
 msgstr "คุณสมบัติ: [1],  ลายมือชื่อ: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_6
+#, fuzzy
 msgid  "Binding executables"
 msgstr "Binding executables"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_7
+#, fuzzy
 msgid  "File: [1]"
-msgstr "แฟ้ม: [1]"
+msgstr "แฟ้ม : [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_8
+#, fuzzy
 msgid  "Creating IIS Virtual Roots..."
 msgstr "กำลังสร้างรูทเสมือนของ IIS"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_9
+#, fuzzy
 msgid  "Removing IIS Virtual Roots..."
 msgstr "กำลังเอารูทเสมือนของ IIS ออก..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
+#, fuzzy
 msgid  "Searching for qualifying products"
-msgstr "กำลังค้นหาผลิตภัณฑ์ที่ผ่านเกณฑ์ตรวจสอบ"
+msgstr "ค้นหาคุณสมบัติผลิตภัณฑ์"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 #, fuzzy
 msgid  "Computing space requirements"
-msgstr "คำนวณความต้องการพื้นที่ว่าง"
+msgstr "กำลังคำนวณความต้องการพื้นที่ว่าง"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_12
 #, fuzzy
 msgid  "Computing space requirements"
-msgstr "กำลังคำนวณความต้องการพื้นที่ว่าง"
+msgstr "กำลังคำนวณพื้นที่ที่จำเป็น"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_13
 #, fuzzy
@@ -1283,7 +1293,7 @@ msgstr "เผยแพร่ส่วนประกอบที่ผ่าน
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_45
 #, fuzzy
 msgid  "Component ID: [1], Qualifier: [2]"
-msgstr "Component ID: [1], Qualifier: [2]"
+msgstr " ID ส่วนประกอบ: [1], ตัวบ่งคุณสมบัติ: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_46
 #, fuzzy
@@ -1338,7 +1348,7 @@ msgstr "ลงทะเบียนแบบอักษร"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_56
 #, fuzzy
 msgid  "Font: [1]"
-msgstr "แบบอักษร: [1]"
+msgstr "แบบอักษร:[1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_57
 #, fuzzy
@@ -1348,7 +1358,7 @@ msgstr "ลงทะเบียนข้อมูล MIME"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
 #, fuzzy
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "ชนิดของเนื้อหา MIME: [1], ส่วนขยาย: [2]"
+msgstr "ชนิดของเนื้อหาMIME: [1], ส่วนขยาย: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 #, fuzzy
@@ -1398,7 +1408,7 @@ msgstr "กำลังลบแฟ้มสำเนา"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_68
 #, fuzzy
 msgid  "File: [1], Directory: [9]"
-msgstr "แฟ้ม: [1], ไดเรกทอรี: [9]"
+msgstr "แฟ้ม: [1], ไดเรกทอรี : [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 #, fuzzy
@@ -1408,7 +1418,7 @@ msgstr "ปรับข้อมูลสตริงสภาวะแวดล
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 #, fuzzy
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "ชื่อ: [1], ค่า: [2], การดำเนินการ [3]"
+msgstr "ชื่อ: [1], ค่า: [2], การดำเนินการ  [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 #, fuzzy
@@ -1700,7 +1710,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1719,8 +1729,9 @@ msgid  "&Unpack"
 msgstr "&Unpack"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+#, fuzzy
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 #, fuzzy
@@ -1795,7 +1806,7 @@ msgstr "ยกเลิก"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_5
 #, fuzzy
 msgid  "&Look in:"
-msgstr "&มองหาใน:"
+msgstr "&Look in:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_6
 #, fuzzy
@@ -1805,7 +1816,7 @@ msgstr "เรียกดูโฟลเดอร์ปลายทาง"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 #, fuzzy
 msgid  "{&MSSansBold8}Change Current Destination Folder"
-msgstr "{&MSSansBold8} เปลี่ยนโฟลเดอร์ปลายทางปัจจุบัน"
+msgstr "{&MSSansBold8}เปลี่ยนโฟลเดอร์ปลายทางปัจจุบัน"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_9
 #, fuzzy
@@ -1820,7 +1831,7 @@ msgstr "ตกลง"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_12
 #, fuzzy
 msgid  "&Folder name:"
-msgstr "&ชื่อโฟลเดอร์:"
+msgstr "&ชื่อโฟลเดอร์"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_13
 #, fuzzy
@@ -1885,7 +1896,7 @@ msgstr "&ถัดไป >"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 #, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10} ยินดีต้อนรับเข้าสู่ตัวช่วยสร้างการติดตั้งสำหรับ [ProductName]"
+msgstr "{&TahomaBold10}ยินดีต้อนรับเข้าสู่ตัวช่วยสร้างการติดตั้งสำหรับ [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 #, fuzzy
@@ -1895,7 +1906,7 @@ msgstr "ตัวช่วยสร้างการติดตั้งจะ
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 #, fuzzy
 msgid  "&No"
-msgstr "&ไม่ใช่"
+msgstr "&ไม่"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_30
 #, fuzzy
@@ -1918,8 +1929,9 @@ msgid  "Cancel"
 msgstr "ยกเลิก"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+#, fuzzy
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 #, fuzzy
@@ -1942,8 +1954,9 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}ข้อมูลลูกค้า"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+#, fuzzy
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 #, fuzzy
@@ -2098,7 +2111,7 @@ msgstr "&เปลี่ยน..."
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 #, fuzzy
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr "คลิกถัดไปเพื่อติดตั้งไปยังโฟลเดอร์นี้, หรือคลิกเปลี่ยนเพื่อติดตั้งไปยังโฟลเดอร์ที่ต่างออกไป"
+msgstr "คลิกถัดไปเพื่อติดตั้งไปยังโฟลเดอร์นี้ หรือคลิกเปลี่ยนเพื่อติดตั้งไปยังโฟลเดอร์ที่ต่างออกไป"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 #, fuzzy
@@ -2153,7 +2166,7 @@ msgstr "[INSTALLDIR]"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 #, fuzzy
 msgid  "Install [ProductName] to:"
-msgstr "ติดตั้ง [ProductName]ไปยัง :"
+msgstr "ติดตั้ง [ProductName] ไปยัง :"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 #, fuzzy
@@ -2168,7 +2181,7 @@ msgstr "ต้องการพื้น{&MSSansBold8}ที่ว่างบ�
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 #, fuzzy
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "วอลุ่มที่ทำเครื่องหมายมีพื้นที่ไม่เพียงพอสำหรับคุณสมบัตินี้ คุณสามารถเอาไฟล์ออกได้ เลือกติดตั้งคุณสมบัติต่ำลงในไดรฟ์หรือเลือกไดรฟ์อื่น"
+msgstr "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 #, fuzzy
@@ -2272,7 +2285,7 @@ msgstr "&ถัดไป >"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
 #, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}ยินดีต้อนรับเข้าสู่ตัวช่วยสร้างการติดตั้งสำหรับ [ProductName]"
+msgstr "{&TahomaBold10} ข้อต้อนรับเข้าสู่ตัวช่วยสร้างการติดตั้งสำหรับ [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 #, fuzzy
@@ -2527,22 +2540,22 @@ msgstr "คลิกเสร็จสิ้นเพื่อออกจาก
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 #, fuzzy
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "คุณสามารถทั้งเก็บหน่วยที่ติดตั้งไปแล้วในระบบเพื่อการติดตั้งในเวลาหลังหรือคุณสามารถฟื้นฟูระบบของคุณไปยังสถานะแรกเริ่มก่อนที่จะติดตั้ง"
+msgstr "คุณสามารถทำได้ทั้งการเก็บหน่วยที่ติดตั้งไปแล้วในระบบเพื่อการติดตั้งในภายหลัง หรือเรียกกลับคืนระบบของคุณไปยังสถานะแรกเริ่มก่อนที่จะติดตั้ง"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 #, fuzzy
 msgid  "Click Restore or Continue Later to exit the wizard."
-msgstr "คลิกซ่อมแซมหรือดำเนินการภายหลังเพื่อออกจากตัวช่วยสร้าง"
+msgstr "คลิกเรียกกลับคืนหรือดำเนินการภายหลังเพื่อออกจากตัวช่วยสร้าง"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 #, fuzzy
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}ตัวช่วยสร้างการติดตั้งเสร็จสิ้น"
+msgstr "{&TahomaBold10}ตัวช่วยสร้างการติดตั้งเสร็จสมบูรณ์"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 #, fuzzy
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr "ตัวช่วยสร้างถูกรบกวนก่อนที่[ProductName]จะติดตั้งสมบูรณ์"
+msgstr "ตัวช่วยสร้างเกิดปัญหาก่อน [ProductName] จะถูกติดตั้งอย่างสมบูรณ์"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 #, fuzzy

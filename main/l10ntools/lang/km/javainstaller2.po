@@ -152,12 +152,12 @@ msgid  "Create New Directory"
 msgstr "បង្កើត​ថត​ថ្មី"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "មិនមាន​ថត '${DIR}' ទេ ។\nតើ​អ្នក​ចង់​បង្កើត​វា​ឥឡូវទេ ?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "មិនមាន​ថត '${DIR}' ទេ ។\nតើ​អ្នក​ចង់​បង្កើត​វា​ឥឡូវ ឬ​ជ្រើស​ថត​ផ្សេងទៀត ?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -260,8 +260,8 @@ msgid  "To continue, click 'Next'."
 msgstr "ចុច 'បន្ទាប់' ដើម្បី​បន្ត ។"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "ចំណាំ ៖ ការ​ដំឡើង​នេះ​នឹង​ធ្វើ​រួចរាល់​ដោយ​មិនត្រូវការ​សិទ្ធិ​ជា root ទេ ។ ដូច្នេះ អ្នក​នឹង​មាន​មុខងារ​ដែល​បាន​បង្រួញ (Java Runtime Environment (JRE) មិន​អាច​ដំឡើង​បាន​ទេ ដោយ​ការ​រួមបញ្ចូល​ប្រព័ន្ធ​មិនអាច​ធ្វើ​ទៅបាន) ។\nចុច 'បោះបង់' ហើយ​ផ្លាស់ប្ដូរ​សិទ្ធិ​របស់​អ្នក​ទៅ​ជា​សិទ្ធិ root ប្រសិន​បើ​អ្នក​ចង់​ប្រើ​មុខងារ​ពេញលេញ ។"
+msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -432,8 +432,8 @@ msgid  "Analyzing ..."
 msgstr "កំពុង​វិភាគ ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "កំពុង​វិភាគ​មូលដ្ឋាន​ទិន្នន័យ\nសូម​រង់ចាំ ..."
+msgid  "Analyzing database\\nPlease wait a moment ..."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"

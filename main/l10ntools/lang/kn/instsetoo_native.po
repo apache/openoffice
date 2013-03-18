@@ -705,7 +705,7 @@ msgstr "ಈ ಸವಲತ್ತು ಮತ್ತು ಇದರ ಉಪಸವಲತ�
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
-msgstr "ಈ ಸವಲತ್ತು ಸೀಡಿಯಿಂದ ಚಲಾಯಿಸುವಂತೆ ಅನುಸ್ಥಾಪಿಸಲಾಗುವುದು."
+msgstr "ಈ ಸವಲತ್ತು ಸೀಡಿಯಿಂದ ಚಲಾಯಿಸುವಂತೆ ಅನುಸ್ಥಾಪಿಸಲಾಗುವುದು.."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_11
 msgid  "This feature will be installed on local hard drive."
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "%PRODUCTNAME %PRODUCTVERSION ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿಕೊಂಡಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "ಹೊರತೆಗೆ(&U)"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr " %PRODUCTNAME %PRODUCTVERSION ನ ಅನುಸ್ಥಾಪನಾ ಕಡತಗಳನ್ನು ಹೊರತೆಗೆದು, ಈ ಕೆಳಗಿನ ಕಡತಕೋಶದಲ್ಲಿ ಉಳಿಸಲಾಗುವುದು. %PRODUCTNAME ಅನ್ನು ನೀವು ಬೇರೆ ಕಡತಕೋಶದಲ್ಲಿ ಉಳಿಸಲು ಬಯಸಿದಲ್ಲಿ '\\ವೀಕ್ಷಿಸು\\' ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ ನಂತರ ನಿಮ್ಮ ಇಚ್ಛೆಯ ಕಡತಕೋಶವನ್ನು ಆರಿಸಿ."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1461,7 +1461,7 @@ msgstr "ಉದ್ದೇಶಿತ ಕಡತ ಕೋಶವನ್ನು ವೀಕ್
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 msgid  "{&MSSansBold8}Change Current Destination Folder"
-msgstr "{&MSSansBold8} ಈಗಿನ ಉದ್ದೇಶಿತ ಕಡತಕೋಶ ಬದಲಾಯಿಸು"
+msgstr "{&MSSansBold8} ಈಗಿನ ಉದ್ದೇಶಿತ ಕಡತಕೋಶವನ್ನು ಬದಲಾಯಿಸಿ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_9
 msgid  "Create new folder|"
@@ -1525,7 +1525,7 @@ msgstr "ಮುಂದಕ್ಕೆ(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10} [ProductName]ದ ಅನುಸ್ಥಾಪನಾ ಗಾರುಡಿ"
+msgstr "{&TahomaBold10} [ProductName] ದ ಅನುಸ್ಥಾಪನಾ ಗಾರುಡಿಗೆ ಸ್ವಾಗತ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "ರದ್ದುಮಾಡು"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}ಗ್ರಾಹಕರ ಮಾಹಿತಿ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1741,7 +1741,7 @@ msgstr "[INSTALLDIR]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
-msgstr "[ProductName]ನ್ನು ಇಲ್ಲಿ ಅನುಸ್ಥಾಪಿಸಿ:"
+msgstr "[ProductName] ನ್ನು ಇಲ್ಲಿ ಅನುಸ್ಥಾಪಿಸಿ:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 msgid  "&Next >"

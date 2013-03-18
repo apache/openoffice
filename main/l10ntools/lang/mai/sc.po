@@ -144,8 +144,8 @@ msgid  "Column Fields"
 msgstr "स्तंभ क्षेत्र"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_ROW.FixedText.Text
-msgid  "Row\nFields"
-msgstr "पंक्ति\nक्षेत्रसभ"
+msgid  "Row\\nFields"
+msgstr ""
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_DATA.FixedText.Text
 msgid  "Data Fields"
@@ -481,7 +481,7 @@ msgstr "स्वचालित रूपसँ (~A)"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANSTART.RadioButton.Text
 msgid  "~Manually at"
-msgstr " ई पर दस्ती रूपसँ (~M)"
+msgstr " एहि पर दस्ती रूपसँ (~M)"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_END.FixedLine.Text
 msgid  "End"
@@ -493,7 +493,7 @@ msgstr "स्वचालित प्रकारसँ (~u)"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANEND.RadioButton.Text
 msgid  "Ma~nually at"
-msgstr "ई पर दस्ती (~n)"
+msgstr " ई पर दस्ती (~n)"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_BY.FixedLine.Text
 msgid  "~Group by"
@@ -553,7 +553,7 @@ msgstr "इनपुट सहायता"
 
 #: source/ui/dbgui/validate.src#TAB_DLG_VALIDATION.1.TP_VALIDATION_ERROR.PageItem.Text
 msgid  "Error Alert"
-msgstr "त्रुटि चेतावनी"
+msgstr "त्रुटिक चेतावनी"
 
 #: source/ui/dbgui/validate.src#TAB_DLG_VALIDATION.PageItem.Text
 msgid  "Validity"
@@ -2268,8 +2268,8 @@ msgid  "~Discard"
 msgstr "उपेक्षा (~D)"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_QUERYREMOVE.String.Text
-msgid  "Should the entry\n#\nbe deleted?"
-msgstr "की ई प्रविष्टि केँ\n#\nमेटाएल जाना चाही?"
+msgid  "Should the entry\\n#\\nbe deleted?"
+msgstr ""
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_USERLISTS.STR_COPYLIST.String.Text
 msgid  "Copy List"
@@ -2712,8 +2712,8 @@ msgid  "Hide ~all"
 msgstr "सभ नुकाबू (~a)"
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FT_HINT.FixedText.Text
-msgid  "Cell protection is only effective after the current sheet has been protected. \n\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
-msgstr "सेलक सुरक्षा तखने प्रभावी अछि जकरा बाद मोजुदा शीट सँरक्षित कएल अछि. \n\n'दस्तावेजक सुरक्षा करू' चुनू 'अओजार' मेनूसँ, आओर 'शीट' निर्दिष्ट करू."
+msgid  "Cell protection is only effective after the current sheet has been protected. \\n\\nSelect 'Protect Document' from the 'Tools' menu, and specify 'Sheet'."
+msgstr ""
 
 #: source/ui/src/attrdlg.src#RID_SCPAGE_PROTECTION.FL_PROTECTION.FixedLine.Text
 msgid  "Protection"
@@ -2973,7 +2973,7 @@ msgstr "पंक्ति खण्डन मेटाबू"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DOOUTLINE.String.Text
 msgid  "View Details"
-msgstr "विवरण देखू"
+msgstr "विवरण देखाबू"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_REDOOUTLINE.String.Text
 msgid  "Hide details"
@@ -3009,11 +3009,11 @@ msgstr "स्वचालित बाहरक रूपरेखा"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SUBTOTALS.String.Text
 msgid  "Subtotals"
-msgstr "कुल जोड़"
+msgstr "उपजोड़"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 msgid  "Sort"
-msgstr "छांटू"
+msgstr "छांटू "
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 msgid  "Filter"
@@ -3232,8 +3232,8 @@ msgid  "No operations to execute"
 msgstr "चलाबए क' लेल कोनो काज नहि"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MAKEAUTOFILTER_0.String.Text
-msgid  "The range does not contain column headers.\nDo you want the first line to be used as column header?"
-msgstr "परिसर कॉलम हेडरक समाहित नहि करैछ.\nकी अहाँ पहिल पंक्तिकेँ कॉलम हेडरक रूपेँ प्रयोग कएल जहिना चाहैत छी?"
+msgid  "The range does not contain column headers.\\nDo you want the first line to be used as column header?"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_IMPORTDATA_0.String.Text
 msgid  "Error while importing data!"
@@ -3296,8 +3296,8 @@ msgid  "Search key not found."
 msgstr "खोज कुंजी नहि भेटल."
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_0.String.Text
-msgid  "Goal Seek successful.\n"
-msgstr "लक्ष्य प्राप्ति सफल.\n"
+msgid  "Goal Seek successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_1.String.Text
 msgid  "Insert result ("
@@ -3308,12 +3308,12 @@ msgid  ") into current cell?"
 msgstr ") वर्तमान कोष्ठ मे ?"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_3.String.Text
-msgid  "Goal Seek not successful.\n"
-msgstr "लक्ष्य खोज सफल नहि अछि.\n"
+msgid  "Goal Seek not successful.\\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_4.String.Text
-msgid  "No exact value found. \n"
-msgstr "कोनो सटीक मान नहि भेटल. \n"
+msgid  "No exact value found. \\n"
+msgstr ""
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SOLVE_5.String.Text
 msgid  "Insert closest value ("
@@ -3329,7 +3329,7 @@ msgstr "कुल जोड़"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_ERGEBNIS.String.Text
 msgid  "Result"
-msgstr "नतीजा"
+msgstr "परिणाम"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SPELLING.String.Text
 msgid  "Spellcheck"
@@ -3604,7 +3604,1087 @@ msgid  "Text Attributes"
 msgstr "पाठ गुण"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DELIMITER.String.Text
-msgid  "Do you really want to delete the # AutoFomat?"
+msgid  "\\"
+msgstr "\\"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGE.String.Text
+msgid  "PAGE"
+msgstr "पृष्ठ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_PAGES.String.Text
+msgid  "PAGES"
+msgstr "पृष्ठसभ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_DATE.String.Text
+msgid  "DATE"
+msgstr "दिनांक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TIME.String.Text
+msgid  "TIME"
+msgstr "समय"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_FILE.String.Text
+msgid  "FILE"
+msgstr "फाइल"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HFCMD_TABLE.String.Text
+msgid  "SHEET"
+msgstr "शीट"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTIONERR.String.Text
+msgid  "Protected cells can not be modified."
+msgstr "रक्षित कोष्ठकेँ नहि सुधार सकैछ."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_READONLYERR.String.Text
+msgid  "Document opened in read-only mode."
+msgstr "दस्तावेजकेँ केवल पढ़ब क'प्रकारमे खोलल अछि."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MATRIXFRAGMENTERR.String.Text
+msgid  "You cannot change only part of an array."
+msgstr "श्रेणी क' केवल एकटा भागकेँ नहि सुधार सकैछ."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEHEADER.String.Text
+msgid  "Header"
+msgstr "शीर्ष टिप्पणी"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PAGEFOOTER.String.Text
+msgid  "Footer"
+msgstr "पाद टिप्पणी"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERROR_STR.String.Text
+msgid  "Err:"
+msgstr "गलती:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NULL.String.Text
+msgid  "Error: Ranges do not intersect"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_DIV_ZERO.String.Text
+msgid  "Error: Division by zero"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_VALUE.String.Text
+msgid  "Error: Wrong data type"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_REF.String.Text
+msgid  "Error: Not a valid reference"
+msgstr "गलती: मान्य संदर्भ नहि अछि"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_NAME.String.Text
+msgid  "Error: Invalid name"
+msgstr "गलती: अमान्य नाम"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_FPO.String.Text
+msgid  "Error: Invalid numeric value"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NV.String.Text
+msgid  "Error: Value not available"
+msgstr "त्रुटि: मान उपलब्ध नहि अछि"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_ADDIN.String.Text
+msgid  "#ADDIN?"
+msgstr "#ADDIN?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_ADDIN.String.Text
+msgid  "Error: Add-in not found"
+msgstr "गलती: अतिरिक्त नहि भेटल"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO_MACRO.String.Text
+msgid  "#MACRO?"
+msgstr "#MACRO?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_MACRO.String.Text
+msgid  "Error: Macro not found"
+msgstr "गलती: मॉक्रो नहि भेटल"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_SYNTAX.String.Text
+msgid  "Internal syntactical error"
+msgstr "भीतरी वाक्य विन्यास गलती"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_ARG.String.Text
+msgid  "Error: Invalid argument"
+msgstr "गलती: अमान्य तर्क"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_PAR.String.Text
+msgid  "Error in parameter list"
+msgstr "पैरामीटर सूचीमे गलती"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_CHAR.String.Text
+msgid  "Error: Invalid character"
+msgstr "गलती: अमान्य संप्रतीक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_ILL_SEP.String.Text
+msgid  "Error: Invalid semicolon"
+msgstr "गलती: अमान्य अर्धविराम क' चिह्न"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_PAIR.String.Text
+msgid  "Error: in bracketing"
+msgstr "गलती: कोष्ठक ढालएमे"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_OP_EXP.String.Text
+msgid  "Error: Operator missing"
+msgstr "गलती: अनुपस्थित ऑपरेटर"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_VAR_EXP.String.Text
+msgid  "Error: Variable missing"
+msgstr "गलती: अनुपस्थित चर"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CODE_OVF.String.Text
+msgid  "Error: Formula overflow"
+msgstr "गलती: सूत्र अधिकता"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STR_OVF.String.Text
+msgid  "Error: String overflow"
+msgstr "गलती: स्ट्रिंग अधिकता"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_STACK_OVF.String.Text
+msgid  "Error: Internal overflow"
+msgstr "गलती: भीतरी अधिकता"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_CIRC_REF.String.Text
+msgid  "Error: Circular reference"
+msgstr "गलती: चक्राकार संदर्भ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LONG_ERR_NO_CONV.String.Text
+msgid  "Error: Calculation does not converge"
+msgstr "गलती: गणना एकत्र नहि भेल"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRIDCOLOR.String.Text
+msgid  "Grid color"
+msgstr "जाल क' रंग"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MERGE_NOTEMPTY.String.Text
+msgid  "Should the contents of the hidden cells be moved into the first cell?"
+msgstr "नुकाएल गेल कोष्ठ क' विषयकेँ पहिल कोष्ठमे स्थान परिवर्तन कएनाइ अछि?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CELL_FILTER.String.Text
+msgid  "Filter"
+msgstr "फिल्टर"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TARGETNOTFOUND.String.Text
+msgid  "The target database range does not exist."
+msgstr "लक्ष्य क' डाटाबेस परिसर अस्तित्वमे नहि अछि."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_EPS.String.Text
+msgid  "Invalid increment"
+msgstr "अमान्य बढ़ोतरी"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_OP.String.Text
+msgid  "MULTIPLE.OPERATIONS"
+msgstr "MULTIPLE.OPERATIONS"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TABOP.String.Text
+msgid  "Multiple operations"
+msgstr "बहुल संक्रिया"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFNAME.String.Text
+msgid  "You have entered an invalid name.\\nAutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_AREA.String.Text
+msgid  "Range"
+msgstr "परिसर"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_YES.String.Text
+msgid  "Yes"
+msgstr "हँ "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NO.String.Text
+msgid  "No"
+msgstr "नहि"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROTECTION.String.Text
+msgid  "Protection"
+msgstr "सुरक्षा"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
+msgid  "Formulas"
+msgstr "सूत्र"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
+msgid  "Hide"
+msgstr "नुकाबू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
+msgid  "Print"
+msgstr "छापू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID_AFAREA.String.Text
+msgid  "To apply an AutoFormat,\\na table range of at least\\n3x3 cells must be selected."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CASCADE.String.Text
+msgid  "(nested)"
+msgstr "(संजालित)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPTIONAL.String.Text
+msgid  "(optional)"
+msgstr "(वैकल्पिक)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REQUIRED.String.Text
+msgid  "(required)"
+msgstr "(आवश्यक)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALID.String.Text
+msgid  "invalid"
+msgstr "अमान्य"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EDITFUNCTION.String.Text
+msgid  "Edit Function"
+msgstr "फंक्शन संपादन करू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
+msgid  "Comments"
+msgstr "नोट्स"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
+msgid  "Are you sure you want to delete the selected sheet(s)?"
+msgstr "अहाँ वर्तमान शीटकेँ सचमुचमे स्थायी रूपेँ मेटओनाइ चाहैत छी?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELSCENARIO.String.Text
+msgid  "Are you sure you want to delete the selected scenario?"
+msgstr "अहाँ चुनल गेल विवरणकेँ सचमुचमे मेटओनाइ चाहैत छी?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII_WARNING.String.Text
+msgid  "Thesaurus is not available"
+msgstr "शब्दकोश उपलब्ध नहि अछि"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ERROR.String.Text
+msgid  "Spellcheck not available"
+msgstr "संप्रतीकक जाँच उपलब्ध नहि अछि"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_ASCII.String.Text
+msgid  "Import text files"
+msgstr "पाठ फाइलसभकेँ आयात करू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_ASCII.String.Text
+msgid  "Export Text File"
+msgstr "पाठ फाइलक' निर्यात"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_LOTUS.String.Text
+msgid  "Import Lotus files"
+msgstr "लोटस फाइलक' आयात"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DBF.String.Text
+msgid  "Import DBase files"
+msgstr "DBase फाइल क' आयात"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DBF.String.Text
+msgid  "DBase export"
+msgstr "DBase निर्यात"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_EXPORT_DIF.String.Text
+msgid  "Dif Export"
+msgstr "Dif निर्यात"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_DIF.String.Text
+msgid  "Dif Import"
+msgstr "Dif आयात"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_STANDARD.String.Text
+msgid  "Default"
+msgstr "मूलभूत"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT.String.Text
+msgid  "Result"
+msgstr "परिणाम"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_RESULT1.String.Text
+msgid  "Result2"
+msgstr "नतीजा2"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE.String.Text
+msgid  "Heading"
+msgstr "शीर्षक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_HEADLINE1.String.Text
+msgid  "Heading1"
+msgstr "शीर्षक1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT.String.Text
+msgid  "Report"
+msgstr "रिपोर्ट"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLENAME_REPORT1.String.Text
+msgid  "Report1"
+msgstr "रिपोर्ट1"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_EXCEL_WARNING.String.Text
+msgid  "is not available for spellchecking\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_THESAURUS_NO_STRING.String.Text
+msgid  "Thesaurus can only be used in text cells!"
+msgstr "शब्दकोशकेँ केवल पाठ कोष्ठमे उपयोग कए सकैछ!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_BEGIN_TAB.String.Text
+msgid  "Should the spellcheck be continued at the beginning of the current sheet?"
+msgstr "अहाँ संप्रतीकक' जाँचकेँ प्रचलित शीट क' प्रारंभसँ जारी रखनाइ चाहैत छी"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_NO_LANG.String.Text
+msgid  "is not available for the thesaurus.\\nPlease check your installation and install \\nthe desired language if necessary"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SPELLING_STOP_OK.String.Text
+msgid  "The spellcheck of this sheet has been completed."
+msgstr "ई शीटमे संप्रतीकक जाँच समाप्त भेल."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOLANGERR.String.Text
+msgid  "No language set"
+msgstr "कोनो भाषा सेट नहि अछि"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERT_TAB.String.Text
+msgid  "Insert Sheet"
+msgstr "जोड़ू शीट"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETE_TAB.String.Text
+msgid  "Delete Sheets"
+msgstr "शीट मेटाबू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RENAME_TAB.String.Text
+msgid  "Rename Sheet"
+msgstr "फिनु नाम दिअ' शीटक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_TAB_BG_COLOR.String.Text
+msgid  "Color Tab"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SET_MULTI_TAB_BG_COLOR.String.Text
+msgid  "Color Tabs"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MOVE_TAB.String.Text
+msgid  "Move Sheets"
+msgstr "शीट सभ स्थान परिवर्तन करू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_COPY_TAB.String.Text
+msgid  "Copy Sheet"
+msgstr "शीटक प्रतिलिपि"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_APPEND_TAB.String.Text
+msgid  "Append sheet"
+msgstr "शीट जोड़ू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SHOWTAB.String.Text
+msgid  "Show Sheet"
+msgstr "शीट देखाबू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HIDETAB.String.Text
+msgid  "Hide sheet"
+msgstr "शीट नुकाबू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_RTL.String.Text
+msgid  "Flip sheet"
+msgstr "शीट उनटू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TAB_R1C1.String.Text
+msgid  "Toggle the use of R1C1 notation"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_MAINTITLE.String.Text
+msgid  "Main Title"
+msgstr "मुख्य शीर्षक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_SUBTITLE.String.Text
+msgid  "Subtitle"
+msgstr "अधीन शीर्षक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_XTITLE.String.Text
+msgid  "X axis title"
+msgstr "X अक्ष शीर्षक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_YTITLE.String.Text
+msgid  "Y axis title"
+msgstr "Y अक्ष शीर्षक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHART_ZTITLE.String.Text
+msgid  "Z axis title"
+msgstr "Z अक्ष शीर्षक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ABSREFLOST.String.Text
+msgid  "The new table contains absolute references to other tables which may be incorrect!"
+msgstr "नवीन सारणीमे आन सारणीक' लेल रहएबला निश्चित संदर्भ गलत भए सकैत अछि!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAMECONFLICT.String.Text
+msgid  "Due to identical names, an existing range name in the destination document has been altered!"
+msgstr "समान नामक कारण, गंतव्य दस्तावेजमे मोजुदा परिसर नामकेँ चेतावनी देल गेल अछि!"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_AUTOFILTER.String.Text
+msgid  "AutoFilter not possible"
+msgstr "स्वचालित फिल्टर कएनाइ संभव नहि अछि"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_1.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the sheet. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME कैल्क गणना शीट क' प्रारंभ तक खोज कएलक. की अहाँ अंतसँ खोज जारी रखनाइ चाहैत छी?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_2.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the end of the sheet. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME कैल्क गणना शीट क' अंत तक खोज कएल. की अहाँ प्रारंभ सँ खोज जारी रखनाइ चाहैत छी?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_3.String.Text
+msgid  "Find & Replace"
+msgstr "ढूंढू आओर प्रतिस्थापन"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_4.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the beginning of the document. Do you want to continue at the end?"
+msgstr "%PRODUCTNAME गणना दस्तावेज क' प्रारंभ तक खोज कएलक. की अहाँ अँतसँ खोज जारी रखनाइ चाहैत छी?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_SEARCHANDREPLACE_5.String.Text
+msgid  "%PRODUCTNAME Calc has searched to the end of the document. Do you want to continue at the beginning?"
+msgstr "%PRODUCTNAME कैल्क गणना दस्तावेजक' अंत तक खोज कएलक. की अहाँ प्रारंभसँ खोज जारी रखनाइ चाहैत छी?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_REPLACE.String.Text
+msgid  "Replace existing definition of #?"
+msgstr "# क' मोजुदा परिभाषाकेँ प्रतिस्थापित कएनाइ अछि ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CREATENAME_MARKERR.String.Text
+msgid  "Invalid selection for range names"
+msgstr "परिसर नामक' लेल अमान्य चुनाव"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CONSOLIDATE_ERR1.String.Text
+msgid  "References can not be inserted above the source data."
+msgstr "श्रोत आंकड़ाक उप्पर संदर्भकेँ नहि जोड़ सकैछ."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCENARIO_NOTFOUND.String.Text
+msgid  "Scenario not found"
+msgstr "विवरण नहि भेटल"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELENTRY.String.Text
+msgid  "Do you really want to delete the entry #?"
+msgstr " की अहाँ # प्रविष्टिकेँ सचमुचमे मेटओनाइ चाहैत छी?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_OBJECT.String.Text
+msgid  "Objects/graphics"
+msgstr "वस्तु/आलेखी"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_CHART.String.Text
+msgid  "Charts"
+msgstr "चार्ट"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_DRAWINGS.String.Text
+msgid  "Drawing Objects"
+msgstr "रेखाचित्र वस्तु"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_SHOW.String.Text
+msgid  "Show"
+msgstr "देखाबू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
+msgid  "Hide"
+msgstr "नुकाबू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
+msgid  "Top to bottom"
+msgstr "शीर्ष सँ तल"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_LEFTRIGHT.String.Text
+msgid  "Left-to-right"
+msgstr "बम्माँ तरफसँ दहिन्ना"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
+msgid  "Comments"
+msgstr "टिप्पणी"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
+msgid  "Grid"
+msgstr "जाल"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_HEADERS.String.Text
+msgid  "Row & Column Headers"
+msgstr "पंक्ति आओर कॉलम शीर्षक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FORMULAS.String.Text
+msgid  "Formulas"
+msgstr "सूत्र"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NULLVALS.String.Text
+msgid  "Zero Values"
+msgstr "शून्य मूल्य"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_PRINTDIR.String.Text
+msgid  "Print direction"
+msgstr "छपाइ दिशा"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_FIRSTPAGENO.String.Text
+msgid  "First page number"
+msgstr "पहिल पृष्ठ संख्या"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE.String.Text
+msgid  "Reduce/enlarge printout"
+msgstr "छपाइ कएल शीटकेँ घटाबू/बढ़ाबू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETOPAGES.String.Text
+msgid  "Fit print range(s) on number of pages"
+msgstr "कईटा पृष्ठमे छपाइ क्षेत्रसीमा(सभ) फिट करू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALETO.String.Text
+msgid  "Fit print range(s) to width/height"
+msgstr "चओड़ाइ / उँचाइमे छपाइ क्षेत्रसीमा(सभ) फिट करू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_WIDTH.String.Text
+msgid  "Width"
+msgstr "चओड़ाइ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_HEIGHT.String.Text
+msgid  "Height"
+msgstr "उँचाइ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_PAGES.String.Text
+msgid  "%1 page(s)"
+msgstr "%1 पृष्ठ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_SCALE_AUTO.String.Text
+msgid  "automatic"
+msgstr "स्वचालित"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_STAT.String.Text
+msgid  "Statistics"
+msgstr "सांख्यिकी"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERROR.String.Text
+msgid  "The link could not be updated."
+msgstr "लिंककेँ अद्यतन नहि कए सकैछ."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORFILE.String.Text
+msgid  "File:"
+msgstr "फाइल:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_LINKERRORTAB.String.Text
+msgid  "Sheet:"
+msgstr "शीट:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OVERVIEW.String.Text
+msgid  "Overview"
+msgstr "सारांश"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_INFO.String.Text
+msgid  "Doc.Information"
+msgstr "दस्तावेज सूचना"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_CREATED.String.Text
+msgid  "Created"
+msgstr "उत्पन्न कएल"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_MODIFIED.String.Text
+msgid  "Modified"
+msgstr "सुधार कएल"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_PRINTED.String.Text
+msgid  "Printed"
+msgstr "छपाइ कएल"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_THEME.String.Text
+msgid  "Subject"
+msgstr "विषय"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_KEYWORDS.String.Text
+msgid  "Key words"
+msgstr "प्रधान शब्द"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_COMMENT.String.Text
+msgid  "Comments"
+msgstr "टिप्पणी"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_BY.String.Text
+msgid  "by"
+msgstr "सँ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ON.String.Text
+msgid  "on"
+msgstr "पर"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RELOAD_TABLES.String.Text
+msgid  "This file contains links to other files.\\nShould they be updated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_REIMPORT_AFTER_LOAD.String.Text
+msgid  "This file contains queries. The results of these queries were not saved.\\nDo you want these queries to be repeated?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILTER_TOOMANY.String.Text
+msgid  "Too many conditions"
+msgstr "बहुत बेसी शर्त"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INSERT_FULL.String.Text
+msgid  "Filled cells cannot be shifted\\nbeyond the sheet."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABINSERT_ERROR.String.Text
+msgid  "The table could not be inserted."
+msgstr "सारणीकेँ नहि जोड़ सकैछ."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABREMOVE_ERROR.String.Text
+msgid  "The sheets could not be deleted."
+msgstr "शीटकेँ नहि मेटाएब सकैछ."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_ERROR.String.Text
+msgid  "The contents of the clipboard could not be pasted."
+msgstr "क्लिपबोर्डक विषयकेँ नहि साटल जाए सकैछ."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_FULL.String.Text
+msgid  "There is not enough space on the sheet to insert here."
+msgstr "एतय जोड़बाक' लेल शीटमे जगह अपर्याप्त अछि."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PASTE_BIGGER.String.Text
+msgid  "The content of the clipboard is bigger than the range selected.\\nDo you want to insert it anyway?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_NOREF.String.Text
+msgid  "No references found."
+msgstr "कोनो संदर्भ नहि भेटल."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LINKOVERLAP.String.Text
+msgid  "Source and destination must not overlap."
+msgstr "श्रोत आओर नियत स्थान ओवरलॉप नहि भए सकैत अछि."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_GRAPHICNAME.String.Text
+msgid  "Graphics"
+msgstr "आलेखी"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_INVALIDNAME.String.Text
+msgid  "Invalid name."
+msgstr "अमान्य नाम."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_MACRONOTFOUND.String.Text
+msgid  "Selected macro not found."
+msgstr "चुनल गेल मॉक्रो नहि भेटल."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_VALID_DEFERROR.String.Text
+msgid  "Invalid value."
+msgstr "अमान्य मूल्य."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_CALCULATING.String.Text
+msgid  "calculating"
+msgstr "गणना कएनाइ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_SORTING.String.Text
+msgid  "sorting"
+msgstr "छांटनाइ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_HEIGHTING.String.Text
+msgid  "Adapt row height"
+msgstr "पंक्ति उँचाइ स्वीकार करू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PROGRESS_COMPARING.String.Text
+msgid  "Compare #"
+msgstr "तुलना करू #"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DETINVALID_OVERFLOW.String.Text
+msgid  "The maximum number of invalid cells has been exceeded.\\nNot all invalid cells have been marked."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_DELETE.String.Text
+msgid  "Delete contents"
+msgstr "विषय सभकेँ मेटाबू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUICKHELP_REF.String.Text
+msgid  "%1 R  x %2 C"
+msgstr "%1 R  x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FUNCTIONLIST_MORE.String.Text
+msgid  "More..."
+msgstr " बेसी..."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INVALID_AREA.String.Text
+msgid  "Invalid range"
+msgstr "अवैध परिसर"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_INNER.String.Text
+msgid  "Pivot Table Value"
+msgstr "आंकड़ापाइलट मान"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_RESULT.String.Text
+msgid  "Pivot Table Result"
+msgstr "आंकड़ापाइलट परिणाम"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_CATEGORY.String.Text
+msgid  "Pivot Table Category"
+msgstr "आंकड़ापाइलट श्रेणी"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TITLE.String.Text
+msgid  "Pivot Table Title"
+msgstr "आंकड़ापाइलट शीर्षक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_FIELDNAME.String.Text
+msgid  "Pivot Table Field"
+msgstr "आंकड़ापाइलट क्षेत्र"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_STYLE_TOP.String.Text
+msgid  "Pivot Table Corner"
+msgstr "आंकड़ापाइलट कोना"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_FILTER.String.Text
+msgid  "Filter"
+msgstr "फिल्टर"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SORT.String.Text
+msgid  "Sort"
+msgstr "छांटू "
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_SUBTOTAL.String.Text
+msgid  "Subtotals"
+msgstr "उपजोड़"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_OPERATION_NONE.String.Text
+msgid  "None"
+msgstr "कोनो नहि"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_IMPORT_REPLACE.String.Text
+msgid  "Do you want to replace the contents of #?"
+msgstr "अहाँ # क' विषय सभकेँ प्रतिस्थापित कएनाइ चाहैत छी?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_WIDTH.String.Text
+msgid  "Width:"
+msgstr "चओड़ाइ:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HEIGHT.String.Text
+msgid  "Height:"
+msgstr "उँचाइ:"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_HIDE.String.Text
+msgid  "Hide"
+msgstr "नुकाबू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_INSERTOBJ.String.Text
+msgid  "The object could not be inserted."
+msgstr "वस्तुकेँ नहि जोड़ सकैछ."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_BLANK.String.Text
+msgid  "<empty>"
+msgstr "<खाली>"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_CELL.String.Text
+msgid  "Cell #1 changed from '#2' to '#3'"
+msgstr "कोष्ठ #1केँ '#2' सँ '#3' मे परिवर्तन कएल"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_INSERT.String.Text
+msgid  "#1 inserted"
+msgstr "#1 जोड़लक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE.String.Text
+msgid  "#1deleted"
+msgstr "#1मेटओलक"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE.String.Text
+msgid  "Range moved from #1 to #2"
+msgstr "परिसरकेँ #1 सँ #2केँ स्थान परिवर्तन कएल अछि"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING_TITLE.String.Text
+msgid  "Exit Recording"
+msgstr "रेकॉर्डिंग सँ निकास"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_END_REDLINING.String.Text
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CLOSE_ERROR_LINK.String.Text
+msgid  "The document can not be closed while a link is being updated."
+msgstr "लिंककेँ अद्यतन करबाक समय दस्तावेजकेँ बन्न नहि कए सकैछ."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_RESIZEMATRIX.String.Text
+msgid  "Adapt array area"
+msgstr "श्रेणी क्षेत्र स्वीकार करू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_TIP_RESIZEMATRIX.String.Text
+msgid  "Array formula  %1 R x %2 C"
+msgstr "श्रेणी सूत्र  %1 R x %2 C"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_MACRO_WARNING.String.Text
+msgid  "This document contains macro function calls.\\nDo you want to run them?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_HANGULHANJA.String.Text
+msgid  "Hangul/Hanja Conversion"
+msgstr "हांगुल/हांजा रूपांतरण"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_CELL.String.Text
+msgid  "Select Cell"
+msgstr "सेल चुनू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_RANGE.String.Text
+msgid  "Select Range"
+msgstr "परिसर चुनू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DBRANGE.String.Text
+msgid  "Select Database Range"
+msgstr "डाटाबेस परिसर चुनू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_ROW.String.Text
+msgid  "Go To Row"
+msgstr "पंक्तिमे जाउ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_SHEET.String.Text
+msgid  "Go To Sheet"
+msgstr "शीटमे जाउ"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_INPUT_DEFINE.String.Text
+msgid  "Define Name for Range"
+msgstr "परिसरक नाम परिभाषित करू"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_SELECTION.String.Text
+msgid  "The selection needs to be rectangular in order to name it."
+msgstr "एकरा नाम देबाक लेल चयनक आयातकार होएब चाही."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_NAME_ERROR_NAME.String.Text
+msgid  "You must enter a valid reference or type a valid name for the selected range."
+msgstr "अहाँ जरूर एकटा वैध संदर्भ दिअ' अथवा चुनलका परिसरक लेल एकटा वैध नाम टँकित करू."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_MOVE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in unintended changes to cell references in formulas."
+msgstr "चेतावनी: ई क्रिया सेल संदर्भसभकेँ सूत्रसभमे अनिच्छित परिवर्तनसभक रूपमे आबैछ."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_CHANGED_DELETE_REJECTION_WARNING.String.Text
+msgid  "WARNING: This action may have resulted in references to the deleted area not being restored."
+msgstr "चेतावनी: ई क्रिया नहि जमा कएल मेटाएल क्षेत्रमे संदर्भसभमे आबैछ."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_NONE_IN_BRACKETS.String.Text
+msgid  "(none)"
+msgstr "(कोनो नहि)"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF.String.Text
+msgid  "of"
+msgstr "क'"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_OF_QUESTION.String.Text
+msgid  "of ?"
+msgstr "क' ?"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CREATED_BY.String.Text
+msgid  "Created by"
+msgstr "सँ उत्पन्न"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CONFIDENTIAL.String.Text
+msgid  "Confidential"
+msgstr "गोपनीय"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOMIZED.String.Text
+msgid  "Customized"
+msgstr "पंसदीदा"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_HF_CUSTOM_FOOTER.String.Text
+msgid  "Custom footer"
+msgstr "पसंदीदा पाद टिप्पणी"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_CHINESE_TRANSLATION.String.Text
+msgid  "Chinese conversion"
+msgstr "चीनी अनुवाद"
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOT_INPUT.String.Text
+msgid  "You cannot change this part of the pivot table."
+msgstr "अहाँ DataPilot सारणीकेँ ई हिस्साकेँ बदएल नहि सकैत छी."
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_MANUAL.String.Text
+msgid  "Manual"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_RECALC_AUTO.String.Text
+msgid  "Automatic"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_LONG_NESTED_ARRAY.String.Text
+msgid  "Nested arrays are not supported."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_TEXTTOCOLUMNS.String.Text
+msgid  "Text to Columns"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_UPDATED.String.Text
+msgid  "Your spreadsheet has been updated with changes saved by other users."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLBESAVED.String.Text
+msgid  "The spreadsheet must be saved now to activate sharing mode.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_WILLNOTBESAVED.String.Text
+msgid  "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_DISABLESHARED.String.Text
+msgid  "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\\n\\nDo you want to continue?"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DOC_NOLONGERSHARED.String.Text
+msgid  "This spreadsheet is no longer in shared mode.\\n\\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_SHARED_DOC_WARNING.String.Text
+msgid  "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\\n\\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_TRY_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nSharing mode of a locked file cannot be disabled. Try again later."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_FILE_LOCKED_SAVE_LATER.String.Text
+msgid  "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\\n\\nTry again later to save your changes."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNKNOWN_USER.String.Text
+msgid  "Unknown User"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_CELL.String.Text
+msgid  "Cell Styles"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_STYLE_FAMILY_PAGE.String.Text
+msgid  "Page Styles"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_ERR_DATAPILOTSOURCE.String.Text
+msgid  "Pivot table source data is invalid."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_FIRSTROWEMPTYERR.String.Text
+msgid  "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_PIVOT_ONLYONEROWERR.String.Text
+msgid  "Pivot table needs at least two rows of data to create or refresh."
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_SECONDS.String.Text
+msgid  "Seconds"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MINUTES.String.Text
+msgid  "Minutes"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_HOURS.String.Text
+msgid  "Hours"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_DAYS.String.Text
+msgid  "Days"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_MONTHS.String.Text
+msgid  "Months"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_QUARTERS.String.Text
+msgid  "Quarters"
+msgstr ""
+
+#: source/ui/src/globstr.src#RID_GLOBSTR.STR_DPFIELD_GROUP_BY_YEARS.String.Text
+msgid  "Years"
+msgstr ""
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.TabDialog.Text
+msgid  "Character"
+msgstr "संप्रतीक"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+msgid  "Font"
+msgstr "फाँट"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr "फाँट प्रभाव"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+msgid  "Font Position"
+msgstr "फाँट क' स्थान"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_CHAR.1.PushButton.Text
+msgid  "Back"
+msgstr "पाछाँ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.TabDialog.Text
+msgid  "Paragraph"
+msgstr "अनुच्छेद"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+msgid  "Indents & Spacing"
+msgstr "हाशिया आओर अंतर देनाइ"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+msgid  "Alignment"
+msgstr "संरेखण"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+msgid  "Asian Typography"
+msgstr "एशियाई टाइपोग्राफी"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+msgid  "Tab"
+msgstr "टॉब"
+
+#: source/ui/src/textdlgs.src#RID_SCDLG_PARAGRAPH.1.PushButton.Text
+msgid  "Back"
+msgstr "पाछाँ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.ModalDialog.Text
+msgid  "AutoFormat"
+msgstr "स्वप्रारूप"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMAT.FixedLine.Text
+msgid  "F~ormat"
+msgstr "प्रारूप (~o)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADJUST.CheckBox.Text
+msgid  "A~utoFit width and height"
+msgstr "चओड़ाइ आओर उँचाइ अपने सटीक बनाबू"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_BORDER.CheckBox.Text
+msgid  "~Borders"
+msgstr "किनार (~B)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_FONT.CheckBox.Text
+msgid  "F~ont"
+msgstr "फाँट (~o)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_PATTERN.CheckBox.Text
+msgid  "~Pattern"
+msgstr "नमूना (~P)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ALIGNMENT.CheckBox.Text
+msgid  "Alignmen~t"
+msgstr "संरेखण (~t)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_NUMFORMAT.CheckBox.Text
+msgid  "~Number format"
+msgstr "संख्या प्रारूप (~N)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.FL_FORMATTING.FixedLine.Text
+msgid  "Formatting"
+msgstr "संरूपित कएनाइ"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_ADD.PushButton.Text
+msgid  "~Add..."
+msgstr "जोडू (~A)..."
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "मेटाबू (~D)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.BTN_RENAME.PushButton.Text
+msgid  "~Rename"
+msgstr "फिनु नाम दिअ' (~R)"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_TITLE.String.Text
+msgid  "Add AutoFormat"
+msgstr "स्वचालित प्रारूप जोडू"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_RENAME_TITLE.String.Text
+msgid  "Rename AutoFormat"
+msgstr "स्वचालित प्रारूपकेँ फिनु नाम दिअ'"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_ADD_LABEL.String.Text
+msgid  "Name"
+msgstr "नाम"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_TITLE.String.Text
+msgid  "Delete AutoFormat"
+msgstr "स्वचालित प्रारूप मेटाबू"
+
+#: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_DEL_MSG.String.Text
+msgid  "Do you really want to delete the # AutoFormat?"
 msgstr ""
 
 #: source/ui/src/autofmt.src#RID_SCDLG_AUTOFORMAT.STR_BTN_CLOSE.String.Text
@@ -3725,7 +4805,7 @@ msgstr "सभ सँ छोट"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Largest %"
-msgstr "सभ सँ बड़ %"
+msgstr "सबसँ पैघ %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Smallest %"
@@ -3973,7 +5053,7 @@ msgstr "कॉपी क' परिणाम एकरामे (~r)..."
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_DEST_PERS.CheckBox.Text
 msgid  "~Keep filter criteria"
-msgstr "फिल्टर मापदँड राखू (~K)"
+msgstr "फिल्टरक मापदँड राखू (~K)"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.RB_COPY_AREA.ImageButton.QuickHelpText
 msgid  "Shrink"
@@ -4213,7 +5293,7 @@ msgstr "डाटाबेस क्षेत्र"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "बतबैछ जे कओन डाटाबेसक क्षेत्र (स्तँभ)केँ खोज मापदँडक लेल प्रयुक्त कएल जएनाइ अछि."
+msgstr "बतबैछ जे कओन डाटाबेसक क्षेत्र (स्तँभ)केँ खोज मापदँडक लेल प्रयुक्त कएल जाएनाइ अछि."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.6.String.Text
 msgid  "Search criteria"
@@ -4241,7 +5321,7 @@ msgstr "डाटाबेस क्षेत्र"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.5.String.Text
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "बतबैछ जे कओन डाटाबेसक क्षेत्र (स्तँभ)केँ खोज मापदँडक लेल प्रयुक्त कएल जएनाइ अछि."
+msgstr "बतबैछ जे कओन डाटाबेसक क्षेत्र (स्तँभ)केँ खोज मापदँडक लेल प्रयुक्त कएल जाएनाइ अछि."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.6.String.Text
 msgid  "Search criteria"
@@ -4577,7 +5657,7 @@ msgstr "महिनाक श्रृंखलाबद्ध दिनां�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 msgid  "Number"
-msgstr "सँख्या"
+msgstr "संख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 msgid  "The internal number for the date."
@@ -4601,7 +5681,7 @@ msgstr "दिनांक_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.5.String.Text
 msgid  "The end date for calculating the difference in days."
-msgstr "दिनमे अंतरक गनबाक लेल अंतिम तिथि."
+msgstr "दिवससभमे अँतर गनए लेल अँतिम तिथि."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
@@ -4773,7 +5853,7 @@ msgstr "तिथिक आँतरिक सँख्या."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.4.String.Text
 msgid  "mode"
-msgstr "प्रकार"
+msgstr "मोड"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.5.String.Text
 msgid  "Indicates the first day of the week (1 = Sunday, other values = Monday)."
@@ -4853,7 +5933,7 @@ msgstr "NPER"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "भुगतानक अवधि. कालक कुल सँख्या जकरामे पेंसन भुगतान कएल जाइछ."
+msgstr "भुगतान अवधि. वार्षिक वेतन (पेंशन) चुकाबए क' कुल अवधिक संख्या."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 msgid  "PMT"
@@ -4941,7 +6021,7 @@ msgstr "NPER"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "भुगतान अवधि. वार्षिक वेतन (पेंशन) चुकाबए क' कुल अवधिक संख्या."
+msgstr "भुगतानक अवधि. कालक कुल सँख्या जकरामे पेंसन भुगतान कएल जाइछ."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.6.String.Text
 msgid  "PV"
@@ -5033,7 +6113,7 @@ msgstr "प्रति अवधि सूइदक दर."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 msgid  "Period"
-msgstr "अवघि"
+msgstr "अवधि"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.5.String.Text
 msgid  "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one."
@@ -5241,11 +6321,11 @@ msgstr "अधिग्रहणक खरच. सँपत्तिक आर�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.4.String.Text
 msgid  "Salvage"
-msgstr "उबारनाइ"
+msgstr "उबारना"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "उबारनाइ: एकर जीवनक अँतमे सँपत्तिकेँ बचल मान"
+msgstr "भ्रंशोद्धार: एकर जीवनक अँतमे सँपत्तिकेँ बचल मान."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 msgid  "Life"
@@ -5277,7 +6357,7 @@ msgstr "अधिग्रहण दाम. परिसंपत्ति क' 
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.4.String.Text
 msgid  "Salvage"
-msgstr "उबारनाइ"
+msgstr "उबारना"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
@@ -5493,7 +6573,7 @@ msgstr "अवधिक लेल छूट क' दर."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.4.String.Text
 msgid  "value "
-msgstr "मान"
+msgstr "मूल्य "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.5.String.Text
 msgid  "Value 1, value 2,... are 1 to 30 arguments representing payments and income."
@@ -5645,11 +6725,11 @@ msgstr "जँ मूल्य, संदर्भ अछि तँ TRUEके�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.2.String.Text
 msgid  "value"
-msgstr "मूल्य"
+msgstr "मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 msgid  "The value to be tested."
-msgstr "मान जकरा जाँचल जाएनाइ अछि."
+msgstr "मान जकरा जाँचल जएनाइ अछि."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.1.String.Text
 msgid  "Returns TRUE if the value is an error value not equal to #N/A."
@@ -5657,7 +6737,7 @@ msgstr "जँ मूल्य एकटा गलती मूल्य अछ�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.2.String.Text
 msgid  "value"
-msgstr "मूल्य"
+msgstr "मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.3.String.Text
 msgid  "The value to be tested."
@@ -5669,7 +6749,7 @@ msgstr "जँ मूल्य, गलत मूल्य अछि तँ TRUE�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.2.String.Text
 msgid  "value"
-msgstr "मूल्य"
+msgstr "मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.3.String.Text
 msgid  "The value to be tested."
@@ -5681,7 +6761,7 @@ msgstr "जँ मूल्य, एकटा खाली कोष्ठके�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.2.String.Text
 msgid  "value"
-msgstr "मूल्य"
+msgstr "मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.3.String.Text
 msgid  "The value to be tested."
@@ -5693,7 +6773,7 @@ msgstr "जँ मूल्य मे एकटा तर्कानुसा�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.2.String.Text
 msgid  "value"
-msgstr "मूल्य"
+msgstr "मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.3.String.Text
 msgid  "The value to be tested."
@@ -5753,7 +6833,7 @@ msgstr "जँ कोष्ठ, सूत्र कोष्ठ अछि तँ
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.2.String.Text
 msgid  "reference"
-msgstr "सँदर्भ"
+msgstr "संदर्भ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.3.String.Text
 msgid  "The cell to be checked."
@@ -5925,7 +7005,7 @@ msgstr "एकटा संख्याकेँ दोसर क' घातम�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.2.String.Text
 msgid  "Base"
-msgstr "मौलिक"
+msgstr "आधार"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.3.String.Text
 msgid  "The base a of the power a^b."
@@ -5961,7 +7041,7 @@ msgstr "सभ आर्गुमेन्ट क' कुलजोड़के�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 msgid  "number "
-msgstr "सँख्या"
+msgstr "संख्या "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 arguments whose total is to be calculated."
@@ -5973,7 +7053,7 @@ msgstr "तर्कस क' वर्ग क' कुलजोड़केँ �
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 msgid  "number "
-msgstr "सँख्या"
+msgstr "संख्या "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 msgid  "Number 1, number 2,... are 1 to 30 arguments for which the sum of the squares is to be calculated."
@@ -6009,7 +7089,7 @@ msgstr "सिद्धांत"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.5.String.Text
 msgid  "The cell range in which the search criteria are given."
-msgstr "सेलक परिसर जकरामे खोज मापदँड देल अछि"
+msgstr "सेलक परिसर जकरामे खोज मापदँड देल अछि."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.6.String.Text
 msgid  "sum_range"
@@ -6149,7 +7229,7 @@ msgstr "संख्या क' वर्गमूलकेँ वापस क�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "संख्या"
+msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -6337,7 +7417,7 @@ msgstr "संख्या क' साइनकेँ वापस करैत 
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 msgid  "number"
-msgstr "संख्या"
+msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 msgid  "The angle in radians for which the sine is to be calculated."
@@ -6361,7 +7441,7 @@ msgstr "संख्या क' टान्जेन्टकेँ वाप�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 msgid  "number"
-msgstr "सँख्या"
+msgstr "संख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 msgid  "The angle in radians for which the tangent is to be calculated."
@@ -6385,7 +7465,7 @@ msgstr "संख्या क' हाइपरबोलिक साइनक�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 msgid  "number"
-msgstr "संख्या"
+msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic sine is to be calculated."
@@ -6409,7 +7489,7 @@ msgstr "संख्या क' हाइपरबोलिक टान्ज�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 msgid  "number"
-msgstr "संख्या"
+msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic tangent is to be calculated."
@@ -6529,7 +7609,7 @@ msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.3.String.Text
 msgid  "A value greater than 0 for which the logarithm is to be calculated."
-msgstr "0 सँ बेसी मान जकरा लेल लॉगरिथमक गनल जाएनाइ अछि."
+msgstr "एकटा मूल्य 0 सँ बेसी जकरा लेल लघुगणककेँ गनल जाएनाइ अछि."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.4.String.Text
 msgid  "Base"
@@ -6637,7 +7717,7 @@ msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.3.String.Text
 msgid  "The number to be rounded down."
-msgstr "सँख्या जकरा राउंड डाउन कएल जाएनाइ अछि."
+msgstr "सँख्या जकरा राउंड डाउन कएल जएनाइ अछि."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.1.String.Text
 msgid  "Truncates the decimal places of a number."
@@ -6645,7 +7725,7 @@ msgstr "संख्याक दशांश स्थानकेँ काट
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.2.String.Text
 msgid  "number"
-msgstr "सँख्या"
+msgstr "संख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.3.String.Text
 msgid  "The number to be truncated."
@@ -6665,7 +7745,7 @@ msgstr "संख्याकेँ पूर्व परिभाषित श
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.2.String.Text
 msgid  "number"
-msgstr "संख्या"
+msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.3.String.Text
 msgid  "The number to be rounded."
@@ -6685,7 +7765,7 @@ msgstr "संख्याकेँ पूर्व परिभाषित श
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.2.String.Text
 msgid  "number"
-msgstr "संख्या"
+msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 msgid  "The number to be rounded up."
@@ -6705,11 +7785,11 @@ msgstr "संख्याकेँ पूर्व परिभाषित श
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.2.String.Text
 msgid  "number"
-msgstr "संख्या"
+msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.3.String.Text
 msgid  "The number to be rounded down."
-msgstr "सँख्या जकरा राउंड डाउन कएल जएनाइ अछि."
+msgstr "सँख्या जकरा राउंड डाउन कएल जाएनाइ अछि."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.4.String.Text
 msgid  "count"
@@ -6757,7 +7837,7 @@ msgstr "सँख्या जकरा राउंड अप कएल जा�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.4.String.Text
 msgid  "Significance"
-msgstr "सिग्निफिकेन्स"
+msgstr "महत्वपूर्ण"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.5.String.Text
 msgid  "The number to whose multiple the value is rounded."
@@ -6805,7 +7885,7 @@ msgstr "अधिकतम सामान्य अपवर्तन"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GGT.2.String.Text
 msgid  "Integer "
-msgstr "पूर्णाँक"
+msgstr "पूर्णांक"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GGT.3.String.Text
 msgid  "Integer 1; integer 2,... are integers for which the greatest common divisor is to be calculated."
@@ -6993,7 +8073,7 @@ msgstr "डाटा_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 msgid  "The Y data array."
-msgstr "Y आँकड़ा सरणी"
+msgstr "Y आँकड़ा सरणी."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 msgid  "data_X"
@@ -7001,7 +8081,7 @@ msgstr "डाटा_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 msgid  "The X data array."
-msgstr "X आँकड़ा सरणी."
+msgstr "Y आँकड़ा सरणी."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 msgid  "Linear_type"
@@ -7013,7 +8093,7 @@ msgstr "जँ प्रकार = 0 रैखिक शून्य बिं�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.8.String.Text
 msgid  "stats"
-msgstr "स्थिति "
+msgstr "स्थिति"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.9.String.Text
 msgid  "If parameter = 0 then only the regression coefficient will be calculated, otherwise other values as well."
@@ -7029,7 +8109,7 @@ msgstr "डाटा_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 msgid  "The Y data array."
-msgstr "Y आँकड़ा सरणी"
+msgstr "Y आँकड़ा सरणी."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 msgid  "data_X"
@@ -7133,7 +8213,7 @@ msgstr "आर्गुमेन्ट सूचीमे रहएबला स
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.2.String.Text
 msgid  "value "
-msgstr "मूल्य "
+msgstr "मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.3.String.Text
 msgid  "Value 1, value 2, ... are 1 to 30 arguments containing different data types but where only numbers are counted."
@@ -7145,7 +8225,7 @@ msgstr "आर्गुमेन्ट सूचीमे रहएबला म
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.2.String.Text
 msgid  "value "
-msgstr "मान"
+msgstr "मूल्य "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.3.String.Text
 msgid  "Value 1, value 2, ... are 1 to 30 arguments representing the values to be counted."
@@ -7157,7 +8237,7 @@ msgstr "आर्गुमेन्ट सूचीमे अधिकतम म
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.2.String.Text
 msgid  "number "
-msgstr "संख्या "
+msgstr "सँख्या "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments for which the largest number is to be determined."
@@ -7169,7 +8249,7 @@ msgstr "आर्गुमेन्ट सूचीमे रहएबला अ
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.2.String.Text
 msgid  "value "
-msgstr "मूल्य "
+msgstr "मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.3.String.Text
 msgid  "Value 1, value 2,    are 1 to 30 arguments whose largest value is to be determined."
@@ -7193,7 +8273,7 @@ msgstr "आर्गुमेन्ट सूचीमे रहएबला न
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN_A.2.String.Text
 msgid  "value "
-msgstr "मान"
+msgstr "मूल्य "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN_A.3.String.Text
 msgid  "Value 1; value 2;... are 1 to 30 arguments whose smallest number is to be determined."
@@ -7585,7 +8665,7 @@ msgstr "सम्बन्धित संभाव्यता क' श्र�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.6.String.Text
 msgid  "Start"
-msgstr "प्रारंभ"
+msgstr "प्रारँभ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.7.String.Text
 msgid  "The start of the value interval whose probabilities is to be totalled."
@@ -7593,7 +8673,7 @@ msgstr "मूल्य अंतराल क' प्रारंभ क' स�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.8.String.Text
 msgid  "End"
-msgstr "अँत"
+msgstr "अँतिम"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.9.String.Text
 msgid  "The end of the value interval where the probabilities are to be totalled."
@@ -7641,7 +8721,7 @@ msgstr "मानक नोर्मल वितरण क' लेल वित
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.2.String.Text
 msgid  "number"
-msgstr "सँख्या"
+msgstr "संख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 msgid  "The value for which the standard normal distribution is to be calculated."
@@ -7845,7 +8925,7 @@ msgstr "प्रतिलोम नोर्मल वितरण क' मू�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.2.String.Text
 msgid  "number"
-msgstr "संख्या"
+msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.3.String.Text
 msgid  "The probability value for which the inverse normal distribution is to be calculated."
@@ -7885,7 +8965,7 @@ msgstr "प्रतिलोम मानक नोर्मल वितरण
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_S_NORM_INV.2.String.Text
 msgid  "number"
-msgstr "संख्या"
+msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_S_NORM_INV.3.String.Text
 msgid  "The probability value for which the inverse standard normal distribution is to be calculated."
@@ -7933,7 +9013,7 @@ msgstr "प्रतिलोम लोगोनोर्मल वितरण 
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV.2.String.Text
 msgid  "number"
-msgstr "सँख्या"
+msgstr "संख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV.3.String.Text
 msgid  "The probability value for which the inverse log normal distribution is to be calculated."
@@ -7981,7 +9061,7 @@ msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.7.String.Text
 msgid  "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr "सँचयी. C=0 घनत्वक फलनक गणना करैछ, C=1 वितरण"
+msgstr "सँचयी. C=0 घनत्वक फलनक गणना करैछ, C=1 वितरण."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.1.String.Text
 msgid  "Returns the value of the probability density function or the cumulative distribution function for the Gamma distribution."
@@ -8077,7 +9157,7 @@ msgstr "बीटा वितरण क' मूल्य."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.2.String.Text
 msgid  "number"
-msgstr "संख्या"
+msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.3.String.Text
 msgid  "The value for which the beta distribution is to be calculated."
@@ -8089,7 +9169,7 @@ msgstr "अल्फा"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.5.String.Text
 msgid  "The Alpha parameter of the Beta distribution."
-msgstr "बीटा वितरणक अल्फा पैरमीटर."
+msgstr "बीटा वितरणक अल्फा पैरामीटर"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.6.String.Text
 msgid  "beta"
@@ -8097,11 +9177,11 @@ msgstr "बीटा"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.7.String.Text
 msgid  "The Beta parameter of the Beta distribution."
-msgstr "बीटा वितरणक बीटा पैरमीटर."
+msgstr "बीटा वितरणक बीटा पैरामीटर"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.8.String.Text
 msgid  "Start"
-msgstr "प्रारँभ"
+msgstr "प्रारंभ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.9.String.Text
 msgid  "The starting value for the value interval of the distribution."
@@ -8109,7 +9189,7 @@ msgstr "वितरणक मान अँतरालक लेल आरँ�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.10.String.Text
 msgid  "End"
-msgstr "अँतिम"
+msgstr "अँत"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.11.String.Text
 msgid  "The final value for the value interval of the distribution."
@@ -8129,7 +9209,7 @@ msgstr "प्रतिलोम बीटा वितरण क' मूल्�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_INV.2.String.Text
 msgid  "number"
-msgstr "सँख्या"
+msgstr "संख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_INV.3.String.Text
 msgid  "The probability value for which the inverse beta distribution is to be calculated."
@@ -8253,7 +9333,7 @@ msgstr "मूल्य जकर T वितरणकेँ गणना कए
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.4.String.Text
 msgid  "degrees_freedom"
-msgstr "डिग्री_स्वतंत्रता"
+msgstr "डिग्री_फ्रीडम"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.5.String.Text
 msgid  "The degrees of freedom of the T distribution."
@@ -8261,7 +9341,7 @@ msgstr "T वितरणक स्वतँत्रताक डिग्र�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.6.String.Text
 msgid  "mode"
-msgstr "मोड"
+msgstr "प्रकार"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.7.String.Text
 msgid  "Mode = 1 calculates the one-tailed test, 2 = two-tailed distribution."
@@ -8273,7 +9353,7 @@ msgstr "प्रतिलोम t-वितरण क' मूल्य."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_INV.2.String.Text
 msgid  "number"
-msgstr "संख्या"
+msgstr "सँख्या"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_INV.3.String.Text
 msgid  "The probability value for which the inverse T distribution is to be calculated."
@@ -8313,7 +9393,7 @@ msgstr "डिग्री_स्वतंत्रता_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.7.String.Text
 msgid  "The degrees of freedom in the denominator of the F distribution."
-msgstr "F वितरणक हरमे स्वतँत्रताक डिग्री."
+msgstr "F वितरणक सभमे स्वतँत्रताक डिग्री."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_INV.1.String.Text
 msgid  "Values of the inverse F distribution."
@@ -8861,7 +9941,7 @@ msgstr "30 मूल्य क' तर्कस सूचि सभसँ एक
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.2.String.Text
 msgid  "Index"
-msgstr "अनुक्रमणी"
+msgstr "सूची"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.3.String.Text
 msgid  "The index of the value (1..30) selected."
@@ -8969,7 +10049,7 @@ msgstr "संदर्भ क' लेल श्रेणी आ परिसर
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_H_LOOKUP.6.String.Text
 msgid  "Index"
-msgstr "सूची"
+msgstr "संदर्भ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_H_LOOKUP.7.String.Text
 msgid  "The row index in the array."
@@ -9433,7 +10513,7 @@ msgstr "खोजू _पाठ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.3.String.Text
 msgid  "The text to be found."
-msgstr "भेटएबला पाठ "
+msgstr "भेटएबला पाठ ."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.4.String.Text
 msgid  "text"
@@ -10412,8 +11492,8 @@ msgid  "Font Attributes"
 msgstr "फ़ॉन्ट गुण"
 
 #: source/ui/src/scstring.src#SCSTR_CLPBRD_CLEAR.String.Text
-msgid  "You have a large amount of data saved in the clipboard.\nDo you want the clipboard contents to be available in other applications?"
-msgstr "अहाँ एकटा पैध आँकड़ाक मात्रा क्लिपबोर्डमे सहेजल राखैत छी.\nकी अहाँ आन अनुप्रयोगमे क्लिपबोर्डक सामग्रीकेँ मोजुद राखब चाहैत छी?"
+msgid  "You have a large amount of data saved in the clipboard.\\nDo you want the clipboard contents to be available in other applications?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_CFG_APP.String.Text
 msgid  "System Options"
@@ -10480,8 +11560,8 @@ msgid  "space"
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_FORMULA_AUTOCORRECTION.String.Text
-msgid  "%PRODUCTNAME Calc found an error in the formula entered.\nDo you want to accept the correction proposed below?\n\n"
-msgstr "%PRODUCTNAME कैल्क एकटा त्रुटि पओलक देल गेल सूत्रमे.\nकी अहाँ नीच्चाँ देल सुधारक स्वीकार करैत छी?\n\n"
+msgid  "%PRODUCTNAME Calc found an error in the formula entered.\\nDo you want to accept the correction proposed below?\\n\\n"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file can not be opened"
@@ -10524,8 +11604,8 @@ msgid  "~Selected sheets"
 msgstr "चुनलका शीट (~S)"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
-msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
-msgstr "अहाँ सेलसभमे आँकड़ा चिपकाएब रहल छी जे पहिनेसँ आँकड़ा राखनए अछि.\nकी अहाँ मोजुदा आँकड़ाकेँ उप्पर सचमुच लिखब चाहैत छी?"
+msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"
+msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_ALLFILTER.String.Text
 msgid  "All"
@@ -11465,11 +12545,11 @@ msgstr "प्रारूप (~m)"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELNOTES.CheckBox.Text
 msgid  "~Comments"
-msgstr "टिप्पणी (~e)"
+msgstr "टिप्पणी (~o)"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELOBJECTS.CheckBox.Text
 msgid  "~Objects"
-msgstr "वस्तु (~O)"
+msgstr "वस्तु (~b)"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.FL_FRAME.FixedLine.Text
 msgid  "Selection"
@@ -11885,11 +12965,11 @@ msgstr "सूत्र अछि"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "equal to"
-msgstr " एकरा समान"
+msgstr "एकरा समान"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "less than"
-msgstr " एकरासँ कम"
+msgstr "एकरासँ कम"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "greater than"
@@ -11917,7 +12997,7 @@ msgstr "नहि एकरा बीच"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
 msgid  "Shrink"
-msgstr "घोकचाबू"
+msgstr "घोकचाबू "
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_AND.FixedText.Text
 msgid  "and"
@@ -11925,7 +13005,7 @@ msgstr "आओर"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_2.ImageButton.QuickHelpText
 msgid  "Shrink"
-msgstr "घोकचाबू "
+msgstr "घोकचाबू"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_TEMPLATE.FixedText.Text
 msgid  "~Cell Style"
@@ -12173,7 +13253,7 @@ msgstr "फाइलमे आंकड़ा 8192 पंक्तिक बा�
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "सँरूपण त्रुटि भेटल $(ARG1) उपदस्तावेजमे $(ARG2)(पँक्ति,col) पर."
+msgstr "सँरूपण त्रुटि पाबल गेल $(ARG1) उपदस्तावेजमे $(ARG2)(पँक्ति,col) पर."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FORMAT_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -12232,20 +13312,20 @@ msgid  "Document too complex for automatic calculation. Press F9 to recalculate.
 msgstr "स्वचालित गणना करबाक लेल दस्तावेज बहुत कठिन अछि. फिनु गणना करबाक लेल F9केँ दबाउ."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_MAXROW & ERRCODE_RES_MASK.String.Text
-msgid  "The document contains more rows than supported in the selected format.\nAdditional rows were not saved."
-msgstr "दस्तावेजमे बेसी पँक्तिसभ अछि चुनलका प्रारूपमे समर्थितसँ बेसी.\nअतिरिक्त पँक्तिसभ नहि सहेजल छल."
+msgid  "The document contains more rows than supported in the selected format.\\nAdditional rows were not saved."
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_INFOLOST & ERRCODE_RES_MASK.String.Text
-msgid  "The document contains information not recognized by this program version.\nResaving the document will delete this information!"
-msgstr "दस्तावेज ई प्रोग्रामक संस्करणक द्वारा नहि समर्थित पहचानल सूचनाकेँ समाहित करैछ.\nदस्तावेजक फिनु सहेजल ई सूचनाकेँ मेटाएब देत!"
+msgid  "The document contains information not recognized by this program version.\\nResaving the document will delete this information!"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_DATALOST & ERRCODE_RES_MASK.String.Text
 msgid  "Not all cell contents could be saved in the specified format."
 msgstr "निर्दिष्ट कएल गेल प्रारूपमे सभ कोष्ठक विषय सभकेँ संचित नहि कए सकैछ."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_EXPORT_NONCONVERTIBLE_CHARS & ERRCODE_RES_MASK.String.Text
-msgid  "The following characters could not be converted to the selected character set\nand were written as &#1234; surrogates:\n\n$(ARG1)"
-msgstr "नीच्चाँ देल सँप्रतीकसभ चुनलका संप्रतीक सेटमे बदलल सेटमे बदलल नहि जाए सकल\nआओर &#1234; वैकल्पिक रूपेँ लिखल छला:\n\n$(ARG1)"
+msgid  "The following characters could not be converted to the selected character set\\nand were written as &#1234; surrogates:\\n\\n$(ARG1)"
+msgstr ""
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCWARN_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
@@ -12293,11 +13373,11 @@ msgstr "विषय सभकेँ मेटाबू (~l)..."
 
 #: source/ui/src/hdrcont.src#RID_POPUP_ROWHEADER.FID_ROW_HIDE.MenuItem.Text
 msgid  "~Hide"
-msgstr "नुकाबू (~H) "
+msgstr "नुकाबू (~H)"
 
 #: source/ui/src/hdrcont.src#RID_POPUP_ROWHEADER.FID_ROW_SHOW.MenuItem.Text
 msgid  "~Show"
-msgstr "देखाबू (~S)"
+msgstr "देखाबू (~S) "
 
 #: source/ui/src/hdrcont.src#RID_POPUP_ROWHEADER.SID_PASTE_SPECIAL.MenuItem.Text
 msgid  "P~aste Special..."

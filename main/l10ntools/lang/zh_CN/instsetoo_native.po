@@ -1077,7 +1077,7 @@ msgstr "正在注册扩展服务器"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_54
 msgid  "Extension: [1]"
-msgstr "扩展名: [1]"
+msgstr "扩展: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_55
 msgid  "Registering fonts"
@@ -1093,7 +1093,7 @@ msgstr "正在注册 MIME 信息"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "MIME 内容类型: [1]，扩展名: [2]"
+msgstr "MIME 内容类型: [1]，扩展: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 msgid  "Registering product"
@@ -1109,7 +1109,7 @@ msgstr "正在撤消程序标识符的注册"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_62
 msgid  "ProgID: [1]"
-msgstr "ProgID: [1]"
+msgstr "ProgId: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_63
 msgid  "Registering type libraries"
@@ -1141,7 +1141,7 @@ msgstr "正在更新环境字符串"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "名称: [1]，值: [2]，操作 [3]"
+msgstr "名称: [1]，数值: [2]，动作 [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 msgid  "Removing applications"
@@ -1173,7 +1173,7 @@ msgstr "正在删除 INI 文件条目"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_78
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
-msgstr "文件: [1]，节: [2]，键: [3]，值: [4]"
+msgstr "文件: [1]，节: [2]，键: [3]，数值: [4]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_79
 msgid  "Removing ODBC components"
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "感谢您下载 %PRODUCTNAME %PRODUCTVERSION。"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "解压缩(&U)"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "%PRODUCTNAME %PRODUCTVERSION 安装文件将被解压缩并保存在如下所示的文件夹中。如果要将 %PRODUCTNAME 保存到不同的文件夹，请单击\"浏览\"选择另一个文件夹"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1469,7 +1469,7 @@ msgstr "创建新文件夹|"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_10
 msgid  "OK"
-msgstr "{&Tahoma8}确定"
+msgstr "确定"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_12
 msgid  "&Folder name:"
@@ -1505,7 +1505,7 @@ msgstr "网络位置"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_22
 msgid  "&Install"
-msgstr "安装(&I)"
+msgstr "{&Tahoma8}安装(&I)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_23
 msgid  "&Network location:"
@@ -1525,7 +1525,7 @@ msgstr "下一步(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}欢迎使用 [ProductName] 安装向导"
+msgstr "{&TahomaBold10}欢迎使用 [ProductName] Installation Wizard"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
@@ -1533,7 +1533,7 @@ msgstr "{&Tahoma8}Installation Wizard 将在指定的网络位置创建 [Product
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 msgid  "&No"
-msgstr "否(&N)"
+msgstr "{&Tahoma8}否(&N)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_30
 msgid  "Are you sure you want to cancel [ProductName] installation?"
@@ -1541,7 +1541,7 @@ msgstr "{&Tahoma8}要取消 [ProductName] 安装吗？"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_31
 msgid  "&Yes"
-msgstr "是(&Y)"
+msgstr "{&Tahoma8}是(&Y)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_32
 msgid  "< &Back"
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "取消"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "用户信息"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1697,7 +1697,7 @@ msgstr "更改(&C)..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr "单击“下一步”安装到此文件夹，或单击“更改”安装到其它的文件夹。"
+msgstr "单击“下一步”安装到此文件夹，或单击“更改”安装到不同的文件夹。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1741,7 +1741,7 @@ msgstr "[INSTALLDIR]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
-msgstr "将 [ProductName] 安装到:"
+msgstr "{&Tahoma8}将 [ProductName] 安装到："
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 msgid  "&Next >"
@@ -1781,11 +1781,11 @@ msgstr "{&Tahoma8}退出(&E)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_107
 msgid  "&Ignore"
-msgstr "{&Tahoma8}忽略(&I)"
+msgstr "忽略(&I)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_108
 msgid  "&Retry"
-msgstr "{&Tahoma8}重试(&R)"
+msgstr "重试(&R)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_111
 msgid  "Cancel"

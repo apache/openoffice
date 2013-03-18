@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "Невозможно полностью сохранить документ."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "Эта документ HTML содержит макросы %PRODUCTNAME Basic.\nОни не были сохранены из-за настроек указанных для экспорта документов."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -849,7 +849,7 @@ msgstr "Используемые стили"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_USERDEF.FilterList.item
 msgid  "Custom Styles"
-msgstr "Стили пользователя"
+msgstr "Пользовательские стили"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_AUTO.FilterList.item
 msgid  "Automatic"
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "Пустая страница"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "Вы сохранили большой объем данных в буфере обмена.\nХотите ли вы, чтобы содержимое буфера обмена осталось доступным для других приложений?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "Переход в формат HTML \nможет привести к потере информации. \nСохранить этот документ?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "Исходный код может быть отображен только, если документ сохранён в формате HTML.\nСохранить документ в формате HTML?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "Ваш документ содержит поля базы данных адресов. Печатать в виде стандартного письма?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -1433,11 +1433,11 @@ msgstr "Переместить ~назад"
 
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "Располо~жение"
+msgstr "Расположение"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "Расположение"
+msgstr "Располо~жение"
 
 #: source/ui/app/mn.src#MN_ANNOTATIONS.FN_REPLY.MenuItem.Text
 msgid  "Reply"
@@ -2649,7 +2649,7 @@ msgstr "Атрибуты"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 msgid  "[None]"
-msgstr "[Нет]"
+msgstr "[Без отметки]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item2.StringList.item
 msgid  "Bold"
@@ -2741,7 +2741,7 @@ msgstr "~Отмечать"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_MARKPOS.item1.StringList.item
 msgid  "[None]"
-msgstr "[Без отметки]"
+msgstr "[Нет]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_MARKPOS.item2.StringList.item
 msgid  "Left margin"
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<Настройки пользователя>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "Вы хотите изменить опции совместимости для шаблона по умолчанию?\n Это повлияет на все новые документы, созданные на основе шаблона по умолчанию."
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2893,11 +2893,11 @@ msgstr "Использовать квадратные страницы для т
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TabPage.Text
 msgid  "Caption"
-msgstr "Название"
+msgstr "Заголовок"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "Добавлять заголовки автоматически\nпри вставке:"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -2961,7 +2961,7 @@ msgstr "Уровень"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.LB_LEVEL.item1.StringList.item
 msgid  "None"
-msgstr "Нет"
+msgstr "Пусто"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_SEPARATOR.FixedText.Text
 msgid  "Separator"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "Вы не указали новое название прикрепленного файла. Если Вы хотите, укажите его."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "Для рассылки электронной почты %PRODUCTNAME требуется действительная учётная запись.\n\nНастроить сейчас учётную запись электронной почты?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "Скрытая"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "Примечание:\nРазделяйте адреса точкой с запятой (;)."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "Отправка неудачна (неправильный адрес)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "%PRODUCTNAME содержит неотправленные электронные сообщения.\nХотите ли вы выйти?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "Редактирование"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "Создайте или отредактируйте объединённый документ. Изменения произойдут во всех документах рассылки.\n\nНажмите на «Редактировать...», чтобы перейти в режим редактирования документа. Окно мастера при этом уменьшится. Для выхода из режима редактирования документа нажмите на «Вернуться в Мастер рассылки» в маленьком окне."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4645,7 +4645,7 @@ msgstr "Раздел"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_COLUMN.PageItem.Text
 msgid  "Columns"
-msgstr "Колонки"
+msgstr "Столбцы"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_INDENTS.PageItem.Text
 msgid  "Indents"
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "Недоступен желаемый формат буфера обмена."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "Раздел представлен в старом формате.\nЕго необходимо преобразовать, чтобы \nсохранить изменения\n.Преобразовать?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "Сноска: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "Невозможно изменить параметр «только для чтения».\nИзменения не принимаются"
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5473,7 +5473,7 @@ msgstr "Абзац..."
 
 #: source/ui/envelp/label.src#LABEL_STRING.#define.Text
 msgid  "Labels"
-msgstr "Этикетки"
+msgstr "Подписи"
 
 #: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
 msgid  "Business Cards"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "Параметры"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "Подпись «%1 / %2» уже существует.\nПерезаписать?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "Обзор..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "В этом диалоге вы можете выбрать источники данных, доступ к которым возможен при помощи размещённых на форме элементов управления. За одну операцию можно произвести одно изменение. В списке слева доступно групповое выделение."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -6837,7 +6837,7 @@ msgstr "Текстовая сетка"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_COLUMN.String.Text
 msgid  "Columns"
-msgstr "Колонки"
+msgstr "Столбцы"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_FOOTNOTE.String.Text
 msgid  "Footnote"
@@ -6881,7 +6881,7 @@ msgstr "Маркеры"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
 msgid  "Numbering Style"
-msgstr "Тип нумерации"
+msgstr "Стиль нумерации"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
 msgid  "Outline"
@@ -6905,7 +6905,7 @@ msgstr "Стиль нумерации"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.TabDialog.Text
 msgid  "Frame"
-msgstr "Врезка"
+msgstr "Фрейм"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_STD.PageItem.Text
 msgid  "Type"
@@ -7165,7 +7165,7 @@ msgstr "U~RL"
 
 #: source/ui/frmdlg/frmpage.src#TP_FRM_URL.FT_NAME.FixedText.Text
 msgid  "~Name"
-msgstr "Название"
+msgstr "Имя"
 
 #: source/ui/frmdlg/frmpage.src#TP_FRM_URL.FT_FRAME.FixedText.Text
 msgid  "Frame"
@@ -8009,7 +8009,7 @@ msgstr "Создать..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MN_AUTOMARK_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "Правка"
+msgstr "Изменить..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MenuItem.Text
 msgid  "~File"
@@ -8149,7 +8149,7 @@ msgstr "Элемент"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TAB_STOP.String.Text
 msgid  "Tab stop"
-msgstr "Шаг табуляции"
+msgstr "Табуляция"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TEXT.String.Text
 msgid  "Text"
@@ -8561,7 +8561,7 @@ msgstr "Каталог 'AutoText' предназначен только для �
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
-msgstr "Созд~ать"
+msgstr "Новый"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE_TEXT.MenuItem.Text
 msgid  "New (text only)"
@@ -9493,7 +9493,7 @@ msgstr "Стили символов"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 msgid  "Te~xt area"
-msgstr "Область текста"
+msgstr "Текст"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_TEXT_CHARFMT.FixedText.Text
 msgid  "~Footnote area"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "Автозамена"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "Автозамена завершена.\nСейчас вы можете принять или отклонить сразу \nвсе изменения или каждое по отдельности."
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "Сумма"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "Введено неправильное название.\nНевозможно создать желаемый автоформат.\nИспользуйте другое название."
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "Первый столбец как название"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "Если выделенные ячейки не содержат требуемых данных, выделите сейчас диапазон ячеек с нужным содержимым.\n\nВыделите также ячейки столбцов или строк, если они должны быть представлены на диаграмме."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "Проверить главный текст?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "Включен показ имён полей.\nПечатать документ с именами полей?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Начинать каждое предложение с прописной буквы"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "Заменять \"прямые\" кавычки %1типографскими%2"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -10953,7 +10953,7 @@ msgstr "Установить стиль «Основной текст»"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 msgid  "Set \"Text body indent\" Style"
-msgstr "Установить стиль «Первая строка с отступом»"
+msgstr "Установить стиль «Основной текст с отступом»"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 msgid  "Set \"Hanging indent\" Style"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[Система]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "Интерактивная проверка орфографии\nуже включена в другом документе"
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "Интерактивная расстановка переносов\nуже включена в другом документе"
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -11357,7 +11357,7 @@ msgstr "Брошюра"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CONFERENCE.String.Text
 msgid  "Conference proceedings"
-msgstr "Протокол совещания"
+msgstr "Отчёт заседания"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INBOOK.String.Text
 msgid  "Book excerpt"
@@ -11369,7 +11369,7 @@ msgstr "Выписка из книги с названием"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INPROCEEDINGS.String.Text
 msgid  "Conference proceedings"
-msgstr "Отчёт заседания"
+msgstr "Протокол совещания"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_JOURNAL.String.Text
 msgid  "Journal"
@@ -11413,23 +11413,23 @@ msgstr "Веб-документ"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "Поле пользователя1"
+msgstr "Поле пользователя 1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
-msgstr "Поле пользователя2"
+msgstr "Поле пользователя 2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
 msgid  "User-defined3"
-msgstr "Поле пользователя3"
+msgstr "Поле пользователя 3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
 msgid  "User-defined4"
-msgstr "Поле пользователя4"
+msgstr "Поле пользователя 4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
 msgid  "User-defined5"
-msgstr "Поле пользователя5"
+msgstr "Поле пользователя 5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 msgid  "Short name"
@@ -11601,7 +11601,7 @@ msgstr "Вкл./выкл. окно списка"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_SHOW_ROOT.ToolBoxItem.Text
 msgid  "Content View"
-msgstr "Содержание"
+msgstr "Содержимое"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_SELECT_SET_AUTO_BOOKMARK.ToolBoxItem.Text
 msgid  "Set Reminder"
@@ -11637,7 +11637,7 @@ msgstr "Переключить"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_GLOBAL.FN_GLOBAL_EDIT.ToolBoxItem.Text
 msgid  "Edit"
-msgstr "Изменить"
+msgstr "Правка"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_GLOBAL.FN_GLOBAL_UPDATE.ToolBoxItem.Text
 msgid  "Update"
@@ -11689,7 +11689,7 @@ msgstr "Активное окно"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.ST_HIDDEN.String.Text
 msgid  "hidden"
-msgstr "скрытый"
+msgstr "спрятан"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.ST_ACTIVE.String.Text
 msgid  "active"
@@ -11933,7 +11933,7 @@ msgstr "Подписи"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_STANDARD.String.Text
 msgid  "Default"
-msgstr "Базовый"
+msgstr "Обычный"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_TEXT.String.Text
 msgid  "Text body"

@@ -61,14 +61,17 @@ msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: source/appl/app.src#STR_NONAME.String.Text
+#, fuzzy
 msgid  "Untitled"
 msgstr "Nomsiz"
 
 #: source/appl/app.src#STR_CLOSE.String.Text
+#, fuzzy
 msgid  "Close"
 msgstr "Yopish"
 
 #: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "Avtomatik"
 
@@ -241,7 +244,7 @@ msgid  "Controls"
 msgstr "Boshqargichlar"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
-msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgid  "The application cannot be terminated at the moment.\\nPlease wait until all print jobs and/or\\nOLE actions have finished and close all dialogs."
 msgstr ""
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
@@ -279,7 +282,7 @@ msgid  "Function Bar"
 msgstr "Funksiya paneli"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
-msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
+msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
 msgstr ""
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
@@ -343,7 +346,7 @@ msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "Ushbu giper bogʻlama \"%s\"'ni ochadi. Davom ettirilsinmi?"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
-msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgid  "For security reasons, the hyperlink cannot be executed.\\nThe stated address will not be opened."
 msgstr ""
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
@@ -352,11 +355,11 @@ msgid  "Security Warning"
 msgstr "Xavfsizlik ogohnomasi"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
-msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgid  "Saving will remove all existing signatures.\\nDo you want to continue saving the document?"
 msgstr ""
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
-msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgid  "The document has to be saved before it can be signed.\\nDo you want to save the document?"
 msgstr ""
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
@@ -399,7 +402,7 @@ msgid  "Link graphics"
 msgstr ""
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
-msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
+msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
 msgstr ""
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
@@ -601,11 +604,11 @@ msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
 msgstr "%PRODUCTNAME %MODULENAME Yordamini ishga tushirishda  ~koʻrsatish"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "Tanlangan $(FILTER) filtr oʻrnatilmagan.\nUni oʻrntishni istaysizmi?"
+msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
+msgstr ""
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
+msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
 msgstr ""
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
@@ -737,7 +740,7 @@ msgid  "Warning"
 msgstr "Diqqat"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
-msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
+msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
 msgstr ""
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
@@ -857,7 +860,7 @@ msgid  "~Unprotect..."
 msgstr ""
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
-msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
 msgstr ""
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
@@ -960,14 +963,17 @@ msgid  "Version comment"
 msgstr "Versiya sharhi"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nomi"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
+#, fuzzy
 msgid  "~AutoUpdate"
 msgstr "~Avto-yangilash"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FixedText.Text
+#, fuzzy
 msgid  "Ne~xt Style"
 msgstr "~Keyingi uslub"
 
@@ -976,6 +982,7 @@ msgid  "Linked with"
 msgstr ""
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
+#, fuzzy
 msgid  "~Category"
 msgstr "~Turkum"
 
@@ -984,30 +991,37 @@ msgid  "Contains"
 msgstr ""
 
 #: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
+#, fuzzy
 msgid  "Current version"
 msgstr "Joriy versiya"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
+#, fuzzy
 msgid  "Export"
 msgstr "Eksport qilish"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
+#, fuzzy
 msgid  "Insert"
 msgstr "Qoʻyish"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "Qoʻy~ish"
 
 #: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
+#, fuzzy
 msgid  "<All formats>"
 msgstr "<Hamma formatlar>"
 
 #: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
+#, fuzzy
 msgid  "~Automatic file name extension"
 msgstr "~Avtomatik faylning kengaytmasi"
 
 #: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
+#, fuzzy
 msgid  "~Selection"
 msgstr "~Tanlash"
 
@@ -1016,46 +1030,57 @@ msgid  "~Link"
 msgstr ""
 
 #: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
+#, fuzzy
 msgid  "Pr~eview"
 msgstr "~Koʻrib chiqish"
 
 #: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
+#, fuzzy
 msgid  "~Read-only"
 msgstr "~Faqat oʻqish uchun"
 
 #: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
+#, fuzzy
 msgid  "Save with ~password"
 msgstr "~Maxfiy soʻz bilan saqlash"
 
 #: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
+#, fuzzy
 msgid  "Edit ~filter settings"
 msgstr "~Filtr parametrlarini oʻzgartirish"
 
 #: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
+#, fuzzy
 msgid  "~Play"
 msgstr "Oʻy~nash"
 
 #: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
+#, fuzzy
 msgid  "Sto~p"
 msgstr "~Toʻxtatish"
 
 #: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
+#, fuzzy
 msgid  "~Open"
 msgstr "~Ochish"
 
 #: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
+#, fuzzy
 msgid  "~Save"
 msgstr "~Saqlash"
 
 #: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Style:"
 msgstr "Uslub:"
 
 #: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
+#, fuzzy
 msgid  "~Templates:"
 msgstr "~Shablonlar:"
 
 #: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
+#, fuzzy
 msgid  "~Version:"
 msgstr "~Versiya:"
 
@@ -1108,14 +1133,17 @@ msgid  "Enter Password"
 msgstr "Maxfiy soʻzni kiriting"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FixedText.Text
+#, fuzzy
 msgid  "~User"
 msgstr "~Foydalanuvchi"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FixedText.Text
+#, fuzzy
 msgid  "~Password"
 msgstr "Ma~xfiy soʻz"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FixedText.Text
+#, fuzzy
 msgid  "~Confirm"
 msgstr "~Tasdiqlash"
 
@@ -1140,66 +1168,82 @@ msgid  "Password"
 msgstr "Maxfiy soʻz"
 
 #: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME hujjati"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "~Sarlavha"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
+#, fuzzy
 msgid  "~Subject"
 msgstr "~Mavzu"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
+#, fuzzy
 msgid  "~Keywords"
 msgstr "~Tayanch soʻzlar"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
+#, fuzzy
 msgid  "~Comments"
 msgstr "I~zohlar"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
+#, fuzzy
 msgid  "Type:"
 msgstr "Turi:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
+#, fuzzy
 msgid  "~Read-only"
 msgstr "~Faqat oʻqish uchun"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
+#, fuzzy
 msgid  "Location:"
 msgstr "Manzili:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
+#, fuzzy
 msgid  "Size:"
 msgstr "Hajmi:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
+#, fuzzy
 msgid  "Created:"
 msgstr "Yaratilgan:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
+#, fuzzy
 msgid  "Modified:"
 msgstr "Oʻzgargan:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
+#, fuzzy
 msgid  "Digitally signed:"
 msgstr "Elektron imzolangan:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
+#, fuzzy
 msgid  "Digital Signature..."
 msgstr "Elektron imzo..."
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
+#, fuzzy
 msgid  "Multiply signed document"
 msgstr "Bir necha imzolangan hujjat"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
+#, fuzzy
 msgid  "Last printed:"
 msgstr "Oxirgi marta bosib chiqarilgan:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
+#, fuzzy
 msgid  "Total editing time:"
 msgstr "Umumiy tahrirlash vaqti:"
 
@@ -1208,18 +1252,22 @@ msgid  "Revision number:"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "Reset"
 msgstr "~Tiklash"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
+#, fuzzy
 msgid  "~Apply user data"
 msgstr "Foydalanuvchi ma'lumotini ~qoʻllash"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
+#, fuzzy
 msgid  "Template:"
 msgstr "Shablon:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
+#, fuzzy
 msgid  "unknown"
 msgstr "nomaʼlum"
 
@@ -1228,22 +1276,27 @@ msgid  "File Name"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
+#, fuzzy
 msgid  "~Info fields..."
 msgstr "~Maʼlumot maydoni..."
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
+#, fuzzy
 msgid  "Do not refresh automatically"
 msgstr "Avtomatik yangilanmasin"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
+#, fuzzy
 msgid  "Refresh this document"
 msgstr "Bu hujjatni yangilash"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
+#, fuzzy
 msgid  "every"
 msgstr "har"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "soniya"
 
@@ -1252,46 +1305,57 @@ msgid  "Redirect from this document"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
+#, fuzzy
 msgid  "after"
 msgstr "keyin"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "soniya"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "to URL"
 msgstr "URL'ga"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
+#, fuzzy
 msgid  "to frame"
 msgstr "freymga"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
+#, fuzzy
 msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
 msgstr "Agar \"%PLACEHOLDER%\" opsiyasini tanlasangiz URL kiritishingiz shart."
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
+#, fuzzy
 msgid  "~Properties"
 msgstr "~Xossalari"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Nomi"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Turi"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "Qiymati"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "Qoʻsh~ish"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
+#, fuzzy
 msgid  "Property Name"
 msgstr "Property Name"
 
@@ -1300,14 +1364,17 @@ msgid  "Checked by"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
+#, fuzzy
 msgid  "Client"
 msgstr "Kliyent"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
+#, fuzzy
 msgid  "Date completed"
 msgstr "Tugatish sanasi"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
+#, fuzzy
 msgid  "Department"
 msgstr "Boʻlim"
 
@@ -1324,14 +1391,17 @@ msgid  "Division"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
+#, fuzzy
 msgid  "Document number"
 msgstr "Hujjat raqami"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
+#, fuzzy
 msgid  "Editor"
 msgstr "Tahrirchi"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
+#, fuzzy
 msgid  "E-Mail"
 msgstr "E-Mail"
 
@@ -1340,6 +1410,7 @@ msgid  "Forward to"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
+#, fuzzy
 msgid  "Group"
 msgstr "Guruh"
 
@@ -1348,6 +1419,7 @@ msgid  "Info"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
+#, fuzzy
 msgid  "Language"
 msgstr "Til"
 
@@ -1360,6 +1432,7 @@ msgid  "Matter"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
+#, fuzzy
 msgid  "Office"
 msgstr "Ofis"
 
@@ -1368,6 +1441,7 @@ msgid  "Owner"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
+#, fuzzy
 msgid  "Project"
 msgstr "Loyiha"
 
@@ -1392,18 +1466,22 @@ msgid  "Recorded date"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
+#, fuzzy
 msgid  "Reference"
 msgstr "Bogʻlama"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
+#, fuzzy
 msgid  "Source"
 msgstr "Manba"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
+#, fuzzy
 msgid  "Status"
 msgstr "Holati"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
+#, fuzzy
 msgid  "Telephone number"
 msgstr "Telefon raqami"
 
@@ -1412,10 +1490,12 @@ msgid  "Typist"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
+#, fuzzy
 msgid  "Text"
 msgstr "Matn"
 
@@ -1424,6 +1504,7 @@ msgid  "DateTime"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
+#, fuzzy
 msgid  "Date"
 msgstr "Sana"
 
@@ -1432,10 +1513,12 @@ msgid  "Duration"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
+#, fuzzy
 msgid  "Number"
 msgstr "Son"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
+#, fuzzy
 msgid  "Yes or no"
 msgstr "Ha yoki yoʻq"
 
@@ -1444,30 +1527,36 @@ msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "Ha"
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
+#, fuzzy
 msgid  "No"
 msgstr "Yoʻq"
 
 #: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Remove Property"
 msgstr "Remove Property"
 
 #: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
-msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgid  "The value entered does not match the specified type.\\nThe value will be stored as text."
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
+#, fuzzy
 msgid  "Properties of "
 msgstr "Xossalar - "
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
+#, fuzzy
 msgid  "General"
 msgstr "Umumiy"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
+#, fuzzy
 msgid  "Description"
 msgstr "Taʼrif"
 
@@ -1476,6 +1565,7 @@ msgid  "Custom Properties"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
+#, fuzzy
 msgid  "Internet"
 msgstr "Internet"
 
@@ -1516,6 +1606,7 @@ msgid  "Min~utes"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
+#, fuzzy
 msgid  "~Seconds"
 msgstr "soniya"
 
@@ -1524,22 +1615,27 @@ msgid  "Millise~conds"
 msgstr ""
 
 #: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Field Names"
 msgstr "Maydon nomlarini tahrirlash"
 
 #: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
+#, fuzzy
 msgid  "Names"
 msgstr "Nomlar"
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.ModalDialog.Text
+#, fuzzy
 msgid  "Create Style"
 msgstr "Uslubni yaratish"
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FixedLine.Text
+#, fuzzy
 msgid  "Style name"
 msgstr "Uslubning nomi"
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
+#, fuzzy
 msgid  "Style already exists. Overwrite?"
 msgstr "Uslub allaqachon mavjud. Almashtirilsinmi?"
 
@@ -1562,54 +1658,64 @@ msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please s
 msgstr ""
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
+#, fuzzy
 msgid  "~Reset"
 msgstr "~Tiklash"
 
 #: source/dialog/dialog.src#STR_APPLY.String.Text
+#, fuzzy
 msgid  "Apply"
 msgstr "Qoʻllash"
 
 #: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
+#, fuzzy
 msgid  "Organizer"
 msgstr "Organayzer"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
+#, fuzzy
 msgid  "This name is already in use."
 msgstr "Bu nomdan allaqachon foydalanilmoqda."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
+#, fuzzy
 msgid  "This Style does not exist."
 msgstr "Uslub mavjud emas."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
-msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgid  "This Style cannot be used as a base Style,\\nbecause it would result in a recursive reference."
 msgstr ""
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
-msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr "Ushbu nom andoza Uslub nomi sifatida mavjud.\nIltimos boshqa nom tanlang."
+msgid  "Name already exists as a default Style.\\nPlease choose another name."
+msgstr ""
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
+#, fuzzy
 msgid  "Do you really want to delete Style $1?"
 msgstr "Rostdan ham $1 uslubini olib tashlamoqchimisiz?"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
-msgid  "You are deleting an applied Style!\n"
-msgstr "Qoʻllanilgan uslubni olib tashlayapsiz!\n"
+msgid  "You are deleting an applied Style!\\n"
+msgstr ""
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
+#, fuzzy
 msgid  "New..."
 msgstr "Yangi"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Modify..."
 msgstr "Oʻzgartirish"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "Delete..."
 msgstr "Oʻchirish"
 
 #: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
+#, fuzzy
 msgid  "Navigator"
 msgstr "Yoʻlchi"
 
@@ -1622,6 +1728,7 @@ msgid  "Faulty password confirmation"
 msgstr ""
 
 #: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
+#, fuzzy
 msgid  "Send"
 msgstr "Joʻnatish"
 
@@ -1642,7 +1749,7 @@ msgid  "Tasks"
 msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
-msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
 msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
@@ -1650,18 +1757,22 @@ msgid  "~Keep Current Format"
 msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
+#, fuzzy
 msgid  "~Save in ODF Format"
 msgstr "ODF formatida ~saqlash"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
+#, fuzzy
 msgid  "~More Information..."
 msgstr "~Qoʻshimcha maʼlumot..."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
+#, fuzzy
 msgid  "~Ask when not saving in ODF format"
 msgstr "ODFdan boshqa formatda saqlanayotganda ~ogohlantirish"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
+#, fuzzy
 msgid  "My Templates"
 msgstr "Mening shablonlarim"
 
@@ -1670,6 +1781,7 @@ msgid  "Business Correspondence"
 msgstr ""
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
+#, fuzzy
 msgid  "Other Business Documents"
 msgstr "Boshqa biznes hujjatlar"
 
@@ -1678,26 +1790,32 @@ msgid  "Personal Correspondence and Documents"
 msgstr ""
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
+#, fuzzy
 msgid  "Forms and Contracts"
 msgstr "Formalar va shartnomalar"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
+#, fuzzy
 msgid  "Finances"
 msgstr "Moliya"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
+#, fuzzy
 msgid  "Education"
 msgstr "Taʼlim"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
+#, fuzzy
 msgid  "Presentation Backgrounds"
 msgstr "Namoyish uchun orqa fon"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
+#, fuzzy
 msgid  "Presentations"
 msgstr "Namoyishlar"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
+#, fuzzy
 msgid  "Miscellaneous"
 msgstr "Har xil"
 
@@ -1706,66 +1824,78 @@ msgid  "The templates are being initialized for first-time usage."
 msgstr ""
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "Shablonlar"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
+#, fuzzy
 msgid  "New template"
 msgstr "Yangi shablon"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "Shablonlar"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
+#, fuzzy
 msgid  "~Categories"
 msgstr "~Turkumlar"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
+#, fuzzy
 msgid  "~Templates"
 msgstr "~Shablonlar"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "Tahrir~lash"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
+#, fuzzy
 msgid  "~Organizer..."
 msgstr "~Organayzer..."
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
-msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr "Tashqi formatda saqlash ma'lumot yoʻqotilishiga olib keladi.\n Shunga qaramasdan yopishni istaysizmi?"
+msgid  "Saving in external formats may have caused\\n information loss. Do you still want to close?"
+msgstr ""
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
-msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr "Shunday nomli shablon mavjud.\nUni almashtirishni istaysizmi?"
+msgid  "Name already in use.\\nDo you want to overwrite document template?"
+msgstr ""
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the region \"$1\"?"
 msgstr "\"$1\" hudud olib tashlansinmi?"
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "\"$1\" element olib tashlansinmi?"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
-msgid  "The category is not empty.\nDelete anyway?"
-msgstr "Turkum boʻsh emas.\nOlib tashlansinmi?"
+msgid  "The category is not empty.\\nDelete anyway?"
+msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "\"$(DOC)\" hujjatiga oʻzgarishlar kiritildi.\nUni saqlashni istaysizmi?"
+msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/doc/doc.src#STR_STYLES.String.Text
+#, fuzzy
 msgid  "Styles"
 msgstr "Uslublar"
 
 #: source/doc/doc.src#STR_MACROS.String.Text
+#, fuzzy
 msgid  "Macros"
 msgstr "Makrolar"
 
 #: source/doc/doc.src#STR_CONFIG.String.Text
+#, fuzzy
 msgid  "Configuration"
 msgstr "Moslamalar"
 
@@ -1774,110 +1904,133 @@ msgid  "Styles in "
 msgstr ""
 
 #: source/doc/doc.src#STR_PRINT_STYLES.String.Text
+#, fuzzy
 msgid  "Printing Styles"
 msgstr "Uslublar chop etilmoqda"
 
 #: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
+#, fuzzy
 msgid  "The print job could not be started."
 msgstr "Chop etish vazifalarini ishga tushirib boʻlmadi."
 
 #: source/doc/doc.src#STR_BACKUP_COPY.String.Text
+#, fuzzy
 msgid  "Copy"
 msgstr "Nusxa koʻchirish"
 
 #: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
+#, fuzzy
 msgid  "The template could not be opened."
 msgstr "Shablonni ochib boʻlmaydi."
 
 #: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
+#, fuzzy
 msgid  "Document already open for editing."
 msgstr "Hujjat allaqachon ochilgan."
 
 #: source/doc/doc.src#STR_ERROR_SAVE.String.Text
+#, fuzzy
 msgid  "Error recording document "
 msgstr "Hujjatni yozish xatoligi"
 
 #: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "Shablonlar"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "\"$1\" shablonidan nusxa olishda xatolik roʻy berdi.\nShunday nomli shablon allaqachon mavjud."
+msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
+msgstr ""
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "The template \"$1\" can not be deleted."
 msgstr "\"$1\" shablonini olib tashlab boʻlmaydi."
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Error moving template \"$1\"."
 msgstr "\"$1\" shablonini koʻchirishda xatolik."
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
+#, fuzzy
 msgid  "The update could not be saved."
 msgstr "Yangilanishni saqlab boʻlmadi."
 
 #: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Error saving template "
 msgstr "Shablonni saqlashda xatolik "
 
 #: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
+#, fuzzy
 msgid  "Error renaming template."
 msgstr "Shablonni nomini oʻzgartirishda xatolik"
 
 #: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
+#, fuzzy
 msgid  "Error renaming template category."
 msgstr "Shablon turkumini nomini oʻzgartirishda xatolik."
 
 #: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
+#, fuzzy
 msgid  "Please specify a name."
 msgstr "Iltimos nom kiriting."
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
-msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr "Iltimos takrorlanmas nom kiriting.\nKatta kichik harflarga etibor berilmaysi."
+msgid  "Please specify a unique name.\\nEntries must not be case specific."
+msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr "\"$(TEXT)\" shabloni andoza shablon qilinsinmi?"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to reset the default template?"
 msgstr "Andoza shablonni tiklashni istaysizmi?"
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
-msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr "$(DIR)\nshablon direktoriyasi mavjud emas."
+msgid  "Template directory\\n$(DIR)\\ndoes not exist."
+msgstr ""
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
+#, fuzzy
 msgid  "Document info cannot be read."
 msgstr "Hujjat ma'lumotini oqib boʻmaydi."
 
 #: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
+#, fuzzy
 msgid  "The selected file has an incorrect format."
 msgstr "Tanlangan faylning formati xato."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
-msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr "Hujjatni $(FORMAT) formatda saqlab boʻlmaydiformat.\nOʻzgarishlarni $(OWNFORMAT) formatda saqlashni istaysizmi?"
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
+#, fuzzy
 msgid  "~Save"
 msgstr "~Saqlash"
 
 #: source/doc/doc.src#STR_UPDATEDOC.String.Text
+#, fuzzy
 msgid  "~Update"
 msgstr "~Yangilash"
 
 #: source/doc/doc.src#STR_SAVEASDOC.String.Text
+#, fuzzy
 msgid  "Save ~As..."
 msgstr "...sif~atida saqlash"
 
 #: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
+#, fuzzy
 msgid  "Save Copy ~as..."
 msgstr "Nusxani ~quyidagicha saqlash..."
 
 #: source/doc/doc.src#STR_CLOSEDOC.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "Yo~pish"
 
@@ -1886,26 +2039,32 @@ msgid  "~Close & Return to "
 msgstr ""
 
 #: source/doc/doc.src#STR_WIZARD.String.Text
+#, fuzzy
 msgid  " AutoPilot"
 msgstr " Usta"
 
 #: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
+#, fuzzy
 msgid  "Configurations"
 msgstr "Moslamalar"
 
 #: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Basic libraries"
 msgstr "%PRODUCTNAME Basic kutubxonalari"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
+#, fuzzy
 msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr "\"$(ARG1)\" uslubi boshqasi bilan almashtirilsinmi?"
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
+#, fuzzy
 msgid  "Loading Document"
 msgstr "Hujjat yuklanmoqda"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
+#, fuzzy
 msgid  "Connection to: $(HOST). Waiting for response..."
 msgstr "$(HOST) bilan aloqa oʻrnatilmoqda. Javob kutilmoqda..."
 
@@ -1918,22 +2077,26 @@ msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
 msgstr ""
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
+#, fuzzy
 msgid  "Disconnected"
 msgstr "Aloqa uzilgan"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
-msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr "Hujjatni tahrirlash uchun ochib boʻlmaydi.\nUni faqat oʻqish uchun usulida ochishni istaysizmi?"
+msgid  "Document cannot be opened for editing.\\nDo you want to open it as read-only?"
+msgstr ""
 
 #: source/doc/doc.src#STR_EDIT.String.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Tahrirlash"
 
 #: source/doc/doc.src#RID_OFFICEFILTER.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Documents"
 msgstr "%PRODUCTNAME hujjatlari"
 
 #: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Propert~ies..."
 msgstr "~Xossalari"
 
@@ -1942,50 +2105,62 @@ msgid  "HTML (FrameSet)"
 msgstr ""
 
 #: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME freym hujjati"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
 msgstr "\"$(TEMPLATE)\" shabloni oʻz manzilida topilmadi. Shunday nomli shablon \"$(FOUND)\" mazilida mavjud. Kelajakda taqqoslash uchun ushbu shablondan foydalanilsinmi?"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
+#, fuzzy
 msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
 msgstr "\"$(TEMPLATE)\" shabloni topilmadi. Shablon hujjat keyingi safar ochilganda qayta qidirilsinmi ?"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
+#, fuzzy
 msgid  "Automatically saved version"
 msgstr "Avtomatik saqlangan versiya"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
+#, fuzzy
 msgid  "Text Document"
 msgstr "Matn hujjati"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
+#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML hujjati"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
+#, fuzzy
 msgid  "Master Document"
 msgstr "Bosh hujjat"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Elektron jadval"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
+#, fuzzy
 msgid  "Presentation"
 msgstr "Namoyish"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
+#, fuzzy
 msgid  "Drawing"
 msgstr "Chizma"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
+#, fuzzy
 msgid  "Message"
 msgstr "Xabar"
 
 #: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
+#, fuzzy
 msgid  "~Discard"
 msgstr "~Voz kechish"
 
@@ -1998,22 +2173,27 @@ msgid  "Insert the next data carrier and click OK."
 msgstr ""
 
 #: source/doc/doc.src#STR_OBJECT.String.Text
+#, fuzzy
 msgid  "Object"
 msgstr "Obyekt"
 
 #: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
+#, fuzzy
 msgid  "Run Macro"
 msgstr "Maktoni bajarish"
 
 #: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
+#, fuzzy
 msgid  "This document contains macros. $(TEXT)"
 msgstr "Ushbu hujjatda makroslar mavjud. $(TEXT)"
 
 #: source/doc/doc.src#BTN_OK.String.Text
+#, fuzzy
 msgid  "Run"
 msgstr "Bajarish"
 
 #: source/doc/doc.src#BTN_CANCEL.String.Text
+#, fuzzy
 msgid  "Do Not Run"
 msgstr "Bajarilmasin"
 
@@ -2022,46 +2202,55 @@ msgid  "According to the security settings, the macros in this document should n
 msgstr ""
 
 #: source/doc/doc.src#FT_OK.String.Text
+#, fuzzy
 msgid  "Do you want to allow these macros to be run?"
 msgstr "Ushbu makroslarga ishga tushishiga ruxsat berasizmi?"
 
 #: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
+#, fuzzy
 msgid  "Export as PDF"
 msgstr "PDF eksport"
 
 #: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
+#, fuzzy
 msgid  "Export..."
 msgstr "Eksport qilish"
 
 #: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
+#, fuzzy
 msgid  "Export"
 msgstr "Eksport qilish"
 
 #: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
+#, fuzzy
 msgid  "Add this directory to the list of secure paths: "
 msgstr "Ushbu direktoriyani xavfsiz yoʻllar roʻyxatiga qoʻshish: "
 
 #: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
+#, fuzzy
 msgid  "File format:"
 msgstr "Faylning formati:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
-msgid  "This document contains:\n\n"
-msgstr "Ushbu hujjat tarkibida:\n\n"
+msgid  "This document contains:\\n\\n"
+msgstr ""
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
 msgstr ""
 
 #: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
+#, fuzzy
 msgid  "Notes"
 msgstr "Izohlar"
 
 #: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
+#, fuzzy
 msgid  "Document versions"
 msgstr "Hujjatning versiyasi"
 
 #: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
+#, fuzzy
 msgid  "Fields"
 msgstr "Maydonlar"
 
@@ -2070,18 +2259,22 @@ msgid  "Linked data..."
 msgstr ""
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
+#, fuzzy
 msgid  "Do you want to continue saving the document?"
 msgstr "Hujjatni saqlashni davom etishni istaysizmi?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
+#, fuzzy
 msgid  "Do you want to continue printing the document?"
 msgstr "Hujjatni chop etishni davom etishni istaysizmi?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
+#, fuzzy
 msgid  "Do you want to continue signing the document?"
 msgstr "Hujjatni imzolashni davom etishni istaysizmi?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
+#, fuzzy
 msgid  "Do you want to continue creating a PDF file?"
 msgstr "PDF-fayl yaratishni davom etishni istaysizmi?"
 
@@ -2090,6 +2283,7 @@ msgid  "If you do not want to overwrite the original document, you should save y
 msgstr ""
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
+#, fuzzy
 msgid  "Some template files are protected and can not be deleted."
 msgstr "Ba'zi shablon fayllari himoyalangan va ularni olib olib tashlab boʻlmadi."
 
@@ -2098,6 +2292,7 @@ msgid  "Info %1"
 msgstr ""
 
 #: source/doc/doc.src#STR_SHARED.String.Text
+#, fuzzy
 msgid  " (shared)"
 msgstr " (boʻlishilgan)"
 
@@ -2106,7 +2301,7 @@ msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in To
 msgstr ""
 
 #: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\\nDo you want to save the document?"
 msgstr ""
 
 #: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
@@ -2114,158 +2309,197 @@ msgid  "The template '$(ARG1)' on which this document is based, has been modifie
 msgstr ""
 
 #: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
+#, fuzzy
 msgid  "~Update Styles"
 msgstr "Uslublarni ~yangilash"
 
 #: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
+#, fuzzy
 msgid  "~Keep Old Styles"
 msgstr "Eski uslublarni ~saqlab qolish"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
+#, fuzzy
 msgid  "Template Management"
 msgstr "Shablonlar boshqaruvi"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
+#, fuzzy
 msgid  "Close"
 msgstr "Yopish"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
+#, fuzzy
 msgid  "~File..."
 msgstr "~Fayl"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
+#, fuzzy
 msgid  "~Address Book..."
 msgstr "~Manzillar daftari"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
 msgid  "Templates"
 msgstr "Shablonlar"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
 msgid  "Documents"
 msgstr "Hujjatlar"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
 msgid  "Templates"
 msgstr "Shablonlar"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
 msgid  "Documents"
 msgstr "Hujjatlar"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
+#, fuzzy
 msgid  "Commands"
 msgstr "Buyruqlar"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
+#, fuzzy
 msgid  "~New"
 msgstr "~Yangi"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Olib tashlash"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "Tahrir~lash"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
+#, fuzzy
 msgid  "Import Template..."
 msgstr "Shablonni import qilish..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
+#, fuzzy
 msgid  "Export Template..."
 msgstr "Shablonni eksport qilish..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
+#, fuzzy
 msgid  "~Print"
 msgstr "~Chop etish"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
+#, fuzzy
 msgid  "Printer Settings..."
 msgstr "Printer ~moslamalari..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
+#, fuzzy
 msgid  "Update"
 msgstr "Yangilash"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
 msgid  "Set As Default Template"
 msgstr "Andoza shablon sifatida belgilash"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
 msgid  "Reset Default Template"
 msgstr "Andoza shablonni tiklash"
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
+#, fuzzy
 msgid  "New"
 msgstr "Yangi"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
+#, fuzzy
 msgid  "~Categories"
 msgstr "Turkumlar"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
+#, fuzzy
 msgid  "T~emplates"
 msgstr "~Shablonlar"
 
 #: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
+#, fuzzy
 msgid  "~More"
 msgstr "~Boshqa"
 
 #: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
+#, fuzzy
 msgid  "Pre~view"
 msgstr "~Koʻrib chiqish"
 
 #: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
+#, fuzzy
 msgid  "Description"
 msgstr "Taʼrif"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
+#, fuzzy
 msgid  "Te~xt"
 msgstr "M~atn"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
+#, fuzzy
 msgid  "~Frame"
 msgstr "~Freym"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
+#, fuzzy
 msgid  "~Pages"
 msgstr "~Sahifalar"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
+#, fuzzy
 msgid  "N~umbering"
 msgstr "~Raqamlash"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
+#, fuzzy
 msgid  "~Overwrite"
 msgstr "~Almashtirish"
 
 #: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
+#, fuzzy
 msgid  "From File..."
 msgstr "Fayldan"
 
 #: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Load Styles"
 msgstr "Uslublarni yuklash"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "~Sarlavha"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
+#, fuzzy
 msgid  "Subject"
 msgstr "Mavzu"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
+#, fuzzy
 msgid  "~Key words"
 msgstr "~Tayanch soʻzlar"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "~Taʼrif"
 
 #: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
+#, fuzzy
 msgid  "Configuration Menu"
 msgstr "Moslash menyusi"
 
@@ -2274,18 +2508,22 @@ msgid  "~Add-Ons"
 msgstr ""
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
+#, fuzzy
 msgid  "Cu~t"
 msgstr "~Kesish"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
 msgstr "~Nusxa koʻchirish"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
+#, fuzzy
 msgid  "~Paste"
 msgstr "~Qoʻyish"
 
 #: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
+#, fuzzy
 msgid  "Leave Full-Screen Mode"
 msgstr "Butun ekrandan qaytish"
 
@@ -2306,59 +2544,67 @@ msgid  "~Thesaurus..."
 msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "Andoza printer potilmadi.\nIltimos printerni tanlang va boshqatdan urinib koʻring."
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr ""
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "Printerni ishga tushirib boʻlmadi.\nIltimos printeringiz moslamalarini tekshirib koʻring."
+msgid  "Could not start printer.\\nPlease check your printer configuration."
+msgstr ""
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
-msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
 msgstr ""
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
+#, fuzzy
 msgid  "Options..."
 msgstr "Parametrlar..."
 
 #: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
+#, fuzzy
 msgid  "Printer Options"
 msgstr "Printerning parametrlari"
 
 #: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
+#, fuzzy
 msgid  "Printer busy"
 msgstr "Printer band"
 
 #: source/view/view.src#STR_ERROR_PRINT.String.Text
+#, fuzzy
 msgid  "Error while printing"
 msgstr "Chop etishda xato roʻy berdi"
 
 #: source/view/view.src#STR_PRINTING.String.Text
+#, fuzzy
 msgid  "Printing"
 msgstr "Bosib chiqarilmoqda"
 
 #: source/view/view.src#STR_PAGE.String.Text
+#, fuzzy
 msgid  "Page "
 msgstr "Sahifa "
 
 #: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
 msgid  "Error saving template "
 msgstr "Shablonni saqlash xatoligi"
 
 #: source/view/view.src#STR_READONLY.String.Text
+#, fuzzy
 msgid  " (read-only)"
 msgstr " (faqat oʻqishga)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
 msgstr ""
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
-msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
+msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
 msgstr ""
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
 msgstr ""
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
@@ -2366,14 +2612,16 @@ msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</
 msgstr ""
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
+#, fuzzy
 msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
 msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Hujjat parametrlari topilmadi.</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
-msgid  "The document cannot be closed because a\n print job is being carried out."
+msgid  "The document cannot be closed because a\\n print job is being carried out."
 msgstr ""
 
 #: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+#, fuzzy
 msgid  "Print Monitor"
 msgstr "Printerni nazorat qilish"
 
@@ -2386,7 +2634,7 @@ msgid  "is being prepared for printing"
 msgstr ""
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
 msgstr ""
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message

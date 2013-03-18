@@ -705,7 +705,7 @@ msgstr "Esta función y todas las subfunciones se ejecutarán desde la red."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
-msgstr "Esta función se instalará para ejecutarse desde el CD."
+msgstr "Esta función se ejecutará desde el CD."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_11
 msgid  "This feature will be installed on local hard drive."
@@ -941,7 +941,7 @@ msgstr "Creando archivos duplicados"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_20
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "Archivo: [1], directorio: [9], tamaño: [6]"
+msgstr "Archivo: [1], Directorio: [9], Tamaño: [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_21
 msgid  "Computing space requirements"
@@ -1061,7 +1061,7 @@ msgstr "Registrando servidores de clases"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_50
 msgid  "Class ID: [1]"
-msgstr "ID de clase: [1]"
+msgstr "Id. de clase: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_51
 msgid  "Registering COM+ Applications and Components"
@@ -1093,7 +1093,7 @@ msgstr "Registrando información MIME"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "Tipo de contenido MIME: [1], Extensión: [2]"
+msgstr "Tipo de contenido MIME: [1], extensión: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 msgid  "Registering product"
@@ -1133,15 +1133,15 @@ msgstr "Quitando archivos duplicados"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_68
 msgid  "File: [1], Directory: [9]"
-msgstr "Archivo: [1], directorio: [9]"
+msgstr "Archivo: [1], Directorio: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 msgid  "Updating environment strings"
-msgstr "Actualizando cadenas de comandos del entorno"
+msgstr "Actualizando cadenas de entorno"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "Nombre: [1], Valor: [2], Acción [3]"
+msgstr "Nombre: [1], valor: [2], acción [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 msgid  "Removing applications"
@@ -1173,7 +1173,7 @@ msgstr "Quitando entradas de archivos INI"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_78
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
-msgstr "Archivo: [1], Sección: [2], Clave: [3], Valor: [4]"
+msgstr "Archivo: [1], sección: [2], clave: [3], valor: [4]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_79
 msgid  "Removing ODBC components"
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Gracias por descargar %PRODUCTNAME %PRODUCTVERSION."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "&Descomprimir"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "Los archivos de instalación de %PRODUCTNAME %PRODUCTVERSION se descomprimirán y guardarán en la carpeta que aparece a continuación. Si deseara guardar %PRODUCTNAME en una carpeta diferente, haga clic en \\'Buscar\\' para seleccionar otra carpeta."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1457,7 +1457,7 @@ msgstr "&Buscar en:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_6
 msgid  "Browse to the destination folder."
-msgstr "Buscar la carpeta de destino."
+msgstr "Ir a la carpeta de destino."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 msgid  "{&MSSansBold8}Change Current Destination Folder"
@@ -1525,7 +1525,7 @@ msgstr "&Siguiente >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Bienvenido al Asistente para la instalación de [ProductName]"
+msgstr "{&TahomaBold10}Bienvenido al asistente de instalación de [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "Cancelar"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}Información del cliente"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1741,7 +1741,7 @@ msgstr "[INSTALLDIR]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
-msgstr "Instalar [ProductName] en:"
+msgstr "Instalar[ProductName] en:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 msgid  "&Next >"
@@ -1837,7 +1837,7 @@ msgstr "&Siguiente >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Bienvenido al Asistente para la instalación de [ProductName]"
+msgstr "{&TahomaBold10}Bienvenido al asistente de instalación de [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
@@ -2045,7 +2045,7 @@ msgstr "Puede guardar todos los elementos instalados en el sistema para continua
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
-msgstr "Haga clic en Restaurar o Continuar posteriormente para salir del Asistente de instalación."
+msgstr "Haga clic en Restaurar o Continuar posteriormente para salir del Asistente."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 msgid  "{&TahomaBold10}Installation Wizard Completed"

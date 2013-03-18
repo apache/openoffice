@@ -56,8 +56,8 @@ msgid  "Data Source Title"
 msgstr "Өгөгдлийн эхийн гарчиг"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "%PRODUCTNAME таны одоо хэрэглэж байгаа хаягийн өгөгдөлд хандана. Үүнийг хийхэд %PRODUCTNAME өгөгдлийн эх таны хүснэгт хэлбэртэй хаягийн өгөгдөлд нэмэгдэнэ.\n\nЭнэ залуурч таныг өгөгдлийн эх үүсгэхэд тань тусална."
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -108,32 +108,32 @@ msgid  "Other external data source"
 msgstr "Өөр гадаад өгөгдлийн эх сурвалж"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "Шинэ өгөгдлийн эх сурвалж суулгахад нэмэлт мэдээлэл хэрэгтэй байна.\n\nДараах товчин дээр дарж өөр диалог нээн хэрэгтэй мэдээлэлийг оруулна уу."
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
 msgstr "Тохиргоо"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "Өгөгдлийн эх сурвалжийн холболт тогтворжиж чадахгүй байна.\nТа үргэлжлүүлэхээсээ өмнө тохиргоог шалгах эсвэл (өмнөх хуудсанаас) өөр хаягийн дэвтрийн өгөгдлийн эх сурвалжийн төрөл сонгоно уу"
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr "Таны сонгосон гадаад өгөгдлийн эх сурвалж нэгээс их хаягийн дэвтэр агуулсан байна.\nТа хүссэн нэгийг сонгоно уу:"
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "Таны хэвэнд хаягийн өгөгдлийг оруулахад %PRODUCTNAME ямар талбар ямар өгөгдөл агуулах ёстойг мэдэх хэрэгтэй.\n\nЖишээлбэл, та имэйл хаягуудыг \"email\" эсвэл \"E-mail\" эсвэл \"EM\" - эсвэл өөр ямар нэг нэртэй талбарт хадгалсан байж болно.\n\nТа өгөгдлийн эхийн тохиргоогоо оруулах диалогийг нээх гэж байгаа бол доорх товчин дээр товшино уу."
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
 msgstr "Талбар олголт"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "Энэ бүхэн таны хаягийн өгөгдлөө %PRODUCTNAME рүү нэгтгэхэд шаардлагатай мэдээллүүд байлаа .\n\nОдоо та %PRODUCTNAME -д бүртгүүлэхийг хүссэн өгөгдлийн эхийнхээ зөвхөн нэрийг нь оруулна уу."
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -160,8 +160,8 @@ msgid  "Please select a type of address book."
 msgstr "Хаягийн дэвтрийн төрлийг сонгоно уу."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr "Өгөгдлийн эх сурвалж ямар ч хүснэгт агуулаагүй байна.\n Тэгсэн ч хаягийн дэвтэрийн өгөгдлийн эх сурвалжаар суулгах уу?"
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Хаягийн өгөгдөл - Талбар олголт"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "Яг одоо ямар нэгэн талбар олгогдоогүй байна.\nТа одоо эсвэл дараа эхний сонголтоор талбар олгож болно.\n\"Файл - Хэв - Хаягийн дэвтрийн эх сурвалж...\""
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr ""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -216,8 +216,8 @@ msgid  "Data Source"
 msgstr "Өгөгдлийн эх"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\n"
-msgstr "Дараах баганын нэрс олгогдох боломжгүй:\n"
+msgid  "The following column names could not be assigned:\\n"
+msgstr ""
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -492,8 +492,8 @@ msgid  "Control"
 msgstr "Хяналт"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "Баруун хэсэгт та маягтын өгөгдлийн эхийн бүх хүснэгтийг харж байна.\n\n\nЭнэ листын агуулгад сууриар хэрэглэгдэх өгөгдлийн хүснэгтийг сонгоно уу:"
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -588,8 +588,8 @@ msgid  "Data"
 msgstr "Өгөгдөл"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "Одоо байгаа маягтын контрол  нь холбоотой өгөгдлийн эхэд харъяалагдахгүй (эсвэл бүрэн бус) байна.\n\nӨгөгдлийн эх болон хүснэгтийг сонгоно уу.\n\n\nЭнэ хуудсанд хийгдсэн өөрчлөлт хуудсыг орхингуут идэвхтэй болохыг анхаарна уу."
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -657,7 +657,7 @@ msgstr "Ямар ~нэр сонголтын талбартаа өгөх вэ?"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
 msgid  "~Option fields"
-msgstr "~Сонголтын талбар"
+msgstr "~Сонголт талбар"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
 msgid  "Default Field Selection"
@@ -736,8 +736,8 @@ msgid  "Welcome"
 msgstr "Тавтай морил"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr "%PRODUCTNAME %PRODUCTVERSION OEM -д тавтай морил\n\n%PRODUCTNAME %PRODUCTVERSION OEM эхлүүлэхдээ, лиценз бичвэрийг дагаж гарч ирэх цонхонд хувийн өгөгдлөө оруулна уу. %PRODUCTNAME -н бүтээгдэхүүний лавлах доторх readme файлуудад чухал мэдээллүүд агуулагдаж байгаа. Тэдгээр файлуудыг анхааралтай уншина уу. Мөн та нарийвчилсан мэдээллийг Sun вэб хуудаснаас олох боломжтой\n\nhttp://www.sun.com/staroffice.\n\nДэмжилт ба Сургалт:\n\n60 өдөр хүчинтэй үнэгүй (\"FREE\") програм хангамжийн дэмжилтийг авна уу. Энэ саналын давуу талуудыг мэдэхийг хүсвэл дараах вэб сайтаар зочилно уу.\n\nhttp://www.sun.com/star/service\n\nБид таныг %PRODUCTNAME тай сэтгэл хангалуун ажиллана гэдэгт найдаж байна."
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr ""
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -816,8 +816,8 @@ msgid  "Forms"
 msgstr "Маягтууд"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "Та '#type#' өгөгдлийн төрлийг загвараас устгахыг хүсэж байна уу?\nЭнэ өгөгдлийн төрөл холбогдсон бүх контролуудад нөлөөлөхийг анхаарана уу."
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2296,12 +2296,12 @@ msgid  "Type a name for the new data type:"
 msgstr "Та шинэ өгөгдлийн төрөлдөө нэр өгнө үү:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\n Dev~ice"
-msgstr "~Төхөөрөмжийн \nтухай"
+msgid  "About\\n Dev~ice"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\nPreview"
-msgstr "Үүсгэх\nНягтлан харах"
+msgid  "Create\\nPreview"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2356,8 +2356,8 @@ msgid  "Scanner"
 msgstr "Сканер"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "Төхөөрөмж: %s\nБорлуулагч:%s: %s\nЗагвар: %s\nТөрөл: %s"
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2404,8 +2404,8 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION нь хамгийн шинэ хувилбар байна."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr "%PRODUCTNAME %NEXTVERSION нь бэлэн байна.\n\nСуулгагдсан хувилбар нь %PRODUCTNAME %PRODUCTVERSION байна.\n\nСанамж: Шинэчлэлийг татахын өмнө, танд үүнийг суулгах бүрэн эрх байгаагаа баталгаажуулна уу.\nНууц үг, ихэвчлэн захирагчийн эсвэл үндсэн хэрэглэгчийн нууц үг, магадгүй хэрэг болно. "
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2420,16 +2420,16 @@ msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "%PRODUCTNAME %NEXTVERSION -ийг татах явц саатуулагдсан"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "Татах байрлал нь: %DOWNLOAD_PATH.\n\nХэрэгсэл - Тохируулга... - %PRODUCTNAME - Онлайн Шинэчлэл хэсэгт та татах байрлалыг сольж болно."
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME нь %DOWNLOAD_PATH руу татагдлаа."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "Шинэчлэлийг автоматаар татах нь одоогоор боломжгүй байна.\n\n'Татах...' ийг дарж %PRODUCTNAME %NEXTVERSION ийг вэб сайтаас гараар татаж авна."
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2517,7 +2517,7 @@ msgstr "Болих"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
 msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME шинэчлэлт гарчээ"
+msgstr "%PRODUCTNAME шинэчлэл гарчээ"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
 msgid  "Click here to start the download."
@@ -2525,7 +2525,7 @@ msgstr "Энд дарж татаж эхэлнэ."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
 msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME шинэчлэл гарчээ"
+msgstr "%PRODUCTNAME шинэчлэлт гарчээ"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
 msgid  "Click here for more information."
@@ -2575,6 +2575,6 @@ msgstr "Өргөтгөлд зориулсан шинэчлэл бэлэн-бай
 msgid  "Click here for more information."
 msgstr "Илүү мэдээлэл авахыг хүсвэл энд товшино уу."
 
-#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
 msgid  "Check for ~Updates..."
 msgstr "~Шинэчлэлийг шалгах..."

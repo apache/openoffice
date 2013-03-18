@@ -136,24 +136,24 @@ msgid  "Retry"
 msgstr "Паўтарыць"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "Не ўдалося (%PRODUCTNAME) запісаць важную ўнутраную інфармацыю з прычыны недастатковага аб'ёму свабоднага месца ў наступным каталогу:\n%PATH\n\nВы не зможаце працягваць працу з %PRODUCTNAME, не вызваліўшы дадатковага месца на дыску ў гэтым каталогу.\n\nНацісніце кнопку 'Паўтарыць' пасля атрымання дадатковага месца, каб паспрабаваць запісаць даныя.\n\n"
+msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
+msgstr ""
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
 msgstr "Да пачатковага"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "Памылка пры счытванні канфігурацыі карыстальніцкага інтэрфейсу. Праграма будзе зараз спынена.\nПаспрабуйце ўстанавіць праграму нанова."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "Памылка пры счытванні канфігурацыі карыстальніцкага інтэрфейсу. Праграма будзе зараз спынена.\nПаспрабуйце выдаліць свой профіль карыстання праграмай."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "Памылка пры счытванні канфігурацыі карыстальніцкага інтэрфейсу. Праграма будзе зараз спынена.\nПаспрабуйце выдаліць свой профіль карыстання праграмай або ўстанавіць праграму нанова."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

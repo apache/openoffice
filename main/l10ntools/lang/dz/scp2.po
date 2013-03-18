@@ -683,6 +683,7 @@ msgid  "Java Runtime Environment (%JAVAVERSION)"
 msgstr ""
 
 #: source/ooo/module_java.ulf#STR_DESC_MODULE_OPTIONAL_JAVA
+#, fuzzy
 msgid  "Component for setting up the Java Environment"
 msgstr "ཇ་བ་མཐའ་འཁོར་འདི་སྒྲིག་སྟངས་དོན་ལུ་ཆ་ཤས།"
 
@@ -695,42 +696,52 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr ""
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
+#, fuzzy
 msgid  "Information"
 msgstr "བརྡ་དོན།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
+#, fuzzy
 msgid  "Internet"
 msgstr "ཨིན་ཊར་ནེཊི།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
+#, fuzzy
 msgid  "Java"
 msgstr "ཇ་བ།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
+#, fuzzy
 msgid  "Fun&More"
 msgstr "དགོད་བྲ་དང་གཞན།(&M)"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
+#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME ཨེ་པི་ཨའི།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
+#, fuzzy
 msgid  "Travel"
 msgstr "ལམ་འགྲུལ།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
+#, fuzzy
 msgid  "Chapters"
 msgstr "ལེའུ་ཚུ།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
+#, fuzzy
 msgid  "Files"
 msgstr "ཡིག་སྣོད་ཚུ།"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
+#, fuzzy
 msgid  "From Template"
 msgstr "ཊེམ་པེལེཊི་ལས།"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
+#, fuzzy
 msgid  "Open Document"
 msgstr "ཡིག་ཆ་ ཁ་ཕྱེ།"
 
@@ -739,10 +750,12 @@ msgid  "The office productivity suite compatible to the open and standardized OD
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
+#, fuzzy
 msgid  "Additional language packs"
 msgstr "ཁ་སྐད་སྦུང་ཚན་ཚུ་ཁ་སྐོང་།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_ROOT_LANGPACK
+#, fuzzy
 msgid  "Additional language packs"
 msgstr "ཁ་སྐད་སྦུང་ཚན་ཚུ་ཁ་སྐོང་།"
 
@@ -1034,7 +1047,7 @@ msgstr "ཏ་མིལ།"
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TA
 #, fuzzy
 msgid  "Installs Tamil support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཏ་མིལ་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཏ་མིལ་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA_IN
 #, fuzzy
@@ -1054,7 +1067,7 @@ msgstr "ཧིན་དི།"
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HI
 #, fuzzy
 msgid  "Installs Hindi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཧིན་དི་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཧིན་དི་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HI_IN
 #, fuzzy
@@ -1878,26 +1891,32 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
+#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "གློག་འཕྲིན་ ཡིག་འཕྲིན་མཉམ་བསྡོམས་འབད་ནི།"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
+#, fuzzy
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
 msgstr "%PRODUCTNAME གློག་འཕྲིན་ ཡིག་འཕྲིན་མཉམ་བསྡོམས་འབད་ནི་ ཁྱད་རྣམ་གི་དོན་ལུ་ཚད་གཞི།"
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
+#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "པ་ཡི་ཐཱོན་-ཡུ་ཨེན་ཨོ་ ཟམ།"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
+#, fuzzy
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
 msgstr "%PRODUCTNAME འདི་པ་ཡི་ཐཱོན་ཡིག་ཚུགས་འབྲི་ནི་ ཁ་སྐད་དང་གཅིག་ཁར་ ལྕོགས་གྲུབ་ཅན་བཟོ་ནི་ལུ་ འཕྲུལ་སྤྱོད་དང་ཁ་སྐོང་འབད་འོང་།མཇུག་བསྡུ་ཡིག་ཐོག་དོན་ལུ་http://udk.openoffice.org/python/python-bridge.htmlགཟིགས་གནང་།"
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
+#, fuzzy
 msgid  "Quickstarter"
 msgstr "འཕྲལ་མགྱོགས་འགོ་བཙུགས་མི།"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
+#, fuzzy
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
 msgstr " %PRODUCTNAME %PRODUCTVERSION གི་འགོ་བཙུགས་དུས་ཚོད་མགྱོགས་བསྐྱོད་ འབད་ནི་རིམ་རུགས་ཚུ་ལུ་ གཞི་རྩ་ཆ་ཤས་མངོན་གསལ་འབད་འོང་།"
 
@@ -1910,54 +1929,67 @@ msgid  "The SDK provides all necessary tools, examples and documentation to prog
 msgstr ""
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "སྒོ་སྒྲིག་གི་ཐབས་འཚོལ་རྒྱ་བསྐྱེད།"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+#, fuzzy
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
 msgstr "%PRODUCTNAME ཡིག་ཆ་ཚུ་གི་ བསྐོར་ལས་བརྡ་དོན་སྟོན་ཏེ་ མའི་ཀོརོ་སོཕཊ་ སྒོ་སྒྲིག་ཐབས་འཚོལ་ཚུ་ ལྕོགས་ཅན་བཟོ་འོང་ འདི་ཡང་ ཐམབ་ནེལ་ པིརི་ཝིཝསི་ཟེར་མི་བཟུམ་ཨིན།"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
+#, fuzzy
 msgid  "HTML Document"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ ཡིག་ཆ།"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
+#, fuzzy
 msgid  "Text Document"
 msgstr "ཚིག་ཡིག་ ཡིག་ཆ།"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
 msgstr "   རྩོམ་འབྲི་པ་ལག་ལེན་འཐབ་ཀྱི་ཐོག་ལས་ ཚིག་ཡིག་དང་ ཚད་རིས་ཚུ་ཡི་གུ་དང་ སྙན་ཞུ་ ཡིག་ཆ་ དེ་ལས་ ཝེབ་ཤོག་ལེབ་ཚུ་ ནང་གསར་བསྐྲུན་དང་ ཞུན་དག་འབད།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+#, fuzzy
 msgid  "&New"
 msgstr "གསརཔ།(&N)"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
+#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION  ཚིག་ཡིག་  ཡིག་ཆ།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
+#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION ཡིག་ཆ་ཨམ།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
+#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION  ཚིག་ཡིག་ ཡིག་ཆ་ཊེམ་པེལེཊི།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
+#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "ཨོ་པཱན་ཌོ་ཀུ་མེནཊ་ ཚིག་ཡིག"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
+#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "ཨོ་པཱན་ཌོ་ཀུ་མེནཊ་ ཚིག་ཡིག་ ཊེམ་པེལེཊི།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
+#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "ཨོ་པཱན་ཌོ་ཀུ་མེནཊ་ ཡིག་ཆ་ཨམ།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
+#, fuzzy
 msgid  "HTML Document Template"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ ཡིག་ཆའི་ ཊེམ་པེལེཊི།"
 
@@ -1982,26 +2014,32 @@ msgid  "Rich Text Document"
 msgstr ""
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
+#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME  རྩོམ་འབྲི་པ།"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
 msgstr " %PRODUCTNAME  རྩོམ་འབྲི་པ་ ལག་ལེན་འཐབ་ཀྱི་ཐོག་ལས་  ཚིག་ཡིག་དང་ ཚད་རིས་ཚུ་ ཡི་གུ་དང་ སྙན་ཞུ་ དེ་ལས་ ཡིག་ཆ་དང་ཝེབ་ཤོག་ལེབ་ཚུ་ནང་ གསར་བསྐྲུན་དང་ ཞུན་དག་འབད།"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
+#, fuzzy
 msgid  "Program Module"
 msgstr "ལས་རིམ་ ཚད་གཞི།"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
+#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr " %PRODUCTNAME  གློག་རིམ་ རྩོམ་འབྲི་པ།"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
+#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "%PRODUCTNAME རྩོམ་འབྲི་པའི་ རོགས་རམ།"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
+#, fuzzy
 msgid  "Help about %PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME རྩོམ་འབྲི་པའི་བསྐོར་ལས་ རོགས་རམ།"
 
@@ -2015,8 +2053,9 @@ msgstr ""
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
 msgid  "XSLT Sample Filters"
-msgstr "ཨེཀསི་ ཨེས་ཨེལ་ཊི་ དཔེ་ཚད་ཚགས་མ།"
+msgstr "ཨེཀསི་ཨེས་ ཨེལ་ཊི་ དཔེ་ཚད་ཚགས་མ།"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
+#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "ཨེཀསི་ཨེས་ ཨེལ་ཊི་ དཔེ་ཚད་ཚགས་མ།"

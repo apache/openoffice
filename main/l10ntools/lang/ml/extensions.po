@@ -56,8 +56,8 @@ msgid  "Data Source Title"
 msgstr "ഡേറ്റ ഉറവിട ശീര്‍ഷകം"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -108,32 +108,32 @@ msgid  "Other external data source"
 msgstr "പുറമേയുള്ള ഡേറ്റാ ഉറവിടം"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "പുതിയ ഡേറ്റാ ഉറവിടം ക്രമീകരിക്കുന്നതിനായി കൂടുതല്‍ വിവരങ്ങള്‍ ആവശ്യമാണു്.\n\n തുടര്‍ന്നുള്ള ബട്ടണ്‍ ക്ലിക്ക് ചെയ്ത് മറ്റൊരു സംഭാഷണം തുറക്കുകയും അതില്‍ ആവശ്യമായ വിവരങ്ങള്‍ രേഖപ്പെടുത്തുകയും ചെയ്യുക."
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
 msgstr "സജ്ജീകരണങ്ങള്‍"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "ഡേറ്റാ ഉറവിടത്തിലേക്കുള്ള കണക്ഷന്‍ സ്ഥാപിക്കാനായില്ല.\nതുടരുന്നതിന് മുമ്പ്, ദയവായി സജ്ജീകരണങ്ങള്‍ പരിശോധിക്കുക, അല്ലെങ്കില്‍ (പൂര്‍‌വ്വ താളില്‍) മറ്റൊരു ഡേറ്റ ഉറവിട വിഭാഗം തെരഞ്ഞെടുക്കുക."
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr "നിങ്ങള്‍ തെരഞ്ഞെടുത്ത പുറമേനിന്നുള്ള ഡേറ്റാ ഉറവിടത്തില്‍ ഒന്നില്‍ കൂടുതല്‍ വിലാസപുസ്തകം ലഭ്യമാണു്.\nനിങ്ങള്‍ക്കു് പ്രധാനമായും പ്രവര്‍ത്തിക്കേണ്ടതു് തെരഞ്ഞെടുക്കുക:"
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "മേല്‍വിലാസ ഡേറ്റ നിങ്ങളുടെ മാതൃകകളില്‍ ചേര്‍ക്കണമെങ്കില്‍, ഏതു് ഡേറ്റ ഏതു് മണ്ഡലത്തില്‍ ‌ആണെന്നു് %PRODUCTNAME അറിഞ്ഞിരിക്കണം.\n\nഉദാഹരണം, നിങ്ങള്‍ ഇ-മെയില്‍ മേല്‍വിലാസം സൂക്ഷിച്ചതു് \"ഇമെയില്‍\", അല്ലെങ്കില്‍ \"ഇ-മെയില്‍\" അല്ലെങ്കില്‍ \"ഇഎം\" - അല്ലെങ്കില്‍ തികച്ചും വ്യത്യസ്തമായ മറ്റൊന്നിലോ ആയിരിക്കാം.\n\nതാഴത്തെ ബട്ടണ്‍ ക്ലിക്ക് ചെയ്ത് മറ്റൊരു സംഭാഷണം തുറന്ന് നിങ്ങളുടെ ഡേറ്റ ഉറവിടത്തിനുള്ള സജ്ജീകരണങ്ങള്‍ ചെയ്യാവുന്നതാണ‍്."
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
 msgstr "ഫീള്‍ഡ് അസൈന്‍മെന്റ്"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "നിങ്ങള്‍ക്ക് %PRODUCTNAME-ലേക്കു് മേല്‍വിലാസ് ഡേറ്റ ചേര്‍ക്കുവാന്‍ ആവശ്യമായ എല്ലാ വിവരങ്ങളും ഇതാകുന്നു .\n\nഇനി, %PRODUCTNAME-ല്‍ നിങ്ങള്‍ക്കു് ഡേറ്റ ഉറവിടം രജിസ്റ്റര്‍ ചെയ്യുവാന്‍ ആഗ്രഹിക്കുന്ന പേരു് നല്കുക %PRODUCTNAME."
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -160,8 +160,8 @@ msgid  "Please select a type of address book."
 msgstr "ഒരു മേല്‍വിലാസപുസ്തക വിഭാഗം ദയവായി തെരഞ്ഞെടുക്കുക."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr "ഡേറ്റ ഉറവിടത്തില്‍ പട്ടിക ലഭ്യമല്ല.\nനിങ്ങള്‍ക്കു് ഇതിനെ മേല്‍വിലാസ ഡേറ്റ ഉറവിടമായി  സജ്ജമാക്കണമോ?"
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "മേല്‍വിലാസ ഡേറ്റ- മണ്ഡലം നിര്‍ണ്ണയിക്കല്‍"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "നിലവില്‍ ഒരു മണ്ഡലവും ലഭ്യമല്ല.\nനിങ്ങള്‍ക്ക് വേണമെങ്കില്‍ ഇതു് പിന്നീടോ അല്ലെങ്കില്‍ ഇപ്പോഴോ താഴെ പറഞ്ഞിരിക്കുന്നതു് തെരഞ്ഞെടുത്തു് ചെയ്യാം:\n\"ഫയല്‍ -മാതൃക - മേല്‍വിലാസപുസ്തക ഉറവിടം...\""
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr ""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -216,8 +216,8 @@ msgid  "Data Source"
 msgstr "ഡേറ്റാ ഉറവിടം"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\n"
-msgstr "തന്നിരിക്കുന്ന സ്തംഭനാമങ്ങള് നിര്ണ്ണയിക്കാന് കഴിയുന്നില്ല:\n"
+msgid  "The following column names could not be assigned:\\n"
+msgstr ""
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -492,8 +492,8 @@ msgid  "Control"
 msgstr "നിയന്ത്രണം"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "ഇടത്തുവശത്ത്, ഡേറ്റാ ഉറവിടത്തിലുള്ള എല്ലാ പട്ടികകളും അതിന്റെ രീതിയില് കാണാം .\n\n\nഅതില് നിന്നും ലിസ്റ്റ് വിഷയത്തിന് അടിസ്ഥാനമായ പട്ടിക തിരഞ്ഞെുക്കാം:"
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -588,8 +588,8 @@ msgid  "Data"
 msgstr "ഡേറ്റാ"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "ഇപ്പോള്, നിയന്ത്രണ ഫേമിന്‍  (പൂര്ണ്ണമായിട്ടല്ല) ഡാറ്റായുമായി ബന്ധമില്ല.\n\nദയവായി ഡാറ്റാ ഉറവിടവും പട്ടികയും തിരഞ്ഞെടുക്കുക.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -736,7 +736,7 @@ msgid  "Welcome"
 msgstr "സ്വാഗതം"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
 msgstr ""
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
@@ -816,8 +816,8 @@ msgid  "Forms"
 msgstr "രൂപം"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "ഈ മാതൃകയില് നിന്നും താങ്കള്ക്ക്  '#type#' ഡേറ്റാ വിഭാഗം നീക്കം ചെയ്യണോ?\n ദയവായി ശ്രദ്ധിക്കുക  ഇത് ആ ഡേറ്റയുമായി ബന്ധപ്പെട്ട എല്ലാ നിയന്ത്രണങ്ങളെയും ബാധിക്കുക"
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -2296,12 +2296,12 @@ msgid  "Type a name for the new data type:"
 msgstr "പുതിയ ഡേറ്റാ വിഭാഗത്തിന‍്  പേരിടുക"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\n Dev~ice"
-msgstr "ഉപകരണം\nസംബന്ധിച്ചുള്ള വിവരങ്ങള്‍"
+msgid  "About\\n Dev~ice"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\nPreview"
-msgstr "തിരനോട്ടം\nലഭ്യമാക്കുക"
+msgid  "Create\\nPreview"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2356,8 +2356,8 @@ msgid  "Scanner"
 msgstr "സ്കാനര്‍"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "ഉപകരണം: %s\nവിക്രേതാവ്: %s\nമാതൃക: %s\nവിഭാഗം: %s"
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2404,8 +2404,8 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION ഏറ്റവും പുതിയതാണു്."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr "%PRODUCTNAME %NEXTVERSION ലഭ്യമാണു്.\n\n%PRODUCTNAME %PRODUCTVERSION ആണു് ഇന്‍സ്റ്റോള്‍ ചെയ്തിരിക്കുന്നതു്.\n\nകുറിപ്പു്: ഒരു പരിഷ്കരണം ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നതിനു് മുമ്പു് ആവശ്യമുള്ള എല്ലാ അനുമതികളും നിങ്ങള്‍ക്കു് ലഭ്യമെന്നുറപ്പാക്കുക.\nഅഡ്മിനിസ്ട്രേറ്റര്‍ അല്ലെങ്കില്‍ റൂട്ട് രഹസ്യവാക്ക് ആവശ്യമുണ്ടു്."
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2420,16 +2420,16 @@ msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "%PRODUCTNAME %NEXTVERSION ഡൌണ്‍ലോട് നിര്‍ത്തിയിരിക്കുന്നു"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "ഡൌണ്‍ലോട് സ്ഥാനം: %DOWNLOAD_PATH.\n\nഉപകരണങ്ങള്‍ – ഉപാധികള്‍... - %PRODUCTNAME – ഓണ്‍ലൈന്‍ പരിഷ്കരണത്തില്‍ ഡൌണ്‍ലോട് സ്ഥാനം മാറ്റുവാന്‍ സാധിക്കുന്നു."
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME %DOWNLOAD_PATH-ലേക്ക് ഡൌണ്‍ലോട് ചെയ്തിരിക്കുന്നു."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "പരിഷ്കരണത്തിന്റെ ഓട്ടോമാറ്റിക് ഡൌണ്‍ലോട് ഇപ്പോള്‍ ലഭ്യമല്ല.\n\nവെബ്സൈറ്റില്‍ നിന്നും %PRODUCTNAME %NEXTVERSION ഡൌണ്‍ലോട് ചെയ്യുന്നതിനായി 'ഡൌണ്‍ലോട് ചെയ്യുക...' ക്ലിക്ക് ചെയ്യുക."
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2575,6 +2575,6 @@ msgstr "എക്സ്റ്റെന്‍ഷനുകളുടെ പരി�
 msgid  "Click here for more information."
 msgstr "കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി ക്ലിക്ക് ചെയ്യുക."
 
-#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
 msgid  "Check for ~Updates..."
 msgstr "~പരിഷ്കരണങ്ങള്‍ പരിശോധിക്കുക..."

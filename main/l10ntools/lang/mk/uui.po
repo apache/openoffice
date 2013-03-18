@@ -60,11 +60,11 @@ msgid  "No Text"
 msgstr "Нема текст"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
-msgid  "Enter password to open file: \n"
+msgid  "Enter password to open file: \\n"
 msgstr ""
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
-msgid  "Enter password to modify file: \n"
+msgid  "Enter password to modify file: \\n"
 msgstr ""
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
@@ -92,8 +92,8 @@ msgid  "Document in Use"
 msgstr "Документ во употреба"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr "Датотеката на документот '$(ARG1)' е заклучена за уредување од:\n\n$(ARG2)\n\nПробајте повторно подоцна да го снимите документот или снимете копија од тој документ.\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nTry again later to save document or save a copy of that document.\\n\\n"
+msgstr ""
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -136,8 +136,8 @@ msgid  "Target already exists."
 msgstr "Целта веќе постои."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
-msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr "Ќе снимите/изнесете BASIC-библиотека, заштитена со лозинка, која содржи модули \n$(ARG1)\nшто се преголеми за да се зачуваат во бинарен формат. Ако сакате корисниците што немаат пристап до лозинката на библиотеката да можат да ги извршуваат макроата во тие модули, мора да ги разделите модулите во повеќе помали модули. Дали сакате да продолжите со зачувувањето/изнесувањето на библиотеката?"
+msgid  "You are about to save/export a password protected basic library containing module(s) \\n$(ARG1)\\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -328,28 +328,28 @@ msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmis
 msgstr "%PRODUCTNAME не може да ги заштити датотеките од пребришување кога се користи овој протокол за пренос. Дали сепак ќе продолжите?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
-msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr "Датотеката „$(ARG1)“ е оштетена и не може да се отвори. Дали %PRODUCTNAME да ја поправи датотеката?"
+msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\\n\\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the repaired document.\\nExecution of macros is disabled for this document.\\n\\nShould %PRODUCTNAME repair the file?\\n"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
 msgstr "Датотеката „$(ARG1)“ не можеше да се поправи и поради тоа не може да се отвори."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
-msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr "Податоците за конфигурација во „$(ARG1)“ се оштетени. Без овие податоци некои функции не можат да работат коректно.\nДали сакате да продолжите со стартувањето на %PRODUCTNAME без оштетените податоци за конфигурација?"
+msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
-msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr "Датотеката „$(ARG1)“ со личната конфигурација е оштетена и мора да се избрише за да се продолжи понатаму. Некои од вашите лични поставувања може да се изгубат.\nДали сакате да продолжите со стартувањето на %PRODUCTNAME без оштетената конфигурациска датотека?"
+msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
 msgstr "Изворот со податоци за конфигурација „$(ARG1)“ е недостапен. Без овие податоци некои функции може да не работат правилно."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
-msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr "Изворот со податоци за конфигурација „$(ARG1)“ е недостапен. Без овие податоци некои функции може да не работат правилно."
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -368,24 +368,24 @@ msgid  "The file $(ARG1) is currently not locked by yourself."
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
-msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgid  "The previously obtained lock for file $(ARG1) has expired.\\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
-msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr "Не успеав да го потврдам идентитетот на страницата $(ARG1).\n\nПред да го прифатите овој сертификат, треба внимателно да го испитате сертификатот на страницата. Дали сте согласни на го прифатите овој сертификат за идентификација на веб страницата $(ARG1)?"
+msgid  "Unable to verify the identity of $(ARG1) site.\\n\\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
-msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr "$(ARG1) е страница која користи сертификат за криптирање на податоците за време на транспортот, но овој сертификат истече на $(ARG1).\n\nТреба да проверите дали е точно времето на вашиот компјутер."
+msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\\n\\nYou should check to make sure that your computer's time is correct."
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
-msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr "Пробавте да воспоставите врка со $(ARG1). Меѓутоа, безбедносниот сертификат кој е претставен припаѓа на $(ARG1). Можно е, иако малку веројатно, дека некој се обидува да ја пресретне вашата комуникација со оваа веб-страница.\n\nАко се сомневате дека дадениот сертификат не припаѓа на $(ARG1), ве молиме откажете ја врската и известете го администраторот на страницата.\n\nДали сепак сакате да продолжите?"
+msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\\n\\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\\n\\nWould you like to continue anyway?"
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
-msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr "Сертификатот не можеше да се потврди. Би требало внимателно да го испитате сертификатот на страницата.\n\nАко се сомневате во прикажаниот сертификат, ве молиме откажете го поврзувањето и известете го администраторот на страницата."
+msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\\n\\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -412,12 +412,12 @@ msgid  "Message from server:"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
-msgid  "Enter user name and password for: \n%1"
+msgid  "Enter user name and password for: \\n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n\"%2\" on %1"
-msgstr "Внесете ги тука корисничкото име и лозинката за „%2“ на %1."
+msgid  "Enter user name and password for: \\n\"%2\" on %1"
+msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -468,24 +468,24 @@ msgid  "~Send"
 msgstr "~Испрати"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
-msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr "Серверот „${HOST}“ сака да постави едно или повеќе колачиња.\nКолачињата содржат информации што се однесуваат на одредени класи на URL. Ако %PRODUCTNAME подоцна побара документ со URL што одговара на класата на претходно поставено колаче, %PRODUCTNAME ќе ја испрати информацијата до серверот. Ова му овозможува на серверот да го препознае статусот на WWW-апликација, пр. кога купувате на мрежа.\n\nСледниве колачиња би требало да се постават:\n\n"
+msgid  "The '${HOST}' server wishes to set one or more cookies.\\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
-msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "Домен: ${DOMAIN}, патека: ${PATH}, колаче: ${COOKIE}.\n"
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 msgid  "Cookie Reception"
 msgstr "Прием на колачиња"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
-msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr "%PRODUCTNAME ги зачува колачињата за серверот „${HOST}“, што ќе се испраќаат при барање на документот ${PATH}.\nКолачињата содржат информации што се однесуваат на одредени класи на URL. Тие се испраќаат од некои сервери до %PRODUCTNAME, каде се зачувуваат при пристап до одредени документи. Ако %PRODUCTNAME вчита документ кој, според URL, одговара на класа на претходно примени колачиња, %PRODUCTNAME ќе ја испрати информацијата до серверот. Ова му овозможува на серверот да го следи статусот на WWW-апликација, пр. кога купувате на мрежа.\n\nСледниве колачиња би требало да се постават:\n\n"
+msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\\n\\nThe following Cookies should be set:\\n\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
-msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "Домен: ${DOMAIN}, патека: ${PATH}, колаче: ${COOKIE}.\n"
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\\n"
+msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
 msgid  "Send Cookies"
@@ -528,8 +528,8 @@ msgid  "Document in Use"
 msgstr "Документ во употреба"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr "Датотеката на документот '$(ARG1)' е заклучена за уредување од:\n\n$(ARG2)\n\nОтворете го документот само за читање или отворете копија на документот за уредување.\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by:\\n\\n$(ARG2)\\n\\nOpen document read-only or open a copy of the document for editing.\\n\\n"
+msgstr ""
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -548,8 +548,8 @@ msgid  "Document Has Been Changed by Others"
 msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
-msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr "Датотекате беше променета од последниот пат кога беше отворена во %PRODUCTNAME. Снимањето на вашата верзија на документот ќе ги пребрише промените направени од други.\n\nДали сепак сакате да го снимите?\n\n"
+msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\\n\\nDo you want to save anyway?\\n\\n"
+msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -560,8 +560,8 @@ msgid  "%PRODUCTNAME Update Available"
 msgstr "Достапна е надградба за %PRODUCTNAME"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
-msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr "Овој документ беше создаден од понова верзија на %PRODUCTNAME. Може да содржи одредени карактеристики кои не се поддржани од вашата тековна верзија.\n\nКликнете на „Ажурирај сега...“ за да го пуштите мрежното ажурирање и да ја добиете најновата верзија на %PRODUCTNAME."
+msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\\n\\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr ""
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -652,8 +652,8 @@ msgid  "Caution: If you forget the master password, you will be unable to access
 msgstr "Внимание: Обезбедете се дека ќе ја запамтите главната лозинка која ја подесивте. Ако ја заборавите вашата главна лозинка, нема да можете да пристапите до било која информација која е заштитена со неа. Лозинките се осетливи на мали/големи букви и имаат најмалки пет знаци."
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr "Датотека на документот '$(ARG1)' е заклучена за уредување од вас на друг систем од $(ARG2)\n\nОтворете го документот само за читање или игнорирајте го заклучувањето на документот од ваша страна и отворете го за уредување.\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nOpen document read-only, or ignore own file locking and open the document for editing.\\n\\n"
+msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -664,8 +664,8 @@ msgid  "~Open"
 msgstr "~Отвори"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
-msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr "Датотека на документот '$(ARG1)' е заклучена за уредување од вас на друг систем од $(ARG2)\n\nЗатворете го документот на другиот систем и пробајте повторно или игнорирајте го заклучувањето на документот и снимете го тековниот документ.\n\n"
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\\n\\nClose document on other system and retry saving or ignore own file locking and save current document.\\n\\n"
+msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"

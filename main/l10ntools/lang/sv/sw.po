@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "Det går inte att spara dokumentet helt och hållet."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "HTML dokumentet innehåller %PRODUCTNAME Basic-makron.\nDe sparades inte med de aktuella exportinställningarna."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "tom sida"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "Du har en stor mängd information sparad i urklipp.\nSkall denna information fortsätta vara tillgänglig för andra program?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "Omvandling till HTML-format \nkan förorsaka informationsförlust.\nSkall dokumentet sparas?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "Källtextvyn går inte att visa när dokumentet har sparats i HTML-format.\nVill du spara dokumentet i HTML-format nu?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "Ditt dokument innehåller adressdatabasfält. Vill du skriva ut ett standardbrev (kopplad utskrift)?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -1433,7 +1433,7 @@ msgstr "Längre ba~k"
 
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "~Placering"
+msgstr "Pl~acering"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
@@ -1493,11 +1493,11 @@ msgstr "~Textanpassning sida"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP_IDEAL.MenuItem.Text
 msgid  "~Optimal Page Wrap"
-msgstr "~Dynamisk textanpassning sida"
+msgstr "~Dynamisk textanpassning"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU.MenuItem.Text
 msgid  "~Wrap Through"
-msgstr "Text~genomflöde"
+msgstr "Textgen~omflöde"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU_TRANSP.MenuItem.Text
 msgid  "In ~Background"
@@ -2241,7 +2241,7 @@ msgstr "Höge~rsidor"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT.CheckBox.Text
 msgid  "Broch~ure"
-msgstr "Pr~ospekt"
+msgstr "Broschyr"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT_RTL.CheckBox.Text
 msgid  "Right to Left"
@@ -2649,7 +2649,7 @@ msgstr "Attribut"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 msgid  "[None]"
-msgstr "[Inget]"
+msgstr "[Ingen]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item2.StringList.item
 msgid  "Bold"
@@ -2693,7 +2693,7 @@ msgstr "Bakgrundsfärg"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_COL.FixedText.Text
 msgid  "Color"
-msgstr "Färg"
+msgstr "F~ärg"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.WIN_INS.Window.Text
 msgid  "Insert"
@@ -2709,7 +2709,7 @@ msgstr "Attribut"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_COL.FixedText.Text
 msgid  "Color"
-msgstr "F~ärg"
+msgstr "Färg"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.WIN_DEL.Window.Text
 msgid  "Delete"
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<Användarinställningar>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "Vill du byta kompatibilitetsalternativ för standardmallen?\nDet påverkar alla nya dokument som baseras på standardmallen."
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2896,8 +2896,8 @@ msgid  "Caption"
 msgstr "Bildtext"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "Lägg till bildtexter automatiskt\nvid infogning:"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -2945,7 +2945,7 @@ msgstr "Talavgränsare"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TXT_TEXT.FixedText.Text
 msgid  "Separator"
-msgstr "Avgränsare"
+msgstr "Skiljetecken"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TXT_POS.FixedText.Text
 msgid  "Position"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "Du har inte angett ett nytt namn på bilagan. Om du vill ange ett nytt namn skriver du det nu."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "För att kunna skicka kopplade utskrifter som e-post, måste %PRODUCTNAME få information om det e-postkonto som ska användas.\n\n Vill du ange information om e-postkontot nu?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "~Blindkopia"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "Obs!\nAvgränsa e-postadresserna med semikolon (;)."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "Sändningen misslyckades (ogiltig adress)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "Det finns fortfarande e-postmeddelanden i utkorgen i %PRODUCTNAME.\nVill du ändå avsluta?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "Redigera dokumentet"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "Skriv eller redigera dokumentet nu om du inte redan har gjort det. Ändringarna gäller för alla kopplade dokument.\n\nOm du klickar på Redigera dokument... förminskas guiden tillfälligt till ett mindre fönster så att du kan redigera den kopplade utskriften. När du har redigerat dokumentet, går du tillbaka till guiden genom att klicka på Gå tillbaka till guiden Koppla utskrift i det mindre fönstret."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4701,11 +4701,11 @@ msgstr "samla vid te~xtslut"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM.CheckBox.Text
 msgid  "~Restart numbering"
-msgstr "oberoende ~numrering"
+msgstr "oberoende n~umrering"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
 msgid  "~Start at"
-msgstr "~Börja med"
+msgstr "Börj~a med"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM_FMT.CheckBox.Text
 msgid  "Custom ~format"
@@ -4717,7 +4717,7 @@ msgstr "~Före"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_SUFFIX.FixedText.Text
 msgid  "Aft~er"
-msgstr "Ef~ter"
+msgstr "Efte~r"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_END.FixedLine.Text
 msgid  "Endnotes"
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "Önskat urklippsformat är inte tillgängligt."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "Området har ett gammalt format.\nDet måste konverteras för att\nändringar skall kunna sparas.\nVill du konvertera det?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "Fotnot:  "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "Markören eller markering befinner sig i en skrivskyddad position.\nEn ändring kan därför ej accepteras."
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5409,11 +5409,11 @@ msgstr "Placering"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_LEFT.FixedText.Text
 msgid  "from left"
-msgstr "~från vänster"
+msgstr "från ~vänster"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_TOP.FixedText.Text
 msgid  "from top"
-msgstr "~uppifrån"
+msgstr "u~ppifrån"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_FORMAT.FixedText.Text
 msgid  "Format"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "Alternativ"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "Etiketten \"%1 / %2\" finns redan.\nVill du skriva över den?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6089,7 +6089,7 @@ msgstr "Statistik"
 
 #: source/ui/fldui/fldui.src#STR_AUTHORFLD.String.Text
 msgid  "Author"
-msgstr "Användare"
+msgstr "Författare"
 
 #: source/ui/fldui/fldui.src#STR_TEMPLNAMEFLD.String.Text
 msgid  "Templates"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "Bläddra..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "Använd den här dialogrutan när du vill ersätta databaserna du öppnar i dokumenten via databasfält med andra databaser. Du kan bara göra en ändring i taget. Du kan göra flera markeringar i listan till vänster.\\Välj en databasfil med hjälp av bläddringsknappen."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -6673,7 +6673,7 @@ msgstr "F~ormat"
 
 #: source/ui/fldui/fldfunc.src#TP_FLD_FUNC.FT_FUNCNAME.FixedText.Text
 msgid  "Na~me"
-msgstr "Na~mn"
+msgstr "Namn"
 
 #: source/ui/fldui/fldfunc.src#TP_FLD_FUNC.FT_FUNCVALUE.FixedText.Text
 msgid  "~Value"
@@ -6733,7 +6733,7 @@ msgstr "Teckensnitt"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_EXT.PageItem.Text
 msgid  "Font Effects"
-msgstr "Teckeneffekt"
+msgstr "Teckeneffekter"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_POS.PageItem.Text
 msgid  "Position"
@@ -6853,7 +6853,7 @@ msgstr "Typ"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_ADD.PageItem.Text
 msgid  "Options"
-msgstr "Tillägg"
+msgstr "Alternativ"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_WRAP.PageItem.Text
 msgid  "Wrap"
@@ -6881,7 +6881,7 @@ msgstr "Punkter"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
 msgid  "Numbering Style"
-msgstr "Numreringstyp"
+msgstr "Numreringsformatmall"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
 msgid  "Outline"
@@ -6905,7 +6905,7 @@ msgstr "Numreringsformatmall"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.TabDialog.Text
 msgid  "Frame"
-msgstr "Ram"
+msgstr "R~am"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_STD.PageItem.Text
 msgid  "Type"
@@ -7117,7 +7117,7 @@ msgstr "Position"
 
 #: source/ui/frmdlg/frmpage.src#TP_GRF_EXT.FL_CONNECT.FixedLine.Text
 msgid  "Link"
-msgstr "Länk"
+msgstr "Länka"
 
 #: source/ui/frmdlg/frmpage.src#TP_GRF_EXT.FT_CONNECT.FixedText.Text
 msgid  "~File name"
@@ -7337,7 +7337,7 @@ msgstr "Avstånd"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.TabPage.Text
 msgid  "Columns"
-msgstr "~Kolumner"
+msgstr "Kolumner"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.FT_NUMBER.FixedText.Text
 msgid  "Columns"
@@ -7545,7 +7545,7 @@ msgstr "Fästmarginalens bredd är för stor för kolumnbredden."
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.ModalDialog.Text
 msgid  "Caption"
-msgstr "Bildtext"
+msgstr "Beskrivning"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.BTN_AUTOCAPTION.PushButton.Text
 msgid  "AutoCaption..."
@@ -7589,11 +7589,11 @@ msgstr "Position"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_BEGINNING.String.Text
 msgid  "Above"
-msgstr "I början"
+msgstr "Ovanför"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_END.String.Text
 msgid  "Below"
-msgstr "I slutet"
+msgstr "Nedanför"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_ABOVE.String.Text
 msgid  "Above"
@@ -8149,7 +8149,7 @@ msgstr "Post"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TAB_STOP.String.Text
 msgid  "Tab stop"
-msgstr "Tabulator"
+msgstr "~Tabulator"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TEXT.String.Text
 msgid  "Text"
@@ -8513,7 +8513,7 @@ msgstr "~Namn"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.FT_SHORTNAME.FixedText.Text
 msgid  "~Shortcut"
-msgstr "~Förkortning"
+msgstr "~Ersätt"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.LB_BIB.ST_READONLY.String.Text
 msgid  "read-only"
@@ -8561,7 +8561,7 @@ msgstr "Det saknas skrivrättigheter för katalogerna för 'Autotext'. Vill du �
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
-msgstr "~Nytt"
+msgstr "~Ny"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE_TEXT.MenuItem.Text
 msgid  "New (text only)"
@@ -9345,11 +9345,11 @@ msgstr "Nyckel ~2"
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.RB_UP2.RadioButton.Text
 msgid  "Ascending"
-msgstr "Sti~gande"
+msgstr "Stiga~nde"
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.RB_DN2.RadioButton.Text
 msgid  "Descending"
-msgstr "Fa~llande"
+msgstr "Falland~e"
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.CB_KEY3.CheckBox.Text
 msgid  "Key ~3"
@@ -9437,7 +9437,7 @@ msgstr "Nu~mrering"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_OFFSET.FixedText.Text
 msgid  "~Start at"
-msgstr "Bö~rja med"
+msgstr "~Starta vid"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_NUMCOUNT.FixedText.Text
 msgid  "~Counting"
@@ -9457,11 +9457,11 @@ msgstr "Per dokument"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PREFIX.FixedText.Text
 msgid  "~Before"
-msgstr "~Framför"
+msgstr "~Före"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_SUFFIX.FixedText.Text
 msgid  "~After"
-msgstr "B~akom"
+msgstr "~Efter"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_POS.FixedText.Text
 msgid  "Position"
@@ -9481,7 +9481,7 @@ msgstr "Formatmallar"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PARA_TEMPL.FixedText.Text
 msgid  "Pa~ragraph"
-msgstr "Sty~cke"
+msgstr "S~tycke"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PAGE_TEMPL.FixedText.Text
 msgid  "~Page"
@@ -9489,11 +9489,11 @@ msgstr "~Sida"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CHAR_TEMPL.FixedLine.Text
 msgid  "Character Styles"
-msgstr "Teckenformatmallar"
+msgstr "Teckenformat"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 msgid  "Te~xt area"
-msgstr "Textområde"
+msgstr "Te~xtområde"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_TEXT_CHARFMT.FixedText.Text
 msgid  "~Footnote area"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "Autokorrigering"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "Autokorrigeringen har slutförts.\nDu kan acceptera eller avböja alla ändringar,\noch du kan även acceptera eller avböja specifika ändringar."
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "Summa"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "Du har angett ett ogiltigt namn.\nDet gick inte att skapa autoformatet.\nVälj ett annat namn."
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "Första kolumnen ~som etikett"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "Om de markerade cellerna inte innehåller de önskade uppgifterna, markerar du dataområdet nu.\n\nTa med de celler som innehåller kolumn- och radetiketter om du vill att de ska visas i diagrammet."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "Vill du kontrollera huvudtexten?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "Alternativet Visa fältnamn är aktiverat.\nVill du skriva ut dokumentet med fältnamn?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Börja varje mening med stor bokstav"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "Ersätt \"anföringstecken\" med %1 \\btypografiska anföringstecken%2"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -10953,7 +10953,7 @@ msgstr "Använd formatmallen \"Brödtext\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 msgid  "Set \"Text body indent\" Style"
-msgstr "Använd formatmallen \"Dra in första raden\""
+msgstr "Använd formatmallen \"Dra in hela stycket\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 msgid  "Set \"Hanging indent\" Style"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[System]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "Den interaktiva rättstavningskontrollen\när redan aktiv i ett annat dokument"
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "Den interaktiva avstavningen är\nredan aktiv i ett annat dokument"
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -11357,7 +11357,7 @@ msgstr "Broschyr"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CONFERENCE.String.Text
 msgid  "Conference proceedings"
-msgstr "Konferensrapport"
+msgstr "Kongressrapport"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INBOOK.String.Text
 msgid  "Book excerpt"
@@ -11413,23 +11413,23 @@ msgstr "WWW dokument"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "Användartyp1"
+msgstr "Användarfält1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
-msgstr "Användartyp2"
+msgstr "Användarfält2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
 msgid  "User-defined3"
-msgstr "Användartyp3"
+msgstr "Användarfält3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
 msgid  "User-defined4"
-msgstr "Användartyp4"
+msgstr "Användarfält4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
 msgid  "User-defined5"
-msgstr "Användartyp5"
+msgstr "Användarfält5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 msgid  "Short name"

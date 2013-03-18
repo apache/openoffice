@@ -529,930 +529,1162 @@ msgid  "FACTDOUBLE"
 msgstr "DOBBELFAKULTET"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
+#, fuzzy
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
 msgstr "Gir serienummeret til datoen før eller etter eit gitt tal på arbeidsdagar."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Startdato"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.3.String.Text
+#, fuzzy
 msgid  "The start date"
 msgstr "Startdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.4.String.Text
+#, fuzzy
 msgid  "Days"
 msgstr "Dagar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.5.String.Text
+#, fuzzy
 msgid  "The number of workdays before or after the start date"
 msgstr "Talet på arbeidsdagar før eller etter startdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
+#, fuzzy
 msgid  "Holidays"
 msgstr "Fridagar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
+#, fuzzy
 msgid  "List of date values of days off (vacation, holidays, etc.)"
 msgstr "Liste over datoar for fridagar (ferie, heilagdagar, osv.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
+#, fuzzy
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
 msgstr "Gir talet på heile dagar mellom startdatoen og sluttdatoen som ein brøk av året"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Startdato"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.3.String.Text
+#, fuzzy
 msgid  "The start date"
 msgstr "Startdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.4.String.Text
+#, fuzzy
 msgid  "End date"
 msgstr "Sluttdato"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.5.String.Text
+#, fuzzy
 msgid  "The end date"
 msgstr "Sluttdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
+#, fuzzy
 msgid  "Basis"
 msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
+#, fuzzy
 msgid  "Basis for determining the interest days"
 msgstr "Basis for å avgjera rentedagar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
+#, fuzzy
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
 msgstr "Gir serienummeret for datoen som er eit gitt tal på månader før eller etter startdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Startdato"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.3.String.Text
+#, fuzzy
 msgid  "The start date"
 msgstr "Startdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.4.String.Text
+#, fuzzy
 msgid  "Months"
 msgstr "Månader"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
+#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Tal på månader før eller etter startdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
+#, fuzzy
 msgid  "Returns the number of the calendar week in which the specified date occurs."
 msgstr "Gir nummeret på kalenderveka som den oppgitte datoen førekjem i."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "Dato"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.3.String.Text
+#, fuzzy
 msgid  "The date"
 msgstr "Datoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.4.String.Text
+#, fuzzy
 msgid  "Return type"
 msgstr "Avkastningstype"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.5.String.Text
+#, fuzzy
 msgid  "A number from 1 to 3 that specifies the day with which a week begins"
 msgstr "Eit tal frå 1 til 3 som avgjer kva for vekedag veka startar med"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
+#, fuzzy
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
 msgstr "Gir serienummeret til den siste dagen i månaden som kjem eit visst tal på månader før eller etter startdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Startdato"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.3.String.Text
+#, fuzzy
 msgid  "The start date"
 msgstr "Startdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.4.String.Text
+#, fuzzy
 msgid  "Months"
 msgstr "Månader"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.5.String.Text
+#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Tal på månader før eller etter startdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.1.String.Text
+#, fuzzy
 msgid  "Returns the number of workdays between two dates"
 msgstr "Gir talet på arbeidsdagar mellom to datoar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Startdato"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.3.String.Text
+#, fuzzy
 msgid  "The start date"
 msgstr "Startdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.4.String.Text
+#, fuzzy
 msgid  "End date"
 msgstr "Sluttdato"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.5.String.Text
+#, fuzzy
 msgid  "The end date"
 msgstr "Sluttdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.6.String.Text
+#, fuzzy
 msgid  "Holidays"
 msgstr "Fridagar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
+#, fuzzy
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
 msgstr "Liste over datoar som er fridagar (feriar, heilagdagar, osv.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
+#, fuzzy
 msgid  "Returns the value 'true' if the number is even"
 msgstr "Gir verdien «sann» dersom talet er eit partal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
+#, fuzzy
 msgid  "The number"
 msgstr "Talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
+#, fuzzy
 msgid  "Returns the value 'true' if the number is odd"
 msgstr "Gir verdien «sann» dersom talet er eit oddetal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
+#, fuzzy
 msgid  "The number"
 msgstr "Talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
+#, fuzzy
 msgid  "Returns the multinomial coefficient of a set of numbers"
 msgstr "Gir den multinominale koeffisienten for eit sett med tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.2.String.Text
+#, fuzzy
 msgid  "Number(s)"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
+#, fuzzy
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
 msgstr "Tal eller liste med tal som du vil ha den multinominale koeffisienten for"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
+#, fuzzy
 msgid  "Returns the sum of a power series"
 msgstr "Gir summen av ein serie med potensar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.2.String.Text
+#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.3.String.Text
+#, fuzzy
 msgid  "The independent variable of the power series"
 msgstr "Den uavhengige variabelen til potensserien"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.4.String.Text
+#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.5.String.Text
+#, fuzzy
 msgid  "The initial power to which x is to be raised"
 msgstr "Eksponenten som x skal opphøgast i."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.6.String.Text
+#, fuzzy
 msgid  "M"
 msgstr "M"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.7.String.Text
+#, fuzzy
 msgid  "The increment by which to increase n for each term in the series"
 msgstr "Stegverdien som n skal aukast med for kvart ledd i serien"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.8.String.Text
+#, fuzzy
 msgid  "Coefficients"
 msgstr "Koeffisientar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
+#, fuzzy
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
 msgstr "Sett med koeffisientar som kvar påfølgjande potens av variabelen x skal multipliserast med"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
+#, fuzzy
 msgid  "Returns the integer portion of a division"
 msgstr "Gir heiltalsdelen av ein divisjon"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.2.String.Text
+#, fuzzy
 msgid  "Numerator"
 msgstr "Teljar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
+#, fuzzy
 msgid  "The dividend"
 msgstr "Dividenden"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
+#, fuzzy
 msgid  "Denominator"
 msgstr "Nemnar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
+#, fuzzy
 msgid  "The divisor"
 msgstr "Divisoren"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
+#, fuzzy
 msgid  "Returns a number rounded to a specified multiple"
 msgstr "Gir eit tal som er runda av til eit gitt multiplum"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.3.String.Text
+#, fuzzy
 msgid  "The number to round off"
 msgstr "Talet som skal rundast av"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.4.String.Text
+#, fuzzy
 msgid  "Multiple"
 msgstr "Multiplum"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.5.String.Text
+#, fuzzy
 msgid  "The multiple to which you want to round number"
 msgstr "Multiplumet du vil runda av talet til"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.1.String.Text
+#, fuzzy
 msgid  "Returns the square root of a number which has been multiplied by pi"
 msgstr "Gir kvadratrota av eit tal som er blitt multiplisert med pi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.3.String.Text
+#, fuzzy
 msgid  "The number by which pi is multiplied"
 msgstr "Talet som pi er multiplisert med"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.1.String.Text
+#, fuzzy
 msgid  "Returns a random integer between the numbers you specify"
 msgstr "Gir eit vilkårleg heiltal mellom tala du oppgir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.2.String.Text
+#, fuzzy
 msgid  "Bottom"
 msgstr "Nedste"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.3.String.Text
+#, fuzzy
 msgid  "The smallest integer returned"
 msgstr "Det minste heiltalet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.4.String.Text
+#, fuzzy
 msgid  "Top"
 msgstr "Øvste"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.5.String.Text
+#, fuzzy
 msgid  "The largest integer returned"
 msgstr "Det største heiltalet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.1.String.Text
+#, fuzzy
 msgid  "Returns the greatest common divisor"
 msgstr "Gir største felles faktor"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.2.String.Text
+#, fuzzy
 msgid  "Number(s)"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.3.String.Text
+#, fuzzy
 msgid  "Number or list of numbers"
 msgstr "Tal eller liste med tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.1.String.Text
+#, fuzzy
 msgid  "Returns the least common multiple"
 msgstr "Gir minste felles multiplum"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.2.String.Text
+#, fuzzy
 msgid  "Number(s)"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.3.String.Text
+#, fuzzy
 msgid  "Number or list of numbers"
 msgstr "Tal eller liste med tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.1.String.Text
+#, fuzzy
 msgid  "Returns the modified Bessel function In(x)"
 msgstr "Gir den endra Bessel-funksjonen ln(x)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.2.String.Text
+#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.3.String.Text
+#, fuzzy
 msgid  "The value at which the function is to be evaluated"
 msgstr "Verdien som funksjonen skal evaluerast ved"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.4.String.Text
+#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.5.String.Text
+#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "Ordenen til Bessel-funksjonen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.1.String.Text
+#, fuzzy
 msgid  "Returns the Bessel function Jn(x)"
 msgstr "Gir Bessel-funksjonen Jn(x)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.2.String.Text
+#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.3.String.Text
+#, fuzzy
 msgid  "The value at which the function is to be evaluated"
 msgstr "Verdien som funksjonen skal evaluerast ved"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.4.String.Text
+#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.5.String.Text
+#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "Ordenen til Bessel-funksjonen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.1.String.Text
+#, fuzzy
 msgid  "Returns the Bessel function Kn(x)"
 msgstr "Gir Bessel-funksjonen Kn(x)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.2.String.Text
+#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.3.String.Text
+#, fuzzy
 msgid  "The value at which the function is to be evaluated"
 msgstr "Verdien som funksjonen skal evaluerast ved"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.4.String.Text
+#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.5.String.Text
+#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "Ordenen til Bessel-funksjonen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.1.String.Text
+#, fuzzy
 msgid  "Returns the Bessel function Yn(x)"
 msgstr "Gir Bessel-funksjonen Yn(x)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.2.String.Text
+#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.3.String.Text
+#, fuzzy
 msgid  "The value at which the function is to be evaluated"
 msgstr "Verdien som funksjonen skal evaluerast ved"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.4.String.Text
+#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.5.String.Text
+#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "Ordenen til Bessel-funksjonen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.1.String.Text
+#, fuzzy
 msgid  "Converts a binary number to an octal number"
 msgstr "Konverterer eit binærtal til eit oktaltal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
+#, fuzzy
 msgid  "The binary number to be converted (as text)"
 msgstr "Binærtalet som skal konverterast (som tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
+#, fuzzy
 msgid  "Places"
 msgstr "Plassar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
+#, fuzzy
 msgid  "Number of places used"
 msgstr "Tal på plassar som er brukte"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.1.String.Text
+#, fuzzy
 msgid  "Converts a binary number to a decimal number"
 msgstr "Konverterer eit binærtal til eit desimaltal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.3.String.Text
+#, fuzzy
 msgid  "The binary number to be converted (as text)"
 msgstr "Binærtalet som skal konverterast (som tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.1.String.Text
+#, fuzzy
 msgid  "Converts a binary number to a hexadecimal number"
 msgstr "Konverterer eit binærtal til eit heksadesimalt tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.3.String.Text
+#, fuzzy
 msgid  "The binary number to be converted (as text)"
 msgstr "Binærtalet som skal konverterast (som tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.4.String.Text
+#, fuzzy
 msgid  "Places"
 msgstr "Plassar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.5.String.Text
+#, fuzzy
 msgid  "Number of places used."
 msgstr "Tal på plassar som er brukte."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.1.String.Text
+#, fuzzy
 msgid  "Converts an octal number to a binary number"
 msgstr "Konverterer eit oktaltal til eit binærtal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.3.String.Text
+#, fuzzy
 msgid  "The octal number to be converted (as text)"
 msgstr "Oktaltalet som skal konverterast (som tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.4.String.Text
+#, fuzzy
 msgid  "Places"
 msgstr "Plassar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.5.String.Text
+#, fuzzy
 msgid  "Number of places used"
 msgstr "Tal på plassar som er brukte"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
+#, fuzzy
 msgid  "Converts an octal number to a decimal number"
 msgstr "Konverterer eit oktaltal til eit desimaltal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.3.String.Text
+#, fuzzy
 msgid  "The octal number to be converted (as text)"
 msgstr "Oktaltalet som skal konverterast (som tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.1.String.Text
+#, fuzzy
 msgid  "Converts an octal number to a hexadecimal number"
 msgstr "Konverterer eit oktaltal til eit heksadesimalt tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.3.String.Text
+#, fuzzy
 msgid  "The octal number to be converted (as text)"
 msgstr "Oktaltalet som skal konverterast (som tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.4.String.Text
+#, fuzzy
 msgid  "Places"
 msgstr "Plassar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.5.String.Text
+#, fuzzy
 msgid  "Number of places used"
 msgstr "Tal på plassar som er brukte"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.1.String.Text
+#, fuzzy
 msgid  "Converts a decimal number to a binary number"
 msgstr "Konverterer eit desimaltal til eit binærtal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.3.String.Text
+#, fuzzy
 msgid  "The decimal integer to be converted"
 msgstr "Desimaltalet (heiltal) som skal konverterast"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.4.String.Text
+#, fuzzy
 msgid  "Places"
 msgstr "Plassar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.5.String.Text
+#, fuzzy
 msgid  "Number of places used"
 msgstr "Tal på plassar som er brukte"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.1.String.Text
+#, fuzzy
 msgid  "Converts a decimal number to a hexadecimal number"
 msgstr "Konverterer eit desimaltal til eit heksadesimalt tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.3.String.Text
+#, fuzzy
 msgid  "The decimal integer to be converted"
 msgstr "Desimaltalet (heiltal) som skal konverterast"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.4.String.Text
+#, fuzzy
 msgid  "Places"
 msgstr "Plassar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.5.String.Text
+#, fuzzy
 msgid  "Number of places used"
 msgstr "Tal på plassar som er brukte"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.1.String.Text
+#, fuzzy
 msgid  "Converts a decimal number into an octal number"
 msgstr "Konverterer eit desimaltal til eit oktaltal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
+#, fuzzy
 msgid  "The decimal number"
 msgstr "Desimaltalet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.4.String.Text
+#, fuzzy
 msgid  "Places"
 msgstr "Plassar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.5.String.Text
+#, fuzzy
 msgid  "Number of places used"
 msgstr "Tal på plassar som er brukte"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.1.String.Text
+#, fuzzy
 msgid  "Converts a hexadecimal number to a binary number"
 msgstr "Konverterer eit heksadesimalt tal til eit binærtal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.3.String.Text
+#, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "Det heksadesimale talet som skal konverterast (som tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.4.String.Text
+#, fuzzy
 msgid  "Places"
 msgstr "Plassar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.5.String.Text
+#, fuzzy
 msgid  "Number of places used"
 msgstr "Tal på plassar som er brukte"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.1.String.Text
+#, fuzzy
 msgid  "Converts a hexadecimal number to a decimal number"
 msgstr "Konverterer eit heksadesimalt tal til eit desimaltal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.3.String.Text
+#, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "Det heksadesimale talet som skal konverterast (som tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.1.String.Text
+#, fuzzy
 msgid  "Converts a hexadecimal number to an octal number"
 msgstr "Konverterer eit heksadesimalt tal til eit oktaltal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.3.String.Text
+#, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "Det heksadesimale talet som skal konverterast (som tekst)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.4.String.Text
+#, fuzzy
 msgid  "Places"
 msgstr "Plassar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.5.String.Text
+#, fuzzy
 msgid  "Number of places used"
 msgstr "Tal på plassar som er brukte"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.1.String.Text
+#, fuzzy
 msgid  "Tests whether two values are equal"
 msgstr "Testar om to verdiar er like"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.2.String.Text
+#, fuzzy
 msgid  "Number 1"
 msgstr "Tal 1"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.3.String.Text
+#, fuzzy
 msgid  "The first number"
 msgstr "Det første talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.4.String.Text
+#, fuzzy
 msgid  "Number 2"
 msgstr "Tal 2"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.5.String.Text
+#, fuzzy
 msgid  "The second number"
 msgstr "Det andre talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.1.String.Text
+#, fuzzy
 msgid  "Returns the error function"
 msgstr "Gir feilfunksjonen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.2.String.Text
+#, fuzzy
 msgid  "Lower limit"
 msgstr "Nedre grense"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.3.String.Text
+#, fuzzy
 msgid  "The lower limit for integration"
 msgstr "Nedre grense for integrasjon"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.4.String.Text
+#, fuzzy
 msgid  "Upper limit"
 msgstr "Øvre grense"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.5.String.Text
+#, fuzzy
 msgid  "The upper limit for integration"
 msgstr "Øvre grense for integrasjon"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erfc.1.String.Text
+#, fuzzy
 msgid  "Returns the complementary error function"
 msgstr "Gir den komplementære feilfunksjonen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erfc.2.String.Text
+#, fuzzy
 msgid  "Lower limit"
 msgstr "Nedre grense"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erfc.3.String.Text
+#, fuzzy
 msgid  "The lower limit for integration"
 msgstr "Nedre grense for integrasjon"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.1.String.Text
+#, fuzzy
 msgid  "Tests whether a number is greater than a threshold value"
 msgstr "Testar om eit tal er større enn ein grenseverdi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.3.String.Text
+#, fuzzy
 msgid  "The value to test against step"
 msgstr "Talverdien som skal testast mot stegverdien"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.4.String.Text
+#, fuzzy
 msgid  "Step"
 msgstr "Steg"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.5.String.Text
+#, fuzzy
 msgid  "The threshhold value"
 msgstr "Grenseverdien"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Factdouble.1.String.Text
+#, fuzzy
 msgid  "Returns the double factorial of Number"
 msgstr "Gir det doble fakultetet av eit tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Factdouble.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Factdouble.3.String.Text
+#, fuzzy
 msgid  "The number"
 msgstr "Talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.1.String.Text
+#, fuzzy
 msgid  "Returns the absolute value (modulus) of a complex number"
 msgstr "Gir absoluttverdien (modulus) av eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.3.String.Text
+#, fuzzy
 msgid  "The complex number"
 msgstr "Det komplekse talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.1.String.Text
+#, fuzzy
 msgid  "Returns the imaginary coefficient of a complex number"
 msgstr "Gir imaginærdelen av eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.3.String.Text
+#, fuzzy
 msgid  "The complex number"
 msgstr "Det komplekse talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.1.String.Text
+#, fuzzy
 msgid  "Returns a complex number raised to an integer power"
 msgstr "Gir eit komplekst tal opphøgd i ein heiltalseksponent"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.3.String.Text
+#, fuzzy
 msgid  "The complex number"
 msgstr "Det komplekse talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.4.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.5.String.Text
+#, fuzzy
 msgid  "Power to which the complex number is raised"
 msgstr "Eksponent som det komplekse talet skal opphøgast i"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.1.String.Text
+#, fuzzy
 msgid  "Returns the argument theta, an angle expressed in radians"
 msgstr "Gir argumentet theta, ein vinkel uttrykt i radianar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.3.String.Text
+#, fuzzy
 msgid  "A complex number"
 msgstr "Eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imcos.1.String.Text
+#, fuzzy
 msgid  "Returns the cosine of a complex number"
 msgstr "Gir cosinus av eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imcos.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imcos.3.String.Text
+#, fuzzy
 msgid  "A complex number"
 msgstr "Eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.1.String.Text
+#, fuzzy
 msgid  "Returns the quotient of two complex numbers"
 msgstr "Gir kvotienten av to komplekse tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.2.String.Text
+#, fuzzy
 msgid  "Numerator"
 msgstr "Teljar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.3.String.Text
+#, fuzzy
 msgid  "The dividend"
 msgstr "Dividenden"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.4.String.Text
+#, fuzzy
 msgid  "Denominator"
 msgstr "Nemnar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.5.String.Text
+#, fuzzy
 msgid  "The divisor"
 msgstr "Divisoren"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.1.String.Text
+#, fuzzy
 msgid  "Returns the algebraic form of the exponential of a complex number"
 msgstr "Gir den algebraiske forma av eksponenten til eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.3.String.Text
+#, fuzzy
 msgid  "The complex number"
 msgstr "Det komplekse talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.1.String.Text
+#, fuzzy
 msgid  "Returns the complex conjugate of a complex number"
 msgstr "Gir det komplekse konjugatet av eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.3.String.Text
+#, fuzzy
 msgid  "The complex number"
 msgstr "Det komplekse talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.1.String.Text
+#, fuzzy
 msgid  "Returns the natural logarithm of a complex number"
 msgstr "Gir den naturlege logaritmen av eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.3.String.Text
+#, fuzzy
 msgid  "The complex number"
 msgstr "Det komplekse talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog10.1.String.Text
+#, fuzzy
 msgid  "Returns the base-10 logarithm of a complex number"
 msgstr "Gir tiarlogaritmen av eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog10.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog10.3.String.Text
+#, fuzzy
 msgid  "The complex number"
 msgstr "Det komplekse talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog2.1.String.Text
+#, fuzzy
 msgid  "Returns the base-2 logarithm of a complex number"
 msgstr "Gir toarlogaritmen av eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog2.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog2.3.String.Text
+#, fuzzy
 msgid  "The complex number"
 msgstr "Det komplekse talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.1.String.Text
+#, fuzzy
 msgid  "Returns the product of several complex numbers"
 msgstr "Gir produktet av fleire komplekse tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.3.String.Text
+#, fuzzy
 msgid  "The first complex number"
 msgstr "Det første komplekse talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.4.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.5.String.Text
+#, fuzzy
 msgid  "Another complex number"
 msgstr "Eit anna komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imreal.1.String.Text
+#, fuzzy
 msgid  "Returns the real coefficient of a complex number"
 msgstr "Gir realdelen av eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imreal.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imreal.3.String.Text
+#, fuzzy
 msgid  "The complex number"
 msgstr "Det komplekse talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsin.1.String.Text
+#, fuzzy
 msgid  "Returns the sine of a complex number"
 msgstr "Gir sinus av eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsin.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsin.3.String.Text
+#, fuzzy
 msgid  "The complex number"
 msgstr "Det komplekse talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.1.String.Text
+#, fuzzy
 msgid  "Returns the difference of two complex numbers"
 msgstr "Gir differansen av to komplekse tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.2.String.Text
+#, fuzzy
 msgid  "Complex number 1"
 msgstr "Komplekst tal 1"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.3.String.Text
+#, fuzzy
 msgid  "Complex number 1"
 msgstr "Komplekst tal 1"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.4.String.Text
+#, fuzzy
 msgid  "Complex number 2"
 msgstr "Komplekst tal 2"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.5.String.Text
+#, fuzzy
 msgid  "Complex number 2"
 msgstr "Komplekst tal 2"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsqrt.1.String.Text
+#, fuzzy
 msgid  "Returns the square root of a complex number"
 msgstr "Gir kvadratrota av eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsqrt.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsqrt.3.String.Text
+#, fuzzy
 msgid  "The complex number"
 msgstr "Det komplekse talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsum.1.String.Text
+#, fuzzy
 msgid  "Returns the sum of complex numbers"
 msgstr "Gir summen av komplekse tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsum.2.String.Text
+#, fuzzy
 msgid  "Complex number"
 msgstr "Komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsum.3.String.Text
+#, fuzzy
 msgid  "The complex number"
 msgstr "Det komplekse talet"
 
@@ -1553,58 +1785,72 @@ msgid  "A complex number"
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.1.String.Text
+#, fuzzy
 msgid  "Converts real and imaginary coefficients into a complex number"
 msgstr "Gjer ein realdel og ein imaginærdel om til eit komplekst tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.2.String.Text
+#, fuzzy
 msgid  "Real num"
 msgstr "Realdel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.3.String.Text
+#, fuzzy
 msgid  "The real coefficient"
 msgstr "Realdelen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.4.String.Text
+#, fuzzy
 msgid  "I num"
 msgstr "Imaginærdel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.5.String.Text
+#, fuzzy
 msgid  "The imaginary coefficient"
 msgstr "Imaginærdelen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.6.String.Text
+#, fuzzy
 msgid  "Suffix"
 msgstr "Ending"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.7.String.Text
+#, fuzzy
 msgid  "The suffix"
 msgstr "Endinga"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.1.String.Text
+#, fuzzy
 msgid  "Converts a number from one measurement system to another"
 msgstr "Konverterer eit tal frå eitt målesystem til eit anna."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.2.String.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Tal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.3.String.Text
+#, fuzzy
 msgid  "The number"
 msgstr "Talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.4.String.Text
+#, fuzzy
 msgid  "From unit"
 msgstr "Frå eining"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.5.String.Text
+#, fuzzy
 msgid  "Unit of measure for number"
 msgstr "Måleeining for talet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.6.String.Text
+#, fuzzy
 msgid  "To unit"
 msgstr "Til eining"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.7.String.Text
+#, fuzzy
 msgid  "Unit of measure for the result"
 msgstr "Måleeining for resultatet"
 
@@ -1613,58 +1859,72 @@ msgid  "Returns the prorated linear depreciation of an asset for each accounting
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
+#, fuzzy
 msgid  "Cost"
 msgstr "Kostnad"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.3.String.Text
+#, fuzzy
 msgid  "Cost of the asset"
 msgstr "Innkjøpskostnaden til verdigjenstanden"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.4.String.Text
+#, fuzzy
 msgid  "Date purchased"
 msgstr "Innkjøpsdato"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.5.String.Text
+#, fuzzy
 msgid  "Purchase date of the asset"
 msgstr "Innkjøpsdatoen for verdigjenstanden"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.6.String.Text
+#, fuzzy
 msgid  "First period"
 msgstr "Første periode"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.7.String.Text
+#, fuzzy
 msgid  "Date the first period ends"
 msgstr "Sluttdatoen for første periode"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.8.String.Text
+#, fuzzy
 msgid  "Salvage"
 msgstr "Restverdi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.9.String.Text
+#, fuzzy
 msgid  "Salvage value of an asset at the end of its life"
 msgstr "Restverdien for ein verdigjenstand ved slutten av levetida"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.10.String.Text
+#, fuzzy
 msgid  "Period"
 msgstr "Periode"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.11.String.Text
+#, fuzzy
 msgid  "The period"
 msgstr "Perioden"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.12.String.Text
+#, fuzzy
 msgid  "Rate"
 msgstr "Sats"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.13.String.Text
+#, fuzzy
 msgid  "The rate of depreciation"
 msgstr "Verdiforringingssatsen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.14.String.Text
+#, fuzzy
 msgid  "Basis"
 msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.15.String.Text
+#, fuzzy
 msgid  "The year basis to be used"
 msgstr "Årsbasisen som skal brukast"
 
@@ -1673,58 +1933,72 @@ msgid  "Returns the prorated linear depreciation of an asset for each accounting
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
+#, fuzzy
 msgid  "Cost"
 msgstr "Kostnad"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.3.String.Text
+#, fuzzy
 msgid  "Cost of the asset"
 msgstr "Innkjøpskostnaden til verdigjenstanden"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.4.String.Text
+#, fuzzy
 msgid  "Date purchased"
 msgstr "Innkjøpsdato"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.5.String.Text
+#, fuzzy
 msgid  "Purchase date of the asset"
 msgstr "Innkjøpsdatoen for verdigjenstanden"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.6.String.Text
+#, fuzzy
 msgid  "First period"
 msgstr "Første periode"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.7.String.Text
+#, fuzzy
 msgid  "The date the first period ends"
 msgstr "Sluttdatoen for første periode"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.8.String.Text
+#, fuzzy
 msgid  "Salvage"
 msgstr "Restverdi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.9.String.Text
+#, fuzzy
 msgid  "The salvage value of an asset at the end of its life"
 msgstr "Restverdien for ein verdigjenstand ved slutten av levetida"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.10.String.Text
+#, fuzzy
 msgid  "Period"
 msgstr "Periode"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.11.String.Text
+#, fuzzy
 msgid  "The period"
 msgstr "Perioden"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.12.String.Text
+#, fuzzy
 msgid  "Rate"
 msgstr "Sats"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.13.String.Text
+#, fuzzy
 msgid  "The rate of depreciation"
 msgstr "Verdiforringingssatsen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.14.String.Text
+#, fuzzy
 msgid  "Basis"
 msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.15.String.Text
+#, fuzzy
 msgid  "The year basis to be used"
 msgstr "Årsbasisen som skal brukast"
 
@@ -1733,58 +2007,72 @@ msgid  "Returns the accrued interest for a security that pays periodic interest"
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.2.String.Text
+#, fuzzy
 msgid  "Issue"
 msgstr "Utferda"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.3.String.Text
+#, fuzzy
 msgid  "Issue date of the security"
 msgstr "Utferdingsdatoen til verdipapiret"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.4.String.Text
+#, fuzzy
 msgid  "First interest"
 msgstr "Første rente"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.5.String.Text
+#, fuzzy
 msgid  "First interest date of the security"
 msgstr "Første rentedag for verdipapiret"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.6.String.Text
+#, fuzzy
 msgid  "Settlement"
 msgstr "Oppgjer"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
+#, fuzzy
 msgid  "The settlement"
 msgstr "Oppgjeret"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
+#, fuzzy
 msgid  "Rate"
 msgstr "Sats"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.9.String.Text
+#, fuzzy
 msgid  "The rate"
 msgstr "Satsen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
+#, fuzzy
 msgid  "Par"
 msgstr "Nominell verdi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.11.String.Text
+#, fuzzy
 msgid  "The par value"
 msgstr "Den nominelle verdien"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.12.String.Text
+#, fuzzy
 msgid  "Frequency"
 msgstr "Frekvens"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.13.String.Text
+#, fuzzy
 msgid  "The frequency"
 msgstr "Frekvensen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.14.String.Text
+#, fuzzy
 msgid  "Basis"
 msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.15.String.Text
+#, fuzzy
 msgid  "The basis"
 msgstr "Basisen"
 
@@ -1793,42 +2081,52 @@ msgid  "Returns the accrued interest for a security that pays interest at maturi
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
+#, fuzzy
 msgid  "Issue"
 msgstr "Utferda"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.3.String.Text
+#, fuzzy
 msgid  "The issue date"
 msgstr "Utferdingsdatoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.4.String.Text
+#, fuzzy
 msgid  "Settlement"
 msgstr "Oppgjer"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.5.String.Text
+#, fuzzy
 msgid  "The settlement"
 msgstr "Oppgjeret"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.6.String.Text
+#, fuzzy
 msgid  "Rate"
 msgstr "Sats"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.7.String.Text
+#, fuzzy
 msgid  "The rate"
 msgstr "Satsen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.8.String.Text
+#, fuzzy
 msgid  "Par"
 msgstr "Nominell verdi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.9.String.Text
+#, fuzzy
 msgid  "The par value"
 msgstr "Den nominelle verdien"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.10.String.Text
+#, fuzzy
 msgid  "Basis"
 msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.11.String.Text
+#, fuzzy
 msgid  "The basis"
 msgstr "Basisen"
 
@@ -1837,42 +2135,52 @@ msgid  "Returns the amount paid out at maturity for a fully invested security"
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.2.String.Text
+#, fuzzy
 msgid  "Settlement"
 msgstr "Oppgjer"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.3.String.Text
+#, fuzzy
 msgid  "The settlement"
 msgstr "Oppgjeret"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
+#, fuzzy
 msgid  "Maturity"
 msgstr "Forfall"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
+#, fuzzy
 msgid  "The maturity"
 msgstr "Forfallet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
+#, fuzzy
 msgid  "Investment"
 msgstr "Investering"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.7.String.Text
+#, fuzzy
 msgid  "The investment"
 msgstr "Investeringa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.8.String.Text
+#, fuzzy
 msgid  "Discount"
 msgstr "Diskonto"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.9.String.Text
+#, fuzzy
 msgid  "The discount"
 msgstr "Diskontoen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.10.String.Text
+#, fuzzy
 msgid  "Basis"
 msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.11.String.Text
+#, fuzzy
 msgid  "The basis"
 msgstr "Basisen"
 
@@ -1881,42 +2189,52 @@ msgid  "Returns the discount rate for a security"
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.2.String.Text
+#, fuzzy
 msgid  "Settlement"
 msgstr "Oppgjer"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.3.String.Text
+#, fuzzy
 msgid  "The settlement"
 msgstr "Oppgjeret"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
+#, fuzzy
 msgid  "Maturity"
 msgstr "Forfall"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
+#, fuzzy
 msgid  "The maturity"
 msgstr "Forfallet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.6.String.Text
+#, fuzzy
 msgid  "Price"
 msgstr "Pris"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.7.String.Text
+#, fuzzy
 msgid  "The price"
 msgstr "Prisen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.8.String.Text
+#, fuzzy
 msgid  "Redemption"
 msgstr "Innløysing"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
+#, fuzzy
 msgid  "The redemption value"
 msgstr "Innløysingsverdien"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
+#, fuzzy
 msgid  "Basis"
 msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.11.String.Text
+#, fuzzy
 msgid  "The basis"
 msgstr "Basisen"
 
@@ -1925,70 +2243,87 @@ msgid  "Returns the annual Macaulay duration of a security with periodic interes
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
+#, fuzzy
 msgid  "Settlement"
 msgstr "Oppgjer"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.3.String.Text
+#, fuzzy
 msgid  "The settlement"
 msgstr "Oppgjeret"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.4.String.Text
+#, fuzzy
 msgid  "Maturity"
 msgstr "Forfall"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.5.String.Text
+#, fuzzy
 msgid  "The maturity"
 msgstr "Forfallet"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.6.String.Text
+#, fuzzy
 msgid  "Coupon"
 msgstr "Kupong"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.7.String.Text
+#, fuzzy
 msgid  "The coupon rate"
 msgstr "Kupongrenta"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.8.String.Text
+#, fuzzy
 msgid  "Yield"
 msgstr "Avkastning"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.9.String.Text
+#, fuzzy
 msgid  "The yield"
 msgstr "Avkastninga"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.10.String.Text
+#, fuzzy
 msgid  "Frequency"
 msgstr "Frekvens"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.11.String.Text
+#, fuzzy
 msgid  "The frequency"
 msgstr "Frekvensen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.12.String.Text
+#, fuzzy
 msgid  "Basis"
 msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.13.String.Text
+#, fuzzy
 msgid  "The basis"
 msgstr "Basisen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.1.String.Text
+#, fuzzy
 msgid  "Returns the effective annual interest rate"
 msgstr "Gir den årlege effektive rentesatsen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.2.String.Text
+#, fuzzy
 msgid  "Nominal rate"
 msgstr "Nominell rente"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.3.String.Text
+#, fuzzy
 msgid  "The nominal rate"
 msgstr "Den nominelle renta"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.4.String.Text
+#, fuzzy
 msgid  "Npery"
 msgstr "Npery"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.5.String.Text
+#, fuzzy
 msgid  "The periods"
 msgstr "Periodane"
 
@@ -1997,50 +2332,62 @@ msgid  "Returns the cumulative principal on a loan to be paid between two period
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
+#, fuzzy
 msgid  "Rate"
 msgstr "Sats"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.3.String.Text
+#, fuzzy
 msgid  "The rate"
 msgstr "Satsen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.4.String.Text
+#, fuzzy
 msgid  "Nper"
 msgstr "Nper"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.5.String.Text
+#, fuzzy
 msgid  "Number of payment periods"
 msgstr "Tal på betalingsperiodar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.6.String.Text
+#, fuzzy
 msgid  "Pv"
 msgstr "Nv"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.7.String.Text
+#, fuzzy
 msgid  "The present value"
 msgstr "Noverdien"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.8.String.Text
+#, fuzzy
 msgid  "Start period"
 msgstr "Startperiode"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.9.String.Text
+#, fuzzy
 msgid  "The start period"
 msgstr "Startperioden"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.10.String.Text
+#, fuzzy
 msgid  "End period"
 msgstr "Sluttperiode"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.11.String.Text
+#, fuzzy
 msgid  "The end period"
 msgstr "Sluttperioden"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.12.String.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Type"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.13.String.Text
+#, fuzzy
 msgid  "The type of maturity"
 msgstr "Forfallstypen"
 
@@ -2049,50 +2396,62 @@ msgid  "Returns the cumulative interest to be paid between two periods"
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.2.String.Text
+#, fuzzy
 msgid  "Rate"
 msgstr "Sats"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.3.String.Text
+#, fuzzy
 msgid  "The rate"
 msgstr "Satsen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.4.String.Text
+#, fuzzy
 msgid  "Nper"
 msgstr "Nper"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.5.String.Text
+#, fuzzy
 msgid  "Number of payment periods"
 msgstr "Tal på betalingsperiodar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.6.String.Text
+#, fuzzy
 msgid  "Pv"
 msgstr "Nv"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.7.String.Text
+#, fuzzy
 msgid  "The present value"
 msgstr "Noverdien"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.8.String.Text
+#, fuzzy
 msgid  "Start period"
 msgstr "Startperiode"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.9.String.Text
+#, fuzzy
 msgid  "The start period"
 msgstr "Startperioden"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.10.String.Text
+#, fuzzy
 msgid  "End period"
 msgstr "Sluttperiode"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.11.String.Text
+#, fuzzy
 msgid  "The end period"
 msgstr "Sluttperioden"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.12.String.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Type"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.13.String.Text
+#, fuzzy
 msgid  "The type of maturity"
 msgstr "Forfallstypen"
 
@@ -3502,177 +3861,221 @@ msgid  "The schedule"
 msgstr "Planen"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.1.String.Text
+#, fuzzy
 msgid  "Calculates the number of weeks in a specific period"
 msgstr "Reknar ut talet på veker i ein gitt periode"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Startdato"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.3.String.Text
+#, fuzzy
 msgid  "First day of the period"
 msgstr "Første dagen i perioden"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.4.String.Text
+#, fuzzy
 msgid  "End date"
 msgstr "Sluttdato"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.5.String.Text
+#, fuzzy
 msgid  "Last day of the period"
 msgstr "Siste dagen i perioden"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.6.String.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Type"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
+#, fuzzy
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
 msgstr "Utrekningstype: Type=0 tyder tidsintervallet, type=1 tyder kalendervekene."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
+#, fuzzy
 msgid  "Determines the number of months in a specific period."
 msgstr "Gir talet på månader i ein gitt periode."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Startdato"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.3.String.Text
+#, fuzzy
 msgid  "First day of the period."
 msgstr "Første dagen i perioden."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.4.String.Text
+#, fuzzy
 msgid  "End date"
 msgstr "Sluttdato"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.5.String.Text
+#, fuzzy
 msgid  "Last day of the period."
 msgstr "Siste dagen i perioden."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.6.String.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Type"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
+#, fuzzy
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
 msgstr "Utrekningstype: Type=0 tyder tidsintervallet, type=1 tyder kalendermånedene."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
+#, fuzzy
 msgid  "Calculates the number of years in a specific period."
 msgstr "Reknar ut talet på år i ein gitt periode."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.2.String.Text
+#, fuzzy
 msgid  "Start date"
 msgstr "Startdato"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.3.String.Text
+#, fuzzy
 msgid  "First day of the period"
 msgstr "Første dagen i perioden"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.4.String.Text
+#, fuzzy
 msgid  "End date"
 msgstr "Sluttdato"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.5.String.Text
+#, fuzzy
 msgid  "Last day of the period"
 msgstr "Siste dagen i perioden"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.6.String.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Type"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
+#, fuzzy
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
 msgstr "Utrekningstype: Type=0 tyder tidsintervallet, type=1 tyder kalenderåra."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
+#, fuzzy
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
 msgstr "Gir 1 (SANN) dersom datoen er ein dag i eit skotår, elles 0 (USANN)."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "Dato"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.3.String.Text
+#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "Ein vilkårleg dato i det ønskte året"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
+#, fuzzy
 msgid  "Returns the number of days of the month in which the date entered occurs"
 msgstr "Gir talet på dagar i månaden som den oppgitte datoen er i"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "Dato"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.3.String.Text
+#, fuzzy
 msgid  "Any day in the desired month"
 msgstr "Ein vilkårleg dato i den ønskte månaden"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
+#, fuzzy
 msgid  "Returns the number of days of the year in which the date entered occurs."
 msgstr "Gir talet på dagar i året som den oppgitte datoen er i."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "Dato"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.3.String.Text
+#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "Ein vilkårleg dato i det ønskte året"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
+#, fuzzy
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
 msgstr "Gir talet på veker i året som den oppgitte datoen er i"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "Dato"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.3.String.Text
+#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "Ein vilkårleg dato i det ønskte året"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.1.String.Text
+#, fuzzy
 msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
 msgstr "Krypterer eller dekrypterer tekst ved hjelp av ROT13-algoritmen"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.2.String.Text
+#, fuzzy
 msgid  "Text"
 msgstr "Tekst"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.3.String.Text
+#, fuzzy
 msgid  "Text to be encrypted or text already encrypted"
 msgstr "Tekst som skal krypterast eller tekst som alt er kryptert"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffWeeks.String.Text
+#, fuzzy
 msgid  "WEEKS"
 msgstr "VEKER"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffMonths.String.Text
+#, fuzzy
 msgid  "MONTHS"
 msgstr "MÅNADER"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffYears.String.Text
+#, fuzzy
 msgid  "YEARS"
 msgstr "TAL.PÅ.ÅR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_IsLeapYear.String.Text
+#, fuzzy
 msgid  "ISLEAPYEAR"
 msgstr "ER.SKOTÅR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DaysInMonth.String.Text
+#, fuzzy
 msgid  "DAYSINMONTH"
 msgstr "DAGAR.I.MÅNADEN"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DaysInYear.String.Text
+#, fuzzy
 msgid  "DAYSINYEAR"
 msgstr "DAGAR.I.ÅRET"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WeeksInYear.String.Text
+#, fuzzy
 msgid  "WEEKSINYEAR"
 msgstr "VEKER.I.ÅRET"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_Rot13.String.Text
+#, fuzzy
 msgid  "ROT13"
 msgstr "ROT13"

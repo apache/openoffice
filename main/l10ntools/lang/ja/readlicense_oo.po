@@ -280,8 +280,8 @@ msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} 
 msgstr "Windows ドライバに問題があるため、ALPS/Synaptics 製のタッチパッド上で指を動かしても ${PRODUCTNAME} のドキュメントをスクロールすることはできません。"
 
 #: docs/readme/readme.xrm#naso6.naso6
-msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\Program Files\Synaptics\SynTP\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr ""
+msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
+msgstr "タッチパッドでスクロールできるようにするには、下記の行を <tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt> 設定ファイルに追加して、コンピュータを再起動してください。"
 
 #: docs/readme/readme.xrm#naso8.naso8
 msgid  "The location of the configuration file might vary on different versions of Windows."

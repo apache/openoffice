@@ -901,11 +901,11 @@ msgstr "កំពុង​យក IIS Virtual Roots ចេញ..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
 msgid  "Searching for qualifying products"
-msgstr "​ស្វែង​រក​ផលិតផល​ ដែល​មាន​គុណ​ភាព​​​​​"
+msgstr "ស្វែង​រក​ផលិតផល​​ដែល​មាន​គុណ​ភាព​​​​​"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 msgid  "Computing space requirements"
-msgstr "​គណនា​តម្រូវ​ការ​ទំហំ"
+msgstr "តម្រូវការ​ទំហំ​គណនា"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_12
 msgid  "Computing space requirements"
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "ស្រាយ​ចេញ"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "ឯកសារ​ដំឡើង %PRODUCTNAME %PRODUCTVERSION នឹង​ត្រូវ​បាន​ស្រាយ​ចេញ ហើយ​រក្សា​ទុក​នៅ​ក្នុង​ថត​ដែល​បាន​បង្ហាញ​ខាង​ក្រោម ។ ប្រសិន​បើ​អ្នក​ចង់​រក្សា​ទុក %PRODUCTNAME ទៅ​កាន់​ថត​ផ្សេង គឺ​ត្រូវ​ចុច \\'រក​មើល\\' ដើម្បី​ជ្រើស​ថត​ផ្សេង​ទៀត ។"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1449,7 +1449,7 @@ msgstr "កម្មវិធី​ដំឡើង​របស់​វីនដ
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_3
 msgid  "Cancel"
-msgstr "បោះបង់"
+msgstr "បោះបង"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_5
 msgid  "&Look in:"
@@ -1457,7 +1457,7 @@ msgstr "មើល​ក្នុង ៖ ​"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_6
 msgid  "Browse to the destination folder."
-msgstr "រក​​មើលនៅ​​​ថត​​ទិស​ដៅ​ ។"
+msgstr "រក​​មើល​នៅ​​​ថត​​ទិស​ដៅ​ ។"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 msgid  "{&MSSansBold8}Change Current Destination Folder"
@@ -1469,11 +1469,11 @@ msgstr "បង្កើត​​ថត​ថ្មី|"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_10
 msgid  "OK"
-msgstr "យល់​​ព្រម​"
+msgstr "យល់​ព្រម​"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_12
 msgid  "&Folder name:"
-msgstr "ឈ្មោះ​​ថត​ ៖​​"
+msgstr "ឈ្មោះ​​ថត​ ៖ ​​"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_13
 msgid  "Up one level|"
@@ -1481,7 +1481,7 @@ msgstr "ឡើង​លើ​​​មួយ​​កម្រិត|"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_14
 msgid  "< &Back"
-msgstr "< ថយ​ក្រោយ"
+msgstr "< ថយ​ក្រោយ "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_17
 msgid  "&Change..."
@@ -1489,7 +1489,7 @@ msgstr "ផ្លាស់ប្តូរ..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_18
 msgid  "Cancel"
-msgstr "បោះបង់"
+msgstr "បោះបង"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_19
 msgid  "Specify a network location for the server image of the product."
@@ -1505,7 +1505,7 @@ msgstr "{&MSSansBold8} ទីតាំង​​បណ្តាញ​"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_22
 msgid  "&Install"
-msgstr "ដំឡើង​"
+msgstr "ដំឡើង​ "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_23
 msgid  "&Network location:"
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "បោះបង"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8} ព័ត៌​​មាន​អ​តិ​ថិ​ជន​"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1677,7 +1677,7 @@ msgstr "នឹង​ត្រូវ​បាន​ដំឡើង​ ដើ​�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_72
 msgid  "OK"
-msgstr "យល់​ព្រម​"
+msgstr "យល់​​ព្រម​"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_73
 msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
@@ -1697,7 +1697,7 @@ msgstr "ផ្លាស់ប្តូរ..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr "ចុច​បន្ទាប់ ដើម្បី​ដំឡើង​ថតនេះ ឬ​ចុច​ ផ្លាស់ប្ដូរ ​ដើម្បី​ដំឡើង​ក្នុង​ថត​ផ្សេង ។"
+msgstr "ចុច​ បន្ទាប់ ដើម្បី​ដំឡើង​ទៅ​ថត​នេះ​ ឬ​ចុច​ ផ្លាស់ប្តូរ ដើម្បី​​ដំឡើង​​​ក្នុង​​​ថត​​ផ្សេង ។"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1753,7 +1753,7 @@ msgstr "ទំហំ​ថាស​ដែល​ត្រូវ​ការ​ �
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "ភាគ​ដែល​បាន​បន្លិច​គ្មាន​ទំហំ​ថាស​គ្រប់​គ្រាន់​ សម្រាប់​​លក្ខណៈ​ពិសេស​ដែល​បាន​ជ្រើស​បច្ចុប្បន្ន​ ។ អ្នក​អាច​យក​ឯកសារ​ចេញ​ពី​ភាគ​ដែល​បាន​បន្លិច​ ​ជ្រើស​ដើម្បី​​​ដំឡើង​លក្ខណៈពិសេស​​តិច​តួច​ទៅ​ក្នុង​ថាស​រឹង​​មូល​ដ្ឋាន ឬ​ ជ្រើស​ដ្រាយ​ទិស​ដៅ​​ផ្សេង​ទៀត ។​"
+msgstr "ភាគ​ដែល​បាន​បន្លិច​គ្មាន​ទំហំ​ថាស​គ្រប់​គ្រាន់​​សម្រាប់​​លក្ខណៈ​ពិសេស​ដែល​បាន​ជ្រើស​បច្ចុប្បន្ន​ទេ ។អ្នក​អាច​យក​ឯកសារ​ចេញ​ពី​ភាគ​ដែល​បាន​បន្លិច​ ​ជ្រើស​ដើម្បី​​​ដំឡើង​លក្ខណៈពិសេស​​តិច​តួច​ទៅ​ក្នុង​ថាស​រឹង​​មូល​ដ្ឋាន ឬ​ ជ្រើស​ដ្រាយ​ទិស​ដៅ​​ផ្សេង​ទៀត ។​"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -1761,7 +1761,7 @@ msgstr "{&MSSansBold8} ត្រូវ​ការ​ទំហំ​​ថាស
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_100
 msgid  "OK"
-msgstr "យល់​​ព្រម​"
+msgstr "យល់​ព្រម​"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_103
 msgid  "Some files that need to be updated are currently in use."
@@ -2037,15 +2037,15 @@ msgstr "ប្រព័ន្ធ​របស់​អ្នក​មិន​ត
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
-msgstr "ចុច បញ្ចប់ ដើម្បី​​​ចេញ​ពី​អ្នក​ជំនួយការ ។"
+msgstr "ចុច បញ្ចប់​ ដើម្បី​​​ចេញ​ពី​អ្នក​ជំនួយការ ។"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "អ្នក​អាច​រក្សា​ទុក​ធាតុ​ទាំង​ឡាយ​ដែល​បាន​​ដំឡើង​រួច​ហើយ​​នៅ​ក្នុង​ប្រ​ព័ន្ធ​របស់​​អ្នក ​ដើម្បី​​បន្ត​​ការ​​ដំឡើង​​នេះ​នៅ​​ពេល​ក្រោយ​ ឬ​អ្នក​អាច​ស្តារ​ប្រព័ន្ធ​របស់​អ្នក​ឲ្យ​ដូច​សភាព​ដើម​ មុន​ធ្វើការ​​រ​ដំឡើង​ ។​​​"
+msgstr "អ្នក​អាច​រក្សា​ទុក​ធាតុ​ទាំង​ឡាយ​ដែល​បាន​​ដំឡើង​រួច​ហើយ​​នៅ​ក្នុង​ប្រ​ព័ន្ធ​របស់​​អ្នក ​ដើម្បី​​បន្ត​​ការ​​ដំឡើង​​នេះ​នៅ​​ពេល​ក្រោយ​ ឬ​អ្នក​អាច​ស្តារ​ប្រព័ន្ធ​របស់​អ្នក​ឲ្យ​ដូច​សភាព​ដើម​ មុននឹង​ធ្វើ​​​​ការ​ដំឡើង​ ។​​​"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
-msgstr "ចុច​ ស្តារ ឬ​បន្ត​ពេល​​ក្រោយ ​ដើម្បី​​​​​ចេញ​​ពី​​អ្នក​​ជំនួយ​​ការ​ ។"
+msgstr "ចុច​ ស្តារ ឬបន្ត​ពេល​​ក្រោយ ​ដើម្បី​​​​​ចេញ​​ពី​​អ្នក​​ជំនួយ​​ការ​ ។"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 msgid  "{&TahomaBold10}Installation Wizard Completed"

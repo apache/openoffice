@@ -41,7 +41,7 @@ msgstr "Zajednica korisnika paketa OpenOffice.org"
 
 #: inc_openoffice/windows/msi_languages/Property.ulf#OOO_ARPHELPLINKTEMPLATE
 msgid  "http://www.openoffice.org"
-msgstr "http://sr.openoffice.org/podrska.html"
+msgstr "http://sr.openoffice.org"
 
 #: inc_openoffice/windows/msi_languages/Property.ulf#OOO_ARPHELPTELEPHONETEMPLATE
 msgid  "x-xxx-xxx-xxx"
@@ -901,7 +901,7 @@ msgstr "Uklanjam IIS virtuelna mesta..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
 msgid  "Searching for qualifying products"
-msgstr "Tražim odgovarajuće proizvode"
+msgstr "Tražim odgovarajuće instalacije"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 msgid  "Computing space requirements"
@@ -1141,7 +1141,7 @@ msgstr "Osvežavam promenljive okruženja"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "Ime: [1], vrednost: [2], akcija: [3]"
+msgstr "Ime: [1], Vrednost: [2], Akcija: [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 msgid  "Removing applications"
@@ -1173,7 +1173,7 @@ msgstr "Uklanjam unose u inicijalne datoteke"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_78
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
-msgstr "Datoteka: [1], odeljak: [2], ključ: [3], vrednost: [4]"
+msgstr "Datoteka: [1], Odeljak: [2], Ključ: [3], Vrednost: [4]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_79
 msgid  "Removing ODBC components"
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Zahvaljujemo vam što ste preuzeli %PRODUCTNAME %PRODUCTVERSION."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "&Raspakuj"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "Instalacione datoteke paketa %PRODUCTNAME %PRODUCTVERSION će biti raspakovane i sačuvane u fasciklu navedenu ispod. Ako želite da datoteke za instalaciju paketa %PRODUCTNAME sačuvate u nekoj drugoj fascikli kliknite na „Izbor...“. Za nastavak kliknite na „Raspakuj“."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1505,7 +1505,7 @@ msgstr "{&MSSansBold8}Mrežno mesto"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_22
 msgid  "&Install"
-msgstr "&Instaliraj"
+msgstr "&Instalacija"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_23
 msgid  "&Network location:"
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "Otkaži"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}Korisnički podaci"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1753,7 +1753,7 @@ msgstr "Neophodan prostor na disku za instalaciju izabranih delova."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "Označena mesta nemaju dovoljno prostora na disku za trenutno izabrane delove. Možete ukloniti datoteke iz označenih mesta, izabrati manje delova za instalaciju na lokalni disk ili izabrati druge odredišne diskove."
+msgstr "Označena mesta nemaju dovoljno slobodnog prostora za trenutno izabrane delove. Možete ukloniti datoteke iz označenih mesta, izabrati manje delova za instalaciju na lokalni disk ili izabrati druge odredišne diskove."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -2041,11 +2041,11 @@ msgstr "Klikom na „Završi“ napuštate pomoćnika."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "Možete sačuvati postojeće instalirane elemente na sistemu da biste nastavili ovu instalaciju kasnije ili možete povratiti sistem u stanje u kome je bio pre instalacije."
+msgstr "Možete sačuvati postojeće elemente koji su instalirani na sistemu da biste ovo instaliranje nastavili kasnije ili možete povratiti sistem u stanje u kome je bio pre instaliranja."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
-msgstr "Klikom na „Povrati“ ili „Nastavi kasnije“ napustićete pomoćnika."
+msgstr "Klikom na „Povrati“ ili „Nastavi kasnije“ napuštate pomoćnika."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 msgid  "{&TahomaBold10}Installation Wizard Completed"

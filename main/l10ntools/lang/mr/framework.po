@@ -136,24 +136,24 @@ msgid  "Retry"
 msgstr "पुन्हा प्रयत्न करा"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "खाली दिलेल्या स्थानी  डिस्कच्या अपुरया असणारया मुक्त जागेमुळे %PRODUCTNAME महत्त्वपूर्ण अंतर्गत माहिती जतन करू शकले नाही:\n%PATH\n\nत्या स्थानी अधिक मुक्त डिस्क जागा  नेमून दिल्याशिवाय आपण आता %PRODUCTNAME मध्ये काम करू शकणार नाही.\n\nडाटा जतन करण्याचा पुन्हा प्रयत्न करण्यासाठी आपण अधिक मुक्त डिस्क जागेस नेमून दिल्यानंतर 'पुन्हा प्रयत्न करा' कळ दाबा.\n\n"
+msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
+msgstr ""
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
 msgstr "रिसेट (~R)"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "वापरकर्त्याचा इंटरफेस अंतर्गत रचनेचा डाटा लोड करताना दोष आढळला. अनुप्रयोग आता समाप्त करण्यात येईल.\n कृपया अनुप्रयोगास पुर्नःस्थापित करण्याचा प्रयत्न करा."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "वापरकर्त्याचा इंटरफेस अंतर्गत रचनेचा डाटा लोड करताना दोष आढळला. अनुप्रयोग आता समाप्त करण्यात येईल.\n कृपया अनुप्रयोगासाठी आपल्या वापरकर्त्याचा माहितीलेख काढून टाकण्याचा  प्रयत्न करा."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "वापरकर्त्याचा इंटरफेस अंतर्गत रचनेचा डाटा लोड करताना दोष आढळला. अनुप्रयोग आता समाप्त करण्यात येईल.\n कृपया प्रथम अनुप्रयोगासाठी आपल्या वापरकर्त्याचा माहितीलेख काढून टाकण्याचा  प्रयत्न करा किंवा अनुप्रयोगास पुर्नःस्थापित करण्याचा प्रयत्न करा."
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

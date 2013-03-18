@@ -193,7 +193,7 @@ msgstr "Yeroo hafu: {daqiqaa [1] }{sakoondii [2]}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_16
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr "Kuufannoo ala. Lamuu yaaluun dura fayyadamoota biroo cufi."
+msgstr "Kuufannoon ala. Lamuu yaaluun dura fayyadamoota biroo cufi."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_17
 msgid  "Installer is no longer responding."
@@ -889,7 +889,7 @@ msgstr "Raawwatamoota kornyeessaa jira"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_7
 msgid  "File: [1]"
-msgstr "Faayilii: [1]"
+msgstr "Faayiloota: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_8
 msgid  "Creating IIS Virtual Roots..."
@@ -901,11 +901,11 @@ msgstr "Hundeewwan Abjataa IIS Balleessaa Jira..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
 msgid  "Searching for qualifying products"
-msgstr "Oomishoota ulaagaa guutan barbachaa jira"
+msgstr "Omishoota ulaagaa guutan barbaachaa jira"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 msgid  "Computing space requirements"
-msgstr "Iddoo duwwaa barbaachisu herregaa jira"
+msgstr "Iddoo duwwaa jiru herregaa jira"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_12
 msgid  "Computing space requirements"
@@ -1141,7 +1141,7 @@ msgstr "Diraawwan qeeyyaa haaromsaa jira"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "Maqaa: [1], Gatii: [2], Gocha [3]"
+msgstr "Maqaa: [1], Vatii: [2], Gocha [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 msgid  "Removing applications"
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "%PRODUCTNAME %PRODUCTVERSION buusuu keetiif galatoomi."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "Qarqabaleessi"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "Faayiloonni ijaarsaa %PRODUCTNAME %PRODUCTVERSION qarqabaleessamanii ukaankaa armaan gaditti mul'atu keessatti olkaa'amu. %PRODUCTNAME ukaankaa biroo keessa olkaa'uu yoo barbaadde, ukaankaa biroo filachuuf \\'Sakatta'i\\' cuqaasi."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1525,7 +1525,7 @@ msgstr "Itti aanee >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Masaka Ijaarsa [ProductName]tti Baga Nagaan Dhufte"
+msgstr "{&TahomaBold10}Baga Masaka Ijaarsaa [ProductName]tti nagaan dhufte"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "Dhiisi"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}Odeeffaannoo Maamilaa"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1785,7 +1785,7 @@ msgstr "Tuffadhu"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_108
 msgid  "&Retry"
-msgstr "Lamuu Yaali"
+msgstr "Lamuu yaali"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_111
 msgid  "Cancel"
@@ -2041,19 +2041,19 @@ msgstr "Masaka keessaa bahuuf Xumuri cuqaasi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "Ijaarsa kana booda itti fufuuf maamiloota sirna keerratti amma ijaaramanii jiran kamiyyuu kaa'uu ni dandeessa ykn ijaarsaan dura sirna kee haala xabboo isaattii bakkaddeebisuu ni dandeessa."
+msgstr "Sirni kee irratti booda ittifufuuf maalimaa duuran ijaaramee kuufachu yk sirna  ijaaru dura bakkaddeebisu hin dandesaa."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
-msgstr "Masaka keessaa bahuuf Bakkaddeebisi yk Booda Itti Fufi cuqaasi."
+msgstr "Masaka keessa bahu'uf Bakkaddeebisi yk Fufuu cuqaasi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}Masakni Ijaarsaa Xumurameera"
+msgstr "{&MSSansYabbuu10}Masaka Ijaaruun Xumrameraa"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr "[ProductName] guutumaan guutuutti ijaaramuun dura masakni addaan cite."
+msgstr "Ijaarsi ittuu hin xumuramin [MaqaaOOmisha] masakan gufateraa."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 msgid  "< &Back"

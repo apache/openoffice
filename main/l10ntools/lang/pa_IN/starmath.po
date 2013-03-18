@@ -233,7 +233,7 @@ msgstr "ਹੇਠਲੀ ਸੀਮਾ(~L)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.6.1.String.Text
 msgid  "Brackets"
-msgstr "ਬਰੈਕਟਾਂ"
+msgstr "ਬਰੈਕਟ"
 
 #: source/smres.src#RID_DISTANCEDIALOG.6.2.String.Text
 msgid  "~Excess size (left/right)"
@@ -353,15 +353,15 @@ msgstr "ਛਾਪਣ ਫਾਰਮੈਟ"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
 msgid  "O~riginal size"
-msgstr "ਬਾਰਡਰ(~o)"
+msgstr "ਅਸਲੀ ਆਕਾਰ(~r)"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 msgid  "Fit to ~page"
-msgstr "ਪਰਿੰਟ ਆਉਟ ਵਿੱਚ ਫਾਰਮੂਲਾ ਖੇਤਰ ਦੁਆਲੇ ਹਲਕਾ ਬਾਰਡਰ ਲਾਉ।"
+msgstr "ਸਫ਼ੇ ਲਈ ਫਿੱਟ(~p)"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 msgid  "~Scaling"
-msgstr "ਆਕਾਰ"
+msgstr "ਸਕੇਲਿੰਗ(~S)"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
 msgid  "Miscellaneous options"
@@ -444,12 +444,12 @@ msgid  "~Delete"
 msgstr "ਹਟਾਓ(~d)"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr "\"StarMath\" ਫੋਂਟ ਇੰਸਟਾਲ ਨਹੀਂ ਹਨ।\nਇਸ ਫੋਂਟ ਦੇ ਬਿਨਾਂ %PRODUCTNAME ਮੈਥ ਠੀਕ ਤਰ੍ਹਾਂ ਕੰਮ ਨਹੀਂ ਕਰੇਗਾ।\nਇਹ ਫੋਂਟ ਇੰਸਟਾਲ ਕਰਕੇ %PRODUCTNAME ਮੈਥ ਮੁੜ-ਚਾਲੂ ਕਰੋ ਜੀ।"
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "ਕੀ ਬਦਲਾਅ ਡਿਫਾਲਟ ਵਜੋਂ ਸੰਭਾਲਣੇ ਹਨ?\n\nਇਹ ਬਦਲਾਅ ਸਭ ਨਵੇਂ ਫਾਰਮੂਲਿਆਂ ਉੱਤੇ ਲਾਗੂ ਹੋਣਗੇ।"
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"

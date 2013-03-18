@@ -696,7 +696,7 @@ msgid  "Delete..."
 msgstr "ลบ..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
-msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
+msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
 msgstr ""
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
@@ -704,7 +704,7 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
-msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
+msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
 msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
@@ -716,7 +716,7 @@ msgid  "Are you sure to delete the image?"
 msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
-msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
+msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
 msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
@@ -1055,86 +1055,107 @@ msgid  "Mark Tree"
 msgstr ""
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.TabDialog.Text
+#, fuzzy
 msgid  "Properties of "
 msgstr "คุณสมบัติของ "
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
+#, fuzzy
 msgid  "General"
 msgstr "ทั่วไป"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.TabDialog.Text
+#, fuzzy
 msgid  "Properties of "
 msgstr "คุณสมบัติของ "
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
+#, fuzzy
 msgid  "General"
 msgstr "ทั่วไป"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.1.RID_SVXTABPAGE_GALLERYTHEME_FILES.PageItem.Text
+#, fuzzy
 msgid  "Files"
 msgstr "แฟ้ม"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Type:"
 msgstr "ชนิด:"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FixedText.Text
+#, fuzzy
 msgid  "Location:"
 msgstr "ตำแหน่ง:"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FixedText.Text
+#, fuzzy
 msgid  "Contents:"
 msgstr "เนื้อหา:"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FixedText.Text
+#, fuzzy
 msgid  "Modified:"
 msgstr "เปลี่ยนแปลง:"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FixedText.Text
+#, fuzzy
 msgid  "~File type"
 msgstr "~ชนิดแฟ้ม"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_SEARCH.PushButton.Text
+#, fuzzy
 msgid  "~Find Files..."
 msgstr "~หาแฟ้ม..."
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_TAKE.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "เ~พิ่ม"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_TAKEALL.PushButton.Text
+#, fuzzy
 msgid  "A~dd All"
 msgstr "เพิ่~มทั้งหมด"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.CBX_PREVIEW.CheckBox.Text
+#, fuzzy
 msgid  "Pr~eview"
 msgstr "แสด~งตัวอย่าง"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PushButton.Text
+#, fuzzy
 msgid  "Maddin1"
 msgstr "Maddin1"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PushButton.Text
+#, fuzzy
 msgid  "Maddin2"
 msgstr "Maddin2"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.ModalDialog.Text
+#, fuzzy
 msgid  "Enter Title"
 msgstr "ใส่ชื่อ"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.FL_TITLE.FixedLine.Text
+#, fuzzy
 msgid  "Title"
 msgstr "ชื่อเรื่อง"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.ModalDialog.Text
+#, fuzzy
 msgid  "Find"
 msgstr "หา"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FixedLine.Text
+#, fuzzy
 msgid  "Directory"
 msgstr "ไดเรกทอรี"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FixedLine.Text
+#, fuzzy
 msgid  "File type"
 msgstr "ชนิดแฟ้ม"
 
@@ -1144,6 +1165,7 @@ msgid  "Apply"
 msgstr "เริ่มใช้"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FixedLine.Text
+#, fuzzy
 msgid  "File"
 msgstr "แฟ้ม"
 
@@ -2040,22 +2062,27 @@ msgid  "Close"
 msgstr "ปิด"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.ModalDialog.Text
+#, fuzzy
 msgid  "Special Characters"
 msgstr "อักขระพิเศษ"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_FONT.FixedText.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "แ~บบอักษร"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SUBSET.FixedText.Text
+#, fuzzy
 msgid  "~Subset"
 msgstr "~เซตย่อย"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SYMBOLE.FixedText.Text
+#, fuzzy
 msgid  "Characters:"
 msgstr "อักขระ:"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~ลบ"
 
@@ -2068,7 +2095,7 @@ msgid  "License..."
 msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT.String.Text
-msgid  "Copyright © 2012 Apache Software Foundation.\nAll rights reserved.\n\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\nApache OpenOffice acknowledges all community members, especially those mentioned at"
+msgid  "Copyright © 2012 Apache Software Foundation.\\nAll rights reserved.\\n\\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\\nApache OpenOffice acknowledges all community members, especially those mentioned at"
 msgstr ""
 
 #: source/dialogs/about.src#RID_CUI_README_DLG.ModalDialog.Text
@@ -2088,9 +2115,8 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
-#, fuzzy
-msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr "ใช้ไม่ได้สำหรับการตรวจสอบการสะกด\nกรุณาตรวจสอบการติดตั้งของคุณและติดตั้งภาษาที่ต้องการ\n"
+msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
+msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 #, fuzzy
@@ -2603,7 +2629,7 @@ msgstr "บันทึกย่อ"
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_LASTEDITLABEL.FixedText.Text
 #, fuzzy
 msgid  "Author"
-msgstr "ผู้เขียน"
+msgstr "~ผู้เขียน"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_EDIT.FixedText.Text
 #, fuzzy
@@ -2765,14 +2791,17 @@ msgid  " Columns"
 msgstr " คอลัมน์"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "ชื่อ"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "ชื่อ"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~ชื่อ"
 
@@ -2781,6 +2810,7 @@ msgid  "Description"
 msgstr ""
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_TITLE.FixedText.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "ชื่อเรื่อง"
 
@@ -2793,18 +2823,22 @@ msgid  "Properties"
 msgstr ""
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URL1.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL!!!!"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_TARGET.FixedText.Text
+#, fuzzy
 msgid  "F~rame"
 msgstr "ก~รอบ"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~ชื่อ"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URLDESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "Alternative ~text"
 msgstr "Alternative ~text!!!!"
 
@@ -2941,110 +2975,137 @@ msgid  "Show columns"
 msgstr "แสดงคอลัมน์"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.ModalDialog.Text
+#, fuzzy
 msgid  "Record Search"
 msgstr "การค้นหาระเบียน"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FixedLine.Text
+#, fuzzy
 msgid  "Search for"
 msgstr "ค้นหา"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORTEXT.RadioButton.Text
+#, fuzzy
 msgid  "~Text"
 msgstr "~ข้อความ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is ~NULL"
 msgstr "เนื้อหาเขตข้อมูลเป็น ~ค่าว่าง"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNOTNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is not NU~LL"
 msgstr "เนื้อหาเขตข้อมูลไม่เป็น~ค่าว่าง"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_WHERE.FixedLine.Text
+#, fuzzy
 msgid  "Where to search"
 msgstr "ที่ที่จะค้นหา"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_FORM.FixedText.Text
+#, fuzzy
 msgid  "Form"
 msgstr "แบบฟอร์ม"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_ALLFIELDS.RadioButton.Text
+#, fuzzy
 msgid  "All Fields"
 msgstr "เขตข้อมูลทั้งหมด"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SINGLEFIELD.RadioButton.Text
+#, fuzzy
 msgid  "Single field"
 msgstr "เขตข้อมูลเดี่ยว"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "การตั้งค่า"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_POSITION.FixedText.Text
+#, fuzzy
 msgid  "Position"
 msgstr "ตำแหน่ง"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_USEFORMATTER.CheckBox.Text
+#, fuzzy
 msgid  "Apply field format"
 msgstr "ใช้รูปแบบเขตข้อมูลทันที"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_CASE.CheckBox.Text
+#, fuzzy
 msgid  "Match case"
 msgstr "ตัวพิมพ์ตรงกัน"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_BACKWARD.CheckBox.Text
+#, fuzzy
 msgid  "Search backwards"
 msgstr "ค้นหาย้อนกลับ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_STARTOVER.CheckBox.Text
+#, fuzzy
 msgid  "From Beginning"
 msgstr "จากจุดเริ่มต้น"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_WILDCARD.CheckBox.Text
+#, fuzzy
 msgid  "Wildcard expression"
 msgstr "Wildcard expression"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_REGULAR.CheckBox.Text
+#, fuzzy
 msgid  "Regular expression"
 msgstr "Regular expression"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CheckBox.Text
+#, fuzzy
 msgid  "Similarity Search"
 msgstr "การค้นหาสิ่งที่คล้ายกัน"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_HALFFULLFORMS.CheckBox.Text
+#, fuzzy
 msgid  "Match character width"
 msgstr "ความกว้างอักขระที่ตรงกัน"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_SOUNDSLIKECJK.CheckBox.Text
+#, fuzzy
 msgid  "Sounds like (Japanese)"
 msgstr "เสียงคล้าย (ภาษาญี่ปุ่น)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SOUNDSLIKESETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FixedLine.Text
+#, fuzzy
 msgid  "State"
 msgstr "State"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FixedText.Text
+#, fuzzy
 msgid  "Record :"
 msgstr "ระเบียน:"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PushButton.Text
+#, fuzzy
 msgid  "Search"
 msgstr "ค้นหา"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~ปิด"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.HelpButton.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~วิธีใช้"
 
@@ -3073,10 +3134,12 @@ msgid  "From bottom"
 msgstr ""
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_NORECORD.ErrorBox.Message
+#, fuzzy
 msgid  "No records corresponding to your data found."
 msgstr "ไม่มีระเบียนที่เป็นผลมาจากการพบข้อมูลของคุณ!"
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_GENERAL_ERROR.ErrorBox.Message
+#, fuzzy
 msgid  "An unknown error occurred. The search could not be finished."
 msgstr "เกิดข้อผิดพลาดที่ไม่รู้จัก ไม่สามารถยุติการค้นหา!"
 
@@ -3089,6 +3152,7 @@ msgid  "Overflow, search continued at the end"
 msgstr ""
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_COUNTING.String.Text
+#, fuzzy
 msgid  "counting records"
 msgstr "กำลังนับระเบียน"
 
@@ -3453,18 +3517,16 @@ msgid  "Macro Security..."
 msgstr "ความปลอดภัยของแมโคร..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
-msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
+msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
-#, fuzzy
-msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr "ค่าไม่ถูกต้อง!\n\nค่าที่มากที่สุดสำหรับหมายเลขพอร์ตคือ 65535"
+msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
-#, fuzzy
-msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr "โปรดทราบเกี่ยวกับ Java\nคุณควรยกเลิกการใช้ Javascript\n\nคุณต้องการยกเลิก Java หรือไม่?"
+msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -3567,7 +3629,7 @@ msgid  "Note that street, Zip code and city are used to generate the registratio
 msgstr "สังเกตว่าถนน รหัสไปรษณีย์ และเมือง จะถูกใช้เพื่อสร้างเป็นคีย์การลงทะเบียน  คุณจะเปลี่ยนข้อมูลเหล่านี้ไม่ได้อีก จนกว่าจะลงทะเบียนสำเร็จ  คุณต้องการเปลี่ยนแปลงข้อมูลผู้ใช้ขณะนี้หรือไม่ ?"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
-msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgid  "The User Data have been changed.\\nDo you really want to change your User Data?"
 msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
@@ -3681,26 +3743,32 @@ msgid  "Searching in Japanese"
 msgstr "กำลังค้นหาในภาษาญี่ปุ่น"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FixedLine.Text
+#, fuzzy
 msgid  "Default text direction"
 msgstr "ทิศทางข้อความโดยปริยาย!!!!"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RadioButton.Text
+#, fuzzy
 msgid  "~Left-to-right"
 msgstr "ซ้า~ยไปขวา!!!!"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_RIGHT2LEFT.RadioButton.Text
+#, fuzzy
 msgid  "~Right-to-left"
 msgstr "~ขวาไปซ้าย!!!!"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_SHEETVIEW.FixedLine.Text
+#, fuzzy
 msgid  "Sheet view"
 msgstr "มุมมองแผ่นงาน!!!!"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_RIGHT2LEFT.CheckBox.Text
+#, fuzzy
 msgid  "Right-~to-left"
 msgstr "~ขวาไปซ้าย!!!!"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_CURRENTDOCONLY.CheckBox.Text
+#, fuzzy
 msgid  "~Current document only"
 msgstr "เอกสาร~ปัจจุบันเท่านั้น!!!!"
 
@@ -4108,38 +4176,44 @@ msgid  "Name of color scheme"
 msgstr "ชื่อรายการสี"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Database file"
 msgstr "แฟ้ม~ฐานข้อมูล"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.PB_BROWSEFILE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "เ~รียกดู..."
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Registered ~name"
 msgstr "~ชื่อที่ลงทะเบียน"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_EDIT_LINK.String.Text
+#, fuzzy
 msgid  "Edit Database Link"
 msgstr "แก้ไขการเชื่อมฐานข้อมูล"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_NEW_LINK.String.Text
+#, fuzzy
 msgid  "Create Database Link"
 msgstr "สร้างการเชื่อมฐานข้อมูล"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
-msgid  "The file\n$file$\ndoes not exist."
-msgstr "ไม่มีแฟ้ม\n$file$\nอยู่"
+msgid  "The file\\n$file$\\ndoes not exist."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
-msgid  "The file\n$file$\ndoes not exist in the local file system."
+msgid  "The file\\n$file$\\ndoes not exist in the local file system."
 msgstr ""
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
-msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
-msgstr "ชื่อ'$file$'มีอยู่แล้วในฐานข้อมูลอื่น\n กรุณาใช้ชื่ออื่น"
+msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
+msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the entry?"
 msgstr "คุณต้องการลบรายการหรือไม่?"
 
@@ -4231,7 +4305,7 @@ msgstr "ข้อมูลผู้ใช้!!!!"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ItemList.item
 #, fuzzy
 msgid  "General"
-msgstr "ทั่วไป!!!!"
+msgstr "ทั่วไป"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MEMORY.ItemList.item
 #, fuzzy
@@ -4241,12 +4315,12 @@ msgstr "หน่วยความจำ!!!!"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_VIEW.ItemList.item
 #, fuzzy
 msgid  "View"
-msgstr "มุมมอง!!!!"
+msgstr "มุมมอง"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PRINTOPTIONS.ItemList.item
 #, fuzzy
 msgid  "Print"
-msgstr "พิมพ์!!!!"
+msgstr "พิมพ์"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PATH.ItemList.item
 #, fuzzy
@@ -4355,12 +4429,12 @@ msgstr "ทั่วไป"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_CONTENT_OPT.ItemList.item
 #, fuzzy
 msgid  "View"
-msgstr "มุมมอง"
+msgstr "แสดง"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTSHDWCRSR.ItemList.item
 #, fuzzy
 msgid  "Formatting Aids"
-msgstr "เครื่องมือช่วยจัดรูปแบบ"
+msgstr "ตัวช่วยการจัดรูปแบบ"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SVXPAGE_GRID.ItemList.item
 #, fuzzy
@@ -4420,7 +4494,7 @@ msgstr "%PRODUCTNAME Writer/Web"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_CONTENT_OPT.ItemList.item
 #, fuzzy
 msgid  "View"
-msgstr "แสดง"
+msgstr "มุมมอง"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTSHDWCRSR.ItemList.item
 #, fuzzy
@@ -4470,7 +4544,7 @@ msgstr "ทั่วไป"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CONTENT.ItemList.item
 #, fuzzy
 msgid  "View"
-msgstr "มุมมอง"
+msgstr "แสดง"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ItemList.item
 #, fuzzy
@@ -4515,7 +4589,7 @@ msgstr "ทั่วไป"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_CONTENTS.ItemList.item
 #, fuzzy
 msgid  "View"
-msgstr "แสดง"
+msgstr "มุมมอง"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_SNAP.ItemList.item
 #, fuzzy
@@ -4767,8 +4841,9 @@ msgid  "Assig~ned start parameters"
 msgstr "~กำหนดเริ่มพารามิเตอร์"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FixedText.Text
-msgid  "For example: -Dmyprop=c:\program files\java"
-msgstr ""
+#, fuzzy
+msgid  "For example: -Dmyprop=c:\\program files\\java"
+msgstr "ตัวอย่าง: -Dmyprop=c:\\program files\\java"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
 #, fuzzy
@@ -4801,66 +4876,73 @@ msgid  "~Remove"
 msgstr "เ~อาออก"
 
 #: source/options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ErrorBox.Message
-#, fuzzy
-msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr "โฟลเดอร์ที่คุณเลือกไม่มีสภาวะแวดล้อมแบบ Java runtime.\nกรุณาเลือกโฟลเดอร์อื่น"
+msgid  "The folder you selected does not contain a Java runtime environment.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ErrorBox.Message
-#, fuzzy
-msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr "สภาวะแวดล้อมแบบ Java runtime ที่คุณเลือกไม่ต้องการรุ่น \nกรุณาเลือกโฟลเดอร์อื่น"
+msgid  "The Java runtime environment you selected is not the required version.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WarningBox.Message
-#, fuzzy
-msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr "เพื่อให้การเลือกสภาวะแวดล้อมแบบ Java runtime environment ทำงานโดยสมบูรณ์ %PRODUCTNAME จะต้องเริ่มต้นทำงานใหม่ \nกรุณาเริ่มต้นทำงาน %PRODUCTNAME ใหม่ตอนนี้"
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WarningBox.Message
-#, fuzzy
-msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
-msgstr "คุณจะต้องเริ่มทำงาน %PRODUCTNAME ใหม่เพื่อให้ค่าเปลี่ยนแปลงมีผล \nกรุณาเริ่มทำงาน %PRODUCTNAME ใหม่"
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
+#, fuzzy
 msgid  "Connection pool"
 msgstr "จุดรวมการเชื่อมต่อ!!!!"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
+#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "เปิดใช้งานการรวมการเชื่อมต่อ!!!!"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
+#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "ไดรเวอร์ที่รู้จักใน %PRODUCTNAME"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
+#, fuzzy
 msgid  "Current driver:"
 msgstr "ไดรเวอร์ปัจจุบัน:"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
+#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "เปิดใช้งานการรวมสำหรับไดรเวอร์นี้"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
+#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "หมดเวลา (วินาที)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
+#, fuzzy
 msgid  "Driver name"
 msgstr "ชื่อไดรเวอร์"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
+#, fuzzy
 msgid  "Pool"
 msgstr "รวม!!!!"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
+#, fuzzy
 msgid  "Timeout"
 msgstr "หมดเวลา"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "ใช่!!!!"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "ไม่ใช่!!!!"
 
@@ -4995,9 +5077,8 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr ""
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-#, fuzzy
-msgid  "Using \"%1\" as default file format may cause information loss.\n"
-msgstr "การใช้ \"%1\" เป็นรูปแบบแฟ้มปริยาย อาจทำให้ข้อมูลสุญหาย\n"
+msgid  "Using \"%1\" as default file format may cause information loss.\\n"
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 msgid  "%PRODUCTNAME Improvement Program"
@@ -5008,7 +5089,7 @@ msgid  "Improvement Program"
 msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
-msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
+msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
 msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
@@ -5135,9 +5216,8 @@ msgid  "Edit Paths: %1"
 msgstr "Edit Paths: %1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
-#, fuzzy
-msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr "การกำหนดค่าและไดเรกทอรีเมล ต้องกำหนดเป็นไดเรกทอรีที่แยกออกมา\nกรุณาเลือกพาธใหม่"
+msgid  "The configuration and mail directories must be specified as separate directories.\\nPlease choose a new path."
+msgstr ""
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 #, fuzzy
@@ -5250,46 +5330,57 @@ msgid  "Writing aids"
 msgstr "เครื่องมือช่วยการเขียน"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_MISCELLANEOUS.FixedLine.Text
+#, fuzzy
 msgid  "Miscellaneous options"
 msgstr "ตัวเลือกเบ็ดเตล็ด"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ACCESSIBILITY_TOOL.CheckBox.Text
+#, fuzzy
 msgid  "Support ~assistive technology tools (program restart required)"
 msgstr "สนับสนุนเครื่องมือเทคโนโลยีสิ่งอำนวยความสะดวก (ต้องเริ่มการทำงานโปรแกรมใหม่)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TEXTSELECTION.CheckBox.Text
+#, fuzzy
 msgid  "Use te~xt selection cursor in read-only text documents"
 msgstr "ใช้เคอร์เซอร์การเลือกข้อความในเอกสารข้อความที่อ่านอย่างเดียว"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_GRAPHICS.CheckBox.Text
+#, fuzzy
 msgid  "Allow animated ~graphics"
 msgstr "อนุญาตให้มี~กราฟิกที่เคลื่อนไหวได้"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_TEXTS.CheckBox.Text
+#, fuzzy
 msgid  "Allow animated ~text"
 msgstr "อนุญาตให้มี~ข้อความที่เคลื่อนไหวได้"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CheckBox.Text
+#, fuzzy
 msgid  "~Help tips disappear after "
 msgstr "~คำแนะนำช่วยเหลือหายไปหลังจาก "
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "วินาที"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options for high contrast appearance"
 msgstr "ตัวเลือกสำหรับการปรากฏความเปรียบต่างสูง"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTO_DETECT_HC.CheckBox.Text
+#, fuzzy
 msgid  "Automatically ~detect high contrast mode of operating system"
 msgstr "~ป้องกันโหมดความเปรียบต่างสูงของระบบปฏิบัติการอัตโนมัติ"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTOMATIC_FONT_COLOR.CheckBox.Text
+#, fuzzy
 msgid  "Use automatic font ~color for screen display"
 msgstr "ใช้~สีแบบอักษรอัตโนมัติสำหรับการแสดงหน้าจอ"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_PAGE_PREVIEWS.CheckBox.Text
+#, fuzzy
 msgid  "~Use system colors for page previews"
 msgstr "ใช้~สีของระบบสำหรับแสดงตัวอย่างหน้า"
 
@@ -5415,7 +5506,7 @@ msgstr "ขนาดไอคอน"
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item1.StringList.item
 #, fuzzy
 msgid  "Automatic"
-msgstr "อัตโนมัติ"
+msgstr "Automatic"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item2.StringList.item
 #, fuzzy
@@ -5430,7 +5521,7 @@ msgstr "ใหญ่"
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item1.StringList.item
 #, fuzzy
 msgid  "Automatic"
-msgstr "Automatic"
+msgstr "อัตโนมัติ"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item2.StringList.item
 msgid  "Galaxy (default)"
@@ -5692,22 +5783,27 @@ msgid  "This setting is protected by the Administrator"
 msgstr "การตั้งค่านี้ถูกป้องกันโดยผู้ดูแลระบบ"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_USETABLE.CheckBox.Text
+#, fuzzy
 msgid  "~Apply replacement table"
 msgstr "ใช้การแ~ทนที่แบบอักษร!!!!"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT1.FixedText.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "แ~บบอักษร"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT2.FixedText.Text
+#, fuzzy
 msgid  "Re~place with"
 msgstr "แท~นที่ด้วย"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.ToolBoxItem.Text
+#, fuzzy
 msgid  "Apply"
 msgstr "ใช้งานทันที"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "ลบ"
 
@@ -5716,18 +5812,22 @@ msgid  "Font settings for HTML, Basic and SQL sources"
 msgstr ""
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTNAME.FixedText.Text
+#, fuzzy
 msgid  "Fonts"
 msgstr "แบบอักษร"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_NONPROP.CheckBox.Text
+#, fuzzy
 msgid  "Non-proportional fonts only"
 msgstr "แบบตัวอักษรไม่ได้สัดส่วนเท่านั้น"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTHEIGHT.FixedText.Text
+#, fuzzy
 msgid  "~Size"
 msgstr "~ขนาด"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.String.Text
+#, fuzzy
 msgid  "Always"
 msgstr "เสมอ!!!!"
 
@@ -5736,14 +5836,17 @@ msgid  "Screen only"
 msgstr ""
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER3.String.Text
+#, fuzzy
 msgid  "Font"
 msgstr "แบบอักษร"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.String.Text
+#, fuzzy
 msgid  "Replace with"
 msgstr "แทนที่ด้วย"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "อัตโนมัติ"
 
@@ -5818,9 +5921,8 @@ msgid  "~Close"
 msgstr "~ปิด"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
-#, fuzzy
-msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr "ชื่อที่ระบุมีอยู่แล้ว\nกรุณาใส่ชื่อใหม่"
+msgid  "The specified name already exists.\\nPlease enter a new name."
+msgstr ""
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy
@@ -5874,7 +5976,7 @@ msgstr "การสะกด"
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_HYPH.String.Text
 #, fuzzy
 msgid  "Hyphenation"
-msgstr "ใส่ยัติภังค์"
+msgstr "ยัติภังค์"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.String.Text
 #, fuzzy
@@ -6033,30 +6135,37 @@ msgid  "Do you want to delete the dictionary?"
 msgstr "คุณต้องการลบพจนานุกรมหรือไม่ ?"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.TabPage.Text
+#, fuzzy
 msgid  "Registered databases"
 msgstr "ฐานข้อมูลที่ลงทะเบียน"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Registered name"
 msgstr "ชื่อที่ลงทะเบียน"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "Database file"
 msgstr "แฟ้มฐานข้อมูล"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "ให~ม่..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "แ~ก้ไข..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~ลบ"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.GB_STD.FixedLine.Text
+#, fuzzy
 msgid  "Registered databases"
 msgstr "ฐานข้อมูลที่ลงทะเบียน"
 
@@ -6229,54 +6338,67 @@ msgid  "Ctrl-click required to follow hyperlinks"
 msgstr ""
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_KERNING.FixedLine.Text
+#, fuzzy
 msgid  "Kerning"
 msgstr "ปรับระยะ"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_KERNING.RadioButton.Text
+#, fuzzy
 msgid  "~Western characters only"
 msgstr "อักขระแบบ~ตะวันตกเท่านั้น"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_PUNCT.RadioButton.Text
+#, fuzzy
 msgid  "Western ~text and Asian punctuation"
 msgstr "~ข้อความแบบตะวันตกและเครื่องหมายวรรคตอนแบบเอเชียตะวันออก"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_CHAR_DIST.FixedLine.Text
+#, fuzzy
 msgid  "Character spacing"
 msgstr "ระยะห่างอักขระ"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_NO_COMP.RadioButton.Text
+#, fuzzy
 msgid  "~No compression"
 msgstr "ไ~ม่บีบอัด"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_COMP.RadioButton.Text
+#, fuzzy
 msgid  "~Compress punctuation only"
 msgstr "~บีบอัดเครื่องหมายวรรคตอนเท่านั้น"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_KANA_COMP.RadioButton.Text
+#, fuzzy
 msgid  "Compress ~punctuation and Japanese Kana"
 msgstr "บีบอัดเ~ครื่องหมายวรรคตอนและภาษาญี่ปุ่นแบบคานะ"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_START_END.FixedLine.Text
+#, fuzzy
 msgid  "First and last characters"
 msgstr "อักขระตัวแรกและตัวสุดท้าย"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "~Language"
 msgstr "~ภาษา"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.CB_STANDARD.CheckBox.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "~ค่าปริยาย"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_START.FixedText.Text
+#, fuzzy
 msgid  "Not at start of line:"
 msgstr "ไม่ใช่ที่จุดเริ่มของบรรทัด:"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_END.FixedText.Text
+#, fuzzy
 msgid  "Not at end of line:"
 msgstr "ไม่ใช่ที่จุดสิ้นสุดบรรทัด:"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_HINT.FixedText.Text
+#, fuzzy
 msgid  "Without user-defined line break symbols"
 msgstr "ไม่มีสัญลักษณ์แบ่งบรรทัดที่กำหนดโดยผู้ใช้"
 
@@ -6492,12 +6614,12 @@ msgstr "ตามแกน"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 #, fuzzy
 msgid  "Radial"
-msgstr "ตามรัศมี"
+msgstr "รัศมีวงกลม"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 #, fuzzy
 msgid  "Ellipsoid"
-msgstr "วงรี"
+msgstr "กลมรี"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 #, fuzzy
@@ -6507,7 +6629,7 @@ msgstr "Quadratic"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 #, fuzzy
 msgid  "Square"
-msgstr "สี่เหลี่ยม"
+msgstr "สี่เหลี่ยมจตุรัส"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_X.FixedText.Text
 #, fuzzy
@@ -6532,7 +6654,7 @@ msgstr " องศา"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_BORDER.FixedText.Text
 #, fuzzy
 msgid  "~Border"
-msgstr "เ~ส้นกรอบ"
+msgstr "เ~ส้นขอบ"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_START_VALUE.FixedText.Text
 #, fuzzy
@@ -7263,9 +7385,8 @@ msgid  "O~uter"
 msgstr "ภายน~อก"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
-#, fuzzy
-msgid  "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
-msgstr "กำหนดระยะขอบออกมาจากช่วงการพิมพ์\n\nคุณยังต้องการใช้การกำหนดเหล่านี้อยู่หรือไม่?"
+msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
+msgstr ""
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -8251,7 +8372,7 @@ msgid  "Assigned macro"
 msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
-msgid  "~Existing macros\n"
+msgid  "~Existing macros\\n"
 msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
@@ -8299,7 +8420,7 @@ msgstr ""
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PageItem.Text
 #, fuzzy
 msgid  "Word Completion"
-msgstr "ความสมบูรณ์ของคำ"
+msgstr "Word Completion"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PageItem.Text
 msgid  "Smart Tags"
@@ -8453,12 +8574,12 @@ msgstr "~ข้อความเท่านั้น!!!!"
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_NEW_REPLACE.PushButton.Text
 #, fuzzy
 msgid  "~New"
-msgstr "ใ~หม่"
+msgstr "ใ~หม่!!!!"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_DELETE_REPLACE.PushButton.Text
 #, fuzzy
 msgid  "~Delete"
-msgstr "~ลบ"
+msgstr "~ลบ!!!!"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.STR_MODIFY.String.Text
 #, fuzzy
@@ -8709,9 +8830,8 @@ msgid  "Do you want to delete the gradient?"
 msgstr "คุณต้องการลบการไล่ระดับสีหรือไม่?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
-#, fuzzy
-msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr "ดัดแปลงแก้ไขการไล่ระดับสีโดยไม่มีการบันทึก \nดัดแปลงแก้ไขการไล่ระดับสีที่เลือกหรือเพิ่มการไล่ระดับสีใหม่"
+msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 #, fuzzy
@@ -8729,9 +8849,8 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "คุณแน่ใจหรือไม่ที่ต้องการลบบิตแมป?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
-#, fuzzy
-msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr "ดัดแปลงแก้ไขบิตแมปโดยไม่มีการบันทึก \nดัดแปลงแก้ไขบิตแมปที่เลือกหรือเพิ่มบิตแมปใหม่"
+msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -8744,9 +8863,8 @@ msgid  "Do you want to delete the line style?"
 msgstr "คุณต้องการลบรูปแบบเส้นหรือไม่?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
-#, fuzzy
-msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr "ดัดแปลงแก้ไขรูปแบบเส้นโดยไม่มีการบันทึก \nดัดแปลงแก้ไขลักษณะเส้นที่เลือกหรือเพิ่มรูปแบบเส้นใหม่"
+msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -8759,9 +8877,8 @@ msgid  "Do you want to delete the hatching?"
 msgstr "คุณต้องลบการใส่เส้นลายการใส่เส้นลายหรือไม่?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
-#, fuzzy
-msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr "มีการเปลี่ยนแปลงชนิดการใส่เส้นลายแต่ไม่บันทึก \nเปลี่ยนแปลงชนิดการใส่เส้นลายที่เลือกหรือเพิ่มชนิดการใส่เส้นลายใหม่"
+msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 #, fuzzy
@@ -8784,9 +8901,8 @@ msgid  "Do you want to delete the color?"
 msgstr "คุณต้องการลบสีหรือไม่?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
-#, fuzzy
-msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr "มีการเปลี่ยนแปลงสีโดยไม่มีการบันทึก\nเปลี่ยนแปลงสีที่เลือกหรือเพิ่มสีใหม่"
+msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 #, fuzzy
@@ -8809,9 +8925,8 @@ msgid  "The list was modified without saving. Would you like to save the list no
 msgstr "รายการมีการเปลี่ยนแปลงโดยไม่มีการบันทึก  คุณต้องการบันทึกรายการตอนนี้หรือไม่?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
-#, fuzzy
-msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr "ชื่อที่คุณใส่มีอยู่แล้ว \nกรุณาเลือกชื่ออื่น"
+msgid  "The name you have entered already exists. \\nPlease choose another name."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -8824,9 +8939,8 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "คุณต้องการลบหัวลูกศรหรือไม่?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
-#, fuzzy
-msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr "หัวลูกศรมีการเปลี่ยนแปลงโดยไม่มีการบันทึก\nคุณต้องการบันทึกหัวลูกศรตอนนี้หรือไม่?"
+msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
+msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 #, fuzzy
@@ -8936,7 +9050,7 @@ msgstr "การจัดตำแหน่ง"
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_ALIGN.FixedLine.Text
 #, fuzzy
 msgid  "Options"
-msgstr "ตำแหน่งข้อความ"
+msgstr "ตัวเลือก"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_LEFTALIGN.RadioButton.Text
 #, fuzzy
@@ -9465,12 +9579,12 @@ msgstr "Preview"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TabPage.Text
 #, fuzzy
 msgid  "Position and Size"
-msgstr "ด้านล่างของตำแหน่งเส้นและขนาด"
+msgstr "ตำแหน่งและขนาด"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FixedLine.Text
 #, fuzzy
 msgid  "Position"
-msgstr "ตำแหน่ง"
+msgstr "~ตำแหน่ง"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FixedText.Text
 #, fuzzy
@@ -9485,12 +9599,12 @@ msgstr "ตำแหน่ง ~Y"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FixedText.Text
 #, fuzzy
 msgid  "Base point"
-msgstr "จุดหลัก"
+msgstr "จุดฐาน"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.CTL_POSRECT.Control.QuickHelpText
 #, fuzzy
 msgid  "Base point"
-msgstr "จุดฐาน"
+msgstr "จุดหลัก"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FixedLine.Text
 #, fuzzy
@@ -9510,7 +9624,7 @@ msgstr "ความ~สูง"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_SIZEREFERENCE.FixedText.Text
 #, fuzzy
 msgid  "Base point"
-msgstr "จุดหลัก"
+msgstr "จุดฐาน"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.CTL_SIZERECT.Control.QuickHelpText
 #, fuzzy
@@ -9660,7 +9774,7 @@ msgstr "ตำแหน่ง ~Y"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_POSPRESETS.FixedText.Text
 #, fuzzy
 msgid  "Default settings"
-msgstr "ค่าที่กำหนดไว้โดยปริยาย"
+msgstr "การตั้งค่าปริยาย"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_ANGLE.CTL_RECT.Control.QuickHelpText
 #, fuzzy
@@ -9695,7 +9809,7 @@ msgstr "มุมหมุน"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_SLANT.TabPage.Text
 #, fuzzy
 msgid  "Slant & Corner Radius"
-msgstr "ความเอียงและรัศมีมุม"
+msgstr "เอียงและรัศมีมุม"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_SLANT.FL_RADIUS.FixedLine.Text
 #, fuzzy
@@ -9893,6 +10007,7 @@ msgid  "Alignment"
 msgstr "การจัดตำแหน่ง"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FixedLine.Text
+#, fuzzy
 msgid  "Text alignment"
 msgstr "การจัดตำแหน่งข้อความ"
 
@@ -9904,7 +10019,7 @@ msgstr "แนว~นอน"
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
 #, fuzzy
 msgid  "Default"
-msgstr "ค่าปริยาย"
+msgstr "ค่าเริ่มต้น"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.StringList.item
 #, fuzzy
@@ -10329,7 +10444,7 @@ msgstr "สี"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FixedText.Text
 #, fuzzy
 msgid  "Font ~color"
-msgstr "~สีตัวอักษร"
+msgstr "สีตัว~อักษร"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_NOSTYLE.String.Text
 msgid  "No %1"

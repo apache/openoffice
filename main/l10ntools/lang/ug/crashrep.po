@@ -40,15 +40,15 @@ msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% خاتالىق دوكلاتى ئىشلىتىشىڭىزنى قارشى ئالىمىز."
 
 #: source/all/crashrep.ulf#%WELCOME_BODY1%
-msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\\n\\n"
 msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
-msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr "سانلىق مەلۇمات يوللاش ئىنتاين ئاددىي.  سىز پەقەت كېيىنكى سۆزلىشىش رامكىسىدىكى «يوللا» نى چەكسىڭىزلا بولىدۇ. ئەگەر خاتالىق دوكلاتىنى كۆرمەكچى بولسىڭىز، «دوكلات كۆرسەت» نى چەكسىڭىزلا بولىدۇ. ئەگەر «يوللىما» نى چەكسىڭىز، ھېچقانداق ئۇچۇر يوللانمايدۇ.\n\n"
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\n"
+msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
-msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgid  "Customer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\n"
 msgstr ""
 
 #: source/all/crashrep.ulf#%PRIVACY_URL%
@@ -76,7 +76,7 @@ msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% نى ئىجرا قىلغاندا خاتالىق يۈز بەردى"
 
 #: source/all/crashrep.ulf#%REPORT_BODY%
-msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\\n"
 msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
@@ -120,16 +120,16 @@ msgid  "Save Report to"
 msgstr "دوكلات ساقلاش ئورنى"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
-msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr "خاتالىق دوكلاتى يوللىيالمايدۇ، چۈنكى كۆڭۈلدىكى ئېلخەت پروگراممىسى MAPI كېلىشىمىنى قوللىمايدۇ.\nMAPI بىلەن ماسلىشىدىغان ئېلخەت پروگراممىسى ئىشلىتىڭ."
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\\n Please use a MAPI-compatible e-mail program."
+msgstr ""
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr "خاتالىق دوكلاتىنى ۋاقىتلىق ساقلىيالمىدى، خاتالىق دوكلاتىنى يوللىيالمايدۇ."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
-msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr "خاتالىق دوكلاتىنى يوللىيالمايدۇ، چۈنكى 'sendmail' قوزغىتالمىدى.\n'sendmail' تەڭشىكىنى تەكشۈرۈڭ."
+msgid  "The error report could not be sent because 'sendmail' could not be started.\\nPlease check the 'sendmail' settings."
+msgstr ""
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
@@ -172,8 +172,8 @@ msgid  "~Port"
 msgstr "ئېغىز(~P)"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
-msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "خاتالىق دوكلاتى يوللاش ئۈچۈن %PRODUCTNAME% خاتالىق دوكلات پروگراممىسى ئىنتېرنېت ئۇلىنىشىغا ئېھتىياجلىق.\n\nئادەتتە شىركەتتە تورنى قوغدايدىغان مۇداپىئە تېمى ۋاكالەتچى مۇلازىمىتىرى ئىشلىتىلىدۇ.\n\nئەگەر مەزكۇر شىركەت بۇ خىل ۋاكالەتچى مۇلازىمىتىر ئىشلەتسە، چوقۇم ۋاكالەتچى مۇلازىمىتىر ئادرېسى ۋە ئېغىزىنى كىرگۈزۈڭ."
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\\n\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\n\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -188,7 +188,7 @@ msgid  "Status: The error report has been sent successfully."
 msgstr "ھالەت: خاتالىق دوكلاتى مۇۋەپپەقىيەتلىك يوللاندى."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOEMAILADDRESS%
-msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\\nPlease enter your e-mail address."
 msgstr ""
 
 #: source/all/crashrep.ulf#%MSG_CMDLINE_USAGE%
@@ -204,5 +204,5 @@ msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "خاتالىق دوكلات قورالىغا %PRODUCTNAME% نىڭ جەريان ID(PID) نى بەلگىلەڭ."
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
-msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr "بۇ ياردەم ئۇچۇرىنى كۆرسەت.\nقاچىلاش قوللانمىسىدىن تەپسىلىي ئۇچۇرنى تاپالايسىز."
+msgid  "Shows this help text.\\nDetailed information can be found in the Setup Guide."
+msgstr ""

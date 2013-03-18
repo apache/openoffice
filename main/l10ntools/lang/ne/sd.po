@@ -129,7 +129,7 @@ msgstr "शीर्षक थप्नका लागि क्लिक ग�
 
 #: source/core/glob.src#STR_PRESOBJ_OUTLINE.String.Text
 msgid  "Click to add text"
-msgstr "एउटा रूपरेखा थप्नका लागि क्लिक गर्नुहोस्"
+msgstr "पाठ थप्नका लागि क्लिक गर्नुहोस्"
 
 #: source/core/glob.src#STR_PRESOBJ_TEXT.String.Text
 msgid  "Click to add text"
@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "स्लाईडहरू सार्नुहोस्"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "पर्याप्त स्मृति छैन !\nकार्य परित्याग गरिनेछ ।"
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1732,8 +1732,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "नयाँ एरोहेड लागि एउटा नयाँ नाम प्रविष्ट गर्नुहोस्"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "रोजिएको नाम पहिल्यै अस्तित्वमा छ ।\nकृपया अर्को नाम प्रविष्ट गर्नुहोस्"
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "स्लाइडहरू घुसाउनुहोस्"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "के तपाईँ स्तर \"$\" मेट्न चाहनुमा विश्वस्त हुनुहुन्छ ?\nद्रष्टव्य: यो स्तरका सबै वस्तुहरू मेटिनेछन !"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1852,8 +1852,8 @@ msgid  "Insert text frame"
 msgstr "पाठ फ्रेम घुसाउनुहोस्"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "चयन गरिएको वस्तुहरूसँग \nयो प्रकार्य चल्न सक्दैन"
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1864,8 +1864,8 @@ msgid  "The file could not be loaded!"
 msgstr "फाइल लोड गर्न सकिएन !"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "नयाँ पृष्ठ को ढाँचा एडप्ट गरिनेछ ।\nके तपाईँ वस्तुहरू पनि एडप्ट गर्न चाहनुहुन्छ ?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1884,8 +1884,8 @@ msgid  "~Edit"
 msgstr "सम्पादन गर्नुहोस्"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "यो कार्यले गर्न \nनसकिने कार्यहरूको सूची मेट्दछ । कागजातमा गरिएको अघिल्लो परिवर्तनहरू अझै वैध छन,\nतर नगर्न सकिँदैन । के तपाईँ जारी राख्न चाहनुहुन्छ अनि\nत्यसैले नयाँ स्लाइड डिजाइन एसाइन गर्नुहुन्छ ?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1904,8 +1904,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "कागजात ढाँचा तोकिएको मुद्रकमा सेट गर्न सकिएन"
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "यो ग्राफिक एउटा कागजातमा लिङ्क गरिएको छ ।\nयसलाई सम्पादन गर्नका लागि के तपाईँ ग्राफिक लिङ्क छुटाउन चाहनुहुन्छ ?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2016,8 +2016,8 @@ msgid  " (Outline)"
 msgstr " (रूपरेखा)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "तोकिएको स्केल अवैध छ ।\nके तपाईँ एउटा नयाँ प्रविष्ट गर्न चाहनुहुन्छ ?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2300,8 +2300,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "सबै रेखाचित्र वस्तुहरूको समूह छुट्ट्याउन सम्भव थिएन ।"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "यो नामको एउटा डिजाइन पहिल्यै अस्तित्वमा छ ।\nके तपाईँ यसलाई बदल्न चाहनुहुन्छ ?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2416,8 +2416,8 @@ msgid  "Graphics filter"
 msgstr "ग्राफिक्स फिल्टर"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-msgid  "The file %\nis not a valid sound file !"
-msgstr "फाइल %\nएउटा मान्य ध्वनि फाइल होइन !"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2781,7 +2781,7 @@ msgstr "अवस्था र आकार..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
 msgid  "Edit ~Points"
-msgstr "बिन्दुहरू सम्पादन गर्नुहोस्"
+msgstr "बिन्दुहरू सम्पादन गर्नुहोस"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
 msgid  "Arra~nge"

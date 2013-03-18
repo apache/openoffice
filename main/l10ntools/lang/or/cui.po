@@ -696,16 +696,16 @@ msgid  "Delete..."
 msgstr "ବିଲୋପ କର..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
-msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr "ଟିପ୍ପଣୀ:\nଉତ୍ତମ ଗୁଣବତ୍ତା ପାଇବା ପାଇଁ ଚିତ୍ର ସଂକେତର ଆକାର 16x16 ପିକସେଲ ହେବା ଉଚିତ। ଭିନ୍ନ ଆକାର ବିଶିଷ୍ଟ ଚିତ୍ରସଂକେତଗୁଡ଼ିକୁ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ମପାଯାଇଛି।"
+msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
+msgstr ""
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME%PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
-msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
-msgstr "ନିମ୍ନରେ ତାଲିକାଭୁକ୍ତ ଫାଇଲଗୁଡ଼ିକୁ ଆମଦାନୀ କରାଯିବ ନାହିଁ।\nପାଇଲ ଶୈଳୀକୁ ବଦଳାଯିବ ନାହିଁ।"
+msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
+msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -716,8 +716,8 @@ msgid  "Are you sure to delete the image?"
 msgstr "ଆପଣ ଏହି ପ୍ରତିଛବିକୁ ଅପସାରଣ କରିବେ ବୋଲି ନିଶ୍ଚିତ କି?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
-msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
-msgstr "ଚିତ୍ରସଂକେତ %ICONNAME ପୂର୍ବରୁ ପ୍ରତିଛବି ତାଲିକାରେ ଅବସ୍ଥିତ ଅଛି।\nଆପଣ ସ୍ଥିତବାନ ଚିତ୍ରସଂକେତକୁ ବଦଳାଇବାକୁ ଚାହୁଁଛନ୍ତି କି?"
+msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
+msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -2086,22 +2086,27 @@ msgid  "Close"
 msgstr "ବନ୍ଦକରନ୍ତୁ"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.ModalDialog.Text
+#, fuzzy
 msgid  "Special Characters"
 msgstr "ବିଶେଷ ଅକ୍ଷରଗୁଡିକ"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_FONT.FixedText.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "ଫଣ୍ଟ (~)"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SUBSET.FixedText.Text
+#, fuzzy
 msgid  "~Subset"
 msgstr "ସବସେଟ (~S)"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SYMBOLE.FixedText.Text
+#, fuzzy
 msgid  "Characters:"
 msgstr "ଅକ୍ଷରଗୁଡିକ:"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "ବିଲୋପ କର (~D)"
 
@@ -2114,7 +2119,7 @@ msgid  "License..."
 msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT.String.Text
-msgid  "Copyright © 2012 Apache Software Foundation.\nAll rights reserved.\n\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\nApache OpenOffice acknowledges all community members, especially those mentioned at"
+msgid  "Copyright © 2012 Apache Software Foundation.\\nAll rights reserved.\\n\\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\\nApache OpenOffice acknowledges all community members, especially those mentioned at"
 msgstr ""
 
 #: source/dialogs/about.src#RID_CUI_README_DLG.ModalDialog.Text
@@ -2134,9 +2139,8 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
-#, fuzzy
-msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr "ବର୍ଣ୍ଣଶୁଦ୍ଦୀକରଣକରିବା ପାଇଁ ଉପଲବ୍ଧ ନାହିଁ \nଦଯାକରି ତୁମର ପ୍ରତିଷ୍ଠାପନକୁ ୟାଞ୍ଚ କର ଏବଂ ଏହି ଆବଶ୍ଯକୀଯ ଭାଷା ପ୍ରତିଷ୍ଠାପିତ କର\n"
+msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
+msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 #, fuzzy
@@ -3582,19 +3586,16 @@ msgid  "Macro Security..."
 msgstr "ମାକ୍ରୋ ସୁରକ୍ଷା..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
-#, fuzzy
-msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr "ଫଳନକୁ ନିଷ୍କ୍ରିୟ କରିବା ଦ୍ୱାରା ଏହା ଅପସାରିତ ପ୍ରବେଶ ସଂକେତଗୁଡ଼ିକୁ ସଂଗ୍ରହ କରିଥାଏ ଏବଂ ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତକୁ ପୁନଃସ୍ଥାପନ କରିଥାଏ।\n\nଆପଣ ପ୍ରବେଶ ସଂକେତ ତାଲିକାକୁ ଅପସାରଣ କରି ମୂଖ୍ୟ ପ୍ରବେଶ ସଂକେତକୁ ପୁନଃ ସ୍ଥାପନ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?"
+msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
-#, fuzzy
-msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr "ଅମାନ୍ଯ ମୂଲ୍ଯ!\n\nଗୋଟିଏ ପୋର୍ଟ ନମ୍ବର ପାଇଁ ସର୍ବାଧିକ ମୂଲ୍ଯ ୬୫୫୩୫ ଅଟେ।"
+msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
-#, fuzzy
-msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr "ଦଯାକରି ଟିପିରଖ ୟେ ଜାଭା ସହିତ\nତୁମେ ଜାଭାଲିପି ପରି ଅକ୍ଷମ୤\n\nତୁମେ ଏପର୍ୟ୍ଯନ୍ତ ଜାଭା ଅକ୍ଷମକୁ ଚାହୁଁଛ କି?"
+msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -3697,7 +3698,7 @@ msgid  "Note that street, Zip code and city are used to generate the registratio
 msgstr "ଟିପିରଖ ୟେ ରେଜିଷ୍ଟ୍ରେସନ କି କୁ ସୃଷ୍ଟିକରିବା ପାଇଁ ସଡକ, Zip କୋଡ ଏବଂ ନଗର ଉପୟୋଗହେଉଛି୤ ତୁମେ ଆଉଥରେ ଉପୟୋଗକର୍ତ୍ତା ତଥ୍ଯକୁ ପରିବର୍ତ୍ତନକରିପାରିବ ନାହିଁ ୟେପର୍ୟ୍ଯନ୍ତ ରେଜିଷ୍ଟ୍ରେସନ ହୋଇନାହିଁ୤ ତୁମେ ବର୍ତ୍ତମାନ ଉପୟୋଗକର୍ତ୍ତା ତଥ୍ଯକୁ ପରିବର୍ତ୍ତନ କରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
-msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgid  "The User Data have been changed.\\nDo you really want to change your User Data?"
 msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
@@ -4276,19 +4277,16 @@ msgid  "Create Database Link"
 msgstr "ତଥ୍ଯସଞ୍ଚଯ ଲିଙ୍କ ସୃଷ୍ଟିକରିବା"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
-#, fuzzy
-msgid  "The file\n$file$\ndoes not exist."
-msgstr " ଫାଇଲ\n$file$\nରହି ନାହିଁ୤"
+msgid  "The file\\n$file$\\ndoes not exist."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
-#, fuzzy
-msgid  "The file\n$file$\ndoes not exist in the local file system."
-msgstr "ଫାଇଲ\n$file$\nସ୍ଥାନୀୟ ଫାଇଲ ତନ୍ତ୍ରରେ ଅବସ୍ଥିତ ନାହିଁ।"
+msgid  "The file\\n$file$\\ndoes not exist in the local file system."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
-#, fuzzy
-msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
-msgstr "ଅନ୍ଯ ତଥ୍ଯସଞ୍ଚଯ ପାଇଁ ଏହି ନାମ '$file$' ପୂର୍ବରୁ ଉପୟୋଗ ହୋଇଛି୤\nଦଯାକରି ଗୋଟିଏ ଭିନ୍ନ ନାମ ବାଛନ୍ତୁ୤"
+msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
+msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 #, fuzzy
@@ -4921,8 +4919,9 @@ msgid  "Assig~ned start parameters"
 msgstr "ନିର୍ଦ୍ଦିଷ୍ଟ ଆରମ୍ଭ ପାରାମିଟରଗୁଡିକ"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FixedText.Text
-msgid  "For example: -Dmyprop=c:\program files\java"
-msgstr ""
+#, fuzzy
+msgid  "For example: -Dmyprop=c:\\program files\\java"
+msgstr "ଉଦାହରଣ ବଶତଃ: -ଡିମିପ୍ରପ=c:\\ପୋଗ୍ରାମ ଫାଇଲଗୁଡିକ\\ଜାଭା"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
 #, fuzzy
@@ -4955,66 +4954,73 @@ msgid  "~Remove"
 msgstr "ହଟାଅ"
 
 #: source/options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ErrorBox.Message
-#, fuzzy
-msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr "ତୁମେ ମନୋନୀତ ଫୋଲଡରରେ ଗୋଟିଏ ଜାଭା ରନଟାଇମ ପରିବେଶ ନାହିଁ୤\nଦଯାକରି ଗୋଟିଏ ଭିନ୍ନ ଫୋଲଡର ମନୋନୀତ କର୤"
+msgid  "The folder you selected does not contain a Java runtime environment.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ErrorBox.Message
-#, fuzzy
-msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr "ତୁମେ ମନୋନୀତ ଏହି  ଜାଭା ରନଟାଇମ ପରିବେଶ ଏହି ଭଷାନ୍ତରରେ ଆବଶ୍ଯକ ନାହିଁ୤\nଦଯାକରି ଗୋଟିଏ ଭିନ୍ନ ଫୋଲଡର ମନୋନୀତ କର୤"
+msgid  "The Java runtime environment you selected is not the required version.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WarningBox.Message
-#, fuzzy
-msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr "ମନୋନୀତ ଜାଭା ରନଟାଇମ ଏନଭରମେଣ୍ଟ ଭଲଭାବରେ କାର୍ୟ୍ଯକରିବା ପାଇଁ, %PRODUCTNAME ନିଶ୍ଚଯ ପୁନଃଆରମ୍ଭହେବ୤\nଦଯାକରି ବର୍ତ୍ତମାନ %PRODUCTNAMEକୁ ପୁନଃଆରମ୍ଭ କର୤"
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WarningBox.Message
-#, fuzzy
-msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
-msgstr " %PRODUCTNAME କୁ ତୁମକୁ ପୁନଃଆରମ୍ଭ କରିବାକୁ ପଡିବ ୟେଉଁଥିରେକି ନୂଆ କିମ୍ବା ପରିବର୍ତ୍ତିତ ମୂଲ୍ଯଗୁଡିକ କାର୍ୟ୍ଯକରିବେ୤\nଦଯାକରି ବର୍ତ୍ତମାନ %PRODUCTNAMEକୁ ପୁନଃଆରମ୍ଭ କର୤"
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
+#, fuzzy
 msgid  "Connection pool"
 msgstr "ସଂୟୋଜ ପୁଲ"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
+#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "ସଂୟୋଜ ପଲିଙ୍ଗ ସକ୍ଷମ କର"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
+#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "%PRODUCTNAME ରେ ଚାଲକଗୁଡିକ ଜ୍ଞାତ ଅଟେ"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
+#, fuzzy
 msgid  "Current driver:"
 msgstr "ଚଳିତ ଚାଳକ:"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
+#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "ଏହି ଚାଳକ ପାଇଁ ପୁଲିଙ୍ଗ ସକ୍ଷମ କର"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
+#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "ସମଯଶେଷ (ସେକେଣ୍ଡସ)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
+#, fuzzy
 msgid  "Driver name"
 msgstr "ଚାଳକ ନାମ"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
+#, fuzzy
 msgid  "Pool"
 msgstr "ପୁଲ"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
+#, fuzzy
 msgid  "Timeout"
 msgstr "ସମୟ ସମାପ୍ତି"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "ହଁ"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "ନାହିଁ"
 
@@ -5159,9 +5165,8 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "ODF 1.2 ଅନୁଲମ୍ବିତକୁ ବ୍ୟବହାର ନକରିବା ଦ୍ୱାରା ସୂଚନା ନଷ୍ଟ ହୋଇପାରେ।"
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-#, fuzzy
-msgid  "Using \"%1\" as default file format may cause information loss.\n"
-msgstr " \"%୧\" କୁ ଡିଫଲଟ ଫାଇଲ ଫର୍ମାଟ ପରି ଉପୟୋଗକଲେ ସୂଚନା ନଷ୍ଟହେବାର କାରଣ ହୋଇପାରେ୤\n"
+msgid  "Using \"%1\" as default file format may cause information loss.\\n"
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 #, fuzzy
@@ -5174,9 +5179,8 @@ msgid  "Improvement Program"
 msgstr "ଉନ୍ନତି ପୋଗ୍ରାମ"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
-#, fuzzy
-msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr "%PRODUCTNAME ର ଗୁଣର ଉନ୍ନତି ପାଇଁ ଆମ୍ବେ ଆପଣଙ୍କୁ ଆମର %PRODUCTNAME ଉନ୍ନତି ପ୍ରଗ୍ରାମରେ ଯୋଗଦାନ କରିବାକୁ ଆମନ୍ତ୍ରଣ କରୁଅଛୁ।\n\nଯଦି ଆପଣ ଯୋଗଦାନ କରିବାକୁ ଇଚ୍ଛୁକ, ତେବେ ଆମେ %PRODUCTNAMEକୁ ବ୍ୟବହାର କରିବାର ନାମହୀନ ପରିସଂଖ୍ୟାନ ସଂଗ୍ରହ କରିପାରିବୁ। ତଥ୍ୟଗୁଡ଼ିକ ବ୍ୟବହାର ବିଧି ସହିତ ପରିଚିତ ହେବା ପାଇଁ ବ୍ୟବହୃତ ହୋଇଥାଏ।\n\n%PRODUCTNAME ଉନ୍ନତି ପ୍ରଗ୍ରାମ କୌଣସି ବ୍ୟକ୍ତିଗତ ତଥ୍ୟ, କିମ୍ବା ଦଲିଲ ବିଷୟ ବସ୍ତୁ ସଂଗ୍ରହ କରିନଥାଏ।"
+msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 #, fuzzy
@@ -5319,9 +5323,8 @@ msgid  "Edit Paths: %1"
 msgstr "ସମ୍ପାଦିତ ପଥଗୁଡ଼ିକ: %1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
-#, fuzzy
-msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr "ଏହି କନଫିଗରେସନ୍ ଏବଂ ମେଲ ବିବରଣୀପଞ୍ଜିକାକୁ ଅଲଗା ବିବରଣୀପଞ୍ଜିକା ପରି ନିଶ୍ଚଯ ନିର୍ଦ୍ଦିଷ୍ଟ କର୤\nଦଯାକରି ଗୋଟିଏ ନୂଆ ପଥ ବାଛ୤"
+msgid  "The configuration and mail directories must be specified as separate directories.\\nPlease choose a new path."
+msgstr ""
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 #, fuzzy
@@ -6037,9 +6040,8 @@ msgid  "~Close"
 msgstr "ବନ୍ଦ କର"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
-#, fuzzy
-msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr "ଏହି ନିର୍ଦ୍ଦିଷ୍ଟ ନାମ ପୂର୍ବରୁ ଅଛି୤\nଦଯାକରି ଗୋଟିଏ ନୂଆ ନାମ ପ୍ରବେଶ କର୤"
+msgid  "The specified name already exists.\\nPlease enter a new name."
+msgstr ""
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy
@@ -6258,17 +6260,20 @@ msgstr "ଏହି ଅଭିଧାନକୁ ତୁମେ ବିଲୋପକରି
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.TabPage.Text
 #, fuzzy
 msgid  "Registered databases"
-msgstr "ରେଜିଷ୍ଟରହୋଇଥିବା ତଥ୍ଯସଞ୍ଚୟଗୁଡିକ"
+msgstr "ରେଜିଷ୍ଟରହୋଇଥିବା ତଥ୍ଯସଞ୍ଚଯଗୁଡିକ"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Registered name"
 msgstr "ପଞ୍ଜିକୃତ ନାମ"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "Database file"
 msgstr "ତଥ୍ଯାଧାର ଫାଇଲ"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "ନୂଆ (~N)..."
 
@@ -7541,9 +7546,8 @@ msgid  "O~uter"
 msgstr "ବାହାର"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
-#, fuzzy
-msgid  "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
-msgstr "ପ୍ରାନ୍ତ ସେଟିଙ୍ଗଗୁଡିକ ମୁଦ୍ରଣ ପରିସରର ବାହାରେ ଅଛି୤\n\nତୁମେ ଏହି ସେଟିଙ୍ଗଗୁଡିକ ପ୍ରଯୋଗକରିବାକୁ ଚାହୁଁଛ କି?"
+msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
+msgstr ""
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -8464,6 +8468,7 @@ msgid  "~Bottom"
 msgstr "ତଳ (~B)"
 
 #: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
+#, fuzzy
 msgid  "Unlinked graphic"
 msgstr "ଲେଖାଚିତ୍ର ଲିଙ୍କ କର ନାହିଁ"
 
@@ -8473,42 +8478,52 @@ msgid  "Background"
 msgstr "ପୃଷ୍ଠଭାଗ"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FixedText.Text
+#, fuzzy
 msgid  "A~s"
 msgstr "ପରି"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
+#, fuzzy
 msgid  "Color"
 msgstr "ରଙ୍ଗ"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
+#, fuzzy
 msgid  "Graphic"
 msgstr "ଲେଖାଚିତ୍ର"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_TBL_DESC.FixedText.Text
+#, fuzzy
 msgid  "F~or"
 msgstr "ପାଇଁ"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item1.StringList.item
+#, fuzzy
 msgid  "Cell"
 msgstr "କୋଷ"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item2.StringList.item
+#, fuzzy
 msgid  "Row"
 msgstr "ପଂକ୍ତି"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item3.StringList.item
+#, fuzzy
 msgid  "Table"
 msgstr "ସାରଣୀ"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.item1.StringList.item
+#, fuzzy
 msgid  "Paragraph"
 msgstr "ପରିଚ୍ଛେଦ"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.item2.StringList.item
+#, fuzzy
 msgid  "Character"
 msgstr "ଅକ୍ଷର"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FixedLine.Text
+#, fuzzy
 msgid  "Background color"
 msgstr "ପୃଷ୍ଠଭାଗ ରଙ୍ଗ"
 
@@ -8583,9 +8598,8 @@ msgid  "Assigned macro"
 msgstr "macro ନିୟୋଜନ କରାଯାଇଛି"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
-#, fuzzy
-msgid  "~Existing macros\n"
-msgstr "ରେ ମାକ୍ରୋସ ରହିଅଛି:\n"
+msgid  "~Existing macros\\n"
+msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
 #, fuzzy
@@ -8603,194 +8617,241 @@ msgid  "Macros"
 msgstr "ମାକ୍ରୋସ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.TabDialog.Text
+#, fuzzy
 msgid  "AutoCorrect"
 msgstr "ସ୍ବଯଂଚାଳିତ ସଂଶୋଧନ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_REPLACE.PageItem.Text
+#, fuzzy
 msgid  "Replace"
 msgstr "ପୁନଃସ୍ଥାପନ କରନ୍ତୁ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PageItem.Text
+#, fuzzy
 msgid  "Exceptions"
 msgstr "ବ୍ଯତିକ୍ରମସବୁ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PageItem.Text
+#, fuzzy
 msgid  "Options"
 msgstr "ବିକଳ୍ପଗୁଡିକ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOFMT_APPLY.PageItem.Text
+#, fuzzy
 msgid  "Options"
 msgstr "ବିକଳ୍ପଗୁଡିକ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_QUOTE.PageItem.Text
+#, fuzzy
 msgid  "Localized Options"
 msgstr "ଅନୁବାଦିତ ବିକଳ୍ପଗୁଡ଼ିକ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PageItem.Text
 msgid  "Word Completion"
-msgstr "ଶବ୍ଦ ସମାପ୍ତି"
+msgstr "ଶବ୍ଦ ସମ୍ପୂର୍ଣ୍ଣ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PageItem.Text
+#, fuzzy
 msgid  "Smart Tags"
 msgstr "ଚତୁର ଟ୍ୟାଗଗୁଡ଼ିକ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.FT_LANG.FixedText.Text
+#, fuzzy
 msgid  "Replacements and exceptions for language:"
 msgstr "ଭାଷା ପାଇଁ ପୁନଃସ୍ଥାପନଗୁଡିକ ଏବଂ ବ୍ଯତିକ୍ରମଗୁଡିକ"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_USE_REPLACE.String.Text
+#, fuzzy
 msgid  "Use replacement table"
 msgstr "ପୁନଃସ୍ଥାପନ ଟେବୁଲ ଉପୟୋଗ କର"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_WORD.String.Text
+#, fuzzy
 msgid  "Correct TWo INitial CApitals"
 msgstr "ସଂଶୋଧନ କର TWo INitial CApitals"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.String.Text
+#, fuzzy
 msgid  "Capitalize first letter of every sentence"
 msgstr "ପ୍ରତି ବାକ୍ଯର ପଆଥମ ଅକ୍ଷର ବଡଅକ୍ଷରକର"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.String.Text
+#, fuzzy
 msgid  "Automatic *bold* and _underline_"
 msgstr "ସ୍ବଯଂଚାଲିତ *ମୋଟା* ଏବଂ _ରେଖାଙ୍କିତ_"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.STR_NO_DBL_SPACES.String.Text
+#, fuzzy
 msgid  "Ignore double spaces"
 msgstr "ଦ୍ବିଗୁଣିତ ସ୍ଥାନ ଅବହେଳା କର"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.String.Text
+#, fuzzy
 msgid  "URL Recognition"
 msgstr "URL ପରିଚଯ"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.String.Text
+#, fuzzy
 msgid  "Replace dashes"
 msgstr "ଡ୍ଯାସଗୁଡିକ ପୁନଃସ୍ଥାପିତ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_OPTIONS.TabPage.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "ସେଟିଙ୍ଗଗୁଡିକ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.PB_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "ସମ୍ପାଦନ କରନ୍ତୁ (~E)..."
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.String.Text
+#, fuzzy
 msgid  "[M]"
 msgstr "[M]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.String.Text
+#, fuzzy
 msgid  "[T]"
 msgstr "[T]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "[M]: Replace while modifying existing text"
 msgstr " [M]: ବିଦ୍ଯମାନ ଟେକ୍ସଟକୁ ପରିବର୍ତ୍ତନକରିବା ସମଯରେ ପୁନଃସ୍ଥାପିତକର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER2_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "[T]: AutoFormat/AutoCorrect while typing"
 msgstr "[T]: ଟାଇପିଙ୍ଗ ସମଯରେ ସ୍ବଯଂଚାଳିତ ଫର୍ମାଟ / ସ୍ବଯଂଚାଳିତ ସଂଶୋଧନକର "
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_DEL_EMPTY_PARA.String.Text
+#, fuzzy
 msgid  "Remove blank paragraphs"
 msgstr "ଶୂନ୍ଯ ପରିଚ୍ଛେଦଗୁଡିକୁ ହଟାଅ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.String.Text
+#, fuzzy
 msgid  "Replace Custom Styles"
 msgstr "ବ୍ଯବସ୍ଥା ଶୈଳୀଗୁଡିକ ପୁନଃସ୍ଥାପିତ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.String.Text
+#, fuzzy
 msgid  "Replace bullets with: "
 msgstr "ଗୁଳିଗୁଡିକ ସହିତ ପୁନଃସ୍ଥାପିତ କର:"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_RIGHT_MARGIN.String.Text
+#, fuzzy
 msgid  "Combine single line paragraphs if length greater than"
 msgstr "ଏକମାତ୍ର ରେଖା ପରିଚ୍ଛେଦଗୁଡିକୁ ମିଶାଅ ୟଦି ଲମ୍ବା ଠାରୁ ଅଧିକ "
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_NUM.String.Text
+#, fuzzy
 msgid  "Apply numbering - symbol: "
 msgstr "ସଙ୍କେତ-ସଂଖ୍ଯାଦେବା ପ୍ରଯୋଗ କର:"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_BORDER.String.Text
+#, fuzzy
 msgid  "Apply border"
 msgstr "ସୀମା ପ୍ରଯୋଗ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_TABLE.String.Text
+#, fuzzy
 msgid  "Create table"
 msgstr "ଟେବୁଲ ସୃଷ୍ଟି କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.String.Text
+#, fuzzy
 msgid  "Apply Styles"
 msgstr "ଶୈଳୀଗୁଡିକ ପ୍ରଯୋଗକର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.String.Text
+#, fuzzy
 msgid  "Delete spaces and tabs at beginning and end of paragraph"
 msgstr "ପରିଚ୍ଛେଦର ଆରମ୍ଭରେ ଏବଂ ଶେଷରେ ସ୍ଥାନଗୁଡିକ ଏବଂ ଟ୍ଯାବଗୁଡିକ ବିଲୋପ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_BETWEEN_LINES.String.Text
+#, fuzzy
 msgid  "Delete spaces and tabs at end and start of line"
 msgstr "ରେଖାର ଆରମ୍ଭରେ ଏବଂ ଶେଷରେ ସ୍ଥାନଗୁଡିକ ଏବଂ ଟ୍ଯାବଗୁଡିକ ବିଲୋପ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFADLG_PRCNT_SET.FL_PRCNT.FixedLine.Text
+#, fuzzy
 msgid  "Minimum size"
 msgstr "ସର୍ବନିମ୍ନ   ଆକାର"
 
 #: source/tabpages/autocdlg.src#RID_OFADLG_PRCNT_SET.MetricField.Text
+#, fuzzy
 msgid  "Combine"
 msgstr "ମିଶାଅ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_SHORT.FixedText.Text
+#, fuzzy
 msgid  "Repla~ce"
 msgstr "ପୁନଃସ୍ଥାପିତ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_REPLACE.FixedText.Text
+#, fuzzy
 msgid  "~With:"
 msgstr "ସହିତ :"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.CB_TEXT_ONLY.CheckBox.Text
+#, fuzzy
 msgid  "~Text only"
 msgstr "କେବଳ ଟେକ୍ସଟ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_NEW_REPLACE.PushButton.Text
+#, fuzzy
 msgid  "~New"
 msgstr "ନୂଆ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_DELETE_REPLACE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "ବିଲୋପ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.STR_MODIFY.String.Text
+#, fuzzy
 msgid  "~Replace"
 msgstr "ପ୍ରତିସ୍ଥାପନ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_ABBREV.FixedLine.Text
+#, fuzzy
 msgid  "Abbreviations (no subsequent capital)"
 msgstr "ସଂକ୍ଷେପ (କୌଣସି ପରବର୍ତ୍ତୀ ଅକ୍ଷର ନାହିଁ)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWABBREV.PushButton.Text
+#, fuzzy
 msgid  "~New"
 msgstr "ନୂଆ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_DELABBREV.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "ବିଲୋପ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOABBREV.CheckBox.Text
+#, fuzzy
 msgid  "~AutoInclude"
 msgstr "ସ୍ବଯଂଚାଳିତଅନ୍ତର୍ଗତ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FixedLine.Text
+#, fuzzy
 msgid  "Words with TWo INitial CApitals"
 msgstr " TWo INitial CApitals ସହିତ ଶବ୍ଦଗୁଡିକ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PushButton.Text
+#, fuzzy
 msgid  "Ne~w"
 msgstr "ନୂଆ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_DELDOUBLECAPS.PushButton.Text
+#, fuzzy
 msgid  "Dele~te"
 msgstr "ଅପସାରଣ କରନ୍ତୁ (~t)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOCAPS.CheckBox.Text
+#, fuzzy
 msgid  "A~utoInclude"
 msgstr "ସ୍ବଯଂଚାଳିତଅନ୍ତର୍ଭୁକ୍ତ"
 
@@ -8811,74 +8872,92 @@ msgid  "Delete words with two initial capitals"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TabPage.Text
+#, fuzzy
 msgid  "Localized Options"
 msgstr "ଅନୁବାଦିତ ବିକଳ୍ପଗୁଡ଼ିକ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER1.String.Text
+#, fuzzy
 msgid  "[M]"
 msgstr "[M]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER2.String.Text
+#, fuzzy
 msgid  "[T]"
 msgstr "[T]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.String.Text
+#, fuzzy
 msgid  "Add non breaking space before specific punctuation marks in french text"
 msgstr "ଫ୍ରେଞ୍ଚ ପାଠ୍ୟରେ ନିର୍ଦ୍ଦିଷ୍ଟ ବିରାମ ଚିହ୍ନଗୁଡ଼ିକ ପୂର୍ବରୁ ଅଖଣ୍ଡ ଖାଲିସ୍ଥାନ ଯୋଗକରନ୍ତୁ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_ORDINAL.String.Text
+#, fuzzy
 msgid  "Format ordinal numbers suffixes (1st -> 1^st)"
 msgstr "କ୍ରମସୂଚକ ସଂଖ୍ୟା ଉପସର୍ଗଗୁଡ଼ିକୁ ସଜ୍ଜିକରଣ କରନ୍ତୁ (1st -> 1^st)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_SINGLE.FixedLine.Text
+#, fuzzy
 msgid  "Single quotes"
 msgstr "ଏକମାତ୍ର ଉଦ୍ଧୃତାଂଶ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.CB_SGL_TYPO.CheckBox.Text
+#, fuzzy
 msgid  "Repla~ce"
 msgstr "ପୁନଃସ୍ଥାପିତ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_SGL_STARTQUOTE.FixedText.Text
+#, fuzzy
 msgid  "~Start quote:"
 msgstr "ଆରମ୍ଭ ଉଦ୍ଧୃତ:"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_SGL_ENDQUOTE.FixedText.Text
+#, fuzzy
 msgid  "~End quote:"
 msgstr "ଶେଷ ଉଦ୍ଧୃତ:"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_SGL_STD.PushButton.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "ପୂର୍ବନିର୍ଦ୍ଧାରିତ (~D)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_DOUBLE.FixedLine.Text
+#, fuzzy
 msgid  "Double quotes"
 msgstr "ଦ୍ବିଗୁଣିତ ଉଦ୍ଧୃତସବୁ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.CB_TYPO.CheckBox.Text
+#, fuzzy
 msgid  "Repl~ace"
 msgstr "ପୁନଃସ୍ଥାପିତ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_STARTQUOTE.FixedText.Text
+#, fuzzy
 msgid  "Start q~uote:"
 msgstr "ଆରମ୍ଭ ଉଦ୍ଧୃତ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_ENDQUOTE.FixedText.Text
+#, fuzzy
 msgid  "E~nd quote:"
 msgstr "ଶେଷ ଉଦ୍ଧୃତ:"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_DBL_STD.PushButton.Text
+#, fuzzy
 msgid  "De~fault"
 msgstr "ପୂର୍ବନିର୍ଦ୍ଧାରିତ (~f)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_CHANGE_START.String.Text
+#, fuzzy
 msgid  "Start quote"
 msgstr "ଆରମ୍ଭ ଉଦ୍ଧୃତ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_CHANGE_END.String.Text
+#, fuzzy
 msgid  "End quote"
 msgstr "ଶେଷ ଉଦ୍ଧୃତ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.String.Text
+#, fuzzy
 msgid  "Default"
 msgstr "ପୂର୍ବନିର୍ଦ୍ଧାରିତ"
 
@@ -8907,58 +8986,72 @@ msgid  "End quote of double quotes"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CheckBox.Text
+#, fuzzy
 msgid  "Enable word ~completion"
 msgstr "ଶବ୍ଦ ସମାପ୍ତି ସକ୍ଷମ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_APPEND_SPACE.CheckBox.Text
+#, fuzzy
 msgid  "~Append space"
 msgstr "ସ୍ଥାନକୁ  ୟୋଗ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_AS_TIP.CheckBox.Text
+#, fuzzy
 msgid  "~Show as tip"
 msgstr "ଟିପ ପରି ଦେଖାଅ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_COLLECT.CheckBox.Text
+#, fuzzy
 msgid  "C~ollect words"
 msgstr "ଶବ୍ଦଗୁଡିକ ସଂଗ୍ରହ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CheckBox.Text
+#, fuzzy
 msgid  "~When closing a document, remove the words collected from it from the list"
 msgstr "ଯେତେବେଳେ ଗୋଟିଏ ଦଲିଲକୁ ବନ୍ଦ କରାଯାଏ, ତାଲିକାରୁ ସଂଗ୍ରହ କରାଯାଇଥିବା ଶବ୍ଦଗୁଡ଼ିକୁ କାଢ଼ିଦିଅନ୍ତୁ (~W)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_EXPAND_KEY.FixedText.Text
+#, fuzzy
 msgid  "Acc~ept with"
 msgstr "ଗ୍ରହଣକରିବା ସହିତ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_MIN_WORDLEN.FixedText.Text
+#, fuzzy
 msgid  "Mi~n. word length"
 msgstr "ସର୍ବନିମ୍ନ   ଶବ୍ଦ ଲମ୍ବ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_MAX_ENTRIES.FixedText.Text
+#, fuzzy
 msgid  "~Max. entries"
 msgstr "ସର୍ବାଧିକ ପ୍ରବେଶଗୁଡିକ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PB_ENTRIES.PushButton.Text
+#, fuzzy
 msgid  "~Delete Entry"
 msgstr "ପ୍ରବେଶକୁ ବିଲୋପ କର"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PushButton.Text
+#, fuzzy
 msgid  "Word Completion"
 msgstr "ଶବ୍ଦ ସମ୍ପୂର୍ଣ୍ଣ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.TabPage.Text
+#, fuzzy
 msgid  "Smart Tags"
 msgstr "ଚତୁର ଟ୍ୟାଗଗୁଡ଼ିକ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.CB_SMARTTAGS.CheckBox.Text
+#, fuzzy
 msgid  "Label text with smart tags"
 msgstr "ଚତୁର ଟ୍ୟାଗ ସହିତ ନାମପଟି ପାଠ୍ୟ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.FT_SMARTTAGS.FixedText.Text
+#, fuzzy
 msgid  "Currently installed smart tags"
 msgstr "ବର୍ତ୍ତମାନ ସ୍ଥାପିତ ସ୍ମାର୍ଟ ଟ୍ୟାଗଗୁଡ଼ିକ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PushButton.Text
+#, fuzzy
 msgid  "Properties..."
 msgstr "ଗୁଣଧର୍ମଗୁଡିକ..."
 
@@ -8973,9 +9066,8 @@ msgid  "Do you want to delete the gradient?"
 msgstr "ତୁମେ ଏହି ଗ୍ରାଡିଏଣ୍ଟକୁ ବିଲୋପକରିବାକୁ ଚାହୁଁଛ କି  ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
-#, fuzzy
-msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr "ସଞ୍ଚଯକରିବା ବ୍ଯତିତ ଏହି ଗ୍ରାଡିଏଣ୍ଟ ପରିବର୍ତ୍ତିତ ହୋଇଛି୤ \nବର୍ତ୍ତମାନ ମନୋନୀତ ହୋଇଥିବା ଗ୍ରାଡିଏଣ୍ଟକୁ ପରିବର୍ତ୍ତନକର କିମ୍ବା ଗୋଟିଏ ନୂଆ ରଙ୍ଗ ମିଶାଅ୤"
+msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 #, fuzzy
@@ -8993,9 +9085,8 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "ତୁମେ ଏହି ବିଟମ୍ଯାପକୁ ବିଲୋପକରିବାକୁ ଚାହୁଁଛ କି  ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
-#, fuzzy
-msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr "ସଞ୍ଚଯକରିବା ବ୍ଯତିତ ଏହି ବିଟମ୍ଯାପ ପରିବର୍ତ୍ତିତ ହୋଇଛି୤ \nବର୍ତ୍ତମାନ ମନୋନୀତହୋଇଥିବା ବିଟମ୍ଯାପକୁ ପରିବର୍ତ୍ତନକର କିମ୍ବା ଗୋଟିଏ ନୂଆ ରଙ୍ଗ ମିଶାଅ୤"
+msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -9008,9 +9099,8 @@ msgid  "Do you want to delete the line style?"
 msgstr "ତୁମେ ଏହି ରେଖା ଶୈଳୀକୁ ବିଲୋପକରିବାକୁ ଚାହୁଁଛ କି  ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
-#, fuzzy
-msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr "ସଞ୍ଚଯକରିବା ବ୍ଯତିତ ଏହି ରେଖା ଶୈଳୀ ପରିବର୍ତ୍ତିତ ହୋଇଛି୤ \nବର୍ତ୍ତମାନ ମନୋନୀତ ରେଖା ଶୈଳୀକୁ ପରିବର୍ତ୍ତନକର କିମ୍ବା ଗୋଟିଏ ନୂଆ ରଙ୍ଗ ମିଶାଅ୤"
+msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -9023,9 +9113,8 @@ msgid  "Do you want to delete the hatching?"
 msgstr "ତୁମେ ଏହି ହ୍ଯାଚିଙ୍ଗକୁ ବିଲୋପକରିବାକୁ ଚାହୁଁଛ କି  ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
-#, fuzzy
-msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr "ଏହି ହ୍ଯାଚିଙ୍ଗ ପ୍ରକାର ପରିବର୍ତ୍ତିତ ହୋଇଛି କିନ୍ତୁ ସଞ୍ଚିତହୋଇଛି୤ \nମନୋନୀତ ହ୍ଯାଚିଙ୍ଗ ପ୍ରକାରକୁ ପରିବର୍ତ୍ତନ କର କିନ୍ତୁ  ଗୋଟିଏ ନୂଆ ହ୍ଯାଚିଙ୍ଗ ପ୍ରକାରକୁ ମିଶାଅ୤"
+msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 #, fuzzy
@@ -9048,9 +9137,8 @@ msgid  "Do you want to delete the color?"
 msgstr "ତୁମେ ଏହି ରଙ୍ଗକୁ ବିଲୋପକରିବାରୁ ଚାହିଁଛ କି ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
-#, fuzzy
-msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr "ସଞ୍ଚଯକରିବା ବ୍ଯତିତ ଏହି ରଙ୍ଗ ପରିବର୍ତ୍ତିତ ହୋଇଛି୤ \nବର୍ତ୍ତମାନ ମନୋନୀତ ରଙ୍ଗକୁ ପରିବର୍ତ୍ତନକର କିମ୍ବା ଗୋଟିଏ ନୂଆ ରଙ୍ଗ ମିଶାଅ୤"
+msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 #, fuzzy
@@ -9073,9 +9161,8 @@ msgid  "The list was modified without saving. Would you like to save the list no
 msgstr "ସଞ୍ଚଯକରିବା ବ୍ଯତିତ ଏହି ତାଲିକା ପରିବର୍ତ୍ତିତ ହୋଇଛି୤ ବର୍ତ୍ତମାନ ତୁମେ ଏହି ତାଲିକାକୁ ସଞ୍ଚଯ କରିବାକୁ ଚାହୁଁଛ କି? "
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
-#, fuzzy
-msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr "ତୁମେ ପ୍ରବେଶକରାଇଥିବା ନାମ ପୂର୍ବରୁ ଅଛି୤ \nଦଯାକରି ଅନ୍ଯ ନାମ ବାଛ୤"
+msgid  "The name you have entered already exists. \\nPlease choose another name."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -9088,9 +9175,8 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr " ତୁମେ ଏହି ଶରମୂଖ କୁ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛ କି"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
-#, fuzzy
-msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr "ସଞ୍ଚଯ ବ୍ଯତିତ ଏହି ଶରମୂଖ ପରିବର୍ତ୍ତିତ ହୋଇଛି୤ \nବର୍ତ୍ତମାନ ତୁମେ ଏହି ଶରମୂଖ କୁ ସଞ୍ଚଯ କରିବାକୁ ଚାହୁଁଛ କି?"
+msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
+msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 #, fuzzy
@@ -9729,7 +9815,7 @@ msgstr "ପୂର୍ବଦୃଶ୍ଯ"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TabPage.Text
 #, fuzzy
 msgid  "Position and Size"
-msgstr "ଅବସ୍ଥାନ ଏବଂ ଆକାର"
+msgstr "ସ୍ଥାନ ଏବଂ ଆକାର"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FixedLine.Text
 #, fuzzy
@@ -9739,12 +9825,12 @@ msgstr "ସ୍ଥାନ "
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FixedText.Text
 #, fuzzy
 msgid  "Position ~X"
-msgstr "ସ୍ଥାନ X (~X)"
+msgstr "ଅବସ୍ଥାନ ~X"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_Y.FixedText.Text
 #, fuzzy
 msgid  "Position ~Y"
-msgstr "ସ୍ଥାନ Y (~Y)"
+msgstr "ଅବସ୍ଥାନ ~Y"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FixedText.Text
 #, fuzzy
@@ -9944,7 +10030,7 @@ msgstr "କୋଣ (~A)"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_ANGLE.MTR_FLD_ANGLE.MetricField.CustomUnitText
 #, fuzzy
 msgid  " degrees"
-msgstr "ଡିଗ୍ରୀଗୁଡିକ (~d)"
+msgstr "ଡିଗ୍ରୀ (~d)"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_ANGLEPRESETS.FixedText.Text
 #, fuzzy
@@ -10009,7 +10095,7 @@ msgstr "ତେର୍ଚ୍ଛା ଏବଂ କୋଣ ବ୍ଯାସାର୍ଦ
 #: source/tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TabPage.Text
 #, fuzzy
 msgid  "Text"
-msgstr "ପାଠ୍ୟ"
+msgstr "ଟେକ୍ସଟ"
 
 #: source/tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_TEXT.FixedLine.Text
 #, fuzzy
@@ -10152,114 +10238,142 @@ msgid  "~Original Size"
 msgstr "ସହଜାତ ଆକାର (~O)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.TabPage.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "ପଂକ୍ତିକରଣ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FixedLine.Text
+#, fuzzy
 msgid  "Text alignment"
 msgstr "ଟେକ୍ସଟ ପଂକ୍ତିକରଣ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FixedText.Text
+#, fuzzy
 msgid  "Hori~zontal"
 msgstr "ଦିଗବଳୀଯ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
+#, fuzzy
 msgid  "Default"
 msgstr "ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.StringList.item
+#, fuzzy
 msgid  "Left"
 msgstr "ବାମ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.StringList.item
+#, fuzzy
 msgid  "Center"
 msgstr "କେନ୍ଦ୍ର"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.StringList.item
+#, fuzzy
 msgid  "Right"
 msgstr "ଡାହାଣ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.StringList.item
+#, fuzzy
 msgid  "Justified"
 msgstr "ୟୁକ୍ତିୟୁକ୍ତ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.StringList.item
+#, fuzzy
 msgid  "Filled"
 msgstr "ପୂର୍ଣ୍ଣହୋଇଥିବା"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FixedText.Text
+#, fuzzy
 msgid  "I~ndent"
 msgstr "ଇନଡେଣ୍ଟ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_VERALIGN.FixedText.Text
+#, fuzzy
 msgid  "~Vertical"
 msgstr "ଲମ୍ବରୂପ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_STD.StringList.item
+#, fuzzy
 msgid  "Default"
 msgstr "ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.StringList.item
+#, fuzzy
 msgid  "Top"
 msgstr "ଉପର"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.StringList.item
+#, fuzzy
 msgid  "Middle"
 msgstr "ମଧ୍ଯଭାଗ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.StringList.item
+#, fuzzy
 msgid  "Bottom"
 msgstr "ତଳ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ORIENTATION.FixedLine.Text
+#, fuzzy
 msgid  "Text orientation"
 msgstr "ଟେକ୍ସଟ ଓରିଏନଟେସନ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_TXTSTACKED.TriStateBox.Text
+#, fuzzy
 msgid  "Ve~rtically stacked"
 msgstr "ଲମ୍ବଭାବରେ ଜମାହୋଇଥିବା"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_DEGREES.FixedText.Text
+#, fuzzy
 msgid  "De~grees"
 msgstr "ଡିଗ୍ରୀ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_BORDER_LOCK.FixedText.Text
+#, fuzzy
 msgid  "Re~ference edge"
 msgstr "ରେଫରେସନ ଧାର "
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_ASIAN_VERTICAL.TriStateBox.Text
+#, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "ଏସିଆନ ଲେପନ ମୋଡ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FixedLine.Text
+#, fuzzy
 msgid  "Properties"
 msgstr "ବିଶେଷତାଗୁଡିକ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TriStateBox.Text
+#, fuzzy
 msgid  "~Wrap text automatically"
 msgstr "ସ୍ବଯଂଚାଳିତଭାବରେ ଟେକ୍ସଟ ଗୁଡାଇବା"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_HYPH.TriStateBox.Text
+#, fuzzy
 msgid  "Hyphenation ~active"
 msgstr "ହାଇପେନେସନ ସକ୍ରିଯ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_SHRINK.TriStateBox.Text
+#, fuzzy
 msgid  "~Shrink to fit cell size"
 msgstr "କୋଷ ଆକାରକୁ ସ୍ଥିର ସଙ୍କୋଚିତକର"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_TEXTFLOW.FixedText.Text
+#, fuzzy
 msgid  "Te~xt direction"
 msgstr "ଟେକ୍ସଟ ଦିଗ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_BOTTOMLOCK.String.Text
+#, fuzzy
 msgid  "Text Extension From Lower Cell Border"
 msgstr "ତଳ କୋଷ ସୀମାରୁ  ଟେକ୍ସଟ ବିସ୍ତାର"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_TOPLOCK.String.Text
+#, fuzzy
 msgid  "Text Extension From Upper Cell Border"
 msgstr "ଉପର କୋଷ ସୀମାରୁ  ଟେକ୍ସଟ ବିସ୍ତାର"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_CELLLOCK.String.Text
+#, fuzzy
 msgid  "Text Extension Inside Cell"
 msgstr "ଭିତର କୋଷ ଟେକ୍ସଟ ବିସ୍ତାର"
 
@@ -10416,7 +10530,7 @@ msgstr "ତେର୍ଚ୍ଛା"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item3.StringList.item
 #, fuzzy
 msgid  "Bold"
-msgstr "ମୋଟା"
+msgstr "ଗାଢ଼"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item4.StringList.item
 #, fuzzy
@@ -10691,7 +10805,7 @@ msgstr "ବିନ୍ଦୁମୟ (ଗାଢ଼)"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
 #, fuzzy
 msgid  "Dash"
-msgstr "ଡ୍ୟାସ"
+msgstr "ଡାସ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
 #, fuzzy
@@ -10711,12 +10825,12 @@ msgstr "ଲମ୍ବା ଡ୍ୟାସ (ଗାଢ଼)"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dash"
-msgstr "ବିନ୍ଦୁମୟ ଡାସ"
+msgstr "ବିନ୍ଦୁ ଡାସ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dash (Bold)"
-msgstr "ବିନ୍ଦୁମୟ ଡ୍ୟାସ (ଗାଢ଼)"
+msgstr "ବିନ୍ଦୁ ଡ୍ୟାସ (ଗାଢ଼)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
 #, fuzzy
@@ -10726,7 +10840,7 @@ msgstr "ବିନ୍ଦୁ ବିନ୍ଦୁ ଡ୍ୟାସ"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dot Dash (Bold)"
-msgstr "ବିନ୍ଦୁ ବିନ୍ଦୁ ଡ୍ୟାସ (ଗାଢ଼)"
+msgstr "ବିନ୍ଦୁ ବିନ୍ଦୁ ଡାସ (ଗାଢ଼)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_WAVE.StringList.item
 #, fuzzy

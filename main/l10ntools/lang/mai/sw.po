@@ -725,7 +725,7 @@ msgstr "ई WinWord6 फाइल नहि अछि"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr "ई फाइल WinWord क सँग 'Fast Save' मोडमे सहेजल गेल. कृपया WinWord विकल्प 'द्रुत सहेजन अनुमति दिअ' ' केँ अचिह्नित करू आओर फाइलकेँ फिनु सहेजू."
+msgstr "ई फाइल WinWord क'सँग 'Fast Save' मोडमे सहेजल गेल. कृपया WinWord विकल्प 'Allow Fast Saves' केँ अचिह्नित करू आओर फाइलकेँ फिनु सहेजू."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -741,7 +741,7 @@ msgstr "ई WinWord97 फाइल नहि अछि"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "उप दस्तावेज $(ARG1) मे $(ARG2)(row,col) पर फाइलमे प्रारूप त्रुटि खोजलक."
+msgstr "प्रारूप त्रुटि पाबलक उपदस्तावेज $(ARG1) मे $(ARG2)(row,col) पर फाइलमे."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -753,7 +753,7 @@ msgstr "गलत स्वचालित पाठ दस्तावेज �
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
-msgstr "उप-दस्तावेज लिखबाक समय त्रुटि $(ARG1)."
+msgstr "उप दस्तावेजक $(ARG1) लिखबामे त्रुटि."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "दस्तावेज केँ संपूर्णतः सहेजल नहि जाय सकल"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "ई HTML दस्तावेज %PRODUCTNAME बेसिक मैक्रोकेँ शामिल करैत अछि.\nओकरा मोजुदा निर्यात जमावटक संग नहि सहेजल गेल छला."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "खाली पृष्ठ"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "अहाँक पास क्लिपबोर्डमे आंकड़ा सभक बेसी मात्रामे अछि.\n की क्लिपबोर्ड सामग्री आन अनुप्रयोग क'लेल उपलब्ध भ' सकैत अछि?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "HTML प्रारूपमे रूपांतरण \nसूचना हानिक कारण बन सकैत अछि. \n की अहाँ दस्तावेज सहेजनाइ चाहैत छी?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "श्रोत कोड तखन प्रदर्शित कएल जाएत जखन दस्तावेज HTML प्रारूपमे सहेजल जाएत अछि.\n की अहाँ दस्तावेजकेँ HTML क' रूपमे सहेजनाइ चाहै छी?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "अहाँक दस्तावेजमे पता डाटाबेस क्षेत्र शामिल अछि. की अहाँ एकटा फॉर्म पत्र चाहैत छी?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -1501,7 +1501,7 @@ msgstr "एकरासँ भ'कए लपेटू (~W)"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU_TRANSP.MenuItem.Text
 msgid  "In ~Background"
-msgstr "पृष्ठभूमिमे (~B)"
+msgstr "पृष्ठभूमि मे (~B)"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 msgid  "~First Paragraph"
@@ -1897,7 +1897,7 @@ msgstr "अनुच्छेद"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_STD.PageItem.Text
 msgid  "Indents & Spacing"
-msgstr "हाशिया आ अंतर देनाइ"
+msgstr "हाशिया आ स्थान देनाइ"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_ALIGN.PageItem.Text
 msgid  "Alignment"
@@ -2645,11 +2645,11 @@ msgstr "जोड़नाइ"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_ATTR.FixedText.Text
 msgid  "Attributes"
-msgstr " गुण सभ"
+msgstr "गुणसभ"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 msgid  "[None]"
-msgstr "[केओ नहि]"
+msgstr " [केओ नहि]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item2.StringList.item
 msgid  "Bold"
@@ -2705,7 +2705,7 @@ msgstr "मेटओनाइ"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_ATTR.FixedText.Text
 msgid  "Attributes"
-msgstr "गुणसभ"
+msgstr "गुणसभ "
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_COL.FixedText.Text
 msgid  "Color"
@@ -2721,7 +2721,7 @@ msgstr " गुणकेँ बदलैत अछि"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_CHG_ATTR.FixedText.Text
 msgid  "Attributes"
-msgstr "गुणसभ "
+msgstr " गुणसभ"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_CHG_COL.FixedText.Text
 msgid  "Color"
@@ -2741,7 +2741,7 @@ msgstr "चिह्न (~k)"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_MARKPOS.item1.StringList.item
 msgid  "[None]"
-msgstr " [केओ नहि]"
+msgstr "[केओ नहि]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_MARKPOS.item2.StringList.item
 msgid  "Left margin"
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<प्रयोक्ताक जमावट>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "मूलभूत टेंपलेटक सुसँगतता विकल्पकेँ की अहाँ बदलब चाहैत छी?\nई सभ नवीन दस्तावेजसभकेँ मूलभूत टेंपलेट पर प्रभावी करत."
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2896,8 +2896,8 @@ msgid  "Caption"
 msgstr "कैप्शन"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "कैप्शनकेँ स्वतः जोड़ू\n जखन जोड़ल जाय रहल भए:"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "अहाँ संलग्नक क' लेल नवीन नाम निर्दिष्ट नहि कएने अछि.जँ अहाँ एकटा देब चाहैत छी एकरा आब टंकित करू."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "मेल मर्ज दस्तावेजसभकेँ ईमेल द्वारा भेजबाक लेल, %PRODUCTNAME क'लेल सूचना जरूरी अछि प्रयोग करएबला ईमेल खाताक बारेमे.\n\n की अहाँ ईमेल खाता सूचनाक अखन देबाक लेल चाहैत छी?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "~Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "नोट:\nअलग ईमेल पता सेमीकॉलनक साथ (;)."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "प्रेषण विफल (अवैध पता)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "अहाँक %PRODUCTNAME आउटबॉक्समे अखनो ईमेल अछि.\n की अहाँ कोनो तरह निकलनाइ चाहैत  छी?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "दस्तावेज संपादन करू"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "अपन दस्तावेजकेँ लिखू अथवा संपादित करू आबि जँ अहाँ पहिनेसँ एहन नहि कएलहुँ. परिवर्तन सभटा मिलल दस्तावेजसभकेँ प्रभावित करत.\n\n'दस्तावेज संपादित करू...' क क्लिक कएनाइ बिजार्डकेँ अस्थायी रूपसँ एकटा छोट विंडोमे घटाएत जाहिसँ अहाँ मेल मर्ज दस्तावेजकेँ संपादित कए सकैत छी. दस्तावेजकेँ संपादित करबाक बाद, बिजार्ड पर 'मेल मर्झ बिजार्डमे लौटू' केँ क्लिक कएक' छोट बिंडोमे क्लिक कएक' लौटू."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4521,7 +4521,7 @@ msgstr "शब्दसभ:"
 
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FT_CURRENTCHARACTER.FixedText.Text
 msgid  "Characters:"
-msgstr "संप्रतीक:"
+msgstr "संप्रतीकसभ:"
 
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FL_DOC.FixedLine.Text
 msgid  "Whole document"
@@ -4645,7 +4645,7 @@ msgstr "विभाग"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_COLUMN.PageItem.Text
 msgid  "Columns"
-msgstr "कॉलम सभ"
+msgstr "कॉलमसभ"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_INDENTS.PageItem.Text
 msgid  "Indents"
@@ -4657,7 +4657,7 @@ msgstr "पृष्ठभूमि"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_FTNENDNOTES.PageItem.Text
 msgid  "Footnotes/Endnotes"
-msgstr "पाद टिप्पणी/अंतटिप्पणी"
+msgstr "पाद टिप्पणी/अँतटिप्पणी"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.ST_INSERT.String.Text
 msgid  "Insert"
@@ -4701,7 +4701,7 @@ msgstr "पाठ अंतमे जमा करू (~t)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM.CheckBox.Text
 msgid  "~Restart numbering"
-msgstr "क्रमाँकन फिनु आरँभ करू (~R)"
+msgstr "क्रमाँकण फिनु आरँभ करू (~R)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
 msgid  "~Start at"
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "निवेदन कएल क्लिपबोर्ड प्रारूप उपलब्ध नहि अछि ."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "ई खँड प्रारूप पुरान अछि.\nएकरा बदलै कए जरूरी पड़ि सकैछ जकरासँ बदलैछ\nसहेजल जाए सकैछ.\nआब बदलल जाए सकैछ?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "पाद टीका: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "सिर्फ पढ़ब योग्य सामग्री बदलल नहि जाय सकैत अछि .\n कोनो बदलाव स्वीकार नहि होएत."
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5409,11 +5409,11 @@ msgstr "स्थिति"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_LEFT.FixedText.Text
 msgid  "from left"
-msgstr "बम्माँसँ"
+msgstr "बम्माँ सँ"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_TOP.FixedText.Text
 msgid  "from top"
-msgstr "उप्परसँ"
+msgstr "उप्पर सँ"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_FORMAT.FixedText.Text
 msgid  "Format"
@@ -5473,7 +5473,7 @@ msgstr "अनुच्छेद (~a)..."
 
 #: source/ui/envelp/label.src#LABEL_STRING.#define.Text
 msgid  "Labels"
-msgstr "लेबिल सभ"
+msgstr "लेबल सभ"
 
 #: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
 msgid  "Business Cards"
@@ -5489,7 +5489,7 @@ msgstr "व्यापार"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_LAB_FMT.PageItem.Text
 msgid  "Format"
-msgstr "फॉर्मेट"
+msgstr "फार्मेट"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_LAB_PRT.PageItem.Text
 msgid  "Options"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "विकल्प"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "स्तर \"%1 / %2\" पहिने सँ मोजुद अछि.\n की अहाँ एकरा पर लिखब चाहैत छी?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6061,7 +6061,7 @@ msgstr "क्षेत्रक संपादन"
 
 #: source/ui/fldui/fldui.src#STR_DATEFLD.String.Text
 msgid  "Date"
-msgstr "दिनांक"
+msgstr "तिथि"
 
 #: source/ui/fldui/fldui.src#STR_TIMEFLD.String.Text
 msgid  "Time"
@@ -6185,7 +6185,7 @@ msgstr "केओ अभिलेख"
 
 #: source/ui/fldui/fldui.src#STR_DBSETNUMBERFLD.String.Text
 msgid  "Record number"
-msgstr "सँख्या अभिलिखित करू"
+msgstr "सँख्या रिकार्ड करू"
 
 #: source/ui/fldui/fldui.src#STR_PREVPAGEFLD.String.Text
 msgid  "Previous page"
@@ -6257,7 +6257,7 @@ msgstr "अनुच्छेद"
 
 #: source/ui/fldui/fldui.src#FLD_STAT_GRF.String.Text
 msgid  "Graphics"
-msgstr "आरेखी"
+msgstr "आलेखी"
 
 #: source/ui/fldui/fldui.src#FLD_STAT_OBJ.String.Text
 msgid  "Objects"
@@ -6289,7 +6289,7 @@ msgstr "अंतिम नाम"
 
 #: source/ui/fldui/fldui.src#FLD_EU_ABK.String.Text
 msgid  "Initials"
-msgstr "आरंभिक"
+msgstr "आरँभिक"
 
 #: source/ui/fldui/fldui.src#FLD_EU_STRASSE.String.Text
 msgid  "Street"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "ब्रॉउज करू..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "दोसर डाटाबेसक सँग डाटाबेस क्षेत्रसँ भए क' अपन दस्ताबेजमे दस्तावेजसभकेँ बदलब लेल ई संवादक प्रयोग करू. अहाँ एकटा समयमे एकटा परिवर्तन कए सकैत छी. बहुल चयन बम्माँ तरफ सूची पर सँभव अछि.\nएकटा डाटाबेस फाइल चुनबाक लेल ब्रॉउज बटनक प्रयोग करू."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -6673,7 +6673,7 @@ msgstr "प्रारूप (~o)"
 
 #: source/ui/fldui/fldfunc.src#TP_FLD_FUNC.FT_FUNCNAME.FixedText.Text
 msgid  "Na~me"
-msgstr "नाम (~m)"
+msgstr "नाम ( ~m) "
 
 #: source/ui/fldui/fldfunc.src#TP_FLD_FUNC.FT_FUNCVALUE.FixedText.Text
 msgid  "~Value"
@@ -6733,7 +6733,7 @@ msgstr "फँट"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_EXT.PageItem.Text
 msgid  "Font Effects"
-msgstr "फँटक प्रभाव"
+msgstr "फँट प्रभाव"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_POS.PageItem.Text
 msgid  "Position"
@@ -6801,7 +6801,7 @@ msgstr "पृष्ठभूमि"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_BORDER.PageItem.Text
 msgid  "Borders"
-msgstr "किनार"
+msgstr "किनारसभ"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CONDCOLL.PageItem.Text
 msgid  "Condition"
@@ -6917,7 +6917,7 @@ msgstr "विकल्पसभ"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_WRAP.PageItem.Text
 msgid  "Wrap"
-msgstr "लपेटू"
+msgstr "लपटू"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_URL.PageItem.Text
 msgid  "Hyperlink"
@@ -6925,7 +6925,7 @@ msgstr "हाइपरलिंक"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_BORDER.PageItem.Text
 msgid  "Borders"
-msgstr "किनार"
+msgstr "किनारसभ"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_BACKGROUND.PageItem.Text
 msgid  "Background"
@@ -7205,7 +7205,7 @@ msgstr "पछिला लिंक (~P)"
 
 #: source/ui/frmdlg/frmpage.src#TP_FRM_ADD.LB_PREV.item1.StringList.item
 msgid  "<None>"
-msgstr "<केओ नहि>"
+msgstr "< केओ नहि >"
 
 #: source/ui/frmdlg/frmpage.src#TP_FRM_ADD.FT_NEXT.FixedText.Text
 msgid  "~Next link"
@@ -7337,7 +7337,7 @@ msgstr "स्थान"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.TabPage.Text
 msgid  "Columns"
-msgstr "कॉलमसभ"
+msgstr "कॉलम सभ"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.FT_NUMBER.FixedText.Text
 msgid  "Columns"
@@ -8305,7 +8305,7 @@ msgstr "सँ छाँटू"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTUP1.Image.QuickHelpText
 msgid  "Ascending"
-msgstr "बढल क्रममे"
+msgstr "बढ़ल क्रममे"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTDOWN1.Image.QuickHelpText
 msgid  "Descending"
@@ -8313,7 +8313,7 @@ msgstr "घटल क्रममे"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTUP2.Image.QuickHelpText
 msgid  "Ascending"
-msgstr "बढ़ल क्रममे"
+msgstr "घटल क्रममे"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTDOWN2.Image.QuickHelpText
 msgid  "Descending"
@@ -9213,7 +9213,7 @@ msgstr " बिनु शीर्षक 9"
 
 #: source/ui/misc/outline.src#DLG_TAB_OUTLINE.1.TP_OUTLINE_NUM.PageItem.Text
 msgid  "Numbering"
-msgstr "क्रमाँकन"
+msgstr "क्रमांकन"
 
 #: source/ui/misc/outline.src#DLG_TAB_OUTLINE.1.TP_NUM_POSITION.PageItem.Text
 msgid  "Position"
@@ -9313,7 +9313,7 @@ msgstr "छाँटू"
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.FT_COL.FixedText.Text
 msgid  "Column"
-msgstr "कॉलम"
+msgstr "कॉलम "
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.FT_KEYTYP.FixedText.Text
 msgid  "Key type"
@@ -9841,7 +9841,7 @@ msgstr "गलत सारणी सूत्र"
 
 #: source/ui/ribbar/workctrl.src#RID_SCROLL_NAVIGATION_WIN.String.Text
 msgid  "Navigation"
-msgstr "सँचरण"
+msgstr "संचरण"
 
 #: source/ui/ribbar/workctrl.src#STR_IMGBTN_TBL_DOWN.String.Text
 msgid  "Next table"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "स्वप्रारूप"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "स्वप्रारूपण पूर्ण.\nअहाँ सभ बदलावकेँ स्वीकार अथवा अस्वीकार कए सकैत छी\nखास बदलावकेँ स्वीकार आ अस्वीकार कए सकैत छी."
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "जोड़"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "अहाँ एकटा अमान्य नाम देने अछि.\n इच्छित स्वप्रारूप नहि बनाएल जाए सकैछ. \n एकटा अलग नामका प्रयोग करबाक कोशिश करू."
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "पहिल कॉलम कैप्शन जहिना (~c)"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "जँ चुनल सेलसभ वाँछित आँकड़ा नहि शामिल करैछ, आँकड़ा परिसरकेँ आब चुनू.\n\nकॉलम आ पँक्ति लेबल रखनिहार सेलसभकेँ शामिल करू जँ अहाँ अपन चार्टमे ओकरा शामिल करब चाहैत छी."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10573,7 +10573,7 @@ msgstr "दस्ती (~M)"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FL_POS.FixedLine.Text
 msgid  "Alignment"
-msgstr "सँरेखण "
+msgstr "सँरेखण"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FL_DIST.FixedLine.Text
 msgid  "Spacing"
@@ -10601,7 +10601,7 @@ msgstr "गुणसभ"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FT_TEXTDIRECTION.FixedText.Text
 msgid  "Text ~direction"
-msgstr "पाठ दिशा (~d)"
+msgstr "पाठ दिशा (~T)"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 msgid  "Left-to-right"
@@ -10613,7 +10613,7 @@ msgstr "दहिन्ना सँ बम्माँ"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
 msgid  "Use superordinate object settings"
-msgstr "अधिअक्षीय वस्तु जमावटक प्रयोग करू"
+msgstr "अधिअक्षीय वस्तु जमावट प्रयोग करू"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 msgid  "Adapt table ~width"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "की अहाँ मुख्य पाठमे जाँच करब चाहैत छी?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "देखाबू जे क्षेत्र कमांड विकल्प जांचल गेल अछि\n की अहाँ दस्तावेजकेँ क्षेत्र नामसँ छापनाइ चाहैत छी?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "वाक्यक पहिल अक्षरकेँ बड़ करू"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "\"मानक\" उद्धरण केँ %1custom%2 उद्धरणसँ प्रतिस्थापित करू"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -10953,7 +10953,7 @@ msgstr "\"पाठक मुख्य भाग\" शैलीकेँ से�
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 msgid  "Set \"Text body indent\" Style"
-msgstr "\"पाठ शरीर हाशिया\" शैलीकेँ सेट करू"
+msgstr "\"पाठक शरीर हाशिया\" शैली सेट करू"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 msgid  "Set \"Hanging indent\" Style"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[सिस्टम]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "अंतःक्रियात्मक हिज्जे जाँच पहिनेसँ सक्रिय अछि \nएकटा अलग दस्तावेजमे"
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "अंतःक्रियात्मक समासन पहिनेसँ सक्रिय अछि \nएकटा अलग दस्तावेजमे"
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -11569,7 +11569,7 @@ msgstr "संचरक"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_GLOBAL_SWITCH.ToolBoxItem.Text
 msgid  "Toggle"
-msgstr "टॉगल"
+msgstr "टॉगल करू"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_CREATE_NAVIGATION.ToolBoxItem.Text
 msgid  "Navigation"
@@ -11585,7 +11585,7 @@ msgstr "आगाँक तरफ"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_DROP_REGION.ToolBoxItem.Text
 msgid  "Drag Mode"
-msgstr "कर्ष मोड"
+msgstr "ड्रैग मोड"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_ITEM_UP.ToolBoxItem.Text
 msgid  "Promote Chapter"
@@ -12121,7 +12121,7 @@ msgstr "सूची 2 प्रारंभ"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL2.String.Text
 msgid  "List 2"
-msgstr "सूची 2 "
+msgstr "सूची 2"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL2E.String.Text
 msgid  "List 2 End"
@@ -12137,7 +12137,7 @@ msgstr "सूची 3 प्रारंभ"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL3.String.Text
 msgid  "List 3"
-msgstr "सूची 3 "
+msgstr "सूची 3"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL3E.String.Text
 msgid  "List 3 End"
@@ -12153,7 +12153,7 @@ msgstr "सूची 4 प्रारंभ"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL4.String.Text
 msgid  "List 4"
-msgstr "सूची 4 "
+msgstr "सूची 4"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL4E.String.Text
 msgid  "List 4 End"
@@ -12169,7 +12169,7 @@ msgstr "सूची 5 प्रारंभ"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL5.String.Text
 msgid  "List 5"
-msgstr "सूची 5 प्रारंभ"
+msgstr "सूची 5"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL5E.String.Text
 msgid  "List 5 End"
@@ -12217,11 +12217,11 @@ msgstr "फ्रेम विषय"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_FOOTNOTE.String.Text
 msgid  "Footnote"
-msgstr "पाद टिप्पणी"
+msgstr "पाद टिपण्णी"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_ENDNOTE.String.Text
 msgid  "Endnote"
-msgstr "अँत टिप्पणी"
+msgstr "अँतनोट"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_LABEL.String.Text
 msgid  "Caption"

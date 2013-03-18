@@ -72,8 +72,8 @@ msgid  "The data source was not saved. Please use the interface XStorable to sav
 msgstr "आँकड़ा स्रोत सहेजा नहीं था. कृपया XStorable अंतरफलक का प्रयोग करें आँकड़ा स्रोत सहेजने के लिए."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
-msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr "दिया गया कमांड चयनित कथन नहीं है.\nसिर्फ प्रश्न स्वीकार्य है."
+msgid  "The given command is not a SELECT statement.\\nOnly queries are allowed."
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -188,8 +188,8 @@ msgid  "There are tables in the database whose names conflict with the names of 
 msgstr "डेटाबेस में सारणी हैं जिसमें मौजूदा प्रश्न के नाम से नाम विरोध आता है. सभी प्रश्न व सारणी का पूर्ण उपयोग करने के लिए, सुनिश्चित करें कि उनका विशेष नाम है."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
-msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr "इस त्रुटि लाने वाला SQL कमांड है:\n\n$command$"
+msgid  "The SQL command leading to this error is:\\n\\n$command$"
+msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -220,11 +220,11 @@ msgid  "Unable to find the document '$name$'."
 msgstr "'$name$' दस्तावेज़ पाने में असमर्थ."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
-msgid  "Could not save the document to $location$:\n$message$"
-msgstr "दस्तावेज़ सहेज नहीं सका:\n\n$except$:\n$message$"
+msgid  "Could not save the document to $location$:\\n$message$"
+msgstr ""
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
-msgid  "Error accessing data source '$name$':\n$error$"
+msgid  "Error accessing data source '$name$':\\n$error$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
@@ -408,8 +408,8 @@ msgid  "The backup file entered does not exist."
 msgstr "दाखिल किया बैकअप फ़ाइल मौजूद नहीं है."
 
 #: source/ext/adabas/AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.InfoBox.Message
-msgid  "The fully qualified file cannot be longer than \'#\' characters."
-msgstr ""
+msgid  "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "पूरी तरह क्वालिफायड फ़ाइल \\'#\\' वर्ण से लम्बी नहीं हो सकती है."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
 msgid  "The administrator and the control user cannot have the same name!"
@@ -428,8 +428,8 @@ msgid  "The specified file name or directory does not exist."
 msgstr "निर्दिष्ट फ़ाइल नाम अथवा निर्देशिका मौजूद नहीं है."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
-msgstr "कोई नया डेटाबेस नहीं बनाया जा सकता है.\nकृपया अपना Adabas D संस्थापन जाँचें, खास कर \"DBROOT\" और \"DBWORK\" चर."
+msgid  "No new database can be created.\\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -492,8 +492,8 @@ msgid  "Welcome to the Database Macro Migration Wizard"
 msgstr "डेटाबेस मैक्रो उत्प्रवासन के सहायक में स्वागत है"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
-msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr "यह सहायक आपको आपके मैक्रो के उत्प्रवासन के कार्य के लिए निदेशिका करेगा.\n\nआपके द्वारा इसे समाप्त करने के बाद, सभी मैक्रो जो आपके प्रपत्र में पहले से अंतःस्थापित है और रिपोर्ट को डेटाबेस के दस्तावेज़ में खिसकाया जाएगा. इस क्रम में, लाइब्रेरी को जरूरत अनुसार फिर नाम दिया जाएगा.\n\nयदि आपके फार्म और रिपोर्ट उस मैक्रो और स्क्रिप्ट में संदर्भ समाहित करता है, उन्हें समायोजित किया जाएगा, जहाँ संभव है.\n\nइससे पहले कि उत्प्रवासन शुरू होता है, सभी फार्म, रिपोर्ट, प्रश्न और सारणी को जरूर बंद होना चाहिए. ऐसा करने के लिए 'आगे' दबाएँ."
+msgid  "This wizard will guide you through the task of migrating your macros.\\n\\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\\n\\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\\n\\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
@@ -886,14 +886,12 @@ msgid  "Disable Preview"
 msgstr "पूर्वावलोकन निष्क्रिय करें"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
-#, fuzzy
-msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr "डेटाबेस को रूपांतरित किया गया है.\nक्या आप परिवर्तन को सहेजना चाहते हैं?"
+msgid  "The database has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
-#, fuzzy
-msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr "कनेक्शन प्रकार बदला गया है.\nपरिवर्तन के प्रभावी होने के लिये, सारे प्रपत्र, रिपोर्ट, प्रश्न और सारणी को जरूर बंद रहना चाहिये.\n\n क्या आप सारे दस्तावेज़ को बंद करना चाहते हैं?"
+msgid  "The connection type has been altered.\\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\\n\\nDo you want to close all documents now?"
+msgstr ""
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -941,9 +939,8 @@ msgid  "The document contains forms or reports with embedded macros."
 msgstr "दस्तावेज़ में फार्म और/अथवा रिपोर्ट अंतःस्थापित मैक्रोज के साथ समाहित है."
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
-#, fuzzy
-msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr "मैक्रोज को अब अपने डेटाबेस के दस्तावेज़ में अंतःस्थापित किया जाना चाहिए.\n\nआप पहले की तरह अपने दस्तावेज़ के प्रयोग करने के लिए जारी कर सकते हैं, हालांकि, आपका अपना स्क्रिप्ट और मैक्रोज को उत्प्रवासित करने के लिए प्रोत्साहित किया जाता है. मेन्यू 'औज़ार / स्क्रिप्ट और मैक्रोज उत्प्रवासित करें...' इसके साथ आपकी मदद करेगा.\n\nनोट करें कि डेटाबेस दस्तावेज़ में मैक्रोज अथवा स्क्रिप्ट को अंतःस्थापित करने में समर्थ नहीं होंगे जब तक उत्प्रवासन संपन्न नहीं हो जाए."
+msgid  "Macros should be embedded into the database document itself.\\n\\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\\n\\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
+msgstr ""
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 #, fuzzy
@@ -959,10 +956,11 @@ msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
-msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr "वर्तमान अभिलेख को बदला है \nआप परिवर्तनों को सहेजना चाहते हैं?"
+msgid  "The current record has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "आप चुने हुए आंकड़े को मिटाना चाहते हैं?"
 
@@ -971,218 +969,272 @@ msgid  "(filtered)"
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
+#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "छांट मापदंड का सेटिंग करते समय त्रुटि"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
+#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "फ़िल्टर मापदंड को सेट करते समय त्रुटि"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
+#, fuzzy
 msgid  "Connection lost"
 msgstr "कनेक्शन नष्ट हुआ"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Queries"
 msgstr "प्रश्न"
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "सारणी"
 
 #: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+#, fuzzy
 msgid  "Edit ~Database File..."
 msgstr "डेटाबेस फ़ाइल संपादित करें (~D)..."
 
 #: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+#, fuzzy
 msgid  "Registered databases ..."
 msgstr "डेटाबेस पंजाकृत करें ..."
 
 #: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+#, fuzzy
 msgid  "Disco~nnect"
 msgstr "डिसकनेक्ट (~n)"
 
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
+#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "मिटाना निश्चित करें"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "आप सारणी '%1' को मिटाना चाहते हैं?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
+#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
 msgstr "जानकारी पहले से ही अस्तित्व में है आप इसको को मिटाना चाहते हैं?"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
+#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "डेटाबेस से कनेक्शन नष्ट हो गया आप पुनः जुड़ना चाहते हैं "
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
+#, fuzzy
 msgid  "Warnings encountered"
 msgstr "चेतावनी मिली"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
+#, fuzzy
 msgid  "While retrieving the tables, warnings were reported by the database connection."
 msgstr "सारणी को प्राप्त करने के समय, डेटाबेस कनेक्शन से चेतावनी मिली."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
+#, fuzzy
 msgid  "Connecting to \"$name$\" ..."
 msgstr "$name$ के लिए कनेक्ट कर रहा है ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
+#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "$name$ जानकारी को लोड कर रहा है ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
+#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "$name$ सारणी को लोड कर रहा है  ..."
 
 #: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
+#, fuzzy
 msgid  "No table format could be found."
 msgstr "कोई सारणी रचना प्राप्त नहीं कर सकता है "
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "$name$ आंकड़े स्रोत का कनेक्शन स्थापित नहीं कर सकते हैं "
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
+#, fuzzy
 msgid  "Rebuild"
 msgstr "पुनः निर्माण"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
+#, fuzzy
 msgid  "Column ~Format..."
 msgstr "स्तंभ रचना (~F)..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
+#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "स्तंभ विवरण नक़ल करें (~e)"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
+#, fuzzy
 msgid  "Table Format..."
 msgstr "सारणी रचना..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Row Height..."
 msgstr "पंक्ति ऊंचाई..."
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
+#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "वापसी: आँकड़ा इनपुट"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
+#, fuzzy
 msgid  "Save current record"
 msgstr "वर्तमान अभिलेख को सहेजें"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
+#, fuzzy
 msgid  "Query #"
 msgstr "प्रश्न #"
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "सारणी #"
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
+#, fuzzy
 msgid  "View #"
 msgstr "दृश्य #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
+#, fuzzy
 msgid  "The name \"#\" already exists."
 msgstr "नाम \"#\" पहले से मौजूद है."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
+#, fuzzy
 msgid  "No matching column names were found."
 msgstr "स्तंभ नामों के समान नाम प्राप्त नहीं हुआ ."
 
 #: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
+#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
 msgstr "एक त्रुटि पायी गई. आप प्रतिलिपि बनाने के कार्य को जारी रखना चाहते हैं?"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
+#, fuzzy
 msgid  "Data source table view"
 msgstr "डाटा स्रोत सारणी दृश्य"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
+#, fuzzy
 msgid  "Shows the selected table or query."
 msgstr "चुनी सारणी या प्रश्न दिखाएँ."
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
+#, fuzzy
 msgid  "Table #"
 msgstr "सारणी #"
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
+#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "SQL कथन सुधारें"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
+#, fuzzy
 msgid  "Table name"
 msgstr "सारणी नाम"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
+#, fuzzy
 msgid  "Insert data"
 msgstr "आँकड़ा जोड़ें"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
+#, fuzzy
 msgid  "Delete data"
 msgstr "आँकड़ा मिटाएँ"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
+#, fuzzy
 msgid  "Modify data"
 msgstr "आँकड़ा सुधारें"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
+#, fuzzy
 msgid  "Alter structure"
 msgstr "बनावट बदलें"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
+#, fuzzy
 msgid  "Read data"
 msgstr "आँकड़ा पढें"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
+#, fuzzy
 msgid  "Modify references"
 msgstr "संदर्भ सुधारें"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
+#, fuzzy
 msgid  "Drop structure"
 msgstr "बनावट गिरायें"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Ascending"
 msgstr "आरोहण क्रम में छांटें"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
+#, fuzzy
 msgid  "Sort Descending"
 msgstr "अवरोहण क्रम में छांटें"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
+#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
 msgstr "SDBC ड्राइवर प्रबन्धक (#servicename#) को कनेक्ट नहीं कर सकता है ."
 
 #: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
+#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "URL #connurl# के लिए ड्राइवर को पंजीयन नहीं किया है ."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
+#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
 msgstr "URL #connurl# के लिए कनेक्शन स्थापित नहीं कर सकते है ."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
+#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
 msgstr "कृपया वर्तमान निर्धारणों की जाँच करें, उदाहरण के लिए उपयोक्ता नाम और कूटशब्द ."
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
+#, fuzzy
 msgid  "Successfully connected, but information about database tables is not available."
 msgstr "सफलता से कनेक्ट किया है, लेकिन डेटाबेस सारणियों के बारे में सूचना उपलब्ध नहीं है ."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
+#, fuzzy
 msgid  "All tables"
 msgstr "सभी सारणी"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
+#, fuzzy
 msgid  "All views"
 msgstr "सभी दृश्य"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
+#, fuzzy
 msgid  "All tables and views"
 msgstr "सभी सारणी और दृश्य"
 
@@ -1567,6 +1619,7 @@ msgid  "<none>"
 msgstr "<none>"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "विकल्प"
 
@@ -1575,10 +1628,12 @@ msgid  "Use SQL92 naming constraints"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
+#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
 msgstr "सारणी उपनाम नाम को SELECT कथन पर जोड़ें"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
+#, fuzzy
 msgid  "Use keyword AS before table alias names"
 msgstr "पहले सारणी उपनाम के बीजशब्द रूप में प्रयोग करें"
 
@@ -1587,14 +1642,17 @@ msgid  "Use Outer Join syntax '{OJ }'"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
+#, fuzzy
 msgid  "Ignore the privileges from the database driver"
 msgstr "डेटाबेस चालक से सुविधा को अनदेखा करें"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
+#, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "इसके साथ नामित पैरामीटर बदलें '?'"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
+#, fuzzy
 msgid  "Display version columns (when available)"
 msgstr "संस्करण स्तंभ को दिखाएँ (जब उपलब्ध है)"
 
@@ -1615,10 +1673,12 @@ msgid  "End text lines with CR+LF"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
+#, fuzzy
 msgid  "Ignore currency field information"
 msgstr "मुद्रा क्षेत्र की सूचना अनदेखा करें"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
+#, fuzzy
 msgid  "Form data input checks for required fields"
 msgstr "जरूरी क्षेत्र के लिए फार्म डाटा इनपुट को जाँचें"
 
@@ -1635,6 +1695,7 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "Default"
 msgstr "तयशुदा"
 
@@ -1643,6 +1704,7 @@ msgid  "SQL"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+#, fuzzy
 msgid  "Mixed"
 msgstr "विविध"
 
@@ -1651,6 +1713,7 @@ msgid  "MS Access"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
+#, fuzzy
 msgid  "Comparison of Boolean values"
 msgstr "बूलियन मान की तुलना"
 
@@ -1659,26 +1722,32 @@ msgid  "Rows to scan column types"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "सेटिंग"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
+#, fuzzy
 msgid  "Re~trieve generated values"
 msgstr "उत्पन्न मान फिर प्राप्त करें (~t)"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
+#, fuzzy
 msgid  "~Auto-increment statement"
 msgstr "स्वतः संवृद्धि कथन (~A)"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
+#, fuzzy
 msgid  "~Query of generated values"
 msgstr "उत्पन्न मान का प्रश्न (~Q)"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
+#, fuzzy
 msgid  "Generated Values"
 msgstr "उत्पन्न मान"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
+#, fuzzy
 msgid  "Special Settings"
 msgstr "विशेष सेटिंग"
 
@@ -1687,34 +1756,42 @@ msgid  "Advanced Settings"
 msgstr ""
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
+#, fuzzy
 msgid  "Save"
 msgstr "सहेजें"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Create New Directory"
 msgstr "नई निर्देशिका बनाएँ"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Up One Level"
 msgstr "एक स्तर ऊपर "
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
+#, fuzzy
 msgid  "File ~name:"
 msgstr "फ़ाइल का नाम (~n):"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
+#, fuzzy
 msgid  "Save"
 msgstr "सहेजें"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
+#, fuzzy
 msgid  "~Path:"
 msgstr "मार्ग (~P):"
 
 #: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
+#, fuzzy
 msgid  "Folder"
 msgstr "फ़ोल्डर"
 
 #: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
+#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "फ़ाइल पहले से मौजूद है. इसके ऊपर लिखें?"
 
@@ -1724,9 +1801,8 @@ msgid  "A password is needed to connect to the data source \"$name$\"."
 msgstr "$name$ आँकड़ा स्रोत को कनेक्ट करने के लिए एक कूटशब्द की आवश्यकता है ."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
-#, fuzzy
-msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr "निर्देशिका\n\n$path$\n\nमौजूद नहीं है. इसे बनाया जाना चाहिए?"
+msgid  "The directory\\n\\n$path$\\n\\ndoes not exist. Should it be created?"
+msgstr ""
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 #, fuzzy
@@ -1759,30 +1835,37 @@ msgid  "Mark the tables that should be visible for the applications."
 msgstr "सारणी को चिह्नित करें जिसे अनुप्रयोग के लिए दृश्यमान होना चाहिए."
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Database name"
 msgstr "डेटाबेस नाम (~D)"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
+#, fuzzy
 msgid  "Se~rver / Port"
 msgstr "सर्वर / पोर्ट (~r)"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Server"
 msgstr "सर्वर (~S)"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
+#, fuzzy
 msgid  "~Port"
 msgstr "पोर्ट (~P)"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
+#, fuzzy
 msgid  "Default: 3306"
 msgstr "तयशुदा: 3306"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
+#, fuzzy
 msgid  "So~cket"
 msgstr "सॉकेट (~c)"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
+#, fuzzy
 msgid  "Named p~ipe"
 msgstr "नामित पाइप (~i)"
 
@@ -1797,26 +1880,32 @@ msgid  "User administration"
 msgstr "उपयोक्ता प्रशासन"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
+#, fuzzy
 msgid  "Tables"
 msgstr "सारणी"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
+#, fuzzy
 msgid  "Queries"
 msgstr "प्रश्न"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "जोड़ें (~A)"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "बंद करें (~C)"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
+#, fuzzy
 msgid  "Add Tables"
 msgstr "सारणी जोड़े"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
+#, fuzzy
 msgid  "Add Table or Query"
 msgstr "सारणी या प्रश्न जोड़ें"
 
@@ -1851,18 +1940,22 @@ msgid  "Table Format"
 msgstr "सारणी रचना"
 
 #: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
+#, fuzzy
 msgid  "Use catalog for file-based databases"
 msgstr "फ़ाइल-आधारित डेटाबेस के लिए कैटलॉग इस्तेमाल करें"
 
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
 msgid  "Connection Settings"
 msgstr "कनेक्शन सेटिंग"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
+#, fuzzy
 msgid  "~Host name"
 msgstr "मेजबान नाम (~H)"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
+#, fuzzy
 msgid  "~Port number"
 msgstr "पोर्ट संख्या (~P)"
 
@@ -1941,9 +2034,8 @@ msgid  "Database"
 msgstr "डेटाबेस"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
-#, fuzzy
-msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr "निम्न पृष्ठ पर, आप कनेक्शन के लिए विस्तृत सेटिंग बना सकते हैं.\n\nनया सेटिंग आपको अपने मौजूदा सेटिंग पर लिखने देगा."
+msgid  "On the following pages, you can make detailed settings for the connection.\\n\\nThe new settings you make will overwrite your existing settings."
+msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 #, fuzzy
@@ -1961,9 +2053,8 @@ msgid  "Could not load the program library #lib# or it is corrupted. The ODBC da
 msgstr "प्रोग्राम लाइब्रेरी #lib# को लोड नहीं कर सकता है अथवा दोषयुक्त है . ODBC आँकड़ा स्रोत चुनाव अनुपलब्ध है ."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
-#, fuzzy
-msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr "इस प्लेटफोर्म में इस प्रकार का आँकड़ा स्रोत समर्थित नहीं है .\nआप निर्धारणों को बदल सकते हैं, लेकिन शायद आप डेटाबेस से कनेक्ट नहीं कर सकते हैं ."
+msgid  "This kind of data source is not supported on this platform.\\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
+msgstr ""
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 #, fuzzy
@@ -2171,18 +2262,22 @@ msgid  "Insert as"
 msgstr "जोड़ें जैसे"
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "dBASE फ़ाइल का पथ"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the text files"
 msgstr "पाठ फ़ाइल का पथ"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
+#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "स्प्रेडशीट दस्तावेज़ का पथ"
 
 #: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
+#, fuzzy
 msgid  "Name of the ODBC data source on your system"
 msgstr "आपके तंत्र पर ODBC आँकड़ा स्रोत"
 
@@ -2199,26 +2294,32 @@ msgid  "Name of the Adabas D database"
 msgstr ""
 
 #: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
+#, fuzzy
 msgid  "Microsoft Access database file"
 msgstr "माइक्रोसॉफ्ट पहुँच डेटाबेस फ़ाइल"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
+#, fuzzy
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
 msgstr "अब और सेटिंग आवश्यक नहीं है. यह जाँचने के लिए कनेक्शन काम कर रहा है, '%test' बटन पर क्लिक करें."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
+#, fuzzy
 msgid  "Datasource URL"
 msgstr "डेटास्रोत URL"
 
 #: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
+#, fuzzy
 msgid  "~Host name"
 msgstr "मेजबान नाम (~H)"
 
 #: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
+#, fuzzy
 msgid  "~Mozilla profile name"
 msgstr "मोज़िला प्रोफ़ाइल नाम (~M)"
 
 #: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
+#, fuzzy
 msgid  "~Thunderbird profile name"
 msgstr "थंडरबर्ड प्रोफ़ाइल नाम (~T)"
 
@@ -2253,22 +2354,27 @@ msgid  "Choose a database"
 msgstr "एक डेटाबेस चुनें"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
 msgid  "General"
 msgstr "सामान्य"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
+#, fuzzy
 msgid  "~Host name"
 msgstr "मेजबान नाम (~H)"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
+#, fuzzy
 msgid  "User authentication"
 msgstr "उपयोक्ता सत्यापन"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
+#, fuzzy
 msgid  "~User name"
 msgstr "उपयोक्ता नाम (~U)"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
+#, fuzzy
 msgid  "Password required"
 msgstr "कूटशब्द जरूरी"
 
@@ -2277,30 +2383,37 @@ msgid  "JDBC properties"
 msgstr ""
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
+#, fuzzy
 msgid  "~JDBC driver class"
 msgstr "JDBC चालक वर्ग (~J)"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
+#, fuzzy
 msgid  "Test Class"
 msgstr "जाँच वर्ग"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
+#, fuzzy
 msgid  "Test Connection"
 msgstr "जाँच कनेक्शन"
 
 #: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
+#, fuzzy
 msgid  "No Adabas D data sources were found on your system."
 msgstr "कोई Adabas D data स्रोत आपके तंत्र पर नहीं पाया गया."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
+#, fuzzy
 msgid  "Connection Test"
 msgstr "कनेक्शन जाँच"
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
+#, fuzzy
 msgid  "The connection was established successfully."
 msgstr "कनेक्शन सफलतापूर्वक स्थापित किया गया."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
+#, fuzzy
 msgid  "The connection could not be established."
 msgstr "कनेक्शन स्थापित नहीं किया जा सका."
 
@@ -2321,6 +2434,7 @@ msgid  "MS Access 2007 file"
 msgstr ""
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
+#, fuzzy
 msgid  "Database files"
 msgstr "डेटाबेस फ़ाइल"
 
@@ -2337,50 +2451,62 @@ msgid  "DATAD~EVSPACE:"
 msgstr ""
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
+#, fuzzy
 msgid  "Database sizes"
 msgstr "डेटाबेस आकार"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
+#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "आकार (MB) (~i):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
+#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "खाली स्मृति स्थान (MB) (~F):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
+#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "स्मृति उपयोग (% में) (~M):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
+#, fuzzy
 msgid  "Database Statistics"
 msgstr "डेटाबेस सांख्यिकी"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
+#, fuzzy
 msgid  "Contains the system tables"
 msgstr "तंत्र सारणी सम्मिलित है"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
+#, fuzzy
 msgid  "Contains information about transaction"
 msgstr "विनिमय के बारे में जानकारी सम्मिलित है"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
+#, fuzzy
 msgid  "Contains all data files"
 msgstr "सभी आँकड़ा फ़ाइलें सम्मिलित है"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
+#, fuzzy
 msgid  "Total size of the database files"
 msgstr "डेटाबेस फ़ाइलों का कुल आकार"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
+#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "वर्तमान में नया datadev फ़ाइल उत्पन्न करने से पहले की उपलब्ध जगह."
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
+#, fuzzy
 msgid  "Currently used memory"
 msgstr "वर्तमान में उपयोग की हुई स्मृति"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
+#, fuzzy
 msgid  "No information could be displayed because no access rights exist for the required system tables."
 msgstr "तंत्र सारणी के लिए प्रवेश अधिकार न होने के कारण कोई जानकारी को नहीं दिखा सकते हैं."
 
@@ -2615,9 +2741,8 @@ msgid  "Set up a connection to a MySQL database"
 msgstr "एक MySQL डेटाबेस में एक कनेक्शन सेटअप करें"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
-#, fuzzy
-msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "आपको एक MySQL डेटाबेस से जुड़ना चाहिए या तो ODBC या JDBC प्रयोग करके.\nकृपया अपने तंत्र प्रशासक से संपर्क करे यदि आप निम्न सेटिंग के बारे में अनिश्चित हैं."
+msgid  "You can connect to a MySQL database using either ODBC or JDBC.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 #, fuzzy
@@ -2708,9 +2833,8 @@ msgid  "Set up connection to a MySQL database using JDBC"
 msgstr "एक MySQL डेटाबेस में JDBC के प्रयोग से कनेक्शन सेटअप करें"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "आप JDBC प्रयोग करके एक MySQL डेटाबेस से जुड़ने के लिए जरूरी सूचना दीजिए. नोट करें कि एक JDBC चालक को आपके तंत्र पर जरूर संस्थापित किया जाना चाहिए और %PRODUCTNAME के साथ पंजीकृत.\nकृपया अपने तंत्र प्रशासक से संपर्क करें यदि आप निम्न सेटिंग के बारे में अनिश्चित हैं."
+msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 #, fuzzy
@@ -2773,9 +2897,8 @@ msgid  "Set up a connection to an LDAP directory"
 msgstr "एक LDAP निर्देशिका में एक कनेक्शन सेटअप करें"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "आप एक LDAP निर्देशिका से जुड़ने के लिए जरूरी सूचना दीजिए.\nकृपया अपने तंत्र प्रशासक से संपर्क करें यदि आप निम्न सेटिंग के बारे में अनिश्चित हैं."
+msgid  "Please enter the required information to connect to an LDAP directory.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 #, fuzzy
@@ -2793,9 +2916,8 @@ msgid  "Set up a connection to an Adabas D database"
 msgstr "एक Adabas D डेटाबेस में एक कनेक्शन सेटअप करें"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr "Adabas D डेटाबेस का नाम दीजिए जिससे आप जुड़ना चाहते हैं.\n'ब्राउज़...'को क्लिक करें एक Adabas D डेटाबेस से चुनने के लिए जो पहले से %PRODUCTNAME में पंजीकृत है."
+msgid  "Enter the name of the Adabas D database you want to connect to.\\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 #, fuzzy
@@ -2803,9 +2925,8 @@ msgid  "Set up a connection to an ADO database"
 msgstr "एक ADO डेटाबेस में एक कनेक्शन सेटअप करें"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "ADO डाटा स्रोत को URL दीजिए जिससे आप जुड़ना चाहते हैं.\n'ब्राउज़'को क्लिक करें देनेवाले विशेष सेटिंग को विन्यस्त करने के लिए.\nकृपया अपने तंत्र प्रशासक से संपर्क करें यदि आप निम्न सेटिंग के बारे में अनिश्चित हैं."
+msgid  "Please enter the URL of the ADO data source you want to connect to.\\nClick 'Browse' to configure provider-specific settings.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2813,9 +2934,8 @@ msgid  "Set up a connection to an ODBC database"
 msgstr "एक ODBC डेटाबेस में एक कनेक्शन सेटअप करें"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "ODBC डेटाबेस का नाम दीजिए जिससे आप जुड़ना चाहतें हैं.\n'ब्राउज़...'को क्लिक करें एक ODBC डेटाबेस से चुनने के लिए जो पहले से %PRODUCTNAME में पंजीकृत है.\nकृपया अपने तंत्र प्रशासक से संपर्क करें यदि आप निम्न सेटिंग के बारे में अनिश्चित हैं."
+msgid  "Enter the name of the ODBC database you want to connect to.\\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2823,9 +2943,8 @@ msgid  "Set up a connection to a JDBC database"
 msgstr "एक JDBC डेटाबेस में एक कनेक्शन सेटअप करें"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "आप एक JDBC निर्देशिका से जुड़ने के लिए जरूरी सूचना दीजिए.\nकृपया अपने तंत्र प्रशासक से संपर्क करें यदि आप निम्न सेटिंग के बारे में अनिश्चित हैं."
+msgid  "Please enter the required information to connect to a JDBC database.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 #, fuzzy
@@ -2843,9 +2962,8 @@ msgid  "Oracle JDBC ~driver class"
 msgstr "Oracle JDBC चालक वर्ग (~d)"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr "आप एक Oracle डेटाबेस से जुड़ने के लिए जरूरी सूचना दीजिए. नोट करें कि एक JDBC चालक वर्ग आपके तंत्र पर जरूर संस्थापित किया जाना चाहिए और %PRODUCTNAME के साथ पंजीकृत\nकृपया अपने तंत्र प्रशासक से संपर्क करें यदि आप निम्न सेटिंग के बारे में अनिश्चित हैं."
+msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\\nPlease contact your system administrator if you are unsure about the following settings."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 #, fuzzy
@@ -2853,9 +2971,8 @@ msgid  "Set up a connection to spreadsheets"
 msgstr "स्प्रेडशीट में कनेक्शन का सेटअप करें"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
-#, fuzzy
-msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr "'Browse...'को क्लिक करें एक %PRODUCTNAME स्प्रेडशीट अथवा माइक्रोसॉफ़्ट एक्सेल वर्कबुक को चुनने के लिए .\n%PRODUCTNAME इस फ़ाइल को सिर्फ पढ़ने के लिए मोड में खोलेगा."
+msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\\n%PRODUCTNAME will open this file in read-only mode."
+msgstr ""
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 #, fuzzy
@@ -2998,9 +3115,8 @@ msgid  "{None}"
 msgstr "{कोई नहीं}"
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTOFIELDSEPARATORLIST.String.Text
-#, fuzzy
-msgid  ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
-msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgid  ";\\t59\\t,\\t44\\t:\\t58\\t{Tab}\\t9\\t{Space}\\t32"
+msgstr ""
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).STR_AUTODELIMITER_MISSING.String.Text
 msgid  "#1 must be set."
@@ -3032,96 +3148,118 @@ msgid  "Socket"
 msgstr "सॉकेट"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+#, fuzzy
 msgid  "Refresh"
 msgstr "ताज़ा करें"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~View Design"
 msgstr "नया दृश्य डिजायन (~V)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Table Design"
 msgstr "नयी सारणी डिजायन (~T)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+#, fuzzy
 msgid  "Query AutoPilot..."
 msgstr "प्रश्न ऑटोपाइलट..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "New ~Query (Design View)"
 msgstr "नया प्रश्न (~Q) (डिजायन दृश्य)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+#, fuzzy
 msgid  "~Edit Query"
 msgstr "प्रश्न संपादित करें (~E)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+#, fuzzy
 msgid  "New Query (~SQL View)"
 msgstr "नया प्रश्न (~SQL दृश्य)"
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "संपादन... "
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+#, fuzzy
 msgid  "Column ~Width..."
 msgstr "स्तंभ चौड़ाई (~W)..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+#, fuzzy
 msgid  "Report Wizard..."
 msgstr "रिपोर्ट सहायक..."
 
 #: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+#, fuzzy
 msgid  "Form AutoPilot..."
 msgstr "प्रपत्र ऑटोपाइलट..."
 
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
+#, fuzzy
 msgid  "System"
 msgstr "तंत्र"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
+#, fuzzy
 msgid  "Error during creation"
 msgstr "निर्माण के दौरान त्रुटि"
 
 #: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
+#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "एक अज्ञात त्रुटि पायी गई. कार्य को पूरा नहीं किया जा सका है."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
+#, fuzzy
 msgid  "The document \"$file$\" could not be opened."
 msgstr "दस्तावेज़ \"$file$\" नहीं खोला जा सकता है."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
+#, fuzzy
 msgid  "The table cannot be deleted because the database connection does not support this."
 msgstr "डेटाबेस कनेक्शन समर्थन नहीं करने के कारण सारणी को नहीं मिटा सकते हैं ."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
+#, fuzzy
 msgid  "~All"
 msgstr "सभी (~A)"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
+#, fuzzy
 msgid  "Undo:"
 msgstr "पहले जैसा:"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
+#, fuzzy
 msgid  "Redo:"
 msgstr "फिर करें:"
 
 #: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
+#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
 msgstr "स्तंभ '#1' के लिए कोई सहवर्ती स्तंभ प्रकार नहीं पाया जा सका."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
+#, fuzzy
 msgid  "The file \"$file$\" does not exist."
 msgstr "फ़ाइल \"$file$\" मौजूद नहीं है."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
+#, fuzzy
 msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr "आँकड़ा स्रोत से जुड़ने के दौरान चेतावनी का सामना हुआ. \"$buttontext$\" को उन्हें देखने के लिए दबाएं."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
-msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr "नाम '$#$' पहले से मौजूद है.\nकृपया अऩ्य नाम दें."
+msgid  "The name '$#$' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
 #, fuzzy
@@ -3139,9 +3277,8 @@ msgid  "Type formatting"
 msgstr "वर्ग रचना"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
-#, fuzzy
-msgid  "The following fields have already been set as primary keys:\n"
-msgstr "निम्नलिखित क्षेत्रों को पहले से ही प्राथमिक कुंजी जैसे स्थापित किया है:\n"
+msgid  "The following fields have already been set as primary keys:\\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
 #, fuzzy
@@ -3203,14 +3340,12 @@ msgid  "Primary Key"
 msgstr "प्राथमिक कुंजी"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
-#, fuzzy
-msgid  "Source table: \n"
-msgstr "मूल सारणी: \n"
+msgid  "Source table: \\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
-#, fuzzy
-msgid  "Destination table: \n"
-msgstr "गंतव्य सारणी: \n"
+msgid  "Destination table: \\n"
+msgstr ""
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
 #, fuzzy
@@ -3293,126 +3428,157 @@ msgid  "Please change the table name. It is too long."
 msgstr "सारणी नाम बदलें. यह काफी लंबा है."
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "विकल्प"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "प्रकार (~T)"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
+#, fuzzy
 msgid  "Inner join"
 msgstr "भीतरी शामिल"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
+#, fuzzy
 msgid  "Left join"
 msgstr "बायां शामिल"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
+#, fuzzy
 msgid  "Right join"
 msgstr "दाहिना शामिल"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
+#, fuzzy
 msgid  "Full (outer) join"
 msgstr "पूरा (बाहरी) शामिल"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
+#, fuzzy
 msgid  "Cross join"
 msgstr "प्रति शामिल"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
+#, fuzzy
 msgid  "Natural"
 msgstr "प्राकृतिक"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
+#, fuzzy
 msgid  "Tables involved"
 msgstr "सारणी शामिल"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
+#, fuzzy
 msgid  "Fields involved"
 msgstr "क्षेत्र समाहित"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
+#, fuzzy
 msgid  "Join Properties"
 msgstr "विशेषताएं शामिल"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
+#, fuzzy
 msgid  "Please note that some databases may not support this join type."
 msgstr "नोट करें कि कुछ डेटाबेस ऐसे शामिल प्रकार को नहीं समर्थन करता है."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
+#, fuzzy
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
 msgstr "दोनों सारणी के सम्बन्धित क्षेत्रों का विषय समान रहनेवाले अभिलेखों को सम्मिलित है."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
+#, fuzzy
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
 msgstr "सारणी '%1' का सभी अभिलेखों को , लेकिन सारणी '%2' का केवल उन अभिलेखों को जिनके सम्बन्धित क्षेत्रों का विषय समान है ."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
+#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
 msgstr "'%1' और '%2' के सब अभिलेख सम्मिलित हैं."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
+#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "सभी रिकार्ड को कार्टेसियन उत्पाद के '%1' और '%2' से समाहित करता है."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
+#, fuzzy
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
 msgstr "समान रूप से नाम दिए सभी युग्म के लिए एक स्तंभ को समाहित करता है '%1' और '%2' से."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
+#, fuzzy
 msgid  "Add Table Window"
 msgstr "सारणी विंडो में जोड़ें"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
+#, fuzzy
 msgid  "Move table window"
 msgstr "सारणी विंडो हटाएँ"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
+#, fuzzy
 msgid  "Insert Join"
 msgstr "शामिल जोड़ें"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
+#, fuzzy
 msgid  "Delete Join"
 msgstr "शामिल मिटाएँ"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
+#, fuzzy
 msgid  "Resize table window"
 msgstr "सारणी विंडो को पुनः आकार दें"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
+#, fuzzy
 msgid  "Delete Column"
 msgstr "स्तंभ मिटाएँ"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
+#, fuzzy
 msgid  "Move column"
 msgstr "स्तंभ हटाएँ"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
+#, fuzzy
 msgid  "Add Column"
 msgstr "स्तंभ जोड़ें"
 
 #: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
+#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "अमान्य वर्णन, '$name$' सारणी अस्तित्व में नहीं है !"
 
 #: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
+#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
 msgstr "अमान्य वर्णन, '$name$' क्षेत्र नाम अस्तित्व में नहीं है ."
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
+#, fuzzy
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
 msgstr "प्रश्न में #num# सारणी शामिल है. चुना डेटाबेस प्रकार, हालांकि, सिर्फ #maxnum# साऱणी प्रति कथन प्रक्रिया कर सकता है."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
+#, fuzzy
 msgid  "Delete Table Window"
 msgstr "सारणी विंडो मिटाएँ"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
+#, fuzzy
 msgid  "Edit Column Description"
 msgstr "स्तंभ विवरण का संपादन"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
+#, fuzzy
 msgid  "Adjust column width"
 msgstr "स्तंभ चौड़ाई व्यवस्था करें"
 
@@ -3421,6 +3587,7 @@ msgid  "(not sorted);ascending;descending"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
+#, fuzzy
 msgid  "(no function);Group"
 msgstr "((कोई प्रकार्य नहीं));समूह"
 
@@ -3429,50 +3596,62 @@ msgid  "(no table)"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
+#, fuzzy
 msgid  "The database only supports sorting for visible fields."
 msgstr "डेटाबेस केवल दृष्टिगोचर क्षेत्रों को छांटने के लिए समर्थित है ."
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
+#, fuzzy
 msgid  "Functions"
 msgstr "प्रकार्य"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
+#, fuzzy
 msgid  "Table Name"
 msgstr "सारणी नाम"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
+#, fuzzy
 msgid  "Alias"
 msgstr "उपनाम"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
+#, fuzzy
 msgid  "Distinct Values"
 msgstr "अलग मान"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
+#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "क्षेत्र;उपनाम;सारणी;छांटा;दृष्टिगोचर;प्रकार्य;मापदंड;अथवा;अथवा"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
+#, fuzzy
 msgid  "There are too many columns."
 msgstr "यहां बहुत सारी स्तम्भें हैं."
 
 #: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
+#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "[*] क्षेत्र के लिए शर्त को लागू नहीं कर सकते हैं"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
+#, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "निर्मित SQL कथन काफी लंबा है."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
+#, fuzzy
 msgid  "Query is too complex"
 msgstr "प्रश्न काफी जटिल है"
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
+#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "कुछ नहीं चयनित किया जा रहा है!"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
+#, fuzzy
 msgid  "Too many search criteria"
 msgstr "कई खोज मापदंड"
 
@@ -3481,22 +3660,27 @@ msgid  "SQL syntax error"
 msgstr ""
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
+#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "[*] को छांटने के मापदंड की तरह उपयोग नहीं कर सकते हैं ."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
+#, fuzzy
 msgid  "There are too many tables."
 msgstr "कई सारणियां हैं."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
+#, fuzzy
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
 msgstr "कथन लागू नहीं होगा जब डेटाबेस के SQL से प्रश्न कर रहा हो."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
+#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "क्षेत्र का नाम नहीं मिला है अथवा अनोखा नहीं है"
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
+#, fuzzy
 msgid  "Join could not be processed"
 msgstr "जोड़ की प्रक्रिया नहीं की जा सकी"
 
@@ -3505,42 +3689,52 @@ msgid  "Syntax error in SQL statement"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
+#, fuzzy
 msgid  "This database does not support table views."
 msgstr "इस डेटाबेस में सारणी दृश्य समर्थित नहीं है!"
 
 #: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
+#, fuzzy
 msgid  "This database does not support altering of existing table views."
 msgstr "इस डेटाबेस मौजूदा सारणी दृश्य को बदलने का समर्थन नहीं करता है."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
+#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "आप प्रश्न को इसके बदले उत्पन्न करना चाहते हैं?"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
+#, fuzzy
 msgid  "No query could be created."
 msgstr "कोई प्रश्न को उत्पन्न नहीं किया जा सका."
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
+#, fuzzy
 msgid  "No query could be created because no fields were selected."
 msgstr "किसी क्षेत्र को न चुनने के कारण किसी प्रश्न को उत्पन्न नहीं कर सकते हैं."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
+#, fuzzy
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
 msgstr "जुड़े डाटा स्रोत को मिटाया गया है. इसलिए, डाटा स्रोत के उपयुक्त डाटा को संचित नहीं कर सकते हैं."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "स्तंभ '$name$' अज्ञात है."
 
 #: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
+#, fuzzy
 msgid  "Columns can only be compared using '='."
 msgstr "स्तंभ को '=' के प्रयोग से तुलना किया जा सकता है."
 
 #: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
+#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
 msgstr "'LIKE' के पहले आप एक स्तंभ का नाम प्रयोग करें."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
+#, fuzzy
 msgid  "The column could not be found. Please note that the database is case-sensitive."
 msgstr "स्तंभ नहीं पाया जा सका. नोट करें कि डेटाबेस स्थिति के प्रति संवेदनशील है."
 
@@ -3553,8 +3747,8 @@ msgid  " - %PRODUCTNAME Base: View Design"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
-msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr "$object$ को बदला गया है .\nक्या आप परिवर्तन को सहेजना चाहते हैं?"
+msgid  "$object$ has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
 msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
@@ -3565,10 +3759,12 @@ msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
+#, fuzzy
 msgid  "The table view"
 msgstr "सारणी दृश्य"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
+#, fuzzy
 msgid  "The query"
 msgstr "प्रश्न"
 
@@ -3577,6 +3773,7 @@ msgid  "The SQL statement"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
+#, fuzzy
 msgid  "The query does not create a result set, and thus cannot be part of another query."
 msgstr "प्रश्न परिणाम सेट नहीं बनाता है, और इस प्रकार अन्य प्रश्न का हिस्सा नहीं बनता है."
 
@@ -3585,14 +3782,17 @@ msgid  "Both the ActiveConnection and the DataSourceName parameter are missing o
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
+#, fuzzy
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
 msgstr "यह संबंध पहले से मौजूद है. क्या आप इसे संपादित करने अथवा कोई एक नया बनाना चाहते हैं?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
+#, fuzzy
 msgid  "Edit..."
 msgstr "संपादन..."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
+#, fuzzy
 msgid  "Create..."
 msgstr "बनाएँ..."
 
@@ -3601,70 +3801,84 @@ msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
+#, fuzzy
 msgid  "The database does not support relations."
 msgstr "डेटाबेस सम्बन्धों का समर्थन नहीं करता है."
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr "कनेक्शन डिजायन में परिवर्तन किया है. \nआप परिवर्तनों को संचित करना चाहते हैं?"
+msgid  "The relation design has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
+#, fuzzy
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
 msgstr "इस सारणी को मिटाते समय इसक सभी सम्बन्ध भी मिट जाऐंगे. जारी रखना है?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
-msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr "डेटाबेस संबंध नहीं बना सका. इस प्रकार की सारणी के लिए विदेश कुंजी समर्थित नहीं है.\nकृपया अपने डेटाबेस की दस्तावेज़ीकरण जांचें."
+msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\\nPlease check your documentation of the database."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
+#, fuzzy
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 msgstr "अज्ञात;पाठ;संख्या;दिनांक/समय;दिनांक;समय;हां/नहीं;मुद्रा;स्मृतिपत्र;गिनती;चित्र; पाठ (स्थिर);दशांश;बाइनरी (स्थिर);बाइनरी;BigInt;डबल;फ्लोट;रियल;पूर्णांक;छोटा पूर्णांक;बहुत छोटा पूर्णांक;SQL रिक्त;वस्तु;अनोखा;बनावट;क्षेत्र;BLOB;CLOB;REF;OTHER"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
-msgstr "प्राथमिक कुंजी जोड़ें/हटाएँ"
+msgstr "प्राथमिक कुंजी जोड़ें/हटाएं"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "हाँ"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "नहीं"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
+#, fuzzy
 msgid  "Ascending"
 msgstr "आरोही क्रम"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
+#, fuzzy
 msgid  "Descending"
 msgstr "अवरोही क्रम"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
+#, fuzzy
 msgid  "<none>"
 msgstr "<none>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
+#, fuzzy
 msgid  "Field name"
 msgstr "क्षेत्र नाम"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "Field Name"
 msgstr "क्षेत्र नाम"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
+#, fuzzy
 msgid  "Field ~type"
 msgstr "क्षेत्र प्रकार (~t)"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
+#, fuzzy
 msgid  "Field Type"
 msgstr "क्षेत्र वर्ग"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
+#, fuzzy
 msgid  "Field length"
 msgstr "क्षेत्र विस्तार"
 
 #: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
+#, fuzzy
 msgid  "Description"
 msgstr "विवरण"
 
@@ -3673,220 +3887,263 @@ msgid  "Column Description"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
+#, fuzzy
 msgid  "Input required"
 msgstr "इनपुट की आवश्यकता"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
+#, fuzzy
 msgid  "~AutoValue"
 msgstr "स्वचालित मूल्य (~A)"
 
 #: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Field Properties"
 msgstr "क्षेत्र गुण"
 
 #: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
+#, fuzzy
 msgid  "General"
 msgstr "सामान्य"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "Description:"
 msgstr "विवरण:"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Table properties"
 msgstr "सारणी गुण"
 
 #: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
+#, fuzzy
 msgid  "The text you entered is not a list element. "
 msgstr "आपके द्वारा प्रविष्ट किए हुए पाठ का सूची तत्व नहीं है."
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
+#, fuzzy
 msgid  "Insert Rows"
 msgstr "पंक्तियों को जोड़ें"
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
+#, fuzzy
 msgid  "Primary Key"
 msgstr "प्राथमिक कुंजी"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
+#, fuzzy
 msgid  "Modify cell"
 msgstr "कोष्ठ सुधारें"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
+#, fuzzy
 msgid  "Delete row"
 msgstr "पंक्ति मिटाएँ"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
+#, fuzzy
 msgid  "Modify field type"
 msgstr "क्षेत्र प्रकार सुधारें"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
+#, fuzzy
 msgid  "Insert row"
 msgstr "पंक्ति जोड़ें"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
+#, fuzzy
 msgid  "Insert new row"
 msgstr "नयी पंक्ति जोड़ें"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
+#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "प्राथमिक कुंजी जोड़ें/हटाएं"
 
 #: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
+#, fuzzy
 msgid  "~Default value"
 msgstr "तयशुदा मूल्य (~D)"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
+#, fuzzy
 msgid  "~Entry required"
 msgstr "प्रविष्टि की आवश्यकता (~E)"
 
 #: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+#, fuzzy
 msgid  "~Length"
 msgstr "लंबाई (~L)"
 
 #: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "प्रकार (~T)"
 
 #: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
+#, fuzzy
 msgid  "~Length"
 msgstr "लंबाई (~L)"
 
 #: source/ui/tabledesign/table.src#STR_SCALE.String.Text
+#, fuzzy
 msgid  "Decimal ~places"
 msgstr "दशांश स्थान (~p)"
 
 #: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
+#, fuzzy
 msgid  "Format example"
 msgstr "रचना उदाहरण"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
-msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr "एक मूल्य को चुनिए जो सभी नए अभिलेखों में तयशुदा जैसा दिखेगा .\nअगर क्षेत्र में तयशुदा मूल्य नहीं हो सकता है तो, खाली स्ट्रिंग को चुनिए ."
+msgid  "Select a value that is to appear in all new records as default.\\nIf the field is not to have a default value, select the empty string."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
-msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr "इस क्षेत्र के लिए तयशुदा मूल्य को प्रविष्ट कीजिए .\n\nबाद में जब आप सारणी में आँकड़ा प्रविष्ट करते हैं, तब हरेक नए अभिलेख में चुने हुए क्षेत्र के लिए इस स्ट्रिंग को उपयोग किया जायेगा . यह, इसलिए, नीचे प्रविष्ट किए जानेवाले कोष्ठ रचना के अनुरूप होना ज़रूरी है ."
+msgid  "Enter a default value for this field.\\n\\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
+#, fuzzy
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
 msgstr "अगर क्षेत्र का मूल्य NULL नहीं है तो इस विकल्प को संचालित करें, उपयोक्ता को हमेशा आँकड़ा प्रविष्ट करना ज़रूरी है ."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
+#, fuzzy
 msgid  "Enter the maximum text length permitted."
 msgstr "स्वीकृत अधिकतम पाठ विस्तार को दाखिल करें ."
 
 #: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
+#, fuzzy
 msgid  "Enter the number format."
 msgstr "संख्या प्रारूप को दाखिल करें."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
-msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr "इस क्षेत्र में रखे जाने वाले आँकड़ा विस्तार को दिखाएँ.\n\nयदि दाशमिक क्षेत्र, तब संख्या की अधिकतम लंबाई दाखिल की जा सकती है, यदि द्विपदीय क्षेत्र है, तब आँकड़ा खंड की लंबाई.\nमान को तदनुरूप सही किया जायेगा जब यह इस डेटाबेस के अधिकतम को पार कर जायेगा."
+msgid  "Determine the length data can have in this field.\\n\\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\\nThe value will be corrected accordingly when it exceeds the maximum for this database."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
+#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
 msgstr "इस क्षेत्र में स्वीकृत दशांश स्थानों की संख्या को निर्दिष्ट करें."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
+#, fuzzy
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
 msgstr "यहाँ पर आप देख सकते हैं कि आँकड़ा को वर्तमान प्रारूप में किस तरह दिखाया जायेगा (दाहिनी ओर के बटन को प्रारूप को सुधारने के लिए उपयोग कीजिए) ."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
+#, fuzzy
 msgid  "This is where you determine the output format of the data."
 msgstr "यहाँ पर आप आँकड़ा के ऑउटपुट प्रारूप को निश्चित कर सकते हैं."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
-msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr "स्वचालित ढंग से मूल्यों की बढ़ती करना चाहते हैं तो इस क्षेत्र को चुनिए .\n\nआप इस वर्ग के क्षेत्रों में आँकड़ा को प्रविष्ट नहीं कर सकते हैं . स्वचालित ढंग से हरेक नए अभिलेख के लिए एक भीतरी मूल्य को निर्दिष्ट किया जायेगा (पिछले अभिलेख के बढ़ती के नतीजे पर)."
+msgid  "Choose if this field should contain AutoIncrement values.\\n\\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
+#, fuzzy
 msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr "स्तंभ नाम \"$column$\" को दो बार मूल्य निर्दिष्ट करने के कारण सारणी को संचित नहीं कर सकते है ."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
+#, fuzzy
 msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr "$column$ स्तंभ प्राथमिक कुंजी से मिला हुआ है . अगर स्तंभ को मिटाया, तो प्राथमिक कुंजी भी मिट जायेगी . आप सचमुच में जारी रखना चाहते हैं?"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
+#, fuzzy
 msgid  "Primary Key Affected"
 msgstr "प्राथमिक कुंजी प्रभावित"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
+#, fuzzy
 msgid  "Column"
 msgstr "स्तंभ"
 
 #: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
+#, fuzzy
 msgid  "Continue anyway?"
 msgstr "किसी तरह जारी रखना है?"
 
 #: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+#, fuzzy
 msgid  "Warning!"
 msgstr "चेतावनी!"
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
-msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr "सारणी को परिवर्तन किया है .\nआप परिवर्तनों को संचित करना चाहते हैं ?"
+msgid  "The table has been changed.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
-msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr "डेटाबेस से कनेक्शन नष्ट हुआ ! कनेक्शन के बिना सारणी डिजायन केवल सीमित कार्यों में उपयोग किया जायेगा .\nपुनः कनेक्ट करना चाहते हैं ?"
+msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\\nReconnect?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
+#, fuzzy
 msgid  "The table could not be saved due to problems connecting to the database."
 msgstr "डेटाबेस को कनेक्ट करने में असफल होने के कारण सारणी को संचित नहीं कर सकते हैं."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
+#, fuzzy
 msgid  "The table filter could not be adjusted because the data source has been deleted."
 msgstr "सारणी फ़िल्टर को व्यवस्थित नहीं कर सकते हैं, क्योंकि आँकड़ा स्त्रोत पहले से ही मिटा है ."
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
-msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr "सारणी के अनुक्रमणियों को संपादन करने से पहले, उसको सहेजना चाहिए .\nअभी आप परिवर्तनों को सहेजना चाहते हैं ?"
+msgid  "Before you can edit the indexes of a table, you have to save it.\\nDo you want to save the changes now?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
+#, fuzzy
 msgid  "No primary key"
 msgstr "कोई प्राथमिक कुंजी नहीं"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
-msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr "डेटाबेस में आँकड़ा अभिलेख की पहचान के लिए एक अनोखे अनुक्रमणी अथवा प्राथमिक कुंजी की आवश्यकता है .\nजब इन दोनों में से कोइ एक संरचनात्मक स्थिति मिलती है आप तभी इस सारणी में डाटा को प्रविष्ट कर सकते है .\n\nअभी प्राथमिक कुंजी को उत्पन्न करना चाहते हैं ?"
+msgid  "A unique index or primary key is required for data record identification in this database.\\nYou can only enter data into this table when one of these two structural conditions has been met.\\n\\nShould a primary key be created now?"
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
+#, fuzzy
 msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr "\\$column\\$ स्तंभ को नहीं बदल सकते हैं . स्तंभ को मिटाकर और नए प्रारूप को जोड़ना चाहते हैं?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
+#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "सारणी डिजायन को सहेजते समय त्रुटि"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
+#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "स्तंभ $column$ मिटाया नहीं जा सका."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
+#, fuzzy
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
 msgstr "आप इस सारणी में सभी स्तंभ मिटाने की कोशिश कर रहे हैं. सारणी बिना स्तंभ के नहीं बन सकता है. क्या सारणी को डेटाबेस से मिटाया जाना चाहिए? यदि नहीं, सारणी अपरिवर्तित रहेगा."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
+#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "स्व संवर्द्धन कथन (~u)"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
-msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr "एक SQL कथन दें स्व संवर्द्धन कथन के लिये.\n\nयह कथन डेटाबेस में सीधे हस्तांतरित किया जायेगा जब सारणी बनाया जाता है."
+msgid  "Enter an SQL statement for the auto-increment field.\\n\\nThis statement will be directly transferred to the database when the table is created."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
-msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr "किसी प्रकार की सूचना डेटाबेस से प्राप्त नहीं की जा सकती है.\nसारणी डिजायन मोड इस आँकड़ा स्रोत के लिए उपलब्ध नहीं है."
+msgid  "No type information could be retrieved from the database.\\nThe table design mode is not available for this data source."
+msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"
@@ -3905,18 +4162,22 @@ msgid  "change field attribute"
 msgstr ""
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
+#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "कूटशब्द को कार्य-काल के अंत तक स्मरण में रखें (~R)"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
+#, fuzzy
 msgid  "~Remember password"
 msgstr "कूटशब्द याद रखें (~R)"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
+#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "गंतव्य डेटाबेस दृश्य को समर्थन नहीं देता है."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
+#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "गंतव्य डेटाबेस प्राथमिक कुंजियों को समर्थन नहीं देता है."
 
@@ -3925,22 +4186,27 @@ msgid  "no data access descriptor found, or no data access descriptor able to pr
 msgstr ""
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
+#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "केवल सारणी और प्रश्न को इस समय समर्थित किया जा सकता है."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
+#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "कॉपी स्रोत का परिणाम पुस्तचिह्न को जरूर समर्थन के लिए सेट करना चाहिए."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
+#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "$pos$ स्तंभ स्थिति पर असमर्थित स्रोत स्तंभ प्रकार ($type$)."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
+#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "आरंभीकरण पैरामीटर की अवैध संख्या."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
+#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "एक त्रुटि आरंभीकरण के दौरान आई."
 

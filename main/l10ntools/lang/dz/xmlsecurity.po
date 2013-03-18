@@ -56,24 +56,20 @@ msgid  "Reset"
 msgstr "སླརག་སྒྲིག"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
-#, fuzzy
-msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr "~Very high.\nབློ་གཏད་ཅན་གྱི་ཡིག་སྣོད་ཀྱི་གནས་ཁོངས་ནང་ལས་ཀྱི་མེཀ་རོས་རྐྱངམ་ཅིག་གཡོག་བཀུལ། གཞན་མིང་རྟགས་བཀོད་ཡོད་མི་དང་མེད་མི་ག་ར་ལྕོགས་མིན་བཟོ་ཡོདཔ་ཨིན།"
+msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
-#, fuzzy
-msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr "H~igh.\n བློ་གཏད་ཅན་གྱི་འབྱུང་ཁུངས་ནང་ལས་ཀྱི་མིང་རྟགས་བཀོད་ཡོད་པའི་མེཀ་རོསྱཚུ་ི་མེཀ་རོས་རྐྱངམ་ཅིག་བཏུབ་གམིང་རྟགས་མ་བཀོད་་པའི་མེཀ་རོས་ཚུལྕོགས་མིན་བཟོ་ཡོདཔ་ཨིན།"
+msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
-#, fuzzy
-msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr "~འབྲིང་མm.n ློ བློ་གཏད་མ་ཚུགས་པའི་འབྱུང་ཁུངས་ནང་ལས་ཀྱི་མེཀ་རོས་ཚུ་ལག་ལེན་མ་འཐབ་པའི་སྔ་གོང་ལས་ངེས་དཔྱད་འབད་དགོ། "
+msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
-#, fuzzy
-msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr "~དམའ་བ (འོས་སྦྱོར་མེདཔ).\nམེཀ་རོས་འདི་ཚུ་ག་ར་ངོས་དཔྱད་མེད་པར་ལག་ལེན་འཐབ་ནི། སྒྲིག་སྟངས་འདི་ ཁྱོད་ཀྱིས་ཡིག་ཆ་ཁ་ཕྱེ་མི་འདི་ཚུ་ག་ར་ཉེན་ཁག་མེདཔ་ངེས་བདེན་ཨིན་པའི་ངེས་ཤེས་འདྲོངས་ཚུགས་པ་ཅིན་རྐྱངམ་ཅིག་ལག་ལེན་འཐབ། "
+msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 #, fuzzy
@@ -81,14 +77,13 @@ msgid  "Trusted certificates"
 msgstr "བློ་གཏད་ཅན་གྱི་ལག་ཁྱེར།"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "Issued to\tIssued by\tExpiration date"
-msgstr "Issued to\tIssued by\tExpiration date"
+msgid  "Issued to\\tIssued by\\tExpiration date"
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 #, fuzzy
 msgid  "Add..."
-msgstr "ཁ་སྐོང་་་་་་"
+msgstr "ཁ་སྐོང་་་་་"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.PushButton.Text
 #, fuzzy
@@ -180,9 +175,8 @@ msgid  "The following have signed this package:"
 msgstr "གཤམ་འཁོད་ཚུ་གིས་འ་ནི་ ཐུམ་སྒྲིལ་གུ་མིང་རྟགས་བཀོད་ནུག"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "\tSigned by\tDigital ID issued by\tDate"
-msgstr "\tSigned by\tDigital ID issued by\tDate"
+msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
+msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 #, fuzzy
@@ -197,7 +191,7 @@ msgstr "ལག་ཁྱེར་འདི་ནུས་ཅན་བཟོ་ར
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.String.Text
 #, fuzzy
 msgid  "The signatures in this document are invalid"
-msgstr "ཡིག་ཆ་འདི་ནང་གི་མིང་རྟགས་ཚུ་ནུས་ཅན་མེན་པས།ག"
+msgstr "ཡིག་ཆ་འདི་ནང་གི་མིང་རྟགས་ཚུ་ནུས་ཅན་མེན་པས།"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FixedText.Text
 #, fuzzy
@@ -232,11 +226,11 @@ msgid  "Close"
 msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ErrorBox.Message
-msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\\n\\nSave document in ODF 1.2 format and add all desired signatures again."
 msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
-msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
+msgid  "Adding or removing a macro signature will remove all document signatures.\\nDo you really want to continue?"
 msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
@@ -292,12 +286,11 @@ msgstr "ཁྱོད་ལུ་ འ་ནི་ལག་ཁྱེར་འད�
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.String.Text
 #, fuzzy
 msgid  "The certificate could not be validated."
-msgstr "ལག་ཁྱེར་འདི་ནུས་ཅན་བཟོ་མ་ཚུགས།"
+msgstr "ལག་ཁྱེར་འདི་ནུས་ཅན་བཟོ་ར་བ་མི་ཚུགས།"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "Field\tValue"
-msgstr "Field\tValue"
+msgid  "Field\\tValue"
+msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 #, fuzzy
@@ -312,7 +305,7 @@ msgstr "ཨང་རིམ།"
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.String.Text
 #, fuzzy
 msgid  "Signature Algorithm"
-msgstr "མིང་རྟགས་ ཨཱལ་གོ་རི་དམ།"
+msgstr "མིང་རྟགས་ ཨཱལ་གོ་རི་དམ"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.String.Text
 #, fuzzy
@@ -400,12 +393,13 @@ msgid  "Select Certificate"
 msgstr "ལག་ཁྱེར་སེལ་འཐུ་འབད།"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FixedText.Text
+#, fuzzy
 msgid  "Select the certificate you want to use for signing"
 msgstr "མིང་རྟགས་བཀོད་ནི་གི་དོན་ལུ་ ཁྱོད་རང་གིས་ལག་ལེན་འཐབ་དགོ་མནོ་མི་གི་ལག་ཁྱེར་སེལ་འཐུ་འབད།"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
-msgid  "Issued to\tIssued by\tExpiration date"
-msgstr "Issued to\tIssued by\tExpiration date"
+msgid  "Issued to\\tIssued by\\tExpiration date"
+msgstr ""
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 #, fuzzy

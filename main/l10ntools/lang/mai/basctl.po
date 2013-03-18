@@ -81,7 +81,7 @@ msgstr "नवीन मौड्यूल (~o)"
 
 #: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PushButton.Text
 msgid  "~Delete"
-msgstr "मेटाबू (~D)"
+msgstr "मेटाबू(~D)"
 
 #: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PushButton.Text
 msgid  "~Organizer..."
@@ -136,8 +136,8 @@ msgid  "Save"
 msgstr "सहेजू"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "श्रोत पाठ बड़ पैघ अछि आओर एहि खातिर नहि ओकरा कम्पाइल कए सकैत अछि नहि संचित .\nएहिलेल किछु टिप्पणीकेँ मेटाबू अथवा कुछ विधिकेँ दोसर मोड्यूलमे हस्तांतरित करू."
+msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -200,8 +200,8 @@ msgid  "The 'XX' file already exists"
 msgstr "'XX' फाइल पहिनेसँ अस्तित्वमे अछि"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "सुरक्षाक कारणे अहाँ ई मैक्रोकेँ नहि चलाएब सकैत छी.\n\nबेसी सूचनाक लेल, सुरक्षा जमावटकेँ जाँचू."
+msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -372,8 +372,8 @@ msgid  "A name must be entered."
 msgstr "नामकेँ भरती कएनाय आवश्यक अछि."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "ई संपादनकेँ बाद अहाँकेँ प्रोग्रामक फिनु प्रारंभ कएनाइ पड़त.\nजारी राखनाए अछि ?"
+msgid  "You will have to restart the program after this edit.\\nContinue?"
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -508,7 +508,7 @@ msgid  "Dialog Import - Name already used"
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
+msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
@@ -524,7 +524,7 @@ msgid  "Dialog Import - Language Mismatch"
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
+msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
 msgstr ""
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
@@ -625,11 +625,11 @@ msgstr "बन्न करू"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
 msgid  "~New..."
-msgstr "नवीन (~N)..."
+msgstr "नवीन(~N)..."
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
 msgid  "~New..."
-msgstr "नवीन(~N)..."
+msgstr "नवीन (~N)..."
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PushButton.Text
 msgid  "~Delete"
@@ -649,11 +649,11 @@ msgstr "बन्न करू"
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PushButton.Text
 msgid  "~New..."
-msgstr "नवीन (~N)..."
+msgstr "नवीन(~N)..."
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PushButton.Text
 msgid  "~New..."
-msgstr "नवीन(~N)..."
+msgstr "नवीन (~N)..."
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PushButton.Text
 msgid  "~Delete"
@@ -780,7 +780,7 @@ msgid  "Delete Language Resources"
 msgstr ""
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
 msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text

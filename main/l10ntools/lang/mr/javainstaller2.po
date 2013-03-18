@@ -125,7 +125,7 @@ msgstr "कृपया पुढील परवाना करार का�
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr "जर आपण वाचल्या असतील आणि संपूर्ण परवाना कराराच्या अटींना स्वीकारले, तर स्थापनेबरोबर पुढे चालू ठेवण्यासाठी 'परवाना स्वीकारा' वर क्लिक करा."
+msgstr "जर आपण संपूर्ण सॉफ्टवेअरच्या परवाना कराराच्या सर्व अटीं आपण वाचल्या आणि स्वीकारल्या असतील, तर स्थापनेने पुढे चालू ठेवण्यासाठी  'परवाना स्वीकारा' वर क्लिक करा."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -152,12 +152,12 @@ msgid  "Create New Directory"
 msgstr "नवीन डिरेक्टरी निर्माण करा"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr "डिरेक्टरी  '${DIR}'  अस्तित्वात नाही.\nआपणास त्यांना आता निर्माण करायचे आहे का?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
-msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr "डिरेक्टरी '${DIR}' अस्तित्वात नाही.\nआपणास आता त्यास निर्माण करायचे आहे किंवा दुसरी डिरेक्टरी निवडायची आहे का?"
+msgid  "The directory '${DIR}' does not exist.\\nDo you want to create it now or choose another directory?"
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -260,8 +260,8 @@ msgid  "To continue, click 'Next'."
 msgstr "पुढे चालू ठेवण्यासाठी, 'पुढे ' वर क्लिक करा."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
-msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr "नोंद:ही स्थापा मूळ हक्काशिवाय केली जाईल. त्यामुळे आपण कार्य कमी करावी लागतील  (जावा रनटाईम वातावरण (JRE) स्थापित करण्याजोगे नाही, पद्धती संकलन शक्य नाही).\nजर आपणास पूर्ण कार्यांना वापरायचे असेल, तर 'रद्द करा' वर क्लिक करा आणि आपल्या हक्कांना मूळ हक्कात बदला."
+msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -432,8 +432,8 @@ msgid  "Analyzing ..."
 msgstr "विश्लेषण करीत आहे..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
-msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr "माहितीकोशाचे विश्लेषण करत आहे\nकृपया काही क्षण प्रतीक्षा करा..."
+msgid  "Analyzing database\\nPlease wait a moment ..."
+msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
@@ -441,11 +441,11 @@ msgstr "स्थापना विझार्डमध्ये स्वा�
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
-msgstr "'मागे'बटण मागील पानाकडे परवतवते."
+msgstr "'मागे' ने आपण मागील पानाकडे परत येता."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
 msgid  "'Next' takes you to the next page. "
-msgstr "'पुढे' बटण आपणास पुढच्या पानाकडे नेते. "
+msgstr "'पुढे' आपणास पुढील पानाकडे नेते. "
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 msgid  "'Cancel' ends the Installation Wizard without installing this software."
@@ -453,7 +453,7 @@ msgstr "या सॉफ्टवेअरच्या स्थापनेश�
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr "आता दर्शवलेल्या पानाबद्दलच्या आणखी माहितीसह  'मदत' बटण माहिती दर्शवते."
+msgstr "'मदत' ने आता दाखवलेल्या पानाच्याबद्दलच्या अधिक माहितीसह मदत दर्शवते."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."

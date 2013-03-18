@@ -941,7 +941,7 @@ msgstr "중복 파일을 만드는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_20
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "파일: [1],  디렉터리: [9],  크기: [6]"
+msgstr "파일: [1], 디렉토리: [9], 크기: [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_21
 msgid  "Computing space requirements"
@@ -1077,7 +1077,7 @@ msgstr "익스텐션 서버를 등록하는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_54
 msgid  "Extension: [1]"
-msgstr "확장: [1]"
+msgstr "확장자: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_55
 msgid  "Registering fonts"
@@ -1093,7 +1093,7 @@ msgstr "MIME 정보를 등록하는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "MIME 컨텐트 유형: [1], 확장자: [2]"
+msgstr "MIME 내용 유형: [1], 확장자: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 msgid  "Registering product"
@@ -1133,15 +1133,15 @@ msgstr "중복 파일을 제거하는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_68
 msgid  "File: [1], Directory: [9]"
-msgstr "파일: [1], 디렉터리: [9]"
+msgstr "파일: [1], 디렉토리: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 msgid  "Updating environment strings"
-msgstr "환경 문자열을 업데이트하는 중"
+msgstr "환경 문자열 업데이트"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "이름: [1], 값: [2], 수행 [3]"
+msgstr "이름: [1], 값: [2], 작업 [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 msgid  "Removing applications"
@@ -1173,7 +1173,7 @@ msgstr "INI 파일 항목을 제거하는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_78
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
-msgstr "키: [1],  섹션: [2],  키: [3], 값: [4]"
+msgstr "파일: [1], 구역: [2], 키: [3], 값: [4]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_79
 msgid  "Removing ODBC components"
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "%PRODUCTNAME %PRODUCTVERSION을(를) 다운로드해 주셔서 감사합니다."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "압축 풀기(&U)"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "%PRODUCTNAME %PRODUCTVERSION 설치 파일의 압축을 풀어 아래에 표시된 폴더에 저장합니다.%PRODUCTNAME 설치 파일을 다른 폴더에 저장하려면 [찾아보기] 를 클릭하여 다른 폴더를 선택하십시오."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1469,7 +1469,7 @@ msgstr " 새 폴더 만들기||"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_10
 msgid  "OK"
-msgstr "{&Tahoma8}확인"
+msgstr "확인"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_12
 msgid  "&Folder name:"
@@ -1505,7 +1505,7 @@ msgstr "{&MSSansBold8}네트워크 위치"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_22
 msgid  "&Install"
-msgstr "{&Tahoma8}설치(&I)"
+msgstr "설치(&I)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_23
 msgid  "&Network location:"
@@ -1525,7 +1525,7 @@ msgstr "다음(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}[ProductName] - 설치 마법사를 시작합니다"
+msgstr "{&TahomaBold10}[ProductName] 설치 마법사를 시작합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "취소"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}사용자 정보"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1697,7 +1697,7 @@ msgstr "바꾸기(&C)..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr "이 폴더에 설치하려면 다음을 누르고, 또는 다른 폴더에 설치하려면 바꾸기를 누르십시오."
+msgstr "이 폴더에 설치하려면 다음을 클릭하고, 또는 다른 폴더로 설치하려면 바꾸기를 클릭하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1741,7 +1741,7 @@ msgstr "[INSTALLDIR]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
-msgstr "{&Tahoma8}[ProductName] 설치 위치:"
+msgstr "[ProductName] 설치 위치:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 msgid  "&Next >"
@@ -1837,7 +1837,7 @@ msgstr "다음(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}[ProductName] 설치 마법사를 시작합니다."
+msgstr "{&TahomaBold10}[ProductName] - 설치 마법사를 시작합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."

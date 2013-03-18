@@ -129,7 +129,7 @@ msgstr "মিংথোল হাপচিন্নবগীদমক ক্ল�
 
 #: source/core/glob.src#STR_PRESOBJ_OUTLINE.String.Text
 msgid  "Click to add text"
-msgstr "মপান্থোংগী ওইবা শক্তম হাপচিন্নবগীদমক ক্লিক তৌ"
+msgstr "তেক্সত হাপচিন্নবগীদমক ক্লিক তৌ"
 
 #: source/core/glob.src#STR_PRESOBJ_TEXT.String.Text
 msgid  "Click to add text"
@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "স্লাইদশিংগী মফম হোংবা"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "চপ চাবা নিংসিংবা লৈতবা!\nথবক্তু কান্নররোয়."
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1732,8 +1732,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "চানবিদুনা অনৌবা তেনজিনগীদমক মমিং অমা চংশিনবিয়ু."
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "খল্লিবা মমিংদু হাননা লৈরে. \nচানবিদুনা অতোপ্পা মমিং অমা চংশিনবিয়ু."
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "স্লাইদশিং হাপচিনবা"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "অদোম থাক্তু মু্ত্থত্পা পাম্মী হায়বসি তশেংনা চুম্লবরা\"$\"?\nমরুওইবা ৱারোল: মসিগী থাকসিদা লৈবা পোত্শক পুম্নমক মুত্থতলগনি!"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1852,8 +1852,8 @@ msgid  "Insert text frame"
 msgstr "তেক্স ফিবান হাপচিনবা"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "মসিগী মথৌসি খনগতলবা পোত্শকশিগা লোয়ন্না তৌবা ঙমদ্রে \n."
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1864,8 +1864,8 @@ msgid  "The file could not be loaded!"
 msgstr "ফাইলদু লোদ তৌবা ঙমদ্রে!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "অনৌবা লমায়গী ফোর্মেত চাশিন্নরগনি.\nঅদোম্না পোত্শক্তুশু চাশিন্নবা পামবরা?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1884,8 +1884,8 @@ msgid  "~Edit"
 msgstr "~শেমদোকপা"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "মসিগী থবকসিনা তৌবা ঙমদ্রবা থবকশিংগী পরিং মুত্থতলে.\nদোকুমেন্ততা মমাংদা ওইখিবা অহোংবশিং হৌজিকসু চতনরি,\nঅদুবু তৌদবা ঙমদ্রে. অদোম্না মখা চত্থবা অমসুং\nঅশুম্না অনৌবা স্লাইদ দিজাইন শিজিন্নবা পাম্বিবরা?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1904,8 +1904,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "দোকুমেন্ত ফোর্মেত্তু অককনবা উতলিবা প্ৰিন্তরদুদা সেত তৌবা ঙমদ্রে."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "মসিগী গ্রাফিকসি দোকুমেন্ত অমদা মরী শমনরে.\nঅদোম্না গ্ৰাফিকতু শেমদোকনবা মরী শমদবা পাম্বরা?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2016,8 +2016,8 @@ msgid  " (Outline)"
 msgstr "(আউতলাইন)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "অককনবা উতলিবা স্কেল অসি শিজিন্নবা য়াদ্রে.\nঅদোম্না অনৌবা অমা চংশিনবা পাম্বিবরা?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2300,8 +2300,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "অয়েকপা পোত্শক পুম্নমক পুনশিন্দবা ওইথোক্তে."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "মসিগী মিংসিগী দিজাইন অমা হান্না লৈরে.\nঅদোম্না মসি শিন্দোকপা পাম্বিবরা?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2416,8 +2416,8 @@ msgid  "Graphics filter"
 msgstr "গ্ৰাফিক্স ফিল্তর"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-msgid  "The file %\nis not a valid sound file !"
-msgstr " ফাইল %\n অসি চতনরিবা খোনজেলগী ফাইল অমা নত্তে!"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"

@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/core/glob.src#STR_LAYER_BCKGRND.String.Text
 msgid  "Background"
-msgstr "​ផ្ទៃ​ខាង​ក្រោយ"
+msgstr "​ផ្ទៃ​ខាង​ក្រោយ "
 
 #: source/core/glob.src#STR_LAYER_BCKGRNDOBJ.String.Text
 msgid  "Background objects"
@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "ផ្លាស់ទី​ស្លាយ"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "អង្គ​ចងចាំ​មិន​គ្រប់​គ្រាន់ !\nអំពើ​នឹង​ត្រូវ​បាន​បោះបង់ ។"
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1732,8 +1732,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "សូម​បញ្ចូល​ឈ្មោះ​មួយ​ សម្រាប់​ក្បាល​ព្រួញ​ថ្មី ៖"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "ឈ្មោះ​ដែល​បាន​ជ្រើស​ មាន​រួច​ហើយ ។\nសូម​បញ្ចូល​ឈ្មោះ​ផ្សេង ។"
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "បញ្ចូល​ស្លាយ"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​កម្រិត​ \"$\" ​ឬ ?\nចំណាំ ​៖ វត្ថុ​​ទាំងអស់​ក្នុង​កម្រិត​នេះ​ នឹង​ត្រូវ​បាន​​លុប !"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1852,8 +1852,8 @@ msgid  "Insert text frame"
 msgstr "បញ្ចូល​ស៊ុម​អត្ថបទ"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "មិន​អាច​រត់​អនុគមន៍​នេះ​ \nជាមួយនឹង​វត្ថុ​ដែល​បាន​ជ្រើស​ ។"
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1864,8 +1864,8 @@ msgid  "The file could not be loaded!"
 msgstr "មិន​អាច​ផ្ទុក​ឯកសារ !"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "ទ្រង់ទ្រាយ​នៃ​ទំព័រ​ថ្មី​ នឹង​ត្រូវ​បាន​​​​សម្រួល​ ។​\nតើ​​អ្នក​​ចង់​​សម្រួល​​​វត្ថុ​​ដែរ​​ឬ​ ?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1884,8 +1884,8 @@ msgid  "~Edit"
 msgstr "កែ​សម្រួល​ "
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "អំពើ​នេះនឹង​​លុប​បញ្ជី​អំពើ​ដែល​អាច​មិន​ធ្វើវិញ ។​\nការ​ផ្លាស់​ប្តូរ​មុន​ៗដែលបាន​ធ្វើ​ឡើង​ចំពោះ​ឯកសារ​ នៅ​តែ​មាន​សុពលភាព\nប៉ុន្តែ​មិន​អាច​មិន​ធ្វើ​វិញ​បាន​ទេ ។ តើ​អ្នក​ចង់​បន្ត និង\nផ្តល់​រចនា​ស្លាយ​ថ្មី​ឬ​ទេ ?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1904,8 +1904,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "មិន​អាច​កំណត់​ទ្រង់ទ្រាយ​ឯកសារ​ លើ​ម៉ាស៊ីន​បោះពុម្ព​ដែល​បាន​បញ្ជាក់ ។"
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "ក្រាហ្វិក​នេះ​ត្រូវ​បាន​តភ្ជាប់​ទៅ​ឯកសារ​មួយ ។\nតើ​អ្នក​ចង់​ផ្តាច់​ការ​ភ្ជាប់​ក្រាហ្វិក​ ដើម្បី​កែ​សម្រួល​វា​ឬទេ ?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2016,8 +2016,8 @@ msgid  " (Outline)"
 msgstr "(គ្រោង)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "មាត្រដ្ឋាន​ដែល​បាន​បញ្ជាក់​ ​មិន​ត្រឹមត្រូវឡើយ ។\nតើ​អ្នក​ចង់​បញ្ចូល​ថ្មី​មួយ​ឬ​ទេ ?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2300,8 +2300,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "វា​មិន​អាច​ទៅ​រួច​ទេ ដើម្បី​បំបែក​ក្រុម​វត្ថុ​គំនូរ​​ទាំង​អស់ ។"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "ការ​រចនា​មួយ​មាន​ឈ្មោះ​នេះ​រួច​ហើយ ។​\nតើ​អ្នក​ចង់​ជំនួស​វា​ឬ​ទេ ?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2416,8 +2416,8 @@ msgid  "Graphics filter"
 msgstr "តម្រង​ក្រាហ្វិក"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-msgid  "The file %\nis not a valid sound file !"
-msgstr "ឯកសារ %\nមិន​មែន​ជា​ឯកសារ​សំឡេង​ត្រឹមត្រូវ !"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -3953,7 +3953,7 @@ msgstr "រូបភាព​បញ្ឈរ"
 
 #: source/ui/dlg/vectdlg.src#DLG_VECTORIZE.GRP_PRGS.FixedText.Text
 msgid  "Progress"
-msgstr "វឌ្ឍន​​ភាព"
+msgstr "វឌ្ឍនភាព"
 
 #: source/ui/dlg/vectdlg.src#DLG_VECTORIZE.WND_PRGS.Window.Text
 msgid  "Progress"

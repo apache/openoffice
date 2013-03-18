@@ -695,18 +695,22 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr "बिना प्रदर्शन का %PRODUCTNAME के प्रयोग को सक्रिय करने के लिए घटक"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
+#, fuzzy
 msgid  "Information"
 msgstr "सूचना"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
+#, fuzzy
 msgid  "Internet"
 msgstr "इन्टरनेट"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
+#, fuzzy
 msgid  "Java"
 msgstr "जावा"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
+#, fuzzy
 msgid  "Fun&More"
 msgstr "मनोरंजनादि (&M)"
 
@@ -715,22 +719,27 @@ msgid  "%PRODUCTNAME API"
 msgstr ""
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
+#, fuzzy
 msgid  "Travel"
 msgstr "यात्रा"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
+#, fuzzy
 msgid  "Chapters"
 msgstr "अध्याय"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
+#, fuzzy
 msgid  "Files"
 msgstr "फ़ाइल"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
+#, fuzzy
 msgid  "From Template"
 msgstr "नमूना से..."
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
+#, fuzzy
 msgid  "Open Document"
 msgstr "दस्तावेज़ खोलें"
 
@@ -1492,7 +1501,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION में ज्यार्जियाइ
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH_YU
 #, fuzzy
 msgid  "Serbian (Latin)"
-msgstr "सर्बियन (लैटिन)"
+msgstr "सर्बियाई (लातिन)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU
 #, fuzzy
@@ -1522,7 +1531,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION में कुर्दिश समर�
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR_CS
 #, fuzzy
 msgid  "Serbian (Cyrillic)"
-msgstr "सर्बियन (सिरिलिक)"
+msgstr "सर्बियाई (सिरिलिक)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
 #, fuzzy
@@ -1891,6 +1900,7 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
+#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "ई-मेल मेलमिलान"
 
@@ -1907,14 +1917,17 @@ msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting lang
 msgstr ""
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
+#, fuzzy
 msgid  "Quickstarter"
 msgstr "द्रुत आरंभकर्ता"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
+#, fuzzy
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
 msgstr "तंत्र पर बेसिक घटक तंत्र के आरंभ होने पर लोड करता है %PRODUCTNAME %PRODUCTVERSION के आरंभन समय को त्वरित करने के लिए."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
+#, fuzzy
 msgid  "Software Development Kit (SDK)"
 msgstr "सॉफ़्टवेयर डेवलेपमेंट किट (SDK)"
 
@@ -1935,14 +1948,17 @@ msgid  "HTML Document"
 msgstr ""
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
+#, fuzzy
 msgid  "Text Document"
 msgstr "पाठ दस्तावेज़"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
 msgstr "लेखक के प्रयोग से पत्र, रिपोर्ट, दस्तावेज़ में पाठ व आरेख बनाएं व संपादित करें."
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+#, fuzzy
 msgid  "&New"
 msgstr "नया (&N)"
 
@@ -1975,42 +1991,52 @@ msgid  "HTML Document Template"
 msgstr ""
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
+#, fuzzy
 msgid  "Microsoft Word 97-2003 Document"
 msgstr "माइक्रोसॉफ़्ट वर्ड 97-2003 दस्तावेज़"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
+#, fuzzy
 msgid  "Microsoft Word Document"
 msgstr "माइक्रोसॉफ़्ट वर्ड दस्तावेज़"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
+#, fuzzy
 msgid  "Microsoft Word 97-2003 Template"
 msgstr "माइक्रोसॉफ़्ट वर्ड 97-2003 नमूना ख़ाका"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
+#, fuzzy
 msgid  "Microsoft Word Template"
 msgstr "माइक्रोसॉफ़्ट वर्ड नमूना ख़ाका"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
+#, fuzzy
 msgid  "Rich Text Document"
 msgstr "समृद्ध पाठ दस्तावेज़"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
+#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME लेखक"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
 msgstr "लेखक के प्रयोग से पत्र, रिपोर्ट, दस्तावेज़ में पाठ व आरेख बनाएं व संपादित करें."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
+#, fuzzy
 msgid  "Program Module"
 msgstr "प्रोग्राम मॉड्यूल"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
+#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "अनुप्रयोग %PRODUCTNAME लेखक"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
+#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "%PRODUCTNAME लेखक"
 
@@ -2019,10 +2045,12 @@ msgid  "Help about %PRODUCTNAME Writer"
 msgstr ""
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
+#, fuzzy
 msgid  "LaTeX Export"
 msgstr "लेटेक्स निर्यात"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
+#, fuzzy
 msgid  "LaTeX export filter for Writer documents."
 msgstr "राइटर दस्तावेज़ के लिए लेटेक्स निर्यात फ़िल्टर."
 

@@ -341,7 +341,7 @@ msgstr "~Tituluaren errenkada"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
 msgid  "~Formula text"
-msgstr "~Formularen testua"
+msgstr "Dokumentuaren izena inprimatuko den edo ez zehazten du."
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
 msgid  "B~order"
@@ -353,15 +353,15 @@ msgstr "Inprimatzeko formatua"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
 msgid  "O~riginal size"
-msgstr "E~rtzak"
+msgstr "J~atorrizko tamaina"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 msgid  "Fit to ~page"
-msgstr "Ertz mehe bat aplikatzen dio formularen areari inprimatzean."
+msgstr "Doitu ~orrialdeari"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 msgid  "~Scaling"
-msgstr "Tamaina"
+msgstr "~Eskala"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
 msgid  "Miscellaneous options"
@@ -444,12 +444,12 @@ msgid  "~Delete"
 msgstr "E~zabatu"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr "'StarMath' letra-tipoa ez dago instalaturik.\nLetra-tipo hori gabe %PRODUCTNAME Math ez da behar bezala ibiliko.\nInstalatu letra-tipo hori eta berrabiarazi %PRODUCTNAME Math."
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "Aldaketak lehenespen gisa gorde behar dira?\n\nAldaketa horiek formula berri guztiei aplikatuko zaizkie."
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"

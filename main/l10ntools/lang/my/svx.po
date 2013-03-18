@@ -971,14 +971,12 @@ msgid  "~Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_SAVE.String.Text
-#, fuzzy
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "ပေါ်လာသော ဂရပ်ဖစ်ပုံ အထူးပြုထားသည်။ \nပြောင်းလဲမှုများ သိမ်းရန် ဆန္ဒရှိပါသလား?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/imapdlg.src#STR_IMAPDLG_MODIFY.String.Text
-#, fuzzy
-msgid  "The ImageMap has been modified.\nDo you want to save the changes?"
-msgstr "ပေါ်လာသော ဂရပ်ဖစ်ပုံ အထူးပြုထားသည်။ \nပြောင်းလဲမှုများ သိမ်းရန် ဆန္ဒရှိပါသလား?"
+msgid  "The ImageMap has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/hdft.src#_TEXT_FT_LMARGIN.#define.Text
 #, fuzzy
@@ -1008,7 +1006,7 @@ msgstr "တူညီသော မာတိကာ ဘယ် / ညာ"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_DIST.FixedText.Text
 #, fuzzy
 msgid  "~Spacing"
-msgstr "လပ်နေသောနေရာ"
+msgstr "နေရာလပ်"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_DYNSPACING.CheckBox.Text
 #, fuzzy
@@ -1081,9 +1079,8 @@ msgid  "~More..."
 msgstr "ပို၍..."
 
 #: source/dialog/hdft.src#RID_SVXQBX_DELETE_HEADFOOT.QueryBox.Message
-#, fuzzy
-msgid  "Removing headers or footers deletes the contents.\nDo you want to delete this text?"
-msgstr "ဖယ်ရှားသော စာမျက်နှာ ထိပ်များ (သို့) အောက်ခြေများသည် မာတိကာများကို ဖျက်သည်။ \nဤစာသား ဖျက်ရန် ဆန္ဒရှိပါသလား?"
+msgid  "Removing headers or footers deletes the contents.\\nDo you want to delete this text?"
+msgstr ""
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_LEFT.String.Text
 #, fuzzy
@@ -1296,10 +1293,12 @@ msgid  "Line of text"
 msgstr "စာသား၏လိုင်း"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.GRP_Q.FixedLine.Text
+#, fuzzy
 msgid  "Colors"
 msgstr "အရောင်များ"
 
 #: source/dialog/bmpmask.src#RID_SVXDLG_BMPMASK.FT_1.FixedText.Text
+#, fuzzy
 msgid  "Source color"
 msgstr "မူရင်း အရောင်"
 
@@ -1386,9 +1385,8 @@ msgid  "%PRODUCTNAME Document Recovery"
 msgstr "%PRODUCTNAME မှတ်တမ်းမှတ်ရာ ပြန်ကောင်းလာခြင်း"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_DESCR.FixedText.Text
-#, fuzzy
-msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\n\nThe 'Status' column shows whether the document could be recovered."
-msgstr "အောက်ပါ စာရင်းရှိ မှတ်တမ်းမှတ်ရာများ၏ ပြန်ကောင်းလာသော လုပ်ငန်းစဉ် စတင်ရန် စတင် ပြန်ကောင်းလာခြင်း('Start Recovery')ကို နှိပ်ပါ။ \n\nမှတ်တမ်းမှတ်ရာ ပြန်ကောင်းလာနိုင်ကြောင်း လက်ရှိအခြေအနေပြ( 'Status') ကော်လံအကန့်သည် မှတ်တမ်းမှတ်ရာ ပြန်ကောင်း မကောင်းကို ပြသည်။"
+msgid  "Press 'Start Recovery' to start the recovery process of the documents listed below.\\n\\nThe 'Status' column shows whether the document could be recovered."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.FT_RECOV_PROGR.FixedText.Text
 #, fuzzy
@@ -1401,9 +1399,8 @@ msgid  "Status of recovered documents:"
 msgstr "ပြန်ကောင်းလာသည့် မှတ်တမ်းမှတ်ရာများ၏ လက်ရှိအခြေအနေ -"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_HEADERBAR.String.Text
-#, fuzzy
-msgid  "Document Name\tStatus"
-msgstr "မှတ်တမ်းမှတ်ရာ အမည် \t လက်ရှိ အခြေအနေ"
+msgid  "Document Name\\tStatus"
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.BTN_RECOV_NEXT.PushButton.Text
 #, fuzzy
@@ -1450,9 +1447,8 @@ msgid  "A report of the crash was created to help us identify the reason why %PR
 msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH_DESCR.String.Text
-#, fuzzy
-msgid  "Recovery of your documents was finished.\nClick 'Finish' to see your documents."
-msgstr "မှတ်တမ်းမှတ်ရာများပြန်ကောင်းလာခြင်းပြီးပြီ။\nသင့်မှတ်တမ်းမှတ်ရာများကို မြင်ရန် ‘ပြီးပြီ’ ကို ကလစ်နှိပ်ပါ။"
+msgid  "Recovery of your documents was finished.\\nClick 'Finish' to see your documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERYONLY_FINISH.String.Text
 #, fuzzy
@@ -1465,9 +1461,8 @@ msgid  "Are you sure you want to cancel the %PRODUCTNAME document recovery?"
 msgstr "%PRODUCTNAME မှတ်တမ်းမှတ်ရာ ပြန်ကောင်းလာခြင်း ရုတ်သိမ်းရန် သေချာပြီလား?"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_DESCR.FixedText.Text
-#, fuzzy
-msgid  "The automatic recovery process was interrupted.\n\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
-msgstr "အလိုအလျောက် တိုးတက်မှု ပြန်ကောင်းလာခြင်း အလုပ်လုပ်စဉ် ရပ်ဆိုင်းသွားအောင် လုပ်ထားသည်။ \n\n အောက်ပါစာရင်းရှိ မှတ်တမ်းမှတ်ရာများသည် အကယ်၍ သိမ်းပါ ('Save') ကို ကလစ်နှိပ်ပါက မှတ်ချက်ရှိသော ဖိုင်တွဲတွင် သိမ်းထားရလိမ့်မည်။ မှတ်တမ်းမှတ်ရာများ မသိမ်းထားလဲဘဲ စွမ်းရည်ကိရိယာ ပိတ်ရန် ရုတ်သိမ်းပါ ('Cancel')ကို ကလစ်နှိပ်ပါ။"
+msgid  "The automatic recovery process was interrupted.\\n\\nThe documents listed below will be saved in the folder noted below if you click 'Save'. Click 'Cancel' to close the wizard without saving the documents."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_DOCRECOVERY_BROKEN.FT_BROKEN_FILELIST.FixedText.Text
 #, fuzzy
@@ -1495,7 +1490,7 @@ msgid  "Welcome to the %PRODUCTNAME %PRODUCTVERSION Error Report"
 msgstr "%PRODUCTNAME %PRODUCTVERSION အစီရင်ခံစာ အမှားမှ ကြိုဆိုပါသည်"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.FT_RECOV_DESCR.FixedText.Text
-msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\n\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\nCustomer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\nwww.oracle.com/html/services-privacy-policy.html"
+msgid  "This error report tool gathers information about how %PRODUCTNAME is working and sends it to Apache OpenOffice to help improve future versions.\\n\\nIt's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\\n\\nCustomer Privacy\\nThe information gathered is limited to data concerning the state of %PRODUCTNAME %PRODUCTVERSION when the error occurred. Other information about passwords or document contents is not collected.\\n\\nThe information will only be used to improve the quality of %PRODUCTNAME and will not be shared with third parties.\\nFor more information on Apache OpenOffice's privacy policy, visit\\nwww.oracle.com/html/services-privacy-policy.html"
 msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_ERR_REP_WELCOME.BTN_RECOV_PREV.PushButton.Text
@@ -1598,9 +1593,8 @@ msgid  "~Port"
 msgstr "ပေါ့ထ်"
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_OPTIONS.FT_ERROPT_DESCRIPTION.FixedText.Text
-#, fuzzy
-msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr "%PRODUCTNAME အမှား အစီရင်ခံစာ ကိရိယာ အမှား အစီရင်ခံစာများ ပို့ရန် ဖြစ်နိုင်သည့် အင်တာနက်နှင့် ချိတ်ဆက်ထားရန် လိုအပ်သည်။ \nတခါတရံ ကုမ္ပဏီများသည် ကွန်ရက်စနစ် ကာကွယ်ရန် ကာကွယ်ရေးစနစ်တစ်ခုနှင့် ချိတ်ဆက်ခြင်းတွင် ကိုယ်စားလှယ် ချိတ်ထားသော ကွန်ပျူတာများသို့ အချက်အလက် ပေးပို့ခြင်းကို သုံးသည်။ \nအကယ်၍ ဤအရာသည် သင့်အခြေအနေသို့ လက်တွေ့ အသုံးချပါက၊ ချိတ်ထားသော ကွန်ပျူတာများသို့ အချက်အလက် ပေးပို့ခြင်းအတွက် ကွန်ရက် လိပ်စာနှင့် ပေါ့ထ် သတ်မှတ်ရန် ဖြစ်သည်။"
+msgid  "The %PRODUCTNAME Error Report tool needs to be connected to the Internet to be able to send error reports.\\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVX_MDLG_ERR_REP_PREVIEW.ModalDialog.Text
 #, fuzzy
@@ -2139,7 +2133,7 @@ msgstr "နယ်နိမိတ် ရွေးနိုင်ခြင်း"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.1.ItemList.item
 #, fuzzy
 msgid  "Left border line"
-msgstr "ဘယ်ဖက် နိယ်နမိတ်လိုင်း"
+msgstr "ဘယ်ဖက် နယ်နိမိတ်လိုင်း"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.2.ItemList.item
 #, fuzzy
@@ -2159,7 +2153,7 @@ msgstr "အောက်ခြေဖက် နယ်နိမိတ်လို�
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.5.ItemList.item
 #, fuzzy
 msgid  "Horizontal border line"
-msgstr "ရေပြင်ညီ နယ်နိမိတ်လိုင်း"
+msgstr "ရေပြင်ညီနယ်နိမိတ်လိုင်း"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.6.ItemList.item
 #, fuzzy
@@ -3123,9 +3117,8 @@ msgid  "As Button"
 msgstr "နှိပ်ရန် ခလုတ်အဖြစ်"
 
 #: source/dialog/hyprlink.src#RID_SVXQB_DONTEXIST.QueryBox.Message
-#, fuzzy
-msgid  "This URL does not exist.\nInsert anyway?"
-msgstr "ဤ URL မတည်ရှိပါ။ \nမည်သည့်နည်းနဲ့မဆို ထည့်သွင်းအလား။"
+msgid  "This URL does not exist.\\nInsert anyway?"
+msgstr ""
 
 #: source/dialog/sdstring.src#RID_SVXSTR_SOLID.String.Text
 #, fuzzy
@@ -3260,7 +3253,7 @@ msgstr "မီးခိုးပြာရောင်"
 #: source/dialog/sdstring.src#RID_SVXSTR_ORANGE.String.Text
 #, fuzzy
 msgid  "Orange"
-msgstr "လိမ္မော်ရောင်"
+msgstr "လိမ္မော်"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_ARROW.String.Text
 #, fuzzy
@@ -4004,9 +3997,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_MODIFY.String.Text
-#, fuzzy
-msgid  "The contour has been modified.\nDo you want to save the changes?"
-msgstr "ကွန်တိုမျဉ်း အထူးပြုထားသည်။ \nပြောင်းလဲမှုများကို သိမ်းရန် ဆန္ဒရှိပါသလား?"
+msgid  "The contour has been modified.\\nDo you want to save the changes?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_NEWPIPETTE.String.Text
 #, fuzzy
@@ -4014,9 +4006,8 @@ msgid  "Do you want to create a new contour?"
 msgstr "ကွန်တိုမျဉ်းအသစ် ဖန်တီးရန် ဆန္ဒရှိပါသလား?"
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_WORKPLACE.String.Text
-#, fuzzy
-msgid  "Setting a new workspace will\ncause the contour to be deleted.\nAre you sure you want to continue?"
-msgstr "အလုပ်နေရာလပ်အသစ် ရွေးနိုင်ခြင်းသည် \nကွန်တိုမျဉ်း ဖျက်ရန် အကြောင်း ဖြစ်သည်။\n ဆက်လုပ်ရန် ဆန္ဒရှိပါသလား?"
+msgid  "Setting a new workspace will\\ncause the contour to be deleted.\\nAre you sure you want to continue?"
+msgstr ""
 
 #: source/dialog/contdlg.src#STR_CONTOURDLG_LINKED.String.Text
 #, fuzzy
@@ -4587,418 +4578,522 @@ msgid  "Switch"
 msgstr ""
 
 #: source/engine3d/string3d.src#RID_SVX_3D_CREATE_LATHE.String.Text
+#, fuzzy
 msgid  "Create 3D rotation object"
 msgstr "အရာဝတ္ထု အလှည့်ကျ လှည့်ပေးခြင်း 3D ကို ဖန်တီးပါ"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXCHANGE_PASTE.String.Text
+#, fuzzy
 msgid  "Insert object(s)"
 msgstr "အရာဝတ္ထု(များ) စီချယ်ပါ"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_SEGMENTS.String.Text
+#, fuzzy
 msgid  "Number of segments"
 msgstr "စက်ဝိုင်းပြတ်များ၏ နံပါတ်"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_DEEPTH.String.Text
+#, fuzzy
 msgid  "Object depth"
 msgstr "အရာဝတ္ထုများ နက်ရှိုင်းမှု"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_FOCAL.String.Text
+#, fuzzy
 msgid  "Focal length"
 msgstr "ဆုံတာ"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_CAMPOS.String.Text
+#, fuzzy
 msgid  "Camera position"
 msgstr "ကင်မရာ ရပ်တည်ချက်"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ROTATE.String.Text
+#, fuzzy
 msgid  "Rotate 3D object"
 msgstr "3D အရာဝတ္ထု အလှည့်ကျ လည်စေပါ"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_EXTRUDE.String.Text
+#, fuzzy
 msgid  "Create extrusion object"
 msgstr "အရာဝတ္ထု ပုံသွန်းလောင်းခြင်း ဖန်တီးပါ"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_LATHE.String.Text
+#, fuzzy
 msgid  "Create rotation object"
 msgstr "အရာဝတ္ထု အလှည့်ကျ လှည့်ပေးခြင်း ဖန်တီးပါ"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_BREAK_LATHE.String.Text
+#, fuzzy
 msgid  "Split 3D object"
 msgstr "3D အရာဝတ္ထု အလျားလိုက် ကွဲစေပါ"
 
 #: source/engine3d/string3d.src#RID_SVX_3D_UNDO_ATTRIBUTES.String.Text
+#, fuzzy
 msgid  "3D Attributes"
 msgstr "3D ပင်ကိုယ်အရည်အချင်းများ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.DockingWindow.Text
+#, fuzzy
 msgid  "3D Effects"
 msgstr "3D အကျိုးသက်ရောက်မှုများ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Geometry"
 msgstr "ဂျီဩမေတြီ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Shading"
 msgstr "အလင်း အမှောင် သွင်းခြင်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Illumination"
 msgstr "အလင်းရောင်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Textures"
 msgstr "သဘာဝကျအောင်ပြုလုပ်ခြင်းများ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Material"
 msgstr "ရုပ်ဝတ္ထု"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Update"
 msgstr "နောက်ဆုံးပေါ်အခြေအနေ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_ASSIGN.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Assign"
 msgstr "သတ်မှတ်ပါ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_CHANGE_TO_3D.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Convert to 3D"
 msgstr "သုံးဖက်မြင်သို့ပြောင်းပါ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LATHE_OBJ.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Convert to Lathe Object"
 msgstr "အရာဝတ္ထုကို ဆုံလည်ပုံစံပြောင်းပါ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_PERSPECTIVE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Perspective On/Off"
 msgstr "အကွာအဝေးမြင်ကွင်း ဖွင့်/ပိတ်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_GEOMETRIE.FixedLine.Text
+#, fuzzy
 msgid  "Geometry"
 msgstr "ဂျီဩမေတြီ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_PERCENT_DIAGONAL.FixedText.Text
+#, fuzzy
 msgid  "R~ounded edges"
 msgstr "ပတ်ပတ်လည် အနားစောင်းများ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_BACKSCALE.FixedText.Text
+#, fuzzy
 msgid  "~Scaled depth"
 msgstr "စကေး နက်ရှိုင်းမှု"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_END_ANGLE.FixedText.Text
+#, fuzzy
 msgid  "~Rotation angle"
 msgstr "ထောင့်ချိုး အလှည့်ကျ လှည့်ပေးခြင်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
+#, fuzzy
 msgid  " degree(s)"
 msgstr "ဒီဂရီ (များ)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
+#, fuzzy
 msgid  "~Depth"
 msgstr "နက်ရှိုင်းမှု"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SEGMENTS.FixedLine.Text
+#, fuzzy
 msgid  "Segments"
 msgstr "စက်ဝိုင်းပြတ်များ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_HORIZONTAL.FixedText.Text
+#, fuzzy
 msgid  "~Horizontal"
 msgstr "ရေပြင်ညီ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_VERTICAL.FixedText.Text
+#, fuzzy
 msgid  "~Vertical"
 msgstr "မျဉ်းမတ်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_NORMALS.FixedLine.Text
+#, fuzzy
 msgid  "Normals"
 msgstr "သာမန်များ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "အရာဝတ္ထု- တိကျသော"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Flat"
 msgstr "ပြန့်သော"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Spherical"
 msgstr "စက်လုံး"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_INVERT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Invert Normals"
 msgstr "သာမန်များသို့ပြောင်းပါ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TWO_SIDED_LIGHTING.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Double-Sided Illumination"
 msgstr "နှစ်ထပ်မျဉ်း အလင်းရောင်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_DOUBLE_SIDED.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Double-Sided"
 msgstr "လိုင်း-နှစ်ထပ်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SHADEMODE.FixedText.Text
+#, fuzzy
 msgid  "~Mode"
 msgstr "နည်းလမ်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item1.StringList.item
+#, fuzzy
 msgid  "Flat"
 msgstr "ပြန့်သော"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item2.StringList.item
+#, fuzzy
 msgid  "Phong"
 msgstr "ဖွန်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_SHADEMODE.item3.StringList.item
+#, fuzzy
 msgid  "Gouraud"
 msgstr "ဂူရို့"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_SHADOW.FixedLine.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "အရိပ်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SHADOW_3D.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "3D Shadowing On/Off"
 msgstr "သုံးဖက်မြင်အရိပ်ထည့်ခြင်း ဖွင့်/ပိတ်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_SLANT.FixedText.Text
+#, fuzzy
 msgid  "S~urface angle"
 msgstr "အပေါ်ယံ ထောင့်ချိုး"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_SLANT.MetricField.CustomUnitText
+#, fuzzy
 msgid  " degree(s)"
 msgstr "ဒီဂရီ (များ)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_CAMERA.FixedLine.Text
+#, fuzzy
 msgid  "Camera"
 msgstr "ကင်မရာ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DISTANCE.FixedText.Text
+#, fuzzy
 msgid  "~Distance"
 msgstr "အကွာအဝေး"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_FOCAL_LENGTH.FixedText.Text
+#, fuzzy
 msgid  "~Focal length"
 msgstr "ဆုံတာ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_REPRESENTATION.FixedLine.Text
+#, fuzzy
 msgid  "Shading"
 msgstr "အလင်း အမှောင် သွင်းခြင်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_LIGHTSOURCE.FixedText.Text
+#, fuzzy
 msgid  "~Light source"
 msgstr "မူလအလင်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_1.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 1"
 msgstr "အလင်းရင်းမြစ် ၁"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_2.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 2"
 msgstr "အလင်းရင်းမြစ် ၂"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_3.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 3"
 msgstr "အလင်းရင်းမြစ် ၃"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_4.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 4"
 msgstr "အလင်းရင်းမြစ် ၄"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_5.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 5"
 msgstr "အလင်းရင်းမြစ် ၅"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_6.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 6"
 msgstr "အလင်းရင်းမြစ် ၆"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_7.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 7"
 msgstr "အလင်းရင်းမြစ် ၇"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_8.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Light Source 8"
 msgstr "အလင်းရင်းမြစ် ၈"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "အရောင်ဒိုင်ယာလော့"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
+#, fuzzy
 msgid  "~Ambient light"
 msgstr "ဝန်းကျင် အလင်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "အရောင်ဒိုင်ယာလော့"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
+#, fuzzy
 msgid  "Illumination"
 msgstr "အလင်းရောင်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_KIND.FixedText.Text
+#, fuzzy
 msgid  "~Type"
 msgstr "ပုံစံ ရိုက်ပါ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_LUMINANCE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Black & White"
 msgstr "အဖြူနှင့်အမဲ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Color"
 msgstr "အရောင်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_MODE.FixedText.Text
+#, fuzzy
 msgid  "~Mode"
 msgstr "နည်းလမ်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_REPLACE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Only Texture"
 msgstr "သဘာဝကျအောင်ပြုလုပ်ခြင်းပဲ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_MODULATE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Texture and Shading"
 msgstr "သဘာဝကျအောင်ပြုလုပ်ခြင်း နှင့် အရိပ်ထည့်ခြင်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_BLEND.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Texture, Shadow and Color"
 msgstr "သဘာဝကျအောင်ပြုလုပ်ခြင်း၊ အရိပ် နှင့် အရောင်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_X.FixedText.Text
+#, fuzzy
 msgid  "~Projection X"
 msgstr "X အစွန်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "အရာဝတ္ထု- တိကျသော"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Parallel"
 msgstr "မျဉ်းပြိုင်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_X.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Circular"
 msgstr "စက်ဝိုင်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_PROJECTION_Y.FixedText.Text
+#, fuzzy
 msgid  "P~rojection Y"
 msgstr "Y အစွန်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_OBJECT_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Object-Specific"
 msgstr "အရာဝတ္ထု- တိကျသော"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_PARALLEL_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Parallel"
 msgstr "မျဉ်းပြိုင်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_CIRCLE_Y.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Circular"
 msgstr "စက်ဝိုင်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_TEX_FILTER.FixedText.Text
+#, fuzzy
 msgid  "~Filtering"
 msgstr "စင်အောင်စစ်ထုတ်သည်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEX_FILTER.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Filtering On/Off"
 msgstr "စစ်ထုတ်ခြင်း ဖွင့်/ပိတ်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_TEXTURE.FixedLine.Text
+#, fuzzy
 msgid  "Textures"
 msgstr "သဘာဝကျအောင်ပြုလုပ်ခြင်းများ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_FAVORITES.FixedText.Text
+#, fuzzy
 msgid  "~Favorites"
 msgstr "အကြိုက်ဆုံးများ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item1.StringList.item
+#, fuzzy
 msgid  "User-defined"
 msgstr "အသုံးပြုသူ - အဓိပ္ပာယ်ဖော်ခြင်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item2.StringList.item
+#, fuzzy
 msgid  "Metal"
 msgstr "သတ္တု"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item3.StringList.item
+#, fuzzy
 msgid  "Gold"
 msgstr "ရွှေ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item4.StringList.item
+#, fuzzy
 msgid  "Chrome"
 msgstr "သတ္တုထည်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item5.StringList.item
+#, fuzzy
 msgid  "Plastic"
 msgstr "ပလပ်စတစ်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.LB_MAT_FAVORITES.item6.StringList.item
+#, fuzzy
 msgid  "Wood"
 msgstr "သစ်သား"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_COLOR.FixedText.Text
+#, fuzzy
 msgid  "~Object color"
 msgstr "အရာဝတ္ထု အရောင်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "အရောင်ဒိုင်ယာလော့"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
+#, fuzzy
 msgid  "~Illumination color"
 msgstr "ရောင်စုံ အလင်းရောင်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_EMISSION_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "အရောင်ဒိုင်ယာလော့"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MAT_SPECULAR.FixedLine.Text
+#, fuzzy
 msgid  "Specular"
 msgstr "အလင်းရောင်စဉ်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR.FixedText.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "အရောင်"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_SPECULAR_COLOR.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Colors Dialog"
 msgstr "အရောင်ဒိုင်ယာလော့"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_SPECULAR_INTENSITY.FixedText.Text
+#, fuzzy
 msgid  "I~ntensity"
 msgstr "စူးစိုက်ခြင်း"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_MATERIAL.FixedLine.Text
+#, fuzzy
 msgid  "Material"
 msgstr "ရုပ်ဝတ္ထု"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FAVORITE.String.Text
+#, fuzzy
 msgid  "Favorite"
 msgstr "အကြိုက်ဆုံး"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_X.String.Text
+#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Y.String.Text
+#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_Z.String.Text
+#, fuzzy
 msgid  "Z"
 msgstr "Z"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_R.String.Text
+#, fuzzy
 msgid  "R:"
 msgstr "R:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_G.String.Text
+#, fuzzy
 msgid  "G:"
 msgstr "G:"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT3D_FIX_B.String.Text
+#, fuzzy
 msgid  "B:"
 msgstr "B:"
 
@@ -5007,90 +5102,112 @@ msgid  "Color Light Preview"
 msgstr ""
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_DELETEROWS.MenuItem.Text
+#, fuzzy
 msgid  "Delete Rows"
 msgstr "အတန်းလိုက်များ ဖျက်ပါ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_SAVE.MenuItem.Text
+#, fuzzy
 msgid  "Save Record"
 msgstr "မှတ်တမ်း သိမ်းပါ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_ROWS.SID_FM_RECORD_UNDO.MenuItem.Text
+#, fuzzy
 msgid  "Undo: Data entry"
 msgstr "ပြန်ခေါ်ပါ - အချက်အလက်များအဝင်"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.MenuItem.Text
+#, fuzzy
 msgid  "Insert ~Column"
 msgstr "ကော်လံအကန့် ထည့်သွင်းပါ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Text Box"
 msgstr "စာသား သေတ္တာ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CHECKBOX.MenuItem.Text
+#, fuzzy
 msgid  "Check Box"
 msgstr "သေတ္တာ စစ်ဆေးပါ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_COMBOBOX.MenuItem.Text
+#, fuzzy
 msgid  "Combo Box"
 msgstr "ကော်မ်ဘိုသေတ္တာ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_LISTBOX.MenuItem.Text
+#, fuzzy
 msgid  "List Box"
 msgstr "စာရင်း သေတ္တာ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_DATEFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Date Field"
 msgstr "အချက်အလက်များနေရာကွက်"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TIMEFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Time Field"
 msgstr "အချိန် နေရာကွက်"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_NUMERICFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Numeric Field"
 msgstr "ကိန်းဂဏန်းနှင့် သက်ဆိုင်သော နေရာကွက်"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_CURRENCYFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Currency Field"
 msgstr "အများလက်ခံမှု နေရာကွက်"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_PATTERNFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Pattern Field"
 msgstr "နမူနာပုံစံ နေရာကွက်"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_FORMATTEDFIELD.MenuItem.Text
+#, fuzzy
 msgid  "Formatted Field"
 msgstr "စီစဉ်ဖွဲ့စည်းမှုပုံစံ နေရာကွက်"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_INSERTCOL.SID_FM_TWOFIELDS_DATE_N_TIME.MenuItem.Text
+#, fuzzy
 msgid  "Date and Time Field"
 msgstr "ရက်စွဲနှင့် အချိန် နေရာကွက်"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_CHANGECOL.MenuItem.Text
+#, fuzzy
 msgid  "~Replace with"
 msgstr "နှင့်အတူ အစားထိုးပါ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_DELETECOL.MenuItem.Text
+#, fuzzy
 msgid  "Delete Column"
 msgstr "ကော်လံအကန့် ဖျက်ပါ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_HIDECOL.MenuItem.Text
+#, fuzzy
 msgid  "~Hide Column"
 msgstr "~ကော်လံအကန့်များ ခေတ္တ ဖျောက်ထားပါ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWCOLS_MORE.MenuItem.Text
+#, fuzzy
 msgid  "~More..."
 msgstr "ပို၍..."
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.SID_FM_SHOWALLCOLS.MenuItem.Text
+#, fuzzy
 msgid  "~All"
 msgstr "အားလုံး"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOWCOLS.MenuItem.Text
+#, fuzzy
 msgid  "~Show Columns"
 msgstr "ကော်လံအကန့်များ ပြပါ"
 
 #: source/fmcomp/gridctrl.src#RID_SVXMNU_COLS.SID_FM_SHOW_PROPERTY_BROWSER.MenuItem.Text
+#, fuzzy
 msgid  "Column..."
 msgstr "ကော်လံအကန့်..."
 
@@ -5105,9 +5222,8 @@ msgid  "Input required in field '#'. Please enter a value."
 msgstr "'#' နေရာကွက်တွင် လိုအပ်မှု သွင်းပါ။ ကိန်းသေ တန်ဖိုးတစ်ခုသို့ ဝင်ရောက်ပေးပါ။"
 
 #: source/form/fmstring.src#RID_ERR_DUPLICATE_NAME.String.Text
-#, fuzzy
-msgid  "Entry already exists.\nPlease choose another name."
-msgstr "အဝင် အဆင်သင့် တည်ရှိသည်။ \nနောက်ထပ် အမည် ရွေးပေးပါ။"
+msgid  "Entry already exists.\\nPlease choose another name."
+msgstr ""
 
 #: source/form/fmstring.src#RID_STR_FORMS.String.Text
 #, fuzzy
@@ -5137,7 +5253,7 @@ msgstr "လှည့်လည် ကြည့်ရှုခြင်း အထ�
 #: source/form/fmstring.src#RID_STR_FORM.String.Text
 #, fuzzy
 msgid  "Form"
-msgstr "ပုံစံ"
+msgstr "လျှောက်လွှာပုံစံ"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.1.String.Text
 #, fuzzy
@@ -5205,9 +5321,8 @@ msgid  "# records will be deleted."
 msgstr "# မှတ်တမ်းများ ဖျက်ရလိမ့်မည်။"
 
 #: source/form/fmstring.src#RID_STR_DELETECONFIRM.String.Text
-#, fuzzy
-msgid  "If you click Yes, you won't be able to undo this operation.\nDo you want to continue anyway?"
-msgstr "အကယ်၍ အဟုတ်(Yes) ကို ကလစ်နှိပ်ပါက ဤလုပ်ဆောင်မှု ပြန်ခေါ်ရန် ရနိုင်လိမ့်မည် မဟုတ်ပါ။! \nမည်သည့်နည်းနှင့်မဆို ဆက်လုပ်ရန် ဆန္ဒရှိပါသလား?"
+msgid  "If you click Yes, you won't be able to undo this operation.\\nDo you want to continue anyway?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_ERR_NO_ELEMENT.String.Text
 #, fuzzy
@@ -5430,9 +5545,8 @@ msgid  "<AutoField>"
 msgstr "<အလိုလို နေရာကွက်>"
 
 #: source/form/fmstring.src#RID_QRY_SAVEMODIFIED.QueryBox.Message
-#, fuzzy
-msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr "လတ်တလော ပုံစံ၏ မာတိကာ အထူးပြုထားသည်။ \nသင့်ပြောင်းလဲမှုများ သိမ်းရန် ဆန္ဒရှိပါသလား?"
+msgid  "The content of the current form has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/form/fmstring.src#RID_RSC_SQL_INTERNATIONAL.1.String.Text
 #, fuzzy
@@ -5860,686 +5974,846 @@ msgid  "Tabs"
 msgstr "အကွက်ခုန်များ"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "တည်းဖြတ်ပါ"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NULL.MenuItem.Text
+#, fuzzy
 msgid  "~Is Null"
 msgstr "Null ဖြစ်သည်"
 
 #: source/form/filtnav.src#RID_FM_FILTER_MENU.SID_FM_FILTER_IS_NOT_NULL.MenuItem.Text
+#, fuzzy
 msgid  "I~s not Null"
 msgstr "Null မဟုတ်ပါ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Item"
 msgstr "အချက် ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
 msgid  "Add Element"
-msgstr "ဂဏန်း(သို့) ဇယားကွက်တစ်ခုတွင်ပါသော အချက်အလက်ကြမ်း တစ်စု ပေါင်းထည့်ပါ"
+msgstr "ဂဏန်း(သို့)ဇယားကွက်တစ်ခုတွင်ပါသော အချက်အလက်ကြမ်းတစ်စု ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "ပင်ကိုယ်အရည်အချင်း ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "တည်းဖြတ်ပါ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MenuButton.Text
+#, fuzzy
 msgid  "~Models"
 msgstr "ပုံစံများ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "ပေါင်းထည့်ပါ..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "တည်းဖြတ်ပါ..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "ဖယ်ရှားပါ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_INSTANCE.PageItem.Text
+#, fuzzy
 msgid  "Instance"
 msgstr "မူရင်းပျက်သော ကိုယ်ပွား"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_SUBMISSION.PageItem.Text
+#, fuzzy
 msgid  "Submissions"
 msgstr "တင်သွင်းချက်များ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_BINDINGS.PageItem.Text
+#, fuzzy
 msgid  "Bindings"
 msgstr "အနှောင်အဖွဲ့များ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MenuButton.Text
+#, fuzzy
 msgid  "~Instances"
 msgstr "မူရင်းပျက်သော ကိုယ်ပွားများ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "ပေါင်းထည့်ပါ..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "တည်းဖြတ်ပါ..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "ဖယ်ရှားပါ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_SHOW_DETAILS.MenuItem.Text
+#, fuzzy
 msgid  "~Show Details"
 msgstr "အသေးစိတ်အချက်အလက်များ ပြပါ"
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_MODEL.QueryBox.Message
-msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\nDo you really want to delete this model?"
-msgstr "အကျိုးသက်ရောက်သော ထိန်းချုပ်မှုများအားလုံး ဖျက်သော ပုံစံ '$MODELNAME' သည် ဤပုံစံသို့ လောလောဆယ် ချည်နှောင်ထားသည်။ \n ဤပုံစံ ဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+msgid  "Deleting the model '$MODELNAME' affects all controls currently bound to this model.\\nDo you really want to delete this model?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_INSTANCE.QueryBox.Message
-msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\nDo you really want to delete this instance?"
-msgstr "အကျိုးသက်ရောက်သော ထိန်းချုပ်မှုများ အားလုံး ဖျက်သော မူရင်းပျက် ကိုယ်ပွား '$INSTANCENAME' သည် ဤမူရင်းပျက် ကိုယ်ပွားသို့ လောလောဆယ် ချည်နှောင်ထားသည်။ \n ဤမူရင်းပျက် ကိုယ်ပွား ဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+msgid  "Deleting the instance '$INSTANCENAME' affects all controls currently bound to this instance.\\nDo you really want to delete this instance?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ELEMENT.QueryBox.Message
-msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\nDo you really want to delete this element?"
-msgstr "အကျိုးသက်ရောက်သော ထိန်းချုပ်မှုများ အားလုံး ဖျက်သော ဂဏန်း(သို့) ဇယားကွက်တစ်ခုတွင်ပါသော အချက်အလက်ကြမ်းတစ်စု '$ELEMENTNAME' သည် ဤဂဏန်း(သို့) ဇယားကွက်တစ်ခုတွင်ပါသော အချက်အလက်ကြမ်းတစ်စုသို့ လောလောဆယ် ချည်နှောင်ထားသည်။ \n ဤဂဏန်း(သို့) ဇယားကွက်တစ်ခုတွင်ပါသော အချက်အလက်ကြမ်းတစ်စု ဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+msgid  "Deleting the element '$ELEMENTNAME' affects all controls currently bound to this element.\\nDo you really want to delete this element?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_ATTRIBUTE.QueryBox.Message
+#, fuzzy
 msgid  "Do you really want to delete the attribute '$ATTRIBUTENAME'?"
 msgstr "'$ATTRIBUTENAME' ပင်ကိုယ်အရည်အချင်း ဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?  "
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_SUBMISSION.QueryBox.Message
-msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\n\nDo you really want to delete this submission?"
-msgstr "အကျိုးသက်ရောက်သော ထိန်းချုပ်မှုများ အားလုံး ဖျက်သော တင်သွင်းချက် '$SUBMISSIONNAME' သည် ဤတင်သွင်းချက်သို့  လောလောဆယ် ချည်နှောင်ထားသည်။ \n\nဤတင်သွင်းချက် ဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+msgid  "Deleting the submission '$SUBMISSIONNAME' affects all controls currently bound to this submission.\\n\\nDo you really want to delete this submission?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_REMOVE_BINDING.QueryBox.Message
-msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\n\nDo you really want to delete this binding?"
-msgstr "အကျိုးသက်ရောက်သော ထိန်းချုပ်မှုများ အားလုံး ဖျက်သော အနှောင်အဖွဲ့ '$BINDINGNAME' သည် ဤအနှောင်အဖွဲ့သို့ လောလောဆယ် ချည်နှောင်ထားသည်။ \n\nဤအနှောင်အဖွဲ့ ဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+msgid  "Deleting the binding '$BINDINGNAME' affects all controls currently bound to this binding.\\n\\nDo you really want to delete this binding?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_QRY_LINK_WARNING.MessBox.Message
-msgid  "This instance is linked with the form.\n\nThe changes you make to this instance will be lost when the form is reloaded.\n\nHow do you want to proceed?"
-msgstr "ဤမူရင်းပျက် ကိုယ်ပွားသည် ပုံစံနှင့်အတူ ကွင်းဆက်ထားသည်။ \n\nပုံစံများ ပြန်ဆွဲတင်သောအခါ ပြောင်းလဲမှုများ သင်ပြုလုပ်သော ဤမူရင်း ကိုယ်ပွား ပျောက်လိမ့်မည်။ \n\nဘယ်လို ရှေ့ဆက်ချင်ပါသလဲ?"
+msgid  "This instance is linked with the form.\\n\\nThe changes you make to this instance will be lost when the form is reloaded.\\n\\nHow do you want to proceed?"
+msgstr ""
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLNAME.ErrorBox.Message
+#, fuzzy
 msgid  "The name '%1' is not valid in XML. Please enter a different name."
 msgstr " '%1' အမည်သည် XML တွင် မခိုင်လုံပါ။ ခြားနားသောအမည်တစ်ခုသို့ ဝင်ပေးပါ။"
 
 #: source/form/datanavi.src#RID_ERR_INVALID_XMLPREFIX.ErrorBox.Message
+#, fuzzy
 msgid  "The prefix '%1' is not valid in XML. Please enter a different prefix."
 msgstr " '%1' ရှေ့ဆက်သည် XML တွင် မခိုင်လုံပါ။ ခြားနားသော ရှေ့ဆက်တစ်ခုသို့ ဝင်ပေးပါ။"
 
 #: source/form/datanavi.src#RID_ERR_DOUBLE_MODELNAME.ErrorBox.Message
+#, fuzzy
 msgid  "The name '%1' already exists. Please enter a new name."
 msgstr " '%1' အမည် အဆင်သင့် တည်ရှိသည်။ အမည်သစ်တစ်ခုသို့ ဝင်ပေးပါ။"
 
 #: source/form/datanavi.src#RID_ERR_EMPTY_SUBMISSIONNAME.ErrorBox.Message
+#, fuzzy
 msgid  "The submission must have a name."
 msgstr "တင်သွင်းချက်သည် အမည်တစ်ခု ရှိရမည်။"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_ITEM.FixedLine.Text
+#, fuzzy
 msgid  "Item"
 msgstr "အချက်"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "အမည်"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DEFAULT.FixedText.Text
+#, fuzzy
 msgid  "~Default Value"
 msgstr "နဂိုမူလတန်ဖိုးတစ်ခု"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FL_SETTINGS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "ရွေးနိုင်ခြင်းများ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.FT_DATATYPE.FixedText.Text
+#, fuzzy
 msgid  "~Data Type"
 msgstr "အချက်အလက်များ ရိုက်ပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_REQUIRED.CheckBox.Text
+#, fuzzy
 msgid  "~Required"
 msgstr "လိုအပ်ချက်"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_REQUIRED.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "အခြေအနေ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_RELEVANT.CheckBox.Text
+#, fuzzy
 msgid  "R~elevant"
 msgstr "ဆီလျော်သော"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_RELEVANT.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "အခြေအနေ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CONSTRAINT.CheckBox.Text
+#, fuzzy
 msgid  "~Constraint"
 msgstr "အကန့်အသတ်"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CONSTRAINT.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "အခြေအနေ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_READONLY.CheckBox.Text
+#, fuzzy
 msgid  "Read-~only"
 msgstr "ဖတ်ရန်သာ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_READONLY.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "အခြေအနေ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.CB_CALCULATE.CheckBox.Text
+#, fuzzy
 msgid  "Calc~ulate"
 msgstr "တွက်ချက်ပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.PB_CALCULATE.PushButton.Text
+#, fuzzy
 msgid  "Condition"
 msgstr "အခြေအနေ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ELEMENT.String.Text
+#, fuzzy
 msgid  "Element"
 msgstr "ဂဏန်း(သို့)ဇယားကွက်တစ်ခုတွင်ပါသော အချက်အလက်ကြမ်းတစ်စု"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Attribute"
 msgstr "ပင်ကိုယ်အရည်အချင်း"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDLINE_BINDING.String.Text
+#, fuzzy
 msgid  "Binding"
 msgstr "အနှောင်အဖွဲ့"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_DATAITEM.STR_FIXEDTEXT_BINDING.String.Text
+#, fuzzy
 msgid  "Binding expression"
 msgstr "အနှောင်အဖွဲ့ ထုတ်ဖေါ်ခြင်း"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD.MenuItem.Text
+#, fuzzy
 msgid  "Add Item"
 msgstr "အချက် ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ELEMENT.MenuItem.Text
+#, fuzzy
 msgid  "Add Element"
 msgstr "ဂဏန်း(သို့)ဇယားကွက်တစ်ခုတွင်ပါသော အချက်အလက်ကြမ်းတစ်စု ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ATTRIBUTE.MenuItem.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "ပင်ကိုယ်အရည်အချင်း ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "တည်းဖြတ်ပါ"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.ModalDialog.Text
+#, fuzzy
 msgid  "Add Condition"
 msgstr "အခြေအနေ ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_CONDITION.FixedText.Text
+#, fuzzy
 msgid  "~Condition"
 msgstr "အခြေအနေ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.FT_RESULT.FixedText.Text
+#, fuzzy
 msgid  "~Result"
 msgstr "ရလာဒ်"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_CONDITION.PB_EDIT_NAMESPACES.PushButton.Text
+#, fuzzy
 msgid  "~Edit Namespaces..."
 msgstr "Namespaces တည်းဖြတ်ပါ..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.ModalDialog.Text
+#, fuzzy
 msgid  "Namespaces for Forms"
 msgstr "ပုံစံများအတွက် Namespaces"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.FT_NAMESPACES.FixedText.Text
+#, fuzzy
 msgid  "~Namespaces"
 msgstr "အမည် နေရာလပ်များ"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_ADD_NAMESPACE.PushButton.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "ပေါင်းထည့်ပါ..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_EDIT_NAMESPACE.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "တည်းဖြတ်ပါ..."
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.PB_DELETE_NAMESPACE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_PREFIX.String.Text
+#, fuzzy
 msgid  "Prefix"
 msgstr "ရှေ့ဆက်"
 
 #: source/form/datanavi.src#RID_SVXDLG_NAMESPACE_ITEM.STR_HEADER_URL.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.ModalDialog.Text
+#, fuzzy
 msgid  "Add Namespace"
 msgstr "Namespace ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_PREFIX.FixedText.Text
+#, fuzzy
 msgid  "~Prefix"
 msgstr "ရှေ့ဆက်"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_MANAGE_NAMESPACE.STR_EDIT_TEXT.String.Text
+#, fuzzy
 msgid  "Edit Namespace"
 msgstr "Namespace တည်းဖြတ်ပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.ModalDialog.Text
+#, fuzzy
 msgid  "Add Submission"
 msgstr "တင်သွင်းချက် ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FL_SUBMISSION.FixedLine.Text
+#, fuzzy
 msgid  "Submission"
 msgstr "တင်သွင်းချက်"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "အမည်"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_ACTION.FixedText.Text
+#, fuzzy
 msgid  "~Action"
 msgstr "လုပ်ဆောင်ချက်"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_METHOD.FixedText.Text
+#, fuzzy
 msgid  "~Method"
 msgstr "နည်းစနစ်"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REF.FixedText.Text
+#, fuzzy
 msgid  "Binding e~xpression"
 msgstr "အနှောင်အဖွဲ့ ထုတ်ဖေါ်ခြင်း"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.PB_SUBMIT_REF.PushButton.Text
+#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_BIND.FixedText.Text
+#, fuzzy
 msgid  "~Binding"
 msgstr "အနှောင်အဖွဲ့"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FT_SUBMIT_REPLACE.FixedText.Text
+#, fuzzy
 msgid  "~Replace"
 msgstr "အစားထိုးပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_POST.String.Text
+#, fuzzy
 msgid  "Post"
 msgstr "ပို့ပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_PUT.String.Text
+#, fuzzy
 msgid  "Put"
 msgstr "ထားပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_METHOD_GET.String.Text
+#, fuzzy
 msgid  "Get"
 msgstr "ရယူပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_NONE.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "ဘာမျှမရှိပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_INST.String.Text
+#, fuzzy
 msgid  "Instance"
 msgstr "မူရင်းပျက်သော ကိုယ်ပွား"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.STR_REPLACE_DOC.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "မှတ်တမ်းမှတ်ရာ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.ModalDialog.Text
+#, fuzzy
 msgid  "Add Model"
 msgstr "ပုံစံ ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FL_INSTANCE.FixedLine.Text
+#, fuzzy
 msgid  "Model"
 msgstr "ပုံစံ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.FT_INST_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "အမည်"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.CB_MODIFIES_DOCUMENT.CheckBox.Text
+#, fuzzy
 msgid  "Model data updates change document's modification status"
 msgstr "မှတ်တမ်းမှတ်ရာ၏ ပြောင်းလဲထားသော အသွင်အပြင်များအတိုင်း အချက်အလက်များကို နောက်ဆုံးသစ်လွင်မှုပြုသည်။"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_MODEL.STR_EDIT_TEXT.String.Text
+#, fuzzy
 msgid  "Edit Model"
 msgstr "ပုံစံတည်းဖြတ်ပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.ModalDialog.Text
+#, fuzzy
 msgid  "Add Instance"
 msgstr "မူရင်းပျက်သော ကိုယ်ပွား ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FL_INSTANCE.FixedLine.Text
+#, fuzzy
 msgid  "Instance"
 msgstr "မူရင်းပျက်သော ကိုယ်ပွား"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "အမည်"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.FT_INST_URL.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.CB_INST_LINKINST.CheckBox.Text
+#, fuzzy
 msgid  "~Link instance"
 msgstr "မူရင်းပျက်သော ကိုယ်ပွား ကွင်းဆက်"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_INSTANCE.STR_EDIT_TEXT.String.Text
+#, fuzzy
 msgid  "Edit Instance"
 msgstr "မူရင်းပျက်သော ကိုယ်ပွား တည်းဖြတ်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_PARENT.String.Text
+#, fuzzy
 msgid  "Submission: "
 msgstr "တင်သွင်းချက် -"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ID.String.Text
+#, fuzzy
 msgid  "ID: "
 msgstr "ID: "
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_BIND.String.Text
+#, fuzzy
 msgid  "Binding: "
 msgstr "အနှောင်အဖွဲ့ -"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REF.String.Text
+#, fuzzy
 msgid  "Reference: "
 msgstr "ရည်ညွှန်းချက် -"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_ACTION.String.Text
+#, fuzzy
 msgid  "Action: "
 msgstr "လုပ်ဆောင်ချက် -"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_METHOD.String.Text
+#, fuzzy
 msgid  "Method: "
 msgstr "နည်းစနစ် -"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_SUBM_REPLACE.String.Text
+#, fuzzy
 msgid  "Replace: "
 msgstr "အစားထိုးပါ -"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ELEMENT.String.Text
+#, fuzzy
 msgid  "Add Element"
 msgstr "ဂဏန်း(သို့)ဇယားကွက်တစ်ခုတွင်ပါသော အချက်အလက်ကြမ်းတစ်စု ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ELEMENT.String.Text
+#, fuzzy
 msgid  "Edit Element"
 msgstr "ဂဏန်း(သို့)ဇယားကွက်တစ်ခုတွင်ပါသော အချက်အလက်ကြမ်းတစ်စု တည်းဖြတ်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ELEMENT.String.Text
+#, fuzzy
 msgid  "Delete Element"
 msgstr "ဂဏန်း(သို့)ဇယားကွက်တစ်ခုတွင်ပါသော အချက်အလက်ကြမ်းတစ်စု ဖျက်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Add Attribute"
 msgstr "ပင်ကိုယ်အရည်အချင်း ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Edit Attribute"
 msgstr "ပင်ကိုယ်အရည်အချင်း တည်းဖြတ်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_ATTRIBUTE.String.Text
+#, fuzzy
 msgid  "Delete Attribute"
 msgstr "ပင်ကိုယ်အရည်အချင်း ဖျက်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_BINDING.String.Text
+#, fuzzy
 msgid  "Add Binding"
 msgstr "အနှောင်အဖွဲ့ ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_BINDING.String.Text
+#, fuzzy
 msgid  "Edit Binding"
 msgstr "ချည်နှောင်ထားခြင်း တည်းဖြတ်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_BINDING.String.Text
+#, fuzzy
 msgid  "Delete Binding"
 msgstr "ချည်နှောင်ထားခြင်း ဖျက်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_ADD_SUBMISSION.String.Text
+#, fuzzy
 msgid  "Add Submission"
 msgstr "တင်သွင်းချက် ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_EDIT_SUBMISSION.String.Text
+#, fuzzy
 msgid  "Edit Submission"
 msgstr "တင်သွင်းချက် တည်းဖြတ်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_REMOVE_SUBMISSION.String.Text
+#, fuzzy
 msgid  "Delete Submission"
 msgstr "တင်သွင်းချက် ဖျက်ပါ"
 
 #: source/form/datanavi.src#RID_STR_DATANAV_LINKWARN_BUTTON.String.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "တည်းဖြတ်ပါ"
 
 #: source/gallery2/gallery.src#RID_SVXDLG_GALLERYBROWSER.DockingWindow.Text
+#, fuzzy
 msgid  "Gallery"
 msgstr "ပြခန်း"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
+#, fuzzy
 msgid  "Update"
 msgstr "နောက်ဆုံးပေါ်အခြေအနေ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
+#, fuzzy
 msgid  "This file cannot be opened"
 msgstr "ဤဖိုင် ဖွင့်ထားနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NOTHEME.String.Text
+#, fuzzy
 msgid  "Invalid Theme Name!"
 msgstr "မမှန်ကန်သော ညွှန်ကြားချက်တစ်ခု အဓိက ဆိုလိုရင်း အမည်!"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEOBJ.String.Text
-msgid  "Do you really want to\ndelete this object?"
-msgstr "ဤအရာဝတ္ထု \nဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+msgid  "Do you really want to\\ndelete this object?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETETHEME.String.Text
-msgid  "Do you really want to\ndelete this theme?"
-msgstr "ဤအဓိကဆိုလိုရင်း \nဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+msgid  "Do you really want to\\ndelete this theme?"
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT1_UI.String.Text
+#, fuzzy
 msgid  "Wave - Sound File"
 msgstr "အသံ - လှိုင်းတွန့် ဖိုင်"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT2_UI.String.Text
+#, fuzzy
 msgid  "Audio Interchange File Format"
 msgstr "အကြားအာရုံနှင့်ဆိုင်သော ဖလှယ် ဖိုင် စီစဉ် ဖွဲ့စည်းမှု ပုံစံ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_EXTFORMAT3_UI.String.Text
+#, fuzzy
 msgid  "AU - Sound File"
 msgstr "အကြားအာရုံနှင့်ဆိုင်သော(AU) – အသံ ဖိုင်"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FILTER.String.Text
+#, fuzzy
 msgid  "Graphics filter"
 msgstr "ပန်းချီဒီဇိုင်းပုံစံ စစ်ထုတ်ကိရိယာ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LENGTH.String.Text
+#, fuzzy
 msgid  "Length:"
 msgstr "အလျား -"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SIZE.String.Text
+#, fuzzy
 msgid  "Size:"
 msgstr "အရွယ် -"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DELETEDD.String.Text
+#, fuzzy
 msgid  "Do you want to delete the linked file?"
 msgstr "ကွင်းဆက်ထားသည့်ဖိုင် ဖျက်ရန် ဆန္ဒရှိပါသလား?"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_SGIERROR.String.Text
-msgid  "This file cannot be opened.\nDo you want to enter a different search path? "
-msgstr "ဤဖိုင် ဖွင့်ထားနိုင်လိမ့်မည် မဟုတ်ပါ။ \nခြားနားသော ရှာဖွေ လမ်းကြောင်းတစ်ခုသို့ ဝင်ရန် ဆန္ဒရှိပါသလား? "
+msgid  "This file cannot be opened.\\nDo you want to enter a different search path? "
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_NEWTHEME.String.Text
+#, fuzzy
 msgid  "New Theme"
 msgstr "အဓိကဆိုလိုရင်း အသစ်"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_BROWSER.String.Text
+#, fuzzy
 msgid  "~Organizer..."
 msgstr "ဖွဲ့စည်းသူ..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_THEMEERR.String.Text
-msgid  "This theme name already exists.\nPlease choose a different one."
-msgstr "ဤအဓိကဆိုလိုရင်း အဆင်သင့် တည်ရှိသည်။ \nခြားနားသည့် တစ်ခုသို့ ရွေးပေးပါ။"
+msgid  "This theme name already exists.\\nPlease choose a different one."
+msgstr ""
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_IMPORTTHEME.String.Text
+#, fuzzy
 msgid  "I~mport..."
 msgstr "ပို့ပါ..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_CREATETHEME.String.Text
+#, fuzzy
 msgid  "New Theme..."
 msgstr "အဓိကဆိုလိုရင်း အသစ်..."
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_DIALOGID.String.Text
+#, fuzzy
 msgid  "Assign ID"
 msgstr "ID သတ်မှတ်ပါ"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_TITLE.String.Text
+#, fuzzy
 msgid  "Title"
 msgstr "ခေါင်းစဉ်"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_PATH.String.Text
+#, fuzzy
 msgid  "Path"
 msgstr "လမ်းကြောင်း"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ICONVIEW.String.Text
+#, fuzzy
 msgid  "Icon View"
 msgstr "ပရိုဂရမ်သင်္ကေတ(အိုင်ကွန်) မြင်ကွင်း"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_LISTVIEW.String.Text
+#, fuzzy
 msgid  "Detailed View"
 msgstr "အသေးစိတ်အချက်အလက် မြင်ကွင်း"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ACTUALIZE.MenuItem.Text
+#, fuzzy
 msgid  "Update"
 msgstr "နောက်ဆုံးပေါ်အခြေအနေ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_RENAME.MenuItem.Text
+#, fuzzy
 msgid  "~Rename"
 msgstr "အမည် ပြန်ပေးပါ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_ASSIGN_ID.MenuItem.Text
+#, fuzzy
 msgid  "Assign ~ID"
 msgstr "ID သတ်မှတ်ပါ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_PROPERTIES.MenuItem.Text
+#, fuzzy
 msgid  "Propert~ies..."
 msgstr "ဂုဏ်သတ္တိများ..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "စီချယ်ပါ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
 msgstr "မိတ္တူကူးယူပါ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
+#, fuzzy
 msgid  "Link"
 msgstr "ကွင်းဆက်"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_BACKGROUND.MenuItem.Text
+#, fuzzy
 msgid  "Bac~kground"
 msgstr "နောက်ခံ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PREVIEW.MenuItem.Text
+#, fuzzy
 msgid  "~Preview"
 msgstr "အသေးစိတ်ကြည့်ပါ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_TITLE.MenuItem.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "ခေါင်းစဉ်"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_COPYCLIPBOARD.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
 msgstr "မိတ္တူကူးယူပါ"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_PASTECLIPBOARD.MenuItem.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "စီချယ်ပါ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_3D.String.Text
+#, fuzzy
 msgid  "3D Effects"
 msgstr "3D အကျိုးသက်ရောက်မှုများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ANIMATIONS.String.Text
+#, fuzzy
 msgid  "Animations"
 msgstr "သက်ဝင်လှုပ်ရှားမှုများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BULLETS.String.Text
+#, fuzzy
 msgid  "Bullets"
 msgstr "သင်္ကေတများရှိခြင်း"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_OFFICE.String.Text
+#, fuzzy
 msgid  "Office"
 msgstr "ရုံး"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLAGS.String.Text
+#, fuzzy
 msgid  "Flags"
 msgstr "အလံများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FLOWCHARTS.String.Text
+#, fuzzy
 msgid  "Flow Charts"
 msgstr "ပုံစံကားချပ် စီးဆင်းသည်"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EMOTICONS.String.Text
+#, fuzzy
 msgid  "Emoticons"
 msgstr "အသုံးပြုသူ၏ စိတ်ခံစားမှုပြ ပရိုဂရမ်သင်္ကေတ(အိုင်ကွန်)များ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PHOTOS.String.Text
+#, fuzzy
 msgid  "Pictures"
 msgstr "ရုပ်ပုံများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BACKGROUNDS.String.Text
+#, fuzzy
 msgid  "Backgrounds"
 msgstr "နောက်ခံများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_HOMEPAGE.String.Text
+#, fuzzy
 msgid  "Homepage"
 msgstr "အိမ် စာမျက်နှာ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_INTERACTION.String.Text
+#, fuzzy
 msgid  "Interaction"
 msgstr "အပြန်အလှန် တုန့်ပြန်မှု"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MAPS.String.Text
+#, fuzzy
 msgid  "Maps"
 msgstr "မြေပုံများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PEOPLE.String.Text
+#, fuzzy
 msgid  "People"
 msgstr "လူများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SURFACES.String.Text
+#, fuzzy
 msgid  "Surfaces"
 msgstr "အပေါ်ယံများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_RULERS.String.Text
+#, fuzzy
 msgid  "Rulers"
 msgstr "ပေတံများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMPUTERS.String.Text
+#, fuzzy
 msgid  "Computers"
 msgstr "ကွန်ပျူတာများ"
 
@@ -6564,50 +6838,62 @@ msgid  "Textshapes"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SOUNDS.String.Text
+#, fuzzy
 msgid  "Sounds"
 msgstr "အသံများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SYMBOLS.String.Text
+#, fuzzy
 msgid  "Symbols"
 msgstr "သင်္ကေတ အမှတ်လက္ခဏာများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_MYTHEME.String.Text
+#, fuzzy
 msgid  "My Theme"
 msgstr "ကျွန်ုပ်၏ အဓိက ဆိုလိုရင်း"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_ARROWS.String.Text
+#, fuzzy
 msgid  "Arrows"
 msgstr "မြှားများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_BALLOONS.String.Text
+#, fuzzy
 msgid  "Balloons"
 msgstr "ပူပေါင်းများ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_KEYBOARD.String.Text
+#, fuzzy
 msgid  "Keyboard"
 msgstr "ကီးဘုတ်"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TIME.String.Text
+#, fuzzy
 msgid  "Time"
 msgstr "အချိန်"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_PRESENTATION.String.Text
+#, fuzzy
 msgid  "Presentation"
 msgstr "တင်ပြချက်"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CALENDAR.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "ပြက္ခဒိန်"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_NAVIGATION.String.Text
+#, fuzzy
 msgid  "Navigation"
 msgstr "လှည့်လည် ကြည့်ရှုခြင်း"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_COMMUNICATION.String.Text
+#, fuzzy
 msgid  "Communication"
 msgstr "ဆက်သွယ်ရေး"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_FINANCES.String.Text
+#, fuzzy
 msgid  "Finances"
 msgstr "ဘဏ္ဍာရေး"
 
@@ -6616,618 +6902,768 @@ msgid  "Computers"
 msgstr ""
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_CLIMA.String.Text
+#, fuzzy
 msgid  "Climate"
 msgstr "ဥတုရာသီ"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_EDUCATION.String.Text
+#, fuzzy
 msgid  "School & University"
 msgstr "ကျောင်းနှင့် တက္ကသိုလ်"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_TROUBLE.String.Text
+#, fuzzy
 msgid  "Problem Solving"
 msgstr "ပြဿနာဖြေရှင်းခြင်း"
 
 #: source/gallery2/galtheme.src#RID_GALLERYSTR_THEME_SCREENBEANS.String.Text
+#, fuzzy
 msgid  "Screen Beans"
 msgstr "ဖန်သားမျက်နှာပြင် ပဲများ"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_THESAURUS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the thesaurus."
 msgstr "$(ERR) တွက်ချက် ဆောင်ရွက် ဖြေရှင်းသော ဝေါဟာရပဒေသာကျမ်း။"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_SPELLING&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the spellcheck."
 msgstr "$(ERR) တွက်ချက် ဆောင်ရွက် ဖြေရှင်းသော စာလုံးပေါင်းစစ်ဆေးချက်။"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_HYPHENATION&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) executing the hyphenation."
 msgstr "$(ERR) တွက်ချက် ဆောင်ရွက် ဖြေရှင်းသော တုံးတို သုံးနည်း။"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_LINGU_DICTIONARY&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) creating a dictionary."
 msgstr "$(ERR) ဖန်တီးသော အညွှန်း တစ်ခု။"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_BACKGROUND&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) setting background attribute."
 msgstr "$(ERR) ရွေးနိုင်ခြင်း နောက်ခံ ပင်ကိုယ် အရည်အချင်း။"
 
 #: source/items/svxerr.src#RID_SVXERRCTX.ERRCTX_SVX_IMPORT_GRAPHIC&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "$(ERR) loading the graphics."
 msgstr "$(ERR) ဆွဲတင်သော ပန်းချီဒီဇိုင်း။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_THESAURUSNOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "No thesaurus available for the current language.\nPlease check your installation and install the desired language."
-msgstr "လတ်တလော နည်းစနစ်ကျစွာ အသုံးပြုသော သင်္ကေတများအစု အတွက် ဝေါဟာရပဒေသာကျမ်း မရပါ။ \nသင့်စတင် အသုံးပြုရန် စီမံခြင်းနှင့် ဆန္ဒရှိသည့် နည်းစနစ်ကျစွာ အသုံးပြုသော သင်္ကေတများ အစု စတင် အသုံးပြုရန် စီမံသည်တို့ကို စစ်ဆေးပေးပါ"
+msgid  "No thesaurus available for the current language.\\nPlease check your installation and install the desired language."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LANGUAGENOTEXISTS&ERRCODE_RES_MASK.String.Text
-msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\nPlease check your installation and, if necessary, install the required language module\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
-msgstr "စာလုံးပေါင်း စစ်ဆေးသည့် ဖန်ရှင်အားဖြင့် $(ARG1) မထောက်ပံ့ပါ (သို့) အသုံးပြုသူ လောလောဆယ် သုံးခြင်း မရပါ။ \nသင့် စတင် အသုံးပြုရန် စီမံခြင်း စစ်ဆေးပေးပြီးတော့ အကယ်၍ လိုအပ်ပါက လိုနေသည့် နည်းစနစ်ကျစွာ အသုံးပြုသော သင်္ကေတများအစု ယူနစ်တစ်ခု စတင် အသုံးပြုရန် စီမံပါ \n (သို့) ကိရိယာများ၊ ရွေးပိုင်ခွင့်များ၊ နည်းစနစ်ကျစွာ အသုံးပြုသော သင်္ကေတများအစု ရွေးနိုင်ခြင်းများ၊ ရေးသားမှု အကူများ('Tools – Options -  Language Settings - Writing Aids') အောက်မှ ခလုတ်ဖွင့်ပါ။"
+msgid  "$(ARG1) is not supported by the spellcheck function or is not presently active.\\nPlease check your installation and, if necessary, install the required language module\\n or activate it under 'Tools - Options -  Language Settings - Writing Aids'."
+msgstr ""
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_LINGUNOTEXISTS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "Spellcheck is not available."
 msgstr "စာလုံးပေါင်း စစ်ဆေးချက် မရနိုင်ပါ။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_HYPHENNOTEXISTS&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "Hyphenation not available."
 msgstr "တုံးတို သုံးနည်း မရနိုင်ပါ။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTREADABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be read."
 msgstr "$(ARG1) ထုံးစံ အညွှန်း ဖတ်နိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_DICT_NOTWRITEABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The custom dictionary $(ARG1) cannot be created."
 msgstr "$(ARG1) ထုံးစံ အညွှန်း ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_NOTREADABLE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The graphic $(ARG1) could not be found."
 msgstr "$(ARG1) ပန်းချီဒီဇိုင်းဆွဲခြင်းဆိုင်ရာ ရှာထားနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_GRAPHIC_WRONG_FILEFORMAT&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "An unlinked graphic could not be loaded."
 msgstr "ကွင်းမဆက်ထားသည့် ပန်းချီဒီဇိုင်းဆွဲခြင်းဆိုင်ရာ တစ်ခု ဆွဲတင်ထားနိုင်လိမ့်မည် မဟုတ်ပါ"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_LINGU_NOLANGUAGE&ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "A language has not been fixed for the selected term."
 msgstr "ရွေးချယ်ထားသည့် အချက်အတွက် နည်းစနစ်ကျစွာ အသုံးပြုသော သင်္ကေတများအစု တစ်ခု ပုံမသွင်းထားပါ။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
+#, fuzzy
 msgid  "The form layer wasn't loaded as the required IO-services (stardiv.uno.io.*) could not be instantiated."
 msgstr "လိုအပ်သည့် IO-services (stardiv.uno.io.*) ကဲ့သို့ ဆွဲမတင်သော ပုံစံအလွှာ ဖန်တီးထားနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_NOIOSERVICES.String.Text
+#, fuzzy
 msgid  "The form layer wasn't written as the required IO services (stardiv.uno.io.*) could not be instantiated."
 msgstr "လိုအပ်သည့် IO လုပ်ငန်းများ(stardiv.uno.io.*) ကဲ့သို့ မရေးသော ပုံစံ အလွှာ ဖန်တီးထားနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
+#, fuzzy
 msgid  "An error occurred while reading the form controls. The form layer has not been loaded."
 msgstr "ထိန်းချုပ်မှုများ ပုံစံ ဖတ်စဉ် အမှား တစ်ခု ဖြစ်ပွားသည်။ ပုံစံအလွှာ မဆွဲတင်ပါ"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_FORMS_READWRITEFAILED.String.Text
+#, fuzzy
 msgid  "An error occurred while writing the form controls. The form layer has not been saved."
 msgstr "ထိန်းချုပ်မှုများ ပုံစံ ရေးစဉ် အမှား တစ်ခု ဖြစ်ပွားသည်။ ပုံစံအလွှာ မသိမ်းပါ"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.(ERRCODE_SVX_BULLETITEM_NOBULLET.String.Text
+#, fuzzy
 msgid  "An error occurred while reading one of the bullets. Not all of the bullets were loaded."
 msgstr "သင်္ကေတများ၏တစ်ခု ဖတ်စဉ် အမှား တစ်ခု ဖြစ်ပွားသည်။ သင်္ကေတများအားလုံး မဆွဲတင်ပါ။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_MODIFIED_VBASIC_STORAGE & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "All changes to the Basic Code are lost.The original VBA Macro Code is saved instead."
 msgstr "အခြေခံလက္ခဏာ(Basic Code) သို့ ပြောင်းလဲမှုများအားလုံး ပျောက်သည်။ မူလ VBA အမိန့်တစ်ခုပေးလိုက်သည်နှင့် လိုချင်သမျှ အဆင့်ဆင့် လုပ်ပေးခြင်းများ လက္ခဏာ(Macro  Code)အစား သိမ်းထားသည်။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_VBASIC_STORAGE_EXIST & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The original VBA Basic Code contained in the document will not be saved."
 msgstr "မှတ်တမ်းမှတ်ရာတွင် ပါဝင်သည့် VBA မူလ အခြေခံလက္ခဏာ(Basic Code) သိမ်းထားနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_WRONGPASS & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The password is incorrect. The document cannot be opened."
 msgstr "စကားဝှက် မမှန်ပါ။ မှတ်တမ်းမှတ်ရာ ဖွင့်နိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The encryption method used in this document is not supported. Only Microsoft Office 97/2000 compatible password encryption is supported."
 msgstr "ဤမှတ်တမ်းမှတ်ရာတွင် သုံးထားသည့် လုံခြုံရန် စကားဝှက်ဖြင့် ပြောင်းလဲ ရေးသားခြင်း နည်းစနစ် မထောက်ပံ့ပါ။ Microsoft Office 97/2000 သာ လုံခြုံရန် စကားဝှက်ဖြင့် ပြောင်းလဲ ရေးသားရန် စကားဝှက် တိုက်ရိုက် အသုံးပြုခြင်း ထောက်ပံ့ထားသည်။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_READ_FILTER_PPOINT & ERRCODE_RES_MASK.String.Text
+#, fuzzy
 msgid  "The loading of password-encrypted Microsoft PowerPoint presentations is not supported."
 msgstr "စကားဝှက် - လုံခြုံရန် စကားဝှက်ဖြင့် ပြောင်းလဲ ရေးသားခြင်း Microsoft PowerPoint တင်ပြချက်များ၏ ဆွဲတင်ခြင်း မထောက်ပံ့ပါ။"
 
 #: source/items/svxerr.src#RID_SVXERRCODE.ERRCODE_SVX_EXPORT_FILTER_CRYPT & ERRCODE_RES_MASK.String.Text
-msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\nDo you want to save the document without password protection?"
-msgstr "Microsoft Office စီစဉ် ဖွဲ့စည်းမှု ပုံစံ တစ်ခုတွင် မှတ်တမ်းမှတ်ရာများ သိမ်းထားသောအခါ စကားဝှက် အကာအကွယ် မထောက်ပံ့ပါ။ \nစကားဝှက် အကာအကွယ် မပါဘဲ မှတ်တမ်းမှတ်ရာ သိမ်းရန် ဆန္ဒရှိပါသလား?"
+msgid  "Password protection is not supported when documents are saved in a Microsoft Office format.\\nDo you want to save the document without password protection?"
+msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
+#, fuzzy
 msgid  "Scale"
 msgstr "စကေး"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH.ItemList.item
+#, fuzzy
 msgid  "Brush"
 msgstr "ခြစ်တံ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_TABSTOP.ItemList.item
+#, fuzzy
 msgid  "Tab stops"
 msgstr "အကွက်ခုန် ရပ်သည်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR.ItemList.item
+#, fuzzy
 msgid  "Character"
 msgstr "အက္ခရာ၊သင်္ကေတ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONT.ItemList.item
+#, fuzzy
 msgid  "Font"
 msgstr "စာလုံး"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_POSTURE.ItemList.item
+#, fuzzy
 msgid  "Font posture"
 msgstr "စာလုံးဟန်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_WEIGHT.ItemList.item
+#, fuzzy
 msgid  "Font weight"
 msgstr "စာလုံး အလေးချိန်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_SHADOWED.ItemList.item
+#, fuzzy
 msgid  "Shadowed"
 msgstr "အရိပ်ကျသည်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_WORDLINEMODE.ItemList.item
+#, fuzzy
 msgid  "Individual words"
 msgstr "တစ်ခုချင်း စကားလုံးများ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CONTOUR.ItemList.item
+#, fuzzy
 msgid  "Outline"
 msgstr "ကောက်ကြောင်း"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_STRIKEOUT.ItemList.item
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "ဖြတ်မျဉ်း"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_UNDERLINE.ItemList.item
+#, fuzzy
 msgid  "Underline"
 msgstr "အောက်မှ မျဉ်းသားပါ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_FONTHEIGHT.ItemList.item
+#, fuzzy
 msgid  "Font size"
 msgstr "စာလုံး အရွယ်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_PROPSIZE.ItemList.item
+#, fuzzy
 msgid  "Rel. Font size"
 msgstr "Rel. စာလုံး အရွယ်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
+#, fuzzy
 msgid  "Font color"
 msgstr "စာလုံး အရောင်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_KERNING.ItemList.item
+#, fuzzy
 msgid  "Kerning"
 msgstr "စာလုံးပုံစံအလှ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CASEMAP.ItemList.item
+#, fuzzy
 msgid  "Effects"
 msgstr "အကျိုးသက်ရောက်မှုများ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_LANGUAGE.ItemList.item
+#, fuzzy
 msgid  "Language"
 msgstr "နည်းစနစ်ကျစွာ အသုံးပြုသော သင်္ကေတများအစု"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ESCAPEMENT.ItemList.item
+#, fuzzy
 msgid  "Position"
 msgstr "ရပ်တည်ချက်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_AUTOKERN.ItemList.item
+#, fuzzy
 msgid  "Blinking"
 msgstr "မျက်တောင်ခတ်ပါ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CHARSETCOLOR.ItemList.item
+#, fuzzy
 msgid  "Character set color"
 msgstr "အက္ခရာ၊သင်္ကေတ အစုံ အရောင်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_OVERLINE.ItemList.item
+#, fuzzy
 msgid  "Overline"
 msgstr "ပေါ်မှ မျဉ်းသားပါ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA.ItemList.item
+#, fuzzy
 msgid  "Paragraph"
 msgstr "စာပိုဒ်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ADJUST.ItemList.item
+#, fuzzy
 msgid  "Alignment"
 msgstr "ဖြောင့်တန်းမှု"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LINESPACE.ItemList.item
+#, fuzzy
 msgid  "Line spacing"
 msgstr "လိုင်း နေရာလပ်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_PAGEBREAK.ItemList.item
+#, fuzzy
 msgid  "Page Break"
 msgstr "ပြတ်တောက်သည့် စာမျက်နှာ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_HYPHENZONE.ItemList.item
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "တုံးတိုသုံးနည်း"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SPLIT.ItemList.item
+#, fuzzy
 msgid  "Do not split paragraph"
 msgstr "စာပိုဒ် အလျာလိုက် မကွဲပါစေနှင့်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ORPHANS.ItemList.item
+#, fuzzy
 msgid  "Orphans"
 msgstr "မုဆိုးမများ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_WIDOWS.ItemList.item
+#, fuzzy
 msgid  "Widows"
 msgstr "မိဘမဲ့များ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ULSPACE.ItemList.item
+#, fuzzy
 msgid  "Spacing"
 msgstr "နေရာလပ်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LRSPACE.ItemList.item
+#, fuzzy
 msgid  "Indent"
 msgstr "အမှာစာ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_LRSPACE.ItemList.item
+#, fuzzy
 msgid  "Indent"
 msgstr "အမှာစာ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ULSPACE.ItemList.item
+#, fuzzy
 msgid  "Spacing"
 msgstr "နေရာလပ်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PAGE.ItemList.item
+#, fuzzy
 msgid  "Page"
 msgstr "စာမျက်နှာ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_MODEL.ItemList.item
+#, fuzzy
 msgid  "Page Style"
 msgstr "စာမျက်နှာ စတိုင်လ်ပုံစံ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_KEEP.ItemList.item
+#, fuzzy
 msgid  "Keep with next paragraph"
 msgstr "နောက် စာပိုဒ်နှင့်အတူ ထိန်းသိမ်းပါ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_FLASH.ItemList.item
+#, fuzzy
 msgid  "Blinking"
 msgstr "မျက်တောင်ခတ်ပါ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_REGISTER.ItemList.item
+#, fuzzy
 msgid  "Register-true"
 msgstr "မှန်ကန်သော - စာရင်းသွင်းခြင်း"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH_CHAR.ItemList.item
 msgid  "Character background"
-msgstr "အက္ခရာ၊သင်္ကေတ နောက်ခံ"
+msgstr "အက္ခရာ အနောက်ခံ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONT.ItemList.item
+#, fuzzy
 msgid  "Asian font"
 msgstr "အာရှ စာလုံး"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONTHEIGHT.ItemList.item
+#, fuzzy
 msgid  "Size of Asian font"
 msgstr "အာရှ စာလုံး၏ အရွယ်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_LANGUAGE.ItemList.item
+#, fuzzy
 msgid  "Language of Asian font"
 msgstr "အာရှ စာလုံးများ၏ နည်းစနစ်ကျစွာ အသုံးပြုသော သင်္ကေတများအစု"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_POSTURE.ItemList.item
+#, fuzzy
 msgid  "Posture of Asian font"
 msgstr "အာရှ စာလုံးများ၏ဟန်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_WEIGHT.ItemList.item
+#, fuzzy
 msgid  "Weight of Asian font"
 msgstr "အာရှ စာလုံးများ၏ အလေးချိန်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_FONT.ItemList.item
+#, fuzzy
 msgid  "CTL"
 msgstr "CTL"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_FONTHEIGHT.ItemList.item
+#, fuzzy
 msgid  "Size of complex scripts"
 msgstr "ခက်ခဲရှုတ်ထွေးသော လက်ရေး/စာများ၏ အရွယ်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_LANGUAGE.ItemList.item
+#, fuzzy
 msgid  "Language of complex scripts"
 msgstr "ခက်ခဲရှုတ်ထွေးသော လက်ရေး/စာများ၏ နည်းစနစ်ကျစွာ အသုံးပြုသော သင်္ကေတများအစု"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_POSTURE.ItemList.item
+#, fuzzy
 msgid  "Posture of complex scripts"
 msgstr "ခက်ခဲရှုတ်ထွေးသော လက်ရေး/စာများ၏ဟန်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CTL_WEIGHT.ItemList.item
+#, fuzzy
 msgid  "Weight of complex scripts"
 msgstr "ခက်ခဲရှုတ်ထွေးသော လက်ရေး/စာများ၏ အလေးချိန်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_TWO_LINES.ItemList.item
+#, fuzzy
 msgid  "Double-lined"
 msgstr "နှစ်ထပ် - လိုင်း"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_EMPHASISMARK.ItemList.item
+#, fuzzy
 msgid  "Emphasis mark"
 msgstr "အမှတ်အသား ဖိအားပေးပါ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_SCRIPTSPACE.ItemList.item
+#, fuzzy
 msgid  "Text spacing"
 msgstr "လပ်နေသောနေရာ စာသား"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_HANGPUNCTUATION.ItemList.item
+#, fuzzy
 msgid  "Hanging punctuation"
 msgstr "ချိတ်ဆွဲထားသော ပုဒ်ဖြတ်၊ပုဒ်ရပ်"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_FORBIDDEN_RULES.ItemList.item
+#, fuzzy
 msgid  "Forbidden characters"
 msgstr "တားမြစ်ပိတ်ပင်သော အက္ခရာ၊သင်္ကေတများ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_ROTATED.ItemList.item
+#, fuzzy
 msgid  "Rotation"
 msgstr "အလှည့်ကျ လှည့်ပေးခြင်း"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_SCALEWIDTH.ItemList.item
+#, fuzzy
 msgid  "Scale"
 msgstr "စကေး"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_RELIEF.ItemList.item
+#, fuzzy
 msgid  "Relief"
 msgstr "ရုပ်ကြွ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_PARA_VERTALIGN.ItemList.item
+#, fuzzy
 msgid  "Vertical text alignment"
 msgstr "မျဉ်းမတ်စာသား ဖြောင့်တန်းမှု"
 
 #: source/items/svxitems.src#RID_SVXITEMS_EXTRAS_CHARCOLOR.String.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "စာလုံး အရောင်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND.String.Text
+#, fuzzy
 msgid  "Search"
 msgstr "ရှာဖွေပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_FIND_ALL.String.Text
+#, fuzzy
 msgid  "Find All"
 msgstr "အားလုံး ရှာပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE.String.Text
+#, fuzzy
 msgid  "Replace"
 msgstr "အစားထိုးပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHCMD_REPLACE_ALL.String.Text
+#, fuzzy
 msgid  "Replace all"
 msgstr "အားလုံး အစားထိုးပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_CHAR.String.Text
+#, fuzzy
 msgid  "Character Style"
 msgstr "အက္ခရာ၊သင်္ကေတများ စတိုင်လ်ပုံစံ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PARA.String.Text
+#, fuzzy
 msgid  "Paragraph Style"
 msgstr "စာပိုဒ် စတိုင်လ်ပုံစံ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_FRAME.String.Text
+#, fuzzy
 msgid  "Frame Style"
 msgstr "ဘောင် စတိုင်လ်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHSTYL_PAGE.String.Text
+#, fuzzy
 msgid  "Page Style"
 msgstr "စာမျက်နှာ စတိုင်လ်ပုံစံ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_FORMULA.String.Text
+#, fuzzy
 msgid  "Formula"
 msgstr "ပုံသေနည်း"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_VALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "ကိန်းသေတန်ဖိုးတစ်ခု"
 
 #: source/items/svxitems.src#RID_SVXITEMS_SEARCHIN_NOTE.String.Text
+#, fuzzy
 msgid  "Note"
 msgstr "မှတ်ချက်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_NULL.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "ဘာမျှမရှိပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_SOLID.String.Text
+#, fuzzy
 msgid  "Solid"
 msgstr "အစိုင်အခဲ၊ ထုထည်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_HORZ.String.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "ရေပြင်ညီ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_VERT.String.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "မျဉ်းမတ်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_CROSS.String.Text
+#, fuzzy
 msgid  "Grid"
 msgstr "အကွက်ချပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DIAGCROSS.String.Text
+#, fuzzy
 msgid  "Diamond"
 msgstr "စိန်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_UPDIAG.String.Text
+#, fuzzy
 msgid  "Diagonal up"
 msgstr "အပေါ် ထောင့်ဖြတ်မျဉ်း"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_DOWNDIAG.String.Text
+#, fuzzy
 msgid  "Diagonal down"
 msgstr "အောက် ထောင့်ဖြတ်မျဉ်း"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_BITMAP.String.Text
+#, fuzzy
 msgid  "Image"
 msgstr "ပေါ်လာသော ဂရပ်ဖစ်ပုံ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_STANDARD.String.Text
+#, fuzzy
 msgid  "Horizontal alignment default"
 msgstr "နဂိုတည်ရှိသော နောက်ခံ ဖြောင့်တန်းမှု ရေပြင်ညီ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_LEFT.String.Text
+#, fuzzy
 msgid  "Align left"
 msgstr "ဘယ်ဖက် တန်းညှိပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_CENTER.String.Text
+#, fuzzy
 msgid  "Centered horizontally"
 msgstr "အလျားလိုက် ဗဟိုချက်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_RIGHT.String.Text
+#, fuzzy
 msgid  "Align right"
 msgstr "ညာဖက် တန်းညှိပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_BLOCK.String.Text
+#, fuzzy
 msgid  "Justify"
 msgstr "စာကြောင်း ညှိပေးပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_HORJUST_REPEAT.String.Text
+#, fuzzy
 msgid  "Repeat alignment"
 msgstr "ဖြောင့်တန်းမှု ထပ်၍ပြောပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_STANDARD.String.Text
+#, fuzzy
 msgid  "Vertical alignment default"
 msgstr "နဂိုတည်ရှိသော နောက်ခံ ဖြောင့်တန်းမှု မျဉ်းမတ်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_TOP.String.Text
+#, fuzzy
 msgid  "Align to top"
 msgstr "ထိပ်သို့ တန်းညှိပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_CENTER.String.Text
+#, fuzzy
 msgid  "Centered vertically"
 msgstr "ထောင့်မှန်ကျကျ ဗဟိုချက်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_VERJUST_BOTTOM.String.Text
+#, fuzzy
 msgid  "Align to bottom"
 msgstr "အောက်ခြေသို့ တန်းညှိပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STANDARD.String.Text
+#, fuzzy
 msgid  "Default orientation"
 msgstr "နဂိုတည်ရှိသော နောက်ခံ စာမျက်နှာတစ်ခုပေါ်တွင် ထုတ်မည့် သိမ်းထားသောဖိုင် အနေအထား"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_TOPBOTTOM.String.Text
+#, fuzzy
 msgid  "From top to bottom"
 msgstr "ထိပ်မှ အောက်ခြေသို့"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_BOTTOMTOP.String.Text
+#, fuzzy
 msgid  "Bottom to Top"
 msgstr "အောက်ခြေမှ ထိပ်သို့"
 
 #: source/items/svxitems.src#RID_SVXITEMS_ORI_STACKED.String.Text
+#, fuzzy
 msgid  "Stacked"
 msgstr "အစီအရီဆင့်သည့် အစိတ်အပိုင်း"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_TRUE.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "ဇယား"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_TABLE_FALSE.String.Text
+#, fuzzy
 msgid  "Not Table"
 msgstr "ဇယား မရှိပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_TRUE.String.Text
+#, fuzzy
 msgid  "Spacing enabled"
 msgstr "လပ်နေသောနေရာ အသုံးပြုထားသည်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_DIST_FALSE.String.Text
+#, fuzzy
 msgid  "Spacing disabled"
 msgstr "လပ်နေသောနေရာ အသုံးမပြုထားပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_TRUE.String.Text
+#, fuzzy
 msgid  "Keep spacing interval"
 msgstr "စပ်ကြား လပ်နေသောနေရာ ထိန်းသိမ်းပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BOXINF_MDIST_FALSE.String.Text
+#, fuzzy
 msgid  "Allowed to fall short of spacing interval"
 msgstr "စပ်ကြား လပ်နေသောနေရာ၏ အတို ကျဆင်းရန် ခွင့်ပြုထားပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_LEFT.String.Text
+#, fuzzy
 msgid  "Left margin: "
 msgstr "ဘယ်ဖက် အနားသတ်မျဉ်း-"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_TOP.String.Text
+#, fuzzy
 msgid  "Top margin: "
 msgstr "ထိပ်ဖက် အနားသတ်မျဉ်း -"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_RIGHT.String.Text
+#, fuzzy
 msgid  "Right margin: "
 msgstr "ညာဖက် အနားသတ်မျဉ်း -"
 
 #: source/items/svxitems.src#RID_SVXITEMS_MARGIN_BOTTOM.String.Text
+#, fuzzy
 msgid  "Bottom margin: "
 msgstr "အောက်ခြေဖက် အနားသတ်မျဉ်း -"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_COMPLETE.String.Text
+#, fuzzy
 msgid  "Page Description: "
 msgstr "စာမျက်နှာ ဖေါ်ပြချက် -"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_UPPER.String.Text
+#, fuzzy
 msgid  "Capitals"
 msgstr "စာလုံးကြီး"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_CHR_LOWER.String.Text
+#, fuzzy
 msgid  "Lowercase"
 msgstr "အက္ခရာပုံစာလုံးသေး"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_UPPER.String.Text
+#, fuzzy
 msgid  "Uppercase Roman"
 msgstr "ရောမ အက္ခရာပုံ စာလုံးကြီး"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ROM_LOWER.String.Text
+#, fuzzy
 msgid  "Lowercase Roman"
 msgstr "ရောမ အက္ခရာပုံ စာလုံးသေး"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_ARABIC.String.Text
+#, fuzzy
 msgid  "Arabic"
 msgstr "အာရေဗီ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_NUM_NONE.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "ဘာမျှမရှိပါ"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_TRUE.String.Text
+#, fuzzy
 msgid  "Landscape"
 msgstr "စာမျက်နှာ ကန့်လန့် အကျယ်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_LAND_FALSE.String.Text
+#, fuzzy
 msgid  "Portrait"
 msgstr "စာမျက်နှာ ဒေါင်လိုက်အရှည်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_LEFT.String.Text
+#, fuzzy
 msgid  "Left"
 msgstr "ဘယ်ဖက်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_RIGHT.String.Text
+#, fuzzy
 msgid  "Right"
 msgstr "ညာဖက်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_ALL.String.Text
+#, fuzzy
 msgid  "All"
 msgstr "အားလုံး"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PAGE_USAGE_MIRROR.String.Text
+#, fuzzy
 msgid  "Mirrored"
 msgstr "ကြေးမုံပြင်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_AUTHOR_COMPLETE.String.Text
+#, fuzzy
 msgid  "Author: "
 msgstr "လက်ရာရှင်-"
 
 #: source/items/svxitems.src#RID_SVXITEMS_DATE_COMPLETE.String.Text
+#, fuzzy
 msgid  "Date: "
 msgstr "ရက်စွဲ-"
 
 #: source/items/svxitems.src#RID_SVXITEMS_TEXT_COMPLETE.String.Text
+#, fuzzy
 msgid  "Text: "
 msgstr "စာသား-"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BACKGROUND_COLOR.String.Text
+#, fuzzy
 msgid  "Background color: "
 msgstr "နောက်ခံအရောင်-"
 
 #: source/items/svxitems.src#RID_SVXITEMS_PATTERN_COLOR.String.Text
+#, fuzzy
 msgid  "Pattern color: "
 msgstr "နမူနာ ပုံစံ အရောင်"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSH_CHAR.String.Text
+#, fuzzy
 msgid  "Character background"
 msgstr "အက္ခရာ အနောက်ခံ"
 
 #: source/src/app.src#RID_ERRBOX_MODULENOTINSTALLED.ErrorBox.Message
+#, fuzzy
 msgid  "The action could not be executed. The %PRODUCTNAME program module needed for this action is currently not installed."
 msgstr "လုပ်ဆောင်ချက်သည် စီမံ ဆောင်ရွက်နိုင်လိမ့်မည် မဟုတ်ပါ။ ဤလုပ်ဆောင်ချက်အတွက် လိုအပ်သည့် %PRODUCTNAME ပရိုဂရမ် ယူနစ် တစ်ခု လတ်တလော စတင် အသုံးပြုရန် စီမံရ မရပါ။"
 
@@ -7400,7 +7836,7 @@ msgid  "The specified device is invalid."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ACCESSDENIED.String.Text
-msgid  "The object cannot be accessed\ndue to insufficient user rights."
+msgid  "The object cannot be accessed\\ndue to insufficient user rights."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_LOCKVIOLATION.String.Text
@@ -7412,7 +7848,7 @@ msgid  "No more space on device."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_ISWILDCARD.String.Text
-msgid  "This operation cannot be run on\nfiles containing wildcards."
+msgid  "This operation cannot be run on\\nfiles containing wildcards."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSUPPORTED.String.Text
@@ -7496,7 +7932,7 @@ msgid  "The file cannot be used as template."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTREADDOCINFO.String.Text
-msgid  "Document information could not be read from the file because\nthe document information format is unknown or because document information does not\nexist."
+msgid  "Document information could not be read from the file because\\nthe document information format is unknown or because document information does not\\nexist."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_ALREADYOPEN.String.Text
@@ -7528,11 +7964,11 @@ msgid  "Could not establish Internet connection to $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_READ.String.Text
-msgid  "Error reading data from the Internet.\nServer error message: $(ARG1)."
+msgid  "Error reading data from the Internet.\\nServer error message: $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_WRITE.String.Text
-msgid  "Error transferring data to the Internet.\nServer error message: $(ARG1)."
+msgid  "Error transferring data to the Internet.\\nServer error message: $(ARG1)."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_INET_GENERAL.String.Text
@@ -7644,7 +8080,7 @@ msgid  "A subscription folder is required to install a Channel."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_NOTSTORABLEINBINARYFORMAT.String.Text
-msgid  "This document contains attributes that cannot be saved in the selected format.\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
+msgid  "This document contains attributes that cannot be saved in the selected format.\\nPlease save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_TARGETFILECORRUPTED.String.Text
@@ -7660,19 +8096,19 @@ msgid  "Could not create backup copy."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_MACROS_SUPPORT_DISABLED.String.Text
-msgid  "An attempt was made to execute a macro.\nFor security reasons, macro support is disabled."
+msgid  "An attempt was made to execute a macro.\\nFor security reasons, macro support is disabled."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_DOCUMENT_MACRO_DISABLED.String.Text
-msgid  "This document contains macros.\n\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\n\nTherefore, some functionality may not be available."
+msgid  "This document contains macros.\\n\\nMacros may contain viruses. Execution of macros is disabled due to the current macro security setting in Tools - Options - %PRODUCTNAME - Security.\\n\\nTherefore, some functionality may not be available."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_BROKENSIGNATURE.String.Text
-msgid  "The digitally signed document content and/or macros do not match the current document signature.\n\nThis could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
+msgid  "The digitally signed document content and/or macros do not match the current document signature.\\n\\nThis could be the result of document manipulation or of structural document damage due to data transmission.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_INCOMPLETE_ENCRYPTION.String.Text
-msgid  "The encrypted document contains unexpected non-encrypted streams.\n\nThis could be the result of document manipulation.\n\nWe recommend that you do not trust the content of the current document.\nExecution of macros is disabled for this document.\n "
+msgid  "The encrypted document contains unexpected non-encrypted streams.\\n\\nThis could be the result of document manipulation.\\n\\nWe recommend that you do not trust the content of the current document.\\nExecution of macros is disabled for this document.\\n "
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_IO_INVALIDLENGTH.String.Text
@@ -7700,506 +8136,631 @@ msgid  "Function not possible: write protected."
 msgstr ""
 
 #: source/src/errtxt.src#RID_ERRHDL.ERRCODE_SFX_SHARED_NOPASSWORDCHANGE.String.Text
-msgid  "The password of a shared spreadsheet cannot be set or changed.\nDeactivate sharing mode first."
+msgid  "The password of a shared spreadsheet cannot be set or changed.\\nDeactivate sharing mode first."
 msgstr ""
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_INSERT_TEXT.String.Text
+#, fuzzy
 msgid  "INSRT"
 msgstr "INSRT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_OVERWRITE_TEXT.String.Text
+#, fuzzy
 msgid  "OVER"
 msgstr "OVER"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_STD.String.Text
+#, fuzzy
 msgid  "STD"
 msgstr "STD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ER.String.Text
+#, fuzzy
 msgid  "EXT"
 msgstr "EXT"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_ERG.String.Text
+#, fuzzy
 msgid  "ADD"
 msgstr "ADD"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_SELMODE_BLK.String.Text
+#, fuzzy
 msgid  "BLK"
 msgstr "BLK"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature is OK."
 msgstr "ဒစ်ဂျစ်တယ် မှန်ကန်ကြောင်းစစ်ဆေးချက် - မှတ်တမ်းမှတ်ရာ မှန်ကန်ကြောင်း စစ်ဆေးချက် အိုကေပြီ။"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_OK_NO_VERIFY.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature is OK, but the certificates could not be validated."
 msgstr "ဒစ်ဂျစ်တယ် မှန်ကန်ကြောင်းစစ်ဆေးချက် - မှတ်တမ်းမှတ်ရာ မှန်ကန်ကြောင်း စစ်ဆေးချက် အိုကေပြီ၊ သို့သော် အသိအမှတ်ပြု လက်မှတ်များ ခိုင်လုံကြောင်း သက်သေပြနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_NOT_OK.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature does not match the document content. We strongly recommend you to do not trust this document."
 msgstr "ဒစ်ဂျစ်တယ် မှန်ကန်ကြောင်းစစ်ဆေးချက် - မှတ်တမ်းမှတ်ရာ မှန်ကန်ကြောင်း စစ်ဆေးချက်သည် မှတ်တမ်းမှတ်ရာ မာတိကာနှင့် မယှဉ်တွဲပါ။ ဤမှတ်တမ်းမှတ်ရာ စိတ်မချရန် ပြင်းထန်စွာ အကြံပြုသည်။"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_NO_SIG.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document is not signed."
 msgstr "ဒစ်ဂျစ်တယ် မှန်ကန်ကြောင်းစစ်ဆေးချက် - မှတ်တမ်းမှတ်ရာ မှန်ကန်ကြောင်း မစစ်ဆေးပါ။"
 
 #: source/stbctrls/stbctrls.src#RID_SVXSTR_XMLSEC_SIG_CERT_OK_PARTIAL_SIG.String.Text
+#, fuzzy
 msgid  "Digital Signature: The document signature and the certificate are OK, but not all parts of the document are signed."
 msgstr "ဒစ်ဂျစ်တယ် မှန်ကန်ကြောင်းစစ်ဆေးချက်-မှတ်တမ်းမှတ်ရာ မှန်ကန်ကြောင်း စစ်ဆေးချက်နှင့် အသိအမှတ်ပြုလက်မှတ်သည် အိုကေပြီ။ သို့သော် မှတ်တမ်းမှတ်ရာ၏ အပိုင်းများအားလုံးကို မစစ်ဆေးပါ။"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_OPTIMAL.MenuItem.Text
+#, fuzzy
 msgid  "Optimal"
 msgstr "အသင့်ဆုံးဖြစ်သော"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_PAGE_WIDTH.MenuItem.Text
+#, fuzzy
 msgid  "Page Width"
 msgstr "စာမျက်နှာအကျယ်"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_ZOOM.ZOOM_WHOLE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "Entire Page"
 msgstr "စာမျက်နှာ တစ်ခုလုံး"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_AVG.MenuItem.Text
+#, fuzzy
 msgid  "Average"
 msgstr "ပျမ်းမျှ"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT2.MenuItem.Text
+#, fuzzy
 msgid  "CountA"
 msgstr "A ရေတွက်ပါ"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_COUNT.MenuItem.Text
+#, fuzzy
 msgid  "Count"
 msgstr "ရေတွက်ပါ"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MAX.MenuItem.Text
+#, fuzzy
 msgid  "Maximum"
 msgstr "အကြီးဆုံး"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_MIN.MenuItem.Text
+#, fuzzy
 msgid  "Minimum"
 msgstr "အနည်းဆုံး"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_SUM.MenuItem.Text
+#, fuzzy
 msgid  "Sum"
 msgstr "ပုစ္ဆာ"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_PSZ_FUNC.PSZ_FUNC_NONE.MenuItem.Text
+#, fuzzy
 msgid  "None"
 msgstr "ဘာမျှမရှိပါ"
 
 #: source/stbctrls/stbctrls.src#RID_SVXMNU_XMLSECSTATBAR.XMLSEC_CALL.MenuItem.Text
+#, fuzzy
 msgid  "Digital Signatures..."
 msgstr "ဒစ်ဂျစ်တယ် မှန်ကန်ကြောင်းစစ်ဆေးချက်များ..."
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNONE.String.Text
+#, fuzzy
 msgid  "draw object"
 msgstr "အရာဝတ္ထု ပုံဆွဲပါ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
+#, fuzzy
 msgid  "draw objects"
 msgstr "အရာဝတ္ထုများ ပုံဆွဲပါ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
+#, fuzzy
 msgid  "group object"
 msgstr "အရာဝတ္ထု အုပ်စု"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUP.String.Text
+#, fuzzy
 msgid  "group objects"
 msgstr "အရာဝတ္ထုများ အုပ်စု"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUPEMPTY.String.Text
+#, fuzzy
 msgid  "blank group object"
 msgstr "အရာဝတ္ထု အုပ်စု အလွတ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRUPEMPTY.String.Text
+#, fuzzy
 msgid  "Blank group objects"
 msgstr "အရာဝတ္ထုများ အုပ်စု အလွတ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE.String.Text
+#, fuzzy
 msgid  "Line"
 msgstr "လိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Hori.String.Text
+#, fuzzy
 msgid  "horizontal line"
 msgstr "ရေပြင်ညီလိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Vert.String.Text
+#, fuzzy
 msgid  "Vertical line"
 msgstr "မျဉ်းမတ်လိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLINE_Diag.String.Text
+#, fuzzy
 msgid  "diagonal line"
 msgstr "လိုင်း ထောင့်ဖြတ်မျဉ်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLINE.String.Text
+#, fuzzy
 msgid  "Lines"
 msgstr "လိုင်းများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECT.String.Text
+#, fuzzy
 msgid  "Rectangle"
 msgstr "ထောင့်မှန်စတုဂံ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECT.String.Text
+#, fuzzy
 msgid  "Rectangles"
 msgstr "ထောင့်မှန်စတုဂံများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUAD.String.Text
+#, fuzzy
 msgid  "Square"
 msgstr "စတုရန်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUAD.String.Text
+#, fuzzy
 msgid  "Squares"
 msgstr "စတုရန်းများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARAL.String.Text
+#, fuzzy
 msgid  "Parallelogram"
 msgstr "နှစ်ဖက်ညီ စတုဂံစောင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARAL.String.Text
+#, fuzzy
 msgid  "Parallelograms"
 msgstr "နှစ်ဖက်ညီ စတုဂံစောင်းများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTE.String.Text
+#, fuzzy
 msgid  "Rhombus"
 msgstr "မှန်ကူကွက်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTE.String.Text
+#, fuzzy
 msgid  "Rhombuses"
 msgstr "မှန်ကူကွက်များ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRECTRND.String.Text
+#, fuzzy
 msgid  "Rounded rectangle"
 msgstr "ထောင့်မှန်စတုဂံ အလှည့်ကျ လှည့်ခြင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRECTRND.String.Text
+#, fuzzy
 msgid  "Rounded Rectangles"
 msgstr "ထောင့်မှန်စတုဂံများ အလှည့်ကျ လှည့်ခြင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulQUADRND.String.Text
+#, fuzzy
 msgid  "rounded square"
 msgstr "စတုရန်း အလှည့်ကျ လှည့်ခြင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralQUADRND.String.Text
+#, fuzzy
 msgid  "Rounded Squares"
 msgstr "စတုရန်းများ အလှည့်ကျ လှည့်ခြင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPARALRND.String.Text
+#, fuzzy
 msgid  "Rounded Parallelogram"
 msgstr "နှစ်ဖက်ညီ စတုဂံစောင်း အလှည့်ကျ လှည့်ခြင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPARALRND.String.Text
+#, fuzzy
 msgid  "Rounded parallelograms"
 msgstr "နှစ်ဖက်ညီ စတုဂံစောင်းများ အလှည့်ကျ လှည့်ခြင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulRAUTERND.String.Text
+#, fuzzy
 msgid  "rounded rhombus"
 msgstr "မှန်ကူကွက် အလှည့်ကျ လှည့်ခြင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralRAUTERND.String.Text
+#, fuzzy
 msgid  "Rounded rhombuses"
 msgstr "မှန်ကူကွက်များ အလှည့်ကျ လှည့်ခြင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRC.String.Text
+#, fuzzy
 msgid  "Circle"
 msgstr "စက်ဝိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRC.String.Text
+#, fuzzy
 msgid  "Circles"
 msgstr "စက်ဝိုင်းများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECT.String.Text
+#, fuzzy
 msgid  "Circle sector"
 msgstr "စက်ဝိုင်း ကဏ္ဍ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECT.String.Text
+#, fuzzy
 msgid  "Circle sectors"
 msgstr "စက်ဝိုင်း ကဏ္ဍများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARC.String.Text
+#, fuzzy
 msgid  "Arc"
 msgstr "စက်ဝိုင်းပြတ်အကွေး"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARC.String.Text
+#, fuzzy
 msgid  "Arcs"
 msgstr "စက်ဝိုင်းပြတ်အကွေးများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
+#, fuzzy
 msgid  "Circle segment"
 msgstr "စက်ဝိုင်းပြတ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
+#, fuzzy
 msgid  "Circle segments"
 msgstr "စက်ဝိုင်းပြတ်များ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCIRCE.String.Text
+#, fuzzy
 msgid  "Ellipse"
 msgstr "ဘဲဥပုံ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCIRCE.String.Text
+#, fuzzy
 msgid  "Ellipses"
 msgstr "ဘဲဥပုံများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSECTE.String.Text
+#, fuzzy
 msgid  "Ellipse Pie"
 msgstr "ဘဲဥခြမ်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSECTE.String.Text
+#, fuzzy
 msgid  "Ellipse Pies"
 msgstr "ဘဲဥခြမ်းများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARCE.String.Text
+#, fuzzy
 msgid  "Elliptical arc"
 msgstr "ဘဲဥပုံ စက်ဝိုင်းပြတ်အကွေး"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARCE.String.Text
+#, fuzzy
 msgid  "Elliptical arcs"
 msgstr "ဘဲဥပုံ စက်ဝိုင်းပြတ်အကွေးများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUTE.String.Text
+#, fuzzy
 msgid  "Ellipse Segment"
 msgstr "ဘဲဥပုံ စက်ဝိုင်းပြတ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUTE.String.Text
+#, fuzzy
 msgid  "Ellipse Segments"
 msgstr "ဘဲဥပုံ စက်ဝိုင်းပြတ်များ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY.String.Text
+#, fuzzy
 msgid  "Polygon"
 msgstr "ဗဟုဂံ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPOLY_PntAnz.String.Text
+#, fuzzy
 msgid  "Polygon %2 corners"
 msgstr "%2 ထောင့်များ ဗဟုဂံ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPOLY.String.Text
+#, fuzzy
 msgid  "Polygons"
 msgstr "ဗဟုဂံများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN.String.Text
+#, fuzzy
 msgid  "Polyline"
 msgstr "ဆက်ထားသောလိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPLIN_PntAnz.String.Text
+#, fuzzy
 msgid  "Polyline with %2 corners"
 msgstr "%2 ထောင့်များနှင့်အတူ ဆက်ထားသောလိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPLIN.String.Text
+#, fuzzy
 msgid  "Polylines"
 msgstr "ဆက်ထားသောလိုင်းများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHLINE.String.Text
+#, fuzzy
 msgid  "Bézier curve"
 msgstr "Bézier မျဉ်းခုံး"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHLINE.String.Text
+#, fuzzy
 msgid  "Bézier curves"
 msgstr "Bézier မျဉ်းခုံးများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPATHFILL.String.Text
+#, fuzzy
 msgid  "Bézier curve"
 msgstr "Bézier မျဉ်းခုံး"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPATHFILL.String.Text
+#, fuzzy
 msgid  "Bézier curves"
 msgstr "Bézier မျဉ်းခုံးများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREELINE.String.Text
+#, fuzzy
 msgid  "Freeform Line"
 msgstr "လွတ်လပ်သော ပုံစံလိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREELINE.String.Text
+#, fuzzy
 msgid  "Freeform Lines"
 msgstr "လွတ်လပ်သော ပုံစံလိုင်းများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREEFILL.String.Text
+#, fuzzy
 msgid  "Freeform Line"
 msgstr "လွတ်လပ်သော ပုံစံလိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREEFILL.String.Text
+#, fuzzy
 msgid  "Freeform Lines"
 msgstr "လွတ်လပ်သော ပုံစံလိုင်းများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBLINE.String.Text
+#, fuzzy
 msgid  "Curve"
 msgstr "မျဉ်းခုံး"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBLINE.String.Text
+#, fuzzy
 msgid  "Curve objects"
 msgstr "အရာဝတ္ထုများ မျဉ်းခုံး"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBFILL.String.Text
+#, fuzzy
 msgid  "Curve"
 msgstr "မျဉ်းခုံး"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBFILL.String.Text
+#, fuzzy
 msgid  "Curve objects"
 msgstr "အရာဝတ္ထုများ မျဉ်းခုံး"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulNATSPLN.String.Text
+#, fuzzy
 msgid  "Natural Spline"
 msgstr "သဘာ၀ မျဉ်းခုံး"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNATSPLN.String.Text
+#, fuzzy
 msgid  "Natural Splines"
 msgstr "သဘာ၀ မျဉ်းခုံးများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPERSPLN.String.Text
+#, fuzzy
 msgid  "Periodic Spline"
 msgstr "ရံဖန်ရံခါ (သို့) ပုံမှန် မျဉ်းခုံး"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPERSPLN.String.Text
+#, fuzzy
 msgid  "Periodic Splines"
 msgstr "ရံဖန်ရံခါ (သို့) ပုံမှန် မျဉ်းခုံးများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXT.String.Text
+#, fuzzy
 msgid  "Text Frame"
 msgstr "စာသား ဘောင်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXT.String.Text
+#, fuzzy
 msgid  "Text Frame"
 msgstr "စာသား ဘောင်"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXTLNK.String.Text
+#, fuzzy
 msgid  "Linked text frame"
 msgstr "ကွင်းဆက်ထားသည့် စာသား ဘောင်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXTLNK.String.Text
+#, fuzzy
 msgid  "Linked text frames"
 msgstr "ကွင်းဆက်ထားသည့် စာသား ဘောင်"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "အရာဝတ္ထု စာသား အရွယ်-သို့-လိုက်လျောညီထွေဖြစ်စေပါ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "အရာဝတ္ထုများ စာသား အရွယ်-သို့-လိုက်လျောညီထွေဖြစ်စေပါ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITALLTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text object"
 msgstr "အရာဝတ္ထု စာသား အရွယ်-သို့-လိုက်လျောညီထွေဖြစ်စေပါ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITALLTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text objects"
 msgstr "အရာဝတ္ထုများ စာသား အရွယ်-သို့-လိုက်လျောညီထွေဖြစ်စေပါ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTITLETEXT.String.Text
+#, fuzzy
 msgid  "Title text"
 msgstr "စာသား ခေါင်းစဉ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTITLETEXT.String.Text
+#, fuzzy
 msgid  "Title texts"
 msgstr "စာသားများ ခေါင်းစဉ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOUTLINETEXT.String.Text
+#, fuzzy
 msgid  "Outline Text"
 msgstr "ကောက်ကြောင်း စာသား"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOUTLINETEXT.String.Text
+#, fuzzy
 msgid  "Outline Texts"
 msgstr "ကောက်ကြောင်း စာသားများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAF.String.Text
+#, fuzzy
 msgid  "graphic"
 msgstr "ပန်းချီဒီဇိုင်းဆွဲခြင်းဆိုင်ရာ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAF.String.Text
+#, fuzzy
 msgid  "graphics"
 msgstr "ပန်းချီဒီဇိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFLNK.String.Text
+#, fuzzy
 msgid  "Linked graphic"
 msgstr "ကွင်းဆက် ပန်းချီဒီဇိုင်းဆွဲခြင်းဆိုင်ရာ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFLNK.String.Text
+#, fuzzy
 msgid  "Linked graphics"
 msgstr "ကွင်းဆက် ပန်းချီဒီဇိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONE.String.Text
+#, fuzzy
 msgid  "Blank graphic object"
 msgstr "အရာဝတ္ထု ပန်းချီဒီဇိုင်းဆွဲခြင်းဆိုင်ရာ အလွတ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONE.String.Text
+#, fuzzy
 msgid  "Blank graphic objects"
 msgstr "အရာဝတ္ထုများ ပန်းချီဒီဇိုင်းဆွဲခြင်းဆိုင်ရာ အလွတ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFNONELNK.String.Text
+#, fuzzy
 msgid  "Blank linked graphic"
 msgstr "ကွင်းဆက်ထားသည့် ပန်းချီဒီဇိုင်းဆွဲခြင်းဆိုင်ရာ အလွတ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFNONELNK.String.Text
+#, fuzzy
 msgid  "Blank linked graphics"
 msgstr "ကွင်းဆက်ထားသည့် ပန်းချီဒီဇိုင်း အလွတ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTF.String.Text
+#, fuzzy
 msgid  "Metafile"
 msgstr "မီတာဖိုင်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTF.String.Text
+#, fuzzy
 msgid  "Metafiles"
 msgstr "မီတာဖိုင်များ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMTFLNK.String.Text
+#, fuzzy
 msgid  "Linked Metafile"
 msgstr "ကွင်းဆက်ထားသည့် Metafile"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMTFLNK.String.Text
+#, fuzzy
 msgid  "Linked Metafiles"
 msgstr "ကွင်းဆက်ထားသည့် Metafiles"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMP.String.Text
+#, fuzzy
 msgid  "Bitmap"
 msgstr "ပုံရိပ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANS.String.Text
+#, fuzzy
 msgid  "Bitmap with transparency"
 msgstr "ထိုးဖေါက်မြင်နိုင်မှုနှင့်အတူ ပုံရိပ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPLNK.String.Text
+#, fuzzy
 msgid  "Linked Bitmap"
 msgstr "ကွင်းဆက်ထားသည့် ပုံရိပ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFBMPTRANSLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmap with transparency"
 msgstr "ထိုးဖေါက်မြင်နိုင်မှုနှင့်အတူ ပုံရိပ် ကွင်းဆက်ထားသည်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMP.String.Text
+#, fuzzy
 msgid  "Bitmaps"
 msgstr "ပုံရိပ်များ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANS.String.Text
+#, fuzzy
 msgid  "Bitmaps with transparency"
 msgstr "ထိုးဖေါက်မြင်နိုင်မှုနှင့်အတူ ပုံရိပ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmaps"
 msgstr "ကွင်းဆက်ထားသည့် ပုံရိပ်များ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFBMPTRANSLNK.String.Text
+#, fuzzy
 msgid  "Linked bitmaps with transparency"
 msgstr "ထိုးဖေါက်မြင်နိုင်မှုနှင့်အတူ ပုံရိပ်"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCUSTOMSHAPE.String.Text
+#, fuzzy
 msgid  "Shape"
 msgstr "ပုံသဏ္ဍာန်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCUSTOMSHAPE.String.Text
+#, fuzzy
 msgid  "Shapes"
 msgstr "ပုံသဏ္ဍာန်များ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMAC.String.Text
+#, fuzzy
 msgid  "Mac graphic"
 msgstr "Mac ပန်းချီဒီဇိုင်းဆွဲခြင်းဆိုင်ရာ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMAC.String.Text
+#, fuzzy
 msgid  "Mac graphics"
 msgstr "Mac ပန်းချီဇိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRAFMACLNK.String.Text
+#, fuzzy
 msgid  "Linked Mac graphic"
 msgstr "ကွင်းဆက်ထားသည့် Mac ပန်းချီဒီဇိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralGRAFMACLNK.String.Text
+#, fuzzy
 msgid  "Linked Mac graphics"
 msgstr "ကွင်းဆက်ထားသည့် Mac ပန်းချီဒီဇိုင်း"
 
@@ -8212,417 +8773,519 @@ msgid  "SVGs"
 msgstr ""
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2.String.Text
+#, fuzzy
 msgid  "embedded object (OLE)"
 msgstr "စူးဝင်စွဲခိုင်နေသည့် အရာဝတ္ထု (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2.String.Text
+#, fuzzy
 msgid  "Embedded objects (OLE)"
 msgstr "စူးဝင်စွဲခိုင်နေသည့် အရာဝတ္ထုများ (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulUno.String.Text
+#, fuzzy
 msgid  "Control"
 msgstr "ထိန်းချုပ်မှု"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralUno.String.Text
+#, fuzzy
 msgid  "Controls"
 msgstr "ထိန်းချုပ်မှုများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulOLE2LNK.String.Text
+#, fuzzy
 msgid  "linked embedded object (OLE)"
 msgstr "ကွင်းဆက်ထားသော စူးဝင်စွဲခိုင်နေသည့် အရာဝတ္ထု (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralOLE2LNK.String.Text
+#, fuzzy
 msgid  "Linked embedded objects (OLE)"
 msgstr "ကွင်းဆက်ထားသော စူးဝင်စွဲခိုင်နေသည့် အရာဝတ္ထုများ (OLE)"
 
 #: source/svdraw/svdstr.src#STR_ObjOLE2NamePrefix.String.Text
+#, fuzzy
 msgid  "Object"
 msgstr "အရာဝတ္ထု"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFrame.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "ဘောင်"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFrame.String.Text
+#, fuzzy
 msgid  "Frames"
 msgstr "ဘောင်များ"
 
 #: source/svdraw/svdstr.src#STR_ObjFrameNamePrefix.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "ဘောင်"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulEDGE.String.Text
+#, fuzzy
 msgid  "Object Connectors"
 msgstr "အရာဝတ္ထု ချိတ်ဆက်သူများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralEDGE.String.Text
+#, fuzzy
 msgid  "Object Connectors"
 msgstr "အရာဝတ္ထု ချိတ်ဆက်သူများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCAPTION.String.Text
+#, fuzzy
 msgid  "Callout"
 msgstr "စာတန်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCAPTION.String.Text
+#, fuzzy
 msgid  "Callouts"
 msgstr "စာတန်းများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPAGE.String.Text
+#, fuzzy
 msgid  "Preview object"
 msgstr "အရာဝတ္ထု အစမ်းကြည့်ပါ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPAGE.String.Text
+#, fuzzy
 msgid  "Preview objects"
 msgstr "အရာဝတ္ထုများ အစမ်းကြည့်ပါ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulMEASURE.String.Text
+#, fuzzy
 msgid  "Dimension line"
 msgstr "ရှုထောင့်လိုင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralMEASURE.String.Text
+#, fuzzy
 msgid  "Dimensioning objects"
 msgstr "ရှုထောင့်စုံ အရာဝတ္ထုများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePlural.String.Text
+#, fuzzy
 msgid  "draw objects"
 msgstr "အရာဝတ္ထုများ ပုံဆွဲပါ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameNoObj.String.Text
+#, fuzzy
 msgid  "No draw object"
 msgstr "အရာဝတ္ထု ပုံမဆွဲပါ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameAnd.String.Text
+#, fuzzy
 msgid  "and"
 msgstr "နှင့်"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulPlural.String.Text
+#, fuzzy
 msgid  "draw object(s)"
 msgstr "အရာဝတ္ထု(များ) ပုံဆွဲပါ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCube3d.String.Text
+#, fuzzy
 msgid  "3D cube"
 msgstr "3D ကုဗပုံ"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCube3d.String.Text
+#, fuzzy
 msgid  "3D cubes"
 msgstr "3D ကုဗပုံများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulExtrude3d.String.Text
+#, fuzzy
 msgid  "Extrusion object"
 msgstr "အရာဝတ္ထု ပုံသွန်းလောင်းခြင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralExtrude3d.String.Text
+#, fuzzy
 msgid  "Extrusion objects"
 msgstr "အရာဝတ္ထုများ ပုံသွန်းလောင်းခြင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLabel3d.String.Text
+#, fuzzy
 msgid  "3D text"
 msgstr "3D စာသား"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLabel3d.String.Text
+#, fuzzy
 msgid  "3D texts"
 msgstr "3D စာသားများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulLathe3d.String.Text
+#, fuzzy
 msgid  "rotation object"
 msgstr "အရာဝတ္ထု အလှည့်ကျ လှည့်ပေးခြင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralLathe3d.String.Text
+#, fuzzy
 msgid  "rotation objects"
 msgstr "အရာဝတ္ထုများ အလှည့်ကျ လှည့်ပေးခြင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulObj3d.String.Text
+#, fuzzy
 msgid  "3D object"
 msgstr "3D အရာဝတ္ထု"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralObj3d.String.Text
+#, fuzzy
 msgid  "3D objects"
 msgstr "3D အရာဝတ္ထု"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralPoly3d.String.Text
+#, fuzzy
 msgid  "3D polygons"
 msgstr "3D ဗဟုဂံများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulScene3d.String.Text
+#, fuzzy
 msgid  "3D scene"
 msgstr "3D ရှုခင်း"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralScene3d.String.Text
+#, fuzzy
 msgid  "3D scenes"
 msgstr "3D ရှုခင်းများ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulSphere3d.String.Text
+#, fuzzy
 msgid  "sphere"
 msgstr "စက်လုံး"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralSphere3d.String.Text
+#, fuzzy
 msgid  "spheres"
 msgstr "စက်လုံးများ"
 
 #: source/svdraw/svdstr.src#STR_EditWithCopy.String.Text
+#, fuzzy
 msgid  "with copy"
 msgstr "မိတ္တူကူးယူခြင်းနှင့်အတူ"
 
 #: source/svdraw/svdstr.src#STR_EditPosSize.String.Text
+#, fuzzy
 msgid  "Set position and size for %1"
 msgstr "%1 အတွက် ရပ်တည်ချက်နှင့် အရွယ် ဖန်တီးပါ"
 
 #: source/svdraw/svdstr.src#STR_EditDelete.String.Text
+#, fuzzy
 msgid  "Delete %1"
 msgstr "%1 ဖျက်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditMovToTop.String.Text
+#, fuzzy
 msgid  "Move %1 forward"
 msgstr "အရှေ့သို့ %1 ရွှေ့ပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_EditMovToBtm.String.Text
+#, fuzzy
 msgid  "Move %1 further back"
 msgstr "ပိုဝေးသော အနောက်သို့ %1 ရွှေ့ပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_EditPutToTop.String.Text
+#, fuzzy
 msgid  "Move %1 to front"
 msgstr "အရှေ့သို့ %1 ရွှေ့ပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_EditPutToBtm.String.Text
+#, fuzzy
 msgid  "Move %1 to back"
 msgstr "အနောက်သို့ %1 ရွှေ့ပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_EditRevOrder.String.Text
+#, fuzzy
 msgid  "Reverse order of %1"
 msgstr "%1 ၏ ညွှန်ကြားမှု အရံသင့် သီးသန့်ထားပါ"
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "%1 ရွှေ့ပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
-msgstr "%1 အရွယ် ပြန်ပြင်ပါ"
+msgstr " %1 အရွယ် ပြန်ပြင်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
+#, fuzzy
 msgid  "Rotate %1"
 msgstr "%1 အလှည့်ကျ လည်စေပါ"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
+#, fuzzy
 msgid  "Flip %1 horizontal"
 msgstr "ရေပြင်ညီ %1 လှန်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
+#, fuzzy
 msgid  "Flip %1 vertical"
 msgstr "မျဉ်းမတ် %1 လှန်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorDiag.String.Text
+#, fuzzy
 msgid  "Flip %1 diagonal"
 msgstr "ထောင့်ဖြတ်မျဉ်း %1 လှန်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
+#, fuzzy
 msgid  "Flip %1 freehand"
-msgstr "လက်တန်း %1 လှန်ပါ"
+msgstr "အလွတ်တန်း %1 လှန်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
+#, fuzzy
 msgid  "Distort %1 (slant)"
 msgstr "%1 (အစွေသား) ပုံပျက်သည်"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
+#, fuzzy
 msgid  "Arrange %1 in circle"
 msgstr "စက်ဝိုင်းတွင် %1 စီစဉ်ထားသိုပါ"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
+#, fuzzy
 msgid  "Curve %1 in circle"
 msgstr "စက်ဝိုင်းတွင် %1 မျဉ်းခုံး"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
+#, fuzzy
 msgid  "Distort %1"
 msgstr "%1 ပုံပျက်သည်"
 
 #: source/svdraw/svdstr.src#STR_EditRipUp.String.Text
+#, fuzzy
 msgid  "Undo %1"
 msgstr "%1 ပြန်ခေါ်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditSetPointsSmooth.String.Text
+#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "%1 ၏ bézier ဂုဏ်သတ္တိများ အထူးပြုပါ"
 
 #: source/svdraw/svdstr.src#STR_EditSetSegmentsKind.String.Text
+#, fuzzy
 msgid  "Modify bézier properties of %1"
 msgstr "%1 ၏ bézier ဂုဏ်သတ္တိများ အထူးပြုပါ"
 
 #: source/svdraw/svdstr.src#STR_EditShut.String.Text
+#, fuzzy
 msgid  "Close %1"
 msgstr "%1 ပိတ်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueEscDir.String.Text
+#, fuzzy
 msgid  "Set exit direction for %1"
 msgstr "%1 အတွက် ဦးတည်ချက် အထွက် ဖန်တီးပါ"
 
 #: source/svdraw/svdstr.src#STR_EditSetGluePercent.String.Text
+#, fuzzy
 msgid  "Set relative attribute at %1"
 msgstr "%1 ၌ ပင်ကိုယ် အရည်အချင်း ဆက်နွယ်မှု ဖန်တီးပါ"
 
 #: source/svdraw/svdstr.src#STR_EditSetGlueAlign.String.Text
+#, fuzzy
 msgid  "Set reference point for %1"
 msgstr "%1 အတွက် အစက်အပြောက်အမှတ် ရည်ညွှန်းချက် ဖန်တီးပါ"
 
 #: source/svdraw/svdstr.src#STR_EditGroup.String.Text
+#, fuzzy
 msgid  "Group %1"
 msgstr "%1 အုပ်စု"
 
 #: source/svdraw/svdstr.src#STR_EditUngroup.String.Text
+#, fuzzy
 msgid  "Ungroup %1"
 msgstr "%1 အုပ်စု မဟုတ်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditSetAttributes.String.Text
+#, fuzzy
 msgid  "Apply attributes to %1"
 msgstr "%1 သို့ ပင်ကိုယ် အရည်အချင်းများ လက်တွေ့ အသုံးချပါ"
 
 #: source/svdraw/svdstr.src#STR_EditSetStylesheet.String.Text
+#, fuzzy
 msgid  "Apply Styles to %1"
 msgstr "%1 သို့ စတိုင်လ် များ အသုံးချပါ"
 
 #: source/svdraw/svdstr.src#STR_EditDelStylesheet.String.Text
+#, fuzzy
 msgid  "Remove Style from %1"
 msgstr "%1 မှ စတိုင်လ် ဖယ်ရှားပါ"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPoly.String.Text
+#, fuzzy
 msgid  "Convert %1 to polygon"
 msgstr "ဗဟုဂံသို့ %1 ကူးပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_EditConvToPolys.String.Text
+#, fuzzy
 msgid  "Convert %1 to polygons"
 msgstr "ဗဟုဂံများသို့ %1 ကူးပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurve.String.Text
+#, fuzzy
 msgid  "Convert %1 to curve"
 msgstr "မျဉ်းခုံးသို့ %1 ကူးပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_EditConvToCurves.String.Text
+#, fuzzy
 msgid  "Convert %1 to curves"
 msgstr "မျဉ်းခုံးများသို့ %1 ကူးပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContour.String.Text
+#, fuzzy
 msgid  "Convert %1 to contour"
 msgstr "ကွန်တိုမျဉ်းသို့ %1 ကူးပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_EditConvToContours.String.Text
+#, fuzzy
 msgid  "Convert %1 to contours"
 msgstr "ကွန်တိုမျဉ်းများသို့ %1 ကူးပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_EditAlign.String.Text
+#, fuzzy
 msgid  "Align %1"
 msgstr "%1 တန်းညှိပါ"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVTop.String.Text
+#, fuzzy
 msgid  "Align %1 to top"
 msgstr "ထိပ်သို့ %1 တန်းညှိပါ"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVBottom.String.Text
+#, fuzzy
 msgid  "Align %1 to bottom"
 msgstr "အောက်ခြေသို့ %1 တန်းညှိပါ"
 
 #: source/svdraw/svdstr.src#STR_EditAlignVCenter.String.Text
+#, fuzzy
 msgid  "Horizontally center %1"
 msgstr "%1 ဗဟို အလျားလိုက်"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHLeft.String.Text
+#, fuzzy
 msgid  "Align %1 to left"
 msgstr "ဘယ်ဖက်သို့%1 တန်းညှိပါ"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHRight.String.Text
+#, fuzzy
 msgid  "Align %1 to right"
 msgstr "ညာဖက်သို့ %1 တန်းညှိပါ"
 
 #: source/svdraw/svdstr.src#STR_EditAlignHCenter.String.Text
+#, fuzzy
 msgid  "Vertically center %1"
 msgstr "%1 ဗဟို ထောင့်မှန်ကျကျ"
 
 #: source/svdraw/svdstr.src#STR_EditAlignCenter.String.Text
+#, fuzzy
 msgid  "Center %1"
 msgstr "%1 ဗဟို"
 
 #: source/svdraw/svdstr.src#STR_EditTransform.String.Text
+#, fuzzy
 msgid  "Transform %1"
 msgstr "%1 ပြောင်းလဲပါ"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_PolyPoly.String.Text
+#, fuzzy
 msgid  "Combine %1"
 msgstr "%1 ပေါင်းစပ်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditMergeMergePoly.String.Text
+#, fuzzy
 msgid  "Merge %1"
 msgstr "%1 ပေါင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_EditMergeSubstractPoly.String.Text
+#, fuzzy
 msgid  "Subtract %1"
 msgstr "%1 နှုတ်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditMergeIntersectPoly.String.Text
+#, fuzzy
 msgid  "Intersect %1"
 msgstr "%1 တစ်ခုကို တစ်ခုက ဖြတ်ပါ"
 
 #: source/svdraw/svdstr.src#STR_DistributeMarkedObjects.String.Text
+#, fuzzy
 msgid  "Distribute selected objects"
 msgstr "ရွေးချယ်ထားသည့် အရာဝတ္ထုများ ဖြန့်ဝေပါ"
 
 #: source/svdraw/svdstr.src#STR_EditCombine_OnePoly.String.Text
+#, fuzzy
 msgid  "Combine %1"
 msgstr "%1 ပေါင်းစပ်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Polys.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "%1 အလျားလိုက် ကွဲစေပါ"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Lines.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "%1 အလျားလိုက် ကွဲစေပါ"
 
 #: source/svdraw/svdstr.src#STR_EditImportMtf.String.Text
+#, fuzzy
 msgid  "Split %1"
 msgstr "%1 အလျားလိုက် ကွဲစေပါ"
 
 #: source/svdraw/svdstr.src#STR_ExchangePaste.String.Text
+#, fuzzy
 msgid  "Insert object(s)"
 msgstr "အရာဝတ္ထု(များ) စီချယ်ပါ"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpCut.String.Text
+#, fuzzy
 msgid  "Cut %1"
 msgstr "%1 ဖြတ်ယူပါ"
 
 #: source/svdraw/svdstr.src#STR_ExchangeClpPaste.String.Text
+#, fuzzy
 msgid  "Paste Clipboard"
 msgstr "ကလစ်ဘုတ် ဖြတ်ကူးယူသမျှ ပြန်ထည့်ပါ"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDD.String.Text
+#, fuzzy
 msgid  "Drag and Drop %1"
 msgstr "%1 တစ်နေရာ တွန်းရွှေ့သွားခြင်းနှင့် ချပါ"
 
 #: source/svdraw/svdstr.src#STR_ExchangeDDPaste.String.Text
+#, fuzzy
 msgid  "Insert Drag and Drop"
 msgstr "တစ်နေရာ တွန်းရွှေ့သွားခြင်းနှင့် ချခြင်း စီချယ်ပါ"
 
 #: source/svdraw/svdstr.src#STR_DragInsertPoint.String.Text
+#, fuzzy
 msgid  "Insert point to %1"
 msgstr "%1 သို့ အစက်အပြောက်အမှတ် စီချယ်ပါ"
 
 #: source/svdraw/svdstr.src#STR_DragInsertGluePoint.String.Text
+#, fuzzy
 msgid  "Insert glue point to %1"
 msgstr "%1 သို့ ကပ်သော အစက်အပြောက်အမှတ် စီချယ်ပါ"
 
 #: source/svdraw/svdstr.src#STR_DragMethMovHdl.String.Text
+#, fuzzy
 msgid  "Move reference-point"
 msgstr "ရည်ညွှန်းချက် - အစက်အပြောက်အမှတ် ရွှေ့ပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_DragMethObjOwn.String.Text
+#, fuzzy
 msgid  "Geometrically change %1"
 msgstr "%1 ဂျီဩမေထြီကျကျ ပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
+#, fuzzy
 msgid  "Move %1"
 msgstr "%1 ရွှေ့ပြောင်းပါ"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
 #, fuzzy
 msgid  "Resize %1"
-msgstr " %1 အရွယ် ပြန်ပြင်ပါ"
+msgstr "%1 အရွယ် ပြန်ပြင်ပါ"
 
 #: source/svdraw/svdstr.src#STR_DragMethRotate.String.Text
 #, fuzzy
@@ -8892,7 +9555,7 @@ msgstr "ဖွင့်"
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
 #, fuzzy
 msgid  "off"
-msgstr "ပိတ်"
+msgstr "အပိတ်"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
 #, fuzzy
@@ -9382,7 +10045,7 @@ msgstr "အဆင့်"
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
 #, fuzzy
 msgid  "Object name"
-msgstr "အရာဝတ္ထုအမည်"
+msgstr "အရာဝတ္ထု အမည်"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
 #, fuzzy
@@ -10655,50 +11318,62 @@ msgid  "font works"
 msgstr ""
 
 #: source/table/table.src#RID_SVXSTR_STYLEFAMILY_TABLEDESIGN.String.Text
+#, fuzzy
 msgid  "Table Design Styles"
 msgstr "ဇယား ဒီဇိုင်း စတိုင်လ်များ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_TRANSPARENT.String.Text
+#, fuzzy
 msgid  "No Fill"
 msgstr "မဖြည့်ပါ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FILLPATTERN.String.Text
+#, fuzzy
 msgid  "Pattern"
 msgstr "နမူနာပုံစံ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME.String.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "နယ်နမိတ်များ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_STYLE.String.Text
+#, fuzzy
 msgid  "Border Style"
 msgstr "နယ်နမိတ် စတိုင်လ်"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_FRAME_COLOR.String.Text
+#, fuzzy
 msgid  "Border Color"
 msgstr "နယ်နမိတ် အရောင်"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_EXTRAS_CHARBACKGROUND.String.Text
+#, fuzzy
 msgid  "Highlighting"
 msgstr "အသားပေးပါ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_BACKGROUND.String.Text
+#, fuzzy
 msgid  "Background"
 msgstr "နောက်ခံ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_AUTOMATIC.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "အလိုအလျောက်"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_PAGES.String.Text
+#, fuzzy
 msgid  "Pages"
 msgstr "စာမျက်နှာများ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_CLEARFORM.String.Text
+#, fuzzy
 msgid  "Clear formatting"
 msgstr "စီစဉ်ဖွဲ့စည်းမှုပုံစံ ရှင်းလင်းပါ"
 
 #: source/tbxctrls/tbcontrl.src#RID_SVXSTR_MORE.String.Text
+#, fuzzy
 msgid  "More..."
 msgstr "ပို၍..."
 
@@ -10707,226 +11382,282 @@ msgid  "Font color"
 msgstr ""
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Direction"
 msgstr "ဦးတည်ချက် ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PERSPECTIVE.String.Text
+#, fuzzy
 msgid  "~Perspective"
 msgstr "မျက်မြင်တစ်ဆုံး မြင်ကွင်း အမြင် ရေးဆွဲနည်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_PARALLEL.String.Text
+#, fuzzy
 msgid  "P~arallel"
 msgstr "တူညီသော/မျဉ်းပြိုင်"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NW.String.Text
+#, fuzzy
 msgid  "Extrusion North-West"
 msgstr "မြောက်-အနောက် ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_N.String.Text
+#, fuzzy
 msgid  "Extrusion North"
 msgstr "မြောက် ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NE.String.Text
+#, fuzzy
 msgid  "Extrusion North-East"
 msgstr "မြောက်-အရှေ့ ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_W.String.Text
+#, fuzzy
 msgid  "Extrusion West"
 msgstr "အနောက် ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_NONE.String.Text
+#, fuzzy
 msgid  "Extrusion Backwards"
 msgstr "အနောက်ဖက်များသို့ ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_E.String.Text
+#, fuzzy
 msgid  "Extrusion East"
 msgstr "အရှေ့ဖက် ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SW.String.Text
+#, fuzzy
 msgid  "Extrusion South-West"
 msgstr "တောင်-အနောက် ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_S.String.Text
+#, fuzzy
 msgid  "Extrusion South"
 msgstr "တောင်ဖက် ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DIRECTION.STR_DIRECTION + DIRECTION_SE.String.Text
+#, fuzzy
 msgid  "Extrusion South-East"
 msgstr "တောင်-အရှေ့ ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "နက်နက်ရှိုင်းရှိုင်း ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
+#, fuzzy
 msgid  "~Custom..."
 msgstr "ထုံးစံ..."
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_INFINITY.String.Text
+#, fuzzy
 msgid  "~Infinity"
 msgstr "အနန္တ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Lighting"
 msgstr "လျှပ်စီး ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_BRIGHT.String.Text
+#, fuzzy
 msgid  "~Bright"
 msgstr "တောက်တောက်ပပ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_NORMAL.String.Text
+#, fuzzy
 msgid  "~Normal"
 msgstr "သာမန်"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_LIGHTING.STR_DIM.String.Text
+#, fuzzy
 msgid  "~Dim"
 msgstr "မှုန်မှုန်ဝါးဝါး"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Surface"
 msgstr "အပေါ်ယံ ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_WIREFRAME.String.Text
+#, fuzzy
 msgid  "~Wire Frame"
 msgstr "~ဝိုင်ယာ ဘောင်"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_MATTE.String.Text
+#, fuzzy
 msgid  "~Matt"
 msgstr "မှိုင်းသော"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_PLASTIC.String.Text
+#, fuzzy
 msgid  "~Plastic"
 msgstr "ပလပ်စတိတ်"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_SURFACE.STR_METAL.String.Text
+#, fuzzy
 msgid  "Me~tal"
 msgstr "သတ္တု"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.ModalDialog.Text
+#, fuzzy
 msgid  "Extrusion Depth"
 msgstr "နက်နက်ရှိုင်းရှိုင်း ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVX_MDLG_EXTRUSION_DEPTH.FL_DEPTH.FixedText.Text
+#, fuzzy
 msgid  "~Value"
 msgstr "~တန်ဖိုး"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_EXTRUSION_COLOR.String.Text
+#, fuzzy
 msgid  "Extrusion Color"
 msgstr "ရောင်စုံ ပုံသွန်းလောင်းခြင်း"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0.String.Text
+#, fuzzy
 msgid  "~0 cm"
 msgstr "၀ စင်တီမီတာ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1.String.Text
+#, fuzzy
 msgid  "~1 cm"
 msgstr "၁ စင်တီမီတာ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2.String.Text
+#, fuzzy
 msgid  "~2.5 cm"
 msgstr "၂.၅ စင်တီမီတာ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3.String.Text
+#, fuzzy
 msgid  "~5 cm"
 msgstr "၅ စင်တီမီတာ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4.String.Text
+#, fuzzy
 msgid  "10 ~cm"
 msgstr "၁၀ စင်တီမီတာ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_0_INCH.String.Text
+#, fuzzy
 msgid  "0 inch"
 msgstr "၁ လက္မ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_1_INCH.String.Text
+#, fuzzy
 msgid  "0.~5 inch"
 msgstr "၀.၅ လက္မ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_2_INCH.String.Text
+#, fuzzy
 msgid  "~1 inch"
 msgstr "၁ လက္မ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_3_INCH.String.Text
+#, fuzzy
 msgid  "~2 inch"
 msgstr "၂ လက္မ"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXSTR_DEPTH_4_INCH.String.Text
+#, fuzzy
 msgid  "~4 inch"
 msgstr "၄ လက္မ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.ModalDialog.Text
+#, fuzzy
 msgid  "Fontwork Gallery"
 msgstr "ပြခန်း စာလုံးအလုပ်"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.FL_FAVORITES.FixedLine.Text
+#, fuzzy
 msgid  "Select a Fontwork style:"
 msgstr "စာလုံးအလုပ် စတိုင်လ် တစ်ခု ရွေးချယ်ပါ-"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_GALLERY.STR_CLICK_TO_ADD_TEXT.String.Text
+#, fuzzy
 msgid  "Click to edit text"
 msgstr "စာသား တည်းဖြတ်ရန် ကလစ်နှိပ်ပါ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.DockingWindow.Text
+#, fuzzy
 msgid  "Fontwork Alignment"
 msgstr "စာလုံးအလုပ် ဖြောင့်တန်းမှု"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_LEFT.String.Text
+#, fuzzy
 msgid  "~Left Align"
 msgstr "ဘယ်ဖက် တန်းညှိပါ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_CENTER.String.Text
+#, fuzzy
 msgid  "~Center"
 msgstr "ဗဟို"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_RIGHT.String.Text
+#, fuzzy
 msgid  "~Right Align"
 msgstr "ညာဖက် တန်းညှိပါ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_WORD.String.Text
+#, fuzzy
 msgid  "~Word Justify"
 msgstr "စကားလုံး စာကြောင်း ညှိပေးပါ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_ALIGNMENT.STR_ALIGN_STRETCH.String.Text
+#, fuzzy
 msgid  "S~tretch Justify"
 msgstr "ဆန့်ထုတ် စာကြောင်း ညှိပေးပါ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.DockingWindow.Text
+#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "နေရာလပ် အက္ခရာ၊သင်္ကေတ စာလုံးအလုပ်"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_TIGHT.String.Text
+#, fuzzy
 msgid  "~Very Tight"
 msgstr "အလွန် ကြပ်သည်"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_TIGHT.String.Text
+#, fuzzy
 msgid  "~Tight"
 msgstr "ကြပ်သည်"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_NORMAL.String.Text
+#, fuzzy
 msgid  "~Normal"
 msgstr "သာမန်"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_LOOSE.String.Text
+#, fuzzy
 msgid  "~Loose"
 msgstr "ချောင်သည်"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_LOOSE.String.Text
+#, fuzzy
 msgid  "Very ~Loose"
 msgstr "အလွန် ချောင်သည်"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_CUSTOM.String.Text
+#, fuzzy
 msgid  "~Custom..."
 msgstr "ထုံးစံ..."
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_KERN_PAIRS.String.Text
+#, fuzzy
 msgid  "~Kern Character Pairs"
 msgstr "~Kern အက္ခရာ၊သင်္ကေတများ အပိုင်းစများ"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.ModalDialog.Text
+#, fuzzy
 msgid  "Fontwork Character Spacing"
 msgstr "နေရာလပ် အက္ခရာ၊သင်္ကေတ စာလုံးအလုပ်"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVX_MDLG_FONTWORK_CHARSPACING.FT_VALUE.FixedText.Text
+#, fuzzy
 msgid  "~Value"
 msgstr "~တန်ဖိုး"
 
@@ -10935,46 +11666,57 @@ msgid  "Find"
 msgstr ""
 
 #: source/tbxctrls/grafctrl.src#RID_SVXTBX_GRFFILTER.FloatingWindow.Text
+#, fuzzy
 msgid  "Filters"
 msgstr "စစ်ထုတ်ကိရိယာများ"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFMODE.String.Text
+#, fuzzy
 msgid  "Graphics Mode"
 msgstr "ပန်းချီဒီဇိုင်း နည်းလမ်း"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFRED.String.Text
+#, fuzzy
 msgid  "Red"
 msgstr "အနီရောင်"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGREEN.String.Text
+#, fuzzy
 msgid  "Green"
 msgstr "အစိမ်းရောင်"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFBLUE.String.Text
+#, fuzzy
 msgid  "Blue"
 msgstr "အပြာရောင်"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFLUMINANCE.String.Text
+#, fuzzy
 msgid  "Brightness"
 msgstr "တောက်ပခြင်း"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFCONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast"
 msgstr "ဆန့်ကျင် ကွဲလွဲချက်"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFGAMMA.String.Text
+#, fuzzy
 msgid  "Gamma"
 msgstr "တတိယဂရိအက္ခရာ"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_UNDO_GRAFTRANSPARENCY.String.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "ထိုးဖေါက်မြင်နိုင်သော"
 
 #: source/tbxctrls/grafctrl.src#RID_SVXSTR_GRAFCROP.String.Text
+#, fuzzy
 msgid  "Crop"
 msgstr "လိုသလို ညှိယူပါ"
 
 #: source/tbxctrls/colrctrl.src#RID_SVXCTRL_COLOR.DockingWindow.Text
+#, fuzzy
 msgid  "Colors"
 msgstr "အရောင်များ"
 
@@ -10984,89 +11726,109 @@ msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
 msgid  "Actions to undo: $(ARG1)"
-msgstr "$(ARG1) လုပ်ဆောင်ချက်များ ပြန်ခေါ်ပါ"
+msgstr "$(ARG1) လုပ်ဆောင်ချက် ပြန်ခေါ်ပါ "
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
+#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
 msgstr "$(ARG1) လုပ်ဆောင်ချက် ပြန်ခေါ်ပါ "
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTIONS.String.Text
 msgid  "Actions to redo: $(ARG1)"
-msgstr "$(ARG1) လုပ်ဆောင်ချက်များ ပျက်သွားခြင်း"
+msgstr "$(ARG1) လုပ်ဆောင်ချက် ပျက်သွားခြင်း"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTION.String.Text
+#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
 msgstr "$(ARG1) လုပ်ဆောင်ချက် ပျက်သွားခြင်း"
 
 #: source/toolbars/extrusionbar.src#RID_SVX_EXTRUSION_BAR.String.Text
+#, fuzzy
 msgid  "Extrusion"
 msgstr "ပုံသွန်းလောင်းခြင်း"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ON_OFF.String.Text
+#, fuzzy
 msgid  "Apply Extrusion On/Off"
 msgstr "ပုံသွန်းလောင်းခြင်း အဖွင့်/အပိတ် လက်တွေ့အသုံးချပါ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_DOWN.String.Text
+#, fuzzy
 msgid  "Tilt Down"
 msgstr "အောက်သို့ တိမ်းစောင်းပါ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_UP.String.Text
+#, fuzzy
 msgid  "Tilt Up"
 msgstr "အထက်သို့ တိမ်းစောင်းပါ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_LEFT.String.Text
+#, fuzzy
 msgid  "Tilt Left"
 msgstr "ဘယ်ဖက်သို့ တိမ်းစောင်းပါ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_RIGHT.String.Text
+#, fuzzy
 msgid  "Tilt Right"
 msgstr "ညာဖက်သို့ တိမ်းစောင်းပါ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_DEPTH.String.Text
+#, fuzzy
 msgid  "Change Extrusion Depth"
 msgstr "နက်နက်ရှိုင်းရှိုင်း ပုံသွန်းလောင်းခြင်း ပြောင်းပါ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_ORIENTATION.String.Text
+#, fuzzy
 msgid  "Change Orientation"
 msgstr "စာရွက်တစ်ခုပေါ်တွင် ထုတ်မည့် သိမ်းထားသောဖိုင် အနေအထား ပြောင်းပါ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_PROJECTION.String.Text
+#, fuzzy
 msgid  "Change Projection Type"
 msgstr "အစွန်းပုံစံ ပြောင်းပါ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_LIGHTING.String.Text
+#, fuzzy
 msgid  "Change Lighting"
 msgstr "လျှပ်စီး ပြောင်းပါ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_BRIGHTNESS.String.Text
+#, fuzzy
 msgid  "Change Brightness"
 msgstr "တောက်ပခြင်း ပြောင်းပါ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_SURFACE.String.Text
+#, fuzzy
 msgid  "Change Extrusion Surface"
 msgstr "အပေါ်ယံ ပုံသွန်းလောင်းခြင်း ပြောင်းပါ"
 
 #: source/toolbars/extrusionbar.src#RID_SVXSTR_UNDO_APPLY_EXTRUSION_COLOR.String.Text
+#, fuzzy
 msgid  "Change Extrusion Color"
 msgstr "ရောင်စုံ ပုံသွန်းလောင်းခြင်း ပြောင်းပါ"
 
 #: source/toolbars/fontworkbar.src#RID_SVX_FONTWORK_BAR.String.Text
+#, fuzzy
 msgid  "Fontwork"
 msgstr "စာလုံးအလုပ်"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SHAPE.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Shape"
 msgstr "ပုံသဏ္ဍာန် စာလုံးအလုပ် လက်တွေ့အသုံးချပါ"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_SAME_LETTER_HEIGHT.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Same Letter Heights"
 msgstr "တူညီသောစာ အမြင့်များ စာလုံးအလုပ် လက်တွေ့အသုံးချပါ"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_ALIGNMENT.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Alignment"
 msgstr "ဖြောင့်တန်းမှု စာလုံးအလုပ် လက်တွေ့အသုံးချပါ"
 
 #: source/toolbars/fontworkbar.src#RID_SVXSTR_UNDO_APPLY_FONTWORK_CHARACTER_SPACING.String.Text
+#, fuzzy
 msgid  "Apply Fontwork Character Spacing"
 msgstr "နေရာလပ် အက္ခရာ၊သင်္ကေတ စာလုံးအလုပ် လက်တွေ့အသုံးချပါ"
 

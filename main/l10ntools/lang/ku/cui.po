@@ -696,16 +696,16 @@ msgid  "Delete..."
 msgstr "Jê bibe..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
-msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr "Nîşe:\nJi bo qalîteya baştirîn mezinahiya îkonekî divê 16x16 pîksel be. Îkonên bi mezinahiyên cuda dê bixweber bên sererastkirin."
+msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
+msgstr ""
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
-msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
-msgstr "Pelên li jêr lîstekirî nayê anîn.\nTeşeya pelê nayê fêm kirin."
+msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
+msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -716,8 +716,8 @@ msgid  "Are you sure to delete the image?"
 msgstr "Bi rastî dixwazî vê wêneyê jê bibî?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
-msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
-msgstr "Îkona %ICONNAME jixwe di lîsteya wêne de heye.\nHun dixwazin bi îkona heyî re biguherînin?"
+msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
+msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -1343,7 +1343,7 @@ msgstr "Mîhengên din"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_FRAME.FixedText.Text
 #, fuzzy
 msgid  "F~rame"
-msgstr "Çarçeve"
+msgstr "Ç~arçove"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_FORM.FixedText.Text
 #, fuzzy
@@ -2085,22 +2085,27 @@ msgid  "Close"
 msgstr "Bigire"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.ModalDialog.Text
+#, fuzzy
 msgid  "Special Characters"
 msgstr "Tîpa Taybet"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_FONT.FixedText.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "~Curetîp"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SUBSET.FixedText.Text
+#, fuzzy
 msgid  "~Subset"
 msgstr "~Komika Binî"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SYMBOLE.FixedText.Text
+#, fuzzy
 msgid  "Characters:"
 msgstr "Karakter:"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Jê bibe"
 
@@ -2113,7 +2118,7 @@ msgid  "License..."
 msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT.String.Text
-msgid  "Copyright © 2012 Apache Software Foundation.\nAll rights reserved.\n\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\nApache OpenOffice acknowledges all community members, especially those mentioned at"
+msgid  "Copyright © 2012 Apache Software Foundation.\\nAll rights reserved.\\n\\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\\nApache OpenOffice acknowledges all community members, especially those mentioned at"
 msgstr ""
 
 #: source/dialogs/about.src#RID_CUI_README_DLG.ModalDialog.Text
@@ -2133,9 +2138,8 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
-#, fuzzy
-msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr "naye ji bo kontrola rastnivîsê ne amade ye\nSazkirina xwe kontrol bike ger hewce dike wî zimanê saz bike,\n"
+msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
+msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 #, fuzzy
@@ -2858,6 +2862,7 @@ msgid  "Properties"
 msgstr "Taybetmendî"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URL1.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
@@ -3328,7 +3333,7 @@ msgstr "P~êşkêşkara proksiyê"
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item1.StringList.item
 #, fuzzy
 msgid  "None"
-msgstr "Ne yek jî"
+msgstr "Tune"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item2.StringList.item
 #, fuzzy
@@ -3580,19 +3585,16 @@ msgid  "Macro Security..."
 msgstr "Ewlehiya Makro..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
-#, fuzzy
-msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr "Neçalak kirina taybetiya hercar tomarkirina nasnavan dê lîsteya nasnavên tomarkirî jê bibe û make nasnavê tune bike.\n\nHun dixwazin lîsteya nasnavan jê bibin û make nasnavê tune bikin?"
+msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
-#, fuzzy
-msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr "Nirxa nederbasdar!\n\nJi bo nimreya portê nirxa herî mezin 65535."
+msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
-#, fuzzy
-msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr "Ji kerema xwe re bi bîr bîne ku digel Javayê\ntu Javascriptê jî neçalak dikî.\n\nHê jî dixwazî Javayê neçalak bikî?"
+msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -3695,7 +3697,7 @@ msgid  "Note that street, Zip code and city are used to generate the registratio
 msgstr "Kolan, Koda postê û bajar ji bo afirandina mifteya endambûnê tê bikaranîn. Piştî dawîbûna endambûnê êdî hun nikarin daneyên bikarhêner biguherînin. Hun dixwazin niha daneyên bikarhêner biguherînin?"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
-msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgid  "The User Data have been changed.\\nDo you really want to change your User Data?"
 msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
@@ -4274,19 +4276,16 @@ msgid  "Create Database Link"
 msgstr "Girêdana Danegehê Biafirîne"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
-#, fuzzy
-msgid  "The file\n$file$\ndoes not exist."
-msgstr "Pelê\n$file$\ntune."
+msgid  "The file\\n$file$\\ndoes not exist."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
-#, fuzzy
-msgid  "The file\n$file$\ndoes not exist in the local file system."
-msgstr "Pela\n$file$\ndi pergala pelên herêmî de tuneye."
+msgid  "The file\\n$file$\\ndoes not exist in the local file system."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
-#, fuzzy
-msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
-msgstr "Navê '$file$' jixwe ji bo danegehekî din tê bikaranîn.\nJi kerema xwe navekî din hilbijêrin."
+msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
+msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 #, fuzzy
@@ -4396,7 +4395,7 @@ msgstr "Dîtin"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PRINTOPTIONS.ItemList.item
 #, fuzzy
 msgid  "Print"
-msgstr "Çapkirin"
+msgstr "Çap bike"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PATH.ItemList.item
 #, fuzzy
@@ -4511,7 +4510,7 @@ msgstr "Dîtin"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTSHDWCRSR.ItemList.item
 #, fuzzy
 msgid  "Formatting Aids"
-msgstr "Alikariyên Teşekirinê"
+msgstr "Alîkariyên Teşekirinê"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SVXPAGE_GRID.ItemList.item
 #, fuzzy
@@ -4536,7 +4535,7 @@ msgstr "Curetîpên Bingeh (CTL)"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTPRINT_PAGE.ItemList.item
 #, fuzzy
 msgid  "Print"
-msgstr "Çap bike"
+msgstr "Çapkirin"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTTABLE_PAGE.ItemList.item
 #, fuzzy
@@ -4586,7 +4585,7 @@ msgstr "Rêber"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTPRINT_PAGE.ItemList.item
 #, fuzzy
 msgid  "Print"
-msgstr "Çapkirin"
+msgstr "Çap bike"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTTABLE_PAGE.ItemList.item
 #, fuzzy
@@ -4651,7 +4650,7 @@ msgstr "Rêber"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_SC_TP_PRINT.ItemList.item
 #, fuzzy
 msgid  "Print"
-msgstr "Çapkirin"
+msgstr "Çap bike"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.0.ItemList.item
 #, fuzzy
@@ -4919,8 +4918,9 @@ msgid  "Assig~ned start parameters"
 msgstr "Parametreyên destpêkê yên tayin~kirî"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FixedText.Text
-msgid  "For example: -Dmyprop=c:\program files\java"
-msgstr ""
+#, fuzzy
+msgid  "For example: -Dmyprop=c:\\program files\\java"
+msgstr "Mînak: -Dmyprop=c:\\program files\\java"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
 #, fuzzy
@@ -4953,73 +4953,80 @@ msgid  "~Remove"
 msgstr "~Rake"
 
 #: source/options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ErrorBox.Message
-#, fuzzy
-msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr "Di peldanka hilbijartî de Java derdora xebatê tuneye.\nJi kerema xwe peldankekî din hilbijêrin."
+msgid  "The folder you selected does not contain a Java runtime environment.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ErrorBox.Message
-#, fuzzy
-msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr "Java derdora xebatê ya hilbijartî ne guherteyo pêwist e.\nJi kerema xwe peldankêkî din hilbijêrin."
+msgid  "The Java runtime environment you selected is not the required version.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WarningBox.Message
-#, fuzzy
-msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr "Ji bo xebitandina baştirîn ya Java derdora xebatê ya hilbijartî, %PRODUCTNAME divê nûve were destpêkirin.\nJi kerema xwe %PRODUCTNAME niha nûve bidin destpêkirin."
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WarningBox.Message
-#, fuzzy
-msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
-msgstr "Ji bo çalakbûna nirxên nû an guherî divê %PRODUCTNAME nûve were destpêkirin.\nJi kerema xwe %PRODUCTNAME niha nûve bidin destpêkirin."
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
+#, fuzzy
 msgid  "Connection pool"
 msgstr "Serhevkirina Girêdana"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
+#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "Serhevkirina girêdana çalake"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
+#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "Ajokerên nas yên di %PRODUCTNAME de"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
+#, fuzzy
 msgid  "Current driver:"
 msgstr "Ajokera heyî:"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
+#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "Ji bo vê ajokerê serhevkirinê çalak bike"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
+#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "Demborîn (çirke)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
+#, fuzzy
 msgid  "Driver name"
 msgstr "Navê ajokerê"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
+#, fuzzy
 msgid  "Pool"
 msgstr "Birk"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
+#, fuzzy
 msgid  "Timeout"
 msgstr "Demborî"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "Erê"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "Na"
 
 #: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
 #, fuzzy
 msgid  "Save"
-msgstr "Tomar bike"
+msgstr "Tomarkirin"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_LOAD.FixedLine.Text
 #, fuzzy
@@ -5157,9 +5164,8 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "Ne bikaranîna ODF 1.2 Berfirehkirî di be ku bibe sedema windabûna agahiyan."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-#, fuzzy
-msgid  "Using \"%1\" as default file format may cause information loss.\n"
-msgstr "Bikaranîna \"%1\" wekî formata standard a pelan dibe ku bibe sedemê windakirina agahiyan.\n"
+msgid  "Using \"%1\" as default file format may cause information loss.\\n"
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 #, fuzzy
@@ -5172,9 +5178,8 @@ msgid  "Improvement Program"
 msgstr "Bernameya Pêşveçûnê"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
-#, fuzzy
-msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr "Ev e vexwendina beşdarbûna %PRODUCTNAME Bernameya Pêşveçûnê ye ku hun beşdar bibin û alîkarî bidin pêşveçûna qalîteya %PRODUCTNAME e.\n\nHeke hun bixwazin beşdar bibin, emê statîstîkên derbarê bikaranîna we ya %PRODUCTNAME berhev bikin. Dane ji bo pênasîna bikaranînê tê bikaranîn.\n%PRODUCTNAME Bernameya Pêşveçûnê daneyên we yên kesatî an naveroka belgeya we berhev nake."
+msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 #, fuzzy
@@ -5317,9 +5322,8 @@ msgid  "Edit Paths: %1"
 msgstr "Rêçan Sererast Bike: %1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
-#, fuzzy
-msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr "Divê peldankên veavakirinê û peyaman ji hev cuda bin.\nJi kerema xwe rêçekî nû hilbijêrin."
+msgid  "The configuration and mail directories must be specified as separate directories.\\nPlease choose a new path."
+msgstr ""
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 #, fuzzy
@@ -6034,9 +6038,8 @@ msgid  "~Close"
 msgstr "~Bigire"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
-#, fuzzy
-msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr "Ev nav jixwe heye.\nJi kerema xwe re navekî din binivîse."
+msgid  "The specified name already exists.\\nPlease enter a new name."
+msgstr ""
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy
@@ -6076,7 +6079,7 @@ msgstr "~Paş ve"
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_NEWDICTSLINK.FixedText.Text
 #, fuzzy
 msgid  "~Get more dictionaries online..."
-msgstr "Ji înternetê zêdetir ferheng ~bistîne..."
+msgstr "Ji înternetê zêdetir ferhengan ~bistîne..."
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_OK.OKButton.Text
 #, fuzzy
@@ -6258,18 +6261,22 @@ msgid  "Registered databases"
 msgstr "Danegehên tomarkirî"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Registered name"
 msgstr "~Navê tomarbûyî"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "Database file"
 msgstr "Pelê danegehê"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "Nû..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Sererastkirin..."
 
@@ -6861,7 +6868,7 @@ msgstr "~Bixweber"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.CB_HATCHBCKGRD.CheckBox.Text
 #, fuzzy
 msgid  "~Background color"
-msgstr "Rengê zemîn"
+msgstr "Rengê ~zemînê"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_SIZE.FixedLine.Text
 #, fuzzy
@@ -7497,7 +7504,7 @@ msgid  "O~uter"
 msgstr "D~erve"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
-msgid  "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
+msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
 msgstr ""
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
@@ -8492,7 +8499,7 @@ msgid  "Assigned macro"
 msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
-msgid  "~Existing macros\n"
+msgid  "~Existing macros\\n"
 msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
@@ -8951,7 +8958,7 @@ msgid  "Do you want to delete the gradient?"
 msgstr "Bi rastî jî tu dixwazî gradyanê jê bibe?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
-msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
+msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
 msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
@@ -8969,9 +8976,8 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
-#, fuzzy
-msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr "Reng guherî lê nehate tomarkirin. \nTu dikarî rengê ku hatiye hilbijartin biguherîne an jî rengekî din lê zêde bike."
+msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -8984,9 +8990,8 @@ msgid  "Do you want to delete the line style?"
 msgstr "Bi rastî jî tu dixwazî şêwaza xêzan jê bibe?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
-#, fuzzy
-msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr "Teşeya xêzê guherî lê nehate tomarkirin. \nTu dikarî teşeya xêzê ku hatiye hilbijartin biguherînî an jî teşeyeke nû ya xêzê lê zêde bikî."
+msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -8999,7 +9004,7 @@ msgid  "Do you want to delete the hatching?"
 msgstr "Bi rastî jî bila hatching were jêbirin?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
-msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
+msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
 msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
@@ -9023,9 +9028,8 @@ msgid  "Do you want to delete the color?"
 msgstr "Bi rastî jî bila reng were jêbirin?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
-#, fuzzy
-msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr "Reng guherî lê nehate tomarkirin.\nTu dikarî rengê ku hatiye hilbijartin biguherîne an jî rengekî din lê zêde bike."
+msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 #, fuzzy
@@ -9048,9 +9052,8 @@ msgid  "The list was modified without saving. Would you like to save the list no
 msgstr "Tablo guherî lê nehate tomarkirin. Bila tablo were tomarkirin?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
-#, fuzzy
-msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr "Navê ku te nivîsand jixwe heye. \nNavekî nû binivîse."
+msgid  "The name you have entered already exists. \\nPlease choose another name."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -9063,9 +9066,8 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "Bi rastî jî bila serê xêzikan jê were birin?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
-#, fuzzy
-msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr "Serê xêzikê guherî lê nehate tomarkirin.\nTu dixwazî serê xêzikê a niha tomar bike?"
+msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
+msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 #, fuzzy
@@ -10073,62 +10075,77 @@ msgid  "Alignment"
 msgstr "Hîzakirin"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FixedLine.Text
+#, fuzzy
 msgid  "Text alignment"
 msgstr "Hîzakirina nivîsê"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FixedText.Text
+#, fuzzy
 msgid  "Hori~zontal"
 msgstr "Ber~war"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
+#, fuzzy
 msgid  "Default"
 msgstr "Standard"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.StringList.item
+#, fuzzy
 msgid  "Left"
 msgstr "Çep"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.StringList.item
+#, fuzzy
 msgid  "Center"
 msgstr "Navîn"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.StringList.item
+#, fuzzy
 msgid  "Right"
 msgstr "Rast"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.StringList.item
+#, fuzzy
 msgid  "Justified"
 msgstr "Tam paldayî"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.StringList.item
+#, fuzzy
 msgid  "Filled"
 msgstr "Tije"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FixedText.Text
+#, fuzzy
 msgid  "I~ndent"
 msgstr "Kûrt"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_VERALIGN.FixedText.Text
+#, fuzzy
 msgid  "~Vertical"
 msgstr "~Tîk"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_STD.StringList.item
+#, fuzzy
 msgid  "Default"
 msgstr "Standard"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.StringList.item
+#, fuzzy
 msgid  "Top"
 msgstr "Jor"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.StringList.item
+#, fuzzy
 msgid  "Middle"
 msgstr "Nav"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.StringList.item
+#, fuzzy
 msgid  "Bottom"
 msgstr "Jêr"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ORIENTATION.FixedLine.Text
+#, fuzzy
 msgid  "Text orientation"
 msgstr "Beraliyê nivîsê"
 
@@ -10137,26 +10154,32 @@ msgid  "Ve~rtically stacked"
 msgstr ""
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_DEGREES.FixedText.Text
+#, fuzzy
 msgid  "De~grees"
 msgstr "Pile"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_BORDER_LOCK.FixedText.Text
+#, fuzzy
 msgid  "Re~ference edge"
 msgstr "Qeraxa re~ferensê"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_ASIAN_VERTICAL.TriStateBox.Text
+#, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "~Moda klavyeya asyayî"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FixedLine.Text
+#, fuzzy
 msgid  "Properties"
 msgstr "Taybetmendî"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TriStateBox.Text
+#, fuzzy
 msgid  "~Wrap text automatically"
 msgstr "~Belavbûne nivîsê ya bixweber"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_HYPH.TriStateBox.Text
+#, fuzzy
 msgid  "Hyphenation ~active"
 msgstr "Kîtekirin çalake"
 
@@ -10165,18 +10188,22 @@ msgid  "~Shrink to fit cell size"
 msgstr ""
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_TEXTFLOW.FixedText.Text
+#, fuzzy
 msgid  "Te~xt direction"
 msgstr "~Beraliyê nivîsê"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_BOTTOMLOCK.String.Text
+#, fuzzy
 msgid  "Text Extension From Lower Cell Border"
 msgstr "Ji Qeraxa Jêr ya Şaneyê Firehbûna Nivîsê"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_TOPLOCK.String.Text
+#, fuzzy
 msgid  "Text Extension From Upper Cell Border"
 msgstr "Ji Qeraxa Jor ya Şaneyê Firehbûna Nivîsê"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_CELLLOCK.String.Text
+#, fuzzy
 msgid  "Text Extension Inside Cell"
 msgstr "Tenê Di Hundirê Şaneyê de Firehbûna Nivîsê"
 
@@ -10507,7 +10534,7 @@ msgstr ""
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
 #, fuzzy
 msgid  "(Without)"
-msgstr "(Tuneye)"
+msgstr "(Beyî)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
 #, fuzzy

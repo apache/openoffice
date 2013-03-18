@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Modeli yakozwe uhereye ku <izina_nyobora> ku <itariki_igezweho>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Nyobora ntishobora gutangizwa, kubera ko dosiye za ngombwa zitabonwe. \nHasi 'Ibikoresho - Amahitamo - %PRODUCTNAME - Inzira' kandi buto 'Gisanzweho' mu gutangiza bushya inzira ku magenamiterere asanzweho mwimerere.\nNoneho utangize nyobora nanone."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Imyanya mu ifishi"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Imyanya nyabibiri burigihe iba iri ku rutonde kandi itoranywa uva ku rutonde rw'ibumoso.\nNiba bishoboka, zifatwa nk'amashusho."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Ifishiyungirije ni ifishi iri mu yindi.\nKoresha Amafishiyungirije mu kwerekana ibyabitswe bivuye mu mbonerahamwe cyangwa ibibazo bifite isano rimwe-kuri-byinshi."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Imyanya mu ifishi"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "Ihuza rya '<IZINAUMWANYA1>' na '<IZINAUMWANYA2>' ryatoranijwemo kabiri.\nAriko amahuza ashobora gusa gukoreshwa rimwe."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -733,7 +733,7 @@ msgstr "Imisusire y'ipagi"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 80.String.Text
 msgid  "Field selection"
-msgstr "Ihitamo ry'urubuga/umwanya"
+msgstr "ihitamo ry'urubuga/umwanya"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 81.String.Text
 msgid  "Set up a subform"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "Kuboneza izina ry'ifishi."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Ifishi yitwa '%FORMNAME' isanzwe iriho.\nHitamo irindi zina."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Ntibishoboka kwinjiza umwanya kuko warenga umubare ntarengwa w'imyanya ishoboka ya  %COUNT mu mbonerahamwe y'ububikoshingiro"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Izina '%TABLENAME' risanzwemo.\nInjiza irindi zina."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Nyobora y'Urubuga"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Iyi Nyobora y'Urubuga niyo gufasha mu gutangaza inyandiko kuri Internet.\n\nIzahindura inyandiko bityo zikabasha kugaragazwa na mutemberezi w'urubuga. Twakongeraho ko, izakora paji y'Imbonerahamwe y'Ibikubiyemo ifite amahuza mu koroshya kugera ku nyandiko. Nyobora y'Urubuga nayo izemerera kunoza ihanga n'imigaragarire  y'urubugamakuru.\n\nUzashobora kugumana inyandiko watangaje ku rubuga kugera-ubu kandi ukongeraho cyangwa ugakuraho inyandiko igihe icyo aricyo cyose."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "Igaragazambere"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Amagenamiterere yatoranyijwe azahanagurwa.\n\nUrifuza by'ukuri gusiba aya magenamiterere?"
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "Ububiko FTP '%FILENAME' ntibushobora kuremwa."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Ububiko FTP  '%FILENAME'  ntibubaho.\nKurema ububiko nonaha?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Dosiye '%FILENAME' ZIPU ntishobora kuremwa: ububiko bufite izina rimwe burasanzwe."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Ububiko bwa hafi '%FILENAME' ntibushoboye kuremwa.\nWareba uburenganzira-kwandika bwawe."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Ububiko bwa hafi '%FILENAME'  ntibubaho.\nKurema ububiko nonaha?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

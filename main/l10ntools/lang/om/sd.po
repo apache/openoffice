@@ -220,7 +220,7 @@ msgstr "Durtii"
 #: source/core/glob.src#STR_LAYOUT_DEFAULT_TITLE_NAME.String.Text
 #, fuzzy
 msgid  "Title"
-msgstr "Mataduree"
+msgstr "Matduree"
 
 #: source/core/glob.src#STR_STANDARD_STYLESHEET_NAME.String.Text
 #, fuzzy
@@ -238,9 +238,8 @@ msgid  "Move slides"
 msgstr "Islaayidoota siqsi"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-#, fuzzy
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "Kuufannoon gahaa miti!\nGochichi ni kutama."
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 #, fuzzy
@@ -437,298 +436,371 @@ msgid  "Last column"
 msgstr "Tarjaa dhumaa"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.ModalDialog.Text
+#, fuzzy
 msgid  "HTML Export"
 msgstr "Alergii HTML"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_TITEL.FixedLine.Text
+#, fuzzy
 msgid  "Assign design"
 msgstr "Saxaxa ramadi"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_NEW_DESIGN.RadioButton.Text
+#, fuzzy
 msgid  "New design"
 msgstr "Saxaxa haaraa"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_OLD_DESIGN.RadioButton.Text
+#, fuzzy
 msgid  "Existing design"
 msgstr "Saxaxa jiru"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_DEL_DESIGN.PushButton.Text
+#, fuzzy
 msgid  "Delete Selected Design"
 msgstr "Saxaxa Filatame Haqi"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE1_DESC.FixedText.Text
+#, fuzzy
 msgid  "Select an existing design or create a new one"
 msgstr "Saxaxa jiru fili ykn haaraa uumi"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL.FixedLine.Text
+#, fuzzy
 msgid  "Publication type"
 msgstr "Akaakuu maxxansaa"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_STANDARD.RadioButton.Text
+#, fuzzy
 msgid  "Standard H~TML format"
 msgstr "Dhangii waaltawaa HTML"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_FRAMES.RadioButton.Text
+#, fuzzy
 msgid  "Standard HTML with ~frames"
 msgstr "HTML waaltawaa goodayyaa waliin"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "Ofumaa"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RadioButton.Text
+#, fuzzy
 msgid  "~WebCast"
 msgstr "TamsaasaSaphaphuu"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_HTML.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Dirqalaalee"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CONTENT.CheckBox.Text
+#, fuzzy
 msgid  "Create title page"
 msgstr "Fuula mataduree uumi"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_NOTES.CheckBox.Text
+#, fuzzy
 msgid  "Show notes"
 msgstr "Yaadannoolee mul'isi"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_KIOSK.FixedLine.Text
+#, fuzzy
 msgid  "Advance slides"
 msgstr "Islaayidoota olaansi"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_DEFAULT.RadioButton.Text
+#, fuzzy
 msgid  "~As stated in document"
 msgstr "Akka galmee keessatti ibsametti"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CHG_AUTO.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "Ofumaa"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TXT.FixedText.Text
+#, fuzzy
 msgid  "~Slide view time:"
 msgstr "Yeroo mul'isa islaayidii:"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_DURATION_TMF.TimeField.QuickHelpText
+#, fuzzy
 msgid  "~Duration of page"
 msgstr "Turmaata fuulaa"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ENDLESS.CheckBox.Text
+#, fuzzy
 msgid  "~Endless"
 msgstr "Kan dhuma hin qabne"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_TITEL_WEBCAST.FixedLine.Text
+#, fuzzy
 msgid  "WebCast"
 msgstr "TamsaasaSaphaphuu"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_ASP.RadioButton.Text
+#, fuzzy
 msgid  "~Active Server Pages (ASP)"
 msgstr "Active Server Pages (ASP)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_PERL.RadioButton.Text
+#, fuzzy
 msgid  "Perl"
 msgstr "Parlii"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_INDEX_TXT.FixedText.Text
+#, fuzzy
 msgid  "~URL for listeners"
 msgstr "URL dhaggeeffattootaafi"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_URL_TXT.FixedText.Text
+#, fuzzy
 msgid  "URL for ~presentation:"
 msgstr "URL dhiheessaaf:"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_CGI_TXT.FixedText.Text
+#, fuzzy
 msgid  "URL for ~Perl scripts:"
 msgstr "URL iskiriiptiiwwan Perl:"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_1.FixedLine.Text
+#, fuzzy
 msgid  "Save graphics as"
 msgstr "Saxaatoo akkanatti Olkaa'i"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_PNG.RadioButton.Text
+#, fuzzy
 msgid  "~PNG"
 msgstr "PNG"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_GIF.RadioButton.Text
+#, fuzzy
 msgid  "~GIF"
 msgstr "GIF"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_JPG.RadioButton.Text
+#, fuzzy
 msgid  "~JPG"
 msgstr "JPG"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_QUALITY_TXT.FixedText.Text
+#, fuzzy
 msgid  "Quality"
 msgstr "Qulqullina"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_2.FixedLine.Text
+#, fuzzy
 msgid  "Monitor resolution"
 msgstr "Qulqullina torgii"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_1.RadioButton.Text
+#, fuzzy
 msgid  "Low resolution (~640x480 pixels)"
 msgstr "Qulqullina xiqaa (piksili 640x480)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_2.RadioButton.Text
+#, fuzzy
 msgid  "Medium resolution (~800x600 pixels)"
 msgstr "Qulqullina giddugaleessaa (piiksilii 800x600)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_RESOLUTION_3.RadioButton.Text
+#, fuzzy
 msgid  "High resolution (~1024x768 pixels)"
 msgstr "Qulqullina ol’aanaa (piiksilii 1024x768)"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_TITEL_3.FixedLine.Text
+#, fuzzy
 msgid  "Effects"
 msgstr "Galteewwan"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_SLD_SOUND.CheckBox.Text
+#, fuzzy
 msgid  "~Export sounds when slide advances"
 msgstr "Yammuu islaayidiin darbu sagalee alergi"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE3_HIDDEN_SLIDES.CheckBox.Text
+#, fuzzy
 msgid  "Export ~hidden slides"
 msgstr "Islaayidoota dhokatan alergi"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_1.FixedLine.Text
+#, fuzzy
 msgid  "Information for the title page"
 msgstr "Odeeffannoo fuula matadureef"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_AUTHOR_TXT.FixedText.Text
+#, fuzzy
 msgid  "~Author"
 msgstr "Barreessaa"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_EMAIL_TXT.FixedText.Text
+#, fuzzy
 msgid  "E-~mail address"
 msgstr "Teessoo ergaa-e"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_WWW_TXT.FixedText.Text
+#, fuzzy
 msgid  "Your hom~epage"
 msgstr "Fuula manata saphaphuu kee"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_TITEL_2.FixedText.Text
+#, fuzzy
 msgid  "Additional ~information"
 msgstr "Odeeffannoo dabalataa"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_DOWNLOAD.CheckBox.Text
+#, fuzzy
 msgid  "Link to a copy of the ~original presentation"
 msgstr "Garagalcha dhiheessaa xabbootin walqabsiisi"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE4_CREATED.CheckBox.Text
+#, fuzzy
 msgid  "Note: 'Created with %PRODUCTNAME'"
 msgstr "Yaadannoo: '%PRODUCTNAMEn kan Uumame'"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TITEL.FixedLine.Text
+#, fuzzy
 msgid  "Select button style"
 msgstr "Haalata qabduu fili"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE5_TEXTONLY.CheckBox.Text
+#, fuzzy
 msgid  "~Text only"
 msgstr "Barruu qofa"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TITEL.FixedLine.Text
+#, fuzzy
 msgid  "Select color scheme"
 msgstr "Gurmoo halluu fili"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DOCCOLORS.RadioButton.Text
+#, fuzzy
 msgid  "~Apply color scheme from document"
 msgstr "Gurmoo halluu galmee irraa fayyadami"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_DEFAULT.RadioButton.Text
+#, fuzzy
 msgid  "Use ~browser colors"
 msgstr "Halluuwwan iyyaafataa fayyadami"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_USER.RadioButton.Text
+#, fuzzy
 msgid  "~Use custom color scheme"
 msgstr "Gurmoo halluu maamiloo fayyadami"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_TEXT.PushButton.Text
+#, fuzzy
 msgid  "Text"
 msgstr "Barruu"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_LINK.PushButton.Text
+#, fuzzy
 msgid  "Hyper~link"
 msgstr "Geessituu"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_ALINK.PushButton.Text
+#, fuzzy
 msgid  "Active Li~nk"
 msgstr "Geessituu"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_VLINK.PushButton.Text
+#, fuzzy
 msgid  "~Visited Link"
 msgstr "Geessituu imalame"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE6_BACK.PushButton.Text
+#, fuzzy
 msgid  "Bac~kground"
 msgstr "Duubbee"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.BUT_LAST.PushButton.Text
+#, fuzzy
 msgid  "<< Back"
 msgstr "<< Duuba"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.BUT_NEXT.PushButton.Text
+#, fuzzy
 msgid  "Next >>"
 msgstr "Kanittaanu >>"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.BUT_FINISH.OKButton.Text
+#, fuzzy
 msgid  "~Create"
 msgstr "Uumi"
 
 #: source/filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_SAVE.OKButton.Text
+#, fuzzy
 msgid  "~Save"
 msgstr "Olkaa'i"
 
 #: source/filter/html/pubdlg.src#DLG_DESIGNNAME.BTN_NOSAVE.CancelButton.Text
+#, fuzzy
 msgid  "Do Not Save"
 msgstr "Hin Olkaa'in"
 
 #: source/filter/html/pubdlg.src#DLG_DESIGNNAME.CancelButton.Text
+#, fuzzy
 msgid  "Name HTML Design"
 msgstr "Maqaa Saxaxa HTML Kenni"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.String.Text
 msgid  "Drawing View"
-msgstr "Mul'ina Fakkasaa"
+msgstr "Mul'annoo Fakkasaa"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you create and edit drawings."
 msgstr "Kuni bakka fakkiiwwan itti uumtu fi gulaaltu."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_N.String.Text
+#, fuzzy
 msgid  "Drawing View"
 msgstr "Mul'annoo Fakkasaa"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_DRAWVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you create and edit slides."
 msgstr "Kuni bakka itti islaayidoota itti uumtu fi gulaaltu."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_N.String.Text
+#, fuzzy
 msgid  "Outline View"
 msgstr "Mul'annoo Toorii"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you enter or edit text in list form."
 msgstr "Kuni bakka itti barruu akka tarreetti galchituu fi gulaaltu."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_N.String.Text
+#, fuzzy
 msgid  "Slides View"
 msgstr "Agarsiisa Islaayidootaa"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you sort slides."
 msgstr "Kuni iddoo itti islaayidoota itti tatiibessitu."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_N.String.Text
+#, fuzzy
 msgid  "Notes View"
 msgstr "Mul'annoo Yaadannoo"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_NOTESVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you enter and view notes."
 msgstr "Kuni bakka yaadannoowwan itti galchituu fi ilaaltu."
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_N.String.Text
+#, fuzzy
 msgid  "Handout View"
 msgstr "Mal'annoo Hirtaa"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_HANDOUTVIEW_D.String.Text
+#, fuzzy
 msgid  "This is where you decide on the layout for handouts."
 msgstr "Kuni bakka itti galchituu fi ilaaltu."
 
@@ -823,26 +895,32 @@ msgid  "Automatic pre~view"
 msgstr "Durargii ofumaa"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.TabDialog.Text
+#, fuzzy
 msgid  "Custom Animation"
 msgstr "Sochii Fakkii Maamiloo"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_ENTRANCE.PageItem.Text
+#, fuzzy
 msgid  "Entrance"
 msgstr "Galmaata"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EMPHASIS.PageItem.Text
+#, fuzzy
 msgid  "Emphasis"
 msgstr "Xiyyeeffannaa"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_EXIT.PageItem.Text
+#, fuzzy
 msgid  "Exit"
 msgstr "Bahi"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MOTIONPATH.PageItem.Text
+#, fuzzy
 msgid  "Motion Paths"
 msgstr "Adeemsa Xurree"
 
 #: source/ui/animations/CustomAnimationCreateDialog.src#DLG_CUSTOMANIMATION_CREATE.1.RID_TP_CUSTOMANIMATION_MISCEFFECTS.PageItem.Text
+#, fuzzy
 msgid  "Misc Effects"
 msgstr "Galteewwan Miiskii"
 
@@ -874,7 +952,7 @@ msgstr "Galtee"
 #: source/ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_DURATION.PageItem.Text
 #, fuzzy
 msgid  "Timing"
-msgstr "GaraagarteeYeroo"
+msgstr "Yeroon"
 
 #: source/ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_TEXT.PageItem.Text
 #, fuzzy
@@ -1107,102 +1185,127 @@ msgid  "In reverse order"
 msgstr "Tartiiba garagalchi"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_CLICK.MenuItem.Text
+#, fuzzy
 msgid  "Start On ~Click"
 msgstr "Cuqasnaan Eegali"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_WITH_PREVIOUS.MenuItem.Text
+#, fuzzy
 msgid  "Start ~With Previous"
 msgstr "Durargiin Eegali"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_AFTER_PREVIOUS.MenuItem.Text
+#, fuzzy
 msgid  "Start ~After Previous"
 msgstr "Kan Darbe Booda Eegali"
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_OPTIONS.MenuItem.Text
+#, fuzzy
 msgid  "~Effect Options..."
 msgstr "Dirqalalee Galtee..."
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_DURATION.MenuItem.Text
+#, fuzzy
 msgid  "~Timing..."
 msgstr "Yaroon..."
 
 #: source/ui/animations/CustomAnimation.src#RID_EFFECT_CONTEXTMENU.CM_REMOVE.MenuItem.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "Haqi"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_25.MenuItem.Text
+#, fuzzy
 msgid  "Tiny"
 msgstr "Shifii"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_50.MenuItem.Text
+#, fuzzy
 msgid  "Smaller"
 msgstr "Irraxiqqaa"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MenuItem.Text
+#, fuzzy
 msgid  "Larger"
 msgstr "Irraguddaa"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MenuItem.Text
+#, fuzzy
 msgid  "Extra large"
 msgstr "Baay'ee guddaa"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_25.MenuItem.Text
+#, fuzzy
 msgid  "Tiny"
 msgstr "Shifii"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_50.MenuItem.Text
+#, fuzzy
 msgid  "Smaller"
 msgstr "Irraxiqqaa"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_150.MenuItem.Text
+#, fuzzy
 msgid  "Larger"
 msgstr "Irraguddaa"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_400.MenuItem.Text
+#, fuzzy
 msgid  "Extra large"
 msgstr "Baay'ee guddaa"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "Sardala"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "Sarjaa"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_BOTH.MenuItem.Text
+#, fuzzy
 msgid  "Both"
 msgstr "Lachuu"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_QUARTER_SPIN.MenuItem.Text
+#, fuzzy
 msgid  "Quarter spin"
 msgstr "Qaanxii nuusaa"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_HALF_SPIN.MenuItem.Text
+#, fuzzy
 msgid  "Half spin"
 msgstr "Qaanxii walakkaa"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_FULL_SPIN.MenuItem.Text
+#, fuzzy
 msgid  "Full spin"
 msgstr "Qaanxii guutuu"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_TWO_SPINS.MenuItem.Text
+#, fuzzy
 msgid  "Two spins"
 msgstr "Qaanxiilee lama"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_CLOCKWISE.MenuItem.Text
+#, fuzzy
 msgid  "Clockwise"
 msgstr "GaraSa'aatii"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_ROTATION_POPUP.CM_COUNTERCLOCKWISE.MenuItem.Text
+#, fuzzy
 msgid  "Counter-clockwise"
 msgstr "Faallaa GaraSa'aatii"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_BOLD.MenuItem.Text
+#, fuzzy
 msgid  "Bold"
 msgstr "Yabbuu"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSTYLE_POPUP.CM_ITALIC.MenuItem.Text
+#, fuzzy
 msgid  "Italic"
 msgstr "Mirgada"
 
@@ -1211,150 +1314,187 @@ msgid  "Underlined"
 msgstr ""
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_SLOW.String.Text
+#, fuzzy
 msgid  "Very slow"
 msgstr "Baay'ee suutee"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_SLOW.String.Text
+#, fuzzy
 msgid  "Slow"
 msgstr "Suuta"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_NORMAL.String.Text
+#, fuzzy
 msgid  "Medium"
 msgstr "Giddugaleesa"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_FAST.String.Text
+#, fuzzy
 msgid  "Fast"
 msgstr "Saffisaa"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DURATION_VERY_FAST.String.Text
+#, fuzzy
 msgid  "Very fast"
 msgstr "Baay'ee saffisaa"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_NONE.String.Text
+#, fuzzy
 msgid  "none"
 msgstr "homaa"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_NEXT_CLICK.String.Text
+#, fuzzy
 msgid  "Until next click"
 msgstr "Hamma cuqaasa itti aanutti"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_REPEAT_UNTIL_END_OF_SLIDE.String.Text
+#, fuzzy
 msgid  "Until end of slide"
 msgstr "Hamma dhuma islaayidiiti"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_DIRECTION_PROPERTY.String.Text
+#, fuzzy
 msgid  "Direction"
 msgstr "Kallattii"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_ZOOM_PROPERTY.String.Text
+#, fuzzy
 msgid  "Zoom"
 msgstr "Guddisa"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SPOKES_PROPERTY.String.Text
+#, fuzzy
 msgid  "Spokes"
 msgstr "Ispookiiwwan"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FIRST_COLOR_PROPERTY.String.Text
+#, fuzzy
 msgid  "First color"
 msgstr "Halluu duraa"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SECOND_COLOR_PROPERTY.String.Text
+#, fuzzy
 msgid  "Second color"
 msgstr "Halluu lammataa"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FILL_COLOR_PROPERTY.String.Text
+#, fuzzy
 msgid  "Fill color"
 msgstr "Halluu guutii"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STYLE_PROPERTY.String.Text
+#, fuzzy
 msgid  "Style"
 msgstr "Haalata"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_PROPERTY.String.Text
+#, fuzzy
 msgid  "Font"
 msgstr "Bocquu"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_COLOR_PROPERTY.String.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "Halluu bocquu"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_SIZE_STYLE_PROPERTY.String.Text
+#, fuzzy
 msgid  "Style"
 msgstr "Haalata"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_FONT_STYLE_PROPERTY.String.Text
+#, fuzzy
 msgid  "Typeface"
 msgstr "Barfuula"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LINE_COLOR_PROPERTY.String.Text
+#, fuzzy
 msgid  "Line color"
 msgstr "Halluu sararaa"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SIZE_PROPERTY.String.Text
+#, fuzzy
 msgid  "Font size"
 msgstr "Hammamtaa bocquu"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SCALE_PROPERTY.String.Text
+#, fuzzy
 msgid  "Size"
 msgstr "Hammamtaa"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_AMOUNT_PROPERTY.String.Text
+#, fuzzy
 msgid  "Amount"
 msgstr "Hamma"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_COLOR_PROPERTY.String.Text
+#, fuzzy
 msgid  "Color"
 msgstr "Halluu"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_NO_SOUND.String.Text
+#, fuzzy
 msgid  "(No sound)"
 msgstr "(Sagaleen malee)"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_STOP_PREVIOUS_SOUND.String.Text
+#, fuzzy
 msgid  "(Stop previous sound)"
 msgstr "(Sagaleekana duraa dhaabi)"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_BROWSE_SOUND.String.Text
+#, fuzzy
 msgid  "Other sound..."
 msgstr "Sagalee kabiroo..."
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_SAMPLE.String.Text
+#, fuzzy
 msgid  "Sample"
 msgstr "Fakkeenya"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_1_SPOKES.String.Text
+#, fuzzy
 msgid  "1 Spoke"
 msgstr "Ispookii 1"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_2_SPOKES.String.Text
+#, fuzzy
 msgid  "2 Spokes"
 msgstr "Ispookii 2"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_3_SPOKES.String.Text
+#, fuzzy
 msgid  "3 Spokes"
 msgstr "Ispookii 3"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_4_SPOKES.String.Text
+#, fuzzy
 msgid  "4 Spokes"
 msgstr "Ispookii 4"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_8_SPOKES.String.Text
+#, fuzzy
 msgid  "8 Spokes"
 msgstr "Ispookii 8"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_INSTANT.String.Text
+#, fuzzy
 msgid  "Instant"
 msgstr "Battala"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_GRADUAL.String.Text
+#, fuzzy
 msgid  "Gradual"
 msgstr "SuutaSuuta"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_TRIGGER.String.Text
+#, fuzzy
 msgid  "Trigger"
 msgstr "Ceesistuu"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.String.Text
+#, fuzzy
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
 msgstr "Galtee sochii fakkii dbaluuf dura miseensa islaayidii filadhuutii 'Dabali...' cuqaasi."
 
@@ -1462,114 +1602,142 @@ msgid  "No Transition"
 msgstr "Cehuumsa malee"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_REPLYTO_POSTIT.MenuItem.Text
+#, fuzzy
 msgid  "~Reply"
 msgstr "Deebisi"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Bold"
 msgstr "Yabbuu"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_POSTURE.MenuItem.Text
+#, fuzzy
 msgid  "~Italic"
 msgstr "Mirgada"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
+#, fuzzy
 msgid  "~Underline"
 msgstr "Jalmura"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
+#, fuzzy
 msgid  "~Strikethrough"
 msgstr "Irrasararuu"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_COPY.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
 msgstr "Garagalchi"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_PASTE.MenuItem.Text
+#, fuzzy
 msgid  "~Paste"
 msgstr "Maxxansi"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MenuItem.Text
+#, fuzzy
 msgid  "~Delete Comment"
 msgstr "Yaada Haqi"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MenuItem.Text
+#, fuzzy
 msgid  "Delete All Comments b~y %1"
 msgstr "%1n Yaadoota Mara Haqi"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALL_POSTIT.MenuItem.Text
+#, fuzzy
 msgid  "Delete ~All Comments"
 msgstr "Yaadoota Mara Haqi"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_REPLYTO_POSTIT.MenuItem.Text
+#, fuzzy
 msgid  "~Reply"
 msgstr "Deebisi"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETE_POSTIT.MenuItem.Text
+#, fuzzy
 msgid  "~Delete Comment"
 msgstr "Yaada Haqi"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MenuItem.Text
+#, fuzzy
 msgid  "Delete All Comments ~by %1"
 msgstr "%1n Yaadoota Mara Haqi"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_DELETEALL_POSTIT.MenuItem.Text
+#, fuzzy
 msgid  "Delete ~All Comments"
 msgstr "Yaadoota Mara Haqi"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_TODAY.String.Text
+#, fuzzy
 msgid  "Today,"
 msgstr "Har'aa,"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_YESTERDAY.String.Text
+#, fuzzy
 msgid  "Yesterday,"
 msgstr "Kaleessa,"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_NOAUTHOR.String.Text
+#, fuzzy
 msgid  "(no author)"
 msgstr "(barreessaa hin qabu)"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
 msgstr "%PRODUCTNAME Impressn dhuma dhiheessaa gahee jira. Jalqabarraa eegaluu barbaaddaa?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
 msgstr "%PRODUCTNAME Impressn jalqaba dhiheessaa gahee jira. Dhumarraa eegaluu barbaaddaa?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
 msgstr "%PRODUCTNAME Drawn dhuma galmee gahee jira. Jalqabarraa eegaluu barbaaddaa?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
 msgstr "%PRODUCTNAME Drawn jalqaba galmee gahee jira. Dhumarraa eegaluu barbaaddaa?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.String.Text
+#, fuzzy
 msgid  "Insert Comment"
 msgstr "Yaada Saagi"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_DELETE.String.Text
+#, fuzzy
 msgid  "Delete Comment(s)"
 msgstr "Yaada(oota) Haqi"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_MOVE.String.Text
+#, fuzzy
 msgid  "Move Comment"
 msgstr "Yaada Siqsi"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_EDIT.String.Text
+#, fuzzy
 msgid  "Edit Comment"
 msgstr "Yaada Gulaali"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_REPLY.String.Text
+#, fuzzy
 msgid  "Reply to Comment"
 msgstr "Yaadaaf deebisi"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_REPLY.String.Text
+#, fuzzy
 msgid  "Reply to %1"
 msgstr "%1f deebisi"
 
 #: source/ui/app/menuids4_tmpl.src#MNSUB_GRAPHIC_PORTAL.MN_SUB_GRAPHIC.MenuItem.Text
+#, fuzzy
 msgid  "~Graphics"
 msgstr "Saxaatoo"
 
@@ -1616,7 +1784,7 @@ msgstr "Tarree"
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 #, fuzzy
 msgid  "Space ~Equally"
-msgstr "Walqixa Gargarfageessi"
+msgstr "Walqixa Gargar Fageessi"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
 #, fuzzy
@@ -1626,7 +1794,7 @@ msgstr "Fili"
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MenuItem.Text
 #, fuzzy
 msgid  "~Insert..."
-msgstr "Saagi..."
+msgstr "Saagi"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 #, fuzzy
@@ -1701,7 +1869,7 @@ msgstr "Kabalaa/Saxaatoo Dirqalaalee"
 #: source/ui/app/strings.src#STR_DRAW_COMMONTASK_TOOLBOX.String.Text
 #, fuzzy
 msgid  "Presentation"
-msgstr "Dhiheessaa"
+msgstr "Dhiheessa"
 
 #: source/ui/app/strings.src#STR_SLIDE_OBJ_TOOLBOX.String.Text
 #, fuzzy
@@ -1816,7 +1984,7 @@ msgstr "Toorii"
 #: source/ui/app/strings.src#STR_NOTES_MODE.String.Text
 #, fuzzy
 msgid  "Notes"
-msgstr "Yaadonnoolee"
+msgstr "Yaadannoolee"
 
 #: source/ui/app/strings.src#STR_HANDOUT_MODE.String.Text
 #, fuzzy
@@ -1950,9 +2118,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Maaloo mataa xiyyaa haaraatif maqaa galchi:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-#, fuzzy
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "Maqaan filatame durumayyuu jira. \nMaaloo maqaa biraa galchi."
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -2032,7 +2199,7 @@ msgstr "Baqqaana"
 #: source/ui/app/strings.src#STR_UNDO_DELETEPAGES.String.Text
 #, fuzzy
 msgid  "Delete slides"
-msgstr "Islaayidoota Haqi"
+msgstr "Islaayidoota haqi"
 
 #: source/ui/app/strings.src#STR_UNDO_INSERTPAGES.String.Text
 #, fuzzy
@@ -2040,9 +2207,8 @@ msgid  "Insert slides"
 msgstr "Islaayidoota saagi"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-#, fuzzy
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "Dhuguma sadarkaa \"$\" haquu barbaaddaa?\nYadannoo: Wantootni sadarkaa kanarraa marti ni haqamu!"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -2100,9 +2266,8 @@ msgid  "Insert text frame"
 msgstr "Goodayyaa barruu saagi"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-#, fuzzy
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "Fankishiniin kun wantoota \nfilaman wajjin kaafamuu hin danda'u."
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -2115,9 +2280,8 @@ msgid  "The file could not be loaded!"
 msgstr "Faayiliin kun fe'amuu hin dandeenye!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-#, fuzzy
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr "Dhangiin fuulota haaraa fayidaarra oola.\nWantootas fayyadamuu barbaaddaa?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -2140,9 +2304,8 @@ msgid  "~Edit"
 msgstr "Gulaali"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-#, fuzzy
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "Gochi kun tarree gochootaa gaabbamuu hin \ndandeenye haqa. Jijjiramoonni kana dura taasifte ammayyuu\nni eegamu, garuu gaabbamuu hin danda'amu.\nItti fuftee saxaxa islaayidii fayyadamuu barbaaddaa?"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2165,9 +2328,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "Dhangiin galmee maxxansaa jedhamerratti qinda'uu hin danda'u."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-#, fuzzy
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "Saxaatoon kun galmeetti walqabsiifamee jira. \nGulaaluf jecha saxaatoo addaan basuu barbaaddaa?"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2305,9 +2467,8 @@ msgid  " (Outline)"
 msgstr " (Toorii)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-#, fuzzy
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "Reeshoon fayyadamte fashalaa dha.\nIskeelii haaraa galchuu feetaa?"
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2659,9 +2820,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "Wantoota fakkasaa mara garbaasuun hin danda'amu."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-#, fuzzy
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "Saxaxni maqaa kana qabu durumayyuu jira.\nBakka buusuu feetaa?"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2804,9 +2964,8 @@ msgid  "Graphics filter"
 msgstr "Gingilchaa saxaatoo"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-#, fuzzy
-msgid  "The file %\nis not a valid sound file !"
-msgstr "Faayilli %\nfaayila sagalee gataa'aa miti !"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -3093,234 +3252,292 @@ msgid  "All Styles"
 msgstr "Haalatoota Man'ee"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Distribution..."
 msgstr "Tamsaasa..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DRAWINGMODE.SID_DRAWINGMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Drawing View"
 msgstr "Mul'annoo Fakkasaa"
 
 #: source/ui/app/menuids_tmpl.src#MN_OUTLINEMODE.SID_OUTLINEMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Outline View"
 msgstr "Mul'annoo Toorii"
 
 #: source/ui/app/menuids_tmpl.src#MN_DIAMODE.SID_DIAMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Sorter"
 msgstr "Tartiibessaa Islaayidii"
 
 #: source/ui/app/menuids_tmpl.src#MN_PRESENTATION.SID_PRESENTATION.MenuItem.Text
+#, fuzzy
 msgid  "Slide Sho~w"
 msgstr "Agarsiisa Islaayidii"
 
 #: source/ui/app/menuids_tmpl.src#MN_CAPTUREPOINT.SID_CAPTUREPOINT.MenuItem.Text
+#, fuzzy
 msgid  "~Insert Snap Point/Line..."
 msgstr "Qabxii/Sarara Hiriraa Saagi..."
 
 #: source/ui/app/menuids_tmpl.src#MN_SET_SNAPITEM.SID_SET_SNAPITEM.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "Gulaali..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SNAPITEM.SID_DELETE_SNAPITEM.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "Haqi"
 
 #: source/ui/app/menuids_tmpl.src#MN_MODIFY_PAGE.SID_MODIFYPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slide ~Layout"
 msgstr "Teessuma Islaayidii"
 
 #: source/ui/app/menuids_tmpl.src#MN_FORMAT_PAGE.SID_PAGESETUP.MenuItem.Text
+#, fuzzy
 msgid  "~Page Setup..."
 msgstr "Qindaa'ina Fuulaa..."
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_SLIDE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~New Slide"
 msgstr "Islaayidaa Haaraa"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_MASTER.SID_INSERT_MASTER_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~New Master"
 msgstr "Hundataa Haaraa"
 
 #: source/ui/app/menuids_tmpl.src#MN_INSERT_PAGE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~New Page"
 msgstr "Fuula Haaraa"
 
 #: source/ui/app/menuids_tmpl.src#MN_SELECT_BACKGROUND.SID_SELECT_BACKGROUND.MenuItem.Text
+#, fuzzy
 msgid  "Set Background Picture for Slide ..."
 msgstr "Islaayidiif Fakkaattii Duubbee Galchi..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_BACKGROUND.SID_DISPLAY_MASTER_BACKGROUND.MenuItem.Text
+#, fuzzy
 msgid  "Display Background of Master"
 msgstr "Duubbee Hundataa Agarsiisi"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISPLAY_MASTER_OBJECTS.SID_DISPLAY_MASTER_OBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "Display Objects from Master"
 msgstr "Wantoota Hundataa irraa Agarsiisi"
 
 #: source/ui/app/menuids_tmpl.src#MN_PAGE_MENU.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "Pag~e"
 msgstr "Fuula"
 
 #: source/ui/app/menuids_tmpl.src#MN_SLIDE_MENU.DUMMY.ItemList.Text
+#, fuzzy
 msgid  "Slid~e"
 msgstr "Islaayidii"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_LAYER.SID_RENAMELAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Layer..."
 msgstr "Maqaa Baqqaanaa Jijjiiri..."
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_SLIDE.SID_DELETE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~elete Slide"
 msgstr "Islaayidii Haqi"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_MASTER.SID_DELETE_MASTER_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~elete Master"
 msgstr "Hundataa Haqi"
 
 #: source/ui/app/menuids_tmpl.src#MN_DELETE_PAGE.SID_DELETE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~elete Page"
 msgstr "Fuula Haqi"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_SLIDE.SID_RENAMEPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Slide"
 msgstr "Maqaa Islaayidii Jijjiiri"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_MASTER.SID_RENAME_MASTER_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Master"
 msgstr "Maqaa Hundataa Jijjiiri"
 
 #: source/ui/app/menuids_tmpl.src#MN_RENAME_PAGE.SID_RENAMEPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Rename Page"
 msgstr "Maqaa Fuulaa Jijjiiri"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINE.SID_ATTRIBUTES_LINE.MenuItem.Text
+#, fuzzy
 msgid  "L~ine..."
 msgstr "Sarara..."
 
 #: source/ui/app/menuids_tmpl.src#MN_AREA.SID_ATTRIBUTES_AREA.MenuItem.Text
+#, fuzzy
 msgid  "~Area..."
 msgstr "Bal'ina..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXTATTR.SID_TEXTATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Text..."
 msgstr "Barruu..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CONNECTION.SID_CONNECTION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Connector..."
 msgstr "Kornyoo..."
 
 #: source/ui/app/menuids_tmpl.src#MN_NEW_ROUTING.SID_CONNECTION_NEW_ROUTING.MenuItem.Text
+#, fuzzy
 msgid  "Reset ~Routing"
 msgstr "Karaa Haaromsi"
 
 #: source/ui/app/menuids_tmpl.src#MN_MEASURE.SID_MEASURE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "Hammamtaa..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TRANSFORM.SID_ATTR_TRANSFORM.MenuItem.Text
+#, fuzzy
 msgid  "Position and Si~ze..."
 msgstr "Qubannoo fi Hammamtaa..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit ~Points"
-msgstr "Tuqaalee Gulaali"
+msgstr "Tuqaa Gulaali"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "Arra~nge"
 msgstr "Qindeessi"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_TOP.MenuItem.Text
+#, fuzzy
 msgid  "~Bring to Front"
 msgstr "Fuulduratti Fidi"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREFRONT.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Fuulduratti Fidi"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_MOREBACK.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Duubatti Ergi"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_FRAME_TO_BOTTOM.MenuItem.Text
+#, fuzzy
 msgid  "~Send to Back"
 msgstr "Duubatti Ergi"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEFORE_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "Fuuldura Wantaa"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_BEHIND_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "Be~hind Object"
 msgstr "Wanta duuba"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.SID_REVERSE_ORDER.MenuItem.Text
+#, fuzzy
 msgid  "~Reverse"
 msgstr "Garagalchi"
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR.SID_CHAR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "C~haracter..."
 msgstr "Arfii..."
 
 #: source/ui/app/menuids_tmpl.src#MN_CHAR_PARAGRAPH.SID_PARA_DLG.MenuItem.Text
+#, fuzzy
 msgid  "P~aragraph..."
 msgstr "Keewwata..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONT.MenuItem.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "Bocquu..."
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.SID_ATTR_CHAR_FONTHEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Size"
 msgstr "Hammamtaa"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "St~yle"
 msgstr "Haalata"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
+#, fuzzy
 msgid  "Bold"
 msgstr "Yabbuu"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_POSTURE.MenuItem.Text
+#, fuzzy
 msgid  "Italic"
 msgstr "Mirgada"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_OVERLINE.MenuItem.Text
+#, fuzzy
 msgid  "Overline"
 msgstr "IrraSarari"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_UNDERLINE.MenuItem.Text
+#, fuzzy
 msgid  "Underline"
 msgstr "Jalmura"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_STRIKEOUT.MenuItem.Text
+#, fuzzy
 msgid  "Strikethrough"
 msgstr "Irrasarari"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_SHADOWED.MenuItem.Text
+#, fuzzy
 msgid  "Shadow"
 msgstr "Gaaddidduu"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ATTR.DUMMY.SID_ATTR_CHAR_CONTOUR.MenuItem.Text
+#, fuzzy
 msgid  "~Contour"
 msgstr "Sararroo"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.MenuItem.Text
+#, fuzzy
 msgid  "~Line Spacing"
 msgstr "Iddina Sararaa"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_10.MenuItem.Text
+#, fuzzy
 msgid  "Single Line Spacing"
 msgstr "Iddina Sararaa Tokkee"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_15.MenuItem.Text
+#, fuzzy
 msgid  "1.5 Lines"
 msgstr "Sararoota 1.5"
 
 #: source/ui/app/menuids_tmpl.src#MN_LINESPACING_ATTR.DUMMY.SID_ATTR_PARA_LINESPACE_20.MenuItem.Text
+#, fuzzy
 msgid  "~Double"
 msgstr "Lamee"
 
 #: source/ui/app/menuids_tmpl.src#MN_BULLET.SID_CHARMAP.MenuItem.Text
+#, fuzzy
 msgid  "S~pecial Character..."
 msgstr "Arfii Addayyaa..."
 
@@ -3330,18 +3547,19 @@ msgid  "A~lignment"
 msgstr "Hiriira"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
 msgstr "Bitaa"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
 #, fuzzy
 msgid  "~Right"
-msgstr "Mirgaa"
+msgstr "Mirga"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
 #, fuzzy
 msgid  "~Centered"
-msgstr "Wiirtawaa"
+msgstr "Wirtesii"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
 #, fuzzy
@@ -3754,78 +3972,97 @@ msgid  "~Rename"
 msgstr "Maqaa Jijjiiri"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEBEZIER.SID_CHANGEBEZIER.MenuItem.Text
+#, fuzzy
 msgid  "To ~Curve"
 msgstr "Gara Qonyoo"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CHANGEPOLYGON.SID_CHANGEPOLYGON.MenuItem.Text
+#, fuzzy
 msgid  "To ~Polygon"
 msgstr "Gara Roogbaay'ee"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_CONTOUR.SID_CONVERT_TO_CONTOUR.MenuItem.Text
+#, fuzzy
 msgid  "To C~ontour"
 msgstr "To Contour"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D.SID_CONVERT_TO_3D.MenuItem.Text
+#, fuzzy
 msgid  "To 3~D"
 msgstr "Gara 3G"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_BITMAP.SID_CONVERT_TO_BITMAP.MenuItem.Text
+#, fuzzy
 msgid  "To ~Bitmap"
 msgstr "Gara Suurxiqqoo"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_METAFILE.SID_CONVERT_TO_METAFILE.MenuItem.Text
+#, fuzzy
 msgid  "To ~Metafile"
 msgstr "Gara Galsarmee"
 
 #: source/ui/app/menuids3_tmpl.src#MN_CONVERT_TO_3D_LATHE_FAST.SID_CONVERT_TO_3D_LATHE_FAST.MenuItem.Text
+#, fuzzy
 msgid  "To 3D ~Rotation Object"
 msgstr "Gara Marsaa Wanta 3G"
 
 #: source/ui/app/menuids3_tmpl.src#MN_VERTICAL.SID_VERTICAL.MenuItem.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "Sarjina"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HORIZONTAL.SID_HORIZONTAL.MenuItem.Text
+#, fuzzy
 msgid  "~Horizontally"
 msgstr "Sardala"
 
 #: source/ui/app/menuids3_tmpl.src#MN_3D_WIN.SID_3D_WIN.MenuItem.Text
+#, fuzzy
 msgid  "~3D Effects"
 msgstr "Galtee 3G"
 
 #: source/ui/app/menuids3_tmpl.src#MN_PRESENTATION_LAYOUT.SID_PRESENTATION_LAYOUT.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Design"
 msgstr "Saxaxa Islaayidii"
 
 #: source/ui/app/menuids3_tmpl.src#MN_DIA.SID_SLIDE_TRANSITIONS_PANEL.MenuItem.Text
+#, fuzzy
 msgid  "Slide ~Transition"
 msgstr "Cehumsa Islaayidii"
 
 #: source/ui/app/menuids3_tmpl.src#MN_SHOW_SLIDE.SID_SHOW_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Show Slide"
 msgstr "Islaayidii Mul'isi"
 
 #: source/ui/app/menuids3_tmpl.src#MN_HIDE_SLIDE.SID_HIDE_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Hide Slide"
 msgstr "Islaayidii Dhoksi"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Group"
 msgstr "Gurmeessi"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Ungroup"
 msgstr "Garbaasi"
 
 #: source/ui/app/menuids3_tmpl.src#MN_ENTER_GROUP_IMPRESS.SID_ENTER_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Edit Group"
 msgstr "Gurmuu Gulaali"
 
 #: source/ui/app/menuids3_tmpl.src#MN_LEAVE_GROUP_IMPRESS.SID_LEAVE_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "E~xit group"
 msgstr "Gurmuu keessaa bahi"
 
 #: source/ui/app/menuids3_tmpl.src#MNSUB_GROUP.MN_SUB_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Group"
 msgstr "Gurmeessi"
 
@@ -3837,7 +4074,7 @@ msgstr "Kamshaawwan"
 #: source/ui/app/toolbox.src#RID_DRAW_VIEWER_TOOLBOX.String.Text
 #, fuzzy
 msgid  "Function Bar (viewing mode)"
-msgstr "Kabala Fankishinii (halata mul'annoo)"
+msgstr "Dalaga Kabala (haalata mul'annoo)"
 
 #: source/ui/app/toolbox.src#RID_GRAPHIC_VIEWER_TOOLBOX.String.Text
 #, fuzzy
@@ -4035,358 +4272,445 @@ msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you 
 msgstr "Draw %PRODUCTNAME hanga jalqaba dhiheessaatti barbaadee jira. Dhuma irraa irra deebi'uu feetaa?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
+#, fuzzy
 msgid  "~New"
 msgstr "Haaraa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTDOC.SID_EXPORTDOC.MenuItem.Text
+#, fuzzy
 msgid  "~Export..."
 msgstr "Alergi..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPORTPDF.SID_EXPORTDOCASPDF.MenuItem.Text
+#, fuzzy
 msgid  "Export as PDF..."
 msgstr "Akka PDFtti Alergi..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SEND.MN_SUB_SEND.MenuItem.Text
+#, fuzzy
 msgid  "Sen~d"
 msgstr "Ergi"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
+#, fuzzy
 msgid  "~Page..."
 msgstr "Fuula..."
 
 #: source/ui/app/menuids2_tmpl.src#20.#define.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "Gulaali"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
+#, fuzzy
 msgid  "Paste ~Special..."
 msgstr "Maxxansa Addaa..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_COPYOBJECTS.SID_COPYOBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "Duplicat~e..."
 msgstr "Baayyisi..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_POLYGON_MORPHING.SID_POLYGON_MORPHING.MenuItem.Text
+#, fuzzy
 msgid  "Cross-fading..."
 msgstr "Fajaja-Qaxxaamuraa.."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFY_FIELD.SID_MODIFY_FIELD.MenuItem.Text
+#, fuzzy
 msgid  "F~ields..."
 msgstr "Dirreewwan..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_DELETE_LAYER.SID_DELETE_LAYER.MenuItem.Text
+#, fuzzy
 msgid  "Delete ~Layer..."
 msgstr "Baqqaana Haqi..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
+#, fuzzy
 msgid  "Lin~ks..."
 msgstr "Geessituuwwan..."
 
 #: source/ui/app/menuids2_tmpl.src#23.#define.Text
+#, fuzzy
 msgid  "~View"
 msgstr "Mul'isi"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
+#, fuzzy
 msgid  "Main ~Toolbar"
 msgstr "Kamshaa Dursaa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLEOPTIONBAR.SID_TOGGLEOPTIONBAR.MenuItem.Text
+#, fuzzy
 msgid  "Optio~n Bar"
 msgstr "Kabala Dirqalaa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLECOMMONTASKBAR.SID_TOGGLECOMMONTASKBAR.MenuItem.Text
+#, fuzzy
 msgid  "~Presentation"
 msgstr "Dhiheessa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMIZETOOLBOX.SID_CUSTOMIZETOOLBOX.MenuItem.Text
+#, fuzzy
 msgid  "Customi~ze..."
 msgstr "Maamileessi..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_RULER.SID_RULER.MenuItem.Text
+#, fuzzy
 msgid  "~Rulers"
 msgstr "Sarartuuwwan"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTESMODE.SID_NOTESMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Notes View"
 msgstr "Mul'annoo Yaadannoowwanii"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUTMODE.SID_HANDOUTMODE.MenuItem.Text
+#, fuzzy
 msgid  "~Handout View"
 msgstr "Mul'annoo Hirtaa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_WIN.SID_PREVIEW_WIN.MenuItem.Text
+#, fuzzy
 msgid  "~Preview"
 msgstr "Durargii"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PAGEMODE.SID_PAGEMODE.MenuItem.Text
+#, fuzzy
 msgid  "S~lide"
 msgstr "Islaayidii"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SLIDE_MASTERPAGE.SID_SLIDE_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Master"
 msgstr "Hundataa Islaayidii"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TITLE_MASTERPAGE.SID_TITLE_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "Mataduree"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NOTES_MASTERPAGE.SID_NOTES_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Notes"
 msgstr "Yaadannoowwan"
 
 #: source/ui/app/menuids2_tmpl.src#MN_HANDOUT_MASTERPAGE.SID_HANDOUT_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Handout"
 msgstr "Hirtaa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_LAYERMODE.SID_LAYERMODE.MenuItem.Text
+#, fuzzy
 msgid  "La~yer"
 msgstr "Baqqaana"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_VIEW.MN_SUB_VIEW.MenuItem.Text
+#, fuzzy
 msgid  "Wor~kspace"
 msgstr "Iddoohojii"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Master"
 msgstr "Hundataa"
 
 #: source/ui/app/menuids2_tmpl.src#21.#define.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "Saagi"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slid~e..."
 msgstr "Islaayidii..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE_DRAW.SID_INSERTPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Slid~e"
 msgstr "Islaayidii"
 
 #: source/ui/app/menuids2_tmpl.src#MN_DUPLICATE_PAGE.SID_DUPLICATE_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "D~uplicate Slide"
 msgstr "Islaayidii Baayyisi"
 
 #: source/ui/app/menuids2_tmpl.src#MN_EXPAND_PAGE.SID_EXPAND_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "E~xpand Slide"
 msgstr "Islaayidii Baldhisi"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SUMMARY_PAGE.SID_SUMMARY_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "Su~mmary Slide"
 msgstr "Islaayidii Golabaa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Layer..."
 msgstr "Baqqaana..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
+#, fuzzy
 msgid  "~Date (fixed)"
 msgstr "Guyyaa (dhaabbataa)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_VAR.SID_INSERT_FLD_DATE_VAR.MenuItem.Text
+#, fuzzy
 msgid  "Dat~e (variable)"
 msgstr "Guyyaa (jijjiiramaa)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_FIX.SID_INSERT_FLD_TIME_FIX.MenuItem.Text
+#, fuzzy
 msgid  "~Time (fixed)"
 msgstr "Sa'aatii (dhaabbataa)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_TIME_VAR.SID_INSERT_FLD_TIME_VAR.MenuItem.Text
+#, fuzzy
 msgid  "T~ime (variable)"
 msgstr "Sa'atii (jijjiiramaa)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_PAGE.SID_INSERT_FLD_PAGE.MenuItem.Text
+#, fuzzy
 msgid  "~Page Number"
 msgstr "Lakkoofsa Fuulaa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_FILE.SID_INSERT_FLD_FILE.MenuItem.Text
+#, fuzzy
 msgid  "~File Name"
 msgstr "Maqaa Fayilii"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_AUTHOR.SID_INSERT_FLD_AUTHOR.MenuItem.Text
+#, fuzzy
 msgid  "~Author"
 msgstr "Barreessaa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_SELECT.SID_TWAIN_SELECT.MenuItem.Text
+#, fuzzy
 msgid  "~Select Source..."
 msgstr "Madda fili..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_TWAIN_TRANSFER.SID_TWAIN_TRANSFER.MenuItem.Text
+#, fuzzy
 msgid  "~Request..."
 msgstr "Gaaffii..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ATTR_TABLE.SID_ATTR_TABLE.MenuItem.Text
+#, fuzzy
 msgid  "Sp~readsheet"
 msgstr "Wardii"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_GRAPHIC.MenuItem.Text
+#, fuzzy
 msgid  "From ~File..."
 msgstr "Faayilii Irraa..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_INSERT_DIAGRAM.SID_INSERT_DIAGRAM.MenuItem.Text
+#, fuzzy
 msgid  "Chart"
 msgstr "Taattoo"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLOATINGFRAME.SID_INSERT_FLOATINGFRAME.MenuItem.Text
+#, fuzzy
 msgid  "Float~ing Frame..."
 msgstr "Goodayyaa Bololi'aa..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTFILE.SID_INSERTFILE.MenuItem.Text
+#, fuzzy
 msgid  "~File..."
 msgstr "Faayilii..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_FIELD.MN_SUB_FIELD.MenuItem.Text
+#, fuzzy
 msgid  "Fiel~ds"
 msgstr "Dirreewwan"
 
 #: source/ui/app/menuids2_tmpl.src#22.#define.Text
+#, fuzzy
 msgid  "F~ormat"
 msgstr "Dhangii"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Te~xt..."
 msgstr "Barruu..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MEASURE_DLG.SID_MEASURE_DLG.MenuItem.Text
+#, fuzzy
 msgid  "Dimen~sions..."
 msgstr "Hammamtaa..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CONNECTION_DLG.SID_CONNECTION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Connector..."
 msgstr "Koronyoo..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYLAYER.SID_MODIFYLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Layer..."
 msgstr "Baqqaana..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_MODIFYPAGE.SID_MODIFYPAGE.MenuItem.Text
+#, fuzzy
 msgid  "Modify ~Layout..."
 msgstr "Baqqaana Fooyyessi..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
+#, fuzzy
 msgid  "Styl~es"
 msgstr "Haalatoota"
 
 #: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+#, fuzzy
 msgid  "~Tools"
 msgstr "Meeshaalee"
 
 #: source/ui/app/menuids2_tmpl.src#26.#define.Text
+#, fuzzy
 msgid  "~Slide Show"
 msgstr "Agarsiisa Islaayidii"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
+#, fuzzy
 msgid  "~Check..."
 msgstr "Mirkaneessi..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTOSPELL_CHECK.SID_AUTOSPELL_CHECK.MenuItem.Text
+#, fuzzy
 msgid  "~AutoSpellcheck"
 msgstr " OfumaaQubeeffannooToo'adhu"
 
 #: source/ui/app/menuids2_tmpl.src#MN_THESAURUS.SID_THESAURUS.MenuItem.Text
+#, fuzzy
 msgid  "~Thesaurus..."
 msgstr "Waa dhugoomsaa..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_HYPHENATION.SID_HYPHENATION.MenuItem.Text
+#, fuzzy
 msgid  "~Hyphenation"
 msgstr "Murfisa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_AUTO_CORRECT_DLG.SID_AUTO_CORRECT_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~AutoCorrect..."
 msgstr "OfiinSirreessaa..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_PRESENTATION_DLG.SID_PRESENTATION_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Slide Show Settings..."
 msgstr "Qindaa'inoota Agarsiisa Islaayidii..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_CUSTOMSHOW_DLG.SID_CUSTOMSHOW_DLG.MenuItem.Text
+#, fuzzy
 msgid  "~Custom Slide Show..."
 msgstr "Agarsiisa Islaayidii Maamiloo..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_OBJECTS.SID_ANIMATION_OBJECTS.MenuItem.Text
+#, fuzzy
 msgid  "~Animation"
 msgstr "Sochii Fakkinaa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_ANIMATION_EFFECTS.SID_ANIMATION_EFFECTS.MenuItem.Text
+#, fuzzy
 msgid  "~Interaction..."
 msgstr "Walittidhufeenya..."
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
+#, fuzzy
 msgid  "~Spellcheck"
 msgstr "QubeeffannooToo'adhu"
 
 #: source/ui/app/menuids2_tmpl.src#24.#define.Text
+#, fuzzy
 msgid  "~Modify"
 msgstr "Fooyyessi"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
+#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "Fuulduratti Fidi"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREBACK.SID_MOREBACK.MenuItem.Text
+#, fuzzy
 msgid  "Send Back~ward"
 msgstr "Duubatti Ergi"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEFORE_OBJ.SID_BEFORE_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "In Front of ~Object"
 msgstr "Wanta Fuuldura"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BEHIND_OBJ.SID_BEHIND_OBJ.MenuItem.Text
+#, fuzzy
 msgid  "Be~hind Object"
 msgstr "Wanta Duuba"
 
 #: source/ui/app/menuids2_tmpl.src#MN_REVERSE_ORDER.SID_REVERSE_ORDER.MenuItem.Text
+#, fuzzy
 msgid  "~Reverse"
 msgstr "Garagalchi"
 
 #: source/ui/app/menuids2_tmpl.src#MN_BMPMASK.SID_BMPMASK.MenuItem.Text
+#, fuzzy
 msgid  "~Eyedropper"
 msgstr "Eyedropper"
 
 #: source/ui/app/menuids2_tmpl.src#MN_GALLERY.SID_GALLERY.MenuItem.Text
+#, fuzzy
 msgid  "~Gallery"
 msgstr "Kuusaa faayaa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "Halluu"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
+#, fuzzy
 msgid  "~Grayscale"
 msgstr "Saxxiillaa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
 msgid  "~Black and White"
-msgstr "Adii fi Gurraacha"
+msgstr "Gurraachaa fi Adii"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
 msgid  "~High Contrast"
-msgstr "Addaadoo Guddaa"
+msgstr "Addaadoo Olâaanaa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
+#, fuzzy
 msgid  "~Color"
 msgstr "Halluu"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_GRAYSCALE.SID_PREVIEW_QUALITY_GRAYSCALE.MenuItem.Text
+#, fuzzy
 msgid  "~Grayscale"
 msgstr "Saxxiillaa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_BLACKWHITE.SID_PREVIEW_QUALITY_BLACKWHITE.MenuItem.Text
+#, fuzzy
 msgid  "~Black and White"
 msgstr "Gurraachaa fi Adii"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_CONTRAST.SID_PREVIEW_QUALITY_CONTRAST.MenuItem.Text
+#, fuzzy
 msgid  "~High Contrast"
 msgstr "Addaadoo Olâaanaa"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_POSITION.MN_SUB_POSITION.MenuItem.Text
+#, fuzzy
 msgid  "~Arrange"
 msgstr "Qindeessi"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_OUTPUT_QUALITY.MN_SUB_OUTPUT_QUALITY.ItemList.Text
+#, fuzzy
 msgid  "~Display Quality"
 msgstr "Qulqullina Agarsiisaa"
 
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
+#, fuzzy
 msgid  "Pre~view Mode"
 msgstr "Haalata Durargii"
 
@@ -5748,30 +6072,37 @@ msgid  "Animation"
 msgstr "Sochii Fakkinaa"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_FIRST.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "First Image"
 msgstr "Calaqqee Duraa"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REVERSE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Backwards"
 msgstr "Duubatti"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_STOP.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Stop"
 msgstr "Dhaabi"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_PLAY.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Play"
 msgstr "Taphachiisi"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_LAST.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Last Image"
 msgstr "Calaqqee dhumaa"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.NUM_FLD_BITMAP.NumericField.QuickHelpText
+#, fuzzy
 msgid  "Image Number"
 msgstr "Lakkoofsa calaqqee"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.TIME_FIELD.TimeField.QuickHelpText
+#, fuzzy
 msgid  "Duration"
 msgstr "Turmaata"
 
@@ -5792,6 +6123,7 @@ msgid  "4"
 msgstr ""
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item5.StringList.item
+#, fuzzy
 msgid  "5"
 msgstr "5"
 
@@ -5800,10 +6132,12 @@ msgid  "6"
 msgstr ""
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item7.StringList.item
+#, fuzzy
 msgid  "7"
 msgstr "7"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item8.StringList.item
+#, fuzzy
 msgid  "8"
 msgstr "8"
 
@@ -5812,126 +6146,157 @@ msgid  "9"
 msgstr ""
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item10.StringList.item
+#, fuzzy
 msgid  "10"
 msgstr "10"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item11.StringList.item
+#, fuzzy
 msgid  "12"
 msgstr "12"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item12.StringList.item
+#, fuzzy
 msgid  "15"
 msgstr "15"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item13.StringList.item
+#, fuzzy
 msgid  "20"
 msgstr "20"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item14.StringList.item
+#, fuzzy
 msgid  "25"
 msgstr "25"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item15.StringList.item
+#, fuzzy
 msgid  "50"
 msgstr "50"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item16.StringList.item
+#, fuzzy
 msgid  "100"
 msgstr "100"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item17.StringList.item
+#, fuzzy
 msgid  "500"
 msgstr "500"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item18.StringList.item
+#, fuzzy
 msgid  "1000"
 msgstr "1000"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.item19.StringList.item
+#, fuzzy
 msgid  "Max."
 msgstr "Olaa."
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_LOOP_COUNT.StringList.QuickHelpText
+#, fuzzy
 msgid  "Loop Count"
 msgstr "Baay'ina Marsaa"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ONE_OBJECT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Apply Object"
 msgstr "Wanta Fayyadami"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_GET_ALL_OBJECTS.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Apply Objects Individually"
 msgstr "Wantoota Dhuunfaan Fayyadami"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_BITMAP.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Delete Current Image"
 msgstr "Calaqqee Ammee Haqi"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_REMOVE_ALL.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Delete All Images"
 msgstr "Calaqqee Mara Haqi"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Lakkoofsa"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_BITMAP.FixedLine.Text
+#, fuzzy
 msgid  "Image"
 msgstr "Calaqqee"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_GROUP.RadioButton.Text
+#, fuzzy
 msgid  "Group object"
 msgstr "Wanta Gurmeessi"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.RBT_BITMAP.RadioButton.Text
+#, fuzzy
 msgid  "Bitmap object"
 msgstr "Wanta Suurxiqqoo"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.FT_ADJUSTMENT.FixedText.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "Hirira"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Top Left"
 msgstr "Bitaa Gubbaa"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Left"
 msgstr "Bitaa"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Bottom Left"
 msgstr "Bitaa Jala"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Top"
 msgstr "Gubbaa"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Centered"
 msgstr "Wiirtahaa"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Bottom"
 msgstr "Jala"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Top Right"
 msgstr "Mirga Gubbaa"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Right"
 msgstr "Mirga"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
 msgid  "Bottom Right"
 msgstr "Mirga Jala"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+#, fuzzy
 msgid  "Create"
 msgstr "Uumi"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+#, fuzzy
 msgid  "Animation group"
 msgstr "Gurmuu Sochii fakkinaa"
 
@@ -6056,26 +6421,32 @@ msgid  "Paper tray from printer s~ettings"
 msgstr "Madda waraqaa qindaa'ina maxxansaa irraa"
 
 #: source/ui/notes/NotesChildWindow.src#FLT_WIN_NOTES.DockingWindow.Text
+#, fuzzy
 msgid  "Notes Window"
 msgstr "Foddaa Yaadannoolee"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_NEXT_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Next"
 msgstr "Kanittaanu"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_PREV_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Previous"
 msgstr "Kandarbe"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.MenuItem.Text
+#, fuzzy
 msgid  "~Go to Slide"
 msgstr "Gara Islaayidii ... Deemi"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_FIRST_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~First Slide"
 msgstr "Islaayidii Duraa"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_GOTO.CM_LAST_SLIDE.MenuItem.Text
+#, fuzzy
 msgid  "~Last Slide"
 msgstr "Islaayidii Dhumaa"
 
@@ -6116,18 +6487,22 @@ msgid  "~Erase all ink on Slide"
 msgstr ""
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.MenuItem.Text
+#, fuzzy
 msgid  "~Screen"
 msgstr "Argii"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_BLACK.MenuItem.Text
+#, fuzzy
 msgid  "~Black"
 msgstr "Gurraacha"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_SCREEN.CM_SCREEN_WHITE.MenuItem.Text
+#, fuzzy
 msgid  "~White"
 msgstr "Adii"
 
 #: source/ui/slideshow/slideshow.src#RID_SLIDESHOW_CONTEXTMENU.CM_ENDSHOW.MenuItem.Text
+#, fuzzy
 msgid  "~End Show"
 msgstr "Mul'isa Xumuri"
 
@@ -6156,42 +6531,52 @@ msgid  "Duplicate Slide"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
+#, fuzzy
 msgid  "Table Design"
 msgstr "Saxaxa Gabatee"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
+#, fuzzy
 msgid  "Show"
 msgstr "Mul'si"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW+1.CheckBox.Text
+#, fuzzy
 msgid  "Header Row"
 msgstr "Tarree Irraantoo"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW+1.CheckBox.Text
+#, fuzzy
 msgid  "Total Row"
 msgstr "Tarree Dimshaashaa"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS+1.CheckBox.Text
+#, fuzzy
 msgid  "Banded Rows"
 msgstr "Tarreewwan Dhoorgaman"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
+#, fuzzy
 msgid  "First Column"
 msgstr "Tarjaa Duraa"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
+#, fuzzy
 msgid  "Last Column"
 msgstr "Tarjaa Dhumaa"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS+1.CheckBox.Text
+#, fuzzy
 msgid  "Banded Columns"
 msgstr "Tarjaalee Dhoorgaman"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
+#, fuzzy
 msgid  "Styles"
 msgstr "Haalatoota"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.ModalDialog.Text
+#, fuzzy
 msgid  "Table Design"
 msgstr "Saxaxa Gabatee"
 

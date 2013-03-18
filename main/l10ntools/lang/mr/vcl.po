@@ -210,9 +210,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
-#, fuzzy
-msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr "(%s)घटक लोड करू शकत नाही.\n कृपया दुरूस्ती पर्यायाची मांडणी करा."
+msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
+msgstr ""
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 #, fuzzy
@@ -314,26 +313,32 @@ msgid  "Print"
 msgstr "छपाई"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKButton.Text
+#, fuzzy
 msgid  "~Print"
 msgstr "छपाई (~P)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FixedText.Text
+#, fuzzy
 msgid  "/ %n"
 msgstr "/ %n"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.String.Text
+#, fuzzy
 msgid  "No pages"
 msgstr "पाने नाही"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.String.Text
+#, fuzzy
 msgid  "Print to File..."
 msgstr "फाइल मध्ये छपाई करा..."
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.String.Text
+#, fuzzy
 msgid  "Default printer"
 msgstr "मूळस्थिती मुद्रक"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.String.Text
+#, fuzzy
 msgid  "Print preview"
 msgstr "छपाई पूर्वावलोकन"
 
@@ -343,90 +348,112 @@ msgid  "Page Layout"
 msgstr "पानाची मांडणी"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FixedLine.Text
+#, fuzzy
 msgid  "Layout"
 msgstr "मांडणी"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RadioButton.Text
+#, fuzzy
 msgid  "Pa~ges per sheet"
 msgstr "पाने प्रत्येक शीट (~g)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.StringList.item
+#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.StringList.item
+#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.StringList.item
+#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.StringList.item
+#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.StringList.item
+#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.StringList.item
+#, fuzzy
 msgid  "16"
 msgstr "16"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0xffff.StringList.item
+#, fuzzy
 msgid  "Custom"
 msgstr "मनपसंत"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FixedText.Text
+#, fuzzy
 msgid  "P~ages"
 msgstr "पाने (~a)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FixedText.Text
+#, fuzzy
 msgid  "b~y"
 msgstr "नुरूप (~y)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FixedText.Text
+#, fuzzy
 msgid  "~Distance"
 msgstr "अंतर (~D)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FixedText.Text
+#, fuzzy
 msgid  "between pages"
 msgstr "पानांच्या अंतर्गत"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FixedText.Text
+#, fuzzy
 msgid  "~Margin"
 msgstr "समास (~M)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FixedText.Text
+#, fuzzy
 msgid  "to sheet border"
 msgstr "शीटच्या किनारपर्यंत"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FixedText.Text
+#, fuzzy
 msgid  "~Orientation"
 msgstr "दिशा (~O)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.StringList.item
+#, fuzzy
 msgid  "Automatic"
 msgstr "स्वयं"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.StringList.item
+#, fuzzy
 msgid  "Portrait"
 msgstr "उभे"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.StringList.item
+#, fuzzy
 msgid  "Landscape"
 msgstr "आडवे"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FixedText.Text
+#, fuzzy
 msgid  "Order"
 msgstr "क्रम"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.StringList.item
+#, fuzzy
 msgid  "left to right, then down"
 msgstr "डावे ते उजवे, त्यानंतर खाली"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.StringList.item
+#, fuzzy
 msgid  "top to bottom, then right"
 msgstr "शीर्ष ते तळ, त्यानंतर उजवीकडे"
 
@@ -530,9 +557,8 @@ msgid  "Page %p of %n"
 msgstr "पान %p, %n पैकी"
 
 #: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
-#, fuzzy
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "कोणताही मूळस्थितीचा मुद्रक सापडला नाही.\nकृपया मुद्रक निवडा व परत प्रयत्न करा."
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr ""
 
 #: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
 #, fuzzy
@@ -712,93 +738,116 @@ msgid  "B6 (JIS)"
 msgstr ""
 
 #: source/src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.String.Text
+#, fuzzy
 msgid  "<No selection possible>"
 msgstr " <कोणतीही निवड शक्य नाही>"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MenuItem.Text
+#, fuzzy
 msgid  "~Undo"
 msgstr "पूर्ववत् करा (~U)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MenuItem.Text
+#, fuzzy
 msgid  "Cu~t"
 msgstr "कापा (~t)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
 msgstr "प्रत बनवा (~C)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MenuItem.Text
+#, fuzzy
 msgid  "~Paste"
 msgstr "चिकटवा (~P)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MenuItem.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "नष्ट करा (~D)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MenuItem.Text
+#, fuzzy
 msgid  "Select ~All"
 msgstr "सर्व निवडा (~A)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MenuItem.Text
+#, fuzzy
 msgid  "~Special Character..."
 msgstr "विशेष अक्षर (~S)..."
 
 #: source/src/menu.src#SV_MENU_MAC_SERVICES.String.Text
+#, fuzzy
 msgid  "Services"
 msgstr "सेवा"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEAPP.String.Text
+#, fuzzy
 msgid  "Hide %PRODUCTNAME"
 msgstr "%PRODUCTNAME अदृश्य करा"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEALL.String.Text
+#, fuzzy
 msgid  "Hide Others"
 msgstr "इतर अदृश्य करा"
 
 #: source/src/menu.src#SV_MENU_MAC_SHOWALL.String.Text
+#, fuzzy
 msgid  "Show All"
 msgstr "सर्व दाखवा"
 
 #: source/src/menu.src#SV_MENU_MAC_QUITAPP.String.Text
+#, fuzzy
 msgid  "Quit %PRODUCTNAME"
 msgstr "%PRODUCTNAME मधून बाहेर पडा"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
+#, fuzzy
 msgid  "OK"
 msgstr "ठीक आहे"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "रद्द करा"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
+#, fuzzy
 msgid  "~Yes"
 msgstr "होय (~Y)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
+#, fuzzy
 msgid  "~No"
 msgstr "नाही (~N)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
+#, fuzzy
 msgid  "~Retry"
 msgstr "पुनः प्रयत्न करा (~R)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "मदत (~H)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
+#, fuzzy
 msgid  "~More"
 msgstr "अधिक (~M)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
+#, fuzzy
 msgid  "~More"
 msgstr "अधिक (~M)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
+#, fuzzy
 msgid  "~Ignore"
 msgstr "दुर्लक्ष करा (~I)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
+#, fuzzy
 msgid  "~Abort"
 msgstr "रद्द करा (~A)"

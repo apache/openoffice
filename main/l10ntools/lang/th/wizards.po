@@ -421,7 +421,7 @@ msgstr "~ถัดไป >"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 15.String.Text
 msgid  "~Help"
-msgstr "~ช่วยเหลือ"
+msgstr "~Help"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 16.String.Text
 msgid  "Steps"
@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "แม่แบบถูกสร้างโดย <wizard_name> เมื่อ <current_date>"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "ตัวช่วยสร้างไม่สามารถทำงานได้  เนื่องจากไม่พบแฟ้มสำคัญบางแฟ้ม\nภายใต้ 'เครื่องมือ - ตัวเลือก - %PRODUCTNAME - พาธ' คลิกปุ่ม 'ค่าปริยาย' เพื่อตั้งค่าพาธใหม่ให้เป็นค่าปริยายดั้งเดิม\nหลังจากนั้นเรียกตัวช่วยสร้างอีกครั้ง"
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "เขตข้อมูลใน~แบบฟอร์ม"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "รายการที่แสดงมักจะเป็นเขตข้อมูลฐานสอง และสามารถเลือกได้จากรายการทางด้านซ้าย\nซึ่งถ้าเป็นไปได้จะแสดงเป็นรูปภาพ"
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "แบบฟอร์มย่อยคือแบบฟอร์มที่แทรกอยู่ในฟอร์มอื่น\nใช้แบบฟอร์มย่อยเพื่อแสดงข้อมูลจากตารางหรือรายการที่มีความสัมพันธ์แบบ หนึ่งต่อจำนวนมาก"
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "เขตข้อมูลในแบบฟอร์ม"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "มีการเลือกการเชื่อม '<FIELDNAME1>' และ '<FIELDNAME2>' ไว้สองครั้ง\n แต่การเชื่อมอาจจะสามารถทำได้เพียงแค่ครั้งเดียว"
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -732,8 +732,9 @@ msgid  "~Page Styles"
 msgstr "ลักษณะ~หน้า"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 80.String.Text
+#, fuzzy
 msgid  "Field selection"
-msgstr "การเลือกเขตข้อมูล"
+msgstr "เลือกเขตข้อมูล"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 81.String.Text
 msgid  "Set up a subform"
@@ -804,12 +805,12 @@ msgid  "Set the name of the form"
 msgstr "ตั้งชื่อแบบฟอร์ม"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "ฟอร์มชื่อ '%FORMNAME'  มีอยู่แล้ว\nเลือกชื่ออื่น"
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
-msgstr "ตัวช่วยสร้างข้อคำถาม"
+msgstr "Query Wizard"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 1.String.Text
 msgid  "Query"
@@ -824,8 +825,9 @@ msgid  "~Tables"
 msgstr "~ตาราง"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
+#, fuzzy
 msgid  "A~vailable fields"
-msgstr "เ~ขตข้อมูลที่มีอยู่"
+msgstr "เขตข้อมูลที่ใช้งานได้"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
 msgid  "Name ~of the query"
@@ -874,7 +876,7 @@ msgstr "~จัดกลุ่มตาม"
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 19.String.Text
 #, fuzzy
 msgid  "Field"
-msgstr "เขตข้อมูล"
+msgstr "Field"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 20.String.Text
 #, fuzzy
@@ -1244,7 +1246,7 @@ msgstr "เลือกโครงร่าง"
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 14.String.Text
 #, fuzzy
 msgid  "Create report"
-msgstr "บันทึกรายงาน"
+msgstr "สร้างรายงาน"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 15.String.Text
 #, fuzzy
@@ -1464,7 +1466,7 @@ msgstr "ป้ายชื่อ"
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 71.String.Text
 #, fuzzy
 msgid  "Field"
-msgstr "Field"
+msgstr "เขตข้อมูล"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 #, fuzzy
@@ -1544,7 +1546,7 @@ msgstr "~ผู้แต่ง:"
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 88.String.Text
 #, fuzzy
 msgid  "Date:"
-msgstr "วันที่:"
+msgstr "วันที่: "
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 89.String.Text
 #, fuzzy
@@ -1719,7 +1721,7 @@ msgstr "ยินดีด้วย คุณได้ใส่ข้อมู�
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 #, fuzzy
 msgid  "What do you want to do next?"
-msgstr "คุณต้องการทำอะไรในลำดับถัดไป ? "
+msgstr "คุณต้องการดำเนินการอะไรต่อไป ?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
 #, fuzzy
@@ -1777,9 +1779,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "เขตข้อมูลไม่สามารถแทรกเพราะจำนวนเขตข้อมูล %COUNT จะเกินจำนวนสูงสุดของเขตข้อมูลที่เป็นไปได้ในตารางฐานข้อมูล"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-#, fuzzy
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "The name '%TABLENAME' already exists.\nPlease enter another name."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 #, fuzzy
@@ -1829,12 +1830,12 @@ msgstr "~Use letterhead paper with pre-printed elements"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 7.String.Text
 #, fuzzy
 msgid  "~Logo"
-msgstr "โ~ลโก้"
+msgstr "~Logo"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 8.String.Text
 #, fuzzy
 msgid  "Return address"
-msgstr "ที่อยู่ส่งกลับ"
+msgstr "ที่อยู่ที่ถูกส่งค่ากลับมา"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 9.String.Text
 #, fuzzy
@@ -1844,12 +1845,12 @@ msgstr "~รวมข้อความท้ายกระดาษ"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 10.String.Text
 #, fuzzy
 msgid  "~Return address in envelope window"
-msgstr "~ที่อยู่ส่งกลับในหน้าต่างซองจดหมาย"
+msgstr "~Return address in envelope window"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 11.String.Text
 #, fuzzy
 msgid  "~Logo"
-msgstr "~Logo"
+msgstr "โ~ลโก้"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 12.String.Text
 #, fuzzy
@@ -1864,7 +1865,7 @@ msgstr "Letter Signs"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 14.String.Text
 #, fuzzy
 msgid  "S~ubject line"
-msgstr "เ~ส้นเรื่อง"
+msgstr "~เส้นหัวข้อ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 15.String.Text
 #, fuzzy
@@ -1889,7 +1890,7 @@ msgstr "~ท้ายกระดาษ"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
 #, fuzzy
 msgid  "~Use user data for return address"
-msgstr "~ใช้ข้อมูลผู้ใช้สำหรับที่อยู่ส่งกลับ"
+msgstr "ใ~ช้ข้อมูลผู้ใช้สำหรับที่อยู่ส่งกลับ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
 #, fuzzy
@@ -1904,12 +1905,12 @@ msgstr "ใช้ตัวยึดตำแหน่งสำหรับที
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
 #, fuzzy
 msgid  "Use address database for ~mail merge"
-msgstr "ใช้~ฐานข้อมูลที่อยู่สำหรับจดหมายเวียน"
+msgstr "ใ~ช้ฐานข้อมูลที่อยู่สำหรับจดหมายเวียน"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 #, fuzzy
 msgid  "Include ~only on second and following pages"
-msgstr "รวมเ~ฉพาะบนหน้าที่สองและต่อๆ ไป"
+msgstr "ใส่เ~ฉพาะบนหน้าที่สองและต่อๆ ไป"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
 #, fuzzy
@@ -1934,17 +1935,17 @@ msgstr "~ทำการปรับเปลี่ยนต้นแบบจ�
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 28.String.Text
 #, fuzzy
 msgid  "Page design"
-msgstr "การออกแบบหน้ากระดาษ"
+msgstr "Page design"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 29.String.Text
 #, fuzzy
 msgid  "Page design"
-msgstr "Page design"
+msgstr "การออกแบบหน้ากระดาษ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 30.String.Text
 #, fuzzy
 msgid  "Page design"
-msgstr "การออกแบบหน้ากระดาษ"
+msgstr "Page design"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 #, fuzzy
@@ -1964,17 +1965,17 @@ msgstr "ความ~กว้าง: "
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 34.String.Text
 #, fuzzy
 msgid  "S~pacing to left margin:"
-msgstr "~การเว้นวรรคจากขอบด้านซ้าย:"
+msgstr "S~pacing to left margin:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 35.String.Text
 #, fuzzy
 msgid  "Spacing ~to top margin:"
-msgstr "~การเว้นวรรคจากขอบด้านบน:"
+msgstr "Spacing ~to top margin:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 36.String.Text
 #, fuzzy
 msgid  "Height:"
-msgstr "ความสูง:"
+msgstr "Height:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 37.String.Text
 #, fuzzy
@@ -2009,12 +2010,12 @@ msgstr "ที่อยู่ของผู้ส่ง"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 43.String.Text
 #, fuzzy
 msgid  "Name:"
-msgstr "ชื่อ: "
+msgstr "ชื่อ : "
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 44.String.Text
 #, fuzzy
 msgid  "Street:"
-msgstr "ถนน: "
+msgstr "ถนน : "
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
 #, fuzzy
@@ -2029,7 +2030,7 @@ msgstr "ที่อยู่ของผู้รับ"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 47.String.Text
 #, fuzzy
 msgid  "Footer"
-msgstr "ท้ายกระดาษ"
+msgstr "Footer"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 #, fuzzy
@@ -2049,7 +2050,7 @@ msgstr "ชื่อต้นแบบ:"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
 #, fuzzy
 msgid  "Location and file name:"
-msgstr "ตำแหน่งและชื่อของแฟ้ม:"
+msgstr "ตำแหน่งและชื่อไฟล์:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
 #, fuzzy
@@ -2139,7 +2140,7 @@ msgstr "ผู้รับและผู้ส่ง"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 5.String.Text
 #, fuzzy
 msgid  "Footer"
-msgstr "Footer"
+msgstr "ท้ายกระดาษ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 6.String.Text
 #, fuzzy
@@ -2239,7 +2240,7 @@ msgstr "ที่อยู่ที่ถูกส่งค่ากลับม
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 19.String.Text
 #, fuzzy
 msgid  "Name:"
-msgstr "ชื่อ : "
+msgstr "ชื่อ: "
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 20.String.Text
 #, fuzzy
@@ -2279,7 +2280,7 @@ msgstr "ตำแหน่งและชื่อไฟล์:"
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
 #, fuzzy
 msgid  "What do you want to do next?"
-msgstr "คุณต้องการดำเนินการอะไรต่อไป ?"
+msgstr "คุณต้องการทำอะไรในลำดับถัดไป ? "
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
 #, fuzzy
@@ -2304,7 +2305,7 @@ msgstr "กรอกข้อความสำหรับท้ายกระ
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
 #, fuzzy
 msgid  "Choose a name and save the template"
-msgstr "เลือกชื่อและบันทึกต้นแบบ"
+msgstr "เลือกชื่อและบันทึกแม่แบบ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
 #, fuzzy
@@ -2432,9 +2433,8 @@ msgid  "Web Wizard"
 msgstr "ตัวช่วยสร้างเวบ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-#, fuzzy
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "ตัวช่วยสร้างเว็บนี้ช่วยคุณในการเผยแพร่เอกสารบนอินเทอร์เน็ต\n\nมันจะแปลงเอกสารให้สามารถแสดงได้บนเว็บเบราเซอร์ ดังนั้นมันจะสร้างหน้าสารบาญที่มีลิงก์เพื่อการเข้าถึงเอกสารได้ง่าย ตัวช่วยสร้างเว็บจะอนุญาตให้คุณปรับปรุงการออกแบบและเค้าโครงของเว็บไซต์ของคุณได้เอง\n\nคุณจะสามารถจัดการเอกสารที่คุณได้เผยแพร่บนเว็บได้ และใส่เพิ่มหรือลบเอกสารออกได้ทุกเวลา"
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 #, fuzzy
@@ -2957,9 +2957,8 @@ msgid  "Preview"
 msgstr "แสดงตัวอย่าง"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-#, fuzzy
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "The selected settings will be deleted.\n\nDo you really want to delete these settings? จะทำการลบการตั้งค่าที่ได้เลือกไว้ \n\nคุณต้องการจะลบการตั้งค่าเหล่านี้จริงหรือไม่ ?"
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 #, fuzzy
@@ -3042,9 +3041,8 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "ไม่สามารถสร้างไดเรกทอรี FTP '%FILENAME' ได้"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-#, fuzzy
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "ไม่มีไดเรกทอรี FTP '%FILENAME' นี้อยู่ \nสร้างได้เรกทอรี่ขณะนี้เลยหรือไม่ ?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 #, fuzzy
@@ -3052,14 +3050,12 @@ msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name
 msgstr "ไม่สามารถสร้างแฟ้มบีบอัด '%FILENAME' ได้: มีไดเรกทอรีชื่อเดียวกันนี้อยู่แล้ว"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-#, fuzzy
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "ไม่สามารถสร้างไดเรกทอรี '%FILENAME' ที่เครื่องได้ \nโปรดตรวจสอบ การเข้าถึงการเขียน ของคุณ"
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-#, fuzzy
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "ไม่มีพื้นที่ไดเรกทอรี '%FILENAME' อยู่ \nต้องการสร้างไดเรกทอรีนี้ขึ้นขณะนี้เลยหรือไม่ ?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 #, fuzzy
@@ -3289,12 +3285,12 @@ msgstr "การขอให้มีการประชุมโดย"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
 #, fuzzy
 msgid  "Chairperson"
-msgstr "ประธานในที่ประชุม"
+msgstr "ประธานที่ประชุม"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +26.String.Text
 #, fuzzy
 msgid  "Minute keeper"
-msgstr "ผู้บันทึกการประชุม"
+msgstr "คนบันทึกการประชุม"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +27.String.Text
 #, fuzzy
@@ -3309,7 +3305,7 @@ msgstr "ผู้เข้าร่วมประชุม"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +29.String.Text
 #, fuzzy
 msgid  "Observers"
-msgstr "ผู้สังเกต"
+msgstr "ผู้สังเกตการณ์"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +30.String.Text
 #, fuzzy
@@ -3512,729 +3508,911 @@ msgid  "Move down"
 msgstr "เลื่อนลง"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~ช่วยเหลือ"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~ยกเลิก"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
+#, fuzzy
 msgid  "<< ~Back"
 msgstr "<< ~กลับ"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
+#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "~ถัดไป >>"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
+#, fuzzy
 msgid  "~Convert"
 msgstr "แ~ปลง"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~ปิด"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
+#, fuzzy
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
 msgstr "การนำร่องอัตโนมัตินี้แปลงเอกสารในรูปแบบ  StarOffice เก่าและ Microsoft Office ไปเป็นรูปแบบ %PRODUCTNAME XML ใหม่"
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
+#, fuzzy
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
 msgstr "โปรดทราบ เมื่อแปลงเอกสารจากไมโครซอฟท์ จะไม่สามารถใช้งานแมโคร VBA ได้  "
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
+#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "เลือกชนิดเอกสารเพื่อทำการแปลง:"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Word templates"
 msgstr "แม่แบบ Word"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Excel templates"
 msgstr "แม่แบบ Excel"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
+#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "แม่แบบ PowerPoint"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Word documents"
 msgstr "เอกสาร Word"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Excel documents"
 msgstr "เอกสาร Excel"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
+#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "เอกสาร PowerPoint"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
+#, fuzzy
 msgid  "Including subdirectories"
 msgstr "รวมไดเรกทอรีย่อย"
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
+#, fuzzy
 msgid  "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
+#, fuzzy
 msgid  "Summary:"
 msgstr "สรุป:"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
+#, fuzzy
 msgid  "Import from:"
 msgstr "นำเข้าจาก:"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
+#, fuzzy
 msgid  "Save to:"
 msgstr "บันทึกไปยัง:"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
+#, fuzzy
 msgid  "Imported_Templates"
 msgstr "นำเข้าแม่แบบ"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
+#, fuzzy
 msgid  "Progress: "
 msgstr "ความคืบหน้า: "
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "เอกสาร"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
+#, fuzzy
 msgid  "Documents"
 msgstr "เอกสาร"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "แม่แบบ"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
+#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr "ไม่สามารถสร้างไดเรกทอรี '%1': "
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
+#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr "ไม่มีไดเรกทอรี '%1' อยู่"
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
+#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "คุณต้องการสร้างมันขณะนี้หรือไม่?"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
+#, fuzzy
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "แฟ้ม '<1>' มีอยู่แล้ว <CR> คุณต้องการเขียนทับมันหรือไม่?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
+#, fuzzy
 msgid  "Directories do not exist"
 msgstr "ไม่มีไดเรกทอรีอยู่"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
+#, fuzzy
 msgid  "Do you want to overwrite documents without being asked?"
 msgstr "คุณต้องการเขียนทับเอกสาร โดยปราศจากการถามหรือไม่?"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
+#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "แมโครเอกสารต้องถูกแก้ไข"
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
+#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "ไม่สามารถบันทึกเอกสาร '<1>' ได้"
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
+#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr "ไม่สามารถเปิดเอกสาร '<1>' ได้"
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
+#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "คุณต้องการยุติการแปลงที่จุดนี้หรือไม่?"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
+#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "ยกเลิกการนำร่องอัตโนมัติ"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
+#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "เกิดข้อผิดพลาดที่ไม่คาดคิดขึ้นในการนำร่องอัตโนมัติ"
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
+#, fuzzy
 msgid  "Error"
 msgstr "ข้อผิดพลาด"
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
+#, fuzzy
 msgid  "Select a directory"
 msgstr "เลือกไดเรกทอรี"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
+#, fuzzy
 msgid  "Document Converter"
 msgstr "ตัวแปลงเอกสาร"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
+#, fuzzy
 msgid  "Progress"
 msgstr "ความก้าวหน้า"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
+#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "กำลังค้นคืนเอกสารที่เกี่ยวข้อง:"
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
+#, fuzzy
 msgid  "Converting the documents"
 msgstr "กำลังแปลงเอกสาร"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
+#, fuzzy
 msgid  "Found:"
 msgstr "พบ:"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
+#, fuzzy
 msgid  "%1 found"
 msgstr "พบ %1 "
 
 #: source/importwizard/importwi.src#sReady.String.Text
+#, fuzzy
 msgid  "Finished"
 msgstr "เสร็จสิ้น"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Text templates"
 msgstr "แม่แบบข้อความ"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "แม่แบบตารางคำนวณ"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
+#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "แม่แบบการวาดรูป/การนำเสนอ"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
+#, fuzzy
 msgid  "Master documents"
 msgstr "เอกสารเค้าโครงหลัก"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
+#, fuzzy
 msgid  "Text documents"
 msgstr "เอกสารข้อความ"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
+#, fuzzy
 msgid  "Spreadsheets"
 msgstr "ตารางคำนวณ"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
+#, fuzzy
 msgid  "Drawing/presentation documents"
 msgstr "เอกสารการวาดรูป/การนำเสนอ"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
+#, fuzzy
 msgid  "Master documents/formulas"
 msgstr "ต้นแบบเอกสาร/สูตรคำนวณ"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
+#, fuzzy
 msgid  "Master documents"
 msgstr "เอกสารเค้าโครงหลัก"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
+#, fuzzy
 msgid  "Formulas"
 msgstr "สูตรคำนวณ"
 
 #: source/importwizard/importwi.src#sSourceDocuments.String.Text
+#, fuzzy
 msgid  "Source documents"
 msgstr "เอกสารที่มา"
 
 #: source/importwizard/importwi.src#sTargetDocuments.String.Text
+#, fuzzy
 msgid  "Target documents"
 msgstr "เอกสารเป้าหมาย"
 
 #: source/importwizard/importwi.src#sCreateLogfile.String.Text
+#, fuzzy
 msgid  "Create log file"
 msgstr "สร้างแฟ้มบันทึกปฏิบัติการ"
 
 #: source/importwizard/importwi.src#sLogfileSummary.String.Text
+#, fuzzy
 msgid  "<COUNT> documents converted"
 msgstr "<COUNT> เอกสารถูกแปลงแล้ว "
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
+#, fuzzy
 msgid  "A log file will be created in your work directory"
 msgstr "แฟ้มบันทึกปฏิบัติการจะถูกสร้างในไดเรกทอรีการทำงานของคุณ"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
+#, fuzzy
 msgid  "Show log file"
 msgstr "แสดงแฟ้มบันทึกปฏิบัติการ"
 
 #: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
+#, fuzzy
 msgid  "All subdirectories will be taken into account"
 msgstr "ไดเรกทอรีย่อยทั้งหมดจะนำเข้าในบัญชี"
 
 #: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
+#, fuzzy
 msgid  "These will be exported to the following directory:"
 msgstr "เหล่านี้จะถูกส่งออกไปยังไดเรกทอรีต่อไปนี้:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
 msgstr "เอกสารข้อความ %PRODUCTNAME ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
 msgstr "ตารางคำนวณ %PRODUCTNAME ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
 msgstr "เอกสารการวาดรูปและการนำเสนอ %PRODUCTNAME ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
 msgstr "เอกสารสูตรคำนวณ %PRODUCTNAME ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
 msgstr "แม่แบบข้อความ %PRODUCTNAME ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
 msgstr "แม่แบบตาราง %PRODUCTNAME ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
 msgstr "แม่แบบการวาดรูปและการนำเสนอ %PRODUCTNAME ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
 msgstr "เอกสารเค้าโครงหลัก %PRODUCTNAME ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
+#, fuzzy
 msgid  "All Word documents contained in the following directory will be imported:"
 msgstr "เอกสาร Word ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
+#, fuzzy
 msgid  "All Excel documents contained in the following directory will be imported:"
 msgstr "เอกสาร Excel ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
+#, fuzzy
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
 msgstr "เอกสาร PowerPoint ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
+#, fuzzy
 msgid  "All Word templates contained in the following directory will be imported:"
 msgstr "แม่แบบ Word ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
+#, fuzzy
 msgid  "All Excel templates contained in the following directory will be imported:"
 msgstr "แม่แบบ Excel ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
+#, fuzzy
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
 msgstr "แม่แบบ PowerPoint ทั้งหมดที่บรรจุในไดเรกทอรีต่อไปนี้จะถูกนำเข้า:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Calendar"
 msgstr "ปฏิทิน %PRODUCTNAME "
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
+#, fuzzy
 msgid  "Back"
 msgstr "ย้อนกลับ"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "ข้อมูลส่วนตัว"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
+#, fuzzy
 msgid  "Add Holidays to Calendar"
 msgstr "เพิ่มวันหยุดลงในปฏิทิน"
 
 #: source/schedule/schedule.src#dlgOK.String.Text
+#, fuzzy
 msgid  "Create"
 msgstr "สร้าง"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "ยกเลิก"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "ปฏิทิน"
 
 #: source/schedule/schedule.src#dlgCalOptionYear.String.Text
+#, fuzzy
 msgid  "~Year Overview"
 msgstr "ภาพรวมของ~ปี"
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
+#, fuzzy
 msgid  "~Month"
 msgstr "เ~ดือน"
 
 #: source/schedule/schedule.src#dlgSchdlDescription.String.Text
+#, fuzzy
 msgid  "Add holidays for"
 msgstr "เพิ่มวันหยุดสำหรับ"
 
 #: source/schedule/schedule.src#dlgSchdlCountry.String.Text
+#, fuzzy
 msgid  "USA"
 msgstr "USA"
 
 #: source/schedule/schedule.src#dlgTime.String.Text
+#, fuzzy
 msgid  "Time Frame"
 msgstr "กรอบเวลา"
 
 #: source/schedule/schedule.src#dlgYear.String.Text
+#, fuzzy
 msgid  "Year"
 msgstr "ปี"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "เดือน"
 
 #: source/schedule/schedule.src#dlgCalOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
 msgstr "ข้อมูลส่วนตัว"
 
 #: source/schedule/schedule.src#dlgCalInsert.String.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "แ~ทรก"
 
 #: source/schedule/schedule.src#dlgCalDelete.String.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~ลบ"
 
 #: source/schedule/schedule.src#dlgCalNewEvent.String.Text
+#, fuzzy
 msgid  "New Event"
 msgstr "เหตุการณ์ใหม่"
 
 #: source/schedule/schedule.src#dlgCalEvent.String.Text
+#, fuzzy
 msgid  "Event"
 msgstr "เหตุการณ์"
 
 #: source/schedule/schedule.src#dlgCalEventOnce.String.Text
+#, fuzzy
 msgid  "One-Time"
 msgstr "ครั้งเดียว"
 
 #: source/schedule/schedule.src#dlgCalEventDay.String.Text
+#, fuzzy
 msgid  "Day"
 msgstr "วัน"
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "เดือน"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
+#, fuzzy
 msgid  "Year"
 msgstr "ปี"
 
 #: source/schedule/schedule.src#dlgBitmapFile.String.Text
+#, fuzzy
 msgid  "usa.bmp"
 msgstr "usa.bmp"
 
 #: source/schedule/schedule.src#dlgState.String.Text
+#, fuzzy
 msgid  "Public holidays"
 msgstr "วันหยุดราชการ"
 
 #: source/schedule/schedule.src#dlgMonth.String.Text
+#, fuzzy
 msgid  "January"
 msgstr "มกราคม"
 
 #: source/schedule/schedule.src#dlgMonth+1.String.Text
+#, fuzzy
 msgid  "February"
 msgstr "กุมภาพันธ์"
 
 #: source/schedule/schedule.src#dlgMonth+2.String.Text
+#, fuzzy
 msgid  "March"
 msgstr "มีนาคม"
 
 #: source/schedule/schedule.src#dlgMonth+3.String.Text
+#, fuzzy
 msgid  "April"
 msgstr "เมษายน"
 
 #: source/schedule/schedule.src#dlgMonth+4.String.Text
+#, fuzzy
 msgid  "May"
 msgstr "พฤษภาคม"
 
 #: source/schedule/schedule.src#dlgMonth+5.String.Text
+#, fuzzy
 msgid  "June"
 msgstr "มิถุนายน"
 
 #: source/schedule/schedule.src#dlgMonth+6.String.Text
+#, fuzzy
 msgid  "July"
 msgstr "กรกฎาคม"
 
 #: source/schedule/schedule.src#dlgMonth+7.String.Text
+#, fuzzy
 msgid  "August"
 msgstr "สิงหาคม"
 
 #: source/schedule/schedule.src#dlgMonth+8.String.Text
+#, fuzzy
 msgid  "September"
 msgstr "กันยายน"
 
 #: source/schedule/schedule.src#dlgMonth+9.String.Text
+#, fuzzy
 msgid  "October"
 msgstr "ตุลาคม"
 
 #: source/schedule/schedule.src#dlgMonth+10.String.Text
+#, fuzzy
 msgid  "November"
 msgstr "พฤศจิกายน"
 
 #: source/schedule/schedule.src#dlgMonth+11.String.Text
+#, fuzzy
 msgid  "December"
 msgstr "ธันวาคม"
 
 #: source/schedule/schedule.src#msgCalErrorTitle.String.Text
+#, fuzzy
 msgid  "Yearly / Monthly Calendar"
 msgstr "ปฏิทินประจำปี / ประจำเดือน"
 
 #: source/schedule/schedule.src#msgCalError.String.Text
+#, fuzzy
 msgid  "An error occurred while creating the calendar."
 msgstr "เกิดข้อผิดพลาดขึ้นขณะกำลังสร้างปฏิทิน"
 
 #: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
+#, fuzzy
 msgid  "Delete event entries"
 msgstr "ลบรายการเหตุการณ์"
 
 #: source/schedule/schedule.src#msgCalRemove.String.Text
+#, fuzzy
 msgid  "Delete the selected entries?"
 msgstr "ลบรายการที่เลือกหรือไม่?"
 
 #: source/schedule/schedule.src#stlWorkday.String.Text
+#, fuzzy
 msgid  "Workweek"
 msgstr "สัปดาห์ทำงาน"
 
 #: source/schedule/schedule.src#stlWeekend.String.Text
+#, fuzzy
 msgid  "Weekend"
 msgstr "วันหยุดประจำสัปดาห์"
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
+#, fuzzy
 msgid  "Calendar"
 msgstr "ปฏิทิน"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
+#, fuzzy
 msgid  "Month"
 msgstr "เดือน"
 
 #: source/schedule/schedule.src#sProgress.String.Text
+#, fuzzy
 msgid  "Progress:"
 msgstr "ความคืบหน้า:"
 
 #: source/template/template.src#SAMPLES.String.Text
+#, fuzzy
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
 msgstr "เพื่อที่จะใช้ตัวอย่างนี้อย่างเต็มสมรรถนะ ให้สร้างเอกสารที่มีพื้นฐานบนแม่แบบนี้"
 
 #: source/template/template.src#SAMPLES + 1.String.Text
+#, fuzzy
 msgid  "Remarks"
 msgstr "หมายเหตุ"
 
 #: source/template/template.src#STYLES.String.Text
+#, fuzzy
 msgid  "Theme Selection"
 msgstr "การเลือกธีม"
 
 #: source/template/template.src#STYLES + 1.String.Text
+#, fuzzy
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
 msgstr "เกิดข้อผิดพลาดขณะกำลังบันทึกเอกสารไปยังคลิปบอร์ด! การปฏิบัติการต่อไปนี้ไม่สามารถยกเลิกได้ิ"
 
 #: source/template/template.src#STYLES + 2.String.Text
+#, fuzzy
 msgid  "~Cancel"
 msgstr "~ยกเลิก"
 
 #: source/template/template.src#STYLES + 3.String.Text
+#, fuzzy
 msgid  "~OK"
 msgstr "~ตกลง"
 
 #: source/template/template.src#AgendaDlgName.String.Text
+#, fuzzy
 msgid  "Minutes Template"
 msgstr "ต้นแบบบันทึกการประชุม"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
+#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "ต้องยืนยันตัวเลือก"
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
+#, fuzzy
 msgid  "Minutes Type"
 msgstr "ชนิดบันทึกการประชุม"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
+#, fuzzy
 msgid  "Results Minutes"
 msgstr "บันทึกผลการประชุม"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
+#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "Evaluation Minutes"
 
 #: source/template/template.src#CorrespondenceNoTextmark.String.Text
+#, fuzzy
 msgid  "The bookmark 'Recipient' is missing."
 msgstr "ไม่พบตัวคั่นหน้า 'ผู้รับ'"
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
+#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "ไม่สามารถรวมเขตข้อมูลแบบฟอร์มจดหมาย"
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
+#, fuzzy
 msgid  "An error has occurred."
 msgstr "เกิดข้อผิดพลาด"
 
 #: source/template/template.src#CorrespondenceDialog.String.Text
+#, fuzzy
 msgid  "Addressee"
 msgstr "ที่อยู่"
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
+#, fuzzy
 msgid  "One recipient"
 msgstr "ผู้รับคนเดียว"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
+#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "ผู้รับหลายคน (ฐานข้อมูลที่อยู่)"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
+#, fuzzy
 msgid  "Use of This Template"
 msgstr "ใช้แม่แบบนี้"
 
 #: source/template/template.src#CorrespondenceFields.String.Text
+#, fuzzy
 msgid  "Click placeholder and overwrite"
 msgstr "คลิกตัวยึดตำแหน่งและเขียนทับ"
 
 #: source/template/template.src#CorrespondenceFields+1.String.Text
+#, fuzzy
 msgid  "Company"
 msgstr "บริษัท"
 
 #: source/template/template.src#CorrespondenceFields+2.String.Text
+#, fuzzy
 msgid  "Department"
 msgstr "แผนก"
 
 #: source/template/template.src#CorrespondenceFields+3.String.Text
+#, fuzzy
 msgid  "First Name"
 msgstr "ชื่อ"
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
+#, fuzzy
 msgid  "Last Name"
 msgstr "นามสกุล"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
+#, fuzzy
 msgid  "Street"
 msgstr "ถนน"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
+#, fuzzy
 msgid  "Country"
 msgstr "ประเทศ"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
+#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "รหัสไปรษณีย์"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
+#, fuzzy
 msgid  "City"
 msgstr "เมือง"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
+#, fuzzy
 msgid  "Title"
 msgstr "ยศ"
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
+#, fuzzy
 msgid  "Position"
 msgstr "ตำแหน่ง"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
+#, fuzzy
 msgid  "Form of Address"
 msgstr "แบบฟอร์มที่อยู่"
 
 #: source/template/template.src#CorrespondenceFields+12.String.Text
+#, fuzzy
 msgid  "Initials"
 msgstr "ชื่อย่อ"
 
 #: source/template/template.src#CorrespondenceFields+13.String.Text
+#, fuzzy
 msgid  "Salutation"
 msgstr "คำขึ้นต้นจดหมาย"
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
+#, fuzzy
 msgid  "Home Phone"
 msgstr "โทรศัพท์บ้าน"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
+#, fuzzy
 msgid  "Work Phone"
 msgstr "โทรศัพท์ที่ทำงาน"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
+#, fuzzy
 msgid  "Fax"
 msgstr "โทรสาร"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
+#, fuzzy
 msgid  "E-Mail"
 msgstr "อีเมล"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
+#, fuzzy
 msgid  "Notes"
 msgstr "บันทึก"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
+#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "เขตข้อมูลอื่นๆ 1"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
+#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "เขตข้อมูลอื่นๆ 2"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
+#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "เขตข้อมูลอื่นๆ 3"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
+#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "เขตข้อมูลอื่นๆ 4"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
+#, fuzzy
 msgid  "ID"
 msgstr "รหัส"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
+#, fuzzy
 msgid  "State"
 msgstr "รัฐ"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
+#, fuzzy
 msgid  "Office Phone"
 msgstr "โทรศัพท์ที่ทำงาน"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
+#, fuzzy
 msgid  "Pager"
 msgstr "เพจเจอร์"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
+#, fuzzy
 msgid  "Mobile Phone"
 msgstr "โทรศัพท์มือถือ"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
+#, fuzzy
 msgid  "Other Phone"
 msgstr "โทรศัพท์อื่นๆ"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
+#, fuzzy
 msgid  "Calendar URL"
 msgstr "ปฏิทิน URL"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
+#, fuzzy
 msgid  "Invite"
 msgstr "เชิญ"
 
 #: source/template/template.src#TextField.String.Text
+#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "ยังไม่ได้ระบุเขตข้อมูลผู้ใช้"
 
 #: source/template/template.src#Newsletter.String.Text
+#, fuzzy
 msgid  "General layout"
 msgstr "เค้าโครงทั่วไป"
 
 #: source/template/template.src#Newsletter + 1.String.Text
+#, fuzzy
 msgid  "Default layout"
 msgstr "เค้าโครงปริยาย"
 
 #: source/template/template.src#Newsletter + 2.String.Text
+#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "Commemorative publication layout"
 
 #: source/template/template.src#Newsletter + 3.String.Text
+#, fuzzy
 msgid  "Brochure layout"
 msgstr "เค้าโครงแผ่นพับ"
 
 #: source/template/template.src#Newsletter + 10.String.Text
+#, fuzzy
 msgid  "Format"
 msgstr "รูปแบบ"
 
 #: source/template/template.src#Newsletter + 11.String.Text
+#, fuzzy
 msgid  "Single-sided"
 msgstr "ข้างเดียว"
 
 #: source/template/template.src#Newsletter + 12.String.Text
+#, fuzzy
 msgid  "Double-sided"
 msgstr "สองข้าง"

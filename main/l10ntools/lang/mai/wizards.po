@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "<wizard_name> सँ भ'कए <current_date> पर टेंपलेट बनावल गेल."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "बिजार्ड चलाएल नहि जाए सकल, किएक महत्वपूर्ण फाइल नहि मिलल.\n'अओजार - विकल्प - %PRODUCTNAME - पथ' क अँदर 'मूलभूत' बटनकेँ रस्ता फिनु सेट करबाक लेल क्लिक करू मौलिक मूलभूत जमावट मे.\nतखन बिजार्ड फिनु चलाबू."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "फॉर्ममे क्षेत्र (~t)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "द्विपदीय क्षेत्र हरदम बम्माँ सूचीसँ चयन योग्य आ सूचीबद्ध अछि.\nजँ सँभव अछि, ओकरा बिँबक रूपमे विश्लेषित कएल जाए सकैछ."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "एकटा उपफॉर्म एकटा प्रपत्र अछि जे आन रूपेँ देल गेल अछि.\nसारणीसँ अथवा प्रश्नसँ आँकड़ा देखाएबाक लेल उपप्रपत्रक प्रयोग करू एकटासँ कइटा सँबँधक सँग."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "फ़ॉर्म मे क्षेत्र"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "'<FIELDNAME1>' आओर '<FIELDNAME2>' केँ दुइबेर चुनल गेल अछि.\nमुदा शामिलक एकेबेर प्रयोग भए सकैछ."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -733,7 +733,7 @@ msgstr "पृष्ठ शैली (~P)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 80.String.Text
 msgid  "Field selection"
-msgstr "क्षेत्र चयन"
+msgstr "क्षेत्रक चयन"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 81.String.Text
 msgid  "Set up a subform"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "फॉर्मक नाम सेट करू"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "'%FORMNAME' नामक सँग प्रपत्र पहिनेसँ मोजुद अछि.\nआन नाम चुनू."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -865,7 +865,7 @@ msgstr "समग्र कार्य"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 17.String.Text
 msgid  "Fields"
-msgstr "क्षेत्र"
+msgstr "क्षेत्रसभ"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 18.String.Text
 msgid  "~Group by"
@@ -1549,7 +1549,7 @@ msgstr "बधाइ. अहाँ सभटा सूचना देलहु�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
-msgstr "अहाँ आगाँ की करब चाहैत छी?"
+msgstr "अहाँ आगाँ की कएनाइ चाहैत छी?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
 msgid  "Modify the table design"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "क्षेत्रकेँ नहि देल जाए सकैछ किएक ई %COUNT सँभव गिनतीसँ बेसी सँख्यासे बेसी भ' जाएत डाटाबेस क्षेत्र मे"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "नाम '%TABLENAME' पहिने सँ मोजुद अछि.\nकृपया आन नाम दिअ'."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1685,7 +1685,7 @@ msgstr "पाद टीका (~F)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
 msgid  "~Use user data for return address"
-msgstr "वापसी पता क' लेल प्रयोक्ता आँकड़ा प्रयोग करू (~U)"
+msgstr "वापसी पता लेल प्रयोक्ता आँकड़ा प्रयोग करू (~U)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
 msgid  "~New sender address:"
@@ -1697,7 +1697,7 @@ msgstr "प्राप्तकएनिहार पता लेल स्थ
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
 msgid  "Use address database for ~mail merge"
-msgstr "मेल मिलान क' लेल पता डाटाबेस लेल प्रयोग करू (~m)"
+msgstr "मेल मिलान लेल पता डाटाबेसक लेल प्रयोग करू (~m)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 msgid  "Include ~only on second and following pages"
@@ -1721,15 +1721,15 @@ msgstr "ई पत्र टेंपलेटमे दस्ती बदल�
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 28.String.Text
 msgid  "Page design"
-msgstr "पृष्ठ डिजायन"
+msgstr "पृष्ठक डिजायन"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 29.String.Text
 msgid  "Page design"
-msgstr "पृष्ठ डिजायन"
+msgstr "पृष्ठक डिजायन"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 30.String.Text
 msgid  "Page design"
-msgstr "पृष्ठ डिजायन"
+msgstr "पृष्ठक डिजायन"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
@@ -1857,7 +1857,7 @@ msgstr "नमस्कार"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 1.String.Text
 msgid  "Sincerely"
-msgstr "हार्दिक"
+msgstr "भवदीय"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 2.String.Text
 msgid  "Best regards"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "वेब विजार्ड"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "ई बेब बिजार्ड इँटरनेट पर दस्तावेज प्रकाशित करैमे एकटा सहायक अछि.\n\nई दस्तावेजसभकेँ बदएल देत जे ओ बेब ब्रॉउजर पर देखल जाए सकैछ. एकार अलावे, ई एकटा सामग्री सारणी पृष्ठ बनाएत दस्ताबेज सभमे हर पहँचक लेल कड़ीक सँग. बेब बिजार्ड डिजायन आओर लेआउट पसंदीदा बनबैमे अहाँकेँ अनुमति दैछ.\n\nअहाँ दस्तावेजकेँ जकरा बेब पर प्रकाशित कएलहुँ, अद्यतन राखै आओर जोड़ै अथवा हटबै लेल कोनो समय समर्थ रहब."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "पूर्वावलोकन"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "चयनित जमावट मेटाएब देल जाएत.\n\nकी अहाँ ई जमावट केँ मेटाबए चाहैत छी? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "FTP निर्देशिका '%FILENAME' नहि बनाएल जाय सकत."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "FTP निर्देशिका '%FILENAME' मोजुद नहि अछि. \nआब निर्देशिका बनाबू?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "जिप फाइल '%FILENAME' नहि बनाएल जाए सकैछ: समान नामक एकटा निर्देशिका पहिनेसँ मोजुद अछि."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "स्थानीय निर्देशिका '%FILENAME' बनाबल नहि जाय सकत. \nअपन लेखन अभिगम जांचू?"
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "स्थानीय निर्देशिका '%FILENAME' मोजुद नहि अछि. \nआब निर्देशिका बनाबू?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2801,7 +2801,7 @@ msgstr "अवधि"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +24.String.Text
 msgid  "Meeting called by"
-msgstr "एकरा द्वारा बैठक बोलाएल गेल"
+msgstr "एकरा द्वारा बैठक बुलाएल गेल"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
 msgid  "Chairperson"
@@ -2825,7 +2825,7 @@ msgstr "प्रेक्षक"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +30.String.Text
 msgid  "Facility personnel"
-msgstr "सुविधा कार्मिक"
+msgstr "सुविधा कर्मचारी"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
@@ -3181,7 +3181,7 @@ msgstr "रेखाचित्र/प्रस्तुति नमूना"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
 msgid  "Master documents"
-msgstr "मुख्य दस्तावेजसभ"
+msgstr "मुख्य दस्तावेज"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
 msgid  "Text documents"

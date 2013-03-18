@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Modèl creat amb <wizard_name> lo <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "L'assistent a pas pogut èsser executat, perque d'unes fichièrs importants son mancants.\nPer restablir los camins cap als paramètres d'origina per defaut, causissètz Espleches - Opcions - %PRODUCTNAME - Camins, clicatz sul boton Per defaut,\npuèi tornatz aviar l'assistent."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Camps ~del formulari"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Los camps binaris son totjorn listats e seleccionables dins la tièra d'esquèrra.\nS'es possible, son interpretats coma d'imatges."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Un sosformulari es un formulari qu'es inserit dins un autre formulari.\nUtilizatz los sosformularis per afichar de donadas del tablèu o de consultas amb a multirelacion sistèma."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Camps del formulari"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "Avètz seleccionat dos còps la juntura '<FIELDNAME1>' e '<FIELDNAME2>'.\nMas podètz pas utilizar qu'un còp las junturas."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "Definir lo nom del formulari"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "I a ja un formulari que lo nom es '%FORMNAME'.\nCausissètz un autre nom."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Impossible d'inserir lo camp per çò que passariá lo nombre maximum de %COUNT camps possibles dins la taula de la banca de donadas"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Lo nom '%TABLENAME' existís ja.\nPicatz un autre nom."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1677,7 +1677,7 @@ msgstr "~Marcas de plegament"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
 msgid  "~Complimentary close"
-msgstr "Formula o expression de polidesa finala"
+msgstr "Barradura ~complementària"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
 msgid  "~Footer"
@@ -1693,15 +1693,15 @@ msgstr "Adreça ~novèla de l'expedidor:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
 msgid  "Use placeholders for ~recipient's address"
-msgstr "Utilizar los ~remplaçants per l'adreça del destinatari"
+msgstr "Utilizar los remplaçants per l'adreça del ~destinatari"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
 msgid  "Use address database for ~mail merge"
-msgstr "Utilizar una banca de donadas d'adreças per lo ~publipostatge"
+msgstr "Utilizar una banca de donadas d'adreças per de ~publipostatge"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 msgid  "Include ~only on second and following pages"
-msgstr "Inclure pas que sus la seg~onda pagina e las seguentas"
+msgstr "Inclure pas ~que sus la segonda pagina e las seguentas"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
 msgid  "~Include page number"
@@ -1781,7 +1781,7 @@ msgstr "Adreça de l'expedidor"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 43.String.Text
 msgid  "Name:"
-msgstr "Nom :"
+msgstr "Nom:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 44.String.Text
 msgid  "Street:"
@@ -1813,7 +1813,7 @@ msgstr "Nom del modèl :"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
 msgid  "Location and file name:"
-msgstr "Emplaçament e nom del fichièr :"
+msgstr "Emplaçament e nom del fichièr:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
 msgid  "How do you want to proceed?"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Assistent web"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "La tòca de l'assistent web es de vos ajudar a publicar de document sus internet.\n\nConvertís de document per que los pòscan visualizar un navigador. En mai, crearà una pagina ensenhador amb de ligams per accedir aisidament a totes los documents. L'assistent web vos permetrà tanben de personalizar la mesa en pagina e l'interfàcia de vòstre site web.\n\nPoiretz gardar a jorn los documents qu'avètz publicats sus internet e apondre/suprimir de documents quand volètz."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "Previsualizacion"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Los paramètres seleccionats seràn suprimits.\n\nSètz segur que volètz suprimir aquestes paramètres ?"
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "Impossible de crear lo repertòri FTP %FILENAME."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Lo repertòri FTP '%FILENAME' existís pas. \nLo volètz crear ara ?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Impossible de crear lo fichièr ZIP '%FILENAME' : i a un repertòri amb lo meteis nom."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Impossible de crear lo fichièr ZIP '%FILENAME'. \nVerificatz vòstres dreches d'escritura."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Lo repertòri local '%FILENAME' existís pas.\nLo volètz crear ara?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2809,7 +2809,7 @@ msgstr "President"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +26.String.Text
 msgid  "Minute keeper"
-msgstr "Responsable del compte rendut"
+msgstr "Responsable del compte-rendut"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +27.String.Text
 msgid  "Moderator"

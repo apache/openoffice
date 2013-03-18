@@ -193,7 +193,7 @@ msgstr "זמן נשאר: {[1] דקות }{[2] שניות}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_16
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr "אזל הזכרון. יש לסגור יישומים אחרים ולנסות שוב.‏"
+msgstr "אזל הזכרון - יש לסגור יישומים אחרים ולנסות שוב.‏"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_17
 msgid  "Installer is no longer responding."
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "תודה שהורדת את %PRODUCTNAME %PRODUCTVERSION."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "&חלץ"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "כעת יתבצע חילוץ והעתקת קבצי ההתקנה של %PRODUCTNAME %PRODUCTVERSION לתיקיה המוצגת להלן. אם תרצה לשמור את %PRODUCTNAME לתיקייה שונה, לחץ על \\'עיון\\' בכדי לבחור תיקייה אחרת."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1453,7 +1453,7 @@ msgstr "ביטול"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_5
 msgid  "&Look in:"
-msgstr "&לחפש ב:"
+msgstr "&חיפוש ב:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_6
 msgid  "Browse to the destination folder."
@@ -1481,7 +1481,7 @@ msgstr "רמה אחת למעלה|‏"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_14
 msgid  "< &Back"
-msgstr "< &הקודם"
+msgstr "< &אחורה"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_17
 msgid  "&Change..."
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "ביטול"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}פרטי הלקוח"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -2041,7 +2041,7 @@ msgstr "לחיצה על 'סיום' סוגרת את האשף.‏"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "ניתן לשמור את הרכיבים הקיימים מהתקנות קודמות"
+msgstr "באפשרותך לשמור רכיבים מותקנים הקיימים במערכת כדי להמשיך את ההתקנה במועד מאוחר יותר, או באפשרותך לשחזר את המערכת למצב המקורי שלפני ההתקנה."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2049,7 +2049,7 @@ msgstr "לחיצה על 'שיחזור' ממשיך את ההתקנה הקודמת
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}אשף ההתקנה הסתיים"
+msgstr "{&TahomaBold10}אשף ההתקנה סיים"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."

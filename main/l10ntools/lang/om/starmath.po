@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/smres.src#RID_FONTDIALOG.ModalDialog.Text
 msgid  "Fonts"
-msgstr "Bocquu"
+msgstr "Bocquuwwan"
 
 #: source/smres.src#RID_FONTDIALOG.1.FixedText.Text
 msgid  "~Font"
@@ -136,8 +136,9 @@ msgid  "~Default"
 msgstr "Durtii"
 
 #: source/smres.src#RID_DISTANCEDIALOG.ModalDialog.Text
+#, fuzzy
 msgid  "Spacing"
-msgstr "Addaanfageenya"
+msgstr "Addaan Fageenya"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.MetricField.CustomUnitText
 msgid  "%"
@@ -175,7 +176,7 @@ msgstr "Addaanfageenya"
 #: source/smres.src#RID_DISTANCEDIALOG.1.2.String.Text
 #, fuzzy
 msgid  "~Spacing"
-msgstr "Addaan Fageenya"
+msgstr "Addaanfageenya"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.3.String.Text
 #, fuzzy
@@ -190,7 +191,7 @@ msgstr "Addaanfageenya hundee"
 #: source/smres.src#RID_DISTANCEDIALOG.2.1.String.Text
 #, fuzzy
 msgid  "Indexes"
-msgstr "Kasaalee"
+msgstr "Kasaawwan"
 
 #: source/smres.src#RID_DISTANCEDIALOG.2.2.String.Text
 #, fuzzy
@@ -507,13 +508,12 @@ msgid  "~Delete"
 msgstr "Haqi"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
 msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-#, fuzzy
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "Jijjiiramoonni akka durtiitti haa olkaa'amanii?\n\nJijjiiramoonni kun foormulaawwan haaraa mararratti faayidaarra oolu."
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -820,50 +820,62 @@ msgid  "~Scaling"
 msgstr "Addaan Fageenya"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "Ogeejjiiwwan Tokkee/Laklamee"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Relations"
 msgstr "Quunnamtiiwwan"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Set Operations"
 msgstr "Dalgaalee Tuutaa"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Functions"
 msgstr "Fankishinoota"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
 msgid  "More"
 msgstr "Dabalata"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "O~perators"
 msgstr "Ogeejjiiwwan"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Attributes"
 msgstr "Amaloota"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Brackets"
 msgstr "Sadallaa"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
+#, fuzzy
 msgid  "For~mats"
 msgstr "Dhangiiwwan"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
+#, fuzzy
 msgid  "New Line"
 msgstr "Sarara Haaraa"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
+#, fuzzy
 msgid  "Small Gap"
 msgstr "Addaan Fageenya Xiqqaa"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
+#, fuzzy
 msgid  "Gap"
 msgstr "Addaan Fageenya"
 
@@ -872,6 +884,7 @@ msgid  "nospace {...}"
 msgstr ""
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Others"
 msgstr "Kabiroo"
 

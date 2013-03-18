@@ -325,8 +325,9 @@ msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} 
 msgstr "Dėl klaidos „Windows“ OS skirtoje tvarkyklėje „${PRODUCTNAME}“ dokumento negalima slinkti braukiant pirštu per „ALPS/Synaptics“ jutiklinį kilimėlį."
 
 #: docs/readme/readme.xrm#naso6.naso6
-msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\Program Files\Synaptics\SynTP\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr ""
+#, fuzzy
+msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
+msgstr "Jei norite naudotis jutikliniu kilimėliu dokumentui slinkti, įrašykite šias eilutes į „C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini“ sąrankos failą ir iš naujo paleiskite kompiuterį:"
 
 #: docs/readme/readme.xrm#naso8.naso8
 #, fuzzy

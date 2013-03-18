@@ -136,24 +136,24 @@ msgid  "Retry"
 msgstr "পুনরায় চেষ্টা করুন"
 
 #: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
-msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
-msgstr "নির্বাচিত জায়গাটিতে কোন যথেষ্ট পরিমান খালি  জায়গা না থাকায় %PRODUCTNAME কোন আভ্যন্তরিণ গুরুত্বপূর্ণ তথ্য সংগ্রহ করতে পারেনি।\n%PATH\n\nএই অবস্থানে আরো ফাঁকা স্থান নির্ধারণ না করে আপনি  %PRODUCTNAME  সহ কাজ করতে সক্ষম হবেন না।\n\nউপাত্ত সংরক্ষন করার জন্য আবার চেষ্টা করতে আরো ফাঁকা স্থান নির্ধারন করার পরে 'পুনরায় চেষ্টা করুন' বোতাম চাপুন।\n\n"
+msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\\n%PATH\\n\\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\\n\\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\\n\\n"
+msgstr ""
 
 #: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
 msgid  "~Reset"
 msgstr "পূর্নবিন্যাস (~R)"
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
-msgstr "ব্যবহারকারীর ইন্টারফেস কনফিগারেশন উপাত্ত লোড করার সময় একটি সমস্যা দেখা দিয়েছে। প্রয়োগনটি এখন বন্ধ করা হবে। অনুগ্রহ করে প্রয়োগনটি পুনরায় সংস্থাপন করার চেষ্টা করুন।"
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
-msgstr "ব্যবহারকারীর ইন্টারফেস কনফিগারেশন উপাত্ত লোড করার সময় একটি সমস্যা দেখা দিয়েছে। প্রয়োগনটিটি এখন বন্ধ করা হবে। অনুগ্রহ করে প্রয়োগনটির জন্য আপনার ব্যবহারকারী প্রোফাইলটি মুছে ফেলার চেষ্টা করুন।"
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
-msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
-msgstr "ব্যবহারকারীর ইন্টারফেস কনফিগারেশন উপাত্ত লোড করার সময় একটি সমস্যা দেখা দিয়েছে। প্রয়োগনটি এখন বন্ধ করা হবে। অনুগ্রহ করে প্রথমে প্রয়োগনটির জন্য আপনার ব্যবহারকারী প্রোফাইলটি মুছে ফেলার চেষ্টা করুন অথবা প্রয়োগনটি পুনরায় সংস্থাপন করার চেষ্টা করুন।"
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\\nPlease try to remove your user profile for the application first or try to reinstall the application."
+msgstr ""
 
 #: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
 msgid  "Untitled"

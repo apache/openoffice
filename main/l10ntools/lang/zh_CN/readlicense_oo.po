@@ -280,8 +280,8 @@ msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} 
 msgstr "由于 Windows 驱动的问题, 您将不能通过使用 ALPS/Synaptics 触摸板的滚动条控制 ${PRODUCTNAME} 的上下滚动。"
 
 #: docs/readme/readme.xrm#naso6.naso6
-msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\Program Files\Synaptics\SynTP\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
-msgstr ""
+msgid  "To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart your computer:"
+msgstr "如果想要使用触摸板的滚动条，需要把下面几行内容添加到配置文件 \"<tt>C:\\Program Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" 中，然后重新启动您的计算机："
 
 #: docs/readme/readme.xrm#naso8.naso8
 msgid  "The location of the configuration file might vary on different versions of Windows."

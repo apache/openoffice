@@ -129,7 +129,7 @@ msgstr "عنوان شامل ڪرڻ لاءِ ڪلڪ ڪريو "
 
 #: source/core/glob.src#STR_PRESOBJ_OUTLINE.String.Text
 msgid  "Click to add text"
-msgstr "روپريکا شامل ڪرڻ لاءِ ڪلڪ ڪريو "
+msgstr "متن شامل ڪرڻ لاءِ ڪلڪ ڪريو "
 
 #: source/core/glob.src#STR_PRESOBJ_TEXT.String.Text
 msgid  "Click to add text"
@@ -216,8 +216,8 @@ msgid  "Move slides"
 msgstr "سلائيڊ هلايو "
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
-msgid  "Not enough memory!\nThe action will be aborted."
-msgstr "ناڪافي ميموري! \n ڪاريہ بيڪار ٿي ويندو "
+msgid  "Not enough memory!\\nThe action will be aborted."
+msgstr ""
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -1732,8 +1732,8 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "نئين تير جي سري لاءِ نالو داخل ڪريو"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
-msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr "چونڊيل نالو اڳ ۾ مؤجود آهي۔ \n مهرباني ڪري ٻيو نالو داخل ڪريو۔"
+msgid  "The name chosen already exists. \\nPlease enter another name."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "سلائڊ داخل ڪريو"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
-msgstr "ڇا توهان ڪي پڪ آهي تہ توهين\"$\"\n ٽپڻي: هن سطح تي سڀ شيون خارج ڪيون وينديون۔"
+msgid  "Are you sure you want to delete the level \"$\"?\\nNote: All objects on this level will be deleted!"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1852,8 +1852,8 @@ msgid  "Insert text frame"
 msgstr "متن فريم داخل ڪريو"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-msgid  "This function cannot be run \nwith the selected objects."
-msgstr "\n چونڊيل شين سان هي ڪاريہ نٿو هلي سگهي"
+msgid  "This function cannot be run \\nwith the selected objects."
+msgstr ""
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1864,7 +1864,7 @@ msgid  "The file could not be loaded!"
 msgstr "فائل لوڊ نٿي سگهي!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
-msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
+msgid  "The format of the new pages will be adapted.\\nDo you want to adapt the objects, too?"
 msgstr ""
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
@@ -1884,8 +1884,8 @@ msgid  "~Edit"
 msgstr "سمپادت ڪريو"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
-msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr "هي ڪاريہ اُنهن ڪارين جي ياداشت خارج ڪريو ٿو جيڪي رد ڪرڻا آهن۔ دستاويز ۾ ڪيل اڳليون تبديليون اَڃا جائز آهن۔ ڇا توهين جاري رکڻ چاهيو ٿا ۾ ان ريت سلائڊ جي نئين ڊزائين مقرر ڪرڻ چاهيو ٿا؟"
+msgid  "This action deletes the list of actions that can\\nbe undone. Previous changes made to the document are still valid,\\nbut cannot be undone. Do you want to continue and\\nthus assign the new slide design?"
+msgstr ""
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1904,8 +1904,8 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "ڄاڻايل پرنٽر ۾ دستاويز جي رچنا سيٽ نہ ٿي سگہي"
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
-msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr "هن اکري چٽ جي کڙي دستاويز سان جوڙي ويئي آهي۔ \n ڇا  توهين ان کي سمپادت ڪرڻ لاءِ اها ڪڙي ٽوڙڻ چاهيو ٿا؟"
+msgid  "This graphic is linked to a document. \\nDo you want to unlink the graphic in order to edit it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2016,8 +2016,8 @@ msgid  " (Outline)"
 msgstr " (روپريکا)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
-msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr "ڄاڻايل ماپو نمنظور آهي۔ \n ڇا توهين نئون داخل ڪرڻ چاهيو ٿا؟ "
+msgid  "The specified scale is invalid.\\nDo you want to enter a new one?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2300,8 +2300,8 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "نقش ڪڍڻ جي سڀني شين جو گروپ ٽوڙڻ ممڪن نہ هو"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
-msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr "هن نالي سان ڊزائين اڳہ ۾ ئي مؤجود آهي \n ڇا توهين ان کي مَٽڻ چاهيو ٿا؟"
+msgid  "A design already exists with this name.\\nDo you want to replace it?"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2416,8 +2416,8 @@ msgid  "Graphics filter"
 msgstr "اکري چٽن جو فلٽر"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
-msgid  "The file %\nis not a valid sound file !"
-msgstr "%\n فائل جائز آوازي فائل ناهي"
+msgid  "The file %\\nis not a valid sound file !"
+msgstr ""
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"

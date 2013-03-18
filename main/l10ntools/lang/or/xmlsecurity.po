@@ -52,28 +52,28 @@ msgid  "Reset"
 msgstr "ପୁନଃସ୍ଥାପନ କରନ୍ତୁ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
-msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr "ଅତି ଉଚ୍ଚ (~V)\nବିଶ୍ୱସ୍ତ ଫାଇଲ ସ୍ଥାନରୁ କେବଳ macroଗୁଡ଼ିକୁ ଚଲାଇବାର ଅନୁମତି ଅଛି। ଅନ୍ୟ ସମସ୍ତ macroଗୁଡ଼ିକ, ହସ୍ତାକ୍ଷର ହୋଇଥାଉ କି ନାହିଁ, ନିଷ୍କ୍ରିୟ କରାଯାଇଥାଏ।"
+msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
-msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr "ଉଚ୍ଚ୤\nବିଶ୍ବସ୍ତ ମୂଳଗୁଡିକରୁ କେବଳ ହସ୍ତାକ୍ଷରହୋଇଥିବା ମାକ୍ରୋଗୁଡିକ ଚାଲୁହେବା ପାଇଁ ସ୍ବୀକୃତ ଅଟେ୤ ହସ୍ତାକ୍ଷରହୋଇନଥିବା ମାକ୍ରୋଗୁଡିକ ଅକ୍ଷମ ଅଟେ୤"
+msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
-msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr "ମଧ୍ଯମ (~M)\nଅବିଶ୍ୱସ୍ତ ଉତ୍ସରୁ macroଗୁଡ଼ିକୁ ନିଷ୍ପାଦନ କରିବା ପୂର୍ବରୁ ନିଶ୍ଚିତକରଣ ଆବଶ୍ୟକ।"
+msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
-msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr "ନିମ୍ନ (ପରାମର୍ଶିତ ନୁହଁ) (~L)।\nସମସ୍ତ macroଗୁଡ଼ିକୁ ବିନା ନିଶ୍ଚିତକରଣରେ ନିଷ୍ପାଦନ କରାଯାଇଥାଏ। ଏହି ସେଟିଙ୍ଗକୁ ବ୍ୟବହାର କରନ୍ତୁ ଯଦି କେବଳ ଆପଣ ନିଶ୍ଚିତ ଅଛନ୍ତି ଯେ ସମସ୍ତ ଦଲିଲଗୁଡ଼ିକୁ ଖୋଲିବା ସୁରକ୍ଷିତ।"
+msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
 msgstr "ବିଶ୍ବସ୍ତ ପ୍ରମାଣପତ୍ରଗୁଡିକ "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
-msgid  "Issued to\tIssued by\tExpiration date"
-msgstr "କୁ ନିର୍ଗମ\tଦ୍ବାରା ନିର୍ଗମ\tଅବସାନ ତାରିଖ"
+msgid  "Issued to\\tIssued by\\tExpiration date"
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
 msgid  "Add..."
@@ -156,8 +156,8 @@ msgid  "The following have signed this package:"
 msgstr "ନିମ୍ନ ବ୍ଯକ୍ତିମାନେ ଏହି ପ୍ଯାକେଜକୁ ହସ୍ତାକ୍ଷର କରିଅଛନ୍ତି:"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
-msgid  "\tSigned by\tDigital ID issued by\tDate"
-msgstr "\tଦ୍ବାରା ହସ୍ତାକ୍ଷରହୋଇଛି\tଡିଜିଟାଲ ID ଦ୍ବାରା ନିର୍ଗମ \tତାରିଖ"
+msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
+msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -200,12 +200,12 @@ msgid  "Close"
 msgstr "ବନ୍ଦ କରନ୍ତୁ"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ErrorBox.Message
-msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\\n\\nSave document in ODF 1.2 format and add all desired signatures again."
 msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
-msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr "ଗୋଟିଏ ମାକ୍ର ହସ୍ତାକ୍ଷରକୁ ଯୋଗ କରି ଅଥବା କାଢ଼ିବା ଦ୍ୱାରା ତାହା ସମସ୍ତ ହସ୍ତାକ୍ଷରଗୁଡ଼ିକୁ କାଢ଼ିଥାଏ।\nଆପଣ ପ୍ରକୃତରେ ଅଗ୍ରସର ହେବାକୁ ଚାହୁଁଛନ୍ତି କି?"
+msgid  "Adding or removing a macro signature will remove all document signatures.\\nDo you really want to continue?"
+msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 msgid  "View Certificate"
@@ -252,8 +252,8 @@ msgid  "The certificate could not be validated."
 msgstr "ପ୍ରମାଣପତ୍ରକୁ ବିଧିମାନ୍ୟ କରିହେଲା ନାହିଁ।"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
-msgid  "Field\tValue"
-msgstr "କ୍ଷେତ୍ର\tମୂଲ୍ଯ"
+msgid  "Field\\tValue"
+msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
 msgid  "Version"
@@ -340,8 +340,8 @@ msgid  "Select the certificate you want to use for signing"
 msgstr "ତୁମେ ହସ୍ତାକ୍ଷରକରିବା ପାଇଁ ଉପୋଗକରିବାକୁ ଚାହୁଁଥିବା ପ୍ରମାଣପତ୍ର ମନୋନୀତ କର"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
-msgid  "Issued to\tIssued by\tExpiration date"
-msgstr "କୁ ନିର୍ଗମ\tଦ୍ବାରା ନିର୍ଗମ\tଅବସାନ ତାରିଖ"
+msgid  "Issued to\\tIssued by\\tExpiration date"
+msgstr ""
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

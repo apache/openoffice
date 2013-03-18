@@ -192,8 +192,8 @@ msgid  "%"
 msgstr "%"
 
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
-msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr "Компонентът (%s) не може да бъде зареден.\nМоля, стартирайте инсталатора в режим Поправка."
+msgid  "The component (%s) could not be loaded.\\nPlease start setup with the repair option."
+msgstr ""
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -472,8 +472,8 @@ msgid  "Page %p of %n"
 msgstr "Страница %p от %n"
 
 #: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "Не е намерен подразбиран принтер.\nМоля, изберете принтер и опитайте отново."
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr ""
 
 #: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
 msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
@@ -725,7 +725,7 @@ msgstr "~Помощ"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
 msgid  "~More"
-msgstr "~Повече"
+msgstr "По-~малко"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
 msgid  "~More"

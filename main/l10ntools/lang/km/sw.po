@@ -816,8 +816,8 @@ msgid  "Document could not be completely saved."
 msgstr "មិន​អាច​រក្សាទុក​​ឯកសារ​ទាំងស្រុង​ឡើយ ។"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr "ឯកសារ HTML នេះ​ មាន​ម៉ាក្រូ​ %PRODUCTNAME Basic ។​\n​ពួក​វា​​មិន​​ត្រូវ​​បាន​​រក្សាទុក ជាមួយ​ការ​កំណត់​​​នាំ​​ចេញ​​បច្ចុប្បន្ន​ ។"
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
+msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -1108,16 +1108,16 @@ msgid  "blank page"
 msgstr "ទំព័រ​ទទេ"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr "អ្នក​មាន​ទិន្នន័យ​យ៉ាង​​ធំ ដែល​បាន​រក្សាទុក​ក្នុង​ក្តារ​តម្បៀត​ខ្ទាស់ ​។​​\nតើ​មាតិកា​ក្តារ​តម្បៀត​ខ្ទាស់​ គួរ​តែ​មាន​ សម្រាប់​កម្មវិធី​ផ្សេង​ឬ​ទេ ?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr "ការ​បម្លែង​ទៅ​ជា​ទ្រង់ទ្រាយ​ HTML \n​អាច​បណ្តាល​ឲ្យ​បាត់បង់​ព័ត៌មាន​ ។​\n​តើ​អ្នក​ចង់​​រក្សាទុក​ឯកសារ​​​ឬ​ទេ​ ?​"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
+msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr "កូដ​​អាច​ត្រូវ​បាន​បង្ហាញ ​ប្រសិន​បើ​ ឯកសារ​ត្រូវ​បាន​រក្សាទុក​ក្នុង​ទ្រង់ទ្រាយ​ HTML​ ។​\n​តើ​អ្នក​ចង់​រក្សាទុក​ឯកសារ​នេះ​ជា​​ HTML ​​​ឬ​ទេ​ ?​"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
+msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr "ឯកសារ​របស់​អ្នក​ មាន​វាល​​​មូលដ្ឋាន​ទិន្នន័យ​អាសយដ្ឋាន​ ។ ​តើ​អ្នក​ចង់​បោះពុម្ព​សំបុត្រ​សំណុំ​​បែបបទ​​​ឬ​ទេ​ ?​"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -1213,7 +1213,7 @@ msgstr "អក្សរ​តូច​ក្រោម"
 
 #: source/ui/app/mn.src#MN_TEXT_ATTR.MN_FORMAT_ALGN.MenuItem.Text
 msgid  "A~lignment"
-msgstr "ការ​តម្រឹម "
+msgstr "តម្រឹម"
 
 #: source/ui/app/mn.src#MN_TEXT_ATTR.MN_FORMAT_ALGN.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
 msgid  "Justified"
@@ -2209,7 +2209,7 @@ msgstr "រូបភាព និង​វត្ថុ "
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_CTRLFLD.CheckBox.Text
 msgid  "Form control~s"
-msgstr "ត្រួពិនិត្យ​សំណុំ​បែបបទ "
+msgstr "អត្ថបទ​ដែល​លាក់"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
 msgid  "Page ba~ckground"
@@ -2217,11 +2217,11 @@ msgstr "ផ្ទៃខាងក្រោយ​ទំព័រ "
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 msgid  "Print text in blac~k"
-msgstr "បោះពុម្ព​អត្ថបទ​ពណ៌​ខ្មៅ "
+msgstr "កន្លែង​ដាក់​អត្ថបទ "
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
 msgid  "Hidden te~xt"
-msgstr "អត្ថបទ​ដែល​លាក់"
+msgstr "អត្ថបទ​បាន​លាក់"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_TEXT_PLACEHOLDER.CheckBox.Text
 msgid  "Text ~placeholder"
@@ -2229,7 +2229,7 @@ msgstr "កន្លែង​ដាក់​អត្ថបទ"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.FL_2.FixedLine.Text
 msgid  "Pages"
-msgstr "ទំព័រ"
+msgstr "បើក​ជម្រើស​នេះ ដើម្បី​បោះពុម្ព​កន្លែងដាក់​អត្ថបទ ។ បិទ​ជម្រើស​នេះ ដើម្បី​​ទុក​កន្លែង​ដាក់​ឲ្យ​នៅ​ទំនេរ​នៅ​ក្នុង​សន្លឹក​បោះពុម្ព ។"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_LEFTP.CheckBox.Text
 msgid  "~Left pages"
@@ -2273,7 +2273,7 @@ msgstr "ផ្សេងៗ"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PRINTEMPTYPAGES.CheckBox.Text
 msgid  "Print ~automatically inserted blank pages"
-msgstr "បោះពុម្ព​ទំព័រ​ទទេ​ដែល​បាន​បញ្ចូល​ដោយ​ស្វ័យ​ប្រវត្តិ"
+msgstr "ត្រួពិនិត្យ​សំណុំ​បែបបទ "
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PAPERFROMSETUP.CheckBox.Text
 msgid  "~Paper tray from printer settings"
@@ -2796,8 +2796,8 @@ msgid  "<User settings>"
 msgstr "<​កំណត់​របស់​អ្នក​ប្រើ​>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr "តើ​អ្នក​ចង់​ផ្លាស់ប្តូរ​ជម្រើស​ឆប​គ្នា នៃ​ពុម្ព​លំនាំដើម​ឬ​ទេ ?​\nនេះ​នឹង​ជះឥទ្ធិពល​ដល់​ឯកសារ​ទាំងអស់ ដែល​ពឹង​ផ្អែក​លើ​ពុម្ព​លំនាំដើម ។"
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
+msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2896,8 +2896,8 @@ msgid  "Caption"
 msgstr "ចំណងជើង"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
-msgstr "បន្ថែម​ចំណងជើង​ដោយ​ស្វ័យប្រវត្តិ​\nនៅ​ពេល​បញ្ចូល ៖"
+msgid  "Add captions automatically\\nwhen inserting:"
+msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3920,8 +3920,8 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr "អ្នក​មិន​បាន​បញ្ជាក់​លម្អិត​អំពី​ឈ្មោះ​ថ្មី​មួយ សម្រាប់​ឯកសារ​ភ្ជាប់ ។ បើ​អ្នក​ចង់​ផ្តល់ សូម​វាយ​បញ្ចូល​វា​ឥឡូវ ។"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr "ដើម្បី​អាច​ផ្ញើ​ឯកសារ​សំបុត្រ​សំណុំ​បែប​បទតាម​អ៊ីមែល %PRODUCTNAME ត្រូវ​ការ​ព័ត៌មាន​អំពី​គណនី​អ៊ីមែល​ដែល​ត្រូវ​ប្រើ ។\n\nតើ​អ្នក​ចង់​បញ្ចូល​ព័ត៌មាន​គណនី​អ៊ីមែល​ឥឡូវ​ឬ​ទេ ?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3940,8 +3940,8 @@ msgid  "~Bcc"
 msgstr "លាក់ "
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr "ចំណាំ ៖\nបំបែក​អាសយដ្ឋាន​អ៊ីមែល​ដោយ​ចំណុច​ក្បៀស (;) ។"
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
+msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
@@ -4212,8 +4212,8 @@ msgid  "Sending failed (invalid address)"
 msgstr "ការ​ផ្ញើ​បាន​បរាជ័យ (​អាសយដ្ឋាន​មិន​ត្រឹមត្រូវ​)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr "នៅ​តែ​មាន​សារ​អ៊ីមែល​ក្នុង​ប្រអប់​ចេញ %PRODUCTNAME របស់​អ្នក ។\nយ៉ាង​ណា​ក៏​ដោយ តើ​អ្នក​ពិត​ជា​ចង់​ចេញ​ឬ ?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
+msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4308,8 +4308,8 @@ msgid  "Edit Document"
 msgstr "កែសម្រួល​ឯកសារ"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr "សរសេរ ឬ កែសម្រួល​ឯកសារ​របស់​អ្នក​ឥឡូវ ប្រសិន​បើ​អ្នក​មិនទាន់​ធ្វើ ឬ មិនទាន់​ធ្វើ​​ហើយ ។ ការ​ផ្លាស់​ប្តូរ​នឹង​មាន​ប្រសិទ្ធិភាព​ចំពោះ​ឯកសារ​ដែល​បញ្ចូល​គ្នា​ទាំង​អស់ ។\n\nចុច 'កែសម្រួល​​ឯកសារ...' នឹង​បន្ថយ​អ្នក​ជំនួយការ​ទៅ​ជា​​បង្អួច​តួច​មួយ​បណ្តោះ​អាសន្ន ដូច្នេះ​អ្នក​អាច​កែ​សម្រួល​ឯកសារ​សំបុត្រ​សំណុំ​បែប​បទ​បាន ។ បន្ទាប់​ពី​កែ​សម្រួល​ឯកសារ ត្រឡប់​ទៅ​អ្នក​ជំនួយការ​ដោយ​ចុច 'ត្រឡប់​ទៅ​អ្នកជំនួយការ​សំណុំ​បែប​បទ' ក្នុង​បង្អួច​តូច​ ។"
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4864,8 +4864,8 @@ msgid  "Requested clipboard format is not available."
 msgstr "មិន​មាន​ទ្រង់ទ្រាយ​ក្តារ​តម្បៀត​ខ្ទាស់​​ដែល​បាន​ស្នើ​សុំ ។"
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr "ទ្រង់ទ្រាយ​ភាគ​ហួស​សម័យ​ហើយ ។​\nចាំបាច់​ត្រូវ​បម្លែង​វា ទើប​អាច​រក្សាទុក​​​\nការ​ផ្លាស់ប្តូរ ។​\nតើ​​គួរ​បម្លែង​វា​ឥឡូវ​ឬ​ទេ​ ?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
+msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5068,8 +5068,8 @@ msgid  "Footnote: "
 msgstr "លេខ​យោង ៖"
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr "​មិន​អាច​ផ្លាស់ប្តូរ​មាតិកា​បាន​តែ​អាន ។\nគ្មាន​ការ​កែប្រែ​នឹង​ត្រូវ​បាន​ទទួល​យក"
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
+msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "ជម្រើស​"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
-msgstr "ស្លាក \"%1 / %2\" មាន​រួច​ហើយ ។​\nតើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ​ទេ ?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
+msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6608,8 +6608,8 @@ msgid  "Browse..."
 msgstr "រក​មើល..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr "ប្រើ​ប្រអប់​នេះ ដើម្បី​ជំនួស​មូលដ្ឋាន​ទិន្នន័យ​ដែល​អ្នក​ចូល​ដំណើរការ​ក្នុង​ឯកសារ​របស់​អ្នក ​តាម​រយៈ​វាល​មូលដ្ឋាន​ ដោយ​មូលដ្ឋាន​ទិន្នន័យ​ផ្សេងទៀត ។ អ្នក​អាច​ធ្វើ​ការ​ផ្លាស់​ប្តូរ​តែ​មួយ នៅ​ក្នុង​រយៈពេល​មួយ ។ ជម្រើស​ច្រើនគឺអាច​ធ្វើ​ទៅ​បាន​ ក្នុង​បញ្ជី​នៅ​ខាង​ឆ្វេង ។\nប្រើ​ប៊ូតុង​កម្មវិធី​រុករក ដើម្បី​ជ្រើស​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ ។"
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
+msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -10064,8 +10064,8 @@ msgid  "AutoCorrect"
 msgstr "កែ​ស្វ័យ​ប្រវត្តិ"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr "កែ​ស្វ័យ​ប្រវត្តិ​បាន​បញ្ចប់ ។\nអ្នក​អាច​ទទួល ឬច្រាន​ចោល​ការ​ផ្លាស់ប្ដូរ​ទាំងអស់\nឬ​ទទួល ឬ​ច្រាន​ចោល​ការ​ផ្លាស់ប្ដូរ​ជាក់លាក់ ។"
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
+msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10308,8 +10308,8 @@ msgid  "Sum"
 msgstr "ផលបូក"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr "អ្នក​បាន​បញ្ចូល​ឈ្មោះ​មិន​ត្រឹមត្រូវ​មួយ​ ។​\nមិន​អាច​បង្កើត​ទ្រង់ទ្រាយ​ស្វ័យប្រវត្តិ​ដែល​ចង់​បាន ។​\nព្យាយាម​ម្តង​ទៀត ដោយ​ប្រើ​ឈ្មោះ​ផ្សេង ។"
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
+msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10492,8 +10492,8 @@ msgid  "First ~column as caption"
 msgstr "ជួរ​ឈរ​ទី​មួយ​ជា​ចំណងជើង "
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr "ប្រសិន​​បើ​ក្រឡា​ដែល​បាន​ជ្រើស​មិន​មាន​ទិន្នន័យ​ដែល​ចង់​បាន​ ជ្រើស​ជួរ​ទិន្នន័យ​ឥឡូវ​នេះ​ ។​\n\nរួមបញ្ចូល​ក្រឡា​ដែល​មាន​ស្លាក​ជួរឈរ​ និង​ជួរដេក ​បើ​អ្នក​ចង់​បញ្ចូល​ពួក​វា​ក្នុង​គំនូសតាង​របស់​អ្នក ។"
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10613,7 +10613,7 @@ msgstr "​ស្តាំ​ទៅ​ឆ្វេង"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
 msgid  "Use superordinate object settings"
-msgstr "ប្រើ​ការ​កំណត់​វត្ថុ​តាម​លំនាំដើម"
+msgstr "ប្រើ​ការ​កំណត់​វត្ថុ​លំដាប់​ខ្ពស់​ជាង"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 msgid  "Adapt table ~width"
@@ -10752,8 +10752,8 @@ msgid  "Do you want to check the main text?"
 msgstr "តើ​​អ្នក​​ចង់​​ពិនិត្យមើល​​អត្ថបទ​សំខាន់​ឬ​ទេ ?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr "ជម្រើស​បញ្ជា ' បង្ហាញ​វាល ' ត្រូវ​បាន​គូស​ធីក ។​\nតើ​អ្នក​ចង់​បោះពុម្ព ឯកសារ​ដោយ​មាន​ឈ្មោះ​វាល​ ​ឬ​ទេ ?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
+msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10908,8 +10908,8 @@ msgid  "Capitalize first letter of sentences"
 msgstr "អក្សរ​ធំ​នៅ​ដើម​ប្រយោគ"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
-msgstr ""
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
+msgstr "ជំនួស​​សម្រង់​ \"ស្តង់ដារ\" ដោយ​​សម្រង់ %1 \\bcustom%2"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
 msgid  "Replace Custom Styles"
@@ -11136,12 +11136,12 @@ msgid  "[System]"
 msgstr "[ប្រព័ន្ធ]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr "ការ​ពិនិត្យ​​​អក្ខ​រាវិរុទ្ធ​​​អន្តរ​សកម្ម មាន​សកម្មភាព​រួច​ហើយ\nក្នុង​ឯកសារ​មួយ​ផ្សេង​ទៀត"
+msgid  "The interactive spellcheck is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr "ការ​ដាក់​សហសញ្ញា​អន្តរ​សកម្ម មាន​សកម្មភាព​រួច​ហើយ\nក្នុង​ឯកសារ​មួយ​ផ្សេង​ទៀត"
+msgid  "The interactive hyphenation is already active\\nin a different document"
+msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -11601,7 +11601,7 @@ msgstr "បិទ​/​បើក ប្រអប់​បញ្ជី"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_SHOW_ROOT.ToolBoxItem.Text
 msgid  "Content View"
-msgstr "ទិដ្ឋភាព​មាតិកា"
+msgstr "ទិដ្ឋភាព​​មាតិកា"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_SELECT_SET_AUTO_BOOKMARK.ToolBoxItem.Text
 msgid  "Set Reminder"

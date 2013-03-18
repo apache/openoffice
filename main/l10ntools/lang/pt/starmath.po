@@ -129,7 +129,7 @@ msgstr "F~ixo"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.1.MenuButton.Text
 msgid  "~Modify"
-msgstr "~Modificar"
+msgstr "Modificar"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.2.PushButton.Text
 msgid  "~Default"
@@ -177,7 +177,7 @@ msgstr "~Espaçamento"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.3.String.Text
 msgid  "~Line spacing"
-msgstr "En~trelinhas"
+msgstr "~Entrelinhas"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.4.String.Text
 msgid  "~Root spacing"
@@ -261,7 +261,7 @@ msgstr "Espa~çamento de colunas"
 
 #: source/smres.src#RID_DISTANCEDIALOG.8.1.String.Text
 msgid  "Symbols"
-msgstr "Ornamentos"
+msgstr "Símbolos"
 
 #: source/smres.src#RID_DISTANCEDIALOG.8.2.String.Text
 msgid  "~Primary height"
@@ -444,12 +444,12 @@ msgid  "~Delete"
 msgstr "~Eliminar"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr "O tipo de letra 'StarMath' não está instalado.\nSem este tipo de letra, o %PRODUCTNAME Math não pode funcionar correctamente.\nInstale este tipo de letra e reinicie o %PRODUCTNAME Math."
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "Guardar modificações como predefinição?\n\nEstas modificações serão válidas para todas as novas equações."
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -706,58 +706,72 @@ msgid  "~Scaling"
 msgstr "~Escala"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "Operadores ~unários/binários"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Relations"
 msgstr "~Relações"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Set Operations"
 msgstr "Operações de ~conjuntos"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Functions"
 msgstr "~Funções"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
 msgid  "More"
 msgstr "Outros"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "O~perators"
 msgstr "~Operadores"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Attributes"
 msgstr "~Atributos"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Brackets"
 msgstr "~Parênteses"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
+#, fuzzy
 msgid  "For~mats"
 msgstr "For~matos"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
+#, fuzzy
 msgid  "New Line"
 msgstr "nova linha"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
+#, fuzzy
 msgid  "Small Gap"
 msgstr "espaçamento pequeno"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
+#, fuzzy
 msgid  "Gap"
 msgstr "espaçamento"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MenuItem.Text
+#, fuzzy
 msgid  "nospace {...}"
 msgstr "nospace {...}"
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Others"
 msgstr "Ou~tros"
 

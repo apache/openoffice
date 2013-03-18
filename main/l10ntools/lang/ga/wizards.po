@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Teimpléad cruthaithe ag <wizard_name> ar <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "Níorbh fhéidir an treoraí a rith, ceal comhaid thábhachtacha.\nFaoi 'Uirlisí - Roghanna - %PRODUCTNAME - Conairí' cliceáil an cnaipe 'Réamhshocrú' chun na conairí a athshocrú go dtí na bunsocruithe a bhí ann ar dtús. \nAnsin rith an treoraí arís."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "Réimsí ~san fhoirm"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "Liostáiltear réimsí dénártha i gcónaí, agus is féidir iad a roghnú ón liosta ar chlé.\nMás féidir, léirmhínítear mar íomhánna iad."
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "Is foirm a ionsáitear i bhfoirm eile é fofhoirm.\nBain úsáid as fofhoirmeacha chun sonraí ó tháblaí nó iarratais le gaol aon-le-mórán a thaispeáint."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "Réimsí san fhoirm"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "Roghnaíodh faoi dhó an comhcheangal '<FIELDNAME1>' agus '<FIELDNAME2>'.\nNí cheadaítear comhcheangal a úsáid níos mó ná uair amháin."
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "Roghnaigh ainm na foirme"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "Tá foirm ann cheana darb ainm '%FORMNAME'.\nRoghnaigh ainm eile."
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "Ní féidir an réimse a ionsá mar rachfaí thar uasmhéid de %COUNT réimsí arbh fhéidir a bheith ann i dtábla an bhunachair sonraí"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "Tá an t-ainm '%TABLENAME' ann cheana.\nIontráil ainm eile le do thoil."
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1677,7 +1677,7 @@ msgstr "Línte ~Fillte"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
 msgid  "~Complimentary close"
-msgstr "~Beannú deiridh dea-mhéine"
+msgstr "~Beannú dea-mhéine"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
 msgid  "~Footer"
@@ -1685,7 +1685,7 @@ msgstr "~Buntásc"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
 msgid  "~Use user data for return address"
-msgstr "~Bain úsáid as sonraí an úsáideora don seoladh fillte"
+msgstr "Bain úsáid as sonraí an ú~sáideora don seoladh fillte"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
 msgid  "~New sender address:"
@@ -1693,7 +1693,7 @@ msgstr "~Seoladh nua an tseoltóra:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
 msgid  "Use placeholders for ~recipient's address"
-msgstr "Bain úsáid as ionadchoinneálaithe do ~sheoladh an tseoltóra"
+msgstr "Bain úsáid as ionadchoinneálaithe do sheoladh an ~fhaighteora"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
 msgid  "Use address database for ~mail merge"
@@ -1701,11 +1701,11 @@ msgstr "Bain úsáid as bunachar sonraí na seoltaí do ~phostchumasc"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 msgid  "Include ~only on second and following pages"
-msgstr "Cuir isteach ar ~gach leathanach ach an chéad cheann"
+msgstr "~Cuir isteach ar gach leathanach ach an chéad cheann"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
 msgid  "~Include page number"
-msgstr "~Cuir uimhir an leathanaigh isteach"
+msgstr "Cuir ~isteach uimhir an leathanaigh"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 25.String.Text
 msgid  "Letter Template"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "Treoraí Gréasáin"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "Chun cúnamh a thabhairt duit i bhfoilsiú cáipéisí ar an Idirlíon atá an Treoraí Gréasáin seo.\n\nAistreoidh sé na cáipéisí ionas go mbeidh siad inléite ag brabhsálaí Gréasáin. Lena chois sin, ginfidh sé leathanach Chlár Ábhair le naisc a cheadóidh rochtain éasca ar do cháipéis. Tabharfaidh an Treoraí Gréasáin seans duit dearadh agus leagan amach do shuímh Idirlín a oiriúnú.\n\nBeidh tú ábalta na cáipéisí a d'fhoilsigh tú ar an nGréasán a choimeád suas chun dáta agus cur leo nó baint uathu ag am ar bith."
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "Réamhamharc"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "Scriosfar na socruithe roghnaithe.\n\nAn bhfuil fonn ort na socruithe seo a scriosadh i ndáiríre? "
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "Níorbh fhéidir an chomhadlann FTP '%FILENAME' a chruthú."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Níl an chomhadlann FTP '%FILENAME' ann. \nCruthaigh an chomhadlann anois?"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "Ní féidir an Zipchomhad '%FILENAME' a chruthú: is ann do chomhad den ainm céanna cheana féin."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "Ní féidir an chomhadlann logánta '%FILENAME' a chruthú. \nCinntigh go bhfuil cead agat scríobh anseo."
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "Níl ann don chomhadlann logánta '%FILENAME'. \nCruthaigh an chomhadlann anois?"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

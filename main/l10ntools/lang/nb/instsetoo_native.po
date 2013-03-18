@@ -933,7 +933,7 @@ msgstr "Sletter tjenester"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_18
 msgid  "Service: [1]"
-msgstr "Tjeneste: [1]"
+msgstr "Tjeneste: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_19
 msgid  "Creating duplicate files"
@@ -1109,7 +1109,7 @@ msgstr "Registrerer programidentifikatorer"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_62
 msgid  "ProgID: [1]"
-msgstr "Prog-ID: [1]"
+msgstr "Programidentifikator: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_63
 msgid  "Registering type libraries"
@@ -1117,7 +1117,7 @@ msgstr "Registrerer typebibliotek"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_64
 msgid  "LibID: [1]"
-msgstr "Bib-ID: [1]"
+msgstr "Biblioteksidentifikator: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_65
 msgid  "Registering user"
@@ -1141,7 +1141,7 @@ msgstr "Oppdaterer miljøstrenger"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "Nøkkel: [1], Verdi: [2], Handling: [3]"
+msgstr "Navn:  [1], Verdi:  [2],  Handling: [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 msgid  "Removing applications"
@@ -1173,7 +1173,7 @@ msgstr "Fjerner INI-filoppføringer"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_78
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
-msgstr "Fil: [1],  Bolk: [2],  Nøkkel: [3], Verdi: [4]"
+msgstr "Fil: [1],  Bolk: [2],  Nøkkel: [3], Verdi [4]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_79
 msgid  "Removing ODBC components"
@@ -1241,7 +1241,7 @@ msgstr "Starter tjenester"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_95
 msgid  "Service: [1]"
-msgstr "Tjeneste: [2]"
+msgstr "Tjeneste: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_96
 msgid  "Stopping services"
@@ -1376,7 +1376,7 @@ msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
 msgstr "Takk for at du har lastet ned %PRODUCTNAME %PRODUCTVERSION."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
-msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
+msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\\r\\n\\r\\nClick \\'Next\\' to continue."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_TITLE
@@ -1392,8 +1392,8 @@ msgid  "&Unpack"
 msgstr "Pakk &ut"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirText
-msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \'Browse\' to select another folder."
-msgstr ""
+msgid  "The %PRODUCTNAME %PRODUCTVERSION installation files will be unpacked and saved in the folder shown below. If you would like to save %PRODUCTNAME to a different folder, click \\'Browse\\' to select another folder."
+msgstr "Installasjonsfilene til %PRODUCTNAME %PRODUCTVERSION er klare til å pakkes ut og lagres i mappa nedenfor. Hvis du vil legge %PRODUCTNAME i en annen mappe, kan du velge mappa med «Bla gjennom»."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#DirSubText
 msgid  "Destination Folder"
@@ -1552,8 +1552,8 @@ msgid  "Cancel"
 msgstr "Avbryt"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
-msgid  "{\Tahoma8}{80}"
-msgstr ""
+msgid  "{\\Tahoma8}{80}"
+msgstr "{\\Tahoma8}{80}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_37
 msgid  "&Organization:"
@@ -1572,8 +1572,8 @@ msgid  "{&MSSansBold8}Customer Information"
 msgstr "{&MSSansBold8}Kundeinformasjon"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_41
-msgid  "{\Tahoma8}{50}"
-msgstr ""
+msgid  "{\\Tahoma8}{50}"
+msgstr "{\\Tahoma8}{50}"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_42
 msgid  "&User Name:"
@@ -1781,7 +1781,7 @@ msgstr "&Avslutt"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_107
 msgid  "&Ignore"
-msgstr "&Overse"
+msgstr "&Ignorer"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_108
 msgid  "&Retry"
@@ -2037,7 +2037,7 @@ msgstr "Systemet er ikke endret. Dersom du vil gjøre ferdig installasjonen en a
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
-msgstr "Trykk «Ferdig» for å avslutte veiviseren."
+msgstr "Trykk «Fullfør» for å avslutte veiviseren."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."

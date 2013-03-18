@@ -444,8 +444,8 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "תבנית נבנתה על ידי ‏‪<wizard_name>‬‏ בתאריך ‏‪<current_date>‬‏.‏"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
-msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr "לא ניתן להפעיל את האשף כי קבצים נדרשים להפעלתו לא נמצאו.\nב 'כלים -< אפשרויות -< נתיבי אופן אופיס' יש ללחוץ על הכפתור 'ברירות מחדל' על מנת להחזיר את הנתיבים לערכים ההתחלתיים.\nלאחר מכן יש להפעיל את האשף מחדש."
+msgid  "The wizard could not be run, because important files were not found.\\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\\nThen run the wizard again."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -552,12 +552,12 @@ msgid  "Fields in ~the form"
 msgstr "שדות בטופס"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
-msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr "שדות בינריים תמיד נרשמים ונבחרים מהרשימה השמאלית.\nבמידה ואפשר, הם מוצגים כעצמים גרפיים.‏"
+msgid  "Binary fields are always listed and selectable from the left list.\\nIf possible, they are interpreted as images."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
-msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr "'תת טופס' הוא טופס שהוכנס בתוך טופס אחר.\nמשתמשים בתת טפסים כדי להציג נתונים מטבלאות או משאילתות כאשר קיים יחס אחד לרבים בין הנתונים."
+msgid  "A subform is a form that is inserted in another form.\\nUse subforms to show data from tables or queries with a one-to-many relationship."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -592,8 +592,8 @@ msgid  "Fields in form"
 msgstr "שדות בטופס"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
-msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr "החיבור ‏‪(join)‬‏ בין ‏‫'<FIELDNAME1>'‬‏ ל ‏‪'<FIELDNAME2>'‬‏ נבחר פעמיים\nלמרות שחיבורים ניתנים לשימוש פעם אחת בלבד.‏"
+msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\\nBut joins may only be used once."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -804,8 +804,8 @@ msgid  "Set the name of the form"
 msgstr "קביעת שם לטופס"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
-msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr "טופס בשם ‏‪'%FORMNAME'‬‏ כבר קיים במערכת.‏\nנא לבחור שם אחר.‏"
+msgid  "A form with the name '%FORMNAME' already exists.\\nChoose another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1596,8 +1596,8 @@ msgid  "The field cannot be inserted because this would exceed the maximum numbe
 msgstr "לא ניתן להוסיף את השדה כי הטבלה כבר מכילה את מספר המירבי של שדות, ‏‪%COUNT‬‏‬‏, הנתמך בטבלאות במסד נתונים זה.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
-msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr "השם ‏‪'%TABLENAME'‬‏ כבר קיים.‏\n‏נא לבחור שם אחר.‏"
+msgid  "The name '%TABLENAME' already exists.\\nPlease enter another name."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2120,8 +2120,8 @@ msgid  "Web Wizard"
 msgstr "אשף דפי האינטרנט"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
-msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr "אשף דפי האינטרנט מסייע בהוצאה לאור של דפים באינטרנט.‏\n\nהאשף ממיר מסמכים לצורה שבה ניתן להציגם בדפדפן אינטרנט. בנוסף, האשף מחולל תוכן עניינים עם קישורים שמאפשרים גישה נוחה לתוכן המסמכים. האשף מאפשר התאמה אישית של עיצוב ותכנון האתר.‏\n\nניתן לעדכן דפים באתר או להוסיף או להוריד דפים לפי הצורך.‏"
+msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\\n\\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\\n\\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2540,8 +2540,8 @@ msgid  "Preview"
 msgstr "תצוגה מקדימה"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
-msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr "ההגדרות שנבחרו תמחקנה.\n\nהאם אכן כוונתך למוחקן?‏"
+msgid  "The selected settings will be deleted.\\n\\nDo you really want to delete these settings? "
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2608,20 +2608,20 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "לא ניתן ליצור תיקיית ‏‪FTP‬‏ בשם ‏‪'%FILENAME'‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
-msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "תיקיית ה ‏‪FTP‬‏ ‏‪'%FILENAME'‬‏ ‏אינה קיימת.‏\nהאם ליצור אותה כעת?‏"
+msgid  "The FTP directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 msgstr "אין אפשרות ליצור קובץ זיפ בשם ‏‪'%FILENAME'‬‏ כי תיקיה בעלת שם זהה כבר קיימת.‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
-msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr "אין אפשרות ליצור תיקיה מקומית ‏‪'%FILENAME'‬‏.‏\nנא לבדוק אם הרשאות המשתמש מספיקות.‏"
+msgid  "The local directory '%FILENAME' cannot be created. \\nPlease check your write-access."
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
-msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr "התיקיה המקומית ‏‪'%FILENAME'‬‏ אינה קיימת.‏\nהאם ליצור אותה כעת?‏"
+msgid  "The local directory '%FILENAME' does not exist. \\nCreate the directory now?"
+msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"

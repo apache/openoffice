@@ -69,7 +69,7 @@ msgstr "ཟུར་ཐོ་ཚུ།(~I)"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.6.FixedText.Text
 msgid  "~Functions"
-msgstr "ལས་འགན་ཚུ།(~F)"
+msgstr "ལས་འགན།(~F)"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.7.FixedText.Text
 msgid  "~Operators"
@@ -177,7 +177,7 @@ msgstr "བར་སྟོང་བཞག་ཐངས།(~S)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.3.String.Text
 msgid  "~Line spacing"
-msgstr "གྱལ་ལིམ་གྱི་བར་སྟོང་བཞག་ཐངས།(~L)"
+msgstr "གྱལ་རིམ་གྱི་བར་སྟོང་བཞག་ཐངས།(~L)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.4.String.Text
 msgid  "~Root spacing"
@@ -221,7 +221,7 @@ msgstr "ལྗིད་ཚད།(~W)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.5.1.String.Text
 msgid  "Limits"
-msgstr "ཚད།"
+msgstr "ཚད་ཚུ།"
 
 #: source/smres.src#RID_DISTANCEDIALOG.5.2.String.Text
 msgid  "~Upper limit"
@@ -245,7 +245,7 @@ msgstr "བར་སྟོང་བཞག་ཐངས།(~S)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.6.5.String.Text
 msgid  "~Excess size"
-msgstr "ཚད་ལྷག(~E)"
+msgstr "ལྷག་ཚད།(~E)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.7.1.String.Text
 msgid  "Matrix"
@@ -444,12 +444,12 @@ msgid  "~Delete"
 msgstr "བཏོན་གཏང་།(~D)"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr " \"StarMath\"ཡིག་གཟུགས་འདི་གཞི་བཙུགས་མ་འབད་བས།\n  འ་ནི་ཡག་གཟུགས་འདི་མེད་པ་ཅིན་%PRODUCTNAME ཨང་རྩིས་འདི་ངེས་བདེན་སྦེ་ལས་འགན་འབད་མི་ཚུགས།\n ཡིག་གཟུགས་འདི་མགོ་བཙུགས་ཏེ་%PRODUCTNAME ཨང་རྩིས་འདི་ ལོག་འགོ་བཙུགས་གདང་།"
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "བསྒྱུར་བཅོས་ཚུ་སྔོན་སྒྲིག་བཟུམ་སྦེ་སྲུངས་བཞག་དགོ་ག?\n  \nའ་ནི་སྲུངས་མི་དེ་གིས་མན་ངག་གསརཔ་ཆ་མཉམ་ལུ་འཇུག་སྤྱོད་འབདཝ་ཨིན།"
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -706,50 +706,62 @@ msgid  "~Scaling"
 msgstr "ཚད་རྟགས།(~S)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "གཅིག་ལྡན/ཟུང་ལྡནབཀོལ་སྤྱོདཔ་ཚུ །(~U)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Relations"
 msgstr "མཐུན་འབྲེལ་ཚུ།(~R)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Set Operations"
 msgstr "བཀོལ་སྤྱོད་ཚུ་གཞི་སྒྲིག་འབད།(~S)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Functions"
 msgstr "ལས་འགན་ཚུ།(~F)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
 msgid  "More"
 msgstr "ཧེང་བཀལ།"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "O~perators"
 msgstr "བཀོལ་སྤྱོདཔ་ཚུ།(~p)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Attributes"
 msgstr "ཁྱད་ཆོས་ཚུ།(~A)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Brackets"
 msgstr "གུག་ཤད་ཚུ།(~B)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
+#, fuzzy
 msgid  "For~mats"
 msgstr "རྩ་སྒྲིག་ཚུ(~m)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
+#, fuzzy
 msgid  "New Line"
 msgstr "གྱལ་རིམ་གསརཔ།"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
+#, fuzzy
 msgid  "Small Gap"
 msgstr "ས་སྟོང་ཆུང་ཀུ།"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
+#, fuzzy
 msgid  "Gap"
 msgstr "ས་སྟོང་།"
 
@@ -758,6 +770,7 @@ msgid  "nospace {...}"
 msgstr ""
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Others"
 msgstr "གཞན་ཚུ།"
 

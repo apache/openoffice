@@ -616,12 +616,12 @@ msgid  "Macromedia Flash (SWF) Options"
 msgstr "Opciones Macromedia Flash (SWF)"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
-msgid  "1: min. quality\n100: max. quality"
-msgstr "1: calidá mín.\n100: calidá máx."
+msgid  "1: min. quality\\n100: max. quality"
+msgstr ""
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
-msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
-msgstr "¡Avisu: Nun pudieron atroxase en Level1 tolos gráficos EPS importaos\nporque esisten dalgunos nun nivel más altu!"
+msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\\nas some are at a higher level!"
+msgstr ""
 
 #: source/pdf/pdf.src#PDF_PROGRESS_BAR.String.Text
 msgid  "Export as PDF"
@@ -737,7 +737,7 @@ msgstr "El formatu PDF/A nun admite cifráu. El ficheru PDF esportáu nun va tar
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.TabPage.Text
 msgid  "Initial View"
-msgstr "Vista d'aniciu"
+msgstr "Vista d'entamu"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_INITVIEW.FixedLine.Text
 msgid  "Panes"
@@ -1181,7 +1181,7 @@ msgstr "DTD"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.ED_XML_DTD_SCHEMA_BROWSE.PushButton.Text
 msgid  "Browse..."
-msgstr "Agüeyar..."
+msgstr "Ñavegar..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FixedText.Text
 msgid  "XSLT for export"
@@ -1360,8 +1360,8 @@ msgid  "Application"
 msgstr "Aplicación"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
-msgid  "Name of\nfile type"
-msgstr "Nome de la\ntriba d'archivu"
+msgid  "Name of\\nfile type"
+msgstr ""
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
 msgid  "File extension"

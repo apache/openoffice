@@ -136,8 +136,8 @@ msgid  "Save"
 msgstr "ساقلا"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "ئەسلى تېكست بەك كۆپ،  ساقلاپ ۋە تەرجىمە-تەھرىرلىيەلمەيدۇ.\nبەزى ئىزاھات ياكى بىر قانچە ئۇسۇلنى باشقا بۆلەككە يۆتكەڭ."
+msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -200,8 +200,8 @@ msgid  "The 'XX' file already exists"
 msgstr "'XX' ھۆججەت مەۋجۇد"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "بىخەتەرلىك سەۋەبىدىن بۇ ماكرونى ئىجرا قىلالمايسىز.\n\nتېخىمۇ كۆپ ئۇچۇرنى بىخەتەرلىك تەڭشىكىدىن تەكشۈرۈڭ."
+msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -372,8 +372,8 @@ msgid  "A name must be entered."
 msgstr "ئاتتىن بىرنى كىرگۈزۈش زۆرۈر."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "تەھرىرلىگەندىن كېيىن بۇ پروگراممىنى قايتا قوزغىتىڭ.\nداۋاملاشتۇرامسىز؟"
+msgid  "You will have to restart the program after this edit.\\nContinue?"
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -508,8 +508,8 @@ msgid  "Dialog Import - Name already used"
 msgstr "سۆزلىشىش رامكىسى ئەكىر - ئاتى ئىشلىتىلگەن"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr "بۇ ئامباردا تۆۋەندىكى ئاتنى ئۆز ئىچىگە ئالغان سۆزلەشكۈ بار:\n\n$(ARG1)\n\nسۆزلەشكۈنىڭ ئاتىنى ئۆزگەرتىپ نۆۋەتتىكى سۆزلەشكۈنى ساقلاپ قالغىلى ياكى نۆۋەتتىكى سۆزلەشكۈنى ئالماشتۇرۇشقىمۇ بولىدۇ.\n "
+msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -524,8 +524,8 @@ msgid  "Dialog Import - Language Mismatch"
 msgstr "سۆزلىشىش رامكىسى ئەكىر - تىل ماسلاشمىدى"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr "ئەكىرىدىغان سۆزلەشكۈ نىشان ئامبار تىلى سىرتىدىكى باشقا تىللارنى قوللايدۇ.\n\nبۇ تىللارنى ئامبارغا قوشۇپ سۆزلەشكۈدە تەمىنلەنگەن باشقا تىل مەنبەلىرىنى ساقلاپ قالغىلى ياكى ئۇلارغا پەرۋا قىلماي نۆۋەتتىكى تىل ئامبىرىنى ساقلاپ قالغىلىمۇ بولىدۇ.\n\nئىزاھ: ئەگەر بەزى تىللارنى سۆزلەشكۈ قوللىمىسا، سۆزلەشكۈدىكى كۆڭۈلدىكى تىل مەنبەسىنى ئىشلىتىدۇ.\n "
+msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
+msgstr ""
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -780,8 +780,8 @@ msgid  "Delete Language Resources"
 msgstr "تىل مەنبەسىنى ئۆچۈر"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr "سىز تاللىغان تىلنىڭ مەنبەسىنى ئۆچۈرمەكچى. بۇ تىلنىڭ بارلىق ئىشلەتكۈچى كۆرۈنمە ھەرپ تىزمىسى ئۆچۈرۈلىدۇ.\n\nتاللىغان تىلنىڭ مەنبەسىنى ئۆچۈرەمسىز؟"
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"

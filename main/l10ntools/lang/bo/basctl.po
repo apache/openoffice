@@ -137,302 +137,374 @@ msgid  "~Save"
 msgstr "ཉར་ཚགས།(~S)"
 
 #: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
+#, fuzzy
 msgid  "<All>"
 msgstr "<ཆ་ཚང་། >"
 
 #: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
+#, fuzzy
 msgid  "< No Module >"
 msgstr "<སྨོ་རྡོག་མེད་པ  >"
 
 #: source/basicide/basidesh.src#RID_STR_WRONGPASSWORD.String.Text
+#, fuzzy
 msgid  "Incorrect Password"
 msgstr "གསང་ཨང་འཇུག་སྟངས་ནོར་འཁྲུལ།"
 
 #: source/basicide/basidesh.src#RID_STR_OPEN.String.Text
+#, fuzzy
 msgid  "Load"
 msgstr "འཇུག་པ།"
 
 #: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
+#, fuzzy
 msgid  "Save"
 msgstr "ཉར་ཚགས།"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "གཞིའི་ཡིག་ཆ་ཆེ་བའི་རྐྱེན་གྱིས་ཉར་ཚགས་དང་རྩོམ་སྒྲིག་བྱེད་ཐབས་མེད་པས་\nམཆན་འགྲེལ་བསུབ་པའམ་ཡང་ན་བྱ་ཐབས་འགའ་ཞིག་དེ་མིནཚན་རྡོག་ནང་བཅུག་རོགས།"
+msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
+#, fuzzy
 msgid  "Error opening file"
 msgstr "ཡིག་ཆ་ཁ་ཕྱེ་སྐབས་ནོར་སྐྱོན་བྱུང་འདུག"
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENLIB.String.Text
+#, fuzzy
 msgid  "Error loading library"
 msgstr "བྱ་རིམ་མཛོད་ནང་འཇུག་སྐབས་ནོར་འཛོལ་བྱུང་བ།"
 
 #: source/basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.String.Text
+#, fuzzy
 msgid  "The file does not contain any BASIC libraries"
 msgstr "ཡིག་ཆ་དེའི་ནང་BASICབྱ་རིམ་མཛོད་མེད་པ།"
 
 #: source/basicide/basidesh.src#RID_STR_BADSBXNAME.String.Text
+#, fuzzy
 msgid  "Invalid Name"
 msgstr "རྩིས་འགྲོ་མེད་པའི་མིང་།"
 
 #: source/basicide/basidesh.src#RID_STR_LIBNAMETOLONG.String.Text
+#, fuzzy
 msgid  "A library name can have up to 30 characters."
 msgstr "བྱ་རིམ་ཐོ་མཛོད་ཀྱི་མིང་མང་ཤོས་ལ་ཡིག་རྟགས་30ལས་གྲུབ་ཆོག་གི་མེད།"
 
 #: source/basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.String.Text
+#, fuzzy
 msgid  "Macros from other documents are not accessible."
 msgstr "ཡིག་ཚགས་གཞན་དག་གི་རགས་ལྟ་ལེན་བྱེད་ཐབས་བྲལ།"
 
 #: source/basicide/basidesh.src#RID_STR_LIBISREADONLY.String.Text
+#, fuzzy
 msgid  "This library is read-only."
 msgstr "བྱ་རིམ་རིགས་དེ་བཅོས་འགོག་བྱེད་ཆེད་དུ་ཡིན།"
 
 #: source/basicide/basidesh.src#RID_STR_REPLACELIB.String.Text
+#, fuzzy
 msgid  "'XX' cannot be replaced."
 msgstr "'XX' བརྗེ་ཐབས་བྲལ།"
 
 #: source/basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "'XX' cannot be added."
 msgstr "ནང་འཇུག་ཡིག་ཚགས་བཟོ་ལྟ་བཪྙེད་ཐབས་བྲལ།  རྩིས་འགྲོ་ཡོད་པའི་འགྲོ་ལམ་ཞིག་ནང་འཇུག་བྱེད་རྒྱུ།"
 
 #: source/basicide/basidesh.src#RID_STR_NOIMPORT.String.Text
+#, fuzzy
 msgid  "'XX' was not added."
 msgstr "སྣོན་མེད་པ།"
 
 #: source/basicide/basidesh.src#RID_STR_ENTERPASSWORD.String.Text
+#, fuzzy
 msgid  "Enter password for 'XX'"
 msgstr "'XX'ལ་གསང་ཨང་འཇུག་རྒྱུ།"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.String.Text
+#, fuzzy
 msgid  "Name already exists"
 msgstr "མིང་དེ་གནས་ཟིན་པ།"
 
 #: source/basicide/basidesh.src#RID_STR_SIGNED.String.Text
+#, fuzzy
 msgid  "(Signed)"
 msgstr "（མིང་རྟགས་བཀོད་ཟིན་）"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.String.Text
+#, fuzzy
 msgid  "Object with same name already exists"
 msgstr "བྱ་ཡུལ་གནས་ཟིན།"
 
 #: source/basicide/basidesh.src#RID_STR_FILEEXISTS.String.Text
+#, fuzzy
 msgid  "The 'XX' file already exists"
 msgstr "ཡིག་ཆ་'XX' ཡོད་མུས།"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "བདེ་འཇགས་ཡོང་ཁྱེད་ཀྱིས་རགས་དེ་འཁོར་སྐྱོད་བྱེད་རྒྱུ་མེད།  འབྲེལ་ཡོད་ཞིབ་ཕྲའི་ཆ་འཕྲིན་དེ་བདེ་འཇགས་བཟོ་སྒྲིག་ལ་ཞིབ་བཤེར་བྱེད་རོགས་གནང་།"
+msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
+#, fuzzy
 msgid  "Compile Error: "
 msgstr "རྩོམ་སྒྱུར་ནོར་བ། "
 
 #: source/basicide/basidesh.src#RID_STR_RUNTIMEERROR.String.Text
+#, fuzzy
 msgid  "Runtime Error: #"
 msgstr "འཁོར་སྐྱོད་དུས་ཚོད་ནོར་བ: #"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.String.Text
+#, fuzzy
 msgid  "Search key not found"
 msgstr "འཚོལ་བཤེར་བྱེད་པའི་ས་བཅད་མ་ཪྙེད་པ།"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
+#, fuzzy
 msgid  "Search to last module complete. Continue at first module?"
 msgstr "འཁྲིད་ཁ་མཐའ་མ་རྩད་འཚོལ་ཟིན་པ་དང་། འཁྲིད་ཁ་དང་པོ་ནས་བཤེར་འཚོལ་བྱེད་མཁན་ཡིན་ནམ།"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
+#, fuzzy
 msgid  "Search key replaced XX times"
 msgstr "འཚོལ་བའི་སྡེ་ཚན་བརྗེ་བ།"
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTREAD.String.Text
+#, fuzzy
 msgid  "The file could not be read"
 msgstr "ཡིག་ཆ་ལྟ་ལེན་བྱེད་ཐབས་བྲལ།"
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTWRITE.String.Text
+#, fuzzy
 msgid  "The file could not be saved"
 msgstr "ཡིག་ཆ་ཉར་ཐབས་བྲལ།"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.String.Text
+#, fuzzy
 msgid  "The name of the default library cannot be changed."
 msgstr "ངོས་ལེན་བྱ་རིམ་མཛོད་ཀྱི་མིང་བཟོ་བཅོས་བྱེད་ཐབས་བྲལ།"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
+#, fuzzy
 msgid  "The name of a referenced library cannot be changed."
 msgstr "འདྲེན་སྤྱོད་མཛོད་ཀྱི་མིང་བཟོ་བཅོས་བྱེད་ཐབས་བྲལ།"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
+#, fuzzy
 msgid  "The default library cannot be deactivated"
 msgstr "ངོས་ལེན་བྱ་རིམ་མཛོད་ཁ་རྒྱག་ཐབས་བྲལ།"
 
 #: source/basicide/basidesh.src#RID_STR_GENERATESOURCE.String.Text
+#, fuzzy
 msgid  "Generating source"
 msgstr "ཁུངས་ཀྱི་ཡིག་དེབ་བྱུང་གྲུབ།"
 
 #: source/basicide/basidesh.src#RID_STR_FILENAME.String.Text
+#, fuzzy
 msgid  "File name:"
 msgstr "ཡིག་ཆའི་མིང་།: "
 
 #: source/basicide/basidesh.src#RID_STR_APPENDLIBS.String.Text
+#, fuzzy
 msgid  "Import Libraries"
 msgstr "བྱ་རིམ་ཐོ་མཛོད་ནང་འདྲེན།"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELMACRO.String.Text
+#, fuzzy
 msgid  "Do you want to delete the macro XX?"
 msgstr "ཁྱེད་ཀྱིས་རགས་XX དེ་་སུབ་ཀྱི་ཡིན་ནམ།"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELDIALOG.String.Text
+#, fuzzy
 msgid  "Do you want to delete the XX dialog?"
 msgstr "ཁྱེད་ཀྱིས་གླེང་སྒྲོམ་XX དེ་སུབ་ཀྱི་ཡིན་ནམ།།"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELLIB.String.Text
+#, fuzzy
 msgid  "Do you want to delete the XX library?"
 msgstr "ཁྱེད་ཀྱིས་བྱ་རིམ་ཐོ་མཛོད་XX འདི་སུབ་ཀྱི་ཡིན་ནམ།"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELLIBREF.String.Text
+#, fuzzy
 msgid  "Do you want to delete the reference to the XX library?"
 msgstr "ཁྱེད་ཀྱིས་བྱ་རིམ་ཐོ་མཛོད་XX ཉེར་སྤྱོད་བྱས་པ་དེ་སུབ་ཀྱི་ཡིན་ནམ།"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELMODULE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the XX module?"
 msgstr "ཁྱེད་ཀྱིས་དཔེ་དུམ་XX དེ་སུབ་ཀྱི་ཡིན་ནམ།་"
 
 #: source/basicide/basidesh.src#RID_STR_OBJNOTFOUND.String.Text
+#, fuzzy
 msgid  "Object or method not found"
 msgstr "ཁ་གཏད་དམ་བྱ་ཐབས་མ་ཪྙེད་པ།"
 
 #: source/basicide/basidesh.src#RID_STR_BASIC.String.Text
+#, fuzzy
 msgid  "BASIC"
 msgstr "BASIC"
 
 #: source/basicide/basidesh.src#RID_STR_LINE.String.Text
+#, fuzzy
 msgid  "Ln"
 msgstr "ཕྲེང་།"
 
 #: source/basicide/basidesh.src#RID_STR_COLUMN.String.Text
+#, fuzzy
 msgid  "Col"
 msgstr "སྟར་པ།"
 
 #: source/basicide/basidesh.src#RID_STR_DOC.String.Text
+#, fuzzy
 msgid  "Document"
 msgstr "ཡིག་ཚགས།"
 
 #: source/basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.String.Text
+#, fuzzy
 msgid  "Macro Bar"
 msgstr "སྤྱི་ཁྱབ།"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
+#, fuzzy
 msgid  "The window cannot be closed while BASIC is running."
 msgstr "BASICགོ་རིམ་འཁོར་སྐྱོད་བྱེད་སྐབས་\nཁྲ་མིག་ཁ་བརྒྱབ་ཐབས་མེད།"
 
 #: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
+#, fuzzy
 msgid  "The default library cannot be replaced."
 msgstr "ངོས་ལེན་བྱ་རིམ་མཛོད་བརྗེ་ཐབས་བྲལ།"
 
 #: source/basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "Reference to 'XX' not possible."
 msgstr "'XX' འདྲེན་སྤྱོད་བྱེད་ཐབས་བྲལ།"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHNAME.String.Text
+#, fuzzy
 msgid  "Watch"
 msgstr "ལྟ་བཤེར།"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHVARIABLE.String.Text
+#, fuzzy
 msgid  "Variable"
 msgstr "འགྱུར་རུང་བ་།"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHVALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "གྲངས་ཐང་།"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHTYPE.String.Text
+#, fuzzy
 msgid  "Type"
 msgstr "རིགས།"
 
 #: source/basicide/basidesh.src#RID_STR_STACKNAME.String.Text
+#, fuzzy
 msgid  "Call Stack"
 msgstr "འབོད་བརྡ་ཕུང་གསོག་ཐེབས་པ།"
 
 #: source/basicide/basidesh.src#RID_STR_INITIDE.String.Text
+#, fuzzy
 msgid  "BASIC Initialization"
 msgstr "ལས་དང་པོ། BASIC"
 
 #: source/basicide/basidesh.src#RID_STR_STDMODULENAME.String.Text
+#, fuzzy
 msgid  "Module"
 msgstr "ཚན་རྡོག"
 
 #: source/basicide/basidesh.src#RID_STR_STDDIALOGNAME.String.Text
+#, fuzzy
 msgid  "Dialog"
 msgstr "གླེང་སྒྲོམ།"
 
 #: source/basicide/basidesh.src#RID_STR_STDLIBNAME.String.Text
+#, fuzzy
 msgid  "Library"
 msgstr "བྱ་རིམ་ཐོ་མཛོད།"
 
 #: source/basicide/basidesh.src#RID_STR_NEWLIB.String.Text
+#, fuzzy
 msgid  "New Library"
 msgstr "བྱ་རིམ་མཛོད་གསར།"
 
 #: source/basicide/basidesh.src#RID_STR_NEWMOD.String.Text
+#, fuzzy
 msgid  "New Module"
 msgstr "སྨོ་རྡོག་གསར་པ།"
 
 #: source/basicide/basidesh.src#RID_STR_NEWDLG.String.Text
+#, fuzzy
 msgid  "New Dialog"
 msgstr "བརྡ་སྒྲོམ་གསར་པ།"
 
 #: source/basicide/basidesh.src#RID_STR_ALL.String.Text
+#, fuzzy
 msgid  "All"
 msgstr "ཡོངས་རྫོགས།"
 
 #: source/basicide/basidesh.src#RID_STR_PAGE.String.Text
+#, fuzzy
 msgid  "Page"
 msgstr "ཤོག་ལྷེ།"
 
 #: source/basicide/basidesh.src#RID_STR_MACRONAMEREQ.String.Text
+#, fuzzy
 msgid  "A name must be entered."
 msgstr "ངེས་པར་དུ་མིང་ཞིག་སྤྲོད་དགོས།"
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "བཟོ་བཅོས་བྱས་རྗེས་བྱ་རིམ་འདི་ངེས་པར་དུ་བསྐྱར་སློང་བྱེད་དགོས།   \nམུ་མཐུད་དེ་ལྟར་བྱེད་དམ།"
+msgid  "You will have to restart the program after this edit.\\nContinue?"
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
+#, fuzzy
 msgid  "Do you want to replace the text in all active modules?"
 msgstr "སྤྱོད་བཞིན་པའི་དཔེ་དུམ་གྱི་ཡི་གེ་བརྗེ་གྱུར་བྱེད་དགོས་སམ་མི་དགོས།"
 
 #: source/basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Remove Watch"
 msgstr "ཡིབ་འཇུག་ལྟ་ཞིབ།"
 
 #: source/basicide/basidesh.src#RID_STR_REMOVEWATCH.String.Text
+#, fuzzy
 msgid  "Watch:"
 msgstr "ལྟ་བཤེར།: "
 
 #: source/basicide/basidesh.src#RID_STR_STACK.String.Text
+#, fuzzy
 msgid  "Calls: "
 msgstr "འབོད་པ། "
 
 #: source/basicide/basidesh.src#RID_STR_USERMACROS.String.Text
+#, fuzzy
 msgid  "My Macros"
 msgstr "ངའི་རགས།"
 
 #: source/basicide/basidesh.src#RID_STR_USERDIALOGS.String.Text
+#, fuzzy
 msgid  "My Dialogs"
 msgstr "ངའི་བརྡ་སྒྲོམ།"
 
 #: source/basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.String.Text
+#, fuzzy
 msgid  "My Macros & Dialogs"
 msgstr "ངའི་རགས་དང་བརྡ་སྒྲོམ།"
 
 #: source/basicide/basidesh.src#RID_STR_SHAREMACROS.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Macros"
 msgstr "%PRODUCTNAME སྤྱི་ཁྱབ།"
 
 #: source/basicide/basidesh.src#RID_STR_SHAREDIALOGS.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Dialogs"
 msgstr "%PRODUCTNAMEབརྡ་སྒྲོམ།"
 
 #: source/basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Macros & Dialogs"
 msgstr "%PRODUCTNAMEརགས་དང་བརྡ་སྒྲོམ།"
 
@@ -442,10 +514,12 @@ msgid  "Properties"
 msgstr "གཏོགས་གཤིས།"
 
 #: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MenuItem.Text
+#, fuzzy
 msgid  "Active"
 msgstr "བེད་སྤྱོད་བཞིན་པ།"
 
 #: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MenuItem.Text
+#, fuzzy
 msgid  "Properties..."
 msgstr "གཏོགས་གཤིས།..."
 
@@ -545,7 +619,7 @@ msgid  "Dialog Import - Name already used"
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
+msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
@@ -561,7 +635,7 @@ msgid  "Dialog Import - Language Mismatch"
 msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
+msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
 msgstr ""
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
@@ -821,38 +895,47 @@ msgid  "Extension"
 msgstr "རྒྱ་བསྐྱེད་བྱེད་པ།"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.ModalDialog.Text
+#, fuzzy
 msgid  "Manage User Interface Languages [$1]"
 msgstr "སྤྱོད་མཁན་གྱི་མཚམས་ངོས་སྐད་ཡིག[$1]དོ་དམ།"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Present Languages"
 msgstr "མིག་སྔའི་སྐད་ཡིག"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
+#, fuzzy
 msgid  "Add..."
 msgstr "འོག་ཐིག་ཁ་སྣོན།"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "སུབ་རྒྱུ།"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
+#, fuzzy
 msgid  "Default"
 msgstr "ངོས་བཟུང་བྱས་པ།"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
 msgstr "ས་ཆ་དེ་རང་གི་མཐུད་ངོས་སྐད་ཡིག་སྤྱོད་མཁན་མེད་ན་སོང་བཞག་སྐད་ཡིག་བེད་སྤྱོད་གྱིས།  གཞན་ཡང་སོར་བཞག་སྐད་ཡིག་གི་འབྲུ་རྟགས་ཕྲེང་ཡོངས་རྫོགས་གསར་སྣོན་བྱས་པའི་སྐད་ཡིག་ཐོན་ཁུངས་ནང་པར་སློག་བྱེད་ཀྱི་རེད།"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "ཁ་བརྒྱབ།(~C)"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
+#, fuzzy
 msgid  "[Default Language]"
 msgstr "[ ངོས་ལེན་སྐད་བརྡ]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "སུབ་རྒྱུ།(~D)"
 
@@ -861,45 +944,55 @@ msgid  "<Press 'Add' to create language resources>"
 msgstr ""
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Title
+#, fuzzy
 msgid  "Delete Language Resources"
 msgstr "Delete Language Resources"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr "ཁྱེད་ཀྱིས་བདམས་ཟིན་པའི་སྐད་ཡིག་ཐོན་ཁུངས་དེ་སུབ་ན་སྐད་ཡིག་དེའི་སྤྱོད་མཁན་གྱི་ཡིག་རྟགས་ཕྲེང་ཡོངས་རྫོགས་སུབ་ཀྱི་རེད། བདམས་ཟིན་པའི་སྐད་ཡིག་ཐོན་ཁུངས་དེ་སུབ་ཀྱི་ཡིན་ནམ། སྐད་ཡིག་ཐོན་ཁུངས་དེ་སུབ་ཀྱི་ཡིན།"
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
+#, fuzzy
 msgid  "Set Default User Interface Language"
 msgstr "སོར་བཞག་བྱས་པའི་སྤྱོད་མཁན་གྱི་མཐུད་ངོས་སྐད་བརྡ་བཟོ་སྒྲིག"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Default language"
 msgstr "ངོས་བཟུང་གི་སྐད་ཡིག"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
+#, fuzzy
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
 msgstr "སྐད་བརྡ་ཞིག་གིས་ངོས་ལེན་མཚན་ཉིད་འཇོག་པའི་སྤྱོད་དུད་བརྡ་ངོས་སྐད་བརྡ་ཞིག་འདེམས་པ། ད་ལྟ་ཉར་ཚགས་བྱས་པའི་ཡིག་རྟགས་ཕྲེང་སྦྲེལ་ཚང་མ་སྐད་བརྡ་བཟོ་རྒྱུའི་ཐོན་ཁུངས་འདེམས་རྒྱུར་དམིགས་འཛུགས་བྱེད་རྒྱུ།"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
+#, fuzzy
 msgid  "Add User Interface Languages"
 msgstr "སྤྱོད་དུད་ཀྱི་ངོས་རིས་ཁ་སྣོན།"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.String.Text
+#, fuzzy
 msgid  "Available Languages"
 msgstr "སྤྱོད་ཆོག་པའི་སྐད་ཡིག"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
+#, fuzzy
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
 msgstr "སྣོན་རྒྱུའི་སྐད་བརྡ་འདེམས་པ། མཛོད་ནང་དུ་སྐད་བརྡ་དེ་དག་གི་ཐོན་ཁུངས་བཟོ་རྒྱུ། ངོས་ལེན་གནས་ཚུལ་འོག་ད་ལྟའི་ངོས་ལེན་སྤྱོད་དུད་བརྡ་ངོས་ཀྱི་སྐད་བརྡའི་ཡིག་རྟགས་ཕྲེང་སྦྲེལ་དེ་ཐོན་ཁུངས་གསར་པ་དེ་དག་ནང་འདྲ་འབེབས་བྱེད་རྒྱུ།"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+#, fuzzy
 msgid  "Properties: "
 msgstr "གཏོགས་གཤིས།:"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+#, fuzzy
 msgid  "No Control marked"
 msgstr "ཚོད་འཛིན་གྱི་སྡེ་ཚན་བདམས་མེད་པ།"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+#, fuzzy
 msgid  "Multiselection"
 msgstr "གདམ་ག་མང་ལྡན།"

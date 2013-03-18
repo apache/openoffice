@@ -204,8 +204,8 @@ msgid  "Controls"
 msgstr "វត្ថុ​​បញ្ជា​"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
-msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr "មិន​អាច​បញ្ចប់​ដំណើរការ​កម្មវិធី នៅ​ពេល​បច្ចុប្បន្ន ។​\nសូម​រង់ចាំ​រហូត​ដល់ ការងារ​បោះពុម្ព​ទាំងអស់ និង​/​ឬ​\nសកម្មភាព OLE ត្រូវ​បាន​បញ្ចប់ រួច បិទ​​ប្រអប់​ទាំងអស់ ។"
+msgid  "The application cannot be terminated at the moment.\\nPlease wait until all print jobs and/or\\nOLE actions have finished and close all dialogs."
+msgstr ""
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 msgid  "Do you want to save the changes to %1?"
@@ -236,8 +236,8 @@ msgid  "Function Bar"
 msgstr "របារ​អនុគមន៍"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
-msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr "កំហុស​មួយ​បាន​កើតឡើង​ក្នុង​ការ​​កំណត់​​រចនាសម្ព័ន្ធ​ពិសេស ។​\nសូម​ទាក់ទង​អ្នក​គ្រប់គ្រង​របស់​អ្នក ។"
+msgid  "An error has occurred in the special configuration.\\nPlease contact your administrator."
+msgstr ""
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -292,20 +292,20 @@ msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
 msgstr "តំណ​ខ្ពស់​នេះ​នឹង​បើក \"%s\" ។  តើ​អ្នក​ចង់​បន្ត​ឬ​ទេ ?"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
-msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr "ដោយ​សារ​ហេតុផល​សុវត្ថិភាព តំណខ្ពស់​មិន​អាច​ប្រតិបត្តិ​បាន​ឡើយ ។\nអាសយដ្ឋាន​ដែល​បាន​បញ្ជាក់ នឹង​មិន​បើក​ឡើយ ។"
+msgid  "For security reasons, the hyperlink cannot be executed.\\nThe stated address will not be opened."
+msgstr ""
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
 msgid  "Security Warning"
 msgstr "ការ​ព្រមាន​​​សុវត្ថិភាព"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
-msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr "ការ​រក្សទុក​នឹង​យក​ហត្ថលេខា​ដែល​មាន​ស្រាប់​ចេញ​ទាំង​អស់ ។\nតើ​អ្នក​ពិត​ជា​ចង់​បន្ត​រក្សាទុក​ឯកសារ​នេះ​មែនទេ ?"
+msgid  "Saving will remove all existing signatures.\\nDo you want to continue saving the document?"
+msgstr ""
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
-msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr "ឯកសារ​ត្រូវ​តែ​បាន​រក្សាទុក​មុន​ពេល​វា​ត្រូវ​បាន​ដាក់​សញ្ញា​ ។\nតើ​អ្នក​ចង់​រក្សាទុក​ឯកសារ​ដែរ​ឬទេ ?"
+msgid  "The document has to be saved before it can be signed.\\nDo you want to save the document?"
+msgstr ""
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
@@ -340,8 +340,8 @@ msgid  "Link graphics"
 msgstr "តំណ​ក្រាហ្វិក"
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
-msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr "វិធីសាស្ត្រ​សមាសធាតុ​សមស្រប​ %1\nរក​មិន​ឃើញ ។\n\nពិនិត្យ​មើល​អក្ខរាវិរុទ្ធ​​ឈ្មោះ​វិធីសាស្ត្រ ។"
+msgid  "An appropriate component method %1\\ncould not be found.\\n\\nCheck spelling of method name."
+msgstr ""
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -508,12 +508,12 @@ msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
 msgstr "បង្ហាញជំនួយ​ %PRODUCTNAME %MODULENAME នៅ​ពេល​ចាប់​ផ្តើម "
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
-msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr "តម្រង​ដែល​បាន​ជ្រើស $(FILTER) មិន​ត្រូវ​បាន​ដំឡើង ។\nតើ​អ្នក​ចង់​ធ្វើ​ដូច្នេះ​ឥឡូវ​នេះ​ឬ ?"
+msgid  "The selected filter $(FILTER) has not been installed.\\nWould you like to do this now?"
+msgstr ""
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
-msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr "តម្រង $(FILTER) ដែល​បាន​ជ្រើស មិន​ត្រូវ​បាន​រួមបញ្ចូល​ក្នុង​ស្នាដៃ​របស់​អ្នក ។​\nអ្នក​អាច​រក​ព័ត៌មាន​អំពី​​បញ្ជា ​លើ​គេហទំព័រ​របស់​ពួកយើង ។"
+msgid  "The selected filter $(FILTER) is not included in your edition.\\nYou can find information about orders on our homepage."
+msgstr ""
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -624,8 +624,8 @@ msgid  "Warning"
 msgstr "ការព្រមាន"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
-msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr "ឯកសារ​របស់​អ្នក​មាន​វត្ថុ​ថ្លា ។\nនេះ​អាច​បណ្តាល​ឲ្យ​មាន​ការ​បោះពុម្ព​យូរ​លើ​\\ម៉ាស៊ីន​បោះពុម្ព​ខ្លះ ។ តើ​ទិដ្ឋភាព​ថ្លា​គួរ​តែ\nត្រូវ​បាន​កាត់​បន្ថយ​ឬ​ទេ ?"
+msgid  "Your document contains transparent objects.\\nThis may lead to longer printing time on certain\\nprinters. Should the aspect of transparency\\nbe reduced?"
+msgstr ""
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -732,8 +732,8 @@ msgid  "~Unprotect..."
 msgstr "មិនការពារ... "
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
-msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
-msgstr "សកម្មភាព​នេះ​នឹង​ចេញ​ពី​ការ​ផ្លាស់ប្ដូរ​របៀប​ថត ។\nព័ត៌មាន​មួយ​ចំនួន​អំពី​ការ​ផ្លាស់ប្ដូរ​នឹង​ត្រូវបានបាត់បង់ ។\n\nចេញ​ពី​ការ​ផ្លាស់ប្ដូរ​របៀប​ថត ?\n\n"
+msgid  "This action will exit the change recording mode.\\nAny information about changes will be lost.\\n\\nExit change recording mode?\\n\\n"
+msgstr ""
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
 msgid  "Protect Records"
@@ -973,7 +973,7 @@ msgstr "អះអាង "
 
 #: source/dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FixedLine.Text
 msgid  "Password"
-msgstr "ពាក្យ​​សម្ងាត់"
+msgstr "ពាក្យ​សម្ងាត់"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FixedText.Text
 msgid  "P~assword"
@@ -1304,8 +1304,8 @@ msgid  "Remove Property"
 msgstr "យក​លក្ខណសម្បត្តិ​ចេញ"
 
 #: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
-msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
-msgstr "តម្លៃ​ដែល​បាន​បញ្ចូល មិន​ត្រូវ​គ្នា​នឹង​ប្រភេទ​ដែល​បាន​បញ្ជាក់​ទេ ។\nតម្លៃ​នឹង​ត្រូវបាន​រក្សាទុក​ជា​អត្ថបទ ។"
+msgid  "The value entered does not match the specified type.\\nThe value will be stored as text."
+msgstr ""
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
 msgid  "Properties of "
@@ -1428,20 +1428,20 @@ msgid  "This Style does not exist."
 msgstr "គ្មាន​​រចនាប័ទ្ម​នេះ ។"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
-msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr "រចនាប័ទ្ម​នេះ​មិន​អាច​ប្រើ​ជា​រចនាប័ទ្ម​គោល​​បាន​ទេ \nពីព្រោះ​វា​នឹង​ផ្តល់​លទ្ធផល​ជា​សេចក្តីយោង​ដដែលៗ ។"
+msgid  "This Style cannot be used as a base Style,\\nbecause it would result in a recursive reference."
+msgstr ""
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
-msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr "ឈ្មោះ​មាន​រួចហើយ ជា​រចនាប័ទ្ម​លំនាំដើម ។\nសូម​ជ្រើស​ឈ្មោះ​ផ្សេង​ ។"
+msgid  "Name already exists as a default Style.\\nPlease choose another name."
+msgstr ""
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
 msgid  "Do you really want to delete Style $1?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​រចនាប័ទ្ម $1 ឬ ?"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
-msgid  "You are deleting an applied Style!\n"
-msgstr "អ្នក​កំពុង​លុប​រចនាប័ទ្ម​ដែល​បាន​អនុវត្ត !​\n"
+msgid  "You are deleting an applied Style!\\n"
+msgstr ""
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
 msgid  "New..."
@@ -1488,8 +1488,8 @@ msgid  "Tasks"
 msgstr "ភារកិច្ច"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
-msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr "ឯកសារ​នេះ​អាចមាន​ទ្រង់ទ្រាយ ឬ​មាតិកា​ដែល​មិនអាច​រក្សាទុក​ជា​ទ្រង់ទ្រាយ​ឯកសារ %FORMATNAME បាន ។ តើ​អ្នក​ចង់​រក្សាទុក​ឯកសារ​ជា​ទ្រង់ទ្រាយ​នេះ​ទេ ?\n\nប្រើ​ទ្រង់ទ្រាយ​ឯកសារ ODF ចុងក្រោយ​គេ ហើយ​ត្រូវប្រាកដ​ថា​ទ្រង់ទ្រាយ​ទាំងអស់ និង​មាតិកា​គឺ​បាន​រក្សាទុក​យ៉ាងត្រឹមត្រូវ ។"
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\\n\\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1580,12 +1580,12 @@ msgid  "~Organizer..."
 msgstr "អ្នក​រៀប​ចំ ​... "
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
-msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr "រក្សាទុកជា​​ទ្រង់ទ្រាយ​ខាង​ក្រៅ អាច​បណ្តាល​ឲ្យ​\n បាត់បង់​ព័ត៌មាន ។ តើ​អ្នក​នៅ​តែ​ចង់​បិទ​ឬ ?"
+msgid  "Saving in external formats may have caused\\n information loss. Do you still want to close?"
+msgstr ""
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
-msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr "ឈ្មោះ​ត្រូវ​បាន​ប្រើ​រួច​ហើយ ។​\nតើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​ពុម្ព​ឯកសារ​ឬ​ទេ ?"
+msgid  "Name already in use.\\nDo you want to overwrite document template?"
+msgstr ""
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
 msgid  "Are you sure you want to delete the region \"$1\"?"
@@ -1596,12 +1596,12 @@ msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​ធាតុ \"$1\" ឬ​ទេ ?"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
-msgid  "The category is not empty.\nDelete anyway?"
-msgstr "ប្រភេទ​​មិន​មែ​ន​ទទេ ។​\nយ៉ាង​ណា​ក៏​ដោយ លុប​ឬ ?"
+msgid  "The category is not empty.\\nDelete anyway?"
+msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
-msgstr "ឯកសារ \"$(DOC)\" ត្រូវ​បាន​កែប្រែ ។​\nតើ​អ្នក​ចង់​រក្សាទុកការ​ផ្លាស់ប្តូរ​របស់​អ្នក​ឬ​ទេ ?"
+msgid  "The document \"$(DOC)\" has been modified.\\nDo you want to save your changes?"
+msgstr ""
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1648,8 +1648,8 @@ msgid  "Templates"
 msgstr "ពុម្ព"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template \"$1\". \nA template with this name may already exist."
-msgstr "កំហុស​​ក្នុងការ​ចម្លង​ពុម្ព \"$1\" ។ \nពុម្ព​​ដែល​មាន​ឈ្មោះ​នេះ អាច​មាន​រួច​ហើយ ។"
+msgid  "Error copying template \"$1\". \\nA template with this name may already exist."
+msgstr ""
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
 msgid  "The template \"$1\" can not be deleted."
@@ -1680,8 +1680,8 @@ msgid  "Please specify a name."
 msgstr "សូម​បញ្ជាក់​លម្អិត​ឈ្មោះ​មួយ ។"
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
-msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr "សូម​បញ្ជាក់​​ឈ្មោះ​​​ដែល​មាន​តែ​មួយ​គត់ ។\n ឈ្មោះ​អក្សរធំ និង​អក្សរតូច​​គឺ​ដូចគ្នា ។"
+msgid  "Please specify a unique name.\\nEntries must not be case specific."
+msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
 msgid  "Should the template \"$(TEXT)\" become the default template?"
@@ -1692,8 +1692,8 @@ msgid  "Do you want to reset the default template?"
 msgstr "តើ​អ្នក​ចង់​កំណត់​ពុម្ព​លំនាំដើម​ឡើង​វិញ​ឬ​ទេ ?"
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
-msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr "ថត​ពុម្ព\n$(DIR)\nមិនមាន​ឡើយ ។"
+msgid  "Template directory\\n$(DIR)\\ndoes not exist."
+msgstr ""
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
 msgid  "Document info cannot be read."
@@ -1704,8 +1704,8 @@ msgid  "The selected file has an incorrect format."
 msgstr "ឯកសារ​ដែល​បាន​ជ្រើស​មាន​ទ្រង់ទ្រាយ​មិន​ត្រឹមត្រូវ ។"
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
-msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr "មិន​អាច​រក្សាទុក​ឯកសារជា​ទ្រង់ទ្រាយ $(FORMAT) ។ តើ​អ្នក​\nចង់​រក្សាទុក​ការ​ផ្លាស់ប្តូរ​របស់​អ្នក ដោយ​ប្រើ​ទ្រង់ទ្រាយ $(OWNFORMAT) ឬ​ទេ ?"
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1768,8 +1768,8 @@ msgid  "Disconnected"
 msgstr "មិន​បាន​តភ្ជាប់"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
-msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr "មិន​អាច​បើក​ឯកសារ សម្រាប់​កែសម្រួល ។​\nតើ​អ្នក​ចង់​បើក​វាជា​របៀប​បាន​តែ​អាន​ឬ​ទេ ?"
+msgid  "Document cannot be opened for editing.\\nDo you want to open it as read-only?"
+msgstr ""
 
 #: source/doc/doc.src#STR_EDIT.String.Text
 msgid  "Edit"
@@ -1892,8 +1892,8 @@ msgid  "File format:"
 msgstr "ទ្រង់ទ្រាយ​ឯកសារ ៖"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
-msgid  "This document contains:\n\n"
-msgstr "ឯកសារ​នេះ​មាន ៖​\n\n"
+msgid  "This document contains:\\n\\n"
+msgstr ""
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -1952,8 +1952,8 @@ msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in To
 msgstr "កំណែ​ទ្រង់ទ្រាយ​ឯកសារ​ត្រូវ​កំណត់​ទៅ ODF 1.1 (OpenOffice.org 2.x) នៅ​ក្នុង​ ឧបករណ៍-ជម្រើស-ផ្ទុក/រក្សាទុក-ទូទៅ ។ ចុះហត្ថលេខា​ត្រូវការ ODF 1.2 (OpenOffice.org 3.x) ។"
 
 #: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
-msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
-msgstr "ឯកសារ​ត្រូវ​បាន​រក្សាទុកវា​អាច​ត្រូវ​បានចុះហត្ថលេខា ។ រក្សាទុក​ឯកសារ​យកហត្ថលេខា​បច្ចុប្បន្ន​ចេញ​ទាំងអស់ ។\nតើអ្នក​ចង់​រក្សាទុក​ឯកសារ​ឬ ?"
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\\nDo you want to save the document?"
+msgstr ""
 
 #: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
@@ -2152,16 +2152,16 @@ msgid  "~Thesaurus..."
 msgstr "កម្រង​វេវចនសព្ទ​​..."
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
-msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr "រក​មិន​ឃើញ​ម៉ាស៊ីន​បោះពុម្ព​លំនាំដើម ។​\nសូម​ជ្រើស​ម៉ាស៊ីន​បោះពុម្ព​មួយ រួចព្យាយាម​ម្តង​ទៀត ។"
+msgid  "No default printer found.\\nPlease choose a printer and try again."
+msgstr ""
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
-msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr "មិន​អាច​ចាប់ផ្តើម​ម៉ាស៊ីន​បោះពុម្ព ។\nសូម​ពិនិត្យ​មើល​ការ​កំណត់​រចនា​សម្ព័ន្ធ​ម៉ាស៊ីន​បោះពុម្ព​របស់​អ្នក ។"
+msgid  "Could not start printer.\\nPlease check your printer configuration."
+msgstr ""
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
-msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr "ឯកសារ​នេះ​ត្រូវ​បាន​ធ្វើ​ទ្រង់ទ្រាយ សម្រាប់​ម៉ាស៊ីន​បោះពុម្ព $1 ។ មិន​អាច​រក​បាន​​ម៉ាស៊ីន​បោះពុម្ព​ដែល​បាន​បញ្ជាក់ ។ \nតើ​អ្នក​ចង់​ប្រើ​ម៉ាស៊ីន​បោះពុម្ព​ស្តងដារ $2 ឬ​ទេ ?"
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \\nDo you want to use the standard printer $2 ?"
+msgstr ""
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2196,16 +2196,16 @@ msgid  " (read-only)"
 msgstr " (​បាន​​តែ​​អាន​)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr "ទំហំ និង​ទិស​ទំព័រ​​ត្រូវបានកែប្រែ ។\nតើ​អ្នក​ចង់​រក្សាទុក​ការ​កំណត់​ថ្មី​នៅ​ក្នុង\nឯកសារ​សកម្ម​ដែរឬទេ ?"
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgstr ""
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
-msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr "ទំហំ​ទំព័រ​ត្រូវ​បាន​កែប្រែ ។​\nតើ​គួរ​រក្សាទុក​ការ​កំណត់​ថ្មី​\nក្នុង​ឯកសារ​សកម្ម​ឬ​ទេ ?"
+msgid  "The page size has been modified.\\nShould the new settings be saved\\nin the active document?"
+msgstr ""
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
-msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr "ទំហំ និង​ទិស​ទំព័រ​ត្រូវ​បាន​កែ​ប្រែ ។\nតើ​អ្នក​ចង់​រក្សា​ទុក​ការ​កំណត់​ថ្មី​ក្នុង​\nឯកសារ​សកម្ម​ឬ​ទេ ?"
+msgid  "The page size and orientation have been modified.\\nWould you like to save the new settings in the\\nactive document?"
+msgstr ""
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
 msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
@@ -2216,8 +2216,8 @@ msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No do
 msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Khmer OS System\"><B>​រក​មិន​ឃើញ​លក្ខណសម្បត្តិ​ឯកសារ ។​</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
-msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr "មិន​អាច​បិទ​ឯកសារ ពីព្រោះ​\nការងារ​បោះពុម្ព​មួយ​កំពុង​ត្រូវ​បាន​អនុវត្ត ។"
+msgid  "The document cannot be closed because a\\n print job is being carried out."
+msgstr ""
 
 #: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
 msgid  "Print Monitor"
@@ -2232,8 +2232,8 @@ msgid  "is being prepared for printing"
 msgstr "កំពុង​ត្រូវ​បាន​រៀបចំ​ដើម្បីបោះពុម្ព"
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
-msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr "កំហុស​​​ផ្ញើ​សារ​មួយ​​បាន​កើតឡើង ។ កំហុស​អាច​ជា​ការ​បាត់​គណនី​អ្នក​ប្រើ ឬ​​ការ​ដំឡើង​មិន​ដំឡើង ។​\nសូម​ពិនិត្យមើល​ការ​កំណត់ %PRODUCTNAME ឬ​ការ​កំណត់​កម្មវិធី​អ៊ីមែល​របស់​អ្នក ។"
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"

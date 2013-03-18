@@ -136,8 +136,8 @@ msgid  "Save"
 msgstr "រក្សា​​ទុក​​"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
-msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr "អត្ថបទ​កូដ​ធំ​ពេក និង​មិន​អាច​ត្រូវ​បាន​ចងក្រង ឬ​រក្សា​ទុក ។\nលុបមតិយោបល់​​ខ្លះ ឬ​ផ្ទេរ​វិធីសាស្ត្រ​ខ្លះ​ទៅ​ក្នុង​ម៉ូឌុល​មួយ​ផ្សេង ។"
+msgid  "The source text is too large and can be neither compiled nor saved.\\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -200,8 +200,8 @@ msgid  "The 'XX' file already exists"
 msgstr "ឯកសារ​​ 'XX' ​មាន​​​រួច​​​ហើយ​​"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
-msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr "ដោយ​សារ​ហេតុ​ផល​សុវត្ថិភាព អ្នក​មិន​អាច​រត់​ម៉ាក្រូ​នេះទេ ។\n\nចំពោះ​ព័ត៌មាន​បន្ថែម សូម​ពិនិត្យ​មើល​ការ​កំណត់​សុវត្ថិភាព ។"
+msgid  "For security reasons, you cannot run this macro.\\n\\nFor more information, check the security settings."
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -372,8 +372,8 @@ msgid  "A name must be entered."
 msgstr "ត្រូវ​តែ​បញ្ចូល​ឈ្មោះ​មួយ ។​"
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
-msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr "អ្នក​ត្រូវ​តែ​ចាប់​ផ្តើម​កម្មវិធី​ឡើង​វិញ បន្ទាប់​ពី​កែ​សម្រួល​វា ។\n\nបន្ត ?"
+msgid  "You will have to restart the program after this edit.\\nContinue?"
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -508,8 +508,8 @@ msgid  "Dialog Import - Name already used"
 msgstr "ប្រអប់​នាំចូល - ឈ្មោះបានប្រើ​រួច​ហើយ"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
-msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr "បណ្ណាល័យ​មាន​ប្រអប់​ដែលមាន​ឈ្មោះ ៖\n\n$(ARG1) រួច​ហើយ​\n\nប្ដូរ​ឈ្មោះ​ប្រអប់ ដើម្បី​ទុក​ប្រអប់​បច្ចុប្បន្ន​ ឬ​ជំនួស​ប្រអប់ដែល​មាន​ស្រាប់ ។\n "
+msgid  "The library already contains a dialog with the name:\\n\\n$(ARG1)\\n\\nRename dialog to keep current dialog or replace existing dialog.\\n "
+msgstr ""
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -524,8 +524,8 @@ msgid  "Dialog Import - Language Mismatch"
 msgstr "ប្រអប់​នាំចូល - ភាសា​មិន​ត្រូវ​គ្នា"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
-msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr "ប្រអប់​ត្រូវ​នាំចូល​គាំទ្រ​ភាសា​ផ្សេងៗ​ពី​បណ្ណាល័យ​គោលដៅ ។\n\nបន្ថែម​ភាសា​ទាំង​នេះ​ទៅ​បណ្ណាល័យ​ដើម្បី​ទុក​ធនធាន​ភាសា​បន្ថែម ដែល​បាន​ផ្ដល់​ដោយ​ប្រអប់ ឬ​លុប​ពួកវា​ ដើម្បី​ទុក​ភាសា​​បណ្ណាល័យ​បច្ចុប្បន្ន ។\n\nចំណាំ ៖ ចំពោះ​ភាសា​ដែល​មិនបានគាំទ្រ​ដោយ​​ធនធាន​ប្រអប់​​នៃ​ភាសា​លំនាំដើម​របស់​ប្រអប់​នឹង​ត្រូវ​បានប្រើ ។\n "
+msgid  "The dialog to be imported supports other languages than the target library.\\n\\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\\n\\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\\n "
+msgstr ""
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -780,8 +780,8 @@ msgid  "Delete Language Resources"
 msgstr "លុប​ធនធាន​ភាសា"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
-msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr "អ្នក​រៀប​នឹង​លុប​ធនធាន​សម្រាប់​ភាសា​ដែល​បាន​ជ្រើស ។ ខ្សែ​អក្សរ​ចំណុច​ប្រទាក់​អ្នក​ប្រើ​ទាំងអស់​សម្រាប់​ភាសា​នេះ​នឹង​ត្រូវ​បាន​លុប ។\n\nតើ​អ្នក​ចង់​លុប​ធនធាន​របស់​ភាសា​ដែល​បាន​ជ្រើស​ឬ ?"
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\\n\\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"

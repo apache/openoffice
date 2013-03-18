@@ -351,12 +351,12 @@ msgstr "Äärised"
 #: source/smres.src#RID_DISTANCEDIALOG.10.2.String.Text
 #, fuzzy
 msgid  "~Left"
-msgstr "Vasakul"
+msgstr "Vasakule"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.3.String.Text
 #, fuzzy
 msgid  "~Right"
-msgstr "Paremal"
+msgstr "Paremale"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.4.String.Text
 #, fuzzy
@@ -543,14 +543,12 @@ msgid  "~Delete"
 msgstr "~Kustuta"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-#, fuzzy
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr "Font \"StarMath\" on paigaldamata.\nIlma selle fondita ei saa %PRODUCTNAME Math korrektselt töötada.\nPalun paigalda see font ja käivita %PRODUCTNAME Math uuesti."
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-#, fuzzy
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "Kas salvestada need muudatused vaikeväärtusteks?\n\nNeed muudatused kajastuvad kõigis uutes valemites."
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -859,14 +857,17 @@ msgid  "~Scaling"
 msgstr "~Skaleeritud"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "Unaarsed/binaarsed tehted"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Relations"
 msgstr "Seosed"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
 msgid  "~Set Operations"
 msgstr "Tehted hulkadega"
 
@@ -876,6 +877,7 @@ msgid  "~Functions"
 msgstr "Funktsioonid"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
 msgid  "More"
 msgstr "Veel"
 

@@ -52,27 +52,27 @@ msgid  "Reset"
 msgstr "फिनु सेट करू"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
-msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr "बड़ उँच्च (~V).\nविश्वस्त फाइल अवस्थितिसँ सिर्फ मैक्रोसभकेँ चलाएबाक लेल अनुमति प्राप्त अछि. आनसभ मैक्रो, हस्ताक्षरित भेल अथवा नहि, केँ निष्क्रिय कएल अछि."
+msgid  "~Very high.\\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
-msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr "उँच्च (~i).\nगैर विश्वस्त श्रोतसँ सिर्फ हस्ताक्षरित मैक्रो चलाबए लेल अनुमति प्राप्त अछि. गैर हस्ताक्षरित मैक्रोकेँ निष्क्रिय कएल जाइछ."
+msgid  "H~igh.\\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
-msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr "मध्यम (~M).\nमैनुअल संपुष्टि मैक्रो निषापदनकेँ पहिले गैर विश्वस्त श्रोतसँ."
+msgid  "~Medium.\\nConfirmation required before executing macros from untrusted sources."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
-msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr "कम (अनुशंसित नहि) (~L).\nमैक्रोकेँ बिनु संपुष्टिक निष्पादन कएल जाएत अछि. एहि जमावटकेँ सिर्फ तखन प्रयोग करू जँ ई गारंटी देल जाएत अछि जे सभ खोलल गेल दस्तावेज सुरक्षित अछि."
+msgid  "~Low (not recommended).\\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
 msgstr "भरोसाक प्रमाणपत्र"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
-msgid  "Issued to\tIssued by\tExpiration date"
+msgid  "Issued to\\tIssued by\\tExpiration date"
 msgstr ""
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
@@ -156,7 +156,7 @@ msgid  "The following have signed this package:"
 msgstr "निम्नलिखित एहि संकुलकेँ हस्ताक्षरित कए देनए अछि:"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
-msgid  "\tSigned by\tDigital ID issued by\tDate"
+msgid  "\\tSigned by\\tDigital ID issued by\\tDate"
 msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
@@ -169,7 +169,7 @@ msgstr "प्रमाणपत्र वैध नहि कएल जाय �
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.String.Text
 msgid  "The signatures in this document are invalid"
-msgstr "एहि दस्तावेजमे हस्ताक्षर अमान्य अछि"
+msgstr "एहि दस्तावेजमे हस्ताक्षर अवैध अछि"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FixedText.Text
 msgid  "The signatures in this document are valid"
@@ -200,11 +200,11 @@ msgid  "Close"
 msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ErrorBox.Message
-msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\\n\\nSave document in ODF 1.2 format and add all desired signatures again."
 msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
-msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
+msgid  "Adding or removing a macro signature will remove all document signatures.\\nDo you really want to continue?"
 msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
@@ -249,10 +249,10 @@ msgstr "अहाँक पास एकटा निज कुंजी अछ�
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.String.Text
 msgid  "The certificate could not be validated."
-msgstr "प्रमाणपत्र वैध नहि कएल जाय सकत."
+msgstr "प्रमाणपत्र वैध नहि कएल जाय सकल."
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
-msgid  "Field\tValue"
+msgid  "Field\\tValue"
 msgstr ""
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
@@ -340,7 +340,7 @@ msgid  "Select the certificate you want to use for signing"
 msgstr "प्रमाणपत्र चुनू अहाँ जकरा हस्ताक्षर करबाक लेल प्रयोग करब चाहैत छी"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
-msgid  "Issued to\tIssued by\tExpiration date"
+msgid  "Issued to\\tIssued by\\tExpiration date"
 msgstr ""
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text

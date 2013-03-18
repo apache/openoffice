@@ -561,7 +561,7 @@ msgstr "Rename..."
 
 #: source/customize/cfg.src#TEXT_DELETE.#define.Text
 msgid  "Delete..."
-msgstr "Delete..."
+msgstr "মুছে ফেলুন..."
 
 #: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
 msgid  "Delete"
@@ -696,16 +696,16 @@ msgid  "Delete..."
 msgstr "মুছে ফেলুন..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
-msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr "নোট:\nসর্বোচ্চ গুণ পেতে হলে আইকনের আকার ১৬x১৬ পিক্সেল হতে হবে। ভিন্ন আকারের আইকনসমূহ স্বয়ংক্রিয়ভাবে পরিমাপ করা হবে।"
+msgid  "Note:\\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
+msgstr ""
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
-msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
-msgstr "নিম্নের তালিকাভুক্ত ফাইলসমূহ আমদানি করা যায়নি।\nফাইলটির বিন্যাস ব্যাখ্যা করা যায়নি।"
+msgid  "The files listed below could not be imported.\\nThe file format could not be interpreted."
+msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
@@ -716,8 +716,8 @@ msgid  "Are you sure to delete the image?"
 msgstr "Are you sure to delete the image?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
-msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
-msgstr "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
+msgid  "The icon %ICONNAME is already contained in the image list.\\nWould you like to replace the existing icon?"
+msgstr ""
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -1062,12 +1062,12 @@ msgstr ""
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.TabDialog.Text
 #, fuzzy
 msgid  "Properties of "
-msgstr " যার বৈশিষ্ট্যসমূহ"
+msgstr "যার বৈশিষ্ট্যসমূহ"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
 #, fuzzy
 msgid  "General"
-msgstr " সাধারণ"
+msgstr " সাধারণ "
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.TabDialog.Text
 #, fuzzy
@@ -1338,7 +1338,7 @@ msgstr "নথিতে লক্ষ্য"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.GRP_MORE.FixedLine.Text
 #, fuzzy
 msgid  "Further settings"
-msgstr "অতিরিক্ত বিন্যাসনসমূহ"
+msgstr "অতিরিক্ত বিন্যাসন"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_FRAME.FixedText.Text
 #, fuzzy
@@ -1808,7 +1808,7 @@ msgstr "মোজাইক"
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.FL_PARAMETER.FixedLine.Text
 #, fuzzy
 msgid  "Parameters"
-msgstr "প্যারামিটার"
+msgstr "প্যারামিটারসমূহ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.DLG_FILTERMOSAIC_FT_WIDTH.FixedText.Text
 #, fuzzy
@@ -1833,7 +1833,7 @@ msgstr "সৌরীয়করণ"
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.FL_PARAMETER.FixedLine.Text
 #, fuzzy
 msgid  "Parameters"
-msgstr "প্যারামিটার"
+msgstr "প্যারামিটারসমূহ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.DLG_FILTERSOLARIZE_FT_THRESHOLD.FixedText.Text
 #, fuzzy
@@ -2071,22 +2071,27 @@ msgid  "Close"
 msgstr "বন্ধ"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.ModalDialog.Text
+#, fuzzy
 msgid  "Special Characters"
 msgstr "Special Characters"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_FONT.FixedText.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "~Font"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SUBSET.FixedText.Text
+#, fuzzy
 msgid  "~Subset"
 msgstr "~Subset"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SYMBOLE.FixedText.Text
+#, fuzzy
 msgid  "Characters:"
 msgstr "Characters:"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Delete"
 
@@ -2099,7 +2104,7 @@ msgid  "License..."
 msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_STR_COPYRIGHT.String.Text
-msgid  "Copyright © 2012 Apache Software Foundation.\nAll rights reserved.\n\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\nApache OpenOffice acknowledges all community members, especially those mentioned at"
+msgid  "Copyright © 2012 Apache Software Foundation.\\nAll rights reserved.\\n\\nThis product was created by %OOOVENDOR, based on Apache OpenOffice.\\nApache OpenOffice acknowledges all community members, especially those mentioned at"
 msgstr ""
 
 #: source/dialogs/about.src#RID_CUI_README_DLG.ModalDialog.Text
@@ -2119,9 +2124,8 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
-#, fuzzy
-msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr "বানান-পরীক্ষণের জন্য সহজলভ্য নয়\nঅনুগ্রহ করে আপনার সংস্থাপন পরীক্ষা করুন ও উদ্দিষ্ট ভাষা সংস্থাপন করুন\n"
+msgid  "is not available for spellchecking\\nPlease check your installation and install the desired language\\n"
+msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 #, fuzzy
@@ -3564,19 +3568,16 @@ msgid  "Macro Security..."
 msgstr "ম্যাক্রো নিরাপত্তা..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
-#, fuzzy
-msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr "স্থায়ীভাবে পাসওয়ার্ড সংরক্ষণ করার ফাংশটি নিষ্ক্রিয় করা হলে সংরক্ষিত পাসওয়ার্ডের তালিকা মুছে যাবে এবং মাস্টার পাসওয়ার্ড রিসেট হবে।\n\nআপনি কি পাসওয়ার্ডের তালিকা মুছে ফেলতে চান এবং মাস্টার পাসওয়ার্ড রিসেট করতে চান?"
+msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\\n\\nDo you want to delete password list and reset master password?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
-#, fuzzy
-msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr "অকার্যকর মান!\n\nপোর্ট নম্বরের সর্বোচ্চ মান 65535"
+msgid  "Invalid value!\\n\\nThe maximum value for a port number is 65535."
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
-#, fuzzy
-msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr "মনে রাখবেন, জাভার সাথে\nআপনি জাভাস্ক্রিপ্টও নিষ্ক্রিয় করেছেন।\n\nআপনি কি তবুও Java নিষ্ক্রিয় করতে চান?"
+msgid  "Please note that with Java\\nyou disable Javascript as well.\\n\\nDo you still want to disable Java?"
+msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -3679,7 +3680,7 @@ msgid  "Note that street, Zip code and city are used to generate the registratio
 msgstr "মনে রাখবেন, নিবন্ধন কী তৈরি করতে রাস্তা, জিপ কোড এবং শহরের নাম ব্যবহৃত হয়। নিবন্ধন সম্পন্ন না হওয়া পর্যন্ত, আপনি ব্যহারকারী তথ্য পরিবর্তন করতে পারবেন না। আপনি কি এখন ব্যবহারকারী তথ্য পরিবর্তন করতে চান?"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
-msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
+msgid  "The User Data have been changed.\\nDo you really want to change your User Data?"
 msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
@@ -4258,19 +4259,16 @@ msgid  "Create Database Link"
 msgstr "Create Database Link"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
-#, fuzzy
-msgid  "The file\n$file$\ndoes not exist."
-msgstr "The file\n$file$\ndoes not exist."
+msgid  "The file\\n$file$\\ndoes not exist."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
-#, fuzzy
-msgid  "The file\n$file$\ndoes not exist in the local file system."
-msgstr "স্থানীয় ফাইল পদ্ধতিতে\n$file$\nফাইল বিদ্যমান নেই।"
+msgid  "The file\\n$file$\\ndoes not exist in the local file system."
+msgstr ""
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
-#, fuzzy
-msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
-msgstr "The name '$file$' is already used for another database.\nPlease choose a different name."
+msgid  "The name '$file$' is already used for another database.\\nPlease choose a different name."
+msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 #, fuzzy
@@ -4380,7 +4378,7 @@ msgstr "প্রদর্শন"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PRINTOPTIONS.ItemList.item
 #, fuzzy
 msgid  "Print"
-msgstr "মুদ্রণ"
+msgstr "প্রদর্শন"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PATH.ItemList.item
 #, fuzzy
@@ -4903,8 +4901,9 @@ msgid  "Assig~ned start parameters"
 msgstr "Assig~ned start parameters"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_EXAMPLE.FixedText.Text
-msgid  "For example: -Dmyprop=c:\program files\java"
-msgstr ""
+#, fuzzy
+msgid  "For example: -Dmyprop=c:\\program files\\java"
+msgstr "For example: -Dmyprop=c:\\program files\\java"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
 #, fuzzy
@@ -4937,66 +4936,73 @@ msgid  "~Remove"
 msgstr "~Remove"
 
 #: source/options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ErrorBox.Message
-#, fuzzy
-msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
+msgid  "The folder you selected does not contain a Java runtime environment.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ErrorBox.Message
-#, fuzzy
-msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
+msgid  "The Java runtime environment you selected is not the required version.\\nPlease select a different folder."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WarningBox.Message
-#, fuzzy
-msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WarningBox.Message
-#, fuzzy
-msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
-msgstr "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
+msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\\nPlease restart %PRODUCTNAME now."
+msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
+#, fuzzy
 msgid  "Connection pool"
 msgstr "সংযোজন পুল"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
+#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "সংযোজন পুলকরণ সক্রিয়"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
+#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "%PRODUCTNAME এ ড্রাইভারসমূহ পরিচিত"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
+#, fuzzy
 msgid  "Current driver:"
 msgstr "বর্তমান ড্রাইভার"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
+#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "এই ড্রাইভারের জন্য পুলকরণ সক্রিয় করুন"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
+#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "সময় উত্তীর্ণ (সেকেন্ড)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
+#, fuzzy
 msgid  "Driver name"
 msgstr "ড্রাইভারের নাম"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
+#, fuzzy
 msgid  "Pool"
 msgstr "পুল"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
+#, fuzzy
 msgid  "Timeout"
 msgstr "সময় উত্তীর্ণ"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "হ্যাঁ"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "না"
 
@@ -5141,9 +5147,8 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "ODF 1.2 Extended ব্যবহার না করলে তথ্য হারিয়ে যেতে পারে।"
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-#, fuzzy
-msgid  "Using \"%1\" as default file format may cause information loss.\n"
-msgstr "ডিফল্ট ফাইল বিন্যাস হিসেবে \"%1\" ব্যবহার করলে, তথ্য হারিয়ে যেতে পারে।\n"
+msgid  "Using \"%1\" as default file format may cause information loss.\\n"
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 #, fuzzy
@@ -5156,9 +5161,8 @@ msgid  "Improvement Program"
 msgstr "উন্নতিসাধন প্রোগ্রাম"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
-#, fuzzy
-msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr "%PRODUCTNAME এর গুনমান বৃদ্ধি করতে, আমরা আপনাকে %PRODUCTNAME উন্নতিসাধন প্রোগ্রামে অংশগ্রহন করার জন্য আহবান করছি।\n\nআপনি যদি অংশগ্রহন করতে চান, আপনি কিভাবে %PRODUCTNAME ব্যবহার করেন, আমরা সে সম্পর্কিত অজ্ঞাত কিছু পরিসংখ্যান সংগ্রহ করবো। এসব তথ্য ব্যবহারের প্যাটার্ন শনাক্ত করতে ব্যবহার করা হয়।\n\n%PRODUCTNAME উন্নতিসাধন প্রোগ্রাম কোনো ব্যক্তিগত তথ্য, বা নথির বিষয়বস্তু সংগ্রহ করবে না।"
+msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\\n\\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\\n\\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
+msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 #, fuzzy
@@ -5301,9 +5305,8 @@ msgid  "Edit Paths: %1"
 msgstr "পাথ সম্পাদনা: %1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
-#, fuzzy
-msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr "কনফিগারেশন এবং বার্তার ডিরেক্টরি অবশ্যই ভিন্ন ডিরেক্টরি হিসেবে উল্লেখ করতে হবে।\nঅনুগ্রহ করে একটি নতুন পাথ নির্বাচন করুন।"
+msgid  "The configuration and mail directories must be specified as separate directories.\\nPlease choose a new path."
+msgstr ""
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 #, fuzzy
@@ -5593,7 +5596,7 @@ msgstr "Icon size"
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item1.StringList.item
 #, fuzzy
 msgid  "Automatic"
-msgstr "Automatic"
+msgstr "স্বয়ংক্রিয়"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item2.StringList.item
 #, fuzzy
@@ -6015,9 +6018,8 @@ msgid  "~Close"
 msgstr "বন্ধ (~C)"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
-#, fuzzy
-msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr "উল্লেখিত নামটি ইতোমধ্যে বিদ্যমান।\nঅনুগ্রহ করে একটি নতুন নাম প্রবেশ করান।"
+msgid  "The specified name already exists.\\nPlease enter a new name."
+msgstr ""
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy
@@ -6239,14 +6241,17 @@ msgid  "Registered databases"
 msgstr "নিবন্ধনকৃত উপাত্তধার"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Registered name"
 msgstr "নিবন্ধনকৃত নাম"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "Database file"
 msgstr "উপাত্তধার ফাইল"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "নতুন... (~N)"
 
@@ -7515,9 +7520,8 @@ msgid  "O~uter"
 msgstr "বহিঃস্থ (~u)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
-#, fuzzy
-msgid  "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
-msgstr "মার্জিন বিন্যাসন পৃষ্ঠার সীমার বাইরে।\n\nআপনি কি তবুও এই বিন্যাসনসমূহ প্রয়োগ করতে চান?"
+msgid  "The margin settings are out of print range.\\n\\nDo you still want to apply these settings?"
+msgstr ""
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -8568,9 +8572,8 @@ msgid  "Assigned macro"
 msgstr "Assigned macro"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.FT_LABEL4LB_MACROS.FixedText.Text
-#, fuzzy
-msgid  "~Existing macros\n"
-msgstr "~Existing macros in:\n"
+msgid  "~Existing macros\\n"
+msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_ASSIGN.PushButton.Text
 #, fuzzy
@@ -8619,7 +8622,7 @@ msgstr ""
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PageItem.Text
 #, fuzzy
 msgid  "Word Completion"
-msgstr "শব্দ সম্পূর্ণকরণ"
+msgstr "শব্দ সম্পূর্ণতা"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PageItem.Text
 #, fuzzy
@@ -9034,9 +9037,8 @@ msgid  "Do you want to delete the gradient?"
 msgstr "আপনি কি ঢালের মাত্রা মুছে ফেলতে চান?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
-#, fuzzy
-msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr "ঢালের মাত্রা সংরক্ষণ ব্যতিত পরিবর্তন করা হয়েছে।\nনির্বাচিত ঢালের মাত্রা পরিবর্তন করুন বা নতুন ঢালের মাত্রা যুক্ত করুন।"
+msgid  "The gradient was modified without saving. \\nModify the selected gradient or add a new gradient."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 #, fuzzy
@@ -9054,9 +9056,8 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "আপনি কি নিশ্চিত আপনি বিটম্যাপ মুছে ফেলতে চান?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
-#, fuzzy
-msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr "বিটম্যাপ সংরক্ষণ ব্যতিত পরিবর্তন করা হয়েছে।\nনির্বাচিত বিটম্যাপ পরিবর্তন করুন বা নতুন বিটম্যাপ যুক্ত করুন।"
+msgid  "The bitmap was modified without saving. \\nModify the selected bitmap or add a new bitmap."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -9069,9 +9070,8 @@ msgid  "Do you want to delete the line style?"
 msgstr "আপনি কি রেখা শৈলী মুছে ফেলতে চান?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
-#, fuzzy
-msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr "রেখা শৈলী সংরক্ষণ ব্যতিত পরিবর্তন করা হয়েছে।\nনির্বাচিত রেখা শৈলী পরিবর্তন করুন বা নতুন রেখা শৈলী যুক্ত করুন।"
+msgid  "The line style was modified without saving. \\nModify the selected line style or add a new line style."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -9084,9 +9084,8 @@ msgid  "Do you want to delete the hatching?"
 msgstr "আপনি কি হ্যাচিং মুছে ফেলতে চান?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
-#, fuzzy
-msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr "হ্যাচিং এর ধরন পরিবর্তন করা হয়েছে কিন্তু সংরক্ষণ কর হয়নি।\nনির্বাচিত হ্যাচিং এর ধরন পরিবর্তন করুন বা নতুন হ্যাচিং এর ধরন যুক্ত করুন।"
+msgid  "The hatching type was modified but not saved. \\nModify the selected hatching type or add a new hatching type."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 #, fuzzy
@@ -9109,9 +9108,8 @@ msgid  "Do you want to delete the color?"
 msgstr "আপনি কি রং মুছে ফেলতে চান?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
-#, fuzzy
-msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr "রং সংরক্ষণ ব্যতিত পরিবর্তন করা হয়েছে।\nনির্বাচিত রং পরিবর্তন করুন বা নতুন রং যুক্ত করুন।"
+msgid  "The color was modified without saving.\\nModify the selected color or add a new color."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 #, fuzzy
@@ -9134,9 +9132,8 @@ msgid  "The list was modified without saving. Would you like to save the list no
 msgstr "তালিকাটি সংরক্ষণ ব্যতিত পরিবর্তন করা হয়েছে।\nআপনি কি এখন তালিকাটি সংরক্ষণ করতে চান?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
-#, fuzzy
-msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr "আপনার প্রবেশকৃত নামটি ইতোমধ্যে বিদ্যমান।\nঅনুগ্রহ করে অন্য নাম পছন্দ করুন।"
+msgid  "The name you have entered already exists. \\nPlease choose another name."
+msgstr ""
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -9149,9 +9146,8 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "আপনি কি তীরের-অগ্রভাগ মুছে ফেলতে চান?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
-#, fuzzy
-msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr "তীরের-অগ্রভাগ সংরক্ষণ ব্যতিত পরিবর্তন করা হয়েছে।\nআপনি কি এখন তীরের-অগ্রভাগ সংরক্ষণ করতে চান?"
+msgid  "The arrowhead was modified without saving.\\nWould you like to save the arrowhead now?"
+msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 #, fuzzy
@@ -9790,7 +9786,7 @@ msgstr "Preview"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TabPage.Text
 #, fuzzy
 msgid  "Position and Size"
-msgstr "Position and Size"
+msgstr "অবস্থান ও আকার"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FixedLine.Text
 #, fuzzy
@@ -9800,12 +9796,12 @@ msgstr "Position"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FixedText.Text
 #, fuzzy
 msgid  "Position ~X"
-msgstr "Position ~X"
+msgstr "অবস্থান X (~X)"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_Y.FixedText.Text
 #, fuzzy
 msgid  "Position ~Y"
-msgstr "Position ~Y"
+msgstr "অবস্থান Y (~Y)"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FixedText.Text
 #, fuzzy
@@ -10218,14 +10214,17 @@ msgid  "Alignment"
 msgstr "প্রান্তিককরণ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FixedLine.Text
+#, fuzzy
 msgid  "Text alignment"
 msgstr "পাঠ প্রান্তিককরণ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FixedText.Text
+#, fuzzy
 msgid  "Hori~zontal"
 msgstr "অনুভূমিক (~z)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
+#, fuzzy
 msgid  "Default"
 msgstr "পূর্বনির্ধারিত"
 
@@ -10502,7 +10501,7 @@ msgstr "Italic"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item3.StringList.item
 #, fuzzy
 msgid  "Bold"
-msgstr "Bold"
+msgstr "মোটা"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item4.StringList.item
 #, fuzzy
@@ -10652,7 +10651,7 @@ msgstr "Color"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FixedText.Text
 #, fuzzy
 msgid  "Font ~color"
-msgstr "Font ~color"
+msgstr "ফন্ট রং (~c)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_NOSTYLE.String.Text
 #, fuzzy
@@ -10677,7 +10676,7 @@ msgstr "প্রভাবসমূহ (~E)"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
 #, fuzzy
 msgid  "(Without)"
-msgstr "(Without)"
+msgstr "(ব্যতীত)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
 #, fuzzy
@@ -10752,12 +10751,12 @@ msgstr "(ব্যতীত)"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_SINGLE.StringList.item
 #, fuzzy
 msgid  "Single"
-msgstr "একক"
+msgstr "Single"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLE.StringList.item
 #, fuzzy
 msgid  "Double"
-msgstr "দ্বিগুন"
+msgstr "Double"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLD.StringList.item
 #, fuzzy
@@ -10767,67 +10766,67 @@ msgstr "মোটা"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOTTED.StringList.item
 #, fuzzy
 msgid  "Dotted"
-msgstr "বিন্দু দিয়ে আবৃত"
+msgstr "Dotted"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
 #, fuzzy
 msgid  "Dotted (Bold)"
-msgstr "বিন্দু দিয়ে আবৃত (মোটা)"
+msgstr "Dotted (Bold)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
 #, fuzzy
 msgid  "Dash"
-msgstr "ড্যাশ"
+msgstr "Dash"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
 #, fuzzy
 msgid  "Dash (Bold)"
-msgstr "ড্যাশ (মোটা)"
+msgstr "Dash (Bold)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_LONGDASH.StringList.item
 #, fuzzy
 msgid  "Long Dash"
-msgstr "লম্বা ড্যাশ"
+msgstr "Long Dash"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
 #, fuzzy
 msgid  "Long Dash (Bold)"
-msgstr "লম্বা ড্যাশ (মোটা)"
+msgstr "Long Dash (Bold)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dash"
-msgstr "বিন্দু ড্যাশ"
+msgstr "Dot Dash"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dash (Bold)"
-msgstr "বিন্দু ড্যাশ (মোটা)"
+msgstr "Dot Dash (Bold)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dot Dash"
-msgstr "বিন্দু বিন্দু ড্যাশ"
+msgstr "Dot Dot Dash"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dot Dash (Bold)"
-msgstr "বিন্দু বিন্দু ড্যাশ (মোটা)"
+msgstr "Dot Dot Dash (Bold)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_WAVE.StringList.item
 #, fuzzy
 msgid  "Wave"
-msgstr "তরঙ্গ"
+msgstr "Wave"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDWAVE.StringList.item
 #, fuzzy
 msgid  "Wave (Bold)"
-msgstr "তরঙ্গ (মোটা)"
+msgstr "Wave (Bold)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.StringList.item
 #, fuzzy
 msgid  "Double Wave"
-msgstr "দ্বিগুন (তরঙ্গ)"
+msgstr "Double Wave"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_OVERLINE_COLOR.FixedText.Text
 #, fuzzy

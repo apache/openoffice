@@ -137,7 +137,7 @@ msgstr "标准(~D)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.ModalDialog.Text
 msgid  "Spacing"
-msgstr "间距"
+msgstr "间隔"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.MetricField.CustomUnitText
 msgid  "%"
@@ -185,7 +185,7 @@ msgstr "根式间隔(~R)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.2.1.String.Text
 msgid  "Indexes"
-msgstr "指数"
+msgstr "标志"
 
 #: source/smres.src#RID_DISTANCEDIALOG.2.2.String.Text
 msgid  "~Superscript"
@@ -221,7 +221,7 @@ msgstr "划线粗(~W)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.5.1.String.Text
 msgid  "Limits"
-msgstr "极限"
+msgstr "限度"
 
 #: source/smres.src#RID_DISTANCEDIALOG.5.2.String.Text
 msgid  "~Upper limit"
@@ -261,7 +261,7 @@ msgstr "列间隔(~C)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.8.1.String.Text
 msgid  "Symbols"
-msgstr "符号"
+msgstr "图标"
 
 #: source/smres.src#RID_DISTANCEDIALOG.8.2.String.Text
 msgid  "~Primary height"
@@ -289,11 +289,11 @@ msgstr "边距"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.2.String.Text
 msgid  "~Left"
-msgstr "向左(~L)"
+msgstr "左(~L)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.3.String.Text
 msgid  "~Right"
-msgstr "向右(~R)"
+msgstr "右(~R)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.4.String.Text
 msgid  "~Top"
@@ -341,7 +341,7 @@ msgstr "标题行(~T)"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
 msgid  "~Formula text"
-msgstr "公式文字(~F)"
+msgstr "指定是否打印文档名称"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
 msgid  "B~order"
@@ -353,15 +353,15 @@ msgstr "打印的格式"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
 msgid  "O~riginal size"
-msgstr "边框(~O)"
+msgstr "原件大小(~R)"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 msgid  "Fit to ~page"
-msgstr "在打印输出中公式区域使用细边框线。"
+msgstr "适应页面大小(~P)"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 msgid  "~Scaling"
-msgstr "大小"
+msgstr "显示比例(~S)"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
 msgid  "Miscellaneous options"
@@ -377,7 +377,7 @@ msgstr "只嵌入所使用的符号（较小的文件大小）"
 
 #: source/smres.src#RID_SYMBOLDIALOG.ModalDialog.Text
 msgid  "Symbols"
-msgstr "图标"
+msgstr "装饰部分"
 
 #: source/smres.src#RID_SYMBOLDIALOG.1.FixedText.Text
 msgid  "~Symbol set"
@@ -444,12 +444,12 @@ msgid  "~Delete"
 msgstr "删除(~D)"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
-msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr "没有安装 StarMath 字体！\n没有这个字体，%PRODUCTNAME Math 会无法正常运行。\n请在安装这个字体后重新启动 %PRODUCTNAME Math。"
+msgid  "The 'StarMath' font has not been installed.\\nWithout this font %PRODUCTNAME Math cannot function correctly.\\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
-msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr "要将更改内容作为标准格式保存？\n\n这个更改会影响所有新公式。"
+msgid  "Should the changes be saved as defaults?\\n\\nThese changes will apply for all new formulas."
+msgstr ""
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"

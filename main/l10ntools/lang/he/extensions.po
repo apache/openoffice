@@ -56,8 +56,8 @@ msgid  "Data Source Title"
 msgstr "כותרת מקור הנתונים"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
-msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr "ב‪ %PRODUCTNAME-‬יש אפשרות להשתמש בסיפריות הכתובות הקיימות כבר במערכת.כדי ש-%PRODUCTNAME ישתמש בספרית כתובות קיימת, צריך ליצור 'מקור נתונים'‏ שמציג את נתוני הכתובות בצורה טבלאית.‏\n\nאשף זה עוזר ליצור את מקור הנתונים.‏"
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\\n\\nThis wizard helps you create the data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -108,32 +108,32 @@ msgid  "Other external data source"
 msgstr "סוגים אחרים של מקורות נתונים חיצוניים"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
-msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr "כדי להגדיר את מקור הנתונים החדש, יש צורך במידע נוסף.‏\n\nיש ללחוץ על הכפתור הבא כדי לפתוח את תיבת הדו־שיח המאפשרת הכנסת המידע.‏"
+msgid  "To set up the new data source, additional information is required.\\n\\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
 msgstr "הגדרות"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
-msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr "אין אפשרות להתחבר למקור הנתונים.‏\nלפני שממשיכים, נא לבדוק שוב את ההגדרות עד כה, או לבחור טיפוס אחר של מקור בדף הקודם.‏"
+msgid  "The connection to the data source could not be established.\\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
-msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr "מקור הנתונים החיצוני שבחרת מכיל יותר מספר כתובות אחד.‏‪\nנא לבחור בספר שאיתו תרצה בעיקר לעבוד:‏"
+msgid  "The external data source you have chosen contains more than one address book.\\nPlease select the one you mainly want to work with:"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr "כדי לכלול נתוני כתובות בתבניות, יש לציין עבור %PRODUCTNAME את השדות המכילים נתונים.‏\n\nלדוגמה, יכול להיות שכתובות דוא\"ל נשמרות בשדה בשם‪ \"email\" ‬‏, או בשדה בשם ‏‪‪\"E-mail\"‬‏ או בשדה בשם אחר לחלוטין.‏\n\nיש ללחוץ על הכפתור למטה כדי לפתוח עוד תיבת דו־שיח שבה ניתן לציין את הגדרות השדות של מקור הנתונים.‏"
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\\n\\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\\n\\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
 msgstr "השמת שדות"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
-msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr "כל המידע הנדרש לשלב נתוני כתובתך ב- %PRODUCTNAME ‬סופק. יש לציין שם עבור מקור הנתונים ב-%PRODUCTNAME."
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\\n\\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -160,8 +160,8 @@ msgid  "Please select a type of address book."
 msgstr "יש לבחור סוג של פנקס כתובות"
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
-msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr "מקור הנתונים אינו כולל טבלאות.\nהאם בכל זאת להגדיר אותו כמקור לכתובות?‏"
+msgid  "The data source does not contain any tables.\\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "נתוני כתובות - הקצאת שדה"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
-msgstr "כעת אין השמה של שדות.‏\nניתן לבצע השמה של שדות עכשיו. ניתן גם מאוחר יותר על ידי בחירה ב:'קובץ'->'תבנית'->'מקור לספר כתובות'...‏"
+msgid  "There are no fields assigned at this time.\\nYou can either assign fields now or do so later by first choosing:\\n\"File - Template - Address Book Source...\""
+msgstr ""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -216,8 +216,8 @@ msgid  "Data Source"
 msgstr "מקור הנתונים"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
-msgid  "The following column names could not be assigned:\n"
-msgstr "לא היתה אפשרות להגדיר את שמות העמודות הבאים:‏\n"
+msgid  "The following column names could not be assigned:\\n"
+msgstr ""
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
 msgid  "Article"
@@ -492,8 +492,8 @@ msgid  "Control"
 msgstr "פקד"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
-msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr "בצד ימין אפשר לראות את כל הטבלאות של מקור הנתונים של הטופס.\n\nיש לציין איזו טבלה תשמש כמקור לתוכן הרשימה.‏"
+msgid  "On the right side, you see all the tables from the data source of the form.\\n\\n\\nChoose the table from which the data should be used as basis for the list content:"
+msgstr ""
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -588,8 +588,8 @@ msgid  "Data"
 msgstr "נתונים"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
-msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr "הטופס שאליו הפקד שייך אינו מקושר (או אינו מקושר לגמרי) למקור נתונים.\n\nנא לבחור מקור נתונים וטבלה.\n\nההגדרות בדו-שיח זה יחולו מיד לאחר יציאה מהדו-שיח.‏"
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\\n\\nPlease choose a data source and a table.\\n\\n\\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -736,8 +736,8 @@ msgid  "Welcome"
 msgstr "ברוכים הבאים"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
-msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr "ברוכים הבאים ל-‪%PRODUCTNAME %PRODUCTVERSION‏ OEM\n\nכדי להפעיל את %PRODUCTNAME %PRODUCTVERSION OEM, יש להקליד את הפרטים האישיים בתיבת הדו-שיח המופיעה אחרי טקסט הרישיון. יש מידע חשוב בקבצי ה'קרא אותי' ‏‪(README)‬‏ הנמצאים בתיקיית המוצר של ‏‪%PRODUCTNAME‬‏. נא לקרוא את הקבצים האלו בעיון. עשוי להיות מידע נוסף באתר של אורקל בכתובת\n\nhttp://www.oracle.com/us/products/applications/open-office."
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\\n\\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \\n\\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr ""
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -825,9 +825,8 @@ msgid  "Forms"
 msgstr "טפסים"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
-#, fuzzy
-msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr "האם למחוק את טיפוס הנתונים ‏‪'#type#'‬‏ מהדגם?‏\nמחיקת הטיפוס תשפיעה על כל הפקדים הקשורים לטיפוס זה.‏"
+msgid  "Do you want to delete the data type '#type#' from the model?\\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 #, fuzzy
@@ -930,26 +929,32 @@ msgid  "Table Control "
 msgstr "פקד טבלאות"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
+#, fuzzy
 msgid  "Link fields"
 msgstr "לקשר בין שדות"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
 msgstr "ניתן להשתמש בטפסי בן (תת טפסים) כדי להציג נתונים מפורטים אודות הרשומה הנוכחית של טופס האב. לעשות זאת, יש לציין אילו עמודות בטופס הבן מתאימות לאילו עמודות בטופס האב.‏"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
+#, fuzzy
 msgid  "Suggest"
 msgstr "להציע"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
+#, fuzzy
 msgid  "Sub Form"
 msgstr "טופס בן"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
+#, fuzzy
 msgid  "Master Form"
 msgstr "טופס אב"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
+#, fuzzy
 msgid  "The columns of '#' could not be retrieved."
 msgstr "לא ניתן לאחזר את עמודותיו של '#'."
 
@@ -992,18 +997,22 @@ msgid  "Text"
 msgstr "טקסט"
 
 #: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
+#, fuzzy
 msgid  "Edit mask"
 msgstr "תבנית עריכה"
 
 #: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
+#, fuzzy
 msgid  "Literal mask"
 msgstr "תבנית מפורשת"
 
 #: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
+#, fuzzy
 msgid  "Read-only"
 msgstr "לקריאה בלבד"
 
 #: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
+#, fuzzy
 msgid  "Enabled"
 msgstr "מופעלת"
 
@@ -1012,178 +1021,222 @@ msgid  "Visible"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
+#, fuzzy
 msgid  "AutoFill"
 msgstr "מילוי אוטומטי"
 
 #: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
+#, fuzzy
 msgid  "Line count"
 msgstr "מספר שורות"
 
 #: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
+#, fuzzy
 msgid  "Max. text length"
 msgstr "אורך מירבי לכיתוב"
 
 #: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
+#, fuzzy
 msgid  "Spin Button"
 msgstr "כפתור סיבוב"
 
 #: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
+#, fuzzy
 msgid  "Strict format"
 msgstr "הקפדה על צורה"
 
 #: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
+#, fuzzy
 msgid  "Thousands separator"
 msgstr "מפריד אלפים"
 
 #: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
+#, fuzzy
 msgid  "Printable"
 msgstr "הדפסה"
 
 #: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "מסגרת"
 
 #: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Help text"
 msgstr "טקסט עזרה"
 
 #: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
+#, fuzzy
 msgid  "Help URL"
 msgstr "URL עזרה"
 
 #: source/propctrlr/formres.src#RID_STR_TAG.String.Text
+#, fuzzy
 msgid  "Additional information"
 msgstr "מידע נוסף"
 
 #: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
+#, fuzzy
 msgid  "Password character"
 msgstr "תו מותר להכללה בססמאות"
 
 #: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
+#, fuzzy
 msgid  "Tristate"
 msgstr "לוגיקה תלת מצבית"
 
 #: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
+#, fuzzy
 msgid  "Empty string is NULL"
 msgstr "מחרוקת ריקה היא ‏‪NULL ‬"
 
 #: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
+#, fuzzy
 msgid  "Decimal accuracy"
 msgstr "דיוק עשרוני"
 
 #: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
+#, fuzzy
 msgid  "Graphics"
 msgstr "גרפיקה"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
+#, fuzzy
 msgid  "Default selection"
 msgstr "בחירת ברירת המחדל"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
+#, fuzzy
 msgid  "Default button"
 msgstr "כפתור ברירת מחדל"
 
 #: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
+#, fuzzy
 msgid  "Label Field"
 msgstr "שדה תווית"
 
 #: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
+#, fuzzy
 msgid  "Label"
 msgstr "תווית"
 
 #: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "יישור"
 
 #: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
+#, fuzzy
 msgid  "Vert. Alignment"
 msgstr "יישור אנכי"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
+#, fuzzy
 msgid  "Top"
 msgstr "עליון"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
+#, fuzzy
 msgid  "Middle"
 msgstr "אמצעי"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
+#, fuzzy
 msgid  "Bottom"
 msgstr "תחתון"
 
 #: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
+#, fuzzy
 msgid  "Graphics alignment"
 msgstr "יישור גרפיקה"
 
 #: source/propctrlr/formres.src#RID_STR_FONT.String.Text
+#, fuzzy
 msgid  "Font"
 msgstr "גופן"
 
 #: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
+#, fuzzy
 msgid  "Background color"
 msgstr "צבע רקע"
 
 #: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
+#, fuzzy
 msgid  "Border"
 msgstr "גבול"
 
 #: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
+#, fuzzy
 msgid  "Icon size"
 msgstr "גודל צלם"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
+#, fuzzy
 msgid  "Small"
 msgstr "קטן"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
+#, fuzzy
 msgid  "Large"
 msgstr "גדול"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
+#, fuzzy
 msgid  "Positioning"
 msgstr "מיקום"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
+#, fuzzy
 msgid  "Navigation"
 msgstr "ניווט"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
+#, fuzzy
 msgid  "Acting on a record"
 msgstr "הפעלה על רשומה"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
+#, fuzzy
 msgid  "Filtering / Sorting"
 msgstr "סינון/מיון"
 
 #: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
+#, fuzzy
 msgid  "Horizontal scroll bar"
 msgstr "סרגל גלילה אופקי"
 
 #: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
+#, fuzzy
 msgid  "Vertical scroll bar"
 msgstr "פס גלילה אנכי"
 
 #: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
+#, fuzzy
 msgid  "Word break"
 msgstr "שבירת מילה"
 
 #: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
+#, fuzzy
 msgid  "Multiline input"
 msgstr "קלט רב קווי"
 
 #: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
+#, fuzzy
 msgid  "Multiselection"
 msgstr "בחירה מרובה"
 
 #: source/propctrlr/formres.src#RID_STR_NAME.String.Text
+#, fuzzy
 msgid  "Name"
 msgstr "שם"
 
 #: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
+#, fuzzy
 msgid  "Tab order"
 msgstr "סדר טאבים"
 
@@ -1192,194 +1245,242 @@ msgid  "Mouse wheel scroll"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
+#, fuzzy
 msgid  "Filter"
 msgstr "סינון"
 
 #: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
+#, fuzzy
 msgid  "Sort"
 msgstr "מיון"
 
 #: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
+#, fuzzy
 msgid  "Record marker"
 msgstr "סמן רשומות"
 
 #: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
+#, fuzzy
 msgid  "Filter proposal"
 msgstr "הצעת מסנן"
 
 #: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
+#, fuzzy
 msgid  "Navigation bar"
 msgstr "סרגל ניווט"
 
 #: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
+#, fuzzy
 msgid  "Cycle"
 msgstr "מחזור"
 
 #: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
+#, fuzzy
 msgid  "Tabstop"
 msgstr "עצירת טאב"
 
 #: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
+#, fuzzy
 msgid  "Data field"
 msgstr "שדה נתונים"
 
 #: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
+#, fuzzy
 msgid  "Dropdown"
 msgstr "נגלל מטה"
 
 #: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
+#, fuzzy
 msgid  "Bound field"
 msgstr "שדה תחום"
 
 #: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
+#, fuzzy
 msgid  "List content"
 msgstr "תכולת רשימה"
 
 #: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
+#, fuzzy
 msgid  "Type of list contents"
 msgstr "סוג תכולת רשימה"
 
 #: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
+#, fuzzy
 msgid  "Content"
 msgstr "תוכן"
 
 #: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
+#, fuzzy
 msgid  "Content type"
 msgstr "סוג תוכן"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
+#, fuzzy
 msgid  "Allow additions"
 msgstr "לאפשר הוספות"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
+#, fuzzy
 msgid  "Allow deletions"
 msgstr "לאפשר מחיקות"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
+#, fuzzy
 msgid  "Allow modifications"
 msgstr "לאפשר שינויים"
 
 #: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
+#, fuzzy
 msgid  "Add data only"
 msgstr "הוספת נתונים בלבד"
 
 #: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
+#, fuzzy
 msgid  "Data source"
 msgstr "מקור הנתונים"
 
 #: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
+#, fuzzy
 msgid  "Link master fields"
 msgstr "קישור שדות שולטים"
 
 #: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
+#, fuzzy
 msgid  "Link slave fields"
 msgstr "קישור שדות נשלטים"
 
 #: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
+#, fuzzy
 msgid  "Value min."
 msgstr "ערך מזערי"
 
 #: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
+#, fuzzy
 msgid  "Value max."
 msgstr "ערך מירבי"
 
 #: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
+#, fuzzy
 msgid  "Incr./decrement value"
 msgstr "ערך תיסוף/גריעה"
 
 #: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
+#, fuzzy
 msgid  "Currency symbol"
 msgstr "סימן מטבע"
 
 #: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
+#, fuzzy
 msgid  "Date min."
 msgstr "ערך מזערי לתאריך"
 
 #: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
+#, fuzzy
 msgid  "Date max."
 msgstr "ערך מירבי לתאריך"
 
 #: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
+#, fuzzy
 msgid  "Date format"
 msgstr "צורת תאריך"
 
 #: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
+#, fuzzy
 msgid  "Selection"
 msgstr "בחירה"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
+#, fuzzy
 msgid  "Time min."
 msgstr "ערך מזערי לשעה"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
+#, fuzzy
 msgid  "Time max."
 msgstr "ערך מירבי לשעה"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
+#, fuzzy
 msgid  "Time format"
 msgstr "עיצוב שעה"
 
 #: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
+#, fuzzy
 msgid  "Prefix symbol"
 msgstr "סימן קידומת"
 
 #: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
+#, fuzzy
 msgid  "Value"
 msgstr "ערך"
 
 #: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
+#, fuzzy
 msgid  "Formatting"
 msgstr "עיצוב"
 
 #: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
+#, fuzzy
 msgid  "Class ID"
 msgstr "מזהה מחלקה ‏‪(ID)‬‏‏"
 
 #: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
+#, fuzzy
 msgid  "Height"
 msgstr "גובה"
 
 #: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
+#, fuzzy
 msgid  "Width"
 msgstr "רוחב"
 
 #: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
+#, fuzzy
 msgid  "List index"
 msgstr "אינדקס רשימה"
 
 #: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
+#, fuzzy
 msgid  "Row height"
 msgstr "גובה שורה"
 
 #: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
+#, fuzzy
 msgid  "Fill color"
 msgstr "צבע מילוי"
 
 #: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
+#, fuzzy
 msgid  "Line color"
 msgstr "צבע קו"
 
 #: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
+#, fuzzy
 msgid  "Reference value (on)"
 msgstr "ערך יחוס (מופעל)‏"
 
 #: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
+#, fuzzy
 msgid  "Reference value (off)"
 msgstr "ערך יחוס (כבוי)‏"
 
 #: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
+#, fuzzy
 msgid  "List entries"
 msgstr "רשימת ערכים"
 
 #: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
+#, fuzzy
 msgid  "Action"
 msgstr "פעולה"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
+#, fuzzy
 msgid  "Type of submission"
 msgstr "סוג הגשה"
 
@@ -1388,234 +1489,292 @@ msgid  "Default status"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
+#, fuzzy
 msgid  "Submission encoding"
 msgstr "קידוד הגשה"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
+#, fuzzy
 msgid  "Default value"
 msgstr "ערך ברירת מחדל"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
+#, fuzzy
 msgid  "Default text"
 msgstr "טקסט ברירת המחדל"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
+#, fuzzy
 msgid  "Default date"
 msgstr "צורת ברירת מחדל לתאריך"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
+#, fuzzy
 msgid  "Default time"
 msgstr "צורת ברירת מחדל לזמן"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "מסגרת"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
+#, fuzzy
 msgid  "Without frame"
 msgstr "ללא מסגרת"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
+#, fuzzy
 msgid  "3D look"
 msgstr "מראה תלת־מימדי"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
+#, fuzzy
 msgid  "Flat"
 msgstr "שטוח"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
+#, fuzzy
 msgid  "Valuelist"
 msgstr "רשימת ערכים"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "טבלה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
+#, fuzzy
 msgid  "Query"
 msgstr "שאילתה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
+#, fuzzy
 msgid  "Sql"
 msgstr "Sql"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
+#, fuzzy
 msgid  "Sql [Native]"
 msgstr "Sql "
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
+#, fuzzy
 msgid  "Tablefields"
 msgstr "שדות טבלה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
+#, fuzzy
 msgid  "Left"
 msgstr "שמאל"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
+#, fuzzy
 msgid  "Center"
 msgstr "מרכז"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
+#, fuzzy
 msgid  "Right"
 msgstr "ימין"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "ללא"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
+#, fuzzy
 msgid  "Submit form"
 msgstr "הגשת טופס"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
+#, fuzzy
 msgid  "Reset form"
 msgstr "איפוס טופס"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
+#, fuzzy
 msgid  "Open document/web page"
 msgstr "פתיחת מסמך/דף אתר"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
+#, fuzzy
 msgid  "First record"
 msgstr "רשומה ראשונה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
+#, fuzzy
 msgid  "Previous record"
 msgstr "הרשומה הקודמת"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
+#, fuzzy
 msgid  "Next record"
 msgstr "הרשומה הבאה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
+#, fuzzy
 msgid  "Last record"
 msgstr "הרשומה האחרונה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
+#, fuzzy
 msgid  "Save record"
 msgstr "שמירת הרשומה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
+#, fuzzy
 msgid  "Undo data entry"
 msgstr "לבטל הקלדת נתונים"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
+#, fuzzy
 msgid  "New record"
 msgstr "רשומה חדשה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
+#, fuzzy
 msgid  "Delete record"
 msgstr "מחיקת רשומה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
+#, fuzzy
 msgid  "Refresh form"
 msgstr "ריענון טופס"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
+#, fuzzy
 msgid  "Get"
 msgstr "בשיטת Get"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
+#, fuzzy
 msgid  "Post"
 msgstr "בשיטת Post"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
+#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
+#, fuzzy
 msgid  "Multipart"
 msgstr "סוג Multipart"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
+#, fuzzy
 msgid  "Text"
 msgstr "טקסט"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
+#, fuzzy
 msgid  "Standard (short)"
 msgstr "תבנית רגילה (קצר)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
+#, fuzzy
 msgid  "Standard (short YY)"
 msgstr "תבנית רגילה (קצר YY)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
+#, fuzzy
 msgid  "Standard (short YYYY)"
 msgstr "תבנית רגילה (קצר YYYY)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
+#, fuzzy
 msgid  "Standard (long)"
 msgstr "תבנית רגילה (ארוך)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
+#, fuzzy
 msgid  "DD/MM/YY"
 msgstr "DD/MM/YY"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
+#, fuzzy
 msgid  "MM/DD/YY"
 msgstr "MM/DD/YY"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
+#, fuzzy
 msgid  "YY/MM/DD"
 msgstr "YY/MM/DD"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
+#, fuzzy
 msgid  "DD/MM/YYYY"
 msgstr "DD/MM/YYYY"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
+#, fuzzy
 msgid  "MM/DD/YYYY"
 msgstr "MM/DD/YYYY"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
+#, fuzzy
 msgid  "YYYY/MM/DD"
 msgstr "YYYY/MM/DD"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
+#, fuzzy
 msgid  "YY-MM-DD"
 msgstr "YY-MM-DD"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
+#, fuzzy
 msgid  "YYYY-MM-DD"
 msgstr "YYYY-MM-DD"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
+#, fuzzy
 msgid  "13:45"
 msgstr "13:45"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
+#, fuzzy
 msgid  "13:45:00"
 msgstr "13:45:00"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
+#, fuzzy
 msgid  "01:45 PM"
 msgstr "01:45 PM"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
+#, fuzzy
 msgid  "01:45:00 PM"
 msgstr "01:45:00 PM"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
+#, fuzzy
 msgid  "Not Selected"
 msgstr "לא נבחר"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
+#, fuzzy
 msgid  "Selected"
 msgstr "נבחר"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
+#, fuzzy
 msgid  "Not Defined"
 msgstr "לא מוגדר"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
+#, fuzzy
 msgid  "All records"
 msgstr "כל הרשומות"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
+#, fuzzy
 msgid  "Active record"
 msgstr "הרשומה הפעילה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
+#, fuzzy
 msgid  "Current page"
 msgstr "הדף הנוכחי"
 
@@ -1624,454 +1783,567 @@ msgid  "No"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "כן"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
+#, fuzzy
 msgid  "Parent Form"
 msgstr "הטופס היורש"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "ללא"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
+#, fuzzy
 msgid  "Single"
 msgstr "בודדת"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
+#, fuzzy
 msgid  "Multi"
 msgstr "ריבוי"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
+#, fuzzy
 msgid  "Range"
 msgstr "טווח"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
+#, fuzzy
 msgid  "Fill parameters"
 msgstr "מילוי פרמטרים"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.String.Text
+#, fuzzy
 msgid  "Execute action"
 msgstr "בעת האיתחול"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
+#, fuzzy
 msgid  "After updating"
 msgstr "אחרי עדכון"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
+#, fuzzy
 msgid  "Before updating"
 msgstr "לפני עדכון"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
+#, fuzzy
 msgid  "Before record action"
 msgstr "לפני פעולת רשומה"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
+#, fuzzy
 msgid  "After record action"
 msgstr "אחרי פעולת רשומה"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
+#, fuzzy
 msgid  "Confirm deletion"
 msgstr "אישור מחיקה"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
+#, fuzzy
 msgid  "Error occurred"
 msgstr "ארעה שגיאה"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
+#, fuzzy
 msgid  "When receiving focus"
 msgstr "בעת קבלת מיקוד"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
+#, fuzzy
 msgid  "When losing focus"
 msgstr "בעת איבוד מיקוד"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
+#, fuzzy
 msgid  "Item status changed"
 msgstr "מעמד הפריט השתנה"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
+#, fuzzy
 msgid  "Key pressed"
 msgstr "מקש נלחץ"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
+#, fuzzy
 msgid  "Key released"
 msgstr "מקש שוחרר"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
+#, fuzzy
 msgid  "When loading"
 msgstr "בעת טעינה"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
+#, fuzzy
 msgid  "Before reloading"
 msgstr "לפני טעינה מחדש"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
+#, fuzzy
 msgid  "When reloading"
 msgstr "בעת טעינה מחדש"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
+#, fuzzy
 msgid  "Mouse moved while key pressed"
 msgstr "תזוזת עכבר בזמן שהמקש לחוץ"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
+#, fuzzy
 msgid  "Mouse inside"
 msgstr "העכבר בפנים"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
+#, fuzzy
 msgid  "Mouse outside"
 msgstr "העכבר בחוץ"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
+#, fuzzy
 msgid  "Mouse moved"
 msgstr "העכבר הוזז"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
+#, fuzzy
 msgid  "Mouse button pressed"
 msgstr "כפתור העכבר נלחץ"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
+#, fuzzy
 msgid  "Mouse button released"
 msgstr "כפתור העכבר שוחרר"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
+#, fuzzy
 msgid  "Before record change"
 msgstr "לפני שינוי רשומה"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
+#, fuzzy
 msgid  "After record change"
 msgstr "אחרי שינוי רשומה"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
+#, fuzzy
 msgid  "After resetting"
 msgstr "אחרי איפוס"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
+#, fuzzy
 msgid  "Prior to reset"
 msgstr "לפני איפוס"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.String.Text
+#, fuzzy
 msgid  "Approve action"
 msgstr "לפני שמתחילים"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
+#, fuzzy
 msgid  "Before submitting"
 msgstr "לפני הגשה"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
+#, fuzzy
 msgid  "Text modified"
 msgstr "הטקסט שונה"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
+#, fuzzy
 msgid  "Before unloading"
 msgstr "לפני פריקה"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
+#, fuzzy
 msgid  "When unloading"
 msgstr "בעת פריקה"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
+#, fuzzy
 msgid  "Changed"
 msgstr "שונה"
 
 #: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
+#, fuzzy
 msgid  "Events"
 msgstr "ארועים"
 
 #: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
+#, fuzzy
 msgid  "Analyze SQL command"
 msgstr "ניתוח פקודת ‏‪SQL‬‏‏"
 
 #: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
+#, fuzzy
 msgid  "PositionX"
 msgstr "מיקום של ‏‪X‏"
 
 #: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
+#, fuzzy
 msgid  "PositionY"
 msgstr "מיקום של ‏‪Y‏"
 
 #: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
+#, fuzzy
 msgid  "Title"
 msgstr "כותרת"
 
 #: source/propctrlr/formres.src#RID_STR_STEP.String.Text
+#, fuzzy
 msgid  "Page (step)"
 msgstr "דפדוף (צעד אחד)‏"
 
 #: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
+#, fuzzy
 msgid  "Progress value"
 msgstr "ערך התקדמות"
 
 #: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
+#, fuzzy
 msgid  "Progress value min."
 msgstr "ערך התקדמות מזערי"
 
 #: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
+#, fuzzy
 msgid  "Progress value max."
 msgstr "ערך התקדמות מירבי"
 
 #: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
+#, fuzzy
 msgid  "Scroll value"
 msgstr "ערך גלילה"
 
 #: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
+#, fuzzy
 msgid  "Scroll value max."
 msgstr "ערך גלילה מירבי"
 
 #: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
+#, fuzzy
 msgid  "Scroll value min."
 msgstr "צעד גלילה מזערי"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
+#, fuzzy
 msgid  "Default scroll value"
 msgstr "צעד גלילה ברירת מחדל"
 
 #: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
+#, fuzzy
 msgid  "Small change"
 msgstr "שינוי קטן"
 
 #: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
+#, fuzzy
 msgid  "Large change"
 msgstr "שינוי גדול"
 
 #: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
+#, fuzzy
 msgid  "Delay"
 msgstr "עיכוב"
 
 #: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
+#, fuzzy
 msgid  "Repeat"
 msgstr "בצוע חוזר"
 
 #: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
+#, fuzzy
 msgid  "Visible size"
 msgstr "גודל גלוי"
 
 #: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
+#, fuzzy
 msgid  "Orientation"
 msgstr "כיוון"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "אופקי"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "אנכי"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
+#, fuzzy
 msgid  "While adjusting"
 msgstr "תוך כדי התאמה"
 
 #: source/propctrlr/formres.src#RID_STR_DATE.String.Text
+#, fuzzy
 msgid  "Date"
 msgstr "תאריך"
 
 #: source/propctrlr/formres.src#RID_STR_STATE.String.Text
+#, fuzzy
 msgid  "State"
 msgstr "מחוז"
 
 #: source/propctrlr/formres.src#RID_STR_TIME.String.Text
+#, fuzzy
 msgid  "Time"
 msgstr "שעה"
 
 #: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
+#, fuzzy
 msgid  "Scale"
 msgstr "התאמת גודל"
 
 #: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
+#, fuzzy
 msgid  "Button type"
 msgstr "סוג כפתור"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
+#, fuzzy
 msgid  "Default"
 msgstr "ברירת מחדל"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
+#, fuzzy
 msgid  "OK"
 msgstr "אישור"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "ביטול"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
+#, fuzzy
 msgid  "Help"
 msgstr "עזרה"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
+#, fuzzy
 msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr "נסיון ההתחברות למקור המידע ‏‪\"$name$\"‬‏ נכשל.‏"
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
+#, fuzzy
 msgid  "Text"
 msgstr "טקסט"
 
 #: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
+#, fuzzy
 msgid  "Linked cell"
 msgstr "תא משורשר"
 
 #: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
+#, fuzzy
 msgid  "Source cell range"
 msgstr "טווח תאי המקור"
 
 #: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
+#, fuzzy
 msgid  "Contents of the linked cell"
 msgstr "התוכן של התא המשורשר"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
+#, fuzzy
 msgid  "The selected entry"
 msgstr "הרשומה הנבחרת"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
+#, fuzzy
 msgid  "Position of the selected entry"
 msgstr "מיקום הערך הנבחר"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
+#, fuzzy
 msgid  "Scrollbars"
 msgstr "סרגלי גלילה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
+#, fuzzy
 msgid  "Single-line"
 msgstr "חד שורתי"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
+#, fuzzy
 msgid  "Multi-line"
 msgstr "רב שורתי"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
+#, fuzzy
 msgid  "Multi-line with formatting"
 msgstr "רב שורתי מפורמט"
 
 #: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
+#, fuzzy
 msgid  "Symbol color"
 msgstr "צבע אות"
 
 #: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
+#, fuzzy
 msgid  "Text lines end with"
 msgstr "שורות טקסט מסתיימות בתו"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
+#, fuzzy
 msgid  "LF (Unix)"
 msgstr "LF (Unix)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
+#, fuzzy
 msgid  "CR+LF (Windows)"
 msgstr "CR+LF (Windows)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
+#, fuzzy
 msgid  "None"
 msgstr "ללא"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
+#, fuzzy
 msgid  "Horizontal"
 msgstr "אופקי"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
+#, fuzzy
 msgid  "Vertical"
 msgstr "אנכי"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
+#, fuzzy
 msgid  "Both"
 msgstr "שניהם"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "טבלה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
+#, fuzzy
 msgid  "Query"
 msgstr "שאילתה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
+#, fuzzy
 msgid  "SQL command"
 msgstr "פקודת‪ ‏‪SQL‬‏ ‬"
 
 #: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
+#, fuzzy
 msgid  "Toggle"
 msgstr "החלפת מצב"
 
 #: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
+#, fuzzy
 msgid  "Take Focus on Click"
 msgstr "מיקוד על לחיצה"
 
 #: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
+#, fuzzy
 msgid  "Hide selection"
 msgstr "הסתרת הנחירה"
 
 #: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
+#, fuzzy
 msgid  "Style"
 msgstr "סגנון"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
+#, fuzzy
 msgid  "3D"
 msgstr "תלת־מימדי"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
+#, fuzzy
 msgid  "Flat"
 msgstr "שטוח"
 
 #: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
+#, fuzzy
 msgid  "Border color"
 msgstr "צבע גבולות"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
+#, fuzzy
 msgid  "Left top"
 msgstr "עליון שמאל"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
+#, fuzzy
 msgid  "Left centered"
 msgstr "ממורכז שמאל"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
+#, fuzzy
 msgid  "Left bottom"
 msgstr "תחתון שמאל"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
+#, fuzzy
 msgid  "Right top"
 msgstr "עליון ימין"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
+#, fuzzy
 msgid  "Right centered"
 msgstr "ממורכז ימין"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
+#, fuzzy
 msgid  "Right bottom"
 msgstr "למטה ימין"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
+#, fuzzy
 msgid  "Above left"
 msgstr "שמאל למעלה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
+#, fuzzy
 msgid  "Above centered"
 msgstr "ממורכז למעלה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
+#, fuzzy
 msgid  "Above right"
 msgstr "ימין למעלה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
+#, fuzzy
 msgid  "Below left"
 msgstr "שמאל למטה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
+#, fuzzy
 msgid  "Below centered"
 msgstr "ממורכז למטה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
+#, fuzzy
 msgid  "Below right"
 msgstr "ימין למטה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
+#, fuzzy
 msgid  "Centered"
 msgstr "ממורכז"
 
 #: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
+#, fuzzy
 msgid  "Wrap text automatically"
 msgstr "כיפול טקסט אוטומטי בסוף שורה"
 
 #: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
+#, fuzzy
 msgid  "Text type"
 msgstr "סוג טקסט"
 
@@ -2084,134 +2356,167 @@ msgid  "Show"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
+#, fuzzy
 msgid  "XML data model"
 msgstr "דגם XML‏"
 
 #: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
+#, fuzzy
 msgid  "Binding expression"
 msgstr "משפט הידוק ‏‪(Binding expression)‬‏‏"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
+#, fuzzy
 msgid  "Required"
 msgstr "נדרש"
 
 #: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
+#, fuzzy
 msgid  "List entry source"
 msgstr "לציין מקור הרשומה"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
+#, fuzzy
 msgid  "Relevant"
 msgstr "שייך"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
+#, fuzzy
 msgid  "Read-only"
 msgstr "לקריאה בלבד"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
+#, fuzzy
 msgid  "Constraint"
 msgstr "מגבלה"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
+#, fuzzy
 msgid  "Calculation"
 msgstr "חישוב"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
+#, fuzzy
 msgid  "Data type"
 msgstr "טיפוס נתונים"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
+#, fuzzy
 msgid  "Whitespaces"
 msgstr "תווים בלתי נראים"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
+#, fuzzy
 msgid  "Preserve"
 msgstr "שימור"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
+#, fuzzy
 msgid  "Replace"
 msgstr "החלפה"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
+#, fuzzy
 msgid  "Collapse"
 msgstr "כיווץ"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
+#, fuzzy
 msgid  "Pattern"
 msgstr "דוגמה"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
+#, fuzzy
 msgid  "Length"
 msgstr "אורך"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
+#, fuzzy
 msgid  "Length (at least)"
 msgstr "אורך מזערי"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
+#, fuzzy
 msgid  "Length (at most)"
 msgstr "אורך מירבי"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
+#, fuzzy
 msgid  "Digits (total)"
 msgstr "סה‏\"כ ספרות"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
+#, fuzzy
 msgid  "Digits (fraction)"
 msgstr "ספרות אחרי נקודה עשרונית"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
+#, fuzzy
 msgid  "Max. (inclusive)"
 msgstr "מירבי - כולל"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
+#, fuzzy
 msgid  "Max. (exclusive)"
 msgstr "מירבי - לא כולל"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
+#, fuzzy
 msgid  "Min. (inclusive)"
 msgstr "מזערי - כולל"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
+#, fuzzy
 msgid  "Min. (exclusive)"
 msgstr "מזערי - לא כולל"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
+#, fuzzy
 msgid  "Submission"
 msgstr "הגשה"
 
 #: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
+#, fuzzy
 msgid  "Binding"
 msgstr "הידוק"
 
 #: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
+#, fuzzy
 msgid  "Selection type"
 msgstr "סוג בחירה"
 
 #: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
+#, fuzzy
 msgid  "Root displayed"
 msgstr "הצגת שורש"
 
 #: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
+#, fuzzy
 msgid  "Show handles"
 msgstr "הצגת ידיות"
 
 #: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
+#, fuzzy
 msgid  "Show root handles"
 msgstr "הצגת ידיות שורש"
 
 #: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
+#, fuzzy
 msgid  "Editable"
 msgstr "בר עריכה"
 
 #: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
+#, fuzzy
 msgid  "Invokes stop node editing"
 msgstr "הפעלת עריכת צמתי צמתי עצירה"
 
 #: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
+#, fuzzy
 msgid  "With title bar"
 msgstr "עם סרגל כותרת"
 
 #: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
+#, fuzzy
 msgid  "No Label"
 msgstr "ללא תווית"
 
@@ -2268,10 +2573,12 @@ msgid  "To Paragraph"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.String.Text
+#, fuzzy
 msgid  "As Character"
 msgstr "כתו"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
+#, fuzzy
 msgid  "To Page"
 msgstr "לעמוד"
 
@@ -2315,14 +2622,17 @@ msgid  "(Default)"
 msgstr "ברירת מחדל"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
+#, fuzzy
 msgid  "Character"
 msgstr "תו"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "גופן"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "אפקטים לגופנים"
 
@@ -2337,174 +2647,211 @@ msgid  "Type a name for the new data type:"
 msgstr "יש להקליד שם עבור טיפוס הנתונים החדש:‏"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
-msgid  "About\n Dev~ice"
-msgstr "אודות\nהתקן"
+msgid  "About\\n Dev~ice"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
-msgid  "Create\nPreview"
-msgstr "יצירה\nתצוגה מקדימה"
+msgid  "Create\\nPreview"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
+#, fuzzy
 msgid  "Preview"
 msgstr "תצוגה מקדימה"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
+#, fuzzy
 msgid  "Scan area"
 msgstr "שטח סריקה"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
+#, fuzzy
 msgid  "Left:"
 msgstr "שמאל:‏"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
+#, fuzzy
 msgid  "Top:"
 msgstr "עליון:‏"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
+#, fuzzy
 msgid  "Right:"
 msgstr "ימין:‏"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
+#, fuzzy
 msgid  "Bottom:"
 msgstr "תחתון"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
+#, fuzzy
 msgid  "Device used:"
 msgstr "ההתקן:‏"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
+#, fuzzy
 msgid  "Resolution [~DPI]"
 msgstr "רזולוציה ‏‪[~DPI]‬‏‏"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
+#, fuzzy
 msgid  "Show advanced options"
 msgstr "תצוגת אפשרויות מתקדמות"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
+#, fuzzy
 msgid  "Options:"
 msgstr "אפשרויות:‏"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
+#, fuzzy
 msgid  "Vector element"
 msgstr "אלמנט וקטורי"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
+#, fuzzy
 msgid  "Set"
 msgstr "הגדרה"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
+#, fuzzy
 msgid  "Scanner"
 msgstr "סורק"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
-msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr "התקן: ‏‪%s‬‏\nיצרן: ‏‪%s‬‏\nדגם: ‏‪%s‬‏\nסוג: ‏‪%s‬‏"
+msgid  "Device: %s\\nVendor: %s\\nModel: %s\\nType: %s"
+msgstr ""
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
+#, fuzzy
 msgid  "An error occurred while scanning."
 msgstr "ארעה שגיאה בעת סריקה.‏"
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
+#, fuzzy
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
 msgstr "המכשיר אינו תומך בתפקוד תצוגה מקדימה ולכן התצוגה המקדימה תתבסס על סריקה רגילה - זה יכול לקחת זמן.‏"
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
+#, fuzzy
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
 msgstr "לא ניתן לאתחל את ממשק ה ‏‪SANE‬‏. אין אפשרות לסרוק.‏"
 
 #: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
+#, fuzzy
 msgid  "Set"
 msgstr "הגדרה"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
+#, fuzzy
 msgid  "Linear ascending"
 msgstr "לינארי עולה"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
+#, fuzzy
 msgid  "Linear descending"
 msgstr "לינארי יורד"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
+#, fuzzy
 msgid  "Original values"
 msgstr "ערכים מקוריים"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
+#, fuzzy
 msgid  "Exponential increasing"
 msgstr "גידול מעריכי"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
+#, fuzzy
 msgid  "Checking..."
 msgstr "בודק..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
+#, fuzzy
 msgid  "Checking for an update failed."
 msgstr "בדיקת העדכונים נכשלה."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "התקנה זו של %PRODUCTNAME %PRODUCTVERSION‏ הינה עדכנית."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
-msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr "גרסת %PRODUCTNAME %NEXTVERSION זמינה כעת.\n\nלפני ההורדה, כדאי לבדוק אם יש לך הרשאות מספיקות לבצע את ההתקנה. בדרך כלל צריך ססמת אדמיניסטראטור."
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\\n\\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\\n\\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\\nA password, usually the administrator's or root password, may be required."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
+#, fuzzy
 msgid  "Check for Updates"
 msgstr "בדיקת עדכונים זמינים"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
 msgstr "הורדת %PRODUCTNAME %NEXTVERSION הופסקה זמנית ב..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "הורדת %PRODUCTNAME %NEXTVERSION נתקעה ב"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
-msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr "נתיב הקבצים המורדים הוא: %DOWNLOAD_PATH.\nניתן לשנות את הנתיב בתיבת הדו-שיח 'כלים' -> 'אפשרויות' -> 'עדכוני %PRODUCTNAME'"
+msgid  "The download location is: %DOWNLOAD_PATH.\\n\\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
+#, fuzzy
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "הקובץ %FILE_NAME הורד לספרית %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
-msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr "הורדה אוטומטית של העדכון אינה זמינה כעת.\n\nלחיצה על 'הורדה...' מורידה את %PRODUCTNAME %NEXTVERSION ידנית מהאתר."
+msgid  "The automatic download of the update is currently not available.\\n\\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
+#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
 msgstr "הורדת %PRODUCTNAME %NEXTVERSION מתבצעת..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
+#, fuzzy
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
 msgstr "הורדת %PRODUCTNAME %NEXTVERSION הסתיימה ומוכנה להתקנה."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
+#, fuzzy
 msgid  "Do you really want to cancel the download?"
 msgstr "האם אכן לבטל את ההורדה?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
+#, fuzzy
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
 msgstr "צריך לסגור את %PRODUCTNAME %PRODUCTVERSION לפני התקנת העדכון. האם להתקין את העדכון עכשיו?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
+#, fuzzy
 msgid  "Install ~now"
 msgstr "להתקין עכשיו"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
+#, fuzzy
 msgid  "Install ~later"
 msgstr "להתקין מאוחר יותר"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
+#, fuzzy
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
 msgstr "לא ניתן להפעיל את תוכנית ההתקנה. נא להפעיל את %FILE_NAME בספרית %DOWNLOAD_PATH ידנית."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
+#, fuzzy
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
 msgstr "קובץ בעל שם זהה כבר קיים! האם להחליפו?"
 
@@ -2521,101 +2868,126 @@ msgid  "Continue"
 msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
+#, fuzzy
 msgid  "%PERCENT%"
 msgstr "%PERCENT%"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
+#, fuzzy
 msgid  "Status"
 msgstr "מצב"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "Description"
 msgstr "תאור"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
+#, fuzzy
 msgid  "Close"
 msgstr "סגירה"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
+#, fuzzy
 msgid  "~Download"
 msgstr "הורדה"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
+#, fuzzy
 msgid  "~Install"
 msgstr "התקנה"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
+#, fuzzy
 msgid  "~Pause"
 msgstr "השהייה"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
+#, fuzzy
 msgid  "~Resume"
 msgstr "המשך הפעולה"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "ביטול"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "יש עדכון זמין ל-%PRODUCTNAME"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
+#, fuzzy
 msgid  "Click here to start the download."
 msgstr "ללחוץ כאן להתחלת ההורדה"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "יש עדכון זמין ל-%PRODUCTNAME"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
+#, fuzzy
 msgid  "Click here for more information."
 msgstr "ללחוץ כאן למידע נוסף"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "יש עדכון זמין ל-%PRODUCTNAME"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
+#, fuzzy
 msgid  "Download of update begins."
 msgstr "הורדת העדכון מתחילה"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
+#, fuzzy
 msgid  "Download of update in progress"
 msgstr "הורדת העדכון מתבצעת כעת"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
+#, fuzzy
 msgid  "Download of update paused"
 msgstr "הורדת העדכון הופסקה זמנית"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
+#, fuzzy
 msgid  "Click here to resume."
 msgstr "ללחוץ כאן לחדש את פעולת ההורדה."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
+#, fuzzy
 msgid  "Download of update stalled"
 msgstr "הורדת העדכון נתקעה"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
+#, fuzzy
 msgid  "Click here for more information."
 msgstr "ללחוץ כאן למידע נוסף"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
+#, fuzzy
 msgid  "Download of update completed"
 msgstr "הורדת העדכון הסתיימה"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
+#, fuzzy
 msgid  "Click here to start the installation."
 msgstr "ללחוץ כאן להתחיל את ההתקנה"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
+#, fuzzy
 msgid  "Updates for extensions available"
 msgstr "ישנם עדכונים זמינים לתוספים"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
+#, fuzzy
 msgid  "Click here for more information."
 msgstr "ללחוץ כאן למידע נוסף"
 
-#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#: source/update/check/Addons.xcu#Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#, fuzzy
 msgid  "Check for ~Updates..."
 msgstr "בדיקת עידכונים...‏"

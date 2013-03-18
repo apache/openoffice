@@ -40,8 +40,8 @@ msgid  "File Recovery"
 msgstr "ការ​សង្គ្រោះ​​​​​ឯកសារ"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
-msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr "កំហុស​​ដែល​​មិន​​អាចសង្គ្រោះ​មួយ​ ​បាន​​កើត​​ឡើង​ ។​\n\nរាល់​​ឯកសារ​ដែល​បាន​កែ​ប្រែ​​ទាំង​អស់ ត្រូវ​បាន​រក្សា​ទុក​ និង​ប្រហែល​​ជា​​អាច\nសង្គ្រោះ​វិញ​បាន​​ ​ពេល​​​ចាប់​ផ្តើម​កម្មវិធី​ឡើង​វិញ​ ។"
+msgid  "An unrecoverable error has occurred.\\n\\nAll modified files have been saved and can\\nprobably be recovered at program restart."
+msgstr ""
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
@@ -116,16 +116,16 @@ msgid  "The changes to your personal settings cannot be stored centrally because
 msgstr "ភាព​ផ្លាស់​​ប្តូរ​ចំពោះ​​កំណត់​​ផ្ទាល់​​ខ្លួន​​របស់​​អ្នក ​​​មិន​​អាច​​រ​ក្សា​​ទុក​​​នៅ​​កណ្តាល​​បាន​​ទេ​ ដោយសារ​​តែ​អ្នក​​​បាត់​​បង់​​សិទ្ធិ​​ចូល​ដំណើរ​​ការ​ ។​"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
-msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr "មិន​​អាច​​ចាប់​​ផ្តើម​ ​%PRODUCTNAME បាន​ទេ​ ដោយ​សារ​តែ​កំហុស​ ​ក្នុង​ការ​ចូល​​ដំណើរ​​ការ​ទិន្នន័យ​​កំណត់​​រចនា​​សម្ព័ន្ធ ​%PRODUCTNAME ។\n\n​សូម​​ទាក់​​ទង​អ្នក​​គ្រប់​​គ្រង​​ប្រព័ន្ធ​​របស់​​អ្នក ។"
+msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\\n\\nPlease contact your system administrator."
+msgstr ""
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
 msgstr "កំហុស​​​ខាង​​​ក្នុង​​​ដូច​​​ខាង​​​ក្រោម​​នេះ​​​​ បាន​​កើត​ឡើង ៖"
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
-msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr "វត្ថុ​មួយផ្សេង​ទៀតរបស់ %PRODUCTNAME កំពុង​ចូល​ដំណើរការ​កំណត់​ផ្ទាល់ខ្លួន​របស់​អ្នក ឬ​កំណត់​ផ្ទាល់ខ្លួន​របស់​អ្នក ត្រូវ​បាន​ចាក់​សោ ។\nការ​ចូលដំណើរការ​ដំណាល​គ្នា​អាច​នាំឲ្យ​មាន​ភាព​មិន​ស្ថិត​ស្ថេរ ​ក្នុង​​កំណត់​ផ្ទាល់ខ្លួន​របស់​អ្នក ។ មុនពេល​បន្ត អ្នក​គួរ​តែ​ប្រាកដ​ថា អ្នកប្រើ '$u' បាន​បិទ %PRODUCTNAME នៅ​​កុំព្យូទ័រ​ '$h' ។\n\nតើ​អ្នក​ពិត​ជា​ចង់​បន្ត​ឬ​ទេ ?"
+msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\\n\\nDo you really want to continue?"
+msgstr ""
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -136,7 +136,7 @@ msgid  "Printing is disabled. No documents can be printed."
 msgstr "បាន​បិទ​ការ​បោះពុម្ព ។ មិន​អាច​បោះពុម្ព​ឯកសារ​ឡើយ ។"
 
 #: source/app/desktop.src#INFOBOX_EXPIRED.InfoBox.Message
-msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
+msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\\nvisit http://www.openoffice.org"
 msgstr ""
 
 #: source/app/desktop.src#STR_TITLE_EXPIRED.String.Text
@@ -144,39 +144,39 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
-msgid  "The path manager is not available.\n"
-msgstr "មិន​មាន​កម្មវិធី​គ្រប់គ្រង​ផ្លូវ​ឡើយ ។\n"
+msgid  "The path manager is not available.\\n"
+msgstr ""
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
-msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr "មិន​អាច​បញ្ចប់​ការ​ដំឡើង %PRODUCTNAME បាន​ឡើយ ដោយ​សារ​តែ​មាន​ទំហំ​ថាស​មិន​គ្រប់គ្រាន់ ។ សូម​ធ្វើ​ឲ្យ​មាន​ទំហំ​ទំនេរ​ខ្លះ នៅ​ក្នុង​ទីតាំង​ខាង​ក្រោម ហើយ​ចាប់ផ្ដើម %PRODUCTNAME ឡើង​វិញ ៖\n\n"
+msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\\n\\n"
+msgstr ""
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
-msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr "មិន​អាច​ដំឡើង %PRODUCTNAME បាន​ឡើយ ដោយ​សារ​តែ​មិន​មាន​សិទ្ធិ​ចូលដំណើរការ ។ សូម​ប្រាកដ​ថា អ្នក​មាន​សិទ្ធិ​គ្រប់គ្រាន់​ដើម្បី​ចូលដំណើរការ​ទីតាំង​ខាង​ក្រោម ហើយ​ចាប់ផ្ដើម %PRODUCTNAME ឡើង​វិញ ៖\n\n"
+msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\\n\\n"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThat version is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThat version, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThat version, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
-msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install version $NEW of the extension \\'$NAME\\'.\\nThe older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\\nClick \\'OK\\' to replace the installed extension.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
@@ -184,8 +184,8 @@ msgid  "System dependencies check"
 msgstr "ការពិនិត្យ​មើល​ភាព​អាស្រ័យ​ប្រព័ន្ធ"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
-msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr "មិនអាច​ដំឡើង​ពាក្យ​បន្ថែម​ដូច​តទៅនេះបានទេ\nភាព​អាស្រ័យ​ប្រព័ន្ធ មិនត្រូវបាន​បំពេញ​ពេញលេញ​ទេ ៖"
+msgid  "The extension cannot be installed as the following\\nsystem dependencies are not fulfilled:"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -245,23 +245,23 @@ msgstr "កំហុស ៖ ​មិនស្គាល់​​ស្ថាន
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_CLOSE_BTN.String.Text
 msgid  "Close"
-msgstr "បិទ"
+msgstr "បិទ​"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_EXIT_BTN.String.Text
 msgid  "Quit"
 msgstr "ចាកចេញ"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
-msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr "%PRODUCTNAME ត្រូវ​បាន​ធ្វើ​បច្ចុប្បន្នភាព​​ទៅ​កំណែ​ថ្មី ។ ផ្នែក​បន្ថែម​របស់ %PRODUCTNAME មួយ​ចំនួន​មិន​ឆប​គ្នា​​ជា​មួយ​នឹង​កំណែ​នេះ​ទេ ហើយ​តម្រូវ​ឲ្យ​ធ្វើ​បច្ចុប្បន្នភាព​​មុន​នឹង​អាច​ប្រើ %PRODUCTNAME បាន ។\n\nកា​រធ្វើ​បច្ចុប្បន្នភាព​​ផ្នែកបន្ថែម​ដែល​បានចែករំលែក ​ត្រូវការ​សិទ្ធិជា​អ្នក​គ្រប់គ្រង ។ ទាន់ទង​អ្នក​គ្រប់គ្រង​ប្រព័ន្ធ​របស់​អ្នក ដើម្បី​ធ្វើ​បច្ចុប្បន្នភាព​​ផ្នែក​បន្ថែម​ដែល​បានចែករំលែក​​ដូច​ខាងក្រោម ៖"
+msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\\n\\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
 msgstr "មិនអាច​បើក​ផ្នែក​បន្ថែម​បានទេ ព្រោះថា​ភាព​អាស្រ័យ​របស់​ប្រព័ន្ធ​ដូច​ខាងក្រោម​មិន​ត្រូវ​បាន​បំពេញ​ទេ ៖"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
-msgid  "This extension is disabled because you haven't accepted the license yet.\n"
-msgstr "ផ្នែក​បន្ថែម​នេះ​ត្រូវបានបិទ​ ពីព្រោះ​អ្នក​មិនបាន​ទទួលយក​អាជ្ញាប័ណ្ណ​នៅ​ឡើយ​ទេ ។\n"
+msgid  "This extension is disabled because you haven't accepted the license yet.\\n"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
 msgid  "Show license"
@@ -269,7 +269,7 @@ msgstr "បង្ហាញ​អាជ្ញាប័ណ្ណ"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.ModalDialog.Text
 msgid  "Extension Software License Agreement"
-msgstr "កិច្ចព្រមព្រៀង​អាជ្ញាប័ណ្ណ​នៃ​កម្មវិធី ពាក្យបន្ថែម"
+msgstr "កិច្ចព្រមព្រៀង​អាជ្ញាប័ណ្ណ​កម្មវិធី​ផ្នែក​បន្ថែម"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation of the extension:"
@@ -280,16 +280,16 @@ msgid  "1."
 msgstr "១."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
-msgid  "Read the complete License Agreement. Use the scroll bar or the \'Scroll Down\' button in this dialog to view the entire license text."
-msgstr ""
+msgid  "Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down\\' button in this dialog to view the entire license text."
+msgstr "អាន​កិច្ចព្រមព្រៀង​អាជ្ញា​ប័ណ្ណ ទាំងស្រុង ។ ប្រើ​របារ​រមូរ ឬប៊ូតុង\\'រមូរ​ចុះក្រោម\\' នៅក្នុង​ប្រអប់​នេះ ដើម្បី​មើលអត្ថបទ​​អាជ្ញាប័ណ្ណ​ទាំង​មូល ។"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
 msgstr "២."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-msgid  "Accept the License Agreement for the extension by pressing the \'Accept\' button."
-msgstr ""
+msgid  "Accept the License Agreement for the extension by pressing the \\'Accept\\' button."
+msgstr "យល់ព្រម​​ចំពោះ​កិច្ចព្រមព្រៀង​អាជ្ញា​ប័ណ្ណ សម្រាប់​ពាក្យ​បន្ថែម ដោយសង្កត់​ប៊ូតុង \\'យល់ព្រម\\' ។"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
 msgid  "~Scroll Down"
@@ -312,28 +312,28 @@ msgid  "Close"
 msgstr "បិទ​"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WarningBox.Message
-msgid  "You are about to install the extension \'%NAME\'.\nClick \'OK\' to proceed with the installation.\nClick \'Cancel\' to stop the installation."
+msgid  "You are about to install the extension \\'%NAME\\'.\\nClick \\'OK\\' to proceed with the installation.\\nClick \\'Cancel\\' to stop the installation."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WarningBox.Message
-msgid  "You are about to remove the extension \'%NAME\'.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgid  "You are about to remove the extension \\'%NAME\\'.\\nClick \\'OK\\' to remove the extension.\\nClick \\'Cancel\\' to stop removing the extension."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to remove the extension.\\nClick \\'Cancel\\' to stop removing the extension."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to enable the extension.\nClick \'Cancel\' to stop enabling the extension."
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to enable the extension.\\nClick \\'Cancel\\' to stop enabling the extension."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to disable the extension.\nClick \'Cancel\' to stop disabling the extension."
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to disable the extension.\\nClick \\'Cancel\\' to stop disabling the extension."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.String.Text
-msgid  "The extension \'%Name\' does not work on this computer."
-msgstr ""
+msgid  "The extension \\'%Name\\' does not work on this computer."
+msgstr "ផ្នែក​បន្ថែម \\'%Name\\' មិន​ធ្វើការ​នៅ​លើ​កុំព្យូទ័រ​នេះ ។"
 
 #: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.ModalDialog.Text
 msgid  "Download and Installation"
@@ -484,11 +484,11 @@ msgid  "Enable Updates"
 msgstr "បើក​បច្ចុប្បន្នភាព"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.String.Text
-msgid  "This update will be ignored.\n"
-msgstr "បច្ចុប្បន្ន​ភាព​នេះ​នឹង​ត្រូវ​បាន​មិន​អើពើ ។\n"
+msgid  "This update will be ignored.\\n"
+msgstr ""
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WarningBox.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to update the extensions.\nClick \'Cancel\' to stop updating the extensions."
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\\nClick \\'OK\\' to update the extensions.\\nClick \\'Cancel\\' to stop updating the extensions."
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.ModelessDialog.Text
@@ -536,8 +536,8 @@ msgid  "Disable all"
 msgstr "បិទ​ទាំងអស់"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
-msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr "ប្រាកដ​ថា​​គ្មាន​អ្នក​ប្រើ​ផ្សេង​​កំពុង​ដំណើរ​ការ​ជា​មួយ​ %PRODUCTNAME ដូចគ្នា នៅ​ពេល​ដំឡើង​ផ្នែក​បន្ថែម​សម្រាប់​​​​អ្នក​ប្រើទាំងអស់​នៅ​​ក្នុង​បរិស្ថាន​អ្នក​ប្រើ​ជា​ច្រើន ។\n\nសម្រាប់​អ្នក​ដែល​ចង់​ដំឡើង​ផ្នែក​បន្ថែម ?\n"
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\\n\\nFor whom do you want to install the extension?\\n"
+msgstr ""
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
 msgid  "Copying: "
@@ -636,12 +636,12 @@ msgid  "Help"
 msgstr "ជំនួយ"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
-msgid  "The extension cannot be installed because:\n"
-msgstr "មិនអាច​ដំឡើង​ផ្នែក​បន្ថែម​បានទេ ព្រោះ ៖\n"
+msgid  "The extension cannot be installed because:\\n"
+msgstr ""
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
-msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr "ផ្នែកបន្ថែម​នឹង​មិន​ត្រូវ​បានដំឡើង​ទេ ដោយ​សារ​តែ​កំហុស​មួយ​បានកើតឡើង​នៅ​ក្នុង​​ឯកសារ​ជំនួយ ៖\n"
+msgid  "The extension will not be installed because an error occurred in the Help files:\\n"
+msgstr ""
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 msgid  "Extension"
@@ -736,24 +736,24 @@ msgid  "Registration"
 msgstr "ការ​ចុះ​ឈ្មោះ"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
-msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "អ្នក​ជំនួយការ​នេះ​នឹងណែ​នាំ​អ្នក​អំពី​កិច្ចព្រមព្រៀង​អាជ្ញាបណ្ណ, ការ​ផ្ទេរ​ទិន្នន័យ​របស់​អ្នកពី %OLD_VERSION និង​ការ​ចុះ​ឈ្មោះ​ %PRODUCTNAME ។\n\nចុច​ 'បន្ទាប់' ដើម្បី​បន្ត ។"
+msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
+msgstr ""
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
-msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "អ្នក​ជំនួយ​ការ​នេះ នឹង​នាំអ្នក​ចុះឈ្មោះ %PRODUCTNAME ។\n\nចុច 'បន្ទាប់' ដើម្បី​បន្ត ។"
+msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
+msgstr ""
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
 msgstr "បញ្ចប់"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
-msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr "ឥឡូវ​អ្នក​មាន​ឳកាស​ដើម្បី​គាំទ្រ​ និងចែកចាយ​ទៅ​ការ​រីកចម្រើន​យ៉ាង​រហ័ស​នៃ​សហគមន៍​ប្រភព​កូដ​ចំហ​នៅ​ក្នុង​ពិភព​លើក ។\n\nជួយ​យើង​ឲ្យ​បញ្ជាក់​ថា %PRODUCTNAME បាន​ទទួល​ការ​ចែករំលែក​ទីផ្សារ​ដ៍​សំខាន់​រួច​ហើយ​ដោយ​ចុះឈ្មោះ ។\n\nការ​ចុះឈ្មោះ​គឺ​ជា​ការ​ស្ម័គ្រ និង​គ្មាន​កាតព្វកិច្ច​ទេ ។"
+msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\\n\\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\\n\\nRegistering is voluntary and without obligation."
+msgstr ""
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
-msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr "កំហុស​មួយ​បាន​កើតឡើង​ ពេល​ចាប់ផ្តើម​កម្មវិធី​រុករក ។\nសូម​ពិនិត្យ​មើល %PRODUCTNAME និង​ការ​កំណត់​កម្មវិធី​រុក​រក ។"
+msgid  "An error occurred in starting the web browser.\\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr ""
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -764,8 +764,8 @@ msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "សូម​ស្វាគមន៍​មក​កាន់ %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
-msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr "អ្នក​ជំនួយការ​នេះ​នឹង​ណែ​នាំ​អ្នក​អំពី​កិច្ចព្រមព្រៀង​អាជ្ញាបណ្ណ​ និង​ ការ​ចុះ​ឈ្មោះ %PRODUCTNAME ។\n\nចុច 'បន្ទាប់' ដើម្បី​បន្ត ។"
+msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\\n\\nClick 'Next' to continue."
+msgstr ""
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -801,11 +801,11 @@ msgstr "បដិសេធ"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
 msgid  "Transfer personal data"
-msgstr "ផ្ទេរ​ទិន្នន័យ​ផ្ទាល់ខ្លួន"
+msgstr "ផ្ទេរ​ទិន្នន័យ​ផ្ទាល់​ខ្លួន"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
-msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr "ទិន្នន័យ​ផ្ទាល់​ខ្លួន​ភាគ​ច្រើន​ពី​ការ​ដំឡើង​ %OLDPRODUCT អាច​ត្រូវ​បាន​ប្រើ​ម្តងទៀត​ក្នុង​ %PRODUCTNAME %PRODUCTVERSION ។\n\nបើ​អ្នក​មិន​ចង់​ប្រើ​ការ​កំណត់​ណា​មួយ​ម្ដង​ទៀត​នៅ​ក្នុង %PRODUCTNAME %PRODUCTVERSION សូម​ដោះ​ធីក​ពី​ប្រអប់ ។"
+msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\\n\\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
+msgstr ""
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -816,8 +816,8 @@ msgid  "Online Update"
 msgstr "ធ្វើ​បច្ចុប្បន្នភាព​​លើ​បណ្តាញ​"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
-msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr "%PRODUCTNAME ស្វែងរក​ដោយ​ស្វ័យ​ប្រវត្តិ​នូវ​ចន្លោះ​ពេល​ធម្មតា​សម្រាប់​កំណែ​ថ្មី ។\nនៅក្នុង​ការ​ធ្វើដូច្នេះ​ ការធ្វើ​បច្ចុប្បន្នភាព​​លើ​បណ្ដាញមិន​ផ្ទេរ​ទិន្នន័យ​ផ្ទាល់​ខ្លួនបាន​ទេ ។\nដ៏​រាប​ណាមាន​​កំណែ​ថ្មី​ អ្នក​នឹង​ត្រូវ​បាន​ជូនដំណឹង ។\n\nអ្នក​អាច​កំណត់​រចនាសម្ព័ន្ធ​លក្ខណៈ​ពិសេស​នេះ​នៅ ឧបករណ៍ / ជម្រើស... / %PRODUCTNAME / ធ្វើ​បច្ចុប្បន្នភាព​លើ​បណ្ដាញ ។"
+msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\\nIn doing so online update does not transfer personal data.\\nAs soon as a new version is available, you will be notified.\\n\\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
+msgstr ""
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -852,8 +852,8 @@ msgid  "%PRODUCTNAME Registration"
 msgstr "ការ​ចុះ​ឈ្មោះ %PRODUCTNAME"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
-msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr "ឥឡូវ​នេះ​អ្នក​មាន​ឱកាស​ដើម្បី​ចុះ​ឈ្មោះ​ជាអ្នក​ប្រើ %PRODUCTNAME ម្នាក់ ។ ការ​ចុះ​ឈ្មោះ​មិន​មែន​ជា​ការ​បង្ខិតបង្ខំ ដែល​អ្នក​ត្រូវ​តែ​ធ្វើ​នោះ​ទេ ។\n\nបើ​អ្នក​ចុះឈ្មោះ យើង​អាច​នឹង​ជូន​ដំណឹង​ដល់​អ្នក​អំពី​ការ​អភិវឌ្ឍន៍​ថ្មីៗ ដែល​ទាក់ទង​នឹង​ផលិតផល​នេះ ។"
+msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\\n\\nIf you register, we can inform you about new developments concerning this product."
+msgstr ""
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -868,8 +868,8 @@ msgid  "I do not want to ~register"
 msgstr "ខ្ញុំ​មិន​ចង់​ចុះ​ឈ្មោះ​ទេ "
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
-msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr "យើង​សង្ឃឹម​ថា​ អ្នក​នឹង​រីករាយ​ធ្វើការ​ជាមួយ %PRODUCTNAME ។\n\nចុច 'បញ្ចប់' ដើម្បី​ចេញ​ពី​អ្នក​ជំនួយការ ។"
+msgid  "We hope you enjoy working with %PRODUCTNAME.\\n\\nTo exit the wizard, click 'Finish'."
+msgstr ""
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -920,16 +920,16 @@ msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "ជម្រើស​​​បន្ទាត់​​​បញ្ជា​​​មិន​​​ត្រឹម​​ត្រូវ ​​'%s' ។ សូម​​ប្រើ​  '/?' ជា​ជំនួយ​ ។​"
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
-msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr "កញ្ចប់នេះ​ត្រូវ​ការ​យ៉ាង​ហោចណាស់​កំណែ '%s' របស់​កម្មវិធី​ដំឡើង​វីនដូ ។ \nតើ​អ្នក​មាន​កម្មវិធី​ដំឡើង​វីនដូ​ '%s' នៅ​ក្នុង​ប្រព័ន្ធ​របស់​អ្នក​ហើយ​ឬនៅ !"
+msgid  "This package requires at least the version '%s' of the Windows Installer. \\nYou have Windows Installer '%s' on your system!"
+msgstr ""
 
 #: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
-msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr "កញ្ចប់​នេះ​ត្រូវការ​កម្មវិធី​ដំឡើង​វីនដូ ។ \nអ្នក​ត្រូវការ​កម្មវិធី​ដំឡើង​វីនដូ​ '%s' នៅ​ក្នុង​ប្រព័ន្ធ​របស់​អ្នក !"
+msgid  "This package requires the Windows Installer. \\nYou need at least Windows Installer '%s' on your system!"
+msgstr ""
 
 #: win32/source/setup/setup.ulf#%USAGE%
-msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr "ការ​ប្រើ​ប្រាស់ ៖\n   /? :  បង្ហាញ​ប្រអប់​នេះ ។\n   /a :  ធ្វើ​ការ​ដំឡើង​បែប​គ្រប់​គ្រង ។\n   /j[u|m] :  ធ្វើ​ការ​ដំឡើង​បែប​ផ្សព្វផ្សាយ ។\n   /q[n] : កុំ​បង្ហាញ​ចំណុច​ប្រទាក់​អ្នក​ប្រើ​ណាមួយ (របៀប​ស្ងាត់) ។\n"
+msgid  "Usage:\\n   /? :  Shows this dialog.\\n   /a :  Performs an administrative installation.\\n   /j[u|m] :  Performs an advertising installation.\\n   /q[n] : Do not show any user interface (silent mode).\\n"
+msgstr ""
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."

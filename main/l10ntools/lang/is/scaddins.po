@@ -485,7 +485,7 @@ msgstr "Lokadagsetningin"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
 msgid  "Basis"
-msgstr "Grunnur"
+msgstr "Grunngildi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
 msgid  "Basis for determining the interest days"
@@ -1569,7 +1569,7 @@ msgstr "Línulega afskriftin"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.14.String.Text
 msgid  "Basis"
-msgstr "Grunngildi"
+msgstr "Grunnur"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.15.String.Text
 msgid  "The year basis to be used"
@@ -1657,11 +1657,11 @@ msgstr "Fyrsti vaxtadagur verðbréfs"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.6.String.Text
 msgid  "Settlement"
-msgstr "Greiðsla"
+msgstr "Uppgjörsdagsetning"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
 msgid  "The settlement"
-msgstr "Greiðslan"
+msgstr "Er uppgjörsdagsetning"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
 msgid  "Rate"
@@ -1681,7 +1681,7 @@ msgstr "Par gildið"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.12.String.Text
 msgid  "Frequency"
-msgstr "Tíðni"
+msgstr "Fjöldi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.13.String.Text
 msgid  "The frequency"
@@ -1813,11 +1813,11 @@ msgstr "Verðið"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.8.String.Text
 msgid  "Redemption"
-msgstr "Innlausnarverð"
+msgstr "Innlausnarvirði"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
 msgid  "The redemption value"
-msgstr "Innlausnarverðið"
+msgstr "Er innlausnarvirði verðbréfsins"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 msgid  "Basis"
@@ -1857,11 +1857,11 @@ msgstr "Er árleg vaxtaprósenta"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.8.String.Text
 msgid  "Yield"
-msgstr "Afrakstur"
+msgstr "Ársávöxtun"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.9.String.Text
 msgid  "The yield"
-msgstr "Afraksturinn"
+msgstr "Er ársávöxtun"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.10.String.Text
 msgid  "Frequency"
@@ -2041,11 +2041,11 @@ msgstr "Afraksturinn"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.10.String.Text
 msgid  "Redemption"
-msgstr "Innlausnarverð"
+msgstr "Innlausnarvirði"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.11.String.Text
 msgid  "The redemption value"
-msgstr "Innlausnarverðið"
+msgstr "Er innlausnarvirði verðbréfsins"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.12.String.Text
 msgid  "Frequency"
@@ -2685,11 +2685,11 @@ msgstr "Er gjalddagi verðbréfsins"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.6.String.Text
 msgid  "Last interest"
-msgstr "Seinustu vextir"
+msgstr "Síðasta vaxtagreiðsludagsetning"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.7.String.Text
 msgid  "The last interest date"
-msgstr "Er síðasta vaxtagreiðsludagsetning"
+msgstr "Er síðasta vaxtagreiðsludagsetning verðbréfsins"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.8.String.Text
 msgid  "Rate"
@@ -3145,11 +3145,11 @@ msgstr "Upphafsdagur"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.3.String.Text
 msgid  "First day of the period"
-msgstr "Fyrsti dagur tímabilsins"
+msgstr "Fyrsti dagur tímabils"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.4.String.Text
 msgid  "End date"
-msgstr "Lokadagsetning"
+msgstr "Lokadagur"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.5.String.Text
 msgid  "Last day of the period"

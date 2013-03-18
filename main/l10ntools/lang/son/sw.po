@@ -816,7 +816,7 @@ msgid  "Document could not be completely saved."
 msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
-msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
+msgid  "This HTML document contains %PRODUCTNAME Basic macros.\\nThey were not saved with the current export settings."
 msgstr ""
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
@@ -1108,15 +1108,15 @@ msgid  "blank page"
 msgstr ""
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
-msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
+msgid  "You have a large amount of data saved in the clipboard.\\nShould the clipboard contents remain available for other applications?"
 msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
-msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
+msgid  "Conversion into HTML format \\nmay cause information loss. \\nDo you want to save the document?"
 msgstr ""
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
-msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
+msgid  "The source code can only be displayed if the document is saved in HTML format.\\nWould you like to save the document as HTML?"
 msgstr ""
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
@@ -1168,7 +1168,7 @@ msgid  "Your document contains address database fields. Do you want to print a f
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
-msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
+msgid  "The data source \\'%1\\' was not found. Thus the connection to the data source could not be established.\\n\\nPlease check the connections settings."
 msgstr ""
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.PB_MERGE_OK.OKButton.Text
@@ -1666,6 +1666,7 @@ msgid  "Media object"
 msgstr ""
 
 #: source/ui/chrdlg/numpara.src#TP_NUMPARA.FL_OUTLINE_START.FixedLine.Text
+#, fuzzy
 msgid  "Outline"
 msgstr " Windoo"
 
@@ -1726,6 +1727,7 @@ msgid  "Numbering Style"
 msgstr ""
 
 #: source/ui/chrdlg/numpara.src#TP_NUMPARA.LB_NUMBER_STYLE.item1.StringList.item
+#, fuzzy
 msgid  "None"
 msgstr "Baa affoo"
 
@@ -1754,6 +1756,7 @@ msgid  "~Start with"
 msgstr ""
 
 #: source/ui/chrdlg/ccoll.src#TP_CONDCOLL.FL_CONDITION.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Fondawey"
 
@@ -1786,10 +1789,12 @@ msgid  "Table Header"
 msgstr ""
 
 #: source/ui/chrdlg/ccoll.src#TP_CONDCOLL.STR_REGIONS.item2.ItemList.item
+#, fuzzy
 msgid  "Table"
 msgstr "Taabal / Daarumi"
 
 #: source/ui/chrdlg/ccoll.src#TP_CONDCOLL.STR_REGIONS.item3.ItemList.item
+#, fuzzy
 msgid  "Frame"
 msgstr "Frame"
 
@@ -1806,10 +1811,12 @@ msgid  "Endnote"
 msgstr ""
 
 #: source/ui/chrdlg/ccoll.src#TP_CONDCOLL.STR_REGIONS.item7.ItemList.item
+#, fuzzy
 msgid  "Header"
 msgstr "Tiira Boŋdeke"
 
 #: source/ui/chrdlg/ccoll.src#TP_CONDCOLL.STR_REGIONS.item8.ItemList.item
+#, fuzzy
 msgid  "Footer"
 msgstr "Tiira Ceedeke"
 
@@ -1894,6 +1901,7 @@ msgid  "10th Numbering Level"
 msgstr ""
 
 #: source/ui/chrdlg/ccoll.src#TP_CONDCOLL.STR_NOTEMPL.String.Text
+#, fuzzy
 msgid  "<none>"
 msgstr " Haya kul si"
 
@@ -1922,6 +1930,7 @@ msgid  "Outline & Numbering"
 msgstr ""
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_TABULATOR.PageItem.Text
+#, fuzzy
 msgid  "Tabs"
 msgstr " Moŋey"
 
@@ -1954,14 +1963,17 @@ msgid  "Asian Typography"
 msgstr ""
 
 #: source/ui/chrdlg/paradlg.src#DLG_DRAWPARA.1.TP_TABULATOR.PageItem.Text
+#, fuzzy
 msgid  "Tabs"
 msgstr " Moŋey"
 
 #: source/ui/chrdlg/chardlg.src#DLG_CHAR.TabDialog.Text
+#, fuzzy
 msgid  "Character"
 msgstr "Harfu"
 
 #: source/ui/chrdlg/chardlg.src#DLG_CHAR.1.TP_CHAR_STD.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr " Sigirawey"
 
@@ -1970,6 +1982,7 @@ msgid  "Font Effects"
 msgstr ""
 
 #: source/ui/chrdlg/chardlg.src#DLG_CHAR.1.TP_CHAR_POS.PageItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr " Kayandi doo"
 
@@ -1978,6 +1991,7 @@ msgid  "Asian Layout"
 msgstr ""
 
 #: source/ui/chrdlg/chardlg.src#DLG_CHAR.1.TP_CHAR_URL.PageItem.Text
+#, fuzzy
 msgid  "Hyperlink"
 msgstr "Dobu tiira"
 
@@ -1986,14 +2000,17 @@ msgid  "Background"
 msgstr ""
 
 #: source/ui/chrdlg/chardlg.src#DLG_DRAWCHAR.TabDialog.Text
+#, fuzzy
 msgid  "Font"
 msgstr " Sigirawey"
 
 #: source/ui/chrdlg/chardlg.src#DLG_DRAWCHAR.1.TP_CHAR_STD.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr " Sigirawey"
 
 #: source/ui/chrdlg/chardlg.src#TP_CHAR_URL.FL_URL.FixedLine.Text
+#, fuzzy
 msgid  "Hyperlink"
 msgstr "Dobu tiira"
 
@@ -2066,6 +2083,7 @@ msgid  "~Column break"
 msgstr ""
 
 #: source/ui/chrdlg/swbreak.src#DLG_BREAK.FL_BREAK.FixedLine.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Dumi"
 
@@ -2110,6 +2128,7 @@ msgid  "Space to text"
 msgstr ""
 
 #: source/ui/chrdlg/drpcps.src#TP_DROPCAPS.FL_SETTINGS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Hansayaney / Alhaaley"
 
@@ -2122,6 +2141,7 @@ msgid  "Character St~yle"
 msgstr ""
 
 #: source/ui/chrdlg/drpcps.src#TP_DROPCAPS.FL_CONTENT.FixedLine.Text
+#, fuzzy
 msgid  "Contents"
 msgstr " Tiira kunahere"
 
@@ -2142,6 +2162,7 @@ msgid  "Large handles"
 msgstr ""
 
 #: source/ui/config/optdlg.src#TP_CONTENT_OPT.FL_WINDOW.FixedLine.Text
+#, fuzzy
 msgid  "View"
 msgstr "Guna"
 
@@ -2174,6 +2195,7 @@ msgid  "S~mooth scroll"
 msgstr ""
 
 #: source/ui/config/optdlg.src#TP_CONTENT_OPT.FL_DISP.FixedLine.Text
+#, fuzzy
 msgid  "Display"
 msgstr "Maršin-diji"
 
@@ -2198,6 +2220,7 @@ msgid  "~Comments"
 msgstr ""
 
 #: source/ui/config/optdlg.src#TP_CONTENT_OPT.FL_SETTINGS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Hansayaney / Alhaaley"
 
@@ -2822,7 +2845,7 @@ msgid  "<User settings>"
 msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
-msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
+msgid  "Do you want to change the compatibility options of the default template?\\nThis will affect all new documents based on the default template."
 msgstr ""
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
@@ -2923,7 +2946,7 @@ msgid  "Caption"
 msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
-msgid  "Add captions automatically\nwhen inserting:"
+msgid  "Add captions automatically\\nwhen inserting:"
 msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
@@ -3128,6 +3151,7 @@ msgid  "%PRODUCTNAME is testing the e-mail account settings..."
 msgstr ""
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.FI_ERROR.FixedText.Text
+#, fuzzy
 msgid  "Errors"
 msgstr " Firkawey"
 
@@ -3140,6 +3164,7 @@ msgid  "Task"
 msgstr ""
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.ST_STATUS.String.Text
+#, fuzzy
 msgid  "Status"
 msgstr " Alhaali"
 
@@ -3156,6 +3181,7 @@ msgid  "Successful"
 msgstr ""
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.ST_FAILED.String.Text
+#, fuzzy
 msgid  "Failed"
 msgstr "Hasara / Mana koy / Mana too / A dunbu"
 
@@ -3204,6 +3230,7 @@ msgid  "P~ort"
 msgstr ""
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.FT_PROTOCOL.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Dumi"
 
@@ -3256,10 +3283,12 @@ msgid  "Change ~Table..."
 msgstr ""
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.ST_NAME.String.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Maa"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.ST_TABLE.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Taabal / Daarumi"
 
@@ -3611,10 +3640,12 @@ msgid  "~Rename..."
 msgstr ""
 
 #: source/ui/dbui/customizeaddresslistdialog.src#DLG_MM_CUSTOMIZE_ADDRESS_LIST.PB_UP.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Move up"
 msgstr " Zijandi beene"
 
 #: source/ui/dbui/customizeaddresslistdialog.src#DLG_MM_CUSTOMIZE_ADDRESS_LIST.PB_DOWN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Move down"
 msgstr " Zumandi ganda"
 
@@ -3631,6 +3662,7 @@ msgid  "Rename Element"
 msgstr ""
 
 #: source/ui/dbui/customizeaddresslistdialog.src#DLG_MM_ADD_RENAME_ENTRY.ST_ADD_BUTTON.String.Text
+#, fuzzy
 msgid  "Add"
 msgstr "Tonton"
 
@@ -3967,7 +3999,7 @@ msgid  "You did not specify a new name for the attachment. If you would like to 
 msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
-msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
+msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\\n\\n Do you want to enter e-mail account information now?"
 msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
@@ -3987,7 +4019,7 @@ msgid  "~Bcc"
 msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
-msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
+msgid  "Note:\\nSeparate e-mail addresses with a semicolon (;)."
 msgstr ""
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
@@ -4262,7 +4294,7 @@ msgid  "Sending failed (invalid address)"
 msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
-msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
+msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\\nWould you like to exit anyway?"
 msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
@@ -4362,7 +4394,7 @@ msgid  "Edit Document"
 msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
-msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
+msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\\n\\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
 msgstr ""
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
@@ -4560,6 +4592,7 @@ msgid  "~LF"
 msgstr ""
 
 #: source/ui/dialog/ascfldlg.src#DLG_ASCII_FILTER.STR_SYS_CHARSET.String.Text
+#, fuzzy
 msgid  "System"
 msgstr "Sistemu / Goyjinawey marga / Dabariɲaa"
 
@@ -4644,6 +4677,7 @@ msgid  "Hide"
 msgstr ""
 
 #: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Fondawey"
 
@@ -4672,6 +4706,7 @@ msgid  "~Options..."
 msgstr ""
 
 #: source/ui/dialog/regionsw.src#MD_EDIT_REGION.CB_DISMISS.PushButton.Text
+#, fuzzy
 msgid  "Remove"
 msgstr " A kaa noo"
 
@@ -4720,6 +4755,7 @@ msgid  "Footnotes/Endnotes"
 msgstr ""
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.ST_INSERT.String.Text
+#, fuzzy
 msgid  "Insert"
 msgstr " Daŋ"
 
@@ -4748,6 +4784,7 @@ msgid  "Footnotes/Endnotes"
 msgstr ""
 
 #: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.PageItem.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Fondawey"
 
@@ -4924,7 +4961,7 @@ msgid  "Requested clipboard format is not available."
 msgstr ""
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
-msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
+msgid  "The section format is outdated.\\nIt needs to be converted so that changes\\ncan be saved.\\nShould it be converted now?"
 msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
@@ -5016,6 +5053,7 @@ msgid  "As Link"
 msgstr ""
 
 #: source/ui/docvw/docvw.src#MN_READONLY_POPUP.MN_READONLY_GRAPHICTOGALLERY.MN_READONLY_TOGALLERYCOPY.MenuItem.Text
+#, fuzzy
 msgid  "Copy"
 msgstr "Bere"
 
@@ -5032,6 +5070,7 @@ msgid  "As Link"
 msgstr ""
 
 #: source/ui/docvw/docvw.src#MN_READONLY_POPUP.MN_READONLY_BACKGROUNDTOGALLERY.MN_READONLY_TOGALLERYCOPY.MenuItem.Text
+#, fuzzy
 msgid  "Copy"
 msgstr "Bere"
 
@@ -5129,7 +5168,7 @@ msgid  "Footnote: "
 msgstr ""
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
+msgid  "Readonly content cannot be changed.\\nNo modifications will be accepted"
 msgstr ""
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
@@ -5817,7 +5856,7 @@ msgid  "Options"
 msgstr "Fondawey"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
+msgid  "The label \"%1 / %2\" already exists.\\nDo you want to overwrite it?"
 msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
@@ -6748,11 +6787,12 @@ msgid  "Available Databases"
 msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.PB_ADDDB.PushButton.Text
+#, fuzzy
 msgid  "Browse..."
 msgstr " Ceeci ka koy..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
-msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
+msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\\nUse the browse button to select a database file."
 msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
@@ -6794,6 +6834,7 @@ msgid  "Choose Item: "
 msgstr ""
 
 #: source/ui/fldui/DropDownFieldDialog.src#DLG_FLD_DROPDOWN.FL_ITEMS.FixedLine.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Fasal"
 
@@ -6879,6 +6920,7 @@ msgid  "Character Style"
 msgstr ""
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_STD.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr " Sigirawey"
 
@@ -6887,6 +6929,7 @@ msgid  "Font Effects"
 msgstr ""
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_POS.PageItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr " Kayandi doo"
 
@@ -6919,6 +6962,7 @@ msgid  "Asian Typography"
 msgstr ""
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CHAR_STD.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr " Sigirawey"
 
@@ -6927,6 +6971,7 @@ msgid  "Font Effects"
 msgstr ""
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CHAR_POS.PageItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr " Kayandi doo"
 
@@ -6939,6 +6984,7 @@ msgid  "Outline & Numbering"
 msgstr ""
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_TABULATOR.PageItem.Text
+#, fuzzy
 msgid  "Tabs"
 msgstr " Moŋey"
 
@@ -6975,10 +7021,12 @@ msgid  "Borders"
 msgstr ""
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_HEADER.String.Text
+#, fuzzy
 msgid  "Header"
 msgstr "Tiira Boŋdeke"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_FOOTER.String.Text
+#, fuzzy
 msgid  "Footer"
 msgstr "Tiira Ceedeke"
 
@@ -6999,10 +7047,12 @@ msgid  "Frame Style"
 msgstr ""
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_STD.PageItem.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Dumi"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_ADD.PageItem.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Fondawey"
 
@@ -7035,6 +7085,7 @@ msgid  "Numbering Style"
 msgstr ""
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
+#, fuzzy
 msgid  "Outline"
 msgstr " Windoo"
 
@@ -7043,10 +7094,12 @@ msgid  "Graphics"
 msgstr ""
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_NUM_POSITION.PageItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr " Kayandi doo"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_NUM_OPTIONS.PageItem.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Fondawey"
 
@@ -7521,6 +7574,7 @@ msgid  "Evenly distribute contents ~to all columns"
 msgstr ""
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.FL_COLUMNS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Hansayaney / Alhaaley"
 
@@ -7549,6 +7603,7 @@ msgid  "~Line"
 msgstr ""
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.LB_STYLE.Default.StringList.item
+#, fuzzy
 msgid  "None"
 msgstr "Baa affoo"
 
@@ -8044,6 +8099,7 @@ msgid  "User-Defined Index"
 msgstr ""
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.CB_SHOWEXAMPLE.CheckBox.Text
+#, fuzzy
 msgid  "Preview"
 msgstr " Alhaaloo guna"
 
@@ -8060,6 +8116,7 @@ msgid  "~Title"
 msgstr ""
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Dumi"
 
@@ -8120,6 +8177,7 @@ msgid  "Create from"
 msgstr ""
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.CB_FROMHEADINGS.CheckBox.Text
+#, fuzzy
 msgid  "Outline"
 msgstr " Windoo"
 
@@ -8701,10 +8759,12 @@ msgid  "Reset to Default Language"
 msgstr ""
 
 #: source/ui/lingu/olmenu.src#STR_LANGSTATUS_MORE.String.Text
+#, fuzzy
 msgid  "More..."
 msgstr " I boobanta..."
 
 #: source/ui/lingu/olmenu.src#STR_IGNORE_SELECTION.String.Text
+#, fuzzy
 msgid  "Ignore"
 msgstr " Murayandi"
 
@@ -9031,6 +9091,7 @@ msgid  "~Delete"
 msgstr ""
 
 #: source/ui/misc/bookmark.src#DLG_INSERT_BOOKMARK.FL_BOOKMARK.FixedLine.Text
+#, fuzzy
 msgid  "Bookmarks"
 msgstr " Šilbawey"
 
@@ -9067,6 +9128,7 @@ msgid  "~Endnote"
 msgstr ""
 
 #: source/ui/misc/insfnote.src#DLG_INS_FOOTNOTE.FL_TYPE.FixedLine.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Dumi"
 
@@ -9701,6 +9763,7 @@ msgid  "~After"
 msgstr ""
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_POS.FixedText.Text
+#, fuzzy
 msgid  "Position"
 msgstr " Kayandi doo"
 
@@ -9817,6 +9880,7 @@ msgid  "Formula"
 msgstr ""
 
 #: source/ui/ribbar/inputwin.src#RID_TBX_FORMULA.FN_FORMULA_CANCEL.ToolBoxItem.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -9905,6 +9969,7 @@ msgid  "Minimum"
 msgstr ""
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_POP_STATISTICS.MN_CALC_MAX.MenuItem.Text
+#, fuzzy
 msgid  "Maximum"
 msgstr "kul ibeeroo "
 
@@ -9945,6 +10010,7 @@ msgid  "Formula"
 msgstr ""
 
 #: source/ui/ribbar/inputwin.src#TB_INPUT.FN_FORMULA_CANCEL.ToolBoxItem.Text
+#, fuzzy
 msgid  "Cancel"
 msgstr "Naŋ"
 
@@ -9973,10 +10039,12 @@ msgid  "To Frame"
 msgstr ""
 
 #: source/ui/ribbar/workctrl.src#RID_INSERT_FIELD_CTRL.FN_INSERT_FLD_DATE.MenuItem.Text
+#, fuzzy
 msgid  "Date"
 msgstr " Han"
 
 #: source/ui/ribbar/workctrl.src#RID_INSERT_FIELD_CTRL.FN_INSERT_FLD_TIME.MenuItem.Text
+#, fuzzy
 msgid  "Time"
 msgstr "Waati"
 
@@ -9989,6 +10057,7 @@ msgid  "Page Count"
 msgstr ""
 
 #: source/ui/ribbar/workctrl.src#RID_INSERT_FIELD_CTRL.FN_INSERT_FLD_TOPIC.MenuItem.Text
+#, fuzzy
 msgid  "Subject"
 msgstr "Dalil"
 
@@ -9997,6 +10066,7 @@ msgid  "Title"
 msgstr ""
 
 #: source/ui/ribbar/workctrl.src#RID_INSERT_FIELD_CTRL.FN_INSERT_FLD_AUTHOR.MenuItem.Text
+#, fuzzy
 msgid  "Author"
 msgstr "  Hantumkaa:"
 
@@ -10005,6 +10075,7 @@ msgid  "Other..."
 msgstr ""
 
 #: source/ui/ribbar/workctrl.src#RID_SCROLL_NAVIGATION_WIN.ST_TBL.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Taabal / Daarumi"
 
@@ -10021,6 +10092,7 @@ msgid  "Drawing"
 msgstr ""
 
 #: source/ui/ribbar/workctrl.src#RID_SCROLL_NAVIGATION_WIN.ST_CTRL.String.Text
+#, fuzzy
 msgid  "Control"
 msgstr " Dabari"
 
@@ -10077,6 +10149,7 @@ msgid  "Wrong table formula"
 msgstr ""
 
 #: source/ui/ribbar/workctrl.src#RID_SCROLL_NAVIGATION_WIN.String.Text
+#, fuzzy
 msgid  "Navigation"
 msgstr " Tataaru-hugu ceeciyaŋ"
 
@@ -10225,6 +10298,7 @@ msgid  "Next faulty table formula"
 msgstr ""
 
 #: source/ui/ribbar/workctrl.src#BTN_NAVI.ST_QUICK.String.Text
+#, fuzzy
 msgid  "Navigation"
 msgstr " Tataaru-hugu ceeciyaŋ"
 
@@ -10301,7 +10375,7 @@ msgid  "AutoCorrect"
 msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
-msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
+msgid  "AutoCorrect completed.\\nYou can accept or reject all changes,\\nor accept or reject particular changes."
 msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
@@ -10361,14 +10435,17 @@ msgid  "Numbering Object Bar"
 msgstr ""
 
 #: source/ui/shells/shells.src#STR_SHELLNAME_TEXT.String.Text
+#, fuzzy
 msgid  "Text"
 msgstr "Cawhaya"
 
 #: source/ui/shells/shells.src#STR_SHELLNAME_TABLE.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Taabal / Daarumi"
 
 #: source/ui/shells/shells.src#STR_SHELLNAME_FRAME.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "Frame"
 
@@ -10381,6 +10458,7 @@ msgid  "Object"
 msgstr ""
 
 #: source/ui/shells/shells.src#STR_SHELLNAME_LIST.String.Text
+#, fuzzy
 msgid  "List"
 msgstr "Maaseede"
 
@@ -10413,10 +10491,12 @@ msgid  "OLE object"
 msgstr ""
 
 #: source/ui/shells/shells.src#STR_SWBG_FRAME.String.Text
+#, fuzzy
 msgid  "Frame"
 msgstr "Frame"
 
 #: source/ui/shells/shells.src#STR_SWBG_TABLE.String.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Taabal / Daarumi"
 
@@ -10433,10 +10513,12 @@ msgid  "Page"
 msgstr ""
 
 #: source/ui/shells/shells.src#STR_SWBG_HEADER.String.Text
+#, fuzzy
 msgid  "Header"
 msgstr "Tiira Boŋdeke"
 
 #: source/ui/shells/shells.src#STR_SWBG_FOOTER.String.Text
+#, fuzzy
 msgid  "Footer"
 msgstr "Tiira Ceedeke"
 
@@ -10549,7 +10631,7 @@ msgid  "Sum"
 msgstr ""
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
-msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
+msgid  "You have entered an invalid name.\\nThe desired AutoFormat could not be created. \\nTry again using a different name."
 msgstr ""
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
@@ -10577,6 +10659,7 @@ msgid  "Insert Table"
 msgstr ""
 
 #: source/ui/table/instable.src#DLG_INSERT_TABLE.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Maa"
 
@@ -10589,6 +10672,7 @@ msgid  "~Rows"
 msgstr ""
 
 #: source/ui/table/instable.src#DLG_INSERT_TABLE.FL_TABLE.FixedLine.Text
+#, fuzzy
 msgid  "Size"
 msgstr "Hinna/Beeriyan / Hiisa "
 
@@ -10609,6 +10693,7 @@ msgid  "Don't split table"
 msgstr ""
 
 #: source/ui/table/instable.src#DLG_INSERT_TABLE.CB_BORDER.CheckBox.Text
+#, fuzzy
 msgid  "Border"
 msgstr "Hirri"
 
@@ -10617,6 +10702,7 @@ msgid  "Auto~Format..."
 msgstr ""
 
 #: source/ui/table/instable.src#DLG_INSERT_TABLE.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Fondawey"
 
@@ -10665,10 +10751,12 @@ msgid  "Don't split table"
 msgstr ""
 
 #: source/ui/table/convert.src#DLG_CONV_TEXT_TABLE.CB_BORDER.CheckBox.Text
+#, fuzzy
 msgid  "Border"
 msgstr "Hirri"
 
 #: source/ui/table/convert.src#DLG_CONV_TEXT_TABLE.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Fondawey"
 
@@ -10733,7 +10821,7 @@ msgid  "First ~column as caption"
 msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
-msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
+msgid  "If the selected cells do not contain the desired data, select the data range now.\\n\\nInclude the cells containing column and row labels if you want them to be included in your chart."
 msgstr ""
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
@@ -10757,6 +10845,7 @@ msgid  "Table Format"
 msgstr ""
 
 #: source/ui/table/tabledlg.src#DLG_FORMAT_TABLE.1.TP_FORMAT_TABLE.PageItem.Text
+#, fuzzy
 msgid  "Table"
 msgstr "Taabal / Daarumi"
 
@@ -10997,7 +11086,7 @@ msgid  "Do you want to check the main text?"
 msgstr ""
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
-msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
+msgid  "Show field commands option is checked.\\nDo you want to print the document with field names?"
 msgstr ""
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
@@ -11097,6 +11186,7 @@ msgid  "Do you want to print the selection or the entire document?"
 msgstr ""
 
 #: source/ui/uiview/view.src#STR_PRINT_ALL.String.Text
+#, fuzzy
 msgid  "All"
 msgstr " I kul"
 
@@ -11153,7 +11243,7 @@ msgid  "Capitalize first letter of sentences"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
+msgid  "Replace \"standard\" quotes with %1 \\bcustom%2 quotes"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
@@ -11388,11 +11478,11 @@ msgid  "[System]"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
-msgid  "The interactive spellcheck is already active\nin a different document"
+msgid  "The interactive spellcheck is already active\\nin a different document"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
-msgid  "The interactive hyphenation is already active\nin a different document"
+msgid  "The interactive hyphenation is already active\\nin a different document"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
@@ -12865,6 +12955,7 @@ msgid  "No Character Style"
 msgstr ""
 
 #: source/ui/utlui/attrdesc.src#STR_FOOTER.String.Text
+#, fuzzy
 msgid  "Footer"
 msgstr "Tiira Ceedeke"
 
@@ -12873,6 +12964,7 @@ msgid  "No footer"
 msgstr ""
 
 #: source/ui/utlui/attrdesc.src#STR_HEADER.String.Text
+#, fuzzy
 msgid  "Header"
 msgstr "Tiira Boŋdeke"
 
@@ -13057,6 +13149,7 @@ msgid  "restart line count with: "
 msgstr ""
 
 #: source/ui/utlui/attrdesc.src#STR_LUMINANCE.String.Text
+#, fuzzy
 msgid  "Brightness: "
 msgstr " Annuuraa: "
 
@@ -13073,6 +13166,7 @@ msgid  "Blue: "
 msgstr ""
 
 #: source/ui/utlui/attrdesc.src#STR_CONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast: "
 msgstr "  Kaaray nda bibi cerekanbeyan: "
 
