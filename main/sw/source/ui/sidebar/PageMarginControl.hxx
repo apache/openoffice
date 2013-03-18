@@ -90,6 +90,7 @@ private:
 
     const SfxMapUnit meUnit;
 
+    bool mbUserCustomValuesAvailable;
     long mnUserCustomPageLeftMargin;
     long mnUserCustomPageRightMargin;
     long mnUserCustomPageTopMargin;

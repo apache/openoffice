@@ -68,6 +68,7 @@ PageMarginControl::PageMarginControl(
     , mnPageBottomMargin( aPageULMargin.GetLower() )
     , mbMirrored( bMirrored )
     , meUnit( eUnit )
+    , mbUserCustomValuesAvailable(false)
     , mnUserCustomPageLeftMargin(0)
     , mnUserCustomPageRightMargin(0)
     , mnUserCustomPageTopMargin(0)
@@ -79,20 +80,18 @@ PageMarginControl::PageMarginControl(
     maWidthHeightField.Hide();
     SetFieldUnit( maWidthHeightField, eFUnit );
 
-    const bool bCustomValuesAvailable = GetUserCustomValues();
+    mbUserCustomValuesAvailable = GetUserCustomValues();
 
     mpMarginValueSet->SetStyle( mpMarginValueSet->GetStyle() | WB_3DLOOK | WB_NO_DIRECTSELECT );
     mpMarginValueSet->SetColor( GetSettings().GetStyleSettings().GetMenuColor() );
 
-    FillValueSet( bLandscape, bCustomValuesAvailable );
+    FillValueSet( bLandscape, mbUserCustomValuesAvailable );
 
     mpMarginValueSet->SetNoSelection();
     mpMarginValueSet->SetSelectHdl( LINK(this, PageMarginControl,ImplMarginHdl ) );
     mpMarginValueSet->Show();
 
     SelectValueSetItem();
-    mpMarginValueSet->Format();
-    mpMarginValueSet->StartSelection();
 
     SetFieldUnit( maLeftMarginEdit, eFUnit );
     Link aLinkLR = LINK( this, PageMarginControl, ModifyLRMarginHdl );
@@ -304,16 +303,19 @@ void PageMarginControl::SelectValueSetItem()
     {
         mpMarginValueSet->SelectItem(0);
     }
+
+    mpMarginValueSet->Format();
+    mpMarginValueSet->StartSelection();
 };
 
 
 IMPL_LINK(PageMarginControl, ImplMarginHdl, void *, pControl)
 {
-    mpMarginValueSet->SetNoSelection();
     if ( pControl == mpMarginValueSet )
     {
         const sal_uInt16 iPos = mpMarginValueSet->GetSelectItemId();
         bool bMirrored = false;
+        bool bApplyNewPageMargins = true;
         switch ( iPos )
         {
         case 1:
@@ -345,26 +347,42 @@ IMPL_LINK(PageMarginControl, ImplMarginHdl, void *, pControl)
             bMirrored = true;
             break;
         case 5:
-            mnPageLeftMargin = mnUserCustomPageLeftMargin;
-            mnPageRightMargin = mnUserCustomPageRightMargin;
-            mnPageTopMargin = mnUserCustomPageTopMargin;
-            mnPageBottomMargin = mnUserCustomPageBottomMargin;
-            bMirrored = mbUserCustomMirrored;
+            if ( mbUserCustomValuesAvailable )
+            {
+                mnPageLeftMargin = mnUserCustomPageLeftMargin;
+                mnPageRightMargin = mnUserCustomPageRightMargin;
+                mnPageTopMargin = mnUserCustomPageTopMargin;
+                mnPageBottomMargin = mnUserCustomPageBottomMargin;
+                bMirrored = mbUserCustomMirrored;
+            }
+            else
+            {
+                bApplyNewPageMargins = false;
+            }
             break;
         }
 
-        mrPagePropPanel.ExecuteMarginLRChange( mnPageLeftMargin, mnPageRightMargin );
-        mrPagePropPanel.ExecuteMarginULChange( mnPageTopMargin, mnPageBottomMargin );
-        if ( mbMirrored != bMirrored )
+        if ( bApplyNewPageMargins )
         {
-            mbMirrored = bMirrored;
-            mrPagePropPanel.ExecutePageLayoutChange( mbMirrored );
-        }
+            mpMarginValueSet->SetNoSelection();
+            mrPagePropPanel.ExecuteMarginLRChange( mnPageLeftMargin, mnPageRightMargin );
+            mrPagePropPanel.ExecuteMarginULChange( mnPageTopMargin, mnPageBottomMargin );
+            if ( mbMirrored != bMirrored )
+            {
+                mbMirrored = bMirrored;
+                mrPagePropPanel.ExecutePageLayoutChange( mbMirrored );
+            }
 
-        mbCustomValuesUsed = false;
+            mbCustomValuesUsed = false;
+            mrPagePropPanel.ClosePageMarginPopup();
+        }
+        else
+        {
+            // back to initial selection
+            SelectValueSetItem();
+        }
     }
 
-    mrPagePropPanel.ClosePageMarginPopup();
     return 0;
 }
 
