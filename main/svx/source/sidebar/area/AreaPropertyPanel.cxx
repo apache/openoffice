@@ -676,7 +676,10 @@ void AreaPropertyPanel::ImpUpdateTransparencies()
                 mpMTRTransparent->SetValue(nValue);
             }
 
-            maTrGrPopup.Hide();
+            if(!bZeroValue)
+            {
+                maTrGrPopup.Hide();
+            }
         }
 
         if(bZeroValue && mpFloatTransparenceItem.get())
@@ -762,9 +765,9 @@ void AreaPropertyPanel::ImpUpdateTransparencies()
         mpBTNGradient->Disable();
         mpBTNGradient->Hide();
     }
-
-
 }
+
+
 
 void AreaPropertyPanel::NotifyItemUpdate( 
     sal_uInt16 nSID, 
