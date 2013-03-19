@@ -10337,7 +10337,7 @@ SfxVoidItem CopyHyperlinkLocation FN_COPY_HYPERLINK_LOCATION
 ]
 
 
-SfxInt16Item SwPageColumn SID_ATTR_SWPAGE_COLUMN
+SfxInt16Item SwPageColumn SID_ATTR_PAGE_COLUMN
 
 [
     /* flags: */
@@ -10361,5 +10361,57 @@ SfxInt16Item SwPageColumn SID_ATTR_SWPAGE_COLUMN
     StatusBarConfig = FALSE,
     ToolBoxConfig = TRUE,
     GroupId = GID_VIEW;
+]
+
+SvxLongULSpaceItem SwPageULMargin SID_ATTR_PAGE_ULSPACE
+
+[
+	/* flags: */
+	AutoUpdate = FALSE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	Readonly = FALSE,
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = FALSE,
+	GroupId = GID_FORMAT;
+]
+
+SvxLongLRSpaceItem SwPageLRMargin SID_ATTR_PAGE_LRSPACE
+
+[
+	/* flags: */
+	AutoUpdate = FALSE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	Readonly = FALSE,
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = FALSE,
+	GroupId = GID_FORMAT;
 ]
 

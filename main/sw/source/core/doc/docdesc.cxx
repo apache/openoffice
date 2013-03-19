@@ -428,14 +428,15 @@ void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
         GetIDocumentUndoRedo().DelAllUndoObj();
     }
 
-    SfxBindings* pBindings = GetDocShell() ? GetDocShell()->GetDispatcher()->GetBindings() : 0;
+    SfxBindings* pBindings = 
+        ( GetDocShell() && GetDocShell()->GetDispatcher() ) ? GetDocShell()->GetDispatcher()->GetBindings() : 0;
     if ( pBindings )
     {
-        pBindings->Invalidate( SID_ATTR_SWPAGE_COLUMN );
+        pBindings->Invalidate( SID_ATTR_PAGE_COLUMN );
         pBindings->Invalidate( SID_ATTR_PAGE );
         pBindings->Invalidate( SID_ATTR_PAGE_SIZE );
-        pBindings->Invalidate( SID_ATTR_LONG_ULSPACE );
-        pBindings->Invalidate( SID_ATTR_LONG_LRSPACE );
+        pBindings->Invalidate( SID_ATTR_PAGE_ULSPACE );
+        pBindings->Invalidate( SID_ATTR_PAGE_LRSPACE );
     }
 
 }
