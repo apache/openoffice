@@ -86,6 +86,7 @@ void convert_ulf::setValue(char *syyText)
   std::string sText = copySource(syyText);
   int         nL;
 
+  sText.erase(0,1);
   nL = sText.rfind("\"");
   sText.erase(nL);
 

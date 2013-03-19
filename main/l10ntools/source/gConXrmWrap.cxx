@@ -21,6 +21,7 @@
 #include "gConXrm.hxx"
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <cstdlib>
 
 
@@ -36,7 +37,8 @@
 convert_xrm::convert_xrm(l10nMem& crMemory)
                         : convert_gen_impl(crMemory),
                           mbNoCollectingData(true),
-                          mbIsTag(false),
+                          mbIsTagHeader(false),
+                          mbIsTagPara(false),
                           mbIsLang(false)
 {
 }
@@ -78,7 +80,7 @@ void convert_xrm::setId(char *yytext)
   int          nL, nE;
 
 
-  if (mbIsTag)
+  if (mbIsTagHeader || mbIsTagPara)
   {
     nL = sText.find("\"");
     nE = sText.find("\"", nL+1);
@@ -99,7 +101,7 @@ void convert_xrm::setLang(char *yytext)
   int          nL, nE;
 
 
-  if (mbIsTag)
+  if (mbIsTagHeader || mbIsTagPara)
   {
     nL = sText.find("\"");
     nE = sText.find("\"", nL+1);
@@ -123,7 +125,15 @@ void convert_xrm::setTag(char *yytext)
 
   msKey.clear();
   mbIsLang = false;
-  mbIsTag  = true;
+
+  // set correct tag
+  if (yytext[1] == 'p')
+    mbIsTagPara = true;
+  else
+  {
+    mbIsTagHeader = true;
+    miHeaderLevel = yytext[2] - '0';
+  }
 }
 
 
@@ -133,10 +143,10 @@ void convert_xrm::startCollectData(char *yytext)
 {
   copySource(yytext, mbNoCollectingData);
 
-  if (mbIsTag && mbIsLang && msKey.size())
+  if ((mbIsTagHeader || mbIsTagPara) && mbIsLang && msKey.size())
     mbNoCollectingData = false;
 
-  mbIsTag = mbIsLang = false;
+  mbIsTagHeader = mbIsTagPara = mbIsLang = false;
 }
 
 
@@ -144,12 +154,43 @@ void convert_xrm::startCollectData(char *yytext)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xrm::stopCollectData(char *yytext)
 {
+  std::string       sTagStart, sTagText, sTagEnd, sLang, sText = msCollector;
+
+  copySource(yytext);
   if (!mbNoCollectingData)
   {
-    msKey = msKey + "." + msKey;
-    mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, msCollector);
+    mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, sText);
     mbNoCollectingData = true;
+  
+    if (mbMergeMode)
+    {
+      if (mbIsTagPara)
+      {
+        sTagStart = "<p ";
+        sTagEnd   = "</p>";
+      }
+      else
+      {
+        std::stringstream ss;
+        ss << miHeaderLevel;
+        sTagStart = "<h"  + ss.str()  + " ";
+        sTagEnd   = "</h" + ss.str()  + ">";
+      }
+
+      // prepare to read all languages
+      mcMemory.prepareMerge();
+      for (; mcMemory.getMergeLang(sLang, sText);)
+      {
+        // Prepare tag start and end
+        sTagText =                    sTagStart +
+                   "id=\""          + msKey     +
+                   "\" xml:lang=\"" + sLang     +
+                   "\">"            + sText     +
+                                      sTagEnd   +
+                   "\n";
+        writeSourceFile(sTagText);
+      }
+    }
     msKey.clear();
   }
-  copySource(yytext);
 }  

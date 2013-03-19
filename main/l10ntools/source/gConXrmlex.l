@@ -83,8 +83,8 @@ SP    [ \t]*
 
 
 
-"</h"[0-9] |
-"</p"      {
+"</h"[0-9]">"[ \t\r]*[\n] |
+"</p>"[ \t\r]*[\n]        {
   LOCptr->stopCollectData(yytext);
 }
 

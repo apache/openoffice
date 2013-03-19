@@ -87,6 +87,9 @@ class l10nMem
                        bool               bForce);
     void dumpMem      (const std::string& sTargetDir);
 
+    void prepareMerge ();
+    bool getMergeLang (std::string& sLang,
+                       std::string& sText);
 };
 
 

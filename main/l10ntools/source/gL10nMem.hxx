@@ -128,6 +128,11 @@ class l10nMem_db
                          const std::string&   sKey,
                          const std::string&   sText,
                          l10nMem::ENTRY_STATE eStat);
+
+    void prepareMerge   ();
+    bool getMergeLang   (std::string& sLang,
+                         std::string& sText);
+
 };
 
 

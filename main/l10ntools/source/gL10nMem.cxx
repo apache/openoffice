@@ -95,8 +95,12 @@ void l10nMem::setSourceKey(int iL, const std::string& sF, const std::string& sK,
      { l10nMem_impl::mcImpl->setSourceKey(iL, sF, sK, sT); }
 void l10nMem::save(const std::string& sT, bool bK, bool bF)
      { l10nMem_impl::mcImpl->save(*this, sT, bK, bF); }
+void l10nMem::prepareMerge()
+     { l10nMem_impl::mcImpl->mcDb.prepareMerge(); }
 void l10nMem::dumpMem(const std::string& sT)
      { l10nMem_impl::mcImpl->dumpMem(sT); }
+bool l10nMem::getMergeLang(std::string& sL, std::string& sT)
+     { return l10nMem_impl::mcImpl->mcDb.getMergeLang(sL, sT); }
 
 
 

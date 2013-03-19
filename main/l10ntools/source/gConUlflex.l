@@ -85,7 +85,7 @@ KEYID [a-zA-Z0-9_-]+
 
 
 "\"".* {
-  LOCptr->setValue(&yytext[1]);
+  LOCptr->setValue(yytext);
 }
 
 

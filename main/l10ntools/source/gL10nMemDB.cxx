@@ -385,3 +385,27 @@ void l10nMem_db::addKey(int                  iLineNo,
     }
   }
 }
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem_db::prepareMerge()
+{
+  miCurLangInx = 0;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+bool l10nMem_db::getMergeLang(std::string& sLang,
+                                std::string& sText)
+{
+  miCurLangInx++;
+  if (miCurLangInx >= mcLangList.size())
+    return false;
+
+  // update pointers
+  sLang = mcLangList[miCurLangInx];
+  sText = mcENUSlist[miCurENUSinx].mcLangList[miCurLangInx].msText;
+  return true;
+}
