@@ -252,6 +252,49 @@ void SdrEditView::ResizeMarkedObj(const Point& rRef, const Fraction& xFact, cons
 	if( bUndo )
 		EndUndo();
 }
+void SdrEditView::ResizeMultMarkedObj(const Point& rRef,
+    const Fraction& xFact,
+    const Fraction& yFact,
+    const bool bCopy,
+    const bool bWdh,
+    const bool bHgt)
+{
+	const bool bUndo = IsUndoEnabled();
+	if( bUndo )
+	{
+		XubString aStr;
+		ImpTakeDescriptionStr(STR_EditResize,aStr);
+		if (bCopy)
+			aStr+=ImpGetResStr(STR_EditWithCopy);
+		BegUndo(aStr);
+	}
+	
+	if (bCopy)
+		CopyMarkedObj();
+    
+	sal_uIntPtr nMarkAnz=GetMarkedObjectCount();
+	for (sal_uIntPtr nm=0; nm<nMarkAnz; nm++)
+	{
+		SdrMark* pM=GetSdrMarkByIndex(nm);
+		SdrObject* pO=pM->GetMarkedSdrObj();
+		if( bUndo )
+		{
+			std::vector< SdrUndoAction* > vConnectorUndoActions( CreateConnectorUndo( *pO ) );
+			AddUndoActions( vConnectorUndoActions );
+			AddUndo( GetModel()->GetSdrUndoFactory().CreateUndoGeoObject(*pO));
+        }
+
+        Fraction aFrac(1,1);
+        if (bWdh && bHgt)
+            pO->Resize(rRef, xFact, yFact);
+        else if (bWdh)
+            pO->Resize(rRef, xFact, aFrac);
+        else if (bHgt)
+            pO->Resize(rRef, aFrac, yFact);
+    }
+	if( bUndo )
+		EndUndo();
+}
 
 long SdrEditView::GetMarkedObjRotate() const
 {
@@ -1198,36 +1241,9 @@ sal_Bool SdrEditView::SetStyleSheet(SfxStyleSheet* pStyleSheet, sal_Bool bDontRe
 
 SfxItemSet SdrEditView::GetGeoAttrFromMarked() const
 {
-    // used items are:
-    //
-    // SID_ATTR_TRANSFORM_POS_X                 ( SID_SVX_START + 88 )
-    // SID_ATTR_TRANSFORM_POS_Y                 ( SID_SVX_START + 89 )
-    // SID_ATTR_TRANSFORM_WIDTH                 ( SID_SVX_START + 90 )
-    // SID_ATTR_TRANSFORM_HEIGHT                ( SID_SVX_START + 91 )
-    // SID_ATTR_TRANSFORM_ROT_X                 ( SID_SVX_START + 93 )
-    // SID_ATTR_TRANSFORM_ROT_Y                 ( SID_SVX_START + 94 )
-    // SID_ATTR_TRANSFORM_ANGLE                 ( SID_SVX_START + 95 )
-    // SID_ATTR_TRANSFORM_PROTECT_POS           ( SID_SVX_START + 236 )
-    // SID_ATTR_TRANSFORM_PROTECT_SIZE          ( SID_SVX_START + 237 )
-    // SID_ATTR_TRANSFORM_SHEAR                 ( SID_SVX_START + 304 )
-    // SID_ATTR_TRANSFORM_SHEAR_X               ( SID_SVX_START + 305 )
-    // SID_ATTR_TRANSFORM_SHEAR_Y               ( SID_SVX_START + 306 )
-    // SID_ATTR_TRANSFORM_RESIZE_REF_X          ( SID_SVX_START + 308 )
-    // SID_ATTR_TRANSFORM_RESIZE_REF_Y          ( SID_SVX_START + 309 )
-    // SID_ATTR_TRANSFORM_AUTOWIDTH             ( SID_SVX_START + 310 )
-    // SID_ATTR_TRANSFORM_AUTOHEIGHT            ( SID_SVX_START + 311 )
-    // SID_ATTR_TRANSFORM_MIRROR_HORIZONTAL     (SID_SVX_START+1108)
-    // SID_ATTR_TRANSFORM_MIRROR_VERTICAL       (SID_SVX_START+1109)
-    // SID_ATTR_TRANSFORM_MATRIX                (SID_SVX_START+1112)
-    // SDRATTR_ECKENRADIUS                      ????
-    //
-    // SfxItemSet needs sorted pairs of IDs as ranges, an null-termainated array of ranges.
-    // No need to be too exact as long as the SfxItemSet is not used as a filter (which it is not here)
-
 	SfxItemSet aRetSet(pMod->GetItemPool(),   // SID_ATTR_TRANSFORM_... aus s:svxids.hrc
         SID_ATTR_TRANSFORM_POS_X,               SID_ATTR_TRANSFORM_ANGLE,
         SID_ATTR_TRANSFORM_PROTECT_POS,         SID_ATTR_TRANSFORM_AUTOHEIGHT,
-        SID_ATTR_TRANSFORM_MIRROR_HORIZONTAL,   SID_ATTR_TRANSFORM_MATRIX,
         SDRATTR_ECKENRADIUS,                    SDRATTR_ECKENRADIUS,
         0);
 
@@ -1294,54 +1310,13 @@ SfxItemSet SdrEditView::GetGeoAttrFromMarked() const
 		sal_Bool bSizProt=pObj->IsResizeProtect();
 		sal_Bool bPosProtDontCare=sal_False;
 		sal_Bool bSizProtDontCare=sal_False;
-        bool bMirroredX(false); // pObj->IsMirroredX()); // currently not supported, needs aw080
-        bool bMirroredY(false); // pObj->IsMirroredY());
-        bool bMirroredXDontCare(false);
-        bool bMirroredYDontCare(false);
-
-        for (sal_uIntPtr i=1; i<nMarkCount && (!bPosProtDontCare || !bSizProtDontCare); i++) 
+		for (sal_uIntPtr i=1; i<nMarkCount && (!bPosProtDontCare || !bSizProtDontCare); i++)
         {
 			pObj=rMarkList.GetMark(i)->GetMarkedSdrObj();
-
-            if (bPosProt!=pObj->IsMoveProtect()) 
-            {
-                bPosProtDontCare=sal_True;
-            }
-
-			if (bSizProt!=pObj->IsResizeProtect()) 
-            {
-                bSizProtDontCare=sal_True;
-            }
-
-            if(bMirroredX != false) // pObj->IsMirroredX())
-            {
-                bMirroredXDontCare = true;
-            }
-
-            if(bMirroredY != false) // pObj->IsMirroredY())
-            {
-                bMirroredYDontCare = true;
-            }
-		}
-
-        if(bMirroredXDontCare)
-        {
-            aRetSet.InvalidateItem(SID_ATTR_TRANSFORM_MIRROR_HORIZONTAL);
+			if (bPosProt!=pObj->IsMoveProtect()) bPosProtDontCare=sal_True;
+			if (bSizProt!=pObj->IsResizeProtect()) bSizProtDontCare=sal_True;
         }
-        else
-        {
-            aRetSet.Put(SfxBoolItem(SID_ATTR_TRANSFORM_MIRROR_HORIZONTAL, bMirroredX));
-        }
-
-        if(bMirroredYDontCare)
-        {
-            aRetSet.InvalidateItem(SID_ATTR_TRANSFORM_MIRROR_VERTICAL);
-        }
-        else
-        {
-            aRetSet.Put(SfxBoolItem(SID_ATTR_TRANSFORM_MIRROR_VERTICAL, bMirroredY));
-        }
-
+        
 		// InvalidateItem setzt das Item auf DONT_CARE
 		if (bPosProtDontCare) {
 			aRetSet.InvalidateItem(SID_ATTR_TRANSFORM_PROTECT_POS);
@@ -1488,6 +1463,7 @@ void SdrEditView::SetGeoAttrToMarked(const SfxItemSet& rAttr)
 
 	sal_Bool bChgPos=sal_False;
 	sal_Bool bChgSiz=sal_False;
+	sal_Bool bChgWdh=sal_False;
 	sal_Bool bChgHgt=sal_False;
 	sal_Bool bRotate=sal_False;
 	sal_Bool bShear =sal_False;
@@ -1510,6 +1486,7 @@ void SdrEditView::SetGeoAttrToMarked(const SfxItemSet& rAttr)
 	if (SFX_ITEM_SET==rAttr.GetItemState(SID_ATTR_TRANSFORM_WIDTH,sal_True,&pPoolItem)) {
 		nSizX=((const SfxUInt32Item*)pPoolItem)->GetValue();
 		bChgSiz=sal_True;
+        bChgWdh=sal_True;
 	}
 	if (SFX_ITEM_SET==rAttr.GetItemState(SID_ATTR_TRANSFORM_HEIGHT,sal_True,&pPoolItem)) {
 		nSizY=((const SfxUInt32Item*)pPoolItem)->GetValue();
@@ -1602,7 +1579,7 @@ void SdrEditView::SetGeoAttrToMarked(const SfxItemSet& rAttr)
 			GetSdrPageView()->PagePosToLogic(aRef);
 		}
 
-		ResizeMarkedObj(aRef,aWdt,aHgt);
+        ResizeMultMarkedObj(aRef, aWdt, aHgt, false, bChgWdh, bChgHgt);
 	}
 
 	// Rotieren
@@ -1667,108 +1644,6 @@ void SdrEditView::SetGeoAttrToMarked(const SfxItemSet& rAttr)
 	if (bChgPos && bMoveAllowed) {
 		MoveMarkedObj(Size(nPosDX,nPosDY));
 	}
-
-    // mirror cannot be hold at SdrObjects in this version (needs aw080 to do so), will just be applied if set
-    if(nMarkCount)
-    {
-        if(SFX_ITEM_SET == rAttr.GetItemState(SID_ATTR_TRANSFORM_MIRROR_HORIZONTAL, true, &pPoolItem))
-        {
-            const bool bMirrorX(((const SfxBoolItem*)pPoolItem)->GetValue());
-
-            if(bMirrorX)
-            {
-                MirrorMarkedObj(aRect.TopCenter(), aRect.BottomCenter(), false);
-            }
-        }
-        if(SFX_ITEM_SET == rAttr.GetItemState(SID_ATTR_TRANSFORM_MIRROR_VERTICAL, true, &pPoolItem))
-        {
-            const bool bMirrorY(((const SfxBoolItem*)pPoolItem)->GetValue());
-
-            if(bMirrorY)
-            {
-                MirrorMarkedObj(aRect.LeftCenter(), aRect.RightCenter(), false);
-            }
-        }
-        if(SFX_ITEM_SET == rAttr.GetItemState(SID_ATTR_TRANSFORM_MATRIX, true, &pPoolItem))
-        {
-            const AffineMatrixItem* pMatItem = dynamic_cast< const AffineMatrixItem* >(pPoolItem);
-
-            if(pMatItem)
-            {
-                const com::sun::star::geometry::AffineMatrix2D aAffineMatrix2D = pMatItem->GetAffineMatrix2D();
-                Point aPageOffset(0, 0);
-                basegfx::B2DHomMatrix aTransformation;
-
-                if(GetSdrPageView()) 
-                {
-                    aPageOffset = GetSdrPageView()->GetPageOrigin();
-                }
-
-                aTransformation.set(0, 0, aAffineMatrix2D.m00);
-                aTransformation.set(0, 1, aAffineMatrix2D.m01);
-                aTransformation.set(0, 2, aAffineMatrix2D.m02 + aPageOffset.X());
-                aTransformation.set(1, 0, aAffineMatrix2D.m10);
-                aTransformation.set(1, 1, aAffineMatrix2D.m11);
-                aTransformation.set(1, 2, aAffineMatrix2D.m12 + aPageOffset.Y());
-
-                if(!aTransformation.isIdentity())
-                {
-                    basegfx::B2DPolyPolygon aPolyPolygon;
-
-                    if(nMarkCount > 1)
-                    {
-                        // get the current and the target range
-                        const Rectangle aRect(GetMarkedObjRect());
-                        const basegfx::B2DRange aCurrent(aRect.Left(), aRect.Top(), aRect.Right(), aRect.Bottom());
-                        basegfx::B2DRange aTarget(0.0, 0.0, 1.0, 1.0);
-                        
-                        aTarget.transform(aTransformation);
-
-                        // create transformation from current range to target range
-                        aTransformation = basegfx::tools::createScaleTranslateB2DHomMatrix(
-                            aCurrent.getRange(),
-                            aCurrent.getMinimum());
-                        aTransformation.invert();
-                        aTransformation = basegfx::tools::createScaleTranslateB2DHomMatrix(
-                            aTarget.getRange(),
-                            aTarget.getMinimum()) * aTransformation;
-
-                        // apply to each object
-                        for(sal_uInt32 i(0); i < nMarkCount; i++) 
-                        {
-                            pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
-
-                            if(pObj)
-                            {
-                                basegfx::B2DHomMatrix aTransform;
-
-                                pObj->TRGetBaseGeometry(aTransform, aPolyPolygon);
-                                aTransform = aTransformation * aTransform;
-                                pObj->TRSetBaseGeometry(aTransform, aPolyPolygon);
-                            }
-                        }
-                    }
-                    else
-                    {
-                        // single object, replace transformation
-                        pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
-
-                        if(pObj)
-                        {
-                            basegfx::B2DHomMatrix aOldTransform;
-
-                            pObj->TRGetBaseGeometry(aOldTransform, aPolyPolygon);
-                            pObj->TRSetBaseGeometry(aTransformation, aPolyPolygon);
-                        }
-                    }
-                }
-            }
-            else
-            {
-                OSL_ENSURE(false, "SID_ATTR_TRANSFORM_MATRIX not containing a AffineMatrixItem (!)");
-            }
-        }
-    }
 
 	// protect position
 	if(SFX_ITEM_SET == rAttr.GetItemState(SID_ATTR_TRANSFORM_PROTECT_POS, sal_True, &pPoolItem))

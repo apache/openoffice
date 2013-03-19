@@ -64,13 +64,6 @@ class SFX2_DLLPUBLIC SidebarPanelBase
       public SidebarPanelBaseInterfaceBase
 {
 public:
-    class ContextChangeReceiverInterface
-    {
-      public:
-        virtual void HandleContextChange (
-            const EnumContext aContext) = 0;
-    };
-    
     static cssu::Reference<css::ui::XUIElement> Create (
         const ::rtl::OUString& rsResourceURL,
         const cssu::Reference<css::frame::XFrame>& rxFrame,

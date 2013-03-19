@@ -34,34 +34,6 @@
     <desc>Specification of decks and content panels of the sidebar.</desc>
   </info>
   <templates>
-    <group oor:name="ContextMatcherType">
-      <info>
-        <desc>A context specifies the combination of one application name and one or more
-        context names (eg cursor in table, selection active, text editing active).</desc>
-      </info>
-      <prop oor:name="Application" oor:type="xs:string" oor:localized="false">
-        <info>
-          <desc>Name of the application.  Known values are:
-          any,
-          com.sun.star.text.TextDocument (Writer),
-          com.sun.star.sheet.SpreadsheetDocument (Calc),
-          com.sun.star.presentation.PresentationDocument (Impress),
-          com.sun.star.drawing.DrawingDocument (Draw)</desc>
-        </info>
-      </prop>
-      <prop oor:name="IsContextListNegated" oor:type="xs:boolean">
-        <info>
-          <desc>Use this to match the complement of the listed contexts.  The application match is not negated.
-          Defaults to false (ie match the contexts as listed).</desc>
-        </info>
-        <value>false</value>
-      </prop>
-      <prop oor:name="ContextList" oor:type="oor:string-list" oor:localized="false">
-        <info>
-          <desc>Names of application specific contexts.  The special name "any" matches any context name.</desc>
-        </info>
-      </prop>
-    </group>
     <group oor:name="Deck">
       <info>
         <desc>Specification of a sidebar deck which is a container of content panels.</desc>
@@ -98,11 +70,47 @@
         </info>
         <value></value>
       </prop>
-      <set oor:name="ContextMatchers" oor:node-type="ContextMatcherType">
-        <info>
-          <desc>One or more context matchers that define when to show the deck.</desc>
-        </info>
-      </set>
+      <prop oor:name="ContextList" oor:type="oor:string-list">
+        <info><desc>
+          List of context descriptors.  Each context descriptor is a string that contains four comma
+          separated values (note that values are case sensitive):
+          1  Application name. Valid values are
+                 com.sun.star.text.TextDocument or Writer
+                 com.sun.star.sheet.SpreadsheetDocument
+                 com.sun.star.presentation.PresentationDocument
+                 com.sun.star.drawing.DrawingDocument
+             
+             Recognized shortcuts:
+                 Writer
+                 Calc
+                 Impress
+                 Draw
+                 DrawImpress
+             The last one, DrawImpress, exists for convenience because most configuration descriptions for Impress
+             exist in identical form for Draw.
+             
+             Special values:
+                 any
+                 none
+
+          2  Context name
+              Know context names are 3DObject, Annotation, Auditing, Cell, Chart, Draw, DrawPage, DrawText,
+              EditCell, Form, Frame, Graphic, HandoutPage, MasterPage, Media, Multiobj, OLE, OutlineText,
+              Pivot, SlidesorterPage, Table, Text, TextObject,
+              Default
+
+             Special values:
+                 any
+
+          3  Panel state.  One of 
+             expanded  Panel is initially visible and expanded
+             collapsed Panel is initially collapsed, ie only its title bar is visible
+
+          4  (Optional, only used for panels) UNO command that overrides the DefaultMenuCommand.  Use 
+             the special value none to override the DefaultMenuCommand to the empty string and thereby
+             disable the showing of a) the menu button in the panel titlebar and b) the showing of a dialog.
+        </desc></info>
+      </prop>
       <prop oor:name="OrderIndex" oor:type="xs:int">
         <info>
           <desc>Index used for ordering decks in the tab bar.  Smaller values correspond to positions nearer to the top of the tab bar.</desc>
@@ -144,17 +152,18 @@
         </info>
         <value></value>
       </prop>
-      <set oor:name="ContextMatchers" oor:node-type="ContextMatcherType">
+      <prop oor:name="DefaultMenuCommand" oor:type="xs:string">
+        <info><desc>
+          The default UNO command to execute when the user clicks on the menu button in the panel title bar.
+          Can be overriden in the ContextList to provide context dependent menu dialogs.
+          When empty then the menu icon is not shown in the panel title bar.
+        </desc></info>
+        <value></value>
+      </prop>
+      <prop oor:name="ContextList" oor:type="oor:string-list">
         <info>
-          <desc>One or more context matchers that define when to show the panel.</desc>
+          <desc>For documentation, please see the Deck/ContextList.</desc>
         </info>
-      </set>
-      <prop oor:name="AskPanelForContextMatcher" oor:type="xs:boolean">
-        <info>
-          <desc>Sometimes the context matcher in the registry is too simple.  In that case the panel can implement the XSidebarPanel interface and provide a more complex matcher in its isContextSupported() method.  That method is only called when the value of this AsPanel property is set to true.
-          Defaults to false.</desc>
-        </info>
-        <value>false</value>
       </prop>
       <prop oor:name="ImplementationURL" oor:type="xs:string">
         <info>
@@ -162,23 +171,11 @@
         </info>
         <value></value>
       </prop>
-      <prop oor:name="IsExpandedByDefault" oor:type="xs:boolean">
-        <info>
-          <desc>When true then the panel is initialized in its expanded state.</desc>
-        </info>
-        <value>true</value>
-      </prop>
       <prop oor:name="OrderIndex" oor:type="xs:int">
         <info>
           <desc>Index used for ordering panels inside a deck.  Smaller values correspond to positions nearer to the top of the deck.</desc>
         </info>
         <value>10000</value>
-      </prop>
-      <prop oor:name="HasMenu" oor:type="xs:boolean">
-        <info>
-          <desc>When true then the panel title bar displays a menu button. When clicked the ui::XSidebarPanel::showmenu() method is called.</desc>
-        </info>
-        <value>false</value>
       </prop>
       <prop oor:name="WantsCanvas" oor:type="xs:boolean">
         <info>

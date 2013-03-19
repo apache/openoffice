@@ -52,7 +52,7 @@ namespace {
 
 void DeckLayouter::LayoutDeck (
     const Rectangle aContentArea,
-    ::std::vector<Panel*>& rPanels,
+    SharedPanelContainer& rPanels,
     Window& rDeckTitleBar,
     Window& rScrollClipWindow,
     Window& rScrollContainer,

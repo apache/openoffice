@@ -237,17 +237,23 @@ interface BaseTextSelection
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
 	]
 
-	FN_FORMAT_PAGE_DLG  // status(final|play)
-	[
-		ExecMethod = ExecDlg ;
-		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
-	]
+    FN_FORMAT_PAGE_DLG  // status(final|play)
+    [
+        ExecMethod = ExecDlg ;
+        DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+    ]
 
-	FN_FORMAT_PAGE_COLUMN_DLG  // status(final|play)
-	[
-		ExecMethod = ExecDlg ;
-		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
-	]
+    FN_FORMAT_PAGE_COLUMN_DLG  // status(final|play)
+    [
+        ExecMethod = ExecDlg ;
+        DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+    ]
+
+    FN_FORMAT_PAGE_SETTING_DLG
+    [
+        ExecMethod = ExecDlg ;
+        DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+    ]
 
     FN_CONVERT_TABLE_TO_TEXT
     [

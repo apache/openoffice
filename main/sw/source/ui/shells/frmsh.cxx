@@ -42,6 +42,7 @@
 #include <sfx2/dispatch.hxx>
 #include <sfx2/request.hxx>
 #include <sfx2/objface.hxx>
+#include <sfx2/sidebar/EnumContext.hxx>
 #include <svx/hlnkitem.hxx>
 // --> OD 2009-07-07 #i73249#
 #include <svx/svdview.hxx>
@@ -906,6 +907,8 @@ SwFrameShell::SwFrameShell(SwView &_rView) :
 	/* #96392# Use this to announce it is the frame shell who creates the
        selection. */
     SwTransferable::CreateSelection( _rView.GetWrtShell(), (ViewShell *) this );
+
+    SfxShell::SetContextName(sfx2::sidebar::EnumContext::GetContextName(sfx2::sidebar::EnumContext::Context_Frame));
 }
 
 SwFrameShell::~SwFrameShell()
@@ -1148,4 +1151,3 @@ void  SwFrameShell::StateInsert(SfxItemSet &rSet)
 	if ((nSel & nsSelectionType::SEL_GRF) || (nSel & nsSelectionType::SEL_OLE))
 		rSet.DisableItem(FN_INSERT_FRAME);
 }
-

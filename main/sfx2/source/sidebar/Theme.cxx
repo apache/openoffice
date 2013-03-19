@@ -105,6 +105,8 @@ Color Theme::GetColor (const ThemeItem eItem)
         return rTheme.maColors[nIndex];
     else if (eType == PT_Paint)
         return rTheme.maPaints[nIndex].GetColor();
+    else
+        return COL_WHITE;
 }
 
 
@@ -321,6 +323,13 @@ void Theme::UpdateTheme (void)
         setPropertyValue(
             maPropertyIdToNameMap[Color_DropDownBorder],
             Any(sal_Int32(rStyle.GetActiveBorderColor().GetRGBColor())));
+
+        setPropertyValue(
+            maPropertyIdToNameMap[Color_Highlight],
+            Any(sal_Int32(rStyle.GetHighlightColor().GetRGBColor())));
+        setPropertyValue(
+            maPropertyIdToNameMap[Color_HighlightText],
+            Any(sal_Int32(rStyle.GetHighlightTextColor().GetRGBColor())));
 
         setPropertyValue(
             maPropertyIdToNameMap[Paint_TabItemBackgroundNormal],
@@ -799,6 +808,8 @@ void Theme::SetupPropertyMaps (void)
     AddEntry(Color_TabMenuSeparator);
     AddEntry(Color_TabItemBorder);
     AddEntry(Color_DropDownBorder);
+    AddEntry(Color_Highlight);
+    AddEntry(Color_HighlightText);
 
     AddEntry(Paint_DeckBackground);
     AddEntry(Paint_DeckTitleBarBackground);
@@ -866,6 +877,8 @@ Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
         case Color_TabMenuSeparator:
         case Color_TabItemBorder:
         case Color_DropDownBorder:
+        case Color_Highlight:
+        case Color_HighlightText:
             return PT_Color;
 
         case Paint_DeckBackground:

@@ -45,6 +45,7 @@
 #include <editeng/flditem.hxx>
 #include <editeng/fontitem.hxx>
 #include <svx/hlnkitem.hxx>
+#include <sfx2/sidebar/EnumContext.hxx>
 #include <editeng/postitem.hxx>
 #include <editeng/scripttypeitem.hxx>
 #include <editeng/shdditem.hxx>
@@ -113,6 +114,7 @@ ScEditShell::ScEditShell(EditView* pView, ScViewData* pData) :
 	SetPool( pEditView->GetEditEngine()->GetEmptyItemSet().GetPool() );
 	SetUndoManager( &pEditView->GetEditEngine()->GetUndoManager() );
 	SetName(String::CreateFromAscii(RTL_CONSTASCII_STRINGPARAM("EditCell")));
+    SfxShell::SetContextName(sfx2::sidebar::EnumContext::GetContextName(sfx2::sidebar::EnumContext::Context_EditCell));
 }
 
 ScEditShell::~ScEditShell()
@@ -1202,4 +1204,3 @@ void ScEditShell::ExecuteTrans( SfxRequest& rReq )
 		pHdl->DataChanged();
 	}
 }
-

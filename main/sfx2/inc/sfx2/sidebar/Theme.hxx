@@ -89,6 +89,8 @@ public:
         Color_TabMenuSeparator,
         Color_TabItemBorder,
         Color_DropDownBorder,
+        Color_Highlight,
+        Color_HighlightText,
 
         __Color_Paint,
         

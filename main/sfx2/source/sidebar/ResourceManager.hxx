@@ -37,6 +37,7 @@ namespace cssu = ::com::sun::star::uno;
 namespace sfx2 { namespace sidebar {
 
 class Context;
+class ContextList;
 
 /** Read the content of the Sidebar.xcu file and provide access
     methods so that the sidebar can easily decide which content panels
@@ -68,14 +69,22 @@ public:
         const bool bIsEnabled);
 
     typedef ::std::vector<rtl::OUString> IdContainer;
-
+    class PanelContextDescriptor
+    {
+    public:
+        ::rtl::OUString msId;
+        ::rtl::OUString msMenuCommand;
+        bool mbIsInitiallyVisible;
+    };
+    typedef ::std::vector<PanelContextDescriptor> PanelContextDescriptorContainer;
+    
     const IdContainer& GetMatchingDecks (
         IdContainer& rDeckDescriptors,
         const Context& rContext,
         const cssu::Reference<css::frame::XFrame>& rxFrame);
 
-    const IdContainer& GetMatchingPanels (
-        IdContainer& rPanelDescriptors,
+    const PanelContextDescriptorContainer& GetMatchingPanels (
+        PanelContextDescriptorContainer& rPanelDescriptors,
         const Context& rContext,
         const ::rtl::OUString& rsDeckId,
         const cssu::Reference<css::frame::XFrame>& rxFrame);
@@ -97,9 +106,10 @@ private:
 
     void ReadDeckList (void);
     void ReadPanelList (void);
-    void ReadContextMatcher (
+    void ReadContextList (
         const ::utl::OConfigurationNode& rNode,
-        ContextMatcher& rContextMatcher) const;
+        ContextList& rContextList,
+        const ::rtl::OUString& rsDefaultMenuCommand) const;
     void ReadLegacyAddons (
         const cssu::Reference<css::frame::XFrame>& rxFrame);
     ::utl::OConfigurationTreeRoot GetLegacyAddonRootNode (

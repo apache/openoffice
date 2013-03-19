@@ -41,34 +41,46 @@ public:
         Application_Draw,
         Application_Impress,
 
+        // For your convenience to avoid duplicate code in the common
+        // case that Draw and Impress use identical context configurations.
+        Application_DrawImpress,
+
         // Used only by deck or panel descriptors.  Matches any
         // application.
         Application_Any,
 
-        Application_Unknown,
+        // Use this only in special circumstances.  One might be the
+        // wish to disable a deck or panel during debugging.
+        Application_None,
 
-        __LastApplicationEnum = Application_Unknown
+        __LastApplicationEnum = Application_None
     };
     enum Context
     {
+        Context_3DObject,
         Context_Annotation,
+        Context_Auditing,
         Context_Cell,
-        Context_EditCell,
+        Context_Chart,
         Context_Draw,
+        Context_DrawPage,
         Context_DrawText,
+        Context_EditCell,
+        Context_Form,
+        Context_Frame,
         Context_Graphic,
+        Context_HandoutPage,
+        Context_MasterPage,
+        Context_Media,
+        Context_MultiObject,
+        Context_NotesPage,
+        Context_OLE,
         Context_OutlineText,
         Context_Pivot,
+        Context_SlidesorterPage,
         Context_Table,
         Context_Text,
         Context_TextObject,
-        Context_OLE,
-        Context_Media,
-        Context_Frame,
-        Context_Form,
-        Context_Chart,
-        Context_Multiobj,
-        Context_3DObj,
 
         // Default context of an application.  Do we need this?
         Context_Default,
@@ -88,8 +100,19 @@ public:
     EnumContext (
         const ::rtl::OUString& rsApplicationName,
         const ::rtl::OUString& rsContextName);
-    
+
+    /** Return a number that encodes both the application and context
+        enums.
+        Use the CombinedEnumContext macro in switch() statements and comparisons.
+    */
     sal_Int32 GetCombinedContext(void) const;
+
+    /** This variant of the GetCombinedContext() method returns a
+        single value for both Draw and Impress application.
+        Use the Application_DrawImpress value in the CombinedEnumContext macro.
+    */
+    sal_Int32 GetCombinedContext_DI(void) const;
+
     const ::rtl::OUString& GetApplicationName (void) const;
     const ::rtl::OUString& GetContextName (void) const;
 

@@ -25,9 +25,12 @@
 #include "area/AreaPropertyPanel.hxx"
 #include "graphic/GraphicPropertyPanel.hxx"
 #include "line/LinePropertyPanel.hxx"
-#include "transform/TransformationPropertyPanel.hxx"
+#include "possize/PosSizePropertyPanel.hxx"
 #include "gallery/GalleryControl.hxx"
-#include "ColorPanel.hxx"
+#include "debug/ColorPanel.hxx"
+#include "debug/ContextPanel.hxx"
+#include "debug/NotYetImplementedPanel.hxx"
+#include "EmptyPanel.hxx"
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
@@ -169,14 +172,14 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             ::boost::bind(&LinePropertyPanel::ShowMenu, pPanel),
             ui::LayoutSize(-1,-1,-1));
     }
-    else if (DoesResourceEndWith("/TransformationPropertyPanel"))
+    else if (DoesResourceEndWith("/PosSizePropertyPanel"))
     {
-        TransformationPropertyPanel* pPanel = TransformationPropertyPanel::Create(pParentWindow, xFrame, pBindings);
+        PosSizePropertyPanel* pPanel = PosSizePropertyPanel::Create(pParentWindow, xFrame, pBindings);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::bind(&TransformationPropertyPanel::ShowMenu, pPanel),
+            ::boost::bind(&PosSizePropertyPanel::ShowMenu, pPanel),
             ui::LayoutSize(-1,-1,-1));
     }
     else if (DoesResourceEndWith("/GalleryPanel"))
@@ -193,14 +196,43 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
     }
     else if (DoesResourceEndWith("/Debug_ColorPanel"))
     {
-        ColorPanel* pColorPanel = new ColorPanel(
-            pParentWindow);
+        ColorPanel* pPanel = new ColorPanel(pParentWindow);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
-            pColorPanel,
+            pPanel,
             ::boost::function<void(void)>(),
             ui::LayoutSize(300,-1,400));
+    }
+    else if (DoesResourceEndWith("/Debug_ContextPanel"))
+    {
+        ContextPanel* pPanel = new ContextPanel(pParentWindow);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ::boost::function<void(void)>(),
+            ui::LayoutSize(45,45,45));
+    }
+    else if (DoesResourceEndWith("/Debug_NotYetImplementedPanel"))
+    {
+        NotYetImplementedPanel* pPanel = new NotYetImplementedPanel(pParentWindow);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ::boost::function<void(void)>(),
+            ui::LayoutSize(20,25,25));
+    }
+    else if (DoesResourceEndWith("/EmptyPanel"))
+    {
+        EmptyPanel* pPanel = new EmptyPanel(pParentWindow);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ::boost::function<void(void)>(),
+            ui::LayoutSize(20,25,25));
     }
 #undef DoesResourceEndWith
 

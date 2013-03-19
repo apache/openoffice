@@ -68,6 +68,7 @@
 
 #include <svx/svxdlg.hxx>
 #include <svx/dialogs.hrc>
+#include <sfx2/sidebar/EnumContext.hxx>
 
 #include "sc.hrc"
 #include "globstr.hrc"
@@ -132,6 +133,7 @@ ScDrawTextObjectBar::ScDrawTextObjectBar(ScViewData* pData) :
 
 	SetHelpId( HID_SCSHELL_DRTXTOB );
 	SetName(String::CreateFromAscii(RTL_CONSTASCII_STRINGPARAM("DrawText")));
+    SfxShell::SetContextName(sfx2::sidebar::EnumContext::GetContextName(sfx2::sidebar::EnumContext::Context_DrawText));
 }
 
 __EXPORT ScDrawTextObjectBar::~ScDrawTextObjectBar()
@@ -1088,4 +1090,3 @@ void ScDrawTextObjectBar::ExecuteTrans( SfxRequest& rReq )
 		}
 	}
 }
-

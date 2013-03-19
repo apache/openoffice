@@ -3459,6 +3459,30 @@ SfxVoidItem GraphicDialog FN_FORMAT_GRAFIC_DLG
 	GroupId = GID_GRAPHIC;
 ]
 //--------------------------------------------------------------------------
+SfxVoidItem GraphicWrapDialog FN_PROPERTY_SIDEBAR_GRAFIC_DLG
+()
+[
+	/* flags: */
+	AutoUpdate = FALSE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = TRUE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerItem;
+	Asynchron;
+
+	/* config: */
+	AccelConfig = TRUE,
+	MenuConfig = TRUE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_GRAPHIC;
+]
+//--------------------------------------------------------------------------
 SfxVoidItem SaveGraphic FN_SAVE_GRAPHIC
 ()
 [
@@ -6326,6 +6350,30 @@ SfxVoidItem PageColumnDialog FN_FORMAT_PAGE_COLUMN_DLG
 
 //--------------------------------------------------------------------------
 SfxVoidItem PageDialog FN_FORMAT_PAGE_DLG
+()
+[
+	/* flags: */
+	AutoUpdate = FALSE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = TRUE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerItem;
+	Asynchron;
+
+	/* config: */
+	AccelConfig = TRUE,
+	MenuConfig = TRUE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_FORMAT;
+]
+
+SfxVoidItem PageSettingDialog FN_FORMAT_PAGE_SETTING_DLG
 ()
 [
 	/* flags: */
@@ -10287,3 +10335,31 @@ SfxVoidItem CopyHyperlinkLocation FN_COPY_HYPERLINK_LOCATION
     ToolBoxConfig = TRUE,
     GroupId = GID_EDIT;
 ]
+
+
+SfxInt16Item SwPageColumn SID_ATTR_SWPAGE_COLUMN
+
+[
+    /* flags: */
+    AutoUpdate = FALSE,
+    Cachable = Cachable,
+    FastCall = FALSE,
+    HasCoreId = FALSE,
+    HasDialog = FALSE,
+    ReadOnlyDoc = TRUE,
+    Toggle = FALSE,
+    Container = FALSE,
+    RecordAbsolute = FALSE,
+    RecordPerSet;
+    Synchron;
+
+    Readonly = TRUE,
+
+    /* config: */
+    AccelConfig = TRUE,
+    MenuConfig = TRUE,
+    StatusBarConfig = FALSE,
+    ToolBoxConfig = TRUE,
+    GroupId = GID_VIEW;
+]
+

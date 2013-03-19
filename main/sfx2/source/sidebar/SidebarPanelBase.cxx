@@ -24,6 +24,7 @@
 #include "sfx2/sidebar/SidebarPanelBase.hxx"
 #include "sfx2/sidebar/Theme.hxx"
 #include "sfx2/sidebar/ILayoutableWindow.hxx"
+#include "sfx2/sidebar/IContextChangeReceiver.hxx"
 #include "sfx2/imagemgr.hxx"
 #include <vcl/ctrl.hxx>
 #include <comphelper/processfactory.hxx>
@@ -144,8 +145,8 @@ void SAL_CALL SidebarPanelBase::notifyContextChangeEvent (
 {
     OSL_TRACE("SidebarPanelBase notified at %x with control at %x", this, mpControl);
 
-    ContextChangeReceiverInterface* pContextChangeReceiver
-        = dynamic_cast<ContextChangeReceiverInterface*>(mpControl);
+    IContextChangeReceiver* pContextChangeReceiver
+        = dynamic_cast<IContextChangeReceiver*>(mpControl);
     if (pContextChangeReceiver != NULL)
     {
         const EnumContext aContext(

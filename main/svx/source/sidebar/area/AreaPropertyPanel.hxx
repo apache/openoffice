@@ -27,6 +27,7 @@
 #include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
+#include <sfx2/sidebar/IContextChangeReceiver.hxx>
 #include <svx/xgrad.hxx>
 #include <svx/itemwin.hxx>
 #include <svx/xfillit0.hxx>
@@ -55,7 +56,7 @@ class AreaTransparencyGradientControl;
 
 class AreaPropertyPanel
 :   public Control,
-    public ::sfx2::sidebar::SidebarPanelBase::ContextChangeReceiverInterface,
+    public ::sfx2::sidebar::IContextChangeReceiver,
     public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 public:

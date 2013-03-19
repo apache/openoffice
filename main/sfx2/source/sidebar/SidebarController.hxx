@@ -26,6 +26,7 @@
 #include "AsynchronousCall.hxx"
 #include "TabBar.hxx"
 #include "Context.hxx"
+#include "Panel.hxx"
 
 #include <vcl/menu.hxx>
 
@@ -56,9 +57,7 @@ namespace sfx2 { namespace sidebar {
 
 class ContentPanelDescriptor;
 class Deck;
-class DeckConfiguration;
 class DeckDescriptor;
-class Panel;
 class SidebarDockingWindow;
 class TabBar;
 class TabBarConfiguration;
@@ -104,7 +103,7 @@ public:
     void OpenDeck (void);
 
 private:
-    ::boost::shared_ptr<DeckConfiguration> mpCurrentConfiguration;
+    ::boost::scoped_ptr<Deck> mpCurrentDeck;
     SidebarDockingWindow* mpParentWindow;
     ::boost::scoped_ptr<TabBar> mpTabBar;
     cssu::Reference<css::frame::XFrame> mxFrame;
@@ -120,15 +119,15 @@ private:
     DECL_LINK(WindowEventHandler, VclWindowEvent*);
     void UpdateConfigurations (const Context& rContext);
     bool ArePanelSetsEqual (
-        const ::std::vector<Panel*>& rCurrentPanels,
-        const ResourceManager::IdContainer& rRequestedPanelIds);
+        const SharedPanelContainer& rCurrentPanels,
+        const ResourceManager::PanelContextDescriptorContainer& rRequestedPanels);
     cssu::Reference<css::ui::XUIElement> CreateUIElement (
         const cssu::Reference<css::awt::XWindowPeer>& rxWindow,
-        const ::rtl::OUString& rsImplementationURL,
-        Panel* pPanel);
-    Panel* CreatePanel (
+        const ::rtl::OUString& rsImplementationURL);
+    SharedPanel CreatePanel (
         const ::rtl::OUString& rsPanelId,
-        ::Window* pParentWindow);
+        ::Window* pParentWindow,
+        const ::rtl::OUString& rsMenuCommand);
     void SwitchToDeck (
         const DeckDescriptor& rDeckDescriptor,
         const Context& rContext);
@@ -136,6 +135,7 @@ private:
         const Rectangle& rButtonBox,
         const ::std::vector<TabBar::DeckMenuData>& rDeckSelectionData,
         const ::std::vector<TabBar::DeckMenuData>& rDeckShowData) const;
+    void ShowDetailMenu (const ::rtl::OUString& rsMenuCommand) const;
     ::boost::shared_ptr<PopupMenu> CreatePopupMenu (
         const ::std::vector<TabBar::DeckMenuData>& rDeckSelectionData,
         const ::std::vector<TabBar::DeckMenuData>& rDeckShowData) const;

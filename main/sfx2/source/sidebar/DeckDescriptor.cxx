@@ -32,7 +32,7 @@ DeckDescriptor::DeckDescriptor (void)
       msHighContrastIconURL(),
       msHelpURL(),
       msHelpText(),
-      maContextMatcher(),
+      maContextList(),
       mnOrderIndex(10000) // Default value as defined in Sidebar.xcs
 {
 }
@@ -47,7 +47,7 @@ DeckDescriptor::DeckDescriptor (const DeckDescriptor& rOther)
       msHighContrastIconURL(rOther.msHighContrastIconURL),
       msHelpURL(rOther.msHelpURL),
       msHelpText(rOther.msHelpText),
-      maContextMatcher(rOther.maContextMatcher),
+      maContextList(rOther.maContextList),
       mnOrderIndex(rOther.mnOrderIndex)
 {
 }

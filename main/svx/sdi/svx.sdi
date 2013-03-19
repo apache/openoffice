@@ -15215,57 +15215,6 @@ SfxUInt16Item LineTransparence SID_ATTR_LINE_TRANSPARENCE
 
 //--------------------------------------------------------------------------
 
-SfxBoolItem MirrorObjectHorizontal SID_ATTR_TRANSFORM_MIRROR_HORIZONTAL
-[
-	/* flags: */
-	AutoUpdate = TRUE,
-	Cachable = Cachable,
-	FastCall = FALSE,
-	HasCoreId = FALSE,
-	HasDialog = FALSE,
-	ReadOnlyDoc = FALSE,
-	Toggle = FALSE,
-	Container = FALSE,
-	RecordAbsolute = FALSE,
-	RecordPerSet;
-	Synchron;
-
-	Readonly = FALSE,
-
-	/* config: */
-	AccelConfig = FALSE,
-	MenuConfig = FALSE,
-	StatusBarConfig = FALSE,
-	ToolBoxConfig = TRUE,
-	GroupId = GID_EDIT;
-]
-
-//--------------------------------------------------------------------------
-
-SfxBoolItem MirrorObjectVertical SID_ATTR_TRANSFORM_MIRROR_VERTICAL
-[
-	/* flags: */
-	AutoUpdate = TRUE,
-	Cachable = Cachable,
-	FastCall = FALSE,
-	HasCoreId = FALSE,
-	HasDialog = FALSE,
-	ReadOnlyDoc = FALSE,
-	Toggle = FALSE,
-	Container = FALSE,
-	RecordAbsolute = FALSE,
-	RecordPerSet;
-	Synchron;
-
-	Readonly = FALSE,
-
-	/* config: */
-	AccelConfig = FALSE,
-	MenuConfig = FALSE,
-	StatusBarConfig = FALSE,
-	ToolBoxConfig = TRUE,
-	GroupId = GID_EDIT;
-]
 
 //--------------------------------------------------------------------------
 
@@ -15610,6 +15559,60 @@ SfxBoolItem ProtectSize SID_ATTR_TRANSFORM_PROTECT_SIZE
 
 //--------------------------------------------------------------------------
 
+SfxVoidItem SvxFlipHorizontal SID_FLIP_HORIZONTAL
+[
+	/* flags: */
+	AutoUpdate = TRUE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	Readonly = FALSE,
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_EDIT;
+]
+
+//--------------------------------------------------------------------------
+
+SfxVoidItem SvxFlipVertical SID_FLIP_VERTICAL
+[
+	/* flags: */
+	AutoUpdate = TRUE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = FALSE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerSet;
+	Synchron;
+
+	Readonly = FALSE,
+
+	/* config: */
+	AccelConfig = FALSE,
+	MenuConfig = FALSE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_EDIT;
+]
+
+//--------------------------------------------------------------------------
+
 SfxBoolItem SvxAutoWidth SID_ATTR_TRANSFORM_AUTOWIDTH
 [
 	/* flags: */
@@ -15638,33 +15641,6 @@ SfxBoolItem SvxAutoWidth SID_ATTR_TRANSFORM_AUTOWIDTH
 //--------------------------------------------------------------------------
 
 SfxBoolItem SvxAutoHeight SID_ATTR_TRANSFORM_AUTOHEIGHT
-[
-	/* flags: */
-	AutoUpdate = TRUE,
-	Cachable = Cachable,
-	FastCall = FALSE,
-	HasCoreId = FALSE,
-	HasDialog = FALSE,
-	ReadOnlyDoc = FALSE,
-	Toggle = FALSE,
-	Container = FALSE,
-	RecordAbsolute = FALSE,
-	RecordPerSet;
-	Synchron;
-
-	Readonly = FALSE,
-
-	/* config: */
-	AccelConfig = FALSE,
-	MenuConfig = FALSE,
-	StatusBarConfig = FALSE,
-	ToolBoxConfig = FALSE,
-	GroupId = GID_SPECIAL;
-]
-
-//--------------------------------------------------------------------------
-
-AffineMatrixItem SvxTransFormMatrix SID_ATTR_TRANSFORM_MATRIX
 [
 	/* flags: */
 	AutoUpdate = TRUE,

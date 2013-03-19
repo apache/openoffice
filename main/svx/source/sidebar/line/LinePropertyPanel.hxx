@@ -26,6 +26,7 @@
 #include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
+#include <sfx2/sidebar/IContextChangeReceiver.hxx>
 #include <vcl/fixed.hxx>
 #include <vcl/field.hxx>
 #include <boost/scoped_ptr.hpp>
@@ -95,7 +96,7 @@ class LineWidthControl;
 
 class LinePropertyPanel
 :   public Control,
-    public ::sfx2::sidebar::SidebarPanelBase::ContextChangeReceiverInterface,
+    public ::sfx2::sidebar::IContextChangeReceiver,
     public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 private:

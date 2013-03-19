@@ -98,21 +98,18 @@ interface TableDraw
 	SID_ATTRIBUTES_LINE		[ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
 	SID_ATTR_TRANSFORM		[ ExecMethod = ExecDrawAttr; StateMethod = GetDrawFuncState; Export = FALSE; ]
 
-    // use same as SID_ATTR_LINEEND_STYLE
-    SID_ATTR_TRANSFORM_MIRROR_HORIZONTAL [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_MIRROR_VERTICAL [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_POS_X [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_POS_Y [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_WIDTH [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_HEIGHT [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_ANGLE [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_ROT_X [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_ROT_Y [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_PROTECT_POS [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_PROTECT_SIZE [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_AUTOWIDTH [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_AUTOHEIGHT [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
-    SID_ATTR_TRANSFORM_MATRIX [ ExecMethod = ExecDrawAttr; StateMethod = GetAttrFuncState; Export = FALSE; ]
+    // For the sidebar
+	SID_ATTR_TRANSFORM_WIDTH	[ StateMethod = GetDrawAttrStateForIFBX; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_HEIGHT	[ StateMethod = GetDrawAttrStateForIFBX; Export = FALSE; ] 
+    SID_ATTR_TRANSFORM_POS_X	[ StateMethod = GetDrawAttrStateForIFBX; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_POS_Y	[ StateMethod = GetDrawAttrStateForIFBX; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_ANGLE	[ StateMethod = GetDrawAttrStateForIFBX; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_ROT_X	[ StateMethod = GetDrawAttrStateForIFBX; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_ROT_Y	[ StateMethod = GetDrawAttrStateForIFBX; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_PROTECT_POS	[ StateMethod = GetDrawAttrStateForIFBX; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_PROTECT_SIZE	[ StateMethod = GetDrawAttrStateForIFBX; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_AUTOWIDTH [ StateMethod = GetDrawAttrStateForIFBX; Export = FALSE; ]
+    SID_ATTR_TRANSFORM_AUTOHEIGHT [ StateMethod = GetDrawAttrStateForIFBX; Export = FALSE; ]
 
 	 // ---- Ausrichtungs - Funktionen:
 	 //!	PseudoSlots gibt Aerger mit Referenz-Dialogen ???
@@ -187,6 +184,8 @@ interface TableDraw
 	]
 	*/
 	SID_MIRROR_VERTICAL		[ ExecMethod = ExecDrawFunc; StateMethod = GetDrawFuncState; Export = FALSE; ]
+	SID_FLIP_HORIZONTAL     [ ExecMethod = ExecDrawFunc; StateMethod = GetDrawFuncState; Export = FALSE; ]
+	SID_FLIP_VERTICAL       [ ExecMethod = ExecDrawFunc; StateMethod = GetDrawFuncState; Export = FALSE; ]
 	SID_ANCHOR_PAGE			[ ExecMethod = ExecDrawFunc; StateMethod = GetState; Export = FALSE; ]
 	SID_ANCHOR_TOGGLE		[ ExecMethod = ExecDrawFunc; StateMethod = GetDrawFuncState; Export = FALSE; ]
 	SID_ANCHOR_CELL			[ ExecMethod = ExecDrawFunc; StateMethod = GetState; Export = FALSE; ]

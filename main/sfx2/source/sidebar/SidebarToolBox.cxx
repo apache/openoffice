@@ -88,10 +88,6 @@ void SidebarToolBox::Paint (const Rectangle& rRect)
 {
     ToolBox::Paint(rRect);
     
-    OSL_TRACE("paint ToolBox at %d,%d",
-        GetPosPixel().X(),
-        GetPosPixel().Y());
-
     if (Theme::GetBoolean(Theme::Bool_UseToolBoxItemSeparator))
     {
         const sal_Int32 nSeparatorY ((GetSizePixel().Height() - maItemSeparator.GetSizePixel().Height())/2);
