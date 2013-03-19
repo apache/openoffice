@@ -48,29 +48,22 @@ namespace sw { namespace sidebar {
 
 PagePropertyPanel* PagePropertyPanel::Create (
     Window* pParent,
-    const cssu::Reference<css::frame::XFrame>& rxFrame,
     SfxBindings* pBindings)
 {
     if (pParent == NULL)
         throw ::com::sun::star::lang::IllegalArgumentException(A2S("no parent Window given to PagePropertyPanel::Create"), NULL, 0);
-    if ( ! rxFrame.is())
-        throw ::com::sun::star::lang::IllegalArgumentException(A2S("no XFrame given to PagePropertyPanel::Create"), NULL, 1);
     if (pBindings == NULL)
         throw ::com::sun::star::lang::IllegalArgumentException(A2S("no SfxBindings given to PagePropertyPanel::Create"), NULL, 2);
     
     return new PagePropertyPanel(
         pParent,
-        rxFrame,
         pBindings);
 }
 
 PagePropertyPanel::PagePropertyPanel(
             Window* pParent,
-            const cssu::Reference<css::frame::XFrame>& rxFrame,
             SfxBindings* pBindings)
     : Control(pParent, SW_RES(RID_PROPERTYPANEL_SWPAGE))
-    , mxFrame(rxFrame)
-    , maContext()
     , mpBindings(pBindings)
     // visible controls
     , maFtOrientation( this, SW_RES(FT_ORIENTATION) )
@@ -250,29 +243,6 @@ void PagePropertyPanel::Initialize()
     mpBindings->Update( SID_ATTR_PAGE_ULSPACE );
     mpBindings->Update( SID_ATTR_PAGE );
     mpBindings->Update( SID_ATTR_PAGE_SIZE );
-}
-
-
-void PagePropertyPanel::DataChanged( const DataChangedEvent& rEvent )
-{
-    // currently nothing special to do
-
-    // forward to base class
-    Control::DataChanged( rEvent );
-}
-
-
-void PagePropertyPanel::HandleContextChange( const ::sfx2::sidebar::EnumContext aContext)
-{
-    if (maContext == aContext)
-    {
-        // nothing to do.
-        return;
-    }
-
-    maContext = aContext;
-
-    // TODO: reactions on certain context switches
 }
 
 
