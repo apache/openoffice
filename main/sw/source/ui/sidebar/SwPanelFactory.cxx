@@ -115,7 +115,7 @@ Reference<ui::XUIElement> SAL_CALL SwPanelFactory::createUIElement (
 #define DoesResourceEndWith(s) rsResourceURL.endsWithAsciiL(s,strlen(s))
     if (DoesResourceEndWith("/PagePropertyPanel"))
     {
-        PagePropertyPanel* pPanel = PagePropertyPanel::Create( pParentWindow, xFrame, pBindings );
+        PagePropertyPanel* pPanel = PagePropertyPanel::Create( pParentWindow, pBindings );
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,

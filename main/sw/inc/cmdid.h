@@ -1263,7 +1263,9 @@ Achtung: Ab sofort sind in diesem File keine C++-Kommentare (//) mehr
 #define FN_UNO_DESCRIPTION              (FN_FRAME + 20)
 
 #define FN_PROPERTY_SIDEBAR_GRAFIC_DLG  (FN_SIDEBAR + 0)
-#define SID_ATTR_SWPAGE_COLUMN          (FN_SIDEBAR + 1)
+#define SID_ATTR_PAGE_COLUMN            (FN_SIDEBAR + 1)
+#define SID_ATTR_PAGE_ULSPACE           (FN_SIDEBAR + 2)
+#define SID_ATTR_PAGE_LRSPACE           (FN_SIDEBAR + 3)
 
 
 //Member-Ids fuer Fill/SetVariable an Items

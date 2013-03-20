@@ -48,29 +48,22 @@ namespace sw { namespace sidebar {
 
 PagePropertyPanel* PagePropertyPanel::Create (
     Window* pParent,
-    const cssu::Reference<css::frame::XFrame>& rxFrame,
     SfxBindings* pBindings)
 {
     if (pParent == NULL)
         throw ::com::sun::star::lang::IllegalArgumentException(A2S("no parent Window given to PagePropertyPanel::Create"), NULL, 0);
-    if ( ! rxFrame.is())
-        throw ::com::sun::star::lang::IllegalArgumentException(A2S("no XFrame given to PagePropertyPanel::Create"), NULL, 1);
     if (pBindings == NULL)
         throw ::com::sun::star::lang::IllegalArgumentException(A2S("no SfxBindings given to PagePropertyPanel::Create"), NULL, 2);
     
     return new PagePropertyPanel(
         pParent,
-        rxFrame,
         pBindings);
 }
 
 PagePropertyPanel::PagePropertyPanel(
             Window* pParent,
-            const cssu::Reference<css::frame::XFrame>& rxFrame,
             SfxBindings* pBindings)
     : Control(pParent, SW_RES(RID_PROPERTYPANEL_SWPAGE))
-    , mxFrame(rxFrame)
-    , maContext()
     , mpBindings(pBindings)
     // visible controls
     , maFtOrientation( this, SW_RES(FT_ORIENTATION) )
@@ -132,21 +125,21 @@ PagePropertyPanel::PagePropertyPanel(
     , mImgColumnNone_L			(SW_RES(IMG_PAGE_COLUMN_NONE_L))
 
     , mpPageItem( new SvxPageItem(SID_ATTR_PAGE) )
-    , mpPageLRMarginItem( new SvxLongLRSpaceItem( 0, 0, SID_ATTR_LONG_LRSPACE ) )
-    , mpPageULMarginItem( new SvxLongULSpaceItem( 0, 0, SID_ATTR_LONG_ULSPACE ) )
+    , mpPageLRMarginItem( new SvxLongLRSpaceItem( 0, 0, SID_ATTR_PAGE_LRSPACE ) )
+    , mpPageULMarginItem( new SvxLongULSpaceItem( 0, 0, SID_ATTR_PAGE_ULSPACE ) )
     , mpPageSizeItem( new SvxSizeItem(SID_ATTR_PAGE_SIZE) )
     , mePaper( PAPER_USER )
-    , mpPageColumnTypeItem( new SfxInt16Item(SID_ATTR_SWPAGE_COLUMN) )
+    , mpPageColumnTypeItem( new SfxInt16Item(SID_ATTR_PAGE_COLUMN) )
 
     , meFUnit()
     , meUnit()
 
-    , m_aSwPagePgULControl		(SID_ATTR_LONG_ULSPACE, *pBindings, *this)
-    , m_aSwPagePgLRControl		(SID_ATTR_LONG_LRSPACE, *pBindings, *this)
-    , m_aSwPagePgSizeControl		(SID_ATTR_PAGE_SIZE, *pBindings, *this)
-    , m_aSwPagePgControl			(SID_ATTR_PAGE, *pBindings, *this)
-    , m_aSwPageColControl			(SID_ATTR_SWPAGE_COLUMN, *pBindings, *this)
-    , m_aSwPagePgMetricControl	(SID_ATTR_METRIC, *pBindings, *this)
+    , m_aSwPagePgULControl(SID_ATTR_PAGE_ULSPACE, *pBindings, *this)
+    , m_aSwPagePgLRControl(SID_ATTR_PAGE_LRSPACE, *pBindings, *this)
+    , m_aSwPagePgSizeControl(SID_ATTR_PAGE_SIZE, *pBindings, *this)
+    , m_aSwPagePgControl(SID_ATTR_PAGE, *pBindings, *this)
+    , m_aSwPageColControl(SID_ATTR_PAGE_COLUMN, *pBindings, *this)
+    , m_aSwPagePgMetricControl(SID_ATTR_METRIC, *pBindings, *this)
 
     , mpOrientationPopup()
     , mpMarginPopup()
@@ -246,33 +239,10 @@ void PagePropertyPanel::Initialize()
     meUnit  = m_aSwPagePgSizeControl.GetCoreMetric();
 
     // 'pull' for page style's attribute values
-    mpBindings->Update( SID_ATTR_LONG_LRSPACE );
-    mpBindings->Update( SID_ATTR_LONG_ULSPACE );
+    mpBindings->Update( SID_ATTR_PAGE_LRSPACE );
+    mpBindings->Update( SID_ATTR_PAGE_ULSPACE );
     mpBindings->Update( SID_ATTR_PAGE );
     mpBindings->Update( SID_ATTR_PAGE_SIZE );
-}
-
-
-void PagePropertyPanel::DataChanged( const DataChangedEvent& rEvent )
-{
-    // currently nothing special to do
-
-    // forward to base class
-    Control::DataChanged( rEvent );
-}
-
-
-void PagePropertyPanel::HandleContextChange( const ::sfx2::sidebar::EnumContext aContext)
-{
-    if (maContext == aContext)
-    {
-        // nothing to do.
-        return;
-    }
-
-    maContext = aContext;
-
-    // TODO: reactions on certain context switches
 }
 
 
@@ -387,7 +357,7 @@ void PagePropertyPanel::ExecuteMarginLRChange(
 {
     mpPageLRMarginItem->SetLeft( nPageLeftMargin );
     mpPageLRMarginItem->SetRight( nPageRightMargin );
-    GetBindings()->GetDispatcher()->Execute( SID_ATTR_LONG_LRSPACE, SFX_CALLMODE_RECORD, mpPageLRMarginItem.get(),  0L );	
+    GetBindings()->GetDispatcher()->Execute( SID_ATTR_PAGE_LRSPACE, SFX_CALLMODE_RECORD, mpPageLRMarginItem.get(),  0L );	
 }
 
 void PagePropertyPanel::ExecuteMarginULChange(
@@ -396,7 +366,7 @@ void PagePropertyPanel::ExecuteMarginULChange(
 {
     mpPageULMarginItem->SetUpper( nPageTopMargin );
     mpPageULMarginItem->SetLower( nPageBottomMargin );
-    GetBindings()->GetDispatcher()->Execute( SID_ATTR_LONG_ULSPACE, SFX_CALLMODE_RECORD, mpPageULMarginItem.get(),  0L );
+    GetBindings()->GetDispatcher()->Execute( SID_ATTR_PAGE_ULSPACE, SFX_CALLMODE_RECORD, mpPageULMarginItem.get(),  0L );
 }
 
 
@@ -486,7 +456,7 @@ void PagePropertyPanel::ClosePageSizePopup()
 void PagePropertyPanel::ExecuteColumnChange( const sal_uInt16 nColumnType )
 {
     mpPageColumnTypeItem->SetValue( nColumnType );
-    mpBindings->GetDispatcher()->Execute(SID_ATTR_SWPAGE_COLUMN, SFX_CALLMODE_RECORD, mpPageColumnTypeItem.get(),  0L );
+    mpBindings->GetDispatcher()->Execute(SID_ATTR_PAGE_COLUMN, SFX_CALLMODE_RECORD, mpPageColumnTypeItem.get(),  0L );
 }
 
 
@@ -518,7 +488,7 @@ void PagePropertyPanel::NotifyItemUpdate(
 {
     switch( nSId )
     {
-    case SID_ATTR_SWPAGE_COLUMN:
+    case SID_ATTR_PAGE_COLUMN:
         {
             if ( eState >= SFX_ITEM_AVAILABLE && 
                  pState && pState->ISA(SfxInt16Item) )
@@ -528,7 +498,7 @@ void PagePropertyPanel::NotifyItemUpdate(
             }
         }
         break;
-    case SID_ATTR_LONG_LRSPACE:
+    case SID_ATTR_PAGE_LRSPACE:
         if ( eState >= SFX_ITEM_AVAILABLE &&
              pState && pState->ISA(SvxLongLRSpaceItem) )
         {
@@ -537,7 +507,7 @@ void PagePropertyPanel::NotifyItemUpdate(
         }
         break;
 
-    case SID_ATTR_LONG_ULSPACE:
+    case SID_ATTR_PAGE_ULSPACE:
         if ( eState >= SFX_ITEM_AVAILABLE &&
              pState && pState->ISA(SvxLongULSpaceItem) )
         {

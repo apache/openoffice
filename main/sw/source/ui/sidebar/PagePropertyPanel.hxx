@@ -24,7 +24,6 @@
 
 #include <svx/sidebar/Popup.hxx>
 
-#include <sfx2/sidebar/IContextChangeReceiver.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
 
 namespace svx { namespace sidebar {
@@ -45,7 +44,6 @@ namespace svx { namespace sidebar {
 #include <vcl/field.hxx>
 #include <svl/intitem.hxx>
 
-#include <com/sun/star/frame/XFrame.hpp>
 #include <boost/scoped_ptr.hpp>
 
 
@@ -56,27 +54,18 @@ namespace sw { namespace sidebar {
 
     class PagePropertyPanel 
         : public Control,
-          public ::sfx2::sidebar::IContextChangeReceiver,
           public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
     {
     public:
         static PagePropertyPanel* Create(
             Window* pParent,
-            const cssu::Reference<css::frame::XFrame>& rxFrame,
-            SfxBindings* pBindings);
-
-        // override Window::DataChanged(..) inherited via Control to react on certain changes
-        virtual void DataChanged( const DataChangedEvent& rEvent );
-
-        // interface of ::sfx2::sidebar::IContextChangeReceiver
-        virtual void HandleContextChange(
-            const ::sfx2::sidebar::EnumContext aContext);
+            SfxBindings* pBindings );
 
         // interface of ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
         virtual void NotifyItemUpdate(
             const sal_uInt16 nSId,
             const SfxItemState eState,
-            const SfxPoolItem* pState);
+            const SfxPoolItem* pState );
 
         // action on 'More Options' button in panel title
         void ShowPageStyleFormatDialog( void );
@@ -112,12 +101,9 @@ namespace sw { namespace sidebar {
     private:
         PagePropertyPanel(
             Window* pParent,
-            const cssu::Reference<css::frame::XFrame>& rxFrame,
-            SfxBindings* pBindings);
+            SfxBindings* pBindings );
         virtual ~PagePropertyPanel(void);
 
-        cssu::Reference<css::frame::XFrame> mxFrame;
-        ::sfx2::sidebar::EnumContext maContext;
         SfxBindings* mpBindings;
 
         // toolboxes - on click open corresponding popup
