@@ -48,10 +48,9 @@ class convert_xrm : public convert_gen_impl
 
   private:
     std::string msKey;
-    bool        mbIsTagHeader;
-    bool        mbIsTagPara;
+    bool        mbIsTag;
     bool        mbIsLang;
-    int         miHeaderLevel;
+    std::string msTag;
 
     void execute();
 };

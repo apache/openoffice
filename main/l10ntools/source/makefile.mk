@@ -173,8 +173,8 @@ APP8OBJS= $(OBJ)$/gLang.obj       $(OBJ)$/gL10nMem.obj    \
           $(OBJ)$/gConProp.obj    $(OBJ)$/gConTree.obj    \
           $(OBJ)$/gCon.obj        $(OBJ)$/gConDB.obj      \
           $(OBJ)$/gConPoWrap.obj  $(OBJ)$/gConSrcWrap.obj \
-          $(OBJ)$/gConXcsWrap.obj $(OBJ)$/gConXcuWrap.obj \
           $(OBJ)$/gConXrmWrap.obj $(OBJ)$/gConXhpWrap.obj \
+          $(OBJ)$/gConXcsWrap.obj $(OBJ)$/gConXcuWrap.obj \
           $(OBJ)$/gConUlfWrap.obj
 APP8RPATH=  NONE
 APP8STDLIBS= 
