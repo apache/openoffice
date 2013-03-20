@@ -399,6 +399,26 @@ namespace drawinglayer
 
 				if(100 != nTransparence)
 				{
+                    // need to check XFillFloatTransparence, object fill may still be completely transparent
+                    const SfxPoolItem* pGradientItem;
+
+                    if(SFX_ITEM_SET == rSet.GetItemState(XATTR_FILLFLOATTRANSPARENCE, sal_True, &pGradientItem) 
+                        && ((XFillFloatTransparenceItem*)pGradientItem)->IsEnabled())
+                    {
+                        const XGradient& rGradient = ((XFillFloatTransparenceItem*)pGradientItem)->GetGradientValue();
+                        const sal_uInt8 nStartLuminance(rGradient.GetStartColor().GetLuminance());
+                        const sal_uInt8 nEndLuminance(rGradient.GetEndColor().GetLuminance());
+                        const bool bCompletelyTransparent(0xff == nStartLuminance && 0xff == nEndLuminance);
+
+                        if(bCompletelyTransparent)
+                        {
+                            nTransparence = 100;
+                        }
+                    }
+                }
+
+				if(100 != nTransparence)
+				{
 					const Color aColor(((const XFillColorItem&)(rSet.Get(XATTR_FILLCOLOR))).GetColorValue());
 					attribute::FillGradientAttribute aGradient;
 					attribute::FillHatchAttribute aHatch;
@@ -569,8 +589,13 @@ namespace drawinglayer
 				const sal_uInt8 nStartLuminance(rGradient.GetStartColor().GetLuminance());
 				const sal_uInt8 nEndLuminance(rGradient.GetEndColor().GetLuminance());
 				const bool bCompletelyTransparent(0xff == nStartLuminance && 0xff == nEndLuminance);
+				const bool bNotTransparent(0x00 == nStartLuminance && 0x00 == nEndLuminance);
 
-				if(!bCompletelyTransparent)
+                // create nothing when completely transparent: This case is already checked for the
+                // normal fill attributes, XFILL_NONE will be used.
+                // create nothing when not transparent: use normal fill, no need t create a FillGradientAttribute.
+                // Both cases are optimizations, always creating FillGradientAttribute will work, too
+				if(!bNotTransparent && !bCompletelyTransparent)
 				{
 					const double fStartLum(nStartLuminance / 255.0);
 					const double fEndLum(nEndLuminance / 255.0);
