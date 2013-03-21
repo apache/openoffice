@@ -360,6 +360,10 @@ void ScCellShell::Execute( SfxRequest& rReq )
 			pTabViewShell->ExecuteCellFormatDlg( rReq, TP_ALIGNMENT );
 			break;
 
+		case SID_CHAR_DLG_EFFECT:
+			pTabViewShell->ExecuteCellFormatDlg( rReq, TP_FONTEFF );
+			break;
+
 		case SID_OPENDLG_SOLVE:
 			{
 				sal_uInt16			nId  = ScSolverDlgWrapper::GetChildWindowId();

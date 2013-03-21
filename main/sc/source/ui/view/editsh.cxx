@@ -455,6 +455,7 @@ void ScEditShell::Execute( SfxRequest& rReq )
 			}
 			break;
 
+		case SID_CHAR_DLG_EFFECT:
 		case SID_CHAR_DLG:
 			{
 				SfxItemSet aAttrs( pTableView->GetAttribs() );
@@ -468,6 +469,10 @@ void ScEditShell::Execute( SfxRequest& rReq )
 				SfxAbstractTabDialog* pDlg = pFact->CreateScCharDlg( pViewData->GetDialogParent(), &aAttrs,
 																	 pObjSh, RID_SCDLG_CHAR );
 				DBG_ASSERT(pDlg, "Dialog create fail!");//CHINA001
+				if (nSlot == SID_CHAR_DLG_EFFECT)
+				{
+					pDlg->SetCurPageId(RID_SVXPAGE_CHAR_EFFECTS);
+				}
 				short nRet = pDlg->Execute();
 				// pDlg is needed below
 

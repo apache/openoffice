@@ -34,6 +34,8 @@ ValueSetWithTextControl::ValueSetWithTextControl(
     : ValueSet( pParent, rResId )
     , meControlType( eControlType )
     , maItems()
+    ,	bHaveCus(false)
+    ,	bCusEnable(false)
 {
     SetColCount( 1 );
 }
@@ -41,6 +43,58 @@ ValueSetWithTextControl::ValueSetWithTextControl(
 
 ValueSetWithTextControl::~ValueSetWithTextControl(void)
 {
+}
+
+void ValueSetWithTextControl::InsertCustom(Image imgEnable, Image imgDisable, XubString str)
+{
+	bHaveCus = true;
+	imgCusEnable = imgEnable;
+	imgCusDisable = imgDisable;
+	strLastCustom = str;
+	InsertItem(maItems.size() + 1);
+}
+
+void  ValueSetWithTextControl::SetDefaultTip(XubString* pStrList, sal_Bool bRealTip)
+{
+	for(sal_uInt16 i=1; i <= maItems.size(); i++)
+	{
+		//if (bRealTip)
+		//	SetItemHelpText(i, pStrList[i-1]);
+		//else
+			SetItemText(i, pStrList[i-1]);
+	}
+}
+
+void  ValueSetWithTextControl::SetCustomTip(XubString str, sal_Bool bRealTip)
+{
+	if(bHaveCus)
+	{
+		//if (bRealTip)
+		//	SetItemHelpText(GetItemCount() + 1 , str);
+		//else
+			SetItemText(maItems.size()+ 1 , str);
+	}
+}
+
+void ValueSetWithTextControl::SetCusEnable(bool bEnable)
+{
+	bCusEnable = bEnable;
+}
+
+void ValueSetWithTextControl::SetSelItem(sal_uInt16 nSel)
+{
+	//nSelItem = nSel;
+	//add by wj for sym2_5397
+	if(nSel == 0)
+	{
+		SelectItem(1);
+		SetNoSelection();
+	}
+	else
+	{
+		SelectItem(nSel);	
+		GrabFocus();
+	}
 }
 
 
@@ -131,7 +185,34 @@ void ValueSetWithTextControl::UserDraw( const UserDrawEvent& rUDEvt )
         aSize.Height() = (nRectHeight*4)/9;
         aFont.SetSize( aSize );
     }
+    if(nItemId == (maItems.size() + 1)  && bHaveCus)
+	{
+		//Point aStrStart(aBLPos.X() + imgCusEnable.GetSizePixel().Width() + 20 , aBLPos.Y() + nRectHeight/6);
+		Rectangle aStrRect = aRect;
+		aStrRect.Top() += nRectHeight/6;
+		aStrRect.Bottom() -= nRectHeight/6;
+		aStrRect.Left() += imgCusEnable.GetSizePixel().Width() + 20;
 
+		pDev->SetFillColor( COL_TRANSPARENT );
+		pDev->DrawRect(aRect);
+
+		if(bCusEnable)
+		{
+			Point aImgStart(aBLPos.X() + 5,			aBLPos.Y() + ( nRectHeight - imgCusEnable.GetSizePixel().Height() ) / 2);
+			pDev->DrawImage(aImgStart, imgCusEnable);	
+			aFont.SetColor(GetSettings().GetStyleSettings().GetFieldTextColor());		//GetSettings().GetStyleSettings().GetHighContrastMode() ? COL_WHITE : COL_BLACKadd for sym2_7246 for high contrast
+		}
+		else
+		{
+			Point aImgStart(aBLPos.X() + 5,			aBLPos.Y() + ( nRectHeight - imgCusDisable.GetSizePixel().Height() ) / 2);
+			pDev->DrawImage(aImgStart, imgCusDisable);	
+			//Color aCol(155,155,155);
+			aFont.SetColor(GetSettings().GetStyleSettings().GetDisableColor());
+		}
+		pDev->SetFont(aFont);			    
+		pDev->DrawText(aStrRect, strLastCustom, TEXT_DRAW_ENDELLIPSIS);	//add by wj for sym2_4049
+	}    
+    else
     {
         //draw backgroud
         if ( GetSelectItemId() == nItemId )

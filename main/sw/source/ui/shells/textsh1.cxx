@@ -185,6 +185,10 @@ void lcl_CharDialog( SwWrtShell &rWrtSh, sal_Bool bUseDialog, sal_uInt16 nSlot,c
 		if( FN_INSERT_HYPERLINK == nSlot )
 			pDlg->SetCurPageId(TP_CHAR_URL);
 	}
+	if (nSlot == SID_CHAR_DLG_EFFECT)
+	{
+		pDlg->SetCurPageId(TP_CHAR_EXT);
+	}
 
 	const SfxItemSet* pSet = NULL;
 	if ( !bUseDialog )
@@ -838,6 +842,7 @@ void SwTextShell::Execute(SfxRequest &rReq)
             // intentionally no break
         }
 		case SID_CHAR_DLG:
+		case SID_CHAR_DLG_EFFECT:
 		{
             lcl_CharDialog( rWrtSh, bUseDialog, nSlot, pArgs, &rReq );
 		}

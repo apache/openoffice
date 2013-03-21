@@ -127,6 +127,7 @@ $(eval $(call gb_Library_add_exception_objects,svt,\
 	svtools/source/contnr/tooltiplbox \
 	svtools/source/contnr/treelist \
 	svtools/source/control/asynclink \
+	svtools/source/control/button \
 	svtools/source/control/calendar \
 	svtools/source/control/collatorres \
 	svtools/source/control/ctrlbox \

@@ -1446,6 +1446,12 @@ interface BaseText
 		ExecMethod = Execute ;
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
 	]
+
+	SID_CHAR_DLG_EFFECT
+	[
+		ExecMethod = Execute ;
+		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+	]
     SID_CHAR_DLG_FOR_PARAGRAPH
     [
         ExecMethod = Execute ;

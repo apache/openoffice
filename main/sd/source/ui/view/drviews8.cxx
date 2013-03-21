@@ -118,6 +118,7 @@ void DrawViewShell::FuTemp01(SfxRequest& rReq)
 		}
 		break;
 
+		case SID_CHAR_DLG_EFFECT:
 		case SID_CHAR_DLG:	// BASIC
 		{
 			SetCurrentFunction( FuChar::Create( this, GetActiveWindow(), mpDrawView, GetDoc(), rReq ) );

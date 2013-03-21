@@ -239,6 +239,7 @@ Reference<ui::XSidebarPanel> Panel::GetPanelComponent (void) const
 
 
 
+
 void Panel::PrintWindowTree (void)
 {
 #ifdef DEBUG
