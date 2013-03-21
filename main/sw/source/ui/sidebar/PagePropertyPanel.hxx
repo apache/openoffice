@@ -67,9 +67,6 @@ namespace sw { namespace sidebar {
             const SfxItemState eState,
             const SfxPoolItem* pState );
 
-        // action on 'More Options' button in panel title
-        void ShowPageStyleFormatDialog( void );
-
         SfxBindings* GetBindings() const
         {
             return mpBindings;

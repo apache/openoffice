@@ -139,7 +139,6 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::bind(&TextPropertyPanel::ShowMenu, pPanel),
             ui::LayoutSize(-1,-1,-1));
     }
     else if (DoesResourceEndWith("/AreaPropertyPanel"))
@@ -149,7 +148,6 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::bind(&AreaPropertyPanel::ShowMenu, pPanel),
             ui::LayoutSize(-1,-1,-1));
     }
     else if (DoesResourceEndWith("/GraphicPropertyPanel"))
@@ -159,7 +157,6 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::function<void(void)>(),
             ui::LayoutSize(-1,-1,-1));
     }
     else if (DoesResourceEndWith("/LinePropertyPanel"))
@@ -169,7 +166,6 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::bind(&LinePropertyPanel::ShowMenu, pPanel),
             ui::LayoutSize(-1,-1,-1));
     }
     else if (DoesResourceEndWith("/PosSizePropertyPanel"))
@@ -179,7 +175,6 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::bind(&PosSizePropertyPanel::ShowMenu, pPanel),
             ui::LayoutSize(-1,-1,-1));
     }
     else if (DoesResourceEndWith("/GalleryPanel"))
@@ -191,7 +186,6 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pGalleryControl,
-            ::boost::function<void(void)>(),
             ui::LayoutSize(300,-1,400));
     }
     else if (DoesResourceEndWith("/Debug_ColorPanel"))
@@ -201,7 +195,6 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::function<void(void)>(),
             ui::LayoutSize(300,-1,400));
     }
     else if (DoesResourceEndWith("/Debug_ContextPanel"))
@@ -211,7 +204,6 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::function<void(void)>(),
             ui::LayoutSize(45,45,45));
     }
     else if (DoesResourceEndWith("/Debug_NotYetImplementedPanel"))
@@ -221,7 +213,6 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::function<void(void)>(),
             ui::LayoutSize(20,25,25));
     }
     else if (DoesResourceEndWith("/EmptyPanel"))
@@ -231,8 +222,7 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::function<void(void)>(),
-            ui::LayoutSize(20,25,25));
+            ui::LayoutSize(20,-1, 50));
     }
 #undef DoesResourceEndWith
 

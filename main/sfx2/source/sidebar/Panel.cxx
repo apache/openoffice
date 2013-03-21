@@ -239,15 +239,6 @@ Reference<ui::XSidebarPanel> Panel::GetPanelComponent (void) const
 
 
 
-void Panel::ShowMenu (void)
-{
-    if (mxPanelComponent.is())
-        mxPanelComponent->showMenu();
-}
-
-
-
-
 void Panel::PrintWindowTree (void)
 {
 #ifdef DEBUG

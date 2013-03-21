@@ -266,18 +266,6 @@ LinePropertyPanel::~LinePropertyPanel()
 
 
 
-void LinePropertyPanel::ShowMenu (void)
-{
-    if (mpBindings != NULL)
-    {
-        SfxDispatcher* pDispatcher = mpBindings->GetDispatcher();
-        if (pDispatcher != NULL)
-            pDispatcher->Execute(SID_ATTRIBUTES_LINE, SFX_CALLMODE_ASYNCHRON);
-    }
-}
-
-
-
 void LinePropertyPanel::Initialize()
 {
     mpIMGStyleIcon.reset(new Image[11]);

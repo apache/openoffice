@@ -42,7 +42,6 @@ Reference<ui::XUIElement> SidebarPanelBase::Create (
     const ::rtl::OUString& rsResourceURL,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
     Window* pWindow,
-    const ::boost::function<void(void)>& rMenuProvider,
     const css::ui::LayoutSize& rLayoutSize)
 {
     Reference<ui::XUIElement> xUIElement (
@@ -50,7 +49,6 @@ Reference<ui::XUIElement> SidebarPanelBase::Create (
             rsResourceURL,
             rxFrame,
             pWindow,
-            rMenuProvider,
             rLayoutSize));
     return xUIElement;
 }
@@ -62,16 +60,14 @@ SidebarPanelBase::SidebarPanelBase (
     const ::rtl::OUString& rsResourceURL,
     const cssu::Reference<css::frame::XFrame>& rxFrame,
     Window* pWindow,
-    const ::boost::function<void(void)>& rMenuProvider,
     const css::ui::LayoutSize& rLayoutSize)
     : SidebarPanelBaseInterfaceBase(m_aMutex),
       mxFrame(rxFrame),
       mpControl(pWindow),
       msResourceURL(rsResourceURL),
-      maMenuProvider(rMenuProvider),
       maLayoutSize(rLayoutSize)
 {
-    OSL_TRACE("SidebarPanelBase created at %x", this);
+    //    OSL_TRACE("SidebarPanelBase created at %x", this);
 
     if (mxFrame.is())
     {
@@ -90,7 +86,6 @@ SidebarPanelBase::SidebarPanelBase (
 
 SidebarPanelBase::~SidebarPanelBase (void)
 {
-    OSL_TRACE("SidebarPanelBase destroyed at %x", this);
 }
 
 
@@ -99,8 +94,6 @@ SidebarPanelBase::~SidebarPanelBase (void)
 void SAL_CALL SidebarPanelBase::disposing (void)
     throw (cssu::RuntimeException)
 {
-    OSL_TRACE("SidebarPanelBase disposing at %x", this);
-
     if (mpControl != NULL)
     {
         delete mpControl;
@@ -123,7 +116,6 @@ void SAL_CALL SidebarPanelBase::disposing (void)
 
 void SidebarPanelBase::SetControl (::Window* pControl)
 {
-    OSL_TRACE("setting control of SidebarPanelBase at %x to %x", this, pControl);
     mpControl = pControl;
 }
 
@@ -143,8 +135,6 @@ void SAL_CALL SidebarPanelBase::notifyContextChangeEvent (
     const ui::ContextChangeEventObject& rEvent)
     throw (cssu::RuntimeException)
 {
-    OSL_TRACE("SidebarPanelBase notified at %x with control at %x", this, mpControl);
-
     IContextChangeReceiver* pContextChangeReceiver
         = dynamic_cast<IContextChangeReceiver*>(mpControl);
     if (pContextChangeReceiver != NULL)
@@ -165,8 +155,6 @@ void SAL_CALL SidebarPanelBase::disposing (
 {
     (void)rEvent;
 
-    OSL_TRACE("SidebarPanelBase disposing(e) at %x", this);
-    
     mxFrame = NULL;
     mpControl = NULL;
 }
@@ -258,28 +246,6 @@ ui::LayoutSize SAL_CALL SidebarPanelBase::getHeightForWidth (const sal_Int32 nWi
 }
 
 
-
-
-void SAL_CALL SidebarPanelBase::showMenu (void)
-    throw(cssu::RuntimeException)
-{
-    if (maMenuProvider)
-        maMenuProvider();
-}
-
-
-
-
-sal_Bool SAL_CALL SidebarPanelBase::isContextSupported (
-    const ::rtl::OUString& rsApplicationName,
-    const ::rtl::OUString& rsContextName)
-    throw(cssu::RuntimeException)
-{
-    (void)rsApplicationName;
-    (void)rsContextName;
-    
-    return sal_True;
-}
 
 
 } } // end of namespace sfx2::sidebar

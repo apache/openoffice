@@ -1455,19 +1455,6 @@ void TextPropertyPanel::NotifyItemUpdate (
 
 
 
-void TextPropertyPanel::ShowMenu (void)
-{
-    if (mpBindings != NULL)
-    {
-        SfxDispatcher* pDispatcher = mpBindings->GetDispatcher();
-        if (pDispatcher != NULL)
-            pDispatcher->Execute(SID_CHAR_DLG, SFX_CALLMODE_ASYNCHRON);
-    }
-}
-
-
-
-
 void TextPropertyPanel::TextStyleChanged()
 {
 	if( !mbWeightAvailable )

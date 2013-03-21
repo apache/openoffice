@@ -246,14 +246,6 @@ void PagePropertyPanel::Initialize()
 }
 
 
-void PagePropertyPanel::ShowPageStyleFormatDialog( void )
-{
-    mpBindings->GetDispatcher()->Execute( FN_FORMAT_PAGE_DLG, SFX_CALLMODE_ASYNCHRON );
-}
-
-
-
-
 ::svx::sidebar::PopupControl* PagePropertyPanel::CreatePageOrientationControl( ::svx::sidebar::PopupContainer* pParent )
 {
     return new PageOrientationControl( pParent, *this , mpPageItem->IsLandscape() );

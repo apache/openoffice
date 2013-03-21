@@ -121,7 +121,6 @@ public:
         const SfxPoolItem* pState);
 
     SfxBindings* GetBindings();
-    void ShowMenu (void);
 
     void SetLineDashItem(XLineDashItem* pDash);
     void SetLineStyleItem(XLineStyleItem* pStyle);

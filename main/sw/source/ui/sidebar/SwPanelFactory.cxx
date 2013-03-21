@@ -120,7 +120,6 @@ Reference<ui::XUIElement> SAL_CALL SwPanelFactory::createUIElement (
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::bind(&PagePropertyPanel::ShowPageStyleFormatDialog, pPanel),
             ui::LayoutSize(-1,-1,-1));
     }
 #undef DoesResourceEndWith

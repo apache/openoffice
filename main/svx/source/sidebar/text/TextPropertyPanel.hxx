@@ -95,8 +95,6 @@ public:
         const SfxItemState eState,
         const SfxPoolItem* pState);
 
-    void ShowMenu (void);
-
 private:
 	//ui controls
     ::boost::scoped_ptr<SvxSBFontNameBox> mpFontNameBox;

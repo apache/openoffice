@@ -68,7 +68,6 @@ public:
         const ::rtl::OUString& rsResourceURL,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
         Window* mpWindow,
-        const ::boost::function<void(void)>& rMenuProvider,
         const css::ui::LayoutSize& rLayoutSize);
 
     // XContextChangeEventListener
@@ -101,17 +100,6 @@ public:
     // XSidebarPanel
     virtual css::ui::LayoutSize SAL_CALL getHeightForWidth (sal_Int32 nWidth)
         throw(cssu::RuntimeException);
-    virtual void SAL_CALL showMenu (void)
-        throw(cssu::RuntimeException);
-    /** Always return <TRUE/> in the assumption that the panel
-        descriptor in the registry has this covered.
-        If a panel needs finer control then it has to overload this
-        method.
-    */
-    virtual sal_Bool SAL_CALL isContextSupported (
-        const ::rtl::OUString& rsApplicationName,
-        const ::rtl::OUString& rsContextName)
-        throw(cssu::RuntimeException);
 
 protected:
     cssu::Reference<css::frame::XFrame> mxFrame;
@@ -120,7 +108,6 @@ protected:
         const ::rtl::OUString& rsResourceURL,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
         Window* pWindow,
-        const ::boost::function<void(void)>& rMenuProvider,
         const css::ui::LayoutSize& rLayoutSize);
     virtual ~SidebarPanelBase (void);
 
@@ -133,7 +120,6 @@ protected:
 private:
     Window* mpControl;
     const ::rtl::OUString msResourceURL;
-    const ::boost::function<void(void)> maMenuProvider;
     const css::ui::LayoutSize maLayoutSize;
 };
 

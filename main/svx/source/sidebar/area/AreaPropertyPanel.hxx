@@ -77,7 +77,6 @@ public:
         const SfxPoolItem* pState);
 
     SfxBindings* GetBindings();
-    void ShowMenu (void);
 
     const static sal_Int32 DEFAULT_CENTERX;
     const static sal_Int32 DEFAULT_CENTERY;

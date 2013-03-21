@@ -80,7 +80,6 @@ private:
     const ::boost::function<void(void)> maDeckLayoutTrigger;
     Rectangle maBoundingBox;
 
-    void ShowMenu (void);
     cssu::Reference<css::awt::XWindow> GetElementWindow (void);
 };
 typedef ::boost::shared_ptr<Panel> SharedPanel;
