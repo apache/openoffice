@@ -298,20 +298,31 @@ void SdrEditView::ResizeMultMarkedObj(const Point& rRef,
 
 long SdrEditView::GetMarkedObjRotate() const
 {
-	sal_Bool b1st=sal_True;
-	sal_Bool bOk=sal_True;
-	long nWink=0;
-	sal_uIntPtr nMarkAnz=GetMarkedObjectCount();
-	for (sal_uIntPtr nm=0; nm<nMarkAnz && bOk; nm++) {
-		SdrMark* pM=GetSdrMarkByIndex(nm);
-		SdrObject* pO=pM->GetMarkedSdrObj();
-		long nWink2=pO->GetRotateAngle();
-		if (b1st) nWink=nWink2;
-		else if (nWink2!=nWink) bOk=sal_False;
-		b1st=sal_False;
-	}
-	if (!bOk) nWink=0;
-	return nWink;
+    long nRetval(0);
+
+    if(GetMarkedObjectCount())
+    {
+        SdrMark* pM = GetSdrMarkByIndex(0);
+        SdrObject* pO = pM->GetMarkedSdrObj();
+
+        nRetval = pO->GetRotateAngle();
+    }
+
+    return nRetval;
+	//sal_Bool b1st=sal_True;
+	//sal_Bool bOk=sal_True;
+	//long nWink=0;
+	//sal_uIntPtr nMarkAnz=GetMarkedObjectCount();
+	//for (sal_uIntPtr nm=0; nm<nMarkAnz && bOk; nm++) {
+	//	SdrMark* pM=GetSdrMarkByIndex(nm);
+	//	SdrObject* pO=pM->GetMarkedSdrObj();
+	//	long nWink2=pO->GetRotateAngle();
+	//	if (b1st) nWink=nWink2;
+	//	else if (nWink2!=nWink) bOk=sal_False;
+	//	b1st=sal_False;
+	//}
+	//if (!bOk) nWink=0;
+	//return nWink;
 }
 
 void SdrEditView::RotateMarkedObj(const Point& rRef, long nWink, bool bCopy)

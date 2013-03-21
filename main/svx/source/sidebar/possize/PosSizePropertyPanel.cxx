@@ -649,19 +649,18 @@ void PosSizePropertyPanel::NotifyItemUpdate(
             {
                 pWidthItem = dynamic_cast< const SfxUInt32Item* >(pState);
 
-                if (pWidthItem)
-                {				
+                if(pWidthItem)
+                {
                     long mlOldWidth1 = pWidthItem->GetValue();
 
                     mlOldWidth1 = Fraction( mlOldWidth1 ) / maUIScale;
                     SetMetricValue( *mpMtrWidth, mlOldWidth1, mePoolUnit );
                     mlOldWidth = mlOldWidth1;
+                    break;
                 }
             }
-            else
-            {
-                mpMtrWidth->SetText( String());
-            }
+
+            mpMtrWidth->SetText( String());
             break;
             
         case SID_ATTR_TRANSFORM_HEIGHT:
@@ -676,156 +675,174 @@ void PosSizePropertyPanel::NotifyItemUpdate(
                     mlOldHeight1 = Fraction( mlOldHeight1 ) / maUIScale;
                     SetMetricValue( *mpMtrHeight, mlOldHeight1, mePoolUnit );
                     mlOldHeight = mlOldHeight1;
+                    break;
                 }
             }
-            else
-            {
-                mpMtrHeight->SetText( String());
-            }
+
+            mpMtrHeight->SetText( String());
             break;
 
         case SID_ATTR_TRANSFORM_POS_X:
-        {
-            const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
+            if(SFX_ITEM_AVAILABLE == eState)
+            {
+                const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
 
-            if (SFX_ITEM_AVAILABLE == eState && pItem)
-            {
-                long nTmp = pItem->GetValue(); 
-                nTmp = Fraction( nTmp ) / maUIScale;
-                SetMetricValue( *mpMtrPosX, nTmp, mePoolUnit );
+                if(pItem)
+                {
+                    long nTmp = pItem->GetValue(); 
+                    nTmp = Fraction( nTmp ) / maUIScale;
+                    SetMetricValue( *mpMtrPosX, nTmp, mePoolUnit );
+                    break;
+                }
             }
-            else
-            {
-                mpMtrPosX->SetText( String());
-            }
+
+            mpMtrPosX->SetText( String());
             break;
-        }
-        
+
         case SID_ATTR_TRANSFORM_POS_Y:
-        {
-            const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
+            if(SFX_ITEM_AVAILABLE == eState)
+            {
+                const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
 
-            if (SFX_ITEM_AVAILABLE == eState && pItem)
-            {
-                long nTmp = pItem->GetValue(); 
-                nTmp = Fraction( nTmp ) / maUIScale;
-                SetMetricValue( *mpMtrPosY, nTmp, mePoolUnit );
+                if(pItem)
+                {
+                    long nTmp = pItem->GetValue(); 
+                    nTmp = Fraction( nTmp ) / maUIScale;
+                    SetMetricValue( *mpMtrPosY, nTmp, mePoolUnit );
+                    break;
+                }
             }
-            else
-            {
-                mpMtrPosY->SetText( String());
-            }
+
+            mpMtrPosY->SetText( String());
             break;
-        }
-        
+
         case SID_ATTR_TRANSFORM_ROT_X:
             if (SFX_ITEM_AVAILABLE == eState)
             {
-                mlRotX = ((const SfxInt32Item*)pState)->GetValue(); 
-                mlRotX = Fraction( mlRotX ) / maUIScale;
+                const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
+
+                if(pItem)
+                {
+                    mlRotX = pItem->GetValue(); 
+                    mlRotX = Fraction( mlRotX ) / maUIScale;
+                }
             }
             break;
 
         case SID_ATTR_TRANSFORM_ROT_Y:
             if (SFX_ITEM_AVAILABLE == eState)
             {
-                mlRotY = ((const SfxInt32Item*)pState)->GetValue(); 
-                mlRotY = Fraction( mlRotY ) / maUIScale;
+                const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
+
+                if(pItem)
+                {
+                    mlRotY = pItem->GetValue(); 
+                    mlRotY = Fraction( mlRotY ) / maUIScale;
+                }
             }
             break;
 
         case SID_ATTR_TRANSFORM_PROTECT_POS:
-        {
-            const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
+            if(SFX_ITEM_AVAILABLE == eState)
+            {
+                const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
 
-            if (SFX_ITEM_AVAILABLE == eState && pItem)
-            {
-                // record the state of position protect
-                mbPositionProtected = pItem->GetValue();
+                if(pItem)
+                {
+                    // record the state of position protect
+                    mbPositionProtected = pItem->GetValue();
+                    break;
+                }
             }
-            else
-            {
-                mbPositionProtected = false;
-            }
+
+            mbPositionProtected = false;
             break;
-        }
 
         case SID_ATTR_TRANSFORM_PROTECT_SIZE:
-        {
-            const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
+            if(SFX_ITEM_AVAILABLE == eState)
+            {
+                const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
 
-            if (SFX_ITEM_AVAILABLE == eState && pItem)
-            {
-                // record the state of size protect
-                mbSizeProtected = pItem->GetValue();
+                if(pItem)
+                {
+                    // record the state of size protect
+                    mbSizeProtected = pItem->GetValue();
+                    break;
+                }
             }
-            else
-            {
-                mbSizeProtected = false;
-            }
+
+            mbSizeProtected = false;
             break;
-        }
 
         case SID_ATTR_TRANSFORM_AUTOWIDTH:
-        {
-            const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
-
-            if (SFX_ITEM_AVAILABLE == eState && pItem)
+            if(SFX_ITEM_AVAILABLE == eState)
             {
-                mbAutoWidth = pItem->GetValue();
+                const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
+
+                if(pItem)
+                {
+                    mbAutoWidth = pItem->GetValue();
+                }
             }
             break;
-        }
 
         case SID_ATTR_TRANSFORM_AUTOHEIGHT:
-        {
-            const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
-
-            if (SFX_ITEM_AVAILABLE == eState && pItem)
+            if(SFX_ITEM_AVAILABLE == eState)
             {
-                mbAutoHeight = pItem->GetValue();
+                const SfxBoolItem* pItem = dynamic_cast< const SfxBoolItem* >(pState);
+
+                if(pItem)
+                {
+                    mbAutoHeight = pItem->GetValue();
+                }
             }
             break;
-        }
 
         case SID_ATTR_TRANSFORM_ANGLE:
             if (eState >= SFX_ITEM_AVAILABLE)
             {
-                long nTmp = ((const SfxInt32Item*)pState)->GetValue(); 
-                mpMtrAngle->SetValue( nTmp );
-                mpDial->SetRotation( nTmp );
-                switch(nTmp)
+                const SfxInt32Item* pItem = dynamic_cast< const SfxInt32Item* >(pState);
+
+                if(pItem)
                 {
-                    case 0:
-                        mpMtrAngle->SelectEntryPos(0);
-                        break;
-                    case 4500:
-                        mpMtrAngle->SelectEntryPos(1);
-                        break;
-                    case 9000:
-                        mpMtrAngle->SelectEntryPos(2);
-                        break;
-                    case 13500:
-                        mpMtrAngle->SelectEntryPos(3);
-                        break;
-                    case 18000:
-                        mpMtrAngle->SelectEntryPos(4);
-                        break;
-                    case 22500:
-                        mpMtrAngle->SelectEntryPos(5);
-                        break;
-                    case 27000:
-                        mpMtrAngle->SelectEntryPos(6);
-                        break;
-                    case 315000:
-                        mpMtrAngle->SelectEntryPos(7);
+                    long nTmp = pItem->GetValue(); 
+
+                    mpMtrAngle->SetValue( nTmp );
+                    mpDial->SetRotation( nTmp );
+
+                    switch(nTmp)
+                    {
+                        case 0:
+                            mpMtrAngle->SelectEntryPos(0);
+                            break;
+                        case 4500:
+                            mpMtrAngle->SelectEntryPos(1);
+                            break;
+                        case 9000:
+                            mpMtrAngle->SelectEntryPos(2);
+                            break;
+                        case 13500:
+                            mpMtrAngle->SelectEntryPos(3);
+                            break;
+                        case 18000:
+                            mpMtrAngle->SelectEntryPos(4);
+                            break;
+                        case 22500:
+                            mpMtrAngle->SelectEntryPos(5);
+                            break;
+                        case 27000:
+                            mpMtrAngle->SelectEntryPos(6);
+                            break;
+                        case 315000:
+                            mpMtrAngle->SelectEntryPos(7);
+                    }
+
+                    break;
                 }
             }
-            else
-            {
-                mpMtrAngle->SetText( String() );
-                mpDial->SetRotation( 0 );
-            }
+
+            mpMtrAngle->SetText( String() );
+            mpDial->SetRotation( 0 );
             break;
             
         case SID_ATTR_METRIC:
