@@ -22,6 +22,8 @@
 #include "precompiled_sfx2.hxx"
 
 #include "ResourceManager.hxx"
+#include "Tools.hxx"
+
 #include <unotools/confignode.hxx>
 #include <comphelper/componentcontext.hxx>
 #include <comphelper/processfactory.hxx>
@@ -37,7 +39,6 @@
 #include <map>
 
 
-#define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
 
 using ::rtl::OUString;
 using namespace css;
@@ -340,7 +341,7 @@ void ResourceManager::ReadPanelList (void)
             aPanelNode.getNodeValue("WantsCanvas"));
         const OUString sDefaultMenuCommand (::comphelper::getString(
                 aPanelNode.getNodeValue("DefaultMenuCommand")));
-        
+
         ReadContextList(
             aPanelNode,
             rPanelDescriptor.maContextList,
@@ -476,12 +477,14 @@ void ResourceManager::ReadContextList (
                 sMenuCommand);
         }
         else
+        {
             rContextList.AddContextDescription(
                 Context(
                     EnumContext::GetApplicationName(eApplication),
                     EnumContext::GetContextName(eContext)),
                 bIsInitiallyVisible,
                 sMenuCommand);
+        }
     }
 }
 

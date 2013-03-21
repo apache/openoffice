@@ -40,6 +40,8 @@ public:
         const sidebar::Paint& rInitialBackgroundPaint);
     virtual ~TitleBar (void);
 
+    void SetTitle (const ::rtl::OUString& rsTitle);
+
     virtual void Paint (const Rectangle& rUpdateArea);
     virtual void DataChanged (const DataChangedEvent& rEvent);
     virtual void SetPosSizePixel (
@@ -59,7 +61,7 @@ protected:
     virtual void HandleToolBoxItemClick (const sal_uInt16 nItemIndex);
     
 private:
-    const ::rtl::OUString msTitle;
+    ::rtl::OUString msTitle;
 
     void PaintTitle (const Rectangle& rTitleBox);
     DECL_LINK(SelectionHandler, ToolBox*);

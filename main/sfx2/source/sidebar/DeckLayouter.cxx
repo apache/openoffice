@@ -217,13 +217,23 @@ sal_Int32 DeckLayouter::PlacePanels (
         
         // Place the title bar.
         TitleBar* pTitleBar = rPanel.GetTitleBar();
-        pTitleBar->SetPosSizePixel(0, nY, nWidth, nPanelTitleBarHeight);
-        pTitleBar->Show();
-        nY += nPanelTitleBarHeight;
+        if (pTitleBar != NULL)
+        {
+            if (iItem->mbShowTitleBar)
+            {
+                pTitleBar->SetPosSizePixel(0, nY, nWidth, nPanelTitleBarHeight);
+                pTitleBar->Show();
+                nY += nPanelTitleBarHeight;
 
-        // Separator below the panel title bar.
-        aSeparators.push_back(nY);
-        nY += nDeckSeparatorHeight;
+                // Separator below the panel title bar.
+                aSeparators.push_back(nY);
+                nY += nDeckSeparatorHeight;
+            }
+            else
+            {
+                pTitleBar->Hide();
+            }
+        }
 
         if (rPanel.IsExpanded())
         {
@@ -284,11 +294,24 @@ void DeckLayouter::GetRequestedSizes (
     IterateLayoutItems(iItem,rLayoutItems)
     {
         ui::LayoutSize aLayoutSize (ui::LayoutSize(0,0,0));
-		if (iItem->mpPanel != NULL)
+        if (iItem->mpPanel != NULL)
         {
-            rAvailableHeight -= nPanelTitleBarHeight;
-            rAvailableHeight -= 2*nDeckSeparatorHeight;
-
+            if (rLayoutItems.size() == 1
+                && iItem->mpPanel->IsTitleBarOptional())
+            {
+                // There is only one panel and its title bar is
+                // optional => hide it.
+                rAvailableHeight -= nDeckSeparatorHeight;
+                iItem->mbShowTitleBar = false;
+            }
+            else
+            {
+                // Show the title bar and a separator above and below
+                // the title bar.
+                rAvailableHeight -= nPanelTitleBarHeight;
+                rAvailableHeight -= 2*nDeckSeparatorHeight;
+            }
+            
             if (iItem->mpPanel->IsExpanded())
             {
                 Reference<ui::XSidebarPanel> xPanel (iItem->mpPanel->GetPanelComponent());

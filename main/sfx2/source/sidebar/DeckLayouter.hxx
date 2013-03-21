@@ -74,8 +74,11 @@ private:
         sal_Int32 mnDistributedHeight;
         sal_Int32 mnWeight;
         sal_Int32 mnPanelIndex;
+        bool mbShowTitleBar;
         
-        LayoutItem (void) : mpPanel(),maLayoutSize(0,0,0),mnDistributedHeight(0),mnWeight(0),mnPanelIndex(0) {}
+        LayoutItem (void)
+            : mpPanel(),maLayoutSize(0,0,0),mnDistributedHeight(0),mnWeight(0),mnPanelIndex(0),mbShowTitleBar(true)
+        {}
     };
     static Rectangle LayoutPanels (
         const Rectangle aContentArea,

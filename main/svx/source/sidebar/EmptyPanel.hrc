@@ -19,33 +19,8 @@
  * 
  *************************************************************/
 
-#ifndef SVX_SIDEBAR_DEBUG_EMPTY_PANEL_HXX
-#define SVX_SIDEBAR_DEBUG_EMPTY_PANEL_HXX
+#include <svx/dialogs.hrc>
 
-#include <vcl/window.hxx>
-#include <vcl/ctrl.hxx>
-#include <vcl/fixed.hxx>
+// For RID_SIDEBAR_EMPTY_PANEL
 
-
-namespace svx { namespace sidebar {
-
-
-/** Display a panel that tells the user that the current deck is
-    intentionally empty.
-*/
-class EmptyPanel
-    : public Control
-{
-public:
-    EmptyPanel (::Window* pParent);
-    virtual ~EmptyPanel (void);
-
-    virtual void Resize (void);
-
-private:
-    FixedText maMessageControl;
-};
-
-} } // end of namespace ::svx::sidebar
-
-#endif
+#define FT_MESSAGE 1

@@ -187,7 +187,7 @@
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
-            any, any, visible ;
+            none, none, visible ;
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
@@ -358,7 +358,7 @@
             Calc,        Chart,       visible                       ;
             Calc,        Draw,        hidden                        ;
             Calc,        Form,        visible                       ;
-            Calc,        Graphic,     false                         ;
+            Calc,        Graphic,     hidden                        ;
             Calc,        Media,       visible                       ;
             Calc,        MultiObject, visible                       ;
             Calc,        OLE,         visible                       ;
@@ -596,7 +596,7 @@
         </prop>
       </node>
 
-      <node oor:name="EmptyPropertyPanel" oor:op="replace">
+      <node oor:name="EmptyPanel" oor:op="replace">
         <prop oor:name="TitleBarIsOptional" oor:type="xs:boolean">
           <value>true</value>
         </prop>
@@ -604,14 +604,14 @@
           <value xml:lang="en-US">Empty</value>
         </prop>
         <prop oor:name="Id" oor:type="xs:string">
-          <value>EmptyPropertyPanel</value>
+          <value>EmptyPanel</value>
         </prop>
         <prop oor:name="DeckId" oor:type="xs:string">
           <value>PropertyDeck</value>
         </prop>
         <prop oor:name="ContextList">
           <value oor:separator=";">
-            Writer,      Frame,       visible ;
+            any, empty, visible ;
           </value>
         </prop>
         <prop oor:name="ImplementationURL" oor:type="xs:string">

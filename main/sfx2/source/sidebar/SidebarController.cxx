@@ -31,6 +31,7 @@
 #include "sfx2/sidebar/Theme.hxx"
 #include "SidebarDockingWindow.hxx"
 #include "Context.hxx"
+#include "Tools.hxx"
 
 #include "sfxresid.hxx"
 #include "sfx2/sfxsids.hrc"
@@ -62,8 +63,6 @@ using namespace css;
 using namespace cssu;
 using ::rtl::OUString;
 
-#define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
-#define S2A(s) OUStringToOString(s, RTL_TEXTENCODING_ASCII_US).getStr()
 
 
 namespace sfx2 { namespace sidebar {
@@ -237,10 +236,6 @@ void SidebarController::NotifyResize (void)
     const sal_Int32 nHeight (pParentWindow->GetSizePixel().Height());
 
     // Place the deck.
-    if ( ! mbIsDeckClosed)
-    {
-        OSL_ASSERT(mpCurrentDeck!=NULL);
-    }
     if (mpCurrentDeck)
     {
         mpCurrentDeck->SetPosSizePixel(0,0, nWidth-TabBar::GetDefaultWidth(), nHeight);
@@ -324,6 +319,16 @@ void SidebarController::UpdateConfigurations (const Context& rContext)
             msCurrentDeckId = pDeckDescriptor->msId;
             SwitchToDeck(*pDeckDescriptor, rContext);
         }
+        
+#ifdef DEBUG
+        // Show the context name in the deck title bar.
+        if (mpCurrentDeck)
+        {
+            DeckTitleBar* pTitleBar = mpCurrentDeck->GetTitleBar();
+            if (pTitleBar != NULL)
+                pTitleBar->SetTitle(msCurrentDeckTitle+A2S(" (")+rContext.msContext+A2S(")"));
+        }
+#endif
     }
 }
 
@@ -372,6 +377,26 @@ void SidebarController::SwitchToDeck (
         rDeckDescriptor.msId,
         mxFrame);
 
+    if (aPanelContextDescriptors.empty())
+    {
+        // There are no panels to be displayed in the current context.
+        if (EnumContext::GetContextEnum(rContext.msContext) != EnumContext::Context_Empty)
+        {
+            // Switch to the "empty" context and try again.
+            SwitchToDeck(
+                rDeckDescriptor,
+                Context(
+                    rContext.msApplication,
+                    EnumContext::GetContextName(EnumContext::Context_Empty)));
+            return;
+        }
+        else
+        {
+            // This is already the "empty" context. Looks like we have
+            // to live with an empty deck.
+        }
+    }
+
     if (mpCurrentDeck
         && ArePanelSetsEqual(mpCurrentDeck->GetPanels(), aPanelContextDescriptors))
     {
@@ -388,6 +413,7 @@ void SidebarController::SwitchToDeck (
                 rDeckDescriptor,
                 mpParentWindow,
                 ::boost::bind(&SidebarController::CloseDeck, this)));
+        msCurrentDeckTitle = rDeckDescriptor.msTitle;
     }
     if ( ! mpCurrentDeck)
         return;

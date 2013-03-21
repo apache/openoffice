@@ -55,6 +55,15 @@ TitleBar::~TitleBar (void)
 
 
 
+void TitleBar::SetTitle (const ::rtl::OUString& rsTitle)
+{
+    msTitle = rsTitle;
+    Invalidate();
+}
+
+
+
+
 void TitleBar::Paint (const Rectangle& rUpdateArea)
 {
     (void)rUpdateArea;

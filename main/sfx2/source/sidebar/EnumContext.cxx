@@ -214,6 +214,7 @@ void EnumContext::ProvideContextContainers (void)
         maContextVector.resize(static_cast<size_t>(__LastContextEnum)+1);
         AddEntry(A2S("any"), Context_Any);
         AddEntry(A2S("default"), Context_Default);
+        AddEntry(A2S("empty"), Context_Empty);
 #define AddContext(context) AddEntry(A2S(#context), Context_##context);
         AddContext(3DObject);
         AddContext(Annotation);

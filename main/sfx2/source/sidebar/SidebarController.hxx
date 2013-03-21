@@ -109,6 +109,7 @@ private:
     cssu::Reference<css::frame::XFrame> mxFrame;
     Context maCurrentContext;
     ::rtl::OUString msCurrentDeckId;
+    ::rtl::OUString msCurrentDeckTitle;
     AsynchronousCall maPropertyChangeForwarder;
     bool mbIsDeckClosed;
     /** Before the deck is closed the sidebar width is saved into this variable,

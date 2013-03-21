@@ -19,33 +19,15 @@
  * 
  *************************************************************/
 
-#ifndef SVX_SIDEBAR_DEBUG_EMPTY_PANEL_HXX
-#define SVX_SIDEBAR_DEBUG_EMPTY_PANEL_HXX
+#include "EmptyPanel.hrc"
+#include <svx/dialogs.hrc>
 
-#include <vcl/window.hxx>
-#include <vcl/ctrl.hxx>
-#include <vcl/fixed.hxx>
-
-
-namespace svx { namespace sidebar {
-
-
-/** Display a panel that tells the user that the current deck is
-    intentionally empty.
-*/
-class EmptyPanel
-    : public Control
+Control RID_SIDEBAR_EMPTY_PANEL
 {
-public:
-    EmptyPanel (::Window* pParent);
-    virtual ~EmptyPanel (void);
-
-    virtual void Resize (void);
-
-private:
-    FixedText maMessageControl;
+    FixedText FT_MESSAGE
+	{
+        Pos = MAP_APPFONT(2,2);
+        Size = MAP_APPFONT(100,24);
+		Text [en-US] = "Properties for the task that you are performing are not available in the sidebar at this time.";
+	};
 };
-
-} } // end of namespace ::svx::sidebar
-
-#endif

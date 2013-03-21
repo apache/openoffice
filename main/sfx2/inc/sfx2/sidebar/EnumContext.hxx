@@ -88,6 +88,10 @@ public:
         // Used only by deck or panel descriptors.  Matches any context.
         Context_Any,
 
+        // Special context name that is only used when a deck would
+        // otherwise be empty.
+        Context_Empty,
+
         Context_Unknown,
         
         __LastContextEnum = Context_Unknown
